@@ -1,3 +1,5 @@
+import { Helmet } from "react-helmet-async";
+
 function HomePage() {
     return (
         <div>
