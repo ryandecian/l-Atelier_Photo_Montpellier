@@ -69,6 +69,11 @@ function HomePage() {
 
                      {/* Canonical URL (évite le contenu dupliqué pour les moteurs de recherche) */}
                          <link rel="canonical" href={SEO.url} />
+                    
+                     {/* Balises SEO pour Google */}
+                         <meta name="robots" content="index, follow" />
+                         <meta name="googlebot" content="index, follow" />
+                         <meta name="bingbot" content="index, follow" />
             </Helmet>
             <header/>
             <main/>
