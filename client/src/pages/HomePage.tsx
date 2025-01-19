@@ -39,7 +39,7 @@ function HomePage() {
         <div>
             <Helmet>
                   {/* Balises SEO */}
-                     {/* Balise pour Google */}
+                     {/* Balise pour indexation général */}
                          <title>{SEO.title}</title>
                          <meta name="description" content={SEO.description}/>
                          <meta name="author" content={SEO.autor} />
