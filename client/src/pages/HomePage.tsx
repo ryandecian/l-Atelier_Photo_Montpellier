@@ -34,7 +34,9 @@ function HomePage() {
             profile: "profile", /*Pour une page personnelle (profil d'une personne).*/
         }
   }
-
+     // Filtrer les mots-clés non vides
+     const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
+console.log(filterKeywords);
     return (
         <div>
             <Helmet>
@@ -45,7 +47,7 @@ function HomePage() {
                          <meta name="author" content={SEO.autor} />
                          <meta charSet="UTF-8" />
                          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                         <meta name="keywords" content={`${}, ${}, ${}, ${}, ${}`} />
+                         {filterKeywords && <meta name="keywords" content={filterKeywords} />}
 
                      {/* Balises OpenGraph - Facebook, Linkedin, WhatsApp, Instagram*/}
                          <meta property="og:title" content={SEO.title} />
@@ -69,14 +71,9 @@ function HomePage() {
 
                      {/* Canonical URL (évite le contenu dupliqué pour les moteurs de recherche) */}
                          <link rel="canonical" href={SEO.url} />
-                    
-                     {/* Balises SEO pour Google */}
-                         <meta name="robots" content="index, follow" />
-                         <meta name="googlebot" content="index, follow" />
-                         <meta name="bingbot" content="index, follow" />
             </Helmet>
             <header/>
-            <main/>
+            <main><h1>Je suis HomePage</h1></main>
             <footer/>
         </div>
     )

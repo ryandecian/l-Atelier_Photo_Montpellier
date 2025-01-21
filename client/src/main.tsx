@@ -4,7 +4,7 @@ import App from './App.tsx'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 /*Les importation de page*/
-
+import HomePage from './pages/HomePage.tsx';
 
 const router = createBrowserRouter([
     {
@@ -12,11 +12,7 @@ const router = createBrowserRouter([
      children: [
        {
          path: "/",
-         element: <App />,
-       },
-       {
-         path: "/home",
-         element: <App />,
+         element: <HomePage />,
        },
       ]
     },
