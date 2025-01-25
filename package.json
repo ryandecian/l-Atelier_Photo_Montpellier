@@ -1,0 +1,15 @@
+{
+  "name": "anne-saunier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "bash ./npm-run-commit.sh",
+    "pull-force": "bash ./npm-run-pull-force.sh",
+    "dev": "npm --prefix client run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
