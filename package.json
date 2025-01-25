@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "commit": "bash ./npm-run-commit.sh",
-    "commits": "git-commit",
+    "commits": "bash ./npm-run-commit.sh",
+    "commit": "git-commit",
     "pull-force": "bash ./npm-run-pull-force.sh",
     "dev": "npm --prefix client run dev"
   },
