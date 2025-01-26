@@ -17,7 +17,7 @@
 .NavPC > .NavTopPC {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: end; /*space-between*/
     align-items: center;
     width: 100%;
 }
