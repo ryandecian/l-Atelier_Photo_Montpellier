@@ -1,5 +1,6 @@
 # Licence Séquence Focus
 Version 1.0 – Dernière mise à jour : 25/01/2025
+Ce site est protégé par une licence exclusive. Toute utilisation non autorisée est strictement interdite.
 
 ---
 
@@ -40,6 +41,7 @@ Le présent accord est régi par le droit français. En cas de litige, le diffé
 
 # Sequence Focus License
 Version 1.0 – Last updated: 25/01/2025
+This site is protected by an exclusive license. Any unauthorized use is strictly prohibited.
 
 ---
 
