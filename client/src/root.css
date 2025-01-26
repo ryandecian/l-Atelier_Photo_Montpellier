@@ -9,8 +9,8 @@
 
  /*Backgound du site*/
      /*Backgound du général*/
-         --textColorBlack: white;
-         --textColorWhite: Black;
+         --textColorBlack: black;
+         --textColorWhite: white;
 
      /*Background du Menu Burger*/
          --BackgroudMenuBurger: #A9CCE3;

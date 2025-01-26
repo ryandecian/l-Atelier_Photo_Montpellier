@@ -28,13 +28,14 @@ from "../NavPC/NavPC.tsx"
 .MenuLinkMobile {
     text-decoration: none;
     font-size: var(--p);
+    color: var(--textColorBlack);
 }
 @media (max-width: 250px) {
     .MenuLinkMobile {
         font-size: var(--h5);
     }
 }
-@media (min-width: 251px) and (max-width: 350px) {
+@media (min-width: 250px) and (max-width: 350px) {
     .MenuLiMobile {
         font-size: calc(var(--h5) + 1px);
     }
@@ -55,5 +56,5 @@ from "../NavPC/NavPC.tsx"
 
 .MenuLinkPC {
     text-decoration: none;
-    color: inherit;
+    color: var(--textColorBlack);
 }

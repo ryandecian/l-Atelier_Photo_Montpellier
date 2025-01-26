@@ -116,7 +116,7 @@
     display: block;
     width: 35px;
     height: 5px;
-    background-color: var(--textColorWhite);
+    background-color: var(--textColorBlack);
     margin: 0.5rem 0rem;
 }
 @media (max-width: 250px) {
