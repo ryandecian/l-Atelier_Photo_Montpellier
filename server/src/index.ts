@@ -15,11 +15,13 @@ app.get("/", (req: Request, res: Response) => {
 
 /**
  * Route de login
- * Path: 
+ * Path: /login
  * Action callBack
- * Methode: 
+ * Methode: POST
  */
-
+app.get("/login", (req: Request, res: Response) => {
+    res.json("ok");
+})
 
 
 /**
