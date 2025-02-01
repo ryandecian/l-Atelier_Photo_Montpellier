@@ -19,7 +19,7 @@ app.get("/", (req: Request, res: Response) => {
  * Action callBack
  * Methode: POST
  */
-app.get("/login", (req: Request, res: Response) => {
+app.post("/login", (req: Request, res: Response) => {
     res.json("ok");
 })
 
