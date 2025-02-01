@@ -14,6 +14,15 @@ app.get("/", (req: Request, res: Response) => {
 })
 
 /**
+ * Route de login
+ * Path: 
+ * Action callBack
+ * Methode: 
+ */
+
+
+
+/**
  * Le server se lance sur le port 8080
  */
 app.listen(port, () => {
