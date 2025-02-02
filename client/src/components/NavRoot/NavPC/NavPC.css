@@ -17,6 +17,12 @@
     align-items: center;
 }
 
+.ContainerLogoNavPC > a {}
+
+.ContainerLogoNavPC > a > img {
+    width: 320px;
+}
+
 /*--------------------------------------------------*/
 /* Container Bloc 2/2 */
 .ContainerMenuNavPC {
@@ -27,7 +33,7 @@
 }
 
 
-/* Sous Bloc 1/2 : Title */
+/* Sous Bloc 1/3 : Title */
 .ContainerTitleNavPC {
     display: flex;
     align-items: center;
@@ -41,7 +47,9 @@
 }
 
 
-/* Sous Bloc 2/2 : Contact */
+/* Sous Bloc 2/3 : Menu */
+
+/* Sous Bloc 3/3 : Contact */
 .ContainerContactNavPC {
     display: flex;
     align-items: center;
