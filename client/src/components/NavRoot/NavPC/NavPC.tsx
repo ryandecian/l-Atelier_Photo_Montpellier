@@ -22,11 +22,13 @@ function NavPC() {
                     </Link>
                 </div>
 
-                <MenuNavRoot
-                     moduleMenuUl={style.MenuUlPC}
-                     moduleMenuLi={style.MenuLiPC}
-                     moduleMenuLink={style.MenuLinkPC}
-                />
+                <div className="ContainerMenuNavPC">
+                     <MenuNavRoot
+                          moduleMenuUl={style.MenuUlPC}
+                          moduleMenuLi={style.MenuLiPC}
+                          moduleMenuLink={style.MenuLinkPC}
+                     />
+                </div>
 
                 <div className="ContainerContactNavPC">
                     <div className="ContainerMailNavPC">
