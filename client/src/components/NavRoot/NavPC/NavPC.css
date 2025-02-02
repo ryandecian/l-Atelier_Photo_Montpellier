@@ -41,4 +41,14 @@
 }
 
 /* Sous Bloc 2/3 : Menu */
+.ContainerContactNavPC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* Sous Bloc 3/3 : Contact */
+.ContainerContactNavPC {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
