@@ -22,11 +22,15 @@ function NavPC() {
 
                 <div></div>
                 <div className="ContainerContactNavPC">
-                    <div>
-                        <a href="mailto:photo34000@gmail.com">photo34000@gmail.com</a>
+                    <div className="ContainerMailNavPC">
+                        <a href="mailto:photo34000@gmail.com" className="ContactMailNavPC">
+                            photo34000@gmail.com
+                        </a>
                     </div>
-                    <div>
-                        <a href="tel:+33652677333">06 52 67 73 33</a>
+                    <div className="ContainerTelNavPC">
+                        <a href="tel:+33652677333" className="ContactTelNavPC">
+                            06 52 67 73 33
+                        </a>
                     </div>
                 </div>
             </div>
