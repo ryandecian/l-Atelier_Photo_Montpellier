@@ -12,7 +12,12 @@ function NavPC() {
                    <img src={Logo} alt="Logo Avec Ou Sans Flash" />
                 </Link>
             </div>
-            <div className="ContainerNavigationNavPC"></div>
+            {/*-------------------------------------------------------*/}
+            <div className="ContainerNavigationNavPC">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </nav>
     )
 }
