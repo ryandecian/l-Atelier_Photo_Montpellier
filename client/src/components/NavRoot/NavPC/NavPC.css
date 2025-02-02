@@ -8,8 +8,20 @@
     width: 100%;
 }
 
+/*--------------------------------------------------*/
+/* Container Bloc 1/2 */
 .ContainerLogoNavPC {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/*--------------------------------------------------*/
+/* Container Bloc 2/2 */
+.ContainerNavigationNavPC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: red;
 }
