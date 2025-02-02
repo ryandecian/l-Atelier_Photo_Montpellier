@@ -15,7 +15,7 @@ function NavPC() {
             {/*-------------------------------------------------------*/}
             <div className="ContainerNavigationNavPC">
                 <div className="ContainerTitleNavPC">
-                    <p className="TitleNavPC">Avec Ou Sans Flash</p>
+                    <Link to="/" className="TitleNavPC">Avec Ou Sans Flash</Link>
                 </div>
 
                 <div></div>
