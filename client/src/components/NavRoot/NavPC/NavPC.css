@@ -17,10 +17,13 @@
     align-items: center;
 }
 
-.ContainerLogoNavPC > a {}
+.ContainerLogoNavPC > a {
+    margin: 16px 0px 16px 0px;
+}
 
 .ContainerLogoNavPC > a > img {
-    width: 320px;
+    width: 200px;
+    border-radius: 0px;
 }
 
 /*--------------------------------------------------*/
@@ -42,7 +45,7 @@
 
 .TitleNavPC {
     font-size: var(--h1);
-    color: inherit;
+    color: var(--ColorPrincipal);
     text-decoration: none;
 }
 
