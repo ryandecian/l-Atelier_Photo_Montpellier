@@ -1,9 +1,10 @@
-
+import "./NavPC.css";
 
 function NavPC() {
     return (
         <nav className="NavPC">
-            <p>Test</p>
+            <div className="ContainerLogoNavPC"></div>
+            <div className="ContainerNavigationNavPC"></div>
         </nav>
     )
 }
