@@ -57,10 +57,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid yellow;
+    border-radius: 4px;
+    padding: 0px 32px 0px 32px;
+    border: 1.5px solid rgb(255, 200, 50);
 }
 
-.ContactMailNavPC {}
+.ContactMailNavPC {
+    text-decoration: none;
+}
 
 .ContainerTelNavPC {
     display: flex;
