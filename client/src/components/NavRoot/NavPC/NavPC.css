@@ -18,12 +18,11 @@
 
 /*--------------------------------------------------*/
 /* Container Bloc 2/2 */
-.ContainerNavigationNavPC {
+.ContainerMenuNavPC {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: red;
 }
 
 
