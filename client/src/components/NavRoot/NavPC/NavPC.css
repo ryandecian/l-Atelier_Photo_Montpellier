@@ -58,19 +58,29 @@
     justify-content: center;
     align-items: center;
     border-radius: 4px;
-    padding: 0px 32px 0px 32px;
-    border: 1.5px solid rgb(255, 200, 50);
+    width: 230px;
+    margin: 0px 8px 0px 0px;
+    border: 1.5px solid var(--ColorPrincipal);
 }
 
 .ContactMailNavPC {
+    font-size: var(--h5);
     text-decoration: none;
+    color: var(--ColorPrincipal);
 }
 
 .ContainerTelNavPC {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid yellow;
+    border-radius: 4px;
+    width: 230px;
+    margin: 0px 0px 0px 8px;
+    border: 1.5px solid var(--ColorPrincipal);
 }
 
-.ContactTelNavPC {}
+.ContactTelNavPC {
+    font-size: var(--h5);
+    text-decoration: none;
+    color: var(--ColorPrincipal);
+}
