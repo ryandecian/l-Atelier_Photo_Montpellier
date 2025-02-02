@@ -1,8 +1,15 @@
 @import "../../../root.css";
 
+/* Container Principale */
 .NavPC {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.ContainerLogoNavPC {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
 }
