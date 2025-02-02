@@ -48,6 +48,12 @@
 
 
 /* Sous Bloc 2/3 : Menu */
+.ContainerMenuNavPC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 
 /* Sous Bloc 3/3 : Contact */
 .ContainerContactNavPC {
