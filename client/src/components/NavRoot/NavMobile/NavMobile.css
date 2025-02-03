@@ -1,5 +1,6 @@
 @import "../../../root.css";
 
+/* Le dode qui va suivre jusqu'au double séparateur servira à coder les balises hors MenuBurger */
 .NavMobile {
     display: flex;
     justify-content: space-around;
@@ -27,7 +28,7 @@
 
 
 
-
+/*----------------------------------------------------*/
 /*-----------------------------------------------*/
 /*Menu Burger*/
 
