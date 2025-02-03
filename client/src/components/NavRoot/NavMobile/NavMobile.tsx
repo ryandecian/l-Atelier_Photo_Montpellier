@@ -4,6 +4,9 @@ import { Link } from "react-router-dom"
 import MenuNavRoot from "../ComponentsNavRoot/MenuNavRoot"
 import style from "../ComponentsNavRoot/MenuNavRoot.module.css"
 
+/* Import des Images*/
+import Logo from "../../../assets/Logo/LOGO-Avec-Ou-Sans-Flash.jpeg";
+
 function NavMobile() {
     const [active, setActive] = useState(false)
     const funcActive = () => {
@@ -12,11 +15,13 @@ function NavMobile() {
     return (
         <>
              <nav className="NavMobile">
-                 <Link to="/home">
-                     <h1>Avec Ou Sans Flash</h1>
-                 </Link>
-                 
-                 <h2>Anne SAUNIER - Photographe professionnel</h2>
+                 <div className="ContainerLogoNavMobile">
+                     <Link to="/">
+                         <img src={Logo} alt="Logo Avec Ou Sans Flash" />
+                     </Link>
+                 </div>
+                 {/*-------------------------------------------------------*/}
+                 <div></div>
 
                  <div  className={`sideNav ${active ? "active" : ""}`} id="mySideNav">
 
