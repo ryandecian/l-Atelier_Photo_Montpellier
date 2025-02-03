@@ -4,40 +4,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    background-color: var(--ColorSecondaire);
     @media (min-width: 768px) {
         display: none;
     }
 }
 
-.NavMobile > a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.NavMobile > a > h1 {
-    margin-bottom: 0.5rem;
-    font-size: var(--h1);
-    color: var(--textColorBlack);
-}
-@media (max-width: 250px) {
-    .NavMobile > a > h1 {
-        font-size: var(--h2);
-    }
-}
-@media (min-width: 250px) and (max-width: 350px) {
-    .NavMobile > a > h1 {
-        font-size: var(--h2);
-    }
-}
-
-.NavMobile > h2 {
-    margin-top: 0.5rem;
-    margin-bottom: 1.25rem;
-    color: var(--textColorBlack);
-    font-size: var(--h3);
-    text-align: center;
-}
 
 /*-----------------------------------------------*/
 /*Menu Burger*/
