@@ -17,15 +17,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 150px;
+}
+@media (min-width: 0px) and (max-width: 300px) {
+    .ContainerLogoNavMobile {
+        width: 90px;
+    }
+}
+@media (min-width: 300px) and (max-width: 350px) {
+    .ContainerLogoNavMobile {
+        width: 100px;
+    }
+}
+@media (min-width: 350px) and (max-width: 400px) {
+    .ContainerLogoNavMobile {
+        width: 120px;
+    }
 }
 
 .ContainerLogoNavMobile > a {
     margin: 16px 0px 16px 0px;
+    width: 100%;
+    max-width: 150px;
 }
 
 .ContainerLogoNavMobile > a > img {
-    width: 150px;
-    border-radius: 0px;
+    width: 100%;
+    max-width: 150px;
+    object-fit: contain;
 }
 
 
@@ -38,17 +57,27 @@
     margin: 0px 0px 0px 0px;
     /* Possible mise en place d'une marge sur la droite a cause du MenuBurger*/
 }
-@media (min-width: 0px) and (max-width: 500px) {
+@media (min-width: 0px) and (max-width: 400px) {
+    .ContainerNavigationNavMobile {
+        margin: 0px 35px 0px 0px;
+    }
+}
+@media (min-width: 400px) and (max-width: 500px) {
     .ContainerNavigationNavMobile {
         margin: 0px 32px 0px 0px;
     }
 }
-@media (min-width: 550px) and (max-width: 550px) {
+@media (min-width: 500px) and (max-width: 550px) {
+    .ContainerNavigationNavMobile {
+        margin: 0px 24px 0px 0px;
+    }
+}
+@media (min-width: 550px) and (max-width: 600px) {
     .ContainerNavigationNavMobile {
         margin: 0px 16px 0px 0px;
     }
 }
-@media (min-width: 550px) and (max-width: 600px) {
+@media (min-width: 600px) and (max-width: 768px) {
     .ContainerNavigationNavMobile {
         margin: 0px 8px 0px 0px;
     }
@@ -66,12 +95,22 @@
     color: var(--ColorPrincipal);
     text-decoration: none;
 }
-@media (min-width: 0) and (max-width: 500px) {
+@media (min-width: 0px) and (max-width: 300px) {
+    .TitleNavMobile {
+        font-size: var(--h5);
+    }
+}
+@media (min-width: 300px) and (max-width: 400px) {
+    .TitleNavMobile {
+        font-size: var(--h4);
+    }
+}
+@media (min-width: 400px) and (max-width: 500px) {
     .TitleNavMobile {
         font-size: var(--h3);
     }
 }
-@media (min-width: 500) and (max-width: 650px) {
+@media (min-width: 500px) and (max-width: 650px) {
     .TitleNavMobile {
         font-size: var(--h2);
     }
@@ -96,7 +135,22 @@
     border: 1.5px solid var(--ColorPrincipal);
     transition: transform 0.2s ease, border-color 0.2s ease; /* Animation fluide */
 }
-@media (min-width: 0px) and (max-width: 500px) {
+@media (min-width: 0px) and (max-width: 300px) {
+    .ContainerMailNavMobile {
+        width: 140px;
+    }
+}
+@media (min-width: 300px) and (max-width: 350px) {
+    .ContainerMailNavMobile {
+        width: 140px;
+    }
+}
+@media (min-width: 350px) and (max-width: 400px) {
+    .ContainerMailNavMobile {
+        width: 160px;
+    }
+}
+@media (min-width: 400px) and (max-width: 500px) {
     .ContainerMailNavMobile {
         width: 200px;
     }
@@ -110,6 +164,16 @@
     font-size: var(--h5);
     text-decoration: none;
     color: var(--ColorPrincipal);
+}
+@media (min-width: 0px) and (max-width: 300px) {
+    .ContactMailNavMobile {
+        font-size: var(--h7);
+    }
+}
+@media (min-width: 300px) and (max-width: 400px) {
+    .ContactMailNavMobile {
+        font-size: var(--h6);
+    }
 }
 .ContactMailNavMobile:hover {
     transform: scale(1.1);
@@ -126,7 +190,23 @@
     margin: 4px 0px 0px 0px;
     border: 1.5px solid var(--ColorPrincipal);
     transition: transform 0.2s ease, border-color 0.2s ease; /* Animation fluide */
-}@media (min-width: 0px) and (max-width: 500px) {
+}
+@media (min-width: 0px) and (max-width: 300px) {
+    .ContainerTelNavMobile {
+        width: 140px;
+    }
+}
+@media (min-width: 300px) and (max-width: 350px) {
+    .ContainerTelNavMobile {
+        width: 140px;
+    }
+}
+@media (min-width: 350px) and (max-width: 400px) {
+    .ContainerTelNavMobile {
+        width: 160px;
+    }
+}
+@media (min-width: 400px) and (max-width: 500px) {
     .ContainerTelNavMobile {
         width: 200px;
     }
@@ -140,9 +220,18 @@
     font-size: var(--h5);
     text-decoration: none;
     color: var(--ColorPrincipal);
-    transition: transform 0.2s ease, color 0.2s ease;
 }
-.ContainerTelNavMobile:hover {
+@media (min-width: 0px) and (max-width: 300px) {
+    .ContactTelNavMobile {
+        font-size: var(--h7);
+    }
+}
+@media (min-width: 300px) and (max-width: 400px) {
+    .ContactTelNavMobile {
+        font-size: var(--h6);
+    }
+}
+.ContactTelNavMobile:hover {
     transform: scale(1.1);
     color: white;
 }
