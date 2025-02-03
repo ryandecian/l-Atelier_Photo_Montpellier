@@ -38,6 +38,21 @@
     margin: 0px 0px 0px 0px;
     /* Possible mise en place d'une marge sur la droite a cause du MenuBurger*/
 }
+@media (min-width: 0px) and (max-width: 500px) {
+    .ContainerNavigationNavMobile {
+        margin: 0px 32px 0px 0px;
+    }
+}
+@media (min-width: 550px) and (max-width: 550px) {
+    .ContainerNavigationNavMobile {
+        margin: 0px 16px 0px 0px;
+    }
+}
+@media (min-width: 550px) and (max-width: 600px) {
+    .ContainerNavigationNavMobile {
+        margin: 0px 8px 0px 0px;
+    }
+}
 
 /* Sous bloc 1/2 : Titre */
 .ContainerTitleNavMobile {
@@ -47,9 +62,19 @@
 }
 
 .TitleNavMobile {
-    font-size: var(--h3);
+    font-size: var(--h1);
     color: var(--ColorPrincipal);
     text-decoration: none;
+}
+@media (min-width: 0) and (max-width: 500px) {
+    .TitleNavMobile {
+        font-size: var(--h3);
+    }
+}
+@media (min-width: 500) and (max-width: 650px) {
+    .TitleNavMobile {
+        font-size: var(--h2);
+    }
 }
 
 /* Sous bloc 2/2 : Contact */
@@ -70,6 +95,11 @@
     margin: 8px 0px 4px 0px;
     border: 1.5px solid var(--ColorPrincipal);
     transition: transform 0.2s ease, border-color 0.2s ease; /* Animation fluide */
+}
+@media (min-width: 0px) and (max-width: 500px) {
+    .ContainerMailNavMobile {
+        width: 200px;
+    }
 }
 .ContainerMailNavMobile:hover {
     transform: scale(1.05);
@@ -96,6 +126,10 @@
     margin: 4px 0px 0px 0px;
     border: 1.5px solid var(--ColorPrincipal);
     transition: transform 0.2s ease, border-color 0.2s ease; /* Animation fluide */
+}@media (min-width: 0px) and (max-width: 500px) {
+    .ContainerTelNavMobile {
+        width: 200px;
+    }
 }
 .ContainerTelNavMobile:hover {
     transform: scale(1.05);
