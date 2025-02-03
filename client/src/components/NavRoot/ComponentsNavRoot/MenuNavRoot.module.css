@@ -61,7 +61,7 @@ from "../NavPC/NavPC.tsx"
     font-size: var(--h4);
     text-decoration: none;
     color: var(--ColorPrincipal);
-    transition: transform 0.3s ease, color 0.2s ease; /* Animation fluide */
+    transition: transform 0.3s ease, color 0.2s ease;
 }
 
 .MenuLinkPC:hover {

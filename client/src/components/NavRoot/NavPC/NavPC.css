@@ -89,10 +89,20 @@
     width: 230px;
     margin: 0px 0px 0px 8px;
     border: 1.5px solid var(--ColorPrincipal);
+    transition: transform 0.2s ease, border-color 0.2s ease; /* Animation fluide */
+}
+.ContainerTelNavPC:hover {
+    transform: scale(1.05);
+    border-color: white;
 }
 
 .ContactTelNavPC {
     font-size: var(--h5);
     text-decoration: none;
     color: var(--ColorPrincipal);
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+.ContainerTelNavPC:hover .ContactTelNavPC {
+    transform: scale(1.1);
+    color: white;
 }
