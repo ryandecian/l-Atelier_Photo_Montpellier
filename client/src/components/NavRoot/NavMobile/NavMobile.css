@@ -18,7 +18,7 @@
 .NavMobile > a > h1 {
     margin-bottom: 0.5rem;
     font-size: var(--h1);
-    color: var(--textColorWhite);
+    color: var(--textColorBlack);
 }
 @media (max-width: 250px) {
     .NavMobile > a > h1 {
@@ -34,7 +34,7 @@
 .NavMobile > h2 {
     margin-top: 0.5rem;
     margin-bottom: 1.25rem;
-    color: var(--textColorWhite);
+    color: var(--textColorBlack);
     font-size: var(--h3);
     text-align: center;
 }
