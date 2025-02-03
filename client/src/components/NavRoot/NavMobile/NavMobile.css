@@ -2,13 +2,30 @@
 
 .NavMobile {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: var(--ColorSecondaire);
     @media (min-width: 768px) {
         display: none;
     }
 }
+
+.ContainerLogoNavMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContainerLogoNavMobile > a {
+    margin: 16px 0px 16px 0px;
+}
+
+.ContainerLogoNavMobile > a > img {
+    width: 150px;
+    border-radius: 0px;
+}
+
+
 
 
 /*-----------------------------------------------*/
