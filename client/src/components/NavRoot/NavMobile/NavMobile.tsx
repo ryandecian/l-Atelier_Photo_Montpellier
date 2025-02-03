@@ -24,7 +24,7 @@ function NavMobile() {
                  <div className="ContainerNavigationNavMobile">
 
                     <div className="ContainerTitleNavMobile">
-                        <Link to="/">
+                        <Link to="/" className="TitleNavMobile">
                              Avec Ou Sans Flash
                         </Link>
                     </div>
