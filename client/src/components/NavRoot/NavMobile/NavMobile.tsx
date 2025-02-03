@@ -21,7 +21,27 @@ function NavMobile() {
                      </Link>
                  </div>
                  {/*-------------------------------------------------------*/}
-                 <div></div>
+                 <div className="ContainerNavigationNavMobile">
+
+                    <div className="ContainerTitleNavMobile">
+                        <Link to="/">
+                             Avec Ou Sans Flash
+                        </Link>
+                    </div>
+
+                    <div className="ContainerContactNavMobile">
+                         <div className="ContainerMailNavMobile">
+                             <a href="mailto:photo34000@gmail.com" className="ContactMailNavMobile">
+                                 photo34000@gmail.com
+                             </a>
+                         </div>
+                         <div className="ContainerTelNavMobile">
+                             <a href="tel:+33652677333" className="ContactTelNavMobile">
+                                 06 52 67 73 33
+                             </a>
+                         </div>
+                     </div>
+                 </div>
 
                  <div  className={`sideNav ${active ? "active" : ""}`} id="mySideNav">
 
