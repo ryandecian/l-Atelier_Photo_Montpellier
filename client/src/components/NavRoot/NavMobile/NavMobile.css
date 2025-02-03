@@ -11,6 +11,8 @@
     }
 }
 
+
+/* Container du Logo bloc 1/2 */
 .ContainerLogoNavMobile {
     display: flex;
     justify-content: center;
@@ -26,6 +28,90 @@
     border-radius: 0px;
 }
 
+
+/* Container de la Navigation bloc 2/2 */
+.ContainerNavigationNavMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 0px 0px 0px;
+    /* Possible mise en place d'une marge sur la droite a cause du MenuBurger*/
+}
+
+/* Sous bloc 1/2 : Titre */
+.ContainerTitleNavMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TitleNavMobile {
+    font-size: var(--h3);
+    color: var(--ColorPrincipal);
+    text-decoration: none;
+}
+
+/* Sous bloc 2/2 : Contact */
+.ContainerContactNavMobile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* Style du mail */
+.ContainerMailNavMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    width: 230px;
+    margin: 8px 0px 4px 0px;
+    border: 1.5px solid var(--ColorPrincipal);
+    transition: transform 0.2s ease, border-color 0.2s ease; /* Animation fluide */
+}
+.ContainerMailNavMobile:hover {
+    transform: scale(1.05);
+    border-color: white;
+}
+
+.ContactMailNavMobile {
+    font-size: var(--h5);
+    text-decoration: none;
+    color: var(--ColorPrincipal);
+}
+.ContactMailNavMobile:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+/* Style du numéro de téléphone */
+.ContainerTelNavMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    width: 230px;
+    margin: 4px 0px 0px 0px;
+    border: 1.5px solid var(--ColorPrincipal);
+    transition: transform 0.2s ease, border-color 0.2s ease; /* Animation fluide */
+}
+.ContainerTelNavMobile:hover {
+    transform: scale(1.05);
+    border-color: white;
+}
+
+.ContactTelNavMobile {
+    font-size: var(--h5);
+    text-decoration: none;
+    color: var(--ColorPrincipal);
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+.ContainerTelNavMobile:hover {
+    transform: scale(1.1);
+    color: white;
+}
 
 
 /*----------------------------------------------------*/
