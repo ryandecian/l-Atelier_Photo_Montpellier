@@ -16,7 +16,7 @@ function MenuNavRoot(Props: MenuNavRootProps) {
          <ul className={moduleMenuUl}>
 
              <li className={moduleMenuLi}>
-                 <Link to="/qui-suis-je" className={moduleMenuLink}>Qui suis-je</Link>
+                 <Link to="/actualite" className={moduleMenuLink}>Actualité</Link>
              </li>
 
              <li className={moduleMenuLi}>
