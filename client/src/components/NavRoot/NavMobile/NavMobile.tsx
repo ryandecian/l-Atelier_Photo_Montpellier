@@ -47,10 +47,10 @@ function NavMobile() {
                  <div  className={`sideNav ${active ? "active" : ""}`} id="mySideNav">
 
                      <div>
-                         <a href="#" 
+                         <button type="button" 
                          id="closeBtn" 
                          className="close"
-                         onClick={funcActive}>x</a>
+                         onClick={funcActive}>x</button>
                      </div>
 
                      {/*Le style de ce composant est directement géré par le module CSS :
@@ -66,15 +66,15 @@ function NavMobile() {
 
                  </div>
 
-                 <a href="#" 
+                 <button type="button" 
                  id="openBtn"
                  onClick={funcActive}>
                     <span className="menuBurger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <span />
+                        <span />
+                        <span />
                     </span>
-                 </a>
+                 </button>
 
              </nav>
         </>

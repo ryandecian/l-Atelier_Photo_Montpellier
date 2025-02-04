@@ -304,6 +304,8 @@
     background: linear-gradient(135deg, #3498db, #8e44ad); /* Dégradé bleu-violet */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Ombre */
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    border: none;
+    outline: none;
     cursor: pointer;
 }
 @media (max-width: 250px) {
@@ -325,10 +327,18 @@
 
 
 #openBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     top: 0.4rem;
     right: 0.5rem;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
+
 .menuBurger > span {
     display: block;
     width: 35px;
