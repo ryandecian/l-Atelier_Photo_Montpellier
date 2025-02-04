@@ -13,18 +13,18 @@ from "../NavPC/NavPC.tsx"
     margin: 0.5rem 0;
 }
 
-.MenuSubMenu li {
+.MenuSubMenu > li {
     margin: 0.3rem 0;
 }
 
-.MenuSubMenu li a {
+.MenuSubMenu > li > a {
     font-size: calc(var(--p) - 2px);
     color: var(--ColorPrincipal);
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
-.MenuSubMenu li a:hover {
+.MenuSubMenu > li > a:hover {
     color: white;
 }
 
