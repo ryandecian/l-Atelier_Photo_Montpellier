@@ -43,6 +43,7 @@ function NavMobile() {
                      </div>
                  </div>
 
+                 <button className={`sideCloseNav ${active ? "active" : ""}`} type="button" onClick={funcActive}/>
                  <div  className={`sideNav ${active ? "active" : ""}`} id="mySideNav">
 
                      <div>
