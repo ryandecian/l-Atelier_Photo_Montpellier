@@ -6,24 +6,6 @@ from "../NavMobile//NavMobile.tsx"
 NavPC.tsx
 from "../NavPC/NavPC.tsx"
 */
-.MenuUlMobile {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    padding: 0;
-    margin: 0px 0px 0px 2rem;
-}
-
-.MenuLiMobile {
-    margin: 0.5rem 0rem;
-    cursor: pointer;
-}
-
-.MenuLinkMobile {
-    text-decoration: none;
-    font-size: var(--p);
-    color: var(--ColorPrincipal);
-}
 
 .MenuSubMenu {
     list-style: none;
@@ -62,6 +44,7 @@ from "../NavPC/NavPC.tsx"
 
 .MenuLiMobile {
     margin: 0.5rem 0rem 0.5rem 0rem;
+    cursor: pointer;
 }
 
 .MenuLinkMobile {
