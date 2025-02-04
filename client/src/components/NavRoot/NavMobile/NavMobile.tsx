@@ -59,8 +59,8 @@ function NavMobile() {
                          moduleMenuUl={style.MenuUlMobile}
                          moduleMenuLi={style.MenuLiMobile}
                          moduleMenuLink={style.MenuLinkMobile}
-                         moduleSubMenu={style.MenuSubMenu}
-                         moduleSubMenuLi={style.MenuSubMenuLi}
+                         moduleSubMenu={style.MenuSubMenuMobile}
+                         moduleSubMenuLi={style.MenuSubMenuLiMobile}
                      />
 
 
