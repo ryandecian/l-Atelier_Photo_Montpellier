@@ -100,3 +100,35 @@ from "../NavPC/NavPC.tsx"
     transform: scale(1.2); /* Augmente légèrement la taille */
     color: white; /* Change la couleur en blanc */
 }
+
+/* Sous menu de Portraits*/
+.MenuSubMenuPC {
+    list-style: none;
+    padding-left: 1rem;
+    margin: 0.5rem 0;
+}
+
+.MenuSubMenuLiPC {
+    margin: 0.5rem 0;
+}
+
+.MenuSubMenuLiPC > a {
+    font-size: calc(var(--h3) - 1px);
+    color: var(--ColorPrincipal);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+@media (min-width: 0px) and (max-width: 300px) {
+    .MenuSubMenuLiPC > a {
+        font-size: calc(var(--h5) - 1px);
+    }
+}
+@media (min-width: 300px) and (max-width: 400px) {
+    .MenuSubMenuLiPC > a {
+        font-size: calc(var(--h4) - 1px);
+    }
+}
+
+.MenuSubMenuPC > li > a:hover {
+    color: white;
+}
