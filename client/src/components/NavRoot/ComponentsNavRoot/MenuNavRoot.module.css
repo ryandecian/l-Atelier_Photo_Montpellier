@@ -53,25 +53,20 @@ from "../NavPC/NavPC.tsx"
     margin: 0.5rem 0;
 }
 
-.SubMenuLiMobile > a {
+.SubMenuLinkMobile {
     font-size: calc(var(--h3) - 1px);
     color: var(--ColorPrincipal);
     text-decoration: none;
-    transition: color 0.2s ease;
 }
 @media (min-width: 0px) and (max-width: 300px) {
-    .SubMenuLiMobile > a {
+    .SubMenuLinkMobile {
         font-size: calc(var(--h5) - 1px);
     }
 }
 @media (min-width: 300px) and (max-width: 400px) {
-    .SubMenuLiMobile > a {
+    .SubMenuLinkMobile {
         font-size: calc(var(--h4) - 1px);
     }
-}
-
-.SubMenuMobile > li > a:hover {
-    color: white;
 }
 
 
@@ -112,23 +107,15 @@ from "../NavPC/NavPC.tsx"
     margin: 0.5rem 0;
 }
 
-.SubMenuLiPC > a {
-    font-size: calc(var(--h3) - 1px);
+.SubMenuLinkPC {
+    display: inline-block;
+    font-size: var(--h5);
     color: var(--ColorPrincipal);
     text-decoration: none;
     transition: color 0.2s ease;
 }
-@media (min-width: 0px) and (max-width: 300px) {
-    .SubMenuLiPC > a {
-        font-size: calc(var(--h5) - 1px);
-    }
-}
-@media (min-width: 300px) and (max-width: 400px) {
-    .SubMenuLiPC > a {
-        font-size: calc(var(--h4) - 1px);
-    }
-}
 
-.SubMenuPC > li > a:hover {
+.SubMenuLinkPC:hover {
+    transform: scale(1.2);
     color: white;
 }
