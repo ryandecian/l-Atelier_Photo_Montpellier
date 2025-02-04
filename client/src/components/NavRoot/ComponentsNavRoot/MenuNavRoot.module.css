@@ -43,34 +43,34 @@ from "../NavPC/NavPC.tsx"
 }
 
 /* Sous menu de Portraits*/
-.MenuSubMenuMobile {
+.SubMenuUlMobile {
     list-style: none;
     padding-left: 1rem;
     margin: 0.5rem 0;
 }
 
-.MenuSubMenuLiMobile {
+.SubMenuLiMobile {
     margin: 0.5rem 0;
 }
 
-.MenuSubMenuLiMobile > a {
+.SubMenuLiMobile > a {
     font-size: calc(var(--h3) - 1px);
     color: var(--ColorPrincipal);
     text-decoration: none;
     transition: color 0.2s ease;
 }
 @media (min-width: 0px) and (max-width: 300px) {
-    .MenuSubMenuLiMobile > a {
+    .SubMenuLiMobile > a {
         font-size: calc(var(--h5) - 1px);
     }
 }
 @media (min-width: 300px) and (max-width: 400px) {
-    .MenuSubMenuLiMobile > a {
+    .SubMenuLiMobile > a {
         font-size: calc(var(--h4) - 1px);
     }
 }
 
-.MenuSubMenuMobile > li > a:hover {
+.SubMenuMobile > li > a:hover {
     color: white;
 }
 
@@ -102,33 +102,33 @@ from "../NavPC/NavPC.tsx"
 }
 
 /* Sous menu de Portraits*/
-.MenuSubMenuPC {
+.SubMenuUlPC {
     list-style: none;
     padding-left: 1rem;
     margin: 0.5rem 0;
 }
 
-.MenuSubMenuLiPC {
+.SubMenuLiPC {
     margin: 0.5rem 0;
 }
 
-.MenuSubMenuLiPC > a {
+.SubMenuLiPC > a {
     font-size: calc(var(--h3) - 1px);
     color: var(--ColorPrincipal);
     text-decoration: none;
     transition: color 0.2s ease;
 }
 @media (min-width: 0px) and (max-width: 300px) {
-    .MenuSubMenuLiPC > a {
+    .SubMenuLiPC > a {
         font-size: calc(var(--h5) - 1px);
     }
 }
 @media (min-width: 300px) and (max-width: 400px) {
-    .MenuSubMenuLiPC > a {
+    .SubMenuLiPC > a {
         font-size: calc(var(--h4) - 1px);
     }
 }
 
-.MenuSubMenuPC > li > a:hover {
+.SubMenuPC > li > a:hover {
     color: white;
 }
