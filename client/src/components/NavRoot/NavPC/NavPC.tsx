@@ -27,8 +27,9 @@ function NavPC() {
                           moduleMenuUl={style.MenuUlPC}
                           moduleMenuLi={style.MenuLiPC}
                           moduleMenuLink={style.MenuLinkPC}
-                          moduleSubMenu={style.MenuSubMenuPC}
-                          moduleSubMenuLi={style.MenuSubMenuLiPC}
+                          moduleSubMenuUl={style.SubMenuUlPC}
+                          moduleSubMenuLi={style.SubMenuLiPC}
+                          moduleSubMenuLink={style.SubMenuLinkPC}
                      />
                 </div>
 
