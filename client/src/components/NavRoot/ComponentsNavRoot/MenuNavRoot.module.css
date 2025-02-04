@@ -28,7 +28,7 @@ from "../NavPC/NavPC.tsx"
 .MenuLinkMobile {
     text-decoration: none;
     font-size: var(--p);
-    color: var(--textColorBlack);
+    color: var(--ColorPrincipal);
 }
 @media (max-width: 250px) {
     .MenuLinkMobile {
