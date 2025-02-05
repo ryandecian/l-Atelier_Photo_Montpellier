@@ -8,3 +8,10 @@
     background-size: 500px 200px;
     background-repeat: repeat;
   } */
+
+/* .AppContainer {
+    background-color: var(--ColorSecondaire);
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+} */
