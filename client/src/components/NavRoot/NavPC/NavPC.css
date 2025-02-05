@@ -5,7 +5,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
     width: 100%;
+    height: 170px;
     background-color: var(--ColorSecondaire);
     /* Ajout ou modification des propriétés background */
     background-image: url("../../../assets/Background-img/Background-vague.jpg");
@@ -15,6 +17,28 @@
     @media (max-width: 768px) {
         display: none;
     }
+}
+.NavPC::before {
+    content: ""; /* Obligatoire pour un pseudo-élément */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../assets/Background-img/Background-vague.jpg");
+    background-size: 500px 200px;
+    background-repeat: repeat;
+    background-position: start;
+    opacity: 0.5; /* Opacité souhaitée (0 à 1) */
+    z-index: -1; /* Place l'image de fond derrière le contenu */
+}
+
+.BackgroundNavPC {
+    z-index: -2;
+    position: fixed;
+    width: 100%;
+    height: 170px;
+    background-color: var(--ColorSecondaire);
 }
 
 /*--------------------------------------------------*/
