@@ -15,6 +15,7 @@ function NavMobile() {
     return (
         <>
              <nav className="NavMobile">
+                 <div className="BackgroundNavMobile" />
                  <div className="ContainerLogoNavMobile">
                      <Link to="/">
                          <img src={Logo} alt="Logo Avec Ou Sans Flash" />

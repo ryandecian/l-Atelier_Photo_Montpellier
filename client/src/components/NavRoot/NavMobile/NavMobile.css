@@ -1,14 +1,38 @@
 @import "../../../root.css";
 
-/* Le dode qui va suivre jusqu'au double séparateur servira à coder les balises hors MenuBurger */
+/* Le code qui va suivre jusqu'au double séparateur servira à coder les balises hors MenuBurger */
 .NavMobile {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--ColorSecondaire);
+    position: relative;
+    width: 100%;
+    height: 170px;
     @media (min-width: 768.02px) {
         display: none;
     }
+}
+.NavMobile::before {
+    content: ""; /* Obligatoire pour un pseudo-élément */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../assets/Background-img/Background-vague.jpg");
+    background-size: 500px 200px;
+    background-repeat: repeat;
+    background-position: start;
+    opacity: 0.5; /* Opacité souhaitée (0 à 1) */
+    z-index: -1; /* Place l'image de fond derrière le contenu */
+}
+
+.BackgroundNavMobile {
+    z-index: -2;
+    position: fixed;
+    width: 100%;
+    height: 170px;
+    background-color: var(--ColorSecondaire);
 }
 
 
@@ -267,7 +291,7 @@
     z-index: 10;
     top: 0;
     right: -250px;
-    background-color: var(--ColorSecondaire);
+    background-color: var(--BackgroudMenuBurger);
     transition: right 0.5s ease;
     box-shadow: var(--box-shadow);
 }
