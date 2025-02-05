@@ -9,6 +9,7 @@ import Logo from "../../../assets/Logo/LOGO-Avec-Ou-Sans-Flash.jpeg";
 function NavPC() {
     return (
         <nav className="NavPC">
+            <div className="BackgroundNavPC"/>
             <div className="ContainerLogoNavPC">
                 <Link to="/">
                    <img src={Logo} alt="Logo Avec Ou Sans Flash" />
