@@ -42,7 +42,7 @@ function MenuNavRoot(Props: MenuNavRootProps) {
               <Link to="/portraits-corporate" className={moduleSubMenuLink}>Corporate</Link>
             </li>
             <li className={moduleSubMenuLi}>
-              <Link to="/portraits-enfant" className={moduleSubMenuLink}>Grossesse / Nouveau nés</Link>
+              <Link to="/portraits-enfant" className={moduleSubMenuLink}>Grossesse / <br/>Nouveau nés</Link>
             </li>
           </ul>
         )}
