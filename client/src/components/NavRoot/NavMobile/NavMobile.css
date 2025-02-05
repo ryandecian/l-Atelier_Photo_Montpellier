@@ -8,7 +8,6 @@
     position: relative;
     width: 100%;
     height: 170px;
-    /* Ajout ou modification des propriétés background */
     @media (min-width: 768.02px) {
         display: none;
     }
