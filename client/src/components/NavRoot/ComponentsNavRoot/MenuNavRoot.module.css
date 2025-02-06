@@ -115,18 +115,21 @@ from "../NavPC/NavPC.tsx"
 .SubMenuUlPC {
     position: absolute;
     list-style: none;
-    padding-left: 1rem;
-    margin: 0.5rem 0;
+    margin: 8px 0px 8px 0px;
+    padding: 0;
+    box-shadow: var(--box-shadow);
 }
 
 .SubMenuLiPC {
-    margin: 0.5rem 0;
+    padding: 4px 16px 4px 16px;
+    background-color: var(--ColorPrincipal);
+    border: 1.5px solid var(--borderWhite);
 }
 
 .SubMenuLinkPC {
     display: inline-block;
     font-size: var(--h5);
-    color: var(--ColorPrincipal);
+    color: var(--ColorSecondaire);
     text-decoration: none;
     transition: color 0.2s ease;
 }

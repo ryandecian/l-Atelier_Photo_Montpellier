@@ -10,13 +10,20 @@ interface MenuNavRootProps {
   moduleSubMenuLink: string;
   moduleSpanPortraits?: string;
   moduleSubMenuPortraits?: string;
+
+  moduleSubMenuLiTarget1?: string;
+  moduleSubMenuLiTarget2?: string;
+  moduleSubMenuLiTarget3?: string;
+  moduleSubMenuLiTarget4?: string;
 }
 
 function MenuNavRoot(Props: MenuNavRootProps) {
   const { moduleMenuUl, moduleMenuLi, 
     moduleMenuLink, moduleSubMenuUl, 
     moduleSubMenuLi, moduleSubMenuLink, 
-    moduleSpanPortraits, moduleSubMenuPortraits } = Props;
+    moduleSpanPortraits, moduleSubMenuPortraits, 
+    moduleSubMenuLiTarget1, moduleSubMenuLiTarget2,
+    moduleSubMenuLiTarget3, moduleSubMenuLiTarget4 } = Props;
 
   const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
 
@@ -37,16 +44,16 @@ function MenuNavRoot(Props: MenuNavRootProps) {
         </span>
         {isSubMenuOpen && (
           <ul className={moduleSubMenuUl}>
-            <li className={moduleSubMenuLi}>
+            <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget1}`}>
               <Link to="/portraits-individuels" className={moduleSubMenuLink}>Individuels</Link>
             </li>
-            <li className={moduleSubMenuLi}>
+            <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget2}`}>
               <Link to="/portraits-couple" className={moduleSubMenuLink}>Couple</Link>
             </li>
-            <li className={moduleSubMenuLi}>
+            <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget3}`}>
               <Link to="/portraits-corporate" className={moduleSubMenuLink}>Corporate</Link>
             </li>
-            <li className={moduleSubMenuLi}>
+            <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget4}`}>
               <Link to="/portraits-enfant" className={moduleSubMenuLink}>Grossesse / <br/>Nouveau nés</Link>
             </li>
           </ul>
