@@ -103,7 +103,7 @@ from "../NavPC/NavPC.tsx"
 
 .SubMenuPortraitsPC {
     position: relative;
-    z-index: 2; /* Assure que le lien est au-dessus du sous-menu */
+    z-index: var(--z-index_5); /* Assure que le lien est au-dessus du sous-menu */
     cursor: pointer;
 }
 
