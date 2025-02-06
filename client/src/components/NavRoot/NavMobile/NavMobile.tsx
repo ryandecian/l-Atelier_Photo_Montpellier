@@ -63,6 +63,7 @@ function NavMobile() {
                          moduleSubMenuUl={style.SubMenuUlMobile}
                          moduleSubMenuLi={style.SubMenuLiMobile}
                          moduleSubMenuLink={style.SubMenuLinkMobile}
+                         moduleSpanPortraits={style.SpanPortraitsMobile}
                      />
 
 
