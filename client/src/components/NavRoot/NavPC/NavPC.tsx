@@ -31,6 +31,7 @@ function NavPC() {
                           moduleSubMenuUl={style.SubMenuUlPC}
                           moduleSubMenuLi={style.SubMenuLiPC}
                           moduleSubMenuLink={style.SubMenuLinkPC}
+                          moduleSpanPortraits={style.SpanPortraitsPC}
                      />
                 </div>
 
