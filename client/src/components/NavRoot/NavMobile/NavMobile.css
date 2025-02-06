@@ -291,9 +291,10 @@
     z-index: var(--z-index_10);
     top: 0;
     right: -250px;
-    background-color: var(--ColorClaire);
+    background-color: var(--ColorPrincipal); /*-------------------------------------------------*/
     transition: right 0.5s ease;
     box-shadow: var(--box-shadow);
+    border-left: 1px solid var(--borderWhite);
 }
 /* @media (max-width: 250px) {
     .sideNav {
