@@ -34,6 +34,7 @@ function NavPC() {
                           moduleSpanPortraits={style.SpanPortraitsPC}
                           moduleSubMenuPortraits={style.SubMenuPortraitsPC}
 
+                          moduleButtonSubMenu={style.ButtonSubMenuPC}
                           moduleSubMenuLiTarget1={style.SubMenuLiTarget1PC}
                           moduleSubMenuLiTarget2={style.SubMenuLiTarget2PC}
                           moduleSubMenuLiTarget3={style.SubMenuLiTarget3PC}
