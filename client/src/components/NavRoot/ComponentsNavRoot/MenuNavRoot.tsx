@@ -11,6 +11,7 @@ interface MenuNavRootProps {
   moduleSpanPortraits?: string;
   moduleSubMenuPortraits?: string;
 
+  moduleButtonSubMenu?: string;
   moduleSubMenuLiTarget1?: string;
   moduleSubMenuLiTarget2?: string;
   moduleSubMenuLiTarget3?: string;
@@ -23,7 +24,8 @@ function MenuNavRoot(Props: MenuNavRootProps) {
     moduleSubMenuLi, moduleSubMenuLink, 
     moduleSpanPortraits, moduleSubMenuPortraits, 
     moduleSubMenuLiTarget1, moduleSubMenuLiTarget2,
-    moduleSubMenuLiTarget3, moduleSubMenuLiTarget4 } = Props;
+    moduleSubMenuLiTarget3, moduleSubMenuLiTarget4,
+    moduleButtonSubMenu } = Props;
 
   const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
 
@@ -44,6 +46,8 @@ function MenuNavRoot(Props: MenuNavRootProps) {
         </span>
         {isSubMenuOpen && (
           <ul className={moduleSubMenuUl}>
+            <button type="button" className={moduleButtonSubMenu} onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}/>
+
             <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget1}`}>
               <Link to="/portraits-individuels" className={moduleSubMenuLink}>Individuels</Link>
             </li>
