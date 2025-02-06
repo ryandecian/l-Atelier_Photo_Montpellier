@@ -9,13 +9,14 @@ interface MenuNavRootProps {
   moduleSubMenuLi: string;
   moduleSubMenuLink: string;
   moduleSpanPortraits?: string;
+  moduleSubMenuPortraits?: string;
 }
 
 function MenuNavRoot(Props: MenuNavRootProps) {
   const { moduleMenuUl, moduleMenuLi, 
     moduleMenuLink, moduleSubMenuUl, 
     moduleSubMenuLi, moduleSubMenuLink, 
-    moduleSpanPortraits } = Props;
+    moduleSpanPortraits, moduleSubMenuPortraits } = Props;
 
   const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
 
@@ -31,7 +32,7 @@ function MenuNavRoot(Props: MenuNavRootProps) {
 
       {/* Menu déroulant pour Portraits */}
       <li className={moduleMenuLi} onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}>
-        <span className={moduleMenuLink} style={{ cursor: "pointer" }}>
+        <span className={`${moduleMenuLink} ${moduleSubMenuPortraits}`}>
           Portraits <span className={moduleSpanPortraits}>▼</span>
         </span>
         {isSubMenuOpen && (
