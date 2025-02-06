@@ -123,6 +123,23 @@ from "../NavPC/NavPC.tsx"
 .SubMenuLiPC {
     padding: 4px 16px 4px 16px;
     background-color: var(--ColorPrincipal);
+}
+.SubMenuLiTarget1PC {
+    border-top: 1.5px solid var(--borderWhite);
+    border-left: 1.5px solid var(--borderWhite);
+    border-right: 1.5px solid var(--borderWhite);
+}
+.SubMenuLiTarget2PC {
+    border-top: 1.5px solid var(--borderWhite);
+    border-left: 1.5px solid var(--borderWhite);
+    border-right: 1.5px solid var(--borderWhite);
+}
+.SubMenuLiTarget3PC {
+    border-top: 1.5px solid var(--borderWhite);
+    border-left: 1.5px solid var(--borderWhite);
+    border-right: 1.5px solid var(--borderWhite);
+}
+.SubMenuLiTarget4PC {
     border: 1.5px solid var(--borderWhite);
 }
 
