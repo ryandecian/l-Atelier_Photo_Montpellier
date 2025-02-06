@@ -11,6 +11,11 @@ interface MenuNavRootProps {
   moduleSpanPortraits?: string;
   moduleSubMenuPortraits?: string;
 
+  moduleMenuLiTarget1?: string;
+  moduleMenuLiTarget2?: string;
+  moduleMenuLiTarget3?: string;
+  moduleMenuLiTarget4?: string;
+
   moduleButtonSubMenu?: string;
   moduleSubMenuLiTarget1?: string;
   moduleSubMenuLiTarget2?: string;
@@ -23,24 +28,26 @@ function MenuNavRoot(Props: MenuNavRootProps) {
     moduleMenuLink, moduleSubMenuUl, 
     moduleSubMenuLi, moduleSubMenuLink, 
     moduleSpanPortraits, moduleSubMenuPortraits, 
-    moduleSubMenuLiTarget1, moduleSubMenuLiTarget2,
-    moduleSubMenuLiTarget3, moduleSubMenuLiTarget4,
+    moduleMenuLiTarget1, moduleMenuLiTarget2, 
+    moduleMenuLiTarget3, moduleMenuLiTarget4, 
+    moduleSubMenuLiTarget1, moduleSubMenuLiTarget2, 
+    moduleSubMenuLiTarget3, moduleSubMenuLiTarget4, 
     moduleButtonSubMenu } = Props;
 
   const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
 
   return (
     <ul className={moduleMenuUl}>
-      <li className={moduleMenuLi}>
+      <li className={`${moduleMenuLi} ${moduleMenuLiTarget1}`}>
         <Link to="/actualite" className={moduleMenuLink}>Actualité</Link>
       </li>
 
-      <li className={moduleMenuLi}>
+      <li className={`${moduleMenuLi} ${moduleMenuLiTarget2}`}>
         <Link to="/mariage" className={moduleMenuLink}>Mariage</Link>
       </li>
 
       {/* Menu déroulant pour Portraits */}
-      <li className={moduleMenuLi} onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}>
+      <li className={`${moduleMenuLi} ${moduleMenuLiTarget3}`} onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}>
         <span className={`${moduleMenuLink} ${moduleSubMenuPortraits}`}>
           Portraits <span className={moduleSpanPortraits}>▼</span>
         </span>
@@ -64,7 +71,7 @@ function MenuNavRoot(Props: MenuNavRootProps) {
         )}
       </li>
 
-      <li className={moduleMenuLi}>
+      <li className={`${moduleMenuLi} ${moduleMenuLiTarget4}`}>
         <Link to="/tarifs" className={moduleMenuLink}>Tarifs</Link>
       </li>
     </ul>
