@@ -42,6 +42,10 @@ from "../NavPC/NavPC.tsx"
     }
 }
 
+.SpanPortraitsMobile {
+    font-size: var(--h6);
+}
+
 /* Sous menu de Portraits*/
 .SubMenuUlMobile {
     list-style: none;
