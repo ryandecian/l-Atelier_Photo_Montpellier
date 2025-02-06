@@ -285,17 +285,18 @@
 }
 
 .sideNav {
-    width: 250px;
+    /* width: 250px; */
     height: 100%;
     position: fixed;
     z-index: var(--z-index_10);
     top: 0;
     right: -250px;
-    background-color: var(--BackgroudMenuBurger);
+    background-color: var(--ColorPrincipal); /*-------------------------------------------------*/
     transition: right 0.5s ease;
     box-shadow: var(--box-shadow);
+    border-left: 1px solid var(--borderWhite);
 }
-@media (max-width: 250px) {
+/* @media (max-width: 250px) {
     .sideNav {
         width: 100vw;
         height: 100vh;
@@ -306,7 +307,7 @@
         width: 250px;
         height: 100%;
     }
-}
+} */
 
 .sideNav.active {
     right: 0;
@@ -367,7 +368,7 @@
     display: block;
     width: 35px;
     height: 5px;
-    background-color: var(--textColorBlack);
+    background-color: var(--textColorWhite);
     margin: 0.5rem 0rem;
 }
 @media (max-width: 250px) {

@@ -18,18 +18,32 @@ from "../NavPC/NavPC.tsx"
     align-items: flex-start;
     list-style-type: none;
     padding: 0;
-    margin: 0px 0px 0px 1.5rem;
+    margin: 0px;
 }
 
 .MenuLiMobile {
-    margin: 0.5rem 0rem 0.5rem 0rem;
+    width: 100%;
+    padding: 10px 24px 10px 24px;
     cursor: pointer;
+}
+.MenuLiTarget1Mobile {
+    border-top: 1px solid var(--borderWhite);
+}
+.MenuLiTarget2Mobile {
+    border-top: 1px solid var(--borderWhite);
+}
+.MenuLiTarget3Mobile {
+    border-top: 1px solid var(--borderWhite);
+}
+.MenuLiTarget4Mobile {
+    border-top: 1px solid var(--borderWhite);
+    border-bottom: 1px solid var(--borderWhite);
 }
 
 .MenuLinkMobile {
     text-decoration: none;
     font-size: var(--h3);
-    color: var(--ColorPrincipal);
+    color: var(--ColorSecondaire); /*----------------------------------------------------------*/
 }
 @media (min-width: 0px) and (max-width: 400px) {
     .MenuLinkMobile {
@@ -49,27 +63,44 @@ from "../NavPC/NavPC.tsx"
 /* Sous menu de Portraits*/
 .SubMenuUlMobile {
     list-style: none;
-    padding-left: 1rem;
+    padding: 0px;
     margin: 0.5rem 0;
+}
+
+.ButtonSubMenuMobile {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: var(--z-index_-1);
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    background: none;
+    border: none;
+    outline: none;
 }
 
 .SubMenuLiMobile {
-    margin: 0.5rem 0;
+    padding: 6px 0px 6px 0px;
 }
+/* .SubMenuLiTarget1Mobile {}
+.SubMenuLiTarget2Mobile {}
+.SubMenuLiTarget3Mobile {}
+.SubMenuLiTarget4Mobile {} */
 
 .SubMenuLinkMobile {
-    font-size: calc(var(--h3) - 1px);
-    color: var(--ColorPrincipal);
+    font-size: var(--h4);
+    color: var(--ColorSecondaire); /*-----------------------------------------------------*/
     text-decoration: none;
 }
 @media (min-width: 0px) and (max-width: 300px) {
     .SubMenuLinkMobile {
-        font-size: calc(var(--h5) - 1px);
+        font-size: var(--h6);
     }
 }
 @media (min-width: 300px) and (max-width: 400px) {
     .SubMenuLinkMobile {
-        font-size: calc(var(--h4) - 1px);
+        font-size: var(--h5);
     }
 }
 
@@ -124,7 +155,7 @@ from "../NavPC/NavPC.tsx"
     position: fixed;
     top: 0px;
     left: 0px;
-    z-index: var(--z-index_4);
+    z-index: var(--z-index_-1);
     width: 100vw;
     height: 100vh;
     background-color: transparent;
