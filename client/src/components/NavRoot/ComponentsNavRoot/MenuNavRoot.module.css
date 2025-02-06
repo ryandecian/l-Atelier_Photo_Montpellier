@@ -42,6 +42,10 @@ from "../NavPC/NavPC.tsx"
     }
 }
 
+.SpanPortraitsMobile {
+    font-size: var(--h6);
+}
+
 /* Sous menu de Portraits*/
 .SubMenuUlMobile {
     list-style: none;
@@ -75,6 +79,7 @@ from "../NavPC/NavPC.tsx"
 .MenuUlPC {
     display: flex;
     justify-content: space-between;
+    position: relative;
     padding: 0;
     width: 80%;
 }
@@ -96,21 +101,52 @@ from "../NavPC/NavPC.tsx"
     color: white; /* Change la couleur en blanc */
 }
 
+.SubMenuPortraitsPC {
+    position: relative;
+    z-index: 2; /* Assure que le lien est au-dessus du sous-menu */
+    cursor: pointer;
+}
+
+.SpanPortraitsPC {
+    font-size: var(--h6);
+}
+
 /* Sous menu de Portraits*/
 .SubMenuUlPC {
+    position: absolute;
     list-style: none;
-    padding-left: 1rem;
-    margin: 0.5rem 0;
+    margin: 8px 0px 8px 0px;
+    padding: 0;
+    box-shadow: var(--box-shadow);
 }
 
 .SubMenuLiPC {
-    margin: 0.5rem 0;
+    padding: 4px 16px 4px 16px;
+    background-color: var(--ColorPrincipal);
+}
+.SubMenuLiTarget1PC {
+    border-top: 1.5px solid var(--borderWhite);
+    border-left: 1.5px solid var(--borderWhite);
+    border-right: 1.5px solid var(--borderWhite);
+}
+.SubMenuLiTarget2PC {
+    border-top: 1.5px solid var(--borderWhite);
+    border-left: 1.5px solid var(--borderWhite);
+    border-right: 1.5px solid var(--borderWhite);
+}
+.SubMenuLiTarget3PC {
+    border-top: 1.5px solid var(--borderWhite);
+    border-left: 1.5px solid var(--borderWhite);
+    border-right: 1.5px solid var(--borderWhite);
+}
+.SubMenuLiTarget4PC {
+    border: 1.5px solid var(--borderWhite);
 }
 
 .SubMenuLinkPC {
     display: inline-block;
     font-size: var(--h5);
-    color: var(--ColorPrincipal);
+    color: var(--ColorSecondaire);
     text-decoration: none;
     transition: color 0.2s ease;
 }

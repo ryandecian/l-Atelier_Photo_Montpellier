@@ -10,6 +10,9 @@
          --backgroundBlack: black;
          --backgroundWhite: white;
 
+    /* Couleur des border */
+         --borderWhite: white;
+
     /* Autre paramètre de dépendance */
          --box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
 
