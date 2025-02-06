@@ -43,7 +43,11 @@
          --h8: calc(var(--font-size-root) - 8px); /*8px*/
 
     /* Liste des Z-index */
-         --z-index: 1; /**/
+         --z-index_-2: -2; /* NavMobile.css et NavPC.css : Même logique : Background en lien avec l'opacité de l'img vague */
+         --z-index_-1: -1; /* NavMobile.css et NavPC : Même logique : Img de vague transparent */
+         --z-index_5: 5; /* MenuNavRoot.module.css : Etage du sous-menu de Portrait dans NavPC via des props */
+         --z-index_9: 9; /* NavMobile.css : Bouton-écran de fermeture MenuBurger div = viewport */
+         --z-index_10: 10; /* NavMobile.css : Position du MenuBurger */
 }
 
 body {

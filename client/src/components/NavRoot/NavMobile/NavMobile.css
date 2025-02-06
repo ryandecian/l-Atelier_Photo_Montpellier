@@ -24,11 +24,11 @@
     background-repeat: repeat;
     background-position: start;
     opacity: 0.5; /* Opacité souhaitée (0 à 1) */
-    z-index: -1; /* Place l'image de fond derrière le contenu */
+    z-index: var(--z-index_-1); /* Place l'image de fond derrière le contenu */
 }
 
 .BackgroundNavMobile {
-    z-index: -2;
+    z-index: var(--z-index_-2);
     position: fixed;
     width: 100%;
     height: 170px;
@@ -274,7 +274,7 @@
     border: 0px;
     margin: 0px;
     position: fixed;
-    z-index: 9;
+    z-index: var(--z-index_9);
     top: 0;
     left: -100vw;
     background-color: transparent;
@@ -288,7 +288,7 @@
     width: 250px;
     height: 100%;
     position: fixed;
-    z-index: 10;
+    z-index: var(--z-index_10);
     top: 0;
     right: -250px;
     background-color: var(--BackgroudMenuBurger);
