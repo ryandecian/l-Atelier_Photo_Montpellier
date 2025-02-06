@@ -96,6 +96,10 @@ from "../NavPC/NavPC.tsx"
     color: white; /* Change la couleur en blanc */
 }
 
+.SpanPortraitsPC {
+    font-size: var(--h6);
+}
+
 /* Sous menu de Portraits*/
 .SubMenuUlPC {
     list-style: none;
