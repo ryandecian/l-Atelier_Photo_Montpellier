@@ -22,7 +22,7 @@ from "../NavPC/NavPC.tsx"
 }
 
 .MenuLiMobile {
-    margin: 0.5rem 0rem 0.5rem 0rem;
+    margin: 10px 0px 10px 0px;
     cursor: pointer;
 }
 
@@ -49,27 +49,44 @@ from "../NavPC/NavPC.tsx"
 /* Sous menu de Portraits*/
 .SubMenuUlMobile {
     list-style: none;
-    padding-left: 1rem;
+    padding: 0px;
     margin: 0.5rem 0;
+}
+
+.ButtonSubMenuMobile {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: var(--z-index_4);
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    background: none;
+    border: none;
+    outline: none;
 }
 
 .SubMenuLiMobile {
-    margin: 0.5rem 0;
+    padding: 6px 0px 6px 0px;
 }
+.SubMenuLiTarget1Mobile {}
+.SubMenuLiTarget2Mobile {}
+.SubMenuLiTarget3Mobile {}
+.SubMenuLiTarget4Mobile {}
 
 .SubMenuLinkMobile {
-    font-size: calc(var(--h3) - 1px);
+    font-size: var(--h4);
     color: var(--ColorPrincipal);
     text-decoration: none;
 }
 @media (min-width: 0px) and (max-width: 300px) {
     .SubMenuLinkMobile {
-        font-size: calc(var(--h5) - 1px);
+        font-size: var(--h6);
     }
 }
 @media (min-width: 300px) and (max-width: 400px) {
     .SubMenuLinkMobile {
-        font-size: calc(var(--h4) - 1px);
+        font-size: var(--h5);
     }
 }
 

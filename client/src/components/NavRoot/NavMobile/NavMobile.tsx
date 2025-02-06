@@ -64,6 +64,12 @@ function NavMobile() {
                          moduleSubMenuLi={style.SubMenuLiMobile}
                          moduleSubMenuLink={style.SubMenuLinkMobile}
                          moduleSpanPortraits={style.SpanPortraitsMobile}
+
+                         moduleButtonSubMenu={style.ButtonSubMenuMobile}
+                         moduleSubMenuLiTarget1={style.SubMenuLiTarget1Mobile}
+                         moduleSubMenuLiTarget2={style.SubMenuLiTarget2Mobile}
+                         moduleSubMenuLiTarget3={style.SubMenuLiTarget3Mobile}
+                         moduleSubMenuLiTarget4={style.SubMenuLiTarget4Mobile}
                      />
 
 
