@@ -31,16 +31,23 @@
 
          
     /*Logique taille police d'écriture site*/
-    --font-size-root: 16px; /*Ref size, dimensionne tout le site*/
-    --p: var(--font-size-root); /*16px*/
-    --h1: calc(var(--font-size-root) * 2); /*32px*/
-    --h2: calc(var(--font-size-root) * 1.5); /*24px*/
-    --h3: calc(var(--font-size-root) + 2px); /*18px*/
-    --h4: var(--font-size-root); /*16px*/
-    --h5: calc(var(--font-size-root) - 2px); /*14px*/
-    --h6: calc(var(--font-size-root) - 5px); /*11px*/
-    --h7: calc(var(--font-size-root) - 7px); /*9px*/
-    --h8: calc(var(--font-size-root) - 8px); /*8px*/
+         --font-size-root: 16px; /*Ref size, dimensionne tout le site*/
+         --p: var(--font-size-root); /*16px*/
+         --h1: calc(var(--font-size-root) * 2); /*32px*/
+         --h2: calc(var(--font-size-root) * 1.5); /*24px*/
+         --h3: calc(var(--font-size-root) + 2px); /*18px*/
+         --h4: var(--font-size-root); /*16px*/
+         --h5: calc(var(--font-size-root) - 2px); /*14px*/
+         --h6: calc(var(--font-size-root) - 5px); /*11px*/
+         --h7: calc(var(--font-size-root) - 7px); /*9px*/
+         --h8: calc(var(--font-size-root) - 8px); /*8px*/
+
+    /* Liste des Z-index */
+         --z-index_-2: -2; /* NavMobile.css et NavPC.css : Même logique : Background en lien avec l'opacité de l'img vague */
+         --z-index_-1: -1; /* NavMobile.css et NavPC : Même logique : Img de vague transparent */
+         --z-index_5: 5; /* MenuNavRoot.module.css : Etage du sous-menu de Portrait dans NavPC via des props */
+         --z-index_9: 9; /* NavMobile.css : Bouton-écran de fermeture MenuBurger div = viewport */
+         --z-index_10: 10; /* NavMobile.css : Position du MenuBurger */
 }
 
 body {
