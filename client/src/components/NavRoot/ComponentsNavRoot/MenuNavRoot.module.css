@@ -155,7 +155,7 @@ from "../NavPC/NavPC.tsx"
     position: fixed;
     top: 0px;
     left: 0px;
-    z-index: var(--z-index_4);
+    z-index: var(--z-index_-1);
     width: 100vw;
     height: 100vh;
     background-color: transparent;
