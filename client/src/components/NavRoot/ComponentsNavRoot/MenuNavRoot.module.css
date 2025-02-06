@@ -120,6 +120,19 @@ from "../NavPC/NavPC.tsx"
     box-shadow: var(--box-shadow);
 }
 
+.ButtonSubMenuPC {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: var(--z-index_4);
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    background: none;
+    border: none;
+    outline: none;
+}
+
 .SubMenuLiPC {
     padding: 4px 16px 4px 16px;
     background-color: var(--ColorPrincipal);
