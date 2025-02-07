@@ -48,10 +48,12 @@ interface UserType {
     password: string;
     date_save: string;
 }
+
 app.post("/login", async(req: Request, res: Response) => {
     try {
         const connection = await useConnection;
         const [results] = await connection.query<UserType[] & RowDataPacket[]>
+        // ? est remplacé par [req.body.email] ce qui protège des injections SQL
         ("SELECT * FROM user WHERE email= ?", [req.body.email]);
         if (results.length !== 0) {
             res.status(200).json({ Reponse: "Il existe !", data: results})
