@@ -27,23 +27,23 @@ from "../NavPC/NavPC.tsx"
     cursor: pointer;
 }
 .MenuLiTarget1Mobile {
-    border-top: 1px solid var(--borderWhite);
+    border-top: 1px solid var(--ColorBorderMenuBurger);
 }
 .MenuLiTarget2Mobile {
-    border-top: 1px solid var(--borderWhite);
+    border-top: 1px solid var(--ColorBorderMenuBurger);
 }
 .MenuLiTarget3Mobile {
-    border-top: 1px solid var(--borderWhite);
+    border-top: 1px solid var(--ColorBorderMenuBurger);
 }
 .MenuLiTarget4Mobile {
-    border-top: 1px solid var(--borderWhite);
-    border-bottom: 1px solid var(--borderWhite);
+    border-top: 1px solid var(--ColorBorderMenuBurger);
+    border-bottom: 1px solid var(--ColorBorderMenuBurger);
 }
 
 .MenuLinkMobile {
     text-decoration: none;
     font-size: var(--h3);
-    color: var(--ColorSecondaire); /*----------------------------------------------------------*/
+    color: var(--ColorTexteMenuBurger); /*----------------------------------------------------------*/
 }
 @media (min-width: 0px) and (max-width: 400px) {
     .MenuLinkMobile {
@@ -90,7 +90,7 @@ from "../NavPC/NavPC.tsx"
 
 .SubMenuLinkMobile {
     font-size: var(--h4);
-    color: var(--ColorSecondaire); /*-----------------------------------------------------*/
+    color: var(--ColorTexteMenuBurger); /*-----------------------------------------------------*/
     text-decoration: none;
 }
 @media (min-width: 0px) and (max-width: 300px) {
