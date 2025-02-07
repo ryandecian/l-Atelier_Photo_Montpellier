@@ -1,4 +1,5 @@
 import express, { Request, Response } from "express";
+import { useConnection } from "./database/config";
 
 const app = express();
 const port = 8080;
