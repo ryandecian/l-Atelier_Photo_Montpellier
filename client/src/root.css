@@ -48,6 +48,11 @@
          --z-index_5: 5; /* MenuNavRoot.module.css : Etage du sous-menu de Portrait dans NavPC via des props */
          --z-index_9: 9; /* NavMobile.css : Bouton-écran de fermeture MenuBurger div = viewport */
          --z-index_10: 10; /* NavMobile.css : Position du MenuBurger */
+
+    /* Personalisation du MenuBurger */
+         --BackgroundMenuBurger: var(--ColorPrincipal);
+         --ColorTexteMenuBurger: var(--ColorSecondaire);
+         --ColorBorderMenuBurger: white;
 }
 
 body {
