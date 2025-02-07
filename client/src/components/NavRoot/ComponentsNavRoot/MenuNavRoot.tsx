@@ -39,7 +39,7 @@ function MenuNavRoot(Props: MenuNavRootProps) {
   return (
     <ul className={moduleMenuUl}>
       <li className={`${moduleMenuLi} ${moduleMenuLiTarget1}`}>
-        <Link to="/actualite" className={moduleMenuLink}>Actualité</Link>
+        <Link to="/actualite" className={moduleMenuLink}>Actualités</Link>
       </li>
 
       <li className={`${moduleMenuLi} ${moduleMenuLiTarget2}`}>
