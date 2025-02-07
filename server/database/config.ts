@@ -26,5 +26,7 @@ async function createConnection() {
   }
 }
 
-// Export d'une promesse de connexion
-export const dbConnection = createConnection();
+// Export d'une promesse de connexion (utilisation de la même connection a chaque fois)
+export const useConnection = createConnection();
+// Export de la fonction de connection qui crée une nouvelle connection a chaque utilisation
+export default createConnection;
