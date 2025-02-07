@@ -1,5 +1,6 @@
 import express, { Request, Response } from "express";
 import { useConnection } from "./database/config";
+import { RowDataPacket } from "mysql2";
 
 const app = express();
 const port = 8080;
@@ -42,12 +43,16 @@ interface UserType {
     id: number;
     firstname: string;
     lastname: string;
+    adress: string;
     email: string
+    password: string;
+    date_save: string;
 }
 app.post("/login", async(req: Request, res: Response) => {
     try {
         const connection = await useConnection;
-        const [results] = await connection.query("SELECT * FROM user WHERE email= ?", [req.body.email]) as any[];
+        const [results] = await connection.query<UserType[] & RowDataPacket[]>
+        ("SELECT * FROM user WHERE email= ?", [req.body.email]);
         if (results.length !== 0) {
             res.status(200).json({ Reponse: "Il existe !", data: results})
         }
