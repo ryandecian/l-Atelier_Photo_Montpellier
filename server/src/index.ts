@@ -53,33 +53,45 @@ interface registerType {
 app.post("/register", async (req: Request, res: Response): Promise<void> => {
     let connection;
     try {
+        // Vérification 1 : Toutes les Keys sont présentes ?
+        const registerKeys = ["firstname", "lastname", "email", "password"];
+        const controlKeys = registerKeys.filter(keys => !req.body[keys]);
+
+        // Si il manque une seul Keys ou que le champs d'une Keys obligatoire est vide ou null, renvois une erreur
+        if (controlKeys.length > 0) {
+            res.status(400).json({ reponse: "La syntaxe de la requête est erronée." })
+        }
+
+        // Si les conditions précédantes sont ok, lance une connection a la DB
         connection = await useComplexConnection();
 
+        // Vérification 2 : l'email reçu existe t-il dans la DB ?
         const [dataUser] = await connection.query<RowDataPacket[]>(
             "SELECT * FROM user WHERE email= ?",
             [req.body.email]
         );
 
+        // Si l'email existe sa dégage, on arrête l'exécution
         if (dataUser.length > 0) {
             res.status(409).json({ reponse: "Cet email est déjà utilisé. Veuillez en choisir un autre.", server: dataUser });
             return;
         }
 
-        else if (dataUser.length === 0) {
-            connection = await useComplexConnection();
-            const [results] = await connection.query<ResultSetHeader>(
-                "INSERT INTO user (firstname, lastname, address, email, password) VALUES (?, ?, ?, ?, ?)",
-                [req.body.firstname, req.body.lastname, req.body.address, req.body.email, req.body.password],
-            );
+        // Si les conditions précédantes sont ok, envois les infos a la DB pour écriture
+        const [results] = await connection.query<ResultSetHeader>(
+            "INSERT INTO user (firstname, lastname, address, email, password) VALUES (?, ?, ?, ?, ?)",
+            [req.body.firstname, req.body.lastname, req.body.address, req.body.email, req.body.password],
+        );
 
-            if (results.affectedRows === 0) {
-                res.status(400).json({ reponse: "La synthaxe de la requête est erronée"});
-                return;
-            }
-            else {
-                res.status(201).json({ reponse: "Enregistrement ok", data: results});
-                return;
-            }
+        // Vérification 3 : Si la DB ne rejete pas les données
+        if (results.affectedRows === 0) {
+            res.status(400).json({ reponse: "La requête a été rejeté par la base de donnée"});
+            return;
+        }
+
+        else {
+            res.status(201).json({ reponse: "Enregistrement accepté", data: results});
+            return;
         }
     }
     catch (error) {
