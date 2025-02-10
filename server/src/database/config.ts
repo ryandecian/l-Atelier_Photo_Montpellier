@@ -24,8 +24,10 @@ function initializePool() {
                 queueLimit: 0 // ✅ Aucune limite d'attente (les requêtes attendent leur tour)
             });
 
-            console.log("✅ Pool de connexions MySQL créé avec succès !");
-        } catch (error) {
+             console.log("✅ Pool de connexions MySQL créé avec succès !");
+        }
+
+        catch (error) {
             console.error("❌ Erreur lors de la création du pool MySQL :", error);
             throw error; // 🔥 Permet de stopper l'application si le pool ne peut pas être créé
         }
@@ -34,7 +36,7 @@ function initializePool() {
 }
 
 /**
- * ✅ Fonction pour récupérer une connexion du pool avec `try/catch`
+ * Fonction pour récupérer une connexion du pool avec `try/catch`
  */
 export async function useComplexConnection() {
     if (!pool) {
@@ -58,7 +60,7 @@ export default usePoolConnection;
 /* Note d'utilisation : */
 
 // usePoolConnection
-   //Utilisation pour des requête simple comme : 
+   // Utilisation pour des requête simple comme : 
    // SELECT avec ou sans WHERE, INSERT, UPDATE, DELETE
 
 // useComplexConnection
@@ -66,6 +68,6 @@ export default usePoolConnection;
    // Permet une utilisation manuel d'une des 10 connections possible dans le pool
    // Il est cependant necessaire de refermer la connection avec : 
 
-     // } finally {
-     //    if (connection) connection.release(); // ✅ Toujours libérer la connexion
-     // }
+    //  finally {
+    //     if (connection) connection.release(); // ✅ Toujours libérer la connexion
+    //  }
