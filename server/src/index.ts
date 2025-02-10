@@ -41,15 +41,6 @@ app.post("/", (req: Request, res: Response) => {
  * Action callBack
  * Methode: POST
  */
-interface registerType {
-    id: number;
-    firstname: string;
-    lastname: string;
-    address: string;
-    email: string
-    password: string;
-    date_save: string;
-}
 app.post("/register", async (req: Request, res: Response): Promise<void> => {
     let connection;
     try {
