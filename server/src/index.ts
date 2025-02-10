@@ -93,20 +93,10 @@ app.post("/register", async (req: Request, res: Response): Promise<void> => {
  * Action callBack
  * Methode: POST
  */
-interface UserType {
-    id: number;
-    firstname: string;
-    lastname: string;
-    address: string;
-    email: string
-    password: string;
-    date_save: string;
-}
-
 app.post("/login", async (req: Request, res: Response):Promise<void> => {
     try {
         const connection = await usePoolConnection;
-        const [results] = await connection.query<UserType[] & RowDataPacket[]>(
+        const [results] = await connection.query<RowDataPacket[]>(
             "SELECT * FROM user WHERE email= ?", 
             [req.body.email]
         );
