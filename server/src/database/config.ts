@@ -32,6 +32,11 @@ function createConnection() {
       throw error;
     }
   }
+
+  else {
+    console.log("✅ Pool de connexions MySQL déjà créé !")
+  }
+
   return pool;
 }
 
