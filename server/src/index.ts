@@ -1,5 +1,6 @@
 import express, { query, Request, Response } from "express";
-import { usePoolConnection } from "./database/config";
+import usePoolConnection from "./database/config";
+import { useComplexConnection } from "./database/config";
 import { ResultSetHeader, RowDataPacket } from "mysql2";
 import { promises } from "dns";
 
