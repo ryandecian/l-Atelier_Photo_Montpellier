@@ -95,6 +95,7 @@ app.post("/register", async (req: Request, res: Response): Promise<void> => {
  */
 app.post("/login", async (req: Request, res: Response):Promise<void> => {
     try {
+        const registerKeys = ["email", "password"];
         const connection = await usePoolConnection;
         const [results] = await connection.query<RowDataPacket[]>(
             "SELECT * FROM user WHERE email= ?", 
