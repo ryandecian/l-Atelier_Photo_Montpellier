@@ -94,6 +94,7 @@ app.post("/login", async (req: Request, res: Response):Promise<void> => {
     catch (error) {
         console.error("Erreur lors de la requête SQL :", error);
         res.status(500).json({ error: "Erreur lors de l'accès à la base de données." });
+        throw error; // Propage l'erreur pour mieux la gérer
         return;
     }
 });
