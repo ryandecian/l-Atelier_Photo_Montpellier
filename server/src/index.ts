@@ -95,7 +95,16 @@ app.post("/register", async (req: Request, res: Response): Promise<void> => {
  */
 app.post("/login", async (req: Request, res: Response):Promise<void> => {
     try {
-        const registerKeys = ["email", "password"];
+        // ✅ Vérification 1 : Toutes les Keys sont présentes ?
+        const registerKeys = ["firstname", "lastname", "email", "password"];
+        const controlKeys = registerKeys.filter(keys => !req.body[keys]);
+
+        // ✅ Si il manque une seul Keys ou que le champs d'une Keys obligatoire est vide ou null, renvois une erreur
+        if (controlKeys.length > 0) {
+            res.status(400).json({ reponse: "La syntaxe de la requête est erronée." });
+            return;
+        }
+        
         const connection = await usePoolConnection;
         const [results] = await connection.query<RowDataPacket[]>(
             "SELECT * FROM user WHERE email= ?", 
