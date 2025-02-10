@@ -51,26 +51,44 @@ interface registerType {
     date_save: string;
 }
 app.post("/register", async (req: Request, res: Response): Promise<void> => {
+    let connection;
     try {
-        const connection = await usePoolConnection;
-        const [results] = await connection.query<ResultSetHeader>(
-            "INSERT INTO user (firstname, lastname, address, email, password) VALUES (?, ?, ?, ?, ?)",
-            [req.body.firstname, req.body.lastname, req.body.address, req.body.email, req.body.password],
+        connection = await useComplexConnection();
+
+        const [dataUser] = await connection.query<RowDataPacket[]>(
+            "SELECT * FROM user WHERE email= ?",
+            [req.body.email]
         );
 
-        if (results.affectedRows === 0) {
-            res.status(400).json({ reponse: "La synthaxe de la requête est erronée"});
+        if (dataUser.length > 0) {
+            res.status(409).json({ reponse: "Cet email est déjà utilisé. Veuillez en choisir un autre.", server: dataUser });
             return;
         }
-        else {
-            res.status(201).json({ reponse: "Enregistrement ok", data: results});
-            return;
+
+        else if (dataUser.length === 0) {
+            connection = await useComplexConnection();
+            const [results] = await connection.query<ResultSetHeader>(
+                "INSERT INTO user (firstname, lastname, address, email, password) VALUES (?, ?, ?, ?, ?)",
+                [req.body.firstname, req.body.lastname, req.body.address, req.body.email, req.body.password],
+            );
+
+            if (results.affectedRows === 0) {
+                res.status(400).json({ reponse: "La synthaxe de la requête est erronée"});
+                return;
+            }
+            else {
+                res.status(201).json({ reponse: "Enregistrement ok", data: results});
+                return;
+            }
         }
     }
     catch (error) {
         console.error ("Erreur lors de la requête SQL :", error);
         res.status(500).json({ error: "Erreur lors de l'accès à la base de données." });
         return;
+    }
+    finally {
+        if (connection) connection.release();
     }
 })
 
