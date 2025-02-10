@@ -31,7 +31,7 @@ app.get("/", (req: Request, res: Response) => {
  * Methode: POST
  */
 app.post("/", (req: Request, res: Response) => {
-    res.status(502).json({ Reponse: "Requête invalide !", data: req.body })
+    res.status(502).json({ reponse: "Requête invalide !", data: req.body })
 })
 
 /**
@@ -58,11 +58,11 @@ app.post("/register", async (req: Request, res: Response): Promise<void> => {
         );
 
         if (results.affectedRows === 0) {
-            res.status(400).json({ Reponse: "La synthaxe de la requête est erronée"});
+            res.status(400).json({ reponse: "La synthaxe de la requête est erronée"});
             return;
         }
         else {
-            res.status(201).json({ Reponse: "Enregistrement ok", data: results});
+            res.status(201).json({ reponse: "Enregistrement ok", data: results});
             return;
         }
     }
@@ -98,7 +98,7 @@ app.post("/login", async (req: Request, res: Response):Promise<void> => {
         );
 
         if (results.length === 0) {
-            res.status(404).json({ Reponse: "Email n'existe pas dans la DB" });
+            res.status(404).json({ reponse: "Email n'existe pas dans la DB" });
             return;
         }
         else {
@@ -106,7 +106,7 @@ app.post("/login", async (req: Request, res: Response):Promise<void> => {
                 res.status(200).json({ response: "Il existe !!", data: results, envois: req.body });
                 return;
             } else {
-                res.status(401).json({ Reponse: "Mot de passe incorrect" });
+                res.status(401).json({ reponse: "Mot de passe incorrect" });
                 return;
             }
         }
