@@ -50,26 +50,6 @@ interface UserType {
     date_save: string;
 }
 
-// app.post("/login", async(req: Request, res: Response) => {
-//     try {
-//         const connection = await useConnection;
-//         const [results] = await connection.query<UserType[] & RowDataPacket[]>
-//         // ? est remplacé par [req.body.email] ce qui protège des injections SQL
-//         ("SELECT * FROM user WHERE email= ?", [req.body.email]);
-//         if (results.length !== 0) {
-//             res.status(200).json({ Reponse: "Il existe !", data: results})
-//         }
-//         else {
-//         res.status(404).json({ response: "il n'existe pas" })}
-//     }
-    
-//     catch (error) {
-//         console.error("Erreur lors de la requête SQL :", error)
-//         res.status(500).json({ error: "Erreur lors de l'accès à la base de données." })
-//         throw error;
-//     }
-// })
-
 app.post("/login", async (req: Request, res: Response):Promise<void> => {
     try {
         const connection = await useConnection;
@@ -82,7 +62,7 @@ app.post("/login", async (req: Request, res: Response):Promise<void> => {
             res.status(404).json({ Reponse: "Email n'existe pas dans la DB" });
             return;
         } else {
-            if (results[0].email === req.body.email && results[0].password === req.body.password) {
+            if (results[0].password === req.body.password) {
                 res.status(200).json({ response: "Il existe !!", data: results, envois: req.body });
                 return;
             } else {
