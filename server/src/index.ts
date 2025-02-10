@@ -42,7 +42,6 @@ app.post("/", (req: Request, res: Response) => {
  * Methode: POST
  */
 app.post("/register", async (req: Request, res: Response): Promise<void> => {
-    let connection;
     try {
         // ✅ Vérification 1 : Toutes les Keys sont présentes ?
         const registerKeys = ["firstname", "lastname", "email", "password"];
@@ -54,11 +53,8 @@ app.post("/register", async (req: Request, res: Response): Promise<void> => {
             return;
         }
 
-        // ✅ Si les conditions précédantes sont ok, lance une connection a la DB
-        connection = await useComplexConnection();
-
         // ✅ Vérification 2 : l'email reçu existe t-il dans la DB ?
-        const [dataUser] = await connection.query<RowDataPacket[]>(
+        const [dataUser] = await usePoolConnection.query<RowDataPacket[]>(
             "SELECT * FROM user WHERE email= ?",
             [req.body.email]
         );
@@ -70,7 +66,7 @@ app.post("/register", async (req: Request, res: Response): Promise<void> => {
         }
 
         // ✅ Si les conditions précédantes sont ok, envois les infos a la DB pour écriture
-        const [results] = await connection.query<ResultSetHeader>(
+        const [results] = await usePoolConnection.query<ResultSetHeader>(
             "INSERT INTO user (firstname, lastname, address, email, password) VALUES (?, ?, ?, ?, ?)",
             [req.body.firstname, req.body.lastname, req.body.address, req.body.email, req.body.password],
         );
@@ -88,9 +84,6 @@ app.post("/register", async (req: Request, res: Response): Promise<void> => {
         console.error ("Erreur lors de la requête SQL :", error);
         res.status(500).json({ error: "Erreur lors de l'accès à la base de données." });
         return;
-    }
-    finally {
-        if (connection) connection.release();
     }
 })
 
