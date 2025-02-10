@@ -1,5 +1,5 @@
 import express, { query, Request, Response } from "express";
-import { useConnection } from "./database/config";
+import { usePoolConnection } from "./database/config";
 import { ResultSetHeader, RowDataPacket } from "mysql2";
 import { promises } from "dns";
 
@@ -51,7 +51,7 @@ interface registerType {
 }
 app.post("/register", async (req: Request, res: Response): Promise<void> => {
     try {
-        const connection = await useConnection;
+        const connection = await usePoolConnection;
         const [results] = await connection.query<ResultSetHeader>(
             "INSERT INTO user (firstname, lastname, address, email, password) VALUES (?, ?, ?, ?, ?)",
             [req.body.firstname, req.body.lastname, req.body.address, req.body.email, req.body.password],
@@ -91,7 +91,7 @@ interface UserType {
 
 app.post("/login", async (req: Request, res: Response):Promise<void> => {
     try {
-        const connection = await useConnection;
+        const connection = await usePoolConnection;
         const [results] = await connection.query<UserType[] & RowDataPacket[]>(
             "SELECT * FROM user WHERE email= ?", 
             [req.body.email]
