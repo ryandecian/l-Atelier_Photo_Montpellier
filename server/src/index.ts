@@ -81,8 +81,8 @@ app.post("/register", async (req: Request, res: Response): Promise<void> => {
         res.status(201).json({ reponse: "Enregistrement accepté", data: results});
     }
     catch (error) {
-        console.error ("Erreur lors de la requête SQL :", error);
-        res.status(500).json({ error: "Erreur lors de l'accès à la base de données." });
+        console.error("Erreur interne dans le serveur :", error);
+        res.status(500).json({ error: "Erreur interne serveur." });
         return;
     }
 })
@@ -130,7 +130,7 @@ app.post("/login", async (req: Request, res: Response):Promise<void> => {
     } 
     catch (error) {
         console.error("Erreur interne dans le serveur :", error);
-        res.status(500).json({ error: "Erreur interne non gérée par le serveur." });
+        res.status(500).json({ error: "Erreur interne serveur." });
         return;
     }
 });

@@ -5,8 +5,8 @@ import { Request, Response, NextFunction } from "express";
 async function HashPassword( req: Request, res: Response, next: NextFunction) {
     try {}
     catch (error) {
-        console.error ("Erreur lors de la requête SQL :", error);
-        res.status(500).json({ error: "Erreur lors de l'accès à la base de données." });
+        console.error("Erreur interne dans le serveur :", error);
+        res.status(500).json({ error: "Erreur interne serveur." });
         return;
     }
 }
