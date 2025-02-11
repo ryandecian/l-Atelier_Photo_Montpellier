@@ -99,7 +99,7 @@ app.post("/register", HashPassword, async (req: Request, res: Response): Promise
  * Action callBack
  * Methode: POST
  */
-app.post("/login", async (req: Request, res: Response):Promise<void> => {
+app.post("/login", HashPassword, async (req: Request, res: Response):Promise<void> => {
     try {
         // ✅ Vérification 1 : Toutes les Keys sont présentes ?
         const registerKeys = ["firstname", "lastname", "email", "password"];
