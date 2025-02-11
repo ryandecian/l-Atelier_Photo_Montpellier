@@ -1,7 +1,13 @@
+// Import général
 import express, { query, Request, Response } from "express";
+
+// Import pour SQL
 import usePoolConnection from "./database/config";
 import { useComplexConnection } from "./database/config";
 import { ResultSetHeader, RowDataPacket } from "mysql2";
+
+// Import des middleware
+import HashPassword from "./middleware/HashPassword";
 
 const app = express();
 const port = 8080;
