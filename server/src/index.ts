@@ -113,11 +113,11 @@ app.post("/login", async (req: Request, res: Response):Promise<void> => {
         );
 
         // ✅ Si l'email n'existe pas sa dégage, on arrête l'exécution
-        if (results.length === 0) {
-            res.status(404).json({ reponse: "Email n'existe pas dans la DB" });
+        if (results.length === 0) { /* Email reçu n'existe pas dans la DB */
+            res.status(404).json({ reponse: "Email ou mot de passe incorrect" });
             return;
         }
-        // ✅ Si l'email existe sa dégage, on compare le mot de passe
+        // ✅ Si l'email existe, on compare le mot de passe
         else {
             if (results[0].password === req.body.password) {
                 res.status(200).json({ response: "Il existe !!", data: results, envois: req.body });
@@ -129,8 +129,8 @@ app.post("/login", async (req: Request, res: Response):Promise<void> => {
         }
     } 
     catch (error) {
-        console.error("Erreur lors de la requête SQL :", error);
-        res.status(500).json({ error: "Erreur lors de l'accès à la base de données." });
+        console.error("Erreur interne dans le serveur :", error);
+        res.status(500).json({ error: "Erreur interne non gérée par le serveur." });
         return;
     }
 });
