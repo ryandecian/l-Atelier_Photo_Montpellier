@@ -104,23 +104,26 @@ app.post("/login", async (req: Request, res: Response):Promise<void> => {
             res.status(400).json({ reponse: "La syntaxe de la requête est erronée." });
             return;
         }
-        
+
+        // ✅ Vérification 2 : l'email reçu existe t-il dans la DB ?
         const connection = await usePoolConnection;
         const [results] = await connection.query<RowDataPacket[]>(
             "SELECT * FROM user WHERE email= ?", 
             [req.body.email]
         );
 
+        // ✅ Si l'email n'existe pas sa dégage, on arrête l'exécution
         if (results.length === 0) {
             res.status(404).json({ reponse: "Email n'existe pas dans la DB" });
             return;
         }
+        // ✅ Si l'email existe sa dégage, on compare le mot de passe
         else {
             if (results[0].password === req.body.password) {
                 res.status(200).json({ response: "Il existe !!", data: results, envois: req.body });
                 return;
             } else {
-                res.status(401).json({ reponse: "Mot de passe incorrect" });
+                res.status(401).json({ reponse: "Email ou mot de passe incorrect" });
                 return;
             }
         }
