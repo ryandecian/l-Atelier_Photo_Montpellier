@@ -6,7 +6,7 @@ import usePoolConnection from "./database/config";
 import { useComplexConnection } from "./database/config";
 import { ResultSetHeader, RowDataPacket } from "mysql2";
 
-// Import des middleware
+// Import des middlewares
 import HashPassword from "./middleware/HashPassword";
 
 const app = express();
@@ -47,7 +47,7 @@ app.post("/", (req: Request, res: Response) => {
  * Action callBack
  * Methode: POST
  */
-app.post("/register", async (req: Request, res: Response): Promise<void> => {
+app.post("/register", HashPassword, async (req: Request, res: Response): Promise<void> => {
     try {
         // ✅ Vérification 1 : Toutes les Keys sont présentes ?
         const registerKeys = ["firstname", "lastname", "email", "password"];
