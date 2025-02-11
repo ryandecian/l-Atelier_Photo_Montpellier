@@ -93,41 +93,44 @@ app.post("/register", async (req: Request, res: Response): Promise<void> => {
  * Action callBack
  * Methode: POST
  */
-interface UserType {
-    id: number;
-    firstname: string;
-    lastname: string;
-    address: string;
-    email: string
-    password: string;
-    date_save: string;
-}
-
 app.post("/login", async (req: Request, res: Response):Promise<void> => {
     try {
+        // ✅ Vérification 1 : Toutes les Keys sont présentes ?
+        const registerKeys = ["firstname", "lastname", "email", "password"];
+        const controlKeys = registerKeys.filter(keys => !req.body[keys]);
+
+        // ✅ Si il manque une seul Keys ou que le champs d'une Keys obligatoire est vide ou null, renvois une erreur
+        if (controlKeys.length > 0) {
+            res.status(400).json({ reponse: "La syntaxe de la requête est erronée." });
+            return;
+        }
+
+        // ✅ Vérification 2 : l'email reçu existe t-il dans la DB ?
         const connection = await usePoolConnection;
-        const [results] = await connection.query<UserType[] & RowDataPacket[]>(
+        const [results] = await connection.query<RowDataPacket[]>(
             "SELECT * FROM user WHERE email= ?", 
             [req.body.email]
         );
 
-        if (results.length === 0) {
-            res.status(404).json({ reponse: "Email n'existe pas dans la DB" });
+        // ✅ Si l'email n'existe pas sa dégage, on arrête l'exécution
+        if (results.length === 0) { /* Email reçu n'existe pas dans la DB */
+            res.status(404).json({ reponse: "Email ou mot de passe incorrect" });
             return;
         }
+        // ✅ Si l'email existe, on compare le mot de passe
         else {
             if (results[0].password === req.body.password) {
                 res.status(200).json({ response: "Il existe !!", data: results, envois: req.body });
                 return;
             } else {
-                res.status(401).json({ reponse: "Mot de passe incorrect" });
+                res.status(401).json({ reponse: "Email ou mot de passe incorrect" });
                 return;
             }
         }
     } 
     catch (error) {
-        console.error("Erreur lors de la requête SQL :", error);
-        res.status(500).json({ error: "Erreur lors de l'accès à la base de données." });
+        console.error("Erreur interne dans le serveur :", error);
+        res.status(500).json({ error: "Erreur interne non gérée par le serveur." });
         return;
     }
 });
