@@ -2,7 +2,6 @@ import express, { query, Request, Response } from "express";
 import usePoolConnection from "./database/config";
 import { useComplexConnection } from "./database/config";
 import { ResultSetHeader, RowDataPacket } from "mysql2";
-import { promises } from "dns";
 
 const app = express();
 const port = 8080;
@@ -38,6 +37,7 @@ app.post("/", (req: Request, res: Response) => {
 /**
  * Route de register
  * Path: /register
+ * middleware: HashPassword
  * Action callBack
  * Methode: POST
  */
