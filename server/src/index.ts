@@ -1,8 +1,13 @@
+// Import général
 import express, { query, Request, Response } from "express";
+
+// Import pour SQL
 import usePoolConnection from "./database/config";
 import { useComplexConnection } from "./database/config";
 import { ResultSetHeader, RowDataPacket } from "mysql2";
-import { promises } from "dns";
+
+// Import des middlewares
+import HashPassword from "./middleware/HashPassword";
 
 const app = express();
 const port = 8080;
@@ -38,10 +43,11 @@ app.post("/", (req: Request, res: Response) => {
 /**
  * Route de register
  * Path: /register
+ * middleware: HashPassword
  * Action callBack
  * Methode: POST
  */
-app.post("/register", async (req: Request, res: Response): Promise<void> => {
+app.post("/register", HashPassword, async (req: Request, res: Response): Promise<void> => {
     try {
         // ✅ Vérification 1 : Toutes les Keys sont présentes ?
         const registerKeys = ["firstname", "lastname", "email", "password"];
@@ -81,8 +87,8 @@ app.post("/register", async (req: Request, res: Response): Promise<void> => {
         res.status(201).json({ reponse: "Enregistrement accepté", data: results});
     }
     catch (error) {
-        console.error ("Erreur lors de la requête SQL :", error);
-        res.status(500).json({ error: "Erreur lors de l'accès à la base de données." });
+        console.error("Erreur interne dans le serveur :", error);
+        res.status(500).json({ error: "Erreur interne serveur." });
         return;
     }
 })
@@ -130,7 +136,7 @@ app.post("/login", async (req: Request, res: Response):Promise<void> => {
     } 
     catch (error) {
         console.error("Erreur interne dans le serveur :", error);
-        res.status(500).json({ error: "Erreur interne non gérée par le serveur." });
+        res.status(500).json({ error: "Erreur interne serveur." });
         return;
     }
 });
