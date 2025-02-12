@@ -2,7 +2,9 @@ import { Request, Response, NextFunction } from "express";
 
 // Utilisation : 
 // import VerifyKeys from "./middleware/VerifyKeys";
-// 
+// VerifyKeys(["motclé1", "motclé2"])
+
+// On peut mettre autant de mot clé que necessaire
 
 function VerifyKeys(requiredKeys: string[]) {
     return (

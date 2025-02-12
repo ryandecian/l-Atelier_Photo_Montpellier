@@ -48,7 +48,7 @@ app.post("/", (req: Request, res: Response) => {
  * Action callBack
  * Methode: POST
  */
-app.post("/register", async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+app.post("/register", VerifyKeys(["motclé1", "motclé2"]), async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
         // ✅ Vérification 1 : Toutes les Keys sont présentes ?
         const registerKeys = ["firstname", "lastname", "email", "password"];
