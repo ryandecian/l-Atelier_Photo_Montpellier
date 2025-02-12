@@ -102,7 +102,13 @@ app.post("/login",
     VerifyPassword,
     async (req: Request, res: Response):Promise<void> => {
     try {
-        res.status(200).json({test: "route login"});
+        res.status(200).json({
+            id: req.body.dataUser.id,
+            firstname: req.body.dataUser.firstname,
+            lastname: req.body.dataUser.lastname,
+            address: req.body.dataUser.address,
+            email: req.body.dataUser.email,
+        });
     } 
     catch (error) {
         res.status(500).json({ error: "Erreur interne serveur." });
