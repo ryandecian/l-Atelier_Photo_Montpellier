@@ -70,6 +70,7 @@ app.post("/", (req: Request, res: Response) => {
  */
 app.post("/register",
     // Ajout des middlewares
+    RouteLimiterRequestIP,
     VerifyKeys(["firstname", "lastname", "email", "password"]),
     VerifyEmailFalse,
     HashPassword,
