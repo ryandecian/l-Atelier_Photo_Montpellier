@@ -8,7 +8,7 @@ import { ResultSetHeader, RowDataPacket } from "mysql2";
 
 // Import des middlewares
 import VerifyKeys from "./middleware/VerifyKeys";
-import VerifyEmail from "./middleware/VerifyEmail";
+import VerifyEmailFalse from "./middleware/VerifyEmailFalse";
 import HashPassword from "./middleware/HashPassword";
 import InsertUser from "./middleware/InsertUser";
 
@@ -53,7 +53,7 @@ app.post("/", (req: Request, res: Response) => {
 app.post("/register",
     // Ajout des middlewares
     VerifyKeys(["firstname", "lastname", "email", "password"]),
-    VerifyEmail,
+    VerifyEmailFalse,
     HashPassword,
     InsertUser,
 
