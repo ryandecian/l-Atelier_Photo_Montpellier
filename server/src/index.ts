@@ -55,25 +55,14 @@ app.post("/register",
     VerifyKeys(["firstname", "lastname", "email", "password"]),
     VerifyEmail,
     HashPassword,
+    InsertUser,
 
     // Début de la fonction de la route principale
     async (req: Request, res: Response, next: NextFunction): Promise<void> => {
 
         try {
-            // ✅ Si les conditions précédantes sont ok, envois les infos a la DB pour écriture
-            const [results] = await usePoolConnection.query<ResultSetHeader>(
-                "INSERT INTO user (firstname, lastname, address, email, password) VALUES (?, ?, ?, ?, ?)",
-                [req.body.firstname, req.body.lastname, req.body.address, req.body.email, req.body.password],
-            );
-
-            // ✅ Vérification 3 : Si la DB ne rejete pas les données
-            if (results.affectedRows === 0) {
-                res.status(400).json({ reponse: "La requête a été rejeté par la base de donnée"});
-                return;
-            }
-
             // ✅ Réponse de succès
-            res.status(201).json({ reponse: "Enregistrement accepté", data: results});
+            res.status(201).json({ reponse: "Enregistrement accepté", data: "test"});
         }
         catch (error) {
             res.status(500).json({ error: "Erreur interne serveur." });

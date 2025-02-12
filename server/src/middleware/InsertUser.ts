@@ -4,11 +4,13 @@ import { ResultSetHeader } from "mysql2";
 
 async function InsertUser(req: Request, res: Response, next: NextFunction) {
     try {
+        // ✅ Envois des informations dans la DB
         const [results] = await usePoolConnection.query<ResultSetHeader>(
             "INSERT INTO user (firstname, lastname, address, email, password) VALUES (?, ?, ?, ?, ?)",
             [req.body.firstname, req.body.lastname, req.body.address, req.body.email, req.body.password],
         );
     
+        // ✅ Vérification : Si la DB ne rejete pas les données
         if (results.affectedRows === 0) {
             res.status(400).json({ reponse: "La requête a été rejeté par la base de donnée"});
             console.error(
