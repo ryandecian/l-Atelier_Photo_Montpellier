@@ -62,7 +62,15 @@ app.post("/register",
 
         try {
             // ✅ Réponse de succès
-            res.status(201).json({ reponse: "Enregistrement accepté", data: "test"});
+            res.status(201).json(
+                {
+                    reponse: "Enregistrement accepté",
+                    id: req.body.id, 
+                    firstname: req.body.firstname,
+                    lastname: req.body.lastname,
+                    email: req.body.email,
+                }
+            );
         }
         catch (error) {
             res.status(500).json({ error: "Erreur interne serveur." });
