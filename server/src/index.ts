@@ -140,8 +140,15 @@ app.post("/login", HashPassword, async (req: Request, res: Response):Promise<voi
         }
     } 
     catch (error) {
-        console.error("Erreur interne dans le serveur :", error);
         res.status(500).json({ error: "Erreur interne serveur." });
+        console.error(
+            {
+                identity: "index.ts",
+                type: "route login",
+                chemin: "/server/src/index.ts",
+                "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
+            },
+        );
         return;
     }
 });
