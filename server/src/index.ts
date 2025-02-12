@@ -9,6 +9,7 @@ import { ResultSetHeader, RowDataPacket } from "mysql2";
 // Import des middlewares
 import VerifyKeys from "./middleware/VerifyKeys";
 import VerifyEmailFalse from "./middleware/VerifyEmailFalse";
+import VerifyEmailTrue from "./middleware/VerifyEmailTrue";
 import HashPassword from "./middleware/HashPassword";
 import InsertUser from "./middleware/InsertUser";
 
@@ -93,18 +94,11 @@ app.post("/register",
  * Action callBack
  * Methode: POST
  */
-app.post("/login", async (req: Request, res: Response):Promise<void> => {
+app.post("/login",
+    // Ajout des middlewares
+    VerifyKeys(["email", "password"]),
+    async (req: Request, res: Response):Promise<void> => {
     try {
-        // ✅ Vérification 1 : Toutes les Keys sont présentes ?
-        const registerKeys = ["firstname", "lastname", "email", "password"];
-        const controlKeys = registerKeys.filter(keys => !req.body[keys]);
-
-        // ✅ Si il manque une seul Keys ou que le champs d'une Keys obligatoire est vide ou null, renvois une erreur
-        if (controlKeys.length > 0) {
-            res.status(400).json({ reponse: "La syntaxe de la requête est erronée." });
-            return;
-        }
-
         // ✅ Vérification 2 : l'email reçu existe t-il dans la DB ?
         const connection = await usePoolConnection;
         const [results] = await connection.query<RowDataPacket[]>(
