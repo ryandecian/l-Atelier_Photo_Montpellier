@@ -26,6 +26,10 @@ async function InsertUser(req: Request, res: Response, next: NextFunction) {
             );
             return;
         };
+
+        // ✅ Stocke l’ID du nouvel utilisateur pour d'autres traitements si besoin
+        req.body.id = results.insertId;
+        next()
     }
     catch (error) {
         res.status(500).json({ error: "Erreur interne serveur." });
