@@ -1,5 +1,5 @@
 // Import général
-import express, { query, Request, Response } from "express";
+import express, { query, Request, Response, NextFunction } from "express";
 
 // Import pour SQL
 import usePoolConnection from "./database/config";
@@ -47,7 +47,7 @@ app.post("/", (req: Request, res: Response) => {
  * Action callBack
  * Methode: POST
  */
-app.post("/register", HashPassword, async (req: Request, res: Response): Promise<void> => {
+app.post("/register", async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
         // ✅ Vérification 1 : Toutes les Keys sont présentes ?
         const registerKeys = ["firstname", "lastname", "email", "password"];
@@ -70,6 +70,10 @@ app.post("/register", HashPassword, async (req: Request, res: Response): Promise
             res.status(409).json({ reponse: "Cet email est déjà utilisé. Veuillez en choisir un autre.", server: dataUser });
             return;
         }
+
+        await HashPassword(req, res, async() => {
+            next();
+        })
 
         // ✅ Si les conditions précédantes sont ok, envois les infos a la DB pour écriture
         const [results] = await usePoolConnection.query<ResultSetHeader>(
