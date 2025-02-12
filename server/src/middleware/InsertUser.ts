@@ -25,7 +25,18 @@ async function InsertUser(req: Request, res: Response, next: NextFunction) {
             return;
         };
     }
-    catch (error) {}
+    catch (error) {
+        res.status(500).json({ error: "Erreur interne serveur." });
+        console.error(
+            {
+                identity: "InsertUser.ts",
+                type: "middleware",
+                chemin: "/server/src/middleware/InsertUser.ts",
+                "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
+                details: error,
+            },
+        );
+    }
 };
 
 export default InsertUser;
