@@ -31,7 +31,6 @@ async function VerifyEmailTrue(req:Request, res: Response, next: NextFunction) {
          * Mise a disposition de données
          */
         req.body.dataUser = dataUser[0];
-        // Mise a disposition du mot de passe user dans req.body pour d'éventuelle vérification
         next();
     }
     catch (error) {
