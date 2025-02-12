@@ -14,7 +14,7 @@ async function VerifyEmailTrue(req:Request, res: Response, next: NextFunction) {
 
         // ✅ Si l'email n'existe pas, sa dégage, on arrête l'exécution
         if (dataUser.length === 0) {
-            res.status(409).json({ reponse: "Cet email est déjà utilisé. Veuillez en choisir un autre." });
+            res.status(404).json({ reponse: "Email ou mot de passe incorrect" });
             console.error(
                 {
                     identity: "VerifyEmailTrue.ts",
@@ -25,8 +25,10 @@ async function VerifyEmailTrue(req:Request, res: Response, next: NextFunction) {
             );
             return;
         }
-        console.log(dataUser)
-        req.body.password = dataUser[0].password
+
+
+        // Mise a disposition du mot de passe user dans req.body pour d'éventuelle vérification
+        req.body.passwordFromSQL = dataUser[0].password;
         next();
     }
     catch (error) {
