@@ -48,54 +48,50 @@ app.post("/", (req: Request, res: Response) => {
  * Action callBack
  * Methode: POST
  */
-app.post("/register", VerifyKeys(["motclé1", "motclé2"]), async (req: Request, res: Response, next: NextFunction): Promise<void> => {
-    try {
-        // ✅ Vérification 1 : Toutes les Keys sont présentes ?
-        const registerKeys = ["firstname", "lastname", "email", "password"];
-        const controlKeys = registerKeys.filter(keys => !req.body[keys]);
+app.post("/register",
+    // Ajout des middlewares
+    VerifyKeys(["firstname", "lastname", "email", "password"]),
 
-        // ✅ Si il manque une seul Keys ou que le champs d'une Keys obligatoire est vide ou null, renvois une erreur
-        if (controlKeys.length > 0) {
-            res.status(400).json({ reponse: "La syntaxe de la requête est erronée." });
+    // Début de la fonction de la route principale
+    async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+
+        try {
+            // ✅ Vérification 2 : l'email reçu existe t-il dans la DB ?
+            const [dataUser] = await usePoolConnection.query<RowDataPacket[]>(
+                "SELECT * FROM user WHERE email= ?",
+                [req.body.email]
+            );
+
+            // ✅ Si l'email existe sa dégage, on arrête l'exécution
+            if (dataUser.length > 0) {
+                res.status(409).json({ reponse: "Cet email est déjà utilisé. Veuillez en choisir un autre.", server: dataUser });
+                return;
+            }
+
+            await HashPassword(req, res, async() => {
+                next();
+            })
+
+            // ✅ Si les conditions précédantes sont ok, envois les infos a la DB pour écriture
+            const [results] = await usePoolConnection.query<ResultSetHeader>(
+                "INSERT INTO user (firstname, lastname, address, email, password) VALUES (?, ?, ?, ?, ?)",
+                [req.body.firstname, req.body.lastname, req.body.address, req.body.email, req.body.password],
+            );
+
+            // ✅ Vérification 3 : Si la DB ne rejete pas les données
+            if (results.affectedRows === 0) {
+                res.status(400).json({ reponse: "La requête a été rejeté par la base de donnée"});
+                return;
+            }
+
+            // ✅ Réponse de succès
+            res.status(201).json({ reponse: "Enregistrement accepté", data: results});
+        }
+        catch (error) {
+            console.error("Erreur interne dans le serveur :", error);
+            res.status(500).json({ error: "Erreur interne serveur." });
             return;
         }
-
-        // ✅ Vérification 2 : l'email reçu existe t-il dans la DB ?
-        const [dataUser] = await usePoolConnection.query<RowDataPacket[]>(
-            "SELECT * FROM user WHERE email= ?",
-            [req.body.email]
-        );
-
-        // ✅ Si l'email existe sa dégage, on arrête l'exécution
-        if (dataUser.length > 0) {
-            res.status(409).json({ reponse: "Cet email est déjà utilisé. Veuillez en choisir un autre.", server: dataUser });
-            return;
-        }
-
-        await HashPassword(req, res, async() => {
-            next();
-        })
-
-        // ✅ Si les conditions précédantes sont ok, envois les infos a la DB pour écriture
-        const [results] = await usePoolConnection.query<ResultSetHeader>(
-            "INSERT INTO user (firstname, lastname, address, email, password) VALUES (?, ?, ?, ?, ?)",
-            [req.body.firstname, req.body.lastname, req.body.address, req.body.email, req.body.password],
-        );
-
-        // ✅ Vérification 3 : Si la DB ne rejete pas les données
-        if (results.affectedRows === 0) {
-            res.status(400).json({ reponse: "La requête a été rejeté par la base de donnée"});
-            return;
-        }
-
-        // ✅ Réponse de succès
-        res.status(201).json({ reponse: "Enregistrement accepté", data: results});
-    }
-    catch (error) {
-        console.error("Erreur interne dans le serveur :", error);
-        res.status(500).json({ error: "Erreur interne serveur." });
-        return;
-    }
 })
 
 /**

@@ -18,6 +18,7 @@ function VerifyKeys(requiredKeys: string[]) {
                     middleware: "VerifyKeys.ts",
                     chemin: "/server/src/middleware/VerifyKeys.ts"})
                 res.status(400).json({ reponse: "La syntaxe de la requête est erronée." })
+                return;
             }
 
             next()
