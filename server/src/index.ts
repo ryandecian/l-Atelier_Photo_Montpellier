@@ -133,4 +133,3 @@ app.post("/login",
 app.listen(port, () => {
     console.log(`Server lancé sur http://localhost:${port}`);
 });
-
