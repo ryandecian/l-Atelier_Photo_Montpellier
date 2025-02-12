@@ -1,12 +1,21 @@
 // Import général
 import express, { query, Request, Response, NextFunction } from "express";
 
+// Import des composants de sécurités
+import LimiteRequestIP from "./Security/LimiteRequestIP";
+
+// Import des middlewares de sécurités
+// Non opérationnel
+import RouteLimiterRequestIP from "./Security/middlewareSecurity/RouteLimiterRequestIP";
+
+/*----------------------------------------------------*/
+
 // Import pour SQL
 import usePoolConnection from "./database/config";
 import { useComplexConnection } from "./database/config";
 import { ResultSetHeader, RowDataPacket } from "mysql2";
 
-// Import des middlewares
+// Import des middlewares générals
 import VerifyKeys from "./middleware/VerifyKeys";
 import VerifyEmailFalse from "./middleware/VerifyEmailFalse";
 import VerifyEmailTrue from "./middleware/VerifyEmailTrue";
@@ -24,6 +33,13 @@ const port = 8080;
  * Methode: USE
  */
 app.use(express.json());
+
+/**
+ * Sécurité DDOS
+ * Permet de limité les requêtes d'une même IP à 150 par min
+ * Déblocage automatique
+ */
+app.use(LimiteRequestIP)
 
 /**
  * Route de base
@@ -97,6 +113,7 @@ app.post("/register",
  */
 app.post("/login",
     // Ajout des middlewares
+    RouteLimiterRequestIP,
     VerifyKeys(["email", "password"]),
     VerifyEmailTrue,
     VerifyPassword,
