@@ -10,7 +10,7 @@ async function VerifyPassword( req: Request, res: Response, next: NextFunction )
          * Mot de passe envoyé par le client
          * Mot de passe récupéré en DB par le middleware VerifyEmailTrue.ts
          */
-        if (await argon2.verify(req.body.passwordFromSQL, req.body.password)) {
+        if (await argon2.verify(req.body.dataUser.password, req.body.password)) {
             next()
         }
         else {
@@ -22,7 +22,7 @@ async function VerifyPassword( req: Request, res: Response, next: NextFunction )
                     chemin: "/server/src/middleware/VerifyPassword.ts",
                     "❌ Nature de l'erreur": "Le mot de passe reçu est différent de la DB, accès interdit",
                     analyse: "L'email existe car déjà vérifié par le middleware VerifyEmailTrue",
-                    cause1: "Le middleware VerifyEmailTrue n'a pas mis à disposition le passwordFromSQL récupéré en DB"
+                    cause1: "Le middleware VerifyEmailTrue n'a pas mis à disposition les dataUser récupéré en DB"
                 },
             );
             return;
