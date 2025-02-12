@@ -8,8 +8,9 @@ import { ResultSetHeader, RowDataPacket } from "mysql2";
 
 // Import des middlewares
 import VerifyKeys from "./middleware/VerifyKeys";
-import HashPassword from "./middleware/HashPassword";
 import VerifyEmail from "./middleware/VerifyEmail";
+import HashPassword from "./middleware/HashPassword";
+import InsertUser from "./middleware/InsertUser";
 
 const app = express();
 const port = 8080;
@@ -54,25 +55,22 @@ app.post("/register",
     VerifyKeys(["firstname", "lastname", "email", "password"]),
     VerifyEmail,
     HashPassword,
+    InsertUser,
 
     // Début de la fonction de la route principale
     async (req: Request, res: Response, next: NextFunction): Promise<void> => {
 
         try {
-            // ✅ Si les conditions précédantes sont ok, envois les infos a la DB pour écriture
-            const [results] = await usePoolConnection.query<ResultSetHeader>(
-                "INSERT INTO user (firstname, lastname, address, email, password) VALUES (?, ?, ?, ?, ?)",
-                [req.body.firstname, req.body.lastname, req.body.address, req.body.email, req.body.password],
-            );
-
-            // ✅ Vérification 3 : Si la DB ne rejete pas les données
-            if (results.affectedRows === 0) {
-                res.status(400).json({ reponse: "La requête a été rejeté par la base de donnée"});
-                return;
-            }
-
             // ✅ Réponse de succès
-            res.status(201).json({ reponse: "Enregistrement accepté", data: results});
+            res.status(201).json(
+                {
+                    reponse: "Enregistrement accepté",
+                    id: req.body.id, 
+                    firstname: req.body.firstname,
+                    lastname: req.body.lastname,
+                    email: req.body.email,
+                }
+            );
         }
         catch (error) {
             res.status(500).json({ error: "Erreur interne serveur." });
@@ -95,7 +93,7 @@ app.post("/register",
  * Action callBack
  * Methode: POST
  */
-app.post("/login", HashPassword, async (req: Request, res: Response):Promise<void> => {
+app.post("/login", async (req: Request, res: Response):Promise<void> => {
     try {
         // ✅ Vérification 1 : Toutes les Keys sont présentes ?
         const registerKeys = ["firstname", "lastname", "email", "password"];
