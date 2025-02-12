@@ -52,24 +52,13 @@ app.post("/", (req: Request, res: Response) => {
 app.post("/register",
     // Ajout des middlewares
     VerifyKeys(["firstname", "lastname", "email", "password"]),
+    VerifyEmail,
     HashPassword,
 
     // Début de la fonction de la route principale
     async (req: Request, res: Response, next: NextFunction): Promise<void> => {
 
         try {
-            // ✅ Vérification 2 : l'email reçu existe t-il dans la DB ?
-            const [dataUser] = await usePoolConnection.query<RowDataPacket[]>(
-                "SELECT * FROM user WHERE email= ?",
-                [req.body.email]
-            );
-
-            // ✅ Si l'email existe sa dégage, on arrête l'exécution
-            if (dataUser.length > 0) {
-                res.status(409).json({ reponse: "Cet email est déjà utilisé. Veuillez en choisir un autre.", server: dataUser });
-                return;
-            }
-
             // ✅ Si les conditions précédantes sont ok, envois les infos a la DB pour écriture
             const [results] = await usePoolConnection.query<ResultSetHeader>(
                 "INSERT INTO user (firstname, lastname, address, email, password) VALUES (?, ?, ?, ?, ?)",
