@@ -1,5 +1,9 @@
 import { Request, Response, NextFunction } from "express";
 
+// Utilisation : 
+// import VerifyKeys from "./middleware/VerifyKeys";
+// 
+
 function VerifyKeys(requiredKeys: string[]) {
     return (
         function ControleKeys( req: Request, res: Response, next: NextFunction) {

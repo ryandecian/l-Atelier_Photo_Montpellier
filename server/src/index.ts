@@ -7,6 +7,7 @@ import { useComplexConnection } from "./database/config";
 import { ResultSetHeader, RowDataPacket } from "mysql2";
 
 // Import des middlewares
+import VerifyKeys from "./middleware/VerifyKeys";
 import HashPassword from "./middleware/HashPassword";
 
 const app = express();
