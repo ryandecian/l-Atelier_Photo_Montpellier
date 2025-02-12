@@ -51,6 +51,7 @@ app.post("/", (req: Request, res: Response) => {
 app.post("/register",
     // Ajout des middlewares
     VerifyKeys(["firstname", "lastname", "email", "password"]),
+    HashPassword,
 
     // Début de la fonction de la route principale
     async (req: Request, res: Response, next: NextFunction): Promise<void> => {
@@ -67,10 +68,6 @@ app.post("/register",
                 res.status(409).json({ reponse: "Cet email est déjà utilisé. Veuillez en choisir un autre.", server: dataUser });
                 return;
             }
-
-            await HashPassword(req, res, async() => {
-                next();
-            })
 
             // ✅ Si les conditions précédantes sont ok, envois les infos a la DB pour écriture
             const [results] = await usePoolConnection.query<ResultSetHeader>(
