@@ -8,8 +8,15 @@ async function HashPassword( req: Request, res: Response, next: NextFunction ) {
         next();
     }
     catch (error) {
-        console.error("Erreur dans le middleware HashPassword :", error);
         res.status(500).json({ error: "Erreur interne serveur." });
+        console.error(
+            {
+                identity: "HashPassword.ts",
+                type: "middleware",
+                chemin: "/server/src/middleware/HashPassword.ts",
+                "❌ Nature de l'erreur": "Hash échoué !",
+            },
+        );
         return;
     }
 }
