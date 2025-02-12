@@ -9,6 +9,7 @@ import { ResultSetHeader, RowDataPacket } from "mysql2";
 // Import des middlewares
 import VerifyKeys from "./middleware/VerifyKeys";
 import HashPassword from "./middleware/HashPassword";
+import VerifyEmail from "./middleware/VerifyEmail";
 
 const app = express();
 const port = 8080;
