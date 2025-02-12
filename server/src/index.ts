@@ -11,6 +11,7 @@ import VerifyKeys from "./middleware/VerifyKeys";
 import VerifyEmailFalse from "./middleware/VerifyEmailFalse";
 import VerifyEmailTrue from "./middleware/VerifyEmailTrue";
 import HashPassword from "./middleware/HashPassword";
+import VerifyPassword from "./middleware/VerifyPassword";
 import InsertUser from "./middleware/InsertUser";
 
 const app = express();
@@ -98,6 +99,7 @@ app.post("/login",
     // Ajout des middlewares
     VerifyKeys(["email", "password"]),
     VerifyEmailTrue,
+    VerifyPassword,
     async (req: Request, res: Response):Promise<void> => {
     try {
         res.status(200).json({test: "route login"});
