@@ -82,6 +82,7 @@ app.post("/register",
                     type: "route register",
                     chemin: "/server/src/index.ts",
                     "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
+                    details: error,
                 },
             );
             return;
@@ -137,6 +138,7 @@ app.post("/login", HashPassword, async (req: Request, res: Response):Promise<voi
                 type: "route login",
                 chemin: "/server/src/index.ts",
                 "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
+                details: error,
             },
         );
         return;
