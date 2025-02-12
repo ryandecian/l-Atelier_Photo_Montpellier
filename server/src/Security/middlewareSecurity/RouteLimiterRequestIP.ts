@@ -20,11 +20,13 @@ const limiter = rateLimit({
         console.error({
             identity: "RouteLimiterRequestIP.ts",
             type: "middleware",
-            chemin: "/server/src/middleware/RouteLimiterRequestIP.ts",
+            chemin: "/server/src/Security/middlewareSecurity/RouteLimiterRequestIP.ts",
             "❌ Nature de l'erreur": "L'IP a dépassé la limite de tentatives de connexion",
             ip: req.ip,
             route: req.originalUrl,
         });
+
+        return; // ✅ Stoppe l'exécution ici pour éviter `next()`
     },
 });
 
@@ -34,18 +36,18 @@ const limiter = rateLimit({
 async function RouteLimiterRequestIP(req: Request, res: Response, next: NextFunction) {
     try {
         await limiter(req, res, next); // 🔥 Exécute `rateLimit`
-        next(); // 🔥 Passe au middleware suivant si non bloqué
-    }
+    } 
     catch (error) {
         res.status(500).json({ error: "Erreur interne serveur." });
         console.error({
             identity: "RouteLimiterRequestIP.ts",
             type: "middleware",
-            chemin: "/server/src/middleware/RouteLimiterRequestIP.ts",
+            chemin: "/server/src/Security/middlewareSecurity/RouteLimiterRequestIP.ts",
             "❌ Nature de l'erreur": "Erreur dans le middleware de limitation de connexion",
             details: error,
         });
-        return;
+
+        return; // ✅ Stoppe bien l'exécution après une erreur
     }
 }
 
