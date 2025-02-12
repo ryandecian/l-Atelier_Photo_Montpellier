@@ -22,7 +22,7 @@ function VerifyKeys(requiredKeys: string[]) {
                         missingKeys,
                         body: req.body
                     },
-                )
+                );
                 return;
             }
 

@@ -15,12 +15,29 @@ async function VerifyEmail(res: Response, req:Request, next: NextFunction) {
         // ✅ Si l'email existe sa dégage, on arrête l'exécution
         if (dataUser.length > 0) {
             res.status(409).json({ reponse: "Cet email est déjà utilisé. Veuillez en choisir un autre.", server: dataUser });
-            console.error({})
+            console.error(
+                {
+                    identity: "VerifyEmail.ts",
+                    type: "middleware",
+                    chemin: "/server/src/middleware/VerifyEmail.ts",
+                    "❌ Nature de l'erreur": "L'email existe déjà dans la DB, interdiction de le réutiliser.",
+                },
+            );
             return;
         }
         next()
     }
-    catch (error) {}
+    catch (error) {
+        res.status(500).json({ error: "Erreur interne serveur." });
+        console.error(
+            {
+                identity: "VerifyEmail.ts",
+                type: "middleware",
+                chemin: "/server/src/middleware/VerifyEmail.ts",
+                "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
+            },
+        );
+    }
 }
 
 export default VerifyEmail;
