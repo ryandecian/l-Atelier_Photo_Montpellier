@@ -30,11 +30,30 @@ function JWT_Middleware(req: Request, res: Response, next: NextFunction) {
                 );
                 return;
         }
+
+         // ✅ Définition du payload avec `iat` et `exp`
+         const expiresIn = 60 * 60; // 1 heure
+         const now = Math.floor(Date.now() / 1000); // Date actuelle en timestamp UNIX
+
         const payload = {
             id: req.body.dataUser.id,
             email: req.body.dataUser.email,
+            iat: now, // ⏳ Date de création du token
         }
-        const token = jwt.sign(payload, SECRET_KEY, {expiresIn: 60 * 60}); //60s * 60 = 1h
+        const token = jwt.sign(payload, SECRET_KEY, {expiresIn});
+
+
+        // ✅ Sécurisation de `req.body.jwt`
+        if (req.body.jwt) {
+            console.warn({
+                identity: "JWT_Middleware.ts",
+                type: "sécurité",
+                chemin: "/server/src/middleware/JWT_Middleware.ts",
+                "⚠️ Alerte !": "Tentative de modification de `req.body.jwt` détectée. Le serveur écrase la valeur !",
+                "⚠️ Alerte": "Le serveur écrase la valeur pour sécuriser !",
+            });
+        }
+
         req.body.jwt = token;
         next();
     }
