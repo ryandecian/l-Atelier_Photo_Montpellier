@@ -121,7 +121,8 @@ app.post("/login",
     VerifyPassword,
     async (req: Request, res: Response):Promise<void> => {
     try {
-        JWT_Middleware(req.body)
+        const token = JWT_Middleware(req.body);
+        console.log (token)
         res.status(200).json({
             id: req.body.dataUser.id,
             firstname: req.body.dataUser.firstname,

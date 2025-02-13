@@ -2,7 +2,7 @@ import jwt from "jsonwebtoken";
 
 function JWT_Middleware(payload: any) {
     const token = jwt.sign(payload, "test")
-    console.log(token);
+    return (token)
 }
 
 export default JWT_Middleware;
