@@ -4,15 +4,15 @@ import "dotenv/config";
 
 const SECRET_KEY = process.env.SECRET_KEY_TOKEN
 
-function JWT_Middleware(req: Request, res: Response, next: NextFunction) {
+function Create_JWT_Middleware(req: Request, res: Response, next: NextFunction) {
     try {
         if (!SECRET_KEY) {
             res.status(500).json({ error: "Erreur interne serveur." });
                 console.error(
                     {
-                        identity: "JWT_Middleware.ts",
+                        identity: "Create_JWT_Middleware.ts",
                         type: "middleware",
-                        chemin: "/server/src/middleware/JWT_Middleware.ts",
+                        chemin: "/server/src/middleware/Create_JWT_Middleware.ts",
                         "❌ Nature de l'erreur": "SECRET_KEY_TOKEN est absent dans .env !",
                     },
                 );
@@ -22,9 +22,9 @@ function JWT_Middleware(req: Request, res: Response, next: NextFunction) {
             res.status(500).json({ error: "Erreur interne serveur." });
                 console.error(
                     {
-                        identity: "JWT_Middleware.ts",
+                        identity: "Create_JWT_Middleware.ts",
                         type: "middleware",
-                        chemin: "/server/src/middleware/JWT_Middleware.ts",
+                        chemin: "/server/src/middleware/Create_JWT_Middleware.ts",
                         "❌ Nature de l'erreur": "Le middleware VerifyEmailTrue.ts n'a pas mis a disposition dataUser.",
                     },
                 );
@@ -46,9 +46,9 @@ function JWT_Middleware(req: Request, res: Response, next: NextFunction) {
         // ✅ Sécurisation de `req.body.jwt`
         if (req.body.jwt) {
             console.warn({
-                identity: "JWT_Middleware.ts",
+                identity: "Create_JWT_Middleware.ts",
                 type: "sécurité",
-                chemin: "/server/src/middleware/JWT_Middleware.ts",
+                chemin: "/server/src/middleware/Create_JWT_Middleware.ts",
                 "⚠️ Alerte !": "Tentative de modification de `req.body.jwt` détectée. Le serveur écrase la valeur !",
                 "⚠️ Alerte": "Le serveur écrase la valeur pour sécuriser !",
             });
@@ -61,9 +61,9 @@ function JWT_Middleware(req: Request, res: Response, next: NextFunction) {
         res.status(500).json({ error: "Erreur interne serveur." });
         console.error(
             {
-                identity: "JWT_Middleware.ts",
+                identity: "Create_JWT_Middleware.ts",
                 type: "middleware",
-                chemin: "/server/src/middleware/JWT_Middleware.ts",
+                chemin: "/server/src/middleware/Create_JWT_Middleware.ts",
                 "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
                 details: error,
             },
@@ -71,4 +71,4 @@ function JWT_Middleware(req: Request, res: Response, next: NextFunction) {
     }
 }
 
-export default JWT_Middleware;
+export default Create_JWT_Middleware;
