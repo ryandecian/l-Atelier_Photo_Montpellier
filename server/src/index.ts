@@ -119,12 +119,11 @@ app.post("/login",
     VerifyKeys(["email", "password"]),
     VerifyEmailTrue,
     VerifyPassword,
+    JWT_Middleware,
     async (req: Request, res: Response):Promise<void> => {
     try {
-        const token = JWT_Middleware(req.body);
-        console.log ({tokenR: token})
         res.status(200)
-        .cookie("jwtToken", token)
+        .cookie("jwtToken", req.body.jwt)
         .json({
             id: req.body.dataUser.id,
             firstname: req.body.dataUser.firstname,
