@@ -122,8 +122,10 @@ app.post("/login",
     async (req: Request, res: Response):Promise<void> => {
     try {
         const token = JWT_Middleware(req.body);
-        console.log (token)
-        res.status(200).json({
+        console.log ({tokenR: token})
+        res.status(200)
+        .cookie("jwtToken", token)
+        .json({
             id: req.body.dataUser.id,
             firstname: req.body.dataUser.firstname,
             lastname: req.body.dataUser.lastname,
