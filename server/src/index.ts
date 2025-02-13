@@ -22,7 +22,7 @@ import VerifyEmailTrue from "./middleware/VerifyEmailTrue";
 import HashPassword from "./middleware/HashPassword";
 import VerifyPassword from "./middleware/VerifyPassword";
 import InsertUser from "./middleware/InsertUser";
-import JWT_Middleware from "./middleware/JWT_Middleware";
+import Create_JWT_Middleware from "./middleware/Create_JWT_Middleware";
 
 const app = express();
 const port = 8080;
@@ -119,7 +119,7 @@ app.post("/login",
     VerifyKeys(["email", "password"]),
     VerifyEmailTrue,
     VerifyPassword,
-    JWT_Middleware,
+    Create_JWT_Middleware,
     async (req: Request, res: Response):Promise<void> => {
     try {
         res.status(200)
