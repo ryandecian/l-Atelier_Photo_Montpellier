@@ -24,6 +24,10 @@ import VerifyPassword from "./middleware/VerifyPassword";
 import InsertUser from "./middleware/InsertUser";
 import Create_JWT_Middleware from "./middleware/Create_JWT_Middleware";
 
+// Import des Services
+import mailer from "./services/mailer";
+
+
 const app = express();
 const port = 8080;
 
