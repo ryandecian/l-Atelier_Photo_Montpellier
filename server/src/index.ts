@@ -58,17 +58,17 @@ app.get("/", (req: Request, res: Response) => {
  * Action callBack
  * Methode: POST
  */
-app.post("/", (req: Request, res: Response) => {
+app.post("", (req: Request, res: Response) => {
     res.status(502).json({ reponse: "Requête invalide !", data: req.body })
 })
 
 /**
  * Route pour envoyer un email
- * Path: /api/mail
+ * Path: /email
  * Action callBack
  * Methode: POST
  */
-app.post("/api/mail", async (req: Request, res: Response) => {
+app.post("/email", async (req: Request, res: Response) => {
     try {
         // res.status(200).json({ reponse: "Mail envoyé avec succès !", data: req.body })
         res.status(200).json({ reponse: "Route mail existant", data: req.body })
@@ -173,6 +173,18 @@ app.post("/login",
     }
 });
 
+
+/**
+ * Gestion des routes innexistante
+ */
+app.use((req: Request, res: Response) => {
+    res.status(404).json({
+      success: false,
+      message: "Route non trouvée",
+      method: req.method,
+      path: req.originalUrl,
+    });
+  });
 
 /**
  * Le server se lance sur le port 8080
