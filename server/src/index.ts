@@ -63,13 +63,16 @@ app.post("/", (req: Request, res: Response) => {
 })
 
 /**
- * Route de base
+ * Route pour envoyer un email
  * Path: /api/mail
  * Action callBack
  * Methode: POST
  */
 app.post("/api/mail", async (req: Request, res: Response) => {
-    try {}
+    try {
+        // res.status(200).json({ reponse: "Mail envoyé avec succès !", data: req.body })
+        res.status(200).json({ reponse: "Route mail existant", data: req.body })
+    }
     catch (error) {
         res.status(500).json({ error: "Erreur interne serveur." });
         console.error(
