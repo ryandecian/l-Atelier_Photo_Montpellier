@@ -63,6 +63,29 @@ app.post("/", (req: Request, res: Response) => {
 })
 
 /**
+ * Route de base
+ * Path: /api/mail
+ * Action callBack
+ * Methode: POST
+ */
+app.post("/api/mail", async (req: Request, res: Response) => {
+    try {}
+    catch (error) {
+        res.status(500).json({ error: "Erreur interne serveur." });
+        console.error(
+            {
+                identity: "index.ts",
+                type: "route register",
+                chemin: "/server/src/index.ts",
+                "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
+                details: error,
+            },
+        );
+        return;
+    }
+})
+
+/**
  * Route de register
  * Path: /register
  * middleware: HashPassword
