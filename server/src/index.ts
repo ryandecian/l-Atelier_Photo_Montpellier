@@ -177,13 +177,24 @@ app.post("/login",
 /**
  * Gestion des routes innexistante
  */
-app.use((req: Request, res: Response) => {
+app.use( async (req: Request, res: Response) => {
     res.status(404).json({
       success: false,
       message: "Route non trouvée",
       method: req.method,
       path: req.originalUrl,
     });
+    console.error(
+        {
+            identity: "index.ts",
+            type: "Gestionnaire des routes inconnues",
+            chemin: "/server/src/index.ts",
+            "❌ Nature de l'erreur": "Tentative d'accès à une route inexistante !",
+            method: req.method,
+            path: req.originalUrl,
+            contenu : req.body
+        },
+    );
   });
 
 /**
