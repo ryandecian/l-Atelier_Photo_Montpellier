@@ -26,6 +26,7 @@ import Create_JWT_Middleware from "./middleware/Create_JWT_Middleware";
 
 // Import des Services
 import mailer from "./services/mailer";
+import SendMailer_Middleware from "./middleware/SendMailer_Middleware";
 
 
 const app = express();
@@ -72,7 +73,11 @@ app.post("", (req: Request, res: Response) => {
  * Action callBack
  * Methode: POST
  */
-app.post("/email", async (req: Request, res: Response) => {
+app.post("/email",
+    // Ajout des middlewares
+    VerifyKeys(["to", "subject", "text"]),
+    SendMailer_Middleware,
+    async (req: Request, res: Response) => {
     try {
         // res.status(200).json({ reponse: "Mail envoyé avec succès !", data: req.body })
         res.status(200).json({ reponse: "Route mail existant", data: req.body })

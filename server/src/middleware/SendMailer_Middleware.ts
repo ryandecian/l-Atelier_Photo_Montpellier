@@ -1,16 +1,17 @@
 import mailer from "../services/mailer";
 import { Request, Response, NextFunction } from "express";
+import "dotenv/config";
 
 const transporter = mailer
 
 async function SendMailer_Middleware( req: Request, res: Response, next: NextFunction ) {
     try {
         const info = await transporter.sendMail({
-            from: req.body.from, // email de l'expéditeur
+            from: `"RoadAddict" <${process.env.EMAIL_USER}>`, // email de l'expéditeur
             to: req.body.to, // liste email des destinataires
             subject: req.body.subject, // objet du mail
             text: req.body.text, // Contenu du mail
-            html: "", // html body
+            // html: "", // html body
           });
           next();
     }
