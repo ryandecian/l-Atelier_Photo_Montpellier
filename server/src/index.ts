@@ -98,6 +98,18 @@ app.post("/email",
 })
 
 /**
+ * Route de reset password
+ * Path: /reset-password
+ * middleware:
+ * Action callBack
+ * Methode: POST
+ */
+app.post("/reset-password", async (req: Request, res: Response) => {
+    try {}
+    catch (error) {}
+});
+
+/**
  * Route de register
  * Path: /register
  * middleware: HashPassword
