@@ -94,7 +94,12 @@ app.post("/email",
  * Action callBack
  * Methode: POST
  */
-app.post("/reset-password", async (req: Request, res: Response) => {
+app.post("/reset-password",
+    // Ajout des middlewares
+    RouteLimiterRequestIP,
+    VerifyKeys(["email"]),
+    VerifyEmailTrue,
+    async (req: Request, res: Response) => {
     try {}
     catch (error) {}
 });
