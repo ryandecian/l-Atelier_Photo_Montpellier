@@ -24,6 +24,11 @@ import VerifyPassword from "./middleware/VerifyPassword";
 import InsertUser from "./middleware/InsertUser";
 import Create_JWT_Middleware from "./middleware/Create_JWT_Middleware";
 
+// Import des Services
+import mailer from "./services/mailer";
+import SendMailer_Middleware from "./middleware/SendMailer_Middleware";
+
+
 const app = express();
 const port = 8080;
 
@@ -58,8 +63,38 @@ app.get("/", (req: Request, res: Response) => {
  * Action callBack
  * Methode: POST
  */
-app.post("/", (req: Request, res: Response) => {
+app.post("", (req: Request, res: Response) => {
     res.status(502).json({ reponse: "Requête invalide !", data: req.body })
+})
+
+/**
+ * Route pour envoyer un email
+ * Path: /email
+ * Action callBack
+ * Methode: POST
+ */
+app.post("/email",
+    // Ajout des middlewares
+    VerifyKeys(["to", "subject", "text"]),
+    SendMailer_Middleware,
+    async (req: Request, res: Response) => {
+    try {
+        // res.status(200).json({ reponse: "Mail envoyé avec succès !", data: req.body })
+        res.status(200).json({ reponse: "Route mail existant", data: req.body })
+    }
+    catch (error) {
+        res.status(500).json({ error: "Erreur interne serveur." });
+        console.error(
+            {
+                identity: "index.ts",
+                type: "route register",
+                chemin: "/server/src/index.ts",
+                "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
+                details: error,
+            },
+        );
+        return;
+    }
 })
 
 /**
@@ -147,6 +182,29 @@ app.post("/login",
     }
 });
 
+
+/**
+ * Gestion des routes innexistante
+ */
+app.use( async (req: Request, res: Response) => {
+    res.status(404).json({
+      success: false,
+      message: "Route non trouvée",
+      method: req.method,
+      path: req.originalUrl,
+    });
+    console.error(
+        {
+            identity: "index.ts",
+            type: "Gestionnaire des routes inconnues",
+            chemin: "/server/src/index.ts",
+            "❌ Nature de l'erreur": "Tentative d'accès à une route inexistante !",
+            method: req.method,
+            path: req.originalUrl,
+            contenu : req.body
+        },
+    );
+  });
 
 /**
  * Le server se lance sur le port 8080
