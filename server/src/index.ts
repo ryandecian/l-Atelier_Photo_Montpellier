@@ -58,16 +58,6 @@ app.get("/", (req: Request, res: Response) => {
 })
 
 /**
- * Route de base
- * Path: /
- * Action callBack
- * Methode: POST
- */
-app.post("", (req: Request, res: Response) => {
-    res.status(502).json({ reponse: "Requête invalide !", data: req.body })
-})
-
-/**
  * Route pour envoyer un email
  * Path: /email
  * Action callBack
