@@ -4,7 +4,7 @@ import "dotenv/config";
 
 const SECRET_KEY = process.env.SECRET_KEY_TOKEN
 
-function Create_JWT_Middleware(req: Request, res: Response, next: NextFunction) {
+async function Create_JWT_Middleware(req: Request, res: Response, next: NextFunction) {
     try {
         if (!SECRET_KEY) {
             res.status(500).json({ error: "Erreur interne serveur." });
