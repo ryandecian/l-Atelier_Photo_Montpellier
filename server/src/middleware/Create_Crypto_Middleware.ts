@@ -58,3 +58,5 @@ async function Create_Crypto_Middleware(req: Request, res: Response, next: NextF
         res.status(500).json({ error: "Erreur interne server." });
     }
 }
+
+export default Create_Crypto_Middleware;
