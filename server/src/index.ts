@@ -24,6 +24,8 @@ import VerifyPassword from "./middleware/VerifyPassword";
 import InsertUser from "./middleware/InsertUser";
 import Create_JWT_Middleware from "./middleware/Create_JWT_Middleware";
 import Create_Crypto_Middleware from "./middleware/Create_Crypto_Middleware";
+import Verify_Crypto_Middleware from "./middleware/Verify_Crypto_Middleware";
+import InsertNewPassword from "./middleware/insertNewPassword";
 
 // Import des Services
 import mailer from "./services/mailer";
@@ -102,6 +104,39 @@ app.post("/reset-password",
     VerifyEmailTrue,
     Create_Crypto_Middleware,
     SendMailer_Middleware,
+    async (req: Request, res: Response) => {
+        try {
+        res.status(200).json({ reponse: "Un email de reinitialisation vous a été envoyé" });
+    }
+    catch (error) {
+        res.status(500).json({ error: "Erreur interne serveur." });
+        console.error(
+            {
+                identity: "index.ts",
+                type: "route reset-password",
+                chemin: "/server/src/index.ts",
+                "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
+                details: error,
+            },
+        );
+        return;
+    }
+});
+
+/**
+ * Route de reset password
+ * Path: /reset-password/confirm
+ * middleware:
+ * Action callBack
+ * Methode: POST
+ */
+app.post("/reset-password/confirm",
+    // Ajout des middlewares
+    RouteLimiterRequestIP,
+    VerifyKeys(["token", "newPassword"]),
+    Verify_Crypto_Middleware,
+    HashPassword,
+    InsertNewPassword,
     async (req: Request, res: Response) => {
     try {
         res.status(200).json({ reponse: "Un email de reinitialisation vous a été envoyé" });
