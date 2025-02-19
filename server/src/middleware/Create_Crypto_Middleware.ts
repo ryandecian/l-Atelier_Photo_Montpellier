@@ -5,8 +5,21 @@ import { ResultSetHeader } from 'mysql2';
 
 async function Create_Crypto_Middleware(req: Request, res: Response, next: NextFunction) {
     try {
-        const user = req.body.email as { id: number };
-        const userId = user.id;
+        const userId = req.body.dataUser?.id;
+        if (!userId) {
+            res.status(500).json({ error: "Erreur interne serveur." });
+            console.error(
+                {
+                    identity: "Create_Crypto_Middleware.ts",
+                    type: "middleware",
+                    chemin: "/server/src/middleware/Create_Crypto_Middleware.ts",
+                    "❌ Nature de l'erreur": "Le middleware VerifyEmailTrue.ts n'a pas mis a disposition dataUser.",
+                    cause1: "Le middleware VerifyEmailTrue.ts n'a pas été exécuté",
+                    cause2: "L'id de l'utilisateur n'est pas présent et n'a pas été récupéré dans la DB.",
+                },
+            );
+            return;
+        }
 
         // Générer un token sécurisé
         const token = crypto.randomBytes(32).toString("hex");
