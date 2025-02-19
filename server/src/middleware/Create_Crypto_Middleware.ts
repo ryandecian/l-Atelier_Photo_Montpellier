@@ -45,6 +45,10 @@ async function Create_Crypto_Middleware(req: Request, res: Response, next: NextF
             return;
         };
 
+        // Stocker la réponse de la DB pour l'envoyer par email
+        // results possède normalement userId, token, et expiresAt
+        req.body.dataCrypto = results;
+        
         next();
     }
     catch (error) {

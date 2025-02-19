@@ -23,6 +23,7 @@ import HashPassword from "./middleware/HashPassword";
 import VerifyPassword from "./middleware/VerifyPassword";
 import InsertUser from "./middleware/InsertUser";
 import Create_JWT_Middleware from "./middleware/Create_JWT_Middleware";
+import Create_Crypto_Middleware from "./middleware/Create_Crypto_Middleware";
 
 // Import des Services
 import mailer from "./services/mailer";
@@ -99,6 +100,8 @@ app.post("/reset-password",
     RouteLimiterRequestIP,
     VerifyKeys(["email"]),
     VerifyEmailTrue,
+    Create_Crypto_Middleware,
+    SendMailer_Middleware,
     async (req: Request, res: Response) => {
     try {}
     catch (error) {}
