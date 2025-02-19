@@ -4,7 +4,7 @@ import "dotenv/config";
 
 const SECRET_KEY = process.env.SECRET_KEY_TOKEN;
 
-function Verify_JWT_Middleware(req: Request, res: Response, next: NextFunction) {
+async function Verify_JWT_Middleware(req: Request, res: Response, next: NextFunction) {
     try {
         if (!SECRET_KEY) {
             console.error({
