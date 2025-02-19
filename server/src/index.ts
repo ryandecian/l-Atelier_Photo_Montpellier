@@ -25,6 +25,7 @@ import InsertUser from "./middleware/InsertUser";
 import Create_JWT_Middleware from "./middleware/Create_JWT_Middleware";
 import Create_Crypto_Middleware from "./middleware/Create_Crypto_Middleware";
 import Verify_Crypto_Middleware from "./middleware/Verify_Crypto_Middleware";
+import InsertNewPassword from "./middleware/insertNewPassword";
 
 // Import des Services
 import mailer from "./services/mailer";
@@ -135,7 +136,7 @@ app.post("/reset-password/confirm",
     VerifyKeys(["token", "newPassword"]),
     Verify_Crypto_Middleware,
     HashPassword,
-    InsertUser,
+    InsertNewPassword,
     async (req: Request, res: Response) => {
     try {
         res.status(200).json({ reponse: "Un email de reinitialisation vous a été envoyé" });
