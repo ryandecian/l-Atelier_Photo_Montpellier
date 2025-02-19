@@ -45,12 +45,17 @@ async function Create_Crypto_Middleware(req: Request, res: Response, next: NextF
             return;
         };
 
+        // Lien de réinitialisation
+        const resetLink = `${process.env.DOMAIN}/reset-password?token=${token}`;
+
         // Préparation des données pour l'envoi par email
         // Stocker la réponse de la DB pour l'envoyer par email
         req.body.to = req.body.email;
         req.body.subject = "Réinitialisation de votre mot de passe";
-        req.body.text = `Bonjour,\n\nPour réinitialiser votre mot de passe, veuillez cliquer sur
-        le lien suivant : http://localhost:3000/reset-password?token=${token}\n\nCe lien expirera dans 1 heure.`;
+        req.body.html = `<p>Bonjour,</p>
+                   <p>Cliquez sur le lien ci-dessous pour réinitialiser votre mot de passe :</p>
+                   <a href="${resetLink}">${resetLink}</a>
+                   <p>Ce lien expirera dans 1 heure.</p>`,
 
         next();
     }
