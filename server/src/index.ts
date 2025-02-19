@@ -132,9 +132,6 @@ app.post("/reset-password/confirm",
     // Ajout des middlewares
     RouteLimiterRequestIP,
     VerifyKeys(["token", "newPassword"]),
-    VerifyEmailTrue,
-    Create_Crypto_Middleware,
-    SendMailer_Middleware,
     async (req: Request, res: Response) => {
     try {
         res.status(200).json({ reponse: "Un email de reinitialisation vous a été envoyé" });
