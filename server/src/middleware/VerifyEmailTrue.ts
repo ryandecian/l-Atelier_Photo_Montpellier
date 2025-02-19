@@ -2,7 +2,7 @@ import { Request, Response, NextFunction } from "express";
 import usePoolConnection from "../database/config";
 import { RowDataPacket } from "mysql2";
 
-// Objectif, vérifier que l'email reçu pour l'enregistrement n'est pas utilisé.
+// Objectif, vérifier que l'email reçu existe bien dans la DB.
 
 async function VerifyEmailTrue(req:Request, res: Response, next: NextFunction) {
     try {
