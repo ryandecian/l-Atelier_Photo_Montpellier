@@ -85,6 +85,14 @@ async function Verify_Crypto_Middleware(req: Request, res: Response, next: NextF
 
         // Préparation du passwort à être transmis au middleware Hash_Password.ts
         req.body.password = req.body.newPassword;
+
+        // Préparation des données à envoyer au middleware Send_Email.ts
+        const [dataUser] = await usePoolConnection.query<RowDataPacket[]>(
+            "SELECT * FROM user WHERE id = ?", [dataToken[0].user_id]
+        );
+        // Mise a disposition des données de l'utilisateur
+        req.body.dataUser = dataUser[0];
+        
         next();
     }
     catch (error) {
