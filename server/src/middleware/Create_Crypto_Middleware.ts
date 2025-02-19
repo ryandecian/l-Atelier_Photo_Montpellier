@@ -45,10 +45,13 @@ async function Create_Crypto_Middleware(req: Request, res: Response, next: NextF
             return;
         };
 
+        // Préparation des données pour l'envoi par email
         // Stocker la réponse de la DB pour l'envoyer par email
-        // results possède normalement userId, token, et expiresAt
-        req.body.dataCrypto = results;
-        
+        req.body.to = req.body.email;
+        req.body.subject = "Réinitialisation de votre mot de passe";
+        req.body.text = `Bonjour,\n\nPour réinitialiser votre mot de passe, veuillez cliquer sur
+        le lien suivant : http://localhost:3000/reset-password?token=${token}\n\nCe lien expirera dans 1 heure.`;
+
         next();
     }
     catch (error) {
