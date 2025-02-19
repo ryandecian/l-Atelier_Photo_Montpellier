@@ -45,6 +45,7 @@ async function SendMailer_Middleware( req: Request, res: Response, next: NextFun
                     chemin: "/server/src/middleware/SendMailer_Middleware.ts",
                     "❌ Nature de l'erreur": "Requête invalide.",
                     cause1: "Les champs 'text' et 'html' sont absents.",
+                    cause2: "Les champs 'text' et 'html' existent en même temps.",
                     explication: "Au moins un des deux champs doit être présent.",
                 });
             return;
