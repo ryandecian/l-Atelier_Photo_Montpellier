@@ -44,6 +44,8 @@ async function Create_Crypto_Middleware(req: Request, res: Response, next: NextF
             );
             return;
         };
+
+        next();
     }
     catch (error) {
         console.error({
