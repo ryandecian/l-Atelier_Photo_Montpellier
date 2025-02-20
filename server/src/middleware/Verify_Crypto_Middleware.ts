@@ -90,9 +90,16 @@ async function Verify_Crypto_Middleware(req: Request, res: Response, next: NextF
         const [dataUser] = await usePoolConnection.query<RowDataPacket[]>(
             "SELECT * FROM user WHERE id = ?", [dataToken[0].user_id]
         );
-        // Mise a disposition des données de l'utilisateur
+        // Mise a disposition des données de l'utilisateur dans le général
         req.body.dataUser = dataUser[0];
-        
+
+        // Ajout des champs obligatoir pour l'envoi de l'email
+        req.body.to = dataUser[0].email;
+        req.body.subject = "Réinitialisation de votre mot de passe";
+        req.body.html = `<p>Bonjour,</p>
+                    <p>Votre mot de passe a été réinitialisé avec succès.</p>
+                    <p>Si vous n'êtes pas à l'origine de cette demande, veuillez contacter notre service client.</p>`;
+
         next();
     }
     catch (error) {

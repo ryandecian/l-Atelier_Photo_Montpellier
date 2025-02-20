@@ -130,16 +130,22 @@ app.post("/reset-password",
  * Action callBack
  * Methode: POST
  */
-app.post("/reset-password/confirm",
+app.post("/reset-password/confirm", 
     // Ajout des middlewares
     RouteLimiterRequestIP,
     VerifyKeys(["token", "newPassword"]),
     Verify_Crypto_Middleware,
     HashPassword,
     InsertNewPassword,
+    SendMailer_Middleware,
     async (req: Request, res: Response) => {
     try {
-        res.status(200).json({ reponse: "Un email de reinitialisation vous a été envoyé" });
+        res.status(200).json({ reponse: "Votre mot de passe a bien été reinitialisée",
+        id: req.body.dataUser.id,
+        firstname: req.body.dataUser.firstname,
+        lastname: req.body.dataUser.lastname,
+        email: req.body.dataUser.email,
+         });
     }
     catch (error) {
         res.status(500).json({ error: "Erreur interne serveur." });
