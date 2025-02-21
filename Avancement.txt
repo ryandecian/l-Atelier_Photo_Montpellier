@@ -1,0 +1,26 @@
+Ce qui est terminé
+
+Client : 
+- Nav 
+
+Ce qui reste a faire : 
+Une page admin
+
+Page Admin : 
+Fonctionnalité 
+- SEO
+- Gestion des photos : Affichages des images, nom, date, id et format. Possibilité de renommer ou de supprimer. Fonction de recherche
+- Gestion des factures
+- Comptabilité
+- Gestion utisateur : modifier ou supprimer ou stat de commandes. / Affichage des 50 derniers utilisateurs avec fonctionnalité de recherche
+- Gestion des Admins avec listing des Admins
+
+
+
+Server
+- API de base
+- Register
+- Login
+
+Ce qui reste a faire
+- Reset Password
