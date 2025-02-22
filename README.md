@@ -25,7 +25,7 @@ Ce site est protégé par une licence exclusive. Toute utilisation non autorisé
 ## Contact
 
 Développé par **Ryan DECIAN**  
-Email : ryan.decian.dev+projet-Anne-Saunier@ryandecian.com  
+Email : ryan.decian.dev+projet-Anne-Saunier@gmail.com  
 Site web : [portfolio-ryan-decian.netlify.app](https://portfolio-ryan-decian.netlify.app)
 
 ---
