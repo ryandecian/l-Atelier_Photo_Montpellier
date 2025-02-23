@@ -11,6 +11,11 @@
     padding: 0px;
     background-color: var(--backgroundwhite);
 }
+@media (max-width: 800px) {
+    .NavPC {
+        display: none;
+    }
+}
 
 /* Container Logo */
 .ContainerLogoNavPC {
@@ -22,7 +27,7 @@
 .TitleNavPC {
     margin: 0px 0px 0px 48px;
 }
-@media (min-width: 768px) and (max-width: 845px) {
+@media (min-width: 800px) and (max-width: 845px) {
     .TitleNavPC {
         margin: 0px 0px 0px 24px;
     }
