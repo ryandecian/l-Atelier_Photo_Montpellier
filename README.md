@@ -2,7 +2,7 @@
 
 **Version : 1.0 – Dernière mise à jour : 25/01/2025**
 
-Avec Ou Sans Flash est un site vitrine développé pour l'activité de photographie professionnelle d'Anne SAUNIER.
+l'Atelier Photo Montpellier est un site commercial développé pour l'activité de photographie professionnelle d'Anne SAUNIER.
 
 ## Fonctionnalités
 
@@ -14,13 +14,13 @@ Avec Ou Sans Flash est un site vitrine développé pour l'activité de photograp
 
 ## Licence
 
-Ce site est protégé par une licence exclusive. Toute utilisation non autorisée est strictement interdite. Pour plus d'informations, consultez le fichier [LICENSE](./LICENSE_Avec_Ou_Sans_Flash_Global.txt).
+Ce site est protégé par une licence exclusive. Toute utilisation non autorisée est strictement interdite. Pour plus d'informations, consultez le fichier [LICENSE](./LICENSEl-Atelier-Photo-Montpellier-Global.txt).
 
 ## Technologies utilisées
 
-- **Front-end :** React, TypeScript, CSS Modules
-- **Back-end :** Node.js, Express (si applicable)
-- **Base de données :** PostgreSQL / MySQL (si applicable)
+- **Front-end :** React, TypeScript, HTML, CSS, JavaScript, React-Helmet-Async, SEO, CSS Modules
+- **Back-end :** Node.js, Express TypeScript, JavaScript, Argon2, Crypto, JWT-Token, Rate-Limit
+- **Base de données :** PostgreSQL / MySQL
 
 ## Contact
 
@@ -30,4 +30,4 @@ Site web : [portfolio-ryan-decian.netlify.app](https://portfolio-ryan-decian.net
 
 ---
 
-© 2025 Avec Ou Sans Flash. Tous droits réservés.
+© 2025 l'Atelier Photo Montpellier. Tous droits réservés.
