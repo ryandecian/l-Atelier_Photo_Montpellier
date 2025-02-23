@@ -4,22 +4,24 @@ import MenuNavRoot from "../ComponentsNavRoot/MenuNavRoot";
 import style from "../ComponentsNavRoot/MenuNavRoot.module.css"
 
 /* Import des Images*/
-import Logo from "../../../assets/Logo/LOGO-Avec-Ou-Sans-Flash.jpeg";
+// import Logo from "../../../assets/Logo/LOGO-Avec-Ou-Sans-Flash.jpeg";
 
 function NavPC() {
     return (
         <nav className="NavPC">
             <div className="BackgroundNavPC"/>
             <div className="ContainerLogoNavPC">
-                <Link to="/">
-                   <img src={Logo} alt="Logo Avec Ou Sans Flash" />
-                </Link>
+                <h1>
+                    <Link to="/">
+                        l'Atelier Photo Montpellier
+                    </Link>
+                </h1>
             </div>
             {/*-------------------------------------------------------*/}
             <div className="ContainerNavigationNavPC">
                 <div className="ContainerTitleNavPC">
                     <Link to="/" className="TitleNavPC">
-                         Avec Ou Sans Flash
+                         l'Atelier Photo Montpellier
                     </Link>
                 </div>
 

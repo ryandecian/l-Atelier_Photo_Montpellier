@@ -41,6 +41,8 @@
     background-color: var(--ColorSecondaire);
 }
 
+
+
 /*--------------------------------------------------*/
 /* Container Bloc 1/2 */
 .ContainerLogoNavPC {
@@ -79,6 +81,8 @@
     font-size: var(--h1);
     color: var(--ColorPrincipal);
     text-decoration: none;
+    font-family: AnneSignature;
+    font-weight: bold;
 }
 
 
