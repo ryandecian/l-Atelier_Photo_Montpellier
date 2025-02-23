@@ -1,4 +1,5 @@
 @import "./assets/Fonts/Quicksand/stylesheet.css";
+@import "./assets/Fonts/AnneSignature/stylesheet.css";
 
 :root {
     /*Couleur des textes*/
@@ -6,6 +7,7 @@
          --ColorPrincipal: #DCA54A;
          --ColorSecondaire: #3a240f;
          --ColorClaire: #523711;
+         --ColorPink: #ff007f;
          --ColorTexte: #3A3A3A;
          --backgroundBlack: black;
          --backgroundWhite: white;
@@ -62,6 +64,8 @@ body {
 }
 
 /* Espace commentaire : */
+
+/* ATTENTION, pour ce site tout spécialement la limite entre mobile et PC est 800px et non 768px */
 
 /* Gestion des écrans pour un minimum de 300px en de sous non pris en charge */
 /* Sur la Navigation j'ai quand même mis une media query pour les viewport de moins de 300px */

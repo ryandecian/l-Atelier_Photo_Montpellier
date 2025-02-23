@@ -39,11 +39,7 @@ function MenuNavRoot(Props: MenuNavRootProps) {
   return (
     <ul className={moduleMenuUl}>
       <li className={`${moduleMenuLi} ${moduleMenuLiTarget1}`}>
-        <Link to="/actualite" className={moduleMenuLink}>Actualités</Link>
-      </li>
-
-      <li className={`${moduleMenuLi} ${moduleMenuLiTarget2}`}>
-        <Link to="/mariage" className={moduleMenuLink}>Mariage</Link>
+        <Link to="/" className={moduleMenuLink}>Accueil</Link>
       </li>
 
       {/* Menu déroulant pour Portraits */}
@@ -71,8 +67,20 @@ function MenuNavRoot(Props: MenuNavRootProps) {
         )}
       </li>
 
+      <li className={`${moduleMenuLi} ${moduleMenuLiTarget2}`}>
+        <Link to="/mariage" className={moduleMenuLink}>Mariage</Link>
+      </li>
+
       <li className={`${moduleMenuLi} ${moduleMenuLiTarget4}`}>
         <Link to="/tarifs" className={moduleMenuLink}>Tarifs</Link>
+      </li>
+
+      <li className={`${moduleMenuLi} ${moduleMenuLiTarget4}`}>
+        <Link to="/contact" className={moduleMenuLink}>Contact</Link>
+      </li>
+
+      <li className={`${moduleMenuLi} ${moduleMenuLiTarget4}`}>
+        <Link to="/actualites" className={moduleMenuLink}>Actualités</Link>
       </li>
     </ul>
   );
