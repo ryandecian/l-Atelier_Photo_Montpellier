@@ -129,7 +129,7 @@ from "../NavPC/NavPC.tsx"
 }
 .MenuLinkPC:hover {
     transform: scale(1.2); /* Augmente légèrement la taille */
-    color: white; /* Change la couleur en blanc */
+    color: var(--ColorPink); /* Change la couleur en Rose */
 }
 
 .SubMenuPortraitsPC {
