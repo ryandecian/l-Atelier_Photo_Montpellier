@@ -10,8 +10,8 @@ function NavPC() {
     return (
         <nav className="NavPC">
             <div className="ContainerLogoNavPC">
-                <h1>
-                    <Link to="/" className="TitleNavPC">
+                <h1 className="TitleNavPC">
+                    <Link to="/" >
                         l'Atelier Photo Montpellier
                     </Link>
                 </h1>

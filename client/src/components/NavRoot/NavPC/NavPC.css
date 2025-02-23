@@ -13,5 +13,17 @@
 }
 
 /* Container Logo */
+.ContainerLogoNavPC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.TitleNavPC > a {
+    font-size: var(--h1);
+    font-family: AnneSignature;
+    font-weight: normal;
+    color: var(--ColorPrincipal);
+    text-decoration: none;
+}
 /* Container Navigation */
