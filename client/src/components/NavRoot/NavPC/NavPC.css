@@ -3,7 +3,7 @@
 /* Container Principale */
 .NavPC {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     box-shadow: var(--box-shadow);
@@ -19,6 +19,10 @@
     align-items: center;
 }
 
+.TitleNavPC {
+    margin: 0px 0px 0px 48px;
+}
+
 .TitleNavPC > a {
     font-size: var(--h1);
     font-family: AnneSignature;
@@ -27,3 +31,21 @@
     text-decoration: none;
 }
 /* Container Navigation */
+.ContainerNavigationNavPC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+/* @media (max-width: 845px) {
+    .ContainerNavigationNavPC {
+        width: 60%;
+    }
+    
+}
+@media (min-width: 845px) and (max-width: 980px) {
+    .ContainerNavigationNavPC {
+        width: 65%;
+    }
+    
+} */
