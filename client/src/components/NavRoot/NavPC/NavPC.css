@@ -22,6 +22,16 @@
 .TitleNavPC {
     margin: 0px 0px 0px 48px;
 }
+@media (min-width: 768px) and (max-width: 845px) {
+    .TitleNavPC {
+        margin: 0px 0px 0px 24px;
+    }
+}
+@media (min-width: 845px) and (max-width: 895px) {
+    .TitleNavPC {
+        margin: 0px 0px 0px 32px;
+    }
+}
 
 .TitleNavPC > a {
     font-size: var(--h1);
@@ -29,6 +39,7 @@
     font-weight: normal;
     color: var(--ColorPrincipal);
     text-decoration: none;
+    width: 295px;
 }
 /* Container Navigation */
 .ContainerNavigationNavPC {
@@ -37,15 +48,21 @@
     align-items: center;
     width: 600px;
 }
-/* @media (max-width: 845px) {
+@media (max-width: 845px) {
     .ContainerNavigationNavPC {
-        width: 60%;
+        width: calc(100% - 295px - 24px);
     }
     
 }
-@media (min-width: 845px) and (max-width: 980px) {
+@media (min-width: 845px) and (max-width: 895px) {
     .ContainerNavigationNavPC {
-        width: 65%;
+        width: 500px;
     }
     
-} */
+}
+@media (min-width: 895px) and (max-width: 945px) {
+    .ContainerNavigationNavPC {
+        width: 550px;
+    }
+    
+}

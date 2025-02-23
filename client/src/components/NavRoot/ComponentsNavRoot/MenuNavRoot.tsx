@@ -76,7 +76,7 @@ function MenuNavRoot(Props: MenuNavRootProps) {
       </li>
 
       <li className={`${moduleMenuLi} ${moduleMenuLiTarget4}`}>
-        <Link to="/contacts" className={moduleMenuLink}>Contacts</Link>
+        <Link to="/contact" className={moduleMenuLink}>Contact</Link>
       </li>
 
       <li className={`${moduleMenuLi} ${moduleMenuLiTarget4}`}>
