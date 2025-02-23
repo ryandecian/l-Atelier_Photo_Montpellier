@@ -78,7 +78,11 @@ function HomePage() {
                  <NavRoot />
             </header>
             <main className="body">
-                <div className="test"></div>
+                <div className="test">
+                    <h1>
+                        l'Atelier Photo Montpellier
+                    </h1>
+                </div>
             </main>
             <footer/>
         </div>

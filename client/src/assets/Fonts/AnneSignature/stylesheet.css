@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'AnneSignature';
+    src: url('./AnneSignature.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
