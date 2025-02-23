@@ -1,0 +1,10 @@
+.test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.test > h1{
+    font-family: AnneSignature;
+    font-size: 70px;
+    font-weight: normal;
+}
