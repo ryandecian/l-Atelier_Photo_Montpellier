@@ -14,7 +14,7 @@ l'Atelier Photo Montpellier est un site commercial développé pour l'activité 
 
 ## Licence
 
-Ce site est protégé par une licence exclusive. Toute utilisation non autorisée est strictement interdite. Pour plus d'informations, consultez le fichier [LICENSE](./LICENSEl-Atelier-Photo-Montpellier-Global.txt).
+Ce site est protégé par une licence exclusive. Toute utilisation non autorisée est strictement interdite. Pour plus d'informations, consultez le fichier [LICENSE](./LICENSE-l-Atelier-Photo-Montpellier-Global.txt).
 
 ## Technologies utilisées
 
