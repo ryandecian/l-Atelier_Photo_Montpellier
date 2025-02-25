@@ -37,6 +37,8 @@ function MenuBurger() {
                          moduleMenuLiTarget2={style.MenuLiTarget2Mobile}
                          moduleMenuLiTarget3={style.MenuLiTarget3Mobile}
                          moduleMenuLiTarget4={style.MenuLiTarget4Mobile}
+                         moduleMenuLiTarget5={style.MenuLiTarget5Mobile}
+                         moduleMenuLiTarget6={style.MenuLiTarget6Mobile}
 
                          moduleButtonSubMenu={style.ButtonSubMenuMobile}
                          moduleSubMenuLiTarget1={style.SubMenuLiTarget1Mobile}

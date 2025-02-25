@@ -16,6 +16,7 @@ interface MenuNavRootProps {
   moduleMenuLiTarget3?: string;
   moduleMenuLiTarget4?: string;
   moduleMenuLiTarget5?: string;
+  moduleMenuLiTarget6?: string;
 
   moduleButtonSubMenu?: string;
   moduleSubMenuLiTarget1?: string;
@@ -31,9 +32,10 @@ function MenuNavRoot(Props: MenuNavRootProps) {
     moduleSpanPortraits, moduleSubMenuPortraits, 
     moduleMenuLiTarget1, moduleMenuLiTarget2, 
     moduleMenuLiTarget3, moduleMenuLiTarget4,
-    moduleMenuLiTarget5, moduleSubMenuLiTarget1,
-    moduleSubMenuLiTarget2, moduleSubMenuLiTarget3,
-    moduleSubMenuLiTarget4, moduleButtonSubMenu } = Props;
+    moduleMenuLiTarget5, moduleMenuLiTarget6,
+    moduleSubMenuLiTarget1,moduleSubMenuLiTarget2,
+    moduleSubMenuLiTarget3, moduleSubMenuLiTarget4,
+    moduleButtonSubMenu } = Props;
 
   const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
 
@@ -44,7 +46,7 @@ function MenuNavRoot(Props: MenuNavRootProps) {
       </li>
 
       {/* Menu déroulant pour Portraits */}
-      <li className={`${moduleMenuLi} ${moduleMenuLiTarget3}`} onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}>
+      <li className={`${moduleMenuLi} ${moduleMenuLiTarget2}`} onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}>
         <span className={`${moduleMenuLink} ${moduleSubMenuPortraits}`}>
           Portraits <span className={moduleSpanPortraits}>▼</span>
         </span>
@@ -68,19 +70,19 @@ function MenuNavRoot(Props: MenuNavRootProps) {
         )}
       </li>
 
-      <li className={`${moduleMenuLi} ${moduleMenuLiTarget2}`}>
+      <li className={`${moduleMenuLi} ${moduleMenuLiTarget3}`}>
         <Link to="/mariage" className={moduleMenuLink}>Mariage</Link>
       </li>
 
-      <li className={`${moduleMenuLi} ${moduleMenuLiTarget3}`}>
+      <li className={`${moduleMenuLi} ${moduleMenuLiTarget4}`}>
         <Link to="/tarifs" className={moduleMenuLink}>Tarifs</Link>
       </li>
 
-      <li className={`${moduleMenuLi} ${moduleMenuLiTarget4}`}>
+      <li className={`${moduleMenuLi} ${moduleMenuLiTarget5}`}>
         <Link to="/contact" className={moduleMenuLink}>Contact</Link>
       </li>
 
-      <li className={`${moduleMenuLi} ${moduleMenuLiTarget5}`}>
+      <li className={`${moduleMenuLi} ${moduleMenuLiTarget6}`}>
         <Link to="/actualites" className={moduleMenuLink}>Actualités</Link>
       </li>
     </ul>
