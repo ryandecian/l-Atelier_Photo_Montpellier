@@ -15,6 +15,7 @@ interface MenuNavRootProps {
   moduleMenuLiTarget2?: string;
   moduleMenuLiTarget3?: string;
   moduleMenuLiTarget4?: string;
+  moduleMenuLiTarget5?: string;
 
   moduleButtonSubMenu?: string;
   moduleSubMenuLiTarget1?: string;
@@ -29,10 +30,10 @@ function MenuNavRoot(Props: MenuNavRootProps) {
     moduleSubMenuLi, moduleSubMenuLink, 
     moduleSpanPortraits, moduleSubMenuPortraits, 
     moduleMenuLiTarget1, moduleMenuLiTarget2, 
-    moduleMenuLiTarget3, moduleMenuLiTarget4, 
-    moduleSubMenuLiTarget1, moduleSubMenuLiTarget2, 
-    moduleSubMenuLiTarget3, moduleSubMenuLiTarget4, 
-    moduleButtonSubMenu } = Props;
+    moduleMenuLiTarget3, moduleMenuLiTarget4,
+    moduleMenuLiTarget5, moduleSubMenuLiTarget1,
+    moduleSubMenuLiTarget2, moduleSubMenuLiTarget3,
+    moduleSubMenuLiTarget4, moduleButtonSubMenu } = Props;
 
   const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
 
@@ -71,7 +72,7 @@ function MenuNavRoot(Props: MenuNavRootProps) {
         <Link to="/mariage" className={moduleMenuLink}>Mariage</Link>
       </li>
 
-      <li className={`${moduleMenuLi} ${moduleMenuLiTarget4}`}>
+      <li className={`${moduleMenuLi} ${moduleMenuLiTarget3}`}>
         <Link to="/tarifs" className={moduleMenuLink}>Tarifs</Link>
       </li>
 
@@ -79,7 +80,7 @@ function MenuNavRoot(Props: MenuNavRootProps) {
         <Link to="/contact" className={moduleMenuLink}>Contact</Link>
       </li>
 
-      <li className={`${moduleMenuLi} ${moduleMenuLiTarget4}`}>
+      <li className={`${moduleMenuLi} ${moduleMenuLiTarget5}`}>
         <Link to="/actualites" className={moduleMenuLink}>Actualités</Link>
       </li>
     </ul>
