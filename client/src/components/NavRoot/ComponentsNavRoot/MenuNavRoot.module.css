@@ -37,6 +37,12 @@ from "../NavPC/NavPC.tsx"
 }
 .MenuLiTarget4Mobile {
     border-top: 1px solid var(--ColorBorderMenuBurger);
+}
+.MenuLiTarget5Mobile {
+    border-top: 1px solid var(--ColorBorderMenuBurger);
+}
+.MenuLiTarget6Mobile {
+    border-top: 1px solid var(--ColorBorderMenuBurger);
     border-bottom: 1px solid var(--ColorBorderMenuBurger);
 }
 
