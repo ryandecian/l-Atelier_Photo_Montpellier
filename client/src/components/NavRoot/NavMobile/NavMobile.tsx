@@ -10,11 +10,11 @@ function NavMobile() {
         <>
              <nav className="NavMobile">
                 <div className="ContainerLogoNavMobile">
-                    <h1 className="TitleNavMobile">
+                    <p className="TitleNavMobile">
                         <Link to="/">
                             l'Atelier Photo Montpellier
                         </Link>
-                    </h1>
+                    </p>
                 </div>
 
                  <MenuBurger />

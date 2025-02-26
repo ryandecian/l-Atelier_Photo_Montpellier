@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import NavRoot from "../components/NavRoot/NavRoot";
 import "./HomePage.css";
+import HomeRoot from "../components/HomeRoot/HomeRoot";
 
 function HomePage() {
     const SEO = {
@@ -78,11 +79,7 @@ function HomePage() {
                  <NavRoot />
             </header>
             <main className="body">
-                <div className="test">
-                    <h1>
-                        l'Atelier Photo Montpellier
-                    </h1>
-                </div>
+                <HomeRoot />
             </main>
             <footer/>
         </div>

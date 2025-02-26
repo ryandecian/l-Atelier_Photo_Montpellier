@@ -10,11 +10,11 @@ function NavPC() {
     return (
         <nav className="NavPC">
             <div className="ContainerLogoNavPC">
-                <h1 className="TitleNavPC">
+                <p className="TitleNavPC">
                     <Link to="/" >
                         l'Atelier Photo Montpellier
                     </Link>
-                </h1>
+                </p>
             </div>
             <div className="ContainerNavigationNavPC">
                 <MenuNavRoot
