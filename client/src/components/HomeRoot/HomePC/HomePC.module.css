@@ -1,3 +1,6 @@
+@import "../../../root.css";
+
+/* Base du composant HomePC */
 .HomePC {
     display: flex;
     justify-content: center;
@@ -14,6 +17,13 @@
     }
 }
 
+/* Titre H1 de la page d'accueil */
+.ContainerTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 .PrimaryTitle {
     display: flex;
     justify-content: center;
@@ -23,6 +33,7 @@
     width: 100%;
 }
 
+/* Container de la page d'accueil */
 .ContainerAccueil {
     display: flex;
     justify-content: center;
@@ -34,3 +45,30 @@
     background-size: cover;
     background-position: center center;
 }
+
+.Slogan {
+    font-size: var(--h2);
+    color: var(--ColorPink); /* Couleur du texte */
+}
+
+.ButtonDecouvrir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ButtonDecouvrir > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: inherit;
+    all: unset; /* Reset de tout les styles */
+}
+
+.ButtonDecouvrir > button > a {
+    text-decoration: none;
+    color: var(--ColorPink); /* Couleur du texte */
+    font-size: var(--h3);
+}
+
+/* Contenu de la page hors img */
