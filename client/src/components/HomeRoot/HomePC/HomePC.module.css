@@ -9,7 +9,7 @@
     width: 100%;
 }
 @media (max-width: 800px) {
-    .NavPC {
+    .HomePC {
         display: none;
     }
 }
@@ -23,10 +23,11 @@
     width: 100%;
 }
 
-.ImgAccueil {
+.ContainerAccueil {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100%;
     height: 500px;
     background-image: url("../../../assets/Background-img/Dans_vos_yeux_Portrait_16-9.jpg");
