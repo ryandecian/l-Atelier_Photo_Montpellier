@@ -23,6 +23,7 @@
 .TitleNavMobile {
     font-size: var(--h1);
     font-family: AnneSignature;
+    font-weight: normal;
     color: var(--ColorPrincipal);
 }
 
