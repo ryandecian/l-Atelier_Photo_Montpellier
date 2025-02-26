@@ -23,7 +23,24 @@ function HomePC() {
                 </p>
             </div>
 
-            <div></div>
+            <div className={style.ContainerIntroduction}>
+                <div className={style.IntroTitle}>
+                    <h2>
+                        INTRODUCTION :
+                    </h2>
+                </div>
+                <div className={style.IntroText1}>
+                    <p>
+                        Vous cherchez à immortaliser des moments uniques à travers des portraits authentiques,
+                        des photos de mariage, des shootings lifestyle ou même en vidéo ?
+                    </p>
+                </div>
+                <div className={style.IntroText2}>
+                    <p>
+                        En tant que photographe professionnelle à Montpellier, je m'engage à capturer vos moments précieux avec professionnalisme et sensibilité.
+                    </p>
+                </div>
+            </div>
         </div>
     );
 }
