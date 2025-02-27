@@ -2,7 +2,7 @@ import style from './HomePC.module.css';
 import { Link } from 'react-router-dom';
 
 /* Import des composants */
-import ContainerIntroductionHome from '../ComponentHomeRoot/ContainerIntroductionHome';
+import ContainerIntroductionHomeRoot from '../ComponentHomeRoot/ContainerIntroductionHomeRoot';
 
 function HomePC() {
     return (
@@ -27,7 +27,7 @@ function HomePC() {
             </div>
 
             {/* Container 1 : Introduction */}
-            <ContainerIntroductionHome />
+            <ContainerIntroductionHomeRoot />
 
             {/* Container 2 : Mon expertise */}
             <section className={style.ContainerExpertise}>

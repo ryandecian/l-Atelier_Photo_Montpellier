@@ -1,6 +1,6 @@
-import style from "./ContainerIntroductionHome.module.css";
+import style from "./ContainerIntroductionHomeRoot.module.css";
 
-function ContainerIntroductionHome() {
+function ContainerIntroductionHomeRoot() {
     return (
         <section className={style.ContainerIntroduction}>
                 <header className={style.IntroTitle}>
@@ -23,4 +23,4 @@ function ContainerIntroductionHome() {
     );
 }
 
-export default ContainerIntroductionHome;
+export default ContainerIntroductionHomeRoot;
