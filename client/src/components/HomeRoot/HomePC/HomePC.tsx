@@ -52,11 +52,20 @@ function HomePC() {
                 </div>
                 <div className={style.ExpertiseText1}>
                     <p>
-                        Vous cherchez à immortaliser des moments uniques à travers des portraits authentiques,
-                        des photos de mariage, des shootings lifestyle ou même en vidéo ?
+                        En tant que photographe professionnelle installée à Montpellier et spécialisée en 
+                        portraits – qu’ils soient corporate, lifestyle, réalisés en lumière naturelle ou 
+                        au flash – je mets tout en œuvre pour saisir la personnalité unique de chacun. La 
+                        photographie de portrait professionnel n’est pas seulement une technique, c’est une 
+                        véritable passion que je développe afin que chacun et chacune puisse porter un 
+                        regard sur lui (elle) positif et valorisant. 
                     </p>
                 </div>
                 <div className={style.ExpertiseText2}>
+                    <p>
+                        En tant que photographe professionnelle à Montpellier, je m'engage à capturer vos moments précieux avec professionnalisme et sensibilité.
+                    </p>
+                </div>
+                <div className={style.ExpertiseText3}>
                     <p>
                         En tant que photographe professionnelle à Montpellier, je m'engage à capturer vos moments précieux avec professionnalisme et sensibilité.
                     </p>
