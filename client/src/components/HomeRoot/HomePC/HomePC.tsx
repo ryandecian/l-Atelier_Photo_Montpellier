@@ -44,13 +44,13 @@ function HomePC() {
             </div>
 
             {/* Container 2 : Mon expertise */}
-            <div className={style.ContainerExpertise}>
-                <div className={style.ExpertiseTitle}>
+            <section className={style.ContainerExpertise}>
+                <header className={style.ExpertiseTitle}>
                     <h2>
                         MON EXPERTISE :
                     </h2>
-                </div>
-                <div className={style.ExpertiseText1}>
+                </header>
+                <article className={style.ExpertiseText1}>
                     <p>
                         En tant que photographe professionnelle installée à Montpellier et spécialisée en 
                         portraits – qu’ils soient corporate, lifestyle, réalisés en lumière naturelle ou 
@@ -59,8 +59,8 @@ function HomePC() {
                         véritable passion que je développe afin que chacun et chacune puisse porter un 
                         regard sur lui (elle) positif et valorisant. 
                     </p>
-                </div>
-                <div className={style.ExpertiseText2}>
+                </article>
+                <article className={style.ExpertiseText2}>
                     <p>
                         Ma vision du mariage se décline sous la forme d’un reportage photographique. Plutôt 
                         que de créer de simples poses figées, je privilégie l’instantanéité et la spontanéité 
@@ -69,18 +69,19 @@ function HomePC() {
                         visuelle complète, où chaque image capte la complicité, la tendresse et l’authenticité 
                         du grand jour.
                     </p>
-                </div>
-                <div className={style.ExpertiseText3}>
+                </article>
+                <article className={style.ExpertiseText3}>
                     <p>
                         En choisissant mes services, vous optez pour un accompagnement sur mesure, alliant expertise 
                         technique, sensibilité artistique et un engagement passionné pour immortaliser vos moments 
                         les plus précieux. Vos portraits seront l’image à d’un reportage de mariage authentique et 
                         vibrant de vie ! 
                     </p>
-                </div>
-            </div>
+                </article>
+            </section>
 
-            {/* Container 3 : Services */}
+            {/* Container 3 : Présentation des services */}
+            <div className={style.ContainerServices}></div>
         </div>
     );
 }
