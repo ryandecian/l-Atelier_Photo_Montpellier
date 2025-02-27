@@ -25,6 +25,9 @@
 }
 
 .TitleNavPC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0px 0px 0px 48px;
 }
 @media (min-width: 800px) and (max-width: 845px) {
