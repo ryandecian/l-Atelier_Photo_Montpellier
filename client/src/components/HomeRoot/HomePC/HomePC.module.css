@@ -17,22 +17,6 @@
     }
 }
 
-/* Titre H1 de la page d'accueil */
-.ContainerTitle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.PrimaryTitle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: var(--h1);
-    width: 100%;
-}
-
 /* Container de la page d'accueil */
 .ContainerAccueil {
     display: flex;
@@ -69,48 +53,4 @@
     text-decoration: none;
     color: var(--ColorPink); /* Couleur du texte */
     font-size: var(--h3);
-}
-
-/* Contenu de la page hors img */
-.ContainerIntroduction {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    margin: 0px 24px 0px 24px;
-}
-
-/* Element 1 : Titre H2 */
-.IntroTitle {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    width: 100%;
-}
-.IntroTitle > h2 {
-    font-size: var(--h2);
-    margin: 20px 24px 20px 24px;
-}
-
-.IntroText1 {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    width: 100%;
-}
-.IntroText1 > p {
-    font-size: var(--h4);
-    margin: 0px 24px 0px 24px;
-}
-
-.IntroText2 {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    width: 100%;
-}
-.IntroText2 > p {
-    font-size: var(--h4);
-    margin: 0px 24px 0px 24px;
 }
