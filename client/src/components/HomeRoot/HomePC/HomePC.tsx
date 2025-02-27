@@ -2,8 +2,8 @@ import style from './HomePC.module.css';
 import { Link } from 'react-router-dom';
 
 /* Import des composants */
-import ContainerIntroductionHomeRoot from '../ComponentHomeRoot/ContainerIntroductionHomeRoot';
-import ContainerExpertiseHomeRoot from './ContainerExpertiseHomeRoot';
+import ContainerIntroductionHomeRoot from '../ComponentHomeRoot/ContainerIntroductionHomeRoot/ContainerIntroductionHomeRoot';
+import ContainerExpertiseHomeRoot from '../ComponentHomeRoot/ContainerExpertiseHomeRoot/ContainerExpertiseHomeRoot';
 
 function HomePC() {
     return (
