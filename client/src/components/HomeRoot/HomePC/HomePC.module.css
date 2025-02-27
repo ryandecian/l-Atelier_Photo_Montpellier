@@ -17,22 +17,6 @@
     }
 }
 
-/* Titre H1 de la page d'accueil */
-.ContainerTitle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.PrimaryTitle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: var(--h1);
-    width: 100%;
-}
-
 /* Container de la page d'accueil */
 .ContainerAccueil {
     display: flex;
