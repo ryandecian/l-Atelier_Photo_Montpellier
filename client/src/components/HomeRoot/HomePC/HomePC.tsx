@@ -62,12 +62,20 @@ function HomePC() {
                 </div>
                 <div className={style.ExpertiseText2}>
                     <p>
-                        En tant que photographe professionnelle à Montpellier, je m'engage à capturer vos moments précieux avec professionnalisme et sensibilité.
+                        Ma vision du mariage se décline sous la forme d’un reportage photographique. Plutôt 
+                        que de créer de simples poses figées, je privilégie l’instantanéité et la spontanéité 
+                        des émotions vécues durant la cérémonie. Je cherche à être au plus près de tous ces 
+                        instants afin qu’ils restent gravés, et cette approche me permet de raconter une histoire 
+                        visuelle complète, où chaque image capte la complicité, la tendresse et l’authenticité 
+                        du grand jour.
                     </p>
                 </div>
                 <div className={style.ExpertiseText3}>
                     <p>
-                        En tant que photographe professionnelle à Montpellier, je m'engage à capturer vos moments précieux avec professionnalisme et sensibilité.
+                        En choisissant mes services, vous optez pour un accompagnement sur mesure, alliant expertise 
+                        technique, sensibilité artistique et un engagement passionné pour immortaliser vos moments 
+                        les plus précieux. Vos portraits seront l’image à d’un reportage de mariage authentique et 
+                        vibrant de vie ! 
                     </p>
                 </div>
             </div>
