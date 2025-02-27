@@ -43,7 +43,27 @@ function HomePC() {
                 </div>
             </div>
 
-            {/* Container 2 : Services */}
+            {/* Container 2 : Mon expertise */}
+            <div className={style.ContainerExpertise}>
+                <div className={style.ExpertiseTitle}>
+                    <h2>
+                        MON EXPERTISE :
+                    </h2>
+                </div>
+                <div className={style.ExpertiseText1}>
+                    <p>
+                        Vous cherchez à immortaliser des moments uniques à travers des portraits authentiques,
+                        des photos de mariage, des shootings lifestyle ou même en vidéo ?
+                    </p>
+                </div>
+                <div className={style.ExpertiseText2}>
+                    <p>
+                        En tant que photographe professionnelle à Montpellier, je m'engage à capturer vos moments précieux avec professionnalisme et sensibilité.
+                    </p>
+                </div>
+            </div>
+
+            {/* Container 3 : Services */}
         </div>
     );
 }
