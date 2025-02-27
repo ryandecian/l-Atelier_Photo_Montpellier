@@ -23,6 +23,7 @@ function HomePC() {
                 </p>
             </div>
 
+            {/* Container 1 : Introduction */}
             <div className={style.ContainerIntroduction}>
                 <div className={style.IntroTitle}>
                     <h2>
@@ -41,6 +42,8 @@ function HomePC() {
                     </p>
                 </div>
             </div>
+
+            {/* Container 2 : Services */}
         </div>
     );
 }
