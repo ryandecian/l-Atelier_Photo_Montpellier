@@ -1,6 +1,9 @@
 import style from './HomePC.module.css';
 import { Link } from 'react-router-dom';
 
+/* Import des composants */
+import ContainerIntroductionHome from '../ComponentHomeRoot/ContainerIntroductionHome';
+
 function HomePC() {
     return (
         <div className={style.HomePC}>
@@ -24,24 +27,7 @@ function HomePC() {
             </div>
 
             {/* Container 1 : Introduction */}
-            <div className={style.ContainerIntroduction}>
-                <div className={style.IntroTitle}>
-                    <h2>
-                        INTRODUCTION :
-                    </h2>
-                </div>
-                <div className={style.IntroText1}>
-                    <p>
-                        Vous cherchez à immortaliser des moments uniques à travers des portraits authentiques,
-                        des photos de mariage, des shootings lifestyle ou même en vidéo ?
-                    </p>
-                </div>
-                <div className={style.IntroText2}>
-                    <p>
-                        En tant que photographe professionnelle à Montpellier, je m'engage à capturer vos moments précieux avec professionnalisme et sensibilité.
-                    </p>
-                </div>
-            </div>
+            <ContainerIntroductionHome />
 
             {/* Container 2 : Mon expertise */}
             <section className={style.ContainerExpertise}>
