@@ -1,9 +1,10 @@
 import style from './HomePC.module.css';
 
 /* Import des composants */
+import ContainerAccueilHomeRoot from '../ComponentHomeRoot/ContainerTitleHomeRoot/ContainerAccueilHomeRoot';
 import ContainerIntroductionHomeRoot from '../ComponentHomeRoot/ContainerIntroductionHomeRoot/ContainerIntroductionHomeRoot';
 import ContainerExpertiseHomeRoot from '../ComponentHomeRoot/ContainerExpertiseHomeRoot/ContainerExpertiseHomeRoot';
-import ContainerAccueilHomeRoot from '../ComponentHomeRoot/ContainerTitleHomeRoot/ContainerAccueilHomeRoot';
+import ContainerServicesHomeRoot from '../ComponentHomeRoot/ContainerServicesHomeRoot/ContainerServicesHomeRoot';
 
 function HomePC() {
     return (
@@ -18,7 +19,7 @@ function HomePC() {
             <ContainerExpertiseHomeRoot />
 
             {/* Container 4 : Présentation des services */}
-            <div className={style.ContainerServices}></div>
+            <ContainerServicesHomeRoot />
         </div>
     );
 }
