@@ -1,5 +1,16 @@
 @import "../../../../root.css";
 
+/* Container principale contenant toute la logique */
+.ContainerAccueil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+/*----------------------------------------------------------------------------------*/
+
 /* Titre H1 de la page d'accueil */
 .ContainerTitle {
     display: flex;
@@ -19,7 +30,7 @@
 /*----------------------------------------------------------------------------------*/
 
 /* Container de la page d'accueil */
-.ContainerAccueil {
+.ContainerSubAccueil {
     display: flex;
     justify-content: center;
     align-items: center;
