@@ -8,7 +8,7 @@
 
 /* Titre principal */
 .ServicesTitle h2 {
-    font-size: 2rem;
+    font-size: var(--h2);
     margin-bottom: 30px;
 }
 
@@ -27,7 +27,7 @@
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow);
     transition: transform 0.3s ease-in-out;
 }
 
@@ -48,11 +48,11 @@
 }
 
 .CardTitle {
-    font-size: 1.5rem;
+    font-size: var(--h2);
     margin-bottom: 10px;
 }
 
 .CardDescription {
-    font-size: 1rem;
+    font-size: var(--h4);
     color: #666;
 }
