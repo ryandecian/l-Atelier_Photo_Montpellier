@@ -8,10 +8,15 @@
     flex-direction: column;
     width: 100%;
     margin: 20px 0px 0px 0px;
-    text-align: center;
 }
 
 /* Titre principal */
+.ServicesTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 .ServicesTitle > h2 {
     font-size: var(--h2);
     margin-bottom: 30px;
@@ -23,6 +28,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    text-align: center;
 }
 
 /* Card */
