@@ -44,4 +44,51 @@
     padding: 0px 0px 20px 0px;
 }
 
+.Service1Text2 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+
+.Service1Text2 > p {
+    font-size: var(--h4);
+    margin: 0px 24px 0px 24px;
+    padding: 0px 0px 20px 0px;
+}
+
 /* Description Service 2 */
+
+.DescriptionServices2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+}
+
+.Services2Title {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+
+.Services2Title > h3 {
+    font-size: var(--h2);
+    margin: 20px 24px 20px 24px;
+}
+
+.Service2Text1 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+
+.Service2Text1 > p {
+    font-size: var(--h4);
+    margin: 0px 24px 0px 24px;
+    padding: 0px 0px 20px 0px;
+}
