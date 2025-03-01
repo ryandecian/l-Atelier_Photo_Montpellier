@@ -2,8 +2,13 @@
 
 /* Conteneur principal */
 .ContainerServices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 0px 0px 0px;
     text-align: center;
-    padding: 50px 20px;
 }
 
 /* Titre principal */
