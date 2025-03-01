@@ -1,4 +1,5 @@
 import style from "./ContainerServicesHomeRoot.module.css";
+import ContainerDescriptionServicesHomeRoot from "./ContainerDescriptionServicesHomeRoot/ContainerDescriptionServicesHomeRoot";
 import ImgService1 from "../../../../assets/Background-img/Dans_vos_yeux_Portrait_4-3.jpg";
 
 function ContainerServicesHomeRoot() {
@@ -31,6 +32,8 @@ function ContainerServicesHomeRoot() {
                     </div>
                 </article>
             </div>
+
+            <ContainerDescriptionServicesHomeRoot />
         </section>
     );
 }

@@ -8,6 +8,7 @@ function ContainerExpertiseHomeRoot() {
                         MON EXPERTISE :
                     </h2>
                 </header>
+                
                 <article className={style.ExpertiseText1}>
                     <p>
                         En tant que photographe professionnelle installée à Montpellier et spécialisée en 
