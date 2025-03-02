@@ -16,7 +16,7 @@ function FooterPC() {
             </header>
 
             {/* Container 2 : Navigation du Footer */}
-            <div className={style.ContainerNavFooter}>
+            <nav className={style.ContainerNavFooter}>
 
                 {/* Nav 1 : A propos */}
                 <section className={style.SubContainerNavFooter}>
@@ -110,7 +110,7 @@ function FooterPC() {
                         </p>
                     </article>
                 </section>
-            </div>
+            </nav>
 
             {/* Container 3 : Copyright */}
             <article className={style.ContainerCopyright}>
