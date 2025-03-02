@@ -57,27 +57,27 @@ function FooterPC() {
                         </h3>
                     </header>
 
-                    <article className={style.ArticleText}>
-                        <p className={style.TextLink}>
+                    <ul className={style.ArticleText}>
+                        <li className={style.TextLink}>
                             <Link to="#">
                                 Instagram
                             </Link>
-                        </p>
-                    </article>
-                    <article className={style.ArticleText}>
-                        <p className={style.TextLink}>
+                        </li>
+                    </ul>
+                    <ul className={style.ArticleText}>
+                        <li className={style.TextLink}>
                             <Link to="#">
                                 Facebook
                             </Link>
-                        </p>
-                    </article>
-                    <article className={style.ArticleText}>
-                        <p className={style.TextLink}>
+                        </li>
+                    </ul>
+                    <ul className={style.ArticleText}>
+                        <li className={style.TextLink}>
                             <Link to="#">
                                 Youtube
                             </Link>
-                        </p>
-                    </article>
+                        </li>
+                    </ul>
                 </section>
 
                 {/* Nav 3 : Politique & Termes */}
