@@ -23,10 +23,24 @@ function FooterPC() {
                         </h3>
                     </header>
 
-                    <article className={style.ContainerTextNavFooter}>
+                    <article className={style.ArticleText}>
                         <p className={style.TextLink}>
                             <Link to="#">
                                 Qui suis-je ?
+                            </Link>
+                        </p>
+                    </article>
+                    <article className={style.ArticleText}>
+                        <p className={style.TextLink}>
+                            <Link to="#">
+                                Me contacter
+                            </Link>
+                        </p>
+                    </article>
+                    <article className={style.ArticleText}>
+                        <p className={style.TextLink}>
+                            <Link to="#">
+                                Portfolio
                             </Link>
                         </p>
                     </article>
