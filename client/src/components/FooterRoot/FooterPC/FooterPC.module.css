@@ -80,7 +80,7 @@
 
 .TextLink > a {
     font-size: var(--p);
-    color: var(--ColorWhite);
+    color: var(--ColorGrey);
     text-decoration: none;
     margin: 0px;
     padding: 0px 0px 5px 0px;
@@ -94,3 +94,18 @@
 /*--------------------------------------------------*/
 
 /* Container 3 : Copyright */
+.ContainerCopyright {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Copyright {
+    font-size: var(--p);
+    color: var(--ColorPink);
+    margin: 10px 24px 0px 24px;
+    padding: 10px 0px 10px 0px;
+}
