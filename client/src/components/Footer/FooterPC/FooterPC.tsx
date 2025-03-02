@@ -9,7 +9,7 @@ function FooterPC() {
                  <span className="DateLogPC">
                      {dateNow === 2024 ? `©2024 ` : `©2024 - ${dateNow} `}
                  </span>
-             - Anne SAUNIER. Tous droits réservés.
+             - l'Atelier Photo Montpellier. Tous droits réservés.
          </p>
         </section>
     )
