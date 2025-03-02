@@ -96,11 +96,11 @@ function FooterPC() {
                         </li>
                     </ul>
                     <ul className={style.ArticleText}>
-                        <ul className={style.TextLink}>
+                        <li className={style.TextLink}>
                             <Link to="#">
                                 CGV
                             </Link>
-                        </ul>
+                        </li>
                     </ul>
                     <ul className={style.ArticleText}>
                         <li className={style.TextLink}>
