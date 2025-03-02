@@ -16,7 +16,7 @@ function FooterPC() {
             </header>
 
             {/* Container 2 : Navigation du Footer */}
-            <div className={style.ContainerNavFooter}>
+            <nav className={style.ContainerNavFooter}>
 
                 {/* Nav 1 : A propos */}
                 <section className={style.SubContainerNavFooter}>
@@ -26,27 +26,27 @@ function FooterPC() {
                         </h3>
                     </header>
 
-                    <article className={style.ArticleText}>
-                        <p className={style.TextLink}>
+                    <ul className={style.UlText}>
+                        <li className={style.LiTextLink}>
                             <Link to="#">
                                 Qui suis-je ?
                             </Link>
-                        </p>
-                    </article>
-                    <article className={style.ArticleText}>
-                        <p className={style.TextLink}>
+                        </li>
+                    </ul>
+                    <ul className={style.UlText}>
+                        <li className={style.LiTextLink}>
                             <Link to="#">
                                 Me contacter
                             </Link>
-                        </p>
-                    </article>
-                    <article className={style.ArticleText}>
-                        <p className={style.TextLink}>
+                        </li>
+                    </ul>
+                    <ul className={style.UlText}>
+                        <li className={style.LiTextLink}>
                             <Link to="#">
                                 Portfolio
                             </Link>
-                        </p>
-                    </article>
+                        </li>
+                    </ul>
                 </section>
 
                 {/* Nav 2 : Réseaux */}
@@ -57,27 +57,27 @@ function FooterPC() {
                         </h3>
                     </header>
 
-                    <article className={style.ArticleText}>
-                        <p className={style.TextLink}>
+                    <ul className={style.UlText}>
+                        <li className={style.LiTextLink}>
                             <Link to="#">
                                 Instagram
                             </Link>
-                        </p>
-                    </article>
-                    <article className={style.ArticleText}>
-                        <p className={style.TextLink}>
+                        </li>
+                    </ul>
+                    <ul className={style.UlText}>
+                        <li className={style.LiTextLink}>
                             <Link to="#">
                                 Facebook
                             </Link>
-                        </p>
-                    </article>
-                    <article className={style.ArticleText}>
-                        <p className={style.TextLink}>
+                        </li>
+                    </ul>
+                    <ul className={style.UlText}>
+                        <li className={style.LiTextLink}>
                             <Link to="#">
                                 Youtube
                             </Link>
-                        </p>
-                    </article>
+                        </li>
+                    </ul>
                 </section>
 
                 {/* Nav 3 : Politique & Termes */}
@@ -88,29 +88,29 @@ function FooterPC() {
                         </h3>
                     </header>
 
-                    <article className={style.ArticleText}>
-                        <p className={style.TextLink}>
+                    <ul className={style.UlText}>
+                        <li className={style.LiTextLink}>
                             <Link to="#">
                                 Mention légale
                             </Link>
-                        </p>
-                    </article>
-                    <article className={style.ArticleText}>
-                        <p className={style.TextLink}>
+                        </li>
+                    </ul>
+                    <ul className={style.UlText}>
+                        <li className={style.LiTextLink}>
                             <Link to="#">
                                 CGV
                             </Link>
-                        </p>
-                    </article>
-                    <article className={style.ArticleText}>
-                        <p className={style.TextLink}>
+                        </li>
+                    </ul>
+                    <ul className={style.UlText}>
+                        <li className={style.LiTextLink}>
                             <Link to="#">
                                 CNIL
                             </Link>
-                        </p>
-                    </article>
+                        </li>
+                    </ul>
                 </section>
-            </div>
+            </nav>
 
             {/* Container 3 : Copyright */}
             <article className={style.ContainerCopyright}>
