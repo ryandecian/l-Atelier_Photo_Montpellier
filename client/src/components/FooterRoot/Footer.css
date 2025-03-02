@@ -1,0 +1,69 @@
+.footer {
+    background-image: url(../../assets/Logo/Logo-LAPM.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .footer-brand h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #f1c40f;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer-social img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer-social img:hover {
+    transform: scale(1.1);
+  }
+  
+  .footer-copyright {
+    font-size: 0.9rem;
+    opacity: 0.7;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .footer-links {
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+  

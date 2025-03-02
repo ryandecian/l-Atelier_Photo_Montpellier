@@ -2,6 +2,8 @@ import { Helmet } from "react-helmet-async";
 import NavRoot from "../components/NavRoot/NavRoot";
 import "./HomePage.css";
 import HomeRoot from "../components/HomeRoot/HomeRoot";
+import Footer from "../components/FooterRoot/Footer";
+import FooterRoot from "../components/FooterRoot/FooterRoot";
 
 function HomePage() {
     const SEO = {
@@ -41,7 +43,7 @@ function HomePage() {
      const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
 
      return (
-        <div>
+        <div className="HomePage">
             <Helmet>
                   {/* Balises SEO */}
                      {/* Balise pour indexation général */}
@@ -75,13 +77,16 @@ function HomePage() {
                      {/* Canonical URL (évite le contenu dupliqué pour les moteurs de recherche) */}
                          <link rel="canonical" href={SEO.url} />
             </Helmet>
-            <header>
+            <header className="Header">
                  <NavRoot />
             </header>
-            <main className="body">
+            <main className="Main">
                 <HomeRoot />
             </main>
-            <footer/>
+            <footer className="Footer">
+                <FooterRoot />
+                <Footer />
+            </footer>
         </div>
     )
 }

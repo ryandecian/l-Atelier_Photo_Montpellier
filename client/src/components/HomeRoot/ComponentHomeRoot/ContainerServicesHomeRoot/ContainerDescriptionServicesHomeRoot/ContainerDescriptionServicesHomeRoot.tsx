@@ -1,4 +1,5 @@
 import style from "./ContainerDescriptionServicesHomeRoot.module.css";
+import { Link } from "react-router-dom";
 
 function ContainerDescriptionServicesHomeRoot() {
     return (
@@ -52,6 +53,14 @@ function ContainerDescriptionServicesHomeRoot() {
                     </p>
                 </article>
             </section>
+
+            <div className={style.LinkPrestation}>
+                <p>
+                    <Link to="#">
+                        Découvrez plus en détail mes prestations et comment je peux vous aider à revivre votre journée dans tous ses moments !
+                    </Link>
+                </p>
+            </div>
         </div>
     );
 }
