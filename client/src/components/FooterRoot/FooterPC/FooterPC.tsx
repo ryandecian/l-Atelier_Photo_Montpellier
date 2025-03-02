@@ -88,27 +88,27 @@ function FooterPC() {
                         </h3>
                     </header>
 
-                    <article className={style.ArticleText}>
-                        <p className={style.TextLink}>
+                    <ul className={style.ArticleText}>
+                        <li className={style.TextLink}>
                             <Link to="#">
                                 Mention légale
                             </Link>
-                        </p>
-                    </article>
-                    <article className={style.ArticleText}>
-                        <p className={style.TextLink}>
+                        </li>
+                    </ul>
+                    <ul className={style.ArticleText}>
+                        <ul className={style.TextLink}>
                             <Link to="#">
                                 CGV
                             </Link>
-                        </p>
-                    </article>
-                    <article className={style.ArticleText}>
-                        <p className={style.TextLink}>
+                        </ul>
+                    </ul>
+                    <ul className={style.ArticleText}>
+                        <li className={style.TextLink}>
                             <Link to="#">
                                 CNIL
                             </Link>
-                        </p>
-                    </article>
+                        </li>
+                    </ul>
                 </section>
             </nav>
 
