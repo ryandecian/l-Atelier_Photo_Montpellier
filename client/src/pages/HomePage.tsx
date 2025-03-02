@@ -83,8 +83,8 @@ function HomePage() {
             <main className="body">
                 <HomeRoot />
             </main>
-            <FooterRoot />
             <footer>
+                <FooterRoot />
                 <Footer />
             </footer>
         </div>
