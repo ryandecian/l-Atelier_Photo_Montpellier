@@ -1,7 +1,7 @@
 import FooterPC from "./FooterPC/FooterPC";
 import FooterMobile from "./FooterMobile/FooterMobile";
 
-function FooterRoot() {
+function FooterRoott() {
     return (
         <>
              <FooterMobile />
@@ -10,4 +10,4 @@ function FooterRoot() {
     )
 }
 
-export default FooterRoot;
+export default FooterRoott;
