@@ -14,6 +14,8 @@ function FooterPC() {
 
             {/* Container 2 : Navigation du Footer */}
             <div className={style.ContainerNavFooter}>
+
+                {/* Nav 1 : A propos */}
                 <section className={style.SubContainerNavFooter}>
                     <header className={style.TitleNavFooter}>
                         <h3>
