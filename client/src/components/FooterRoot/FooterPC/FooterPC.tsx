@@ -2,6 +2,9 @@ import style from "./FooterPC.module.css";
 import { Link } from "react-router-dom";
 
 function FooterPC() {
+
+    const dateNow = new Date().getFullYear();
+
     return (
         <section className={style.FooterPC}>
 
@@ -108,6 +111,16 @@ function FooterPC() {
                     </article>
                 </section>
             </div>
+
+            {/* Container 3 : Copyright */}
+            <article className={style.ContainerCopyright}>
+                <p className={style.Copyright}> 
+                    <span className={style.DateLogPC}>
+                        {dateNow === 2024 ? `©2024 ` : `©2024 - ${dateNow} `}
+                    </span>
+                     - l'Atelier Photo Montpellier. Tous droits réservés.
+                </p>
+            </article>
         </section>
     );
 }
