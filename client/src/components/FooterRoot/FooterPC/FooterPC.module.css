@@ -10,7 +10,9 @@
     background-color: var(--ColorPrincipal);
 }
 
-/* Sub Container 1 : Titre */
+/*--------------------------------------------------*/
+
+/* Container 1 : Titre */
 .TitleFooter {
     display: flex;
     justify-content: center;
@@ -26,7 +28,31 @@
     margin: 10px 20px 10px 20px;
 }
 
-/* Sub Container 2 : Navigation du FooterPC */
+/*--------------------------------------------------*/
 
+/* Container 2 : Navigation du FooterPC */
+.ContainerNavFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
 
-/* Sub Container 3 : Copyright */
+/* Tous les Sub Container du Container 2 ont la même structure et les mêmes classNames */
+.SubContainerNavFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.TitleNavFooter {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+/*--------------------------------------------------*/
+
+/* Container 3 : Copyright */
