@@ -7,4 +7,26 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
+    background-color: var(--ColorPrincipal);
 }
+
+/* Sub Container 1 : Titre */
+.TitleFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.TitleFooter > h2 {
+    font-size: var(--h2);
+    font-family: AnneSignature;
+    font-weight: normal;
+    color: var(--ColorWhite);
+    margin: 10px 20px 10px 20px;
+}
+
+/* Sub Container 2 : Navigation du FooterPC */
+
+
+/* Sub Container 3 : Copyright */
