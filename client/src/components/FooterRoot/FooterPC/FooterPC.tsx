@@ -115,7 +115,7 @@ function FooterPC() {
             {/* Container 3 : Copyright */}
             <article className={style.ContainerCopyright}>
                 <p className={style.Copyright}> 
-                    <span className="DateLogPC">
+                    <span className={style.DateLogPC}>
                         {dateNow === 2024 ? `©2024 ` : `©2024 - ${dateNow} `}
                     </span>
                      - l'Atelier Photo Montpellier. Tous droits réservés.
