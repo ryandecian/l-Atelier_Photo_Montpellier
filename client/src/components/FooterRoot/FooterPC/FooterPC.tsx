@@ -26,27 +26,27 @@ function FooterPC() {
                         </h3>
                     </header>
 
-                    <article className={style.ArticleText}>
-                        <p className={style.TextLink}>
+                    <ul className={style.ArticleText}>
+                        <li className={style.TextLink}>
                             <Link to="#">
                                 Qui suis-je ?
                             </Link>
-                        </p>
-                    </article>
-                    <article className={style.ArticleText}>
-                        <p className={style.TextLink}>
+                        </li>
+                    </ul>
+                    <ul className={style.ArticleText}>
+                        <li className={style.TextLink}>
                             <Link to="#">
                                 Me contacter
                             </Link>
-                        </p>
-                    </article>
-                    <article className={style.ArticleText}>
-                        <p className={style.TextLink}>
+                        </li>
+                    </ul>
+                    <ul className={style.ArticleText}>
+                        <li className={style.TextLink}>
                             <Link to="#">
                                 Portfolio
                             </Link>
-                        </p>
-                    </article>
+                        </li>
+                    </ul>
                 </section>
 
                 {/* Nav 2 : Réseaux */}
