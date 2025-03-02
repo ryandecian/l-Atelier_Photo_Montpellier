@@ -2,6 +2,8 @@ import { Helmet } from "react-helmet-async";
 import NavRoot from "../components/NavRoot/NavRoot";
 import "./HomePage.css";
 import HomeRoot from "../components/HomeRoot/HomeRoot";
+import Footer from "../components/FooterRoot/Footer";
+import FooterRoot from "../components/FooterRoot/FooterRoot";
 
 function HomePage() {
     const SEO = {
@@ -81,7 +83,10 @@ function HomePage() {
             <main className="body">
                 <HomeRoot />
             </main>
-            <footer/>
+            <FooterRoot />
+            <footer>
+                <Footer />
+            </footer>
         </div>
     )
 }
