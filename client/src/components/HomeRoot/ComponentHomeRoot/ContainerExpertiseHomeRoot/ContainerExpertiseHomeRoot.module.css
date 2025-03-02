@@ -1,5 +1,13 @@
 @import "../../../../root.css";
 
+.ContainerExpertise {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
 .ExpertiseTitle {
     display: flex;
     justify-content: start;
