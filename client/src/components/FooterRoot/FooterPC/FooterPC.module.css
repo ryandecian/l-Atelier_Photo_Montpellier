@@ -8,6 +8,8 @@
     flex-direction: column;
     width: 100%;
     background-color: var(--ColorPrincipal);
+    margin: 0px;
+    padding: 0px 0px 20px 0px;
 }
 
 /*--------------------------------------------------*/
@@ -33,10 +35,9 @@
 /* Container 2 : Navigation du FooterPC */
 .ContainerNavFooter {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    flex-direction: column;
-    margin: 24px 0px 24px 0px;
+    margin: 0px;
     width: 100%;
 }
 
@@ -56,8 +57,10 @@
 }
 .TitleNavFooter > h3 {
     font-size: var(--h3);
+    font-weight: bold;
     color: var(--ColorWhite);
     margin: 0px;
+    padding: 0px 0px 10px 0px;
 }
 
 .ArticleText {
@@ -80,6 +83,12 @@
     color: var(--ColorWhite);
     text-decoration: none;
     margin: 0px;
+    padding: 0px 0px 5px 0px;
+    transition: transform 0.3s ease, color 0.2s ease;
+}
+.TextLink > a:hover {
+    transform: scale(1.2); /* Augmente légèrement la taille */
+    color: var(--ColorPink); /* Change la couleur en Rose */
 }
 
 /*--------------------------------------------------*/

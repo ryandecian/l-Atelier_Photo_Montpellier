@@ -45,6 +45,68 @@ function FooterPC() {
                         </p>
                     </article>
                 </section>
+
+                {/* Nav 2 : Réseaux */}
+                <section className={style.SubContainerNavFooter}>
+                    <header className={style.TitleNavFooter}>
+                        <h3>
+                            Réseaux
+                        </h3>
+                    </header>
+
+                    <article className={style.ArticleText}>
+                        <p className={style.TextLink}>
+                            <Link to="#">
+                                Instagram
+                            </Link>
+                        </p>
+                    </article>
+                    <article className={style.ArticleText}>
+                        <p className={style.TextLink}>
+                            <Link to="#">
+                                Facebook
+                            </Link>
+                        </p>
+                    </article>
+                    <article className={style.ArticleText}>
+                        <p className={style.TextLink}>
+                            <Link to="#">
+                                Youtube
+                            </Link>
+                        </p>
+                    </article>
+                </section>
+
+                {/* Nav 3 : Politique & Termes */}
+                <section className={style.SubContainerNavFooter}>
+                    <header className={style.TitleNavFooter}>
+                        <h3>
+                            Politique & Termes
+                        </h3>
+                    </header>
+
+                    <article className={style.ArticleText}>
+                        <p className={style.TextLink}>
+                            <Link to="#">
+                                Mention légale
+                            </Link>
+                        </p>
+                    </article>
+                    <article className={style.ArticleText}>
+                        <p className={style.TextLink}>
+                            <Link to="#">
+                                CGV
+                            </Link>
+                        </p>
+                    </article>
+                    <article className={style.ArticleText}>
+                        <p className={style.TextLink}>
+                            <Link to="#">
+                                CNIL
+                            </Link>
+                        </p>
+                    </article>
+                </section>
             </div>
         </section>
     );
