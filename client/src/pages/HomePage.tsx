@@ -43,7 +43,7 @@ function HomePage() {
      const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
 
      return (
-        <div>
+        <div className="HomePage">
             <Helmet>
                   {/* Balises SEO */}
                      {/* Balise pour indexation général */}
@@ -77,13 +77,13 @@ function HomePage() {
                      {/* Canonical URL (évite le contenu dupliqué pour les moteurs de recherche) */}
                          <link rel="canonical" href={SEO.url} />
             </Helmet>
-            <header>
+            <header className="Header">
                  <NavRoot />
             </header>
-            <main className="body">
+            <main className="Main">
                 <HomeRoot />
             </main>
-            <footer>
+            <footer className="Footer">
                 <FooterRoot />
                 <Footer />
             </footer>
