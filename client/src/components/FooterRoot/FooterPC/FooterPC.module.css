@@ -63,7 +63,7 @@
     padding: 0px 0px 10px 0px;
 }
 
-.ArticleText {
+.UlText {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -72,7 +72,7 @@
     width: 100%;
 }
 
-.TextLink {
+.LiTextLink {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -80,7 +80,7 @@
     margin: 0px;
 }
 
-.TextLink > a {
+.LiTextLink > a {
     font-size: var(--p);
     color: var(--ColorGrey);
     text-decoration: none;
@@ -88,7 +88,7 @@
     padding: 0px 0px 5px 0px;
     transition: transform 0.3s ease, color 0.2s ease;
 }
-.TextLink > a:hover {
+.LiTextLink > a:hover {
     transform: scale(1.2); /* Augmente légèrement la taille */
     color: var(--ColorPink); /* Change la couleur en Rose */
 }

@@ -26,22 +26,22 @@ function FooterPC() {
                         </h3>
                     </header>
 
-                    <ul className={style.ArticleText}>
-                        <li className={style.TextLink}>
+                    <ul className={style.UlText}>
+                        <li className={style.LiTextLink}>
                             <Link to="#">
                                 Qui suis-je ?
                             </Link>
                         </li>
                     </ul>
-                    <ul className={style.ArticleText}>
-                        <li className={style.TextLink}>
+                    <ul className={style.UlText}>
+                        <li className={style.LiTextLink}>
                             <Link to="#">
                                 Me contacter
                             </Link>
                         </li>
                     </ul>
-                    <ul className={style.ArticleText}>
-                        <li className={style.TextLink}>
+                    <ul className={style.UlText}>
+                        <li className={style.LiTextLink}>
                             <Link to="#">
                                 Portfolio
                             </Link>
@@ -57,22 +57,22 @@ function FooterPC() {
                         </h3>
                     </header>
 
-                    <ul className={style.ArticleText}>
-                        <li className={style.TextLink}>
+                    <ul className={style.UlText}>
+                        <li className={style.LiTextLink}>
                             <Link to="#">
                                 Instagram
                             </Link>
                         </li>
                     </ul>
-                    <ul className={style.ArticleText}>
-                        <li className={style.TextLink}>
+                    <ul className={style.UlText}>
+                        <li className={style.LiTextLink}>
                             <Link to="#">
                                 Facebook
                             </Link>
                         </li>
                     </ul>
-                    <ul className={style.ArticleText}>
-                        <li className={style.TextLink}>
+                    <ul className={style.UlText}>
+                        <li className={style.LiTextLink}>
                             <Link to="#">
                                 Youtube
                             </Link>
@@ -88,22 +88,22 @@ function FooterPC() {
                         </h3>
                     </header>
 
-                    <ul className={style.ArticleText}>
-                        <li className={style.TextLink}>
+                    <ul className={style.UlText}>
+                        <li className={style.LiTextLink}>
                             <Link to="#">
                                 Mention légale
                             </Link>
                         </li>
                     </ul>
-                    <ul className={style.ArticleText}>
-                        <li className={style.TextLink}>
+                    <ul className={style.UlText}>
+                        <li className={style.LiTextLink}>
                             <Link to="#">
                                 CGV
                             </Link>
                         </li>
                     </ul>
-                    <ul className={style.ArticleText}>
-                        <li className={style.TextLink}>
+                    <ul className={style.UlText}>
+                        <li className={style.LiTextLink}>
                             <Link to="#">
                                 CNIL
                             </Link>
