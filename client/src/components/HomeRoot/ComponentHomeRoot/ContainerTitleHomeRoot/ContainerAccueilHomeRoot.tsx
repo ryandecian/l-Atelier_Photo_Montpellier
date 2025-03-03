@@ -7,7 +7,7 @@ function ContainerAccueilHomeRoot() {
             {/* Ce Composant renvois 2 éléments au lieu d'un comme les autres, c'est pourquoi on utilise <> </> */}
             <header className={style.ContainerTitle}>
                 <h1 className={style.PrimaryTitle}>
-                    Photographe professionnelle à Montpellier authentiques
+                    Photographe professionnelle à Montpellier
                 </h1>
             </header>
             

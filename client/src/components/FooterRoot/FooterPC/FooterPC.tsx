@@ -105,7 +105,7 @@ function FooterPC() {
                     <ul className={style.UlText}>
                         <li className={style.LiTextLink}>
                             <Link to="#">
-                                CNIL
+                                FAQ
                             </Link>
                         </li>
                     </ul>
