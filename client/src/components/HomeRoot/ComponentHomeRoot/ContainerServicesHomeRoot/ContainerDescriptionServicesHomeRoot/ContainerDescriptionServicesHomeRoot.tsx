@@ -40,27 +40,28 @@ function ContainerDescriptionServicesHomeRoot() {
                     </h3>
                 </header>
 
-                <article className={style.Service2Text1}>
-                    <p>
-                        Le jour de votre mariage est un moment unique, et chaque détail mérite d'être capturé 
-                        avec soin et émotion. Photographe spécialisée dans le mariage professionnel, basée à 
-                        Montpellier, je mets tout en œuvre pour immortaliser les moments les plus authentiques 
-                        et les plus précieux de cette journée exceptionnelle. Que ce soit lors des préparatifs, 
-                        pendant la cérémonie, lors des séances de couple ou encore pendant la soirée dansante, 
-                        je vous accompagne avec une approche discrète et naturelle, en créant des images 
-                        (voir des vidéos) qui racontent réellement votre histoire. Mon objectif ? Vous offrir 
-                        des souvenirs intemporels et sincères. 
-                    </p>
+                <article className={style.Service2ContainerText}>
+                    <div className={style.Service2Text1}>
+                        <p>
+                            Le jour de votre mariage est un moment unique, et chaque détail mérite d'être capturé 
+                            avec soin et émotion. Photographe spécialisée dans le mariage professionnel, basée à 
+                            Montpellier, je mets tout en œuvre pour immortaliser les moments les plus authentiques 
+                            et les plus précieux de cette journée exceptionnelle. Que ce soit lors des préparatifs, 
+                            pendant la cérémonie, lors des séances de couple ou encore pendant la soirée dansante, 
+                            je vous accompagne avec une approche discrète et naturelle, en créant des images 
+                            (voir des vidéos) qui racontent réellement votre histoire. Mon objectif ? Vous offrir 
+                            des souvenirs intemporels et sincères. 
+                        </p>
+                    </div>
+                    <div className={style.Service2Text2}>
+                        <p>
+                            <Link to="#">
+                                Découvrez plus en détail mes prestations et comment je peux vous aider à revivre votre journée dans tous ses moments !
+                            </Link>
+                        </p>
+                    </div>
                 </article>
             </section>
-
-            <div className={style.LinkPrestation}>
-                <p>
-                    <Link to="#">
-                        Découvrez plus en détail mes prestations et comment je peux vous aider à revivre votre journée dans tous ses moments !
-                    </Link>
-                </p>
-            </div>
         </div>
     );
 }
