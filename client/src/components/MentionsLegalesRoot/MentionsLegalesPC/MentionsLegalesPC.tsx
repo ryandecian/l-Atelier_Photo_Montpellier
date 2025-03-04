@@ -1,11 +1,15 @@
 import style from "./MentionsLegalesPC.module.css";
 
+/* Import des composants */
+import Separator from "../ComponentsMentionsLegalesRoot/Separator/Separator";
+import TitleMentionsLegalesRoot from "../ComponentsMentionsLegalesRoot/TitleMentionsLegalesRoot/TitleMentionsLegalesRoot";
+
 function MentionsLegalesPC() {
     return (
         <section className={style.MentionsLegalesPC}>
-            <header>
-                <h1>Mentions Légales</h1>
-            </header>
+            <TitleMentionsLegalesRoot />
+
+            <Separator />
 
             <section>
                 <header>

@@ -1,8 +1,8 @@
-import style from './Separator.module.scss';
+import style from './Separator.module.css';
 
 function Separator() {
     return (
-        <br className={style.Separator}/>
+        <hr className={style.Separator}/>
     );
 }
 
