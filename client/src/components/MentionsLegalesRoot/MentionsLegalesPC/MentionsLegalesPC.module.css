@@ -1,4 +1,6 @@
-.MentionsLegalesPage {
+@import "../../../root.css";
+
+.MentionsLegalesPC {
     display: flex;
     justify-content: center;
     align-items: center;
