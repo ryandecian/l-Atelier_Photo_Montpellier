@@ -1,7 +1,7 @@
 @import "../../../root.css";
 
 /* Base du composant HomePC */
-.HomePC {
+.HomeMobile {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,8 +11,9 @@
     margin: 0px;
     width: 100%;
 }
-@media (max-width: 800px) {
-    .HomePC {
+@media (min-width: 800px) {
+    .HomeMobile {
         display: none;
     }
 }
+

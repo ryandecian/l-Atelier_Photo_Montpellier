@@ -60,6 +60,31 @@
     width: 100%;
 }
 
+.Service1Text3 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+
+.Service1Text3 > p {
+    font-size: var(--h4);
+    margin: 0px 24px 0px 24px;
+    padding: 0px 0px 20px 0px;
+    width: 100%;
+}
+
+.Service1Text3Link1 > a, 
+.Service1Text3Link2 > a, 
+.Service1Text3Link3 > a, 
+.Service1Text3Link4 > a {
+    text-decoration: none;
+    color: var(--ColorPink);
+    font-size: var(--h4);
+    margin: 0px;
+    width: 100%;
+}
+
 /* Description Service 2 */
 
 .DescriptionServices2 {
@@ -98,26 +123,24 @@
     width: 100%;
 }
 
-/* Lien vers les prestations */
-
-.LinkPrestation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.LinkPrestation > p {
+.Service2Text2 {
     display: flex;
     justify-content: start;
     align-items: center;
     width: 100%;
-    font-size: var(--h4);
 }
 
-.LinkPrestation > p > a {
+.Service2Text2 > p {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+
+.Service2Text2 > p > a {
     text-decoration: none;
     color: var(--ColorPink);
+    font-size: var(--h4);
     margin: 0px 24px 0px 24px;
     width: 100%;
 }
