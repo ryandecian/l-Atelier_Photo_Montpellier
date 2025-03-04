@@ -8,7 +8,7 @@ function HomePage() {
     const SEO = {
         title: "Accueil - ",
         autor: "Anne SAUNIER",
-        description: "",
+        description: "Capturez l'émotion du regard",
         url: "", /*URL de la page*/
         img: "",
         twitterUrlImg: "", /*Lien URL de l'image*/
