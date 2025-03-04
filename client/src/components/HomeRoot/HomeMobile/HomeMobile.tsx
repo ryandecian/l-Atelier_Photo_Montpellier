@@ -7,7 +7,21 @@ import ContainerExpertiseHomeRoot from '../ComponentHomeRoot/ContainerExpertiseH
 import ContainerServicesHomeRoot from '../ComponentHomeRoot/ContainerServicesHomeRoot/ContainerServicesHomeRoot';
 
 function HomeMobile() {
-    return (  );
+    return (
+        <div className={style.HomePC}>
+            {/* Container 1 : Accueil */}
+            <ContainerAccueilHomeRoot />
+
+            {/* Container 2 : Introduction */}
+            <ContainerIntroductionHomeRoot />
+
+            {/* Container 3 : Mon expertise */}
+            <ContainerExpertiseHomeRoot />
+
+            {/* Container 4 : Présentation des services */}
+            <ContainerServicesHomeRoot />
+        </div>
+    );
 }
 
 export default HomeMobile;
