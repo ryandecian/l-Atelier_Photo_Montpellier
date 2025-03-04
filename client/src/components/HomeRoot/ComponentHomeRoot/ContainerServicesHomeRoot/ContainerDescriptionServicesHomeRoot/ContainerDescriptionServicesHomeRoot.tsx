@@ -30,6 +30,35 @@ function ContainerDescriptionServicesHomeRoot() {
                         une célébration de l’authenticité et un précieux souvenir à chérir.
                     </p>
                 </article>
+                <article className={style.Service1Text3}>
+                    <p>
+                        Commencez à planifier votre séance en {" "}
+                        <span className={style.Service1Text3Link1}>
+                            <Link to="#">
+                                {"individuel"}
+                            </Link>
+                        </span>
+                        , en {" "}
+                        <span className={style.Service1Text3Link2}>
+                            <Link to="#">
+                                {"couple"}
+                            </Link>
+                        </span>
+                        , en {" "}
+                        <span className={style.Service1Text3Link3}>
+                            <Link to="#">
+                                {"corporate"}
+                            </Link>
+                        </span>
+                        , en {" "}
+                        <span className={style.Service1Text3Link4}>
+                            <Link to="#">
+                                {"famille"}
+                            </Link>
+                        </span>
+                        {" "} dès maintenant !
+                    </p>
+                </article>
             </section>
 
             {/* Description Service 2 */}
