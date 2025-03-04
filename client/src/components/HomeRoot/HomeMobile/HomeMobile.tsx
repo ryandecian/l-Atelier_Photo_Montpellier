@@ -8,7 +8,7 @@ import ContainerServicesHomeRoot from '../ComponentHomeRoot/ContainerServicesHom
 
 function HomeMobile() {
     return (
-        <div className={style.HomePC}>
+        <div className={style.HomeMobile}>
             {/* Container 1 : Accueil */}
             <ContainerAccueilHomeRoot />
 
