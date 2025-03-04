@@ -1,0 +1,9 @@
+@import "../../../../root.css";
+
+.Separator {
+    border: none;
+    height: 2px;
+    background-color: var(--ColorGrey); /* Couleur de la ligne */
+    margin: 20px 0; /* Espacement au-dessus et en dessous */
+    width: 100%; /* Occupe toute la largeur */
+}
