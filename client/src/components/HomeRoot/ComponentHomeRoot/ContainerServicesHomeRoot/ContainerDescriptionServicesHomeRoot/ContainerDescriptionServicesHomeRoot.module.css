@@ -85,17 +85,9 @@
 }
 
 /* Text */
-.Service2ContainerText {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-}
-
 .Service2Text1 {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     width: 100%;
 }
@@ -108,7 +100,7 @@
 
 .Service2Text2 {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     width: 100%;
 }
