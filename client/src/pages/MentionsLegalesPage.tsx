@@ -1,21 +1,20 @@
 import { Helmet } from "react-helmet-async";
 import NavRoot from "../components/NavRoot/NavRoot";
-import "./HomePage.css";
-import HomeRoot from "../components/HomeRoot/HomeRoot";
+import style from "./MentionsLegalesPage.module.css";
 import FooterRoot from "../components/FooterRoot/FooterRoot";
 
-function HomePage() {
+function MentionsLegales() {
     const SEO = {
-        title: "Accueil - ",
+        title: "Mentions Légales",
         autor: "Anne SAUNIER",
-        description: "Capturez l'émotion du regard",
+        description: "Retrouvez toute les mentions légales du site",
         url: "", /*URL de la page*/
         img: "",
         twitterUrlImg: "", /*Lien URL de l'image*/
         twitterCompte: "", /*@MonCompteTwitter*/ /*Permet d'identifier le compte officiel*/
         keywords: {
             1: "Anne SAUNIER", /* 1 mot clés */
-            2: "Photographe", /* 2 mots clés */
+            2: "", /* 2 mots clés */
             3: "", /* 3 mots clés */
             4: "", /* 4 mots clés */
             5: "", /* 5 mots clés */
@@ -42,7 +41,7 @@ function HomePage() {
      const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
 
      return (
-        <div className="HomePage">
+        <div className={style.MentionsLegales}>
             <Helmet>
                   {/* Balises SEO */}
                      {/* Balise pour indexation général */}
@@ -80,7 +79,8 @@ function HomePage() {
                  <NavRoot />
             </header>
             <main className="Main">
-                <HomeRoot />
+                <p>test</p>
+                {/* <HomeRoot /> */}
             </main>
             <footer className="Footer">
                 <FooterRoot />
@@ -89,4 +89,4 @@ function HomePage() {
     )
 }
 
-export default HomePage;
+export default MentionsLegales;
