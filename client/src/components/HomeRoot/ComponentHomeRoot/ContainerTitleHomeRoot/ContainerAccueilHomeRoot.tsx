@@ -12,13 +12,12 @@ function ContainerAccueilHomeRoot() {
             </header>
             
 
-            <div className={style.ContainerSubAccueil}>
+            <article className={style.ContainerSubAccueil}>
                 <p className={style.Slogan}>Capturez l'émotion du regard</p>
                 <Link to="#" className={style.ButtonDecouvrir}>Découvrir mon univers !</Link>
-            </div>
+            </article>
         </section>
     );
 }
 
 export default ContainerAccueilHomeRoot;
-
