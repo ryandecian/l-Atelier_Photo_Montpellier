@@ -42,7 +42,7 @@ function MentionsLegales() {
      const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
 
      return (
-        <div className={style.MentionsLegales}>
+        <div className={style.MentionsLegalesPage}>
             <Helmet>
                   {/* Balises SEO */}
                      {/* Balise pour indexation général */}
