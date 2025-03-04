@@ -3,6 +3,7 @@ import style from "./MentionsLegalesPC.module.css";
 /* Import des composants */
 import Separator from "../ComponentsMentionsLegalesRoot/Separator/Separator";
 import TitleMentionsLegalesRoot from "../ComponentsMentionsLegalesRoot/TitleMentionsLegalesRoot/TitleMentionsLegalesRoot";
+import MentionsLegaleSectionA from "../ComponentsMentionsLegalesRoot/MentionsLegalesSectionA/MentionsLegaleSectionA";
 
 function MentionsLegalesPC() {
     return (
@@ -10,6 +11,9 @@ function MentionsLegalesPC() {
             <TitleMentionsLegalesRoot />
 
             <Separator />
+
+            <MentionsLegaleSectionA />
+
 
             <section>
                 <header>
