@@ -2,7 +2,7 @@ import style from "./MentionsLegalesPC.module.css";
 
 function MentionsLegalesPC() {
     return (
-        <div>
+        <div className={style.MentionsLegalesPC}>
             <p>Test</p>
         </div>
     );
