@@ -172,7 +172,7 @@ from "../NavPC/NavPC.tsx"
 
 .SubMenuLiPC {
     padding: 4px 16px 4px 16px;
-    background-color: var(--ColorPrincipal);
+    background-color: rgba(218, 216, 216, 0.675);
 }
 .SubMenuLiTarget1PC {
     border-top: 1.5px solid var(--borderWhite);
@@ -201,12 +201,12 @@ from "../NavPC/NavPC.tsx"
 .SubMenuLinkPC {
     display: inline-block;
     font-size: var(--h5);
-    color: var(--ColorSecondaire);
+    color: white;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .SubMenuLinkPC:hover {
     transform: scale(1.2);
-    color: white;
+    color: rgb(255, 0, 0);
 }

@@ -1,0 +1,13 @@
+@import "../../../../root.css";
+
+.TitleMentionsLegalesRoot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.TitleMentionsLegalesRoot > h1 {
+  font-size: var(--h1);
+  color: var(--ColorBlack);
+}

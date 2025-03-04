@@ -1,20 +1,27 @@
 import style from "./ContainerAccueilHomeRoot.module.css";
-import { Link } from "react-router-dom";
 
 function ContainerAccueilHomeRoot() {
     return (
-        <section className={style.ContainerAccueil}>
-            {/* Ce Composant renvois 2 éléments au lieu d'un comme les autres, c'est pourquoi on utilise <> </> */}
-            <header className={style.ContainerTitle}>
-                <h1 className={style.PrimaryTitle}>
-                    Photographe professionnelle à Montpellier
-                </h1>
-            </header>
-            
+        <section className={style.ContainerAccueil}>            
 
             <article className={style.ContainerSubAccueil}>
-                <p className={style.Slogan}>Capturez l'émotion du regard</p>
-                <Link to="#" className={style.ButtonDecouvrir}>Découvrir mon univers !</Link>
+                <div className={style.test}>
+                <p className={style.Slogan}>
+                    {"DES PORTRAITS"}
+                </p>
+                <p className={style.Slogan}>
+                    {"QUI"}
+                </p>
+                <p className={style.Slogan}>
+                    {"PARLENT DE"}
+                </p>
+                <p className={style.Slogan}>
+                    {"VOUS"}
+                </p>
+                </div>
+                <div className={style.testB}>
+                    <p>PHOTOGRAPHE DE PORTRAITS ET DE MARIAGE A MONTPELLIER</p>
+                </div>
             </article>
         </section>
     );
