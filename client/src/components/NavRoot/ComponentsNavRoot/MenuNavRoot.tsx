@@ -46,7 +46,7 @@ function MenuNavRoot(Props: MenuNavRootProps) {
       {/* Menu déroulant pour Portraits */}
       <li className={`${moduleMenuLi} ${moduleMenuLiTarget1}`} onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}>
         <span className={`${moduleMenuLink} ${moduleSubMenuPortraits}`}>
-          Prestations <span className={moduleSpanPortraits}>▼</span>
+          Prestations <span className={moduleSpanPortraits}>{isSubMenuOpen? "▲" : "▼"}</span>
         </span>
         {isSubMenuOpen && (
           <ul className={moduleSubMenuUl}>

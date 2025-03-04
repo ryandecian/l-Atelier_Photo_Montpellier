@@ -29,10 +29,11 @@
          --textColorBlack: black;
          --textColorWhite: white;
 
-     /*Background du Menu Burger*/
+     /* Couleurs du Menu Burger */
          --Background1: #A9CCE3;
-         --BackgroudMenuBurger: var(--ColorClaire);
-         --textColorMenu: #818181;
+         --BackgroudMenuBurger: rgba(218, 216, 216, 0.675);
+         --textColorMenu: white;
+         --textColorMenuHover: rgb(255, 0, 0);
          --spanMenuBurger: black;
 
          

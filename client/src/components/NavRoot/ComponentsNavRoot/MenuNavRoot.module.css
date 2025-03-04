@@ -161,7 +161,7 @@
 
 .SubMenuLiPC {
     padding: 4px 16px 4px 16px;
-    background-color: rgba(218, 216, 216, 0.675);
+    background-color: var(--BackgroudMenuBurger);
 }
 .SubMenuLiTarget1PC {
     border-top: 1.5px solid var(--borderWhite);
@@ -190,12 +190,12 @@
 .SubMenuLinkPC {
     display: inline-block;
     font-size: var(--h5);
-    color: white;
+    color: var(--textColorMenu);
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .SubMenuLinkPC:hover {
     transform: scale(1.2);
-    color: rgb(255, 0, 0);
+    color: var(--textColorMenuHover);
 }

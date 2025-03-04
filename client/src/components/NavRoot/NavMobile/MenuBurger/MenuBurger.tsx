@@ -13,13 +13,15 @@ function MenuBurger() {
     return (
         <>
         <button className={`sideCloseNav ${active ? "active" : ""}`} type="button" onClick={funcActive}/>
-                 <div  className={`sideNav ${active ? "active" : ""}`} id="mySideNav">
+                 <div className={`sideNav ${active ? "active" : ""}`} id="mySideNav">
 
                      <div>
                          <button type="button" 
                          id="closeBtn" 
                          className="close"
-                         onClick={funcActive}>x</button>
+                         onClick={funcActive}>
+                            x
+                        </button>
                      </div>
 
                      {/*Le style de ce composant est directement géré par le module CSS :
