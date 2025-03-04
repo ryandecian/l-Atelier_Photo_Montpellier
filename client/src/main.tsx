@@ -6,6 +6,7 @@ import { HelmetProvider } from 'react-helmet-async';
 
 /*Les importation de page*/
 import HomePage from './pages/HomePage.tsx';
+import MentionsLegales from './pages/MentionsLegalesPage.tsx';
 
 const router = createBrowserRouter([
     {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
        {
          path: "/",
          element: <HomePage />,
+       },
+       {
+         path: "/mentions-legales",
+         element: <MentionsLegales />,
        },
        {
          path: "/actualite",

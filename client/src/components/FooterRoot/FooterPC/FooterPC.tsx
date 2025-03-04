@@ -90,8 +90,8 @@ function FooterPC() {
 
                     <ul className={style.UlText}>
                         <li className={style.LiTextLink}>
-                            <Link to="#">
-                                Mention légale
+                            <Link to="mentions-legales">
+                                Mentions légales
                             </Link>
                         </li>
                     </ul>
