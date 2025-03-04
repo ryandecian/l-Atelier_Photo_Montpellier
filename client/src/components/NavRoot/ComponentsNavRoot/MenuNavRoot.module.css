@@ -190,6 +190,11 @@ from "../NavPC/NavPC.tsx"
     border-right: 1.5px solid var(--borderWhite);
 }
 .SubMenuLiTarget4PC {
+    border-top: 1.5px solid var(--borderWhite);
+    border-left: 1.5px solid var(--borderWhite);
+    border-right: 1.5px solid var(--borderWhite);
+}
+.SubMenuLiTarget5PC {
     border: 1.5px solid var(--borderWhite);
 }
 
