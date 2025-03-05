@@ -30,30 +30,34 @@
     text-align: center;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap');
 /* Voici les 2 éléments du ContainerAccueil*/
 .Slogan {
-    font-size: var(--h2);
+    font-size: var(--h1);
     color: var(--ColorWhite); /* Couleur du texte */
-    font-weight: bold;
-    margin: 23px 24px 0px 24px;
-    font-family: 'Saira Condensed', sans-serif;
-    font-weight: 300; /* Light */
-    font-size: var(--h2);
-    transform: scaleY(1.50);
+    margin: 0px 24px 0px 24px;
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    transform: scaleY(1.60);
+    transform: scaleX(1.00);
 }
 
 .ContainerTitle {
     font-size: var(--p);
-    color: var(--ColorWhite); /* Couleur du texte */
+    color: var(--ColorWhite);
     margin: 0px 24px 0px 24px;
 }
 
 
-.ContaonerTitle > h1 {
-    font-weight: 400;
+.ContainerTitle > h1 {
+    font-size: var(--h3);
+    color: var(--ColorBlack);
     font-family: 'Saira Condensed', sans-serif;
-    font-size: var(--h5); /* Ajuste selon ton besoin */
-    transform: scaleY(1.50);
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    transform: scaleY(1.60);
+    transform: scaleX(1.00);
     padding: 0px 0px 10px 0px;
 }
