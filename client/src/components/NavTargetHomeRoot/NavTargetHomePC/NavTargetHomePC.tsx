@@ -1,7 +1,7 @@
 import css from "./NavTargetHomePC.module.css";
 import { Link } from "react-router-dom";
-import MenuNavRoot from "../../NavRoot/ComponentsNavRoot/MenuNavRoot";
-import style from "../../NavRoot/ComponentsNavRoot/MenuNavRoot.module.css";
+import MenuNavTargetHomeRoot from "../ComponentsNavTargetHomeRoot/MenuNavTargetHomeRoot";
+import style from "../ComponentsNavTargetHomeRoot/MenuNavTargetHomeRoot.module.css";
 
 function NavTargetHomePC() {
     return (
@@ -14,7 +14,7 @@ function NavTargetHomePC() {
                 </p>
             </div>
             <div className={css.ContainerNavigationNavTargetHomePC}>
-                <MenuNavRoot
+                <MenuNavTargetHomeRoot
                     moduleMenuUl={style.MenuUlPC}
                     moduleMenuLi={style.MenuLiPC}
                     moduleMenuLink={style.MenuLinkPC}

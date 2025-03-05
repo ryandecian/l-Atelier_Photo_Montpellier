@@ -42,7 +42,7 @@
     font-size: var(--h1);
     font-family: AnneSignature;
     font-weight: normal;
-    color: var(--ColorPrincipal);
+    color: var(--ColorWhite);
     text-decoration: none;
     width: 295px;
 }

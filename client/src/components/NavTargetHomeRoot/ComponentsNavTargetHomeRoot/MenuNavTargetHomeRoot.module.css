@@ -1,0 +1,201 @@
+/*Style version Mobile*/
+
+.MenuUlMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    list-style-type: none;
+    padding: 0;
+    margin: 0px;
+}
+
+.MenuLiMobile {
+    width: 100%;
+    padding: 10px 24px 10px 24px;
+    cursor: pointer;
+}
+.MenuLiTarget1Mobile {
+    border-top: 1px solid var(--ColorBorderMenuBurger);
+}
+.MenuLiTarget2Mobile {
+    border-top: 1px solid var(--ColorBorderMenuBurger);
+}
+.MenuLiTarget3Mobile {
+    border-top: 1px solid var(--ColorBorderMenuBurger);
+}
+.MenuLiTarget4Mobile {
+    border-top: 1px solid var(--ColorBorderMenuBurger);
+}
+.MenuLiTarget5Mobile {
+    border-top: 1px solid var(--ColorBorderMenuBurger);
+}
+.MenuLiTarget6Mobile {
+    border-top: 1px solid var(--ColorBorderMenuBurger);
+    border-bottom: 1px solid var(--ColorBorderMenuBurger);
+}
+
+.MenuLinkMobile {
+    text-decoration: none;
+    font-size: var(--h3);
+    color: var(--ColorTexteMenuBurger); /*----------------------------------------------------------*/
+}
+@media (min-width: 0px) and (max-width: 400px) {
+    .MenuLinkMobile {
+        font-size: var(--h5);
+    }
+}
+@media (min-width: 300px) and (max-width: 400px) {
+    .MenuLinkMobile {
+        font-size: var(--h4);
+    }
+}
+
+.SpanPortraitsMobile {
+    font-size: var(--h6);
+}
+
+/* Sous menu de Portraits*/
+.SubMenuUlMobile {
+    list-style: none;
+    padding: 0px;
+    margin: 0.5rem 0;
+}
+
+.ButtonSubMenuMobile {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: var(--z-index_-1);
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.SubMenuLiMobile {
+    padding: 6px 0px 6px 0px;
+}
+/* .SubMenuLiTarget1Mobile {}
+.SubMenuLiTarget2Mobile {}
+.SubMenuLiTarget3Mobile {}
+.SubMenuLiTarget4Mobile {} */
+
+.SubMenuLinkMobile {
+    font-size: var(--h4);
+    color: var(--ColorTexteMenuBurger); /*-----------------------------------------------------*/
+    text-decoration: none;
+}
+@media (min-width: 0px) and (max-width: 300px) {
+    .SubMenuLinkMobile {
+        font-size: var(--h6);
+    }
+}
+@media (min-width: 300px) and (max-width: 400px) {
+    .SubMenuLinkMobile {
+        font-size: var(--h5);
+    }
+}
+
+
+/*Style version PC*/
+
+.MenuUlPC {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 0;
+    width: 90%;
+}
+
+.MenuLiPC {
+    list-style: none;
+    margin: 0;
+}
+
+.MenuLinkPC {
+    display: inline-block;
+    font-size: var(--h4);
+    text-decoration: none;
+    color: var(--ColorWhite);
+    transition: transform 0.3s ease, color 0.2s ease;
+}
+.MenuLinkPC:hover {
+    transform: scale(1.2); /* Augmente légèrement la taille */
+    color: var(--ColorPink); /* Change la couleur en Rose */
+}
+
+.SubMenuPortraitsPC {
+    position: relative;
+    z-index: var(--z-index_5); /* Assure que le lien est au-dessus du sous-menu */
+    cursor: pointer;
+}
+
+.SpanPortraitsPC {
+    font-size: var(--h6);
+}
+
+/* Sous menu de Portraits*/
+.SubMenuUlPC {
+    position: absolute;
+    list-style: none;
+    margin: 8px 0px 8px 0px;
+    padding: 0;
+    box-shadow: var(--box-shadow);
+}
+
+.ButtonSubMenuPC {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: var(--z-index_-1);
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.SubMenuLiPC {
+    padding: 4px 16px 4px 16px;
+    background-color: var(--BackgroudMenuBurger);
+}
+.SubMenuLiTarget1PC {
+    border-top: 1.5px solid var(--borderWhite);
+    border-left: 1.5px solid var(--borderWhite);
+    border-right: 1.5px solid var(--borderWhite);
+}
+.SubMenuLiTarget2PC {
+    border-top: 1.5px solid var(--borderWhite);
+    border-left: 1.5px solid var(--borderWhite);
+    border-right: 1.5px solid var(--borderWhite);
+}
+.SubMenuLiTarget3PC {
+    border-top: 1.5px solid var(--borderWhite);
+    border-left: 1.5px solid var(--borderWhite);
+    border-right: 1.5px solid var(--borderWhite);
+}
+.SubMenuLiTarget4PC {
+    border-top: 1.5px solid var(--borderWhite);
+    border-left: 1.5px solid var(--borderWhite);
+    border-right: 1.5px solid var(--borderWhite);
+}
+.SubMenuLiTarget5PC {
+    border: 1.5px solid var(--borderWhite);
+}
+
+.SubMenuLinkPC {
+    display: inline-block;
+    font-size: var(--h5);
+    color: var(--textColorMenu);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.SubMenuLinkPC:hover {
+    transform: scale(1.2);
+    color: var(--textColorMenuHover);
+}
