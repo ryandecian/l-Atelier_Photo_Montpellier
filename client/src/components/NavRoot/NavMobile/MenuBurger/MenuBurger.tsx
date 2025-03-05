@@ -1,24 +1,23 @@
 import { useState } from "react";
 import MenuNavRoot from "../../ComponentsNavRoot/MenuNavRoot";
 import style from "../../ComponentsNavRoot/MenuNavRoot.module.css";
-import "./MenuBurger.css";
+import css from "./MenuBurger.module.css";
 
 
 
 function MenuBurger() {
-    const [active, setActive] = useState(false)
+    const [active, setActive] = useState<boolean>(false)
         const funcActive = () => {
             setActive(!active)
         }
     return (
         <>
-        <button className={`sideCloseNav ${active ? "active" : ""}`} type="button" onClick={funcActive}/>
-                 <div className={`sideNav ${active ? "active" : ""}`} id="mySideNav">
+        <button className={`${css.sideCloseNav} ${active ? css.active : ""}`} type="button" onClick={funcActive}/>
+                 <div className={`${css.sideNav} ${active ? css.active : ""} ${css.mySideNav}`}>
 
                      <div>
                          <button type="button" 
-                         id="closeBtn" 
-                         className="close"
+                         className={`${css.close} ${css.closeBtn}`}
                          onClick={funcActive}>
                             x
                         </button>
@@ -53,7 +52,7 @@ function MenuBurger() {
                  </div>
 
                  <button type="button" 
-                 id="openBtn"
+                 className={css.openBtn}
                  onClick={funcActive}>
                     <span className="menuBurger">
                         <span />
