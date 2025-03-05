@@ -1,5 +1,6 @@
 @import "./assets/Fonts/Quicksand/stylesheet.css";
 @import "./assets/Fonts/AnneSignature/stylesheet.css";
+@import "./assets/Fonts/SairaCondensed/stylesheet.css";
 
 :root {
     /*Couleur des textes*/
@@ -29,10 +30,11 @@
          --textColorBlack: black;
          --textColorWhite: white;
 
-     /*Background du Menu Burger*/
+     /* Couleurs du Menu Burger */
          --Background1: #A9CCE3;
-         --BackgroudMenuBurger: var(--ColorClaire);
-         --textColorMenu: #818181;
+         --BackgroudMenuBurger: rgba(218, 216, 216, 0.675);
+         --textColorMenu: white;
+         --textColorMenuHover: rgb(137, 228, 255);
          --spanMenuBurger: black;
 
          

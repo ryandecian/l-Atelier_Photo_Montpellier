@@ -1,73 +1,81 @@
 /* Container Principale */
-.NavPC {
+.NavTargetHomePC {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    box-shadow: var(--box-shadow);
     margin: 0px;
     padding: 0px;
     background-color: var(--backgroundwhite);
 }
 @media (max-width: 800px) {
-    .NavPC {
+    .NavTargetHomePC {
         display: none;
     }
 }
 
 /* Container Logo */
-.ContainerLogoNavPC {
+.ContainerLogoNavTargetHomePC {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.TitleNavPC {
+.TitleNavTargetHomePC {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 0px 0px 48px;
+    margin: 25px 0px 0px 48px;
 }
 @media (min-width: 800px) and (max-width: 845px) {
-    .TitleNavPC {
-        margin: 0px 0px 0px 24px;
+    .TitleNavTargetHomePC {
+        margin: 25px 0px 0px 24px;
     }
 }
 @media (min-width: 845px) and (max-width: 895px) {
-    .TitleNavPC {
-        margin: 0px 0px 0px 32px;
+    .TitleNavTargetHomePC {
+        margin: 25px 0px 0px 32px;
     }
 }
 
-.TitleNavPC > a {
+.TitleNavTargetHomePC > a {
     font-size: var(--h1);
+    color: var(--ColorWhite);
     font-family: AnneSignature;
-    font-weight: normal;
-    color: var(--ColorPrincipal);
+    /* font-family: "Saira Condensed", sans-serif; */
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
     text-decoration: none;
     width: 295px;
 }
+@media (min-width: 1000px) {
+    .TitleNavTargetHomePC > a {
+        font-size: calc(var(--h1) + 5px);
+        width: 350px;
+    }
+}
 /* Container Navigation */
-.ContainerNavigationNavPC {
+.ContainerNavigationNavTargetHomePC {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 600px;
 }
 @media (max-width: 845px) {
-    .ContainerNavigationNavPC {
+    .ContainerNavigationNavTargetHomePC {
         width: calc(100% - 295px - 24px);
     }
     
 }
 @media (min-width: 845px) and (max-width: 895px) {
-    .ContainerNavigationNavPC {
+    .ContainerNavigationNavTargetHomePC {
         width: 500px;
     }
     
 }
 @media (min-width: 895px) and (max-width: 945px) {
-    .ContainerNavigationNavPC {
+    .ContainerNavigationNavTargetHomePC {
         width: 550px;
     }
     
