@@ -1,5 +1,5 @@
 import { useState } from "react";
-import MenuNavTargetHomeRoot from "../../../NavTargetHomeRoot/ComponentsNavTargetHomeRoot/MenuNavTargetHomeRoot";
+import MenuNavRoot from "../../ComponentsNavRoot/MenuNavRoot";
 import style from "../../ComponentsNavRoot/MenuNavRoot.module.css";
 import "./MenuBurger.css";
 
@@ -26,7 +26,7 @@ function MenuBurger() {
 
                      {/*Le style de ce composant est directement géré par le module CSS :
                      MenuNavRoot.module.css*/}
-                     <MenuNavTargetHomeRoot
+                     <MenuNavRoot
                          moduleMenuUl={style.MenuUlMobile}
                          moduleMenuLi={style.MenuLiMobile}
                          moduleMenuLink={style.MenuLinkMobile}

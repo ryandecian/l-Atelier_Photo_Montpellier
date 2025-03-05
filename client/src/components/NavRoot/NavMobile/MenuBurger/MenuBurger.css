@@ -81,7 +81,7 @@
     display: block;
     width: 35px;
     height: 5px;
-    background-color: var(--textColorMenu);
+    background-color: var(--textColorMenuBurger);
     margin: 0.5rem 0rem;
 }
 @media (max-width: 250px) {
