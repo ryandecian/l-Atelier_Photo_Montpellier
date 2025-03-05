@@ -1,19 +1,19 @@
-import "./NavPC.css";
+import css from "./NavTargetHomePC.module.css";
 import { Link } from "react-router-dom";
-import MenuNavRoot from "../ComponentsNavRoot/MenuNavRoot";
-import style from "../ComponentsNavRoot/MenuNavRoot.module.css"
+import MenuNavRoot from "../../NavRoot/ComponentsNavRoot/MenuNavRoot";
+import style from "../../NavRoot/ComponentsNavRoot/MenuNavRoot.module.css";
 
-function NavPC() {
+function NavTargetHomePC() {
     return (
-        <nav className="NavPC">
-            <div className="ContainerLogoNavPC">
-                <p className="TitleNavPC">
+        <nav className={css.NavTargetHomePC}>
+            <div className={css.ContainerLogoNavTargetHomePC}>
+                <p className={css.TitleNavTargetHomePC}>
                     <Link to="/" >
                         l'Atelier Photo Montpellier
                     </Link>
                 </p>
             </div>
-            <div className="ContainerNavigationNavPC">
+            <div className={css.ContainerNavigationNavTargetHomePC}>
                 <MenuNavRoot
                     moduleMenuUl={style.MenuUlPC}
                     moduleMenuLi={style.MenuLiPC}
@@ -37,4 +37,4 @@ function NavPC() {
     )
 }
 
-export default NavPC;
+export default NavTargetHomePC;

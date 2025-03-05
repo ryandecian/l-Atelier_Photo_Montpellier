@@ -1,45 +1,44 @@
 /* Container Principale */
-.NavPC {
+.NavTargetHomePC {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    box-shadow: var(--box-shadow);
     margin: 0px;
     padding: 0px;
     background-color: var(--backgroundwhite);
 }
 @media (max-width: 800px) {
-    .NavPC {
+    .NavTargetHomePC {
         display: none;
     }
 }
 
 /* Container Logo */
-.ContainerLogoNavPC {
+.ContainerLogoNavTargetHomePC {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.TitleNavPC {
+.TitleNavTargetHomePC {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0px 0px 0px 48px;
 }
 @media (min-width: 800px) and (max-width: 845px) {
-    .TitleNavPC {
+    .TitleNavTargetHomePC {
         margin: 0px 0px 0px 24px;
     }
 }
 @media (min-width: 845px) and (max-width: 895px) {
-    .TitleNavPC {
+    .TitleNavTargetHomePC {
         margin: 0px 0px 0px 32px;
     }
 }
 
-.TitleNavPC > a {
+.TitleNavTargetHomePC > a {
     font-size: var(--h1);
     font-family: AnneSignature;
     font-weight: normal;
@@ -48,26 +47,26 @@
     width: 295px;
 }
 /* Container Navigation */
-.ContainerNavigationNavPC {
+.ContainerNavigationNavTargetHomePC {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 600px;
 }
 @media (max-width: 845px) {
-    .ContainerNavigationNavPC {
+    .ContainerNavigationNavTargetHomePC {
         width: calc(100% - 295px - 24px);
     }
     
 }
 @media (min-width: 845px) and (max-width: 895px) {
-    .ContainerNavigationNavPC {
+    .ContainerNavigationNavTargetHomePC {
         width: 500px;
     }
     
 }
 @media (min-width: 895px) and (max-width: 945px) {
-    .ContainerNavigationNavPC {
+    .ContainerNavigationNavTargetHomePC {
         width: 550px;
     }
     

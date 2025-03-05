@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import NavRoot from "../components/NavRoot/NavRoot";
+import NavTargetHomeRoot from "../components/NavTargetHomeRoot/NavTargetHomeRoot";
 import style from "./HomePage.module.css";
 import HomeRoot from "../components/HomeRoot/HomeRoot";
 import FooterRoot from "../components/FooterRoot/FooterRoot";
@@ -77,7 +77,7 @@ function HomePage() {
                          <link rel="canonical" href={SEO.url} />
             </Helmet>
             <header className={style.Header}>
-                 <NavRoot />
+                 <NavTargetHomeRoot />
             </header>
             <main className={style.Main}>
                 <HomeRoot />
