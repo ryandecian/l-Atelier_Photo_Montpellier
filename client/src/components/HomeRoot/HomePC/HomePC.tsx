@@ -2,11 +2,11 @@ import style from './HomePC.module.css';
 
 /* Import des composants */
 import ContainerAccueilHomeRoot from '../ComponentHomeRoot/ContainerTitleHomeRoot/ContainerAccueilHomeRoot';
-import ContainerIntroductionHomeRoot from '../ComponentHomeRoot/ContainerIntroductionHomeRoot/ContainerIntroductionHomeRoot';
 import ContainerExpertiseHomeRoot from '../ComponentHomeRoot/ContainerExpertiseHomeRoot/ContainerExpertiseHomeRoot';
 import ContainerServicesHomeRoot from '../ComponentHomeRoot/ContainerServicesHomeRoot/ContainerServicesHomeRoot';
 
 import HomeRootContainerA from '../ComponentHomeRoot/HomeRootContainerA/HomeRootContainerA';
+import HomeRootComposantB from '../ComponentHomeRoot/HomeRootComposantB/HomeRootComposantB';
 
 function HomePC() {
     return (
@@ -16,9 +16,11 @@ function HomePC() {
 
             {/* Container 2 : Introduction */}
             <HomeRootContainerA />
-            <ContainerIntroductionHomeRoot />
 
-            {/* Container 3 : Mon expertise */}
+            {/* Container 3 : Portrait */}
+            <HomeRootComposantB />
+
+            {/* Container 4 : Expertise */}
             <ContainerExpertiseHomeRoot />
 
             {/* Container 4 : Présentation des services */}

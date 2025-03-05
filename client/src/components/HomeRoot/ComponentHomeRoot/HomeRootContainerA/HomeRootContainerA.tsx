@@ -9,15 +9,15 @@ function HomeRootContainerA() {
                 </h2>
             </header>
 
-            <article className={style.ContainerText1}>
-                <p className={style.Text1}>
+            <article className={style.ContainerText}>
+                <p className={style.Text}>
                     Vous cherchez à immortaliser des moments uniques à travers des portraits 
                     authentiques, des photos de mariage, des shootings lifestyle ou même en 
                     vidéo ?
                 </p>
             </article>
-            <article className={style.ContainerText2}>
-                <p className={style.Text2}>
+            <article className={style.ContainerText}>
+                <p className={style.Text}>
                     En tant que photographe professionnelle installée à Montpellier et 
                     spécialisée en portraits – qu’ils soient corporate, lifestyle, réalisés 
                     en lumière naturelle ou au flash – je mets tout en œuvre pour saisir la 
@@ -27,8 +27,8 @@ function HomeRootContainerA() {
                     (elle) positif et valorisant.
                 </p>
             </article>
-            <article className={style.ContainerText3}>
-                <p className={style.Text3}>
+            <article className={style.ContainerText}>
+                <p className={style.Text}>
                     Ma vision du mariage se décline sous la forme d’un reportage photographique. 
                     Plutôt que de créer de simples poses figées, je privilégie l’instantanéité 
                     et la spontanéité des émotions vécues durant la cérémonie. Je cherche à 
@@ -37,8 +37,8 @@ function HomeRootContainerA() {
                     image capte la complicité, la tendresse et l’authenticité du grand jour.
                 </p>
             </article>
-            <article className={style.ContainerText4}>
-                <p className={style.Text4}>
+            <article className={style.ContainerText}>
+                <p className={style.Text}>
                     En choisissant mes services, vous optez pour un accompagnement sur mesure, 
                     alliant expertise technique, sensibilité artistique et un engagement passionné 
                     pour immortaliser vos moments les plus précieux. Vos portraits seront l’image 
