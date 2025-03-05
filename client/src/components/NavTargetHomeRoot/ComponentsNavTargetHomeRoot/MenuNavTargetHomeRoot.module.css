@@ -120,11 +120,15 @@
     font-size: var(--h4);
     text-decoration: none;
     color: var(--ColorWhite);
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
     transition: transform 0.3s ease, color 0.2s ease;
 }
 .MenuLinkPC:hover {
     transform: scale(1.2); /* Augmente légèrement la taille */
-    color: var(--ColorPink); /* Change la couleur en Rose */
+    color: var(--textColorMenuHover); /* Change la couleur en Rose */
 }
 
 .SubMenuPortraitsPC {

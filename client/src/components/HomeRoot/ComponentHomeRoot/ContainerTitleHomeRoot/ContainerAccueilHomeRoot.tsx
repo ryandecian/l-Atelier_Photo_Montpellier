@@ -4,7 +4,7 @@ function ContainerAccueilHomeRoot() {
     return (
         <section className={style.ContainerAccueil}>            
 
-            <article className={style.ContainerSubAccueil}>
+            <div className={style.ContainerSubAccueil}>
                 <article className={style.ContainerSlogan}>
                     <p className={style.Slogan}>
                         {"DES PORTRAITS"}
@@ -22,7 +22,7 @@ function ContainerAccueilHomeRoot() {
                 <header className={style.ContainerTitle}>
                     <h1>PHOTOGRAPHE DE PORTRAITS ET DE MARIAGE A MONTPELLIER</h1>
                 </header>
-            </article>
+            </div>
         </section>
     );
 }

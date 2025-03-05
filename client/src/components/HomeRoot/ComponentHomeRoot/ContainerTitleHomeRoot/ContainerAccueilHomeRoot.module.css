@@ -28,14 +28,14 @@
     padding: 0px 0px 0px 0px;
 }
 .ContainerSlogan {
-    margin: 100px 0px 0px 0px;
+    margin: 140px 0px 0px 50px;
     padding: 0px 0px 0px 0px;
     text-align: center;
 }
 
 /* Voici les 2 éléments du ContainerAccueil*/
 .Slogan {
-    font-size: var(--h1);
+    font-size: calc(var(--h1) + 11px);
     color: var(--ColorWhite); /* Couleur du texte */
     margin: 0px 24px 0px 24px;
     font-family: "Saira Condensed", sans-serif;
@@ -44,6 +44,11 @@
     font-display: swap;
     transform: scaleY(1.60);
     transform: scaleX(1.00);
+}
+@media (min-width: 800px) and (max-width: 900px) {
+    .Slogan {
+        font-size: calc(var(--h1) + 8px);
+    }
 }
 
 .ContainerTitle {
