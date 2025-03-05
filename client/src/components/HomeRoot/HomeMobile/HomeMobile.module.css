@@ -11,7 +11,7 @@
     margin: 0px;
     width: 100%;
 }
-@media (min-width: 800px) {
+@media (min-width: 800.02px) {
     .HomeMobile {
         display: none;
     }

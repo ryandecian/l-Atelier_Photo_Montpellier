@@ -1,0 +1,18 @@
+.ContainerImgHomeRoot {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: calc(100vw - 48px);
+    margin: auto;
+}
+
+.ContainerImg {
+    overflow: hidden;
+    width: 100%;
+}
+
+.ContainerImg > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

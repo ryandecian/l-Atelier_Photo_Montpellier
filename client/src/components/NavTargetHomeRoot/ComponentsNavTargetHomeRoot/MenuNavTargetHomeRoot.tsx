@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-interface MenuNavRootProps {
+interface MenuNavTargetHomeRootProps {
   moduleMenuUl: string;
   moduleMenuLi: string;
   moduleMenuLink: string;
@@ -26,7 +26,7 @@ interface MenuNavRootProps {
   moduleSubMenuLiTarget5?: string;
 }
 
-function MenuNavRoot(Props: MenuNavRootProps) {
+function MenuNavTargetHomeRoot(Props: MenuNavTargetHomeRootProps) {
   const { moduleMenuUl, moduleMenuLi, 
     moduleMenuLink, moduleSubMenuUl, 
     moduleSubMenuLi, moduleSubMenuLink, 
@@ -46,21 +46,22 @@ function MenuNavRoot(Props: MenuNavRootProps) {
       {/* Menu déroulant pour Portraits */}
       <li className={`${moduleMenuLi} ${moduleMenuLiTarget1}`} onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}>
         <span className={`${moduleMenuLink} ${moduleSubMenuPortraits}`}>
-          Prestations <span className={moduleSpanPortraits}>{isSubMenuOpen? "▲" : "▼"}</span>
+          PRESTATIONS <span className={moduleSpanPortraits}>{isSubMenuOpen? "▲" : "▼"}</span>
         </span>
         {isSubMenuOpen && (
           <ul className={moduleSubMenuUl}>
             <button type="button" className={moduleButtonSubMenu} onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}/>
 
             <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget1}`}>
-              <Link to="/mariage" className={moduleSubMenuLink}>Mariages</Link>
+              <Link to="/mariage" className={moduleSubMenuLink}>Corporate</Link>
             </li>
             <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget2}`}>
-              <Link to="/portraits-individuels" className={moduleSubMenuLink}>Individuels</Link>
+              <Link to="/portraits-individuels" className={moduleSubMenuLink}>LifeStyle</Link>
             </li>
             <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget3}`}>
-              <Link to="/portraits-couple" className={moduleSubMenuLink}>Couples</Link>
+              <Link to="/portraits-couple" className={moduleSubMenuLink}>Mariage</Link>
             </li>
+            {/* A retirer */}
             <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget4}`}>
               <Link to="/portraits-corporate" className={moduleSubMenuLink}>Corporates</Link>
             </li>
@@ -72,26 +73,26 @@ function MenuNavRoot(Props: MenuNavRootProps) {
       </li>
 
       <li className={`${moduleMenuLi} ${moduleMenuLiTarget2}`}>
-        <Link to="/tarifs" className={moduleMenuLink}>Tarifs</Link>
+        <Link to="/tarifs" className={moduleMenuLink}>TARIFS</Link>
       </li>
 
       <li className={`${moduleMenuLi} ${moduleMenuLiTarget3}`}>
-        <Link to="/contact" className={moduleMenuLink}>Contact</Link>
+        <Link to="/contact" className={moduleMenuLink}>CONTACT</Link>
       </li>
 
       <li className={`${moduleMenuLi} ${moduleMenuLiTarget4}`}>
-        <Link to="/blog" className={moduleMenuLink}>Blog</Link>
+        <Link to="/blog" className={moduleMenuLink}>BLOG</Link>
       </li>
 
       <li className={`${moduleMenuLi} ${moduleMenuLiTarget5}`}>
-        <Link to="/panier" className={moduleMenuLink}>Panier</Link>
+        <Link to="/panier" className={moduleMenuLink}>PANIER</Link>
       </li>
 
       <li className={`${moduleMenuLi} ${moduleMenuLiTarget6}`}>
-        <Link to="/compte" className={moduleMenuLink}>Compte</Link>
+        <Link to="/compte" className={moduleMenuLink}>COMPTE</Link>
       </li>
     </ul>
   );
 }
 
-export default MenuNavRoot;
+export default MenuNavTargetHomeRoot;
