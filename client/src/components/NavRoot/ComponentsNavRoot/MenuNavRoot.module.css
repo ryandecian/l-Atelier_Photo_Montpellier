@@ -108,6 +108,7 @@
     position: relative;
     padding: 0;
     width: 90%;
+    background-color: inherit;
 }
 
 .MenuLiPC {
@@ -150,13 +151,20 @@
     position: fixed;
     top: 0px;
     left: 0px;
-    z-index: var(--z-index_-1);
+    z-index: var(--z-index_1);
     width: 100vw;
     height: 100vh;
     background-color: transparent;
     background: none;
     border: none;
     outline: none;
+    opacity: 0;
+    font-size: 0px;
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .SubMenuLiPC {
@@ -180,7 +188,7 @@
 .SubMenuLinkPC {
     display: inline-block;
     font-size: var(--h5);
-    color: var(--textColorMenu);
+    color: var(--textColorMenuBurger);
     text-decoration: none;
     transition: color 0.2s ease;
 }

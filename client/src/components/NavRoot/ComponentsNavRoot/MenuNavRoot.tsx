@@ -45,9 +45,9 @@ function MenuNavRoot(Props: MenuNavRootProps) {
         <span className={`${moduleMenuLink} ${moduleSubMenuPortraits}`}>
           PRESTATIONS <span className={moduleSpanPortraits}>{isSubMenuOpen? "▲" : "▼"}</span>
         </span>
-        {isSubMenuOpen && (
+        {isSubMenuOpen && (<>
+            <button type="button" className={moduleButtonSubMenu} onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}>Fermer</button>
           <ul className={moduleSubMenuUl}>
-            <button type="button" className={moduleButtonSubMenu} onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}/>
 
             <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget1}`}>
               <Link to="/portrait-corporate" className={moduleSubMenuLink}>Corporate</Link>
@@ -59,7 +59,7 @@ function MenuNavRoot(Props: MenuNavRootProps) {
               <Link to="/portraits-mariage" className={moduleSubMenuLink}>Mariage</Link>
             </li>
           </ul>
-        )}
+        </>)}
       </li>
 
       <li className={`${moduleMenuLi} ${moduleMenuLiTarget2}`}>
