@@ -26,7 +26,7 @@
     background-position: center center;
     padding: 50px 0px 0px 0px;
 }
-.test {
+.ContainerSlogan {
     text-align: center;
 }
 
@@ -39,21 +39,21 @@
     margin: 23px 24px 0px 24px;
     font-family: 'Saira Condensed', sans-serif;
     font-weight: 300; /* Light */
-    font-size: 24px; /* Ajuste selon ton besoin */
+    font-size: var(--h2);
     transform: scaleY(1.50);
 }
 
-.testB {
+.ContainerTitle {
     font-size: var(--p);
     color: var(--ColorWhite); /* Couleur du texte */
     margin: 0px 24px 0px 24px;
 }
 
 
-.testB > p {
+.ContaonerTitle > h1 {
     font-weight: 400;
     font-family: 'Saira Condensed', sans-serif;
     font-size: var(--h5); /* Ajuste selon ton besoin */
-    transform: scaleY(1.6);
+    transform: scaleY(1.50);
     padding: 0px 0px 10px 0px;
 }
