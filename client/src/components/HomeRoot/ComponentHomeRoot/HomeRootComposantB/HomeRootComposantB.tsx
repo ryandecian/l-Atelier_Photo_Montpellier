@@ -1,5 +1,6 @@
 import style from "./HomeRootComposantB.module.css"
 import ContainerImgHomeRoot from "../ComposantHomeRoot/ContainerImgHomeRoot";
+import { Link } from "react-router-dom";
 
 /* Import des images*/
 import img1 from "../../../../assets/Images/ImageHomePage/HomeImg1.jpg";
@@ -36,6 +37,57 @@ function HomeRootComposantB() {
                 img4={data1.img4}
                 MetaNameImg4={data1.MetaNameImg4}
             />
+
+            <article className={style.ContainerText}>
+                <p className={`${style.Text} ${style.TargetText1}`}>
+                    C’est pourquoi en tant que photographe professionnelle installée à Montpellier 
+                    je cherche à capturer ces histoires. Pour son entreprise, pour ses réseaux 
+                    sociaux, pour une connivence…je cherche à capturer ce qui fait votre force, 
+                    votre énergie, votre rayonnement.
+                </p>
+            </article>
+            <article className={style.ContainerText}>
+                <p className={style.Text}>
+                    Que vous cherchiez un portrait corporate pour affirmer votre crédibilité, un 
+                    portrait lifestyle qui capte la douceur de votre quotidien, ou encore un moment 
+                    familial empreint de complicité, chaque séance est conçue pour vous mettre en 
+                    lumière dans toute votre singularité. En tant que photographe professionnelle 
+                    je peux travailler en studio ou en extérieur, selon vos envies, dans une 
+                    atmosphère calme et chaleureuse.
+                </p>
+            </article>
+            <article className={style.ContainerText}>
+                <p className={style.Text}>
+                    Ce que j’aime particulièrement, c’est le moment où, après une séance pleine 
+                    d’échange, vous repartez non seulement avec des clichés qui vous plaisent, 
+                    mais surtout avec ce sourire sincère qui en dit long sur l’expérience vécue. 
+                    Pour moi, chaque portrait est une célébration de l’authenticité et un précieux 
+                    souvenir à chérir.
+                </p>
+            </article>
+            <article className={style.ContainerText}>
+                    <p className={style.Text}>
+                        Commencez à planifier dès maintenant votre séance que ce soit pour un portrait en {" "}
+                        <span className={style.Span}>
+                            <Link to="#">
+                                {"solo"}
+                            </Link>
+                        </span>
+                        , en {" "}
+                        <span className={style.Span}>
+                            <Link to="#">
+                                {"couple"}
+                            </Link>
+                        </span>
+                        , en famille, entre amis ou pour une entreprise avec des photos {" "}
+                        <span className={style.Span}>
+                            <Link to="#">
+                                {"corporate"}
+                            </Link>
+                        </span>
+                        {" !"}
+                    </p>
+                </article>
 
         </section>
     );

@@ -24,3 +24,28 @@
     font-style: normal;
     font-display: swap;
 }
+
+.ContainerText {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+
+.Text {
+    font-size: var(--h4);
+    margin: 0px 24px 0px 24px;
+    padding: 0px 0px 20px 0px;
+}
+
+.TargetText1 {
+    padding: 20px 0px 20px 0px;
+}
+
+.Span > a {
+    text-decoration: underline;
+    font-size: var(--p);
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color: var(--ColorPink);
+}
