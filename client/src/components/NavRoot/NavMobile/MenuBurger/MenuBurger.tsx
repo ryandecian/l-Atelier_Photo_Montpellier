@@ -45,7 +45,6 @@ function MenuBurger() {
                          moduleSubMenuLiTarget1={style.SubMenuLiTarget1Mobile}
                          moduleSubMenuLiTarget2={style.SubMenuLiTarget2Mobile}
                          moduleSubMenuLiTarget3={style.SubMenuLiTarget3Mobile}
-                         moduleSubMenuLiTarget4={style.SubMenuLiTarget4Mobile}
                      />
 
 
@@ -54,7 +53,7 @@ function MenuBurger() {
                  <button type="button" 
                  className={css.openBtn}
                  onClick={funcActive}>
-                    <span className="menuBurger">
+                    <span className={css.menuBurger}>
                         <span />
                         <span />
                         <span />

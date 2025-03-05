@@ -21,12 +21,16 @@ const router = createBrowserRouter([
          element: <MentionsLegales />,
        },
        {
+         path: "/portrait-corporate",
+         element: <h1>portrait-corporate</h1>,
+       },
+       {
          path: "/portrait-lifestyle",
          element: <h1>portrait-lifestyle</h1>,
        },
        {
-         path: "/mariage",
-         element: <h1>Page Mariage</h1>,
+         path: "/portrait-mariage",
+         element: <h1>Portrait-Mariage</h1>,
        },
        {
          path: "/portraits",
