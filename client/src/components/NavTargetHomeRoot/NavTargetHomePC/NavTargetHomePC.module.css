@@ -29,25 +29,31 @@
 }
 @media (min-width: 800px) and (max-width: 845px) {
     .TitleNavTargetHomePC {
-        margin: 0px 0px 0px 24px;
+        margin: 25px 0px 0px 24px;
     }
 }
 @media (min-width: 845px) and (max-width: 895px) {
     .TitleNavTargetHomePC {
-        margin: 0px 0px 0px 32px;
+        margin: 25px 0px 0px 32px;
     }
 }
 
 .TitleNavTargetHomePC > a {
     font-size: var(--h1);
     color: var(--ColorWhite);
-    /* font-family: AnneSignature; */
-    font-family: "Saira Condensed", sans-serif;
+    font-family: AnneSignature;
+    /* font-family: "Saira Condensed", sans-serif; */
     font-weight: 300;
     font-style: normal;
     font-display: swap;
     text-decoration: none;
     width: 295px;
+}
+@media (min-width: 1000px) {
+    .TitleNavTargetHomePC > a {
+        font-size: calc(var(--h1) + 5px);
+        width: 350px;
+    }
 }
 /* Container Navigation */
 .ContainerNavigationNavTargetHomePC {

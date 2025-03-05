@@ -6,6 +6,8 @@ import ContainerIntroductionHomeRoot from '../ComponentHomeRoot/ContainerIntrodu
 import ContainerExpertiseHomeRoot from '../ComponentHomeRoot/ContainerExpertiseHomeRoot/ContainerExpertiseHomeRoot';
 import ContainerServicesHomeRoot from '../ComponentHomeRoot/ContainerServicesHomeRoot/ContainerServicesHomeRoot';
 
+import HomeRootContainerA from '../ComponentHomeRoot/HomeRootContainerA/HomeRootContainerA';
+
 function HomePC() {
     return (
         <div className={style.HomePC}>
@@ -13,6 +15,7 @@ function HomePC() {
             <ContainerAccueilHomeRoot />
 
             {/* Container 2 : Introduction */}
+            <HomeRootContainerA />
             <ContainerIntroductionHomeRoot />
 
             {/* Container 3 : Mon expertise */}
