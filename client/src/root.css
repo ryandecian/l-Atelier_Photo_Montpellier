@@ -13,6 +13,7 @@
          --ColorBlack: black;
          --ColorWhite: white;
          --ColorGrey: rgb(230, 230, 230);
+         --ColorLink: rgb(14, 83, 193);
          --backgroundBlack: black;
          --backgroundWhite: white;
 
@@ -35,6 +36,7 @@
          --BackgroudMenuBurger: rgba(218, 216, 216, 0.675);
          --textColorMenu: white;
          --textColorMenuHover: rgb(137, 228, 255);
+         --textColorSubMenuHover: black;
          --spanMenuBurger: black;
 
          

@@ -69,13 +69,13 @@ function HomeRootComposantB() {
                     <p className={style.Text}>
                         Commencez à planifier dès maintenant votre séance que ce soit pour un portrait en {" "}
                         <span className={style.Span}>
-                            <Link to="#">
+                            <Link to="portrait-lifestyle">
                                 {"solo"}
                             </Link>
                         </span>
                         , en {" "}
                         <span className={style.Span}>
-                            <Link to="#">
+                            <Link to="portrait">
                                 {"couple"}
                             </Link>
                         </span>

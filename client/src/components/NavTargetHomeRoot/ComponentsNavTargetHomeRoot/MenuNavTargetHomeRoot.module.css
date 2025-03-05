@@ -201,5 +201,5 @@
 
 .SubMenuLinkPC:hover {
     transform: scale(1.2);
-    color: var(--textColorMenuHover);
+    color: var(--textColorSubMenuHover);
 }
