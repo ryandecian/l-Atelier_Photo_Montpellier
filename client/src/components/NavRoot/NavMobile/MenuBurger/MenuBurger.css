@@ -26,7 +26,7 @@
     z-index: var(--z-index_10);
     top: 0;
     right: -250px;
-    background-color: var(--ColorPrincipal); /*-------------------------------------------------*/
+    background-color: var(--BackgroudMenuBurger); /*-------------------------------------------------*/
     transition: right 0.5s ease;
     box-shadow: var(--box-shadow);
     border-left: 1px solid var(--borderWhite);
@@ -81,7 +81,7 @@
     display: block;
     width: 35px;
     height: 5px;
-    background-color: var(--spanMenuBurger);
+    background-color: var(--textColorMenu);
     margin: 0.5rem 0rem;
 }
 @media (max-width: 250px) {

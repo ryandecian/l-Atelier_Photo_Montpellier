@@ -1,30 +1,29 @@
 /* Le code qui va suivre jusqu'au double séparateur servira à coder les balises hors MenuBurger */
-.NavMobile {
+.NavTargetHomeMobile {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     background-color: inherit;
-    box-shadow: var(--box-shadow);
     @media (min-width: 800.02px) {
         display: none;
     }
 }
 
-.ContainerLogoNavMobile {
+.ContainerLogoNavTargetHomeMobile {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 
-.TitleNavMobile {
+.TitleNavTargetHomeMobile {
     font-size: var(--h1);
     font-family: AnneSignature;
     font-weight: normal;
 }
 
-.TitleNavMobile > a {
+.TitleNavTargetHomeMobile > a {
     text-decoration: none;
-    color: var(--ColorPrincipal);
+    color: var(--textColorMenu);
 }
