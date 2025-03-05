@@ -27,6 +27,16 @@ function HomeRootContainerA() {
                     (elle) positif et valorisant.
                 </p>
             </article>
+            <article className={style.ContainerText3}>
+                <p className={style.Text3}>
+                    Ma vision du mariage se décline sous la forme d’un reportage photographique. 
+                    Plutôt que de créer de simples poses figées, je privilégie l’instantanéité 
+                    et la spontanéité des émotions vécues durant la cérémonie. Je cherche à 
+                    être au plus près de tous ces instants afin qu’ils restent gravés, et cette 
+                    approche me permet de raconter une histoire visuelle complète, où chaque 
+                    image capte la complicité, la tendresse et l’authenticité du grand jour.
+                </p>
+            </article>
         </section>
     );
 }
