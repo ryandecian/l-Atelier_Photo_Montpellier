@@ -1,11 +1,11 @@
 import { useState } from "react";
 import MenuNavTargetHomeRoot from "../../../NavTargetHomeRoot/ComponentsNavTargetHomeRoot/MenuNavTargetHomeRoot";
-import style from "../../ComponentsNavRoot/MenuNavRoot.module.css";
-import "./MenuBurger.css";
+import style from "../../ComponentsNavTargetHomeRoot/MenuNavTargetHomeRoot.module.css";
+import "./NavTargetHomeMenuBurger.css";
 
 
 
-function MenuBurger() {
+function NavTargetHomeMenuBurger() {
     const [active, setActive] = useState(false)
         const funcActive = () => {
             setActive(!active)
@@ -65,4 +65,4 @@ function MenuBurger() {
     );
 }
 
-export default MenuBurger;
+export default NavTargetHomeMenuBurger;

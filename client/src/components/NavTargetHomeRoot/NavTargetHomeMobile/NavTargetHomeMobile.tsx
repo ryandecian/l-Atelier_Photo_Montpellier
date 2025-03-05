@@ -1,6 +1,6 @@
 import style from "./NavTargetHomeMobile.module.css";
 import { Link } from "react-router-dom"
-import MenuBurger from "../../NavRoot/NavMobile/MenuBurger/MenuBurger";
+import NavTargetHomeMenuBurger from "./NavTargetHomeMenuBurger/NavTargetHomeMenuBurger";
 
 /* Import des Images*/
 
@@ -17,7 +17,7 @@ function NavTargetHomeMobile() {
                     </p>
                 </article>
 
-                 <MenuBurger />
+                 <NavTargetHomeMenuBurger />
 
              </nav>
         </>

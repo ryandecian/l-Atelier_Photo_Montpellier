@@ -38,7 +38,7 @@
 .MenuLinkMobile {
     text-decoration: none;
     font-size: var(--h3);
-    color: var(--ColorWhite);
+    color: var(--textColorMenuBurger);
 }
 @media (min-width: 0px) and (max-width: 400px) {
     .MenuLinkMobile {
@@ -85,7 +85,7 @@
 
 .SubMenuLinkMobile {
     font-size: var(--h4);
-    color: var(--ColorTexteMenuBurger); /*-----------------------------------------------------*/
+    color: var(--textColorMenuBurger); /*-----------------------------------------------------*/
     text-decoration: none;
 }
 @media (min-width: 0px) and (max-width: 300px) {
@@ -165,7 +165,7 @@
 
 .SubMenuLiPC {
     padding: 4px 16px 4px 16px;
-    background-color: var(--BackgroudMenuBurger);
+    background-color: var(--BackgroudSubMenuBurger);
 }
 .SubMenuLiTarget1PC {
     border-top: 1.5px solid var(--borderWhite);

@@ -33,9 +33,11 @@
 
      /* Couleurs du Menu Burger */
          --Background1: #A9CCE3;
-         --BackgroudMenuBurger: rgba(218, 216, 216, 0.675);
+         --BackgroudSubMenuBurger: rgba(218, 216, 216, 0.675);
+         --BackgroudMenuBurger: rgba(218, 216, 216, 0.882);
          --textColorMenu: white;
          --textColorMenuHover: rgb(137, 228, 255);
+         --textColorMenuBurger: black;
          --textColorSubMenuHover: black;
          --spanMenuBurger: black;
 
