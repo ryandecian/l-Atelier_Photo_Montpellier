@@ -3,16 +3,25 @@
 
 /*Position du Menu Burger*/
 .sideCloseNav {
+    position: fixed;
+    top: 0px;
+    left: -100vw;
+    z-index: var(--z-index_9);
     width: 100vw;
     height: 100vh;
-    padding: 0px;
-    border: 0px;
-    margin: 0px;
-    position: fixed;
-    z-index: var(--z-index_9);
-    top: 0;
-    left: -100vw;
     background-color: transparent;
+    background: none;
+    padding: 0px;
+    border: none;
+    margin: 0px;
+    outline: none;
+    opacity: 0;
+    font-size: 0px;
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .sideCloseNav.active {

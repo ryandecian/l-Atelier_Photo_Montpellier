@@ -48,9 +48,9 @@ function MenuNavTargetHomeRoot(Props: MenuNavTargetHomeRootProps) {
         <span className={`${moduleMenuLink} ${moduleSubMenuPortraits}`}>
           PRESTATIONS <span className={moduleSpanPortraits}>{isSubMenuOpen? "▲" : "▼"}</span>
         </span>
-        {isSubMenuOpen && (
+        {isSubMenuOpen && (<>
+            <button type="button" className={moduleButtonSubMenu} onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}>Fermer</button>
           <ul className={moduleSubMenuUl}>
-            <button type="button" className={moduleButtonSubMenu} onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}/>
 
             <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget1}`}>
               <Link to="/mariage" className={moduleSubMenuLink}>Corporate</Link>
@@ -69,7 +69,7 @@ function MenuNavTargetHomeRoot(Props: MenuNavTargetHomeRootProps) {
               <Link to="/portraits-enfant" className={moduleSubMenuLink}>Grossesses / <br/>Nouveau nés</Link>
             </li>
           </ul>
-        )}
+        </>)}
       </li>
 
       <li className={`${moduleMenuLi} ${moduleMenuLiTarget2}`}>

@@ -12,7 +12,7 @@ function MenuBurger() {
         }
     return (
         <>
-        <button className={`${css.sideCloseNav} ${active ? css.active : ""}`} type="button" onClick={funcActive}/>
+        <button className={`${css.sideCloseNav} ${active ? css.active : ""}`} type="button" onClick={funcActive}>Fermer</button>
                  <div className={`${css.sideNav} ${active ? css.active : ""} ${css.mySideNav}`}>
 
                      <div>

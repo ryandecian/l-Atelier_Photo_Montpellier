@@ -161,6 +161,13 @@
     background: none;
     border: none;
     outline: none;
+    opacity: 0;
+    font-size: 0px;
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .SubMenuLiPC {
