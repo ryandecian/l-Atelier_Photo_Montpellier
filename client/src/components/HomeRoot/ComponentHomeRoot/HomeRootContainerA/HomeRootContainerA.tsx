@@ -37,6 +37,14 @@ function HomeRootContainerA() {
                     image capte la complicité, la tendresse et l’authenticité du grand jour.
                 </p>
             </article>
+            <article className={style.ContainerText4}>
+                <p className={style.Text4}>
+                    En choisissant mes services, vous optez pour un accompagnement sur mesure, 
+                    alliant expertise technique, sensibilité artistique et un engagement passionné 
+                    pour immortaliser vos moments les plus précieux. Vos portraits seront l’image 
+                    à d’un reportage de mariage authentique et vibrant de vie !
+                </p>
+            </article>
         </section>
     );
 }
