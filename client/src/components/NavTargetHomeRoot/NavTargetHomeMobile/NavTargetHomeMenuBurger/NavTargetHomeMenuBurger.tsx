@@ -1,23 +1,24 @@
 import { useState } from "react";
-import MenuNavRoot from "../../ComponentsNavRoot/MenuNavRoot";
-import style from "../../ComponentsNavRoot/MenuNavRoot.module.css";
-import css from "./MenuBurger.module.css";
+import MenuNavTargetHomeRoot from "../../../NavTargetHomeRoot/ComponentsNavTargetHomeRoot/MenuNavTargetHomeRoot";
+import style from "../../ComponentsNavTargetHomeRoot/MenuNavTargetHomeRoot.module.css";
+import "./NavTargetHomeMenuBurger.css";
 
 
 
-function MenuBurger() {
-    const [active, setActive] = useState<boolean>(false)
+function NavTargetHomeMenuBurger() {
+    const [active, setActive] = useState(false)
         const funcActive = () => {
             setActive(!active)
         }
     return (
         <>
-        <button className={`${css.sideCloseNav} ${active ? css.active : ""}`} type="button" onClick={funcActive}>Fermer</button>
-                 <div className={`${css.sideNav} ${active ? css.active : ""} ${css.mySideNav}`}>
+        <button className={`sideCloseNav ${active ? "active" : ""}`} type="button" onClick={funcActive}/>
+                 <div className={`sideNav ${active ? "active" : ""}`} id="mySideNav">
 
                      <div>
                          <button type="button" 
-                         className={`${css.close} ${css.closeBtn}`}
+                         id="closeBtn" 
+                         className="close"
                          onClick={funcActive}>
                             x
                         </button>
@@ -25,7 +26,7 @@ function MenuBurger() {
 
                      {/*Le style de ce composant est directement géré par le module CSS :
                      MenuNavRoot.module.css*/}
-                     <MenuNavRoot
+                     <MenuNavTargetHomeRoot
                          moduleMenuUl={style.MenuUlMobile}
                          moduleMenuLi={style.MenuLiMobile}
                          moduleMenuLink={style.MenuLinkMobile}
@@ -45,15 +46,16 @@ function MenuBurger() {
                          moduleSubMenuLiTarget1={style.SubMenuLiTarget1Mobile}
                          moduleSubMenuLiTarget2={style.SubMenuLiTarget2Mobile}
                          moduleSubMenuLiTarget3={style.SubMenuLiTarget3Mobile}
+                         moduleSubMenuLiTarget4={style.SubMenuLiTarget4Mobile}
                      />
 
 
                  </div>
 
                  <button type="button" 
-                 className={css.openBtn}
+                 id="openBtn"
                  onClick={funcActive}>
-                    <span className={css.menuBurger}>
+                    <span className="menuBurger">
                         <span />
                         <span />
                         <span />
@@ -63,4 +65,4 @@ function MenuBurger() {
     );
 }
 
-export default MenuBurger;
+export default NavTargetHomeMenuBurger;

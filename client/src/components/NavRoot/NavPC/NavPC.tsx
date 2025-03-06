@@ -1,7 +1,7 @@
 import "./NavPC.css";
 import { Link } from "react-router-dom";
 import MenuNavRoot from "../ComponentsNavRoot/MenuNavRoot";
-import style from "../ComponentsNavRoot/MenuNavRoot.module.css"
+import style from "../ComponentsNavRoot/MenuNavRoot.module.css";
 
 function NavPC() {
     return (
@@ -29,8 +29,6 @@ function NavPC() {
                     moduleSubMenuLiTarget1={style.SubMenuLiTarget1PC}
                     moduleSubMenuLiTarget2={style.SubMenuLiTarget2PC}
                     moduleSubMenuLiTarget3={style.SubMenuLiTarget3PC}
-                    moduleSubMenuLiTarget4={style.SubMenuLiTarget4PC}
-                    moduleSubMenuLiTarget5={style.SubMenuLiTarget5PC}
                 />
             </div>
         </nav>
