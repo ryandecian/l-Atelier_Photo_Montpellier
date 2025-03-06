@@ -59,7 +59,7 @@ function FooterPC() {
 
                     <ul className={style.UlText}>
                         <li className={style.LiTextLink}>
-                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.instagram.com/atelier_photo_montpellier" target="_blank" rel="noopener noreferrer">
                                 Instagram
                             </a>
                         </li>
