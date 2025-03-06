@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import ListDataRouter from "../../../router/router";
 
 interface MenuNavTargetHomeRootProps {
   moduleMenuUl: string;
@@ -50,36 +51,36 @@ function MenuNavTargetHomeRoot(Props: MenuNavTargetHomeRootProps) {
           <ul className={moduleSubMenuUl}>
 
             <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget1}`}>
-              <Link to="/portraits-corporates" className={moduleSubMenuLink}>Corporate</Link>
+              <Link to={ListDataRouter[11].path} className={moduleSubMenuLink}>Corporate</Link>
             </li>
             <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget2}`}>
-              <Link to="/portraits-lifestyles" className={moduleSubMenuLink}>LifeStyle</Link>
+              <Link to={ListDataRouter[12].path} className={moduleSubMenuLink}>LifeStyle</Link>
             </li>
             <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget3}`}>
-              <Link to="/portraits-mariages" className={moduleSubMenuLink}>Mariage</Link>
+              <Link to={ListDataRouter[13].path} className={moduleSubMenuLink}>Mariage</Link>
             </li>
           </ul>
         </>)}
       </li>
 
       <li className={`${moduleMenuLi} ${moduleMenuLiTarget2}`}>
-        <Link to="/tarifs" className={moduleMenuLink}>TARIFS</Link>
+        <Link to={ListDataRouter[2].path} className={moduleMenuLink}>TARIFS</Link>
       </li>
 
       <li className={`${moduleMenuLi} ${moduleMenuLiTarget3}`}>
-        <Link to="/contacts" className={moduleMenuLink}>CONTACT</Link>
+        <Link to={ListDataRouter[3].path} className={moduleMenuLink}>CONTACT</Link>
       </li>
 
       <li className={`${moduleMenuLi} ${moduleMenuLiTarget4}`}>
-        <Link to="/blog" className={moduleMenuLink}>BLOG</Link>
+        <Link to={ListDataRouter[4].path} className={moduleMenuLink}>BLOG</Link>
       </li>
 
       <li className={`${moduleMenuLi} ${moduleMenuLiTarget5}`}>
-        <Link to="/panier" className={moduleMenuLink}>PANIER</Link>
+        <Link to={ListDataRouter[5].path} className={moduleMenuLink}>PANIER</Link>
       </li>
 
       <li className={`${moduleMenuLi} ${moduleMenuLiTarget6}`}>
-        <Link to="/compte" className={moduleMenuLink}>COMPTE</Link>
+        <Link to={ListDataRouter[6].path} className={moduleMenuLink}>COMPTE</Link>
       </li>
     </ul>
   );
