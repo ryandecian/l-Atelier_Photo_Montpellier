@@ -21,24 +21,37 @@ const router = createBrowserRouter([
          element: <MentionsLegales />,
        },
        {
-         path: "/portrait-corporate",
-         element: <h1>portrait-corporate</h1>,
-       },
-       {
-         path: "/portrait-lifestyle",
-         element: <h1>portrait-lifestyle</h1>,
-       },
-       {
-         path: "/portrait-mariage",
-         element: <h1>Portrait-Mariage</h1>,
-       },
-       {
-         path: "/portraits",
-         element: <h1>Page Portraits</h1>,
-       },
-       {
          path: "/tarifs",
-         element: <h1>Page Tarifs</h1>,
+         element: <h1>Route : Page Tarifs</h1>,
+       },
+       {
+         path: "/contacts",
+         element: <h1>Route : Page Contact</h1>,
+       },
+       {
+         path: "/blog",
+         element: <h1>Route : Page Blog</h1>,
+       },
+       {
+         path: "/panier",
+         element: <h1>Route : Page Panier</h1>,
+       },
+       {
+         path: "/compte",
+         element: <h1>Route : Page Compte</h1>,
+       },
+       /* Route des SubMenu */
+       {
+         path: "/portraits-corporates",
+         element: <h1>Route : portraits-corporates</h1>,
+       },
+       {
+         path: "/portraits-lifestyles",
+         element: <h1>Route : portraits-lifestyles</h1>,
+       },
+       {
+         path: "/portraits-mariages",
+         element: <h1>Route : Portraits-Mariages</h1>,
        },
       ]
     },
