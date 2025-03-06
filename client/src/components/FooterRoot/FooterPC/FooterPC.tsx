@@ -1,5 +1,6 @@
 import style from "./FooterPC.module.css";
 import { Link } from "react-router-dom";
+import ListDataRouter, {LinkExt} from "../../../router/router";
 
 function FooterPC() {
 
@@ -28,21 +29,21 @@ function FooterPC() {
 
                     <ul className={style.UlText}>
                         <li className={style.LiTextLink}>
-                            <Link to="#">
+                            <Link to={ListDataRouter[7].path}>
                                 Qui suis-je ?
                             </Link>
                         </li>
                     </ul>
                     <ul className={style.UlText}>
                         <li className={style.LiTextLink}>
-                            <Link to="#">
+                            <Link to={ListDataRouter[3].path}>
                                 Me contacter
                             </Link>
                         </li>
                     </ul>
                     <ul className={style.UlText}>
                         <li className={style.LiTextLink}>
-                            <Link to="#">
+                            <Link to={ListDataRouter[8].path}>
                                 Portfolio
                             </Link>
                         </li>
@@ -59,23 +60,23 @@ function FooterPC() {
 
                     <ul className={style.UlText}>
                         <li className={style.LiTextLink}>
-                            <Link to="#">
+                            <a href={LinkExt.instagram} target="_blank" rel="noopener noreferrer">
                                 Instagram
-                            </Link>
+                            </a>
                         </li>
                     </ul>
                     <ul className={style.UlText}>
                         <li className={style.LiTextLink}>
-                            <Link to="#">
+                            <a href={LinkExt.facebook} target="_blank" rel="noopener noreferrer">
                                 Facebook
-                            </Link>
+                            </a>
                         </li>
                     </ul>
                     <ul className={style.UlText}>
                         <li className={style.LiTextLink}>
-                            <Link to="#">
+                            <a href={LinkExt.youtube} target="_blank" rel="noopener noreferrer">
                                 Youtube
-                            </Link>
+                            </a>
                         </li>
                     </ul>
                 </section>
@@ -90,21 +91,21 @@ function FooterPC() {
 
                     <ul className={style.UlText}>
                         <li className={style.LiTextLink}>
-                            <Link to="mentions-legales">
+                            <Link to={ListDataRouter[1].path}>
                                 Mentions légales
                             </Link>
                         </li>
                     </ul>
                     <ul className={style.UlText}>
                         <li className={style.LiTextLink}>
-                            <Link to="#">
+                            <Link to={ListDataRouter[9].path}>
                                 CGV
                             </Link>
                         </li>
                     </ul>
                     <ul className={style.UlText}>
                         <li className={style.LiTextLink}>
-                            <Link to="#">
+                            <Link to={ListDataRouter[10].path}>
                                 FAQ
                             </Link>
                         </li>
