@@ -29,8 +29,6 @@ function NavTargetHomePC() {
                     moduleSubMenuLiTarget1={style.SubMenuLiTarget1PC}
                     moduleSubMenuLiTarget2={style.SubMenuLiTarget2PC}
                     moduleSubMenuLiTarget3={style.SubMenuLiTarget3PC}
-                    moduleSubMenuLiTarget4={style.SubMenuLiTarget4PC}
-                    moduleSubMenuLiTarget5={style.SubMenuLiTarget5PC}
                 />
             </div>
         </nav>

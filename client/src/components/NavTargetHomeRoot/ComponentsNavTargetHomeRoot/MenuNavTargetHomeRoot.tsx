@@ -22,8 +22,6 @@ interface MenuNavTargetHomeRootProps {
   moduleSubMenuLiTarget1?: string;
   moduleSubMenuLiTarget2?: string;
   moduleSubMenuLiTarget3?: string;
-  moduleSubMenuLiTarget4?: string;
-  moduleSubMenuLiTarget5?: string;
 }
 
 function MenuNavTargetHomeRoot(Props: MenuNavTargetHomeRootProps) {
@@ -35,8 +33,7 @@ function MenuNavTargetHomeRoot(Props: MenuNavTargetHomeRootProps) {
     moduleMenuLiTarget3, moduleMenuLiTarget4,
     moduleMenuLiTarget5, moduleMenuLiTarget6,
     moduleSubMenuLiTarget1,moduleSubMenuLiTarget2,
-    moduleSubMenuLiTarget3, moduleSubMenuLiTarget4,
-    moduleSubMenuLiTarget5, moduleButtonSubMenu } = Props;
+    moduleSubMenuLiTarget3, moduleButtonSubMenu } = Props;
 
   const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
 
@@ -60,13 +57,6 @@ function MenuNavTargetHomeRoot(Props: MenuNavTargetHomeRootProps) {
             </li>
             <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget3}`}>
               <Link to="/portraits-couple" className={moduleSubMenuLink}>Mariage</Link>
-            </li>
-            {/* A retirer */}
-            <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget4}`}>
-              <Link to="/portraits-corporate" className={moduleSubMenuLink}>Corporates</Link>
-            </li>
-            <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget5}`}>
-              <Link to="/portraits-enfant" className={moduleSubMenuLink}>Grossesses / <br/>Nouveau nés</Link>
             </li>
           </ul>
         </>)}
