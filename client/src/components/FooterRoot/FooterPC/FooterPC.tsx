@@ -28,21 +28,21 @@ function FooterPC() {
 
                     <ul className={style.UlText}>
                         <li className={style.LiTextLink}>
-                            <Link to="#">
+                            <Link to="qui-suis-je">
                                 Qui suis-je ?
                             </Link>
                         </li>
                     </ul>
                     <ul className={style.UlText}>
                         <li className={style.LiTextLink}>
-                            <Link to="#">
+                            <Link to="contacts">
                                 Me contacter
                             </Link>
                         </li>
                     </ul>
                     <ul className={style.UlText}>
                         <li className={style.LiTextLink}>
-                            <Link to="#">
+                            <Link to="portfolio">
                                 Portfolio
                             </Link>
                         </li>
@@ -59,23 +59,23 @@ function FooterPC() {
 
                     <ul className={style.UlText}>
                         <li className={style.LiTextLink}>
-                            <Link to="#">
+                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
                                 Instagram
-                            </Link>
+                            </a>
                         </li>
                     </ul>
                     <ul className={style.UlText}>
                         <li className={style.LiTextLink}>
-                            <Link to="#">
+                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                                 Facebook
-                            </Link>
+                            </a>
                         </li>
                     </ul>
                     <ul className={style.UlText}>
                         <li className={style.LiTextLink}>
-                            <Link to="#">
+                            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
                                 Youtube
-                            </Link>
+                            </a>
                         </li>
                     </ul>
                 </section>
@@ -97,14 +97,14 @@ function FooterPC() {
                     </ul>
                     <ul className={style.UlText}>
                         <li className={style.LiTextLink}>
-                            <Link to="#">
+                            <Link to="cgv">
                                 CGV
                             </Link>
                         </li>
                     </ul>
                     <ul className={style.UlText}>
                         <li className={style.LiTextLink}>
-                            <Link to="#">
+                            <Link to="faq">
                                 FAQ
                             </Link>
                         </li>

@@ -40,6 +40,22 @@ const router = createBrowserRouter([
          path: "/compte",
          element: <h1>Route : Page Compte</h1>,
        },
+       {
+         path: "/qui-suis-je",
+         element: <h1>Route : Page Qui-suis-je</h1>,
+       },
+       {
+         path: "/portfolio",
+         element: <h1>Route : Page Portfolio</h1>,
+       },
+       {
+         path: "/cgv",
+         element: <h1>Route : Page CGV</h1>,
+       },
+       {
+         path: "/faq",
+         element: <h1>Route : Page faq</h1>,
+       },
        /* Route des SubMenu */
        {
          path: "/portraits-corporates",
