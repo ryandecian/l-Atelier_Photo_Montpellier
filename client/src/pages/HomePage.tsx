@@ -9,8 +9,8 @@ function HomePage() {
         title: "Accueil - ",
         autor: "Anne SAUNIER",
         description: "Capturez l'émotion du regard",
-        url: "", /*URL de la page*/
-        img: "",
+        url: "https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250/", /*URL de la page*/
+        img: "https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250/Dans-les-yeux-de-Sacha.jpg", /*Lien URL de l'image*/
         twitterUrlImg: "", /*Lien URL de l'image*/
         twitterCompte: "", /*@MonCompteTwitter*/ /*Permet d'identifier le compte officiel*/
         keywords: {
@@ -56,9 +56,9 @@ function HomePage() {
                      {/* Balises OpenGraph - Facebook, Linkedin, WhatsApp, Instagram*/}
                          <meta property="og:title" content={SEO.title} />
                          <meta property="og:description" content={SEO.description} />
-                         <meta property="og:image" content="" />
+                         <meta property="og:image" content={SEO.img} />
                          <meta property="og:url" content={SEO.url} />
-                         <meta property="og:type" content="website" />
+                         <meta property="og:type" content={SEO.type.website} />
                          <meta property="og:locale" content="fr_FR" />
 
                      {/* Balises Twitter Cards */}

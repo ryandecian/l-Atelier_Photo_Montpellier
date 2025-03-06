@@ -7,6 +7,7 @@ import ContainerServicesHomeRoot from '../ComponentHomeRoot/ContainerServicesHom
 
 import HomeRootComposantA from '../ComponentHomeRoot/HomeRootComposantA/HomeRootComposantA';
 import HomeRootComposantB from '../ComponentHomeRoot/HomeRootComposantB/HomeRootComposantB';
+import HomeRootComposantC from '../ComponentHomeRoot/HomeRootComposantC/HomeRootComposantC';
 
 function HomePC() {
     return (
@@ -21,7 +22,7 @@ function HomePC() {
             <HomeRootComposantB />
 
             {/* Container 4 : Expertise */}
-            <ContainerExpertiseHomeRoot />
+            <HomeRootComposantC />
 
             {/* Container 4 : Présentation des services */}
             <ContainerServicesHomeRoot />
