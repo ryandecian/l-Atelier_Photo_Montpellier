@@ -50,13 +50,13 @@ function MenuNavTargetHomeRoot(Props: MenuNavTargetHomeRootProps) {
           <ul className={moduleSubMenuUl}>
 
             <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget1}`}>
-              <Link to="/mariage" className={moduleSubMenuLink}>Corporate</Link>
+              <Link to="/portraits-corporates" className={moduleSubMenuLink}>Corporate</Link>
             </li>
             <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget2}`}>
-              <Link to="/portraits-individuels" className={moduleSubMenuLink}>LifeStyle</Link>
+              <Link to="/portraits-lifestyles" className={moduleSubMenuLink}>LifeStyle</Link>
             </li>
             <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget3}`}>
-              <Link to="/portraits-couple" className={moduleSubMenuLink}>Mariage</Link>
+              <Link to="/portraits-mariages" className={moduleSubMenuLink}>Mariage</Link>
             </li>
           </ul>
         </>)}
@@ -67,7 +67,7 @@ function MenuNavTargetHomeRoot(Props: MenuNavTargetHomeRootProps) {
       </li>
 
       <li className={`${moduleMenuLi} ${moduleMenuLiTarget3}`}>
-        <Link to="/contact" className={moduleMenuLink}>CONTACT</Link>
+        <Link to="/contacts" className={moduleMenuLink}>CONTACT</Link>
       </li>
 
       <li className={`${moduleMenuLi} ${moduleMenuLiTarget4}`}>
