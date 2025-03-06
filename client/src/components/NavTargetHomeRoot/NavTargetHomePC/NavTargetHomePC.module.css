@@ -6,7 +6,6 @@
     width: 100%;
     margin: 0px;
     padding: 0px;
-    background-color: var(--backgroundwhite);
 }
 @media (max-width: 800px) {
     .NavTargetHomePC {
@@ -40,7 +39,7 @@
 
 .TitleNavTargetHomePC > a {
     font-size: var(--h1);
-    color: var(--ColorWhite);
+    color: var(--textColorMenu);
     font-family: AnneSignature;
     /* font-family: "Saira Condensed", sans-serif; */
     font-weight: 300;

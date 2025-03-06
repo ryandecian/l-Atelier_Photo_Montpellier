@@ -2,9 +2,11 @@ import style from './HomeMobile.module.css';
 
 /* Import des composants */
 import ContainerAccueilHomeRoot from '../ComponentHomeRoot/ContainerTitleHomeRoot/ContainerAccueilHomeRoot';
-import ContainerIntroductionHomeRoot from '../ComponentHomeRoot/ContainerIntroductionHomeRoot/ContainerIntroductionHomeRoot';
 import ContainerExpertiseHomeRoot from '../ComponentHomeRoot/ContainerExpertiseHomeRoot/ContainerExpertiseHomeRoot';
 import ContainerServicesHomeRoot from '../ComponentHomeRoot/ContainerServicesHomeRoot/ContainerServicesHomeRoot';
+
+import HomeRootContainerA from '../ComponentHomeRoot/HomeRootContainerA/HomeRootContainerA';
+import HomeRootContainerB from '../ComponentHomeRoot/HomeRootComposantB/HomeRootComposantB';
 
 function HomeMobile() {
     return (
@@ -13,9 +15,10 @@ function HomeMobile() {
             <ContainerAccueilHomeRoot />
 
             {/* Container 2 : Introduction */}
-            <ContainerIntroductionHomeRoot />
+            <HomeRootContainerA />
 
             {/* Container 3 : Mon expertise */}
+            <HomeRootContainerB />
             <ContainerExpertiseHomeRoot />
 
             {/* Container 4 : Présentation des services */}

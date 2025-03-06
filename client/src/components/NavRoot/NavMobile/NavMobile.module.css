@@ -1,5 +1,3 @@
-@import "../../../root.css";
-
 /* Le code qui va suivre jusqu'au double séparateur servira à coder les balises hors MenuBurger */
 .NavMobile {
     display: flex;
@@ -24,7 +22,6 @@
     font-size: var(--h1);
     font-family: AnneSignature;
     font-weight: normal;
-    color: var(--ColorPrincipal);
 }
 
 .TitleNavMobile > a {
