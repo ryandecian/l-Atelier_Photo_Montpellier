@@ -5,7 +5,7 @@ import ContainerAccueilHomeRoot from '../ComponentHomeRoot/ContainerTitleHomeRoo
 import ContainerExpertiseHomeRoot from '../ComponentHomeRoot/ContainerExpertiseHomeRoot/ContainerExpertiseHomeRoot';
 import ContainerServicesHomeRoot from '../ComponentHomeRoot/ContainerServicesHomeRoot/ContainerServicesHomeRoot';
 
-import HomeRootContainerA from '../ComponentHomeRoot/HomeRootContainerA/HomeRootContainerA';
+import HomeRootComposantA from '../ComponentHomeRoot/HomeRootComposantA/HomeRootComposantA';
 import HomeRootComposantB from '../ComponentHomeRoot/HomeRootComposantB/HomeRootComposantB';
 
 function HomePC() {
@@ -15,7 +15,7 @@ function HomePC() {
             <ContainerAccueilHomeRoot />
 
             {/* Container 2 : Introduction */}
-            <HomeRootContainerA />
+            <HomeRootComposantA />
 
             {/* Container 3 : Portrait */}
             <HomeRootComposantB />

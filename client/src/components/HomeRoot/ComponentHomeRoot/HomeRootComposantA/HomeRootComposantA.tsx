@@ -1,6 +1,6 @@
-import style from "./HomeRootContainerA.module.css"
+import style from "./HomeRootComposantA.module.css"
 
-function HomeRootContainerA() {
+function HomeRootComposantA() {
     return (
         <section className={style.HomeRootContainerA}>
             <header className={style.ContainerTitle}>
@@ -49,4 +49,4 @@ function HomeRootContainerA() {
     );
 }
 
-export default HomeRootContainerA;
+export default HomeRootComposantA;
