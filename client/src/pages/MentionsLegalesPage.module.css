@@ -1,4 +1,7 @@
-.MentionsLegalesPage {
+.MentionsLegalesPage, 
+.Header, 
+.Main, 
+.Footer {
     display: flex;
     justify-content: center;
     align-items: center;

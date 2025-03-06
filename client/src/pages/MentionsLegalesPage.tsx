@@ -76,13 +76,13 @@ function MentionsLegales() {
                      {/* Canonical URL (évite le contenu dupliqué pour les moteurs de recherche) */}
                          <link rel="canonical" href={SEO.url} />
             </Helmet>
-            <header className="Header">
+            <header className={style.Header}>
                  <NavRoot />
             </header>
-            <main className="Main">
+            <main className={style.Main}>
                 <MentionsLegalesRoot />
             </main>
-            <footer className="Footer">
+            <footer className={style.Footer}>
                 <FooterRoot />
             </footer>
         </div>

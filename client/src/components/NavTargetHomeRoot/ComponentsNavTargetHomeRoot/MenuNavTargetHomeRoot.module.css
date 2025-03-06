@@ -38,7 +38,7 @@
 .MenuLinkMobile {
     text-decoration: none;
     font-size: var(--h3);
-    color: var(--ColorTexteMenuBurger); /*----------------------------------------------------------*/
+    color: var(--textColorMenuBurger);
 }
 @media (min-width: 0px) and (max-width: 400px) {
     .MenuLinkMobile {
@@ -71,21 +71,27 @@
     height: 100vh;
     background-color: transparent;
     background: none;
-    border: none;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
     outline: none;
+    opacity: 0;
+    cursor: pointer;
+
+    /* Masquer le texte de manière propre et accessible */
+    text-indent: -9999px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: transparent;
 }
 
 .SubMenuLiMobile {
     padding: 6px 0px 6px 0px;
 }
-/* .SubMenuLiTarget1Mobile {}
-.SubMenuLiTarget2Mobile {}
-.SubMenuLiTarget3Mobile {}
-.SubMenuLiTarget4Mobile {} */
 
 .SubMenuLinkMobile {
     font-size: var(--h4);
-    color: var(--ColorTexteMenuBurger); /*-----------------------------------------------------*/
+    color: var(--textColorMenuBurger); /*-----------------------------------------------------*/
     text-decoration: none;
 }
 @media (min-width: 0px) and (max-width: 300px) {
@@ -159,13 +165,23 @@
     height: 100vh;
     background-color: transparent;
     background: none;
-    border: none;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
     outline: none;
+    opacity: 0;
+    cursor: pointer;
+
+    /* Masquer le texte de manière propre et accessible */
+    text-indent: -9999px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: transparent;
 }
 
 .SubMenuLiPC {
     padding: 4px 16px 4px 16px;
-    background-color: var(--BackgroudMenuBurger);
+    background-color: var(--BackgroudSubMenuBurger);
 }
 .SubMenuLiTarget1PC {
     border-top: 1.5px solid var(--borderWhite);
@@ -201,5 +217,5 @@
 
 .SubMenuLinkPC:hover {
     transform: scale(1.2);
-    color: var(--textColorMenuHover);
+    color: var(--textColorSubMenuHover);
 }

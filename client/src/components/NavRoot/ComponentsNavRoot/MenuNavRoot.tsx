@@ -22,8 +22,6 @@ interface MenuNavRootProps {
   moduleSubMenuLiTarget1?: string;
   moduleSubMenuLiTarget2?: string;
   moduleSubMenuLiTarget3?: string;
-  moduleSubMenuLiTarget4?: string;
-  moduleSubMenuLiTarget5?: string;
 }
 
 function MenuNavRoot(Props: MenuNavRootProps) {
@@ -35,8 +33,7 @@ function MenuNavRoot(Props: MenuNavRootProps) {
     moduleMenuLiTarget3, moduleMenuLiTarget4,
     moduleMenuLiTarget5, moduleMenuLiTarget6,
     moduleSubMenuLiTarget1,moduleSubMenuLiTarget2,
-    moduleSubMenuLiTarget3, moduleSubMenuLiTarget4,
-    moduleSubMenuLiTarget5, moduleButtonSubMenu } = Props;
+    moduleSubMenuLiTarget3, moduleButtonSubMenu } = Props;
 
   const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
 
@@ -46,49 +43,43 @@ function MenuNavRoot(Props: MenuNavRootProps) {
       {/* Menu déroulant pour Portraits */}
       <li className={`${moduleMenuLi} ${moduleMenuLiTarget1}`} onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}>
         <span className={`${moduleMenuLink} ${moduleSubMenuPortraits}`}>
-          Prestations <span className={moduleSpanPortraits}>{isSubMenuOpen? "▲" : "▼"}</span>
+          PRESTATIONS <span className={moduleSpanPortraits}>{isSubMenuOpen? "▲" : "▼"}</span>
         </span>
-        {isSubMenuOpen && (
+        {isSubMenuOpen && (<>
+            <button type="button" className={moduleButtonSubMenu} onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}>Fermer</button>
           <ul className={moduleSubMenuUl}>
-            <button type="button" className={moduleButtonSubMenu} onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}/>
 
             <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget1}`}>
-              <Link to="/mariage" className={moduleSubMenuLink}>Mariages</Link>
+              <Link to="/portrait-corporate" className={moduleSubMenuLink}>Corporate</Link>
             </li>
             <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget2}`}>
-              <Link to="/portraits-individuels" className={moduleSubMenuLink}>Individuels</Link>
+              <Link to="/portraits-lifestyle" className={moduleSubMenuLink}>LifeStyle</Link>
             </li>
             <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget3}`}>
-              <Link to="/portraits-couple" className={moduleSubMenuLink}>Couples</Link>
-            </li>
-            <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget4}`}>
-              <Link to="/portraits-corporate" className={moduleSubMenuLink}>Corporates</Link>
-            </li>
-            <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget5}`}>
-              <Link to="/portraits-enfant" className={moduleSubMenuLink}>Grossesses / <br/>Nouveau nés</Link>
+              <Link to="/portraits-mariage" className={moduleSubMenuLink}>Mariage</Link>
             </li>
           </ul>
-        )}
+        </>)}
       </li>
 
       <li className={`${moduleMenuLi} ${moduleMenuLiTarget2}`}>
-        <Link to="/tarifs" className={moduleMenuLink}>Tarifs</Link>
+        <Link to="/tarifs" className={moduleMenuLink}>TARIFS</Link>
       </li>
 
       <li className={`${moduleMenuLi} ${moduleMenuLiTarget3}`}>
-        <Link to="/contact" className={moduleMenuLink}>Contact</Link>
+        <Link to="/contact" className={moduleMenuLink}>CONTACT</Link>
       </li>
 
       <li className={`${moduleMenuLi} ${moduleMenuLiTarget4}`}>
-        <Link to="/blog" className={moduleMenuLink}>Blog</Link>
+        <Link to="/blog" className={moduleMenuLink}>BLOG</Link>
       </li>
 
       <li className={`${moduleMenuLi} ${moduleMenuLiTarget5}`}>
-        <Link to="/panier" className={moduleMenuLink}>Panier</Link>
+        <Link to="/panier" className={moduleMenuLink}>PANIER</Link>
       </li>
 
       <li className={`${moduleMenuLi} ${moduleMenuLiTarget6}`}>
-        <Link to="/compte" className={moduleMenuLink}>Compte</Link>
+        <Link to="/compte" className={moduleMenuLink}>COMPTE</Link>
       </li>
     </ul>
   );
