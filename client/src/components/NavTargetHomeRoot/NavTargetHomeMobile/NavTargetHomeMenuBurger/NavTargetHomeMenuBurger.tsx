@@ -12,7 +12,7 @@ function NavTargetHomeMenuBurger() {
         }
     return (
         <>
-        <button className={`sideCloseNav ${active ? "active" : ""}`} type="button" onClick={funcActive}/>
+        <button className={`sideCloseNav ${active ? "active" : ""}`} type="button" onClick={funcActive}>Fermer</button>
                  <div className={`sideNav ${active ? "active" : ""}`} id="mySideNav">
 
                      <div>
