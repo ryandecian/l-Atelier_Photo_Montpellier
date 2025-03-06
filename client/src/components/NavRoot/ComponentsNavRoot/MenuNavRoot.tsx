@@ -50,13 +50,13 @@ function MenuNavRoot(Props: MenuNavRootProps) {
           <ul className={moduleSubMenuUl}>
 
             <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget1}`}>
-              <Link to="/portrait-corporate" className={moduleSubMenuLink}>Corporate</Link>
+              <Link to="/portraits-corporates" className={moduleSubMenuLink}>Corporate</Link>
             </li>
             <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget2}`}>
-              <Link to="/portraits-lifestyle" className={moduleSubMenuLink}>LifeStyle</Link>
+              <Link to="/portraits-lifestyles" className={moduleSubMenuLink}>LifeStyle</Link>
             </li>
             <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget3}`}>
-              <Link to="/portraits-mariage" className={moduleSubMenuLink}>Mariage</Link>
+              <Link to="/portraits-mariages" className={moduleSubMenuLink}>Mariage</Link>
             </li>
           </ul>
         </>)}
@@ -67,7 +67,7 @@ function MenuNavRoot(Props: MenuNavRootProps) {
       </li>
 
       <li className={`${moduleMenuLi} ${moduleMenuLiTarget3}`}>
-        <Link to="/contact" className={moduleMenuLink}>CONTACT</Link>
+        <Link to="/contacts" className={moduleMenuLink}>CONTACT</Link>
       </li>
 
       <li className={`${moduleMenuLi} ${moduleMenuLiTarget4}`}>
