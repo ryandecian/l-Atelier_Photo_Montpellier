@@ -159,15 +159,18 @@
     height: 100vh;
     background-color: transparent;
     background: none;
-    border: none;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
     outline: none;
     opacity: 0;
-    font-size: 0px;
-    clip-path: inset(50%);
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
     cursor: pointer;
+
+    /* Masquer le texte de manière propre et accessible */
+    text-indent: -9999px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: transparent;
 }
 
 .SubMenuLiPC {
