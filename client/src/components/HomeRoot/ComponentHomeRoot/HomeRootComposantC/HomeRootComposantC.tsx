@@ -1,6 +1,7 @@
 import style from "./HomeRootComposantC.module.css"
 import ContainerImgHomeRoot from "../ComposantHomeRoot/ContainerImgHomeRoot";
 import { Link } from "react-router-dom";
+import ListDataRouter from "../../../../router/router";
 
 /* Import des images*/
 import img5 from "../../../../assets/Images/ImageHomePage/Homeimg5.jpg";
@@ -20,10 +21,10 @@ function HomeRootComposantC() {
         MetaNameimg8: "Les mariés en Selfie à Palavas",
     }
     return (
-        <section className={style.HomeRootComposantB}>
+        <section className={style.HomeRootComposantC}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.Title}>
-                    Chaque portrait a son histoire à raconter
+                    Votre mariage, votre engagement, ce moment
                 </h2>
             </header>
 
@@ -40,52 +41,24 @@ function HomeRootComposantC() {
 
             <article className={style.ContainerText}>
                 <p className={`${style.Text} ${style.TargetText1}`}>
-                    C’est pourquoi en tant que photographe professionnelle installée à Montpellier 
-                    je cherche à capturer ces histoires. Pour son entreprise, pour ses réseaux 
-                    sociaux, pour une connivence…je cherche à capturer ce qui fait votre force, 
-                    votre énergie, votre rayonnement.
-                </p>
-            </article>
-            <article className={style.ContainerText}>
-                <p className={style.Text}>
-                    Que vous cherchiez un portrait corporate pour affirmer votre crédibilité, un 
-                    portrait lifestyle qui capte la douceur de votre quotidien, ou encore un moment 
-                    familial empreint de complicité, chaque séance est conçue pour vous mettre en 
-                    lumière dans toute votre singularité. En tant que photographe professionnelle 
-                    je peux travailler en studio ou en extérieur, selon vos envies, dans une 
-                    atmosphère calme et chaleureuse.
-                </p>
-            </article>
-            <article className={style.ContainerText}>
-                <p className={style.Text}>
-                    Ce que j’aime particulièrement, c’est le moment où, après une séance pleine 
-                    d’échange, vous repartez non seulement avec des clichés qui vous plaisent, 
-                    mais surtout avec ce sourire sincère qui en dit long sur l’expérience vécue. 
-                    Pour moi, chaque portrait est une célébration de l’authenticité et un précieux 
-                    souvenir à chérir.
+                    Le jour de votre mariage est un moment unique, et chaque détail mérite d'être capturé avec soin 
+                    et émotion. Photographe spécialisée dans le mariage professionnel, basée à Montpellier, je mets 
+                    tout en œuvre pour immortaliser les moments les plus authentiques et les plus précieux de cette 
+                    journée exceptionnelle. Que ce soit lors des préparatifs, pendant la cérémonie, lors des séances 
+                    de couple ou encore pendant la soirée dansante, je vous accompagne avec une approche discrète et 
+                    naturelle, en créant des images (voir des vidéos) qui racontent réellement votre histoire. Mon 
+                    objectif ? Vous offrir des souvenirs intemporels et sincères.
                 </p>
             </article>
             <article className={style.ContainerText}>
                     <p className={style.Text}>
-                        Commencez à planifier dès maintenant votre séance que ce soit pour un portrait en {" "}
+                        Découvrez plus en détail {" "}
                         <span className={style.Span}>
-                            <Link to="portrait-lifestyle">
-                                {"solo"}
+                            <Link to={ListDataRouter[13].path}>
+                                {"mes prestations de mariage "}
                             </Link>
                         </span>
-                        , en {" "}
-                        <span className={style.Span}>
-                            <Link to="portrait">
-                                {"couple"}
-                            </Link>
-                        </span>
-                        , en famille, entre amis ou pour une entreprise avec des photos {" "}
-                        <span className={style.Span}>
-                            <Link to="#">
-                                {"corporate"}
-                            </Link>
-                        </span>
-                        {" !"}
+                        et comment je peux vous aider à revivre votre journée dans tous ses moments !
                     </p>
                 </article>
 
