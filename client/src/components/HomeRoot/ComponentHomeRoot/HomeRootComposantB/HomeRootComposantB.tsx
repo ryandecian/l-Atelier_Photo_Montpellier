@@ -1,6 +1,7 @@
 import style from "./HomeRootComposantB.module.css"
 import ContainerImgHomeRoot from "../ComposantHomeRoot/ContainerImgHomeRoot";
 import { Link } from "react-router-dom";
+import ListDataRouter from "../../../../router/router";
 
 /* Import des images*/
 import img1 from "../../../../assets/Images/ImageHomePage/HomeImg1.jpg";
@@ -42,8 +43,8 @@ function HomeRootComposantB() {
                 <p className={`${style.Text} ${style.TargetText1}`}>
                     C’est pourquoi en tant que photographe professionnelle installée à Montpellier 
                     je cherche à capturer ces histoires. Pour son entreprise, pour ses réseaux 
-                    sociaux, pour une connivence…je cherche à capturer ce qui fait votre force, 
-                    votre énergie, votre rayonnement.
+                    sociaux, pour une connivence…je cherche à trouver la photo de portrait qui 
+                    fait votre force, votre énergie, votre rayonnement.
                 </p>
             </article>
             <article className={style.ContainerText}>
@@ -58,7 +59,7 @@ function HomeRootComposantB() {
             </article>
             <article className={style.ContainerText}>
                 <p className={style.Text}>
-                    Ce que j’aime particulièrement, c’est le moment où, après une séance pleine 
+                    La reussite de ce shooting photo portrait c'est qu'après une séance pleine 
                     d’échange, vous repartez non seulement avec des clichés qui vous plaisent, 
                     mais surtout avec ce sourire sincère qui en dit long sur l’expérience vécue. 
                     Pour moi, chaque portrait est une célébration de l’authenticité et un précieux 
@@ -67,22 +68,10 @@ function HomeRootComposantB() {
             </article>
             <article className={style.ContainerText}>
                     <p className={style.Text}>
-                        Commencez à planifier dès maintenant votre séance que ce soit pour un portrait en {" "}
+                        Commencez à planifier dès maintenant {" "}
                         <span className={style.Span}>
-                            <Link to="portrait-lifestyle">
-                                {"solo"}
-                            </Link>
-                        </span>
-                        , en {" "}
-                        <span className={style.Span}>
-                            <Link to="portrait">
-                                {"couple"}
-                            </Link>
-                        </span>
-                        , en famille, entre amis ou pour une entreprise avec des photos {" "}
-                        <span className={style.Span}>
-                            <Link to="#">
-                                {"corporate"}
+                            <Link to={ListDataRouter[12].path}>
+                                {"votre séance"}
                             </Link>
                         </span>
                         {" !"}
