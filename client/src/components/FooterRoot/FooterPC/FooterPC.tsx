@@ -28,21 +28,21 @@ function FooterPC() {
                     </header>
 
                     <ul className={style.UlText}>
-                        <li className={style.LiTextLink1}>
+                        <li className={style.LiTextLink}>
                             <Link to={ListDataRouter[7].path}>
                                 Qui suis-je ?
                             </Link>
                         </li>
                     </ul>
                     <ul className={style.UlText}>
-                        <li className={style.LiTextLink1}>
+                        <li className={style.LiTextLink}>
                             <Link to={ListDataRouter[3].path}>
                                 Me contacter
                             </Link>
                         </li>
                     </ul>
                     <ul className={style.UlText}>
-                        <li className={style.LiTextLink1}>
+                        <li className={style.LiTextLink}>
                             <Link to={ListDataRouter[8].path}>
                                 Portfolio
                             </Link>
@@ -59,21 +59,21 @@ function FooterPC() {
                     </header>
 
                     <ul className={style.UlText}>
-                        <li className={style.LiTextLink2}>
+                        <li className={style.LiTextLink}>
                             <a href={LinkExt.instagram} target="_blank" rel="noopener noreferrer">
                                 Instagram
                             </a>
                         </li>
                     </ul>
                     <ul className={style.UlText}>
-                        <li className={style.LiTextLink2}>
+                        <li className={style.LiTextLink}>
                             <a href={LinkExt.facebook} target="_blank" rel="noopener noreferrer">
                                 Facebook
                             </a>
                         </li>
                     </ul>
                     <ul className={style.UlText}>
-                        <li className={style.LiTextLink2}>
+                        <li className={style.LiTextLink}>
                             <a href={LinkExt.youtube} target="_blank" rel="noopener noreferrer">
                                 Youtube
                             </a>
@@ -90,21 +90,21 @@ function FooterPC() {
                     </header>
 
                     <ul className={style.UlText}>
-                        <li className={style.LiTextLink3}>
+                        <li className={style.LiTextLink}>
                             <Link to={ListDataRouter[1].path}>
                                 Mentions légales
                             </Link>
                         </li>
                     </ul>
                     <ul className={style.UlText}>
-                        <li className={style.LiTextLink3}>
+                        <li className={style.LiTextLink}>
                             <Link to={ListDataRouter[9].path}>
                                 CGV
                             </Link>
                         </li>
                     </ul>
                     <ul className={style.UlText}>
-                        <li className={style.LiTextLink3}>
+                        <li className={style.LiTextLink}>
                             <Link to={ListDataRouter[10].path}>
                                 FAQ
                             </Link>
