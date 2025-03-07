@@ -1,4 +1,5 @@
 import style from "./HomeRootComposantD.module.css"
+import AvisClient from "../ComposantHomeRoot/ContainerAvisHomeRoot/AvisClient";
 
 function HomeRootComposantD() {
     return (
@@ -8,6 +9,14 @@ function HomeRootComposantD() {
                     Des photos, des expériences, des mots, ils m'ont fait confiance !
                 </h2>
             </header>
+
+            <AvisClient />
+
+            <article className={style.ContainerText}>
+                <p className={style.Text}>
+                    <></>
+                </p>
+            </article>
         </section>
     );
 }

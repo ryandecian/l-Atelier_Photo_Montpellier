@@ -1,0 +1,103 @@
+/* Conteneur principal */
+.AvisClient {
+    width: 100%;
+    margin: 0 24px;
+    text-align: center;
+  }
+  
+  /* Titre principal */
+  .ContainerTitle {
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Liste des avis */
+  .ContainerAvis {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0px 24px;
+  }
+  
+  .test {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border-radius: 12px;
+    background: #fff;
+    transition: transform 0.3s ease-in-out;
+  }
+  .test:hover {
+    transform: translateY(-5px);
+  }
+  /* Carte d'un avis */
+  .CardAvisContainer {
+    width: 100%;
+    margin: 20px;
+    text-align: left;
+  }
+  
+  /* Nom du client */
+  .nom {
+    font-weight: bold;
+    font-size: 16px;
+    color: #222;
+    margin-bottom: 8px;
+  }
+  
+  /* Conteneur de la note et de la date */
+  .starsContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacement entre les étoiles et la date */
+    margin-bottom: 10px;
+  }
+  
+  /* Note étoilée */
+  .stars {
+    font-size: 18px;
+    display: flex;
+  }
+  
+  /* Étoile pleine */
+  .starFilled {
+    color: #FFD700;
+  }
+  
+  /* Étoile vide */
+  .starEmpty {
+    color: #ccc;
+  }
+  
+  /* Date de l'avis */
+  .date {
+    font-size: 14px;
+    color: #777;
+    white-space: nowrap;
+  }
+  
+  /* Commentaire */
+  .comment {
+    font-style: italic;
+    color: #555;
+    margin-top: 10px;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  /* Bouton "Voir plus..." */
+  .toggle {
+    color: #007bff;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 5px;
+    display: inline-block;
+  }
+  
+  .toggle:hover {
+    text-decoration: underline;
+  }
+  
