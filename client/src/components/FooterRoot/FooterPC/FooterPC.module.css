@@ -7,7 +7,10 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    background-color: var(--ColorPrincipal);
+    /* background-color: var(--ColorPrincipal); */
+    background-image: url("../../../assets/Images/ImageFooter/ImgFooter3.jpg");
+    background-size: cover;
+    background-position: center center;
     margin: 0px;
     padding: 0px 0px 20px 0px;
 }
@@ -82,7 +85,8 @@
 
 .LiTextLink > a {
     font-size: var(--p);
-    color: var(--ColorGrey);
+    color: var(--ColorWhite);
+    font-weight: bold;
     text-decoration: none;
     margin: 0px;
     padding: 0px 0px 5px 0px;
