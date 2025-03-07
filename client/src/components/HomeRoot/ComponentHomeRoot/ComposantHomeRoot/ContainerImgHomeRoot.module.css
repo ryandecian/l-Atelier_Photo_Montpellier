@@ -5,6 +5,11 @@
     width: calc(100vw - 48px);
     margin: auto;
 }
+@media (max-width: 800.02px) {
+    .ContainerImgHomeRoot {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 .ContainerImg {
     overflow: hidden;
