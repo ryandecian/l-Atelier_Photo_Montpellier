@@ -11,13 +11,6 @@ function HomeRootComposantA() {
 
             <article className={style.ContainerText}>
                 <p className={style.Text}>
-                    Vous cherchez à immortaliser des moments uniques à travers des portraits 
-                    authentiques, des photos de mariage, des shootings lifestyle ou même en 
-                    vidéo ?
-                </p>
-            </article>
-            <article className={style.ContainerText}>
-                <p className={style.Text}>
                     En tant que photographe professionnelle installée à Montpellier et 
                     spécialisée en portraits – qu’ils soient corporate, lifestyle, réalisés 
                     en lumière naturelle ou au flash – je mets tout en œuvre pour saisir la 
@@ -35,14 +28,6 @@ function HomeRootComposantA() {
                     être au plus près de tous ces instants afin qu’ils restent gravés, et cette 
                     approche me permet de raconter une histoire visuelle complète, où chaque 
                     image capte la complicité, la tendresse et l’authenticité du grand jour.
-                </p>
-            </article>
-            <article className={style.ContainerText}>
-                <p className={style.Text}>
-                    En choisissant mes services, vous optez pour un accompagnement sur mesure, 
-                    alliant expertise technique, sensibilité artistique et un engagement passionné 
-                    pour immortaliser vos moments les plus précieux. Vos portraits seront l’image 
-                    à d’un reportage de mariage authentique et vibrant de vie !
                 </p>
             </article>
         </section>
