@@ -1,6 +1,6 @@
-import style from "./HomeRootContainerA.module.css"
+import style from "./HomeRootComposantA.module.css"
 
-function HomeRootContainerA() {
+function HomeRootComposantA() {
     return (
         <section className={style.HomeRootContainerA}>
             <header className={style.ContainerTitle}>
@@ -9,13 +9,6 @@ function HomeRootContainerA() {
                 </h2>
             </header>
 
-            <article className={style.ContainerText}>
-                <p className={style.Text}>
-                    Vous cherchez à immortaliser des moments uniques à travers des portraits 
-                    authentiques, des photos de mariage, des shootings lifestyle ou même en 
-                    vidéo ?
-                </p>
-            </article>
             <article className={style.ContainerText}>
                 <p className={style.Text}>
                     En tant que photographe professionnelle installée à Montpellier et 
@@ -37,16 +30,8 @@ function HomeRootContainerA() {
                     image capte la complicité, la tendresse et l’authenticité du grand jour.
                 </p>
             </article>
-            <article className={style.ContainerText}>
-                <p className={style.Text}>
-                    En choisissant mes services, vous optez pour un accompagnement sur mesure, 
-                    alliant expertise technique, sensibilité artistique et un engagement passionné 
-                    pour immortaliser vos moments les plus précieux. Vos portraits seront l’image 
-                    à d’un reportage de mariage authentique et vibrant de vie !
-                </p>
-            </article>
         </section>
     );
 }
 
-export default HomeRootContainerA;
+export default HomeRootComposantA;

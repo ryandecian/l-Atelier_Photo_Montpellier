@@ -2,11 +2,10 @@ import style from './HomeMobile.module.css';
 
 /* Import des composants */
 import ContainerAccueilHomeRoot from '../ComponentHomeRoot/ContainerTitleHomeRoot/ContainerAccueilHomeRoot';
-import ContainerExpertiseHomeRoot from '../ComponentHomeRoot/ContainerExpertiseHomeRoot/ContainerExpertiseHomeRoot';
-import ContainerServicesHomeRoot from '../ComponentHomeRoot/ContainerServicesHomeRoot/ContainerServicesHomeRoot';
 
-import HomeRootContainerA from '../ComponentHomeRoot/HomeRootContainerA/HomeRootContainerA';
+import HomeRootComposantA from '../ComponentHomeRoot/HomeRootComposantA/HomeRootComposantA';
 import HomeRootContainerB from '../ComponentHomeRoot/HomeRootComposantB/HomeRootComposantB';
+import HomeRootComposantC from '../ComponentHomeRoot/HomeRootComposantC/HomeRootComposantC';
 
 function HomeMobile() {
     return (
@@ -15,14 +14,13 @@ function HomeMobile() {
             <ContainerAccueilHomeRoot />
 
             {/* Container 2 : Introduction */}
-            <HomeRootContainerA />
+            <HomeRootComposantA />
 
-            {/* Container 3 : Mon expertise */}
+            {/* Container 3 : Portrait */}
             <HomeRootContainerB />
-            <ContainerExpertiseHomeRoot />
 
-            {/* Container 4 : Présentation des services */}
-            <ContainerServicesHomeRoot />
+            {/* Container 4 : Mariage */}
+            <HomeRootComposantC />
         </div>
     );
 }
