@@ -7,7 +7,10 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    background-color: var(--ColorPrincipal);
+    /* background-color: var(--ColorPrincipal); */
+    background-image: url("../../../assets/Images/ImageFooter/ImgFooter3.jpg");
+    background-size: cover;
+    background-position: center center;
     margin: 0px;
     padding: 0px 0px 20px 0px;
 }
@@ -72,7 +75,9 @@
     width: 100%;
 }
 
-.LiTextLink {
+/*--------------------------------------------------*/
+
+.LiTextLink1 {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -80,15 +85,62 @@
     margin: 0px;
 }
 
-.LiTextLink > a {
+.LiTextLink1 > a {
     font-size: var(--p);
     color: var(--ColorGrey);
+    font-weight: bold;
     text-decoration: none;
     margin: 0px;
     padding: 0px 0px 5px 0px;
     transition: transform 0.3s ease, color 0.2s ease;
 }
-.LiTextLink > a:hover {
+.LiTextLink1 > a:hover {
+    transform: scale(1.2); /* Augmente légèrement la taille */
+    color: var(--ColorPink); /* Change la couleur en Rose */
+}
+/*--------------------------------------------------*/
+
+.LiTextLink2 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+}
+
+.LiTextLink2 > a {
+    font-size: var(--p);
+    color: var(--ColorWhite);
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px 0px 5px 0px;
+    transition: transform 0.3s ease, color 0.2s ease;
+}
+.LiTextLink2 > a:hover {
+    transform: scale(1.2); /* Augmente légèrement la taille */
+    color: var(--ColorPink); /* Change la couleur en Rose */
+}
+/*--------------------------------------------------*/
+
+.LiTextLink3 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+}
+
+.LiTextLink3 > a {
+    font-size: var(--p);
+    color: var(--ColorWhite);
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px 0px 5px 0px;
+    transition: transform 0.3s ease, color 0.2s ease;
+}
+.LiTextLink3 > a:hover {
     transform: scale(1.2); /* Augmente légèrement la taille */
     color: var(--ColorPink); /* Change la couleur en Rose */
 }
