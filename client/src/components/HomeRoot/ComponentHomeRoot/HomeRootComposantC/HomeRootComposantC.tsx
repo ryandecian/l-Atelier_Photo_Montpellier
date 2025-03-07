@@ -55,10 +55,10 @@ function HomeRootComposantC() {
                         Découvrez plus en détail {" "}
                         <span className={style.Span}>
                             <Link to={ListDataRouter[13].path}>
-                                {"mes prestations de mariage "}
+                                {"mes prestations de mariage"}
                             </Link>
                         </span>
-                        et comment je peux vous aider à revivre votre journée dans tous ses moments !
+                        {" "} et comment je peux vous aider à revivre votre journée dans tous ses moments !
                     </p>
                 </article>
 
