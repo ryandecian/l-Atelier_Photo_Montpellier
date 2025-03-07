@@ -69,7 +69,7 @@ function HomeRootComposantB() {
             <article className={style.ContainerText}>
                     <p className={style.Text}>
                         Commencez à planifier dès maintenant {" "}
-                        <span className={style.Span}>
+                        <span className={style.SpanLink}>
                             <Link to={ListDataRouter[12].path}>
                                 {"votre séance"}
                             </Link>

@@ -53,7 +53,7 @@ function HomeRootComposantC() {
             <article className={style.ContainerText}>
                     <p className={style.Text}>
                         Découvrez plus en détail {" "}
-                        <span className={style.Span}>
+                        <span className={style.SpanLink}>
                             <Link to={ListDataRouter[13].path}>
                                 {"mes prestations de mariage"}
                             </Link>
