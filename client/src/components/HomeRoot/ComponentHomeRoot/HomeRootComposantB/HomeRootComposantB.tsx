@@ -76,21 +76,15 @@ function HomeRootComposantB() {
                     <span className={style.SpanLine}>
                         {"ah oui je m’aime bien dessus !"}
                     </span>
-                    {" "} Commencez à planifier dès maintenant votre séance !
-                </p>
-            </article>
-            <article className={style.ContainerText}>
-                    <p className={style.Text}>
-                        Commencez à planifier dès maintenant {" "}
-                        <span className={style.SpanLink}>
+                    {" "} Commencez à planifier dès maintenant 
+                    <span className={style.SpanLink}>
                             <Link to={ListDataRouter[12].path}>
                                 {"votre séance"}
                             </Link>
-                        </span>
-                        {" !"}
-                    </p>
-                </article>
-
+                    </span>
+                    {" !"}
+                </p>
+            </article>
         </section>
     );
 }
