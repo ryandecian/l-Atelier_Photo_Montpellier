@@ -1,5 +1,5 @@
 import style from "./HomeRootComposantC.module.css"
-import ContainerImgHomeRoot from "../ComposantHomeRoot/ContainerImgHomeRoot";
+import ContainerImgHomeRoot from "../ComposantHomeRoot/ContainerImgHomeRoot/ContainerImgHomeRoot";
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../../router/router";
 
