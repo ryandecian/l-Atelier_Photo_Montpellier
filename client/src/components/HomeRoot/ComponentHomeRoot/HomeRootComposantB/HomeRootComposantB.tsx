@@ -41,29 +41,42 @@ function HomeRootComposantB() {
 
             <article className={style.ContainerText}>
                 <p className={`${style.Text} ${style.TargetText1}`}>
-                    C’est pourquoi en tant que photographe professionnelle installée à Montpellier 
-                    je cherche à capturer ces histoires. Pour son entreprise, pour ses réseaux 
-                    sociaux, pour une connivence…je cherche à trouver la photo de portrait qui 
-                    fait votre force, votre énergie, votre rayonnement.
+                    Et je cherche à capturer ces histoires. Pour son entreprise, pour ses réseaux 
+                    sociaux, pour une connivence…je cherche à trouver la photo de portrait qui fait 
+                    votre force, votre énergie, {" "}
+                    <span className={style.SpanBold}>
+                        {"votre rayonnement."}
+                    </span>
                 </p>
             </article>
             <article className={style.ContainerText}>
                 <p className={style.Text}>
-                    Que vous cherchiez un portrait corporate pour affirmer votre crédibilité, un 
-                    portrait lifestyle qui capte la douceur de votre quotidien, ou encore un moment 
-                    familial empreint de complicité, chaque séance est conçue pour vous mettre en 
-                    lumière dans toute votre singularité. En tant que photographe professionnelle 
-                    je peux travailler en studio ou en extérieur, selon vos envies, dans une 
-                    atmosphère calme et chaleureuse.
+                    Que vous cherchiez un {" "}
+                    <span className={style.SpanBold}>
+                        {"portrait corporate"}
+                    </span>
+                    {" "} pour affirmer votre crédibilité, un {" "}
+                    <span className={style.SpanBold}>
+                        {"portrait lifestyle"}
+                    </span>
+                    {" "} qui capte l’ambiance d’un moment, ou encore un moment familial empreint 
+                    de complicité, chaque séance est conçue pour vous mettre en lumière dans toute 
+                    votre singularité. En tant que photographe professionnelle {" "} 
+                    <span className={style.SpanBold}>
+                        {"je peux travailler en studio ou en extérieur"}
+                    </span>
+                    , selon vos envies, dans une atmosphère calme et chaleureuse.
                 </p>
             </article>
             <article className={style.ContainerText}>
                 <p className={style.Text}>
-                    La reussite de ce shooting photo portrait c'est qu'après une séance pleine 
-                    d’échange, vous repartez non seulement avec des clichés qui vous plaisent, 
-                    mais surtout avec ce sourire sincère qui en dit long sur l’expérience vécue. 
-                    Pour moi, chaque portrait est une célébration de l’authenticité et un précieux 
-                    souvenir à chérir.
+                    Et pour moi la réussite d’un shooting tient à ce que vous repartiez non seulement 
+                    après avoir passé un bon moment, mais surtout avec des photos qui vous plaisent, 
+                    que vous avez envie de partager sur vos réseaux, et vous puissiez vous dire {" "}
+                    <span className={style.SpanLine}>
+                        {"ah oui je m’aime bien dessus !"}
+                    </span>
+                    {" "} Commencez à planifier dès maintenant votre séance !
                 </p>
             </article>
             <article className={style.ContainerText}>

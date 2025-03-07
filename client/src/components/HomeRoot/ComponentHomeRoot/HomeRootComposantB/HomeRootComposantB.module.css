@@ -56,3 +56,19 @@
 .SpanLink > a:hover {
     transform: scale(1.03); /* Grossissement de 10% */
 }
+
+.SpanBold {
+    font-weight: bold;
+    font-size: var(--p);
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color: var(--ColorBlack);
+}
+
+.SpanLine {
+    font-size: var(--p);
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color: red;
+    font-style: italic;
+}
