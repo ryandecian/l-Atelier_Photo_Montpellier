@@ -10,7 +10,7 @@ function HomePage() {
         autor: "Anne SAUNIER",
         description: "Capturez l'émotion du regard",
         url: "https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250/", /*URL de la page*/
-        img: "https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250/Dans-les-yeux-de-Sacha.jpg", /*Lien URL de l'image*/
+        img: "https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250/dans-les-yeux-de-sacha.jpg", /*Lien URL de l'image*/
         twitterUrlImg: "", /*Lien URL de l'image*/
         twitterCompte: "", /*@MonCompteTwitter*/ /*Permet d'identifier le compte officiel*/
         keywords: {
