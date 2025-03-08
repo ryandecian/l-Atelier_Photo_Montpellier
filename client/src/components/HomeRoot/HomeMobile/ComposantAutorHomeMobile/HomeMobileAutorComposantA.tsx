@@ -41,7 +41,7 @@ function HomeMobileAutorComposantA() {
                             </Link>
                         </span>
                     </p>
-                    <p className={style.Text}>
+                    <p className={`${style.Text} ${style.TextTarget1}`}>
                         📸 **Laissez-vous guider, repartez avec des images qui vous AIMEZ. {" "}
                         <span className={style.SpanLink}>
                             <Link to={ListDataRouter[8].path}>

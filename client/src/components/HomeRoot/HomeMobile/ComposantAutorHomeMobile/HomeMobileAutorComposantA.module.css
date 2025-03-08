@@ -67,6 +67,7 @@
 
 .AutorName {
     font-size: var(--h4);
+    font-weight: bold;
     max-width: 100%;
     margin: 0px;
     padding: 0px;
@@ -95,11 +96,9 @@
 
 .TextTarget1 {
     font-size: var(--h4);
-    max-width: calc(100% - 48px);
-    text-align: center;
+    width: calc(100% - 48px);
     margin: 0px 24px 0px 24px;
     padding: 20px 0px 20px 0px;
-    border: 0px;
 }
 
 .SpanLink > a {
