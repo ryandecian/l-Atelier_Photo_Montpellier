@@ -1,14 +1,22 @@
-.HomeRootComposantE {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1432px;
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
+@media (min-width: 0px) and (max-width: 550.02px) {
+    .HomeMobileAutorComposantA {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1432px;
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+    }
 }
+@media (min-width: 550.02px) {
+    .HomeMobileAutorComposantA {
+        display: none;
+    }
+}
+
 
 .ContainerTitle {
     display: flex;
@@ -34,6 +42,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100%;
     margin: 0px 0px 20px 0px;
     padding: 0px;
@@ -58,6 +67,7 @@
 
 .AutorName {
     font-size: var(--h4);
+    font-weight: bold;
     max-width: 100%;
     margin: 0px;
     padding: 0px;
@@ -79,8 +89,16 @@
 
 .Text {
     font-size: var(--h4);
-    margin: 0px 24px 0px 0px;
-    padding: 0px 0px 20px 0px;
+    width: calc(100% - 48px);
+    margin: 0px 24px 0px 24px;
+    padding: 20px 0px 0px 0px;
+}
+
+.TextTarget1 {
+    font-size: var(--h4);
+    width: calc(100% - 48px);
+    margin: 0px 24px 0px 24px;
+    padding: 20px 0px 20px 0px;
 }
 
 .SpanLink > a {

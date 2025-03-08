@@ -28,8 +28,8 @@ function HomePC() {
             <HomeRootComposantD />
             
             {/* Container 6 : Autor */}
-            <HomePCAutorComposantB />
             <HomePCAutorComposantA />
+            <HomePCAutorComposantB />
         </div>
     );
 }
