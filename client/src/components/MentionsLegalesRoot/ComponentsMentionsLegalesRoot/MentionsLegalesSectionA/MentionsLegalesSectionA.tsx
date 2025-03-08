@@ -8,6 +8,7 @@ function MentionsLegalesSectionA() {
                 1 – Édition du site
             </h2>
 
+            {/* Text 1 */}
             <p className={style.Text}>
                 En vertu de {" "} 
                 <span className={style.SpanLink}>
@@ -22,6 +23,7 @@ function MentionsLegalesSectionA() {
                 {" "} l’identité des différents intervenants dans le cadre de sa réalisation et de son suivi:
             </p>
 
+            {/* Text 2 */}
             <p className={style.Text}>
                 <span className={style.SpanBold}>
                     {"Propriétaire du site :"}
@@ -39,6 +41,47 @@ function MentionsLegalesSectionA() {
                     </a>
                 </span>
                 {" "} – Adresse : 13 Allée des Platanes 34790 Grabels.
+            </p>
+
+            {/* Text 3 */}
+            <p className={style.Text}>
+                <span className={style.SpanBold}>
+                    {"Identification de l’entreprise :"}
+                </span>
+                 {" "} L’ATELIER PHOTO MONTPELLIER  au capital social de 2000 € – SIREN : 802558825 – RCS ou RM : 
+                 Montpellier – Adresse postale : 13 Allée des Platanes 34790 Grabels.
+            </p>
+            
+            {/* Text 4 */}
+            <p className={style.Text}>
+                <span className={style.SpanBold}>
+                    {""}
+                </span>
+                 {" "}
+            </p>
+
+            {/* Text 5 */}
+            <p className={style.Text}>
+                <span className={style.SpanBold}>
+                    {""}
+                </span>
+                 {" "}
+            </p>
+
+            {/* Text 6 */}
+            <p className={style.Text}>
+                <span className={style.SpanBold}>
+                    {""}
+                </span>
+                 {" "}
+            </p>
+
+            {/* Text 7 */}
+            <p className={style.Text}>
+                <span className={style.SpanBold}>
+                    {""}
+                </span>
+                 {" "}
             </p>
         </section>
     );
