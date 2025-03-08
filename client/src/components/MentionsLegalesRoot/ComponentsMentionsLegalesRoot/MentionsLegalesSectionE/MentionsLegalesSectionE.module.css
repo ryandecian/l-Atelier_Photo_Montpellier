@@ -1,0 +1,51 @@
+.MentionsLegalesSectionE {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    width: 100%;
+}
+
+.Title {
+    font-size: var(--h2);
+    color: var(--ColorBlack);
+    margin: 20px 24px 20px 24px;
+    padding: 0px;
+    border: 0px;
+    width: calc(100% - 48px);
+}
+
+.Text {
+    font-size: var(--h4);
+    color: var(--ColorBlack);
+    margin: 0px 24px 0px 24px;
+    padding: 0px 0px 20px 0px;
+    border: 0px;
+    width: calc(100% - 48px);
+}
+
+.SpanLink > a {
+    display: inline-block;
+    text-decoration: underline;
+    font-size: var(--p);
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: var(--ColorLink);
+    transition: transform 0.2s ease-in-out; /* Effet fluide */
+}
+
+.SpanLink > a:hover {
+    transform: scale(1.01); /* Grossissement de 10% */
+}
+
+.SpanBold {
+    font-weight: bold;
+    font-size: var(--p);
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color: var(--ColorBlack);
+}
