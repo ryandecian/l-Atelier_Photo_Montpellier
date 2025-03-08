@@ -10,9 +10,20 @@ function MentionsLegalesSectionE() {
 
             {/* Text 1 */}
             <p className={style.Text}>
-                L’ATELIER PHOTO MONTPELLIER est propriétaire des droits de propriété intellectuelle et détient les 
-                droits d’usage sur tous les éléments accessibles sur le site internet, notamment les textes, images, 
-                graphismes, logos, vidéos, architecture, icônes et sons.
+                Le site {" "}
+                <span className={style.SpanBold}>
+                    {"https://latelierphotomontpellier.fr"}
+                </span>
+                {" "} contient des liens hypertextes vers d’autres sites et dégage toute responsabilité à propos de ces 
+                liens externes ou des liens créés par d’autres sites vers {" "}
+                <span className={style.SpanBold}>
+                    {"https://latelierphotomontpellier.fr"}
+                </span>
+                {" "} La navigation sur le site {" "}
+                <span className={style.SpanBold}>
+                    {"https://latelierphotomontpellier.fr"}
+                </span>
+                {" "} est susceptible de provoquer l’installation de cookie(s) sur l’ordinateur de l’utilisateur.
             </p>
 
             {/* Text 2 */}
