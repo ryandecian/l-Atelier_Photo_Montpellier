@@ -60,9 +60,9 @@ function AvisClient() {
     return (
         <section className={style.AvisClient}>
             <header className={style.ContainerTitle}>
-                <h2 className={style.title}>
+                <h3 className={style.title}>
                     Avis Clients
-                </h2>
+                </h3>
             </header>
 
             <div className={style.ContainerAvis}>

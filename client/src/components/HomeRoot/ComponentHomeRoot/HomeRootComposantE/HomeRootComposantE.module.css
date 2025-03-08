@@ -1,9 +1,10 @@
-.HomeRootComposantC {
+.HomeRootComposantE {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 100%;
+    max-width: 1432px;
     margin: 0px;
     padding: 0px;
     border: 0px;
@@ -21,29 +22,65 @@
 
 .Title {
     font-size: var(--h2);
+    margin: 20px 24px 20px 24px;
+    padding: 0px;
+    border: 0px;
     font-family: "Saira Condensed", sans-serif;
     font-weight: 600;
     font-style: normal;
-    margin: 20px 24px 20px 24px;
+}
+
+.ContainerProfilCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
     padding: 0px;
     border: 0px;
 }
 
+.ContainerPortraitAutor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 248px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.AutorImg {
+    width: 200px;
+    margin: 0px 24px 0px 24px;
+}
+
+.AutorName {
+    font-size: var(--h4);
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+/*--------------------------------------------*/
+
 .ContainerText {
     display: flex;
-    justify-content: start;
-    align-items: center;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
     width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
 }
 
 .Text {
     font-size: var(--h4);
-    margin: 0px 24px 0px 24px;
+    margin: 0px 24px 0px 0px;
     padding: 0px 0px 20px 0px;
-}
-
-.TargetText1 {
-    padding: 20px 0px 20px 0px;
 }
 
 .SpanLink > a {
@@ -51,8 +88,8 @@
     text-decoration: underline;
     font-size: var(--p);
     font-weight: bold;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     border: 0px;
     color: var(--ColorLink);
     transition: transform 0.2s ease-in-out; /* Effet fluide */
@@ -60,12 +97,4 @@
 
 .SpanLink > a:hover {
     transform: scale(1.01); /* Grossissement de 10% */
-}
-
-.SpanBold {
-    font-weight: bold;
-    font-size: var(--p);
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    color: var(--ColorBlack);
 }
