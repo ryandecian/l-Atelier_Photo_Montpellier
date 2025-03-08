@@ -21,7 +21,7 @@ interface LinkExtType {
     youtube: string
 
     /* Contact */
-    email: string
+    emailAnne: string
     phoneAnne: string
     phoneHebergeur: string
 
@@ -35,7 +35,7 @@ const LinkExt: LinkExtType = {
     instagram: "https://www.instagram.com/atelier_photo_montpellier",
     facebook: "https://www.facebook.com",
     youtube: "https://www.youtube.com",
-    email: "mailto:photo34000@gmail.com",
+    emailAnne: "mailto:photo34000@gmail.com",
     phoneAnne: "tel:+33652677333",
     loi1: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000801164#LEGIARTI000042038977",
     phoneHebergeur: "tel:+33444446040"

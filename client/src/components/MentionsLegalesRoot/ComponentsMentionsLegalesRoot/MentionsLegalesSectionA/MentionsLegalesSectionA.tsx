@@ -30,7 +30,7 @@ function MentionsLegalesSectionA() {
                 </span>
                 {" "} L’ATELIER PHOTO MONTPELLIER – Contact : {" "}
                 <span className={style.SpanLink}>
-                    <a href={LinkExt.email} target="_blank" rel="noopener noreferrer">
+                    <a href={LinkExt.emailAnne} target="_blank" rel="noopener noreferrer">
                         {"photo34000@gmail.com"}
                     </a>
                 </span>
@@ -81,17 +81,21 @@ function MentionsLegalesSectionA() {
             {/* Text 6 */}
             <p className={style.Text}>
                 <span className={style.SpanBold}>
-                    {""}
+                    {"Délégué à la protection des données :"}
                 </span>
-                 {" "}
+                 {" "} ANNE SAUNIER – {" "}
+                 <span className={style.SpanLink}>
+                    <a href={LinkExt.emailAnne} target="_blank" rel="noopener noreferrer">
+                        {"photo34000@gmail.com"}
+                    </a>
+                </span>
             </p>
 
             {/* Text 7 */}
             <p className={style.Text}>
                 <span className={style.SpanBold}>
-                    {""}
+                    {" Autres contributeurs :"}
                 </span>
-                 {" "}
             </p>
         </section>
     );
