@@ -28,18 +28,41 @@ function MentionsLegalesSectionE() {
 
             {/* Text 2 */}
             <p className={style.Text}>
-                Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments 
-                du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable 
-                de L’ATELIER PHOTO MONTPELLIER.
+                Un « cookie » est un fichier de petite taille qui enregistre des informations relatives à la navigation 
+                d’un utilisateur sur un site. Les données ainsi obtenues permettent d’obtenir des mesures de fréquentation, 
+                par exemple.
             </p>
 
             {/* Text 3 */}
             <p className={style.Text}>
-                Toute exploitation non autorisée du site ou de l’un quelconque des éléments qu’il contient sera considérée 
-                comme constitutive d’une contrefaçon et poursuivie conformément aux dispositions des articles {" "}
+                Ce site utilise uniquement des {" "}
+                <span className={style.SpanBold}>
+                    {"cookies strictement nécessaires"}
+                </span>
+                {" "} à son bon fonctionnement, notamment pour la gestion des sessions utilisateur et des paiements en ligne. {" "}
+                <span className={style.SpanBold}>
+                    {"Aucun cookie publicitaire ou de suivi n’est installé."}
+                </span>
+            </p>
+
+            {/* Text 4 */}
+            <p className={style.Text}>
+                Ces cookies étant indispensables, leur utilisation est implicite lors de votre navigation sur le site. 
+                Si vous ne souhaitez pas qu’ils soient utilisés, nous vous invitons à quitter le site.
+            </p>
+
+            {/* Text 5 */}
+            <p className={style.Text}>
+                Les cookies sont conservés pour une durée maximale de 6 mois.
+            </p>
+
+            {/* Text 6 */}
+            <p className={style.Text}>
+                Pour plus d’informations sur la façon dont nous faisons usage des cookies, nous vous invitons à nous 
+                contacter : {" "}
                 <span className={style.SpanLink}>
-                    <a href={LinkExt.loi2} target="_blank" rel="noopener noreferrer">
-                        {"L.335-2 et suivants du Code de Propriété Intellectuelle"}
+                    <a href={LinkExt.emailAnne} target="_blank" rel="noopener noreferrer">
+                        {"photo34000@gmail.com"}
                     </a>
                 </span>
                 {"."}
