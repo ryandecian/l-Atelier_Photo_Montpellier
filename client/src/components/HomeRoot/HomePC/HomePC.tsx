@@ -5,6 +5,7 @@ import ContainerAccueilHomeRoot from '../ComponentHomeRoot/ContainerTitleHomeRoo
 import HomeRootComposantA from '../ComponentHomeRoot/HomeRootComposantA/HomeRootComposantA';
 import HomeRootComposantB from '../ComponentHomeRoot/HomeRootComposantB/HomeRootComposantB';
 import HomeRootComposantC from '../ComponentHomeRoot/HomeRootComposantC/HomeRootComposantC';
+import HomeRootComposantD from '../ComponentHomeRoot/HomeRootComposantD/HomeRootComposantD';
 
 function HomePC() {
     return (
@@ -21,7 +22,8 @@ function HomePC() {
             {/* Container 4 : Mariage */}
             <HomeRootComposantC />
 
-            {/* Container 4 : Présentation des services */}
+            {/* Container 5 : Avis */}
+            <HomeRootComposantD />
         </div>
     );
 }
