@@ -1,12 +1,23 @@
 /* Conteneur principal */
 .AvisClient {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
-    margin: 0 24px;
-    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
   }
   
   /* Titre principal */
   .ContainerTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+    border: 0px;
     margin-bottom: 20px;
   }
   
@@ -19,26 +30,32 @@
   /* Liste des avis */
   .ContainerAvis {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 15px;
-    margin: 0px 24px;
-  }
-  
-  .test {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    border-radius: 12px;
-    background: #fff;
-    transition: transform 0.3s ease-in-out;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
   }
-  .test:hover {
-    transform: translateY(-5px);
-  }
+
   /* Carte d'un avis */
   .CardAvisContainer {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: calc(100% - 80px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background: #fff;
     margin: 20px;
-    text-align: left;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  .CardAvisContainer:hover {
+    transform: translateY(-5px);
   }
   
   /* Nom du client */
@@ -82,6 +99,8 @@
   
   /* Commentaire */
   .comment {
+    width: 100%;
+    font-size: var(--p);
     font-style: italic;
     color: #555;
     margin-top: 10px;

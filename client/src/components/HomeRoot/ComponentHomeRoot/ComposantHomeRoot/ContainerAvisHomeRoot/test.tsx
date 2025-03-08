@@ -1,5 +1,5 @@
 import { useState } from "react";
-import style from "./AvisClient.module.css";
+import style from "./test.module.css";
 
 const avisClients = [
     {
@@ -40,22 +40,10 @@ const avisClients = [
 ];
 
 
-function AvisClient() {
+function test() {
     // ✅ Création d'un état individuel pour chaque avis
-    const [expandedComments, setExpandedComments] = useState<{ [key: number]: boolean }>({});
 
-    const toggleComment = (id: number) => {
-        setExpandedComments((prev) => ({
-            ...prev,
-            [id]: !prev[id] // Inverse l'état du commentaire spécifique
-        }));
-    };
 
-    const renderStars = (rating: number) => {
-        return Array.from({ length: 5 }, (_, i) => (
-            <span key={i} className={i < rating ? style.starFilled : style.starEmpty}>★</span>
-        ));
-    };
 
     return (
         <section className={style.AvisClient}>
@@ -65,39 +53,14 @@ function AvisClient() {
                 </h2>
             </header>
 
-            <div className={style.ContainerAvis}>
-                {avisClients.map((data) => {
-                const isLongComment = data.commentaire.length > 100;
-                const isExpanded = expandedComments[data.id] || false;
-
-                    return (
-                        <article key={data.id} className={style.CardAvisContainer}>
-                            {/* Ligne 1 : Nom du Client */}
-                            <p className={style.nom}>{data.nom}</p>
-
-                            {/* Ligne 2 : Container Note + Date */}
-                            <div className={style.starsContainer}>
-                                {/* Note */}
-                                <div className={style.stars}>{renderStars(data.note)}</div>
-                                {/* Date */}
-                                <p className={style.date}>{data.date}</p>
-                            </div>
-
-                            {/* Ligne 3 : Commentaire */}
-                            <p className={style.comment}>
-                                {isExpanded || !isLongComment ? data.commentaire : `${data.commentaire.substring(0, 100)}... `}
-                                {isLongComment && (
-                                    <span className={style.toggle} onClick={() => toggleComment(data.id)}>
-                                        {isExpanded ? "Voir moins" : "Voir plus..."}
-                                    </span>
-                                )}
-                            </p>
-                        </article>
-                    );
-                })}
+            <div className={style.test1}>
+                <article className={style.test2}>
+                    <p className={style.test3}>testDiv</p>
+                </article>
             </div>
+
         </section>
     );
 }
 
-export default AvisClient;
+export default test;
