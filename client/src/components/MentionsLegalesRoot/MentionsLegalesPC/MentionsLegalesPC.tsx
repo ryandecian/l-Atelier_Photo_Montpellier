@@ -19,6 +19,7 @@ function MentionsLegalesPC() {
 
             {/* Section A ou 1 : Edition du site */}
             <MentionsLegalesSectionA />
+            <Separator />
 
             {/* Section B ou 2 : Propriété intellectuelle et contrefaçons */}
             <MentionsLegalesSectionB />

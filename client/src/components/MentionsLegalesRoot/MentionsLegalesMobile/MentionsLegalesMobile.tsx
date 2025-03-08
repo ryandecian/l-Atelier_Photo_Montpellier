@@ -22,7 +22,6 @@ function MentionsLegalesMobile() {
 
             {/* Section B ou 2 : Propriété intellectuelle et contrefaçons */}
             <MentionsLegalesSectionB />
-            <Separator />
         </section>
     );
 }

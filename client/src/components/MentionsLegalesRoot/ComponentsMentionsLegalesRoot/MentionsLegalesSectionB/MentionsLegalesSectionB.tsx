@@ -17,31 +17,21 @@ function MentionsLegalesSectionB() {
 
             {/* Text 2 */}
             <p className={style.Text}>
-                <span className={style.SpanBold}>
-                    {"Propriétaire du site :"}
-                </span>
-                {" "} L’ATELIER PHOTO MONTPELLIER – Contact : {" "}
-                <span className={style.SpanLink}>
-                    <a href={LinkExt.emailAnne} target="_blank" rel="noopener noreferrer">
-                        {"photo34000@gmail.com"}
-                    </a>
-                </span>
-                {" "} ou {" "}
-                <span className={style.SpanLink}>
-                    <a href={LinkExt.phoneAnne} target="_blank" rel="noopener noreferrer">
-                        {"06 52 67 73 33"}
-                    </a>
-                </span>
-                {" "} – Adresse : 13 Allée des Platanes 34790 Grabels.
+                Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments 
+                du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable 
+                de L’ATELIER PHOTO MONTPELLIER.
             </p>
 
             {/* Text 3 */}
             <p className={style.Text}>
-                <span className={style.SpanBold}>
-                    {"Identification de l’entreprise :"}
+                Toute exploitation non autorisée du site ou de l’un quelconque des éléments qu’il contient sera considérée 
+                comme constitutive d’une contrefaçon et poursuivie conformément aux dispositions des articles {" "}
+                <span className={style.SpanLink}>
+                    <a href={LinkExt.loi2} target="_blank" rel="noopener noreferrer">
+                        {"L.335-2 et suivants du Code de Propriété Intellectuelle"}
+                    </a>
                 </span>
-                 {" "} L’ATELIER PHOTO MONTPELLIER  au capital social de 2000 € – SIREN : 802558825 – RCS ou RM : 
-                 Montpellier – Adresse postale : 13 Allée des Platanes 34790 Grabels.
+                {"."}
             </p>
         </section>
     );
