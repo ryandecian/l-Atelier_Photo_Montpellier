@@ -1,8 +1,8 @@
 import style from "./MentionsLegalesPage.module.css";
 import { Helmet } from "react-helmet-async";
-import NavRoot from "../components/NavRoot/NavRoot";
-import MentionsLegalesRoot from "../components/MentionsLegalesRoot/MentionsLegalesRoot";
-import FooterRoot from "../components/FooterRoot/FooterRoot";
+import NavRoot from "../../components/NavRoot/NavRoot";
+import MentionsLegalesRoot from "../../components/MentionsLegalesRoot/MentionsLegalesRoot";
+import FooterRoot from "../../components/FooterRoot/FooterRoot";
 
 function MentionsLegales() {
     const SEO = {
