@@ -1,8 +1,8 @@
 import { ReactNode } from "react"
 
 /* Liste des pages en import */
-import HomePage from "../pages/HomePage";
-import MentionsLegales from "../pages/MentionsLegalesPage";
+import HomePage from "../pages/HomePage/HomePage";
+import MentionsLegalesPage from "../pages/MentionsLegalesPage/MentionsLegalesPage";
 
 /**
  * Utilisation : 
@@ -19,12 +19,26 @@ interface LinkExtType {
     instagram: string
     facebook: string
     youtube: string
+
+    /* Contact */
+    emailAnne: string
+    phoneAnne: string
+    phoneHebergeur: string
+
+    /* Article de loi */
+
+    /* Article 6 de la loi n° 2004-575 du 21 juin 2004 */
+    loi1: string
 }
 
 const LinkExt: LinkExtType = {
     instagram: "https://www.instagram.com/atelier_photo_montpellier",
     facebook: "https://www.facebook.com",
     youtube: "https://www.youtube.com",
+    emailAnne: "mailto:photo34000@gmail.com",
+    phoneAnne: "tel:+33652677333",
+    loi1: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000801164#LEGIARTI000042038977",
+    phoneHebergeur: "tel:+33444446040"
 }
 
 const ListDataRouter: RouterItemsType[] = [
@@ -36,7 +50,7 @@ const ListDataRouter: RouterItemsType[] = [
     /* 1 */
     {
         path: "/mentions-legales",
-        element: <MentionsLegales />,
+        element: <MentionsLegalesPage />,
     },
     /* 2 */
     {

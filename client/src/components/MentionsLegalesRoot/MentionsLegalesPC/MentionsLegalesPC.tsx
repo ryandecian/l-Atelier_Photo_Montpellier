@@ -2,44 +2,22 @@ import style from "./MentionsLegalesPC.module.css";
 
 /* Import des composants */
 import Separator from "../ComponentsMentionsLegalesRoot/Separator/Separator";
-import TitleMentionsLegalesRoot from "../ComponentsMentionsLegalesRoot/TitleMentionsLegalesRoot/TitleMentionsLegalesRoot";
-import MentionsLegaleSectionA from "../ComponentsMentionsLegalesRoot/MentionsLegalesSectionA/MentionsLegaleSectionA";
+import MentionsLegalesSectionA from "../ComponentsMentionsLegalesRoot/MentionsLegalesSectionA/MentionsLegalesSectionA";
 
 function MentionsLegalesPC() {
     return (
         <section className={style.MentionsLegalesPC}>
-            <TitleMentionsLegalesRoot />
+            <header className={style.ContainerTitle}>
+                <h1 className={style.Title}>
+                    Mentions Légales
+                </h1>
+            </header>
 
             <Separator />
 
-            <MentionsLegaleSectionA />
+            {/* Section A ou 1 : Edition du site */}
+            <MentionsLegalesSectionA />
 
-
-            <section>
-                <header>
-                    <h2>Propriété intélectuelle</h2>
-                </header>
-
-                <article>
-                    <p>text 1</p>
-                </article>
-                <article>
-                    <p>text 2</p>
-                </article>
-            </section>
-
-            <section>
-                <header>
-                    <h2>Limitation</h2>
-                </header>
-
-                <article>
-                    <p>text 1</p>
-                </article>
-                <article>
-                    <p>text 2</p>
-                </article>
-            </section>
         </section>
     );
 }
