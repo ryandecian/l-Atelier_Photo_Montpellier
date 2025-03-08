@@ -36,7 +36,12 @@ function HomePCAutorComposantB() {
                         sait pas comment poser, on doute… Mais rapidement, la tension s’efface. Mon rôle ? Vous guider avec 
                         bienveillance pour que ce moment devienne fluide, naturel, et surtout agréable c’est ma première mission. 
                         La deuxième c’est qu’à la vue de vos photos vous faisiez WOUAH ! Pour en savoir encore un peu plus sur 
-                        moi rendez vous sur ma page QUI SUIS-JE
+                        moi rendez vous sur ma page {" "}
+                        <span className={style.SpanLink}>
+                            <Link to={ListDataRouter[7].path}>
+                                QUI SUIS-JE
+                            </Link>
+                        </span>
                     </p>
                 </div>
 
