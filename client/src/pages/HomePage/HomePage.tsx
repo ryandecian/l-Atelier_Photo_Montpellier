@@ -1,8 +1,8 @@
 import { Helmet } from "react-helmet-async";
-import NavTargetHomeRoot from "../components/NavTargetHomeRoot/NavTargetHomeRoot";
+import NavTargetHomeRoot from "../../components/NavTargetHomeRoot/NavTargetHomeRoot";
 import style from "./HomePage.module.css";
-import HomeRoot from "../components/HomeRoot/HomeRoot";
-import FooterRoot from "../components/FooterRoot/FooterRoot";
+import HomeRoot from "../../components/HomeRoot/HomeRoot";
+import FooterRoot from "../../components/FooterRoot/FooterRoot";
 
 function HomePage() {
     const SEO = {
