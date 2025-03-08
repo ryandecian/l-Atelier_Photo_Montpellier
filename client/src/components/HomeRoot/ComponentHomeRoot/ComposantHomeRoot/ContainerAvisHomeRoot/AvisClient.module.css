@@ -69,15 +69,18 @@
   /* Conteneur de la note et de la date */
   .starsContainer {
     display: flex;
+    justify-content: start;
     align-items: center;
     gap: 10px; /* Espacement entre les étoiles et la date */
-    margin-bottom: 10px;
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    border: 0px;
   }
   
   /* Note étoilée */
   .stars {
-    font-size: 18px;
     display: flex;
+    font-size: var(--h3);
   }
   
   /* Étoile pleine */
@@ -103,7 +106,8 @@
     font-size: var(--p);
     font-style: italic;
     color: #555;
-    margin-top: 10px;
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
     transition: max-height 0.3s ease-in-out;
   }
   

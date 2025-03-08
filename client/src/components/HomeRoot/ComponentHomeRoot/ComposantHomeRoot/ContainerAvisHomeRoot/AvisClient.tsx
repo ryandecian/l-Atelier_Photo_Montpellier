@@ -88,7 +88,7 @@ function AvisClient() {
                                 {isExpanded || !isLongComment ? data.commentaire : `${data.commentaire.substring(0, 100)}... `}
                                 {isLongComment && (
                                     <span className={style.toggle} onClick={() => toggleComment(data.id)}>
-                                        {isExpanded ? "Voir moins" : "Voir plus..."}
+                                        {isExpanded ? "  Voir moins..." : "Voir plus..."}
                                     </span>
                                 )}
                             </p>
