@@ -3,6 +3,8 @@ import style from "./MentionsLegalesPC.module.css";
 /* Import des composants */
 import Separator from "../ComponentsMentionsLegalesRoot/Separator/Separator";
 import MentionsLegalesSectionA from "../ComponentsMentionsLegalesRoot/MentionsLegalesSectionA/MentionsLegalesSectionA";
+import MentionsLegalesSectionB from "../ComponentsMentionsLegalesRoot/MentionsLegalesSectionB/MentionsLegalesSectionB";
+
 
 function MentionsLegalesPC() {
     return (
@@ -18,6 +20,8 @@ function MentionsLegalesPC() {
             {/* Section A ou 1 : Edition du site */}
             <MentionsLegalesSectionA />
 
+            {/* Section B ou 2 : Propriété intellectuelle et contrefaçons */}
+            <MentionsLegalesSectionB />
         </section>
     );
 }
