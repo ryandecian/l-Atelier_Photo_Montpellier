@@ -1,11 +1,11 @@
-import style from "./HomeMobileAutorComposantB.module.css";
+import style from "./HomeMobileAutorComposantC.module.css";
 import AnneSAUNIER from "../../../../assets/Images/AnneSAUNIER/AnneSAUNIER.jpg";
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../../router/router";
 
-function HomeMobileAutorComposantB() {
+function HomeMobileAutorComposantC() {
   return (
-    <section className={style.HomeMobileAutorComposantB}>
+    <section className={style.HomeMobileAutorComposantC}>
         <header className={style.ContainerTitle}>
             <h2 className={style.Title}>
                 Un peu plus sur moi ?
@@ -31,13 +31,16 @@ function HomeMobileAutorComposantB() {
                         l’éclairage, notamment grâce au flash. Aujourd’hui, je mets cette expertise au service du portrait 
                         et du reportage de mariage, toujours à la recherche d’authenticité et d’émotion.
                     </p>
+                    <p className={style.Text}>
+                        Comme une séance de massage, un shooting photo commence souvent avec un peu d’appréhension. On ne 
+                        sait pas comment poser, on doute… Mais rapidement, la tension s’efface. 
+                    </p>
                 </div>
 
             </div>
             
             <p className={style.TextTarget1}>
-                Comme une séance de massage, un shooting photo commence souvent avec un peu d’appréhension. On ne 
-                sait pas comment poser, on doute… Mais rapidement, la tension s’efface. Mon rôle ? Vous guider avec 
+                Mon rôle ? Vous guider avec 
                 bienveillance pour que ce moment devienne fluide, naturel, et surtout agréable c’est ma première mission. 
                 La deuxième c’est qu’à la vue de vos photos vous faisiez WOUAH ! Pour en savoir encore un peu plus sur 
                 moi rendez vous sur ma page {" "}
@@ -61,4 +64,4 @@ function HomeMobileAutorComposantB() {
   );
 };
 
-export default HomeMobileAutorComposantB;
+export default HomeMobileAutorComposantC;

@@ -9,6 +9,7 @@ import HomeRootComposantC from '../ComponentHomeRoot/HomeRootComposantC/HomeRoot
 import HomeRootComposantD from '../ComponentHomeRoot/HomeRootComposantD/HomeRootComposantD';
 import HomeMobileAutorComposantA from './ComposantAutorHomeMobile/HomeMobileAutorComposantA';
 import HomeMobileAutorComposantB from './ComposantAutorHomeMobile/HomeMobileAutorComposantB';
+import HomeMobileAutorComposantC from './ComposantAutorHomeMobile/HomeMobileAutorComposantC';
 
 function HomeMobile() {
     return (
@@ -31,6 +32,7 @@ function HomeMobile() {
             {/* Container 6 : Autor */}
             <HomeMobileAutorComposantA />
             <HomeMobileAutorComposantB />
+            <HomeMobileAutorComposantC />
         </div>
     );
 }
