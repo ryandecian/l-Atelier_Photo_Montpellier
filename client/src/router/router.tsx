@@ -19,12 +19,18 @@ interface LinkExtType {
     instagram: string
     facebook: string
     youtube: string
+
+    /* Article de loi */
+
+    /* Article 6 de la loi n° 2004-575 du 21 juin 2004 */
+    loi1: string
 }
 
 const LinkExt: LinkExtType = {
     instagram: "https://www.instagram.com/atelier_photo_montpellier",
     facebook: "https://www.facebook.com",
     youtube: "https://www.youtube.com",
+    loi1: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000801164#LEGIARTI000042038977"
 }
 
 const ListDataRouter: RouterItemsType[] = [
