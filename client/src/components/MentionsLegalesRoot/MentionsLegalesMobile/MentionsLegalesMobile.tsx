@@ -1,4 +1,4 @@
-import style from "./MentionsLegalesPC.module.css";
+import style from "./MentionsLegalesMobile.module.css";
 
 /* Import des composants */
 import Separator from "../ComponentsMentionsLegalesRoot/Separator/Separator";
@@ -8,9 +8,9 @@ import MentionsLegalesSectionC from "../ComponentsMentionsLegalesRoot/MentionsLe
 import MentionsLegalesSectionD from "../ComponentsMentionsLegalesRoot/MentionsLegalesSectionD/MentionsLegalesSectionD";
 import MentionsLegalesSectionE from "../ComponentsMentionsLegalesRoot/MentionsLegalesSectionE/MentionsLegalesSectionE";
 
-function MentionsLegalesPC() {
+function MentionsLegalesMobile() {
     return (
-        <section className={style.MentionsLegalesPC}>
+        <section className={style.MentionsLegalesMobile}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.Title}>
                     Mentions Légales
@@ -26,7 +26,7 @@ function MentionsLegalesPC() {
             {/* Section B ou 2 : Propriété intellectuelle et contrefaçons */}
             <MentionsLegalesSectionB />
             <Separator />
-            
+
             {/* Section C ou 3 : Limitations de responsabilité */}
             <MentionsLegalesSectionC />
             <Separator />
@@ -41,4 +41,4 @@ function MentionsLegalesPC() {
     );
 }
 
-export default MentionsLegalesPC;
+export default MentionsLegalesMobile;

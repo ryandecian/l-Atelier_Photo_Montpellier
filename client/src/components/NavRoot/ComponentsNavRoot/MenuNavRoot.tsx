@@ -47,7 +47,7 @@ function MenuNavRoot(Props: MenuNavRootProps) {
           PRESTATIONS <span className={moduleSpanPortraits}>{isSubMenuOpen? "▲" : "▼"}</span>
         </span>
         {isSubMenuOpen && (<>
-            <button type="button" className={moduleButtonSubMenu} onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}>Fermer</button>
+          <button type="button" className={moduleButtonSubMenu} onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}>Fermer</button>
           <ul className={moduleSubMenuUl}>
 
             <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget1}`}>
