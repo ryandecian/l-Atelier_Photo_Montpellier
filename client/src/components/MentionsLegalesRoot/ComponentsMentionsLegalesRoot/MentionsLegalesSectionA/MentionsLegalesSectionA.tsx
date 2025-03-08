@@ -36,7 +36,7 @@ function MentionsLegalesSectionA() {
                 </span>
                 {" "} ou {" "}
                 <span className={style.SpanLink}>
-                    <a href={LinkExt.phone} target="_blank" rel="noopener noreferrer">
+                    <a href={LinkExt.phoneAnne} target="_blank" rel="noopener noreferrer">
                         {"06 52 67 73 33"}
                     </a>
                 </span>
@@ -55,17 +55,27 @@ function MentionsLegalesSectionA() {
             {/* Text 4 */}
             <p className={style.Text}>
                 <span className={style.SpanBold}>
-                    {""}
+                    {"Directrice de la publication :"}
                 </span>
-                 {" "}
+                 {" "} ANNE SAUNIER – Contact : {" "}
+                 <span className={style.SpanLink}>
+                    <a href={LinkExt.phoneAnne} target="_blank" rel="noopener noreferrer">
+                        {"06 52 67 73 33."}
+                    </a>
+                </span>
             </p>
 
             {/* Text 5 */}
             <p className={style.Text}>
                 <span className={style.SpanBold}>
-                    {""}
+                    {"Hébergeur :"}
                 </span>
-                 {" "}
+                 {" "} O2Switch – 222 Boulevard Gustave Flaubert, 63000 Clermont-Ferrand – Téléphone : {" "}
+                 <span className={style.SpanLink}>
+                    <a href={LinkExt.phoneHebergeur} target="_blank" rel="noopener noreferrer">
+                        {"04 44 44 60 40."}
+                    </a>
+                </span>
             </p>
 
             {/* Text 6 */}

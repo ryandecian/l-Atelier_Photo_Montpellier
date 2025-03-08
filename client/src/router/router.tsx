@@ -22,7 +22,8 @@ interface LinkExtType {
 
     /* Contact */
     email: string
-    phone: string
+    phoneAnne: string
+    phoneHebergeur: string
 
     /* Article de loi */
 
@@ -35,8 +36,9 @@ const LinkExt: LinkExtType = {
     facebook: "https://www.facebook.com",
     youtube: "https://www.youtube.com",
     email: "mailto:photo34000@gmail.com",
-    phone: "tel:+33652677333",
-    loi1: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000801164#LEGIARTI000042038977"
+    phoneAnne: "tel:+33652677333",
+    loi1: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000801164#LEGIARTI000042038977",
+    phoneHebergeur: "tel:+33444446040"
 }
 
 const ListDataRouter: RouterItemsType[] = [
