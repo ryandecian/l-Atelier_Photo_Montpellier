@@ -8,6 +8,7 @@ import HomeRootContainerB from '../ComponentHomeRoot/HomeRootComposantB/HomeRoot
 import HomeRootComposantC from '../ComponentHomeRoot/HomeRootComposantC/HomeRootComposantC';
 import HomeRootComposantD from '../ComponentHomeRoot/HomeRootComposantD/HomeRootComposantD';
 import HomeMobileAutorComposantA from './ComposantAutorHomeMobile/HomeMobileAutorComposantA';
+import HomeMobileAutorComposantB from './ComposantAutorHomeMobile/HomeMobileAutorComposantB';
 
 function HomeMobile() {
     return (
@@ -29,6 +30,7 @@ function HomeMobile() {
 
             {/* Container 6 : Autor */}
             <HomeMobileAutorComposantA />
+            <HomeMobileAutorComposantB />
         </div>
     );
 }
