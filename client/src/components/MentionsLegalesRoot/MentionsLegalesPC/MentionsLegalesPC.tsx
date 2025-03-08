@@ -4,6 +4,7 @@ import style from "./MentionsLegalesPC.module.css";
 import Separator from "../ComponentsMentionsLegalesRoot/Separator/Separator";
 import MentionsLegalesSectionA from "../ComponentsMentionsLegalesRoot/MentionsLegalesSectionA/MentionsLegalesSectionA";
 import MentionsLegalesSectionB from "../ComponentsMentionsLegalesRoot/MentionsLegalesSectionB/MentionsLegalesSectionB";
+import MentionsLegalesSectionC from "../ComponentsMentionsLegalesRoot/MentionsLegalesSectionC/MentionsLegalesSectionC";
 
 
 function MentionsLegalesPC() {
@@ -23,6 +24,10 @@ function MentionsLegalesPC() {
 
             {/* Section B ou 2 : Propriété intellectuelle et contrefaçons */}
             <MentionsLegalesSectionB />
+            <Separator />
+            
+            {/* Section C ou 3 : Limitations de responsabilité */}
+            <MentionsLegalesSectionC />
         </section>
     );
 }
