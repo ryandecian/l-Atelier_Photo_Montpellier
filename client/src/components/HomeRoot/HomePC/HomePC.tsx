@@ -6,6 +6,7 @@ import HomeRootComposantA from '../ComponentHomeRoot/HomeRootComposantA/HomeRoot
 import HomeRootComposantB from '../ComponentHomeRoot/HomeRootComposantB/HomeRootComposantB';
 import HomeRootComposantC from '../ComponentHomeRoot/HomeRootComposantC/HomeRootComposantC';
 import HomeRootComposantD from '../ComponentHomeRoot/HomeRootComposantD/HomeRootComposantD';
+import ProfileCard from '../ComponentHomeRoot/HomeRootComposantE/HomeRootComposantE';
 
 function HomePC() {
     return (
@@ -24,6 +25,7 @@ function HomePC() {
 
             {/* Container 5 : Avis */}
             <HomeRootComposantD />
+            <ProfileCard />
         </div>
     );
 }

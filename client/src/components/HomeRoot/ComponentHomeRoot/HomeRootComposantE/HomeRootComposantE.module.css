@@ -1,0 +1,56 @@
+.HomeRootComposantE {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.profilecard {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; /* Aligner le texte en haut */
+    gap: 16px; /* Espacement entre image et texte */
+    max-width: 100%;
+  }
+  
+  .profileimage {
+    width: 200px; /* Ajuste la taille de l’image */
+    height: auto;
+    flex-shrink: 0; /* Empêche l’image de rétrécir */
+  }
+  
+  .profiletext {
+    flex: 1; /* Prend l'espace restant */
+    min-width: 250px; /* Taille minimale du texte */
+  }
+  
+  /* 🎯 Si le texte dépasse la hauteur de l’image, il passe en dessous */
+  @media (max-width: 800px) { /* Optionnel si besoin d'un breakpoint */
+    .profilecard {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .profiletext {
+      width: 100%;
+    }
+  }
+  
