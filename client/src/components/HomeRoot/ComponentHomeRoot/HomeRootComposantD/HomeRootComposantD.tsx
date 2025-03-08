@@ -6,17 +6,11 @@ function HomeRootComposantD() {
         <section className={style.HomeRootComposantD}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.Title}>
-                    Avis Clients
+                    Des photos, des expériences, des mots, ils m'ont fait confiance !
                 </h2>
             </header>
 
             <AvisClient />
-
-            <article className={style.ContainerText}>
-                <p className={style.Text}>
-                    <></>
-                </p>
-            </article>
         </section>
     );
 }
