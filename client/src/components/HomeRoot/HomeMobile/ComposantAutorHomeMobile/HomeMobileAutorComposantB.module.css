@@ -1,5 +1,5 @@
-@media (min-width: 800.02px) and (max-width: 1000.02px) {
-    .HomePCAutorComposantA {
+@media (min-width: 550.02px) and (max-width: 800.02px) {
+    .HomeMobileAutorComposantB {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -11,13 +11,13 @@
         border: 0px;
     }
 }
-@media (max-width: 800.02px) {
-    .HomePCAutorComposantA {
+@media (max-width: 550.02px) {
+    .HomeMobileAutorComposantB {
         display: none;
     }
 }
-@media (min-width: 1000.02px) {
-    .HomePCAutorComposantA {
+@media (min-width: 700.02px) {
+    .HomeMobileAutorComposantB {
         display: none;
     }
 }
@@ -109,6 +109,15 @@
 }
 
 .TextTarget1 {
+    font-size: var(--h4);
+    max-width: calc(100% - 48px);
+    text-align: center;
+    margin: 0px 24px 0px 24px;
+    padding: 20px 0px 0px 0px;
+    border: 0px;
+}
+
+.TextTarget2 {
     font-size: var(--h4);
     max-width: calc(100% - 48px);
     text-align: center;

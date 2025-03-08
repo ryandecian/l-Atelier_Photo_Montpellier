@@ -1,11 +1,11 @@
-import style from "./HomePCAutorComposantA.module.css";
+import style from "./HomeMobileAutorComposantB.module.css";
 import AnneSAUNIER from "../../../../assets/Images/AnneSAUNIER/AnneSAUNIER.jpg";
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../../router/router";
 
-function HomePCAutorComposantA() {
+function HomeMobileAutorComposantB() {
   return (
-    <section className={style.HomePCAutorComposantA}>
+    <section className={style.HomeMobileAutorComposantB}>
         <header className={style.ContainerTitle}>
             <h2 className={style.Title}>
                 Un peu plus sur moi ?
@@ -31,23 +31,24 @@ function HomePCAutorComposantA() {
                         l’éclairage, notamment grâce au flash. Aujourd’hui, je mets cette expertise au service du portrait 
                         et du reportage de mariage, toujours à la recherche d’authenticité et d’émotion.
                     </p>
-                    <p className={style.Text}>
-                        Comme une séance de massage, un shooting photo commence souvent avec un peu d’appréhension. On ne 
-                        sait pas comment poser, on doute… Mais rapidement, la tension s’efface. Mon rôle ? Vous guider avec 
-                        bienveillance pour que ce moment devienne fluide, naturel, et surtout agréable c’est ma première mission. 
-                        La deuxième c’est qu’à la vue de vos photos vous faisiez WOUAH ! Pour en savoir encore un peu plus sur 
-                        moi rendez vous sur ma page {" "}
-                        <span className={style.SpanLink}>
-                            <Link to={ListDataRouter[7].path}>
-                                QUI SUIS-JE
-                            </Link>
-                        </span>
-                    </p>
                 </div>
 
             </div>
-
+            
             <p className={style.TextTarget1}>
+                Comme une séance de massage, un shooting photo commence souvent avec un peu d’appréhension. On ne 
+                sait pas comment poser, on doute… Mais rapidement, la tension s’efface. Mon rôle ? Vous guider avec 
+                bienveillance pour que ce moment devienne fluide, naturel, et surtout agréable c’est ma première mission. 
+                La deuxième c’est qu’à la vue de vos photos vous faisiez WOUAH ! Pour en savoir encore un peu plus sur 
+                moi rendez vous sur ma page {" "}
+                <span className={style.SpanLink}>
+                    <Link to={ListDataRouter[7].path}>
+                        QUI SUIS-JE
+                    </Link>
+                </span>
+            </p>
+
+            <p className={style.TextTarget2}>
                 📸 **Laissez-vous guider, repartez avec des images qui vous AIMEZ. {" "}
                 <span className={style.SpanLink}>
                     <Link to={ListDataRouter[8].path}>
@@ -60,4 +61,4 @@ function HomePCAutorComposantA() {
   );
 };
 
-export default HomePCAutorComposantA;
+export default HomeMobileAutorComposantB;

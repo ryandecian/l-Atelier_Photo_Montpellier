@@ -1,11 +1,11 @@
-import style from "./HomePCAutorComposantA.module.css";
+import style from "./HomeMobileAutorComposantA.module.css";
 import AnneSAUNIER from "../../../../assets/Images/AnneSAUNIER/AnneSAUNIER.jpg";
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../../router/router";
 
-function HomePCAutorComposantA() {
+function HomeMobileAutorComposantA() {
   return (
-    <section className={style.HomePCAutorComposantA}>
+    <section className={style.HomeMobileAutorComposantA}>
         <header className={style.ContainerTitle}>
             <h2 className={style.Title}>
                 Un peu plus sur moi ?
@@ -13,8 +13,6 @@ function HomePCAutorComposantA() {
         </header>
 
         <article className={style.ContainerProfilCard}>
-
-            <div className={style.CoucheA}>
 
                 <figure className={style.ContainerPortraitAutor}>
                     <img src={AnneSAUNIER} alt="Portrait de la photographe professionnelle Anne SAUNIER" className={style.AutorImg}/>
@@ -43,21 +41,19 @@ function HomePCAutorComposantA() {
                             </Link>
                         </span>
                     </p>
+                    <p className={`${style.Text} ${style.TextTarget1}`}>
+                        📸 **Laissez-vous guider, repartez avec des images qui vous AIMEZ. {" "}
+                        <span className={style.SpanLink}>
+                            <Link to={ListDataRouter[8].path}>
+                                Découvez mon Portfolio !
+                            </Link>
+                        </span>
+                    </p>
                 </div>
 
-            </div>
-
-            <p className={style.TextTarget1}>
-                📸 **Laissez-vous guider, repartez avec des images qui vous AIMEZ. {" "}
-                <span className={style.SpanLink}>
-                    <Link to={ListDataRouter[8].path}>
-                        Découvez mon Portfolio !
-                    </Link>
-                </span>
-            </p>
         </article>
     </section>
   );
 };
 
-export default HomePCAutorComposantA;
+export default HomeMobileAutorComposantA;

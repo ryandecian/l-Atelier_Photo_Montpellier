@@ -1,27 +1,19 @@
-@media (min-width: 800.02px) and (max-width: 1000.02px) {
-    .HomePCAutorComposantB {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-        max-width: 1432px;
-        margin: 0px;
-        padding: 0px;
-        border: 0px;
-    }
+.HomePCAutorComposantB {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1432px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
 }
-@media (max-width: 800.02px) {
+@media (max-width: 1000px) {
     .HomePCAutorComposantB {
         display: none;
     }
 }
-@media (min-width: 1000.02px) {
-    .HomePCAutorComposantB {
-        display: none;
-    }
-}
-
 
 .ContainerTitle {
     display: flex;
@@ -47,19 +39,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     width: 100%;
     margin: 0px 0px 20px 0px;
-    padding: 0px;
-    border: 0px;
-}
-
-.CoucheA {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 0px;
     padding: 0px;
     border: 0px;
 }
@@ -82,6 +63,7 @@
 
 .AutorName {
     font-size: var(--h4);
+    font-weight: bold;
     max-width: 100%;
     margin: 0px;
     padding: 0px;
@@ -105,15 +87,6 @@
     font-size: var(--h4);
     margin: 0px 24px 0px 0px;
     padding: 0px 0px 20px 0px;
-}
-
-.TextTarget1 {
-    font-size: var(--h4);
-    max-width: calc(100% - 48px);
-    text-align: center;
-    margin: 0px 24px 0px 24px;
-    padding: 20px 0px 20px 0px;
-    border: 0px;
 }
 
 .SpanLink > a {
