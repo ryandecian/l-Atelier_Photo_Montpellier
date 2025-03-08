@@ -7,6 +7,7 @@ import MentionsLegalesSectionB from "../ComponentsMentionsLegalesRoot/MentionsLe
 import MentionsLegalesSectionC from "../ComponentsMentionsLegalesRoot/MentionsLegalesSectionC/MentionsLegalesSectionC";
 import MentionsLegalesSectionD from "../ComponentsMentionsLegalesRoot/MentionsLegalesSectionD/MentionsLegalesSectionD";
 import MentionsLegalesSectionE from "../ComponentsMentionsLegalesRoot/MentionsLegalesSectionE/MentionsLegalesSectionE";
+import MentionsLegalesSectionF from "../ComponentsMentionsLegalesRoot/MentionsLegalesSectionF/MentionsLegalesSectionF";
 
 function MentionsLegalesMobile() {
     return (
@@ -37,6 +38,10 @@ function MentionsLegalesMobile() {
 
             {/* Section E ou 5 : Liens hypertextes et cookies */}
             <MentionsLegalesSectionE />
+            <Separator />
+
+            {/* Section F ou 6 : Droit applicable et attribution de juridiction */}
+            <MentionsLegalesSectionF />
         </section>
     );
 }
