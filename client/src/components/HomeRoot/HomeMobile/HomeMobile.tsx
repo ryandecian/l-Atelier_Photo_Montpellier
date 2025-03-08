@@ -6,6 +6,7 @@ import ContainerAccueilHomeRoot from '../ComponentHomeRoot/ContainerTitleHomeRoo
 import HomeRootComposantA from '../ComponentHomeRoot/HomeRootComposantA/HomeRootComposantA';
 import HomeRootContainerB from '../ComponentHomeRoot/HomeRootComposantB/HomeRootComposantB';
 import HomeRootComposantC from '../ComponentHomeRoot/HomeRootComposantC/HomeRootComposantC';
+import HomeRootComposantD from '../ComponentHomeRoot/HomeRootComposantD/HomeRootComposantD';
 
 function HomeMobile() {
     return (
@@ -21,6 +22,9 @@ function HomeMobile() {
 
             {/* Container 4 : Mariage */}
             <HomeRootComposantC />
+
+            {/* Container 4 : Avis */}
+            <HomeRootComposantD />
         </div>
     );
 }
