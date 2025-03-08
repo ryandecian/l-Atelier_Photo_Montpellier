@@ -1,8 +1,8 @@
 import { ReactNode } from "react"
 
 /* Liste des pages en import */
-import HomePage from "../pages/HomePage";
-import MentionsLegales from "../pages/MentionsLegalesPage";
+import HomePage from "../pages/HomePage/HomePage";
+import MentionsLegalesPage from "../pages/MentionsLegalesPage/MentionsLegalesPage";
 
 /**
  * Utilisation : 
@@ -36,7 +36,7 @@ const ListDataRouter: RouterItemsType[] = [
     /* 1 */
     {
         path: "/mentions-legales",
-        element: <MentionsLegales />,
+        element: <MentionsLegalesPage />,
     },
     /* 2 */
     {
