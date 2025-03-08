@@ -6,7 +6,8 @@ import HomeRootComposantA from '../ComponentHomeRoot/HomeRootComposantA/HomeRoot
 import HomeRootComposantB from '../ComponentHomeRoot/HomeRootComposantB/HomeRootComposantB';
 import HomeRootComposantC from '../ComponentHomeRoot/HomeRootComposantC/HomeRootComposantC';
 import HomeRootComposantD from '../ComponentHomeRoot/HomeRootComposantD/HomeRootComposantD';
-import ComposantAutorHomePC from './ComposantAutorHomePC/ComposantAutorHomePC';
+import HomePCAutorComposantA from './ComposantAutorHomePC/HomePCAutorComposantA';
+import HomePCAutorComposantB from './ComposantAutorHomePC/HomePCAutorComposantB';
 
 function HomePC() {
     return (
@@ -25,7 +26,10 @@ function HomePC() {
 
             {/* Container 5 : Avis */}
             <HomeRootComposantD />
-            <ComposantAutorHomePC />
+            
+            {/* Container 6 : Autor */}
+            <HomePCAutorComposantB />
+            <HomePCAutorComposantA />
         </div>
     );
 }

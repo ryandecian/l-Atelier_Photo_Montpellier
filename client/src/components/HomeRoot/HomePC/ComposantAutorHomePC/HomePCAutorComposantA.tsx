@@ -1,11 +1,11 @@
-import style from "./HomeRootComposantE.module.css";
+import style from "./HomePCAutorComposantA.module.css";
 import AnneSAUNIER from "../../../../assets/Images/AnneSAUNIER/AnneSAUNIER.jpg";
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../../router/router";
 
-function ComposantAutorHomePC() {
+function HomePCAutorComposantA() {
   return (
-    <section className={style.ComposantAutorHomePC}>
+    <section className={style.HomePCAutorComposantA}>
         <header className={style.ContainerTitle}>
             <h2 className={style.Title}>
                 Un peu plus sur moi ?
@@ -50,4 +50,4 @@ function ComposantAutorHomePC() {
   );
 };
 
-export default ComposantAutorHomePC;
+export default HomePCAutorComposantA;
