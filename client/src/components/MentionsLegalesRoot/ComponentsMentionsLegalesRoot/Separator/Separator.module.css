@@ -1,7 +1,18 @@
+.ContainerSeparator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    width: 100%;
+}
+
 .Separator {
-    border: none;
     height: 2px;
     background-color: var(--ColorPink); /* Couleur de la ligne */
     margin: 20px 0; 
+    padding: 0px;
+    border: 0px;
     width: 90%;
 }

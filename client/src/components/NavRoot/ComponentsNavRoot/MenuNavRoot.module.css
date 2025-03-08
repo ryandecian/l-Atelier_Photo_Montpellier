@@ -126,7 +126,7 @@
     display: inline-block;
     font-size: var(--h4);
     text-decoration: none;
-    color: var(--ColorPrincipal);
+    color: var(--ColorBlack);
     transition: transform 0.3s ease, color 0.2s ease;
 }
 .MenuLinkPC:hover {
@@ -147,6 +147,7 @@
 /* Sous menu de Portraits*/
 .SubMenuUlPC {
     position: absolute;
+    z-index: var(--z-index_5);
     list-style: none;
     margin: 8px 0px 8px 0px;
     padding: 0;
@@ -157,7 +158,7 @@
     position: fixed;
     top: 0px;
     left: 0px;
-    z-index: var(--z-index_1);
+    z-index: var(--z-index_4);
     width: 100vw;
     height: 100vh;
     background-color: transparent;
@@ -204,5 +205,5 @@
 
 .SubMenuLinkPC:hover {
     transform: scale(1.2);
-    color: var(--textColorMenuHover);
+    color: var(--ColorLink);
 }
