@@ -21,6 +21,25 @@ function MentionsLegalesSectionA() {
                 </span>
                 {" "} l’identité des différents intervenants dans le cadre de sa réalisation et de son suivi:
             </p>
+
+            <p className={style.Text}>
+                <span className={style.SpanBold}>
+                    {"Propriétaire du site :"}
+                </span>
+                {" "} L’ATELIER PHOTO MONTPELLIER – Contact : {" "}
+                <span className={style.SpanLink}>
+                    <a href={LinkExt.email} target="_blank" rel="noopener noreferrer">
+                        {"photo34000@gmail.com"}
+                    </a>
+                </span>
+                {" "} ou {" "}
+                <span className={style.SpanLink}>
+                    <a href={LinkExt.phone} target="_blank" rel="noopener noreferrer">
+                        {"06 52 67 73 33"}
+                    </a>
+                </span>
+                {" "} – Adresse : 13 Allée des Platanes 34790 Grabels.
+            </p>
         </section>
     );
 }

@@ -20,6 +20,10 @@ interface LinkExtType {
     facebook: string
     youtube: string
 
+    /* Contact */
+    email: string
+    phone: string
+
     /* Article de loi */
 
     /* Article 6 de la loi n° 2004-575 du 21 juin 2004 */
@@ -30,6 +34,8 @@ const LinkExt: LinkExtType = {
     instagram: "https://www.instagram.com/atelier_photo_montpellier",
     facebook: "https://www.facebook.com",
     youtube: "https://www.youtube.com",
+    email: "mailto:photo34000@gmail.com",
+    phone: "tel:+33652677333",
     loi1: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000801164#LEGIARTI000042038977"
 }
 
