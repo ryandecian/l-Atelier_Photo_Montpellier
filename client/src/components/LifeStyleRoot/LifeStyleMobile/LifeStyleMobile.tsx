@@ -1,6 +1,7 @@
 import style from './LifeStyleMobile.module.css';
 import LifeStyleRootComposantA from '../ComponentsLifeStyleRoot/LifeStyleRootComposantA/LifeStyleRootComposantA';
 import LifeStyleRootComposantB from '../ComponentsLifeStyleRoot/LifeStyleRootComposantB/LifeStyleRootComposantB';
+import LifeStyleRootComposantC from '../ComponentsLifeStyleRoot/LifeStyleRootComposantC/LifeStyleRootComposantC';
 
 function LifeStyleMobile() {
     return (
@@ -17,6 +18,9 @@ function LifeStyleMobile() {
 
             {/* Container 2 : Cards */}
             <LifeStyleRootComposantB />
+
+            {/* Container 2 : Portrait Solo */}
+            <LifeStyleRootComposantC />
         </section>
     );
 }
