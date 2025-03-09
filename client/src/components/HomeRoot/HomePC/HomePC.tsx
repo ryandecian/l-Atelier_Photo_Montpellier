@@ -11,7 +11,7 @@ import HomePCAutorComposantB from './ComposantAutorHomePC/HomePCAutorComposantB'
 
 function HomePC() {
     return (
-        <div className={style.HomePC}>
+        <section className={style.HomePC}>
             {/* Container 1 : Accueil */}
             <ContainerAccueilHomeRoot />
 
@@ -30,7 +30,7 @@ function HomePC() {
             {/* Container 6 : Autor */}
             <HomePCAutorComposantA />
             <HomePCAutorComposantB />
-        </div>
+        </section>
     );
 }
 
