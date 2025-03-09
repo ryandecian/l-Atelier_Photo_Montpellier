@@ -143,6 +143,11 @@ const ListDataRouter: RouterItemsType[] = [
         path: "/portraits-grossesses",
         element: <h1>Route : Portraits grossesses</h1>,
     },
+    /* {ListDataRouter[19].path} */
+    {
+        path: "/portraits-hobbies",
+        element: <h1>Route : Portraits Hobbies</h1>,
+    },
 ]
 export { LinkExt };
 export default ListDataRouter;

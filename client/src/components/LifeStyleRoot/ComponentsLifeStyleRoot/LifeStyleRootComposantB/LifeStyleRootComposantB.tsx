@@ -48,7 +48,7 @@ const services = [
         id: 6, 
         title: "Passions Lives", 
         name: "Portrait Hobbies - Sport", 
-        path: "/portrait-pro", 
+        path: ListDataRouter[19].path, 
         img: img6 
     },
 ];
