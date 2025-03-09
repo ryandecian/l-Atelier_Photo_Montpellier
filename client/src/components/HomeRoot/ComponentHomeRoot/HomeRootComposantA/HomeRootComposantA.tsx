@@ -7,7 +7,7 @@ function HomeRootComposantA() {
         <section className={style.HomeRootContainerA}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.Title}>
-                    J'observe, je vous met à l'aise, je fige l'instant avec justesse.
+                    J'observe, je vous mets à l'aise, je fige l'instant avec justesse.
                 </h2>
             </header>
 
