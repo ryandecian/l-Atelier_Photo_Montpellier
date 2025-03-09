@@ -1,10 +1,10 @@
-import style from './LifeStylePC.module.css';
+import style from './LifeStyleMobile.module.css';
 import LifeStyleRootComposantA from '../ComponentsLifeStyleRoot/LifeStyleRootComposantA/LifeStyleRootComposantA';
 import LifeStyleRootComposantB from '../ComponentsLifeStyleRoot/LifeStyleRootComposantB/LifeStyleRootComposantB';
 
-function LifeStylePC() {
+function LifeStyleMobile() {
     return (
-        <section className={style.LifeStylePC}>
+        <section className={style.LifeStyleMobile}>
 
             <header className={style.ContainerTitle}>
                 <h1 className={style.Title}>
@@ -21,4 +21,4 @@ function LifeStylePC() {
     );
 }
 
-export default LifeStylePC;
+export default LifeStyleMobile;
