@@ -16,9 +16,9 @@ function HomeRootComposantC() {
         img6: img6,
         MetaNameimg6: "Portrait Mariage a là Tour Magne",
         img7: img7,
-        MetaNameimg7: "Photo de mariage avec enfant",
+        MetaNameimg7: "Photo de mariage Sun Glass",
         img8: img8,
-        MetaNameimg8: "Les mariés en Selfie à Palavas",
+        MetaNameimg8: "Pride et mariage",
     }
     return (
         <section className={style.HomeRootComposantC}>
