@@ -28,19 +28,22 @@ function LifeStyleRootComposantC() {
                     sincère, un regard pétillant... Voilà, c’est vous.   
                 </p>
                 <p className={style.Text}>
-                    💡 Pour qui ? 
-                </p>
-                <p className={style.Text}>
-                    <span className={style.SpanBold}>
-                        {"Choisissez le format qui vous convient le mieux :"}
+                    <span className={style.SpanBoldSpace}>
+                        {"💡 Pour qui ?"}
                     </span> 
                 </p>
                 <p className={style.Text}>
-                    En une phrase : je cherche un équilibre entre authenticité et esthétisme ! Envie de tenter l’expérience ? 
+                    👉 Ceux qui veulent {" "}
+                    <span className={style.SpanBold}>
+                        {"se réconcilier avec leur image."}
+                    </span>
+                    <br />
+                    👉 Une nouvelle étape de vie, une envie de se voir autrement. <br />
+                    👉 Un souvenir unique, juste pour soi. <br />
                 </p>
                 <p className={style.Text}>
                     <span className={style.SpanBold}>
-                        {"Choisissez le format qui vous convient le mieux :"}
+                        {"Mettre sa photo sur une appli de rencontre"}
                     </span> 
                 </p>
             </article>
