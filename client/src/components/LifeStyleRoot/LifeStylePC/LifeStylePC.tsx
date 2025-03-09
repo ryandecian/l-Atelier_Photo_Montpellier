@@ -1,5 +1,6 @@
 import style from './LifeStylePC.module.css';
-import LifeStyleRootComposantA from '../ComponentsLifeStyleRoot/LifeStyleComposantA/LifeStyleRootComposantA';
+import LifeStyleRootComposantA from '../ComponentsLifeStyleRoot/LifeStyleRootComposantA/LifeStyleRootComposantA';
+import LifeStyleRootComposantB from '../ComponentsLifeStyleRoot/LifeStyleRootComposantB/LifeStyleRootComposantB';
 
 function LifeStylePC() {
     return (
@@ -13,6 +14,9 @@ function LifeStylePC() {
 
             {/* Container 1 : Titre et textes */}
             <LifeStyleRootComposantA />
+
+            {/* Container 2 : Cards */}
+            <LifeStyleRootComposantB />
         </section>
     );
 }

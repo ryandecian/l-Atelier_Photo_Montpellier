@@ -9,7 +9,7 @@
     border: 0px;
 }
 @media (min-width: 800.02px) {
-    .LifeStylePC {
+    .LifeStyleMobile {
         display: none;
     }
 }
