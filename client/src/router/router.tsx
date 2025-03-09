@@ -47,76 +47,91 @@ const LinkExt: LinkExtType = {
 }
 
 const ListDataRouter: RouterItemsType[] = [
-    /* 0 */
+    /* {ListDataRouter[0].path} */
     {
         path: "/",
         element: <HomePage />,
     },
-    /* 1 */
+    /* {ListDataRouter[1].path} */
     {
         path: "/mentions-legales",
         element: <MentionsLegalesPage />,
     },
-    /* 2 */
+    /* {ListDataRouter[2].path} */
     {
         path: "/tarifs",
         element: <h1>Route : Page Tarifs</h1>,
     },
-    /* 3 */
+    /* {ListDataRouter[3].path} */
     {
         path: "/contacts",
         element: <h1>Route : Page Contact</h1>,
     },
-    /* 4 */
+    /* {ListDataRouter[4].path} */
     {
         path: "/blog",
         element: <h1>Route : Page Blog</h1>,
     },
-    /* 5 */
+    /* {ListDataRouter[5].path} */
     {
         path: "/panier",
         element: <h1>Route : Page Panier</h1>,
     },
-    /* 6 */
+    /* {ListDataRouter[6].path} */
     {
         path: "/compte",
         element: <h1>Route : Page Compte</h1>,
     },
-    /* 7 */
+    /* {ListDataRouter[7].path} */
     {
         path: "/qui-suis-je",
         element: <h1>Route : Page Qui-suis-je</h1>,
     },
-    /* 8 */
+    /* {ListDataRouter[8].path} */
     {
         path: "/portfolio",
         element: <h1>Route : Page Portfolio</h1>,
     },
-    /* 9 */
+    /* {ListDataRouter[9].path} */
     {
         path: "/cgv",
         element: <h1>Route : Page CGV</h1>,
     },
-    /* 10 */
+    /* {ListDataRouter[10].path} */
     {
         path: "/faq",
         element: <h1>Route : Page faq</h1>,
     },
     /* Route des SubMenu */
-    /* 11 */
+    /* {ListDataRouter[11].path} */
     {
         path: "/portraits-corporates",
         element: <h1>Route : portraits-corporates</h1>,
     },
-    /* 12 */
+    /* {ListDataRouter[12].path} */
     {
         path: "/portraits-lifestyles",
         element: <LifeStylePage />,
     },
-    /* 13 */
+    /* {ListDataRouter[13].path} */
     {
         path: "/portraits-mariages",
         element: <h1>Route : Portraits-Mariages</h1>,
+    },
+    /* {ListDataRouter[14].path} */
+    {
+        path: "/portraits-solos",
+        element: <h1>Route : Portraits-Solos</h1>,
+    },
+    /* {ListDataRouter[15].path} */
+    {
+        path: "/portraits-couples",
+        element: <h1>Route : Portraits-Couples</h1>,
+    },
+    /* {ListDataRouter[16].path} */
+    {
+        path: "/portraits-familles-amis",
+        element: <h1>Route : Portraits familles - amis</h1>,
     },
 ]
 export { LinkExt };

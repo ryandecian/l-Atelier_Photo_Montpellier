@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import style from "./LifeStyleRootComposantB.module.css";
+import ListDataRouter from "../../../../router/router";
+
 import img1 from "../../../../assets/Images/ImageLifeStyle/LifeStyleImg1.jpg";
 import img2 from "../../../../assets/Images/ImageLifeStyle/LifeStyleImg2.jpg";
 import img3 from "../../../../assets/Images/ImageLifeStyle/LifeStyleImg3.jpg";
@@ -12,21 +14,21 @@ const services = [
         id: 1, 
         title: "Feel Good", 
         name: "Portrait solo", 
-        path: "/portrait-hobbies", 
+        path: ListDataRouter[14].path, 
         img: img1 
     },
     { 
         id: 2, 
         title: "Toi & Moi", 
         name: "Portrait couple", 
-        path: "/seance-famille", 
+        path: ListDataRouter[15].path, 
         img: img2 
     },
     { 
         id: 3, 
         title: "La Smala", 
         name: "Portrait famille - amis", 
-        path: "/mode-lifestyle", 
+        path: ListDataRouter[16].path, 
         img: img3 
     },
     { 
