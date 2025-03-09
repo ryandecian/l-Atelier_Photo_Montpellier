@@ -30,8 +30,9 @@
 
 .ContainerText {
     display: flex;
-    justify-content: start;
-    align-items: center;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
     width: 100%;
 }
 

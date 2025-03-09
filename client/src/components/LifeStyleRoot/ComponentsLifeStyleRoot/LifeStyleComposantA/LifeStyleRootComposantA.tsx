@@ -25,7 +25,20 @@ function LifeStyleRootComposantA() {
                     <span className={style.SpanBold}>
                         {"capturer une dynamique réelle,"}
                     </span> 
-                    {" "} une expression sincère, tout en soignant la lumière et la mise en scène. Ici, le flash devient un outil créatif : il sculpte le sujet, équilibre les contrastes, apporte du relief, même en pleine nature ou en milieu urbain. 
+                    {" "} une expression sincère, tout en soignant la lumière et la mise en scène. Ici, {" "}
+                    <span className={style.SpanBold}>
+                        {"le flash devient un outil créatif :"}
+                    </span> 
+                    {" "} il sculpte le sujet, équilibre les contrastes, apporte du relief, même en pleine nature ou en 
+                    milieu urbain. 
+                </p>
+                <p className={style.Text}>
+                    En une phrase : je cherche un équilibre entre authenticité et esthétisme ! Envie de tenter l’expérience ? 
+                </p>
+                <p className={style.Text}>
+                    <span className={style.SpanBold}>
+                        {"Choisissez le format qui vous convient le mieux :"}
+                    </span> 
                 </p>
             </article>
             
