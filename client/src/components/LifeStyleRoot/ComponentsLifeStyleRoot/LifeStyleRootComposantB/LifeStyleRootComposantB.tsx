@@ -10,8 +10,8 @@ import img6 from "../../../../assets/Images/ImageLifeStyle/LifeStyleImg6.jpg";
 const services = [
     { 
         id: 1, 
-        title: "Portrait solo", 
-        name: "Feel Good", 
+        title: "Feel Good", 
+        name: "Portrait solo", 
         path: "/portrait-hobbies", 
         img: img1 
     },
