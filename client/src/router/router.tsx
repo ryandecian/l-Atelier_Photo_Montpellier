@@ -3,6 +3,7 @@ import { ReactNode } from "react"
 /* Liste des pages en import */
 import HomePage from "../pages/HomePage/HomePage";
 import MentionsLegalesPage from "../pages/MentionsLegalesPage/MentionsLegalesPage";
+import LifeStylePage from "../pages/LifeStylePage/LifeStylePage";
 
 /**
  * Utilisation : 
@@ -110,7 +111,7 @@ const ListDataRouter: RouterItemsType[] = [
     /* 12 */
     {
         path: "/portraits-lifestyles",
-        element: <h1>Route : portraits-lifestyles</h1>,
+        element: <LifeStylePage />,
     },
     /* 13 */
     {

@@ -2,7 +2,7 @@ import style from "./ContainerAccueilHomeRoot.module.css";
 
 function ContainerAccueilHomeRoot() {
     return (
-        <section className={style.ContainerAccueil}>            
+        <div className={style.ContainerAccueil}>            
 
             <div className={style.ContainerSubAccueil}>
                 <article className={style.ContainerSlogan}>
@@ -23,7 +23,7 @@ function ContainerAccueilHomeRoot() {
                     <h1>PHOTOGRAPHE DE PORTRAITS ET DE MARIAGE A MONTPELLIER</h1>
                 </header>
             </div>
-        </section>
+        </div>
     );
 }
 
