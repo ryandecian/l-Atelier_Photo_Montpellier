@@ -72,13 +72,33 @@
 }
 
 .title {
-    font-size: 1.4rem;
+    font-size: calc(var(--h2) - 2px);
     text-align: center;
     z-index: 1;
 }
+@media (max-width: 359.02px) {
+    .title {
+        font-size: var(--h4);
+    }
+}
+@media (min-width: 359.02px) and (max-width: 399.02px) {
+    .title {
+        font-size: var(--h3);
+    }
+}
 
 .name {
-    font-size: 1.1rem;
+    font-size: var(--h3);
     text-align: center;
     z-index: 1;
+}
+@media (max-width: 359.02px) {
+    .name {
+        font-size: var(--h5);
+    }
+}
+@media (min-width: 359.02px) and (max-width: 399.02px) {
+    .name {
+        font-size: var(--h3);
+    }
 }

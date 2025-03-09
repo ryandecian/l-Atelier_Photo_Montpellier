@@ -76,6 +76,24 @@ body {
     width: 100%;
     box-sizing: border-box;
 }
+/* Responsive */
+
+/* 320px a 359px
+Textes
+p = h6
+h1 = h3
+h2 = h4
+h3 = h5
+*/
+
+/* 359px a 400px
+Textes
+p = h5
+h1 = h2
+h2 = h3
+h3 = h4
+*/
+
 
 
 /* Code pour accessibilité button */
