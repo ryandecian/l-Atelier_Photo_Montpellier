@@ -1,51 +1,51 @@
 import { Link } from "react-router-dom";
 import style from "./LifeStyleRootComposantB.module.css";
-import img1 from "../../../../assets/Images/ImageHomePage/HomeImg1.jpg";
-import img2 from "../../../../assets/Images/ImageHomePage/HomeImg2.jpg";
-import img3 from "../../../../assets/Images/ImageHomePage/HomeImg3.jpg";
-import img4 from "../../../../assets/Images/ImageHomePage/HomeImg4.jpg";
-import img5 from "../../../../assets/Images/ImageHomePage/HomeImg5.jpg";
-import img6 from "../../../../assets/Images/ImageHomePage/HomeImg6.jpg";
+import img1 from "../../../../assets/Images/ImageLifeStyle/LifeStyleImg1.jpg";
+import img2 from "../../../../assets/Images/ImageLifeStyle/LifeStyleImg2.jpg";
+import img3 from "../../../../assets/Images/ImageLifeStyle/LifeStyleImg3.jpg";
+import img4 from "../../../../assets/Images/ImageLifeStyle/LifeStyleImg4.jpg";
+import img5 from "../../../../assets/Images/ImageLifeStyle/LifeStyleImg5.jpg";
+import img6 from "../../../../assets/Images/ImageLifeStyle/LifeStyleImg6.jpg";
 
 const services = [
     { 
         id: 1, 
-        title: "Passion Live", 
-        name: "Portrait Hobbies", 
+        title: "Portrait solo", 
+        name: "Feel Good", 
         path: "/portrait-hobbies", 
         img: img1 
     },
     { 
         id: 2, 
-        title: "Moments Précieux", 
-        name: "Séance Famille", 
+        title: "Toi & Moi", 
+        name: "Portrait couple", 
         path: "/seance-famille", 
         img: img2 
     },
     { 
         id: 3, 
-        title: "Style Unique", 
-        name: "Mode & Lifestyle", 
+        title: "La Smala", 
+        name: "Portrait famille - amis", 
         path: "/mode-lifestyle", 
         img: img3 
     },
     { 
         id: 4, 
-        title: "Émotion Authentique", 
-        name: "Mariage & Engagement", 
+        title: "1er cris", 
+        name: "Portrait nouveaux nés", 
         path: "/mariage-engagement", 
         img: img4 
     },
     { 
-        id: 5, title: "Instants Magiques", 
-        name: "Grossesse & Bébé", 
+        id: 5, title: "9 mois", 
+        name: "Portrait Grossesse", 
         path: "/grossesse-bebe", 
         img: img5 
     },
     { 
         id: 6, 
-        title: "Corporate & Pro", 
-        name: "Portrait Professionnel", 
+        title: "Passions Lives", 
+        name: "Portrait Hobbies - Sport", 
         path: "/portrait-pro", 
         img: img6 
     },
