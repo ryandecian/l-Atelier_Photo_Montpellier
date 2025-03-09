@@ -1,4 +1,4 @@
-.LifeStylePC {
+.LifeStyleMobile {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,8 +8,8 @@
     padding: 0px;
     border: 0px;
 }
-@media (max-width: 800.02px) {
-    .LifeStylePC {
+@media (min-width: 800.02px) {
+    .LifeStyleMobile {
         display: none;
     }
 }
