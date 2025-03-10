@@ -4,7 +4,8 @@ import LifeStyleRootComposantB from '../ComponentsLifeStyleRoot/LifeStyleRootCom
 import LifeStyleRootComposantC from '../ComponentsLifeStyleRoot/LifeStyleRootComposantC/LifeStyleRootComposantC';
 import ContainerImgLifeStyleRoot from '../ComponentsLifeStyleRoot/ContainerImgLifeStyleRoot/ContainerImgLifeStyleRoot';
 import LifeStyleRootComposantD from '../ComponentsLifeStyleRoot/LifeStyleRootComposantD/LifeStyleRootComposantD';
-
+import LifeStyleRootComposantE from '../ComponentsLifeStyleRoot/LifeStyleRootComposantE/LifeStyleRootComposantE';
+import LifeStyleRootComposantF from '../ComponentsLifeStyleRoot/LifeStyleRootComposantF/LifeStyleRootComposantF';
 
 /* Import des images */
 import img1 from "../../../assets/Images/ImageLifeStyle/Portrait_Femme_Feel_Good.jpg";
@@ -69,6 +70,12 @@ function LifeStyleMobile() {
             img3={DataImage.img6}
             MetaNameImg3={DataImage.MetaNameImg6}
             />
+                        
+            {/* Container 7 : Portrait famille - amis */}
+            <LifeStyleRootComposantE />
+                        
+            {/* Container 8 : Nouveau-nés */}
+            <LifeStyleRootComposantF />
         </section>
     );
 }
