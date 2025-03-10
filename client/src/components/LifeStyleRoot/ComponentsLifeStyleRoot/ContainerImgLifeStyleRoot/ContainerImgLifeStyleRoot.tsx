@@ -17,7 +17,7 @@ function ContainerImgLifeStyleRoot(Props: ContainerImgLifeStyleRootType) {
     } = Props;
 
     return (
-        <div className={style.ContaineLifeStyleHomeRoot}>
+        <div className={style.ContainerImgLifeStyleRoot}>
             <div className={style.ContainerImg}>
                 <PremiumCardImgSudoRoot
                 src={img1}
