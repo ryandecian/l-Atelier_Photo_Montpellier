@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 import style from "./LifeStyleRootComposantB.module.css";
 import ListDataRouter from "../../../../router/router";
 
-import img1 from "../../../../assets/Images/ImageLifeStyle/LifeStyleImg1.jpg";
-import img2 from "../../../../assets/Images/ImageLifeStyle/LifeStyleImg2.jpg";
-import img3 from "../../../../assets/Images/ImageLifeStyle/LifeStyleImg3.jpg";
-import img4 from "../../../../assets/Images/ImageLifeStyle/LifeStyleImg4.jpg";
-import img5 from "../../../../assets/Images/ImageLifeStyle/LifeStyleImg5.jpg";
-import img6 from "../../../../assets/Images/ImageLifeStyle/LifeStyleImg6.jpg";
+import img1 from "../../../../assets/Images/ImageLifeStyle/Femme-a_la_cigarette.jpg";
+import img2 from "../../../../assets/Images/ImageLifeStyle/portrait_duo_exterieur_.jpg";
+import img3 from "../../../../assets/Images/ImageLifeStyle/Portraits_Famille_Flash.jpg";
+import img4 from "../../../../assets/Images/ImageLifeStyle/Premier_jour_portrait.jpg";
+import img5 from "../../../../assets/Images/ImageLifeStyle/portrait_9mois_domicile.jpg";
+import img6 from "../../../../assets/Images/ImageLifeStyle/Portrait_Serie_PeakyBlinders.jpg";
 
 
 function LifeStyleRootComposantB() {
