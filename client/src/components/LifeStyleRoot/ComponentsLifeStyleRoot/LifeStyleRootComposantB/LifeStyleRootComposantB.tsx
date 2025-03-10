@@ -54,12 +54,12 @@ function LifeStyleRootComposantB() {
             img: img6 
         },
     ];
-    
+
     return (
         <div className={style.container}>
             {services.map((service) => (
                 <Link to={service.path} key={service.id} className={style.card}>
-                    <img src={service.img} alt={service.name} className={style.image} loading="lazy" />
+                    <img src={service.img} alt={service.name} className={style.image} />
                     <div className={style.overlay}></div>
                     <div className={style.title}>{service.title}</div>
                     <div className={style.name}>{service.name}</div>
