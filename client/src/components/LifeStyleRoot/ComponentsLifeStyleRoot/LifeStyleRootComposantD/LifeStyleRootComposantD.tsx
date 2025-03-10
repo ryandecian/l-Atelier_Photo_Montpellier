@@ -56,7 +56,6 @@ function LifeStyleRootComposantD() {
                         {"Cette séance est faite pour vous si :"}
                     </span>
                     <br />
-                    {" "} <br />
                     👉 Vous voulez des photos qui vous ressemblent, sans artifices ni mode d’emploi. <br />
                     👉 Vous cherchez un souvenir authentique de votre relation, que ce soit en couple, entre amis ou en duo 
                     parent/enfant. <br />

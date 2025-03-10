@@ -43,7 +43,6 @@ function LifeStyleRootComposantF() {
                         {"Cette séance est faite pour vous si :"}
                     </span>
                     <br />
-                    {" "} <br />
                     👉 Les jeunes parents qui veulent des souvenirs tendres et naturels. <br />
                     👉 Une séance à faire dans les 15 premiers jours de vie. <br />
                 </p>

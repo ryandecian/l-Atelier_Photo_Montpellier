@@ -33,6 +33,10 @@ function LifeStyleRootComposantC() {
                     </span> 
                 </p>
                 <p className={style.Text}>
+                    <span className={style.SpanBold}>
+                        {"Cette séance est faite pour vous si :"}
+                    </span> 
+                    <br />
                     👉 Ceux qui veulent {" "}
                     <span className={style.SpanBold}>
                         {"se réconcilier avec leur image."}
