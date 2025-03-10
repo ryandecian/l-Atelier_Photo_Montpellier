@@ -11,7 +11,7 @@ import LifeStyleRootComposantH from '../ComponentsLifeStyleRoot/LifeStyleRootCom
 
 /* Import des images */
 import img1 from "../../../assets/Images/ImageLifeStyle/Portrait_Femme_Feel_Good.jpg";
-import img2 from "../../../assets/Images/ImageLifeStyle/LifeStyleImg9.jpg";
+import img2 from "../../../assets/Images/ImageLifeStyle/Portrait_François_Feel_good.jpg";
 import img3 from "../../../assets/Images/ImageLifeStyle/LifeStyleImg8.jpg";
 import img4 from "../../../assets/Images/ImageLifeStyle/Portrait_Duo_Exterieur.jpg";
 import img5 from "../../../assets/Images/ImageLifeStyle/Mere_Fils_Noir_et_Blanc.jpg";
