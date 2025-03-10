@@ -1,8 +1,8 @@
-import style from "./LifeStyleRootComposantE.module.css";
+import style from "./LifeStyleRootComposantD.module.css";
 
-function LifeStyleRootComposantE() {
+function LifeStyleRootComposantD() {
     return (
-        <section className={style.LifeStyleRootComposantE}>
+        <section className={style.LifeStyleRootComposantD}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.Title}>
                     Toi & Moi : Un portrait à deux, sans filtres et sans mode d’emploi ❤️ 
@@ -73,4 +73,4 @@ function LifeStyleRootComposantE() {
     );
 }
 
-export default LifeStyleRootComposantE;
+export default LifeStyleRootComposantD;
