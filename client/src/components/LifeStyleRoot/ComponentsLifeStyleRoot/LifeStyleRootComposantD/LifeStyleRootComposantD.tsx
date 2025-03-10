@@ -29,14 +29,14 @@ function LifeStyleRootComposantD() {
                     encore chez vous sur le canapé avec le chat en maraude de demandant bien ce qu’il se passe du chat qui 
                     s’incruste, une playlist en fond sonore pour vous rappeler votre univers. Et pourquoi pas essayer le 
                     shooting en studio ? {" "} 
-                    <span className={style.SpanBoldSpace}>
+                    <span className={style.SpanBold}>
                         {"🌿 Au grand air :"}
                     </span>
                     {" "} une plage, une forêt, un champ perdu au milieu de nulle part… On bouge, on s’amuse, on oublie 
                     qu’on est là pour une séance photo.
                 </p>
                 <p className={style.Text}>
-                    <span className={style.SpanBoldSpace}>
+                    <span className={style.SpanBold}>
                         {"🏡 Chez vous :"}
                     </span> 
                     {" "} un moment cosy, un canapé partagé, un fou rire à cause du chat qui s’incruste, une playlist en 
