@@ -25,8 +25,11 @@
 }
 
 .Title {
-    font-size: var(--h1);
+    font-size: calc(var(--h1) + 2px); /* h1 => h1 + 2px uniquement a cause de la police Saira */
     color: var(--ColorBlack);
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-title);
+    font-style: var(--font-style-title);
     margin: 20px 24px 20px 24px;
     padding: 0px;
     border: 0px;

@@ -70,6 +70,8 @@
          --font-weight-title: var(--font-weight-titles);
          --font-style-title: var(--font-style-titles);
 
+         /* Attention, il ne gère pas le ContainerAccueilHomeRoot */
+
     /* Liste des Z-index */
          --z-index_-2: -2; /* NavMobile.css et NavPC.css : Même logique : Background en lien avec l'opacité de l'img vague */
          --z-index_-1: -1; /* NavMobile.css et NavPC : Même logique : Img de vague transparent */
