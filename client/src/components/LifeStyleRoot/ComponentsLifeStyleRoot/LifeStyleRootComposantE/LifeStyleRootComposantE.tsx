@@ -48,7 +48,10 @@ function LifeStyleRootComposantE() {
                     👉 Vous voulez que, dans 10 ans, ces images racontent encore votre histoire. <br />
                 </p>
                 <p className={style.Text}>
-                    Et si on créait ensemble ces souvenirs ? {" "}
+                    <span className={style.SpanBold}>
+                        {"📩 Et si on créait ensemble ces souvenirs ?"}
+                    </span> 
+                    {" "}
                     <span className={style.SpanLink}>
                         <a href={LinkExt.emailAnne} target="_blank" rel="noopener noreferrer">
                             {"Contactez-moi."}
