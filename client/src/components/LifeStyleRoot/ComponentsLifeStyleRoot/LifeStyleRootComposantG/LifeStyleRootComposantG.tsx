@@ -64,7 +64,6 @@ function LifeStyleRootComposantG() {
                     </span> 
                 </p>
                 <p className={style.Text}>
-                    {" "} <br />
                     👉 Celles qui veulent un souvenir sincère et naturel de leur grossesse. <br />
                     👉 Celles qui souhaitent un moment pour elles, pour se reconnecter à leur corps. <br />
                     👉 Celles qui veulent un souvenir puissant de leur grossesse. <br />

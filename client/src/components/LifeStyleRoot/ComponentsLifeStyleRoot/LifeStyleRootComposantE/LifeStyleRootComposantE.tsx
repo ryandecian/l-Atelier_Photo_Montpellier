@@ -42,7 +42,6 @@ function LifeStyleRootComposantE() {
                         {"Cette séance est faite pour vous si :"}
                     </span>
                     <br />
-                    {" "} <br />
                     👉 Vous voulez des images qui ne dorment pas sur un disque dur, mais s’impriment, s’accrochent, se partagent. <br />
                     👉 Vous cherchez des souvenirs sincères, des photos pleines de vie à glisser dans un album familial. <br />
                     👉 Vous voulez que, dans 10 ans, ces images racontent encore votre histoire. <br />
