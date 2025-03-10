@@ -1,31 +1,37 @@
-import style from "./LifeStyleRootComposantC.module.css";
+import style from "./LifeStyleRootComposantF.module.css";
 
-function LifeStyleRootComposantC() {
+function LifeStyleRootComposantF() {
     return (
-        <section className={style.LifeStyleRootComposantC}>
+        <section className={style.LifeStyleRootComposantF}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.Title}>
-                    Portrait Solo: Se voir autrement
+                    1er Cris (Nouveaux-nés) : Une séance tout en délicatesse, à son rythme
                 </h2>
             </header>
 
             <article className={style.ContainerText}>
                 <p className={style.Text}>
-                    Vous avez déjà regardé une photo de vous en vous disant {" "}
+                    Un nouveau-né vit à {" "}
                     <span className={style.SpanBold}>
-                        {`"Ce n'est pas moi"`}
-                    </span> 
-                    {" "} ? Oubliez les clichés figés et les regards crispés. Ici, c’est un moment rien que pour vous, 
-                    une parenthèse où vous pouvez être pleinement vous-même.  Je l’appelle {" "}
-                    <span className={style.SpanBold}>
-                        {"le moment Feel Good"}
-                    </span> 
-                    {" "}, car sur le moment vous êtes bien et après n’en croyez pas vos yeux, vous vous aimez en photo !
+                        {"son propre tempo :"}
+                    </span>
+                    {" "} il s’endort, s’étire, cherche la chaleur de vos bras… Ici, pas de précipitation. Je prends le 
+                    temps, entre pauses câlins et moments de calme, pour capturer des images naturelles et authentiques.
                 </p>
                 <p className={style.Text}>
-                    Du coup on choisit ensemble un lieu qui vous parle : une ruelle, une plage, un coin de nature, en 
-                    intérieur chez vous. Je vous guide jusqu’à ce que vous oubliez l’appareil photo. Et là, un sourire 
-                    sincère, un regard pétillant... Voilà, c’est vous.   
+                    <span className={style.SpanBold}>
+                        {"🌿 Un environnement apaisant :"}
+                    </span>
+                    {" "} à domicile, pour une atmosphère intime et rassurante, ou en studio dans un décor spécialement 
+                    conçu pour le bien être de votre boutchou. <br />
+                    <span className={style.SpanBold}>
+                        {"🕰️ Une séance adaptée à bébé :"}
+                    </span>
+                    {" "} je m’adapte à ses besoins, à son rythme, sans jamais le forcer. <br />
+                    <span className={style.SpanBold}>
+                        {"🤱 Avec ou sans les parents :"}
+                    </span>
+                    {" "} des portraits de bébé seul, dans vos bras, avec ses frères et sœurs… chaque détail compte. <br />
                 </p>
                 <p className={style.Text}>
                     <span className={style.SpanBoldSpace}>
@@ -33,18 +39,13 @@ function LifeStyleRootComposantC() {
                     </span> 
                 </p>
                 <p className={style.Text}>
-                    👉 Ceux qui veulent {" "}
                     <span className={style.SpanBold}>
-                        {"se réconcilier avec leur image."}
+                        {"Cette séance est faite pour vous si :"}
                     </span>
                     <br />
-                    👉 Une nouvelle étape de vie, une envie de se voir autrement. <br />
-                    👉 Un souvenir unique, juste pour soi. <br />
-                </p>
-                <p className={style.Text}>
-                    <span className={style.SpanBold}>
-                        {"Mettre sa photo sur une appli de rencontre"}
-                    </span> 
+                    {" "} <br />
+                    👉 Les jeunes parents qui veulent des souvenirs tendres et naturels. <br />
+                    👉 Une séance à faire dans les 15 premiers jours de vie. <br />
                 </p>
             </article>
             
@@ -52,4 +53,4 @@ function LifeStyleRootComposantC() {
     );
 }
 
-export default LifeStyleRootComposantC;
+export default LifeStyleRootComposantF;
