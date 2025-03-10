@@ -6,31 +6,57 @@ function LifeStyleRootComposantG() {
         <section className={style.LifeStyleRootComposantG}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.Title}>
-                    Portrait Famille – Amis (La Smala): Des images qui traversent le temps   
+                    9 Mois (Grossesse) : Immortaliser cette étape unique 
                 </h2>
             </header>
 
             <article className={style.ContainerText}>
                 <p className={style.Text}>
-                    Certaines photos restent sur un téléphone. D’autres trouvent {" "}
+                    La grossesse est une période intense, faite de changements et d’émotions. {" "}
                     <span className={style.SpanBold}>
-                        {"leur place dans un album,"}
+                        {"Votre corps évolue,"}
                     </span> 
-                    {" "} sur un mur du salon, ou dans un cadre posé sur une étagère. Ce sont celles qui comptent, celles 
-                    qu’on envoie à ses proches avec un sourire, celles que les enfants redécouvrent des années plus tard en 
-                    se rappelant {" "}
+                    {" "} votre quotidien aussi, et ces neuf mois passent finalement bien plus vite qu’on ne l’imagine. 
+                    Cette séance photo est là pour {" "}
                     <span className={style.SpanBold}>
-                        {"“Tu te souviens de ce jour-là ?”."}
+                        {"capturer cette transition,"}
+                    </span> 
+                    {" "} sans artifices, avec authenticité et élégance.
+                </p>
+                <p className={style.Text}>
+                    Chaque femme vit sa grossesse différemment, et chaque séance est pensée en fonction de vos envies. 
+                    Que vous souhaitiez un rendu naturel en extérieur, une ambiance intime à domicile ou un {" "}
+                    <span className={style.SpanBold}>
+                        {"shooting plus artistique en studio,"}
+                    </span> 
+                    {" "} l’objectif est simple : mettre en lumière ce moment si particulier.
+                </p>
+                <p className={style.Text}>
+                    <span className={style.SpanBold}>
+                        {"🏞️ En extérieur :"}
+                    </span> 
+                    {" "} pour une atmosphère naturelle et lumineuse. <br />
+                    <span className={style.SpanBold}>
+                        {"🏡 À domicile :"}
+                    </span> 
+                    {" "} pour des images cocooning et chaleureuses. <br />
+                    <span className={style.SpanBold}>
+                        {"📸 En studio :"}
+                    </span> 
+                    {" "} pour un rendu épuré et intemporel. <br />
+                </p>
+                <p className={style.Text}>
+                    Seule ou avec votre partenaire, cette séance est avant tout un moment pour vous, où vous prenez le 
+                    temps de vous arrêter et d’apprécier cette étape avant l’arrivée de bébé.
+                </p>
+                <p className={style.Text}>
+                    <span className={style.SpanBoldSpace}>
+                        {"Quand faire votre séance ?"}
                     </span> 
                 </p>
                 <p className={style.Text}>
-                    C’est exactement ce que je veux capturer : des souvenirs qui vivent. Pas des images figées, mais des 
-                    éclats de rire, des bras qui s’attrapent, des regards complices. Une vraie séance de famille, 
-                    où chacun reste lui-même, sans poser, sans chercher à être parfait. Juste être ensemble, et {" "}
-                    <span className={style.SpanBold}>
-                        {"garder une trace de cet instant,"}
-                    </span> 
-                    {" "} pour aujourd’hui et pour plus tard. 
+                    L’idéal est de réaliser la séance entre le 7ᵉ et le 8ᵉ mois, lorsque le ventre est bien arrondi tout 
+                    en gardant une bonne mobilité.
                 </p>
                 <p className={style.Text}>
                     <span className={style.SpanBoldSpace}>
@@ -38,20 +64,20 @@ function LifeStyleRootComposantG() {
                     </span> 
                 </p>
                 <p className={style.Text}>
-                    <span className={style.SpanBold}>
-                        {"Cette séance est faite pour vous si :"}
-                    </span>
-                    <br />
                     {" "} <br />
-                    👉 Vous voulez des images qui ne dorment pas sur un disque dur, mais s’impriment, s’accrochent, se partagent. <br />
-                    👉 Vous cherchez des souvenirs sincères, des photos pleines de vie à glisser dans un album familial. <br />
-                    👉 Vous voulez que, dans 10 ans, ces images racontent encore votre histoire. <br />
+                    👉 Celles qui veulent un souvenir sincère et naturel de leur grossesse. <br />
+                    👉 Celles qui souhaitent un moment pour elles, pour se reconnecter à leur corps. <br />
+                    👉 Celles qui veulent un souvenir puissant de leur grossesse. <br />
+                    👉 Pour se sentir belle et rayonner avant l’arrivée de bébé. <br />
                 </p>
                 <p className={style.Text}>
-                    Et si on créait ensemble ces souvenirs ? {" "}
+                    <span className={style.SpanBold}>
+                        {"📩 Envie de figer ces instants avant l’arrivée de bébé ?"}
+                    </span> 
+                    {" "}
                     <span className={style.SpanLink}>
                         <a href={LinkExt.emailAnne} target="_blank" rel="noopener noreferrer">
-                            {"Contactez-moi."}
+                            {"Contactez-moi pour réserver votre séance."}
                         </a>
                     </span>
                 </p>
