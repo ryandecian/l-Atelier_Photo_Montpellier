@@ -47,12 +47,14 @@ function LifeStyleRootComposantE() {
                     👉 Vous cherchez des souvenirs sincères, des photos pleines de vie à glisser dans un album familial. <br />
                     👉 Vous voulez que, dans 10 ans, ces images racontent encore votre histoire. <br />
                 </p>
-                <span className={style.SpanLink}>
+                <p className={style.Text}>
                     Et si on créait ensemble ces souvenirs ? {" "}
-                    <a href={LinkExt.emailAnne} target="_blank" rel="noopener noreferrer">
-                        {"Contactez-moi."}
-                    </a>
-                </span>
+                    <span className={style.SpanLink}>
+                        <a href={LinkExt.emailAnne} target="_blank" rel="noopener noreferrer">
+                            {"Contactez-moi."}
+                        </a>
+                    </span>
+                </p>
             </article>
             
         </section>
