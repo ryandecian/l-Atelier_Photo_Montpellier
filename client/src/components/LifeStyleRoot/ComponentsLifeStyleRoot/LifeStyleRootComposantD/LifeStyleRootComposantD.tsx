@@ -60,11 +60,7 @@ function LifeStyleRootComposantD() {
                     👉 Vous cherchez un souvenir authentique de votre relation, que ce soit en couple, entre amis ou en duo 
                     parent/enfant. <br />
                     👉 Vous avez envie d’un prétexte pour ralentir un peu, et juste profiter du moment. <br />
-                </p>
-                <p className={style.Text}>
-                    <span className={style.SpanBold}>
-                        {"C’est votre histoire, et je la photographie avec mon cœur."}
-                    </span> 
+                    👉 C’est votre histoire, et je la photographie avec mon cœur. <br />
                 </p>
             </article>
             
