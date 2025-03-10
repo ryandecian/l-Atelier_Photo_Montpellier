@@ -9,6 +9,9 @@ import LifeStyleRootComposantE from '../ComponentsLifeStyleRoot/LifeStyleRootCom
 import img1 from "../../../assets/Images/ImageLifeStyle/Portrait_Femme_Feel_Good.jpg";
 import img2 from "../../../assets/Images/ImageLifeStyle/LifeStyleImg9.jpg";
 import img3 from "../../../assets/Images/ImageLifeStyle/LifeStyleImg8.jpg";
+import img4 from "../../../assets/Images/ImageLifeStyle/Portrait_Duo_Exterieur.jpg";
+import img5 from "../../../assets/Images/ImageLifeStyle/Mere_Fils_Noir_et_Blanc.jpg";
+import img6 from "../../../assets/Images/ImageLifeStyle/LifeStyleImg7.jpg";
 
 function LifeStylePC() {
     const DataImage = {
@@ -18,6 +21,12 @@ function LifeStylePC() {
         MetaNameImg2: "Test",
         img3: img3,
         MetaNameImg3: "Test",
+        img4: img4,
+        MetaNameImg4: "Portrait Duo Exterieur",
+        img5: img5,
+        MetaNameImg5: "Mère Fils Noir et Blanc",
+        img6: img6,
+        MetaNameImg6: "Test",
     }
     return (
         <section className={style.LifeStylePC}>
@@ -49,6 +58,16 @@ function LifeStylePC() {
             
             {/* Container 5 : Portrait couple */}
             <LifeStyleRootComposantE />
+
+            {/* Container 6 : Container image portrait couple */}
+            <ContainerImgLifeStyleRoot 
+            img1={DataImage.img4}
+            MetaNameImg1={DataImage.MetaNameImg4}
+            img2={DataImage.img5}
+            MetaNameImg2={DataImage.MetaNameImg5}
+            img3={DataImage.img6}
+            MetaNameImg3={DataImage.MetaNameImg6}
+            />
         </section>
     );
 }
