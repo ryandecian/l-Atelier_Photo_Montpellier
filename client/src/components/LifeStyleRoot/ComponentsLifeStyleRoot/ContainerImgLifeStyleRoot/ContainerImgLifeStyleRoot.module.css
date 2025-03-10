@@ -1,0 +1,28 @@
+.ContainerImgHomeRoot {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: calc(100vw - 48px);
+    margin: auto;
+}
+@media (max-width: 800.02px) {
+    .ContainerImgHomeRoot {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.ContainerImg {
+    overflow: hidden;
+    width: 100%;
+}
+
+.Image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+.Image:hover {
+    transform: scale(1.1);
+}
