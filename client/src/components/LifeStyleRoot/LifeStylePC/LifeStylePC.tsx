@@ -7,6 +7,7 @@ import LifeStyleRootComposantD from '../ComponentsLifeStyleRoot/LifeStyleRootCom
 import LifeStyleRootComposantE from '../ComponentsLifeStyleRoot/LifeStyleRootComposantE/LifeStyleRootComposantE';
 import LifeStyleRootComposantF from '../ComponentsLifeStyleRoot/LifeStyleRootComposantF/LifeStyleRootComposantF';
 import LifeStyleRootComposantG from '../ComponentsLifeStyleRoot/LifeStyleRootComposantG/LifeStyleRootComposantG';
+import LifeStyleRootComposantH from '../ComponentsLifeStyleRoot/LifeStyleRootComposantH/LifeStyleRootComposantH';
 
 /* Import des images */
 import img1 from "../../../assets/Images/ImageLifeStyle/Portrait_Femme_Feel_Good.jpg";
@@ -80,6 +81,9 @@ function LifeStylePC() {
             
             {/* Container 9 : Portrait grossesse */}
             <LifeStyleRootComposantG />
+            
+            {/* Container 10 : Portrait Lives */}
+            <LifeStyleRootComposantH />
         </section>
     );
 }
