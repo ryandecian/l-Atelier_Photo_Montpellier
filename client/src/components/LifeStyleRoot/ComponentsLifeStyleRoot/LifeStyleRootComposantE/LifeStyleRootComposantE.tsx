@@ -11,16 +11,9 @@ function LifeStyleRootComposantE() {
 
             <article className={style.ContainerText}>
                 <p className={style.Text}>
-                    Vous avez déjà regardé une photo de vous en vous disant {" "}
-                    <span className={style.SpanBold}>
-                        {`"Ce n'est pas moi"`}
-                    </span> 
-                    {" "} ? Oubliez les clichés figés et les regards crispés. Ici, c’est un moment rien que pour vous, 
-                    une parenthèse où vous pouvez être pleinement vous-même.  Je l’appelle {" "}
-                    <span className={style.SpanBold}>
-                        {"le moment Feel Good"}
-                    </span> 
-                    {" "}, car sur le moment vous êtes bien et après n’en croyez pas vos yeux, vous vous aimez en photo !
+                    Vous êtes ensemble tous les jours. Vous partagez des petits rituels, des vannes privées que personne 
+                    ne comprend, des débats inutiles sur qui a oublié de fermer le tube de dentifrice. Bref, vous êtes un 
+                    duo, avec votre dynamique, votre complicité, et peut-être même votre propre langage.
                 </p>
                 <p className={style.Text}>
                     Du coup on choisit ensemble un lieu qui vous parle : une ruelle, une plage, un coin de nature, en 
