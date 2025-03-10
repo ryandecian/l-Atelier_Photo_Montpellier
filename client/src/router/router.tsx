@@ -4,6 +4,7 @@ import { ReactNode } from "react"
 import HomePage from "../pages/HomePage/HomePage";
 import MentionsLegalesPage from "../pages/MentionsLegalesPage/MentionsLegalesPage";
 import LifeStylePage from "../pages/LifeStylePage/LifeStylePage";
+import Error404 from "../pages/Error404Page/Error404Page";
 
 /**
  * Utilisation : 
@@ -151,7 +152,7 @@ const ListDataRouter: RouterItemsType[] = [
     /* {ListDataRouter[20].path} */
     {
         path: "*",
-        element: <h1>Route : 404</h1>,
+        element: <Error404 />,
     },
 ]
 export { LinkExt };

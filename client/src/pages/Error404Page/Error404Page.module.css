@@ -1,0 +1,13 @@
+.Error404Page, 
+.Header, 
+.Main, 
+.Footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    width: 100%;
+}
