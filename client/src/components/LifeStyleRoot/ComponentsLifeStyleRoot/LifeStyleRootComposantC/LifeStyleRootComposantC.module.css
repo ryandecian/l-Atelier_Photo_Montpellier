@@ -1,0 +1,58 @@
+.LifeStyleRootComposantC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.ContainerTitle {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.Title {
+    font-size: var(--h2);
+    color: var(--ColorBlack);
+    margin: 20px 24px 20px 24px;
+    padding: 0px;
+    border: 0px;
+    width: 100%;
+}
+
+.ContainerText {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Text {
+    font-size: var(--h4);
+    margin: 0px 24px 0px 24px;
+    padding: 0px 0px 20px 0px;
+}
+
+.SpanBold {
+    font-weight: bold;
+    font-size: var(--p);
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color: var(--ColorBlack);
+}
+.SpanBoldSpace {
+    font-weight: bold;
+    font-size: var(--h3);
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color: var(--ColorBlack);
+}
