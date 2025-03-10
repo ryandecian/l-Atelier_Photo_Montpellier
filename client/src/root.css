@@ -94,6 +94,10 @@ h2 = h3
 h3 = h4
 */
 
+/*
+Pour attendre que l'utilisateur soit vraiment sur la page pour la charger
+<img src="" alt="" loading="lazy">
+*/
 
 
 /* Code pour accessibilité button */

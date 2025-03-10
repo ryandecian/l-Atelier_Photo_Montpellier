@@ -1,4 +1,4 @@
-.LifeStyleRootComposantA {
+.LifeStyleRootComposantD {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,8 +20,11 @@
 }
 
 .Title {
-    font-size: var(--h2);
+    font-size: calc(var(--h2) + 2px); /* h2 => h2 + 2px uniquement a cause de la police Saira */
     color: var(--ColorBlack);
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
     margin: 20px 24px 20px 24px;
     padding: 0px;
     border: 0px;
