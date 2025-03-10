@@ -22,7 +22,7 @@ function LifeStylePC() {
         img1: img1,
         MetaNameImg1: "Portrait Femme Feel Good",
         img2: img2,
-        MetaNameImg2: "Test",
+        MetaNameImg2: "Portrait François Feel good",
         img3: img3,
         MetaNameImg3: "Test",
         img4: img4,
