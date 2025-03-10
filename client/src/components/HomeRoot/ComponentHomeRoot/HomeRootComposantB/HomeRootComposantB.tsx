@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import ListDataRouter from "../../../../router/router";
 
 /* Import des images*/
-import img1 from "../../../../assets/Images/ImageHomePage/HomeImg1.jpg";
-import img2 from "../../../../assets/Images/ImageHomePage/HomeImg2.jpg";
-import img3 from "../../../../assets/Images/ImageHomePage/HomeImg3.jpg";
-import img4 from "../../../../assets/Images/ImageHomePage/HomeImg4.jpg";
+import img1 from "../../../../assets/Images/ImageHomePage/Portrait_Studio_Corporate.jpg";
+import img2 from "../../../../assets/Images/ImageHomePage/Portrait_Pere_et_fils_LifeStyle.jpg";
+import img3 from "../../../../assets/Images/ImageHomePage/Portrait_jeune_femme_lumiere_naturelle.jpg";
+import img4 from "../../../../assets/Images/ImageHomePage/Shooting_couple_studio.jpg";
 
 function HomeRootComposantB() {
     const data1 = {
@@ -18,7 +18,7 @@ function HomeRootComposantB() {
         img3: img3,
         MetaNameImg3: "Portrait jeune femme lumière naturelle",
         img4: img4,
-        MetaNameImg4: "Shooting couple studio"
+        MetaNameImg4: "Shooting couple studio",
     }
     return (
         <section className={style.HomeRootComposantB}>

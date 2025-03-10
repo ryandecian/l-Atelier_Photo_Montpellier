@@ -4,17 +4,17 @@ import { Link } from "react-router-dom";
 import ListDataRouter from "../../../../router/router";
 
 /* Import des images*/
-import img5 from "../../../../assets/Images/ImageHomePage/Homeimg5.jpg";
-import img6 from "../../../../assets/Images/ImageHomePage/Homeimg6.jpg";
-import img7 from "../../../../assets/Images/ImageHomePage/Homeimg7.jpg";
-import img8 from "../../../../assets/Images/ImageHomePage/Homeimg8.jpg";
+import img5 from "../../../../assets/Images/ImageHomePage/Les_maries_vers_la_mairie.jpg";
+import img6 from "../../../../assets/Images/ImageHomePage/Portrait_Mariage_a_la_Tour_Magne.jpg";
+import img7 from "../../../../assets/Images/ImageHomePage/Photo_de_mariage_Sun_Glass.jpg";
+import img8 from "../../../../assets/Images/ImageHomePage/Pride_et_mariage.jpg";
 
 function HomeRootComposantC() {
     const data = {
         img5: img5,
         MetaNameimg5: "Les mariés vers la mairie",
         img6: img6,
-        MetaNameimg6: "Portrait Mariage a là Tour Magne",
+        MetaNameimg6: "Portrait Mariage à la Tour Magne",
         img7: img7,
         MetaNameimg7: "Photo de mariage Sun Glass",
         img8: img8,
