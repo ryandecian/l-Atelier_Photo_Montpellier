@@ -64,6 +64,10 @@ function LifeStyleRootComposantG() {
                     </span> 
                 </p>
                 <p className={style.Text}>
+                    <span className={style.SpanBold}>
+                        {"Cette séance est faite pour vous si :"}
+                    </span> 
+                    <br />
                     👉 Celles qui veulent un souvenir sincère et naturel de leur grossesse. <br />
                     👉 Celles qui souhaitent un moment pour elles, pour se reconnecter à leur corps. <br />
                     👉 Celles qui veulent un souvenir puissant de leur grossesse. <br />
