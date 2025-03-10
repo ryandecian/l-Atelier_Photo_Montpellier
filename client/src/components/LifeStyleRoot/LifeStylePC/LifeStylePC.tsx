@@ -10,27 +10,27 @@ import LifeStyleRootComposantG from '../ComponentsLifeStyleRoot/LifeStyleRootCom
 import LifeStyleRootComposantH from '../ComponentsLifeStyleRoot/LifeStyleRootComposantH/LifeStyleRootComposantH';
 
 /* Import des images */
-import img1 from "../../../assets/Images/ImageLifeStyle/Portrait_Femme_Feel_Good.jpg";
+import img1 from "../../../assets/Images/ImageLifeStyle/Life_style_exterieur_domicile.jpg";
 import img2 from "../../../assets/Images/ImageLifeStyle/Portrait_François_Feel_good.jpg";
-import img3 from "../../../assets/Images/ImageLifeStyle/LifeStyleImg8.jpg";
-import img4 from "../../../assets/Images/ImageLifeStyle/Portrait_Duo_Exterieur.jpg";
-import img5 from "../../../assets/Images/ImageLifeStyle/Mere_Fils_Noir_et_Blanc.jpg";
-import img6 from "../../../assets/Images/ImageLifeStyle/LifeStyleImg7.jpg";
+import img3 from "../../../assets/Images/ImageLifeStyle/Life_style_exterieur.jpg";
+import img4 from "../../../assets/Images/ImageLifeStyle/portrait_tandem_exterieur.jpg";
+import img5 from "../../../assets/Images/ImageLifeStyle/portrait_couple_jeune_studio.jpg";
+import img6 from "../../../assets/Images/ImageLifeStyle/portrait_couple_studio_bis.jpg";
 
 function LifeStylePC() {
     const DataImage = {
         img1: img1,
-        MetaNameImg1: "Portrait Femme Feel Good",
+        MetaNameImg1: "Life style exterieur domicile",
         img2: img2,
         MetaNameImg2: "Portrait François Feel good",
         img3: img3,
-        MetaNameImg3: "Test",
+        MetaNameImg3: "Life style exterieur",
         img4: img4,
-        MetaNameImg4: "Portrait Duo Exterieur",
+        MetaNameImg4: "portrait tandem exterieur",
         img5: img5,
-        MetaNameImg5: "Mère Fils Noir et Blanc",
+        MetaNameImg5: "portrait couple jeune studio",
         img6: img6,
-        MetaNameImg6: "Test",
+        MetaNameImg6: "portrait couple studio bis",
     }
     return (
         <section className={style.LifeStylePC}>
