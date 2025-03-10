@@ -54,6 +54,22 @@
          --h7: calc(var(--font-size-root) - 7px); /*9px*/
          --h8: calc(var(--font-size-root) - 8px); /*8px*/
 
+    /* Attention, les 3 déclarations sont obligatoire pour les titres */
+    /*Logique des Titres*/
+         --font-family-normal: "Quicksand", sans-serif;
+         --font-family-titles: "Saira Condensed", sans-serif;
+
+         --font-weight-normal: none;
+         --font-weight-titles: 600;
+         
+         --font-style-normal: normal;
+         --font-style-titles: normal;
+
+
+         --font-family-title: var(--font-family-titles);
+         --font-weight-title: var(--font-weight-titles);
+         --font-style-title: var(--font-style-titles);
+
     /* Liste des Z-index */
          --z-index_-2: -2; /* NavMobile.css et NavPC.css : Même logique : Background en lien avec l'opacité de l'img vague */
          --z-index_-1: -1; /* NavMobile.css et NavPC : Même logique : Img de vague transparent */
