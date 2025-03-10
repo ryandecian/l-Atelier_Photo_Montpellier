@@ -52,7 +52,7 @@ function LifeStyleRootComposantH() {
                     <span className={style.SpanBold}>
                         {"Cette séance est faite pour vous si :"}
                     </span> 
-                    {" "} <br />
+                    <br />
                     👉 Vous voulez des photos dynamiques et naturelles, en plein cœur de votre passion. <br />
                     👉 Vous souhaitez recréer une ambiance, une époque, ou un univers qui vous inspire. <br />
                     👉 Vous êtes sportif, artiste, passionné d’histoire, de cinéma ou de culture geek. <br />
