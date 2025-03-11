@@ -1,4 +1,5 @@
 import style from "./MariageMobile.module.css";
+import MariageRootComposantA from "../ComponentsMariageRoot/MariageRootComposantA/MariageRootComposantA";
 
 function MariageMobile() {
     return (
@@ -41,6 +42,9 @@ function MariageMobile() {
                     {" "} qui garantissent des souvenirs à la hauteur de vos attentes.
                 </p>
             </article>
+
+            {/* Composant A : Le Style "Reportage" : Capturer l'Authenticité de Votre Mariage */}
+            <MariageRootComposantA />
         </section>
     );
 }
