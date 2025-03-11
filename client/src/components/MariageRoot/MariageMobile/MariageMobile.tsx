@@ -3,6 +3,7 @@ import MariageRootComposantA from "../ComponentsMariageRoot/MariageRootComposant
 import MariageRootComposantB from "../ComponentsMariageRoot/MariageRootComposantB/MariageRootComposantB";
 import MariageRootComposantC from "../ComponentsMariageRoot/MariageRootComposantC/MariageRootComposantC";
 import MariageRootComposantD from "../ComponentsMariageRoot/MariageRootComposantD/MariageRootComposantD";
+import MariageRootComposantE from "../ComponentsMariageRoot/MariageRootComposantE/MariageRootComposantE";
 
 function MariageMobile() {
     return (
@@ -65,7 +66,10 @@ function MariageMobile() {
             <MariageRootComposantD />
 
             {/* Container Images 4 */}
-            {/* Composant E : */}
+
+            {/* Composant E : Une Expérience Sereine et Détendue */}
+            <MariageRootComposantE />
+            
             {/* Composant F : */}
         </section>
     );
