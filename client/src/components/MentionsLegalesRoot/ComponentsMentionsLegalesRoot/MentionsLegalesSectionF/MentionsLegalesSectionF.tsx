@@ -2,7 +2,7 @@ import style from "./MentionsLegalesSectionF.module.css";
 
 function MentionsLegalesSectionF() {
     return (
-        <section className={style.MentionsLegalesSectionF}>
+        <article className={style.MentionsLegalesSectionF}>
             <h2 className={style.Title}>
                 6 – Droit applicable et attribution de juridiction
             </h2>
@@ -19,7 +19,7 @@ function MentionsLegalesSectionF() {
                     {"MONTPELLIER."}
                 </span>
             </p>
-        </section>
+        </article>
     );
 }
 

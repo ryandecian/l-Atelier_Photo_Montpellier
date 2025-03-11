@@ -5,6 +5,7 @@ import HomePage from "../pages/HomePage/HomePage";
 import MentionsLegalesPage from "../pages/MentionsLegalesPage/MentionsLegalesPage";
 import LifeStylePage from "../pages/LifeStylePage/LifeStylePage";
 import Error404 from "../pages/Error404Page/Error404Page";
+import CGVPage from "../pages/CGVPage/CGVPage";
 
 /**
  * Utilisation : 
@@ -95,8 +96,8 @@ const ListDataRouter: RouterItemsType[] = [
     },
     /* {ListDataRouter[9].path} */
     {
-        path: "/cgv",
-        element: <h1>Route : Page CGV</h1>,
+        path: "/conditions-generales-de-vente",
+        element: <CGVPage />,
     },
     /* {ListDataRouter[10].path} */
     {
