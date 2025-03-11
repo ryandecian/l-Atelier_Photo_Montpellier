@@ -37,9 +37,13 @@ function CGVComposantA() {
                     <h3 className={style.TitleH3}>
                         Article 2 – Prestations proposées
                     </h3>
+                    <div className={style.Separator20}/>
+
                     <p className={style.Text}>
                         Le photographe propose des prestations photographiques pour : 
                     </p>
+                    <div className={style.Separator10}/>
+
                     <ul className={style.ContainerList}>
                         <li className={style.ElementLi}>
                             Les particuliers : portraits, grossesse, nouveau-nés, mariages, événements privés, etc...
@@ -49,18 +53,21 @@ function CGVComposantA() {
                             événements professionnels, etc...  
                         </li>
                     </ul>
-                    <h4 className={style.TitleH4}></h4>
                 </article>
+
+                <div className={style.Separator30}/>
 
                 {/* Container 3 : Tarifs et paiement */}
                 <article className={style.ContainerArticle}>
                     <h3 className={style.TitleH3}>
                         Article 3 – Tarifs et paiement
                     </h3>
+                    <div className={style.Separator20}/>
 
                     <h4 className={style.TitleH4}>
                         3.1. Tarification : 
                     </h4>
+                    <div className={style.Separator10}/>
 
                     <p className={style.Text}>
                         Les tarifs des prestations sont exprimés en euros (€) et en HT auquel s’ajoute la TVA dont le taux 
@@ -68,10 +75,12 @@ function CGVComposantA() {
                         peuvent être modifiés à tout moment sans préavis, mais les prestations sont facturées sur la base 
                         du tarif en vigueur au moment de la réservation. 
                     </p>
+                    <div className={style.Separator20}/>
 
                     <h4 className={style.TitleH4}>
                         3.2. Modalités de paiement :
                     </h4>
+                    <div className={style.Separator10}/>
 
                     <ul className={style.ContainerList}>
                         <li className={style.ElementLi}>
@@ -86,27 +95,33 @@ function CGVComposantA() {
                             Paiement possible par virement bancaire, chèque ou espèces.
                         </li>
                     </ul>
+                    <div className={style.Separator20}/>
 
                     <h4 className={style.TitleH4}>
                         3.3. Retard de paiement :  
                     </h4>
+                    <div className={style.Separator10}/>
+
                     <p className={style.Text}>
                         Toute somme non réglée à l’échéance entraîne des pénalités de retard de 10% du montant total 
                         par mois de retard ainsi qu’une indemnité forfaitaire de recouvrement de 40 € pour les 
                         professionnels (art. L.441-10 du Code de commerce).  
                     </p>
-
                 </article>
+
+                <div className={style.Separator30}/>
 
                 {/* Container 4 : Droit de rétractation et annulation */}
                 <article className={style.ContainerArticle}>
                     <h3 className={style.TitleH3}>
                         Article 4 – Droit de rétractation et annulation
                     </h3>
+                    <div className={style.Separator20}/>
 
                     <h4 className={style.TitleH4}>
                         4.1. Pour les particuliers :  
                     </h4>
+                    <div className={style.Separator10}/>
                     
                     <ul className={style.ContainerList}>
                         <li className={style.ElementLi}>
@@ -118,10 +133,12 @@ function CGVComposantA() {
                             En cas d’annulation après ce délai, l’acompte versé n’est pas remboursable.
                         </li>
                     </ul>
+                    <div className={style.Separator20}/>
 
                     <h4 className={style.TitleH4}>
                         4.2. Pour les entreprises : 
                     </h4>
+                    <div className={style.Separator10}/>
 
                     <ul className={style.ContainerList}>
                         <li className={style.ElementLi}>
