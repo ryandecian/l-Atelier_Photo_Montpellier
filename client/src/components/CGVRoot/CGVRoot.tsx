@@ -1,6 +1,7 @@
 import style from "./CGVRoot.module.css";
 import CGVComposantA from "./ComponentsCGVRoot/CGVComposantA/CGVComposantA";
 import CGVComposantB from "./ComponentsCGVRoot/CGVComposantB/CGVComposantB";
+import CGVComposantC from "./ComponentsCGVRoot/CGVComposantC/CGVComposantC";
 
 function CGVRoot() {
     return (
@@ -16,6 +17,9 @@ function CGVRoot() {
 
             {/* Container 2 : Dispositions spécifiques aux particuliers */}
             <CGVComposantB />
+
+            {/* Container 3 : Dispositions spécifiques aux entreprises */}
+            <CGVComposantC />
         </section>
     );
 }
