@@ -2,12 +2,12 @@ import style from './LifeStylePC.module.css';
 import LifeStyleRootComposantA from '../ComponentsLifeStyleRoot/LifeStyleRootComposantA/LifeStyleRootComposantA';
 import LifeStyleRootComposantB from '../ComponentsLifeStyleRoot/LifeStyleRootComposantB/LifeStyleRootComposantB';
 import LifeStyleRootComposantC from '../ComponentsLifeStyleRoot/LifeStyleRootComposantC/LifeStyleRootComposantC';
-import ContainerImgLifeStyleRoot from '../ComponentsLifeStyleRoot/ContainerImgLifeStyleRoot/ContainerImgLifeStyleRoot';
 import LifeStyleRootComposantD from '../ComponentsLifeStyleRoot/LifeStyleRootComposantD/LifeStyleRootComposantD';
 import LifeStyleRootComposantE from '../ComponentsLifeStyleRoot/LifeStyleRootComposantE/LifeStyleRootComposantE';
 import LifeStyleRootComposantF from '../ComponentsLifeStyleRoot/LifeStyleRootComposantF/LifeStyleRootComposantF';
 import LifeStyleRootComposantG from '../ComponentsLifeStyleRoot/LifeStyleRootComposantG/LifeStyleRootComposantG';
 import LifeStyleRootComposantH from '../ComponentsLifeStyleRoot/LifeStyleRootComposantH/LifeStyleRootComposantH';
+import Container3ImagesRoot from '../../ContainerImageRoot/Container3ImagesRoot/Container3ImagesRoot';
 
 /* Import des images */
 import img1 from "../../../assets/Images/ImageLifeStyle/Life_style_exterieur_domicile.jpg";
@@ -51,7 +51,7 @@ function LifeStylePC() {
             <LifeStyleRootComposantC />
 
             {/* Container 4 : Container image portrait solo */}
-            <ContainerImgLifeStyleRoot 
+            <Container3ImagesRoot 
             img1={DataImage.img1}
             MetaNameImg1={DataImage.MetaNameImg1}
             img2={DataImage.img2}
@@ -64,7 +64,7 @@ function LifeStylePC() {
             <LifeStyleRootComposantD />
 
             {/* Container 6 : Container image portrait couple */}
-            <ContainerImgLifeStyleRoot 
+            <Container3ImagesRoot
             img1={DataImage.img4}
             MetaNameImg1={DataImage.MetaNameImg4}
             img2={DataImage.img5}

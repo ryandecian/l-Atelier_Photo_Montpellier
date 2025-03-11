@@ -1,25 +1,23 @@
-import style from "./ContainerImgHomeRoot.module.css";
-import PremiumCardImgSudoRoot from "../../../../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
+import style from "./Container3ImagesRoot.module.css";
+import PremiumCardImgSudoRoot from "../../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
 
-interface ContainerImgHomeRootType {
+interface Container3ImagesRootType {
     img1: string;
     img2: string;
     img3: string;
-    img4: string;
 
     MetaNameImg1: string;
     MetaNameImg2: string;
     MetaNameImg3: string;
-    MetaNameImg4: string;
 }
 
-function ContainerImgHomeRoot(Props: ContainerImgHomeRootType) {
-    const {img1, img2, img3, img4, 
-        MetaNameImg1, MetaNameImg2, MetaNameImg3, MetaNameImg4
+function Container3ImagesRoot(Props: Container3ImagesRootType) {
+    const {img1, img2, img3, 
+        MetaNameImg1, MetaNameImg2, MetaNameImg3, 
     } = Props;
 
     return (
-        <div className={style.ContainerImgHomeRoot}>
+        <div className={style.Container3ImagesRoot}>
             <div className={style.ContainerImg}>
                 <PremiumCardImgSudoRoot
                 src={img1}
@@ -41,15 +39,8 @@ function ContainerImgHomeRoot(Props: ContainerImgHomeRootType) {
                 className={style.Image}
                 />
             </div>
-            <div className={style.ContainerImg}>
-                <PremiumCardImgSudoRoot
-                src={img4}
-                alt={MetaNameImg4}
-                className={style.Image}
-                />
-            </div>
         </div>
     );
 }
 
-export default ContainerImgHomeRoot;
+export default Container3ImagesRoot;
