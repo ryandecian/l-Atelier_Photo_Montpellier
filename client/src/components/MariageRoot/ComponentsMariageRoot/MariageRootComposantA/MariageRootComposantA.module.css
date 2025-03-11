@@ -1,18 +1,8 @@
 .MariageRootComposantA {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-}
-
-.ContainerTitle {
-    display: flex;
-    justify-content: start;
-    align-items: center;
     width: 100%;
     margin: 0px;
     padding: 0px;
