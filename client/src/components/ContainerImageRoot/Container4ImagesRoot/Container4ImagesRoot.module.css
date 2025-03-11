@@ -1,8 +1,9 @@
-.ContainerImgHomeRoot {
+.Container4ImagesRoot {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     width: calc(100vw - 48px);
+    max-width: 1400px;
     margin: auto;
 }
 @media (max-width: 800.02px) {
