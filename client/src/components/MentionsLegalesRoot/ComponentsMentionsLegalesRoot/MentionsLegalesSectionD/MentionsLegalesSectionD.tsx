@@ -3,7 +3,7 @@ import { LinkExt } from "../../../../router/router";
 
 function MentionsLegalesSectionD() {
     return (
-        <section className={style.MentionsLegalesSectionD}>
+        <article className={style.MentionsLegalesSectionD}>
             <h2 className={style.Title}>
                 4 – CNIL et gestion des données personnelles
             </h2>
@@ -42,7 +42,7 @@ function MentionsLegalesSectionD() {
                     {"https://latelierphotomontpellier.fr"}
                 </span>
             </p>
-        </section>
+        </article>
     );
 }
 

@@ -1,7 +1,7 @@
 import style from "./CGVPage.module.css";
 import { Helmet } from "react-helmet-async";
 import NavRoot from "../../components/NavRoot/NavRoot";
-import Error404Root from "../../components/Error404Root/Error404Root";
+import CGVRoot from "../../components/CGVRoot/CGVRoot";
 import FooterRoot from "../../components/FooterRoot/FooterRoot";
 
 function CGVPage() {
@@ -80,7 +80,7 @@ function CGVPage() {
                  <NavRoot />
             </header>
             <main className={style.Main}>
-                <Error404Root />
+                <CGVRoot />
             </main>
             <footer className={style.Footer}>
                 <FooterRoot />
