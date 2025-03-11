@@ -1,13 +1,13 @@
-.ContainerImgHomeRoot {
+.Container3ImagesRoot {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     width: calc(100vw - 48px);
-    width: 1400px;
+    max-width: 1400px;
     margin: auto;
 }
 @media (max-width: 800.02px) {
-    .ContainerImgHomeRoot {
+    .ContainerImgLifeStyleRoot {
         grid-template-columns: repeat(2, 1fr);
     }
 }
