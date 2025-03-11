@@ -45,6 +45,14 @@ function MariagePC() {
 
             {/* Composant A : Le Style "Reportage" : Capturer l'Authenticité de Votre Mariage */}
             <MariageRootComposantA />
+
+            {/* Container Images 1 */}
+
+            {/* Container Images 2 */}
+
+            {/* Container Images 3 */}
+
+            {/* Composant B */}
         </section>
     );
 }
