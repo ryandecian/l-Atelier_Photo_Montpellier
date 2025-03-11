@@ -104,27 +104,100 @@ function CGVComposantC() {
                     </li>
                 </ul>
 
-                <h4 className={style.TitleH4}></h4>
-                <p className={style.Text}></p>
-                <p className={style.Text}></p>
+                <h4 className={style.TitleH4}>
+                    8.5. Conditions spécifiques et limitations
+                </h4>
+                <p className={style.Text}>
+                    Interdiction de revente : Les images ne peuvent en aucun cas être revendues, transférées, cédées ou 
+                    sous-licenciées à des tiers sans l’accord écrit du photographe.
+                </p>
+                <p className={style.Text}>
+                    Le tarif applicable est précisé dans le devis. Toute extension de droits fera l’objet d’une 
+                    facturation complémentaire.
+                </p>
 
-                <h4 className={style.TitleH4}></h4>
-                <p className={style.Text}></p>
+                <h4 className={style.TitleH4}>
+                    8.6. Sanctions en cas de non-respect
+                </h4>
+                <p className={style.Text}>
+                    En cas d’utilisation non conforme aux présentes conditions (dépassement de durée, supports non 
+                    autorisés, diffusion supérieure au plafond défini, revente illégale, etc.), le client s’expose à :
+                </p>
                 <ul className={style.ContainerList}>
-                    <li className={style.ElementLi}></li>
-                    <li className={style.ElementLi}></li>
-                    <li className={style.ElementLi}></li>
+                    <li className={style.ElementLi}>
+                        Une facturation rétroactive des droits non réglés.
+                    </li>
+                    <li className={style.ElementLi}>
+                        Une interdiction immédiate d’exploitation des images.
+                    </li>
+                    <li className={style.ElementLi}>
+                        Des poursuites judiciaires pour contrefaçon (article L.335-2 du Code de la propriété intellectuelle).
+                    </li>
                 </ul>
-                <h4 className={style.TitleH4}></h4>
-                <p className={style.Text}></p>
+                <h4 className={style.TitleH4}>
+                    8.7. Fin de la cession des droits
+                </h4>
+                <p className={style.Text}>
+                    À l’expiration de la période de 3 ans, le client devra cesser toute diffusion des images sur les 
+                    supports concernés, sauf renouvellement des droits via un nouvel accord contractuel.
+                </p>
             </article>
 
+            <div className={style.Separator30}/>
+
+            {/* Container 9 : Responsabilité du photographe */} 
             <article className={style.ContainerArticle}>
-                <h3 className={style.TitleH3}></h3>
-                <p className={style.Text}></p>
-                <h4 className={style.TitleH4}></h4>
+                <h3 className={style.TitleH3}>
+                    Article 9 – Responsabilité du photographe
+                </h3>
                 <ul className={style.ContainerList}>
-                    <li className={style.ElementLi}></li>
+                    <li className={style.ElementLi}>
+                        Le photographe met tout en œuvre pour assurer la meilleure qualité de service, mais ne peut être 
+                        tenu responsable des imprévus techniques indépendants de sa volonté (panne de matériel, conditions 
+                        météorologiques extrêmes, etc.).
+                    </li>
+                    <li className={style.ElementLi}>
+                        En cas de force majeure empêchant l’exécution de la prestation (maladie, accident), le photographe 
+                        proposera une reprogrammation ou un remboursement des sommes versées.
+                    </li>
+                </ul>
+            </article>
+
+            <div className={style.Separator30}/>
+
+            {/* Container 10 : Propriété intellectuelle et confidentialité */}
+            <article className={style.ContainerArticle}>
+                <h3 className={style.TitleH3}>
+                    Article 10 – Propriété intellectuelle et confidentialité 
+                </h3>
+                <ul className={style.ContainerList}>
+                    <li className={style.ElementLi}>
+                        Le photographe reste propriétaire des fichiers bruts (RAW), qui ne sont jamais livrés au client.
+                    </li>
+                    <li className={style.ElementLi}>
+                        Pour les prestations en entreprise, les informations confidentielles échangées durant la 
+                        mission sont protégées et ne peuvent être divulguées à des tiers.
+                    </li>
+                </ul>
+            </article>
+
+            <div className={style.Separator30}/>
+
+            {/* Container 11 : Loi applicable et règlement des litiges */}
+            <article className={style.ContainerArticle}>
+                <h3 className={style.TitleH3}>
+                    Article 11 – Loi applicable et règlement des litiges
+                </h3>
+                <ul className={style.ContainerList}>
+                    <li className={style.ElementLi}>
+                        Les présentes CGV sont soumises à la législation française.
+                    </li>
+                    <li className={style.ElementLi}>
+                        En cas de litige, les parties s’engagent à rechercher une solution amiable avant toute action judiciaire.
+                    </li>
+                    <li className={style.ElementLi}>
+                        À défaut d’accord, le litige sera porté devant le tribunal compétent du lieu d’exercice du photographe.
+                    </li>
                 </ul>
             </article>
 
