@@ -1,5 +1,7 @@
 import style from "./MariageMobile.module.css";
 import MariageRootComposantA from "../ComponentsMariageRoot/MariageRootComposantA/MariageRootComposantA";
+import MariageRootComposantB from "../ComponentsMariageRoot/MariageRootComposantB/MariageRootComposantB";
+import MariageRootComposantC from "../ComponentsMariageRoot/MariageRootComposantC/MariageRootComposantC";
 
 function MariageMobile() {
     return (
@@ -53,6 +55,14 @@ function MariageMobile() {
             {/* Container Images 3 */}
 
             {/* Composant B : Une Implication Préalable : Comprendre Votre Vision */}
+            <MariageRootComposantB />
+
+            {/* Composant C : Le Repérage des Lieux : Une Préparation Essentielle */}
+            <MariageRootComposantC />
+
+            {/* Composant D : */}
+            {/* Composant E : */}
+            {/* Composant F : */}
         </section>
     );
 }
