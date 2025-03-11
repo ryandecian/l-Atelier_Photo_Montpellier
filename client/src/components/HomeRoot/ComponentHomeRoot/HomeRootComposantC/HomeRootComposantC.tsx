@@ -1,5 +1,5 @@
 import style from "./HomeRootComposantC.module.css"
-import ContainerImgHomeRoot from "../ComposantHomeRoot/ContainerImgHomeRoot/ContainerImgHomeRoot";
+import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../../router/router";
 
@@ -28,7 +28,7 @@ function HomeRootComposantC() {
                 </h2>
             </header>
 
-            <ContainerImgHomeRoot
+            <Container4ImagesRoot
                 img1={data.img5}
                 MetaNameImg1={data.MetaNameimg5}
                 img2={data.img6}
