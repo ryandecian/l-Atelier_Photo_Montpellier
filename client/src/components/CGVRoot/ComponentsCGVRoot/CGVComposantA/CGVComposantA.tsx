@@ -7,23 +7,30 @@ function CGVComposantA() {
                     Partie 1 - Dispositions communes aux particuliers et entreprises
                 </h2>
 
+                <div className={style.Separator30}/>
+
                 {/* Container 1 : Objet */}
                 <article className={style.ContainerArticle}>
                     <h3 className={style.TitleH3}>
                         Article 1 - Objet
                     </h3>
-                    
+                    <div className={style.Separator20}/>
+
                     <p className={style.Text}>
                         Les présentes Conditions Générales de Vente (CGV) ont pour objet de définir les droits et 
                         obligations des parties dans le cadre de la prestation de services photographiques fournie 
                         par L’Atelier Photo Montpellier, représenté par la Parenthèse Photo Anne SAUNIER 13 Allée des 
                         Platanes 34790 GRABELS immatriculé sous le numéro SIRET 802 558 825 
                     </p>
+                    <div className={style.Separator20}/>
+
                     <p className={style.Text}>
                         Toute commande implique l’adhésion sans réserve du client aux présentes CGV, sauf conditions 
                         particulières convenues par écrit entre les parties.  
                     </p>
                 </article>
+
+                <div className={style.Separator30}/>
 
                 {/* Container 2 : Prestations proposées */}
                 <article className={style.ContainerArticle}>
@@ -62,11 +69,11 @@ function CGVComposantA() {
                         du tarif en vigueur au moment de la réservation. 
                     </p>
 
-                    <h4 className={style.TitleH4SP}>
+                    <h4 className={style.TitleH4}>
                         3.2. Modalités de paiement :
                     </h4>
 
-                    <ul className={style.ContainerListSP}>
+                    <ul className={style.ContainerList}>
                         <li className={style.ElementLi}>
                             Un acompte de 30% du montant total est demandé à la signature du devis ou à la réservation de 
                             la séance, sauf mention contraire.  
@@ -101,7 +108,7 @@ function CGVComposantA() {
                         4.1. Pour les particuliers :  
                     </h4>
                     
-                    <ul className={style.ContainerListSP}>
+                    <ul className={style.ContainerList}>
                         <li className={style.ElementLi}>
                             Conformément à l’article L.221-18 du Code de la consommation, le client dispose d’un délai 
                             de 14 jours pour se rétracter après signature du contrat, sauf si la prestation a déjà été 
@@ -112,11 +119,11 @@ function CGVComposantA() {
                         </li>
                     </ul>
 
-                    <h4 className={style.TitleH4SP}>
+                    <h4 className={style.TitleH4}>
                         4.2. Pour les entreprises : 
                     </h4>
 
-                    <ul className={style.ContainerListSP}>
+                    <ul className={style.ContainerList}>
                         <li className={style.ElementLi}>
                             Toute annulation après signature du devis entraîne la facturation de l’acompte versé.
                         </li>

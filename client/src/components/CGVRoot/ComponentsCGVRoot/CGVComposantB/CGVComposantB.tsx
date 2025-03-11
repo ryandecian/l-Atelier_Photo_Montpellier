@@ -7,16 +7,29 @@ function CGVComposantB() {
                     Partie 2 - Dispositions spécifiques aux particuliers
                 </h2>
 
+                <div className={style.Separator}/>
+
                 {/* Container 5 : Objet */}
                 <article className={style.ContainerArticle}>
-                    <h3 className={style.TitleH3}>
+                    <h3 className={style.TitleH3SP}>
                         Article 5 – Déroulement de la séance et obligations du client
                     </h3>
-
+                    <div className={style.Separator}/>
                     <ul className={style.ContainerList}>
-                        <li className={style.ElementLi}></li>
-                        <li className={style.ElementLi}></li>
+                        <li className={style.ElementLi}>
+                            Le client s’engage à être à l’heure au rendez-vous fixé pour la séance photo. Tout retard 
+                            sera imputé sur le temps de séance réservé.
+                        </li>
+                        <li className={style.ElementLi}>
+                            Pour les séances en extérieur, le photographe ne pourra être tenu responsable des 
+                            conditions météorologiques défavorables. Une reprogrammation peut être envisagée selon 
+                            disponibilités.
+                        </li>
                     </ul>
+                    
+                    <h3 className={style.TitleH3}>
+                        Article 6 – Livraison des photographies
+                    </h3>
                 </article>
                 
                 <article className={style.ContainerArticle}>
@@ -29,6 +42,7 @@ function CGVComposantB() {
                 </article>
 
                 <article className={style.ContainerArticle}></article>
+                <div className={style.Separator}/>
                 <article className={style.ContainerArticle}></article>
         </section>
     );
