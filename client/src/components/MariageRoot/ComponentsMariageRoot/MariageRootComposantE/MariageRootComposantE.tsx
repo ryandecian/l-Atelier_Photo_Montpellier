@@ -1,10 +1,10 @@
-import style from "./MariageRootComposantD.module.css";
+import style from "./MariageRootComposantE.module.css";
 
-function MariageRootComposantD() {
+function MariageRootComposantE() {
     return (
-        <article className={style.MariageRootComposantD}>
+        <article className={style.MariageRootComposantE}>
             <h2 className={style.Title}>
-                Respect des Attentes : Un Mariage Qui Vous Ressemble
+                Une Expérience Sereine et Détendue
             </h2>
 
             <p className={style.Text}>
@@ -52,4 +52,4 @@ function MariageRootComposantD() {
     );
 }
 
-export default MariageRootComposantD;
+export default MariageRootComposantE;
