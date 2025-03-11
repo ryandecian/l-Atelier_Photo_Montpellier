@@ -61,6 +61,7 @@ function MariagePC() {
             <MariageRootComposantC />
 
             {/* Composant D : */}
+            {/* Container Images 4 */}
             {/* Composant E : */}
             {/* Composant F : */}
 

@@ -8,31 +8,21 @@ function MariageRootComposantC() {
             </h2>
 
             <p className={style.Text}>
-                Un mariage est un moment qui vous est cher, et c’est pourquoi je m’investis pleinement avant le 
-                grand jour. Chaque couple a ses propres attentes, ses propres envies, et ses propres goûts. {" "}
+                Un autre aspect fondamental de mon approche est le {" "}
                 <span className={style.SpanBold}>
-                    {"Une discussion approfondie."}
+                    {"repérage préalable des lieux."}
                 </span> 
-                {" "} en amont de la journée est donc essentielle. Je prends le temps d’apprendre à vous connaître, 
-                de comprendre vos préférences et ce que vous attendez des photos de votre mariage.
-            </p>
-            <p className={style.Text}>
-                Nous discuterons ensemble de vos envies concernant le style de photos que vous souhaitez. 
-                    Voulez-vous un {" "}
+                {" "} Si nécessaire, je me rends sur les lieux de votre mariage avant le jour J afin de repérer les 
+                meilleures zones pour les photos, observer la lumière naturelle et évaluer les angles les plus favorables. 
+                Ce repérage me permet également de mieux comprendre l’agencement des lieux et de {" "}
                 <span className={style.SpanBold}>
-                    {"style simple et naturel,"}
+                    {"prévoir les meilleurs moments"}
                 </span> 
-                {" "} proche du documentaire ? Ou un {" "}
+                {" "} pour capturer des images naturelles, tout en respectant vos envies. Vous pourrez ainsi 
                 <span className={style.SpanBold}>
-                    {"style plus sophistiqué"}
+                    {"vous concentrer sur l’essentiel : vivre pleinement votre journée,"}
                 </span> 
-                {" "} et travaillé, avec des photos plus posées et scénarisées ? Peut-être êtes-vous un couple 
-                influencé par les {" "}
-                <span className={style.SpanBold}>
-                    {"tendances Instagram"}
-                </span> 
-                {" "} et préférez-vous des images plus modernes et stylisées ? Quelle que soit votre vision, 
-                je serai à l’écoute de vos attentes pour réaliser des photos qui vous ressemblent.
+                {" "} pendant que je m’assure de capturer chaque instant clé dans le respect de l’ambiance.
             </p>          
         </article>
     );
