@@ -1,5 +1,5 @@
 import style from "./HomeRootComposantB.module.css"
-import ContainerImgHomeRoot from "../ComposantHomeRoot/ContainerImgHomeRoot/ContainerImgHomeRoot";
+import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../../router/router";
 
@@ -28,7 +28,7 @@ function HomeRootComposantB() {
                 </h2>
             </header>
 
-            <ContainerImgHomeRoot
+            <Container4ImagesRoot
                 img1={data1.img1}
                 MetaNameImg1={data1.MetaNameImg1}
                 img2={data1.img2}
