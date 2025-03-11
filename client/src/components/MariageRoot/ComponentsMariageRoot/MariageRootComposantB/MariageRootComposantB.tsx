@@ -1,41 +1,41 @@
-import style from "./MariageRootComposantA.module.css";
+import style from "./MariageRootComposantB.module.css";
 
-function MariageRootComposantA() {
+function MariageRootComposantB() {
     return (
-        <section className={style.MariageRootComposantA}>
+        <section className={style.MariageRootComposantB}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.Title}>
-                    Le Style "Reportage" : Capturer l'Authenticité de Votre Mariage
+                    Une Implication Préalable : Comprendre Votre Vision
                 </h2>
             </header>
 
             <article className={style.ContainerText}>
                 <p className={style.Text}>
-                    Loin des photos posées et figées, je privilégie un style de {" "}
+                    Un mariage est un moment qui vous est cher, et c’est pourquoi je m’investis pleinement avant le 
+                    grand jour. Chaque couple a ses propres attentes, ses propres envies, et ses propres goûts. {" "}
                     <span className={style.SpanBold}>
-                        {"reportage photographique"}
+                        {"Une discussion approfondie."}
                     </span> 
-                    {" "} qui met l'accent sur {" "}
-                    <span className={style.SpanBold}>
-                        {"l'instantanéité"}
-                    </span>
-                    {" "} et {" "}
-                    <span className={style.SpanBold}>
-                        {"l'authenticité."}
-                    </span> 
-                    {" "} Mon rôle est de vous accompagner tout au long de votre journée sans perturber le fil naturel 
-                    des événements. J’agis en toute discrétion, en capturant les moments tels qu’ils se produisent : 
-                    un regard échangé, une main tendue, un éclat de rire ou une larme discrète.
+                    {" "} en amont de la journée est donc essentielle. Je prends le temps d’apprendre à vous connaître, 
+                    de comprendre vos préférences et ce que vous attendez des photos de votre mariage.
                 </p>
                 <p className={style.Text}>
-                    L’idée n’est pas seulement de réaliser des clichés, mais de 
-                    {" "} Votre histoire. 
+                    Nous discuterons ensemble de vos envies concernant le style de photos que vous souhaitez. 
+                    Voulez-vous un {" "}
                     <span className={style.SpanBold}>
-                        {"raconter une histoire."}
+                        {"style simple et naturel,"}
                     </span> 
-                    {" "} Celle de votre journée exceptionnelle, remplie de moments fugaces mais d’une immense signification. 
-                    Vous pourrez revivre ces instants chaque fois que vous regarderez les photos, avec la même émotion que 
-                    lors du mariage.
+                    {" "} proche du documentaire ? Ou un {" "}
+                    <span className={style.SpanBold}>
+                        {"style plus sophistiqué"}
+                    </span> 
+                    {" "} et travaillé, avec des photos plus posées et scénarisées ? Peut-être êtes-vous un couple 
+                    influencé par les {" "}
+                    <span className={style.SpanBold}>
+                        {"tendances Instagram"}
+                    </span> 
+                    {" "} et préférez-vous des images plus modernes et stylisées ? Quelle que soit votre vision, 
+                    je serai à l’écoute de vos attentes pour réaliser des photos qui vous ressemblent.
                 </p>
             </article>
             
@@ -43,4 +43,4 @@ function MariageRootComposantA() {
     );
 }
 
-export default MariageRootComposantA;
+export default MariageRootComposantB;

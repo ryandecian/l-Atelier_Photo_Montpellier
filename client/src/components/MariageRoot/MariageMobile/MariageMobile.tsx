@@ -52,7 +52,7 @@ function MariageMobile() {
 
             {/* Container Images 3 */}
 
-            {/* Composant B */}
+            {/* Composant B : Une Implication Préalable : Comprendre Votre Vision */}
         </section>
     );
 }
