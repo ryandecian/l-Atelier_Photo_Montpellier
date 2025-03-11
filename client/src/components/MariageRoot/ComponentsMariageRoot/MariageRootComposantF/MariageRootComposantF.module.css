@@ -35,3 +35,18 @@
     padding: 0px 0px 0px 0px;
     color: var(--ColorBlack);
 }
+
+.SpanLink > a {
+    display: inline-block;
+    text-decoration: underline;
+    font-size: var(--p);
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: var(--ColorLink);
+    transition: transform 0.2s ease-in-out; /* Effet fluide */
+}
+
+.SpanLink > a:hover {
+    transform: scale(1.01); /* Grossissement de 10% */
+}

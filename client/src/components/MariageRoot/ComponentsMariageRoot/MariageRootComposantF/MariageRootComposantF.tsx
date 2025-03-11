@@ -1,5 +1,5 @@
 import style from "./MariageRootComposantF.module.css";
-
+import ListDataRouter from "../../../../router/router";
 function MariageRootComposantF() {
     return (
         <article className={style.MariageRootComposantF}>
@@ -8,36 +8,58 @@ function MariageRootComposantF() {
             </h2>
 
             <p className={style.Text}>
-                Le mariage est souvent une journée pleine de {" "}
+                Mon engagement en tant que photographe de mariage est de vous offrir bien plus que des photos : 
+                je souhaite vous offrir une {" "}
                 <span className={style.SpanBold}>
-                    {"stress"}
+                    {"expérience complète,"}
                 </span>
-                {" "} et d’émotions. C’est pourquoi, pendant toute la séance photo, je vous aide à rester {" "}
+                {" "} où chaque image devient un {" "}
                 <span className={style.SpanBold}>
-                    {"détendus"}
+                    {"souvenir vivant"}
                 </span>
-                {" "} et à vous sentir {" "}
+                {" "} de votre journée. Grâce à une {" "}
                 <span className={style.SpanBold}>
-                    {"à l’aise"}
+                    {"expérience complète,"}
                 </span>
-                {" "} devant l’objectif. Que vous soyez nerveux à l’idée d’être sous les projecteurs ou que vous 
-                ne sachiez pas comment vous comporter devant un appareil photo, je serai là pour vous guider avec 
-                des conseils simples sur la posture, l’expression et les moments à capturer.
+                {" "} une {" "}
+                <span className={style.SpanBold}>
+                    {"implication sincère"}
+                </span>
+                {" "} et une écoute attentive de vos attentes, je m’assure que votre mariage soit non 
+                seulement magnifiquement documenté mais qu’il soit aussi un {" "}
+                <span className={style.SpanBold}>
+                    {"souvenir authentique"}
+                </span>
+                {" "} que vous chérirez toute votre vie.
             </p>
             <p className={style.Text}>
-                L'idée n'est pas de vous imposer des poses mais plutôt de vous aider à {" "}
+                Que vous soyez en quête de photos naturelles et spontanées ou de portraits plus posés et sophistiqués, 
+                je suis là pour faire en sorte que votre {" "}
                 <span className={style.SpanBold}>
-                    {"être vous-même."}
+                    {"vision du mariage"}
                 </span>
-                {" "} Une bonne photo de mariage réside souvent dans la {" "}
+                {" "} se reflète dans chaque image. Votre journée, votre style, vos moments, capturés avec 
                 <span className={style.SpanBold}>
-                    {"sincérité du moment"}
+                    {"authenticité et passion."}
                 </span>
-                {" "} et dans la {" "}
+            </p>          
+            <p className={style.Text}>
+                Si vous êtes prêts à faire de votre mariage un événement inoubliable, 
+                <span className={style.SpanLink}>
+                    <a href={ListDataRouter[2].path} target="_blank" rel="noopener noreferrer">
+                        {"contactez-moi"}
+                    </a>
+                </span>
+                {" "} pour commencer à discuter de ce que vous attendez de vos 
                 <span className={style.SpanBold}>
-                    {"simplicité des gestes,"}
+                    {"souvenirs photographiques."}
                 </span>
-                {" "} et je serai là pour m’assurer que tout se déroule dans la plus grande fluidité.
+                {" "} Pour connaître mes prestations tarifaires, rendez-vous sur ma {" "}
+                <span className={style.SpanLink}>
+                    <a href={ListDataRouter[2].path} target="_blank" rel="noopener noreferrer">
+                        {"page tarif."}
+                    </a>
+                </span>
             </p>          
         </article>
     );
