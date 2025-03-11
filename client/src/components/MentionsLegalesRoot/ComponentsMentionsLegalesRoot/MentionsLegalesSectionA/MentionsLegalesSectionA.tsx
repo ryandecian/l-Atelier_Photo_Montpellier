@@ -3,7 +3,7 @@ import { LinkExt } from "../../../../router/router";
 
 function MentionsLegalesSectionA() {
     return (
-        <section className={style.MentionsLegalesSectionA}>
+        <article className={style.MentionsLegalesSectionA}>
             <h2 className={style.Title}>
                 1 – Édition du site
             </h2>
@@ -97,7 +97,7 @@ function MentionsLegalesSectionA() {
                     {" Autres contributeurs :"}
                 </span>
             </p>
-        </section>
+        </article>
     );
 }
 

@@ -2,7 +2,7 @@ import style from "./MentionsLegalesSectionC.module.css";
 
 function MentionsLegalesSectionC() {
     return (
-        <section className={style.MentionsLegalesSectionC}>
+        <article className={style.MentionsLegalesSectionC}>
             <h2 className={style.Title}>
                 3 – Limitations de responsabilité
             </h2>
@@ -46,7 +46,7 @@ function MentionsLegalesSectionC() {
                 la responsabilité civile et/ou pénale de l’utilisateur, notamment en cas de message à caractère raciste, 
                 injurieux, diffamant, ou pornographique, quel que soit le support utilisé (texte, photographie …).
             </p>
-        </section>
+        </article>
     );
 }
 
