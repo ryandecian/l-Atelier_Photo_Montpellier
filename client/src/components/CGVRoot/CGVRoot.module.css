@@ -1,0 +1,47 @@
+.CGVRoot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.ContainerTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.Title {
+    font-size: calc(var(--h1) + 2px); /* h1 => h1 + 2px uniquement a cause de la police Saira */
+    color: var(--ColorBlack);
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-title);
+    font-style: var(--font-style-title);
+    text-align: center;
+    margin: 20px 24px 20px 24px;
+    padding: 0px;
+    border: 0px;
+    width: 100%;
+}
+
+.ContainerText {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Text {
+    font-size: var(--h4);
+    margin: 0px 24px 0px 24px;
+    padding: 0px 0px 20px 0px;
+}
