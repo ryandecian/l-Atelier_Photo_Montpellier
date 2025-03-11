@@ -2,6 +2,7 @@ import style from "./MariagePC.module.css";
 import MariageRootComposantA from "../ComponentsMariageRoot/MariageRootComposantA/MariageRootComposantA";
 import MariageRootComposantB from "../ComponentsMariageRoot/MariageRootComposantB/MariageRootComposantB";
 import MariageRootComposantC from "../ComponentsMariageRoot/MariageRootComposantC/MariageRootComposantC";
+import MariageRootComposantD from "../ComponentsMariageRoot/MariageRootComposantD/MariageRootComposantD";
 
 function MariagePC() {
     return (
@@ -60,7 +61,9 @@ function MariagePC() {
             {/* Composant C : Le Repérage des Lieux : Une Préparation Essentielle */}
             <MariageRootComposantC />
 
-            {/* Composant D : */}
+            {/* Composant D : Respect des Attentes : Un Mariage Qui Vous Ressemble */}
+            <MariageRootComposantD />
+
             {/* Container Images 4 */}
             {/* Composant E : */}
             {/* Composant F : */}
