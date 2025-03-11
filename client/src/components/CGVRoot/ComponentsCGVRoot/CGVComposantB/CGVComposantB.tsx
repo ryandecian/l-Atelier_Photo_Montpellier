@@ -10,7 +10,7 @@ function CGVComposantB() {
 
             <div className={style.Separator30}/>
 
-            {/* Container 5 : Objet */}
+            {/* Container 5 : Déroulement de la séance et obligations du client */}
             <article className={style.ContainerArticle}>
                 <h3 className={style.TitleH3}>
                     Article 5 – Déroulement de la séance et obligations du client
@@ -46,7 +46,8 @@ function CGVComposantB() {
             </article>
 
             <div className={style.Separator30}/>
-                
+            
+            {/* Container 6 : Droits d’utilisation et diffusion des images */}
             <article className={style.ContainerArticle}>
                 <h3 className={style.TitleH3}>
                     Article 7 – Droits d’utilisation et diffusion des images
