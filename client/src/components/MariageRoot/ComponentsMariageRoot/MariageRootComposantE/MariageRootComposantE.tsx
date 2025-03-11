@@ -31,18 +31,22 @@ function MariageRootComposantD() {
                 </span>
             </p>
             <p className={style.Text}>
-                Certains couples préfèrent des clichés {" "}
+                Nous discuterons ensemble de vos envies concernant le style de photos que vous souhaitez. 
+                    Voulez-vous un {" "}
                 <span className={style.SpanBold}>
-                    {"très naturels"}
-                </span>
-                {" "} avec un minimum d’intervention, tandis que d’autres souhaitent des photos plus 
-                {" "} avec des mises en scène plus soignées. Je m’adapte à votre demande et vous accompagne dans le 
-                choix du style qui vous correspond le mieux, tout en veillant à ce que chaque photo conserve son 
-                authenticité. Mon objectif est d’être votre {" "}
+                    {"style simple et naturel,"}
+                </span> 
+                {" "} proche du documentaire ? Ou un {" "}
                 <span className={style.SpanBold}>
-                    {"partenaire photographique,"}
-                </span>
-                {" "} celui qui capte chaque sourire, chaque regard, chaque moment avec fidélité.
+                    {"style plus sophistiqué"}
+                </span> 
+                {" "} et travaillé, avec des photos plus posées et scénarisées ? Peut-être êtes-vous un couple 
+                influencé par les {" "}
+                <span className={style.SpanBold}>
+                    {"tendances Instagram"}
+                </span> 
+                {" "} et préférez-vous des images plus modernes et stylisées ? Quelle que soit votre vision, 
+                je serai à l’écoute de vos attentes pour réaliser des photos qui vous ressemblent.
             </p>          
         </article>
     );
