@@ -1,5 +1,6 @@
 import style from "./HomeRootComposantD.module.css"
-import AvisClient from "../ComposantHomeRoot/ContainerAvisHomeRoot/AvisClient";
+import GeneratorCardAvisClient from "../../../GeneratorCardAvisClient/GeneratorCardAvisClient";
+import ControllerDataAvisClientHome from "../../ControllerDataAvisClientHome";
 
 function HomeRootComposantD() {
     return (
@@ -10,7 +11,7 @@ function HomeRootComposantD() {
                 </h2>
             </header>
 
-            <AvisClient />
+            <GeneratorCardAvisClient avisClients={ControllerDataAvisClientHome}/>
         </section>
     );
 }

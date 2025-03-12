@@ -4,6 +4,9 @@ import MariageRootComposantB from "../ComponentsMariageRoot/MariageRootComposant
 import MariageRootComposantC from "../ComponentsMariageRoot/MariageRootComposantC/MariageRootComposantC";
 import MariageRootComposantD from "../ComponentsMariageRoot/MariageRootComposantD/MariageRootComposantD";
 import MariageRootComposantE from "../ComponentsMariageRoot/MariageRootComposantE/MariageRootComposantE";
+import MariageRootComposantF from "../ComponentsMariageRoot/MariageRootComposantF/MariageRootComposantF";
+import Container4ImagesRoot from "../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
+import ControllerDataImageMariage from "../ControllerDataImageMariage";
 
 function MariagePC() {
     return (
@@ -51,6 +54,16 @@ function MariagePC() {
             <MariageRootComposantA />
 
             {/* Container Images 1 */}
+            <Container4ImagesRoot
+            img1={ControllerDataImageMariage[0].src}
+            MetaNameImg1={ControllerDataImageMariage[0].alt}
+            img2={ControllerDataImageMariage[1].src}
+            MetaNameImg2={ControllerDataImageMariage[1].alt}
+            img3={ControllerDataImageMariage[2].src}
+            MetaNameImg3={ControllerDataImageMariage[2].alt}
+            img4={ControllerDataImageMariage[3].src}
+            MetaNameImg4={ControllerDataImageMariage[3].alt}
+            />
 
             {/* Container Images 2 */}
 
@@ -70,7 +83,8 @@ function MariagePC() {
             {/* Composant E : Une Expérience Sereine et Détendue */}
             <MariageRootComposantE />
 
-            {/* Composant F : */}
+            {/* Composant F Conclusion : Des Photos Qui Vous Rappellent un Moment Unique : */}
+            <MariageRootComposantF />
 
         </section>
     );
