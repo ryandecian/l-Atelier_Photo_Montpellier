@@ -67,23 +67,65 @@ function MariagePC() {
             MetaNameImg4={ControllerDataImageMariage[3].alt}
             />
 
-            {/* Container Images 2 */}
-
-            {/* Container Images 3 */}
-
             {/* Composant B : Une Implication Préalable : Comprendre Votre Vision */}
             <MariageRootComposantB />
 
+            {/* Container Images 2 */}
+            <Container4ImagesRoot
+            img1={ControllerDataImageMariage[0].src}
+            MetaNameImg1={ControllerDataImageMariage[0].alt}
+            img2={ControllerDataImageMariage[1].src}
+            MetaNameImg2={ControllerDataImageMariage[1].alt}
+            img3={ControllerDataImageMariage[2].src}
+            MetaNameImg3={ControllerDataImageMariage[2].alt}
+            img4={ControllerDataImageMariage[3].src}
+            MetaNameImg4={ControllerDataImageMariage[3].alt}
+            />
+
             {/* Composant C : Le Repérage des Lieux : Une Préparation Essentielle */}
             <MariageRootComposantC />
+            
+            {/* Container Images 3 */}
+            <Container4ImagesRoot
+            img1={ControllerDataImageMariage[0].src}
+            MetaNameImg1={ControllerDataImageMariage[0].alt}
+            img2={ControllerDataImageMariage[1].src}
+            MetaNameImg2={ControllerDataImageMariage[1].alt}
+            img3={ControllerDataImageMariage[2].src}
+            MetaNameImg3={ControllerDataImageMariage[2].alt}
+            img4={ControllerDataImageMariage[3].src}
+            MetaNameImg4={ControllerDataImageMariage[3].alt}
+            />
 
             {/* Composant D : Respect des Attentes : Un Mariage Qui Vous Ressemble */}
             <MariageRootComposantD />
-
+            
             {/* Container Images 4 */}
+            <Container4ImagesRoot
+            img1={ControllerDataImageMariage[0].src}
+            MetaNameImg1={ControllerDataImageMariage[0].alt}
+            img2={ControllerDataImageMariage[1].src}
+            MetaNameImg2={ControllerDataImageMariage[1].alt}
+            img3={ControllerDataImageMariage[2].src}
+            MetaNameImg3={ControllerDataImageMariage[2].alt}
+            img4={ControllerDataImageMariage[3].src}
+            MetaNameImg4={ControllerDataImageMariage[3].alt}
+            />
 
             {/* Composant E : Une Expérience Sereine et Détendue */}
             <MariageRootComposantE />
+            
+            {/* Container Images 5 */}
+            <Container4ImagesRoot
+            img1={ControllerDataImageMariage[0].src}
+            MetaNameImg1={ControllerDataImageMariage[0].alt}
+            img2={ControllerDataImageMariage[1].src}
+            MetaNameImg2={ControllerDataImageMariage[1].alt}
+            img3={ControllerDataImageMariage[2].src}
+            MetaNameImg3={ControllerDataImageMariage[2].alt}
+            img4={ControllerDataImageMariage[3].src}
+            MetaNameImg4={ControllerDataImageMariage[3].alt}
+            />
 
             {/* Composant F Conclusion : Des Photos Qui Vous Rappellent un Moment Unique : */}
             <MariageRootComposantF />
