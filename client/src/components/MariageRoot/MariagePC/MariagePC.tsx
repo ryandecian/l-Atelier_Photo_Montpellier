@@ -7,6 +7,8 @@ import MariageRootComposantE from "../ComponentsMariageRoot/MariageRootComposant
 import MariageRootComposantF from "../ComponentsMariageRoot/MariageRootComposantF/MariageRootComposantF";
 import Container4ImagesRoot from "../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ControllerDataImageMariage from "../ControllerDataImageMariage";
+import GeneratorCardAvisClient from "../../GeneratorCardAvisClient/GeneratorCardAvisClient";
+import ControllerDataAvisClientMariage from "../ControllerDataAvisClientMariage";
 
 function MariagePC() {
     return (
@@ -85,6 +87,9 @@ function MariagePC() {
 
             {/* Composant F Conclusion : Des Photos Qui Vous Rappellent un Moment Unique : */}
             <MariageRootComposantF />
+
+            {/* Avis Client : */}
+            <GeneratorCardAvisClient avisClients={ControllerDataAvisClientMariage} />
 
         </section>
     );
