@@ -1,5 +1,5 @@
 /* Conteneur principal */
-.AvisClient {
+.GeneratorCardAvisClient {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,10 +8,10 @@
     margin: 0px;
     padding: 0px;
     border: 0px;
-  }
+}
   
-  /* Titre principal */
-  .ContainerTitle {
+/* Titre principal */
+.ContainerTitle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,16 +19,16 @@
     padding: 0px;
     border: 0px;
     margin-bottom: 20px;
-  }
+}
   
-  .title {
+.title {
     font-size: 26px;
     font-weight: bold;
     color: #333;
-  }
+}
   
-  /* Liste des avis */
-  .ContainerAvis {
+/* Liste des avis */
+.ContainerAvis {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,10 +38,10 @@
     margin: 0px;
     padding: 0px;
     border: 0px;
-  }
+}
 
-  /* Carte d'un avis */
-  .CardAvisContainer {
+/* Carte d'un avis */
+.CardAvisContainer {
     display: flex;
     justify-content: center;
     align-items: start;
@@ -53,21 +53,21 @@
     margin: 20px;
     padding: 20px;
     transition: transform 0.3s ease-in-out;
-  }
-  .CardAvisContainer:hover {
+}
+.CardAvisContainer:hover {
     transform: translateY(-5px);
-  }
+}
   
-  /* Nom du client */
-  .nom {
+/* Nom du client */
+.nom {
     font-weight: bold;
     font-size: 16px;
     color: #222;
     margin-bottom: 8px;
-  }
+}
   
-  /* Conteneur de la note et de la date */
-  .starsContainer {
+/* Conteneur de la note et de la date */
+.starsContainer {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -75,33 +75,33 @@
     margin: 10px 0px 0px 0px;
     padding: 0px;
     border: 0px;
-  }
+}
   
-  /* Note étoilée */
-  .stars {
+/* Note étoilée */
+.stars {
     display: flex;
     font-size: var(--h3);
-  }
+}
   
-  /* Étoile pleine */
-  .starFilled {
+/* Étoile pleine */
+.starFilled {
     color: #FFD700;
-  }
+}
   
-  /* Étoile vide */
-  .starEmpty {
+/* Étoile vide */
+.starEmpty {
     color: #ccc;
-  }
+}
   
-  /* Date de l'avis */
-  .date {
+/* Date de l'avis */
+.date {
     font-size: 14px;
     color: #777;
     white-space: nowrap;
-  }
+}
   
-  /* Commentaire */
-  .comment {
+/* Commentaire */
+.comment {
     width: 100%;
     font-size: var(--p);
     font-style: italic;
@@ -109,18 +109,18 @@
     margin: 10px 0px 0px 0px;
     padding: 0px;
     transition: max-height 0.3s ease-in-out;
-  }
+}
   
-  /* Bouton "Voir plus..." */
-  .toggle {
+/* Bouton "Voir plus..." */
+.toggle {
     color: #007bff;
     cursor: pointer;
     font-weight: bold;
     margin-left: 5px;
     display: inline-block;
-  }
+}
   
-  .toggle:hover {
+.toggle:hover {
     text-decoration: underline;
-  }
+}
   

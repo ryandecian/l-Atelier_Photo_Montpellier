@@ -2,24 +2,9 @@ import style from "./HomeRootComposantC.module.css"
 import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../../router/router";
-
-/* Import des images*/
-import img5 from "../../../../assets/Images/ImageHomePage/Les_maries_vers_la_mairie.jpg";
-import img6 from "../../../../assets/Images/ImageHomePage/Portrait_Mariage_a_la_Tour_Magne.jpg";
-import img7 from "../../../../assets/Images/ImageHomePage/Photo_de_mariage_Sun_Glass.jpg";
-import img8 from "../../../../assets/Images/ImageHomePage/Pride_et_mariage.jpg";
+import ControllerDataImageHome from "../../ControllerDataImageHome";
 
 function HomeRootComposantC() {
-    const data = {
-        img5: img5,
-        MetaNameimg5: "Les mariés vers la mairie",
-        img6: img6,
-        MetaNameimg6: "Portrait Mariage à la Tour Magne",
-        img7: img7,
-        MetaNameimg7: "Photo de mariage Sun Glass",
-        img8: img8,
-        MetaNameimg8: "Pride et mariage",
-    }
     return (
         <section className={style.HomeRootComposantC}>
             <header className={style.ContainerTitle}>
@@ -29,14 +14,14 @@ function HomeRootComposantC() {
             </header>
 
             <Container4ImagesRoot
-                img1={data.img5}
-                MetaNameImg1={data.MetaNameimg5}
-                img2={data.img6}
-                MetaNameImg2={data.MetaNameimg6}
-                img3={data.img7}
-                MetaNameImg3={data.MetaNameimg7}
-                img4={data.img8}
-                MetaNameImg4={data.MetaNameimg8}
+                img1={ControllerDataImageHome[4].src}
+                MetaNameImg1={ControllerDataImageHome[4].alt}
+                img2={ControllerDataImageHome[5].src}
+                MetaNameImg2={ControllerDataImageHome[5].alt}
+                img3={ControllerDataImageHome[6].src}
+                MetaNameImg3={ControllerDataImageHome[6].alt}
+                img4={ControllerDataImageHome[7].src}
+                MetaNameImg4={ControllerDataImageHome[7].alt}
             />
 
             <article className={style.ContainerText}>

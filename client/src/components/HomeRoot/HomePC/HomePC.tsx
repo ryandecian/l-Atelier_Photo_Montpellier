@@ -24,7 +24,7 @@ function HomePC() {
             {/* Container 4 : Mariage */}
             <HomeRootComposantC />
 
-            {/* Container 5 : Avis */}
+            {/* Container 5 : Avis Client */}
             <HomeRootComposantD />
             
             {/* Container 6 : Autor */}
