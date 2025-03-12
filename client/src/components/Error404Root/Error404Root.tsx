@@ -6,7 +6,7 @@ const Error404Root = () => {
   return (
     <section className={style.Error404Root}>
       <header className={style.ContainerTitle}>
-        <h1 className={style.Title}>Erreur 404</h1>
+        <h1 className={style.Title}>OUPSS!! Il n'y a rien à voir ici !</h1>
       </header>
 
       <section className={style.Container404}>
