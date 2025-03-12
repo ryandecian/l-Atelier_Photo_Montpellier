@@ -5,7 +5,7 @@ import MariageRootComposantC from "../ComponentsMariageRoot/MariageRootComposant
 import MariageRootComposantD from "../ComponentsMariageRoot/MariageRootComposantD/MariageRootComposantD";
 import MariageRootComposantE from "../ComponentsMariageRoot/MariageRootComposantE/MariageRootComposantE";
 import MariageRootComposantF from "../ComponentsMariageRoot/MariageRootComposantF/MariageRootComposantF";
-import Container3ImagesRoot from "../../ContainerImageRoot/Container3ImagesRoot/Container3ImagesRoot";
+import Container4ImagesRoot from "../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ControllerDataImageMariage from "../ControllerDataImageMariage";
 
 function MariageMobile() {
@@ -54,13 +54,15 @@ function MariageMobile() {
             <MariageRootComposantA />
 
             {/* Container Images 1 */}
-            <Container3ImagesRoot
+            <Container4ImagesRoot
             img1={ControllerDataImageMariage[0].src}
             MetaNameImg1={ControllerDataImageMariage[0].alt}
             img2={ControllerDataImageMariage[1].src}
             MetaNameImg2={ControllerDataImageMariage[1].alt}
             img3={ControllerDataImageMariage[2].src}
             MetaNameImg3={ControllerDataImageMariage[2].alt}
+            img4={ControllerDataImageMariage[3].src}
+            MetaNameImg4={ControllerDataImageMariage[3].alt}
             />
 
             {/* Container Images 2 */}

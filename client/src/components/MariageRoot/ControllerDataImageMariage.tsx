@@ -6,58 +6,66 @@ interface ControllerDataImageMariageType {
 }
 
 const ControllerDataImageMariage: ControllerDataImageMariageType[] = [
+    /* Tableau 1 d'images : 4 images */
+    /* {ControllerDataImageMariage[0].src} */
     {
-        /* {ControllerDataImageMariage[0].src} */
         src: Image1,
         alt: "",
     },
+    /* {ControllerDataImageMariage[1].src} */
     {
-        /* {ControllerDataImageMariage[1].src} */
         src: Image1,
         alt: "",
     },
+    /* {ControllerDataImageMariage[2].src} */
     {
-        /* {ControllerDataImageMariage[2].src} */
         src: Image1,
         alt: "",
     },
+    /* {ControllerDataImageMariage[3].src} */
     {
-        /* {ControllerDataImageMariage[3].src} */
+        src: Image1,
+        alt: "",
+    },
+
+
+
+    /* Tableau 2 d'images : 4 images */
+    /* {ControllerDataImageMariage[4].src} */
+    {
         src: "",
         alt: "",
     },
+    /* {ControllerDataImageMariage[5].src} */
     {
-        /* {ControllerDataImageMariage[4].src} */
         src: "",
         alt: "",
     },
+    /* {ControllerDataImageMariage[6].src} */
     {
-        /* {ControllerDataImageMariage[5].src} */
         src: "",
         alt: "",
     },
+    /* {ControllerDataImageMariage[7].src} */
     {
-        /* {ControllerDataImageMariage[6].src} */
         src: "",
         alt: "",
     },
+
+
+
+    /* {ControllerDataImageMariage[8].src} */
     {
-        /* {ControllerDataImageMariage[7].src} */
         src: "",
         alt: "",
     },
+    /* {ControllerDataImageMariage[9].src} */
     {
-        /* {ControllerDataImageMariage[8].src} */
         src: "",
         alt: "",
     },
+    /* {ControllerDataImageMariage[10].src} */
     {
-        /* {ControllerDataImageMariage[9].src} */
-        src: "",
-        alt: "",
-    },
-    {
-        /* {ControllerDataImageMariage[10].src} */
         src: "",
         alt: "",
     },
@@ -66,18 +74,18 @@ const ControllerDataImageMariage: ControllerDataImageMariageType[] = [
         src: "",
         alt: "",
     },
+    /* {ControllerDataImageMariage[12].src} */
     {
-        /* {ControllerDataImageMariage[12].src} */
         src: "",
         alt: "",
     },
+    /* {ControllerDataImageMariage[13].src} */
     {
-        /* {ControllerDataImageMariage[13].src} */
         src: "",
         alt: "",
     },
+    /* {ControllerDataImageMariage[14].src} */
     {
-        /* {ControllerDataImageMariage[14].src} */
         src: "",
         alt: "",
     },
@@ -86,38 +94,38 @@ const ControllerDataImageMariage: ControllerDataImageMariageType[] = [
         src: "",
         alt: "",
     },
+    /* {ControllerDataImageMariage[16].src} */
     {
-        /* {ControllerDataImageMariage[16].src} */
         src: "",
         alt: "",
     },
+    /* {ControllerDataImageMariage[17].src} */
     {
-        /* {ControllerDataImageMariage[17].src} */
         src: "",
         alt: "",
     },
+    /* {ControllerDataImageMariage[18].src} */
     {
-        /* {ControllerDataImageMariage[18].src} */
         src: "",
         alt: "",
     },
+    /* {ControllerDataImageMariage[19].src} */
     {
-        /* {ControllerDataImageMariage[19].src} */
         src: "",
         alt: "",
     },
+    /* {ControllerDataImageMariage[20].src} */
     {
-        /* {ControllerDataImageMariage[20].src} */
         src: "",
         alt: "",
     },
+    /* {ControllerDataImageMariage[21].src} */
     {
-        /* {ControllerDataImageMariage[21].src} */
         src: "",
         alt: "",
     },
+    /* {ControllerDataImageMariage[22].src} */
     {
-        /* {ControllerDataImageMariage[22].src} */
         src: "",
         alt: "",
     },
