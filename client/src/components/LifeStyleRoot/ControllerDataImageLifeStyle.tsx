@@ -13,6 +13,7 @@ import Image10 from "../../assets/Images/ImageHomePage/Portrait_jeune_femme_lumi
 import Image11 from "../../assets/Images/ImageLifeStyle/Couple/portrait_tandem_exterieur.jpg";
 import image12 from "../../assets/Images/ImageLifeStyle/Couple/portrait_couple_jeune_studio.jpg";
 import Image13 from "../../assets/Images/ImageLifeStyle/Couple/portrait_couple_studio_bis.jpg";
+import Image14 from "../../assets/Images/ImageHomePage/Shooting_couple_studio.jpg";
 
 import Image15 from "../../assets/Images/ImageLifeStyle/Famille/Amies_d-Enfance_Flash.jpg";
 import Image16 from "../../assets/Images/ImageLifeStyle/Famille/life_style_pere_fils.jpg";
@@ -106,8 +107,8 @@ const ControllerDataImageLifeStyle: ControllerDataImageLifeStyleType[] = [
     },
     /* {ControllerDataImageLifeStyle[13].src} */
     {
-        src: "",
-        alt: "",
+        src: Image14,
+        alt: "Shooting couple studio",
     },
 
 
