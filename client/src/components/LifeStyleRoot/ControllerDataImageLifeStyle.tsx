@@ -5,7 +5,13 @@ import Image4 from "../../assets/Images/ImageLifeStyle/Premier_jour_portrait.jpg
 import Image5 from "../../assets/Images/ImageLifeStyle/portrait_9mois_domicile.jpg";
 import Image6 from "../../assets/Images/ImageLifeStyle/Portrait_Serie_PeakyBlinders.jpg";
 
+import Image7 from "../../assets/Images/ImageLifeStyle/Life_style_exterieur_domicile.jpg";
+import Image8 from "../../assets/Images/ImageLifeStyle/Portrait_François_Feel_good.jpg";
+import Image9 from "../../assets/Images/ImageLifeStyle/Life_style_exterieur.jpg";
 
+import Image11 from "../../assets/Images/ImageLifeStyle/portrait_tandem_exterieur.jpg";
+import image12 from "../../assets/Images/ImageLifeStyle/portrait_couple_jeune_studio.jpg";
+import Image13 from "../../assets/Images/ImageLifeStyle/portrait_couple_studio_bis.jpg";
 
 interface ControllerDataImageLifeStyleType {
     src: string;
@@ -50,18 +56,18 @@ const ControllerDataImageLifeStyle: ControllerDataImageLifeStyleType[] = [
     /* Tableau 1 d'images : 3 ou 4 images */
     /* {ControllerDataImageLifeStyle[6].src} */
     {
-        src: "",
-        alt: "",
+        src: Image7,
+        alt: "Life style exterieur domicile",
     },
     /* {ControllerDataImageLifeStyle[7].src} */
     {
-        src: "",
-        alt: "",
+        src: Image8,
+        alt: "Portrait François Feel good",
     },
     /* {ControllerDataImageLifeStyle[8].src} */
     {
-        src: "",
-        alt: "",
+        src: Image9,
+        alt: "Life style exterieur",
     },
     /* {ControllerDataImageLifeStyle[9].src} */
     {
@@ -74,18 +80,18 @@ const ControllerDataImageLifeStyle: ControllerDataImageLifeStyleType[] = [
     /* Tableau 2 d'images : 3 ou 4 images */
     /* {ControllerDataImageLifeStyle[10].src} */
     {
-        src: "",
-        alt: "",
+        src: Image11,
+        alt: "portrait tandem exterieur",
     },
     /* {ControllerDataImageLifeStyle[11].src} */
     {
-        src: "",
-        alt: "",
+        src: image12,
+        alt: "portrait couple jeune studio",
     },
     /* {ControllerDataImageLifeStyle[12].src} */
     {
-        src: "",
-        alt: "",
+        src: Image13,
+        alt: "portrait couple studio bis",
     },
     /* {ControllerDataImageLifeStyle[13].src} */
     {
