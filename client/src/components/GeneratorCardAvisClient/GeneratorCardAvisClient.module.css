@@ -1,0 +1,126 @@
+/* Conteneur principal */
+.GeneratorCardAvisClient {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+  
+/* Titre principal */
+.ContainerTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+    border: 0px;
+    margin-bottom: 20px;
+}
+  
+.title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+}
+  
+/* Liste des avis */
+.ContainerAvis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+/* Carte d'un avis */
+.CardAvisContainer {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: calc(100% - 80px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background: #fff;
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+.CardAvisContainer:hover {
+    transform: translateY(-5px);
+}
+  
+/* Nom du client */
+.nom {
+    font-weight: bold;
+    font-size: 16px;
+    color: #222;
+    margin-bottom: 8px;
+}
+  
+/* Conteneur de la note et de la date */
+.starsContainer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px; /* Espacement entre les étoiles et la date */
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    border: 0px;
+}
+  
+/* Note étoilée */
+.stars {
+    display: flex;
+    font-size: var(--h3);
+}
+  
+/* Étoile pleine */
+.starFilled {
+    color: #FFD700;
+}
+  
+/* Étoile vide */
+.starEmpty {
+    color: #ccc;
+}
+  
+/* Date de l'avis */
+.date {
+    font-size: 14px;
+    color: #777;
+    white-space: nowrap;
+}
+  
+/* Commentaire */
+.comment {
+    width: 100%;
+    font-size: var(--p);
+    font-style: italic;
+    color: #555;
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    transition: max-height 0.3s ease-in-out;
+}
+  
+/* Bouton "Voir plus..." */
+.toggle {
+    color: #007bff;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 5px;
+    display: inline-block;
+}
+  
+.toggle:hover {
+    text-decoration: underline;
+}
+  
