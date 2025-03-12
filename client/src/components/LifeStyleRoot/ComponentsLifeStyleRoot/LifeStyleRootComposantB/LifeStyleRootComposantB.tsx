@@ -1,14 +1,7 @@
 import { Link } from "react-router-dom";
 import style from "./LifeStyleRootComposantB.module.css";
 import ListDataRouter from "../../../../router/router";
-
-import img1 from "../../../../assets/Images/ImageLifeStyle/Femme-a_la_cigarette.jpg";
-import img2 from "../../../../assets/Images/ImageLifeStyle/portrait_duo_exterieur_.jpg";
-import img3 from "../../../../assets/Images/ImageLifeStyle/Portraits_Famille_Flash.jpg";
-import img4 from "../../../../assets/Images/ImageLifeStyle/Premier_jour_portrait.jpg";
-import img5 from "../../../../assets/Images/ImageLifeStyle/portrait_9mois_domicile.jpg";
-import img6 from "../../../../assets/Images/ImageLifeStyle/Portrait_Serie_PeakyBlinders.jpg";
-
+import ControllerDataImageLifeStyle from "../../ControllerDataImageLifeStyle";
 
 function LifeStyleRootComposantB() {
     const services = [
@@ -17,41 +10,41 @@ function LifeStyleRootComposantB() {
             title: "Feel Good", 
             name: "Portrait solo", 
             path: ListDataRouter[14].path, 
-            img: img1 
+            img: ControllerDataImageLifeStyle[0].src
         },
         { 
             id: 2, 
             title: "Toi & Moi", 
             name: "Portrait couple", 
             path: ListDataRouter[15].path, 
-            img: img2 
+            img: ControllerDataImageLifeStyle[1].src
         },
         { 
             id: 3, 
             title: "La Smala", 
             name: "Portrait famille - amis", 
             path: ListDataRouter[16].path, 
-            img: img3 
+            img: ControllerDataImageLifeStyle[2].src
         },
         { 
             id: 4, 
             title: "1er cris", 
             name: "Portrait nouveaux nés", 
             path: ListDataRouter[17].path, 
-            img: img4 
+            img: ControllerDataImageLifeStyle[3].src
         },
         { 
             id: 5, title: "9 mois", 
             name: "Portrait Grossesse", 
             path: ListDataRouter[18].path, 
-            img: img5 
+            img: ControllerDataImageLifeStyle[4].src
         },
         { 
             id: 6, 
             title: "Passions Lives", 
             name: "Portrait Hobbies - Sport", 
             path: ListDataRouter[19].path, 
-            img: img6 
+            img: ControllerDataImageLifeStyle[5].src
         },
     ];
 

@@ -7,7 +7,7 @@
     margin: auto;
 }
 @media (max-width: 800.02px) {
-    .ContainerImgHomeRoot {
+    .Container4ImagesRoot {
         grid-template-columns: repeat(2, 1fr);
     }
 }
