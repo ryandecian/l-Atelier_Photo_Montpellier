@@ -57,6 +57,18 @@ function LifeStylePC() {
             
             {/* Container 7 : Portrait famille - amis */}
             <LifeStyleRootComposantE />
+
+            {/* Container 8 : Container image portrait couple */}
+            <Container4ImagesRoot 
+            img1={ControllerDataImageLifeStyle[14].src}
+            MetaNameImg1={ControllerDataImageLifeStyle[14].alt}
+            img2={ControllerDataImageLifeStyle[15].src}
+            MetaNameImg2={ControllerDataImageLifeStyle[15].alt}
+            img3={ControllerDataImageLifeStyle[16].src}
+            MetaNameImg3={ControllerDataImageLifeStyle[16].alt}
+            img4={ControllerDataImageLifeStyle[17].src}
+            MetaNameImg4={ControllerDataImageLifeStyle[17].alt}
+            />
             
             {/* Container 9 : Portrait nouveau-nés */}
             <LifeStyleRootComposantF />
