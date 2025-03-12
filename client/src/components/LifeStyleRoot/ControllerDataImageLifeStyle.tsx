@@ -5,13 +5,19 @@ import Image4 from "../../assets/Images/ImageLifeStyle/Premier_jour_portrait.jpg
 import Image5 from "../../assets/Images/ImageLifeStyle/portrait_9mois_domicile.jpg";
 import Image6 from "../../assets/Images/ImageLifeStyle/Portrait_Serie_PeakyBlinders.jpg";
 
-import Image7 from "../../assets/Images/ImageLifeStyle/Life_style_exterieur_domicile.jpg";
-import Image8 from "../../assets/Images/ImageLifeStyle/Portrait_François_Feel_good.jpg";
-import Image9 from "../../assets/Images/ImageLifeStyle/Life_style_exterieur.jpg";
+import Image7 from "../../assets/Images/ImageLifeStyle/Solo/Life_style_exterieur_domicile.jpg";
+import Image8 from "../../assets/Images/ImageLifeStyle/Solo/Portrait_François_Feel_good.jpg";
+import Image9 from "../../assets/Images/ImageLifeStyle/Solo/Life_style_exterieur.jpg";
+import Image10 from "../../assets/Images/ImageHomePage/Portrait_jeune_femme_lumiere_naturelle.jpg";
 
-import Image11 from "../../assets/Images/ImageLifeStyle/portrait_tandem_exterieur.jpg";
-import image12 from "../../assets/Images/ImageLifeStyle/portrait_couple_jeune_studio.jpg";
-import Image13 from "../../assets/Images/ImageLifeStyle/portrait_couple_studio_bis.jpg";
+import Image11 from "../../assets/Images/ImageLifeStyle/Couple/portrait_tandem_exterieur.jpg";
+import image12 from "../../assets/Images/ImageLifeStyle/Couple/portrait_couple_jeune_studio.jpg";
+import Image13 from "../../assets/Images/ImageLifeStyle/Couple/portrait_couple_studio_bis.jpg";
+
+import Image27 from "../../assets/Images/ImageLifeStyle/Hobbie/Portrait_Serie_PeakyBlinders.jpg";
+import Image28 from "../../assets/Images/ImageLifeStyle/Hobbie/Portraits_Synrie_Far_West_nb.jpg";
+import Image29 from "../../assets/Images/ImageLifeStyle/Hobbie/chiens_traineau_portrait.jpg";
+import Image30 from "../../assets/Images/ImageLifeStyle/Hobbie/Canicross_osteopathe_.jpg";
 
 interface ControllerDataImageLifeStyleType {
     src: string;
@@ -53,7 +59,7 @@ const ControllerDataImageLifeStyle: ControllerDataImageLifeStyleType[] = [
 
 
 
-    /* Tableau 1 d'images : 3 ou 4 images */
+    /* Tableau 1 :  4 images : Portrait Solo */
     /* {ControllerDataImageLifeStyle[6].src} */
     {
         src: Image7,
@@ -71,13 +77,13 @@ const ControllerDataImageLifeStyle: ControllerDataImageLifeStyleType[] = [
     },
     /* {ControllerDataImageLifeStyle[9].src} */
     {
-        src: "",
+        src: Image10,
         alt: "",
     },
 
 
 
-    /* Tableau 2 d'images : 3 ou 4 images */
+    /* Tableau 2 : 4 images : Portrait Couple */
     /* {ControllerDataImageLifeStyle[10].src} */
     {
         src: Image11,
@@ -101,6 +107,7 @@ const ControllerDataImageLifeStyle: ControllerDataImageLifeStyleType[] = [
 
 
 
+    /* Tableau 3 : 4 images : Portrait Famille */
     /* {ControllerDataImageLifeStyle[14].src} */
     {
         src: "",
@@ -121,6 +128,10 @@ const ControllerDataImageLifeStyle: ControllerDataImageLifeStyleType[] = [
         src: "",
         alt: "",
     },
+
+
+
+    /* Tableau 4 : 4 images : Portrait Nouveau Nés */
     /* {ControllerDataImageLifeStyle[18].src} */
     {
         src: "",
@@ -141,11 +152,55 @@ const ControllerDataImageLifeStyle: ControllerDataImageLifeStyleType[] = [
         src: "",
         alt: "",
     },
+
+
+
+    /* Tableau 2 : 4 images : Portrait Grossesse */
     /* {ControllerDataImageLifeStyle[22].src} */
     {
         src: "",
         alt: "",
     },
+    /* {ControllerDataImageLifeStyle[23].src} */
+    {
+        src: "",
+        alt: "",
+    },
+    /* {ControllerDataImageLifeStyle[24].src} */
+    {
+        src: "",
+        alt: "",
+    },
+    /* {ControllerDataImageLifeStyle[25].src} */
+    {
+        src: "",
+        alt: "",
+    },
+
+
+
+    /* Tableau 6 : 4 images : Portrait Hobbies */
+    /* {ControllerDataImageLifeStyle[26].src} */
+    {
+        src: Image27,
+        alt: "Portrait Serie PeakyBlinders",
+    },
+    /* {ControllerDataImageLifeStyle[27].src} */
+    {
+        src: Image28,
+        alt: "Portraits Synrie Far West nb",
+    },
+    /* {ControllerDataImageLifeStyle[28].src} */
+    {
+        src: Image29,
+        alt: "Chiens traineau portrait",
+    },
+    /* {ControllerDataImageLifeStyle[29].src} */
+    {
+        src: Image30,
+        alt: "Canicross osteopathe",
+    },
+    
 ];
 
 export default ControllerDataImageLifeStyle;
