@@ -1,4 +1,7 @@
-import Image1 from "../../assets/Images/ImageHomePage/Les_maries_vers_la_mairie.jpg"
+import Image1 from "../../assets/Images/ImageMariage/Parc_idynal_pour_photo_de_mariage_Nyymes-09013.jpg";
+import Image2 from "../../assets/Images/ImageMariage/Mariyns_Parc_de_la_tour_Magne_ya_Nyymes-08906.jpg";
+import Image3 from "../../assets/Images/ImageMariage/Florian_et_Elsa_enlacyns_Nyymes-08944.jpg";
+import Image4 from "../../assets/Images/ImageMariage/Florian_et_Elsa_engagement_-08922_resultat.jpg";
 
 interface ControllerDataImageMariageType {
     src: string;
@@ -14,17 +17,17 @@ const ControllerDataImageMariage: ControllerDataImageMariageType[] = [
     },
     /* {ControllerDataImageMariage[1].src} */
     {
-        src: Image1,
+        src: Image2,
         alt: "",
     },
     /* {ControllerDataImageMariage[2].src} */
     {
-        src: Image1,
+        src: Image3,
         alt: "",
     },
     /* {ControllerDataImageMariage[3].src} */
     {
-        src: Image1,
+        src: Image4,
         alt: "",
     },
 
@@ -69,8 +72,8 @@ const ControllerDataImageMariage: ControllerDataImageMariageType[] = [
         src: "",
         alt: "",
     },
+    /* {ControllerDataImageMariage[11].src} */
     {
-        /* {ControllerDataImageMariage[11].src} */
         src: "",
         alt: "",
     },
@@ -89,8 +92,8 @@ const ControllerDataImageMariage: ControllerDataImageMariageType[] = [
         src: "",
         alt: "",
     },
+    /* {ControllerDataImageMariage[15].src} */
     {
-        /* {ControllerDataImageMariage[15].src} */
         src: "",
         alt: "",
     },

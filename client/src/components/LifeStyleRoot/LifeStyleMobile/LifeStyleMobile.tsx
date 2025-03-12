@@ -8,30 +8,9 @@ import LifeStyleRootComposantF from '../ComponentsLifeStyleRoot/LifeStyleRootCom
 import LifeStyleRootComposantG from '../ComponentsLifeStyleRoot/LifeStyleRootComposantG/LifeStyleRootComposantG';
 import LifeStyleRootComposantH from '../ComponentsLifeStyleRoot/LifeStyleRootComposantH/LifeStyleRootComposantH';
 import Container3ImagesRoot from '../../ContainerImageRoot/Container3ImagesRoot/Container3ImagesRoot';
-
-/* Import des images */
-import img1 from "../../../assets/Images/ImageLifeStyle/Life_style_exterieur_domicile.jpg";
-import img2 from "../../../assets/Images/ImageLifeStyle/Portrait_François_Feel_good.jpg";
-import img3 from "../../../assets/Images/ImageLifeStyle/Life_style_exterieur.jpg";
-import img4 from "../../../assets/Images/ImageLifeStyle/portrait_tandem_exterieur.jpg";
-import img5 from "../../../assets/Images/ImageLifeStyle/portrait_couple_jeune_studio.jpg";
-import img6 from "../../../assets/Images/ImageLifeStyle/portrait_couple_studio_bis.jpg";
+import ControllerDataImageLifeStyle from '../ControllerDataImageLifeStyle';
 
 function LifeStyleMobile() {
-    const DataImage = {
-        img1: img1,
-        MetaNameImg1: "Life style exterieur domicile",
-        img2: img2,
-        MetaNameImg2: "Portrait François Feel good",
-        img3: img3,
-        MetaNameImg3: "Life style exterieur",
-        img4: img4,
-        MetaNameImg4: "portrait tandem exterieur",
-        img5: img5,
-        MetaNameImg5: "portrait couple jeune studio",
-        img6: img6,
-        MetaNameImg6: "portrait couple studio bis",
-    }
     return (
         <section className={style.LifeStyleMobile}>
 
@@ -52,12 +31,12 @@ function LifeStyleMobile() {
 
             {/* Container 4 : Container image portrait solo */}
             <Container3ImagesRoot 
-            img1={DataImage.img1}
-            MetaNameImg1={DataImage.MetaNameImg1}
-            img2={DataImage.img2}
-            MetaNameImg2={DataImage.MetaNameImg2}
-            img3={DataImage.img3}
-            MetaNameImg3={DataImage.MetaNameImg3}
+            img1={ControllerDataImageLifeStyle[6].src}
+            MetaNameImg1={ControllerDataImageLifeStyle[6].alt}
+            img2={ControllerDataImageLifeStyle[7].src}
+            MetaNameImg2={ControllerDataImageLifeStyle[7].alt}
+            img3={ControllerDataImageLifeStyle[8].src}
+            MetaNameImg3={ControllerDataImageLifeStyle[8].alt}
             />
 
             {/* Container 5 : Portrait couple */}
@@ -65,12 +44,12 @@ function LifeStyleMobile() {
 
             {/* Container 6 : Container image portrait couple */}
             <Container3ImagesRoot 
-            img1={DataImage.img4}
-            MetaNameImg1={DataImage.MetaNameImg4}
-            img2={DataImage.img5}
-            MetaNameImg2={DataImage.MetaNameImg5}
-            img3={DataImage.img6}
-            MetaNameImg3={DataImage.MetaNameImg6}
+            img1={ControllerDataImageLifeStyle[10].src}
+            MetaNameImg1={ControllerDataImageLifeStyle[10].alt}
+            img2={ControllerDataImageLifeStyle[11].src}
+            MetaNameImg2={ControllerDataImageLifeStyle[11].alt}
+            img3={ControllerDataImageLifeStyle[12].src}
+            MetaNameImg3={ControllerDataImageLifeStyle[12].alt}
             />
                         
             {/* Container 7 : Portrait famille - amis */}
