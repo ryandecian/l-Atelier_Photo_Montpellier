@@ -22,11 +22,11 @@ import VerifyEmailFalse from "./middleware/VerifyEmail/VerifyEmailFalse";
 import VerifyEmailTrue from "./middleware/VerifyEmail/VerifyEmailTrue";
 import HashPassword from "./middleware/Argon/HashPassword";
 import VerifyPassword from "./middleware/Argon/VerifyPassword";
-import InsertUser from "./middleware/InsertUser";
+import InsertUser from "./middleware/InsertDB/InsertUser";
 import Create_JWT_Middleware from "./middleware/JWT/Create_JWT_Middleware";
 import Create_Crypto_Middleware from "./middleware/Crypto_Middleware/Create_Crypto_Middleware";
 import Verify_Crypto_Middleware from "./middleware/Crypto_Middleware/Verify_Crypto_Middleware";
-import InsertNewPassword from "./middleware/insertNewPassword";
+import InsertNewPassword from "./middleware/InsertDB/insertNewPassword";
 
 // Import des Services
 import mailer from "./services/mailer";
