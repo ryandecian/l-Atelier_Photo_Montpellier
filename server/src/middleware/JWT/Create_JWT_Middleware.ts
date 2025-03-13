@@ -12,7 +12,7 @@ async function Create_JWT_Middleware(req: Request, res: Response, next: NextFunc
                     {
                         identity: "Create_JWT_Middleware.ts",
                         type: "middleware",
-                        chemin: "/server/src/middleware/Create_JWT_Middleware.ts",
+                        chemin: "/server/src/middleware/JWT/Create_JWT_Middleware.ts",
                         "❌ Nature de l'erreur": "SECRET_KEY_TOKEN est absent dans .env !",
                     },
                 );
@@ -24,7 +24,7 @@ async function Create_JWT_Middleware(req: Request, res: Response, next: NextFunc
                     {
                         identity: "Create_JWT_Middleware.ts",
                         type: "middleware",
-                        chemin: "/server/src/middleware/Create_JWT_Middleware.ts",
+                        chemin: "/server/src/middleware/JWT/Create_JWT_Middleware.ts",
                         "❌ Nature de l'erreur": "Le middleware VerifyEmailTrue.ts n'a pas mis a disposition dataUser.",
                     },
                 );
@@ -48,7 +48,7 @@ async function Create_JWT_Middleware(req: Request, res: Response, next: NextFunc
             console.warn({
                 identity: "Create_JWT_Middleware.ts",
                 type: "sécurité",
-                chemin: "/server/src/middleware/Create_JWT_Middleware.ts",
+                chemin: "/server/src/middleware/JWT/Create_JWT_Middleware.ts",
                 "⚠️ Alerte !": "Tentative de modification de `req.body.jwt` détectée. Le serveur écrase la valeur !",
                 "⚠️ Alerte": "Le serveur écrase la valeur pour sécuriser !",
             });
@@ -63,7 +63,7 @@ async function Create_JWT_Middleware(req: Request, res: Response, next: NextFunc
             {
                 identity: "Create_JWT_Middleware.ts",
                 type: "middleware",
-                chemin: "/server/src/middleware/Create_JWT_Middleware.ts",
+                chemin: "/server/src/middleware/JWT/Create_JWT_Middleware.ts",
                 "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
                 details: error,
             },

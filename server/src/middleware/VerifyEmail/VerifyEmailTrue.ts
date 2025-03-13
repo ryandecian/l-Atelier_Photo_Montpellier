@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import usePoolConnection from "../database/config";
+import usePoolConnection from "../../database/config";
 import { RowDataPacket } from "mysql2";
 
 // Objectif, vérifier que l'email reçu existe bien dans la DB.
@@ -19,7 +19,7 @@ async function VerifyEmailTrue(req:Request, res: Response, next: NextFunction) {
                 {
                     identity: "VerifyEmailTrue.ts",
                     type: "middleware",
-                    chemin: "/server/src/middleware/VerifyEmailTrue.ts",
+                    chemin: "/server/src/middleware/VerifyEmail/VerifyEmailTrue.ts",
                     "❌ Nature de l'erreur": "L'email n'existe pas dans la DB, impossible de continuer.",
                 },
             );
@@ -39,7 +39,7 @@ async function VerifyEmailTrue(req:Request, res: Response, next: NextFunction) {
             {
                 identity: "VerifyEmailTrue.ts",
                 type: "middleware",
-                chemin: "/server/src/middleware/VerifyEmailTrue.ts",
+                chemin: "/server/src/middleware/VerifyEmail/VerifyEmailTrue.ts",
                 "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
                 details: error,
             },

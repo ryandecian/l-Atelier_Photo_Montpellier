@@ -1,5 +1,6 @@
 // Import général
 import express, { query, Request, Response, NextFunction } from "express";
+import router from "./router/router";
 
 // Import des composants de sécurités
 import LimiteRequestIP from "./Security/LimiteRequestIP";
@@ -17,14 +18,14 @@ import { ResultSetHeader, RowDataPacket } from "mysql2";
 
 // Import des middlewares générals
 import VerifyKeys from "./middleware/VerifyKeys";
-import VerifyEmailFalse from "./middleware/VerifyEmailFalse";
-import VerifyEmailTrue from "./middleware/VerifyEmailTrue";
-import HashPassword from "./middleware/HashPassword";
-import VerifyPassword from "./middleware/VerifyPassword";
+import VerifyEmailFalse from "./middleware/VerifyEmail/VerifyEmailFalse";
+import VerifyEmailTrue from "./middleware/VerifyEmail/VerifyEmailTrue";
+import HashPassword from "./middleware/Argon/HashPassword";
+import VerifyPassword from "./middleware/Argon/VerifyPassword";
 import InsertUser from "./middleware/InsertUser";
-import Create_JWT_Middleware from "./middleware/Create_JWT_Middleware";
-import Create_Crypto_Middleware from "./middleware/Create_Crypto_Middleware";
-import Verify_Crypto_Middleware from "./middleware/Verify_Crypto_Middleware";
+import Create_JWT_Middleware from "./middleware/JWT/Create_JWT_Middleware";
+import Create_Crypto_Middleware from "./middleware/Crypto_Middleware/Create_Crypto_Middleware";
+import Verify_Crypto_Middleware from "./middleware/Crypto_Middleware/Verify_Crypto_Middleware";
 import InsertNewPassword from "./middleware/insertNewPassword";
 
 // Import des Services
@@ -34,6 +35,8 @@ import SendMailer_Middleware from "./middleware/SendMailer_Middleware";
 
 const app = express();
 const port = 8080;
+
+app.use("/api", router);
 
 /**
  * Pour lire le body d'un (request) contenant un json, j'ai besoin d'importer un middleware
