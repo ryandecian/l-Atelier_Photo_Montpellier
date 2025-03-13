@@ -11,6 +11,7 @@ async function loginResponse(req: Request, res: Response) {
             address: req.body.dataUser.address,
             email: req.body.dataUser.email,
         });
+        return;
     }
     catch (error) {
         res.status(500).json({ error: "Erreur interne serveur." });

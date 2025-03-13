@@ -167,51 +167,6 @@ app.post("/reset-password/confirm",
 });
 
 /**
- * Route de register
- * Path: /register
- * middleware: HashPassword
- * Action callBack
- * Methode: POST
- */
-app.post("/register",
-    // Ajout des middlewares
-    RouteLimiterRequestIP,
-    VerifyKeys(["firstname", "lastname", "email", "password"]),
-    VerifyEmailFalse,
-    HashPassword,
-    InsertUser,
-
-    // Début de la fonction de la route principale
-    async (req: Request, res: Response, next: NextFunction): Promise<void> => {
-
-        try {
-            // ✅ Réponse de succès
-            res.status(201).json(
-                {
-                    reponse: "Enregistrement accepté",
-                    id: req.body.id, 
-                    firstname: req.body.firstname,
-                    lastname: req.body.lastname,
-                    email: req.body.email,
-                }
-            );
-        }
-        catch (error) {
-            res.status(500).json({ error: "Erreur interne serveur." });
-            console.error(
-                {
-                    identity: "index.ts",
-                    type: "route register",
-                    chemin: "/server/src/index.ts",
-                    "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
-                    details: error,
-                },
-            );
-            return;
-        }
-})
-
-/**
  * Gestion des routes innexistante
  */
 app.use( async (req: Request, res: Response) => {
