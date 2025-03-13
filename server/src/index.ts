@@ -1,6 +1,6 @@
 // Import général
 import express, { query, Request, Response, NextFunction } from "express";
-import router from "./router";
+import router from "./router/router";
 
 // Import des composants de sécurités
 import LimiteRequestIP from "./Security/LimiteRequestIP";
@@ -18,8 +18,8 @@ import { ResultSetHeader, RowDataPacket } from "mysql2";
 
 // Import des middlewares générals
 import VerifyKeys from "./middleware/VerifyKeys";
-import VerifyEmailFalse from "./middleware/VerifyEmailFalse";
-import VerifyEmailTrue from "./middleware/VerifyEmailTrue";
+import VerifyEmailFalse from "./middleware/VerifyEmail/VerifyEmailFalse";
+import VerifyEmailTrue from "./middleware/VerifyEmail/VerifyEmailTrue";
 import HashPassword from "./middleware/Argon/HashPassword";
 import VerifyPassword from "./middleware/Argon/VerifyPassword";
 import InsertUser from "./middleware/InsertUser";
