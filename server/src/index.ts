@@ -29,8 +29,8 @@ import Verify_Crypto_Middleware from "./middleware/Crypto_Middleware/Verify_Cryp
 import InsertNewPassword from "./middleware/InsertDB/insertNewPassword";
 
 // Import des Services
-import mailer from "./services/mailer";
-import SendMailer_Middleware from "./middleware/SendMailer_Middleware";
+import mailer from "./services/mailer/mailer";
+import SendMailer_Middleware from "./services/mailer/SendMailer_Middleware";
 
 
 const app = express();
