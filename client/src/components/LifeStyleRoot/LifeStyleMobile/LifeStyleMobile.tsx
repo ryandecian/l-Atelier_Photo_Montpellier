@@ -7,7 +7,6 @@ import LifeStyleRootComposantE from '../ComponentsLifeStyleRoot/LifeStyleRootCom
 import LifeStyleRootComposantF from '../ComponentsLifeStyleRoot/LifeStyleRootComposantF/LifeStyleRootComposantF';
 import LifeStyleRootComposantG from '../ComponentsLifeStyleRoot/LifeStyleRootComposantG/LifeStyleRootComposantG';
 import LifeStyleRootComposantH from '../ComponentsLifeStyleRoot/LifeStyleRootComposantH/LifeStyleRootComposantH';
-import Container3ImagesRoot from '../../ContainerImageRoot/Container3ImagesRoot/Container3ImagesRoot';
 import Container4ImagesRoot from '../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot';
 import ControllerDataImageLifeStyle from '../ControllerDataImageLifeStyle';
 
@@ -46,17 +45,31 @@ function LifeStyleMobile() {
             <LifeStyleRootComposantD />
 
             {/* Container 6 : Container image portrait couple */}
-            <Container3ImagesRoot 
+            <Container4ImagesRoot 
             img1={ControllerDataImageLifeStyle[10].src}
             MetaNameImg1={ControllerDataImageLifeStyle[10].alt}
             img2={ControllerDataImageLifeStyle[11].src}
             MetaNameImg2={ControllerDataImageLifeStyle[11].alt}
             img3={ControllerDataImageLifeStyle[12].src}
             MetaNameImg3={ControllerDataImageLifeStyle[12].alt}
+            img4={ControllerDataImageLifeStyle[13].src}
+            MetaNameImg4={ControllerDataImageLifeStyle[13].alt}
             />
             
             {/* Container 7 : Portrait famille - amis */}
             <LifeStyleRootComposantE />
+
+            {/* Container 8 : Container image portrait couple */}
+            <Container4ImagesRoot 
+            img1={ControllerDataImageLifeStyle[14].src}
+            MetaNameImg1={ControllerDataImageLifeStyle[14].alt}
+            img2={ControllerDataImageLifeStyle[15].src}
+            MetaNameImg2={ControllerDataImageLifeStyle[15].alt}
+            img3={ControllerDataImageLifeStyle[16].src}
+            MetaNameImg3={ControllerDataImageLifeStyle[16].alt}
+            img4={ControllerDataImageLifeStyle[17].src}
+            MetaNameImg4={ControllerDataImageLifeStyle[17].alt}
+            />
             
             {/* Container 9 : Portrait nouveau-nés */}
             <LifeStyleRootComposantF />
