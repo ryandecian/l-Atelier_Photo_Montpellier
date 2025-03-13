@@ -1,23 +1,29 @@
-import Image1 from "../../assets/Images/ImageLifeStyle/Femme-a_la_cigarette.jpg";
-import Image2 from "../../assets/Images/ImageLifeStyle/portrait_duo_exterieur_.jpg";
-import Image3 from "../../assets/Images/ImageLifeStyle/Portraits_Famille_Flash.jpg";
-import Image4 from "../../assets/Images/ImageLifeStyle/Premier_jour_portrait.jpg";
-import Image5 from "../../assets/Images/ImageLifeStyle/portrait_9mois_domicile.jpg";
-import Image6 from "../../assets/Images/ImageLifeStyle/Portrait_Serie_PeakyBlinders.jpg";
+import Image1 from "../../assets/Images/ImageLifeStyle/Card/Femme-a_la_cigarette.jpg";
+import Image2 from "../../assets/Images/ImageLifeStyle/Card/portrait_duo_exterieur_.jpg";
+import Image3 from "../../assets/Images/ImageLifeStyle/Card/Portraits_Famille_Flash.jpg";
+import Image4 from "../../assets/Images/ImageLifeStyle/Card/Premier_jour_portrait.jpg";
+import Image5 from "../../assets/Images/ImageLifeStyle/Card/portrait_9mois_domicile.jpg";
+import Image6 from "../../assets/Images/ImageLifeStyle/Card/Portrait_Serie_PeakyBlinders.jpg";
 
 import Image7 from "../../assets/Images/ImageLifeStyle/Solo/Life_style_exterieur_domicile.jpg";
 import Image8 from "../../assets/Images/ImageLifeStyle/Solo/Portrait_François_Feel_good.jpg";
 import Image9 from "../../assets/Images/ImageLifeStyle/Solo/Life_style_exterieur.jpg";
 import Image10 from "../../assets/Images/ImageHomePage/Portrait_jeune_femme_lumiere_naturelle.jpg";
 
-import Image11 from "../../assets/Images/ImageLifeStyle/Couple/portrait_tandem_exterieur.jpg";
+import Image11 from "../../assets/Images/ImageLifeStyle/Couple/portrait_couple_studio_bis.jpg";
 import image12 from "../../assets/Images/ImageLifeStyle/Couple/portrait_couple_jeune_studio.jpg";
-import Image13 from "../../assets/Images/ImageLifeStyle/Couple/portrait_couple_studio_bis.jpg";
+import Image13 from "../../assets/Images/ImageLifeStyle/Couple/portrait_tandem_exterieur.jpg";
+import Image14 from "../../assets/Images/ImageHomePage/Shooting_couple_studio.jpg";
+
+import Image15 from "../../assets/Images/ImageLifeStyle/Famille/Les_2_Freres.jpg";
+import Image16 from "../../assets/Images/ImageLifeStyle/Famille/Amies_d-Enfance_Flash.jpg";
+import Image17 from "../../assets/Images/ImageLifeStyle/Famille/Mere_Fils_portrait_interieur.jpg";
+import Image18 from "../../assets/Images/ImageLifeStyle/Famille/life_style_pere_fils.jpg";
 
 import Image27 from "../../assets/Images/ImageLifeStyle/Hobbie/Portrait_Serie_PeakyBlinders.jpg";
-import Image28 from "../../assets/Images/ImageLifeStyle/Hobbie/Portraits_Synrie_Far_West_nb.jpg";
-import Image29 from "../../assets/Images/ImageLifeStyle/Hobbie/chiens_traineau_portrait.jpg";
-import Image30 from "../../assets/Images/ImageLifeStyle/Hobbie/Canicross_osteopathe_.jpg";
+import Image28 from "../../assets/Images/ImageLifeStyle/Hobbie/Canicross_osteopathe_.jpg";
+import Image29 from "../../assets/Images/ImageLifeStyle/Hobbie/Portraits_Synrie_Far_West_nb.jpg";
+import Image30 from "../../assets/Images/ImageLifeStyle/Hobbie/Gardienne_but_Portrait_Flash_4.jpg";
 
 interface ControllerDataImageLifeStyleType {
     src: string;
@@ -87,7 +93,7 @@ const ControllerDataImageLifeStyle: ControllerDataImageLifeStyleType[] = [
     /* {ControllerDataImageLifeStyle[10].src} */
     {
         src: Image11,
-        alt: "portrait tandem exterieur",
+        alt: "portrait couple studio bis",
     },
     /* {ControllerDataImageLifeStyle[11].src} */
     {
@@ -97,12 +103,12 @@ const ControllerDataImageLifeStyle: ControllerDataImageLifeStyleType[] = [
     /* {ControllerDataImageLifeStyle[12].src} */
     {
         src: Image13,
-        alt: "portrait couple studio bis",
+        alt: "portrait tandem exterieur",
     },
     /* {ControllerDataImageLifeStyle[13].src} */
     {
-        src: "",
-        alt: "",
+        src: Image14,
+        alt: "Shooting couple studio",
     },
 
 
@@ -110,23 +116,23 @@ const ControllerDataImageLifeStyle: ControllerDataImageLifeStyleType[] = [
     /* Tableau 3 : 4 images : Portrait Famille */
     /* {ControllerDataImageLifeStyle[14].src} */
     {
-        src: "",
-        alt: "",
+        src: Image15,
+        alt: "Les 2 Freres",
     },
     /* {ControllerDataImageLifeStyle[15].src} */
     {
-        src: "",
-        alt: "",
+        src: Image16,
+        alt: "Amies d'Enfance Flash",
     },
     /* {ControllerDataImageLifeStyle[16].src} */
     {
-        src: "",
-        alt: "",
+        src: Image17,
+        alt: "Mere Fils portrait interieur",
     },
     /* {ControllerDataImageLifeStyle[17].src} */
     {
-        src: "",
-        alt: "",
+        src: Image18,
+        alt: "life style pere fils",
     },
 
 
@@ -188,19 +194,19 @@ const ControllerDataImageLifeStyle: ControllerDataImageLifeStyleType[] = [
     /* {ControllerDataImageLifeStyle[27].src} */
     {
         src: Image28,
-        alt: "Portraits Synrie Far West nb",
+        alt: "Canicross osteopathe",
     },
     /* {ControllerDataImageLifeStyle[28].src} */
     {
         src: Image29,
-        alt: "Chiens traineau portrait",
+        alt: "Portraits Synrie Far West nb",
     },
     /* {ControllerDataImageLifeStyle[29].src} */
     {
         src: Image30,
-        alt: "Canicross osteopathe",
+        alt: "Gardienne but Portrait Flash 4",
     },
-    
+
 ];
 
 export default ControllerDataImageLifeStyle;

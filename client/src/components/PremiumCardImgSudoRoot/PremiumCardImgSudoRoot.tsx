@@ -18,6 +18,7 @@ function PremiumCardImgSudoRoot (Props: ImageZoomProps) {
         src={src}
         alt={alt}
         className={className}
+        role="button"
         onClick={() => setIsOpen(true)}
       />
 
