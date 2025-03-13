@@ -11,7 +11,7 @@ import MentionsLegalesSectionF from "../ComponentsMentionsLegalesRoot/MentionsLe
 
 function MentionsLegalesPC() {
     return (
-        <section className={style.MentionsLegalesPC}>
+        <section className={`${style.MentionsLegalesPC} ${style.Container}`}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.Title}>
                     Mentions Légales
