@@ -10,7 +10,7 @@ async function Verify_JWT_Middleware(req: Request, res: Response, next: NextFunc
             console.error({
                 identity: "Verify_JWT_Middleware.ts",
                 type: "middleware",
-                chemin: "/server/src/middleware/Verify_JWT_Middleware.ts",
+                chemin: "/server/src/middleware/JWT/Verify_JWT_Middleware.ts",
                 "❌ Nature de l'erreur": "SECRET_KEY_TOKEN est absent dans .env !",
             });
             return res.status(500).json({ error: "Erreur interne serveur." });
@@ -24,7 +24,7 @@ async function Verify_JWT_Middleware(req: Request, res: Response, next: NextFunc
             console.warn({
                 identity: "Verify_JWT_Middleware.ts",
                 type: "sécurité",
-                chemin: "/server/src/middleware/Verify_JWT_Middleware.ts",
+                chemin: "/server/src/middleware/JWT/Verify_JWT_Middleware.ts",
                 "⚠️ Alerte !": "Tentative d'accès sans token JWT.",
             });
             return;
@@ -37,7 +37,7 @@ async function Verify_JWT_Middleware(req: Request, res: Response, next: NextFunc
                 console.warn({
                     identity: "Verify_JWT_Middleware.ts",
                     type: "sécurité",
-                    chemin: "/server/src/middleware/Verify_JWT_Middleware.ts",
+                    chemin: "/server/src/middleware/JWT/Verify_JWT_Middleware.ts",
                     "⚠️ Alerte !": "Tentative d'accès avec un token invalide ou expiré.",
                     details: err,
                 });
@@ -53,7 +53,7 @@ async function Verify_JWT_Middleware(req: Request, res: Response, next: NextFunc
         console.error({
             identity: "Verify_JWT_Middleware.ts",
             type: "middleware",
-            chemin: "/server/src/middleware/Verify_JWT_Middleware.ts",
+            chemin: "/server/src/middleware/JWT/Verify_JWT_Middleware.ts",
             "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
             details: error,
         });

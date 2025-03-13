@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import usePoolConnection from "../database/config";
+import usePoolConnection from "../../database/config";
 import { RowDataPacket } from "mysql2";
 
 // Objectif, vérifier que l'email reçu pour l'enregistrement n'est pas utilisé.
@@ -19,7 +19,7 @@ async function VerifyEmailFalse(req:Request, res: Response, next: NextFunction) 
                 {
                     identity: "VerifyEmailFalse.ts",
                     type: "middleware",
-                    chemin: "/server/src/middleware/VerifyEmailFalse.ts",
+                    chemin: "/server/src/middleware/VerifyEmail/VerifyEmailFalse.ts",
                     "❌ Nature de l'erreur": "L'email existe déjà dans la DB, interdiction de le réutiliser.",
                 },
             );
@@ -33,7 +33,7 @@ async function VerifyEmailFalse(req:Request, res: Response, next: NextFunction) 
             {
                 identity: "VerifyEmailFalse.ts",
                 type: "middleware",
-                chemin: "/server/src/middleware/VerifyEmailFalse.ts",
+                chemin: "/server/src/middleware/VerifyEmail/VerifyEmailFalse.ts",
                 "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
                 details: error,
             },
