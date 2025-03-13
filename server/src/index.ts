@@ -96,39 +96,6 @@ app.post("/email",
 
 /**
  * Route de reset password
- * Path: /reset-password
- * middleware:
- * Action callBack
- * Methode: POST
- */
-app.post("/reset-password",
-    // Ajout des middlewares
-    RouteLimiterRequestIP,
-    VerifyKeys(["email"]),
-    VerifyEmailTrue,
-    Create_Crypto_Middleware,
-    SendMailer_Middleware,
-    async (req: Request, res: Response) => {
-        try {
-        res.status(200).json({ reponse: "Un email de reinitialisation vous a été envoyé" });
-    }
-    catch (error) {
-        res.status(500).json({ error: "Erreur interne serveur." });
-        console.error(
-            {
-                identity: "index.ts",
-                type: "route reset-password",
-                chemin: "/server/src/index.ts",
-                "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
-                details: error,
-            },
-        );
-        return;
-    }
-});
-
-/**
- * Route de reset password
  * Path: /reset-password/confirm
  * middleware:
  * Action callBack
