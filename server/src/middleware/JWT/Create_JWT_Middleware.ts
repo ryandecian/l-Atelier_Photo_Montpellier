@@ -68,6 +68,7 @@ async function Create_JWT_Middleware(req: Request, res: Response, next: NextFunc
                 details: error,
             },
         );
+        return;
     }
 }
 
