@@ -212,47 +212,6 @@ app.post("/register",
 })
 
 /**
- * Route de login
- * Path: /login
- * Action callBack
- * Methode: POST
- */
-app.post("/login",
-    // Ajout des middlewares
-    RouteLimiterRequestIP,
-    VerifyKeys(["email", "password"]),
-    VerifyEmailTrue,
-    VerifyPassword,
-    Create_JWT_Middleware,
-    async (req: Request, res: Response):Promise<void> => {
-    try {
-        res.status(200)
-        .cookie("jwtToken", req.body.jwt)
-        .json({
-            id: req.body.dataUser.id,
-            firstname: req.body.dataUser.firstname,
-            lastname: req.body.dataUser.lastname,
-            address: req.body.dataUser.address,
-            email: req.body.dataUser.email,
-        });
-    } 
-    catch (error) {
-        res.status(500).json({ error: "Erreur interne serveur." });
-        console.error(
-            {
-                identity: "index.ts",
-                type: "route login",
-                chemin: "/server/src/index.ts",
-                "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
-                details: error,
-            },
-        );
-        return;
-    }
-});
-
-
-/**
  * Gestion des routes innexistante
  */
 app.use( async (req: Request, res: Response) => {

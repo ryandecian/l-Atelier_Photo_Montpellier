@@ -2,15 +2,17 @@ import { Request, Response } from "express";
 
 async function loginResponse(req: Request, res: Response) {
     try {
-        res.status(200)
-        .cookie("jwtToken", req.body.jwt) /* jwtToken est le nom du cookie */
-        .json({
-            id: req.body.dataUser.id,
-            firstname: req.body.dataUser.firstname,
-            lastname: req.body.dataUser.lastname,
-            address: req.body.dataUser.address,
-            email: req.body.dataUser.email,
-        });
+        // ✅ Réponse de succès
+        res.status(201).json(
+            {
+                reponse: "Enregistrement accepté",
+                id: req.body.id, 
+                firstname: req.body.firstname,
+                lastname: req.body.lastname,
+                email: req.body.email,
+            }
+        );
+        return;
     }
     catch (error) {
         res.status(500).json({ error: "Erreur interne serveur." });
