@@ -17,34 +17,35 @@ import { useComplexConnection } from "./database/config";
 import { ResultSetHeader, RowDataPacket } from "mysql2";
 
 // Import des middlewares générals
-import VerifyKeys from "./middleware/VerifyKeys";
+import VerifyKeys from "./middleware/VerifyKeys/VerifyKeys";
 import VerifyEmailFalse from "./middleware/VerifyEmail/VerifyEmailFalse";
 import VerifyEmailTrue from "./middleware/VerifyEmail/VerifyEmailTrue";
 import HashPassword from "./middleware/Argon/HashPassword";
 import VerifyPassword from "./middleware/Argon/VerifyPassword";
-import InsertUser from "./middleware/InsertUser";
+import InsertUser from "./middleware/InsertDB/InsertUser";
 import Create_JWT_Middleware from "./middleware/JWT/Create_JWT_Middleware";
 import Create_Crypto_Middleware from "./middleware/Crypto_Middleware/Create_Crypto_Middleware";
 import Verify_Crypto_Middleware from "./middleware/Crypto_Middleware/Verify_Crypto_Middleware";
-import InsertNewPassword from "./middleware/insertNewPassword";
+import InsertNewPassword from "./middleware/InsertDB/insertNewPassword";
 
 // Import des Services
-import mailer from "./services/mailer";
-import SendMailer_Middleware from "./middleware/SendMailer_Middleware";
+import mailer from "./services/mailer/mailer";
+import SendMailer_Middleware from "./services/mailer/SendMailer_Middleware";
 
 
 const app = express();
 const port = 8080;
 
-app.use("/api", router);
 
 /**
  * Pour lire le body d'un (request) contenant un json, j'ai besoin d'importer un middleware
  * d'express pour lire la request correctement.
  * Action callBack
  * Methode: USE
- */
+*/
 app.use(express.json());
+
+app.use("/api", router);
 
 /**
  * Sécurité DDOS
@@ -209,47 +210,6 @@ app.post("/register",
             return;
         }
 })
-
-/**
- * Route de login
- * Path: /login
- * Action callBack
- * Methode: POST
- */
-app.post("/login",
-    // Ajout des middlewares
-    RouteLimiterRequestIP,
-    VerifyKeys(["email", "password"]),
-    VerifyEmailTrue,
-    VerifyPassword,
-    Create_JWT_Middleware,
-    async (req: Request, res: Response):Promise<void> => {
-    try {
-        res.status(200)
-        .cookie("jwtToken", req.body.jwt)
-        .json({
-            id: req.body.dataUser.id,
-            firstname: req.body.dataUser.firstname,
-            lastname: req.body.dataUser.lastname,
-            address: req.body.dataUser.address,
-            email: req.body.dataUser.email,
-        });
-    } 
-    catch (error) {
-        res.status(500).json({ error: "Erreur interne serveur." });
-        console.error(
-            {
-                identity: "index.ts",
-                type: "route login",
-                chemin: "/server/src/index.ts",
-                "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
-                details: error,
-            },
-        );
-        return;
-    }
-});
-
 
 /**
  * Gestion des routes innexistante

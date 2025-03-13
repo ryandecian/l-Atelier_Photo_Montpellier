@@ -1,4 +1,4 @@
-import mailer from "../services/mailer";
+import mailer from "./mailer";
 import { Request, Response, NextFunction } from "express";
 import "dotenv/config";
 
@@ -13,7 +13,7 @@ async function SendMailer_Middleware( req: Request, res: Response, next: NextFun
                 {
                     identity: "SendMailer_Middleware.ts",
                     type: "middleware",
-                    chemin: "/server/src/middleware/SendMailer_Middleware.ts",
+                    chemin: "/server/src/middleware/mailer/SendMailer_Middleware.ts",
                     "❌ Nature de l'erreur": "Requête invalide.",
                     cause1: "Les champs 'to' et 'subject' sont absents.",
                 });
@@ -27,7 +27,7 @@ async function SendMailer_Middleware( req: Request, res: Response, next: NextFun
                 {
                     identity: "SendMailer_Middleware.ts",
                     type: "middleware",
-                    chemin: "/server/src/middleware/SendMailer_Middleware.ts",
+                    chemin: "/server/src/middleware/mailer/SendMailer_Middleware.ts",
                     "❌ Nature de l'erreur": "Requête invalide.",
                     explication1: "Les champs 'text' et 'html' existent en même temps.",
                     explication2: "Un seul champ doit être présent.",
@@ -42,7 +42,7 @@ async function SendMailer_Middleware( req: Request, res: Response, next: NextFun
                 {
                     identity: "SendMailer_Middleware.ts",
                     type: "middleware",
-                    chemin: "/server/src/middleware/SendMailer_Middleware.ts",
+                    chemin: "/server/src/middleware/mailer/SendMailer_Middleware.ts",
                     "❌ Nature de l'erreur": "Requête invalide.",
                     cause1: "Les champs 'text' et 'html' sont absents.",
                     cause2: "Les champs 'text' et 'html' existent en même temps.",
@@ -66,7 +66,7 @@ async function SendMailer_Middleware( req: Request, res: Response, next: NextFun
             {
                 identity: "SendMailer_Middleware.ts",
                 type: "middleware",
-                chemin: "/server/src/middleware/SendMailer_Middleware.ts",
+                chemin: "/server/src/middleware/mailer/SendMailer_Middleware.ts",
                 "❌ Nature de l'erreur": "Mail non envoyé !",
                 details: error,
             },

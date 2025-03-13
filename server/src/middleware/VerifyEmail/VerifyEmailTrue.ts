@@ -44,6 +44,7 @@ async function VerifyEmailTrue(req:Request, res: Response, next: NextFunction) {
                 details: error,
             },
         );
+        return;
     }
 }
 
