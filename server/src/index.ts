@@ -23,7 +23,7 @@ import VerifyEmailTrue from "./middleware/VerifyEmail/VerifyEmailTrue";
 import HashPassword from "./middleware/Argon/HashPassword";
 import VerifyPassword from "./middleware/Argon/VerifyPassword";
 import InsertUser from "./middleware/InsertUser";
-import Create_JWT_Middleware from "./middleware/Create_JWT_Middleware";
+import Create_JWT_Middleware from "./middleware/JWT/Create_JWT_Middleware";
 import Create_Crypto_Middleware from "./middleware/Crypto_Middleware/Create_Crypto_Middleware";
 import Verify_Crypto_Middleware from "./middleware/Crypto_Middleware/Verify_Crypto_Middleware";
 import InsertNewPassword from "./middleware/insertNewPassword";
