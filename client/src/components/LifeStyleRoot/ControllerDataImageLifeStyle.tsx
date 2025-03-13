@@ -10,20 +10,20 @@ import Image8 from "../../assets/Images/ImageLifeStyle/Solo/Portrait_François_
 import Image9 from "../../assets/Images/ImageLifeStyle/Solo/Life_style_exterieur.jpg";
 import Image10 from "../../assets/Images/ImageHomePage/Portrait_jeune_femme_lumiere_naturelle.jpg";
 
-import Image11 from "../../assets/Images/ImageLifeStyle/Couple/portrait_tandem_exterieur.jpg";
+import Image11 from "../../assets/Images/ImageLifeStyle/Couple/portrait_couple_studio_bis.jpg";
 import image12 from "../../assets/Images/ImageLifeStyle/Couple/portrait_couple_jeune_studio.jpg";
-import Image13 from "../../assets/Images/ImageLifeStyle/Couple/portrait_couple_studio_bis.jpg";
+import Image13 from "../../assets/Images/ImageLifeStyle/Couple/portrait_tandem_exterieur.jpg";
 import Image14 from "../../assets/Images/ImageHomePage/Shooting_couple_studio.jpg";
 
-import Image15 from "../../assets/Images/ImageLifeStyle/Famille/Amies_d-Enfance_Flash.jpg";
-import Image16 from "../../assets/Images/ImageLifeStyle/Famille/life_style_pere_fils.jpg";
+import Image15 from "../../assets/Images/ImageLifeStyle/Famille/Les_2_Freres.jpg";
+import Image16 from "../../assets/Images/ImageLifeStyle/Famille/Amies_d-Enfance_Flash.jpg";
 import Image17 from "../../assets/Images/ImageLifeStyle/Famille/Mere_Fils_portrait_interieur.jpg";
-import Image18 from "../../assets/Images/ImageLifeStyle/Famille/Mere_Fils_portrait_naturel.jpg";
+import Image18 from "../../assets/Images/ImageLifeStyle/Famille/life_style_pere_fils.jpg";
 
 import Image27 from "../../assets/Images/ImageLifeStyle/Hobbie/Portrait_Serie_PeakyBlinders.jpg";
-import Image28 from "../../assets/Images/ImageLifeStyle/Hobbie/Portraits_Synrie_Far_West_nb.jpg";
-import Image29 from "../../assets/Images/ImageLifeStyle/Hobbie/chiens_traineau_portrait.jpg";
-import Image30 from "../../assets/Images/ImageLifeStyle/Hobbie/Canicross_osteopathe_.jpg";
+import Image28 from "../../assets/Images/ImageLifeStyle/Hobbie/Canicross_osteopathe_.jpg";
+import Image29 from "../../assets/Images/ImageLifeStyle/Hobbie/Portraits_Synrie_Far_West_nb.jpg";
+import Image30 from "../../assets/Images/ImageLifeStyle/Hobbie/Gardienne_but_Portrait_Flash_4.jpg";
 
 interface ControllerDataImageLifeStyleType {
     src: string;
@@ -93,7 +93,7 @@ const ControllerDataImageLifeStyle: ControllerDataImageLifeStyleType[] = [
     /* {ControllerDataImageLifeStyle[10].src} */
     {
         src: Image11,
-        alt: "portrait tandem exterieur",
+        alt: "portrait couple studio bis",
     },
     /* {ControllerDataImageLifeStyle[11].src} */
     {
@@ -103,7 +103,7 @@ const ControllerDataImageLifeStyle: ControllerDataImageLifeStyleType[] = [
     /* {ControllerDataImageLifeStyle[12].src} */
     {
         src: Image13,
-        alt: "portrait couple studio bis",
+        alt: "portrait tandem exterieur",
     },
     /* {ControllerDataImageLifeStyle[13].src} */
     {
@@ -117,12 +117,12 @@ const ControllerDataImageLifeStyle: ControllerDataImageLifeStyleType[] = [
     /* {ControllerDataImageLifeStyle[14].src} */
     {
         src: Image15,
-        alt: "Famille Amies d-Enfance Flash",
+        alt: "Les 2 Freres",
     },
     /* {ControllerDataImageLifeStyle[15].src} */
     {
         src: Image16,
-        alt: "Life style pere fils",
+        alt: "Amies d'Enfance Flash",
     },
     /* {ControllerDataImageLifeStyle[16].src} */
     {
@@ -132,7 +132,7 @@ const ControllerDataImageLifeStyle: ControllerDataImageLifeStyleType[] = [
     /* {ControllerDataImageLifeStyle[17].src} */
     {
         src: Image18,
-        alt: "Mere Fils portrait naturel",
+        alt: "life style pere fils",
     },
 
 
@@ -194,17 +194,17 @@ const ControllerDataImageLifeStyle: ControllerDataImageLifeStyleType[] = [
     /* {ControllerDataImageLifeStyle[27].src} */
     {
         src: Image28,
-        alt: "Portraits Synrie Far West nb",
+        alt: "Canicross osteopathe",
     },
     /* {ControllerDataImageLifeStyle[28].src} */
     {
         src: Image29,
-        alt: "Chiens traineau portrait",
+        alt: "Portraits Synrie Far West nb",
     },
     /* {ControllerDataImageLifeStyle[29].src} */
     {
         src: Image30,
-        alt: "Canicross osteopathe",
+        alt: "Gardienne but Portrait Flash 4",
     },
 
 ];
