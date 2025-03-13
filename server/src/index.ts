@@ -17,7 +17,7 @@ import { useComplexConnection } from "./database/config";
 import { ResultSetHeader, RowDataPacket } from "mysql2";
 
 // Import des middlewares générals
-import VerifyKeys from "./middleware/VerifyKeys";
+import VerifyKeys from "./middleware/VerifyKeys/VerifyKeys";
 import VerifyEmailFalse from "./middleware/VerifyEmail/VerifyEmailFalse";
 import VerifyEmailTrue from "./middleware/VerifyEmail/VerifyEmailTrue";
 import HashPassword from "./middleware/Argon/HashPassword";

@@ -17,7 +17,7 @@ function VerifyKeys(requiredKeys: string[]) {
                     {
                         identity: "VerifyKeys.ts",
                         type: "middleware",
-                        chemin: "/server/src/middleware/VerifyKeys.ts",
+                        chemin: "/server/src/middleware/VerifyKeys/VerifyKeys.ts",
                         "❌ Nature de l'erreur": "Clés manquantes dans la requête",
                         missingKeys,
                         body: req.body
