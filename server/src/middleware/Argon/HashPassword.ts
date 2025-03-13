@@ -13,7 +13,7 @@ async function HashPassword( req: Request, res: Response, next: NextFunction ) {
             {
                 identity: "HashPassword.ts",
                 type: "middleware",
-                chemin: "/server/src/middleware/HashPassword.ts",
+                chemin: "/server/src/middleware/Argon/HashPassword.ts",
                 "❌ Nature de l'erreur": "Hash échoué !",
             },
         );

@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
 import crypto from 'crypto';
-import usePoolConnection from "../database/config";
+import usePoolConnection from "../../database/config";
 import { RowDataPacket } from "mysql2";
 
 
@@ -13,7 +13,7 @@ async function Verify_Crypto_Middleware(req: Request, res: Response, next: NextF
                 {
                     identity: "Verify_Crypto_Middleware.ts",
                     type: "middleware",
-                    chemin: "/server/src/middleware/Verify_Crypto_Middleware.ts",
+                    chemin: "/server/src/middleware/Crypto_Middleware/Verify_Crypto_Middleware.ts",
                     "❌ Nature de l'erreur": "Requête invalide.",
                     cause1: "Les champs token et ou newPassword sont absents.",
                 });
@@ -33,7 +33,7 @@ async function Verify_Crypto_Middleware(req: Request, res: Response, next: NextF
                 {
                     identity: "Verify_Crypto_Middleware.ts",
                     type: "middleware",
-                    chemin: "/server/src/middleware/Verify_Crypto_Middleware.ts",
+                    chemin: "/server/src/middleware/Crypto_Middleware/Verify_Crypto_Middleware.ts",
                     "❌ Nature de l'erreur": "Token invalide.",
                     cause1: "Le token n'existe pas dans la DB.",
                     explication1: "La requête SQL n'a pas retourné de résultat.",
@@ -56,7 +56,7 @@ async function Verify_Crypto_Middleware(req: Request, res: Response, next: NextF
                     {
                         identity: "Verify_Crypto_Middleware.ts",
                         type: "middleware",
-                        chemin: "/server/src/middleware/Verify_Crypto_Middleware.ts",
+                        chemin: "/server/src/middleware/Crypto_Middleware/Verify_Crypto_Middleware.ts",
                         "❌ Nature de l'erreur": "Erreur interne serveur.",
                         cause1: "La requête SQL DELETE n'a pas fonctionné.",
                         explication1: "La date d'expiration du token est inférieure à la date actuelle.",
@@ -73,7 +73,7 @@ async function Verify_Crypto_Middleware(req: Request, res: Response, next: NextF
                 {
                     identity: "Verify_Crypto_Middleware.ts",
                     type: "middleware",
-                    chemin: "/server/src/middleware/Verify_Crypto_Middleware.ts",
+                    chemin: "/server/src/middleware/Crypto_Middleware/Verify_Crypto_Middleware.ts",
                     "❌ Nature de l'erreur": "Token expiré.",
                     cause1: "Le token est expiré.",
                     explication1: "La date d'expiration du token est inférieure à la date actuelle.",
@@ -107,7 +107,7 @@ async function Verify_Crypto_Middleware(req: Request, res: Response, next: NextF
             {
                 identity: "Verify_Crypto_Middleware.ts",
                 type: "middleware",
-                chemin: "/server/src/middleware/Verify_Crypto_Middleware.ts",
+                chemin: "/server/src/middleware/Crypto_Middleware/Verify_Crypto_Middleware.ts",
                 "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
                 details: error,
             }
