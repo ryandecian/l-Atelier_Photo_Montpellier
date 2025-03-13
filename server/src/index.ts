@@ -36,15 +36,16 @@ import SendMailer_Middleware from "./services/mailer/SendMailer_Middleware";
 const app = express();
 const port = 8080;
 
-app.use("/api", router);
 
 /**
  * Pour lire le body d'un (request) contenant un json, j'ai besoin d'importer un middleware
  * d'express pour lire la request correctement.
  * Action callBack
  * Methode: USE
- */
+*/
 app.use(express.json());
+
+app.use("/api", router);
 
 /**
  * Sécurité DDOS
