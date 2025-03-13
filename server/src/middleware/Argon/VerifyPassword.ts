@@ -39,6 +39,7 @@ async function VerifyPassword( req: Request, res: Response, next: NextFunction )
                 details: error,
             },
         );
+        return;
     }
 }
 
