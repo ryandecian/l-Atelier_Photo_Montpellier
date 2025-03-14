@@ -5,33 +5,6 @@ import router from "./router/router";
 // Import des composants de sécurités
 import LimiteRequestIP from "./Security/LimiteRequestIP";
 
-// Import des middlewares de sécurités
-// Non opérationnel
-import RouteLimiterRequestIP from "./Security/middlewareSecurity/RouteLimiterRequestIP";
-
-/*----------------------------------------------------*/
-
-// Import pour SQL
-import usePoolConnection from "./database/config";
-import { useComplexConnection } from "./database/config";
-import { ResultSetHeader, RowDataPacket } from "mysql2";
-
-// Import des middlewares générals
-import VerifyKeys from "./middleware/VerifyKeys/VerifyKeys";
-import VerifyEmailFalse from "./middleware/VerifyEmail/VerifyEmailFalse";
-import VerifyEmailTrue from "./middleware/VerifyEmail/VerifyEmailTrue";
-import HashPassword from "./middleware/Argon/HashPassword";
-import VerifyPassword from "./middleware/Argon/VerifyPassword";
-import InsertUser from "./middleware/InsertDB/InsertUser";
-import Create_JWT_Middleware from "./middleware/JWT/Create_JWT_Middleware";
-import Create_Crypto_Middleware from "./middleware/Crypto_Middleware/Create_Crypto_Middleware";
-import Verify_Crypto_Middleware from "./middleware/Crypto_Middleware/Verify_Crypto_Middleware";
-import InsertNewPassword from "./middleware/InsertDB/insertNewPassword";
-
-// Import des Services
-import mailer from "./services/mailer/mailer";
-import SendMailer_Middleware from "./services/mailer/SendMailer_Middleware";
-
 
 const app = express();
 const port = 8080;
@@ -62,36 +35,6 @@ app.use(LimiteRequestIP)
  */
 app.get("/", (req: Request, res: Response) => {
     res.status(200).send("API de Anne SAUNIER !!!");
-})
-
-/**
- * Route pour envoyer un email
- * Path: /email
- * Action callBack
- * Methode: POST
- */
-app.post("/email",
-    // Ajout des middlewares
-    VerifyKeys(["to", "subject", "text"]),
-    SendMailer_Middleware,
-    async (req: Request, res: Response) => {
-    try {
-        // res.status(200).json({ reponse: "Mail envoyé avec succès !", data: req.body })
-        res.status(200).json({ reponse: "Route mail existant", data: req.body })
-    }
-    catch (error) {
-        res.status(500).json({ error: "Erreur interne serveur." });
-        console.error(
-            {
-                identity: "index.ts",
-                type: "route register",
-                chemin: "/server/src/index.ts",
-                "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
-                details: error,
-            },
-        );
-        return;
-    }
 })
 
 /**
