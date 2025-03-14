@@ -2,6 +2,17 @@ import mailer from "./mailer";
 import { Request, Response, NextFunction } from "express";
 import "dotenv/config";
 
+/**
+ * Middleware pour envoyer un mail
+ * Les champs 'to' et 'subject' sont obligatoires
+ * Un seul des deux champs 'text' ou 'html' doit être présent
+ * 
+ * Utilisation : Ce qui est attendu : 
+ * req.body.to
+ * req.body.subject
+ * req.body.text ou req.body.html
+ */
+
 const transporter = mailer
 
 async function SendMailer_Middleware( req: Request, res: Response, next: NextFunction ) {
@@ -15,7 +26,7 @@ async function SendMailer_Middleware( req: Request, res: Response, next: NextFun
                     type: "middleware",
                     chemin: "/server/src/middleware/mailer/SendMailer_Middleware.ts",
                     "❌ Nature de l'erreur": "Requête invalide.",
-                    cause1: "Les champs 'to' et 'subject' sont absents.",
+                    cause1: "Les champs 'to' et ou 'subject' sont absents.",
                 });
             return;
         }
@@ -45,14 +56,13 @@ async function SendMailer_Middleware( req: Request, res: Response, next: NextFun
                     chemin: "/server/src/middleware/mailer/SendMailer_Middleware.ts",
                     "❌ Nature de l'erreur": "Requête invalide.",
                     cause1: "Les champs 'text' et 'html' sont absents.",
-                    cause2: "Les champs 'text' et 'html' existent en même temps.",
                     explication: "Au moins un des deux champs doit être présent.",
                 });
             return;
         };
 
         const info = await transporter.sendMail({
-            from: `"Montpellier Visuel" <${process.env.EMAIL_USER}>`, // email de l'expéditeur
+            from: `"l'Atelier Photo Montpellier" <${process.env.EMAIL_USER}>`, // email de l'expéditeur
             to: req.body.to, // liste email des destinataires
             subject: req.body.subject, // objet du mail
             text: req.body.text, // Contenu du mail
