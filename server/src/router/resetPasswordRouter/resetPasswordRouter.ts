@@ -8,13 +8,13 @@ import SendMailer_Middleware from "../../services/mailer/SendMailer_Middleware";
 // Import des Middlewares : resetPasswordRouter
 import VerifyEmailTrue from "../../middleware/VerifyEmail/VerifyEmailTrue";
 import Create_Crypto_Middleware from "../../middleware/Crypto_Middleware/Create_Crypto_Middleware";
-import resetPasswordResponse from "./resetPasswordResponse";
+import resetPasswordPostResponse from "./resetPasswordResponse/resetPasswordResponse";
 
 // Import des Middlewares : resetPasswordConfirmRouter
 import Verify_Crypto_Middleware from "../../middleware/Crypto_Middleware/Verify_Crypto_Middleware";
 import HashPassword from "../../middleware/Argon/HashPassword";
 import InsertNewPassword from "../../middleware/InsertDB/insertNewPassword";
-import resetPasswordConfirmResponse from "./resetPasswordConfirmRouter";
+import resetPasswordConfirmPostResponse from "./resetPasswordResponse/resetPasswordConfirmPostResponse";
 
 
 const resetPasswordRouter = express.Router();
@@ -26,7 +26,7 @@ resetPasswordRouter.post("/",
     VerifyEmailTrue,
     Create_Crypto_Middleware,
     SendMailer_Middleware,
-    resetPasswordResponse
+    resetPasswordPostResponse
 )
 
 // Réinitialisation du mot de passe. Réception du token et du nouveau mot de passe
@@ -37,7 +37,7 @@ resetPasswordRouter.post("/confirm",
     HashPassword,
     InsertNewPassword,
     SendMailer_Middleware,
-    resetPasswordConfirmResponse
+    resetPasswordConfirmPostResponse
 )
 
 export default resetPasswordRouter;
