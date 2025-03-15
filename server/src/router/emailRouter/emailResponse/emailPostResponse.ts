@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 
-async function emailResponse(req: Request, res: Response) {
+async function emailPostResponse(req: Request, res: Response) {
     try {
         res.status(200).json({ 
             reponse: "Votre email a bien été envoyé",
@@ -12,9 +12,9 @@ async function emailResponse(req: Request, res: Response) {
         res.status(500).json({ error: "Erreur interne serveur." });
         console.error(
             {
-                identity: "emailResponse.ts",
-                type: "route email",
-                chemin: "/server/src/router/emailRouter/emailResponse.ts",
+                identity: "emailPostResponse.ts",
+                type: "Middleware de réponse",
+                chemin: "/server/src/router/emailRouter/emailResponse/emailPostResponse.ts",
                 "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
                 details: error,
             },
@@ -23,4 +23,4 @@ async function emailResponse(req: Request, res: Response) {
     }
 }
 
-export default emailResponse;
+export default emailPostResponse;

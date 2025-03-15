@@ -1,14 +1,14 @@
 import express from 'express';
 
+const registerRouter = express.Router();
+
 // Import des Middlewares : 
 import RouteLimiterRequestIP from '../../Security/middlewareSecurity/RouteLimiterRequestIP';
 import VerifyKeys from '../../middleware/VerifyKeys/VerifyKeys';
 import VerifyEmailFalse from '../../middleware/VerifyEmail/VerifyEmailFalse';
 import HashPassword from '../../middleware/Argon/HashPassword';
 import InsertUser from '../../middleware/InsertDB/InsertUser';
-import registerResponse from './registerResponse';
-
-const registerRouter = express.Router();
+import registerPostResponse from './registerResponse/registerPostResponse';
 
 registerRouter.post("/",
     RouteLimiterRequestIP,
@@ -16,6 +16,7 @@ registerRouter.post("/",
     VerifyEmailFalse,
     HashPassword,
     InsertUser,
-    registerResponse
+    registerPostResponse
 )
+
 export default registerRouter;
