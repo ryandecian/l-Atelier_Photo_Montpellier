@@ -11,7 +11,7 @@ async function resetPasswordPostResponse(req: Request, res: Response) {
         console.error(
             {
                 identity: "resetPasswordPostResponse.ts",
-                type: "route reset-password",
+                type: "Middleware de réponse",
                 chemin: "/server/src/router/resetPasswordRouter/resetPasswordResponse/resetPasswordPostResponse.ts",
                 "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
                 details: error,
