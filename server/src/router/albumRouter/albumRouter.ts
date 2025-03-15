@@ -4,18 +4,16 @@ import { Request, Response } from "express";
 const albumRouter = express.Router();
 
 // Import des Middlewares :
+import albumGetResponse from "./albumResponse/albumGetResponse";
+import albumPostResponse from "./albumResponse/albumPostResponse";
 
-albumRouter.get("/", (req: Request, res: Response) => {
-    res.status(200).json({
-        reponse: "Route Get ok : Récupération de tous les albums",
-    });
-});
+albumRouter.get("/", 
+    albumGetResponse,
+);
 
-albumRouter.post("/", (req: Request, res: Response) => {
-    res.status(200).json({
-        reponse: "Route Post ok : Création album",
-    });
-});
+albumRouter.post("/", 
+    albumPostResponse,
+);
 
 albumRouter.put("/", (req: Request, res: Response) => {
     res.status(200).json({

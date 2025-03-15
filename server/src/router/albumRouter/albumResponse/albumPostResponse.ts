@@ -1,9 +1,9 @@
 import { Request, Response } from "express";
 
-async function albumGetResponse(req: Request, res: Response) {
+async function albumPostResponse(req: Request, res: Response) {
     try {
         res.status(200).json({
-            reponse: "Route Get ok : Récupération de tous les albums",
+            reponse: "Route Post ok : Création album",
         });
         return;
     }
@@ -11,9 +11,9 @@ async function albumGetResponse(req: Request, res: Response) {
         res.status(500).json({ error: "Erreur interne serveur." });
         console.error(
             {
-                identity: "albumGetResponse.ts",
+                identity: "albumPostResponse.ts",
                 type: "Middleware de réponse",
-                chemin: "/server/src/router/albumRouter/albumResponse/albumGetResponse.ts",
+                chemin: "/server/src/router/albumRouter/albumResponse/albumPostResponse.ts",
                 "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
                 details: error,
             },
@@ -22,4 +22,4 @@ async function albumGetResponse(req: Request, res: Response) {
     }
 }
 
-export default albumGetResponse;
+export default albumPostResponse;
