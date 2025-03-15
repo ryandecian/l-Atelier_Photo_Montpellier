@@ -3,6 +3,8 @@ import { Request, Response } from "express";
 
 const albumRouter = express.Router();
 
+// Import des Middlewares :
+
 albumRouter.get("/", (req: Request, res: Response) => {
     res.status(200).json({
         reponse: "Route Get ok : Récupération de tous les albums",
