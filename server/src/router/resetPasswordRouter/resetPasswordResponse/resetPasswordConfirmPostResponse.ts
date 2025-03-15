@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 
-async function resetPasswordConfirmResponse(req: Request, res: Response) {
+async function resetPasswordConfirmPostResponse(req: Request, res: Response) {
     try {
         res.status(200).json({ 
             reponse: "Votre mot de passe a bien été reinitialisée",
@@ -15,9 +15,9 @@ async function resetPasswordConfirmResponse(req: Request, res: Response) {
         res.status(500).json({ error: "Erreur interne serveur." });
         console.error(
             {
-                identity: "resetPasswordConfirmResponse.ts",
-                type: "route reset-password",
-                chemin: "/server/src/router/resetPasswordRouter/resetPasswordConfirmResponse.ts",
+                identity: "resetPasswordConfirmPostResponse.ts",
+                type: "Middleware de réponse",
+                chemin: "/server/src/router/resetPasswordRouter/resetPasswordResponse/resetPasswordConfirmPostResponse.ts",
                 "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
                 details: error,
             },
@@ -26,4 +26,4 @@ async function resetPasswordConfirmResponse(req: Request, res: Response) {
     }
 }
 
-export default resetPasswordConfirmResponse;
+export default resetPasswordConfirmPostResponse;
