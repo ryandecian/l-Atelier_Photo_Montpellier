@@ -6,6 +6,8 @@ const albumRouter = express.Router();
 // Import des Middlewares :
 import albumGetResponse from "./albumResponse/albumGetResponse";
 import albumPostResponse from "./albumResponse/albumPostResponse";
+import albumPutResponse from "./albumResponse/albumPutResponse";
+import albumDeleteResponse from "./albumResponse/albumDeleteResponse";
 
 albumRouter.get("/", 
     albumGetResponse,
@@ -15,16 +17,12 @@ albumRouter.post("/",
     albumPostResponse,
 );
 
-albumRouter.put("/", (req: Request, res: Response) => {
-    res.status(200).json({
-        reponse: "Route Put ok : Modification album",
-    });
-});
+albumRouter.put("/", 
+    albumPutResponse,
+);
 
-albumRouter.delete("/", (req: Request, res: Response) => {
-    res.status(200).json({
-        reponse: "Route Post ok : Suppression album",
-    });
-});
+albumRouter.delete("/", 
+    albumDeleteResponse,
+);
 
 export default albumRouter;
