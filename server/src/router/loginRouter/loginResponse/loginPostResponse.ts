@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 
-async function loginResponse(req: Request, res: Response) {
+async function loginPostResponse(req: Request, res: Response) {
     try {
         res.status(200)
         .cookie("jwtToken", req.body.jwt) /* jwtToken est le nom du cookie */
@@ -17,9 +17,9 @@ async function loginResponse(req: Request, res: Response) {
         res.status(500).json({ error: "Erreur interne serveur." });
         console.error(
             {
-                identity: "loginResponse.ts",
-                type: "route login",
-                chemin: "/server/src/router/loginRouter/loginResponse.ts",
+                identity: "loginPostResponse.ts",
+                type: "Middleware de réponse",
+                chemin: "/server/src/router/loginRouter/loginResponse/loginPostResponse.ts",
                 "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
                 details: error,
             },
@@ -28,4 +28,4 @@ async function loginResponse(req: Request, res: Response) {
     }
 }
 
-export default loginResponse;
+export default loginPostResponse;
