@@ -18,7 +18,7 @@ import resetPasswordConfirmPostResponse from "./resetPasswordResponse/resetPassw
 
 
 const resetPasswordRouter = express.Router();
-
+// URI : /api/reset-password
 // Envois de l'email de réinitialisation du mot de passe
 resetPasswordRouter.post("/",
     RouteLimiterRequestIP,
@@ -29,6 +29,7 @@ resetPasswordRouter.post("/",
     resetPasswordPostResponse
 )
 
+// URI : /api/reset-password/confirm
 // Réinitialisation du mot de passe. Réception du token et du nouveau mot de passe
 resetPasswordRouter.post("/confirm",
     RouteLimiterRequestIP,
