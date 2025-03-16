@@ -9,19 +9,23 @@ import albumPostResponse from "./albumResponse/albumPostResponse";
 import albumPutResponse from "./albumResponse/albumPutResponse";
 import albumDeleteResponse from "./albumResponse/albumDeleteResponse";
 
+// URI : /api/album
 albumRouter.get("/", 
     albumGetResponse,
 );
 
+// URI : /api/album
 albumRouter.post("/", 
     albumPostResponse,
 );
 
-albumRouter.put("/", 
+// URI : /api/album/:id
+albumRouter.put("/:id", 
     albumPutResponse,
 );
 
-albumRouter.delete("/", 
+// URI : /api/album/:id
+albumRouter.delete("/:id", 
     albumDeleteResponse,
 );
 

@@ -10,6 +10,7 @@ import HashPassword from '../../middleware/Argon/HashPassword';
 import InsertUser from '../../middleware/InsertDB/InsertUser';
 import registerPostResponse from './registerResponse/registerPostResponse';
 
+// URI : /api/register
 registerRouter.post("/",
     RouteLimiterRequestIP,
     VerifyKeys(["firstname", "lastname", "email", "password"]),
