@@ -7,10 +7,16 @@ import photosGetResponse from "./photosResponse/photosGetResponse";
 import photosPostResponse from "./photosResponse/photosPostResponse";
 import photosDeleteResponse from "./photosResponse/photosDeleteResponse";
 
-photosRouter.get("/",);
+photosRouter.get("/",
+    photosGetResponse,
+);
 
-photosRouter.post("/",);
+photosRouter.post("/",
+    photosPostResponse,
+);
 
-photosRouter.delete("/",);
+photosRouter.delete("/",
+    photosDeleteResponse,
+);
 
 export default photosRouter;
