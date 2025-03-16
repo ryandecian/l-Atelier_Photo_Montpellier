@@ -11,11 +11,11 @@ photosRouter.get("/",
     photosGetResponse,
 );
 
-photosRouter.post("/",
+photosRouter.post("/upload",
     photosPostResponse,
 );
 
-photosRouter.delete("/",
+photosRouter.delete("/:id",
     photosDeleteResponse,
 );
 
