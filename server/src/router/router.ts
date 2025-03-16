@@ -6,6 +6,7 @@ import registerRouter from "./registerRouter/registerRouter";
 import resetPasswordRouter from "./resetPasswordRouter/resetPasswordRouter";
 import emailRouter from "./emailRouter/emailRouter";
 import albumRouter from "./albumRouter/albumRouter";
+import photosRouter from "./photosRouter/photosRouter";
 
 const router = express.Router();
 
@@ -15,5 +16,6 @@ router.use("/register", registerRouter); // 1 route fonctionnelle
 router.use("/reset-password", resetPasswordRouter); // 2 routes fonctionnelles
 router.use("/email", emailRouter); // 1 route fonctionnelle
 router.use("/album", albumRouter); // 4 routes fonctionnelles
+router.use("/photos", photosRouter); // 3 routes fonctionnelles
 
 export default router;
