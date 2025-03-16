@@ -8,7 +8,7 @@ import SendMailer_Middleware from "../../services/mailer/SendMailer_Middleware";
 // Import des Middlewares : resetPasswordRouter
 import VerifyEmailTrue from "../../middleware/VerifyEmail/VerifyEmailTrue";
 import Create_Crypto_Middleware from "../../middleware/Crypto_Middleware/Create_Crypto_Middleware";
-import resetPasswordPostResponse from "./resetPasswordResponse/resetPasswordResponse";
+import resetPasswordPostResponse from "./resetPasswordResponse/resetPasswordPostResponse";
 
 // Import des Middlewares : resetPasswordConfirmRouter
 import Verify_Crypto_Middleware from "../../middleware/Crypto_Middleware/Verify_Crypto_Middleware";
