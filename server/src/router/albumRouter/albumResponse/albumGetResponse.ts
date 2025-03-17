@@ -1,9 +1,16 @@
 import { Request, Response } from "express";
 
 async function albumGetResponse(req: Request, res: Response) {
+    console.log({test: "console.log", data: req.body.dataAlbum});
     try {
+        if (req.body.dataAlbum.length === 0) {
+            res.status(404).json({ reponse: "Aucun album trouvé." });
+            return;
+        }
+
         res.status(200).json({
             reponse: "Route Get ok : Récupération de tous les albums",
+            dataAlbum: req.body.dataAlbum,
         });
         return;
     }

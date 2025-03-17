@@ -13,7 +13,8 @@ async function Verify_JWT_Middleware(req: Request, res: Response, next: NextFunc
                 chemin: "/server/src/middleware/JWT/Verify_JWT_Middleware.ts",
                 "❌ Nature de l'erreur": "SECRET_KEY_TOKEN est absent dans .env !",
             });
-            return res.status(500).json({ error: "Erreur interne serveur." });
+            res.status(500).json({ error: "Erreur interne serveur." });
+            return;
         }
 
         // ✅ Récupération du token depuis les cookies ou l’Authorization header
