@@ -4,7 +4,7 @@ async function albumGetResponse(req: Request, res: Response) {
     console.log({test: "console.log", data: req.body.dataAlbum});
     try {
         if (req.body.dataAlbum.length === 0) {
-            res.status(404).json({ reponse: "Aucun album trouvé." });
+            res.status(200).json({ reponse: "Aucun album trouvé." });
             return;
         }
 
