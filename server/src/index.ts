@@ -22,7 +22,7 @@ app.use("/api", router);
 
 /**
  * Sécurité DDOS
- * Permet de limité les requêtes d'une même IP à 150 par min
+ * Permet de limité les requêtes d'une même IP à 1000 par min
  * Déblocage automatique
  */
 app.use(LimiteRequestIP)

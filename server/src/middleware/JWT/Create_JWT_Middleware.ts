@@ -18,18 +18,6 @@ async function Create_JWT_Middleware(req: Request, res: Response, next: NextFunc
                 );
                 return;
         }
-        if (!req.body.dataUser) {
-            res.status(500).json({ error: "Erreur interne serveur." });
-                console.error(
-                    {
-                        identity: "Create_JWT_Middleware.ts",
-                        type: "middleware",
-                        chemin: "/server/src/middleware/JWT/Create_JWT_Middleware.ts",
-                        "❌ Nature de l'erreur": "Le middleware VerifyEmailTrue.ts n'a pas mis a disposition dataUser.",
-                    },
-                );
-                return;
-        }
 
          // ✅ Définition du payload avec `iat` et `exp`
          const expiresIn = 60 * 60; // 1 heure

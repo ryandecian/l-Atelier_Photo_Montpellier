@@ -10,7 +10,7 @@ import { RowDataPacket } from "mysql2";
 async function VerifyAlbum(req: Request, res: Response, next: Function) {
     try {
         const [dataAlbum] = await usePoolConnection.query<RowDataPacket[]>(
-            "SELECT * FROM album WHERE id = 2",
+            "SELECT * FROM album",
         )
 
         /**
