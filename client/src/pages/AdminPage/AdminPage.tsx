@@ -1,6 +1,6 @@
 import style from "./AdminPage.module.css";
 import NavRoot from "../../components/NavRoot/NavRoot";
-// import AdminRoot from "../../components/AdminRoot/AdminRoot";
+import AdminRoot from "../../components/AdminRoot/AdminRoot";
 import FooterRoot from "../../components/FooterRoot/FooterRoot";
 
 function AdminPage() {
@@ -10,7 +10,7 @@ function AdminPage() {
                 <NavRoot />
             </header>
             <main className={style.Main}>
-                <h1>Admin</h1>
+                <AdminRoot />
             </main>
             <footer className={style.Footer}>
                 <FooterRoot />

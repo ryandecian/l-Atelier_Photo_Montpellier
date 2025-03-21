@@ -7,6 +7,7 @@ import LifeStylePage from "../pages/LifeStylePage/LifeStylePage";
 import Error404 from "../pages/Error404Page/Error404Page";
 import CGVPage from "../pages/CGVPage/CGVPage";
 import MariagePage from "../pages/MariagePage/MariagePage";
+import AdminPage from "../pages/AdminPage/AdminPage";
 
 /**
  * Utilisation : 
@@ -155,6 +156,11 @@ const ListDataRouter: RouterItemsType[] = [
     {
         path: "*",
         element: <Error404 />,
+    },
+    /* {ListDataRouter[21].path} */
+    {
+        path: "/admin",
+        element: <AdminPage />,
     },
 ]
 export { LinkExt };
