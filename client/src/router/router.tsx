@@ -9,6 +9,7 @@ import CGVPage from "../pages/CGVPage/CGVPage";
 import MariagePage from "../pages/MariagePage/MariagePage";
 import AdminPage from "../pages/AdminPage/AdminPage";
 import ComptePage from "../pages/ComptePage/ComptePage";
+import LoginPage from "../pages/LoginPage/LoginPage";
 
 /**
  * Utilisation : 
@@ -85,7 +86,7 @@ const ListDataRouter: RouterItemsType[] = [
     /* {ListDataRouter[6].path} */
     {
         path: "/compte",
-        element: <h1>Route : Page Compte</h1>,
+        element: <ComptePage />,
     },
     /* {ListDataRouter[7].path} */
     {
@@ -165,8 +166,8 @@ const ListDataRouter: RouterItemsType[] = [
     },
     /* {ListDataRouter[22].path} */
     {
-        path: "/compte",
-        element: <ComptePage />,
+        path: "/login",
+        element: <LoginPage />,
     },
 ]
 export { LinkExt };
