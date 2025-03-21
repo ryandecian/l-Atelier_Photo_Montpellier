@@ -96,4 +96,25 @@
     font-weight: bold;
     margin-top: 1rem;
   }
+
+  .topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .logoutBtn {
+    background-color: #555;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .logoutBtn:hover {
+    background-color: #333;
+  }
   

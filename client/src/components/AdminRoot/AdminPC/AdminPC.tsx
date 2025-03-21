@@ -57,6 +57,18 @@ function AdminPC() {
       .finally(() => setLoading(false));
   }, [navigate]);
 
+  const handleLogout = () => {
+    // ✅ Nettoyage des données sensibles
+    localStorage.removeItem("jwtToken");
+    localStorage.removeItem("userRole");
+    localStorage.removeItem("userId");
+    localStorage.removeItem("userEmail");
+    localStorage.removeItem("userName");
+  
+    // 🔁 Redirection vers la page de connexion
+    navigate("/login");
+  };
+  
   // 🗑️ Suppression d’un utilisateur
   const handleDeleteUser = async (id: number) => {
     const confirmDelete = window.confirm("⚠️ Supprimer cet utilisateur ?");
@@ -158,6 +170,7 @@ function AdminPC() {
   return (
     <div className={style.AdminPC}>
       <h1>👑 Interface Admin</h1>
+      <button onClick={handleLogout} className={style.logoutBtn}>🚪 Déconnexion</button>
 
       {/* ✅ Message de succès */}
       {successMessage && <p className={style.success}>{successMessage}</p>}
