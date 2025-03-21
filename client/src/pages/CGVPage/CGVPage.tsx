@@ -42,7 +42,7 @@ function CGVPage() {
      const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
 
      return (
-        <div className={style.MentionsLegalesPage}>
+        <div className={style.CGVPage}>
             <Helmet>
                   {/* Balises SEO */}
                      {/* Balise pour indexation général */}

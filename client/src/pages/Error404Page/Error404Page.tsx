@@ -42,7 +42,7 @@ function Error404() {
      const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
 
      return (
-        <div className={style.MentionsLegalesPage}>
+        <div className={style.Error404Page}>
             <Helmet>
                   {/* Balises SEO */}
                      {/* Balise pour indexation général */}
