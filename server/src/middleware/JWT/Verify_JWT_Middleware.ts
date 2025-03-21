@@ -47,6 +47,8 @@ async function Verify_JWT_Middleware(req: Request, res: Response, next: NextFunc
 
             // ✅ Stocke les infos du token dans req.user
             req.body.user = decoded;
+            (req as any).user = decoded;
+
 
             next(); // 🔥 Passe au middleware suivant
         });

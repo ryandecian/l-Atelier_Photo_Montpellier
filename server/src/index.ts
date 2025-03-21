@@ -1,6 +1,7 @@
 // Import général
 import express, { query, Request, Response, NextFunction } from "express";
 import router from "./router/router";
+import cors from "cors";
 
 // Import des composants de sécurités
 import LimiteRequestIP from "./Security/LimiteRequestIP";
@@ -9,6 +10,11 @@ import LimiteRequestIP from "./Security/LimiteRequestIP";
 const app = express();
 const port = 8080;
 
+
+app.use(cors({
+  origin: "http://localhost:4000", // Ton client Vite
+  credentials: true,
+}));
 
 /**
  * Pour lire le body d'un (request) contenant un json, j'ai besoin d'importer un middleware
