@@ -7,7 +7,7 @@ async function getUserMe(req: Request, res: Response, next: NextFunction) {
         const userId = (req as any).user?.id;
 
         const [dataUser] = await usePoolConnection.query<RowDataPacket[]>(
-            "SELECT id, firstname, lastname, email, role, date_save FROM user WHERE id = ?",
+            "SELECT id, firstname, lastname, address, email, role, date_save FROM user WHERE id = ?",
             [userId]
         );
 

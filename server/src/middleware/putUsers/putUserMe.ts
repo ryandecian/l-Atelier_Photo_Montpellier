@@ -7,13 +7,13 @@ async function putUserMe(req: Request, res: Response, next: NextFunction) {
         // id de l'utilisateur récupéré du token
         const userId = (req as any).user?.id;
 
-        const [dataUser] = await usePoolConnection.query(
+        const [updateDataUser] = await usePoolConnection.query(
             "UPDATE user SET firstname = ?, lastname = ?, email = ?, address = ? WHERE id = ?",
             [req.body.firstname, req.body.lastname, req.body.email, req.body.address, userId]
         );
 
         // Vérification : au moins une ligne modifiée ?
-        if ((dataUser as any).affectedRows === 0) {
+        if ((updateDataUser as any).affectedRows === 0) {
             res.status(404).json({ message: "Échec de la modification" });
             console.error({
                 identity: "putUserMe.ts",
@@ -24,6 +24,13 @@ async function putUserMe(req: Request, res: Response, next: NextFunction) {
             return;
         }
 
+        // Récupération des données de l'utilisateur modifié
+        const [dataUser] = await usePoolConnection.query<RowDataPacket[]>(
+            "SELECT id, firstname, lastname, address, email, role, date_save FROM user WHERE id = ?",
+            [userId]
+        );
+
+        req.body.dataUser = dataUser[0];
         next();
     }
     catch (error) {

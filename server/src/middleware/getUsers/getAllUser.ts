@@ -5,7 +5,7 @@ import { RowDataPacket } from "mysql2";
 async function getAllUsers(req: Request, res: Response, next: NextFunction) {
     try {
         const [users] = await usePoolConnection.query<RowDataPacket[]>(
-            "SELECT id, firstname, lastname, email, role, date_save FROM user"
+            "SELECT id, firstname, lastname, address, email, role, date_save FROM user"
         );
         req.body.dataUser = users;
         next();

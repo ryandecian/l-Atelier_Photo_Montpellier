@@ -67,7 +67,7 @@ usersRouter.put("/me",
     (req, res) => {
         try {
             // Envois de la confirmation de la modification
-            res.status(200).json({ message: "Modification réussie" });
+            res.status(200).json({ message: "Modification réussie", data: req.body.dataUser });
         }
         catch (error) {
             res.status(500).json({ error: "Erreur interne serveur." });
