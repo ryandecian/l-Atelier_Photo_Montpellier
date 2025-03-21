@@ -63,7 +63,7 @@ usersRouter.get("/me",
 // Modification de ses propre données
 // URI : /api/users/me
 usersRouter.put("/me",
-    VerifyKeys(["firestname", "lastname", "email", "address"]),
+    VerifyKeys(["firestname", "lastname", "email"]),
     Verify_JWT_Middleware,
     putUserMe,
     (req, res) => {
@@ -88,7 +88,7 @@ usersRouter.put("/me",
 // Modification des données d'un utilisateur (admin seulement)
 // URI : /api/users/:id
 usersRouter.put("/:id",
-    VerifyKeys(["firestname", "lastname", "email", "address"]),
+    VerifyKeys(["firstname", "lastname", "email"]),
     Verify_JWT_Middleware,
     isAdmin,
     async (req, res) => {

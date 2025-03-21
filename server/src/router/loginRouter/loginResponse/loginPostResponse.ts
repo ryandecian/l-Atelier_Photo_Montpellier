@@ -5,6 +5,7 @@ async function loginPostResponse(req: Request, res: Response) {
         res.status(200)
         .cookie("jwtToken", req.body.jwt) /* jwtToken est le nom du cookie */
         .json({
+            jwt: req.body.jwt,
             id: req.body.dataUser.id,
             firstname: req.body.dataUser.firstname,
             lastname: req.body.dataUser.lastname,
