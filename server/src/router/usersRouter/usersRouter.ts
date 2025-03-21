@@ -10,6 +10,7 @@ import { RowDataPacket } from "mysql2";
 import getAllUsers from "../../middleware/getUsers/getAllUser";
 import getUserMe from "../../middleware/getUsers/getUserMe";
 import putUserMe from "../../middleware/putUsers/putUserMe";
+import VerifyKeys from "../../middleware/VerifyKeys/VerifyKeys";
 
 // Liste de tous les utilisateurs (admin seulement)
 // URI : /api/users
