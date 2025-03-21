@@ -20,30 +20,13 @@ function AdminPC() {
 
   useEffect(() => {
     const token = localStorage.getItem("jwtToken");
+    const role = localStorage.getItem("userRole");
 
-    if (!token) {
-      navigate("/compte"); // 🔁 redirige vers compte si non connecté
+    if (!token || role !== "admin") {
+      navigate("/compte");
       return;
     }
 
-    // Étape 1 : vérifie le rôle
-    fetch(`${import.meta.env.VITE_API_URL}/users/me`, {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        if (!data.data?.role || data.data.role !== "admin") {
-          navigate("/compte"); // 🔁 si pas admin, redirige
-        }
-      })
-      .catch((err) => {
-        console.error(err);
-        navigate("/compte"); // 🔁 en cas d’erreur
-      });
-
-    // Étape 2 : charge les utilisateurs si tout va bien
     fetch(`${import.meta.env.VITE_API_URL}/users`, {
       headers: {
         Authorization: `Bearer ${token}`,
