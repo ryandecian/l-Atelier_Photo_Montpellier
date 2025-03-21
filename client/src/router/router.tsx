@@ -8,6 +8,7 @@ import Error404 from "../pages/Error404Page/Error404Page";
 import CGVPage from "../pages/CGVPage/CGVPage";
 import MariagePage from "../pages/MariagePage/MariagePage";
 import AdminPage from "../pages/AdminPage/AdminPage";
+import ComptePage from "../pages/ComptePage/ComptePage";
 
 /**
  * Utilisation : 
@@ -161,6 +162,11 @@ const ListDataRouter: RouterItemsType[] = [
     {
         path: "/admin",
         element: <AdminPage />,
+    },
+    /* {ListDataRouter[22].path} */
+    {
+        path: "/compte",
+        element: <ComptePage />,
     },
 ]
 export { LinkExt };
