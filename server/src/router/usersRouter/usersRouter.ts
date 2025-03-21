@@ -11,6 +11,7 @@ import getAllUsers from "../../middleware/getUsers/getAllUser";
 import getUserMe from "../../middleware/getUsers/getUserMe";
 import putUserMe from "../../middleware/putUsers/putUserMe";
 import VerifyKeys from "../../middleware/VerifyKeys/VerifyKeys";
+import { verify } from "crypto";
 
 // Liste de tous les utilisateurs (admin seulement)
 // URI : /api/users
@@ -62,6 +63,7 @@ usersRouter.get("/me",
 // Modification de ses propre données
 // URI : /api/users/me
 usersRouter.put("/me",
+    VerifyKeys(["firestname", "lastname", "email", "address"]),
     Verify_JWT_Middleware,
     putUserMe,
     (req, res) => {
@@ -86,6 +88,7 @@ usersRouter.put("/me",
 // Modification des données d'un utilisateur (admin seulement)
 // URI : /api/users/:id
 usersRouter.put("/:id",
+    VerifyKeys(["firestname", "lastname", "email", "address"]),
     Verify_JWT_Middleware,
     isAdmin,
     async (req, res) => {
