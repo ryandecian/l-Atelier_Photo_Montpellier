@@ -10,6 +10,8 @@ async function loginPostResponse(req: Request, res: Response) {
             lastname: req.body.dataUser.lastname,
             address: req.body.dataUser.address,
             email: req.body.dataUser.email,
+            role: req.body.dataUser.role,
+            date_save: req.body.dataUser.date_save,
         });
         return;
     }
