@@ -50,7 +50,7 @@ async function Verify_JWT_Middleware(req: Request, res: Response, next: NextFunc
             (req as any).user = decoded;
 
 
-            next(); // 🔥 Passe au middleware suivant
+            next(); 
         });
     } catch (error) {
         console.error({
