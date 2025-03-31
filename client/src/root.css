@@ -82,7 +82,6 @@
          --z-index_10: 10; /* NavMobile.css : Position du MenuBurger */
 
     /* Personalisation du MenuBurger */
-         --BackgroundMenuBurger: var(--ColorPrincipal);
          --ColorTexteMenuBurger: var(--ColorSecondaire);
          --ColorBorderMenuBurger: white;
 }
