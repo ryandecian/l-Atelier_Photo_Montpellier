@@ -8,7 +8,7 @@ function LoginRoot() {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
-  const handleLogin = async (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setError("");
 
@@ -29,7 +29,7 @@ function LoginRoot() {
 
       // 🔐 Stocker les infos utilisateur + token
       localStorage.setItem("jwtToken", data.jwt);
-      localStorage.setItem("userId", data.id);
+      localStorage.setItem("userId", String(data.id));
       localStorage.setItem("userEmail", data.email);
       localStorage.setItem("userRole", data.role);
       localStorage.setItem("userName", `${data.firstname} ${data.lastname}`);
@@ -40,9 +40,14 @@ function LoginRoot() {
       } else {
         navigate("/compte");
       }
-    } catch (err: any) {
-      console.error("Erreur login:", err);
-      setError(err.message || "Erreur serveur.");
+    } catch (err: unknown) {
+      if (err instanceof Error) {
+        console.error("Erreur login:", err.message);
+        setError(err.message);
+      } else {
+        console.error("Erreur inconnue lors de la connexion.");
+        setError("Erreur inconnue lors de la connexion.");
+      }
     }
   };
 
@@ -54,7 +59,7 @@ function LoginRoot() {
         <input
           type="email"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
           required
         />
 
@@ -62,7 +67,7 @@ function LoginRoot() {
         <input
           type="password"
           value={password}
-          onChange={(e) => setPassword(e.target.value)}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)}
           required
         />
 
