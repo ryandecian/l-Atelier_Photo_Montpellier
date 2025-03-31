@@ -63,7 +63,7 @@ usersRouter.get("/me",
 // Modification de ses propre données
 // URI : /api/users/me
 usersRouter.put("/me",
-    VerifyKeys(["firestname", "lastname", "email"]),
+    VerifyKeys(["firstname", "lastname", "email"]),
     Verify_JWT_Middleware,
     putUserMe,
     (req, res) => {
