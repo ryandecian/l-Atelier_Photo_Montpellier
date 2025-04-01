@@ -10,6 +10,8 @@ import photosRouter from "./photosRouter/photosRouter";
 import facturesRouter from "./facturesRouter/facturesRouter";
 import usersRouter from "./usersRouter/usersRouter";
 
+import loginController from "../controllers/loginController";
+
 const router = express.Router();
 
 /* Liste des routes ! */
@@ -21,5 +23,7 @@ router.use("/album", albumRouter); // 4 routes fonctionnelles
 router.use("/photos", photosRouter); // 3 routes fonctionnelles
 router.use("/factures", facturesRouter); // 3 routes fonctionnelles
 router.use("/users", usersRouter); // ? route fonctionnelle
+
+router.use("/logincontroller", loginController); // 1 route fonctionnelle
 
 export default router;
