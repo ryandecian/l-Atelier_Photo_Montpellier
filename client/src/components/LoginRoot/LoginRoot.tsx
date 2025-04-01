@@ -50,7 +50,6 @@ function LoginRoot() {
     catch (err: unknown) {
       if (err instanceof Error) {
         console.error("Erreur login:", err.message);
-        console.log("Erreur login:", err.message);
         setError(err.message);
       } else {
         console.error("Erreur inconnue lors de la connexion.");
