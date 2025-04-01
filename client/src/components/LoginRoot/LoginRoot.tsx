@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import style from "./LoginRoot.module.css";
+// import { jwtDecode } from "jwt-decode";
 
 function LoginRoot() {
   const [email, setEmail] = useState("");
@@ -13,6 +14,7 @@ function LoginRoot() {
     setError(""); // Réinitialise le message d'erreur
 
     try {
+      // const response = await fetch(`${import.meta.env.VITE_API_URL}/logincontroller`, {
       const response = await fetch(`${import.meta.env.VITE_API_URL}/login`, {
         method: "POST",
         headers: {
@@ -22,6 +24,8 @@ function LoginRoot() {
       });
 
       const data = await response.json();
+
+      // const jwtTokenClientLAPM = jwtDecode(data.jwtTokenClientLAPM);
 
       // Vérifier si la réponse est correcte
       // Si le serveur renvoie une erreur, on l'affiche

@@ -33,6 +33,8 @@ function ComptePC() {
       headers: {
         Authorization: `Bearer ${token}`,
       },
+      // method: "GET",
+      // credentials: "include", // Envois du cookie avec token htttpOnly
     })
       .then(async (res) => {
         if (!res.ok) {
