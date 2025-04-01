@@ -29,9 +29,27 @@ loginController.post("/",
 
     async (req: Request, res: Response) => {
         try {
+            /* Logique métier 1 : Vérification si l'email existe */
             const dataUser = await verifyEmailTrueRepository(req.body.email);
+
+            if (dataUser.length === 0) {
+                res.status(404).json({ message: "Email ou mot de passe incorrect" });
+                console.error(
+                    {
+                        identity: "loginController.ts",
+                        type: "controller",
+                        URI: "/api/login",
+                        router: "loginController.post",
+                        metier: "Logique métier 1",
+                        chemin: "/server/src/middleware/VerifyEmail/VerifyEmailTrue.ts",
+                        "❌ Nature de l'erreur": "L'email n'existe pas dans la DB, impossible de continuer.",
+                    },
+                );
+                return;
+            }
+
+
             res.status(200).json({ message: "Email et mot de passe corrects", dataUser });
-            console.log(dataUser[0])
             return;
         }
         catch (error) {
@@ -39,6 +57,8 @@ loginController.post("/",
                 {
                     identity: "loginController.ts",
                     type: "controller",
+                    URI: "/api/login",
+                    router: "loginController.post",
                     chemin: "/server/src/controllers/loginController.ts",
                     "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
                     details: error,
