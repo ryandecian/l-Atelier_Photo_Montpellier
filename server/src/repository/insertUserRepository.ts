@@ -6,6 +6,7 @@ async function insertUserRepository(firstname: string, lastname: string, address
         "INSERT INTO user (firstname, lastname, address, email, password) VALUES (?, ?, ?, ?, ?)",
         [firstname, lastname, address, email, password],
     )
+    return results;
 }
 
 export default insertUserRepository;
