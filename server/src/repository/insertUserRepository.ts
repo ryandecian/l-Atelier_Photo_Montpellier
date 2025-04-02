@@ -1,0 +1,11 @@
+import usePoolConnection from "../database/config";
+import { ResultSetHeader } from "mysql2";
+
+async function insertUserRepository(firstname: string, lastname: string, address: string, email: string, password: string) {
+    const [results] = await usePoolConnection.query<ResultSetHeader>(
+        "INSERT INTO user (firstname, lastname, address, email, password) VALUES (?, ?, ?, ?, ?)",
+        [firstname, lastname, address, email, password],
+    )
+}
+
+export default insertUserRepository;

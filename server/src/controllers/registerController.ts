@@ -10,7 +10,8 @@ import RouteLimiterRequestIP from "../Security/middlewareSecurity/RouteLimiterRe
 import VerifyKeys from '../middleware/VerifyKeys/VerifyKeys';
 
 // Import des Repositories :
-import verifyEmailFalseRepository from "../repository/emailRepository"
+import verifyEmailFalseRepository from "../repository/emailRepository";
+import InsertUserRepository from "../repository/insertUserRepository";
 
 // URI : /api/register
 registerController.post("/", 
@@ -42,12 +43,18 @@ registerController.post("/",
                     return;
                 }
 
-            //* Logique métier 2 : Hachage du mot de passe du nouvelle utilisateur */
+            /* Logique métier 2 : Hachage du mot de passe du nouvelle utilisateur */
                 // On hache le mot de passe avant de l'insérer dans la DB
                 const hash = await argon2.hash(req.body.password);
 
                 // On remplace le mot de passe en clair par le mot de passe haché
                 req.body.password = hash;
+
+            /* Logique métier 3 : Insertion de l'utilisateur dans la DB */
+                // On insère l'utilisateur dans la DB
+                const insertUser = await InsertUserRepository(req.body.firstname, req.body.lastname, req.body.adress?? null, req.body.email, req.body.password);
+
+                res.status(201).json({ message: "Utilisateur créé avec succès." });
         }
         catch (error) {
             console.error(
