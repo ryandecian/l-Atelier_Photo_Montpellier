@@ -1,4 +1,4 @@
-import express, { Request, Response} from "express";
+import express, { Request, Response } from "express";
 
 const loginController = express.Router();
 
@@ -143,18 +143,19 @@ loginController.post("/",
                 return;
         }
         catch (error) {
+            res.status(500).json({ message: "Erreur interne serveur." });
             console.error(
                 {
                     identity: "loginController.ts",
                     type: "controller",
                     URI: "/api/login",
                     router: "loginController.post",
+                    codeStatus: "500 : Internal Server Error",
                     chemin: "/server/src/controllers/loginController.ts",
                     "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
                     details: error,
                 }
             )
-            res.status(500).json({ message: "Erreur interne serveur." });
             return;
         }
     }
