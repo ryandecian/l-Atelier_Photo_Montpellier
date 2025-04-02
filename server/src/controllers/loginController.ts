@@ -12,7 +12,7 @@ import RouteLimiterRequestIP from "../Security/middlewareSecurity/RouteLimiterRe
 import VerifyKeys from "../middleware/VerifyKeys/VerifyKeys";
 
 // Import des Repositories :
-import { verifyEmailTrueRepository } from "../repository/emailRepository"
+import verifyEmailTrueRepository from "../repository/emailRepository"
 
 /** 
  * Fiche technique : 

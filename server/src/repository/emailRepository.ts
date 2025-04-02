@@ -1,7 +1,7 @@
 import usePoolConnection from "../database/config";
 import { RowDataPacket } from "mysql2";
 
-async function verifyEmailTrueRepository(email: string) {
+async function verifyEmailRepository(email: string) {
     // ✅ Vérification : l'email reçu existe t-il dans la DB ?
     const [dataUser] = await usePoolConnection.query<RowDataPacket[]>(
         "SELECT * FROM user WHERE email= ?",
@@ -10,4 +10,4 @@ async function verifyEmailTrueRepository(email: string) {
     return dataUser;
 }
 
-export {verifyEmailTrueRepository};
+export default verifyEmailRepository;
