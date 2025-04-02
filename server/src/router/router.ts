@@ -11,6 +11,7 @@ import facturesRouter from "./facturesRouter/facturesRouter";
 import usersRouter from "./usersRouter/usersRouter";
 
 import loginController from "../controllers/loginController";
+import registerController from "../controllers/registerController";
 
 const router = express.Router();
 
@@ -25,5 +26,6 @@ router.use("/factures", facturesRouter); // 3 routes fonctionnelles
 router.use("/users", usersRouter); // ? route fonctionnelle
 
 router.use("/logincontroller", loginController); // 1 route fonctionnelle
+router.use("/registercontroller", registerController); // 1 route fonctionnelle
 
 export default router;
