@@ -11,6 +11,12 @@ import VerifyKeys from '../middleware/VerifyKeys/VerifyKeys';
 // Import des Repositories :
 import VerifyEmailTrueRepository from "../repository/emailRepository";
 
+// Import des Services :
+
+// Import des Outils :
+import { createCryptoUtils } from "../utils/cryptoUtils";
+import { createExpireDateUtils } from "../utils/createExpireDateUtils";
+
 // URI : /api/resetpassword
 resetPasswordController.post("/",
 
@@ -40,8 +46,13 @@ resetPasswordController.post("/",
                     );
                     return;
                 }
-                
-            // Logique métier 2 : Envoi de l'email de réinitialisation du mot de passe
+
+            // Logique métier 2 : Création du token avec crypto
+                // On génère un token sécurisé
+                const token: string = createCryptoUtils()
+
+                // On génère une date d'expiration dans 1h
+                const expiresAt: Date = createExpireDateUtils();
         }
         catch (error) {
             console.error(
