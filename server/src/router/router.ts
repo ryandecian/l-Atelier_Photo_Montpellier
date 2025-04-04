@@ -12,6 +12,7 @@ import usersRouter from "./usersRouter/usersRouter";
 
 import loginController from "../controllers/loginController";
 import registerController from "../controllers/registerController";
+import resetPasswordController from "../controllers/resetPasswordController";
 
 const router = express.Router();
 
@@ -27,5 +28,6 @@ router.use("/users", usersRouter); // ? route fonctionnelle
 
 router.use("/logincontroller", loginController); // 1 route fonctionnelle
 router.use("/registercontroller", registerController); // 1 route fonctionnelle
+router.use("/resetpasswordcontroller", resetPasswordController); // 1 route fonctionnelle
 
 export default router;
