@@ -221,6 +221,9 @@ resetPasswordController.post("/",
                     );
                     return;
                 }
+            
+            // Logique métier 7 : Réponse de succès
+                res.status(200).json({ message: "Email de réinitialisation envoyé." });
         }
         catch (error) {
             res.status(500).json({ message: "Erreur interne du serveur." });
