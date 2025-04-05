@@ -4,7 +4,6 @@ const resetPasswordController = express.Router();
 
 // Import des dépendances externes :
 
-
 // Import des Middlewares :
 import RouteLimiterRequestIP from '../Security/middlewareSecurity/RouteLimiterRequestIP';
 import VerifyKeys from '../middleware/VerifyKeys/VerifyKeys';
@@ -14,6 +13,7 @@ import VerifyEmailTrueRepository from "../repository/emailRepository";
 import insertTokenResetRepository from "../repository/insertTokenResetRepository";
 
 // Import des Services :
+import sendMailerService from "../services/mailer/sendMailerService";
 
 // Import des Outils :
 import { createCryptoUtils } from "../utils/cryptoUtils";
@@ -96,7 +96,31 @@ resetPasswordController.post("/",
                     return;
                 }
             
-            // Logique métier 4 : Envoi de l'email avec le lien de réinitialisation
+            // Logique métier 4 : Création du lien de réinitialisation
+                // Verification de la présence de la variable d'environnement DOMAIN_CLIENT
+                if (!process.env.DOMAIN_CLIENT) {
+                    res.status(500).json({ message: "Erreur interne du serveur." });
+                    console.error(
+                        {
+                            identity: "resetPasswordController.ts",
+                            type: "controller",
+                            URI: "/api/resetpassword",
+                            methode: "POST",
+                            metier: "Logique métier 4",
+                            codeStatus: "500 : Internal Server Error",
+                            chemin: "/server/src/controllers/resetPasswordController.ts",
+                            "❌ Nature de l'erreur": "Erreur interne du serveur, variable d'environnement DOMAIN_CLIENT manquante.",
+                        },
+                    );
+                    return;
+                }
+
+                // On crée le lien de réinitialisation
+                const linkResetPassword: string = `${process.env.DOMAIN_CLIENT}/reset-password?token=${token}`;
+
+            // Logique métier 5 : Envoi de l'email de réinitialisation
+                // On prépare les données pour l'envoi par email
+                const subject: string = "Réinitialisation de votre mot de passe";
 
         }
         catch (error) {
