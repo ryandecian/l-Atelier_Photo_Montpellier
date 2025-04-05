@@ -2,7 +2,8 @@ import express, { Request, Response } from "express";
 
 const resetPasswordController = express.Router();
 
-// Import des dépendances externes :
+// Import des Types :
+import MailOptionsType from "../types/mailOptionsType";
 
 // Import des Middlewares :
 import RouteLimiterRequestIP from '../Security/middlewareSecurity/RouteLimiterRequestIP';
@@ -120,7 +121,41 @@ resetPasswordController.post("/",
 
             // Logique métier 5 : Envoi de l'email de réinitialisation
                 // On prépare les données pour l'envoi par email
-                const subject: string = "Réinitialisation de votre mot de passe";
+                const mailOptions: MailOptionsType = {
+                    to: dataUser[0].email,
+                    subject: "Réinitialisation de votre mot de passe",
+                    html: `<p>Bonjour ${dataUser[0].firstname},</p>
+                           <p>Cliquez sur le lien ci-dessous pour réinitialiser votre mot de passe :</p>
+                           <a href="${linkResetPassword}">${linkResetPassword}</a>
+                           <p>Ce lien expirera dans 1 heure.</p>`,
+                }
+
+                try {
+                    const sendMailer = await sendMailerService(mailOptions)
+                }
+                catch (error) {
+                    res.status(500).json({ message: "Erreur lors de l'envoi de l'email." });
+                    const sendMailerServiceError = (error as Error).message; // On récupère le message d'erreur de la fonction sendMailerService
+                    console.error(
+                        {
+                            identity: "resetPasswordController.ts",
+                            type: "controller",
+                            URI: "/api/resetpassword",
+                            methode: "POST",
+                            metier: "Logique métier 5",
+                            codeStatus: "500 : Internal Server Error",
+                            chemin: "/server/src/controllers/resetPasswordController.ts",
+                            "❌ Nature de l'erreur": "Erreur lors de l'envoi de l'email.",
+                            sendMailerService: {
+                                identity: "sendMailerService.ts",
+                                type: "service",
+                                chemin: "/server/src/services/mailer/sendMailerService.ts",
+                                "❌ Nature de l'erreur": sendMailerServiceError,
+                            }
+                        },
+                    );
+                    return;
+                }
 
         }
         catch (error) {
