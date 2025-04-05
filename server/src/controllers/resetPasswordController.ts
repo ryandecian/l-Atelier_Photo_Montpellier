@@ -2,7 +2,8 @@ import express, { Request, Response } from "express";
 
 const resetPasswordController = express.Router();
 
-// Import des dépendances externes :
+// Import des Types :
+import MailOptionsType from "../types/mailOptionsType";
 
 // Import des Middlewares :
 import RouteLimiterRequestIP from '../Security/middlewareSecurity/RouteLimiterRequestIP';
@@ -11,6 +12,7 @@ import VerifyKeys from '../middleware/VerifyKeys/VerifyKeys';
 // Import des Repositories :
 import VerifyEmailTrueRepository from "../repository/emailRepository";
 import insertTokenResetRepository from "../repository/insertTokenResetRepository";
+import getTokenResetRepository from "../repository/getTokenResetRepository";
 
 // Import des Services :
 import sendMailerService from "../services/mailer/sendMailerService";
@@ -120,7 +122,72 @@ resetPasswordController.post("/",
 
             // Logique métier 5 : Envoi de l'email de réinitialisation
                 // On prépare les données pour l'envoi par email
-                const subject: string = "Réinitialisation de votre mot de passe";
+                const mailOptions: MailOptionsType = {
+                    to: dataUser[0].email,
+                    subject: "Réinitialisation de votre mot de passe",
+                    html: `<p>Bonjour ${dataUser[0].firstname},</p>
+                           <p>Cliquez sur le lien ci-dessous pour réinitialiser votre mot de passe :</p>
+                           <a href="${linkResetPassword}">${linkResetPassword}</a>
+                           <p>Ce lien expirera dans 1 heure.</p>`,
+                }
+
+                try {
+                    const sendMailer = await sendMailerService(mailOptions)
+                }
+                catch (error) {
+                    res.status(500).json({ message: "Erreur lors de l'envoi de l'email." });
+                    const sendMailerServiceError = (error as Error).message; // On récupère le message d'erreur de la fonction sendMailerService
+                    console.error(
+                        {
+                            identity: "resetPasswordController.ts",
+                            type: "controller",
+                            URI: "/api/resetpassword",
+                            methode: "POST",
+                            metier: "Logique métier 5",
+                            codeStatus: "500 : Internal Server Error",
+                            chemin: "/server/src/controllers/resetPasswordController.ts",
+                            "❌ Nature de l'erreur": "Erreur lors de l'envoi de l'email.",
+                            sendMailerService: {
+                                identity: "sendMailerService.ts",
+                                type: "service",
+                                chemin: "/server/src/services/mailer/sendMailerService.ts",
+                                "❌ Nature de l'erreur": sendMailerServiceError,
+                            }
+                        },
+                    );
+                    return;
+                }
+            
+            // Logique métier 6 : Régulation et nettoyage des tokens expirés en DB
+                // Récupération de toute la table reset_password
+                const dataToken = await getTokenResetRepository();
+
+                // On vérifie si la récupération a réussi
+                if (dataToken.length === 0) { // La table ne peut pas être vide car on vient d'enregistrer un token
+                    res.status(500).json({ message: "Erreur lors de la récupération des tokens." });
+                    console.error(
+                        {
+                            identity: "resetPasswordController.ts",
+                            type: "controller",
+                            URI: "/api/resetpassword",
+                            methode: "POST",
+                            metier: "Logique métier 6",
+                            codeStatus: "500 : Internal Server Error",
+                            chemin: "/server/src/controllers/resetPasswordController.ts",
+                            "❌ Nature de l'erreur": "Erreur lors de la récupération des tokens dans la DB.",
+                        },
+                    );
+                    return;
+                }
+
+                // On crée une date actuelle pour comparer avec la date d'expiration des tokens
+                const dateNow = new Date();
+
+                // On filtre les tokens expirés
+                const tabExpiredToken = dataToken
+                .filter(token => new Date(token.expires_at) < dateNow)
+                .map(token => token.id); // On récupère les id des tokens expirés et on crée un nouveau tableau
+
 
         }
         catch (error) {
