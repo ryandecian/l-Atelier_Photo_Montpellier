@@ -12,6 +12,7 @@ import VerifyKeys from '../middleware/VerifyKeys/VerifyKeys';
 // Import des Repositories :
 import VerifyEmailTrueRepository from "../repository/emailRepository";
 import insertTokenResetRepository from "../repository/insertTokenResetRepository";
+import getTokenResetRepository from "../repository/getTokenResetRepository";
 
 // Import des Services :
 import sendMailerService from "../services/mailer/sendMailerService";
@@ -156,6 +157,37 @@ resetPasswordController.post("/",
                     );
                     return;
                 }
+            
+            // Logique métier 6 : Régulation et nettoyage des tokens expirés en DB
+                // Récupération de toute la table reset_password
+                const dataToken = await getTokenResetRepository();
+
+                // On vérifie si la récupération a réussi
+                if (dataToken.length === 0) { // La table ne peut pas être vide car on vient d'enregistrer un token
+                    res.status(500).json({ message: "Erreur lors de la récupération des tokens." });
+                    console.error(
+                        {
+                            identity: "resetPasswordController.ts",
+                            type: "controller",
+                            URI: "/api/resetpassword",
+                            methode: "POST",
+                            metier: "Logique métier 6",
+                            codeStatus: "500 : Internal Server Error",
+                            chemin: "/server/src/controllers/resetPasswordController.ts",
+                            "❌ Nature de l'erreur": "Erreur lors de la récupération des tokens dans la DB.",
+                        },
+                    );
+                    return;
+                }
+
+                // On crée une date actuelle pour comparer avec la date d'expiration des tokens
+                const dateNow = new Date();
+
+                // On filtre les tokens expirés
+                const tabExpiredToken = dataToken
+                .filter(token => new Date(token.expires_at) < dateNow)
+                .map(token => token.id); // On récupère les id des tokens expirés et on crée un nouveau tableau
+
 
         }
         catch (error) {
