@@ -1,4 +1,4 @@
-import mailer from "./mailer";
+import transporter from "./mailer";
 import { Request, Response, NextFunction } from "express";
 import "dotenv/config";
 
@@ -13,7 +13,6 @@ import "dotenv/config";
  * req.body.text ou req.body.html
  */
 
-const transporter = mailer
 
 async function SendMailer_Middleware( req: Request, res: Response, next: NextFunction ) {
     try {

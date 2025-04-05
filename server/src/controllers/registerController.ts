@@ -35,7 +35,7 @@ registerController.post("/",
                             identity: "registerController.ts",
                             type: "controller",
                             URI: "/api/register",
-                            router: "registerController.post",
+                            methode: "POST",
                             metier: "Logique métier 1",
                             codeStatus: "409 : Conflict",
                             chemin: "/server/src/middleware/VerifyEmail/VerifyEmailFalse.ts",
@@ -64,7 +64,7 @@ registerController.post("/",
                             identity: "registerController.ts",
                             type: "controller",
                             URI: "/api/register",
-                            router: "registerController.post",
+                            methode: "POST",
                             metier: "Logique métier 3",
                             codeStatus: "400 : Bad Request",
                             chemin: "/server/src/middleware/InsertDB/InsertUser.ts",
@@ -76,14 +76,16 @@ registerController.post("/",
 
             /* Logique métier 4 : Réponse de succès */
                 res.status(201).json({ message: "Enregistrement accepté." });
+                return;
         }
         catch (error) {
+            res.status(500).json({ message: "Erreur interne serveur." });
             console.error(
                 {
                     identity: "registerController.ts",
                     type: "controller",
                     URI: "/api/register",
-                    router: "registerController.post",
+                    methode: "POST",
                     codeStatus: "404 : Not Found",
                     chemin: "/server/src/middleware/VerifyEmail/VerifyEmailFalse.ts",
                     "❌ Nature de l'erreur": "L'email existe déjà dans la DB, impossible de continuer.",
