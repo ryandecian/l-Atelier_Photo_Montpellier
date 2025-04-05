@@ -4,12 +4,14 @@ const resetPasswordController = express.Router();
 
 // Import des dépendances externes :
 
+
 // Import des Middlewares :
 import RouteLimiterRequestIP from '../Security/middlewareSecurity/RouteLimiterRequestIP';
 import VerifyKeys from '../middleware/VerifyKeys/VerifyKeys';
 
 // Import des Repositories :
 import VerifyEmailTrueRepository from "../repository/emailRepository";
+import insertTokenResetRepository from "../repository/insertTokenResetRepository";
 
 // Import des Services :
 
@@ -71,6 +73,31 @@ resetPasswordController.post("/",
                     );
                     return;
                 }
+
+            // Logique métier 3 : Enregistrement du token et de la date d'expiration dans la DB
+                // On insère le token et la date d'expiration dans la DB
+                const insertTokenReset = await insertTokenResetRepository(dataUser[0].id, token, expiresAt);
+
+                // Verification si l'insertion a réussi
+                if (insertTokenReset.affectedRows === 0) {
+                    res.status(400).json({ message: "Erreur lors de l'enregistrement du token." });
+                    console.error(
+                        {
+                            identity: "resetPasswordController.ts",
+                            type: "controller",
+                            URI: "/api/resetpassword",
+                            methode: "POST",
+                            metier: "Logique métier 3",
+                            codeStatus: "400 : Bad Request",
+                            chemin: "/server/src/controllers/resetPasswordController.ts",
+                            "❌ Nature de l'erreur": "Erreur lors de l'enregistrement du token dans la DB.",
+                        },
+                    );
+                    return;
+                }
+            
+            // Logique métier 4 : Envoi de l'email avec le lien de réinitialisation
+
         }
         catch (error) {
             res.status(500).json({ message: "Erreur interne du serveur." });
