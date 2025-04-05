@@ -37,7 +37,7 @@ resetPasswordController.post("/",
                             identity: "resetPasswordController.ts",
                             type: "controller",
                             URI: "/api/resetpassword",
-                            router: "resetPasswordController.post",
+                            methode: "POST",
                             metier: "Logique métier 1",
                             codeStatus: "404 : Not Found",
                             chemin: "/server/src/controllers/resetPasswordController.ts",
@@ -53,20 +53,39 @@ resetPasswordController.post("/",
 
                 // On génère une date d'expiration dans 1h
                 const expiresAt: Date = createExpireDateUtils();
+
+                // Sécurité : On vérifie si le token et la date d'expiration sont valides
+                if (!expiresAt || !token) {
+                    res.status(500).json({ message: "Erreur interne du serveur." });
+                    console.error(
+                        {
+                            identity: "resetPasswordController.ts",
+                            type: "controller",
+                            URI: "/api/resetpassword",
+                            methode: "POST",
+                            metier: "Logique métier 2",
+                            codeStatus: "500 : Internal Server Error",
+                            chemin: "/server/src/controllers/resetPasswordController.ts",
+                            "❌ Nature de l'erreur": "Erreur interne du serveur.",
+                        },
+                    );
+                    return;
+                }
         }
         catch (error) {
+            res.status(500).json({ message: "Erreur interne du serveur." });
             console.error(
                 {
                     identity: "resetPasswordController.ts",
                     type: "controller",
                     URI: "/api/resetpassword",
-                    router: "resetPasswordController.post",
+                    methode: "POST",
                     codeStatus: "500 : Internal Server Error",
                     chemin: "/server/src/controllers/resetPasswordController.ts",
                     "❌ Nature de l'erreur": error,
                 },
             );
-            res.status(500).json({ message: "Erreur interne du serveur." });
+            return;
         }
     }
 )
