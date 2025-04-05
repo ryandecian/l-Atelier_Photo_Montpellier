@@ -26,15 +26,14 @@ async function sendMailerService(mailOptions: MailOptionsType) {
             filterMailOption.html = mailOptions.html;
         }
         else {
-            throw new Error("Erreur : les champs 'text' et 'html' sont absents.");
+            throw new Error("Erreur: les champs 'text' et 'html' sont absents.");
         }
 
         const sendMailer = await transporter.sendMail(filterMailOption);
         return sendMailer;
     }
     catch (error) {
-        console.error('Error sending email:', error);
-        throw new Error("Erreur lors de l'envoi de l'email.");
+        throw new Error((error as Error).message);
     }
 }
 
