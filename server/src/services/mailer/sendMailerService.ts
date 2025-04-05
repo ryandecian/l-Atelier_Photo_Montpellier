@@ -1,12 +1,5 @@
 import transporter from "./mailer";
-
-type MailOptionsType = {
-    from?: string;
-    to: string;
-    subject: string;
-    text?: string;
-    html?: string;
-}
+import MailOptionsType from "../../types/mailOptionsType";
 
 async function sendMailerService(mailOptions: MailOptionsType) {
     try {
@@ -24,7 +17,7 @@ async function sendMailerService(mailOptions: MailOptionsType) {
             to: mailOptions.to,
             subject: mailOptions.subject,
         }
-        
+
         // Vérification si les champs 'to' et 'subject' sont présents
         if (mailOptions.text) {
             filterMailOption.text = mailOptions.text;
