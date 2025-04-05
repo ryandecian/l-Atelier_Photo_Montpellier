@@ -12,7 +12,7 @@ import VerifyKeys from '../middleware/VerifyKeys/VerifyKeys';
 // Import des Repositories :
 import VerifyEmailTrueRepository from "../repository/emailRepository";
 import insertTokenResetRepository from "../repository/insertTokenResetRepository";
-import getTokenResetRepository from "../repository/getTokenResetRepository";
+import {getTokenResetRepository, deleteTokenResetRepository} from "../repository/resetTokenRegulator";
 
 // Import des Services :
 import sendMailerService from "../services/mailer/sendMailerService";
@@ -20,6 +20,7 @@ import sendMailerService from "../services/mailer/sendMailerService";
 // Import des Outils :
 import { createCryptoUtils } from "../utils/cryptoUtils";
 import { createExpireDateUtils } from "../utils/createExpireDateUtils";
+import { get } from "http";
 
 // URI : /api/resetpassword
 resetPasswordController.post("/",
@@ -164,7 +165,7 @@ resetPasswordController.post("/",
 
                 // On vérifie si la récupération a réussi
                 if (dataToken.length === 0) { // La table ne peut pas être vide car on vient d'enregistrer un token
-                    res.status(500).json({ message: "Erreur lors de la récupération des tokens." });
+                    res.status(500).json({ message: "Erreur interne du serveur" });
                     console.error(
                         {
                             identity: "resetPasswordController.ts",
@@ -175,6 +176,12 @@ resetPasswordController.post("/",
                             codeStatus: "500 : Internal Server Error",
                             chemin: "/server/src/controllers/resetPasswordController.ts",
                             "❌ Nature de l'erreur": "Erreur lors de la récupération des tokens dans la DB.",
+                            getTokenResetRepository: {
+                                identity: "getTokenResetRepository.ts",
+                                type: "repository",
+                                chemin: "/server/src/repository/getTokenResetRepository.ts",
+                                "❌ Nature de l'erreur": "Erreur lors de la récupération des tokens dans la DB.",
+                            },
                         },
                     );
                     return;
@@ -188,7 +195,32 @@ resetPasswordController.post("/",
                 .filter(token => new Date(token.expires_at) < dateNow)
                 .map(token => token.id); // On récupère les id des tokens expirés et on crée un nouveau tableau
 
-
+                // On supprime les tokens expirés de la DB
+                const deleteTokenReset = await deleteTokenResetRepository(tabExpiredToken);
+                
+                // On vérifie si la suppression a réussi
+                if (deleteTokenReset === 0) { // Si il n'y avait rien a supprimer, cela retourne undefined donc pas d'erreur
+                    res.status(500).json({ message: "Erreur lors de la suppression des tokens expirés." });
+                    console.error(
+                        {
+                            identity: "resetPasswordController.ts",
+                            type: "controller",
+                            URI: "/api/resetpassword",
+                            methode: "POST",
+                            metier: "Logique métier 6",
+                            codeStatus: "500 : Internal Server Error",
+                            chemin: "/server/src/controllers/resetPasswordController.ts",
+                            "❌ Nature de l'erreur": "Erreur lors de la suppression des tokens expirés dans la DB.",
+                            deleteTokenResetRepository: {
+                                identity: "deleteTokenResetRepository.ts",
+                                type: "repository",
+                                chemin: "/server/src/repository/deleteTokenResetRepository.ts",
+                                "❌ Nature de l'erreur": "Erreur lors de la suppression des tokens expirés dans la DB.",
+                            },
+                        },
+                    );
+                    return;
+                }
         }
         catch (error) {
             res.status(500).json({ message: "Erreur interne du serveur." });
