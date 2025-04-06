@@ -5,6 +5,9 @@ async function hashPasswordArgonUtils (passwordUser: string): Promise<string> {
     return hash;
 }
 
+export {hashPasswordArgonUtils};
+
+
 async function verifyPasswordArgonUtils(passwordDB: string, passwordUser: string): Promise<boolean> {
     const verifyPassword: boolean = await argon2.verify(passwordDB, passwordUser);
     return verifyPassword;

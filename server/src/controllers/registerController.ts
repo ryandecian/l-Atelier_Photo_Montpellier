@@ -15,6 +15,9 @@ import VerifyKeys from '../middleware/VerifyKeys/VerifyKeys';
 import verifyEmailFalseRepository from "../repository/emailRepository";
 import InsertUserRepository from "../repository/insertUserRepository";
 
+// Impot des Outils :
+import { hashPasswordArgonUtils } from '../utils/hashArgonUtils';
+
 // URI : /api/register
 registerController.post("/", 
 
@@ -47,7 +50,7 @@ registerController.post("/",
 
             /* Logique métier 2 : Hachage du mot de passe du nouvelle utilisateur */
                 // On hache le mot de passe avant de l'insérer dans la DB
-                const hash = await argon2.hash(req.body.password);
+                const hash: string = await hashPasswordArgonUtils(req.body.password);
 
                 // On remplace le mot de passe en clair par le mot de passe haché
                 req.body.password = hash;
