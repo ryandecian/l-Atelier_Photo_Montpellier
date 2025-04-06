@@ -1,9 +1,9 @@
 import { NoSubstitutionTemplateLiteral } from "typescript";
 import usePoolConnection from "../database/config";
-import { RowDataPacket } from "mysql2";
+import { FieldPacket, RowDataPacket } from "mysql2";
 
-async function getOneUserByIdRepository(id: NoSubstitutionTemplateLiteral) {
-    const [results] = await usePoolConnection.query<RowDataPacket[]>(
+async function getOneUserByIdRepository(id: number): Promise<RowDataPacket[]> {
+    const [results]: [RowDataPacket[], FieldPacket[]] = await usePoolConnection.query<RowDataPacket[]>(
         "SELECT * FROM users WHERE id = ?",
         [id]
     )

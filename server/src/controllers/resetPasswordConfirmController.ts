@@ -2,7 +2,8 @@ import express, {Request, Response} from 'express';
 
 const resetPasswordConfirmController = express.Router();
 
-// Import des Types :
+// Import des dépendances externes :
+import { ResultSetHeader, RowDataPacket } from 'mysql2';
 
 // Import des Middlewares :
 import RouteLimiterRequestIP from '../Security/middlewareSecurity/RouteLimiterRequestIP';
@@ -14,8 +15,11 @@ import { getOneUserByIdRepository } from '../repository/getUserRepository';
 
 // Import des Services :
 
+// Import des Types :
+
 // Import des Outils :
-import { verifyPasswordArgonUtils } from '../utils/hashArgonUtils';
+import { hashPasswordArgonUtils } from '../utils/hashArgonUtils';
+import updateNewPasswordUserRepository from '../repository/updateNewPasswordUserRepository';
 
 // Vérification :
 // URI : /api/resetpassword/confirm
@@ -28,7 +32,7 @@ resetPasswordConfirmController.post("/",
     async (req: Request, res: Response) => {
         try {
             // Logique métier 1 : Récupération et vérification du token dans la DB
-                const tokenDB =  await getOneTokenResetRepository(req.body.token);
+                const tokenDB: RowDataPacket[] =  await getOneTokenResetRepository(req.body.token);
 
                 // Vérification si le token existe en DB
                 if (tokenDB.length === 0) {
@@ -55,8 +59,8 @@ resetPasswordConfirmController.post("/",
                 }
 
                 // Création des variables pour faire la comparaison de date
-                const dateNow = new Date();
-                const dateToken = new Date(tokenDB[0].expires_at);
+                const dateNow: Date = new Date();
+                const dateToken: Date = new Date(tokenDB[0].expires_at);
 
                 // Vérification si le token est expiré
                 if (dateNow > dateToken) {
@@ -77,7 +81,7 @@ resetPasswordConfirmController.post("/",
                 }
 
             // Logique métier 2 : Récupération de l'utilisateur en DB
-                const dataUser = await getOneUserByIdRepository(tokenDB[0].user_id);
+                const dataUser: RowDataPacket[] = await getOneUserByIdRepository(tokenDB[0].user_id);
 
                 // Vérification si l'utilisateur existe en DB ou que la requête a fonctionné
                 if (dataUser.length === 0) {
@@ -107,11 +111,46 @@ resetPasswordConfirmController.post("/",
                 }
 
             // Logique métier 3 : Hachage du nouveau mot de passe utilisateur
-                const hash: boolean = await verifyPasswordArgonUtils(dataUser[0].password, req.body.newPassword);
+                const hash: string = await hashPasswordArgonUtils(dataUser[0].password);
+
+            // Logique métier 4 : Enregistrement du nouveau mot de passe dans la DB
+                const updatePassword: ResultSetHeader = await updateNewPasswordUserRepository(dataUser[0].id, hash);
+
+                // Vérification si le mot de passe a bien été mis à jour
+                if (updatePassword.affectedRows === 0) {
+                    res.status(500).json({ error: "Erreur lors de la mise à jour du mot de passe." });
+                    console.error(
+                        {
+                            identity: "resetPasswordConfirmController.ts",
+                            type: "controller",
+                            URI: "/api/resetpassword/confirm",
+                            methode: "POST",
+                            metier: "Logique métier 4",
+                            codeStatus: "500 : Internal Server Error",
+                            chemin: "/server/src/controllers/resetPasswordConfirmController.ts",
+                            "❌ Nature de l'erreur": "Erreur lors de la mise à jour du mot de passe.",
+                        }
+                    );
+                    return;
+                }
 
 
         }
-        catch (error) {}
+        catch (error) {
+            res.status(500).json({ error: "Erreur interne du serveur." });
+            console.error(
+                {
+                    identity: "resetPasswordConfirmController.ts",
+                    type: "controller",
+                    URI: "/api/resetpassword/confirm",
+                    methode: "POST",
+                    codeStatus: "500 : Internal Server Error",
+                    chemin: "/server/src/controllers/resetPasswordConfirmController.ts",
+                    "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
+                    details: error,
+                }
+            );
+        }
     });
 
 export default resetPasswordConfirmController;

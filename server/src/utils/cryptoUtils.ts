@@ -1,6 +1,6 @@
 import crypto from 'crypto';
 
-function createCryptoUtils() {
+async function createCryptoUtils(): Promise<string> {
     return crypto.randomBytes(32).toString("hex");
 }
 

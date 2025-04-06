@@ -1,10 +1,13 @@
 import transporter from "./mailer";
 import MailOptionsType from "../../types/mailOptionsType";
+import { SentMessageInfo } from "nodemailer/lib/sendmail-transport";
 
-async function sendMailerService(mailOptions: MailOptionsType) {
+/* Cette fonction doit être appelé dans un try catch pour la gestion des erreur */
+
+async function sendMailerService(mailOptions: MailOptionsType): Promise<SentMessageInfo> {
     try {
         // Récupération de l'email de l'expéditeur depuis les variables d'environnement
-        const MAIL_SERVER_ADMIN = process.env.MAIL_SERVER_ADMIN;
+        const MAIL_SERVER_ADMIN: string | undefined = process.env.MAIL_SERVER_ADMIN;
 
         //Vérification de la présence de l'email de l'expéditeur
         if (!MAIL_SERVER_ADMIN) {
@@ -29,7 +32,7 @@ async function sendMailerService(mailOptions: MailOptionsType) {
             throw new Error("Erreur: les champs 'text' et 'html' sont absents.");
         }
 
-        const sendMailer = await transporter.sendMail(filterMailOption);
+        const sendMailer: SentMessageInfo = await transporter.sendMail(filterMailOption);
         return sendMailer;
     }
     catch (error) {
