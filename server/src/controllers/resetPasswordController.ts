@@ -2,8 +2,8 @@ import express, { Request, Response } from "express";
 
 const resetPasswordController = express.Router();
 
-// Import des Types :
-import MailOptionsType from "../types/mailOptionsType";
+// Import des dépendances externes :
+import { ResultSetHeader, RowDataPacket } from "mysql2";
 
 // Import des Middlewares :
 import RouteLimiterRequestIP from '../Security/middlewareSecurity/RouteLimiterRequestIP';
@@ -17,10 +17,12 @@ import {getTokenResetRepository, deleteTokenResetRepository} from "../repository
 // Import des Services :
 import sendMailerService from "../services/mailer/sendMailerService";
 
+// Import des Types :
+import MailOptionsType from "../types/mailOptionsType";
+
 // Import des Outils :
 import { createCryptoUtils } from "../utils/cryptoUtils";
 import { createExpireDateUtils } from "../utils/createDateUtils";
-import { get } from "http";
 
 // URI : /api/resetpassword
 resetPasswordController.post("/",
@@ -32,7 +34,7 @@ resetPasswordController.post("/",
     async (req: Request, res: Response) => {
         try {
             //* Logique métier 1 : Vérification si l'email existe */
-                const dataUser = await VerifyEmailTrueRepository(req.body.email);
+                const dataUser: RowDataPacket[] = await VerifyEmailTrueRepository(req.body.email);
 
                 // Si l'email n'existe pas dans la DB, on ne peut pas continuer.
                 if (dataUser.length === 0) { // Si c'est égal à 0, c'est que l'email n'existe pas
@@ -54,7 +56,7 @@ resetPasswordController.post("/",
 
             // Logique métier 2 : Création du token avec crypto
                 // On génère un token sécurisé
-                const token: string = createCryptoUtils()
+                const token: string = await createCryptoUtils()
 
                 // On génère une date d'expiration dans 1h
                 const expiresAt: Date = await createExpireDateUtils();
@@ -79,7 +81,7 @@ resetPasswordController.post("/",
 
             // Logique métier 3 : Enregistrement du token et de la date d'expiration dans la DB
                 // On insère le token et la date d'expiration dans la DB
-                const insertTokenReset = await insertTokenResetRepository(dataUser[0].id, token, expiresAt);
+                const insertTokenReset: ResultSetHeader = await insertTokenResetRepository(dataUser[0].id, token, expiresAt);
 
                 // Verification si l'insertion a réussi
                 if (insertTokenReset.affectedRows === 0) {
@@ -133,7 +135,7 @@ resetPasswordController.post("/",
                 }
 
                 try {
-                    const sendMailer = await sendMailerService(mailOptions)
+                    await sendMailerService(mailOptions) // Gestion des erreur directement avec le try/catch dans la fonction sendMailerService
                 }
                 catch (error) {
                     res.status(500).json({ message: "Erreur lors de l'envoi de l'email." });
@@ -161,7 +163,7 @@ resetPasswordController.post("/",
             
             // Logique métier 6 : Régulation et nettoyage des tokens expirés en DB
                 // Récupération de toute la table reset_password
-                const dataToken = await getTokenResetRepository();
+                const dataToken: RowDataPacket[] = await getTokenResetRepository();
 
                 // On vérifie si la récupération a réussi
                 if (dataToken.length === 0) { // La table ne peut pas être vide car on vient d'enregistrer un token
@@ -188,15 +190,15 @@ resetPasswordController.post("/",
                 }
 
                 // On crée une date actuelle pour comparer avec la date d'expiration des tokens
-                const dateNow = new Date();
+                const dateNow: Date = new Date();
 
                 // On filtre les tokens expirés
-                const tabExpiredToken = dataToken
+                const tabExpiredToken: number[] = dataToken
                 .filter(token => new Date(token.expires_at) < dateNow)
                 .map(token => token.id); // On récupère les id des tokens expirés et on crée un nouveau tableau
 
                 // On supprime les tokens expirés de la DB
-                const deleteTokenReset = await deleteTokenResetRepository(tabExpiredToken);
+                const deleteTokenReset: number | undefined = await deleteTokenResetRepository(tabExpiredToken);
                 
                 // On vérifie si la suppression a réussi
                 if (deleteTokenReset === 0) { // Si il n'y avait rien a supprimer, cela retourne undefined donc pas d'erreur
@@ -235,7 +237,8 @@ resetPasswordController.post("/",
                     methode: "POST",
                     codeStatus: "500 : Internal Server Error",
                     chemin: "/server/src/controllers/resetPasswordController.ts",
-                    "❌ Nature de l'erreur": error,
+                    "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
+                    details: error,
                 },
             );
             return;
