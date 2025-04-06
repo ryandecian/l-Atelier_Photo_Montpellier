@@ -15,6 +15,7 @@ import { getOneUserByIdRepository } from '../repository/getUserRepository';
 // Import des Services :
 
 // Import des Outils :
+import { verifyPasswordArgonUtils } from '../utils/hashArgonUtils';
 
 // Vérification :
 // URI : /api/resetpassword/confirm
@@ -105,7 +106,8 @@ resetPasswordConfirmController.post("/",
                     return;
                 }
 
-            // Logique métier 3 : Enregistrement du nouveau mot de passe dans la DB
+            // Logique métier 3 : Hachage du nouveau mot de passe utilisateur
+                const hash: boolean = await verifyPasswordArgonUtils(dataUser[0].password, req.body.newPassword);
 
 
         }
