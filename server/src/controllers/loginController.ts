@@ -18,17 +18,8 @@ import payloadType from "../types/payloadType";
 
 // Import des utils
 import { verifyPasswordArgonUtils } from "../utils/hashArgonUtils";
+import { createDate_Number_Utils } from "../utils/createDateUtils";
 
-/** 
- * Fiche technique : 
- * 
- * Nombre de routes : 
- * 
- * Méthode de utilisé : 
- * POST
- * 
- * Objectif : 
-*/
 
 // URI : /api/login
 loginController.post("/", 
@@ -82,10 +73,10 @@ loginController.post("/",
             /* Logique métier 3 : Création du JWT client et server */
 
                 // Récupération de la clé secrète Server
-                const SECRET_KEY_TOKEN_SERVER = process.env.SECRET_KEY_TOKEN_SERVER;
+                const SECRET_KEY_TOKEN_SERVER: string | undefined = process.env.SECRET_KEY_TOKEN_SERVER;
                 
                 // Récupération de la clé secrète Client
-                const SECRET_KEY_TOKEN_CLIENT = process.env.SECRET_KEY_TOKEN_CLIENT;
+                const SECRET_KEY_TOKEN_CLIENT: string | undefined = process.env.SECRET_KEY_TOKEN_CLIENT;
 
                 // Vérification des clés secrète Server et Client si elles existent
                 // Si l'une d'entre elles n'existe pas, on renvoie une erreur 500
@@ -108,13 +99,13 @@ loginController.post("/",
 
                 // Création des variables token
                 const expiresIn: number = 60 * 60; // 1 heure
-                const now: number = Math.floor(Date.now() / 1000); // Date actuelle en timestamp UNIX
+                const dateNow: number = await createDate_Number_Utils(); // Date actuelle en timestamp UNIX
 
                 const payload_server: payloadType = {
                     id: dataUser[0].id,
                     email: dataUser[0].email,
                     role: dataUser[0].role,
-                    iat: now, // ⏳ Date de création du token
+                    iat: dateNow, // ⏳ Date de création du token
                 }
 
                 const payload_client: payloadType = {
@@ -124,7 +115,7 @@ loginController.post("/",
                     lastname: dataUser[0].lastname,
                     address: dataUser[0].address,
                     role: dataUser[0].role,
-                    iat: now, // ⏳ Date de création du token
+                    iat: dateNow, // ⏳ Date de création du token
                 }
 
                 // Création du token server
