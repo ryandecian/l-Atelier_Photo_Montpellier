@@ -88,9 +88,10 @@ registerController.post("/",
                     type: "controller",
                     URI: "/api/register",
                     methode: "POST",
-                    codeStatus: "404 : Not Found",
+                    codeStatus: "500 : Internal Server Error",
                     chemin: "/server/src/middleware/VerifyEmail/VerifyEmailFalse.ts",
-                    "❌ Nature de l'erreur": "L'email existe déjà dans la DB, impossible de continuer.",
+                    "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
+                    details: error,
                 },
             );
             return;

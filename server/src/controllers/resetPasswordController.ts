@@ -237,7 +237,8 @@ resetPasswordController.post("/",
                     methode: "POST",
                     codeStatus: "500 : Internal Server Error",
                     chemin: "/server/src/controllers/resetPasswordController.ts",
-                    "❌ Nature de l'erreur": error,
+                    "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
+                    details: error,
                 },
             );
             return;
