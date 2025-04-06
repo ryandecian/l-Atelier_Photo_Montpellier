@@ -3,7 +3,6 @@ import express, { Request, Response } from "express";
 const loginController = express.Router();
 
 // Import des dépendances externes :
-import * as argon2 from "argon2";
 import jwt from "jsonwebtoken";
 import "dotenv/config";
 
@@ -13,6 +12,9 @@ import VerifyKeys from "../middleware/VerifyKeys/VerifyKeys";
 
 // Import des Repositories :
 import verifyEmailTrueRepository from "../repository/emailRepository"
+
+// Import des utils
+import { verifyPasswordArgonUtils } from "../utils/hashArgonUtils";
 
 /** 
  * Fiche technique : 
@@ -55,7 +57,7 @@ loginController.post("/",
                 }
 
             /* Logique métier 2 : Vérifier le mot de passe utilisateur*/
-                const verifyPassword = await argon2.verify(dataUser[0].password, req.body.password);
+                const verifyPassword: boolean = await verifyPasswordArgonUtils(dataUser[0].password, req.body.password);
 
                 if (!verifyPassword) { // Si c'est false, c'est que le mot de passe est incorrect
                     res.status(401).json({ message: "Email ou mot de passe incorrect" });

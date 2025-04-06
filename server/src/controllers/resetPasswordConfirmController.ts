@@ -105,7 +105,8 @@ resetPasswordConfirmController.post("/",
                     return;
                 }
 
-            // Logique métier 3 : Enregistrement du nouveau mot de passe dans la DB
+            // Logique métier 3 : Hachage du nouveau mot de passe utilisateur
+            
 
 
         }
