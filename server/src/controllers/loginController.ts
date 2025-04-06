@@ -4,7 +4,7 @@ const loginController = express.Router();
 
 // Import des dépendances externes :
 import jwt from "jsonwebtoken";
-import "dotenv/config";
+import { RowDataPacket } from "mysql2";
 
 // Import des Middlewares :
 import RouteLimiterRequestIP from "../Security/middlewareSecurity/RouteLimiterRequestIP";
@@ -37,7 +37,7 @@ loginController.post("/",
     async (req: Request, res: Response) => {
         try {
             /* Logique métier 1 : Vérification si l'email existe */
-                const dataUser = await verifyEmailTrueRepository(req.body.email);
+                const dataUser: RowDataPacket[] = await verifyEmailTrueRepository(req.body.email);
 
                 if (dataUser.length === 0) {
                     res.status(404).json({ message: "Email ou mot de passe incorrect" });
@@ -104,8 +104,8 @@ loginController.post("/",
                 }
 
                 // Création des variables token
-                const expiresIn = 60 * 60; // 1 heure
-                const now = Math.floor(Date.now() / 1000); // Date actuelle en timestamp UNIX
+                const expiresIn: = 60 * 60; // 1 heure
+                const now: number = Math.floor(Date.now() / 1000); // Date actuelle en timestamp UNIX
 
                 const payload_server = {
                     id: dataUser[0].id,
