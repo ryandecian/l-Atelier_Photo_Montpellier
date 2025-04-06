@@ -1,7 +1,7 @@
 import * as argon2 from 'argon2';
 
 async function hashPasswordArgonUtils (passwordUser: string): Promise<string> {
-    const hash = await argon2.hash(passwordUser);
+    const hash: string = await argon2.hash(passwordUser);
     return hash;
 }
 
