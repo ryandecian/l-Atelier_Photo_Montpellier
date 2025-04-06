@@ -11,7 +11,10 @@ import RouteLimiterRequestIP from "../Security/middlewareSecurity/RouteLimiterRe
 import VerifyKeys from "../middleware/VerifyKeys/VerifyKeys";
 
 // Import des Repositories :
-import verifyEmailTrueRepository from "../repository/emailRepository"
+import verifyEmailTrueRepository from "../repository/emailRepository";
+
+// Import des Types :
+import payloadType from "../types/payloadType";
 
 // Import des utils
 import { verifyPasswordArgonUtils } from "../utils/hashArgonUtils";
@@ -104,17 +107,17 @@ loginController.post("/",
                 }
 
                 // Création des variables token
-                const expiresIn: = 60 * 60; // 1 heure
+                const expiresIn: number = 60 * 60; // 1 heure
                 const now: number = Math.floor(Date.now() / 1000); // Date actuelle en timestamp UNIX
 
-                const payload_server = {
+                const payload_server: payloadType = {
                     id: dataUser[0].id,
                     email: dataUser[0].email,
                     role: dataUser[0].role,
                     iat: now, // ⏳ Date de création du token
                 }
 
-                const payload_client = {
+                const payload_client: payloadType = {
                     id: dataUser[0].id,
                     email: dataUser[0].email,
                     firstname: dataUser[0].firstname,
@@ -125,10 +128,10 @@ loginController.post("/",
                 }
 
                 // Création du token server
-                const token_server = jwt.sign(payload_server, SECRET_KEY_TOKEN_SERVER, { expiresIn });
+                const token_server: string = jwt.sign(payload_server, SECRET_KEY_TOKEN_SERVER, { expiresIn });
 
                 // Création du token client
-                const token_client = jwt.sign(payload_client, SECRET_KEY_TOKEN_CLIENT, { expiresIn });
+                const token_client: string = jwt.sign(payload_client, SECRET_KEY_TOKEN_CLIENT, { expiresIn });
 
             /* Logique métier 4 : Réponse au client */
                 res.status(200)
