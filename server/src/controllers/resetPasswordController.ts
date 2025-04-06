@@ -19,7 +19,7 @@ import sendMailerService from "../services/mailer/sendMailerService";
 
 // Import des Outils :
 import { createCryptoUtils } from "../utils/cryptoUtils";
-import { createExpireDateUtils } from "../utils/createExpireDateUtils";
+import { createExpireDateUtils } from "../utils/createDateUtils";
 import { get } from "http";
 
 // URI : /api/resetpassword
@@ -57,7 +57,7 @@ resetPasswordController.post("/",
                 const token: string = createCryptoUtils()
 
                 // On génère une date d'expiration dans 1h
-                const expiresAt: Date = createExpireDateUtils();
+                const expiresAt: Date = await createExpireDateUtils();
 
                 // Sécurité : On vérifie si le token et la date d'expiration sont valides
                 if (!expiresAt || !token) {
