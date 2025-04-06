@@ -3,6 +3,7 @@ import express, {Request, Response} from 'express';
 const resetPasswordConfirmController = express.Router();
 
 // Import des dépendances externes :
+import { ResultSetHeader, RowDataPacket } from 'mysql2';
 
 // Import des Middlewares :
 import RouteLimiterRequestIP from '../Security/middlewareSecurity/RouteLimiterRequestIP';
@@ -18,7 +19,7 @@ import { getOneUserByIdRepository } from '../repository/getUserRepository';
 
 // Import des Outils :
 import { hashPasswordArgonUtils } from '../utils/hashArgonUtils';
-import { RowDataPacket } from 'mysql2';
+import updateNewPasswordUserRepository from '../repository/updateNewPasswordUserRepository';
 
 // Vérification :
 // URI : /api/resetpassword/confirm
@@ -111,6 +112,27 @@ resetPasswordConfirmController.post("/",
 
             // Logique métier 3 : Hachage du nouveau mot de passe utilisateur
                 const hash: string = await hashPasswordArgonUtils(dataUser[0].password);
+
+            // Logique métier 4 : Enregistrement du nouveau mot de passe dans la DB
+                const updatePassword: ResultSetHeader = await updateNewPasswordUserRepository(dataUser[0].id, hash);
+
+                // Vérification si le mot de passe a bien été mis à jour
+                if (updatePassword.affectedRows === 0) {
+                    res.status(500).json({ error: "Erreur lors de la mise à jour du mot de passe." });
+                    console.error(
+                        {
+                            identity: "resetPasswordConfirmController.ts",
+                            type: "controller",
+                            URI: "/api/resetpassword/confirm",
+                            methode: "POST",
+                            metier: "Logique métier 4",
+                            codeStatus: "500 : Internal Server Error",
+                            chemin: "/server/src/controllers/resetPasswordConfirmController.ts",
+                            "❌ Nature de l'erreur": "Erreur lors de la mise à jour du mot de passe.",
+                        }
+                    );
+                    return;
+                }
 
 
         }
