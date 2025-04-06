@@ -27,3 +27,12 @@ async function deleteTokenResetRepository(tabExpiredToken: number[]) {
 }
 
 export {deleteTokenResetRepository};
+
+async function getOneTokenResetRepository(token: string) {
+    const [results] = await usePoolConnection.query<RowDataPacket[]>(
+        "SELECT * FROM reset_password WHERE token = ?", [token]
+    )
+    return results;
+}
+
+export {getOneTokenResetRepository};
