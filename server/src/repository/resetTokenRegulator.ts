@@ -1,10 +1,8 @@
-import { promises } from "dns";
 import usePoolConnection from "../database/config";
-import { RowDataPacket } from "mysql2";
-import { ResultSetHeader } from "mysql2";
+import { RowDataPacket, ResultSetHeader, FieldPacket } from "mysql2";
 
-async function getTokenResetRepository() {
-    const [results] = await usePoolConnection.query<RowDataPacket[]>(
+async function getTokenResetRepository(): Promise<RowDataPacket[]> {
+    const [results]: [RowDataPacket[], FieldPacket[]] = await usePoolConnection.query<RowDataPacket[]>(
         "SELECT id, expires_at FROM reset_password",
     )
     return results;
@@ -13,23 +11,23 @@ async function getTokenResetRepository() {
 export {getTokenResetRepository};
 
 
-async function deleteTokenResetRepository(tabExpiredToken: number[]) {
+async function deleteTokenResetRepository(tabExpiredToken: number[]): Promise<number | undefined> {
     // Vérification si le tableau est vide
     if (tabExpiredToken.length === 0) {
         return;
     }
 
     // Stockage de la requête SQL
-    const querySQL = "DELETE FROM reset_password WHERE id IN (?)";
+    const querySQL: string = "DELETE FROM reset_password WHERE id IN (?)";
     // Exécution de la requête SQL
-    const [results] = await usePoolConnection.query<ResultSetHeader>(querySQL, [tabExpiredToken]);
+    const [results]: [ResultSetHeader, FieldPacket[]] = await usePoolConnection.query<ResultSetHeader>(querySQL, [tabExpiredToken]);
     return results.affectedRows
 }
 
 export {deleteTokenResetRepository};
 
-async function getOneTokenResetRepository(token: string) {
-    const [results] = await usePoolConnection.query<RowDataPacket[]>(
+async function getOneTokenResetRepository(token: string): Promise<RowDataPacket[]> {
+    const [results]: [RowDataPacket[], FieldPacket[]] = await usePoolConnection.query<RowDataPacket[]>(
         "SELECT * FROM reset_password WHERE token = ?", [token]
     )
     return results;

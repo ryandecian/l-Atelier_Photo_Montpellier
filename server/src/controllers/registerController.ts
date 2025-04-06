@@ -3,7 +3,6 @@ import express, { request, response } from 'express';
 const registerController = express.Router();
 
 // Import des dépendances externes :
-import * as argon2 from "argon2";
 import { RowDataPacket } from "mysql2";
 import { ResultSetHeader } from 'mysql2';
 
