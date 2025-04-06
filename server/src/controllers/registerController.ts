@@ -4,7 +4,7 @@ const registerController = express.Router();
 
 // Import des dépendances externes :
 import * as argon2 from "argon2";
-import affectedRows from "mysql2";
+import { RowDataPacket } from "mysql2";
 import { ResultSetHeader } from 'mysql2';
 
 // Import des Middlewares :
@@ -28,7 +28,7 @@ registerController.post("/",
     async (req, res) => {
         try {
             /* Logique métier 1 : Vérification si l'email existe */
-                const dataUser = await verifyEmailFalseRepository(req.body.email);
+                const dataUser: RowDataPacket[] = await verifyEmailFalseRepository(req.body.email);
 
                 // Si l'email existe déjà dans la DB, on ne peut pas continuer.
                 if (dataUser.length > 0) { // Si c'est supérieur à 0, c'est que l'email existe déjà
@@ -57,7 +57,7 @@ registerController.post("/",
 
             /* Logique métier 3 : Insertion de l'utilisateur dans la DB */
                 // On insère l'utilisateur dans la DB
-                const insertUser = await InsertUserRepository
+                const insertUser: ResultSetHeader = await InsertUserRepository
                 (req.body.firstname, req.body.lastname, req.body.adress?? null, req.body.email, req.body.password);
 
                 if (insertUser.affectedRows === 0) {
