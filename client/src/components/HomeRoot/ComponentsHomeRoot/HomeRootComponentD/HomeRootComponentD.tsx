@@ -6,7 +6,7 @@ import ControllerDataImageHome from "../../ControllerDataImageHome";
 
 function HomeRootComponentD() {
     return (
-        <section className={style.HomeRootComponentD}>
+        <section className={`${style.HomeRootComponentD} ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2}>
                     Votre mariage, ce moment tant attendu !
