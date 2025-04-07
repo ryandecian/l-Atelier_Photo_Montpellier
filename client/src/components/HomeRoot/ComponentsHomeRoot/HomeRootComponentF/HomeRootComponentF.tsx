@@ -17,6 +17,7 @@ type textHTMLType = {
     htmlI: string,
     htmlJ: JSX.Element
     htmlK: JSX.Element
+    htmlL: JSX.Element
 }
 
 function HomePCAutorComponentF() {
@@ -31,16 +32,13 @@ function HomePCAutorComponentF() {
         htmlF: `On ne sait pas comment poser, on doute… Mais rapidement, la tension s’efface.`,
         htmlG: `Mon rôle ? Vous guider avec bienveillance pour que ce moment devienne fluide, naturel, et surtout agréable c’est ma première mission.`,
         htmlH: `La deuxième c’est qu’à la vue de vos photos vous faisiez WOUAH !`,
-        htmlI: `Pour en savoir encore un peu plus sur moi rendez vous sur ma page`,
+        htmlI: `Pour en savoir encore un peu plus sur moi rendez vous sur ma page `,
         htmlJ: (
-            <p className={style.TextTarget1}>
-                📸 **Laissez-vous guider, repartez avec des images qui vous AIMEZ. {" "}
-                <span className={style.SpanLink}>
-                    <Link to={ListDataRouter[8].path}>
-                        Découvez mon Portfolio !
-                    </Link>
-                </span>
-            </p>
+            <span className={style.SpanLink}>
+                <Link to={ListDataRouter[7].path}>
+                    QUI SUIS-JE
+                </Link>
+            </span>
         ),
         htmlK: (
             <figure className={css.ContainerPortraitAutor}>
@@ -49,7 +47,17 @@ function HomePCAutorComponentF() {
                         Anne SAUNIER
                     </figcaption>
                 </figure>
-        )
+        ),
+        htmlL: (
+            <p className={`${style.TextP4} ${style.TargetText1}`}>
+                📸 **Laissez-vous guider, repartez avec des images qui vous AIMEZ. {" "}
+                <span className={style.SpanLink}>
+                    <Link to={ListDataRouter[8].path}>
+                        Découvez mon Portfolio !
+                    </Link>
+                </span>
+            </p>
+        ),
     }
 
     const [viewportWidth, setViewportWidth] = useState<number>(window.innerWidth);
@@ -76,19 +84,34 @@ function HomePCAutorComponentF() {
             </h2>
         </header>
 
-        <article className={style.ContainerProfilCard}>
+        <article className={css.ContainerProfilCard}>
             {/* MediaQuery maison */}
             {viewportWidth <= 550 && (
                 <>
-                    textHTML.htmlK
+                    {textHTML.htmlK}
                     <div className={style.ContainerText}>
-                        <p className={style.Text}>
+                        <p className={style.TextP4}>
                             {textHTML.htmlA}
                             {textHTML.htmlB}
                             {textHTML.htmlC}
                             {textHTML.htmlD}
                         </p>
+                        <p className={style.TextP4}>
+                            {textHTML.htmlE}
+                            {textHTML.htmlF}
+                            {textHTML.htmlG}
+                            {textHTML.htmlH}
+                            {textHTML.htmlI}
+                            {textHTML.htmlJ}
+                        </p>
+                        {textHTML.htmlL}
                     </div>
+                </>
+            )}
+            {/* MediaQuery maison */}
+            {viewportWidth > 550 && viewportWidth <= 700 && (
+                <>
+                <div className={style.ContainerRoot}></div>
                 </>
             )}
         </article>

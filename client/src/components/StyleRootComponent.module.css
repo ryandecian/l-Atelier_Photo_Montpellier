@@ -13,8 +13,9 @@
 .ContainerTitle,
 .ContainerText {
     display: flex;
-    justify-content: start;
-    align-items: center;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -34,7 +35,7 @@
     font-style: var(--font-style-title);
     font-display: swap;
     text-align: start;
-    width: 100%;
+    width: calc(100% - 3rem); /* 100% - 48px */
     margin: 1.25rem 1.5rem; /* 20px 24px 20px 24px */
     padding: 0;
     border: 0;
