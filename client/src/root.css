@@ -4,14 +4,16 @@
 
 :root {
     /*Couleur des textes*/
+         /* Couleur des textes général Restructuration */
+         --ColorBlack: black;
+         --ColorWhite: white;
+
          /*Couleur des textes général*/
          --ColorPrincipal: #DCA54A;
          --ColorSecondaire: #3a240f;
          --ColorClaire: #523711;
          --ColorPink: #ff007f;
          --ColorTexte: #3A3A3A;
-         --ColorBlack: black;
-         --ColorWhite: white;
          --ColorGrey: rgb(230, 230, 230);
          --ColorLink: rgb(14, 83, 193);
          --backgroundBlack: black;
@@ -43,16 +45,16 @@
 
          
     /*Logique taille police d'écriture site*/
-         --font-size-root: 16px; /*Ref size, dimensionne tout le site*/
+         --font-size-root: 1rem; /* 16 px : Ref size, dimensionne tout le site*/
          --p: var(--font-size-root); /*16px*/
          --h1: calc(var(--font-size-root) * 2); /*32px*/
          --h2: calc(var(--font-size-root) * 1.5); /*24px*/
-         --h3: calc(var(--font-size-root) + 2px); /*18px*/
+         --h3: calc(var(--font-size-root) + 0.125rem); /*18px*/
          --h4: var(--font-size-root); /*16px*/
-         --h5: calc(var(--font-size-root) - 2px); /*14px*/
-         --h6: calc(var(--font-size-root) - 5px); /*11px*/
-         --h7: calc(var(--font-size-root) - 7px); /*9px*/
-         --h8: calc(var(--font-size-root) - 8px); /*8px*/
+         --h5: calc(var(--font-size-root) - 0.125rem); /*14px*/
+         --h6: calc(var(--font-size-root) - 0.3125rem); /*11px*/
+         --h7: calc(var(--font-size-root) - 0.4375rem); /*9px*/
+         --h8: calc(var(--font-size-root) - 0.5rem); /*8px*/
 
     /* Attention, les 3 déclarations sont obligatoire pour les titres */
     /*Logique des Titres*/

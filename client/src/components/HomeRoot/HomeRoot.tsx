@@ -1,12 +1,14 @@
-import HomePC from "./HomePC/HomePC";
-import HomeMobile from "./HomeMobile/HomeMobile";
+import styleRoot from "../StyleRootComponent.module.css"
+import HomeRootComponentB from "./ComponentsHomeRoot/HomeRootComponentB/HomeRootComponentB";
 
 function HomeRoot() {
     return (
-        <>
-            <HomeMobile />
-            <HomePC />
-        </>
+        <section className={`${styleRoot.HomeRoot} ${styleRoot.ContainerRoot}`}>
+            {/* Container B :  */}
+            <HomeRootComponentB />
+
+            {/* Container 2 : Avis Client */}
+        </section>
     );
 }
 
