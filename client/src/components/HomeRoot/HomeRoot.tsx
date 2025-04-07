@@ -4,10 +4,19 @@ import HomeRootComponentB from "./ComponentsHomeRoot/HomeRootComponentB/HomeRoot
 function HomeRoot() {
     return (
         <section className={`${styleRoot.HomeRoot} ${styleRoot.ContainerRoot}`}>
-            {/* Container B :  */}
+            {/* Container A : Accueil */}
+            
+            {/* Container B : Introduction */}
             <HomeRootComponentB />
 
-            {/* Container 2 : Avis Client */}
+            {/* Container C : Portrait */}
+            
+            {/* Container D : Mariage */}
+
+            {/* Container E : Avis Client */}
+
+            {/* Container F : Autor */}
+
         </section>
     );
 }
