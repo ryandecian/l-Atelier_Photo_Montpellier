@@ -112,7 +112,7 @@ resetPasswordConfirmController.post("/",
                 }
 
             // Logique métier 3 : Hachage du nouveau mot de passe utilisateur
-                const hash: string = await hashPasswordArgonUtils(dataUser[0].password);
+                const hash: string = await hashPasswordArgonUtils(req.body.newPassword);
 
             // Logique métier 4 : Enregistrement du nouveau mot de passe dans la DB
                 const updatePassword: ResultSetHeader = await updateNewPasswordUserRepository(dataUser[0].id, hash);
@@ -136,10 +136,10 @@ resetPasswordConfirmController.post("/",
                 }
         
             // Logique métier 5 : Suppression du token dans la DB
-                const deleteToken = await deletOneTokenResetRepository(req.body.token);
+                const deleteToken: number = await deletOneTokenResetRepository(req.body.token);
 
                 // Vérification si le token a bien été supprimé
-                if (deleteToken === undefined) {
+                if (deleteToken === 0) {
                     res.status(500).json({ error: "Erreur lors de la suppression du token." });
                     console.error(
                         {
@@ -202,7 +202,10 @@ resetPasswordConfirmController.post("/",
                     );
                     return;
                 }
-
+            
+            // Logique métier 7 : Envoi de la réponse au client
+                res.status(200).json({ message: "Mot de passe réinitialisé avec succès." });
+                return;
         }
         catch (error) {
             res.status(500).json({ error: "Erreur interne du serveur." });

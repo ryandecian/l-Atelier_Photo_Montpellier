@@ -41,7 +41,7 @@ export {getOneTokenResetRepository};
 
 
 // Suppression d'un token ciblé dans la DB
-async function deletOneTokenResetRepository(token: string): Promise<number | undefined> {
+async function deletOneTokenResetRepository(token: string): Promise<number> {
     const [results]: [ResultSetHeader, FieldPacket[]] = await usePoolConnection.query<ResultSetHeader>(
         "DELETE FROM reset_password WHERE token = ?", [token]
     )
