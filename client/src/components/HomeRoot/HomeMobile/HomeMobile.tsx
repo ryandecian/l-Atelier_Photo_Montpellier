@@ -1,12 +1,12 @@
 import style from './HomeMobile.module.css';
 
 /* Import des composants */
-import ContainerAccueilHomeRoot from '../ComponentHomeRoot/ContainerTitleHomeRoot/ContainerAccueilHomeRoot';
+import ContainerAccueilHomeRoot from '../ComponentsHomeRoot/ContainerTitleHomeRoot/ContainerAccueilHomeRoot';
 
-import HomeRootComposantA from '../ComponentHomeRoot/HomeRootComposantA/HomeRootComposantA';
-import HomeRootContainerB from '../ComponentHomeRoot/HomeRootComposantB/HomeRootComposantB';
-import HomeRootComposantC from '../ComponentHomeRoot/HomeRootComposantC/HomeRootComposantC';
-import HomeRootComposantD from '../ComponentHomeRoot/HomeRootComposantD/HomeRootComposantD';
+import HomeRootComposantA from '../ComponentsHomeRoot/HomeRootComposantA/HomeRootComposantA';
+import HomeRootContainerB from '../ComponentsHomeRoot/HomeRootComposantB/HomeRootComposantB';
+import HomeRootComposantC from '../ComponentsHomeRoot/HomeRootComposantC/HomeRootComposantC';
+import HomeRootComposantD from '../ComponentsHomeRoot/HomeRootComposantD/HomeRootComposantD';
 import HomeMobileAutorComposantA from './ComposantAutorHomeMobile/HomeMobileAutorComposantA';
 import HomeMobileAutorComposantB from './ComposantAutorHomeMobile/HomeMobileAutorComposantB';
 import HomeMobileAutorComposantC from './ComposantAutorHomeMobile/HomeMobileAutorComposantC';
