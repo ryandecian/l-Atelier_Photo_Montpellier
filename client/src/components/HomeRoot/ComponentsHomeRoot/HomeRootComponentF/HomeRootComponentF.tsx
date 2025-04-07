@@ -77,14 +77,15 @@ function HomePCAutorComponentF() {
 
 
   return (
-    <section className={style.HomePCAutorComponentF}>
+    <section className={`${style.HomeRootComponentF} ${style.ContainerRoot}`}>
         <header className={style.ContainerTitle}>
-            <h2 className={style.Title}>
+            <h2 className={style.TitleH2}>
                 Un peu plus sur moi ?
             </h2>
         </header>
 
         <article className={css.ContainerProfilCard}>
+
             {/* MediaQuery maison */}
             {viewportWidth <= 550 && (
                 <>
@@ -108,12 +109,38 @@ function HomePCAutorComponentF() {
                     </div>
                 </>
             )}
+
+
             {/* MediaQuery maison */}
             {viewportWidth > 550 && viewportWidth <= 700 && (
                 <>
-                <div className={style.ContainerRoot}></div>
+                <div className={style.ContainerRoot}>
+                    {textHTML.htmlK}
+                    <div className={style.ContainerText}>
+                        <p className={style.TextP4}>
+                            {textHTML.htmlA}
+                            {textHTML.htmlB}
+                            {textHTML.htmlC}
+                            {textHTML.htmlD}
+                        </p>
+                    </div>
+                </div>
+                <p className={style.TextP4}>
+                    {textHTML.htmlE}
+                    {textHTML.htmlF}
+                    {textHTML.htmlG}
+                    {textHTML.htmlH}
+                    {textHTML.htmlI}
+                    {textHTML.htmlJ}
+                </p>
+                {textHTML.htmlL}
                 </>
             )}
+
+
+            {/* MediaQuery maison */}
+            {viewportWidth > 700 && viewportWidth <= 800 && ()}
+            
         </article>
     </section>
   );
