@@ -1,34 +1,34 @@
-import style from "./HomeRootComponentB.module.css"
+import styleRoot from "../../../StyleRootComponent.module.css";
 import ListDataRouter from "../../../../router/router";
 import { Link } from "react-router-dom";
 
 function HomeRootComponentB() {
     return (
-        <section className={style.HomeRootConponentB}>
-            <header className={style.ContainerTitle}>
-                <h2 className={style.Title}>
+        <section className={`${styleRoot.HomeRootContainerB} ${styleRoot.ContainerRoot}`}> 
+            <header className={styleRoot.ContainerTitle}>
+                <h2 className={styleRoot.Title}>
                     J'observe, je vous mets à l'aise, je fige l'instant avec justesse.
                 </h2>
             </header>
 
-            <article className={style.ContainerText}>
-                <p className={style.Text}>
+            <article className={styleRoot.ContainerText}>
+                <p className={styleRoot.Text}>
                     En tant que {" "}
-                    <span className={style.SpanBold}>
+                    <span className={styleRoot.SpanBold}>
                         {"photographe professionnelle"}
                     </span> 
                     {""} installée à Montpellier et {" "}
-                    <span className={style.SpanBold}>
+                    <span className={styleRoot.SpanBold}>
                         {"spécialisée en portraits"}
                     </span>
                     {" "} – qu’ils soient {" "} 
-                    <span className={style.SpanLink}>
+                    <span className={styleRoot.SpanLink}>
                         <Link to={ListDataRouter[11].path}>
                             {"corporate"}
                         </Link>
                     </span>
                     , {" "}
-                    <span className={style.SpanLink}>
+                    <span className={styleRoot.SpanLink}>
                         <Link to={ListDataRouter[12].path}>
                             {"lifestyle"}
                         </Link>
@@ -41,9 +41,9 @@ function HomeRootComponentB() {
                     (elle) positif et valorisant.
                 </p>
             </article>
-            <article className={style.ContainerText}>
-                <p className={style.Text}>
-                    <span className={style.SpanBold}>
+            <article className={styleRoot.ContainerText}>
+                <p className={styleRoot.Text}>
+                    <span className={styleRoot.SpanBold}>
                         {"Ma vision du mariage"}
                     </span>
                     {" "} se décline sous la forme d’un reportage photographique. 
@@ -51,7 +51,7 @@ function HomeRootComponentB() {
                     et la spontanéité des émotions vécues durant la cérémonie. Je cherche à 
                     être au plus près de tous ces instants afin qu’ils restent gravés, et cette 
                     approche me permet de {" "}
-                    <span className={style.SpanBold}>
+                    <span className={styleRoot.SpanBold}>
                         {"raconter une histoire visuelle complète"}
                     </span>
                     , où chaque image capte la complicité, la tendresse et l’authenticité du grand jour.
