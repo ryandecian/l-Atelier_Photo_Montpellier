@@ -41,3 +41,45 @@ async function sendMailerService(mailOptions: MailOptionsType): Promise<SentMess
 }
 
 export default sendMailerService;
+
+
+// Exemple d'utilisation de la fonction sendMailerService dans un contrôleur
+// try {
+//     const mailOptions = {
+//         to: dataUser[0].email,
+//         subject: "Confirmation de réinitialisation de mot de passe",
+//         html: `
+//             <h1>Réinitialisation de mot de passe</h1>
+//             <p>Bonjour ${dataUser[0].firstname},</p>
+//             <p>Votre mot de passe a été réinitialisé avec succès.</p>
+//             <p>Si vous n'êtes pas à l'origine de cette demande, veuillez contacter notre support.</p>
+//             <p>Cordialement,</p>
+//             <p>L'Atelier Photo Montpellier</p>
+//             `,
+//     };
+
+//     await sendMailerService(mailOptions);
+// }
+// catch (error) {
+//     res.status(500).json({ error: "Erreur lors de l'envoi de l'email." });
+//     const sendMailerServiceError = (error as Error).message; // On récupère le message d'erreur de la fonction sendMailerService
+//     console.error(
+//         {
+//             identity: "resetPasswordConfirmController.ts",
+//             type: "controller",
+//             URI: "/api/resetpassword/confirm",
+//             methode: "POST",
+//             metier: "Logique métier 6",
+//             codeStatus: "500 : Internal Server Error",
+//             chemin: "/server/src/controllers/resetPasswordConfirmController.ts",
+//             "❌ Nature de l'erreur": "Erreur lors de l'envoi de l'email.",
+//             sendMailerService: {
+//                 identity: "sendMailerService",
+//                 type: "service",
+//                 chemin: "/server/src/services/mailer/sendMailerService.ts",
+//                 "❌ Nature de l'erreur": sendMailerServiceError,
+//             },
+//         }
+//     );
+//     return;
+// }
