@@ -71,6 +71,24 @@
     border: 0;
     padding-bottom: 1.25rem; /* 0px 0px 20px 0px */
 }
+.TextP1 {
+    font-size: var(--h1); /* 32px */
+}
+.TextP2 {
+    font-size: var(--h2); /* 24px */
+}
+.TextP3 {
+    font-size: var(--h3); /* 20px */
+}
+.TextP4 {
+    font-size: var(--h4); /* 18px */
+}
+.TextP5 {
+    font-size: var(--h5); /* 14px */
+}
+.TextP6 {
+    font-size: var(--h6); /* 11px */
+}
 
 /* Text contenant un Link ou un lien externe*/
 .SpanLink > a {
@@ -96,4 +114,11 @@
     margin: 0;
     border: 0;
     padding: 0;
+}
+
+/*-------------------------------------*/
+/* Autre style spéciaux */
+
+.TargetText1 {
+    padding: 1.25rem 0; /* 20px 0px 20px 0px */
 }

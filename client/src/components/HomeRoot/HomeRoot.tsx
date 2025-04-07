@@ -1,6 +1,7 @@
 import styleRoot from "../StyleRootComponent.module.css"
 import HomeRootComponentB from "./ComponentsHomeRoot/HomeRootComponentB/HomeRootComponentB";
 import HomeRootComponentC from "./ComponentsHomeRoot/HomeRootComponentC/HomeRootComponentC";
+import HomeRootComponentD from "./ComponentsHomeRoot/HomeRootComponentD/HomeRootComponentD";
 
 function HomeRoot() {
     return (
@@ -15,6 +16,7 @@ function HomeRoot() {
 
             
             {/* Container D : Mariage */}
+            <HomeRootComponentD />
 
             {/* Container E : Avis Client */}
 

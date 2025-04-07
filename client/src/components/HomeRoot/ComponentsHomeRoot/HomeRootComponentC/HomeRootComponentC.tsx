@@ -1,5 +1,4 @@
 import style from "../../../StyleRootComponent.module.css"
-import css from "./HomeRootComponentC.module.css";
 import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../../router/router";
@@ -26,7 +25,7 @@ function HomeRootComponentC() {
             />
 
             <article className={style.ContainerText}>
-                <p className={`${style.TextP4} ${css.TargetText1}`}>
+                <p className={`${style.TextP4} ${style.TargetText1}`}>
                     Et je cherche à capturer ces histoires. Pour son entreprise, pour ses réseaux 
                     sociaux, pour une connivence…je cherche à trouver la photo de portrait qui fait 
                     votre force, votre énergie, {" "}

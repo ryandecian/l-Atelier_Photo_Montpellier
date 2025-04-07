@@ -1,4 +1,4 @@
-import style from "./HomeRootComponentD.module.css"
+import style from "../../../StyleRootComponent.module.css"
 import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../../router/router";
@@ -8,7 +8,7 @@ function HomeRootComponentD() {
     return (
         <section className={style.HomeRootComponentD}>
             <header className={style.ContainerTitle}>
-                <h2 className={style.Title}>
+                <h2 className={style.TitleH2}>
                     Votre mariage, ce moment tant attendu !
                 </h2>
             </header>
@@ -25,7 +25,7 @@ function HomeRootComponentD() {
             />
 
             <article className={style.ContainerText}>
-                <p className={`${style.Text} ${style.TargetText1}`}>
+                <p className={`${style.TextP4} ${style.TargetText1}`}>
                     Il y a des jours où le temps semble suspendu, où chaque battement de cœur résonne fort et où chaque 
                     minute passe à la vitesse d’une seconde. {" "}
                     <span className={style.SpanBold}>
@@ -39,7 +39,7 @@ function HomeRootComponentD() {
                 </p>
             </article>
             <article className={style.ContainerText}>
-                <p className={`${style.Text} ${style.TargetText1}`}>
+                <p className={style.TextP4}>
                     Discrète mais toujours présente, je me fonds parmi vos invités pour saisir les éclats de rire, les 
                     étreintes sincères, les petites attentions qui font toute la différence. Je travaille comme un témoin 
                     invisible, figeant {" "}
@@ -52,7 +52,7 @@ function HomeRootComponentD() {
                 </p>
             </article>
             <article className={style.ContainerText}>
-                    <p className={style.Text}>
+                    <p className={style.TextP4}>
                         Découvrez plus en détail {" "}
                         <span className={style.SpanLink}>
                             <Link to={ListDataRouter[13].path}>
