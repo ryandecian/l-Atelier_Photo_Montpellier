@@ -1,0 +1,28 @@
+.ContainerProfilCard,
+.ContainerPortraitAutor, 
+.ContainerText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0rem 0rem 0.125rem 0rem; /* 0px 0px 20px 0px */;
+    padding: 0;
+    border: 0;
+}
+
+.ContainerProfilCard {
+    width: 100%;
+}
+.ContainerPortraitAutor {
+    width: 15.5rem; /* 248px */;
+}
+.ContainerText {
+    align-items: start;
+    width: 100%;
+    margin: 0;
+}
+
+.AutorImg {
+    width: 200px;
+    margin: 0rem 1.5rem; /* 0px 24px 0px 24px */;
+}
