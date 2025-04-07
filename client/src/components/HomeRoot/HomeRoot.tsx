@@ -3,6 +3,7 @@ import HomeRootComponentB from "./ComponentsHomeRoot/HomeRootComponentB/HomeRoot
 import HomeRootComponentC from "./ComponentsHomeRoot/HomeRootComponentC/HomeRootComponentC";
 import HomeRootComponentD from "./ComponentsHomeRoot/HomeRootComponentD/HomeRootComponentD";
 import HomeRootComponentE from "./ComponentsHomeRoot/HomeRootComponentE/HomeRootComponentE";
+import HomeRootComponentF from "./ComponentsHomeRoot/HomeRootComponentF/HomeRootComponentF";
 
 function HomeRoot() {
     return (
@@ -23,6 +24,7 @@ function HomeRoot() {
             <HomeRootComponentE />
 
             {/* Container F : Autor */}
+            <HomeRootComponentF />
 
         </section>
     );
