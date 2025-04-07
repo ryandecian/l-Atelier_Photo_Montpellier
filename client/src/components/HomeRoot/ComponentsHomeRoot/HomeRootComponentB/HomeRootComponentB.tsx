@@ -6,13 +6,13 @@ function HomeRootComponentB() {
     return (
         <section className={`${styleRoot.HomeRootContainerB} ${styleRoot.ContainerRoot}`}> 
             <header className={styleRoot.ContainerTitle}>
-                <h2 className={styleRoot.Title}>
+                <h2 className={styleRoot.TitleH2}>
                     J'observe, je vous mets à l'aise, je fige l'instant avec justesse.
                 </h2>
             </header>
 
             <article className={styleRoot.ContainerText}>
-                <p className={styleRoot.Text}>
+                <p className={styleRoot.TextP4}>
                     En tant que {" "}
                     <span className={styleRoot.SpanBold}>
                         {"photographe professionnelle"}
@@ -42,7 +42,7 @@ function HomeRootComponentB() {
                 </p>
             </article>
             <article className={styleRoot.ContainerText}>
-                <p className={styleRoot.Text}>
+                <p className={styleRoot.TextP4}>
                     <span className={styleRoot.SpanBold}>
                         {"Ma vision du mariage"}
                     </span>
