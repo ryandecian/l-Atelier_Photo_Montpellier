@@ -10,10 +10,11 @@ import RouteLimiterRequestIP from '../Security/middlewareSecurity/RouteLimiterRe
 import VerifyKeys from '../middleware/VerifyKeys/VerifyKeys';
 
 // Import des Repositories :
-import { getOneTokenResetRepository } from '../repository/resetTokenRegulator';
+import { getOneTokenResetRepository, deletOneTokenResetRepository } from '../repository/resetTokenRegulator';
 import { getOneUserByIdRepository } from '../repository/getUserRepository';
 
 // Import des Services :
+import sendMailerService from '../services/mailer/sendMailerService';
 
 // Import des Types :
 
@@ -111,7 +112,7 @@ resetPasswordConfirmController.post("/",
                 }
 
             // Logique métier 3 : Hachage du nouveau mot de passe utilisateur
-                const hash: string = await hashPasswordArgonUtils(dataUser[0].password);
+                const hash: string = await hashPasswordArgonUtils(req.body.newPassword);
 
             // Logique métier 4 : Enregistrement du nouveau mot de passe dans la DB
                 const updatePassword: ResultSetHeader = await updateNewPasswordUserRepository(dataUser[0].id, hash);
@@ -133,8 +134,78 @@ resetPasswordConfirmController.post("/",
                     );
                     return;
                 }
+        
+            // Logique métier 5 : Suppression du token dans la DB
+                const deleteToken: number = await deletOneTokenResetRepository(req.body.token);
 
+                // Vérification si le token a bien été supprimé
+                if (deleteToken === 0) {
+                    res.status(500).json({ error: "Erreur lors de la suppression du token." });
+                    console.error(
+                        {
+                            identity: "resetPasswordConfirmController.ts",
+                            type: "controller",
+                            URI: "/api/resetpassword/confirm",
+                            methode: "POST",
+                            metier: "Logique métier 5",
+                            codeStatus: "500 : Internal Server Error",
+                            chemin: "/server/src/controllers/resetPasswordConfirmController.ts",
+                            "❌ Nature de l'erreur": "Erreur lors de la suppression du token.",
+                            deletOneTokenResetRepository: {
+                                identity: "deletOneTokenResetRepository",
+                                type: "repository",
+                                chemin: "/server/src/repository/resetTokenRegulator.ts",
+                                "❌ Nature de l'erreur": "Erreur lors de la suppression du token.",
+                            },
+                        }
+                    );
+                    return;
+                }
 
+            // Logique métier 6 : Envoi d'un email de confirmation à l'utilisateur
+                try {
+                    const mailOptions = {
+                        to: dataUser[0].email,
+                        subject: "Confirmation de réinitialisation de mot de passe",
+                        html: `
+                            <h1>Réinitialisation de mot de passe</h1>
+                            <p>Bonjour ${dataUser[0].firstname},</p>
+                            <p>Votre mot de passe a été réinitialisé avec succès.</p>
+                            <p>Si vous n'êtes pas à l'origine de cette demande, veuillez contacter notre support.</p>
+                            <p>Cordialement,</p>
+                            <p>L'Atelier Photo Montpellier</p>
+                            `,
+                    };
+
+                    await sendMailerService(mailOptions);
+                }
+                catch (error) {
+                    res.status(500).json({ error: "Erreur lors de l'envoi de l'email." });
+                    const sendMailerServiceError = (error as Error).message; // On récupère le message d'erreur de la fonction sendMailerService
+                    console.error(
+                        {
+                            identity: "resetPasswordConfirmController.ts",
+                            type: "controller",
+                            URI: "/api/resetpassword/confirm",
+                            methode: "POST",
+                            metier: "Logique métier 6",
+                            codeStatus: "500 : Internal Server Error",
+                            chemin: "/server/src/controllers/resetPasswordConfirmController.ts",
+                            "❌ Nature de l'erreur": "Erreur lors de l'envoi de l'email.",
+                            sendMailerService: {
+                                identity: "sendMailerService",
+                                type: "service",
+                                chemin: "/server/src/services/mailer/sendMailerService.ts",
+                                "❌ Nature de l'erreur": sendMailerServiceError,
+                            },
+                        }
+                    );
+                    return;
+                }
+            
+            // Logique métier 7 : Envoi de la réponse au client
+                res.status(200).json({ message: "Mot de passe réinitialisé avec succès." });
+                return;
         }
         catch (error) {
             res.status(500).json({ error: "Erreur interne du serveur." });
