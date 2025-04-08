@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import style from "./LifeStyleRootComposantB.module.css";
+import css from "./LifeStyleRootComponentB.module.css";
 import ListDataRouter from "../../../../router/router";
 import ControllerDataImageLifeStyle from "../../ImagesLifeStyleControllerData";
 
-function LifeStyleRootComposantB() {
+function LifeStyleRootComponentB() {
     const services = [
         { 
             id: 1, 
@@ -49,17 +49,17 @@ function LifeStyleRootComposantB() {
     ];
 
     return (
-        <div className={style.container}>
+        <div className={`LifeStyleRootComponentA ${css.container}`}>
             {services.map((service) => (
-                <Link to={service.path} key={service.id} className={style.card}>
-                    <img src={service.img} alt={service.name} className={style.image} />
-                    <div className={style.overlay}></div>
-                    <div className={style.title}>{service.title}</div>
-                    <div className={style.name}>{service.name}</div>
+                <Link to={service.path} key={service.id} className={css.card} aria-label={`Voir le service ${service.title} : ${service.name}`}>
+                    <img src={service.img} alt={service.name} className={css.image} />
+                    <div className={css.overlay}></div>
+                    <h3 className={css.title}>{service.title}</h3>
+                    <p className={css.name}>{service.name}</p>
                 </Link>
             ))}
         </div>
     );
 }
 
-export default LifeStyleRootComposantB;
+export default LifeStyleRootComponentB;

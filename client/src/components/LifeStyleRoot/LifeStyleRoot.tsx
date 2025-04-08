@@ -3,6 +3,7 @@ import ImagesLifeStyleControllerData from "./ImagesLifeStyleControllerData";
 import Container4ImagesRoot from "../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 
 import LifeStyleRootComponentA from "./ComponentsLifeStyleRoot/LifeStyleRootComponentA/LifeStyleRootComponentA";
+import LifeStyleRootComponentB from "./ComponentsLifeStyleRoot/LifeStyleRootComponentB/LifeStyleRootComponentB";
 
 function LifeStyleRoot() {
     return (
@@ -16,6 +17,9 @@ function LifeStyleRoot() {
 
             {/* Container A : Titre et textes */}
             <LifeStyleRootComponentA />
+
+            {/* Container B : Cards */}
+            <LifeStyleRootComponentB />
 
             {/* Container B : Cards */}
 
