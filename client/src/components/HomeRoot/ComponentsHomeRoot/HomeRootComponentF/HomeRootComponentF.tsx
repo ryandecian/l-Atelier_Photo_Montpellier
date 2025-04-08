@@ -15,9 +15,10 @@ type textHTMLType = {
     htmlG: string,
     htmlH: string,
     htmlI: string,
-    htmlJ: JSX.Element
-    htmlK: JSX.Element
-    htmlL: JSX.Element
+    htmlJ: JSX.Element,
+    htmlK: JSX.Element,
+    htmlL: string,
+    htmlM: JSX.Element,
 }
 
 function HomePCAutorComponentF() {
@@ -48,15 +49,13 @@ function HomePCAutorComponentF() {
                     </figcaption>
                 </figure>
         ),
-        htmlL: (
-            <p className={`${style.TextP4} ${style.TargetText1}`}>
-                📸 **Laissez-vous guider, repartez avec des images qui vous AIMEZ. {" "}
-                <span className={style.SpanLink}>
-                    <Link to={ListDataRouter[8].path}>
-                        Découvez mon Portfolio !
-                    </Link>
-                </span>
-            </p>
+        htmlL: "📸 **Laissez-vous guider, repartez avec des images qui vous AIMEZ. ",
+        htmlM: (
+            <span className={style.SpanLink}>
+                <Link to={ListDataRouter[8].path}>
+                    Découvez mon Portfolio !
+                </Link>
+            </span>
         ),
     }
 
@@ -105,7 +104,10 @@ function HomePCAutorComponentF() {
                             {textHTML.htmlI}
                             {textHTML.htmlJ}
                         </p>
-                        {textHTML.htmlL}
+                        <p className={`${style.TextP4} ${style.TextP4Target}`}>
+                            {textHTML.htmlL}
+                            {textHTML.htmlM}
+                        </p>
                     </div>
                 </>
             )}
@@ -125,7 +127,7 @@ function HomePCAutorComponentF() {
                         </p>
                     </div>
                 </div>
-                <p className={style.TextP4}>
+                <p className={css.TextTarget1}>
                     {textHTML.htmlE}
                     {textHTML.htmlF}
                     {textHTML.htmlG}
@@ -133,13 +135,44 @@ function HomePCAutorComponentF() {
                     {textHTML.htmlI}
                     {textHTML.htmlJ}
                 </p>
-                {textHTML.htmlL}
+                <p className={css.TextTarget2}>
+                    {textHTML.htmlL}
+                    {textHTML.htmlM}
+                </p>
                 </>
             )}
 
 
             {/* MediaQuery maison */}
-            {viewportWidth > 700 && viewportWidth <= 800 && ()}
+            {viewportWidth > 700 && viewportWidth <= 800 && (
+                <>
+                <div className={css.ContainerRoot}>
+                    {textHTML.htmlK}
+                    <div className={style.ContainerText}>
+                        <p className={style.TextP4}>
+                            {textHTML.htmlA}
+                            {textHTML.htmlB}
+                            {textHTML.htmlC}
+                            {textHTML.htmlD}
+                        </p>
+                        <p className={style.TextP4}>
+                            {textHTML.htmlE}
+                            {textHTML.htmlF}
+                        </p>
+                    </div>
+                </div>
+                <p className={css.TextTarget1}>
+                    {textHTML.htmlG}
+                    {textHTML.htmlH}
+                    {textHTML.htmlI}
+                    {textHTML.htmlJ}
+                </p>
+                <p className={css.TextTarget2}>
+                    {textHTML.htmlL}
+                    {textHTML.htmlM}
+                </p>
+                </>
+            )}
             
         </article>
     </section>
