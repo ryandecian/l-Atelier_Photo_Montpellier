@@ -1,24 +1,24 @@
-import style from "./CGVRoot.module.css";
-import CGVComposantA from "./ComponentsCGVRoot/CGVComposantA/CGVComposantA";
-import CGVComposantB from "./ComponentsCGVRoot/CGVComposantB/CGVComposantB";
-import CGVComposantC from "./ComponentsCGVRoot/CGVComposantC/CGVComposantC";
+import style from "../StyleRootComponent.module.css";
+import CGVComposantA from "./ComponentsCGVRoot/CGVComponentA/CGVComponentA";
+import CGVComposantB from "./ComponentsCGVRoot/CGVComponentB/CGVComponentB";
+import CGVComposantC from "./ComponentsCGVRoot/CGVComponentC/CGVComponentC";
 
 function CGVRoot() {
     return (
-        <section className={style.CGVRoot}>
+        <section className={`CGVRoot ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
-                <h1 className={style.Title}>
+                <h1 className={style.TitleH1}>
                     Conditions Générales de vente
                 </h1>
             </header>
 
-            {/* Container 1 : Dispositions communes aux particuliers et entreprises */}
+            {/* Container A : Dispositions communes aux particuliers et entreprises */}
             <CGVComposantA />
 
-            {/* Container 2 : Dispositions spécifiques aux particuliers */}
+            {/* Container B : Dispositions spécifiques aux particuliers */}
             <CGVComposantB />
 
-            {/* Container 3 : Dispositions spécifiques aux entreprises */}
+            {/* Container C : Dispositions spécifiques aux entreprises */}
             <CGVComposantC />
         </section>
     );
