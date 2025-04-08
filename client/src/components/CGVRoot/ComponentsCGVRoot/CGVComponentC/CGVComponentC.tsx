@@ -2,7 +2,7 @@ import css from "../../CGVRoot.module.css";
 
 function CGVComponentC() {
     return (
-        <section className={css.CGVComponentC}>
+        <section className={`CGVRootComponentC ${css.ContainerRoot}`}>
             <div className={css.Separator30}/>
             <h2 className={css.TitleH2}>
                 Partie 3 - Dispositions spécifiques aux entreprises
