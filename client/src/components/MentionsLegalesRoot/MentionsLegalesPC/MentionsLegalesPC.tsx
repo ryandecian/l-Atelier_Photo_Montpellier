@@ -2,12 +2,12 @@ import style from "./MentionsLegalesPC.module.css";
 
 /* Import des composants */
 import Separator from "../ComponentsMentionsLegalesRoot/Separator/Separator";
-import MentionsLegalesSectionA from "../ComponentsMentionsLegalesRoot/MentionsLegalesSectionA/MentionsLegalesSectionA";
-import MentionsLegalesSectionB from "../ComponentsMentionsLegalesRoot/MentionsLegalesSectionB/MentionsLegalesSectionB";
-import MentionsLegalesSectionC from "../ComponentsMentionsLegalesRoot/MentionsLegalesSectionC/MentionsLegalesSectionC";
-import MentionsLegalesSectionD from "../ComponentsMentionsLegalesRoot/MentionsLegalesSectionD/MentionsLegalesSectionD";
-import MentionsLegalesSectionE from "../ComponentsMentionsLegalesRoot/MentionsLegalesSectionE/MentionsLegalesSectionE";
-import MentionsLegalesSectionF from "../ComponentsMentionsLegalesRoot/MentionsLegalesSectionF/MentionsLegalesSectionF";
+import MentionsLegalesSectionA from "../ComponentsMentionsLegalesRoot/MentionsLegalesComponentA/MentionsLegalesComponentA";
+import MentionsLegalesSectionB from "../ComponentsMentionsLegalesRoot/MentionsLegalesComponentB/MentionsLegalesComponentB";
+import MentionsLegalesSectionC from "../ComponentsMentionsLegalesRoot/MentionsLegalesComponentC/MentionsLegalesComponentC";
+import MentionsLegalesSectionD from "../ComponentsMentionsLegalesRoot/MentionsLegalesComponentD/MentionsLegalesComponentD";
+import MentionsLegalesSectionE from "../ComponentsMentionsLegalesRoot/MentionsLegalesComponentE/MentionsLegalesComponentE";
+import MentionsLegalesSectionF from "../ComponentsMentionsLegalesRoot/MentionsLegalesComponentF/MentionsLegalesComponentF";
 
 function MentionsLegalesPC() {
     return (
