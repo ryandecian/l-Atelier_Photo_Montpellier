@@ -2,7 +2,7 @@ import style from "./ContainerAccueilHomeRoot.module.css";
 
 function ContainerAccueilHomeRoot() {
     return (
-        <div className={style.ContainerAccueil}>            
+        <div className={style.ContainerRoot}>            
 
             <div className={style.ContainerSubAccueil}>
                 <article className={style.ContainerSlogan}>
