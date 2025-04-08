@@ -6,7 +6,7 @@ import ImagesHomeControllerData from "../../ImagesHomeControllerData";
 
 function HomeRootComponentC() {
     return (
-        <section className={`${style.HomeRootComponentC} ${style.ContainerRoot}`}>
+        <section className={`HomeRootComponentC ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2}>
                     Chaque portrait a son histoire à raconter

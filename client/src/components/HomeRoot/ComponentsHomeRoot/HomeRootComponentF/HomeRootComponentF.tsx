@@ -77,7 +77,7 @@ function HomePCAutorComponentF() {
 
 
   return (
-    <section className={`${style.HomeRootComponentF} ${style.ContainerRoot}`}>
+    <section className={`HomeRootComponentF ${style.ContainerRoot}`}>
         <header className={style.ContainerTitle}>
             <h2 className={style.TitleH2}>
                 Un peu plus sur moi ?
