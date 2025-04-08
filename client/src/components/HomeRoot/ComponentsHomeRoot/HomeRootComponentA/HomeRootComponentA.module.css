@@ -10,10 +10,6 @@
     padding: 0;
 }
 
-/*----------------------------------------------------------------------------------*/
-
-/*----------------------------------------------------------------------------------*/
-
 /* Container de la page d'accueil */
 .ContainerSubAccueil {
     display: flex;
@@ -29,6 +25,89 @@
     border: 0;
     padding: 0;
 }
+/*----------------------------------------------------------------------------------*/
+
+/* Version inférieur a heigth 400px */
+.ContainerSloganMobile {
+    border: 0;
+    padding: 0;
+    text-align: center;
+    margin-top: 6.875rem; /* 110px 0px 0px 0px*/
+}
+
+/* Voici les 2 éléments du ContainerAccueil*/
+.SloganMobile {
+    font-size: var(--h3); /* 18px */
+    color: var(--ColorWhite); /* Couleur du texte */
+    margin: 0rem 1rem; /* 0px 24px 0px 24px */
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    transform: scaleY(1.60);
+    transform: scaleX(1.00);
+}
+@media (min-height: 300px) {
+    .SloganMobile {
+        font-size: calc(var(--h3) + 0.125rem); /* 20px */
+    }
+}
+@media (min-height: 330px) {
+    .SloganMobile {
+        font-size: calc(var(--h3) + 0.25rem); /* 22px */
+    }
+}
+@media (min-height: 360px) {
+    .SloganMobile {
+        font-size: var(--h2); /* 24px */
+    }
+}
+
+
+.ContainerTitleMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--ColorWhite);
+    width: calc(100% - 3rem); /* 100% - 48px */
+    margin: 0rem; /* 0px 24px 0px 24px */
+    border: 0;
+    padding: 0;
+}
+
+.ContainerTitleMobile > h1 {
+    font-size: var(--h3); /* 18px */
+    color: var(--ColorBlack);
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    transform: scaleY(1.60);
+    transform: scaleX(1.00);
+    text-align: center;
+    width: 100%;
+    padding: 0rem 0rem 0.625rem 0rem;
+    margin: 0;
+}
+@media (min-height: 360px) {
+    .ContainerTitleMobile > h1 {
+        font-size: calc(var(--h2) - 0.25rem); /* 20px */
+    }
+}
+@media (min-height: 400px) {
+    .ContainerTitleMobile > h1 {
+        font-size: calc(var(--h2) - 0.125rem); /* 22px */
+    }
+}
+@media (min-height: 450px) {
+    .ContainerTitleMobile > h1 {
+        font-size: var(--h2); /* 24px */
+        text-align: start;
+    }
+}
+
+
+/*----------------------------------------------------------------------------------*/
 
 .ContainerSlogan {
     border: 0;
@@ -86,12 +165,6 @@
     border: 0;
     padding: 0;
 }
-/* @media (max-width: 450px) {
-    .ContainerTitle {
-        width: 100%;
-        margin: 0rem 0rem;
-    }
-} */
 
 .ContainerTitle > h1 {
     font-size: var(--h3); /* 18px */
