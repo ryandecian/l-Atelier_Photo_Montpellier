@@ -1,6 +1,6 @@
 import style from "../../../StyleRootComponent.module.css"
 import GeneratorCardAvisClient from "../../../GeneratorCardAvisClient/GeneratorCardAvisClient";
-import ControllerDataAvisClientHome from "../../ControllerDataAvisClientHome";
+import AvisClientHomeControllerData from "../../AvisClientHomeControllerData";
 
 function HomeRootComponentE() {
     return (
@@ -11,7 +11,7 @@ function HomeRootComponentE() {
                 </h2>
             </header>
 
-            <GeneratorCardAvisClient avisClients={ControllerDataAvisClientHome}/>
+            <GeneratorCardAvisClient avisClients={AvisClientHomeControllerData}/>
         </section>
     );
 }
