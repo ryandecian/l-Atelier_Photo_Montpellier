@@ -2,23 +2,28 @@ import style from "../StyleRootComponent.module.css";
 import ImagesLifeStyleControllerData from "./ImagesLifeStyleControllerData";
 import Container4ImagesRoot from "../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 
+import LifeStyleRootComponentA from "./ComponentsLifeStyleRoot/LifeStyleRootComponentA/LifeStyleRootComponentA";
+
 function LifeStyleRoot() {
     return (
         <section className={`LifeStyleRoot ${style.ContainerRoot}`}>
 
             <header className={style.ContainerTitle}>
-                <h1 className={style.Title}>
+                <h1 className={style.TitleH1}>
                     Portrait LifeStyle : fusion de l'instant et de la lumière
                 </h1>
             </header>
 
-            {/* Container 1 : Titre et textes */}
+            {/* Container A : Titre et textes */}
+            <LifeStyleRootComponentA />
 
-            {/* Container 2 : Cards */}
+            {/* Container B : Cards */}
+
+            {/* Container C : Cards */}
             
-            {/* Container 3 : Portrait Solo */}
+            {/* Container C : Portrait Solo */}
 
-            {/* Container 4 : Container image portrait solo */}
+            {/* Container 1 : Container image portrait solo */}
             <Container4ImagesRoot 
             img1={ImagesLifeStyleControllerData[6].src}
             MetaNameImg1={ImagesLifeStyleControllerData[6].alt}
@@ -30,9 +35,9 @@ function LifeStyleRoot() {
             MetaNameImg4={ImagesLifeStyleControllerData[9].alt}
             />
             
-            {/* Container 5 : Portrait couple */}
+            {/* Container D : Portrait couple */}
 
-            {/* Container 6 : Container image portrait couple */}
+            {/* Container 2 : Container image portrait couple */}
             <Container4ImagesRoot 
             img1={ImagesLifeStyleControllerData[10].src}
             MetaNameImg1={ImagesLifeStyleControllerData[10].alt}
@@ -44,9 +49,9 @@ function LifeStyleRoot() {
             MetaNameImg4={ImagesLifeStyleControllerData[13].alt}
             />
             
-            {/* Container 7 : Portrait famille - amis */}
+            {/* Container E : Portrait famille - amis */}
 
-            {/* Container 8 : Container image portrait couple */}
+            {/* Container 3 : Container image portrait couple */}
             <Container4ImagesRoot 
             img1={ImagesLifeStyleControllerData[14].src}
             MetaNameImg1={ImagesLifeStyleControllerData[14].alt}
@@ -58,13 +63,13 @@ function LifeStyleRoot() {
             MetaNameImg4={ImagesLifeStyleControllerData[17].alt}
             />
             
-            {/* Container 9 : Portrait nouveau-nés */}
+            {/* Container F : Portrait nouveau-nés */}
             
-            {/* Container 11 : Portrait grossesse */}
+            {/* Container G : Portrait grossesse */}
             
-            {/* Container 13 : Portrait Lives */}
+            {/* Container H : Portrait Lives */}
 
-            {/* Container 14 : Container image portrait couple */}
+            {/* Container 4 : Container image portrait couple */}
             <Container4ImagesRoot 
             img1={ImagesLifeStyleControllerData[26].src}
             MetaNameImg1={ImagesLifeStyleControllerData[26].alt}

@@ -42,6 +42,7 @@
 }
 .TitleH1 {
     font-size: var(--h1); /* 32px */
+    text-align: center;
 }
 .TitleH2 {
     font-size: var(--h2); /* 24px */
