@@ -1,15 +1,15 @@
-import style from "./MentionsLegalesSectionD.module.css";
+import style from "../../../StyleRootComponent.module.css";
 import { LinkExt } from "../../../../router/router";
 
-function MentionsLegalesSectionD() {
+function MentionsLegalesComponentD() {
     return (
-        <article className={style.MentionsLegalesSectionD}>
-            <h2 className={style.Title}>
+        <article className={style.MentionsLegalesComponentD}>
+            <h2 className={style.TitleH2px2}>
                 4 – CNIL et gestion des données personnelles
             </h2>
 
             {/* Text 1 */}
-            <p className={style.Text}>
+            <p className={style.TextP4}>
                 Conformément aux dispositions de la {" "}
                 <span className={style.SpanLink}>
                     <a href={LinkExt.loi3} target="_blank" rel="noopener noreferrer">
@@ -35,7 +35,7 @@ function MentionsLegalesSectionD() {
             </p>
 
             {/* Text 2 */}
-            <p className={style.Text}>
+            <p className={style.TextP4}>
                 Pour plus d’informations sur la façon dont nous traitons vos données (type de données, finalité, 
                 destinataire…), lisez notre {" "}
                 <span className={style.SpanBold}>
@@ -46,4 +46,4 @@ function MentionsLegalesSectionD() {
     );
 }
 
-export default MentionsLegalesSectionD;
+export default MentionsLegalesComponentD;
