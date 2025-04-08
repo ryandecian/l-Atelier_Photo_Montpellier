@@ -5,6 +5,7 @@ import Container4ImagesRoot from "../ContainerImageRoot/Container4ImagesRoot/Con
 import LifeStyleRootComponentA from "./ComponentsLifeStyleRoot/LifeStyleRootComponentA/LifeStyleRootComponentA";
 import LifeStyleRootComponentB from "./ComponentsLifeStyleRoot/LifeStyleRootComponentB/LifeStyleRootComponentB";
 import LifeStyleRootComponentC from "./ComponentsLifeStyleRoot/LifeStyleRootComponentC/LifeStyleRootComponentC";
+import LifeStyleRootComponentD from "./ComponentsLifeStyleRoot/LifeStyleRootComponentD/LifeStyleRootComponentD";
 
 function LifeStyleRoot() {
     return (
@@ -38,6 +39,7 @@ function LifeStyleRoot() {
             />
             
             {/* Container D : Portrait couple */}
+            <LifeStyleRootComponentD />
 
             {/* Container 2 : Container image portrait couple */}
             <Container4ImagesRoot 
