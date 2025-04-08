@@ -1,5 +1,4 @@
 import css from "./HomeRootComponentA.module.css";
-// import style from "../../../StyleRootComponent.module.css";
 import { useState, useEffect } from "react";
 
 function HomeRootComponentA() {
