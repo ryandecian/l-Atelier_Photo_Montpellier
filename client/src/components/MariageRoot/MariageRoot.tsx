@@ -102,14 +102,14 @@ function MariageRoot() {
             
             {/* Container Images 4 */}
             <Container4ImagesRoot
-            img1={ControllerDataImageMariage[0].src}
-            MetaNameImg1={ControllerDataImageMariage[0].alt}
-            img2={ControllerDataImageMariage[1].src}
-            MetaNameImg2={ControllerDataImageMariage[1].alt}
-            img3={ControllerDataImageMariage[2].src}
-            MetaNameImg3={ControllerDataImageMariage[2].alt}
-            img4={ControllerDataImageMariage[3].src}
-            MetaNameImg4={ControllerDataImageMariage[3].alt}
+            img1={ControllerDataImageMariage[12].src}
+            MetaNameImg1={ControllerDataImageMariage[12].alt}
+            img2={ControllerDataImageMariage[13].src}
+            MetaNameImg2={ControllerDataImageMariage[13].alt}
+            img3={ControllerDataImageMariage[14].src}
+            MetaNameImg3={ControllerDataImageMariage[14].alt}
+            img4={ControllerDataImageMariage[15].src}
+            MetaNameImg4={ControllerDataImageMariage[15].alt}
             />
 
             {/* Composant E : Une Expérience Sereine et Détendue */}
@@ -117,14 +117,14 @@ function MariageRoot() {
             
             {/* Container Images 5 */}
             <Container4ImagesRoot
-            img1={ControllerDataImageMariage[0].src}
-            MetaNameImg1={ControllerDataImageMariage[0].alt}
-            img2={ControllerDataImageMariage[1].src}
-            MetaNameImg2={ControllerDataImageMariage[1].alt}
-            img3={ControllerDataImageMariage[2].src}
-            MetaNameImg3={ControllerDataImageMariage[2].alt}
-            img4={ControllerDataImageMariage[3].src}
-            MetaNameImg4={ControllerDataImageMariage[3].alt}
+            img1={ControllerDataImageMariage[16].src}
+            MetaNameImg1={ControllerDataImageMariage[16].alt}
+            img2={ControllerDataImageMariage[17].src}
+            MetaNameImg2={ControllerDataImageMariage[17].alt}
+            img3={ControllerDataImageMariage[18].src}
+            MetaNameImg3={ControllerDataImageMariage[18].alt}
+            img4={ControllerDataImageMariage[19].src}
+            MetaNameImg4={ControllerDataImageMariage[19].alt}
             />
 
             {/* Composant F Conclusion : Des Photos Qui Vous Rappellent un Moment Unique : */}
