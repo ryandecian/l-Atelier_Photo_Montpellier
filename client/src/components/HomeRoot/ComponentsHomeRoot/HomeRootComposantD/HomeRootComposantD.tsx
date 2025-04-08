@@ -1,6 +1,6 @@
 import style from "./HomeRootComposantD.module.css"
 import GeneratorCardAvisClient from "../../../GeneratorCardAvisClient/GeneratorCardAvisClient";
-import ControllerDataAvisClientHome from "../../ControllerDataAvisClientHome";
+import ControllerDataAvisClientHome from "../../AvisClientHomeControllerData";
 
 function HomeRootComposantD() {
     return (
