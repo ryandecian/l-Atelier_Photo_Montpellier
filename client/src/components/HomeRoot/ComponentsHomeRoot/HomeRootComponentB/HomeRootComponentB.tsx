@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function HomeRootComponentB() {
     return (
-        <section className={`${style.HomeRootContainerB} ${style.ContainerRoot}`}> 
+        <section className={`HomeRootContainerB ${style.ContainerRoot}`}> 
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2}>
                     J'observe, je vous mets à l'aise, je fige l'instant avec justesse.

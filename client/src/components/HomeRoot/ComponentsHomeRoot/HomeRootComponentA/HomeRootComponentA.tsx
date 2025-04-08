@@ -18,7 +18,7 @@ function HomeRootComponentA() {
         };
     }, []);
     return (
-        <section className={css.ContainerAccueil}>
+        <section className={`HomeRootComponentA ${css.ContainerAccueil}`}>
             <div className={css.ContainerSubAccueil}>
 
             {/* MediaQuery maison */}
