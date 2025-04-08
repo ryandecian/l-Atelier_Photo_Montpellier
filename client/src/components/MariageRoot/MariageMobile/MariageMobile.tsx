@@ -1,14 +1,14 @@
 import style from "./MariageMobile.module.css";
-import MariageRootComposantA from "../ComponentsMariageRoot/MariageRootComposantA/MariageRootComposantA";
-import MariageRootComposantB from "../ComponentsMariageRoot/MariageRootComposantB/MariageRootComposantB";
-import MariageRootComposantC from "../ComponentsMariageRoot/MariageRootComposantC/MariageRootComposantC";
-import MariageRootComposantD from "../ComponentsMariageRoot/MariageRootComposantD/MariageRootComposantD";
-import MariageRootComposantE from "../ComponentsMariageRoot/MariageRootComposantE/MariageRootComposantE";
-import MariageRootComposantF from "../ComponentsMariageRoot/MariageRootComposantF/MariageRootComposantF";
+import MariageRootComposantA from "../ComponentsMariageRoot/MariageRootComponentA/MariageRootComposantA";
+import MariageRootComposantB from "../ComponentsMariageRoot/MariageRootComponentB/MariageRootComposantB";
+import MariageRootComposantC from "../ComponentsMariageRoot/MariageRootComponentC/MariageRootComposantC";
+import MariageRootComposantD from "../ComponentsMariageRoot/MariageRootComponentD/MariageRootComposantD";
+import MariageRootComposantE from "../ComponentsMariageRoot/MariageRootComponentE/MariageRootComposantE";
+import MariageRootComposantF from "../ComponentsMariageRoot/MariageRootComponentF/MariageRootComposantF";
 import Container4ImagesRoot from "../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
-import ControllerDataImageMariage from "../ControllerDataImageMariage";
+import ControllerDataImageMariage from "../ImagesMariageControllerData";
 import GeneratorCardAvisClient from "../../GeneratorCardAvisClient/GeneratorCardAvisClient";
-import ControllerDataAvisClientMariage from "../ControllerDataAvisClientMariage";
+import ControllerDataAvisClientMariage from "../AvisClientMariageControllerData";
 
 function MariageMobile() {
     return (
