@@ -28,7 +28,8 @@
 .TitleH3,
 .TitleH4, 
 .TitleH5,
-.TitleH6 {
+.TitleH6,
+.TitleH2px2 {
     color : var(--ColorBlack);
     font-family: var(--font-family-title);
     font-weight: var(--font-weight-title);
@@ -58,6 +59,9 @@
 }
 .TitleH6 {
     font-size: var(--h6); /* 11px */
+}
+.TitleH2px2 {
+    font-size: calc(var(--h2) + 0.125rem); /* 26px */
 }
 
 /* Style des Textes généraux */
