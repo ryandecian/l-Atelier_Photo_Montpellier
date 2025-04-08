@@ -8,12 +8,12 @@ import Image6 from "../../assets/Images/ImageHomePage/Portrait_Mariage_a_la_Tour
 import Image7 from "../../assets/Images/ImageHomePage/Photo_de_mariage_Sun_Glass.jpg";
 import Image8 from "../../assets/Images/ImageHomePage/Pride_et_mariage.jpg";
 
-interface ControllerDataImageHomeType {
+interface ImagesHomeControllerDataType {
     src: string;
     alt: string;
 }
 
-const ControllerDataImageHome: ControllerDataImageHomeType[] = [
+const ImagesHomeControllerData: ImagesHomeControllerDataType[] = [
     /* Tableau 1 d'images : 4 images */
     /* {ControllerDataImageHome[0].src} */
     {
@@ -61,4 +61,4 @@ const ControllerDataImageHome: ControllerDataImageHomeType[] = [
     },
 ];
 
-export default ControllerDataImageHome;
+export default ImagesHomeControllerData;

@@ -1,22 +1,24 @@
 .ContainerProfilCard,
 .ContainerPortraitAutor, 
-.ContainerText {
+.ContainerText,
+.ContainerRoot {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     margin: 0rem 0rem 0.125rem 0rem; /* 0px 0px 20px 0px */;
     padding: 0;
     border: 0;
 }
-
 .ContainerProfilCard {
+    flex-direction: column;
     width: 100%;
 }
 .ContainerPortraitAutor {
+    flex-direction: column;
     width: 15.5rem; /* 248px */;
 }
 .ContainerText {
+    flex-direction: column;
     align-items: start;
     width: 100%;
     margin: 0;
@@ -25,4 +27,19 @@
 .AutorImg {
     width: 200px;
     margin: 0rem 1.5rem; /* 0px 24px 0px 24px */;
+}
+
+.TextTarget1,
+.TextTarget2 {
+    font-size: var(--h4);
+    width: calc(100% - 3rem); /* 100% - 48px */;
+    text-align: center;
+    margin: 0rem 1.5rem; /* 0px 24px 0px 24px */;
+    border: 0;
+}
+.TextTarget1 {
+    padding: 1.25rem 0rem; /* 20px 0px 20px 0px */;
+}
+.TextTarget2 {
+    padding: 0rem 0rem 1.25rem 0rem; /* 20px 0px 0px 0px */;
 }
