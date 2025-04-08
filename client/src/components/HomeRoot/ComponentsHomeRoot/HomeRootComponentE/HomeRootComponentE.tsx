@@ -4,7 +4,7 @@ import AvisClientHomeControllerData from "../../AvisClientHomeControllerData";
 
 function HomeRootComponentE() {
     return (
-        <section className={`${style.HomeRootComponentE} ${style.ContainerRoot}`}>
+        <section className={`HomeRootComponentE ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2}>
                     Des photos, des expériences, des mots, ils m'ont fait confiance !
