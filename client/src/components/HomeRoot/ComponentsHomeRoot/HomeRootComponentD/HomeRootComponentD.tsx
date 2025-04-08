@@ -2,7 +2,7 @@ import style from "../../../StyleRootComponent.module.css"
 import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../../router/router";
-import ControllerDataImageHome from "../../ControllerDataImageHome";
+import ImagesHomeControllerData from "../../ImagesHomeControllerData";
 
 function HomeRootComponentD() {
     return (
@@ -14,14 +14,14 @@ function HomeRootComponentD() {
             </header>
 
             <Container4ImagesRoot
-                img1={ControllerDataImageHome[4].src}
-                MetaNameImg1={ControllerDataImageHome[4].alt}
-                img2={ControllerDataImageHome[5].src}
-                MetaNameImg2={ControllerDataImageHome[5].alt}
-                img3={ControllerDataImageHome[6].src}
-                MetaNameImg3={ControllerDataImageHome[6].alt}
-                img4={ControllerDataImageHome[7].src}
-                MetaNameImg4={ControllerDataImageHome[7].alt}
+                img1={ImagesHomeControllerData[4].src}
+                MetaNameImg1={ImagesHomeControllerData[4].alt}
+                img2={ImagesHomeControllerData[5].src}
+                MetaNameImg2={ImagesHomeControllerData[5].alt}
+                img3={ImagesHomeControllerData[6].src}
+                MetaNameImg3={ImagesHomeControllerData[6].alt}
+                img4={ImagesHomeControllerData[7].src}
+                MetaNameImg4={ImagesHomeControllerData[7].alt}
             />
 
             <article className={style.ContainerText}>

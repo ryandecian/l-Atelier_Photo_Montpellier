@@ -2,7 +2,7 @@ import style from "./HomeRootComposantC.module.css"
 import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../../router/router";
-import ControllerDataImageHome from "../../ControllerDataImageHome";
+import ControllerDataImageHome from "../../ImagesHomeControllerData";
 
 function HomeRootComposantC() {
     return (
