@@ -1,4 +1,4 @@
-interface ControllerDataAvisClientLifeStyleType {
+interface AvisClientLifeStyleControllerDataType {
     id: number;
     nom: string;
     note: number;
@@ -6,7 +6,7 @@ interface ControllerDataAvisClientLifeStyleType {
     date: string;
 }
 
-const ControllerDataAvisClientLifeStyle: ControllerDataAvisClientLifeStyleType[] = [
+const AvisClientLifeStyleControllerData: AvisClientLifeStyleControllerDataType[] = [
     /* Commentaire 1 */
     {
         id: 1,
@@ -31,4 +31,4 @@ const ControllerDataAvisClientLifeStyle: ControllerDataAvisClientLifeStyleType[]
     },
 ];
 
-export default ControllerDataAvisClientLifeStyle;
+export default AvisClientLifeStyleControllerData;

@@ -1,4 +1,4 @@
-import styleRoot from "../StyleRootComponent.module.css";
+import style from "../StyleRootComponent.module.css";
 import HomeRootComponentA from "./ComponentsHomeRoot/HomeRootComponentA/HomeRootComponentA";
 import HomeRootComponentB from "./ComponentsHomeRoot/HomeRootComponentB/HomeRootComponentB";
 import HomeRootComponentC from "./ComponentsHomeRoot/HomeRootComponentC/HomeRootComponentC";
@@ -8,7 +8,7 @@ import HomeRootComponentF from "./ComponentsHomeRoot/HomeRootComponentF/HomeRoot
 
 function HomeRoot() {
     return (
-        <section className={`${styleRoot.HomeRoot} ${styleRoot.ContainerRoot}`}>
+        <section className={`HomeRoot ${style.ContainerRootRacine}`}>
             {/* Container A : Accueil */}
             <HomeRootComponentA />
 
@@ -17,7 +17,6 @@ function HomeRoot() {
 
             {/* Container C : Portrait */}
             <HomeRootComponentC />
-
             
             {/* Container D : Mariage */}
             <HomeRootComponentD />
