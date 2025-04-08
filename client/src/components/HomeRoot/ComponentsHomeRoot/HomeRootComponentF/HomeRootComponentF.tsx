@@ -15,9 +15,10 @@ type textHTMLType = {
     htmlG: string,
     htmlH: string,
     htmlI: string,
-    htmlJ: JSX.Element
-    htmlK: JSX.Element
-    htmlL: JSX.Element
+    htmlJ: JSX.Element,
+    htmlK: JSX.Element,
+    htmlL: string,
+    htmlM: JSX.Element,
 }
 
 function HomePCAutorComponentF() {
@@ -48,15 +49,13 @@ function HomePCAutorComponentF() {
                     </figcaption>
                 </figure>
         ),
-        htmlL: (
-            <p className={`${style.TextP4} ${style.TargetText1}`}>
-                📸 **Laissez-vous guider, repartez avec des images qui vous AIMEZ. {" "}
-                <span className={style.SpanLink}>
-                    <Link to={ListDataRouter[8].path}>
-                        Découvez mon Portfolio !
-                    </Link>
-                </span>
-            </p>
+        htmlL: "📸 **Laissez-vous guider, repartez avec des images qui vous AIMEZ. ",
+        htmlM: (
+            <span className={style.SpanLink}>
+                <Link to={ListDataRouter[8].path}>
+                    Découvez mon Portfolio !
+                </Link>
+            </span>
         ),
     }
 
@@ -67,6 +66,7 @@ function HomePCAutorComponentF() {
           setViewportWidth(window.innerWidth);
         };
     
+        // Ajout de l'écouteur d'événements pour la redimensionnement de la fenêtre
         window.addEventListener("resize", updateWidth);
     
         // Nettoyage lors du démontage du composant
@@ -77,14 +77,15 @@ function HomePCAutorComponentF() {
 
 
   return (
-    <section className={style.HomePCAutorComponentF}>
+    <section className={`${style.HomeRootComponentF} ${style.ContainerRoot}`}>
         <header className={style.ContainerTitle}>
-            <h2 className={style.Title}>
+            <h2 className={style.TitleH2}>
                 Un peu plus sur moi ?
             </h2>
         </header>
 
         <article className={css.ContainerProfilCard}>
+
             {/* MediaQuery maison */}
             {viewportWidth <= 550 && (
                 <>
@@ -104,16 +105,136 @@ function HomePCAutorComponentF() {
                             {textHTML.htmlI}
                             {textHTML.htmlJ}
                         </p>
-                        {textHTML.htmlL}
+                        <p className={`${style.TextP4} ${style.TextP4Target}`}>
+                            {textHTML.htmlL}
+                            {textHTML.htmlM}
+                        </p>
                     </div>
                 </>
             )}
+
+
             {/* MediaQuery maison */}
             {viewportWidth > 550 && viewportWidth <= 700 && (
                 <>
-                <div className={style.ContainerRoot}></div>
+                    <div className={style.ContainerRoot}>
+                        {textHTML.htmlK}
+                        <div className={style.ContainerText}>
+                            <p className={style.TextP4}>
+                                {textHTML.htmlA}
+                                {textHTML.htmlB}
+                                {textHTML.htmlC}
+                                {textHTML.htmlD}
+                            </p>
+                        </div>
+                    </div>
+                    <p className={css.TextTarget1}>
+                        {textHTML.htmlE}
+                        {textHTML.htmlF}
+                        {textHTML.htmlG}
+                        {textHTML.htmlH}
+                        {textHTML.htmlI}
+                        {textHTML.htmlJ}
+                    </p>
+                    <p className={css.TextTarget2}>
+                        {textHTML.htmlL}
+                        {textHTML.htmlM}
+                    </p>
                 </>
             )}
+
+
+            {/* MediaQuery maison */}
+            {viewportWidth > 700 && viewportWidth <= 800 && (
+                <>
+                    <div className={css.ContainerRoot}>
+                        {textHTML.htmlK}
+                        <div className={style.ContainerText}>
+                            <p className={style.TextP4}>
+                                {textHTML.htmlA}
+                                {textHTML.htmlB}
+                                {textHTML.htmlC}
+                                {textHTML.htmlD}
+                            </p>
+                            <p className={style.TextP4}>
+                                {textHTML.htmlE}
+                                {textHTML.htmlF}
+                            </p>
+                        </div>
+                    </div>
+                    <p className={css.TextTarget1}>
+                        {textHTML.htmlG}
+                        {textHTML.htmlH}
+                        {textHTML.htmlI}
+                        {textHTML.htmlJ}
+                    </p>
+                    <p className={css.TextTarget2}>
+                        {textHTML.htmlL}
+                        {textHTML.htmlM}
+                    </p>
+                </>
+            )}
+
+
+            {/* MediaQuery maison */}
+            {viewportWidth > 800 && viewportWidth <= 1000 && (
+                <>
+                    <div className={css.ContainerRoot}>
+                        {textHTML.htmlK}
+                        <div className={style.ContainerText}>
+                            <p className={style.TextP4}>
+                                {textHTML.htmlA}
+                                {textHTML.htmlB}
+                                {textHTML.htmlC}
+                                {textHTML.htmlD}
+                            </p>
+                            <p className={style.TextP4}>
+                                {textHTML.htmlE}
+                                {textHTML.htmlF}
+                                {textHTML.htmlG}
+                                {textHTML.htmlH}
+                                {textHTML.htmlI}
+                                {textHTML.htmlJ}
+                            </p>
+                        </div>
+                    </div>
+                    <p className={css.TextTarget1}>
+                        {textHTML.htmlL}
+                        {textHTML.htmlM}
+                    </p>
+                </>
+            )}
+
+
+            {/* MediaQuery maison */}
+            {viewportWidth > 1000 && (
+                <>
+                    <div className={css.ContainerRoot}>
+                        {textHTML.htmlK}
+                        <div className={style.ContainerText}>
+                            <p className={style.TextP4}>
+                                {textHTML.htmlA}
+                                {textHTML.htmlB}
+                                {textHTML.htmlC}
+                                {textHTML.htmlD}
+                            </p>
+                            <p className={style.TextP4}>
+                                {textHTML.htmlE}
+                                {textHTML.htmlF}
+                                {textHTML.htmlG}
+                                {textHTML.htmlH}
+                                {textHTML.htmlI}
+                                {textHTML.htmlJ}
+                            </p>
+                            <p className={style.TextP4}>
+                                {textHTML.htmlL}
+                                {textHTML.htmlM}
+                            </p>
+                        </div>
+                    </div>
+                </>
+            )}
+            
         </article>
     </section>
   );

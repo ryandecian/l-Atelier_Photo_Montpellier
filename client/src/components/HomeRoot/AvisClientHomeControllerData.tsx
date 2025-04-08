@@ -1,4 +1,4 @@
-interface ControllerDataAvisClientHomeType {
+interface AvisClientHomeControllerDataType {
     id: number;
     nom: string;
     note: number;
@@ -6,7 +6,7 @@ interface ControllerDataAvisClientHomeType {
     date: string;
 }
 
-const ControllerDataAvisClientHome: ControllerDataAvisClientHomeType[] = [
+const AvisClientHomeControllerData: AvisClientHomeControllerDataType[] = [
     /* Commentaire 1 */
     {
         id: 1,
@@ -38,4 +38,4 @@ const ControllerDataAvisClientHome: ControllerDataAvisClientHomeType[] = [
     },
 ];
 
-export default ControllerDataAvisClientHome;
+export default AvisClientHomeControllerData;
