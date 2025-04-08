@@ -13,6 +13,16 @@ import Image10 from "../../assets/Images/ImageMariage/mariage_pride_montpellier.
 import Image11 from "../../assets/Images/ImageMariage/mariage_photo_exterieur.jpg";
 import Image12 from "../../assets/Images/ImageMariage/mariage_photo_exterieur_rome.jpg";
 
+import Image13 from "../../assets/Images/ImageMariage/Flash_ya_la_mairie_de_Montpellier-00374_resultat.jpg";
+import Image14 from "../../assets/Images/ImageMariage/La-signature-des-mariés-05416.jpg";
+import Image15 from "../../assets/Images/ImageMariage/Le_bouquet_de_la_mariyne-05311.jpg";
+import Image16 from "../../assets/Images/ImageMariage/Les_bagues_sur_le_chapeau_de_la_mariyne-00199.jpg";
+
+import Image17 from "../../assets/Images/ImageMariage/Mariage_Parc_de_Gramont-05301.jpg";
+import Image18 from "../../assets/Images/ImageMariage/Parc_de_la_Fontaine_Nyymes-09022.jpg";
+import Image19 from "../../assets/Images/ImageMariage/La_guiguette_de_villeneuve_les_Maguelones-02177.jpg";
+import Image20 from "../../assets/Images/ImageMariage/mariyns_canisses_BW.jpg";
+
 interface ControllerDataImageMariageType {
     src: string;
     alt: string;
@@ -94,42 +104,46 @@ const ControllerDataImageMariage: ControllerDataImageMariageType[] = [
     /* Tableau 4 d'images : 4 images */
     /* {ControllerDataImageMariage[12].src} */
     {
-        src: "",
+        src: Image13,
         alt: "",
     },
     /* {ControllerDataImageMariage[13].src} */
     {
-        src: "",
+        src: Image14,
         alt: "",
     },
     /* {ControllerDataImageMariage[14].src} */
     {
-        src: "",
+        src: Image15,
         alt: "",
     },
     /* {ControllerDataImageMariage[15].src} */
     {
-        src: "",
+        src: Image16,
         alt: "",
     },
+
+
+
+    /* Tableau 5 d'images : 4 images */
     /* {ControllerDataImageMariage[16].src} */
     {
-        src: "",
+        src: Image17,
         alt: "",
     },
     /* {ControllerDataImageMariage[17].src} */
     {
-        src: "",
+        src: Image18,
         alt: "",
     },
     /* {ControllerDataImageMariage[18].src} */
     {
-        src: "",
+        src: Image19,
         alt: "",
     },
     /* {ControllerDataImageMariage[19].src} */
     {
-        src: "",
+        src: Image20,
         alt: "",
     },
     /* {ControllerDataImageMariage[20].src} */
