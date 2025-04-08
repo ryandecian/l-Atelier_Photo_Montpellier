@@ -2,7 +2,7 @@ import style from "../../../StyleRootComponent.module.css";
 
 function LifeStyleRootComponentC() {
     return (
-        <section className={style.LifeStyleRootComponentC}>
+        <section className={`LifeStyleRootComponentC ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2px2}>
                     Portrait Solo: Se voir autrement

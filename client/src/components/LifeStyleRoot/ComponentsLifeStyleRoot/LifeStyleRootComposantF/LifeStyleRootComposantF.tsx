@@ -1,8 +1,8 @@
-import style from "./LifeStyleRootComposantF.module.css";
+import style from "../../../StyleRootComponent.module.css";
 
-function LifeStyleRootComposantF() {
+function LifeStyleRootComponentF() {
     return (
-        <section className={style.LifeStyleRootComposantF}>
+        <section className={`LifeStyleRootComponentF ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.Title}>
                     1er Cris (Nouveaux-nés) : Une séance tout en délicatesse, à son rythme
@@ -10,7 +10,7 @@ function LifeStyleRootComposantF() {
             </header>
 
             <article className={style.ContainerText}>
-                <p className={style.Text}>
+                <p className={style.TextP4}>
                     Un nouveau-né vit à {" "}
                     <span className={style.SpanBold}>
                         {"son propre tempo :"}
@@ -18,7 +18,7 @@ function LifeStyleRootComposantF() {
                     {" "} il s’endort, s’étire, cherche la chaleur de vos bras… Ici, pas de précipitation. Je prends le 
                     temps, entre pauses câlins et moments de calme, pour capturer des images naturelles et authentiques.
                 </p>
-                <p className={style.Text}>
+                <p className={style.TextP4}>
                     <span className={style.SpanBold}>
                         {"🌿 Un environnement apaisant :"}
                     </span>
@@ -33,12 +33,12 @@ function LifeStyleRootComposantF() {
                     </span>
                     {" "} des portraits de bébé seul, dans vos bras, avec ses frères et sœurs… chaque détail compte. <br />
                 </p>
-                <p className={style.Text}>
+                <p className={style.TextP4}>
                     <span className={style.SpanBoldSpace}>
                         {"💡 Pour qui ?"}
                     </span> 
                 </p>
-                <p className={style.Text}>
+                <p className={style.TextP4}>
                     <span className={style.SpanBold}>
                         {"Cette séance est faite pour vous si :"}
                     </span>
@@ -52,4 +52,4 @@ function LifeStyleRootComposantF() {
     );
 }
 
-export default LifeStyleRootComposantF;
+export default LifeStyleRootComponentF;

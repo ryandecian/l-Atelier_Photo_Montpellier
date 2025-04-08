@@ -4,7 +4,7 @@ function LifeStyleRootComponentA() {
     return (
         <section className={`LifeStyleRootComponentA ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
-                <h2 className={style.TitleH2}>
+                <h2 className={style.TitleH2px2}>
                     Un shooting pensé pour vous mettre à l’aise et révéler votre personnalité
                 </h2>
             </header>

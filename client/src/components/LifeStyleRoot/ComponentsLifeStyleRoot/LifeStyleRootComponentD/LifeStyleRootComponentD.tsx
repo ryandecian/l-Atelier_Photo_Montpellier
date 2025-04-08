@@ -2,9 +2,9 @@ import style from "../../../StyleRootComponent.module.css";
 
 function LifeStyleRootComponentD() {
     return (
-        <section className={style.LifeStyleRootComponentD}>
-            <header className={style.ContainerTitleH2px2}>
-                <h2 className={style.Title}>
+        <section className={`LifeStyleRootComponentD ${style.ContainerRoot}`}>
+            <header className={style.ContainerTitle}>
+                <h2 className={style.TitleH2px2}>
                     Toi & Moi : Un portrait à deux, sans filtres et sans mode d’emploi ❤️ 
                 </h2>
             </header>
