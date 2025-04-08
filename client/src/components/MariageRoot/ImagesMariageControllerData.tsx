@@ -3,6 +3,16 @@ import Image2 from "../../assets/Images/ImageMariage/Mariyns_Parc_de_la_tour_Mag
 import Image3 from "../../assets/Images/ImageMariage/Florian_et_Elsa_enlacyns_Nyymes-08944.jpg";
 import Image4 from "../../assets/Images/ImageMariage/Florian_et_Elsa_engagement_-08922_resultat.jpg";
 
+import Image5 from "../../assets/Images/ImageMariage/Mariyns_et_Sun_Glass-02075.jpg";
+import Image6 from "../../assets/Images/ImageMariage/Les_discours_aux_mariyns-04729.jpg";
+import Image7 from "../../assets/Images/ImageMariage/mariage_villeneuve_les_maguelones-02107.jpg";
+import Image8 from "../../assets/Images/ImageMariage/Les_mariyns_en_plein_soleil.jpg";
+
+import Image9 from "../../assets/Images/ImageMariage/mariage_rome.jpg";
+import Image10 from "../../assets/Images/ImageMariage/mariage_pride_montpellier.jpg";
+import Image11 from "../../assets/Images/ImageMariage/mariage_photo_exterieur.jpg";
+import Image12 from "../../assets/Images/ImageMariage/mariage_photo_exterieur_rome.jpg";
+
 interface ControllerDataImageMariageType {
     src: string;
     alt: string;
@@ -36,47 +46,52 @@ const ControllerDataImageMariage: ControllerDataImageMariageType[] = [
     /* Tableau 2 d'images : 4 images */
     /* {ControllerDataImageMariage[4].src} */
     {
-        src: "",
+        src: Image5,
         alt: "",
     },
     /* {ControllerDataImageMariage[5].src} */
     {
-        src: "",
+        src: Image6,
         alt: "",
     },
     /* {ControllerDataImageMariage[6].src} */
     {
-        src: "",
+        src: Image7,
         alt: "",
     },
     /* {ControllerDataImageMariage[7].src} */
     {
-        src: "",
+        src: Image8,
         alt: "",
     },
 
 
 
+    /* Tableau 3 d'images : 4 images */
     /* {ControllerDataImageMariage[8].src} */
     {
-        src: "",
+        src: Image9,
         alt: "",
     },
     /* {ControllerDataImageMariage[9].src} */
     {
-        src: "",
+        src: Image10,
         alt: "",
     },
     /* {ControllerDataImageMariage[10].src} */
     {
-        src: "",
+        src: Image11,
         alt: "",
     },
     /* {ControllerDataImageMariage[11].src} */
     {
-        src: "",
+        src: Image12,
         alt: "",
     },
+
+
+
+    /* Tableau 4 d'images : 4 images */
     /* {ControllerDataImageMariage[12].src} */
     {
         src: "",
