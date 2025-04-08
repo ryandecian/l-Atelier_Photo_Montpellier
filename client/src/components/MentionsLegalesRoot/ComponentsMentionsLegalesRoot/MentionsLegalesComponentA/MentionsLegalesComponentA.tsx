@@ -1,15 +1,15 @@
-import style from "./MentionsLegalesSectionA.module.css";
+import style from "../../../StyleRootComponent.module.css";
 import { LinkExt } from "../../../../router/router";
 
-function MentionsLegalesSectionA() {
+function MentionsLegalesComponentA() {
     return (
-        <article className={style.MentionsLegalesSectionA}>
-            <h2 className={style.Title}>
+        <article className={style.MentionsLegalesComponentA}>
+            <h2 className={style.TitleH2px2}>
                 1 – Édition du site
             </h2>
 
             {/* Text 1 */}
-            <p className={style.Text}>
+            <p className={style.TextP4}>
                 En vertu de {" "} 
                 <span className={style.SpanLink}>
                     <a href={LinkExt.loi1} target="_blank" rel="noopener noreferrer">
@@ -24,7 +24,7 @@ function MentionsLegalesSectionA() {
             </p>
 
             {/* Text 2 */}
-            <p className={style.Text}>
+            <p className={style.TextP4}>
                 <span className={style.SpanBold}>
                     {"Propriétaire du site :"}
                 </span>
@@ -44,7 +44,7 @@ function MentionsLegalesSectionA() {
             </p>
 
             {/* Text 3 */}
-            <p className={style.Text}>
+            <p className={style.TextP4}>
                 <span className={style.SpanBold}>
                     {"Identification de l’entreprise :"}
                 </span>
@@ -53,7 +53,7 @@ function MentionsLegalesSectionA() {
             </p>
             
             {/* Text 4 */}
-            <p className={style.Text}>
+            <p className={style.TextP4}>
                 <span className={style.SpanBold}>
                     {"Directrice de la publication :"}
                 </span>
@@ -66,7 +66,7 @@ function MentionsLegalesSectionA() {
             </p>
 
             {/* Text 5 */}
-            <p className={style.Text}>
+            <p className={style.TextP4}>
                 <span className={style.SpanBold}>
                     {"Hébergeur :"}
                 </span>
@@ -79,7 +79,7 @@ function MentionsLegalesSectionA() {
             </p>
 
             {/* Text 6 */}
-            <p className={style.Text}>
+            <p className={style.TextP4}>
                 <span className={style.SpanBold}>
                     {"Délégué à la protection des données :"}
                 </span>
@@ -92,7 +92,7 @@ function MentionsLegalesSectionA() {
             </p>
 
             {/* Text 7 */}
-            <p className={style.Text}>
+            <p className={style.TextP4}>
                 <span className={style.SpanBold}>
                     {" Autres contributeurs :"}
                 </span>
@@ -101,4 +101,4 @@ function MentionsLegalesSectionA() {
     );
 }
 
-export default MentionsLegalesSectionA;
+export default MentionsLegalesComponentA;

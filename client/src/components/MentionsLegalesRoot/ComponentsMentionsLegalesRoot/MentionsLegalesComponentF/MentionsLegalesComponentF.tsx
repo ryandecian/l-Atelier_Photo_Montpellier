@@ -1,14 +1,14 @@
-import style from "./MentionsLegalesSectionF.module.css";
+import style from "../../../StyleRootComponent.module.css";
 
-function MentionsLegalesSectionF() {
+function MentionsLegalesComponentF() {
     return (
-        <article className={style.MentionsLegalesSectionF}>
-            <h2 className={style.Title}>
+        <article className={style.MentionsLegalesComponentF}>
+            <h2 className={style.TitleH2px2}>
                 6 – Droit applicable et attribution de juridiction
             </h2>
 
             {/* Text 1 */}
-            <p className={style.Text}>
+            <p className={style.TextP4}>
             Tout litige en relation avec l’utilisation du site {" "}
             <span className={style.SpanBold}>
                     {"https://latelierphotomontpellier.fr"}
@@ -23,4 +23,4 @@ function MentionsLegalesSectionF() {
     );
 }
 
-export default MentionsLegalesSectionF;
+export default MentionsLegalesComponentF;

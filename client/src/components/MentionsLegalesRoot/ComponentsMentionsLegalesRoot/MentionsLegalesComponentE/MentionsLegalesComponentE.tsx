@@ -1,15 +1,15 @@
-import style from "./MentionsLegalesSectionE.module.css";
+import style from "../../../StyleRootComponent.module.css";
 import { LinkExt } from "../../../../router/router";
 
-function MentionsLegalesSectionE() {
+function MentionsLegalesComponentE() {
     return (
-        <article className={style.MentionsLegalesSectionE}>
-            <h2 className={style.Title}>
+        <article className={style.MentionsLegalesComponentE}>
+            <h2 className={style.TitleH2px2}>
                 5 – Liens hypertextes et cookies
             </h2>
 
             {/* Text 1 */}
-            <p className={style.Text}>
+            <p className={style.TextP4}>
                 Le site {" "}
                 <span className={style.SpanBold}>
                     {"https://latelierphotomontpellier.fr"}
@@ -27,14 +27,14 @@ function MentionsLegalesSectionE() {
             </p>
 
             {/* Text 2 */}
-            <p className={style.Text}>
+            <p className={style.TextP4}>
                 Un « cookie » est un fichier de petite taille qui enregistre des informations relatives à la navigation 
                 d’un utilisateur sur un site. Les données ainsi obtenues permettent d’obtenir des mesures de fréquentation, 
                 par exemple.
             </p>
 
             {/* Text 3 */}
-            <p className={style.Text}>
+            <p className={style.TextP4}>
                 Ce site utilise uniquement des {" "}
                 <span className={style.SpanBold}>
                     {"cookies strictement nécessaires"}
@@ -46,18 +46,18 @@ function MentionsLegalesSectionE() {
             </p>
 
             {/* Text 4 */}
-            <p className={style.Text}>
+            <p className={style.TextP4}>
                 Ces cookies étant indispensables, leur utilisation est implicite lors de votre navigation sur le site. 
                 Si vous ne souhaitez pas qu’ils soient utilisés, nous vous invitons à quitter le site.
             </p>
 
             {/* Text 5 */}
-            <p className={style.Text}>
+            <p className={style.TextP4}>
                 Les cookies sont conservés pour une durée maximale de 6 mois.
             </p>
 
             {/* Text 6 */}
-            <p className={style.Text}>
+            <p className={style.TextP4}>
                 Pour plus d’informations sur la façon dont nous faisons usage des cookies, nous vous invitons à nous 
                 contacter : {" "}
                 <span className={style.SpanLink}>
@@ -71,4 +71,4 @@ function MentionsLegalesSectionE() {
     );
 }
 
-export default MentionsLegalesSectionE;
+export default MentionsLegalesComponentE;
