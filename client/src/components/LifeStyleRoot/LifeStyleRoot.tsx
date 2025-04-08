@@ -4,7 +4,7 @@ import Container4ImagesRoot from "../ContainerImageRoot/Container4ImagesRoot/Con
 
 function LifeStyleRoot() {
     return (
-        <section className={style.LifeStylePC}>
+        <section className={`LifeStyleRoot ${style.ContainerRoot}`}>
 
             <header className={style.ContainerTitle}>
                 <h1 className={style.Title}>
