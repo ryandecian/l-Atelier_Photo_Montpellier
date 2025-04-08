@@ -24,15 +24,15 @@ type textHTMLType = {
 function HomePCAutorComponentF() {
     const textHTML: textHTMLType = {
         htmlA: `Ma passion pour la photographie a commencé avec l’argentique, dans une salle de bains de la maison 
-                familiale transformée en labo photo.`,
-        htmlB: `Après une pause, c’est par l’image immobilière que j’ai renoué avec l’art du cadrage et de la lumière.`,
-        htmlC: `Puis, avec le studio, j’ai perfectionné mon travail sur l’éclairage, notamment grâce au flash.`,
+                familiale transformée en labo photo. `,
+        htmlB: `Après une pause, c’est par l’image immobilière que j’ai renoué avec l’art du cadrage et de la lumière. `,
+        htmlC: `Puis, avec le studio, j’ai perfectionné mon travail sur l’éclairage, notamment grâce au flash. `,
         htmlD: `Aujourd’hui, je mets cette expertise au service du portrait et du reportage de mariage, toujours à la recherche d’authenticité et 
-                d’émotion.`,
-        htmlE: `Comme une séance de massage, un shooting photo commence souvent avec un peu d’appréhension.`,
-        htmlF: `On ne sait pas comment poser, on doute… Mais rapidement, la tension s’efface.`,
-        htmlG: `Mon rôle ? Vous guider avec bienveillance pour que ce moment devienne fluide, naturel, et surtout agréable c’est ma première mission.`,
-        htmlH: `La deuxième c’est qu’à la vue de vos photos vous faisiez WOUAH !`,
+                d’émotion. `,
+        htmlE: `Comme une séance de massage, un shooting photo commence souvent avec un peu d’appréhension. `,
+        htmlF: `On ne sait pas comment poser, on doute… Mais rapidement, la tension s’efface. `,
+        htmlG: `Mon rôle ? Vous guider avec bienveillance pour que ce moment devienne fluide, naturel, et surtout agréable c’est ma première mission. `,
+        htmlH: `La deuxième c’est qu’à la vue de vos photos vous faisiez WOUAH ! `,
         htmlI: `Pour en savoir encore un peu plus sur moi rendez vous sur ma page `,
         htmlJ: (
             <span className={style.SpanLink}>
