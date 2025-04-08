@@ -4,7 +4,7 @@ function LifeStyleRootComponentF() {
     return (
         <section className={`LifeStyleRootComponentF ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
-                <h2 className={style.Title}>
+                <h2 className={style.TitleH2px2}>
                     1er Cris (Nouveaux-nés) : Une séance tout en délicatesse, à son rythme
                 </h2>
             </header>

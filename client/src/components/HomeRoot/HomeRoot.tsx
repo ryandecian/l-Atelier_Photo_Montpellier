@@ -8,7 +8,7 @@ import HomeRootComponentF from "./ComponentsHomeRoot/HomeRootComponentF/HomeRoot
 
 function HomeRoot() {
     return (
-        <section className={`HomeRoot ${style.ContainerRoot}`}>
+        <section className={`HomeRoot ${style.ContainerRootRacine}`}>
             {/* Container A : Accueil */}
             <HomeRootComponentA />
 

@@ -6,10 +6,14 @@ import LifeStyleRootComponentA from "./ComponentsLifeStyleRoot/LifeStyleRootComp
 import LifeStyleRootComponentB from "./ComponentsLifeStyleRoot/LifeStyleRootComponentB/LifeStyleRootComponentB";
 import LifeStyleRootComponentC from "./ComponentsLifeStyleRoot/LifeStyleRootComponentC/LifeStyleRootComponentC";
 import LifeStyleRootComponentD from "./ComponentsLifeStyleRoot/LifeStyleRootComponentD/LifeStyleRootComponentD";
+import LifeStyleRootComponentE from "./ComponentsLifeStyleRoot/LifeStyleRootComponentE/LifeStyleRootComponentE";
+import LifeStyleRootComponentF from "./ComponentsLifeStyleRoot/LifeStyleRootComponentF/LifeStyleRootComponentF";
+import LifeStyleRootComponentG from "./ComponentsLifeStyleRoot/LifeStyleRootComponentG/LifeStyleRootComponentG";
+import LifeStyleRootComponentH from "./ComponentsLifeStyleRoot/LifeStyleRootComponentH/LifeStyleRootComponentH";
 
 function LifeStyleRoot() {
     return (
-        <section className={`LifeStyleRoot ${style.ContainerRoot}`}>
+        <section className={`LifeStyleRoot ${style.ContainerRootRacine}`}>
 
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
@@ -54,6 +58,7 @@ function LifeStyleRoot() {
             />
             
             {/* Container E : Portrait famille - amis */}
+            <LifeStyleRootComponentE />
 
             {/* Container 3 : Container image portrait couple */}
             <Container4ImagesRoot 
@@ -68,10 +73,13 @@ function LifeStyleRoot() {
             />
             
             {/* Container F : Portrait nouveau-nés */}
+            <LifeStyleRootComponentF />
             
             {/* Container G : Portrait grossesse */}
+            <LifeStyleRootComponentG />
             
             {/* Container H : Portrait Lives */}
+            <LifeStyleRootComponentH />
 
             {/* Container 4 : Container image portrait couple */}
             <Container4ImagesRoot 
