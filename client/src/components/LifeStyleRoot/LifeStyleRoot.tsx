@@ -1,12 +1,14 @@
-import LifeStylePC from "./LifeStylePC/LifeStylePC";
-import LifeStyleMobile from "./LifeStyleMobile/LifeStyleMobile";
+import style from "../StyleRootComponent.module.css";
 
 function LifeStyleRoot() {
     return (
-        <>
-            <LifeStyleMobile />
-            <LifeStylePC />
-        </>
+        <section className="ContainerRoot">
+            <header className={style.ContainerTitle}>
+                <h1 className={style.Title}>
+                    Portrait LifeStyle : fusion de l'instant et de la lumière
+                </h1>
+            </header>
+        </section>
     );
 }
 
