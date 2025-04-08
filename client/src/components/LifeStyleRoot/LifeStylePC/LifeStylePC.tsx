@@ -8,7 +8,7 @@ import LifeStyleRootComposantF from '../ComponentsLifeStyleRoot/LifeStyleRootCom
 import LifeStyleRootComposantG from '../ComponentsLifeStyleRoot/LifeStyleRootComposantG/LifeStyleRootComposantG';
 import LifeStyleRootComposantH from '../ComponentsLifeStyleRoot/LifeStyleRootComposantH/LifeStyleRootComposantH';
 import Container4ImagesRoot from '../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot';
-import ControllerDataImageLifeStyle from '../ControllerDataImageLifeStyle';
+import ControllerDataImageLifeStyle from '../ImagesLifeStyleControllerData';
 
 function LifeStylePC() {
     return (

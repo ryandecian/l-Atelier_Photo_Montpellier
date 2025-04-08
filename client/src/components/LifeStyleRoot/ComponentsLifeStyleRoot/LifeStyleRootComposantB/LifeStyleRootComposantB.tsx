@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import style from "./LifeStyleRootComposantB.module.css";
 import ListDataRouter from "../../../../router/router";
-import ControllerDataImageLifeStyle from "../../ControllerDataImageLifeStyle";
+import ControllerDataImageLifeStyle from "../../ImagesLifeStyleControllerData";
 
 function LifeStyleRootComposantB() {
     const services = [
