@@ -1,13 +1,13 @@
-import style from "./MariageRootComposantD.module.css";
+import style from "../../../StyleRootComponent.module.css";
 
-function MariageRootComposantD() {
+function MariageRootComponentD() {
     return (
-        <article className={style.MariageRootComposantD}>
-            <h2 className={style.Title}>
+        <article className={style.MariageRootComponentD}>
+            <h2 className={style.TitleH2}>
                 Respect des Attentes : Un Mariage Qui Vous Ressemble
             </h2>
 
-            <p className={style.Text}>
+            <p className={style.TextP4}>
                 Votre mariage est un {" "}
                 <span className={style.SpanBold}>
                     {"réflexe de votre personnalité"}
@@ -30,7 +30,7 @@ function MariageRootComposantD() {
                     {"tendances Instagram."}
                 </span>
             </p>
-            <p className={style.Text}>
+            <p className={style.TextP4}>
                 Certains couples préfèrent des clichés {" "}
                 <span className={style.SpanBold}>
                     {"très naturels"}
@@ -48,4 +48,4 @@ function MariageRootComposantD() {
     );
 }
 
-export default MariageRootComposantD;
+export default MariageRootComponentD;

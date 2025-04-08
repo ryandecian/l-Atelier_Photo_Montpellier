@@ -1,13 +1,13 @@
-import style from "./MariageRootComposantC.module.css";
+import style from "../../../StyleRootComponent.module.css";
 
-function MariageRootComposantC() {
+function MariageRootComponentC() {
     return (
-        <article className={style.MariageRootComposantC}>
-            <h2 className={style.Title}>
+        <article className={style.MariageRootComponentC}>
+            <h2 className={style.TitleH2}>
                 Le Repérage des Lieux : Une Préparation Essentielle
             </h2>
 
-            <p className={style.Text}>
+            <p className={style.TextP4}>
                 Un autre aspect fondamental de mon approche est le {" "}
                 <span className={style.SpanBold}>
                     {"repérage préalable des lieux."}
@@ -28,4 +28,4 @@ function MariageRootComposantC() {
     );
 }
 
-export default MariageRootComposantC;
+export default MariageRootComponentC;

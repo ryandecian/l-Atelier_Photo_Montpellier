@@ -1,13 +1,13 @@
-import style from "./MariageRootComposantA.module.css";
+import style from "../../../StyleRootComponent.module.css";
 
-function MariageRootComposantA() {
+function MariageRootComponentA() {
     return (
-        <article className={style.MariageRootComposantA}>
-            <h2 className={style.Title}>
+        <article className={style.MariageRootComponentA}>
+            <h2 className={style.TitleH2}>
                 Le Style "Reportage" : Capturer l'Authenticité de Votre Mariage
             </h2>
 
-            <p className={style.Text}>
+            <p className={style.TextP4}>
                 Loin des photos posées et figées, je privilégie un style de {" "}
                 <span className={style.SpanBold}>
                     {"reportage photographique"}
@@ -24,7 +24,7 @@ function MariageRootComposantA() {
                 des événements. J’agis en toute discrétion, en capturant les moments tels qu’ils se produisent : 
                 un regard échangé, une main tendue, un éclat de rire ou une larme discrète.
             </p>
-            <p className={style.Text}>
+            <p className={style.TextP4}>
                 L’idée n’est pas seulement de réaliser des clichés, mais de 
                 {" "} Votre histoire. 
                 <span className={style.SpanBold}>
@@ -38,4 +38,4 @@ function MariageRootComposantA() {
     );
 }
 
-export default MariageRootComposantA;
+export default MariageRootComponentA;

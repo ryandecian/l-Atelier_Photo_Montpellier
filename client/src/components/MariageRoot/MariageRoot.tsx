@@ -1,16 +1,16 @@
-import style from "./MariagePC.module.css";
-import MariageRootComposantA from "../ComponentsMariageRoot/MariageRootComposantA/MariageRootComposantA";
-import MariageRootComposantB from "../ComponentsMariageRoot/MariageRootComposantB/MariageRootComposantB";
-import MariageRootComposantC from "../ComponentsMariageRoot/MariageRootComposantC/MariageRootComposantC";
-import MariageRootComposantD from "../ComponentsMariageRoot/MariageRootComposantD/MariageRootComposantD";
-import MariageRootComposantE from "../ComponentsMariageRoot/MariageRootComposantE/MariageRootComposantE";
-import MariageRootComposantF from "../ComponentsMariageRoot/MariageRootComposantF/MariageRootComposantF";
-import Container4ImagesRoot from "../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
-import ControllerDataImageMariage from "../ImagesMariageControllerData";
-import GeneratorCardAvisClient from "../../GeneratorCardAvisClient/GeneratorCardAvisClient";
-import ControllerDataAvisClientMariage from "../AvisClientMariageControllerData";
+import style from "../StyleRootComponent.module.css";
+import MariageRootComponentA from "./ComponentsMariageRoot/MariageRootComponentA/MariageRootComponentA";
+import MariageRootComponentB from "./ComponentsMariageRoot/MariageRootComponentB/MariageRootComponentB";
+import MariageRootComponentC from "./ComponentsMariageRoot/MariageRootComponentC/MariageRootComponentC";
+import MariageRootComponentD from "./ComponentsMariageRoot/MariageRootComponentD/MariageRootComponentD";
+import MariageRootComponentE from "./ComponentsMariageRoot/MariageRootComponentE/MariageRootComponentE";
+import MariageRootComponentF from "./ComponentsMariageRoot/MariageRootComponentF/MariageRootComponentF";
+import Container4ImagesRoot from "./../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
+import ControllerDataImageMariage from "./ImagesMariageControllerData";
+import GeneratorCardAvisClient from "./../GeneratorCardAvisClient/GeneratorCardAvisClient";
+import ControllerDataAvisClientMariage from "./AvisClientMariageControllerData";
 
-function MariagePC() {
+function MariageRoot() {
     return (
         <section className={`MariageRoot ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
@@ -20,7 +20,7 @@ function MariagePC() {
             </header>
 
             <article className={style.ContainerText}>
-                <p className={style.Text}>
+                <p className={style.TextP4}>
                     <span className={style.SpanBold}>
                         {"Le mariage est l’un des moments les plus significatifs de votre vie,"}
                     </span>
@@ -32,7 +32,7 @@ function MariagePC() {
                     mon objectif est de capturer ces moments d’émotion de manière authentique, sans poser ni artifice, 
                     dans le respect de votre vision et de vos attentes.
                 </p>
-                <p className={style.Text}>
+                <p className={style.TextP4}>
                     Ma démarche repose sur un 
                     <span className={style.SpanBold}>
                         {"style de reportage"}
@@ -53,7 +53,7 @@ function MariagePC() {
             </article>
 
             {/* Composant A : Le Style "Reportage" : Capturer l'Authenticité de Votre Mariage */}
-            <MariageRootComposantA />
+            <MariageRootComponentA />
 
             {/* Container Images 1 */}
             <Container4ImagesRoot
@@ -68,7 +68,7 @@ function MariagePC() {
             />
 
             {/* Composant B : Une Implication Préalable : Comprendre Votre Vision */}
-            <MariageRootComposantB />
+            <MariageRootComponentB />
 
             {/* Container Images 2 */}
             <Container4ImagesRoot
@@ -83,7 +83,7 @@ function MariagePC() {
             />
 
             {/* Composant C : Le Repérage des Lieux : Une Préparation Essentielle */}
-            <MariageRootComposantC />
+            <MariageRootComponentC />
             
             {/* Container Images 3 */}
             <Container4ImagesRoot
@@ -98,7 +98,7 @@ function MariagePC() {
             />
 
             {/* Composant D : Respect des Attentes : Un Mariage Qui Vous Ressemble */}
-            <MariageRootComposantD />
+            <MariageRootComponentD />
             
             {/* Container Images 4 */}
             <Container4ImagesRoot
@@ -113,7 +113,7 @@ function MariagePC() {
             />
 
             {/* Composant E : Une Expérience Sereine et Détendue */}
-            <MariageRootComposantE />
+            <MariageRootComponentE />
             
             {/* Container Images 5 */}
             <Container4ImagesRoot
@@ -128,7 +128,7 @@ function MariagePC() {
             />
 
             {/* Composant F Conclusion : Des Photos Qui Vous Rappellent un Moment Unique : */}
-            <MariageRootComposantF />
+            <MariageRootComponentF />
 
             {/* Avis Client : */}
             <GeneratorCardAvisClient avisClients={ControllerDataAvisClientMariage} />
@@ -137,4 +137,4 @@ function MariagePC() {
     );
 }
 
-export default MariagePC;
+export default MariageRoot;

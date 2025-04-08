@@ -1,13 +1,13 @@
-import style from "./MariageRootComposantB.module.css";
+import style from "../../../StyleRootComponent.module.css";
 
-function MariageRootComposantB() {
+function MariageRootComponentB() {
     return (
-        <article className={style.MariageRootComposantB}>
-            <h2 className={style.Title}>
+        <article className={style.MariageRootComponentB}>
+            <h2 className={style.TitleH2}>
                 Une Implication Préalable : Comprendre Votre Vision
             </h2>
 
-            <p className={style.Text}>
+            <p className={style.TextP4}>
                 Un mariage est un moment qui vous est cher, et c’est pourquoi je m’investis pleinement avant le 
                 grand jour. Chaque couple a ses propres attentes, ses propres envies, et ses propres goûts. {" "}
                 <span className={style.SpanBold}>
@@ -16,7 +16,7 @@ function MariageRootComposantB() {
                 {" "} en amont de la journée est donc essentielle. Je prends le temps d’apprendre à vous connaître, 
                 de comprendre vos préférences et ce que vous attendez des photos de votre mariage.
             </p>
-            <p className={style.Text}>
+            <p className={style.TextP4}>
                 Nous discuterons ensemble de vos envies concernant le style de photos que vous souhaitez. 
                     Voulez-vous un {" "}
                 <span className={style.SpanBold}>
@@ -38,4 +38,4 @@ function MariageRootComposantB() {
     );
 }
 
-export default MariageRootComposantB;
+export default MariageRootComponentB;

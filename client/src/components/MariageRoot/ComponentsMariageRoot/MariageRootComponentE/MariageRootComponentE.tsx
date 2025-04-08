@@ -1,13 +1,13 @@
-import style from "./MariageRootComposantE.module.css";
+import style from "../../../StyleRootComponent.module.css";
 
-function MariageRootComposantE() {
+function MariageRootComponentE() {
     return (
-        <article className={style.MariageRootComposantE}>
-            <h2 className={style.Title}>
+        <article className={style.MariageRootComponentE}>
+            <h2 className={style.TitleH2}>
                 Une Expérience Sereine et Détendue
             </h2>
 
-            <p className={style.Text}>
+            <p className={style.TextP4}>
                 Le mariage est souvent une journée pleine de {" "}
                 <span className={style.SpanBold}>
                     {"stress"}
@@ -24,7 +24,7 @@ function MariageRootComposantE() {
                 ne sachiez pas comment vous comporter devant un appareil photo, je serai là pour vous guider avec 
                 des conseils simples sur la posture, l’expression et les moments à capturer.
             </p>
-            <p className={style.Text}>
+            <p className={style.TextP4}>
                 L'idée n'est pas de vous imposer des poses mais plutôt de vous aider à {" "}
                 <span className={style.SpanBold}>
                     {"être vous-même."}
@@ -43,4 +43,4 @@ function MariageRootComposantE() {
     );
 }
 
-export default MariageRootComposantE;
+export default MariageRootComponentE;

@@ -1,13 +1,13 @@
-import style from "./MariageRootComposantF.module.css";
+import style from "../../../StyleRootComponent.module.css";
 import ListDataRouter from "../../../../router/router";
-function MariageRootComposantF() {
+function MariageRootComponentF() {
     return (
-        <article className={style.MariageRootComposantF}>
-            <h2 className={style.Title}>
+        <article className={style.MariageRootComponentF}>
+            <h2 className={style.TitleH2}>
                 Conclusion : Des Photos Qui Vous Rappellent un Moment Unique
             </h2>
 
-            <p className={style.Text}>
+            <p className={style.TextP4}>
                 Mon engagement en tant que photographe de mariage est de vous offrir bien plus que des photos : 
                 je souhaite vous offrir une {" "}
                 <span className={style.SpanBold}>
@@ -32,7 +32,7 @@ function MariageRootComposantF() {
                 </span>
                 {" "} que vous chérirez toute votre vie.
             </p>
-            <p className={style.Text}>
+            <p className={style.TextP4}>
                 Que vous soyez en quête de photos naturelles et spontanées ou de portraits plus posés et sophistiqués, 
                 je suis là pour faire en sorte que votre {" "}
                 <span className={style.SpanBold}>
@@ -43,7 +43,7 @@ function MariageRootComposantF() {
                     {"authenticité et passion."}
                 </span>
             </p>          
-            <p className={style.Text}>
+            <p className={style.TextP4}>
                 Si vous êtes prêts à faire de votre mariage un événement inoubliable, 
                 <span className={style.SpanLink}>
                     <a href={ListDataRouter[2].path} target="_blank" rel="noopener noreferrer">
@@ -65,4 +65,4 @@ function MariageRootComposantF() {
     );
 }
 
-export default MariageRootComposantF;
+export default MariageRootComponentF;
