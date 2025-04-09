@@ -1,6 +1,7 @@
 import payloadType from "../types/payloadType";
 import { createDate_Number_Utils } from "./createDateUtils";
 import jwt from "jsonwebtoken";
+import { Request } from "express";
 
 // Récupération de la clé secrète Server
 const SECRET_KEY_TOKEN_SERVER: string | undefined = process.env.SECRET_KEY_TOKEN_SERVER;        
@@ -10,7 +11,7 @@ const SECRET_KEY_TOKEN_CLIENT: string | undefined = process.env.SECRET_KEY_TOKEN
 //--------------------------------------------------------------------------------------
 
 async function createJwtTokenServerLAPM(dataUser: payloadType): Promise<string | boolean> {
-    if (!SECRET_KEY_TOKEN_SERVER || !SECRET_KEY_TOKEN_CLIENT) {
+    if (!SECRET_KEY_TOKEN_SERVER) {
         return false
     }
 
@@ -35,7 +36,7 @@ export { createJwtTokenServerLAPM };
 
 
 async function createJwtTokenClientLAPM(dataUser: payloadType): Promise<string | boolean> {
-    if (!SECRET_KEY_TOKEN_SERVER || !SECRET_KEY_TOKEN_CLIENT) {
+    if (!SECRET_KEY_TOKEN_CLIENT) {
         return false
     }
 
@@ -61,3 +62,25 @@ async function createJwtTokenClientLAPM(dataUser: payloadType): Promise<string |
 }
 
 export { createJwtTokenClientLAPM };
+
+
+async function verifyJwtTokenLAPM(req: Request): Promise<payloadType | boolean> {
+    try {
+        if (!SECRET_KEY_TOKEN_SERVER) {
+            return false
+        }
+    
+        // Vérification du token
+        const token = req.cookies?.jwtTokenServerLAPM;
+        if (!token) return false;
+    
+        const payload = jwt.verify(token, SECRET_KEY_TOKEN_SERVER) as payloadType;
+    
+        return payload;;
+    }
+    catch (error) {
+        return false;
+    }
+}
+
+export { verifyJwtTokenLAPM };

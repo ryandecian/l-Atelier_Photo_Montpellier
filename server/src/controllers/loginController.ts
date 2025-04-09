@@ -18,8 +18,8 @@ import payloadType from "../types/payloadType";
 // Import des utils
 import { verifyPasswordArgonUtils } from "../utils/hashArgonUtils";
 import { createDate_Number_Utils } from "../utils/createDateUtils";
-import { createJwtTokenServerLAPM } from "../utils/jwtTokenLAPM";
-import { createJwtTokenClientLAPM } from "../utils/jwtTokenLAPM";
+import { createJwtTokenServerLAPM } from "../utils/jwtTokenLAPMUtils";
+import { createJwtTokenClientLAPM } from "../utils/jwtTokenLAPMUtils";
 
 
 // URI : /api/login
