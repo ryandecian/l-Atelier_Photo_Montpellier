@@ -4,9 +4,9 @@ import { jwtDecode } from "jwt-decode";
 import DataUserType from "../types/dataUserType";
 
 const useAuthCheck = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // False = non connecté
+  const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false); // False = non connecté
   const [userInfo, setUserInfo] = useState<DataUserType | null>(null); // DataUser
-  const [isChecking, setIsChecking] = useState(true); // True = en cours de vérification
+  const [isChecking, setIsChecking] = useState<boolean>(true); // True = en cours de vérification
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -18,9 +18,9 @@ const useAuthCheck = () => {
     }
 
     try {
-      const payload = jwtDecode<DataUserType>(token); 
+      const payload: DataUserType = jwtDecode<DataUserType>(token); 
 
-      const now = Math.floor(Date.now() / 1000);
+      const now: number = Math.floor(Date.now() / 1000);
       if (payload.exp && payload.exp < now) {
         localStorage.removeItem("jwtTokenClientLAPM");
         navigate("/login");
@@ -29,10 +29,12 @@ const useAuthCheck = () => {
 
       setUserInfo(payload);
       setIsLoggedIn(true);
-    } catch {
+    } 
+    catch {
       localStorage.removeItem("jwtTokenClientLAPM");
       navigate("/login");
-    } finally {
+    } 
+    finally {
       setIsChecking(false);
     }
   }, [navigate]);
