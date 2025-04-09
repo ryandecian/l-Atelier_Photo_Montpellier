@@ -1,11 +1,9 @@
-import AdminPC from "./AdminPC/AdminPC";
+import useAuthCheck from "../../hook/useAuthCheck";
 
 function AdminRoot() {
   return (
-    <>
-    <AdminPC />
-    </>
-  );
+    <></>
+  )
 }
 
 export default AdminRoot;
