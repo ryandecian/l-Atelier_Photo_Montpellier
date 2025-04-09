@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import NavRoot from "../../components/NavRoot/NavRoot";
-import style from "./LifeStylePage.module.css";
+import style from "../stylePage.module.css";
 import LifeStyleRoot from "../../components/LifeStyleRoot/LifeStyleRoot";
 import FooterRoot from "../../components/FooterRoot/FooterRoot";
 
@@ -42,7 +42,7 @@ function LifeStylePage() {
      const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
 
      return (
-        <div className={style.LifeStylePage}>
+        <div className={style.Page}>
             <Helmet>
                   {/* Balises SEO */}
                      {/* Balise pour indexation général */}

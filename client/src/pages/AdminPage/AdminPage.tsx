@@ -1,11 +1,11 @@
-import style from "./AdminPage.module.css";
+import style from "../stylePage.module.css";
 import NavRoot from "../../components/NavRoot/NavRoot";
 import AdminRoot from "../../components/AdminRoot/AdminRoot";
 import FooterRoot from "../../components/FooterRoot/FooterRoot";
 
 function AdminPage() {
     return (
-        <div className={style.AdminPage}>
+        <div className={style.Page}>
             <header className={style.Header}>
                 <NavRoot />
             </header>

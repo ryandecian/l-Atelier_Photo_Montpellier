@@ -1,4 +1,4 @@
-import style from "./Error404Page.module.css";
+import style from "../stylePage.module.css";
 import { Helmet } from "react-helmet-async";
 import NavRoot from "../../components/NavRoot/NavRoot";
 import Error404Root from "../../components/Error404Root/Error404Root";
@@ -42,7 +42,7 @@ function Error404() {
      const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
 
      return (
-        <div className={style.Error404Page}>
+        <div className={style.Page}>
             <Helmet>
                   {/* Balises SEO */}
                      {/* Balise pour indexation général */}
