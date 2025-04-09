@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { jwtDecode } from "jwt-decode";
 import style from "./LoginRoot.module.css";
-// import { jwtDecode } from "jwt-decode";
+import DataUserType from "../../types/dataUserType";
 
 function LoginRoot() {
   const [email, setEmail] = useState("");
@@ -9,12 +10,11 @@ function LoginRoot() {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
-  const formulaireLogin = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); // Empêche le rechargement de la page
-    setError(""); // Réinitialise le message d'erreur
+  async function formulaireLogin(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setError("");
 
     try {
-      // const response = await fetch(`${import.meta.env.VITE_API_URL}/logincontroller`, {
       const response = await fetch(`${import.meta.env.VITE_API_URL}/login`, {
         method: "POST",
         headers: {
@@ -25,38 +25,31 @@ function LoginRoot() {
 
       const data = await response.json();
 
-      // const jwtTokenClientLAPM = jwtDecode(data.jwtTokenClientLAPM);
-
-      // Vérifier si la réponse est correcte
-      // Si le serveur renvoie une erreur, on l'affiche
       if (!response.ok) {
-        throw new Error(data.message || "Identifiants incorrects."); // A revoir les message côté serveur
+        throw new Error(data.message || "Identifiants incorrects.");
       }
 
-      // Stocker les infos utilisateur + token
-      localStorage.setItem("jwtToken", data.jwt);
-      localStorage.setItem("userId", String(data.id));
-      localStorage.setItem("userEmail", data.email);
-      localStorage.setItem("userRole", data.role);
-      localStorage.setItem("userName", `${data.firstname} ${data.lastname}`);
+      // On ne stocke que le token
+      localStorage.setItem("jwtTokenClientLAPM", data.jwtTokenClientLAPM);
 
-      // Rediriger vers la bonne page
-      if (data.role === "admin") {
+      // Décodage uniquement pour redirection
+      const payload = jwtDecode<DataUserType>(data.jwtTokenClientLAPM);
+
+      // Redirection selon le rôle
+      if (payload.role === "admin") {
         navigate("/admin");
       } else {
         navigate("/compte");
       }
-    } 
-    catch (err: unknown) {
+    } catch (err: unknown) {
       if (err instanceof Error) {
         console.error("Erreur login:", err.message);
         setError(err.message);
       } else {
-        console.error("Erreur inconnue lors de la connexion.");
         setError("Erreur inconnue lors de la connexion.");
       }
     }
-  };
+  }
 
   return (
     <section className={style.LoginRoot}>
@@ -66,16 +59,16 @@ function LoginRoot() {
         <input
           type="email"
           value={email}
-          onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
-          required // Champ obligatoire
+          onChange={(e) => setEmail(e.target.value)}
+          required
         />
 
         <label>Mot de passe</label>
         <input
           type="password"
           value={password}
-          onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)}
-          required // Champ obligatoire
+          onChange={(e) => setPassword(e.target.value)}
+          required
         />
 
         <button type="submit">Se connecter</button>

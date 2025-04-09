@@ -11,3 +11,7 @@
     margin: 0px;
     width: 100%;
 }
+
+.LoginPage {
+    min-height: 100vh;
+}
