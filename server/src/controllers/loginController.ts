@@ -115,6 +115,7 @@ loginController.post("/",
                     lastname: dataUser[0].lastname,
                     address: dataUser[0].address,
                     role: dataUser[0].role,
+                    date_save: dataUser[0].date_save,
                     iat: dateNow, // ⏳ Date de création du token
                 }
 

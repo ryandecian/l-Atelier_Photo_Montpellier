@@ -5,6 +5,7 @@ type payloadType = {
     lastname?: string;
     address?: string;
     role: string;
+    date_save?: string;
     iat: number; // Date de création du token
 }
 
