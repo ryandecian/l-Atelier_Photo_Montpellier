@@ -3,7 +3,7 @@ import usePoolConnection from "../../database/config";
 import { RowDataPacket } from "mysql2";
 
 async function isAdmin (req: Request, res: Response, next: NextFunction) {
-    const dataUser = (req as any).dataUser
+    const dataUser = req.body.dataUser
 
     if (!dataUser) {
         res.status(401).json({ message: "Utilisateur non authentifié." });

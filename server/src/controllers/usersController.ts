@@ -8,6 +8,7 @@ const usersController = express.Router();
 
 // Import des Middlewares :
 // import VerifyKeys from "../middleware/VerifyKeys/VerifyKeys";
+import Verify_JWT_Middleware from "../middleware/JWT/Verify_JWT_Middleware";
 
 // Import des Repositories :
 // import verifyEmailTrueRepository from "../repository/emailRepository";
@@ -21,4 +22,6 @@ const usersController = express.Router();
 
 usersController.get("/", 
     
+    // Vérification :
+    Verify_JWT_Middleware,
     (req: Request, res: Response) => {});
