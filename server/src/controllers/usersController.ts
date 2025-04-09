@@ -7,7 +7,7 @@ const usersController = express.Router();
 // import { RowDataPacket } from "mysql2";
 
 // Import des Middlewares :
-import VerifyKeys from "../middleware/VerifyKeys/VerifyKeys";
+// import VerifyKeys from "../middleware/VerifyKeys/VerifyKeys";
 
 // Import des Repositories :
 // import verifyEmailTrueRepository from "../repository/emailRepository";
@@ -19,4 +19,6 @@ import VerifyKeys from "../middleware/VerifyKeys/VerifyKeys";
 // import { verifyPasswordArgonUtils } from "../utils/hashArgonUtils";
 // import { createDate_Number_Utils } from "../utils/createDateUtils";
 
-usersController.get("/", (req: Request, res: Response) => {});
+usersController.get("/", 
+    
+    (req: Request, res: Response) => {});
