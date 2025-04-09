@@ -1,79 +1,47 @@
 import { useEffect, useState, ChangeEvent } from "react";
 import { useNavigate } from "react-router-dom";
-import style from "./ComptePC.module.css";
-
-type UserType = {
-  id: number;
-  firstname: string;
-  lastname: string;
-  email: string;
-  address: string;
-  role: string;
-  date_save: string;
-};
+import style from "./CompteRoot.module.css";
+import useAuthCheck from "../../hook/useAuthCheck";
+import DataUserType from "../../types/dataUserType";
 
 function CompteRoot() {
-  const [user, setUser] = useState<UserType | null>(null);
-  const [editedUser, setEditedUser] = useState<Partial<UserType>>({});
-  const [loading, setLoading] = useState(true);
+  const { isLoggedIn, userInfo, isChecking } = useAuthCheck();
+  const [editedUser, setEditedUser] = useState<Partial<DataUserType>>({});
   const [successMessage, setSuccessMessage] = useState("");
-  const [error, setError] = useState("");
   const navigate = useNavigate();
-
-  // 🔐 Vérifie la connexion et récupère les infos utilisateur
+  
+  // Vérification du Role
   useEffect(() => {
-    const token = localStorage.getItem("jwtToken");
-
-    if (!token) {
-      navigate("/login");
-      return;
+    if (!isChecking && userInfo?.role === "admin") {
+      navigate("/admin");
     }
+  }, [isChecking, userInfo, navigate]);
 
-    fetch(`${import.meta.env.VITE_API_URL}/users/me`, {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-      // method: "GET",
-      // credentials: "include", // Envois du cookie avec token htttpOnly
-    })
-      .then(async (res) => {
-        if (!res.ok) {
-          const data = await res.json();
-          throw new Error(data.message || "Erreur de récupération.");
-        }
-        return res.json();
-      })
-      .then((data) => {
-        setUser(data.data || data);
-        setEditedUser(data.data || data);
-      })
-      .catch((err: unknown) => {
-        if (err instanceof Error) {
-          setError(err.message);
-        } else {
-          setError("Erreur inconnue.");
-        }
-      })
-      .finally(() => setLoading(false));
-  }, [navigate]);
+  // Remplit les champs dès que les données du token sont prêtes
+  useEffect(() => {
+    if (userInfo) {
+      setEditedUser(userInfo);
+    }
+  }, [userInfo]);
 
-  // 🔄 Gère les modifications des champs
+  // En attente de vérification du token
+  if (isChecking) return <p>Chargement...</p>;
+
+  // Gère les modifications de formulaire
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setEditedUser((prev) => ({ ...prev, [name]: value }));
   };
 
-  // 💾 Sauvegarde les modifications
+  // Envoie les modifications au serveur
   const handleSave = async () => {
-    const token = localStorage.getItem("jwtToken");
-
     try {
       const response = await fetch(`${import.meta.env.VITE_API_URL}/users/me`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
         },
+        credentials: "include", // Auth via cookie HttpOnly
         body: JSON.stringify(editedUser),
       });
 
@@ -83,27 +51,22 @@ function CompteRoot() {
       }
 
       const data = await response.json();
-      setUser(data.data || data);
+      setEditedUser(data.data || data);
       setSuccessMessage("✅ Modifications enregistrées avec succès.");
       setTimeout(() => setSuccessMessage(""), 3000);
     } catch (err: unknown) {
-      if (err instanceof Error) {
-        alert(err.message);
-      } else {
-        alert("Erreur inconnue.");
-      }
+      alert(err instanceof Error ? err.message : "Erreur inconnue.");
     }
   };
 
-  // 🚪 Déconnexion
+  // Déconnexion : suppression du token client
   const handleLogout = () => {
-    localStorage.removeItem("jwtToken");
-    localStorage.removeItem("userRole");
-    localStorage.removeItem("userId");
-    localStorage.removeItem("userEmail");
-    localStorage.removeItem("userName");
+    localStorage.removeItem("jwtTokenClientLAPM");
     navigate("/login");
   };
+
+  // Sécurité supplémentaire (même si redirection faite dans le hook)
+  if (!isLoggedIn || !userInfo) return <p>Accès refusé</p>;
 
   return (
     <div className={style.ComptePC}>
@@ -112,43 +75,39 @@ function CompteRoot() {
         <button onClick={handleLogout} className={style.logoutBtn}>Déconnexion</button>
       </div>
 
-      {loading && <p>Chargement...</p>}
-      {error && <p className={style.error}>{error}</p>}
       {successMessage && <p className={style.success}>{successMessage}</p>}
 
-      {!loading && !error && user && (
-        <div className={style.form}>
-          <label>Prénom :</label>
-          <input
-            name="firstname"
-            value={editedUser.firstname || ""}
-            onChange={handleInputChange}
-          />
+      <div className={style.form}>
+        <label>Prénom :</label>
+        <input
+          name="firstname"
+          value={editedUser.firstname || ""}
+          onChange={handleInputChange}
+        />
 
-          <label>Nom :</label>
-          <input
-            name="lastname"
-            value={editedUser.lastname || ""}
-            onChange={handleInputChange}
-          />
+        <label>Nom :</label>
+        <input
+          name="lastname"
+          value={editedUser.lastname || ""}
+          onChange={handleInputChange}
+        />
 
-          <label>Email :</label>
-          <input
-            name="email"
-            value={editedUser.email || ""}
-            onChange={handleInputChange}
-          />
+        <label>Email :</label>
+        <input
+          name="email"
+          value={editedUser.email || ""}
+          onChange={handleInputChange}
+        />
 
-          <label>Adresse :</label>
-          <input
-            name="address"
-            value={editedUser.address || ""}
-            onChange={handleInputChange}
-          />
+        <label>Adresse :</label>
+        <input
+          name="address"
+          value={editedUser.address || ""}
+          onChange={handleInputChange}
+        />
 
-          <button onClick={handleSave}>💾 Enregistrer les modifications</button>
-        </div>
-      )}
+        <button onClick={handleSave}>💾 Enregistrer les modifications</button>
+      </div>
     </div>
   );
 }

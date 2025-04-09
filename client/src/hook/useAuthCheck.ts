@@ -3,54 +3,53 @@ import { useNavigate } from "react-router-dom";
 import { jwtDecode } from "jwt-decode";
 import DataUserType from "../types/dataUserType";
 
+const useAuthCheck = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // False = non connecté
+  const [userInfo, setUserInfo] = useState<DataUserType | null>(null); // DataUser
+  const [isChecking, setIsChecking] = useState(true); // True = en cours de vérification
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem("jwtTokenClientLAPM");
+
+    if (!token) {
+      navigate("/login");
+      return;
+    }
+
+    try {
+      const payload = jwtDecode<DataUserType>(token); 
+
+      const now = Math.floor(Date.now() / 1000);
+      if (payload.exp && payload.exp < now) {
+        localStorage.removeItem("jwtTokenClientLAPM");
+        navigate("/login");
+        return;
+      }
+
+      setUserInfo(payload);
+      setIsLoggedIn(true);
+    } catch {
+      localStorage.removeItem("jwtTokenClientLAPM");
+      navigate("/login");
+    } finally {
+      setIsChecking(false);
+    }
+  }, [navigate]);
+
+  return { isLoggedIn, userInfo, isChecking };
+};
+
+export default useAuthCheck;
+
 /*
 Utilisation :
 
 import useAuthCheck from "../hooks/useAuthCheck";
-const { isLoggedIn, userInfo } = useAuthCheck();
+const { isLoggedIn, userInfo, isChecking  } = useAuthCheck();
 
 if (!isLoggedIn || !userInfo) {
     return <p>Chargement ou redirection...</p>;
   }
 
 */
-
-const useAuthCheck = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
-  const [userInfo, setUserInfo] = useState<DataUserType | null>(null);
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    const token = localStorage.getItem("jwtTokenClientLAPM");
-
-    if (token) {
-      const payload = jwtDecode<DataUserType>(token);
-      const nowInSeconds = Math.floor(Date.now() / 1000);
-
-      if (payload.exp < nowInSeconds) {
-        console.warn("Token expiré. Déconnexion...");
-
-        // Suppression du token
-        localStorage.removeItem("jwtTokenClientLAPM");
-
-        // Réinitialisation de l'état
-        setIsLoggedIn(false);
-        setUserInfo(null);
-
-        // Redirection
-        navigate("/login");
-        return;
-      }
-
-      setIsLoggedIn(true);
-      setUserInfo(payload);
-    } else {
-      setIsLoggedIn(false);
-      setUserInfo(null);
-    }
-  }, [navigate]); // ⬅️ on ajoute `navigate` dans les dépendances pour éviter les warnings
-
-  return { isLoggedIn, userInfo };
-};
-
-export default useAuthCheck;
