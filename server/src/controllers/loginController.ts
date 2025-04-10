@@ -3,11 +3,10 @@ import express, { Request, Response } from "express";
 const loginController = express.Router();
 
 // Import des dépendances externes :
-import jwt from "jsonwebtoken";
 import { RowDataPacket } from "mysql2";
 
 // Import des Middlewares :
-import RouteLimiterRequestIP from "../Security/middlewareSecurity/RouteLimiterRequestIP";
+import RouteLimiterRequestIP from "../security/middlewareSecurity/RouteLimiterRequestIP";
 import VerifyKeys from "../middleware/VerifyKeys/VerifyKeys";
 
 // Import des Repositories :
@@ -18,7 +17,8 @@ import payloadType from "../types/payloadType";
 
 // Import des utils
 import { verifyPasswordArgonUtils } from "../utils/hashArgonUtils";
-import { createDate_Number_Utils } from "../utils/createDateUtils";
+import { createJwtTokenServerLAPM } from "../utils/jwtTokenLAPMUtils";
+import { createJwtTokenClientLAPM } from "../utils/jwtTokenLAPMUtils";
 
 
 // URI : /api/login
@@ -72,15 +72,14 @@ loginController.post("/",
 
             /* Logique métier 3 : Création du JWT client et server */
 
-                // Récupération de la clé secrète Server
-                const SECRET_KEY_TOKEN_SERVER: string | undefined = process.env.SECRET_KEY_TOKEN_SERVER;
-                
-                // Récupération de la clé secrète Client
-                const SECRET_KEY_TOKEN_CLIENT: string | undefined = process.env.SECRET_KEY_TOKEN_CLIENT;
+                // Création du token server
+                const jwtTokenServerLAPM: string | boolean = await createJwtTokenServerLAPM(dataUser[0] as payloadType);
+                // Création du token client
+                const jwtTokenClientLAPM: string | boolean = await createJwtTokenClientLAPM(dataUser[0] as payloadType);
 
                 // Vérification des clés secrète Server et Client si elles existent
                 // Si l'une d'entre elles n'existe pas, on renvoie une erreur 500
-                if (!SECRET_KEY_TOKEN_SERVER || !SECRET_KEY_TOKEN_CLIENT) {
+                if (!jwtTokenServerLAPM || !jwtTokenClientLAPM) {
                     res.status(500).json({ message: "Erreur interne serveur." });
                     console.error(
                         {
@@ -91,51 +90,29 @@ loginController.post("/",
                             metier: "Logique métier 3",
                             codeStatus: "500 : Internal Server Error",
                             chemin: "/server/src/controllers/loginController.ts",
-                            "❌ Nature de l'erreur": "Erreur interne serveur, clé secrète Server ou client pour la création token manquante.",
+                            "❌ Nature de l'erreur": "Erreur interne serveur, impossible de créer les token.",
+                            "jwtTokenServerLAPM et jwtTokenClientLAPM": {
+                                identity: "jwtTokenLAPM.ts",
+                                type: "utils",
+                                chemin: "/server/src/utils/jwtTokenLAPM.ts",
+                                "❌ Nature de l'erreur": "Erreur interne serveur, clé secrète Server ou client pour la création token manquante.",
+                            }
                         },
                     );
                     return;
                 }
 
-                // Création des variables token
-                const expiresIn: number = 60 * 60; // 1 heure
-                const dateNow: number = await createDate_Number_Utils(); // Date actuelle en timestamp UNIX
-
-                const payload_server: payloadType = {
-                    id: dataUser[0].id,
-                    email: dataUser[0].email,
-                    role: dataUser[0].role,
-                    iat: dateNow, // ⏳ Date de création du token
-                }
-
-                const payload_client: payloadType = {
-                    id: dataUser[0].id,
-                    email: dataUser[0].email,
-                    firstname: dataUser[0].firstname,
-                    lastname: dataUser[0].lastname,
-                    address: dataUser[0].address,
-                    role: dataUser[0].role,
-                    date_save: dataUser[0].date_save,
-                    iat: dateNow, // ⏳ Date de création du token
-                }
-
-                // Création du token server
-                const token_server: string = jwt.sign(payload_server, SECRET_KEY_TOKEN_SERVER, { expiresIn });
-
-                // Création du token client
-                const token_client: string = jwt.sign(payload_client, SECRET_KEY_TOKEN_CLIENT, { expiresIn });
-
             /* Logique métier 4 : Réponse au client */
                 res.status(200)
-                .cookie("jwtTokenServerLAPM", token_server, {
+                .cookie("jwtTokenServerLAPM", jwtTokenServerLAPM, {
                     httpOnly: true,
-                    secure: true,
-                    sameSite: "none",
+                    // secure: true, seulment en production
+                    sameSite: "lax",
                     maxAge: 60 * 60 * 1000, // 1 heure
                 })
                 .json({
                     message: "Connexion réussie",
-                    jwtTokenClientLAPM: token_client
+                    jwtTokenClientLAPM: jwtTokenClientLAPM,
                 });
                 return;
         }

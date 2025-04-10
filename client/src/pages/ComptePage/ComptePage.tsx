@@ -1,11 +1,11 @@
-import style from "./ComptePage.module.css";
+import style from "../stylePage.module.css";
 import NavRoot from "../../components/NavRoot/NavRoot";
 import CompteRoot from "../../components/CompteRoot/CompteRoot";
 import FooterRoot from "../../components/FooterRoot/FooterRoot";
 
 function ComptePage() {
     return (
-        <div className={style.ComptePage}>
+        <div className={style.Page}>
             <header className={style.Header}>
                 <NavRoot />
             </header>

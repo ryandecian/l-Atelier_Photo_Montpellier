@@ -14,23 +14,20 @@ import loginController from "../controllers/loginController";
 import registerController from "../controllers/registerController";
 import resetPasswordController from "../controllers/resetPasswordController";
 import resetPasswordConfirmController from "../controllers/resetPasswordConfirmController";
+import usersController from "../controllers/usersController";
 
 const router = express.Router();
 
 /* Liste des routes ! */
-// router.use("/login", loginRouter); // 1 route fonctionnelle
-router.use("/register", registerRouter); // 1 route fonctionnelle
-router.use("/reset-password", resetPasswordRouter); // 2 routes fonctionnelles
 router.use("/email", emailRouter); // 1 route fonctionnelle
 router.use("/album", albumRouter); // 4 routes fonctionnelles
 router.use("/photos", photosRouter); // 3 routes fonctionnelles
 router.use("/factures", facturesRouter); // 3 routes fonctionnelles
-router.use("/users", usersRouter); // ? route fonctionnelle
 
-// router.use("/logincontroller", loginController); // 1 route fonctionnelle
 router.use("/login", loginController); // 1 route fonctionnelle
-router.use("/registercontroller", registerController); // 1 route fonctionnelle
-router.use("/resetpasswordcontroller", resetPasswordController); // 1 route fonctionnelle
-router.use("/resetpasswordconfirmcontroller", resetPasswordConfirmController); // 1 route fonctionnelle
+router.use("/register", registerController); // 1 route fonctionnelle
+router.use("/resetpassword", resetPasswordController); // 1 route fonctionnelle
+router.use("/resetpassword/confirm", resetPasswordConfirmController); // 1 route fonctionnelle
+router.use("/users", usersController); // 5 routes fonctionnelles
 
 export default router;

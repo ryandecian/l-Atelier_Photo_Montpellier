@@ -10,6 +10,7 @@ import MariagePage from "../pages/MariagePage/MariagePage";
 import AdminPage from "../pages/AdminPage/AdminPage";
 import ComptePage from "../pages/ComptePage/ComptePage";
 import LoginPage from "../pages/LoginPage/LoginPage";
+import UserSystemePage from "../pages/UserSystemePage/UserSystemePage";
 
 /**
  * Utilisation : 
@@ -169,6 +170,11 @@ const ListDataRouter: RouterItemsType[] = [
         path: "/login",
         element: <LoginPage />,
     },
+    /* {ListDataRouter[23].path} */
+    {
+        path: "/admin/user-systeme",
+        element: <UserSystemePage />,
+    }
 ]
 export { LinkExt };
 export default ListDataRouter;
