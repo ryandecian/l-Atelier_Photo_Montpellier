@@ -6,7 +6,7 @@ const loginController = express.Router();
 import { RowDataPacket } from "mysql2";
 
 // Import des Middlewares :
-import RouteLimiterRequestIP from "../Security/middlewareSecurity/RouteLimiterRequestIP";
+import RouteLimiterRequestIP from "../security/middlewareSecurity/RouteLimiterRequestIP";
 import VerifyKeys from "../middleware/VerifyKeys/VerifyKeys";
 
 // Import des Repositories :
@@ -17,7 +17,6 @@ import payloadType from "../types/payloadType";
 
 // Import des utils
 import { verifyPasswordArgonUtils } from "../utils/hashArgonUtils";
-import { createDate_Number_Utils } from "../utils/createDateUtils";
 import { createJwtTokenServerLAPM } from "../utils/jwtTokenLAPMUtils";
 import { createJwtTokenClientLAPM } from "../utils/jwtTokenLAPMUtils";
 
@@ -80,7 +79,7 @@ loginController.post("/",
 
                 // Vérification des clés secrète Server et Client si elles existent
                 // Si l'une d'entre elles n'existe pas, on renvoie une erreur 500
-                if (!jwtTokenServerLAPM && !jwtTokenClientLAPM) {
+                if (!jwtTokenServerLAPM || !jwtTokenClientLAPM) {
                     res.status(500).json({ message: "Erreur interne serveur." });
                     console.error(
                         {
