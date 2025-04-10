@@ -197,15 +197,15 @@ usersController.put("/me",
 
 
 // URI : /api/users/:id
-usersController.get("/:id",
+usersController.put("/:id",
     
     // Vérification :
-    VerifyKeys(["fristname", "lastname", "email"]),
+    VerifyKeys(["firstname", "lastname", "email"]),
     Verify_JWT_Middleware,
     isAdmin,
     async (req: Request, res: Response) => {
         try {
-            // Logique métier 1 : Recuperer un utilisateur par son id
+            // Logique métier 1 : Modifier un utilisateur par son id
                 req.body.id = parseInt(req.params.id, 10);
                 const dataUserTarget: dataUserType = req.body
                 
@@ -217,7 +217,7 @@ usersController.get("/:id",
                         identity: "usersController.ts",
                         type: "controller",
                         URI: "/api/users/:id",
-                        methode: "GET",
+                        methode: "PUT",
                         chemin: "/server/src/controllers/usersController.ts",
                         "❌ Nature de l'erreur": "Erreur lors de la modification des données de l'utilisateur.",
                         putUserMeRepository: {
@@ -238,7 +238,7 @@ usersController.get("/:id",
                         identity: "usersController.ts",
                         type: "controller",
                         URI: "/api/users/:id",
-                        methode: "GET",
+                        methode: "PUT",
                         chemin: "/server/src/controllers/usersController.ts",
                         "❌ Nature de l'erreur": "Erreur lors de la récupération des données de l'utilisateur.",
                         getOneUserByIdRepository: {
@@ -261,7 +261,7 @@ usersController.get("/:id",
                 identity: "usersController.ts",
                 type: "controller",
                 URI: "/api/users/:id",
-                methode: "GET",
+                methode: "PUT",
                 chemin: "/server/src/controllers/usersController.ts",
                 "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
                 details: error,

@@ -5,6 +5,7 @@ import ServiceCardComponent from "../ServiceCardComponent/ServiceCardComponent";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import useLogout from "../../hook/useLogout";
+import ListDataRouter from "../../router/router";
 
 function AdminRoot() {
   const { isLoggedIn, userInfo, isChecking } = useAuthCheck();
@@ -32,7 +33,7 @@ function AdminRoot() {
         <h1 className={css.Title}>👑 Interface Admin</h1>
 
       <div className={css.ContainerCard}>
-        <ServiceCardComponent nameService="Gestion des utilisateurs" etat={true} link="/admin/users" />
+        <ServiceCardComponent nameService="Gestion des utilisateurs" etat={true} link={ListDataRouter[23].path} />
         <ServiceCardComponent nameService="Gestion des factures" etat={false} link="#" />
         <ServiceCardComponent nameService="Gestion des statistiques" etat={false} link="#" />
         <ServiceCardComponent nameService="Gestion des albums" etat={false} link="#" />

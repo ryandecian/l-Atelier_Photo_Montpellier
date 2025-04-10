@@ -19,6 +19,7 @@ function Verify_JWT_Middleware(req: Request, res: Response, next: NextFunction) 
 
     // ✅ Récupération du token depuis le cookie HTTP-only
     const token = req.cookies?.jwtTokenServerLAPM;
+    console.log("💡 Contenu du cookie reçu :", req.cookies);
 
     if (!token) {
       res.status(401).json({ error: "Accès refusé. Aucun token fourni." });

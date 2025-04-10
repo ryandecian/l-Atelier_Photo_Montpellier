@@ -8,9 +8,13 @@ const app = express();
 const port = 8080;
 
 app.use(cors({
-  origin: "http://localhost:4000", // url client
+  origin: [
+    "http://localhost:4000",
+    "http://192.168.14.248:4000"
+  ],
   credentials: true,
 }));
+
 app.use(express.json());
 app.use(cookieParser())
 app.use("/api", router);

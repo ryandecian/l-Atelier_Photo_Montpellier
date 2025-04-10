@@ -107,8 +107,8 @@ loginController.post("/",
                 res.status(200)
                 .cookie("jwtTokenServerLAPM", jwtTokenServerLAPM, {
                     httpOnly: true,
-                    secure: true,
-                    sameSite: "none",
+                    // secure: true, seulment en production
+                    sameSite: "lax",
                     maxAge: 60 * 60 * 1000, // 1 heure
                 })
                 .json({
