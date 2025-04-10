@@ -1,4 +1,4 @@
-import style from "./MentionsLegalesPage.module.css";
+import style from "../stylePage.module.css";
 import { Helmet } from "react-helmet-async";
 import NavRoot from "../../components/NavRoot/NavRoot";
 import MentionsLegalesRoot from "../../components/MentionsLegalesRoot/MentionsLegalesRoot";
@@ -42,7 +42,7 @@ function MentionsLegales() {
      const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
 
      return (
-        <div className={style.MentionsLegalesPage}>
+        <div className={style.Page}>
             <Helmet>
                   {/* Balises SEO */}
                      {/* Balise pour indexation général */}

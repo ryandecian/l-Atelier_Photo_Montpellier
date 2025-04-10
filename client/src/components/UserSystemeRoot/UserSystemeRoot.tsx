@@ -1,41 +1,39 @@
+// Ne touche pas à l'import de hooks et types
 import { useEffect, useState, ChangeEvent } from "react";
 import { useNavigate } from "react-router-dom";
-import style from "./AdminPC.module.css";
+import useAuthCheck from "../../hook/useAuthCheck";
+import useLogout from "../../hook/useLogout";
+import DataUserType from "../../types/dataUserType";
+import style from "./UserSystemeRoot.module.css";
 
-// Typage d’un utilisateur
-type User = {
-  id: number;
-  firstname: string;
-  lastname: string;
-  email: string;
-  address: string;
-  role: string;
-  date_save: string;
-};
+function UserSystemeRoot() {
+  const { isLoggedIn, userInfo, isChecking } = useAuthCheck();
+  const logout = useLogout();
+  const navigate = useNavigate();
 
-function AdminPC() {
-  const [users, setUsers] = useState<User[]>([]);
+  const [users, setUsers] = useState<DataUserType[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [editUserId, setEditUserId] = useState<number | null>(null);
-  const [editedUser, setEditedUser] = useState<Partial<User>>({});
+  const [editedUser, setEditedUser] = useState<Partial<DataUserType>>({});
   const [successMessage, setSuccessMessage] = useState("");
-  const navigate = useNavigate();
 
-  // 🔐 Vérifie l'accès admin et récupère la liste des utilisateurs
+  // 🔐 Auth + rôle admin
   useEffect(() => {
-    const token = localStorage.getItem("jwtToken");
-    const role = localStorage.getItem("userRole");
+    if (isChecking) return;
 
-    if (!token || role !== "admin") {
+    if (!isLoggedIn || !userInfo) {
+      navigate("/login");
+      return;
+    }
+
+    if (userInfo.role !== "admin") {
       navigate("/compte");
       return;
     }
 
     fetch(`${import.meta.env.VITE_API_URL}/users`, {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
+      credentials: "include",
     })
       .then(async (res) => {
         if (!res.ok) {
@@ -44,141 +42,93 @@ function AdminPC() {
         }
         return res.json();
       })
-      .then((data) => {
-        setUsers(data.data || data);
-      })
-      .catch((err: unknown) => {
-        if (err instanceof Error) {
-          setError(err.message);
-        } else {
-          setError("Erreur inconnue.");
-        }
-      })
+      .then((data) => setUsers(data.data || []))
+      .catch((err: unknown) =>
+        setError(err instanceof Error ? err.message : "Erreur inconnue.")
+      )
       .finally(() => setLoading(false));
-  }, [navigate]);
+  }, [isChecking, isLoggedIn, userInfo, navigate]);
 
-  const handleLogout = () => {
-    // ✅ Nettoyage des données sensibles
-    localStorage.removeItem("jwtToken");
-    localStorage.removeItem("userRole");
-    localStorage.removeItem("userId");
-    localStorage.removeItem("userEmail");
-    localStorage.removeItem("userName");
-  
-    // 🔁 Redirection vers la page de connexion
-    navigate("/login");
-  };
-  
-  // 🗑️ Suppression d’un utilisateur
   const handleDeleteUser = async (id: number) => {
-    const confirmDelete = window.confirm("⚠️ Supprimer cet utilisateur ?");
-    if (!confirmDelete) return;
-
-    const token = localStorage.getItem("jwtToken");
+    if (!confirm("⚠️ Supprimer cet utilisateur ?")) return;
 
     try {
       const res = await fetch(`${import.meta.env.VITE_API_URL}/users/${id}`, {
         method: "DELETE",
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
+        credentials: "include",
       });
 
       if (!res.ok) throw new Error("Échec de la suppression");
 
       setUsers((prev) => prev.filter((user) => user.id !== id));
-    } catch (err: unknown) {
-      if (err instanceof Error) {
-        alert(err.message);
-      } else {
-        alert("Erreur inconnue lors de la suppression.");
-      }
+    } catch (err) {
+      alert(err instanceof Error ? err.message : "Erreur inconnue.");
     }
   };
 
-  // ✏️ Lance la modification
-  const handleEditClick = (user: User) => {
+  const handleEditClick = (user: DataUserType) => {
     setEditUserId(user.id);
     setEditedUser({ ...user });
   };
 
-  // ❌ Annule la modification
   const handleCancelEdit = () => {
     setEditUserId(null);
     setEditedUser({});
   };
 
-  // 🔄 Met à jour les champs en cours d'édition
   const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setEditedUser((prev) => ({ ...prev, [name]: value }));
   };
 
-  // 💾 Enregistre les modifications
   const handleSaveEdit = async () => {
-    const token = localStorage.getItem("jwtToken");
     const original = users.find((u) => u.id === editUserId);
-
-    if (!original) {
-      alert("Utilisateur introuvable.");
-      return;
-    }
+    if (!original) return alert("Utilisateur introuvable.");
 
     const updatedUser = {
       firstname: editedUser.firstname ?? original.firstname,
       lastname: editedUser.lastname ?? original.lastname,
       email: editedUser.email ?? original.email,
       address: editedUser.address ?? original.address,
+      role: editedUser.role ?? original.role,
     };
 
     try {
       const response = await fetch(`${import.meta.env.VITE_API_URL}/users/${editUserId}`, {
         method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
+        headers: { "Content-Type": "application/json" },
+        credentials: "include",
         body: JSON.stringify(updatedUser),
       });
 
-      if (!response.ok) {
-        const data = await response.json();
-        throw new Error(data.message || "Erreur lors de la modification.");
-      }
+      if (!response.ok) throw new Error("Erreur lors de la modification.");
 
       setUsers((prev) =>
-        prev.map((u) =>
-          u.id === editUserId ? { ...u, ...updatedUser } : u
-        )
+        prev.map((u) => (u.id === editUserId ? { ...u, ...updatedUser } : u))
       );
 
       setEditUserId(null);
       setEditedUser({});
       setSuccessMessage("✅ Modifications enregistrées avec succès.");
-
-      // ⏳ Message temporaire
       setTimeout(() => setSuccessMessage(""), 3000);
-    } catch (err: unknown) {
-      if (err instanceof Error) {
-        alert(err.message);
-      } else {
-        alert("Erreur inconnue lors de la modification.");
-      }
+    } catch (err) {
+      alert(err instanceof Error ? err.message : "Erreur inconnue.");
     }
   };
 
+  if (isChecking || loading) return <p>Chargement...</p>;
+
   return (
-    <div className={style.AdminPC}>
-      <h1>👑 Interface Admin</h1>
-      <button onClick={handleLogout} className={style.logoutBtn}>🚪 Déconnexion</button>
+    <div className={style.UserSystemeRoot}>
+      <div className={style.topBar}>
+        <h1>👑 Interface Admin</h1>
+        <button onClick={logout} className={style.logoutBtn}>🚪 Déconnexion</button>
+      </div>
 
-      {/* ✅ Message de succès */}
       {successMessage && <p className={style.success}>{successMessage}</p>}
-
-      {loading && <p>Chargement...</p>}
       {error && <p className={style.error}>{error}</p>}
 
-      {!loading && !error && (
+      {!error && (
         <table className={style.table}>
           <thead>
             <tr>
@@ -195,7 +145,6 @@ function AdminPC() {
             {users.map((u) => (
               <tr key={u.id}>
                 <td>{u.id}</td>
-
                 {editUserId === u.id ? (
                   <>
                     <td><input name="firstname" value={editedUser.firstname || ""} onChange={handleInputChange} /></td>
@@ -235,4 +184,4 @@ function AdminPC() {
   );
 }
 
-export default AdminPC;
+export default UserSystemeRoot;

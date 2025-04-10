@@ -1,4 +1,4 @@
-import style from "./CGVPage.module.css";
+import style from "../stylePage.module.css";
 import { Helmet } from "react-helmet-async";
 import NavRoot from "../../components/NavRoot/NavRoot";
 import CGVRoot from "../../components/CGVRoot/CGVRoot";
@@ -42,7 +42,7 @@ function CGVPage() {
      const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
 
      return (
-        <div className={style.CGVPage}>
+        <div className={style.Page}>
             <Helmet>
                   {/* Balises SEO */}
                      {/* Balise pour indexation général */}

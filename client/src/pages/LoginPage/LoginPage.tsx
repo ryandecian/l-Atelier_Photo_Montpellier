@@ -1,11 +1,11 @@
-import style from "./LoginPage.module.css";
+import style from "../stylePage.module.css";
 import NavRoot from "../../components/NavRoot/NavRoot";
 import LoginRoot from "../../components/LoginRoot/LoginRoot";
 import FooterRoot from "../../components/FooterRoot/FooterRoot";
 
 function LoginPage() {
     return (
-        <div className={style.LoginPage}>
+        <div className={style.Page}>
             <header className={style.Header}>
                 <NavRoot />
             </header>
