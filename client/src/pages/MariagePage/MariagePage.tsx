@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import NavRoot from "../../components/NavRoot/NavRoot";
-import style from "./MariagePage.module.css";
+import style from "../stylePage.module.css";
 import MariageRoot from "../../components/MariageRoot/MariageRoot";
 import FooterRoot from "../../components/FooterRoot/FooterRoot";
 
@@ -42,7 +42,7 @@ function MariagePage() {
      const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
 
      return (
-        <div className={style.MariagePage}>
+        <div className={style.Page}>
             <Helmet>
                   {/* Balises SEO */}
                      {/* Balise pour indexation général */}

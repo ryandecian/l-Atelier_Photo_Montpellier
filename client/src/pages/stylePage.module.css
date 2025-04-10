@@ -1,4 +1,4 @@
-.Error404Page, 
+.Page, 
 .Header, 
 .Main, 
 .Footer {
@@ -10,4 +10,11 @@
     border: 0px;
     margin: 0px;
     width: 100%;
+}
+
+.HeaderHomePage {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
 }

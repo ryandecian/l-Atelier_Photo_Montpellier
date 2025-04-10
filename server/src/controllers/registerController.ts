@@ -7,7 +7,7 @@ import { RowDataPacket } from "mysql2";
 import { ResultSetHeader } from 'mysql2';
 
 // Import des Middlewares :
-import RouteLimiterRequestIP from "../Security/middlewareSecurity/RouteLimiterRequestIP";
+import RouteLimiterRequestIP from "../security/middlewareSecurity/RouteLimiterRequestIP";
 import VerifyKeys from '../middleware/VerifyKeys/VerifyKeys';
 
 // Import des Repositories :
