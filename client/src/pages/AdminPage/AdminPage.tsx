@@ -5,7 +5,7 @@ import FooterRoot from "../../components/FooterRoot/FooterRoot";
 
 function AdminPage() {
     return (
-        <div className={style.Page}>
+        <div className={`AdminPage ${style.Page}`}>
             <header className={style.Header}>
                 <NavRoot />
             </header>

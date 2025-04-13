@@ -42,7 +42,7 @@ function LifeStylePage() {
      const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
 
      return (
-        <div className={style.Page}>
+        <div className={`LifeStylePage ${style.Page}`}>
             <Helmet>
                   {/* Balises SEO */}
                      {/* Balise pour indexation général */}
