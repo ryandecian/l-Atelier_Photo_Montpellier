@@ -1,4 +1,5 @@
 import style from "../../../StyleRootComponent.module.css";
+import { Check } from "lucide-react";
 import { LinkExt } from "../../../../router/router";
 
 function LifeStyleRootComponentE() {
@@ -33,8 +34,8 @@ function LifeStyleRootComponentE() {
                     {" "} pour aujourd’hui et pour plus tard. 
                 </p>
                 <p className={style.TextP4}>
-                    <span className={style.SpanBoldSpace}>
-                        {"💡 Pour qui ?"}
+                    <span className={style.SpanBold}>
+                        {"Pour qui ?"}
                     </span> 
                 </p>
                 <p className={style.TextP4}>
@@ -42,9 +43,18 @@ function LifeStyleRootComponentE() {
                         {"Cette séance est faite pour vous si :"}
                     </span>
                     <br />
-                    👉 Vous voulez des images qui ne dorment pas sur un disque dur, mais s’impriment, s’accrochent, se partagent. <br />
-                    👉 Vous cherchez des souvenirs sincères, des photos pleines de vie à glisser dans un album familial. <br />
-                    👉 Vous voulez que, dans 10 ans, ces images racontent encore votre histoire. <br />
+                    <span className={style.SpanLucide}>
+                        <Check className={style.CheckLucide} /> &nbsp;
+                        Vous voulez des images qui ne dorment pas sur un disque dur, mais s’impriment, s’accrochent, se partagent.
+                    </span>
+                    <span className={style.SpanLucide}>
+                        <Check className={style.CheckLucide} /> &nbsp;
+                        Vous cherchez des souvenirs sincères, des photos pleines de vie à glisser dans un album familial.
+                    </span>
+                    <span className={style.SpanLucide}>
+                        <Check className={style.CheckLucide} /> &nbsp;
+                        Vous voulez que, dans 10 ans, ces images racontent encore votre histoire.
+                    </span>
                 </p>
                 <p className={style.TextP4}>
                     <span className={style.SpanBold}>
