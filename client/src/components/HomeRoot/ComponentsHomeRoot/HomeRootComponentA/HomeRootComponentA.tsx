@@ -35,7 +35,7 @@ function HomeRootComponentA() {
                             {"PARLENT DE"}
                         </p>
                         <p className={css.SloganMobile}>
-                            {"VOUS"} {viewportHeight}
+                            {"VOUS"}
                         </p>
                     </article>
                     <header className={css.ContainerTitleMobile}>
