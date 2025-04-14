@@ -1,4 +1,5 @@
 import style from "../../../StyleRootComponent.module.css";
+import { Check } from "lucide-react";
 import { LinkExt } from "../../../../router/router";
 
 function LifeStyleRootComposantH() {
@@ -44,18 +45,25 @@ function LifeStyleRootComposantH() {
                     refléter votre vision.
                 </p>
                 <p className={style.TextP4}>
-                    <span className={style.SpanBoldSpace}>
-                        {"💡 Pour qui ?"}
+                    <span className={style.SpanBold}>
+                        {"Pour qui ?"}
                     </span> 
                 </p>
                 <p className={style.TextP4}>
-                    <span className={style.SpanBold}>
-                        {"Cette séance est faite pour vous si :"}
-                    </span> 
+                    {"Cette séance est faite pour vous si :"}
                     <br />
-                    👉 Vous voulez des photos dynamiques et naturelles, en plein cœur de votre passion. <br />
-                    👉 Vous souhaitez recréer une ambiance, une époque, ou un univers qui vous inspire. <br />
-                    👉 Vous êtes sportif, artiste, passionné d’histoire, de cinéma ou de culture geek. <br />
+                    <span className={style.SpanLucide}>
+                        <Check className={style.CheckLucide} /> &nbsp;
+                        Vous voulez des photos dynamiques et naturelles, en plein cœur de votre passion.
+                    </span>
+                    <span className={style.SpanLucide}>
+                        <Check className={style.CheckLucide} /> &nbsp;
+                        Vous souhaitez recréer une ambiance, une époque, ou un univers qui vous inspire.
+                    </span>
+                    <span className={style.SpanLucide}>
+                        <Check className={style.CheckLucide} /> &nbsp;
+                        Vous êtes sportif, artiste, passionné d’histoire, de cinéma ou de culture geek.
+                    </span>
                 </p>
                 <p className={style.TextP4}>
                     <span className={style.SpanBold}>

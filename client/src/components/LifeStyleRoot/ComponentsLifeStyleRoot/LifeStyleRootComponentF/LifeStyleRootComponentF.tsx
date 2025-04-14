@@ -1,4 +1,5 @@
 import style from "../../../StyleRootComponent.module.css";
+import { Check } from "lucide-react";
 
 function LifeStyleRootComponentF() {
     return (
@@ -34,17 +35,21 @@ function LifeStyleRootComponentF() {
                     {" "} des portraits de bébé seul, dans vos bras, avec ses frères et sœurs… chaque détail compte. <br />
                 </p>
                 <p className={style.TextP4}>
-                    <span className={style.SpanBoldSpace}>
-                        {"💡 Pour qui ?"}
+                    <span className={style.SpanBold}>
+                        {"Pour qui ?"}
                     </span> 
                 </p>
                 <p className={style.TextP4}>
-                    <span className={style.SpanBold}>
-                        {"Cette séance est faite pour vous si :"}
-                    </span>
+                    {"Cette séance est faite pour vous si :"}
                     <br />
-                    👉 Les jeunes parents qui veulent des souvenirs tendres et naturels. <br />
-                    👉 Une séance à faire dans les 15 premiers jours de vie. <br />
+                    <span className={style.SpanLucide}>
+                        <Check className={style.CheckLucide} /> &nbsp;
+                        Les jeunes parents qui veulent des souvenirs tendres et naturels.
+                    </span>
+                    <span className={style.SpanLucide}>
+                        <Check className={style.CheckLucide} /> &nbsp;
+                        Une séance à faire dans les 15 premiers jours de vie.
+                    </span>
                 </p>
             </article>
             
