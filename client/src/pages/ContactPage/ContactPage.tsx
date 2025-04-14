@@ -1,21 +1,21 @@
-import style from "../stylePage.module.css";
 import { Helmet } from "react-helmet-async";
+import style from "../stylePage.module.css";
 import NavRoot from "../../components/NavRoot/NavRoot";
-import MentionsLegalesRoot from "../../components/MentionsLegalesRoot/MentionsLegalesRoot";
+import ContactRoot from "../../components/ContactRoot/ContactRoot";
 import FooterRoot from "../../components/FooterRoot/FooterRoot";
 
-function MentionsLegales() {
+function ContactPage() {
     const SEO = {
-        title: "Mentions Légales",
+        title: "Accueil - ",
         autor: "Anne SAUNIER",
-        description: "Retrouvez toute les mentions légales du site",
-        url: "", /*URL de la page*/
-        img: "",
+        description: "Vous des questions ? Contactez-moi !",
+        url: "https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250/", /*URL de la page*/
+        img: "https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250/dans-les-yeux-de-sacha.jpg", /*Lien URL de l'image*/
         twitterUrlImg: "", /*Lien URL de l'image*/
         twitterCompte: "", /*@MonCompteTwitter*/ /*Permet d'identifier le compte officiel*/
         keywords: {
             1: "Anne SAUNIER", /* 1 mot clés */
-            2: "", /* 2 mots clés */
+            2: "Photographe", /* 2 mots clés */
             3: "", /* 3 mots clés */
             4: "", /* 4 mots clés */
             5: "", /* 5 mots clés */
@@ -42,7 +42,7 @@ function MentionsLegales() {
      const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
 
      return (
-        <div className={`MentionsLegales ${style.Page}`}>
+        <div className={`ContactPage ${style.Page}`}>
             <Helmet>
                   {/* Balises SEO */}
                      {/* Balise pour indexation général */}
@@ -56,9 +56,9 @@ function MentionsLegales() {
                      {/* Balises OpenGraph - Facebook, Linkedin, WhatsApp, Instagram*/}
                          <meta property="og:title" content={SEO.title} />
                          <meta property="og:description" content={SEO.description} />
-                         <meta property="og:image" content="" />
+                         <meta property="og:image" content={SEO.img} />
                          <meta property="og:url" content={SEO.url} />
-                         <meta property="og:type" content="website" />
+                         <meta property="og:type" content={SEO.type.website} />
                          <meta property="og:locale" content="fr_FR" />
 
                      {/* Balises Twitter Cards */}
@@ -80,7 +80,7 @@ function MentionsLegales() {
                  <NavRoot />
             </header>
             <main className={style.Main}>
-                <MentionsLegalesRoot />
+                <ContactRoot />
             </main>
             <footer className={style.Footer}>
                 <FooterRoot />
@@ -89,4 +89,4 @@ function MentionsLegales() {
     )
 }
 
-export default MentionsLegales;
+export default ContactPage;
