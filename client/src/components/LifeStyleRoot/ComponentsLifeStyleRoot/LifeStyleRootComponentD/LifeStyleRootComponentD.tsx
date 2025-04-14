@@ -1,4 +1,5 @@
 import style from "../../../StyleRootComponent.module.css";
+import { Check } from "lucide-react";
 
 function LifeStyleRootComponentD() {
     return (
@@ -47,20 +48,30 @@ function LifeStyleRootComponentD() {
                     vous êtes juste vous, et moi, je capture ça. 
                 </p>
                 <p className={style.TextP4}>
-                    <span className={style.SpanBoldSpace}>
-                        {"💡 Pour qui ?"}
+                    <span className={style.SpanBold}>
+                        {"Pour qui ?"}
                     </span> 
                 </p>
                 <p className={style.TextP4}>
-                    <span className={style.SpanBold}>
-                        {"Cette séance est faite pour vous si :"}
-                    </span>
+                    {"Cette séance est faite pour vous si :"}
                     <br />
-                    👉 Vous voulez des photos qui vous ressemblent, sans artifices ni mode d’emploi. <br />
-                    👉 Vous cherchez un souvenir authentique de votre relation, que ce soit en couple, entre amis ou en duo 
-                    parent/enfant. <br />
-                    👉 Vous avez envie d’un prétexte pour ralentir un peu, et juste profiter du moment. <br />
-                    👉 C’est votre histoire, et je la photographie avec mon cœur. <br />
+                    <span className={style.SpanLucide}>
+                        <Check className={style.CheckLucide} /> &nbsp;
+                        Vous voulez des photos qui vous ressemblent, sans artifices ni mode d’emploi.
+                    </span>
+                    <span className={style.SpanLucide}>
+                        <Check className={style.CheckLucide} /> &nbsp;
+                        Vous cherchez un souvenir authentique de votre relation, que ce soit en couple, entre amis ou en duo 
+                        parent/enfant
+                    </span>
+                    <span className={style.SpanLucide}>
+                        <Check className={style.CheckLucide} /> &nbsp;
+                        Vous avez envie d’un prétexte pour ralentir un peu, et juste profiter du moment.
+                    </span>
+                    <span className={style.SpanLucide}>
+                        <Check className={style.CheckLucide} /> &nbsp;
+                        C’est votre histoire, et je la photographie avec mon cœur.
+                    </span>
                 </p>
             </article>
             

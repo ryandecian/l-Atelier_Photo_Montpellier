@@ -36,17 +36,17 @@ function LifeStyleRootComponentC() {
                 <p className={style.TextP4}>
                     {"Cette séance est faite pour vous si :"}
                     <br />
-                    <span className={style.Lucide}>
+                    <span className={style.SpanLucide}>
                         <Check className={style.CheckLucide} /> &nbsp; Ceux qui veulent &nbsp;
                         <span className={style.SpanBold}>
                             {"se réconcilier avec leur image."}
                         </span>
                     </span>
-                    <span className={style.Lucide}>
+                    <span className={style.SpanLucide}>
                         <Check className={style.CheckLucide} /> &nbsp;
                         Une nouvelle étape de vie, une envie de se voir autrement.
                     </span>
-                    <span className={style.Lucide}>
+                    <span className={style.SpanLucide}>
                         <Check className={style.CheckLucide} /> &nbsp;
                         Un souvenir unique, juste pour soi.
                     </span>
