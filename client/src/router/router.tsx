@@ -11,6 +11,7 @@ import AdminPage from "../pages/AdminPage/AdminPage";
 import ComptePage from "../pages/ComptePage/ComptePage";
 import LoginPage from "../pages/LoginPage/LoginPage";
 import UserSystemePage from "../pages/UserSystemePage/UserSystemePage";
+import ContactPage from "../pages/ContactPage/ContactPage";
 
 /**
  * Utilisation : 
@@ -72,7 +73,7 @@ const ListDataRouter: RouterItemsType[] = [
     /* {ListDataRouter[3].path} */
     {
         path: "/contacts",
-        element: <h1>Route : Page Contact</h1>,
+        element: <ContactPage />,
     },
     /* {ListDataRouter[4].path} */
     {

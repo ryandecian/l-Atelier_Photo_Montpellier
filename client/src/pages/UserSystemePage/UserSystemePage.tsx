@@ -5,7 +5,7 @@ import FooterRoot from "../../components/FooterRoot/FooterRoot";
 
 function UserSystemePage() {
     return (
-        <div className={style.Page}>
+        <div className={`UserSystemePage ${style.Page}`}>
             <header className={style.Header}>
                 <NavRoot />
             </header>
