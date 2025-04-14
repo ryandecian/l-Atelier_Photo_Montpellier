@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { jwtDecode } from "jwt-decode";
-import style from "./LoginRoot.module.css";
+import css from "./LoginRoot.module.css";
 import DataUserType from "../../types/dataUserType";
 
 function LoginRoot() {
@@ -53,11 +53,12 @@ function LoginRoot() {
   }
 
   return (
-    <section className={style.LoginRoot}>
+    <section className={css.LoginRoot}>
       <h1>Connexion 🔐</h1>
-      <form onSubmit={formulaireLogin} className={style.form}>
+      <form onSubmit={formulaireLogin} className={css.form}>
         <label>Email</label>
         <input
+          className={css.input}
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -66,14 +67,15 @@ function LoginRoot() {
 
         <label>Mot de passe</label>
         <input
+          className={css.input}
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
         />
 
-        <button type="submit">Se connecter</button>
-        {error && <p className={style.error}>{error}</p>}
+        <button type="submit" className={css.Button}>Se connecter</button>
+        {error && <p className={css.error}>{error}</p>}
       </form>
     </section>
   );

@@ -1,120 +1,127 @@
 .UserSystemeRoot {
-    padding: 2rem;
-    max-width: 1100px;
-    margin: auto;
-    font-family: sans-serif;
-}
-  
-h1 {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    color: #333;
-}
-  
-.table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-  
-.table th,
-.table td {
-    border: 1px solid #ddd;
-    padding: 0.8rem;
-    text-align: left;
-}
-  
-.table th {
-    background-color: #f5f5f5;
-    color: #333;
-}
-  
-.table td input,
-.table td select {
-    width: 100%;
-    padding: 6px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 0.9rem;
-}
-  
-button {
-    margin: 2px;
-    padding: 6px 12px;
-    font-size: 0.85rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: 0.2s ease;
-}
-  
-/* Bouton modifier */
-button:nth-child(1) {
-    background-color: #1976d2;
-    color: white;
-}
-  
-button:nth-child(1):hover {
-    background-color: #125ca1;
-}
-  
-/* Bouton supprimer */
-button:nth-child(2) {
-    background-color: #d32f2f;
-    color: white;
-}
-  
-button:nth-child(2):hover {
-    background-color: #a12222;
-}
-  
-/* Bouton enregistrer */
-button:contains("Enregistrer") {
-    background-color: #4caf50;
-    color: white;
-}
-  
-button:contains("Enregistrer"):hover {
-    background-color: #3b9141;
-}
-  
-  /* Bouton annuler */
-button:contains("Annuler") {
-    background-color: #999;
-    color: white;
-}
-  
-button:contains("Annuler"):hover {
-    background-color: #777;
-}
-  
-.error {
-    color: red;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 1rem;
+  padding: 2rem;
+  max-width: 1100px;
+  margin: auto;
+  font-family: sans-serif;
 }
 
+/* Topbar */
 .topBar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
 }
-  
+
+/* Titre principal */
+.adminTitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Bouton de déconnexion */
 .logoutBtn {
-    background-color: #555;
-    color: white;
-    padding: 8px 14px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
+  background-color: #555;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
 }
-  
+
 .logoutBtn:hover {
-    background-color: #333;
+  background-color: #333;
 }
-  
+
+/* Messages */
+.success {
+  color: green;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* Table utilisateurs */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 0.8rem;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.inputField {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+/* Boutons d'action */
+.actionBtn {
+  margin: 2px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Enregistrer */
+.saveBtn {
+  background-color: red;
+  color: white;
+}
+.saveBtn:hover {
+  background-color: #3b9141;
+}
+
+/* Annuler */
+.cancelBtn {
+  background-color: #999;
+  color: white;
+}
+.cancelBtn:hover {
+  background-color: #777;
+}
+
+/* Modifier */
+.editBtn {
+  background-color: #1976d2;
+  color: white;
+}
+.editBtn:hover {
+  background-color: #125ca1;
+}
+
+/* Supprimer */
+.deleteBtn {
+  background-color: #d32f2f;
+  color: white;
+}
+.deleteBtn:hover {
+  background-color: #a12222;
+}
