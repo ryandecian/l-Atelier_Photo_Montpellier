@@ -39,9 +39,7 @@ function LifeStyleRootComponentE() {
                     </span> 
                 </p>
                 <p className={style.TextP4}>
-                    <span className={style.SpanBold}>
-                        {"Cette séance est faite pour vous si :"}
-                    </span>
+                    {"Cette séance est faite pour vous si :"}
                     <br />
                     <span className={style.SpanLucide}>
                         <Check className={style.CheckLucide} /> &nbsp;
