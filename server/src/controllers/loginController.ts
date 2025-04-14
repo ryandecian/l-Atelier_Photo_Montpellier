@@ -50,7 +50,7 @@ loginController.post("/",
                     return;
                 }
 
-            /* Logique métier 2 : Vérifier le mot de passe utilisateur*/
+            /* Logique métier 2 : Vérifier le mot de passe utilisateur */
                 const verifyPassword: boolean = await verifyPasswordArgonUtils(dataUser[0].password, req.body.password);
 
                 if (!verifyPassword) { // Si c'est false, c'est que le mot de passe est incorrect
