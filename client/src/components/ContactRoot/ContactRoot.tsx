@@ -6,10 +6,10 @@ function ContactRoot() {
   return (
     <section className={`${css.ContactRoot} ${style.ContainerRootRacine}`}>
         <header className={style.ContainerTitle}>
-            <h1 className={style.TitleH1}>Contactez-nous</h1>
+            <h1 className={style.TitleH1}>Contactez-moi</h1>
         </header>
       <p className={`${style.TextP3} ${css.Subtitle}`}>
-        Une question, une demande ou envie d’un shooting ? N’hésitez pas à nous écrire ou à nous appeler.
+        Une question, une demande ou une envie d’un shooting ? N’hésitez pas à m'écrire ou à m'appeler.
       </p>
       <div className={`${style.ContainerRoot} ${css.ContactContainer}`}>
         <a href="mailto:photo34000@gmail.com" className={css.ContactItem}>

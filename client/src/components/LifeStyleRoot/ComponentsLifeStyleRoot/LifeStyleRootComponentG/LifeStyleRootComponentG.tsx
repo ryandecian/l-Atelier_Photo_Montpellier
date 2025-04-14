@@ -1,4 +1,5 @@
 import style from "../../../StyleRootComponent.module.css";
+import { Check } from "lucide-react";
 import { LinkExt } from "../../../../router/router";
 
 function LifeStyleRootComponentG() {
@@ -59,19 +60,29 @@ function LifeStyleRootComponentG() {
                     en gardant une bonne mobilité.
                 </p>
                 <p className={style.TextP4}>
-                    <span className={style.SpanBoldSpace}>
-                        {"💡 Pour qui ?"}
+                    <span className={style.SpanBold}>
+                        {"Pour qui ?"}
                     </span> 
                 </p>
                 <p className={style.TextP4}>
-                    <span className={style.SpanBold}>
-                        {"Cette séance est faite pour vous si :"}
-                    </span> 
+                    {"Cette séance est faite pour vous si :"}
                     <br />
-                    👉 Celles qui veulent un souvenir sincère et naturel de leur grossesse. <br />
-                    👉 Celles qui souhaitent un moment pour elles, pour se reconnecter à leur corps. <br />
-                    👉 Celles qui veulent un souvenir puissant de leur grossesse. <br />
-                    👉 Pour se sentir belle et rayonner avant l’arrivée de bébé. <br />
+                    <span className={style.SpanLucide}>
+                        <Check className={style.CheckLucide} /> &nbsp;
+                        Celles qui veulent un souvenir sincère et naturel de leur grossesse.
+                    </span>
+                    <span className={style.SpanLucide}>
+                        <Check className={style.CheckLucide} /> &nbsp;
+                        Celles qui souhaitent un moment pour elles, pour se reconnecter à leur corps.
+                    </span>
+                    <span className={style.SpanLucide}>
+                        <Check className={style.CheckLucide} /> &nbsp;
+                        Celles qui veulent un souvenir puissant de leur grossesse.
+                    </span>
+                    <span className={style.SpanLucide}>
+                        <Check className={style.CheckLucide} /> &nbsp;
+                        Pour se sentir belle et rayonner avant l’arrivée de bébé.
+                    </span>
                 </p>
                 <p className={style.TextP4}>
                     <span className={style.SpanBold}>
