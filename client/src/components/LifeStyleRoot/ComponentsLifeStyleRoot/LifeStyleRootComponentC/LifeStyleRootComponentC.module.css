@@ -1,0 +1,16 @@
+.TextTest {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    text-align: center;
+    font-size: var(--h4);
+    width: calc(100% - 3rem); /* 100% - 48px */
+    margin: 0rem 1.5rem; /* 0px 24px 0px 24px */
+    border: 0;
+    padding-bottom: 1.25rem; /* 0px 0px 20px 0px */
+    font-size: var(--h4); /* 18px */
+}
+
+.Check {
+    color: blueviolet;
+}

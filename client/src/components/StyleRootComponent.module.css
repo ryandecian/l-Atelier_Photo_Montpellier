@@ -137,3 +137,14 @@
     width: 1.4rem; /* 22px */
     height: 1.4rem; /* 22px */
 }
+
+.CheckLucide {
+    color: blueviolet;
+
+}
+
+.Lucide {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
