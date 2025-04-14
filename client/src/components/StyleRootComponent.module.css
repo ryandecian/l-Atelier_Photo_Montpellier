@@ -132,3 +132,8 @@
 .TargetText1 {
     padding: 1.25rem 0; /* 20px 0px 20px 0px */
 }
+
+.IconLucide {
+    width: 1.4rem; /* 22px */
+    height: 1.4rem; /* 22px */
+}

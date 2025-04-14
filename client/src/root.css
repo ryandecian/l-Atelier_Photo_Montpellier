@@ -7,15 +7,16 @@
          /* Couleur des textes général Restructuration */
          --ColorBlack: black;
          --ColorWhite: white;
+         --ColorPink: #ff007f;
+         --ColorGreyBlack: #555;
+         --ColorLink: rgb(14, 83, 193);
 
          /*Couleur des textes général*/
          --ColorPrincipal: #DCA54A;
          --ColorSecondaire: #3a240f;
          --ColorClaire: #523711;
-         --ColorPink: #ff007f;
          --ColorTexte: #3A3A3A;
          --ColorGrey: rgb(230, 230, 230);
-         --ColorLink: rgb(14, 83, 193);
          --backgroundBlack: black;
          --backgroundWhite: white;
 
@@ -95,6 +96,10 @@ body {
     width: 100%;
     box-sizing: border-box;
 }
+#root {
+     width: 100%;
+     min-height: 100vh;
+ }
 /* Responsive */
 
 /* 320px a 359px
