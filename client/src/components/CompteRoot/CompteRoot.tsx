@@ -106,7 +106,7 @@ function CompteRoot() {
           onChange={handleInputChange}
         />
 
-        <button onClick={handleSave}>💾 Enregistrer les modifications</button>
+        <button onClick={handleSave} className={style.ButtonSave}>💾 Enregistrer les modifications</button>
       </div>
     </div>
   );

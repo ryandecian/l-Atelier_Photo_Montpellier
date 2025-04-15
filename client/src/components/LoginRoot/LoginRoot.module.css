@@ -13,13 +13,13 @@
     gap: 1rem;
   }
   
-  input {
+  .input {
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
   }
   
-  button {
+  .Button {
     background-color: #1976d2;
     color: white;
     padding: 0.6rem;
