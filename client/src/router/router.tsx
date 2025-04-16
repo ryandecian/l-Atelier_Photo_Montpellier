@@ -12,6 +12,7 @@ import ComptePage from "../pages/ComptePage/ComptePage";
 import LoginPage from "../pages/LoginPage/LoginPage";
 import UserSystemePage from "../pages/UserSystemePage/UserSystemePage";
 import ContactPage from "../pages/ContactPage/ContactPage";
+import CorporatePage from "../pages/CorporatePage/CorporatePage";
 
 /**
  * Utilisation : 
@@ -114,7 +115,7 @@ const ListDataRouter: RouterItemsType[] = [
     /* {ListDataRouter[11].path} */
     {
         path: "/portraits-corporates",
-        element: <h1>Route : portraits-corporates</h1>,
+        element: <CorporatePage />,
     },
     /* {ListDataRouter[12].path} */
     {
