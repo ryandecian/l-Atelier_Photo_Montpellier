@@ -2,6 +2,7 @@ import style from "../StyleRootComponent.module.css";
 
 import CorporateRootComponentA from "./ComponentsCorporateRoot/CorporateRootComponentA/CorporateRootComponentA";
 import CorporateRootComponentB from "./ComponentsCorporateRoot/CorporateRootComponentB/CorporateRootComponentB";
+import CorporateRootComponentC from "./ComponentsCorporateRoot/CorporateRootComponentC/CorporateRootComponentC";
 
 function CorporateRoot() {
     return (
@@ -16,8 +17,11 @@ function CorporateRoot() {
             {/* Container A : Client cible Particulier */}
             <CorporateRootComponentA />
 
-            {/* Container A : Client cible Entreprise */}
+            {/* Container B : Client cible Entreprise */}
             < CorporateRootComponentB />
+
+            {/* Container C : Client cible Entreprise */}
+            < CorporateRootComponentC />
         </section>
     )
 }
