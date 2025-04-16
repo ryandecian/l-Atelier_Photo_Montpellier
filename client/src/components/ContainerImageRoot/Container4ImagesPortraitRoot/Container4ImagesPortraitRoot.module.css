@@ -15,7 +15,7 @@
 .ContainerImg {
     overflow: hidden;
     width: 100%;
-    aspect-ratio: 1 / 1; /* Permet de garder le ratio 1:1 */
+    aspect-ratio: 2 / 3; /* Permet de garder le ratio 2:3 */
 }
 
 .Image {
