@@ -14,22 +14,22 @@ const ImagesCorporateControllerData: ImagesCorporateControllerDataType[] = [
     /* {ControllerDataImageCorporate[0].src} */
     {
         src: Image1,
-        alt: "",
+        alt: "Chargee de location",
     },
     /* {ControllerDataImageCorporate[1].src} */
     {
         src: Image2,
-        alt: "",
+        alt: "Commerciale immobilier",
     },
     /* {ControllerDataImageCorporate[2].src} */
     {
         src: Image3,
-        alt: "",
+        alt: "Assistante administrative",
     },
     /* {ControllerDataImageCorporate[3].src} */
     {
         src: Image4,
-        alt: "",
+        alt: "Chercheuse",
     },
 
 
@@ -37,22 +37,22 @@ const ImagesCorporateControllerData: ImagesCorporateControllerDataType[] = [
     /* Tableau 2 : Portrait Corporate */
     /* {ControllerDataImageCorporate[4].src} */
     {
-        src: "",
+        src: Image1,
         alt: "",
     },
     /* {ControllerDataImageCorporate[5].src} */
     {
-        src: "",
+        src: Image2,
         alt: "",
     },
     /* {ControllerDataImageCorporate[6].src} */
     {
-        src: "",
+        src: Image3,
         alt: "Life style exterieur domicile",
     },
     /* {ControllerDataImageCorporate[7].src} */
     {
-        src: "",
+        src: Image4,
         alt: "Portrait François Feel good",
     },
 

@@ -34,7 +34,7 @@ function CorporateRootComponentA() {
                     Dans un univers où tout va vite, une signature visuelle impactante vous aide à sortir du lot et à marquer les esprits. 
                 </p>
 
-                {/* Container 1 : Container image portrait solo */}
+                {/* Container 1 : Container image portrait Corporate */}
                 <Container4ImagesPortraitRoot 
                 img1={ImagesCorporateControllerData[0].src}
                 MetaNameImg1={ImagesCorporateControllerData[0].alt}

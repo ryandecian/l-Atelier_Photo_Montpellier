@@ -1,5 +1,7 @@
 import style from "../../../StyleRootComponent.module.css";
 import { LinkExt } from "../../../../router/router";
+import Container4ImagesPortraitRoot from "../../../ContainerImageRoot/Container4ImagesPortraitRoot/Container4ImagesPortraitRoot";
+import ImagesCorporateControllerData from "../../ImagesCorporateControllerData";
 
 function CorporateRootComponentB() {
     return (
@@ -44,6 +46,18 @@ function CorporateRootComponentB() {
                     </a>
                 </span>
             </p>
+
+            {/* Container 2 : Container image portrait Corporate */}
+            <Container4ImagesPortraitRoot 
+                img1={ImagesCorporateControllerData[4].src}
+                MetaNameImg1={ImagesCorporateControllerData[4].alt}
+                img2={ImagesCorporateControllerData[5].src}
+                MetaNameImg2={ImagesCorporateControllerData[5].alt}
+                img3={ImagesCorporateControllerData[6].src}
+                MetaNameImg3={ImagesCorporateControllerData[6].alt}
+                img4={ImagesCorporateControllerData[7].src}
+                MetaNameImg4={ImagesCorporateControllerData[7].alt}
+                />
         </section>
     )
 }
