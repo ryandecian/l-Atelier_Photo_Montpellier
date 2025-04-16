@@ -1,12 +1,6 @@
-interface ControllerDataAvisClientMariageType {
-    id: number;
-    nom: string;
-    note: number;
-    commentaire: string;
-    date: string;
-}
+import AvisClientControllerDataType from "../../types/AvisClientControllerDataType";
 
-const ControllerDataAvisClientMariage: ControllerDataAvisClientMariageType[] = [
+const AvisClientMariageControllerData: AvisClientControllerDataType[] = [
     /* Commentaire 1 */
     {
         id: 1,
@@ -31,4 +25,4 @@ const ControllerDataAvisClientMariage: ControllerDataAvisClientMariageType[] = [
     },
 ];
 
-export default ControllerDataAvisClientMariage;
+export default AvisClientMariageControllerData;
