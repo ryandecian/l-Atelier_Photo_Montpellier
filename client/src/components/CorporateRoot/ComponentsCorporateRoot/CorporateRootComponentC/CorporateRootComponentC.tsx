@@ -9,6 +9,8 @@ function CorporateRootComponentC() {
                     {"Un service clé en main pour les entreprises : simplicité et efficacité !"}
                 </h2>
             </head>
+
+            <article></article>
         </section>
     )
 }
