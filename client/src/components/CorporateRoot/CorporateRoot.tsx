@@ -1,4 +1,5 @@
 import style from "../StyleRootComponent.module.css";
+import CorporateRootComponentA from "./ComponentsCorporateRoot/CorporateRootComponentA/CorporateRootComponentA";
 
 function CorporateRoot() {
     return (
@@ -9,6 +10,9 @@ function CorporateRoot() {
                     L'importance de votre signature visuelle : bien plus qu'une simple photo !
                 </h1>
             </header>
+
+            {/* Container A : Titre et textes */}
+            <CorporateRootComponentA />
         </section>
     )
 }
