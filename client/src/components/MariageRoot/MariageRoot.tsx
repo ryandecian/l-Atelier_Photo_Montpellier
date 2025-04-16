@@ -8,7 +8,7 @@ import MariageRootComponentF from "./ComponentsMariageRoot/MariageRootComponentF
 import Container4ImagesRoot from "./../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ControllerDataImageMariage from "./ImagesMariageControllerData";
 import GeneratorCardAvisClient from "./../GeneratorCardAvisClient/GeneratorCardAvisClient";
-import ControllerDataAvisClientMariage from "./AvisClientMariageControllerData";
+import AvisClientMariageControllerData from "./AvisClientMariageControllerData";
 
 function MariageRoot() {
     return (
@@ -131,7 +131,7 @@ function MariageRoot() {
             <MariageRootComponentF />
 
             {/* Avis Client : */}
-            <GeneratorCardAvisClient avisClients={ControllerDataAvisClientMariage} />
+            <GeneratorCardAvisClient avisClients={AvisClientMariageControllerData} />
 
         </section>
     );
