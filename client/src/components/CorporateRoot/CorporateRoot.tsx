@@ -1,4 +1,6 @@
 import style from "../StyleRootComponent.module.css";
+import AvisClientCorporateControllerData from "./AvisClientCorporateControllerData";
+import GeneratorCardAvisClient from "../GeneratorCardAvisClient/GeneratorCardAvisClient";
 
 import CorporateRootComponentA from "./ComponentsCorporateRoot/CorporateRootComponentA/CorporateRootComponentA";
 import CorporateRootComponentB from "./ComponentsCorporateRoot/CorporateRootComponentB/CorporateRootComponentB";
@@ -10,7 +12,7 @@ function CorporateRoot() {
 
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
-                    {"L'importance de votre signature visuelle : bien plus qu'une simple photo !"}
+                    {"Portrait Corporate : bien plus qu'une simple photo !"}
                 </h1>
             </header>
 
@@ -22,6 +24,11 @@ function CorporateRoot() {
 
             {/* Container C : Client cible Entreprise */}
             < CorporateRootComponentC />
+
+            {/* Container D : Avis clients */}
+            <GeneratorCardAvisClient
+                avisClients={AvisClientCorporateControllerData}
+            />
         </section>
     )
 }

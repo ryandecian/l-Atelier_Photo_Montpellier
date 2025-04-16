@@ -15,7 +15,7 @@ function MariageRoot() {
         <section className={`MariageRoot ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
-                    Mariage : Un reportage Authentique et Personnalisé.
+                    Portrait Mariage : Un reportage Authentique et Personnalisé.
                 </h1>
             </header>
 
