@@ -1,12 +1,6 @@
-interface AvisClientLifeStyleControllerDataType {
-    id: number;
-    nom: string;
-    note: number;
-    commentaire: string;
-    date: string;
-}
+import AvisClientControllerDataType from "../../types/AvisClientControllerDataType";
 
-const AvisClientLifeStyleControllerData: AvisClientLifeStyleControllerDataType[] = [
+const AvisClientLifeStyleControllerData: AvisClientControllerDataType[] = [
     /* Commentaire 1 */
     {
         id: 1,
