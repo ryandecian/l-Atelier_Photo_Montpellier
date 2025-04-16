@@ -12,6 +12,9 @@
     border: 0;
     margin: 0;
 }
+.Main {
+    min-height: calc(100vh - 23.15625rem); /* calc(100vh - 370.5px) */
+}
 
 .HeaderHomePage {
     position: absolute;
