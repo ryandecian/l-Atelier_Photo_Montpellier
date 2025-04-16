@@ -1,4 +1,5 @@
 import style from "../../../StyleRootComponent.module.css";
+import { LinkExt } from "../../../../router/router";
 
 function CorporateRootComponentB() {
     return (
@@ -17,9 +18,32 @@ function CorporateRootComponentB() {
                 </span>
                 L’objectif ? Définir ensemble le ton, le style et l’ambiance qui correspondent le mieux à votre image de marque. 
             </p>
+            <p className={style.TextP4}>
+                Si nous réalisons 
                 <span className={style.SpanBold}>
-                    {" "}
+                    {" la séance dans vos locaux, "}
                 </span>
+                cette étape permet d’identifier les meilleurs espaces pour un fond valorisant, une lumière naturelle intéressante ou une 
+                <span className={style.SpanBold}>
+                    {" mise en scène cohérente avec votre activité. "}
+                </span>
+                En studio, j’ajuste l’éclairage et le fond pour un rendu sobre et intemporel, parfait pour une identité forte et homogène. 
+            </p>
+            <p className={style.TextP4}>
+                <span className={style.SpanBold}>
+                    {"Ce travail en amont "}
+                </span>
+                garantit des portraits professionnels impactants et cohérents, adaptés à vos différents supports : signature mail, site web, LinkedIn, 
+                presse ou communication interne.  
+            </p>
+            <p className={style.TextP4}>
+                Votre image mérite le meilleur – {" "}
+                <span className={style.SpanLink}>
+                    <a href={LinkExt.emailAnne}>
+                        {"Prêt(e) à passer devant l’objectif ?"}
+                    </a>
+                </span>
+            </p>
         </section>
     )
 }
