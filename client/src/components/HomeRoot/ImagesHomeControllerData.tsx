@@ -1,12 +1,12 @@
-import Image1 from "../../assets/Images/ImageHomePage/Portrait_Studio_Corporate.jpg";
-import Image2 from "../../assets/Images/ImageHomePage/Portrait_Pere_et_fils_LifeStyle.jpg";
-import Image3 from "../../assets/Images/ImageHomePage/Portrait_jeune_femme_lumiere_naturelle.jpg";
-import Image4 from "../../assets/Images/ImageHomePage/Shooting_couple_studio.jpg";
+import Image1 from "../../assets/Images/ImageHomePage/Portrait-Studio-Corporate.jpg";
+import Image2 from "../../assets/Images/ImageHomePage/Portrait-Pere-et-fils-LifeStyle.jpg";
+import Image3 from "../../assets/Images/ImageHomePage/Portrait-jeune-femme-lumiere-naturelle.jpg";
+import Image4 from "../../assets/Images/ImageHomePage/Shooting-couple-studio.jpg";
 
-import Image5 from "../../assets/Images/ImageHomePage/Les_maries_vers_la_mairie.jpg";
-import Image6 from "../../assets/Images/ImageHomePage/Portrait_Mariage_a_la_Tour_Magne.jpg";
-import Image7 from "../../assets/Images/ImageHomePage/Photo_de_mariage_Sun_Glass.jpg";
-import Image8 from "../../assets/Images/ImageHomePage/Pride_et_mariage.jpg";
+import Image5 from "../../assets/Images/ImageHomePage/Les-maries-vers-la-mairie.jpg";
+import Image6 from "../../assets/Images/ImageHomePage/Maries-parc-tour-magne.jpg";
+import Image7 from "../../assets/Images/ImageHomePage/Photo-de-mariage-Sun-Glass.jpg";
+import Image8 from "../../assets/Images/ImageHomePage/Pride-et-mariage.jpg";
 
 interface ImagesHomeControllerDataType {
     src: string;
@@ -47,7 +47,7 @@ const ImagesHomeControllerData: ImagesHomeControllerDataType[] = [
     /* {ControllerDataImageHome[5].src} */
     {
         src: Image6,
-        alt: "Portrait Mariage à la Tour Magne",
+        alt: "Mariés parc tour magne",
     },
     /* {ControllerDataImageHome[6].src} */
     {
