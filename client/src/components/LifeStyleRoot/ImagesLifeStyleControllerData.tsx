@@ -8,12 +8,12 @@ import Image6 from "../../assets/Images/ImageLifeStyle/Card/Portrait_Serie_Peaky
 import Image7 from "../../assets/Images/ImageLifeStyle/Solo/Life_style_exterieur_domicile.jpg";
 import Image8 from "../../assets/Images/ImageLifeStyle/Solo/Portrait_François_Feel_good.jpg";
 import Image9 from "../../assets/Images/ImageLifeStyle/Solo/Life_style_exterieur.jpg";
-import Image10 from "../../assets/Images/ImageHomePage/Portrait_jeune_femme_lumiere_naturelle.jpg";
+import Image10 from "../../assets/Images/ImageHomePage/Portrait-jeune-femme-lumiere-naturelle.jpg";
 
 import Image11 from "../../assets/Images/ImageLifeStyle/Couple/portrait_couple_studio_bis.jpg";
 import image12 from "../../assets/Images/ImageLifeStyle/Couple/portrait_couple_jeune_studio.jpg";
 import Image13 from "../../assets/Images/ImageLifeStyle/Couple/portrait_tandem_exterieur.jpg";
-import Image14 from "../../assets/Images/ImageHomePage/Shooting_couple_studio.jpg";
+import Image14 from "../../assets/Images/ImageHomePage/Shooting-couple-studio.jpg";
 
 import Image15 from "../../assets/Images/ImageLifeStyle/Famille/Les_2_Freres.jpg";
 import Image16 from "../../assets/Images/ImageLifeStyle/Famille/Amies_d-Enfance_Flash.jpg";
