@@ -4,7 +4,7 @@ import NavRoot from "../../components/NavRoot/NavRoot";
 import MentionsLegalesRoot from "../../components/MentionsLegalesRoot/MentionsLegalesRoot";
 import FooterRoot from "../../components/FooterRoot/FooterRoot";
 
-function MentionsLegales() {
+function MentionsLegalesPage() {
     const SEO = {
         title: "Mentions Légales",
         autor: "Anne SAUNIER",
@@ -89,4 +89,4 @@ function MentionsLegales() {
     )
 }
 
-export default MentionsLegales;
+export default MentionsLegalesPage;

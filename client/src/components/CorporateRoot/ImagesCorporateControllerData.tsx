@@ -3,6 +3,11 @@ import Image2 from "../../assets/Images/ImageCorporate/commerciale-immobilier-co
 import Image3 from "../../assets/Images/ImageCorporate/corporate-assistante-administratice.jpg";
 import Image4 from "../../assets/Images/ImageCorporate/corporate-chercheuse.jpg";
 
+import Image5 from "../../assets/Images/ImageCorporate/Portrait-cv-montpellier.jpg";
+import Image6 from "../../assets/Images/ImageCorporate/Portrait-professionnel-en-studio.jpg";
+import Image7 from "../../assets/Images/ImageCorporate/Personnel-direction-bibliotheque.jpg";
+import Image8 from "../../assets/Images/ImageCorporate/Negociatrice-agence-immobiliere.jpg";
+
 
 interface ImagesCorporateControllerDataType {
     src: string;
@@ -37,23 +42,23 @@ const ImagesCorporateControllerData: ImagesCorporateControllerDataType[] = [
     /* Tableau 2 : Portrait Corporate */
     /* {ControllerDataImageCorporate[4].src} */
     {
-        src: Image1,
-        alt: "",
+        src: Image5,
+        alt: "Portrait CV Montpellier",
     },
     /* {ControllerDataImageCorporate[5].src} */
     {
-        src: Image2,
-        alt: "",
+        src: Image6,
+        alt: "Portrait professionnel en studio",
     },
     /* {ControllerDataImageCorporate[6].src} */
     {
-        src: Image3,
-        alt: "Life style exterieur domicile",
+        src: Image7,
+        alt: "Personnel direction bibliotheque",
     },
     /* {ControllerDataImageCorporate[7].src} */
     {
-        src: Image4,
-        alt: "Portrait François Feel good",
+        src: Image8,
+        alt: "Negociatrice agence immobiliere",
     },
 
 
