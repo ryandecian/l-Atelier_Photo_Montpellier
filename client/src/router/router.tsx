@@ -13,6 +13,7 @@ import LoginPage from "../pages/LoginPage/LoginPage";
 import UserSystemePage from "../pages/UserSystemePage/UserSystemePage";
 import ContactPage from "../pages/ContactPage/ContactPage";
 import CorporatePage from "../pages/CorporatePage/CorporatePage";
+import PortraitSoloPage from "../pages/PortraitSoloPage/PortraitSoloPage";
 
 /**
  * Utilisation : 
@@ -114,23 +115,23 @@ const ListDataRouter: RouterItemsType[] = [
     /* Route des SubMenu */
     /* {ListDataRouter[11].path} */
     {
-        path: "/portraits-corporates",
+        path: "/portrait-corporate",
         element: <CorporatePage />,
     },
     /* {ListDataRouter[12].path} */
     {
-        path: "/portraits-lifestyles",
+        path: "/portrait-lifestyle",
         element: <LifeStylePage />,
     },
     /* {ListDataRouter[13].path} */
     {
-        path: "/portraits-mariages",
+        path: "/portrait-mariage",
         element: <MariagePage />,
     },
     /* {ListDataRouter[14].path} */
     {
-        path: "/portraits-solos",
-        element: <h1>Route : Portraits-Solos</h1>,
+        path: "/portrait-solo",
+        element: <PortraitSoloPage />,
     },
     /* {ListDataRouter[15].path} */
     {

@@ -19,7 +19,6 @@ function Verify_JWT_Middleware(req: Request, res: Response, next: NextFunction) 
 
     // ✅ Récupération du token depuis le cookie HTTP-only
     const token = req.cookies?.jwtTokenServerLAPM;
-    console.log("💡 Contenu du cookie reçu :", req.cookies);
 
     if (!token) {
       res.status(401).json({ error: "Accès refusé. Aucun token fourni." });
@@ -34,12 +33,19 @@ function Verify_JWT_Middleware(req: Request, res: Response, next: NextFunction) 
 
     // Vérification du token
     try {
-        const payload = jwt.verify(token, SECRET_KEY_TOKEN_SERVER) as payloadType;
+        const payload: payloadType = jwt.verify(token, SECRET_KEY_TOKEN_SERVER) as payloadType;
         // Stocke les infos du token dans req.body.dataUser
         req.body.dataUser = payload;
     }
+    // Renvois une erreur 403 et supprime le cookie si le token est invalide ou expiré
     catch (error) {
-        res.status(403).json({ error: "Token invalide ou expiré." });
+        res.status(403)
+        .clearCookie("jwtTokenServerLAPM", {
+          httpOnly: true,
+          secure: true,
+          sameSite: "strict",
+        })        
+        .json({ message: "Token invalide ou expiré." });
         console.warn({
             identity: "Verify_JWT_Middleware.ts",
             type: "Middleware",
