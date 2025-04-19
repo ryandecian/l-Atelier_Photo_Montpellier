@@ -1,4 +1,4 @@
-import ImagesControllerDataType from "../../types/ImagesControllerData.Type";
+import ImagesControllerDataType from "../../types/ImagesControllerData.type";
 
 import Image1 from "../../assets/Images/ImageMariage/Parc_idynal_pour_photo_de_mariage_Nyymes-09013.jpg";
 import Image2 from "../../assets/Images/ImageMariage/Mariyns_Parc_de_la_tour_Magne_ya_Nyymes-08906.jpg";

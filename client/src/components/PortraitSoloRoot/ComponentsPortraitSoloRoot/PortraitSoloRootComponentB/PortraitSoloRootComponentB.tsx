@@ -1,5 +1,6 @@
 import style from "../../../StyleRootComponent.module.css";
-import css from "../PortraitSoloStyleRoot.module.css"
+import css from "../PortraitSoloStyleRoot.module.css";
+import { LinkExt } from "../../../../router/router";
 import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ImagesPortraitSoloControllerData from "../../ImagesPortraitSoloControllerData";
 
@@ -90,7 +91,28 @@ function PortraitSoloRootComponentB() {
                 <p className={style.TextP4}>
                     📸 Sélection de 10 à 20 photos retouchées avec soin, livrées en galerie privée
                 </p>
+                <br />
             </article>
+
+            <p className={style.TextP4}>
+                <span className={style.SpanBold}>
+                    {"Prêt(e) à vous (re)découvrir avec douceur et vérité ?"}
+                </span>
+            </p>
+            
+            <p className={style.TextP4}>
+                <span className={`${style.SpanLink} ${css.SpanLink}`}>
+                    <a href={LinkExt.phoneAnne}>
+                        📲 Réserver ma séance Feel Good
+                    </a>
+                </span>
+                <br />
+                <span className={`${style.SpanLink} ${css.SpanLink}`}>
+                    <a href={LinkExt.emailAnne}>
+                        💬 Discuter de mes envies avec Anne
+                    </a>
+                </span>
+            </p>
         </section>
     )
 }

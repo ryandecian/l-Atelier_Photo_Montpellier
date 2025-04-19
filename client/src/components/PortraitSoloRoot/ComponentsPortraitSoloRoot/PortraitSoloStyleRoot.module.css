@@ -17,3 +17,6 @@
     margin: 0 1.5rem; /* 0px 24px 0px 24px */
 }
 
+.SpanLink > a {
+    text-decoration: none;
+}
