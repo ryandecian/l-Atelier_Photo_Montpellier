@@ -3,7 +3,7 @@ import { useEffect, useState, ChangeEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import useAuthCheck from "../../hook/useAuthCheck";
 import useLogout from "../../hook/useLogout";
-import DataUserType from "../../types/dataUserType";
+import DataUserType from "../../types/dataUser.type";
 import style from "./UserSystemeRoot.module.css";
 
 function UserSystemeRoot() {

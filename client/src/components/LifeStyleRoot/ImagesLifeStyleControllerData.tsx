@@ -1,3 +1,5 @@
+import ImagesControllerDataType from "../../types/ImagesControllerData.Type";
+
 import Image1 from "../../assets/Images/ImageLifeStyle/Card/Femme-a_la_cigarette.jpg";
 import Image2 from "../../assets/Images/ImageLifeStyle/Card/portrait_duo_exterieur_.jpg";
 import Image3 from "../../assets/Images/ImageLifeStyle/Card/Portraits_Famille_Flash.jpg";
@@ -25,12 +27,7 @@ import Image28 from "../../assets/Images/ImageLifeStyle/Hobbie/Canicross_osteopa
 import Image29 from "../../assets/Images/ImageLifeStyle/Hobbie/Portraits_Synrie_Far_West_nb.jpg";
 import Image30 from "../../assets/Images/ImageLifeStyle/Hobbie/Gardienne_but_Portrait_Flash_4.jpg";
 
-interface ImagesLifeStyleControllerDataType {
-    src: string;
-    alt: string;
-}
-
-const ImagesLifeStyleControllerData: ImagesLifeStyleControllerDataType[] = [
+const ImagesLifeStyleControllerData: ImagesControllerDataType[] = [
     /* Menu en image LifeStyle : 6 images */
     /* {ControllerDataImageLifeStyle[0].src} */
     {
