@@ -16,22 +16,22 @@ interface ImagesCorporateControllerDataType {
 
 const ImagesCorporateControllerData: ImagesCorporateControllerDataType[] = [
     /* Tableau 1 : CorporateComponentA */
-    /* {ControllerDataImageCorporate[0].src} */
+    /* {ImagesCorporateControllerData[0].src} */
     {
         src: Image1,
         alt: "Chargee de location",
     },
-    /* {ControllerDataImageCorporate[1].src} */
+    /* {ImagesCorporateControllerData[1].src} */
     {
         src: Image2,
         alt: "Commerciale immobilier",
     },
-    /* {ControllerDataImageCorporate[2].src} */
+    /* {ImagesCorporateControllerData[2].src} */
     {
         src: Image3,
         alt: "Assistante administrative",
     },
-    /* {ControllerDataImageCorporate[3].src} */
+    /* {ImagesCorporateControllerData[3].src} */
     {
         src: Image4,
         alt: "Chercheuse",
@@ -40,22 +40,22 @@ const ImagesCorporateControllerData: ImagesCorporateControllerDataType[] = [
 
 
     /* Tableau 2 : CorporateComponentB */
-    /* {ControllerDataImageCorporate[4].src} */
+    /* {ImagesCorporateControllerData[4].src} */
     {
         src: Image5,
         alt: "Portrait CV Montpellier",
     },
-    /* {ControllerDataImageCorporate[5].src} */
+    /* {ImagesCorporateControllerData[5].src} */
     {
         src: Image6,
         alt: "Portrait professionnel en studio",
     },
-    /* {ControllerDataImageCorporate[6].src} */
+    /* {ImagesCorporateControllerData[6].src} */
     {
         src: Image7,
         alt: "Personnel direction bibliotheque",
     },
-    /* {ControllerDataImageCorporate[7].src} */
+    /* {ImagesCorporateControllerData[7].src} */
     {
         src: Image8,
         alt: "Negociatrice agence immobiliere",
@@ -64,22 +64,22 @@ const ImagesCorporateControllerData: ImagesCorporateControllerDataType[] = [
 
 
     /* Tableau 3 : */
-    /* {ControllerDataImageCorporate[8].src} */
+    /* {ImagesCorporateControllerData[8].src} */
     {
         src: "",
         alt: "",
     },
-    /* {ControllerDataImageCorporate[9].src} */
+    /* {ImagesCorporateControllerData[9].src} */
     {
         src: "",
         alt: "",
     },
-    /* {ControllerDataImageCorporate[10].src} */
+    /* {ImagesCorporateControllerData[10].src} */
     {
         src: "",
         alt: "",
     },
-    /* {ControllerDataImageCorporate[11].src} */
+    /* {ImagesCorporateControllerData[11].src} */
     {
         src: "",
         alt: "",
@@ -88,22 +88,22 @@ const ImagesCorporateControllerData: ImagesCorporateControllerDataType[] = [
 
 
     /* Tableau 4 : */
-    /* {ControllerDataImageCorporate[12].src} */
+    /* {ImagesCorporateControllerData[12].src} */
     {
         src: "",
         alt: "",
     },
-    /* {ControllerDataImageCorporate[13].src} */
+    /* {ImagesCorporateControllerData[13].src} */
     {
         src: "",
         alt: "",
     },
-    /* {ControllerDataImageCorporate[14].src} */
+    /* {ImagesCorporateControllerData[14].src} */
     {
         src: "",
         alt: "",
     },
-    /* {ControllerDataImageCorporate[15].src} */
+    /* {ImagesCorporateControllerData[15].src} */
     {
         src: "",
         alt: "",
@@ -112,22 +112,22 @@ const ImagesCorporateControllerData: ImagesCorporateControllerDataType[] = [
 
 
     /* Tableau 5 : */
-    /* {ControllerDataImageCorporate[16].src} */
+    /* {ImagesCorporateControllerData[16].src} */
     {
         src: "",
         alt: "",
     },
-    /* {ControllerDataImageCorporate[17].src} */
+    /* {ImagesCorporateControllerData[17].src} */
     {
         src: "",
         alt: "",
     },
-    /* {ControllerDataImageCorporate[18].src} */
+    /* {ImagesCorporateControllerData[18].src} */
     {
         src: "",
         alt: "",
     },
-    /* {ControllerDataImageCorporate[19].src} */
+    /* {ImagesCorporateControllerData[19].src} */
     {
         src: "",
         alt: "",
