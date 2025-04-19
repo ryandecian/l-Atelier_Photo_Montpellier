@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { jwtDecode } from "jwt-decode";
-import DataUserType from "../types/dataUserType";
+import DataUserType from "../types/dataUser.type";
 
 const useAuthCheck = () => {
   const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false); // False = non connecté

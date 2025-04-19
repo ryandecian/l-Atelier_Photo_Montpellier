@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { jwtDecode } from "jwt-decode";
 import css from "./LoginRoot.module.css";
-import DataUserType from "../../types/dataUserType";
+import DataUserType from "../../types/dataUser.type";
 
 function LoginRoot() {
   const [email, setEmail] = useState("");
