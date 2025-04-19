@@ -1,5 +1,7 @@
 import style from "../StyleRootComponent.module.css";
 
+import PortraitSoloComponentA from "./ComponentsPortraitSoloRoot/PortraitSoloComponentA/PortraitSoloComponentA";
+
 function PortraitSoloRoot() {
     return (
         <section className={`PortraitSoloRoot ${style.ContainerRootRacine}`}>
@@ -8,6 +10,9 @@ function PortraitSoloRoot() {
                     Portrait Solo : Une séance photos pour renouer avec votre image !
                 </h1>
             </header>
+
+            {/* Test */}
+            <PortraitSoloComponentA />
         </section>
     )
 }
