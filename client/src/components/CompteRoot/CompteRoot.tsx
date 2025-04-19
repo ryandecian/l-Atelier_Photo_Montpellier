@@ -2,7 +2,7 @@ import { useEffect, useState, ChangeEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import style from "./CompteRoot.module.css";
 import useAuthCheck from "../../hook/useAuthCheck";
-import DataUserType from "../../types/dataUserType";
+import DataUserType from "../../types/dataUser.type";
 
 function CompteRoot() {
   const { isLoggedIn, userInfo, isChecking } = useAuthCheck();
