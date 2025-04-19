@@ -1,36 +1,36 @@
 import ImagesControllerDataType from "../../types/ImagesControllerData.Type";
 
-import Image1 from "../../assets/Images/ImageCorporate/chargee-de-location.jpg";
-import Image2 from "../../assets/Images/ImageCorporate/commerciale-immobilier-corporate.jpg";
-import Image3 from "../../assets/Images/ImageCorporate/corporate-assistante-administratice.jpg";
-import Image4 from "../../assets/Images/ImageCorporate/corporate-chercheuse.jpg";
+import Image1 from "../../assets/Images/ImagePortraitSolo/Portrait-LifeStyle-Jardin.jpg";
+import Image2 from "../../assets/Images/ImagePortraitSolo/Portrait-Homme-Extérieur-Flash.jpg";
+import Image3 from "../../assets/Images/ImagePortraitSolo/Portrait-jeune-fille.jpg";
+import Image4 from "../../assets/Images/ImagePortraitSolo/Homme-LifeStyle.jpg";
 
-import Image5 from "../../assets/Images/ImageCorporate/Portrait-cv-montpellier.jpg";
-import Image6 from "../../assets/Images/ImageCorporate/Portrait-professionnel-en-studio.jpg";
-import Image7 from "../../assets/Images/ImageCorporate/Personnel-direction-bibliotheque.jpg";
-import Image8 from "../../assets/Images/ImageCorporate/Negociatrice-agence-immobiliere.jpg";
+import Image5 from "../../assets/Images/ImagePortraitSolo/Portrait-LifeStyle-Exterieur-4.jpg";
+import Image6 from "../../assets/Images/ImagePortraitSolo/Portrait-LifeStyle-Exterieur-5.jpg";
+import Image7 from "../../assets/Images/ImagePortraitSolo/Portrait-LifeStyle-Exterieur-6.jpg";
+import Image8 from "../../assets/Images/ImagePortraitSolo/Portrait-LifeStyle-Exterieur-7.jpg";
 
 const ImagesCorporateControllerData: ImagesControllerDataType[] = [
     /* Tableau 1 : CorporateComponentA */
     /* {ImagesPortraitSoloControllerData[0].src} */
     {
         src: Image1,
-        alt: "",
+        alt: "Portrait LifeStyle Jardin",
     },
     /* {ImagesPortraitSoloControllerData[1].src} */
     {
         src: Image2,
-        alt: "",
+        alt: "Portrait Homme Exterieur Flash",
     },
     /* {ImagesPortraitSoloControllerData[2].src} */
     {
         src: Image3,
-        alt: "",
+        alt: "Portrait jeune fille",
     },
     /* {ImagesPortraitSoloControllerData[3].src} */
     {
         src: Image4,
-        alt: "",
+        alt: "Homme LifeStyle",
     },
 
 

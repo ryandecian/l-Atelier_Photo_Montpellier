@@ -1,3 +1,5 @@
+import ImagesControllerDataType from "../../types/ImagesControllerData.Type";
+
 import Image1 from "../../assets/Images/ImageCorporate/chargee-de-location.jpg";
 import Image2 from "../../assets/Images/ImageCorporate/commerciale-immobilier-corporate.jpg";
 import Image3 from "../../assets/Images/ImageCorporate/corporate-assistante-administratice.jpg";
@@ -8,13 +10,7 @@ import Image6 from "../../assets/Images/ImageCorporate/Portrait-professionnel-en
 import Image7 from "../../assets/Images/ImageCorporate/Personnel-direction-bibliotheque.jpg";
 import Image8 from "../../assets/Images/ImageCorporate/Negociatrice-agence-immobiliere.jpg";
 
-
-interface ImagesCorporateControllerDataType {
-    src: string;
-    alt: string;
-}
-
-const ImagesCorporateControllerData: ImagesCorporateControllerDataType[] = [
+const ImagesCorporateControllerData: ImagesControllerDataType[] = [
     /* Tableau 1 : CorporateComponentA */
     /* {ImagesCorporateControllerData[0].src} */
     {
