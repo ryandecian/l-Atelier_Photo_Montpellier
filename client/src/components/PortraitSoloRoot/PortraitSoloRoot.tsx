@@ -1,5 +1,8 @@
 import style from "../StyleRootComponent.module.css";
 
+import AvisClientPortraitSoloControllerData from "./AvisClientPortraitSoloControllerData";
+import GeneratorCardAvisClient from "../GeneratorCardAvisClient/GeneratorCardAvisClient";
+
 import PortraitSoloRootComponentA from "./ComponentsPortraitSoloRoot/PortraitSoloRootComponentA/PortraitSoloRootComponentA";
 import PortraitSoloRootComponentB from "./ComponentsPortraitSoloRoot/PortraitSoloRootComponentB/PortraitSoloRootComponentB";
 
@@ -15,8 +18,11 @@ function PortraitSoloRoot() {
             {/* Container A */}
             <PortraitSoloRootComponentA />
 
-            {/* Container A */}
+            {/* Container B */}
             <PortraitSoloRootComponentB />
+
+            {/* Container C : Avis Clients */}
+            <GeneratorCardAvisClient avisClients={AvisClientPortraitSoloControllerData} />
         </section>
     )
 }
