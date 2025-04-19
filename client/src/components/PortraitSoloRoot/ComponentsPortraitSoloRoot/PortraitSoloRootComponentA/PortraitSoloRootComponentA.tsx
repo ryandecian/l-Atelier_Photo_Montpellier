@@ -77,6 +77,7 @@ function PortraitSoloRootComponentA() {
                     <li className={style.TextLiP4}>
                         On prend le temps de faire les choses bien, dans une atmosphère détendue, conviviale et créative.
                     </li>
+                    <br />
                 </ul>
 
                 <p className={style.TextP4}>
