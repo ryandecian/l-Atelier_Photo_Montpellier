@@ -14,5 +14,6 @@
 }
 .TitleH4 {
     font-size: calc(var(--h4) + 0.0625rem); /* 19px */
+    margin: 0 1.5rem; /* 0px 24px 0px 24px */
 }
 

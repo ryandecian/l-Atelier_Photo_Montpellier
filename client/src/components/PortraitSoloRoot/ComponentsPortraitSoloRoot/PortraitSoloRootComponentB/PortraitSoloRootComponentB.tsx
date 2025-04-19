@@ -55,6 +55,41 @@ function PortraitSoloRootComponentB() {
                         Vous avez juste envie d’un beau souvenir, pour vous, pour toujours ?
                     </li>
                 </ul>
+                <br />
+            </article>
+
+            <article className={style.ContainerText}>
+                <h3 className={style.TitleH2}>
+                    Un accompagnement complet et bienveillant
+                </h3>
+
+                <h4 className={css.TitleH4}>
+                    Une séance sur-mesure, sans pression
+                </h4>
+                <p className={style.TextP4}>
+                    📍 Au studio à Montpellier ou en lumière naturelle, selon vos envies.
+                </p>
+
+                <h4 className={css.TitleH4}>
+                    Un lieu rassurant ou un extérieur inspirant
+                </h4>
+                <p className={style.TextP4}>
+                    🎯 On avance à votre rythme, en jouant avec les postures, la lumière, les émotions.
+                </p>
+
+                <h4 className={css.TitleH4}>
+                    Direction naturelle et mise en confiance
+                </h4>
+                <p className={style.TextP4}>
+                    💬 Même si vous n’aimez pas l’objectif, je vous guide pas à pas, toujours dans la bienveillance.
+                </p>
+
+                <h4 className={css.TitleH4}>
+                    Des images qui vous font du bien
+                </h4>
+                <p className={style.TextP4}>
+                    📸 Sélection de 10 à 20 photos retouchées avec soin, livrées en galerie privée
+                </p>
             </article>
         </section>
     )
