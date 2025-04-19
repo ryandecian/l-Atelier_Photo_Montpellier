@@ -15,7 +15,7 @@ interface ImagesCorporateControllerDataType {
 }
 
 const ImagesCorporateControllerData: ImagesCorporateControllerDataType[] = [
-    /* Tableau 1 : 4 images Portrait Corporate */
+    /* Tableau 1 : CorporateComponentA */
     /* {ControllerDataImageCorporate[0].src} */
     {
         src: Image1,
@@ -39,7 +39,7 @@ const ImagesCorporateControllerData: ImagesCorporateControllerDataType[] = [
 
 
 
-    /* Tableau 2 : Portrait Corporate */
+    /* Tableau 2 : CorporateComponentB */
     /* {ControllerDataImageCorporate[4].src} */
     {
         src: Image5,
@@ -63,11 +63,11 @@ const ImagesCorporateControllerData: ImagesCorporateControllerDataType[] = [
 
 
 
-
+    /* Tableau 3 : */
     /* {ControllerDataImageCorporate[8].src} */
     {
         src: "",
-        alt: "Life style exterieur",
+        alt: "",
     },
     /* {ControllerDataImageCorporate[9].src} */
     {
@@ -77,51 +77,51 @@ const ImagesCorporateControllerData: ImagesCorporateControllerDataType[] = [
     /* {ControllerDataImageCorporate[10].src} */
     {
         src: "",
-        alt: "portrait couple studio bis",
+        alt: "",
     },
     /* {ControllerDataImageCorporate[11].src} */
     {
         src: "",
-        alt: "portrait couple jeune studio",
+        alt: "",
     },
+
+
+
+    /* Tableau 4 : */
     /* {ControllerDataImageCorporate[12].src} */
     {
         src: "",
-        alt: "portrait tandem exterieur",
+        alt: "",
     },
     /* {ControllerDataImageCorporate[13].src} */
     {
         src: "",
-        alt: "Shooting couple studio",
+        alt: "",
     },
-
-
-
-    /* Tableau 3 : 4 images : Portrait Famille */
     /* {ControllerDataImageCorporate[14].src} */
     {
         src: "",
-        alt: "Les 2 Freres",
+        alt: "",
     },
     /* {ControllerDataImageCorporate[15].src} */
     {
         src: "",
-        alt: "Amies d'Enfance Flash",
+        alt: "",
     },
+
+
+
+    /* Tableau 5 : */
     /* {ControllerDataImageCorporate[16].src} */
     {
         src: "",
-        alt: "Mere Fils portrait interieur",
+        alt: "",
     },
     /* {ControllerDataImageCorporate[17].src} */
     {
         src: "",
-        alt: "life style pere fils",
+        alt: "",
     },
-
-
-
-    /* Tableau 4 : 4 images : Portrait Nouveau Nés */
     /* {ControllerDataImageCorporate[18].src} */
     {
         src: "",
@@ -132,65 +132,6 @@ const ImagesCorporateControllerData: ImagesCorporateControllerDataType[] = [
         src: "",
         alt: "",
     },
-    /* {ControllerDataImageCorporate[20].src} */
-    {
-        src: "",
-        alt: "",
-    },
-    /* {ControllerDataImageCorporate[21].src} */
-    {
-        src: "",
-        alt: "",
-    },
-
-
-
-    /* Tableau 2 : 4 images : Portrait Grossesse */
-    /* {ControllerDataImageCorporate[22].src} */
-    {
-        src: "",
-        alt: "",
-    },
-    /* {ControllerDataImageCorporate[23].src} */
-    {
-        src: "",
-        alt: "",
-    },
-    /* {ControllerDataImageCorporate[24].src} */
-    {
-        src: "",
-        alt: "",
-    },
-    /* {ControllerDataImageCorporate[25].src} */
-    {
-        src: "",
-        alt: "",
-    },
-
-
-
-    /* Tableau 6 : 4 images : Portrait Hobbies */
-    /* {ControllerDataImageCorporate[26].src} */
-    {
-        src: "",
-        alt: "Portrait Serie PeakyBlinders",
-    },
-    /* {ControllerDataImageCorporate[27].src} */
-    {
-        src: "",
-        alt: "Canicross osteopathe",
-    },
-    /* {ControllerDataImageCorporate[28].src} */
-    {
-        src: "",
-        alt: "Portraits Synrie Far West nb",
-    },
-    /* {ControllerDataImageCorporate[29].src} */
-    {
-        src: "",
-        alt: "Gardienne but Portrait Flash 4",
-    },
-
 ];
 
 export default ImagesCorporateControllerData;

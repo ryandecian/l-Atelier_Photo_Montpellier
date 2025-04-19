@@ -1,4 +1,5 @@
 import style from "../../../StyleRootComponent.module.css";
+import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 
 function PortraitSoloComponentA() {
     return (
