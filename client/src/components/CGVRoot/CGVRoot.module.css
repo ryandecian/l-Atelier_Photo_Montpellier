@@ -16,7 +16,7 @@
 }
 .ContainerList {
     align-items: start;
-    width: calc(100% - 5.5rem);
+    width: calc(100% - 2.5rem);
     padding: 0 0 0 2.5rem; /* 0px 0px 0px 40px */
 }
 
@@ -52,6 +52,7 @@
 .TextP4,
 .ElementLi {
     font-size: var(--h4);
+    color: var(--ColorBlack);
     width: calc(100% - 3rem); /* 100% - 48px */
     margin: 0rem 1.5rem; /* 0px 24px 0px 24px */
     border: 0;

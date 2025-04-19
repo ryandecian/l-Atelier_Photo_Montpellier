@@ -46,7 +46,7 @@ function PortraitSoloRootComponentA() {
             />
 
             <article className={style.ContainerText}>
-                <h3 className={css.TitleH4}>
+                <h3 className={css.TitleH3}>
                     Pourquoi choisir l’Atelier Photo Montpellier ?
                 </h3>
 
@@ -55,6 +55,36 @@ function PortraitSoloRootComponentA() {
                     <span className={style.SpanBold}>
                         {" humain "}
                     </span>
+                    le cœur de mon métier. <br />
+                    Mon objectif : que vous repartiez 
+                    <span className={style.SpanBold}>
+                        {" souriant(e), apaisé(e), reboosté(e), "}
+                    </span>
+                    avec des images qui vous ressemblent vraiment. 
+                </p>
+
+                <p className={style.TextP4}>
+                    Je vous accompagne du début à la fin, avec écoute, simplicité et sens du détail :
+                </p>
+
+                <ul className={style.ContainerUl}>
+                    <li className={style.TextLiP4}>
+                        On échange en amont sur vos envies, vos doutes, votre rapport à la photo.
+                    </li>
+                    <li className={style.TextLiP4}>
+                        Je vous guide doucement pendant la séance, sans jamais vous forcer.
+                    </li>
+                    <li className={style.TextLiP4}>
+                        On prend le temps de faire les choses bien, dans une atmosphère détendue, conviviale et créative.
+                    </li>
+                </ul>
+
+                <p className={style.TextP4}>
+                    Le studio est pensé comme un 
+                    <span className={style.SpanBold}>
+                        {" lieu cocon, "}
+                    </span>
+                    et les extérieurs autour de Montpellier offrent des décors inspirants si vous préférez un shooting nature. 
                 </p>
             </article>
         </section>
