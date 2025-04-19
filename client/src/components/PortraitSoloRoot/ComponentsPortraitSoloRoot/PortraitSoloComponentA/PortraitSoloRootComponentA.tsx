@@ -1,7 +1,9 @@
 import style from "../../../StyleRootComponent.module.css";
+import css from "../PortraitSoloStyleRoot.module.css"
 import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
+import ImagesPortraitSoloControllerData from "../../ImagesPortraitSoloControllerData";
 
-function PortraitSoloComponentA() {
+function PortraitSoloRootComponentA() {
     return (
         <section className={style.ContainerRootRacine}>
             <header className={style.ContainerTitle}>
@@ -31,8 +33,32 @@ function PortraitSoloComponentA() {
                     {" vous faire un cadeau sincère."}
                 </span>
             </p>
+
+            <Container4ImagesRoot 
+                img1={ImagesPortraitSoloControllerData[0].src}
+                MetaNameImg1={ImagesPortraitSoloControllerData[0].alt}
+                img2={ImagesPortraitSoloControllerData[1].src}
+                MetaNameImg2={ImagesPortraitSoloControllerData[1].alt}
+                img3={ImagesPortraitSoloControllerData[2].src}
+                MetaNameImg3={ImagesPortraitSoloControllerData[2].alt}
+                img4={ImagesPortraitSoloControllerData[3].src}
+                MetaNameImg4={ImagesPortraitSoloControllerData[3].alt}
+            />
+
+            <article className={style.ContainerText}>
+                <h3 className={css.TitleH4}>
+                    Pourquoi choisir l’Atelier Photo Montpellier ?
+                </h3>
+
+                <p className={style.TextP4}>
+                    Parce que j’ai fait de l'
+                    <span className={style.SpanBold}>
+                        {" humain "}
+                    </span>
+                </p>
+            </article>
         </section>
     )
 }
 
-export default PortraitSoloComponentA;
+export default PortraitSoloRootComponentA;

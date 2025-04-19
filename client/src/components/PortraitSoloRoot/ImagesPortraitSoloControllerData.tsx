@@ -10,7 +10,7 @@ import Image6 from "../../assets/Images/ImagePortraitSolo/Portraits-Homme-domici
 import Image7 from "../../assets/Images/ImagePortraitSolo/Life-style-exterieur-domicile.jpg";
 import Image8 from "../../assets/Images/ImagePortraitSolo/Parc-de-Fontcolombe-Flash.jpg";
 
-const ImagesCorporateControllerData: ImagesControllerDataType[] = [
+const ImagesPortraitSoloControllerData: ImagesControllerDataType[] = [
     /* Tableau 1 : CorporateComponentA */
     /* {ImagesPortraitSoloControllerData[0].src} */
     {
@@ -130,4 +130,4 @@ const ImagesCorporateControllerData: ImagesControllerDataType[] = [
     },
 ];
 
-export default ImagesCorporateControllerData;
+export default ImagesPortraitSoloControllerData;
