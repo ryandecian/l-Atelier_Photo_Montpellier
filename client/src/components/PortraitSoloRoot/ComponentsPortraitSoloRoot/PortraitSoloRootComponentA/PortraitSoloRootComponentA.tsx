@@ -5,7 +5,7 @@ import ImagesPortraitSoloControllerData from "../../ImagesPortraitSoloController
 
 function PortraitSoloRootComponentA() {
     return (
-        <section className={style.ContainerRootRacine}>
+        <section className={style.ContainerRoot}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2}>
                     Un Portrait Feel Good, ce n'est pas qu'un beau cliché !
@@ -77,6 +77,7 @@ function PortraitSoloRootComponentA() {
                     <li className={style.TextLiP4}>
                         On prend le temps de faire les choses bien, dans une atmosphère détendue, conviviale et créative.
                     </li>
+                    <br />
                 </ul>
 
                 <p className={style.TextP4}>
