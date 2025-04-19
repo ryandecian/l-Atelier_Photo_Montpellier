@@ -5,10 +5,10 @@ import Image2 from "../../assets/Images/ImagePortraitSolo/Portrait-Homme-Extéri
 import Image3 from "../../assets/Images/ImagePortraitSolo/Portrait-jeune-fille.jpg";
 import Image4 from "../../assets/Images/ImagePortraitSolo/Homme-LifeStyle.jpg";
 
-import Image5 from "../../assets/Images/ImagePortraitSolo/Portrait-LifeStyle-Exterieur-4.jpg";
-import Image6 from "../../assets/Images/ImagePortraitSolo/Portrait-LifeStyle-Exterieur-5.jpg";
-import Image7 from "../../assets/Images/ImagePortraitSolo/Portrait-LifeStyle-Exterieur-6.jpg";
-import Image8 from "../../assets/Images/ImagePortraitSolo/Portrait-LifeStyle-Exterieur-7.jpg";
+import Image5 from "../../assets/Images/ImagePortraitSolo/Studio-portrait-clair-obscur-homme.jpg";
+import Image6 from "../../assets/Images/ImagePortraitSolo/Portraits-Homme-domicile-Flash-NB.jpg";
+import Image7 from "../../assets/Images/ImagePortraitSolo/Life-style-exterieur-domicile.jpg";
+import Image8 from "../../assets/Images/ImagePortraitSolo/Parc-de-Fontcolombe-Flash.jpg";
 
 const ImagesCorporateControllerData: ImagesControllerDataType[] = [
     /* Tableau 1 : CorporateComponentA */
@@ -39,22 +39,22 @@ const ImagesCorporateControllerData: ImagesControllerDataType[] = [
     /* {ImagesPortraitSoloControllerData[4].src} */
     {
         src: Image5,
-        alt: "",
+        alt: "Studio portrait clair obscur homme",
     },
     /* {ImagesPortraitSoloControllerData[5].src} */
     {
         src: Image6,
-        alt: "",
+        alt: "Portraits Homme domicile Flash NB",
     },
     /* {ImagesPortraitSoloControllerData[6].src} */
     {
         src: Image7,
-        alt: "",
+        alt: "Life style exterieur domicile",
     },
     /* {ImagesPortraitSoloControllerData[7].src} */
     {
         src: Image8,
-        alt: "",
+        alt: "Parc de Fontcolombe Flash",
     },
 
 
