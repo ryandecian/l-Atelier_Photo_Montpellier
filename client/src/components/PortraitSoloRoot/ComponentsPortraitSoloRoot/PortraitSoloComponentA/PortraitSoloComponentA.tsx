@@ -19,6 +19,16 @@ function PortraitSoloComponentA() {
                 <span className={style.SpanBold}>
                     {" s’autoriser à se voir autrement : "}
                 </span>
+                avec bienveillance, authenticité, douceur. <br />
+                Ce n’est pas réservé aux mannequins. Ce n’est pas une question de photogénie. <br />
+                C’est pour vous, qui avez envie de vous reconnecter à votre image, de 
+                <span className={style.SpanBold}>
+                    {" reprendre confiance, "}
+                </span>
+                ou simplement de 
+                <span className={style.SpanBold}>
+                    {" vous faire un cadeau sincère."}
+                </span>
             </p>
         </section>
     )
