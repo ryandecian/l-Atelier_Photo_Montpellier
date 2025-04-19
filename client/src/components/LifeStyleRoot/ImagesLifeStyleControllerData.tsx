@@ -1,4 +1,4 @@
-import ImagesControllerDataType from "../../types/ImagesControllerData.Type";
+import ImagesControllerDataType from "../../types/ImagesControllerData.type";
 
 import Image1 from "../../assets/Images/ImageLifeStyle/Card/Femme-a_la_cigarette.jpg";
 import Image2 from "../../assets/Images/ImageLifeStyle/Card/portrait_duo_exterieur_.jpg";
