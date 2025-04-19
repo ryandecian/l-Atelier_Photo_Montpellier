@@ -1,6 +1,7 @@
 import style from "../StyleRootComponent.module.css";
 
-import PortraitSoloRootComponentA from "./ComponentsPortraitSoloRoot/PortraitSoloComponentA/PortraitSoloRootComponentA";
+import PortraitSoloRootComponentA from "./ComponentsPortraitSoloRoot/PortraitSoloRootComponentA/PortraitSoloRootComponentA";
+import PortraitSoloRootComponentB from "./ComponentsPortraitSoloRoot/PortraitSoloRootComponentB/PortraitSoloRootComponentB";
 
 function PortraitSoloRoot() {
     return (
@@ -11,8 +12,11 @@ function PortraitSoloRoot() {
                 </h1>
             </header>
 
-            {/* Test */}
+            {/* Container A */}
             <PortraitSoloRootComponentA />
+
+            {/* Container A */}
+            <PortraitSoloRootComponentB />
         </section>
     )
 }
