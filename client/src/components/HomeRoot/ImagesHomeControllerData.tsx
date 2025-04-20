@@ -15,22 +15,22 @@ interface ImagesHomeControllerDataType {
 
 const ImagesHomeControllerData: ImagesHomeControllerDataType[] = [
     /* Tableau 1 d'images : 4 images */
-    /* {ControllerDataImageHome[0].src} */
+    /* {ImagesHomeControllerData[0].src} */
     {
         src: Image1,
         alt: "Portrait Studio Corporate",
     },
-    /* {ControllerDataImageHome[1].src} */
+    /* {ImagesHomeControllerData[1].src} */
     {
         src: Image2,
         alt: "Portrait Père et fils LifeStyle",
     },
-    /* {ControllerDataImageHome[2].src} */
+    /* {ImagesHomeControllerData[2].src} */
     {
         src: Image3,
         alt: "Portrait jeune femme lumière naturelle",
     },
-    /* {ControllerDataImageHome[3].src} */
+    /* {ImagesHomeControllerData[3].src} */
     {
         src: Image4,
         alt: "Shooting couple studio",
@@ -39,22 +39,22 @@ const ImagesHomeControllerData: ImagesHomeControllerDataType[] = [
 
 
     /* Tableau 2 d'images : 4 images */
-    /* {ControllerDataImageHome[4].src} */
+    /* {ImagesHomeControllerData[4].src} */
     {
         src: Image5,
         alt: "Les mariés vers la mairie",
     },
-    /* {ControllerDataImageHome[5].src} */
+    /* {ImagesHomeControllerData[5].src} */
     {
         src: Image6,
         alt: "Mariés parc tour magne",
     },
-    /* {ControllerDataImageHome[6].src} */
+    /* {ImagesHomeControllerData[6].src} */
     {
         src: Image7,
         alt: "Photo de mariage Sun Glass",
     },
-    /* {ControllerDataImageHome[7].src} */
+    /* {ImagesHomeControllerData[7].src} */
     {
         src: Image8,
         alt: "Pride et mariage",
