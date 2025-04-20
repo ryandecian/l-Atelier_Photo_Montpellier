@@ -18,7 +18,7 @@ function PortraitSoloPage() {
             1: "Anne SAUNIER", /* 1 mot clés */
             2: "Photographe", /* 2 mots clés */
             3: "Photographe Montpellier", /* 3 mots clés */
-            4: "l'Atellier Photo Montpellier", /* 4 mots clés */
+            4: "l'Atelier Photo Montpellier", /* 4 mots clés */
             5: "LAPM", /* 5 mots clés */
             6: "Service", /* 6 mots clés */
             7: "Portrait Solo", /* 7 mots clés */

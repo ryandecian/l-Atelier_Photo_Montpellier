@@ -18,15 +18,15 @@ function HomePage() {
             1: "Anne SAUNIER", /* 1 mot clés */
             2: "Photographe", /* 2 mots clés */
             3: "Photographe Montpellier", /* 3 mots clés */
-            4: "l'Atellier Photo Montpellier", /* 4 mots clés */
+            4: "l'Atelier Photo Montpellier", /* 4 mots clés */
             5: "LAPM", /* 5 mots clés */
-            6: "", /* 6 mots clés */
-            7: "", /* 7 mots clés */
-            8: "", /* 8 mots clés */
-            9: "", /* 9 mots clés */
-            10: "", /* 10 mots clés */
-            11: "", /* 11 mots clés */
-            12: "", /* 12 mots clés */
+            6: "Meilleur photogaphe montpellier", /* 6 mots clés */
+            7: "Photographe professionnel", /* 7 mots clés */
+            8: "Photographe sud de france", /* 8 mots clés */
+            9: "Photographe Grabels", /* 9 mots clés */
+            10: "Photographe rapide", /* 10 mots clés */
+            11: "Déplacement photographe", /* 11 mots clés */
+            12: "Photographe animalier Montpellier", /* 12 mots clés */
             13: "", /* 13 mots clés */
             14: "", /* 14 mots clés */
             15: "", /* 15 mots clés */
