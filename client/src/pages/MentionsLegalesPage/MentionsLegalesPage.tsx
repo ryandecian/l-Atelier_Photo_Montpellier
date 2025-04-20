@@ -3,24 +3,25 @@ import { Helmet } from "react-helmet-async";
 import NavRoot from "../../components/NavRoot/NavRoot";
 import MentionsLegalesRoot from "../../components/MentionsLegalesRoot/MentionsLegalesRoot";
 import FooterRoot from "../../components/FooterRoot/FooterRoot";
+import ListDataRouter from "../../router/router";
 
 function MentionsLegalesPage() {
     const SEO = {
-        title: "Mentions Légales",
+        title: "Mentions Légales - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
-        description: "Retrouvez toute les mentions légales du site",
-        url: "", /*URL de la page*/
-        img: "",
+        description: "Mentions légales de l’Atelier Photo Montpellier. Retrouvez toutes les informations juridiques concernant le site, l’éditeur, l’hébergement et la propriété intellectuelle.",
+        url: `${import.meta.env.URL_CLIENT_LAPM}${ListDataRouter[1].path}`, /*URL de la page*/
+        img: `${import.meta.env.URL_CLIENT_LAPM}/Dans-les-yeux-de-Sacha.jpg`, /*Lien URL de l'image*/
         twitterUrlImg: "", /*Lien URL de l'image*/
         twitterCompte: "", /*@MonCompteTwitter*/ /*Permet d'identifier le compte officiel*/
         keywords: {
             1: "Anne SAUNIER", /* 1 mot clés */
-            2: "", /* 2 mots clés */
-            3: "", /* 3 mots clés */
-            4: "", /* 4 mots clés */
-            5: "", /* 5 mots clés */
-            6: "", /* 6 mots clés */
-            7: "", /* 7 mots clés */
+            2: "Photographe", /* 2 mots clés */
+            3: "Photographe Montpellier", /* 3 mots clés */
+            4: "l'Atelier Photo Montpellier", /* 4 mots clés */
+            5: "LAPM", /* 5 mots clés */
+            6: "Mentions Légales LAPM", /* 6 mots clés */
+            7: "Mentions Légales l'Atelier Photo Montpellier", /* 7 mots clés */
             8: "", /* 8 mots clés */
             9: "", /* 9 mots clés */
             10: "", /* 10 mots clés */
