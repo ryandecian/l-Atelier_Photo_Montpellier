@@ -12,7 +12,7 @@ function CorporateRoot() {
 
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
-                    {"Portrait Corporate : bien plus qu'une simple photo !"}
+                    {"Portrait Corporate : valorisez votre image professionnelle !"}
                 </h1>
             </header>
 
