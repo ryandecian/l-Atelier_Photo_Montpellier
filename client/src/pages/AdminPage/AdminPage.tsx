@@ -5,7 +5,7 @@ import FooterRoot from "../../components/FooterRoot/FooterRoot";
 
 function AdminPage() {
     return (
-        <div className={`AdminPage ${style.Page}`}>
+        <section className={`AdminPage ${style.Page}`}>
             <header className={style.Header}>
                 <NavRoot />
             </header>
@@ -15,7 +15,7 @@ function AdminPage() {
             <footer className={style.Footer}>
                 <FooterRoot />
             </footer>
-        </div>
+        </section>
     );
 }
 

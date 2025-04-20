@@ -3,32 +3,33 @@ import NavRoot from "../../components/NavRoot/NavRoot";
 import style from "../stylePage.module.css";
 import LifeStyleRoot from "../../components/LifeStyleRoot/LifeStyleRoot";
 import FooterRoot from "../../components/FooterRoot/FooterRoot";
+import ListDataRouter from "../../router/router";
 
 function LifeStylePage() {
     const SEO = {
-        title: "LifeStyle Page",
+        title: "Portrait LifeStyle - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
-        description: "Capturez l'émotion du regard",
-        url: "https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250/", /*URL de la page*/
-        img: "https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250/dans-les-yeux-de-sacha.jpg", /*Lien URL de l'image*/
+        description: "Découvrez le Portrait LifeStyle : des photos naturelles, spontanées, qui racontent votre histoire. Un regard unique signé l'Atelier Photo Montpellier.",
+        url: `${import.meta.env.URL_CLIENT_LAPM}${ListDataRouter[12].path}`, /*URL de la page*/
+        img: `${import.meta.env.URL_CLIENT_LAPM}/Dans-les-yeux-de-Sacha.jpg`, /*Lien URL de l'image*/
         twitterUrlImg: "", /*Lien URL de l'image*/
         twitterCompte: "", /*@MonCompteTwitter*/ /*Permet d'identifier le compte officiel*/
         keywords: {
             1: "Anne SAUNIER", /* 1 mot clés */
             2: "Photographe", /* 2 mots clés */
-            3: "", /* 3 mots clés */
-            4: "", /* 4 mots clés */
-            5: "", /* 5 mots clés */
-            6: "", /* 6 mots clés */
-            7: "", /* 7 mots clés */
-            8: "", /* 8 mots clés */
-            9: "", /* 9 mots clés */
-            10: "", /* 10 mots clés */
-            11: "", /* 11 mots clés */
-            12: "", /* 12 mots clés */
-            13: "", /* 13 mots clés */
-            14: "", /* 14 mots clés */
-            15: "", /* 15 mots clés */
+            3: "Photographe Montpellier", /* 3 mots clés */
+            4: "l'Atelier Photo Montpellier", /* 4 mots clés */
+            5: "LAPM", /* 5 mots clés */
+            6: "Service", /* 6 mots clés */
+            7: "Portrait LifeStyle", /* 7 mots clés */
+            8: "Portrait grossesse", /* 8 mots clés */
+            9: "Portrait nouveau né", /* 9 mots clés */
+            10: "Portrait Solo", /* 10 mots clés */
+            11: "Portrait Feel Good", /* 11 mots clés */
+            12: "Portrait animalier", /* 12 mots clés */
+            13: "Portrait couple", /* 13 mots clés */
+            14: "Portrait Famille", /* 14 mots clés */
+            15: "Portrait hobbie", /* 15 mots clés */
         }, /* 10 a 15 mots max */
         type : {
             website: "website", /*(Valeur par défaut) indique qu'il s'agit d'un site web classique.*/

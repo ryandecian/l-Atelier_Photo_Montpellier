@@ -3,26 +3,27 @@ import { Helmet } from "react-helmet-async";
 import NavRoot from "../../components/NavRoot/NavRoot";
 import CGVRoot from "../../components/CGVRoot/CGVRoot";
 import FooterRoot from "../../components/FooterRoot/FooterRoot";
+import ListDataRouter from "../../router/router";
 
 function CGVPage() {
     const SEO = {
-        title: "Conditions générales de vente",
+        title: "Conditions générales de vente - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
-        description: "Conditions générales de vente du site l'Atelier Photo Montpellier",
-        url: "", /*URL de la page*/
-        img: "",
+        description: "Retrouvez toutes nos conditions générales de vente du site l'Atelier Photo Montpellier",
+        url: `${import.meta.env.URL_CLIENT_LAPM}${ListDataRouter[9].path}`, /*URL de la page*/
+        img: `${import.meta.env.URL_CLIENT_LAPM}/Dans-les-yeux-de-Sacha.jpg`, /*Lien URL de l'image*/
         twitterUrlImg: "", /*Lien URL de l'image*/
         twitterCompte: "", /*@MonCompteTwitter*/ /*Permet d'identifier le compte officiel*/
         keywords: {
             1: "Anne SAUNIER", /* 1 mot clés */
-            2: "", /* 2 mots clés */
-            3: "", /* 3 mots clés */
-            4: "", /* 4 mots clés */
-            5: "", /* 5 mots clés */
-            6: "", /* 6 mots clés */
-            7: "", /* 7 mots clés */
-            8: "", /* 8 mots clés */
-            9: "", /* 9 mots clés */
+            2: "Photographe", /* 2 mots clés */
+            3: "Photographe Montpellier", /* 3 mots clés */
+            4: "l'Atelier Photo Montpellier", /* 4 mots clés */
+            5: "LAPM", /* 5 mots clés */
+            6: "CGV LAPM", /* 6 mots clés */
+            7: "CGV l'Atelier Photo Montpellier", /* 7 mots clés */
+            8: "Conditions Générales de Vente LAPM", /* 8 mots clés */
+            9: "Conditions Générales de Vente l'Atelier Photo Montpellier", /* 9 mots clés */
             10: "", /* 10 mots clés */
             11: "", /* 11 mots clés */
             12: "", /* 12 mots clés */
@@ -42,7 +43,7 @@ function CGVPage() {
      const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
 
      return (
-        <div className={`CGVPage ${style.Page}`}>
+        <section className={`CGVPage ${style.Page}`}>
             <Helmet>
                   {/* Balises SEO */}
                      {/* Balise pour indexation général */}
@@ -85,7 +86,7 @@ function CGVPage() {
             <footer className={style.Footer}>
                 <FooterRoot />
             </footer>
-        </div>
+        </section>
     )
 }
 
