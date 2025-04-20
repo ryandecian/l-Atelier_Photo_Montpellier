@@ -1,7 +1,7 @@
 import ImagesControllerDataType from "../../types/ImagesControllerData.type";
 
 import Image1 from "../../assets/Images/ImagePortraitSolo/Portrait-LifeStyle-Jardin.jpg";
-import Image2 from "../../assets/Images/ImagePortraitSolo/Portrait-Homme-Extérieur-Flash.jpg";
+import Image2 from "../../assets/Images/ImagePortraitSolo/Portrait-Homme-Exterieur-Flash.jpg";
 import Image3 from "../../assets/Images/ImagePortraitSolo/Portrait-jeune-fille.jpg";
 import Image4 from "../../assets/Images/ImagePortraitSolo/Homme-LifeStyle.jpg";
 

@@ -16,32 +16,35 @@ fi
 clean_name() {
     local name="$1"
 
-    # Remplacer les espaces par des "_"
-    name="${name// /_}"
+    # Séparer nom et extension
+    local filename="${name%.*}"
+    local extension="${name##*.}"
 
-    # Supprimer les caractères accentués et spéciaux avec un mapping explicite
-    name=$(echo "$name" | tr 'àáâäãåçéèêëíìîïñóòôöõøùúûüýÿ' 'aaaaaaceeeeiiiinooooouuuuyy')
+    # Remplacer les espaces et underscores par des tirets
+    filename=$(echo "$filename" | tr ' _' '-')
 
-    # Supprimer les caractères spéciaux non désirés (guillemets, apostrophes, etc.)
-    name=$(echo "$name" | sed 's/[^a-zA-Z0-9._-]//g')
+    # Enlever les accents via iconv (UTF-8 vers ASCII //IGNORE)
+    filename=$(echo "$filename" | iconv -f UTF-8 -t ASCII//TRANSLIT)
 
-    # Retourner le nom nettoyé
-    echo "$name"
+    # Supprimer les caractères spéciaux non désirés
+    filename=$(echo "$filename" | sed 's/[^a-zA-Z0-9.-]//g')
+
+    # Supprimer les tirets ou underscores ou espaces en fin de nom
+    filename=$(echo "$filename" | sed 's/[-_ ]\+$//')
+
+    echo "$filename.$extension"
 }
 
-# Parcourir tous les fichiers du dossier
-for file in "$1"/*; do
-    if [ -f "$file" ]; then
-        dir=$(dirname "$file")
-        base=$(basename "$file")
-        new_name=$(clean_name "$base")
+# Parcourir tous les fichiers (récursivement) et traiter les images uniquement
+find "$1" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.webp" -o -iname "*.gif" \) | while read -r file; do
+    dir=$(dirname "$file")
+    base=$(basename "$file")
+    new_name=$(clean_name "$base")
 
-        # Vérifier si le nom a changé avant de renommer
-        if [ "$base" != "$new_name" ]; then
-            mv "$file" "$dir/$new_name"
-            echo "Renommé : $base → $new_name"
-        fi
+    if [ "$base" != "$new_name" ]; then
+        mv "$file" "$dir/$new_name"
+        echo "Renommé : $base → $new_name"
     fi
 done
 
-echo "✅ Tous les fichiers ont été renommés avec succès !"
+echo "✅ Tous les fichiers ont été renommés proprement !"
