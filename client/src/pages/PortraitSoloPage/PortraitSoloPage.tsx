@@ -3,14 +3,15 @@ import { Helmet } from "react-helmet-async";
 import NavRoot from "../../components/NavRoot/NavRoot";
 import PortraitSoloRoot from "../../components/PortraitSoloRoot/PortraitSoloRoot";
 import FooterRoot from "../../components/FooterRoot/FooterRoot";
+import ListDataRouter from "../../router/router";
 
 function PortraitSoloPage() {
     const SEO = {
         title: "Service Portrait Solo - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
         description: "Offrez vous un regard nouveau sur vous-même !",
-        url: "", /*URL de la page*/
-        img: "",
+        url: `${import.meta.env.URL_CLIENT_LAPM}${ListDataRouter[14].path}`, /*URL de la page*/
+        img: `${import.meta.env.URL_CLIENT_LAPM}/Dans-les-yeux-de-Sacha.jpg`, /*Lien URL de l'image*/
         twitterUrlImg: "", /*Lien URL de l'image*/
         twitterCompte: "", /*@MonCompteTwitter*/ /*Permet d'identifier le compte officiel*/
         keywords: {
