@@ -9,7 +9,7 @@ function PortraitSoloPage() {
     const SEO = {
         title: "Service Portrait Solo - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
-        description: "Offrez vous un regard nouveau sur vous-même !",
+        description: "Portrait Solo à Montpellier – Une séance photo pour se recentrer, se révéler et se faire du bien. Un regard bienveillant par Anne SAUNIER, photographe professionnelle.",
         url: `${import.meta.env.URL_CLIENT_LAPM}${ListDataRouter[14].path}`, /*URL de la page*/
         img: `${import.meta.env.URL_CLIENT_LAPM}/Dans-les-yeux-de-Sacha.jpg`, /*Lien URL de l'image*/
         twitterUrlImg: "", /*Lien URL de l'image*/
