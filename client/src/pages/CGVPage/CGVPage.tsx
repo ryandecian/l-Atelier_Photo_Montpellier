@@ -7,7 +7,7 @@ import ListDataRouter from "../../router/router";
 
 function CGVPage() {
     const SEO = {
-        title: "Conditions générales de vente - l'Atelier Photo Montpellier",
+        title: "Consultez les conditions générales de vente de l’Atelier Photo Montpellier. Informations légales sur les prestations photographiques proposées par Anne SAUNIER.",
         autor: "Anne SAUNIER",
         description: "Retrouvez toutes nos conditions générales de vente du site l'Atelier Photo Montpellier",
         url: `${import.meta.env.URL_CLIENT_LAPM}${ListDataRouter[9].path}`, /*URL de la page*/

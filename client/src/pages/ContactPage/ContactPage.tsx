@@ -9,7 +9,7 @@ function ContactPage() {
     const SEO = {
         title: "Contact - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
-        description: "Vous des questions ? Contactez-moi !",
+        description: "Une idée, un projet photo ? Contactez Anne SAUNIER par téléphone ou email. À l’Atelier Photo Montpellier, chaque demande est traitée avec attention et réactivité.",
         url: `${import.meta.env.URL_CLIENT_LAPM}${ListDataRouter[3].path}`, /*URL de la page*/
         img: `${import.meta.env.URL_CLIENT_LAPM}/Dans-les-yeux-de-Sacha.jpg`, /*Lien URL de l'image*/
         twitterUrlImg: "", /*Lien URL de l'image*/
