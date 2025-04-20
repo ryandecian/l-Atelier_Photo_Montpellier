@@ -9,7 +9,7 @@ function CorporatePage() {
     const SEO = {
         title: "Portrait Corporate - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
-        description: "Une séance photo pour marquer les esprits !",
+        description: "Portrait Corporate à Montpellier – Une séance photo professionnelle pour valoriser votre image, inspirer confiance et marquer les esprits. Par Anne SAUNIER, photographe à l’Atelier Photo Montpellier.",
         url: `${import.meta.env.URL_CLIENT_LAPM}${ListDataRouter[11].path}`, /*URL de la page*/
         img: `${import.meta.env.URL_CLIENT_LAPM}/Dans-les-yeux-de-Sacha.jpg`, /*Lien URL de l'image*/
         twitterUrlImg: "", /*Lien URL de l'image*/
