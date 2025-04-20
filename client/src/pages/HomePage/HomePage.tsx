@@ -9,7 +9,7 @@ function HomePage() {
     const SEO = {
         title: "Accueil - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
-        description: "Capturez l'émotion du regard",
+        description: "Photographe professionnelle à Montpellier, Anne SAUNIER vous invite à découvrir l’univers de l’Atelier Photo : portraits artistiques, séances lifestyle, et émotions capturées avec justesse.",
         url: `${import.meta.env.URL_CLIENT_LAPM}${ListDataRouter[0].path}`, /*URL de la page*/
         img: `${import.meta.env.URL_CLIENT_LAPM}/Dans-les-yeux-de-Sacha.jpg`, /*Lien URL de l'image*/
         twitterUrlImg: "", /*Lien URL de l'image*/
