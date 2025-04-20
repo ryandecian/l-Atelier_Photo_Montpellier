@@ -6,7 +6,7 @@ import FooterRoot from "../../components/FooterRoot/FooterRoot";
 
 function CGVPage() {
     const SEO = {
-        title: "Conditions générales de vente",
+        title: "Conditions générales de vente - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
         description: "Conditions générales de vente du site l'Atelier Photo Montpellier",
         url: "", /*URL de la page*/
@@ -15,8 +15,8 @@ function CGVPage() {
         twitterCompte: "", /*@MonCompteTwitter*/ /*Permet d'identifier le compte officiel*/
         keywords: {
             1: "Anne SAUNIER", /* 1 mot clés */
-            2: "", /* 2 mots clés */
-            3: "", /* 3 mots clés */
+            2: "CGV", /* 2 mots clés */
+            3: "Condition Général de Vente", /* 3 mots clés */
             4: "", /* 4 mots clés */
             5: "", /* 5 mots clés */
             6: "", /* 6 mots clés */
@@ -42,7 +42,7 @@ function CGVPage() {
      const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
 
      return (
-        <div className={`CGVPage ${style.Page}`}>
+        <section className={`CGVPage ${style.Page}`}>
             <Helmet>
                   {/* Balises SEO */}
                      {/* Balise pour indexation général */}
@@ -85,7 +85,7 @@ function CGVPage() {
             <footer className={style.Footer}>
                 <FooterRoot />
             </footer>
-        </div>
+        </section>
     )
 }
 

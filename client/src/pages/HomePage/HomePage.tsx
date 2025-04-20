@@ -3,22 +3,23 @@ import NavTargetHomeRoot from "../../components/NavTargetHomeRoot/NavTargetHomeR
 import css from "../stylePage.module.css"
 import HomeRoot from "../../components/HomeRoot/HomeRoot";
 import FooterRoot from "../../components/FooterRoot/FooterRoot";
+import ListDataRouter from "../../router/router";
 
 function HomePage() {
     const SEO = {
-        title: "Accueil - ",
+        title: "Accueil - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
         description: "Capturez l'émotion du regard",
-        url: "https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250/", /*URL de la page*/
-        img: "https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250/dans-les-yeux-de-sacha.jpg", /*Lien URL de l'image*/
+        url: `${import.meta.env.URL_CLIENT_LAPM}${ListDataRouter[0].path}`, /*URL de la page*/
+        img: `${import.meta.env.URL_CLIENT_LAPM}/Dans-les-yeux-de-Sacha.jpg`, /*Lien URL de l'image*/
         twitterUrlImg: "", /*Lien URL de l'image*/
         twitterCompte: "", /*@MonCompteTwitter*/ /*Permet d'identifier le compte officiel*/
         keywords: {
             1: "Anne SAUNIER", /* 1 mot clés */
             2: "Photographe", /* 2 mots clés */
-            3: "", /* 3 mots clés */
-            4: "", /* 4 mots clés */
-            5: "", /* 5 mots clés */
+            3: "Photographe Montpellier", /* 3 mots clés */
+            4: "l'Atellier Photo Montpellier", /* 4 mots clés */
+            5: "LAPM", /* 5 mots clés */
             6: "", /* 6 mots clés */
             7: "", /* 7 mots clés */
             8: "", /* 8 mots clés */
@@ -42,7 +43,7 @@ function HomePage() {
      const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
 
      return (
-        <div className={`HomePage ${css.Page}`}>
+        <section className={`HomePage ${css.Page}`}>
             <Helmet>
                   {/* Balises SEO */}
                      {/* Balise pour indexation général */}
@@ -85,7 +86,7 @@ function HomePage() {
             <footer className={css.Footer}>
                 <FooterRoot />
             </footer>
-        </div>
+        </section>
     )
 }
 

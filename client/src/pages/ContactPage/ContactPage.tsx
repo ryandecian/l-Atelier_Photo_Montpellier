@@ -6,7 +6,7 @@ import FooterRoot from "../../components/FooterRoot/FooterRoot";
 
 function ContactPage() {
     const SEO = {
-        title: "Accueil - ",
+        title: "Contact - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
         description: "Vous des questions ? Contactez-moi !",
         url: "https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250/", /*URL de la page*/
@@ -16,10 +16,10 @@ function ContactPage() {
         keywords: {
             1: "Anne SAUNIER", /* 1 mot clés */
             2: "Photographe", /* 2 mots clés */
-            3: "", /* 3 mots clés */
-            4: "", /* 4 mots clés */
-            5: "", /* 5 mots clés */
-            6: "", /* 6 mots clés */
+            3: "Contact", /* 3 mots clés */
+            4: "Téléphone", /* 4 mots clés */
+            5: "Email", /* 5 mots clés */
+            6: "LAPM", /* 6 mots clés */
             7: "", /* 7 mots clés */
             8: "", /* 8 mots clés */
             9: "", /* 9 mots clés */
@@ -42,7 +42,7 @@ function ContactPage() {
      const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
 
      return (
-        <div className={`ContactPage ${style.Page}`}>
+        <section className={`ContactPage ${style.Page}`}>
             <Helmet>
                   {/* Balises SEO */}
                      {/* Balise pour indexation général */}
@@ -85,7 +85,7 @@ function ContactPage() {
             <footer className={style.Footer}>
                 <FooterRoot />
             </footer>
-        </div>
+        </section>
     )
 }
 

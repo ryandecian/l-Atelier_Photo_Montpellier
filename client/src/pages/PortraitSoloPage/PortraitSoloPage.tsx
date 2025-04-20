@@ -8,19 +8,19 @@ function PortraitSoloPage() {
     const SEO = {
         title: "Service Portrait Solo - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
-        description: "Offrez -vous un regard nouveau sur vous-même !",
+        description: "Offrez vous un regard nouveau sur vous-même !",
         url: "", /*URL de la page*/
         img: "",
         twitterUrlImg: "", /*Lien URL de l'image*/
         twitterCompte: "", /*@MonCompteTwitter*/ /*Permet d'identifier le compte officiel*/
         keywords: {
             1: "Anne SAUNIER", /* 1 mot clés */
-            2: "", /* 2 mots clés */
-            3: "", /* 3 mots clés */
-            4: "", /* 4 mots clés */
-            5: "", /* 5 mots clés */
-            6: "", /* 6 mots clés */
-            7: "", /* 7 mots clés */
+            2: "Photographe", /* 2 mots clés */
+            3: "Photographe Montpellier", /* 3 mots clés */
+            4: "l'Atellier Photo Montpellier", /* 4 mots clés */
+            5: "LAPM", /* 5 mots clés */
+            6: "Service", /* 6 mots clés */
+            7: "Portrait Solo", /* 7 mots clés */
             8: "", /* 8 mots clés */
             9: "", /* 9 mots clés */
             10: "", /* 10 mots clés */
@@ -42,7 +42,7 @@ function PortraitSoloPage() {
      const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
 
      return (
-        <div className={`PortraitSolo ${style.Page}`}>
+        <section className={`PortraitSolo ${style.Page}`}>
             <Helmet>
                   {/* Balises SEO */}
                      {/* Balise pour indexation général */}
@@ -85,7 +85,7 @@ function PortraitSoloPage() {
             <footer className={style.Footer}>
                 <FooterRoot />
             </footer>
-        </div>
+        </section>
     )
 }
 

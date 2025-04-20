@@ -6,7 +6,7 @@ import FooterRoot from "../../components/FooterRoot/FooterRoot";
 
 function CorporatePage() {
     const SEO = {
-        title: "Corporate Page",
+        title: "Corporate - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
         description: "Capturez l'émotion du regard",
         url: "https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250/", /*URL de la page*/
@@ -16,9 +16,9 @@ function CorporatePage() {
         keywords: {
             1: "Anne SAUNIER", /* 1 mot clés */
             2: "Photographe", /* 2 mots clés */
-            3: "", /* 3 mots clés */
-            4: "", /* 4 mots clés */
-            5: "", /* 5 mots clés */
+            3: "LAPM", /* 3 mots clés */
+            4: "Corporate", /* 4 mots clés */
+            5: "Service", /* 5 mots clés */
             6: "", /* 6 mots clés */
             7: "", /* 7 mots clés */
             8: "", /* 8 mots clés */
@@ -42,7 +42,7 @@ function CorporatePage() {
      const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
 
      return (
-        <div className={`CorporatePage ${style.Page}`}>
+        <section className={`CorporatePage ${style.Page}`}>
             <Helmet>
                   {/* Balises SEO */}
                      {/* Balise pour indexation général */}
@@ -85,7 +85,7 @@ function CorporatePage() {
             <footer className={style.Footer}>
                 <FooterRoot />
             </footer>
-        </div>
+        </section>
     )
 }
 
