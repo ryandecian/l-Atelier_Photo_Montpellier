@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+
+  front-end:
+    build:
+      context: ./front-end
+    container_name: client-lapm
+    port: 
+      - "8087:80"  # le port externe 8087 redirige vers le port 80 interne nginx
