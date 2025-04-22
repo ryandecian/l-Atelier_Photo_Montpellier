@@ -1,26 +1,37 @@
-# Partie 1 : Builder l'app React avec Vite
-# Étape 1 : Choisir une base officielle
+# Étape 1 : Build avec Node + Alpine
 FROM node:23-alpine AS build
 
-# Étape 2 : Créer un dossier pour ton app
+# Crée un dossier de travail
 WORKDIR /app
 
-# Étape 3 : Copier les fichiers dans l’image
+# Copie uniquement les fichiers nécessaires à l'installation
 COPY package*.json ./
+
+# Installe les dépendances
 RUN npm install
 
-# Étape 4 : Ajouter le reste du code de l'app
+# Copie le reste du projet
 COPY . .
+
+# Lance le build Vite (génère le dossier dist/)
 RUN npm run build
 
-# Partie 2 : Servir l'app avec NGINX Alpine
-FROM nginx:alpine
+# Étape 2 : Serveur de production avec Nginx + Alpine
+FROM nginx:23-alpine
 
-# Supprimer les fichiers par défaut de Nginx
+# Nettoie les fichiers Nginx par défaut
 RUN rm -rf /usr/share/nginx/html/*
 
-# Copier les fichiers buildés dans le dossier Nginx
+# Copie le build depuis l'étape précédente
 COPY --from=build /app/dist /usr/share/nginx/html
 
+# Ouvre le port 80 (HTTP standard)
 EXPOSE 80
+
+# Commande de démarrage
 CMD ["nginx", "-g", "daemon off;"]
+
+
+# nginx → exécute le serveur
+# -g → permet de passer des options globales
+# 'daemon off;' → dit à nginx de ne pas se lancer en arrière-plan, ce qui est crucial dans Docker !
