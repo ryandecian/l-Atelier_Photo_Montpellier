@@ -3,6 +3,10 @@ import express, { query, Request, Response, NextFunction } from "express";
 import router from "./router/router";
 import cors from "cors";
 import cookieParser from "cookie-parser";
+import dotenv from "dotenv";
+
+dotenv.config({ path: `.env.${process.env.NODE_ENV}` });
+
 
 const app = express();
 const port = 8080;
