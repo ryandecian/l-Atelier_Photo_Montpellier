@@ -1,9 +1,25 @@
 version: '3.8'
 services:
 
-  front-end:
+  client:
     build:
-      context: ./front-end
-    container_name: client-lapm
-    port: 
+      context: ./client
+    container_name: client
+    ports: 
       - "8087:80"  # le port externe 8087 redirige vers le port 80 interne nginx
+    restart: always # Permet de redémarrer le conteneur automatiquement en cas de plantage
+    environment:
+      - DOMAIN=https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250
+
+  server:
+    build:
+      context: ./server
+    container_name: server
+    ports:
+      - "8088:8080"  # le port externe 8088 redirige vers le port 8080 interne de l'application
+    restart: always # Permet de redémarrer le conteneur automatiquement en cas de plantage
+    environment:
+      - NODE_ENV=production
+      - DOMAIN=https://lapm-server.decian.ddnsfree.com:1270
+    depends_on:
+      - db
