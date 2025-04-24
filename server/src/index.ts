@@ -4,8 +4,10 @@ import router from "./router/router";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import dotenv from "dotenv";
+import path from "path";
 
-dotenv.config({ path: `.env.${process.env.NODE_ENV}` });
+const ENV = process.env.NODE_ENV || "development";
+const envPath = path.resolve(__dirname, `../.env.${ENV}`);
 
 
 const app = express();
