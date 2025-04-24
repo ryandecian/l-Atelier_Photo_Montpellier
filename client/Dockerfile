@@ -25,6 +25,9 @@ RUN rm -rf /usr/share/nginx/html/*
 # Copie le build depuis l'étape précédente
 COPY --from=build /app/dist /usr/share/nginx/html
 
+# Copie la config Nginx personnalisée ici (incluant error_page 404 etc.)
+COPY ./nginx.conf /etc/nginx/conf.d/default.conf
+
 # Ouvre le port 80 (HTTP standard)
 EXPOSE 80
 
