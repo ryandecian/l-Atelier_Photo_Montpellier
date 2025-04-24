@@ -1,21 +1,16 @@
 // Import général
-import express, { query, Request, Response, NextFunction } from "express";
+import express, { Request, Response } from "express";
 import router from "./router/router";
 import cors from "cors";
 import cookieParser from "cookie-parser";
-import dotenv from "dotenv";
-
-dotenv.config({ path: `.env.${process.env.NODE_ENV}` });
-
+import "./config/dotenv.config";
+import corsOrigins from "./config/CorsOrigins.config";
 
 const app = express();
 const port = 8080;
 
 app.use(cors({
-  origin: [
-    "http://localhost:4000",
-    "http://192.168.14.248:4000"
-  ],
+  origin: corsOrigins(),
   credentials: true,
 }));
 
