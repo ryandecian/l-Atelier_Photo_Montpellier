@@ -1,9 +1,15 @@
 import { ENV } from "./dotenv.config";
 
+/**
+ * Vérification de la variable d'environnement PORT_SERVER
+ */
+
 function Port_Server() {
     const port: string | undefined = process.env.PORT_SERVER;
     if (port === undefined) {
+
         let ENV_ERROR: string = "";
+        
         if (ENV === "production") {
             ENV_ERROR = "docker.root";
         }
