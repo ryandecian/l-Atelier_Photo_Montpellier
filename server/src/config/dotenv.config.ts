@@ -27,6 +27,11 @@ if (!fs.existsSync(envPath)) {
 }
 
 // Charge les variables d'environnement
-dotenv.config({ path: envPath });
+
+  // Charge le fichien .env.base pour les variables de base communes a tous les environnements
+  dotenv.config({ path: path.resolve(__dirname, '../.env.base') });
+  
+  // Charge le fichier .env correspondant à l'environnement (dévelopment ou production)
+  dotenv.config({ path: envPath });
 
 export {ENV, envPath};
