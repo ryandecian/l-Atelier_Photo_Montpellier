@@ -1,3 +1,5 @@
+// Middleware destiné à être suprimé dans le futur
+
 import transporter from "./mailer";
 import { Request, Response, NextFunction } from "express";
 import "dotenv/config";

@@ -5,9 +5,10 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 import "./config/dotenv.config";
 import corsOrigins from "./config/CorsOrigins.config";
+import Port_Server from "./config/port.config";
 
 const app = express();
-const port = 8080;
+const port = Port_Server();
 
 app.use(cors({
   origin: corsOrigins(),
@@ -55,5 +56,5 @@ app.use( async (req: Request, res: Response) => {
  * Le server se lance sur le port 8080
  */
 app.listen(port, () => {
-    console.log(`Server lancé sur http://localhost:${port}`);
+    console.log(`Server lancé sur ${process.env.DOMAIN_SERVER}:${port}`);
 });
