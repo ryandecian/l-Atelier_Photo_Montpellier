@@ -23,7 +23,7 @@ function CorsOrigins() {
 
     const currentCorsOrigins: CorsOriginsType = {
         development: [
-            "http://localhost:4000",
+            DOMAIN_FRONT,
             "http://192.168.14.248:4000"
         ],
         production: [
