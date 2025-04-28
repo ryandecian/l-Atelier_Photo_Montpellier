@@ -5,7 +5,7 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 import "./config/dotenv.config";
 import corsOrigins from "./config/CorsOrigins.config";
-import Port_Server from "./config/port.config";
+import Port_Server from "./config/PORT_SERVER.config";
 
 const app = express();
 const port = Port_Server();
