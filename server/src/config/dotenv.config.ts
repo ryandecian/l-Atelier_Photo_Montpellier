@@ -2,6 +2,7 @@ import dotenv from 'dotenv';
 import path from 'path';
 import fs from 'fs';
 import EnvironnementType from '../types/environnement.config.type';
+import chalk from 'chalk';
 
 /**
  * Détermine le fichier .env à charger
@@ -11,8 +12,9 @@ import EnvironnementType from '../types/environnement.config.type';
  */
 const VerifENV = (process.env.NODE_ENV || "development") as EnvironnementType;
 const ENV: EnvironnementType = VerifENV;
+const ENV_Base: string = "base";
 const envPath: string = path.resolve(__dirname, `../../.env.${ENV}`);
-const envBasePath: string = path.resolve(__dirname, '../../.env.base');
+const envBasePath: string = path.resolve(__dirname, `../../.env.${ENV_Base}`);
 
 // Vérifie si le fichier .env.base existe
 if (!fs.existsSync(envBasePath)) {
@@ -44,10 +46,12 @@ if (!fs.existsSync(envPath)) {
 
 // Charge les variables d'environnement
 
-  // Charge le fichien .env.base pour les variables de base communes a tous les environnements
+  // Charge le fichier .env.base pour les variables de base communes a tous les environnements
   dotenv.config({ path: envBasePath });
-
+  console.info(chalk.magenta(`Environnement .env.${ENV_Base} chargé !`));
+  
   // Charge le fichier .env correspondant à l'environnement (dévelopment ou production)
   dotenv.config({ path: envPath });
+  console.info(chalk.magenta(`Environnement .env.${ENV} chargé !`));
 
 export {ENV, envPath};
