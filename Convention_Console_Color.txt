@@ -1,0 +1,9 @@
+Server : Utilisation de chalk
+
+Lien : cyan
+Information général : magenta
+Information Pool Connexion : yellow
+
+Valisation : green
+Erreur info normal : yellow
+Erreur critique : red
