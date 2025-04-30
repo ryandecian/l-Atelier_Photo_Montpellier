@@ -1,6 +1,7 @@
 import style from "../StyleRootComponent.module.css";
 // import GeneratorCardAvisClient from "../GeneratorCardAvisClient/GeneratorCardAvisClient";
 
+import GrossesseRootComponentA from "./ComponentsGrossesseRoot/GrossesseRootComponentA/GrossesseRootComponentA";
 
 function GrossesseRoot() {
     return (
@@ -13,6 +14,10 @@ function GrossesseRoot() {
             </header>
 
             {/* Container A : Client cible Particulier */}
+            <GrossesseRootComponentA />
+
+            {/* Container B : Client cible Particulier */}
+            {/* <GrossesseRootComponentB /> */}
 
             {/* Container B : Client cible Entreprise */}
 

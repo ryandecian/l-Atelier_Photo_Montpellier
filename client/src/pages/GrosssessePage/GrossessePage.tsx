@@ -7,9 +7,9 @@ import ListDataRouter from "../../router/router";
 
 function GrossessePage() {
     const SEO = {
-        title: "Portrait Grossesse - l'Atelier Photo Montpellier",
+        title: "Portrait Grossesse et nouveau né - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
-        description: "Portrait Grossesse à Montpellier – Une séance photo professionnelle pour valoriser votre image, inspirer confiance et marquer les esprits. Par Anne SAUNIER, photographe à l’Atelier Photo Montpellier.",
+        description: "Avec l’Atelier Photo Montpellier, Anne SAUNIER capture la magie de la grossesse et les premiers instants de vie à travers des portraits doux et authentiques.",
         url: `${import.meta.env.URL_CLIENT_LAPM}${ListDataRouter[11].path}`, /*URL de la page*/
         img: `${import.meta.env.URL_CLIENT_LAPM}/Dans-les-yeux-de-Sacha.jpg`, /*Lien URL de l'image*/
         twitterUrlImg: "", /*Lien URL de l'image*/
@@ -22,7 +22,7 @@ function GrossessePage() {
             5: "LAPM", /* 5 mots clés */
             6: "Service", /* 6 mots clés */
             7: "Portrait Grossesse", /* 7 mots clés */
-            8: "", /* 8 mots clés */
+            8: "Portrait nouveau né", /* 8 mots clés */
             9: "", /* 9 mots clés */
             10: "", /* 10 mots clés */
             11: "", /* 11 mots clés */
