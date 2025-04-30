@@ -1,6 +1,5 @@
 import chalk from "chalk";
 import VerfifEnv from "./ENV.config.ts";
-import { Verify } from "crypto";
 
 /**
  * Détermination de l'URL du serveur avec vérification

@@ -1,13 +1,14 @@
 import { Environnement } from "./dotenv.config";
 import EnvironnementType from "../types/environnement.config.type";
+import ENV from "./ENV.config.ts";
 
 type CorsOriginsType = {
   [key in EnvironnementType]?: string[];
 };
 
 function CorsOrigins() {
-    const VERIF_DOMAIN_FRONT = process.env.DOMAIN_FRONT
-    if (!VERIF_DOMAIN_FRONT) {
+    const VERIF_DOMAIN_FRONT = ENV("process.env.DOMAIN_FRONT")
+    if (VERIF_DOMAIN_FRONT === "Error") {
         console.error(
             {
                 identity: "corsOrigins.config.ts",
