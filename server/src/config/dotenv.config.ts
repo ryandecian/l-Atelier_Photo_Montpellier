@@ -11,9 +11,9 @@ import chalk from 'chalk';
  * Si elle n'est pas définie, on utilise "development" par défaut.
  */
 const VerifENV = (process.env.NODE_ENV || "development") as EnvironnementType;
-const ENV: EnvironnementType = VerifENV;
+const Environnement: EnvironnementType = VerifENV;
 const ENV_Base: string = "base";
-const envPath: string = path.resolve(__dirname, `../../.env.${ENV}`);
+const envPath: string = path.resolve(__dirname, `../../.env.${Environnement}`);
 const envBasePath: string = path.resolve(__dirname, `../../.env.${ENV_Base}`);
 
 // Vérifie si le fichier .env.base existe
@@ -37,7 +37,7 @@ if (!fs.existsSync(envPath)) {
         identity: "dotenv.config.ts",
         type: "fichier de configuration",
         chemin: "/server/src/config/dotenv.config.ts",
-        "❌ Nature de l'erreur": `Fichier .env.${ENV} introuvable !`,
+        "❌ Nature de l'erreur": `Fichier .env.${Environnement} introuvable !`,
         route: envPath,
     }
     );
@@ -52,6 +52,6 @@ if (!fs.existsSync(envPath)) {
   
   // Charge le fichier .env correspondant à l'environnement (dévelopment ou production)
   dotenv.config({ path: envPath });
-  console.info(chalk.magenta(`Environnement .env.${ENV} chargé !`));
+  console.info(chalk.magenta(`Environnement .env.${Environnement} chargé !`));
 
-export {ENV, envPath};
+export {Environnement, envPath};

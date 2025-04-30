@@ -1,4 +1,4 @@
-import { ENV } from "./dotenv.config";
+import { Environnement } from "./dotenv.config";
 
 /**
  * Vérification de la variable d'environnement PORT_SERVER
@@ -10,11 +10,11 @@ function Port_Server() {
 
         let ENV_ERROR: string = "";
         
-        if (ENV === "production") {
+        if (Environnement === "production") {
             ENV_ERROR = "docker.root";
         }
         else {
-            ENV_ERROR = ENV;
+            ENV_ERROR = Environnement;
         }
         console.error(
             {

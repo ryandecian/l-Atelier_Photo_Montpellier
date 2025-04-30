@@ -1,4 +1,4 @@
-import { ENV } from "./dotenv.config";
+import { Environnement } from "./dotenv.config";
 import EnvironnementType from "../types/environnement.config.type";
 
 type CorsOriginsType = {
@@ -31,7 +31,7 @@ function CorsOrigins() {
         ]
     }
 
-    return currentCorsOrigins[ENV]
+    return currentCorsOrigins[Environnement]
 }
 
 export default CorsOrigins;

@@ -7,6 +7,7 @@ import "./config/dotenv.config";
 import corsOrigins from "./config/CorsOrigins.config";
 import Port_Server from "./config/PORT_SERVER.config";
 import chalk from "chalk";
+import test from "./config/test.config";
 
 const app = express();
 const port = Port_Server();
@@ -17,7 +18,7 @@ app.use(cors({
 }));
 
 app.use(express.json());
-app.use(cookieParser())
+app.use(cookieParser());
 app.use("/api", router);
 
 /**
@@ -56,6 +57,6 @@ app.use( async (req: Request, res: Response) => {
 /**
  * Le server se lance sur le port 8080
  */
-app.listen(port, () => {
-    console.info(chalk.cyan(`Server lancé sur ${process.env.DOMAIN_SERVER}:${port}`));
+app.listen(port, async () => {
+    console.info(chalk.cyan(`Server lancé sur ${ await test(process.env.DOMAIN_BACK, 2)}`));
 });
