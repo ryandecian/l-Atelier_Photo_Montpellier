@@ -1,5 +1,5 @@
 import style from "../StyleRootComponent.module.css";
-import GeneratorCardAvisClient from "../GeneratorCardAvisClient/GeneratorCardAvisClient";
+// import GeneratorCardAvisClient from "../GeneratorCardAvisClient/GeneratorCardAvisClient";
 
 
 function GrossesseRoot() {
@@ -8,7 +8,7 @@ function GrossesseRoot() {
 
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
-                    {"Portrait Corporate : valorisez votre image professionnelle !"}
+                    {"Grossesse & nouveau-né : capturer la magie de la vie dès ses premiers instants !"}
                 </h1>
             </header>
 
