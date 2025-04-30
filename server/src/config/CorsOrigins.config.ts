@@ -1,6 +1,6 @@
 import { Environnement } from "./dotenv.config";
 import EnvironnementType from "../types/environnement.config.type";
-import ENV from "./ENV.config.ts";
+import ENV from "./ENV.config";
 
 type CorsOriginsType = {
   [key in EnvironnementType]?: string[];
