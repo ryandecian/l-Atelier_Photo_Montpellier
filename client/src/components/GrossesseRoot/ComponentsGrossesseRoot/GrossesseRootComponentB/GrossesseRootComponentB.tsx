@@ -1,5 +1,5 @@
 import style from "../../../StyleRootComponent.module.css";
-// import css from "../../GrossesseStyleRoot.module.css";
+import css from "../../GrossesseStyleRoot.module.css";
 import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ImagesGrossesseControllerData from "../../ImagesGrossesseControllerData";
 
@@ -37,6 +37,50 @@ function GrossesseRootComponentA() {
                 img4={ImagesGrossesseControllerData[7].src}
                 MetaNameImg4={ImagesGrossesseControllerData[7].alt}
             />
+
+            <article className={style.ContainerText}>
+                <h3 className={css.TitleH3}>
+                    {"Les séances grossesse"}
+                </h3>
+
+                <ul className={style.ContainerUl}>
+                    <li className={style.TextLiP4}>
+                    	📆 Idéalement entre le 7e et le 8e mois
+                    </li>
+                    <li className={style.TextLiP4}>
+                        📸 En solo, en couple, avec les aînés si souhaités
+                    </li>
+                    <li className={style.TextLiP4}>
+                        📍 Studio, extérieur ou à domicile
+                    </li>
+                    <li className={style.TextLiP4}>
+                        💡 Possibilité de prêt de tenues et accessoires doux
+                    </li>
+                </ul>
+                <br />
+            </article>
+
+            <article className={style.ContainerText}>
+                <h3 className={css.TitleH3}>
+                    {"Les séances nouveaux-nés"}
+                </h3>
+
+                <ul className={style.ContainerUl}>
+                    <li className={style.TextLiP4}>
+                    	🕊️ Entre 5 et 15 jours après la naissance
+                    </li>
+                    <li className={style.TextLiP4}>
+                        💤 Respect du rythme du bébé : pauses câlins ou tétées bienvenues
+                    </li>
+                    <li className={style.TextLiP4}>
+                        🌿 Décors naturels, tons doux, gestes tendres
+                    </li>
+                    <li className={style.TextLiP4}>
+                        📍 En studio (chauffé et aménagé) ou à domicile
+                    </li>
+                </ul>
+                <br />
+            </article>
         </section>
     )
 }
