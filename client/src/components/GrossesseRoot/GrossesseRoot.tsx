@@ -3,6 +3,7 @@ import style from "../StyleRootComponent.module.css";
 
 import GrossesseRootComponentA from "./ComponentsGrossesseRoot/GrossesseRootComponentA/GrossesseRootComponentA";
 import GrossesseRootComponentB from "./ComponentsGrossesseRoot/GrossesseRootComponentB/GrossesseRootComponentB";
+import GrossesseRootComponentC from "./ComponentsGrossesseRoot/GrossesseRootComponentC/GrossesseRootComponentC";
 
 function GrossesseRoot() {
     return (
@@ -20,9 +21,8 @@ function GrossesseRoot() {
             {/* Container B : Client cible Particulier */}
             <GrossesseRootComponentB />
 
-            {/* Container B : Client cible Entreprise */}
-
             {/* Container C : Client cible Entreprise */}
+            <GrossesseRootComponentC />
 
             {/* Container D : Avis clients */}
         </section>
