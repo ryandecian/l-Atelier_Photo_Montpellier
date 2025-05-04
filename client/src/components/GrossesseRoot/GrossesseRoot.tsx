@@ -1,5 +1,6 @@
 import style from "../StyleRootComponent.module.css";
-// import GeneratorCardAvisClient from "../GeneratorCardAvisClient/GeneratorCardAvisClient";
+import GeneratorCardAvisClient from "../GeneratorCardAvisClient/GeneratorCardAvisClient";
+import AvisClientGrossesseControllerData from "./AvisClientGrossesseControllerData";
 
 import GrossesseRootComponentA from "./ComponentsGrossesseRoot/GrossesseRootComponentA/GrossesseRootComponentA";
 import GrossesseRootComponentB from "./ComponentsGrossesseRoot/GrossesseRootComponentB/GrossesseRootComponentB";
@@ -25,6 +26,7 @@ function GrossesseRoot() {
             <GrossesseRootComponentC />
 
             {/* Container D : Avis clients */}
+            <GeneratorCardAvisClient avisClients={AvisClientGrossesseControllerData} />
         </section>
     )
 }
