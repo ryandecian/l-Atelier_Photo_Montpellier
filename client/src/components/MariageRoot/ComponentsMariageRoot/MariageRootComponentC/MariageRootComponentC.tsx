@@ -2,7 +2,7 @@ import style from "../../../StyleRootComponent.module.css";
 
 function MariageRootComponentC() {
     return (
-        <article className={style.MariageRootComponentC}>
+        <article className={`PortraitSoloRootComponentC ${style.ContainerRoot}`}>
             <h2 className={style.TitleH2}>
                 Le Repérage des Lieux : Une Préparation Essentielle
             </h2>
