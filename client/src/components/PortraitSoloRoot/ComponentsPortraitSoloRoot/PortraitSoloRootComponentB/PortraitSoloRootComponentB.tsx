@@ -6,7 +6,7 @@ import ImagesPortraitSoloControllerData from "../../ImagesPortraitSoloController
 
 function PortraitSoloRootComponentB() {
     return (
-        <section className={style.ContainerRoot}>
+        <section className={`PortraitSoloRootComponentB ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2}>
                     Envie de reprendre le pouvoir sur votre image ?

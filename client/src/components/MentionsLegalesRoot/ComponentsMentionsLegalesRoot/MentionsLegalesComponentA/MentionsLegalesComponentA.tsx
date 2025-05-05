@@ -3,7 +3,7 @@ import { LinkExt } from "../../../../router/router";
 
 function MentionsLegalesComponentA() {
     return (
-        <article className={style.MentionsLegalesComponentA}>
+        <article className={`MentionsLegalesComponentA ${style.MentionsLegalesComponentA}`}>
             <h2 className={style.TitleH2px2}>
                 1 – Édition du site
             </h2>
