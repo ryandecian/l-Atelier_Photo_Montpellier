@@ -15,6 +15,7 @@ import ContactPage from "../pages/ContactPage/ContactPage";
 import CorporatePage from "../pages/CorporatePage/CorporatePage";
 import PortraitSoloPage from "../pages/PortraitSoloPage/PortraitSoloPage";
 import GrossessePage from "../pages/GrosssessePage/GrossessePage";
+import PortraitDuoPage from "../pages/PortraitDuoPage/PortraitDuoPage";
 
 /**
  * Utilisation : 
@@ -136,8 +137,8 @@ const ListDataRouter: RouterItemsType[] = [
     },
     /* {ListDataRouter[15].path} */
     {
-        path: "/portraits-couples",
-        element: <h1>Route : Portraits-Couples</h1>,
+        path: "/portrait-duo",
+        element: <PortraitDuoPage />,
     },
     /* {ListDataRouter[16].path} */
     {
