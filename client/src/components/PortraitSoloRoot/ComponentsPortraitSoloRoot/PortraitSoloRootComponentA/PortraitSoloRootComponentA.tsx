@@ -1,5 +1,4 @@
 import style from "../../../StyleRootComponent.module.css";
-import css from "../PortraitSoloStyleRoot.module.css"
 import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ImagesPortraitSoloControllerData from "../../ImagesPortraitSoloControllerData";
 
@@ -46,7 +45,7 @@ function PortraitSoloRootComponentA() {
             />
 
             <article className={style.ContainerText}>
-                <h3 className={css.TitleH3}>
+                <h3 className={style.TitleNH3}>
                     Pourquoi choisir l’Atelier Photo Montpellier ?
                 </h3>
 
