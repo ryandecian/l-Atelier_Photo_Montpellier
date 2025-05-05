@@ -2,7 +2,7 @@ import style from "../../../StyleRootComponent.module.css";
 
 function MentionsLegalesComponentC() {
     return (
-        <article className={style.MentionsLegalesComponentC}>
+        <article className={`MentionsLegalesComponentC ${style.MentionsLegalesComponentC}`}>
             <h2 className={style.TitleH2px2}>
                 3 – Limitations de responsabilité
             </h2>
