@@ -2,7 +2,7 @@ import style from "../../../StyleRootComponent.module.css";
 
 function MentionsLegalesComponentF() {
     return (
-        <article className={style.MentionsLegalesComponentF}>
+        <article className={`MentionsLegalesComponentF ${style.MentionsLegalesComponentF}`}>
             <h2 className={style.TitleH2px2}>
                 6 – Droit applicable et attribution de juridiction
             </h2>

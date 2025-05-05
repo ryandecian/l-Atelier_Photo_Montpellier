@@ -3,7 +3,7 @@ import { LinkExt } from "../../../../router/router";
 
 function MentionsLegalesComponentD() {
     return (
-        <article className={style.MentionsLegalesComponentD}>
+        <article className={`MentionsLegalesComponentD ${style.MentionsLegalesComponentD}`}>
             <h2 className={style.TitleH2px2}>
                 4 – CNIL et gestion des données personnelles
             </h2>

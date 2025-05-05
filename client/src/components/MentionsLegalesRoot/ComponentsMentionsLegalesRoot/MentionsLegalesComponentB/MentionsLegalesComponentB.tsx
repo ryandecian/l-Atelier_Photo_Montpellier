@@ -3,7 +3,7 @@ import { LinkExt } from "../../../../router/router";
 
 function MentionsLegalesComponentB() {
     return (
-        <article className={style.MentionsLegalesComponentB}>
+        <article className={`MentionsLegalesComponentB ${style.MentionsLegalesComponentB}`}>
             <h2 className={style.TitleH2px2}>
                 2 – Propriété intellectuelle et contrefaçons
             </h2>
