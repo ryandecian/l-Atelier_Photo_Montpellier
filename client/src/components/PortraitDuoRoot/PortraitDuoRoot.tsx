@@ -1,12 +1,11 @@
 import style from "../StyleRootComponent.module.css";
 
-
 function PortraitDuoRoot() {
     return (
         <section className={`PortraitDuoRoot ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
-                    Portrait Duo : Une séance photos pour renouer avec votre image !
+                    {"Portrait duo ou photo de couple à Montpellier : Racontez votre histoir en images"}
                 </h1>
             </header>
 
