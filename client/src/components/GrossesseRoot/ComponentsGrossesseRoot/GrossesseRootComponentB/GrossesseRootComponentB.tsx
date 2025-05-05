@@ -1,5 +1,4 @@
 import style from "../../../StyleRootComponent.module.css";
-import css from "../../GrossesseStyleRoot.module.css";
 import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ImagesGrossesseControllerData from "../../ImagesGrossesseControllerData";
 
@@ -39,7 +38,7 @@ function GrossesseRootComponentA() {
             />
 
             <article className={style.ContainerText}>
-                <h3 className={css.TitleH3}>
+                <h3 className={style.TitleNH3}>
                     {"Les séances grossesse"}
                 </h3>
 
@@ -61,7 +60,7 @@ function GrossesseRootComponentA() {
             </article>
 
             <article className={style.ContainerText}>
-                <h3 className={css.TitleH3}>
+                <h3 className={style.TitleNH3}>
                     {"Les séances nouveaux-nés"}
                 </h3>
 
