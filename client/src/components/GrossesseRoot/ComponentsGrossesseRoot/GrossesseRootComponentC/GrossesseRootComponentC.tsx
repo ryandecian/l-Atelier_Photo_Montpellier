@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import style from "../../../StyleRootComponent.module.css";
-import css from "../../GrossesseStyleRoot.module.css";
 import ListDataRouter from "../../../../router/router";
 
 function GrossesseRootComponenetC() {
@@ -12,7 +11,7 @@ function GrossesseRootComponenetC() {
                 </h2>
             </header>
 
-            <h3 className={css.TitleH4}>
+            <h3 className={style.TitleNH4}>
                 {"Séance pensée pour vous mettre à l’aise"}
             </h3>
 
@@ -20,7 +19,7 @@ function GrossesseRootComponenetC() {
                 Guidage tout en subtilité, conseils pour les postures naturelles, attention à chaque détail.
             </p>
 
-            <h3 className={css.TitleH4}>
+            <h3 className={style.TitleNH4}>
                 {"Studio cocooning à Montpellier ou déplacement à domicile"}
             </h3>
 
@@ -28,7 +27,7 @@ function GrossesseRootComponenetC() {
                 Je recrée un environnement rassurant, lumineux, avec tout le confort nécessaire pour bébé et parents.
             </p>
 
-            <h3 className={css.TitleH4}>
+            <h3 className={style.TitleNH4}>
                 {"Retouches légères et naturelles"}
             </h3>
 
@@ -36,7 +35,7 @@ function GrossesseRootComponenetC() {
                 Votre grain de peau reste réel, vos traits sont respectés. Les retouches servent la douceur, pas la perfection artificielle.
             </p>
 
-            <h3 className={css.TitleH4}>
+            <h3 className={style.TitleNH4}>
                 {"Livraison rapide & formats adaptés"}
             </h3>
 
