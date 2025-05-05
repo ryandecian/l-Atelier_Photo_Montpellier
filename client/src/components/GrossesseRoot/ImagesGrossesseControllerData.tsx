@@ -1,26 +1,31 @@
 import ImagesControllerDataType from "../../types/ImagesControllerData.type";
 
+import Image1 from "../../assets/images/ImageGrossesse/emmy-cinq-jours.jpg";
+import Image2 from "../../assets/images/ImageGrossesse/portrait-9-mois-domicile.jpg";
+import Image3 from "../../assets/images/ImageGrossesse/parents-bebe.jpeg";
+import Image4 from "../../assets/images/ImageGrossesse/Premier-jour-portrait.jpg";
+
 const ImagesGrossesseControllerData: ImagesControllerDataType[] = [
     /* Tableau 1 : GrossesseComponentA */
     /* {ImagesGrossesseControllerData[0].src} */
     {
-        src: "",
-        alt: "",
+        src: Image1,
+        alt: "Emmy, 5 jours",
     },
     /* {ImagesGrossesseControllerData[1].src} */
     {
-        src: "",
-        alt: "",
+        src: Image2,
+        alt: "Portrait 9 mois domicile",
     },
     /* {ImagesGrossesseControllerData[2].src} */
     {
-        src: "",
-        alt: "",
+        src: Image3,
+        alt: "Parents et bébé",
     },
     /* {ImagesGrossesseControllerData[3].src} */
     {
-        src: "",
-        alt: "",
+        src: Image4,
+        alt: "Premier jour, portrait",
     },
 
 

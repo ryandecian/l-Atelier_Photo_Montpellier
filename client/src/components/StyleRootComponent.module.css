@@ -31,6 +31,8 @@
     padding: 0 0 0 2.5rem; /* 0px 0px 0px 40px */
 }
 
+/*--------------------------------------------------*/
+
 /* Style des Title dans un parent Column */
 .TitleH1, 
 .TitleH2,
@@ -38,9 +40,10 @@
 .TitleH4, 
 .TitleH5,
 .TitleH6,
-.TitleH2px2 {
+.TitleH2px2,
+.TitleNH3, 
+.TitleNH4 {
     color : var(--ColorBlack);
-    font-family: var(--font-family-title);
     font-weight: var(--font-weight-title);
     font-style: var(--font-style-title);
     font-display: swap;
@@ -50,6 +53,18 @@
     padding: 0;
     border: 0;
 }
+
+.TitleH1, 
+.TitleH2,
+.TitleH3,
+.TitleH4, 
+.TitleH5,
+.TitleH6,
+.TitleH2px2 {
+    font-family: var(--font-family-title); 
+}
+
+
 .TitleH1 {
     font-size: var(--h1); /* 32px */
     text-align: center;
@@ -72,6 +87,15 @@
 .TitleH2px2 {
     font-size: calc(var(--h2) + 0.125rem); /* 26px */
 }
+.TitleNH3 {
+    font-size: var(--h3); /* 20px */
+}
+.TitleNH4 {
+    font-size: calc(var(--h4) + 0.0625rem); /* 19px */
+    margin: 0 1.5rem; /* 0px 24px 0px 24px */
+}
+
+/*--------------------------------------------------*/
 
 /* Style des Textes généraux */
 .TextP1,
@@ -109,6 +133,8 @@
     font-size: var(--h4); /* 18px */
     padding-bottom: 0; /* 0px 0px 0px 0px */
 }
+
+/*--------------------------------------------------*/
 
 /* Text contenant un Link ou un lien externe*/
 .SpanLink > a {
