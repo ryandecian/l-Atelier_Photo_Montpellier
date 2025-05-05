@@ -4,7 +4,7 @@ import ImagesGrossesseControllerData from "../../ImagesGrossesseControllerData";
 
 function GrossesseRootComponentA() {
     return (
-        <section className={`GrossesseRootComponentA ${style.ContainerRootRacine}`}>
+        <section className={`GrossesseRootComponentA ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2}>
                     {"Prêt(e) à figer ces moments uniques avec sensibilité et simplicité ?"}
