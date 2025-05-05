@@ -4,7 +4,7 @@ import ListDataRouter from "../../../../router/router";
 
 function GrossesseRootComponenetC() {
     return (
-        <section className={`GrossesseRootComponentC ${style.ContainerRootRacine}`}>
+        <section className={`GrossesseRootComponentC ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2}>
                     {"Un service clé en main : douceur, organisation et qualité"}
