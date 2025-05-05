@@ -2,7 +2,7 @@ import style from "../../../StyleRootComponent.module.css";
 
 function MariageRootComponentD() {
     return (
-        <article className={style.MariageRootComponentD}>
+        <article className={`PortraitSoloRootComponentD ${style.ContainerRoot}`}>
             <h2 className={style.TitleH2}>
                 Respect des Attentes : Un Mariage Qui Vous Ressemble
             </h2>

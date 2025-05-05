@@ -2,7 +2,7 @@ import style from "../../../StyleRootComponent.module.css";
 import ListDataRouter from "../../../../router/router";
 function MariageRootComponentF() {
     return (
-        <article className={style.MariageRootComponentF}>
+        <article className={`PortraitSoloRootComponentF ${style.ContainerRoot}`}>
             <h2 className={style.TitleH2}>
                 Conclusion : Des Photos Qui Vous Rappellent un Moment Unique
             </h2>

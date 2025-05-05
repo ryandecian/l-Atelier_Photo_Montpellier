@@ -2,7 +2,7 @@ import style from "../../../StyleRootComponent.module.css";
 
 function MariageRootComponentA() {
     return (
-        <article className={style.MariageRootComponentA}>
+        <article className={`MariageRootComponentA ${style.ContainerRoot}`}>
             <h2 className={style.TitleH2}>
                 Le Style "Reportage" : Capturer l'Authenticité de Votre Mariage
             </h2>
