@@ -7,7 +7,10 @@ const DataSEORoot = {
 
     /* Data JSON-LD */
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": {
+        Local: "LocalBusiness",
+        Service: "Service",
+    },
     "name": "L'Atelier Photo Montpellier",
     "telephone": "+33 6 52 67 73 33", // Numéro de téléphone de l'entreprise (Manuel)
     "email": LinkExt.emailAnne, // Adresse email de l'entreprise (Dynamique)
