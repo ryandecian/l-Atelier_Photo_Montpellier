@@ -45,6 +45,86 @@ const DataSEORoot = {
                 "addressCountry": "FR"
             }
         },
+        {
+            "@type": "Place",
+            "name": "Saint-Gély-du-Fesc",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Saint-Gély-du-Fesc",
+                "postalCode": "34980",
+                "addressCountry": "FR"
+            }
+        },
+        {
+            "@type": "Place",
+            "name": "Lattes",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Lattes",
+                "postalCode": "34970",
+                "addressCountry": "FR"
+            }
+        },
+        {
+            "@type": "Place",
+            "name": "Béziers",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Béziers",
+                "postalCode": "34500",
+                "addressCountry": "FR"
+            }
+        },
+        {
+            "@type": "Place",
+            "name": "Saint-Jean-de-Védas",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Saint-Jean-de-Védas",
+                "postalCode": "34430",
+                "addressCountry": "FR"
+            }
+        },
+        {
+            "@type": "Place",
+            "name": "Palavas-les-Flots",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Palavas-les-Flots",
+                "postalCode": "34250",
+                "addressCountry": "FR"
+            }
+        },
+        {
+            "@type": "Place",
+            "name": "Castelnau-le-Lez",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Castelnau-le-Lez",
+                "postalCode": "34170",
+                "addressCountry": "FR"
+            }
+        },
+        {
+            "@type": "Place",
+            "name": "Nîmes",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Nîmes",
+                "postalCode": "30000",
+                "addressCountry": "FR"
+            }
+        },
+        {
+            "@type": "Place",
+            "name": "Narbonne",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Narbonne",
+                "postalCode": "11100",
+                "addressCountry": "FR"
+            }
+        },
     ]
 }
 

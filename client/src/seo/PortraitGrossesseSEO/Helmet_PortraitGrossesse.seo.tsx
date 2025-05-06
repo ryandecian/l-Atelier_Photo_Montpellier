@@ -8,7 +8,7 @@ const SEO = {
     title: DataSEO_PortraitGrossesse.title,
     autor: DataSEORoot.autor,
     description: DataSEO_PortraitGrossesse.description,
-    id: DataSEO_PortraitGrossesse.id,
+    id: DataSEO_PortraitGrossesse.id_LocalBusiness, // A revoir !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     url: DataSEO_PortraitGrossesse.url,
     img: DataSEO_PortraitGrossesse.img,
     twitterUrlImg: DataSEO_PortraitGrossesse.twitterUrlImg || DataSEO_PortraitGrossesse.img, // fallback
