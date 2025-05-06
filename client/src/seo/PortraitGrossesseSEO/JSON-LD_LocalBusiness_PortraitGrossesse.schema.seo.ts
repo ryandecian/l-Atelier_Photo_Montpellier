@@ -7,7 +7,7 @@ import DataSEO_PortraitGrossesse from "./DataSEO_PortraitGrossesse.seo";
 const JSON_LD_LocalBusiness_PortraitGrossesse_Schema_SEO = JSON.stringify({
     "@context": DataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
     "@type": DataSEORoot["@type"].Local, /* (Obligatoire) Type de la donnée */
-    "@id": DataSEO_PortraitGrossesse.id,
+    "@id": DataSEO_PortraitGrossesse.id_LocalBusiness,
     "name": DataSEORoot.name, /* (Obligatoire) Nom de l'entreprise */
     "image": DataSEO_PortraitGrossesse.img, /* (Obligatoire) URL de l'image de l'entreprise */
     "description": DataSEO_PortraitGrossesse.description,

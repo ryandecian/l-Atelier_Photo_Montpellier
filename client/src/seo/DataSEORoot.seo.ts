@@ -1,4 +1,5 @@
-import { LinkExt } from "../router/router"
+import { LinkExt } from "../router/router";
+import ListDataRouter from "../router/router";
 
 const DataSEORoot = {
     /* Data Helmet */
@@ -11,6 +12,7 @@ const DataSEORoot = {
         Local: "LocalBusiness",
         Service: "Service",
     },
+    id_LocalBusiness: `${import.meta.env.URL_CLIENT}${ListDataRouter[17].path}#lapm`, // @id SEO-friendly, correspond id unique de l'entreprise
     "name": "L'Atelier Photo Montpellier",
     "telephone": "+33 6 52 67 73 33", // Numéro de téléphone de l'entreprise (Manuel)
     "email": LinkExt.emailAnne, // Adresse email de l'entreprise (Dynamique)
@@ -22,6 +24,28 @@ const DataSEORoot = {
         LinkExt.instagram, // Compte Instagram
         LinkExt.facebook, // A modifier car ce n'est pas le bon compte
     ],
+    "areaServed": [
+        {
+            "@type": "Place",
+            "name": "Grabels",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Grabels",
+                "postalCode": "34790",
+                "addressCountry": "FR"
+            }
+        },
+        {
+            "@type": "Place",
+            "name": "Montpellier",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Montpellier",
+                "postalCode": "34000",
+                "addressCountry": "FR"
+            }
+        },
+    ]
 }
 
 export default DataSEORoot

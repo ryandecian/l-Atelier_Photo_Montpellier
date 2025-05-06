@@ -1,0 +1,37 @@
+import DataSEORoot from "../DataSEORoot.seo";
+import AvisClientGrossesseControllerData from "../../components/GrossesseRoot/AvisClientGrossesseControllerData";
+import generateAverageRatingSEO from "../../utils/generateAverageRatingSEO.utils";
+import generateReviewArraySEO from "../../utils/generateReviewArraySEO.utils";
+import DataSEO_PortraitGrossesse from "./DataSEO_PortraitGrossesse.seo";
+
+const JSON_LD_Service_PortraitGrossesse_Schema_SEO = JSON.stringify({
+    "@context": DataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
+    "@type": DataSEORoot["@type"].Service, /* (Obligatoire) Type de la donnée */
+    "@id": DataSEO_PortraitGrossesse.id_Service,
+    "serviceType": "Photographie grossesse",
+    "name": DataSEORoot.name, /* (Obligatoire) Nom de l'entreprise */
+    "image": DataSEO_PortraitGrossesse.img, /* (Obligatoire) URL de l'image de l'entreprise */
+    "description": DataSEO_PortraitGrossesse.description,
+    "provider": {
+        "@id": DataSEO_PortraitGrossesse.id_LocalBusiness /* (Obligatoire) Référence à l'ID de l'Entreprise */
+    },
+    "areaServed": [
+        { "@type": "Place", "name": "Montpellier", "adress": {"@type": "PostalAddress", "addressLocality": "Montpellier",} },
+        { "@type": "Place", "name": "Grabels" },
+        { "@type": "Place", "name": "Nîmes" },
+        { "@type": "Place", "name": "Béziers" },
+        { "@type": "Place", "name": "Narbonne" },
+        { "@type": "Place", "name": "Castelnau-le-Lez" },
+        { "@type": "Place", "name": "Lattes" },
+        { "@type": "Place", "name": "Saint-Jean-de-Védas" },
+        { "@type": "Place", "name": "Saint-Gély-du-Fesc" }
+  ],
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceUrl": DataSEO_PortraitGrossesse.url
+  },
+  "aggregateRating": generateAverageRatingSEO(AvisClientGrossesseControllerData),
+  "review": generateReviewArraySEO(AvisClientGrossesseControllerData)
+});
+
+export default JSON_LD_Service_PortraitGrossesse_Schema_SEO;
