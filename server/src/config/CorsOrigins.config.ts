@@ -7,7 +7,7 @@ type CorsOriginsType = {
 };
 
 function CorsOrigins() {
-    const VERIF_DOMAIN_FRONT = ENV("process.env.DOMAIN_FRONT")
+    const VERIF_DOMAIN_FRONT = ENV("process.env.VITE_DOMAIN_FRONT")
     if (VERIF_DOMAIN_FRONT === "Error") {
         console.error(
             {

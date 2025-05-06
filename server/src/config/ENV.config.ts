@@ -38,9 +38,9 @@ function ENV(env: ParamsType["env"], lvl?: ParamsType["lvl"]) {
     if (!env || typeof env !== "string" || !env.trim()) {
         if (lvl_verify === "Warning") {
             console.error(chalk.bold.yellow(`Erreur Warning...`));
-            console.error(chalk.yellow(`identity : verifEnv.config.ts`));
+            console.error(chalk.yellow(`identity : ENV.config.ts`));
             console.error(chalk.yellow(`type : fichier de configuration`));
-            console.error(chalk.yellow(`chemin : /server/src/config/verifEnv.config.ts`));
+            console.error(chalk.yellow(`chemin : /server/src/config/ENV.config.ts`));
             console.error(chalk.yellow(`❌ Nature de l'erreur : Erreur d'utilisation de la fonction ENV`));
             console.error(chalk.yellow(`❌ Nature de l'erreur : Aucune variable d'environnement n'a été demandée !`));
             console.error(chalk.bold.yellow(`${"⚠️ "} Utilisation : ENV("process.env.NOM_VARIABLE")`));
@@ -48,9 +48,9 @@ function ENV(env: ParamsType["env"], lvl?: ParamsType["lvl"]) {
         }
         if (lvl_verify === "Critical") {
             console.error(chalk.bold.red(`Erreur Critical...`));
-            console.error(chalk.red(`identity : verifEnv.config.ts`));
+            console.error(chalk.red(`identity : ENV.config.ts`));
             console.error(chalk.red(`type : fichier de configuration`));
-            console.error(chalk.red(`chemin : /server/src/config/verifEnv.config.ts`));
+            console.error(chalk.red(`chemin : /server/src/config/ENV.config.ts`));
             console.error(chalk.red(`❌ Nature de l'erreur : Erreur d'utilisation de la fonction ENV`));
             console.error(chalk.red(`❌ Nature de l'erreur : Aucune variable d'environnement n'a été demandée !`));
             console.error(chalk.bold.red(`${"⚠️ "} Utilisation : ENV("process.env.NOM_VARIABLE")`));
@@ -65,9 +65,9 @@ function ENV(env: ParamsType["env"], lvl?: ParamsType["lvl"]) {
     if (!env_array || (env_array?.length < 2) || env_array[0] !== "process" || env_array[1] !== "env") {
         if (lvl_verify === "Warning") {
             console.error(chalk.bold.yellow(`Erreur Warning...`));
-            console.error(chalk.yellow(`identity : verifEnv.config.ts`));
+            console.error(chalk.yellow(`identity : ENV.config.ts`));
             console.error(chalk.yellow(`type : fichier de configuration`));
-            console.error(chalk.yellow(`chemin : /server/src/config/verifEnv.config.ts`));
+            console.error(chalk.yellow(`chemin : /server/src/config/ENV.config.ts`));
             console.error(chalk.yellow(`❌ Nature de l'erreur : Erreur d'utilisation de la fonction ENV`));
             console.error(chalk.yellow(`❌ Nature de l'erreur : La syntaxe de la variable d'environnement demandée n'est pas valide !`));
             console.error(chalk.bold.yellow(`${"⚠️ "} Utilisation : ENV("process.env.NOM_VARIABLE")`));
@@ -75,9 +75,9 @@ function ENV(env: ParamsType["env"], lvl?: ParamsType["lvl"]) {
         }
         if (lvl_verify === "Critical") {
             console.error(chalk.bold.red(`Erreur Critical...`));
-            console.error(chalk.red(`identity : verifEnv.config.ts`));
+            console.error(chalk.red(`identity : ENV.config.ts`));
             console.error(chalk.red(`type : fichier de configuration`));
-            console.error(chalk.red(`chemin : /server/src/config/verifEnv.config.ts`));
+            console.error(chalk.red(`chemin : /server/src/config/ENV.config.ts`));
             console.error(chalk.red(`❌ Nature de l'erreur : Erreur d'utilisation de la fonction ENV`));
             console.error(chalk.red(`❌ Nature de l'erreur : La syntaxe de la variable d'environnement demandée n'est pas valide !`));
             console.error(chalk.bold.red(`${"⚠️ "} Utilisation : ENV("process.env.NOM_VARIABLE")`));
@@ -93,9 +93,9 @@ function ENV(env: ParamsType["env"], lvl?: ParamsType["lvl"]) {
     if (typeof env_verify !== "string") {
         if (lvl_verify === "Warning") {
             console.error(chalk.bold.yellow(`Erreur Warning...`));
-            console.error(chalk.yellow(`identity : verifEnv.config.ts`));
+            console.error(chalk.yellow(`identity : ENV.config.ts`));
             console.error(chalk.yellow(`type : fichier de configuration`));
-            console.error(chalk.yellow(`chemin : /server/src/config/verifEnv.config.ts`));
+            console.error(chalk.yellow(`chemin : /server/src/config/ENV.config.ts`));
             console.error(chalk.yellow(`❌ Nature de l'erreur : La variable d'environnement ${env} n'existe pas !`));
             console.error(chalk.bold.yellow(`${"⚠️ "} Conseil : Vérifiez si vous ne vous êtes pas trompé dans le nom de la variable !`));
             console.error(chalk.bold.yellow(`${"⚠️ "} Conseil : Vérifiez si vous avez bien défini la variable dans un fichier .env !`));
@@ -103,9 +103,9 @@ function ENV(env: ParamsType["env"], lvl?: ParamsType["lvl"]) {
         }
         if (lvl_verify === "Critical") {
             console.error(chalk.bold.red(`Erreur Critical...`));
-            console.error(chalk.red(`identity : verifEnv.config.ts`));
+            console.error(chalk.red(`identity : ENV.config.ts`));
             console.error(chalk.red(`type : fichier de configuration`));
-            console.error(chalk.red(`chemin : /server/src/config/verifEnv.config.ts`));
+            console.error(chalk.red(`chemin : /server/src/config/ENV.config.ts`));
             console.error(chalk.red(`❌ Nature de l'erreur : La variable d'environnement ${env} n'existe pas !`));
             console.error(chalk.bold.red(`${"⚠️ "} Arret du serveur !`));
             process.exit(1); // Arrête le serveur si les variables d'environnement ne sont pas disponibles
