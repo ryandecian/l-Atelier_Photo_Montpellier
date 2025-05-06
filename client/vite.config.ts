@@ -2,28 +2,41 @@ import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig(() => {
-  const root = process.cwd();
+    const root = process.cwd();
 
-  // Charge uniquement les fichiers souhaités :
-  const envBase = loadEnv('base', root, 'VITE_'); // .env.base
-  const envRoot = loadEnv('root', root, 'VITE_'); // .env.root
+    // On récupère la variable d'environnement injectée par Docker
+    const viteNodeEnv = process.env.VITE_NODE_ENV || 'development';
 
-  // Fusion manuelle des variables (ordre de priorité : root > base)
-  const env = {
-    ...envBase,
-    ...envRoot
-  };
+    let envBase = {};
+    let envRoot = {};
 
-  return {
-    plugins: [react()],
-    server: {
-      host: true,
-      port: 4000
-    },
+    // Initialisation conditionnelle
+    if (viteNodeEnv === 'production') {
+        envBase = loadEnv('base', root, 'VITE_'); // .env.base
+        envRoot = loadEnv('production', root, 'VITE_'); // .env.root
+    } 
+    else if (viteNodeEnv === 'development') {
+        envBase = loadEnv('base', root, 'VITE_'); // peut être partagé
+        envRoot = loadEnv('development', root, 'VITE_'); // .env.development
+    }
+    
+
+    // Fusion manuelle des variables (ordre de priorité : root > base)
+    const env = {
+        ...envBase,
+        ...envRoot
+    };
+
+    return {
+        plugins: [react()],
+        server: {
+            host: true,
+            port: 4000
+        },
 
     // Redéfinit import.meta.env à la main pour bloquer tout chargement implicite, ne charge plus les .env par défauts
     define: {
-      'import.meta.env': JSON.stringify(env)
+        'import.meta.env': JSON.stringify(env)
     }
   };
 });

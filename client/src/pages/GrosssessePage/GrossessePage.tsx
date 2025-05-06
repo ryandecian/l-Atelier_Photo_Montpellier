@@ -38,7 +38,7 @@ function GrossessePage() {
             music: "music.song", /*Pour les pages dédiées à la musique.*/
             profile: "profile", /*Pour une page personnelle (profil d'une personne).*/
         }
-  }
+    }
      // Filtrer les mots-clés non vides
      const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
 
