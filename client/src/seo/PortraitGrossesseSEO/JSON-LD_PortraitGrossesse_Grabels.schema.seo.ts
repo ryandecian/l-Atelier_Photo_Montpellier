@@ -1,19 +1,16 @@
 import DataSEORoot from "../DataSEORoot.seo";
 import AvisClientGrossesseControllerData from "../../components/GrossesseRoot/AvisClientGrossesseControllerData";
-
-// Calcule de la note moyenne à une décimale près
-const NoteMoyenne = (
-    AvisClientGrossesseControllerData.reduce((acc, avis) => acc + avis.note, 0)
-    / AvisClientGrossesseControllerData.length
-  ).toFixed(1);
+import generateAverageRatingSEO from "../../utils/generateAverageRatingSEO.utils";
+import generateReviewArraySEO from "../../utils/generateReviewArraySEO.utils";
+import DataSEO_PortraitGrossesse from "./DataSEO_PortraitGrossesse.seo";
 
 const JSON_LD_PortraitGrossesse_Grabels_Schema_SEO = JSON.stringify({
     "@context": DataSEORoot["@context"], // (Obligatoire) Contexte de la donnée
     "@type": DataSEORoot["@type"], // (Obligatoire) LocalBusiness
     "name": DataSEORoot.name, // (Obligatoire) Nom de l'entreprise
-    "image": SEO.img, // (Obligatoire) URL de l'image représentative de l'entreprise
-    "description": SEO.description,
-    "url": SEO.url, // (Obligatoire) URL de la page de l'entreprise
+    "image": DataSEO_PortraitGrossesse.img, // (Obligatoire) URL de l'image représentative de l'entreprise
+    "description": DataSEO_PortraitGrossesse.description,
+    "url": DataSEO_PortraitGrossesse.url, // (Obligatoire) URL de la page de l'entreprise
     "telephone": DataSEORoot.telephone, // (Obligatoire) Numéro de téléphone de l'entreprise
     "address": {
       "@type": "PostalAddress",
@@ -24,21 +21,8 @@ const JSON_LD_PortraitGrossesse_Grabels_Schema_SEO = JSON.stringify({
     }, // (Obligatoire) Adresse de l'entreprise
     "priceRange": "€€",
     "openingHours": DataSEORoot.openingHours, // Heures d'ouverture de l'entreprise
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": NoteMoyenne, // Note moyenne du service de la page
-      "reviewCount": AvisClientGrossesseControllerData.length.toString(),
-    },
-    "review": AvisClientGrossesseControllerData.map((avis) => ({
-        "@type": "Review",
-        "author": avis.nom,
-        "datePublished": avis.date,
-        "reviewBody": avis.commentaire,
-        "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": avis.note.toString()
-        }
-    })),
+    "aggregateRating": generateAverageRatingSEO(AvisClientGrossesseControllerData), // Note moyenne des avis clients et le nombre d'avis
+    "review": generateReviewArraySEO(AvisClientGrossesseControllerData), // Met a disposition les avis clients dans le SEO avec les bonnes clés
 });
 
 export default JSON_LD_PortraitGrossesse_Grabels_Schema_SEO;

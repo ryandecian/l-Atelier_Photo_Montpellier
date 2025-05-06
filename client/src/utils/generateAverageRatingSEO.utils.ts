@@ -1,6 +1,6 @@
 import AvisClientControllerDataType from "../types/AvisClientControllerData.type";
 
-function GenerateAverageRatingSEO(data: AvisClientControllerDataType[]) {
+function generateAverageRatingSEO(data: AvisClientControllerDataType[]) {
     if (data.length === 0) {
         return null;
     }
@@ -16,4 +16,4 @@ function GenerateAverageRatingSEO(data: AvisClientControllerDataType[]) {
       };
 }
 
-export default GenerateAverageRatingSEO;
+export default generateAverageRatingSEO;
