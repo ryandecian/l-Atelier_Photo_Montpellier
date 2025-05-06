@@ -1,7 +1,7 @@
 import DataSEORoot from "../DataSEORoot.seo";
 import AvisClientGrossesseControllerData from "../../components/GrossesseRoot/AvisClientGrossesseControllerData";
-import generateAverageRatingSEO from "../../utils/GenerateAverageRatingSEO.utils";
-import generateReviewArraySEO from "../../utils/GenerateReviewArraySEO.utils";
+import generateAverageRatingSEO from "../../utils/generateAverageRatingSEO.utils";
+import generateReviewArraySEO from "../../utils/generateReviewArraySEO.utils";
 import DataSEO_PortraitGrossesse from "./DataSEO_PortraitGrossesse.seo";
 
 const JSON_LD_PortraitGrossesse_Grabels_Schema_SEO = JSON.stringify({
