@@ -5,7 +5,7 @@ function PortraitDuoRoot() {
         <section className={`PortraitDuoRoot ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
-                    {"Portrait duo ou photo de couple à Montpellier : Racontez votre histoir en images"}
+                    {"Portrait duo et couple : immortalisez votre complicité avec authenticité"}
                 </h1>
             </header>
 

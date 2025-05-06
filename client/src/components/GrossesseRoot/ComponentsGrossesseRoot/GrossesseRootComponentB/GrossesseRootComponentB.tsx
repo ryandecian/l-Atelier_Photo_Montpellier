@@ -2,9 +2,9 @@ import style from "../../../StyleRootComponent.module.css";
 import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ImagesGrossesseControllerData from "../../ImagesGrossesseControllerData";
 
-function GrossesseRootComponentA() {
+function GrossesseRootComponentB() {
     return (
-        <section className={`GrossesseRootComponentA ${style.ContainerRoot}`}>
+        <section className={`GrossesseRootComponentB ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2}>
                     {"Prêt(e) à figer ces moments uniques avec sensibilité et simplicité ?"}
@@ -84,4 +84,4 @@ function GrossesseRootComponentA() {
     )
 }
 
-export default GrossesseRootComponentA;
+export default GrossesseRootComponentB;
