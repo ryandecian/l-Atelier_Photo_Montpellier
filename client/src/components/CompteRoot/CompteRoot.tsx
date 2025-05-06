@@ -36,7 +36,7 @@ function CompteRoot() {
   // Envoie les modifications au serveur
   const handleSave = async () => {
     try {
-      const response = await fetch(`${import.meta.env.VITE_URL_SERVER_LAPM}/users/me`, {
+      const response = await fetch(`${import.meta.env.VITE_URL_SERVER}/users/me`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
