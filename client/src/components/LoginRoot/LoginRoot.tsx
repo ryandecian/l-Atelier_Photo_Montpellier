@@ -15,7 +15,7 @@ function LoginRoot() {
     setError("");
 
     try {
-      const response = await fetch(`${import.meta.env.VITE_URL_SERVER_LAPM}/login`, {
+      const response = await fetch(`${import.meta.env.VITE_URL_SERVER}/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
