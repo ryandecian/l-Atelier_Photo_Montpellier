@@ -32,7 +32,7 @@ function UserSystemeRoot() {
       return;
     }
 
-    fetch(`${import.meta.env.VITE_URL_SERVER}/users`, {
+    fetch(`${import.meta.env.VITE_DOMAIN_SERVER}/users`, {
       credentials: "include",
     })
       .then(async (res) => {
@@ -53,7 +53,7 @@ function UserSystemeRoot() {
     if (!confirm("⚠️ Supprimer cet utilisateur ?")) return;
 
     try {
-      const res = await fetch(`${import.meta.env.VITE_URL_SERVER}/users/${id}`, {
+      const res = await fetch(`${import.meta.env.VITE_DOMAIN_SERVER}/users/${id}`, {
         method: "DELETE",
         credentials: "include",
       });
@@ -94,7 +94,7 @@ function UserSystemeRoot() {
     };
 
     try {
-      const response = await fetch(`${import.meta.env.VITE_URL_SERVER}/users/${editUserId}`, {
+      const response = await fetch(`${import.meta.env.VITE_DOMAIN_SERVER}/users/${editUserId}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
