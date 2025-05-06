@@ -7,21 +7,21 @@ const AvisClientGrossesseControllerData: AvisClientControllerDataType[] = [
         nom: "Emma",
         note: 5,
         commentaire: "Test",
-        date: "14 septembre 2024",
+        date: "2024-09-14",
     },
     {
         id: 2,
         nom: "Marie Pierre",
         note: 5,
         commentaire: "Test",
-        date: "16 juillet 2022",
+        date: "2022-07-16",
     },
     {
         id: 3,
         nom: "Philippe",
         note: 5,
         commentaire: "Test",
-        date: "16 juillet 2022",
+        date: "2022-07-16",
     },
 ];
 
