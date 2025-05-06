@@ -30,13 +30,13 @@ const JSON_LD_PortraitGrossesse_Grabels_Schema_SEO = JSON.stringify({
       "reviewCount": AvisClientGrossesseControllerData.length.toString(),
     },
     "review": AvisClientGrossesseControllerData.map((avis) => ({
-    "@type": "Review",
-    "author": avis.nom,
-    "datePublished": avis.date,
-    "reviewBody": avis.commentaire,
-    "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": avis.note.toString()
+        "@type": "Review",
+        "author": avis.nom,
+        "datePublished": avis.date,
+        "reviewBody": avis.commentaire,
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": avis.note.toString()
         }
     })),
 });
