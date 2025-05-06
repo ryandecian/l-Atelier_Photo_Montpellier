@@ -1,11 +1,7 @@
 import DataSEORoot from "../DataSEORoot.seo";
 import AvisClientGrossesseControllerData from "../../components/GrossesseRoot/AvisClientGrossesseControllerData";
-
-// Calcule de la note moyenne à une décimale près
-const NoteMoyenne = (
-    AvisClientGrossesseControllerData.reduce((acc, avis) => acc + avis.note, 0)
-    / AvisClientGrossesseControllerData.length
-  ).toFixed(1);
+import GenerateAverageRatingSEO from "../../utils/geenerateAverageRatingSEO.utils";
+import GenerateReviewArraySEO from "../../utils/generateReviewArraySEO.utils";
 
 const JSON_LD_PortraitGrossesse_Grabels_Schema_SEO = JSON.stringify({
     "@context": DataSEORoot["@context"], // (Obligatoire) Contexte de la donnée
@@ -24,21 +20,8 @@ const JSON_LD_PortraitGrossesse_Grabels_Schema_SEO = JSON.stringify({
     }, // (Obligatoire) Adresse de l'entreprise
     "priceRange": "€€",
     "openingHours": DataSEORoot.openingHours, // Heures d'ouverture de l'entreprise
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": NoteMoyenne, // Note moyenne du service de la page
-      "reviewCount": AvisClientGrossesseControllerData.length.toString(),
-    },
-    "review": AvisClientGrossesseControllerData.map((avis) => ({
-        "@type": "Review",
-        "author": avis.nom,
-        "datePublished": avis.date,
-        "reviewBody": avis.commentaire,
-        "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": avis.note.toString()
-        }
-    })),
+    "aggregateRating": GenerateAverageRatingSEO(AvisClientGrossesseControllerData), // Note moyenne des avis clients et le nombre d'avis
+    "review": GenerateReviewArraySEO(AvisClientGrossesseControllerData), // Met a disposition les avis clients dans le SEO avec les bonnes clés
 });
 
 export default JSON_LD_PortraitGrossesse_Grabels_Schema_SEO;
