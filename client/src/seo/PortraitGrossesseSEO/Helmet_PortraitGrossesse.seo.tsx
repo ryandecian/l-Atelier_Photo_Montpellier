@@ -1,7 +1,8 @@
 import { Helmet } from "react-helmet-async";
 import DataSEORoot from "../DataSEORoot.seo";
 import DataSEO_PortraitGrossesse from "./DataSEO_PortraitGrossesse.seo";
-import JSON_LD_PortraitGrossesse_Grabels_Schema_SEO from "./JSON-LD_PortraitGrossesse_Grabels.schema.seo";
+import JSON_LD_LocalBusiness_PortraitGrossesse_Schema_SEO from "./JSON-LD_LocalBusiness_PortraitGrossesse.schema.seo";
+import JSON_LD_Service_PortraitGrossesse_Schema_SEO from "./JSON-LD_Service_PortraitGrossesse.schema.seo";
 
 const SEO = {
     title: DataSEO_PortraitGrossesse.title,
@@ -23,7 +24,10 @@ function Helmet_PortraitGrossesse_SEO() {
         <Helmet>
             {/* JSON-LD */}
             <script type="application/ld+json">
-                {JSON_LD_PortraitGrossesse_Grabels_Schema_SEO}
+                {JSON_LD_LocalBusiness_PortraitGrossesse_Schema_SEO}
+            </script>
+            <script type="application/ld+json">
+                {JSON_LD_Service_PortraitGrossesse_Schema_SEO}
             </script>
 
             {/* Langue principale du document */}

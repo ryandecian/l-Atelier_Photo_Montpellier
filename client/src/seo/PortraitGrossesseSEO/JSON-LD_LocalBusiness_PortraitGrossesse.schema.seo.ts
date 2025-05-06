@@ -4,10 +4,10 @@ import generateAverageRatingSEO from "../../utils/generateAverageRatingSEO.utils
 import generateReviewArraySEO from "../../utils/generateReviewArraySEO.utils";
 import DataSEO_PortraitGrossesse from "./DataSEO_PortraitGrossesse.seo";
 
-const JSON_LD_PortraitGrossesse_Grabels_Schema_SEO = JSON.stringify({
+const JSON_LD_LocalBusiness_PortraitGrossesse_Schema_SEO = JSON.stringify({
     "@context": DataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
-    "@type": DataSEORoot["@type"], /* (Obligatoire) Type de la donnée */
-    "@id": DataSEO_PortraitGrossesse.id,
+    "@type": DataSEORoot["@type"].Local, /* (Obligatoire) Type de la donnée */
+    "@id": DataSEO_PortraitGrossesse.id_LocalBusiness,
     "name": DataSEORoot.name, /* (Obligatoire) Nom de l'entreprise */
     "image": DataSEO_PortraitGrossesse.img, /* (Obligatoire) URL de l'image de l'entreprise */
     "description": DataSEO_PortraitGrossesse.description,
@@ -28,4 +28,4 @@ const JSON_LD_PortraitGrossesse_Grabels_Schema_SEO = JSON.stringify({
     "review": generateReviewArraySEO(AvisClientGrossesseControllerData), /* Met à disposition les avis clients dans le SEO avec les bonnes clés */
 });
 
-export default JSON_LD_PortraitGrossesse_Grabels_Schema_SEO;
+export default JSON_LD_LocalBusiness_PortraitGrossesse_Schema_SEO;
