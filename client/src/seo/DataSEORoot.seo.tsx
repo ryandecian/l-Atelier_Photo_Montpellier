@@ -1,6 +1,7 @@
 import externalLinks from "../constants/externalLinks";
+import DataSEORootType from "../types/DataSEORoot.type";
 
-function DataSEORoot() {
+function DataSEORoot(): DataSEORootType {
     const DataSEORoots = {
         /* Data Helmet */
         autor: "Anne SAUNIER", // Nom de l'auteur
