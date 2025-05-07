@@ -34,7 +34,6 @@ const DataSEO_PortraitGrossesse = {
 
     /* Data Helmet et JSON-LD */
     img: `${import.meta.env.URL_CLIENT}/images-seo/portrait-grossesse/dans-les-yeux-de-sacha.jpg`, /*Lien URL public de l'image*/
-    id_LocalBusiness: `${import.meta.env.URL_CLIENT}${ListDataRouter[17].path}#portrait-grossesse`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
     id_Service: `${import.meta.env.URL_CLIENT}${ListDataRouter[17].path}#service-portrait-grossesse`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
     serviceType: "Photographie grossesse et nouveau-né",
 };

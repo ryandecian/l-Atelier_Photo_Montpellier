@@ -13,19 +13,9 @@ const JSON_LD_Service_PortraitGrossesse_Schema_SEO = JSON.stringify({
     "image": DataSEO_PortraitGrossesse.img, /* (Obligatoire) URL de l'image de l'entreprise */
     "description": DataSEO_PortraitGrossesse.description,
     "provider": {
-        "@id": DataSEO_PortraitGrossesse.id_LocalBusiness /* (Obligatoire) Référence à l'ID de l'Entreprise */
+        "@id": DataSEORoot.id_LocalBusiness /* (Obligatoire) Référence à l'ID de l'Entreprise */
     },
-    "areaServed": [
-        { "@type": "Place", "name": "Montpellier", "adress": {"@type": "PostalAddress", "addressLocality": "Montpellier",} },
-        { "@type": "Place", "name": "Grabels" },
-        { "@type": "Place", "name": "Nîmes" },
-        { "@type": "Place", "name": "Béziers" },
-        { "@type": "Place", "name": "Narbonne" },
-        { "@type": "Place", "name": "Castelnau-le-Lez" },
-        { "@type": "Place", "name": "Lattes" },
-        { "@type": "Place", "name": "Saint-Jean-de-Védas" },
-        { "@type": "Place", "name": "Saint-Gély-du-Fesc" }
-  ],
+    "areaServed": DataSEORoot.areaServed, /* Zone géographique desservie par le service */
   "availableChannel": {
     "@type": "ServiceChannel",
     "serviceUrl": DataSEO_PortraitGrossesse.url

@@ -9,7 +9,7 @@ function HomePage() {
     const SEO = {
         title: "Accueil - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
-        description: "Photographe professionnelle à Montpellier, Anne SAUNIER vous invite à découvrir l’univers de l’Atelier Photo Montpellier : portraits Lifestyle, Mariage et Corporate. Un regard artistique et bienveillant pour sublimer vos instants.",
+        description: "Photographe professionnelle à Montpellier, Anne SAUNIER vous accueille à l’Atelier Photo Montpellier pour des portraits vrais, élégants et lumineux.",
         url: `${import.meta.env.URL_CLIENT_LAPM}${ListDataRouter[0].path}`, /*URL de la page*/
         img: `${import.meta.env.URL_CLIENT_LAPM}/Dans-les-yeux-de-Sacha.jpg`, /*Lien URL de l'image*/
         twitterUrlImg: "", /*Lien URL de l'image*/
