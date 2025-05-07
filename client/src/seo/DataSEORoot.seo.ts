@@ -77,11 +77,41 @@ const DataSEORoot = {
         },
         {
             "@type": "Place",
+            "name": "Pérols",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Pérols",
+                "postalCode": "34470",
+                "addressCountry": "FR"
+            }
+        },
+        {
+            "@type": "Place",
             "name": "Saint-Jean-de-Védas",
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Saint-Jean-de-Védas",
                 "postalCode": "34430",
+                "addressCountry": "FR"
+            }
+        },
+        {
+            "@type": "Place",
+            "name": "Lunel",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Lunel",
+                "postalCode": "34400",
+                "addressCountry": "FR"
+            }
+        },
+        {
+            "@type": "Place",
+            "name": "La Grande-Motte",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "La Grande-Motte",
+                "postalCode": "34280",
                 "addressCountry": "FR"
             }
         },
@@ -107,11 +137,41 @@ const DataSEORoot = {
         },
         {
             "@type": "Place",
+            "name": "Le Grau-du-Roi",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Le Grau-du-Roi",
+                "postalCode": "30240",
+                "addressCountry": "FR"
+            }
+        },
+        {
+            "@type": "Place",
+            "name": "Aigues-Mortes",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Aigues-Mortes",
+                "postalCode": "30220",
+                "addressCountry": "FR"
+            }
+        },
+        {
+            "@type": "Place",
             "name": "Nîmes",
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Nîmes",
                 "postalCode": "30000",
+                "addressCountry": "FR"
+            }
+        },
+        {
+            "@type": "Place",
+            "name": "Arles",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Arles",
+                "postalCode": "13200",
                 "addressCountry": "FR"
             }
         },
