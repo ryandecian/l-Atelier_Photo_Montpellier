@@ -1,5 +1,5 @@
 import style from "../../../StyleRootComponent.module.css";
-import { LinkExt } from "../../../../router/router";
+import externalLinks from "../../../../constants/externalLinks";
 
 function MentionsLegalesComponentB() {
     return (
@@ -27,7 +27,7 @@ function MentionsLegalesComponentB() {
                 Toute exploitation non autorisée du site ou de l’un quelconque des éléments qu’il contient sera considérée 
                 comme constitutive d’une contrefaçon et poursuivie conformément aux dispositions des articles {" "}
                 <span className={style.SpanLink}>
-                    <a href={LinkExt.loi2} target="_blank" rel="noopener noreferrer">
+                    <a href={externalLinks.loi2} target="_blank" rel="noopener noreferrer">
                         {"L.335-2 et suivants du Code de Propriété Intellectuelle"}
                     </a>
                 </span>
