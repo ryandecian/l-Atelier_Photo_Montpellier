@@ -13,7 +13,7 @@ const JSON_LD_Service_PortraitGrossesse_Schema_SEO = JSON.stringify({
     "image": DataSEO_PortraitGrossesse.img, /* (Obligatoire) URL de l'image de l'entreprise */
     "description": DataSEO_PortraitGrossesse.description,
     "provider": {
-        "@id": DataSEO_PortraitGrossesse.id_LocalBusiness /* (Obligatoire) Référence à l'ID de l'Entreprise */
+        "@id": DataSEORoot.id_LocalBusiness /* (Obligatoire) Référence à l'ID de l'Entreprise */
     },
     "areaServed": DataSEORoot.areaServed, /* Zone géographique desservie par le service */
   "availableChannel": {

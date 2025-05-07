@@ -1,5 +1,4 @@
 import { LinkExt } from "../router/router";
-import ListDataRouter from "../router/router";
 
 const DataSEORoot = {
     /* Data Helmet */
@@ -12,10 +11,13 @@ const DataSEORoot = {
         Local: "LocalBusiness",
         Service: "Service",
     },
-    id_LocalBusiness: `${import.meta.env.URL_CLIENT}${ListDataRouter[17].path}#lapm`, // @id SEO-friendly, correspond id unique de l'entreprise
+    id_LocalBusiness: `${import.meta.env.URL_CLIENT}#lapm`, // @id SEO-friendly, correspond id unique de l'entreprise
+    description: "L'Atelier Photo Montpellier, dirigé par Anne SAUNIER, propose des prestations photographiques professionnelles à Montpellier et ses environs : grossesse, mariage, portraits corporate, lifestyle...", // Description de l'entreprise
     "name": "L'Atelier Photo Montpellier",
     "telephone": "+33 6 52 67 73 33", // Numéro de téléphone de l'entreprise (Manuel)
     "email": LinkExt.emailAnne, // Adresse email de l'entreprise (Dynamique)
+    "url": `${import.meta.env.URL_CLIENT}`, // URL de la page d'accueil de l'entreprise (Dynamique)
+    img: `${import.meta.env.URL_CLIENT}/dans-les-yeux-de-sacha.jpg`, // Lien URL public de l'image de l'entreprise (Dynamique)
     "openingHours": [
         "Mo-Su 10:00-13:00",
         "Mo-Su 14:00-19:00"

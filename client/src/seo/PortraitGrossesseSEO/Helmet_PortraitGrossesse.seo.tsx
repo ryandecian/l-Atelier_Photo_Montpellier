@@ -1,14 +1,14 @@
 import { Helmet } from "react-helmet-async";
 import DataSEORoot from "../DataSEORoot.seo";
 import DataSEO_PortraitGrossesse from "./DataSEO_PortraitGrossesse.seo";
-import JSON_LD_LocalBusiness_PortraitGrossesse_Schema_SEO from "./JSON-LD_LocalBusiness_PortraitGrossesse.schema.seo";
+import JSON_LD_LocalBusiness_Root_Schema_SEO from "../JSON-LD_LocalBusiness_Root.schema.seo";
 import JSON_LD_Service_PortraitGrossesse_Schema_SEO from "./JSON-LD_Service_PortraitGrossesse.schema.seo";
 
 const SEO = {
     title: DataSEO_PortraitGrossesse.title,
     autor: DataSEORoot.autor,
     description: DataSEO_PortraitGrossesse.description,
-    id: DataSEO_PortraitGrossesse.id_LocalBusiness, // A revoir !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    id: DataSEORoot.id_LocalBusiness, 
     url: DataSEO_PortraitGrossesse.url,
     img: DataSEO_PortraitGrossesse.img,
     twitterUrlImg: DataSEO_PortraitGrossesse.twitterUrlImg || DataSEO_PortraitGrossesse.img, // fallback
@@ -24,7 +24,7 @@ function Helmet_PortraitGrossesse_SEO() {
         <Helmet>
             {/* JSON-LD */}
             <script type="application/ld+json">
-                {JSON_LD_LocalBusiness_PortraitGrossesse_Schema_SEO}
+                {JSON_LD_LocalBusiness_Root_Schema_SEO}
             </script>
             <script type="application/ld+json">
                 {JSON_LD_Service_PortraitGrossesse_Schema_SEO}
