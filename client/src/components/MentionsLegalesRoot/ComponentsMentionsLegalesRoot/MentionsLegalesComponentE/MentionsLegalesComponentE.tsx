@@ -1,5 +1,5 @@
 import style from "../../../StyleRootComponent.module.css";
-import { LinkExt } from "../../../../router/router";
+import externalLinks from "../../../../constants/externalLinks";
 
 function MentionsLegalesComponentE() {
     return (
@@ -61,7 +61,7 @@ function MentionsLegalesComponentE() {
                 Pour plus d’informations sur la façon dont nous faisons usage des cookies, nous vous invitons à nous 
                 contacter : {" "}
                 <span className={style.SpanLink}>
-                    <a href={LinkExt.emailAnne} target="_blank" rel="noopener noreferrer">
+                    <a href={externalLinks.emailAnne} target="_blank" rel="noopener noreferrer">
                         {"photo34000@gmail.com"}
                     </a>
                 </span>

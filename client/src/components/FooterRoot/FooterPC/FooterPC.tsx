@@ -1,6 +1,7 @@
 import style from "./FooterPC.module.css";
 import { Link } from "react-router-dom";
-import ListDataRouter, {LinkExt} from "../../../router/router";
+import ListDataRouter from "../../../router/router";
+import externalLinks from "../../../constants/externalLinks";
 
 function FooterPC() {
 
@@ -60,21 +61,21 @@ function FooterPC() {
 
                     <ul className={style.UlText}>
                         <li className={style.LiTextLink}>
-                            <a href={LinkExt.instagram} target="_blank" rel="noopener noreferrer">
+                            <a href={externalLinks.instagram} target="_blank" rel="noopener noreferrer">
                                 Instagram
                             </a>
                         </li>
                     </ul>
                     <ul className={style.UlText}>
                         <li className={style.LiTextLink}>
-                            <a href={LinkExt.facebook} target="_blank" rel="noopener noreferrer">
+                            <a href={externalLinks.facebook} target="_blank" rel="noopener noreferrer">
                                 Facebook
                             </a>
                         </li>
                     </ul>
                     <ul className={style.UlText}>
                         <li className={style.LiTextLink}>
-                            <a href={LinkExt.youtube} target="_blank" rel="noopener noreferrer">
+                            <a href={externalLinks.youtube} target="_blank" rel="noopener noreferrer">
                                 Youtube
                             </a>
                         </li>
