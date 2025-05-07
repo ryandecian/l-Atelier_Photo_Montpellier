@@ -1,4 +1,4 @@
-import { LinkExt } from "../router/router";
+import externalLinks from "../constants/externalLinks"
 
 const DataSEORoot = {
     /* Data Helmet */
@@ -15,7 +15,7 @@ const DataSEORoot = {
     description: "L'Atelier Photo Montpellier, dirigé par Anne SAUNIER, propose des prestations photographiques professionnelles à Montpellier et ses environs : grossesse, mariage, portraits corporate, lifestyle...", // Description de l'entreprise
     "name": "L'Atelier Photo Montpellier",
     "telephone": "+33 6 52 67 73 33", // Numéro de téléphone de l'entreprise (Manuel)
-    "email": LinkExt.emailAnne, // Adresse email de l'entreprise (Dynamique)
+    "email": externalLinks.emailAnne, // Adresse email de l'entreprise (Dynamique)
     "url": `${import.meta.env.URL_CLIENT}`, // URL de la page d'accueil de l'entreprise (Dynamique)
     img: `${import.meta.env.URL_CLIENT}/dans-les-yeux-de-sacha.jpg`, // Lien URL public de l'image de l'entreprise (Dynamique)
     "openingHours": [
@@ -23,8 +23,8 @@ const DataSEORoot = {
         "Mo-Su 14:00-19:00"
     ], // Horaires d'ouverture du lundi au dimanche de 10h à 13h et de 14h à 19h
     "sameAs": [
-        LinkExt.instagram, // Compte Instagram
-        LinkExt.facebook, // A modifier car ce n'est pas le bon compte
+        externalLinks.instagram, // Compte Instagram
+        externalLinks.facebook, // A modifier car ce n'est pas le bon compte
     ],
     "areaServed": [
         {
