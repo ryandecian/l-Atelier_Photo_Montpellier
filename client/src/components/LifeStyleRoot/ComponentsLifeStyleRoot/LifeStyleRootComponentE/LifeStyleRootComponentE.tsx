@@ -1,6 +1,6 @@
 import style from "../../../StyleRootComponent.module.css";
 import { Check } from "lucide-react";
-import { LinkExt } from "../../../../router/router";
+import externalLinks from "../../../../constants/externalLinks";
 
 function LifeStyleRootComponentE() {
     return (
@@ -60,7 +60,7 @@ function LifeStyleRootComponentE() {
                     </span> 
                     {" "}
                     <span className={style.SpanLink}>
-                        <a href={LinkExt.emailAnne} target="_blank" rel="noopener noreferrer">
+                        <a href={externalLinks.emailAnne} target="_blank" rel="noopener noreferrer">
                             {"Contactez-moi."}
                         </a>
                     </span>
