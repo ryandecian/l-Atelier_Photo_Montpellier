@@ -47,6 +47,46 @@ const DataSEORoot = {
         },
         {
             "@type": "Place",
+            "name": "Juvignac",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Juvignac",
+                "postalCode": "34990",
+                "addressCountry": "FR"
+            }
+        },
+        {
+            "@type": "Place",
+            "name": "Combaillaux",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Combaillaux",
+                "postalCode": "34980",
+                "addressCountry": "FR"
+            }
+        },
+        {
+            "@type": "Place",
+            "name": "Montferrier-sur-Lez",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Montferrier-sur-Lez",
+                "postalCode": "34980",
+                "addressCountry": "FR"
+            }
+        },
+        {
+            "@type": "Place",
+            "name": "Saint-Clément-de-Rivière",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Saint-Clément-de-Rivière",
+                "postalCode": "34980",
+                "addressCountry": "FR"
+            }
+        },
+        {
+            "@type": "Place",
             "name": "Saint-Gély-du-Fesc",
             "address": {
                 "@type": "PostalAddress",
@@ -62,6 +102,76 @@ const DataSEORoot = {
                 "@type": "PostalAddress",
                 "addressLocality": "Lattes",
                 "postalCode": "34970",
+                "addressCountry": "FR"
+            }
+        },
+        {
+            "@type": "Place",
+            "name": "Le Crès",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Le Crès",
+                "postalCode": "34920",
+                "addressCountry": "FR"
+            }
+        },
+        {
+            "@type": "Place",
+            "name": "Clapiers",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Clapiers",
+                "postalCode": "34830",
+                "addressCountry": "FR"
+            }
+        },
+        {
+            "@type": "Place",
+            "name": "Jacou",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Jacou",
+                "postalCode": "34830",
+                "addressCountry": "FR"
+            }
+        },
+        {
+            "@type": "Place",
+            "name": "Villeneuve-lès-Maguelone",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Villeneuve-lès-Maguelone",
+                "postalCode": "34750",
+                "addressCountry": "FR"
+            }
+        },
+        {
+            "@type": "Place",
+            "name": "Fabrègues",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Fabrègues",
+                "postalCode": "34690",
+                "addressCountry": "FR"
+            }
+        },
+        {
+            "@type": "Place",
+            "name": "Cournonterral",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Cournonterral",
+                "postalCode": "34660",
+                "addressCountry": "FR"
+            }
+        },
+        {
+            "@type": "Place",
+            "name": "Pignan",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Pignan",
+                "postalCode": "34570",
                 "addressCountry": "FR"
             }
         },
@@ -127,11 +237,40 @@ const DataSEORoot = {
         },
         {
             "@type": "Place",
+            "name": "Sète",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Sète",
+                "postalCode": "34200",
+                "addressCountry": "FR"
+            }
+        },
+        {
+            "@type": "Place",
             "name": "Castelnau-le-Lez",
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Castelnau-le-Lez",
                 "postalCode": "34170",
+                "addressCountry": "FR"
+            }
+        },
+        {
+            "@type": "Place",
+            "name": "Mauguio",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Mauguio",
+                "postalCode": "34130",
+                "addressCountry": "FR"
+            }
+        },
+        {
+            "@type": "Place",
+            "name": "Frontignan",           "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Frontignan",
+                "postalCode": "34110",
                 "addressCountry": "FR"
             }
         },
