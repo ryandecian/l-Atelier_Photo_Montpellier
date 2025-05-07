@@ -1,6 +1,6 @@
 import style from "../../../StyleRootComponent.module.css";
 import css from "./CorporateRootComponentC.module.css"
-import { LinkExt } from "../../../../router/router";
+import externalLinks from "../../../../constants/externalLinks";
 
 function CorporateRootComponentC() {
     return (
@@ -86,7 +86,7 @@ function CorporateRootComponentC() {
                 <p className={style.TextP4}>
                     Besoin d’un conseil ? {" "}
                     <span className={style.SpanLink}>
-                        <a href={LinkExt.emailAnne}>
+                        <a href={externalLinks.emailAnne}>
                             {" Discutons de votre projet ! "}
                         </a>
                     </span>
