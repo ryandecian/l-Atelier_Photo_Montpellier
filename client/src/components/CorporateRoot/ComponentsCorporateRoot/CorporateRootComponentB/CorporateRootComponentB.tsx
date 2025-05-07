@@ -1,5 +1,5 @@
 import style from "../../../StyleRootComponent.module.css";
-import { LinkExt } from "../../../../router/router";
+import externalLinks from "../../../../constants/externalLinks";
 import Container4ImagesPortraitRoot from "../../../ContainerImageRoot/Container4ImagesPortraitRoot/Container4ImagesPortraitRoot";
 import ImagesCorporateControllerData from "../../ImagesCorporateControllerData";
 
@@ -42,7 +42,7 @@ function CorporateRootComponentB() {
                 <p className={style.TextP4}>
                     Votre image mérite le meilleur – {" "}
                     <span className={style.SpanLink}>
-                        <a href={LinkExt.emailAnne}>
+                        <a href={externalLinks.emailAnne}>
                             {"Prêt(e) à     passer devant l’objectif ?"}
                         </a>
                     </span>

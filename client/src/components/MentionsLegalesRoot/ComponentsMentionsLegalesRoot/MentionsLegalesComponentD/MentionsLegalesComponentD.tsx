@@ -1,5 +1,5 @@
 import style from "../../../StyleRootComponent.module.css";
-import { LinkExt } from "../../../../router/router";
+import externalLinks from "../../../../constants/externalLinks";
 
 function MentionsLegalesComponentD() {
     return (
@@ -12,7 +12,7 @@ function MentionsLegalesComponentD() {
             <p className={style.TextP4}>
                 Conformément aux dispositions de la {" "}
                 <span className={style.SpanLink}>
-                    <a href={LinkExt.loi3} target="_blank" rel="noopener noreferrer">
+                    <a href={externalLinks.loi3} target="_blank" rel="noopener noreferrer">
                         {"loi 78-17 du 6 janvier 1978 modifiée"}
                     </a>
                 </span>
@@ -27,7 +27,7 @@ function MentionsLegalesComponentD() {
                 </span>
                 {" "} – {" "}
                 <span className={style.SpanLink}>
-                    <a href={LinkExt.emailAnne} target="_blank" rel="noopener noreferrer">
+                    <a href={externalLinks.emailAnne} target="_blank" rel="noopener noreferrer">
                         {"photo34000@gmail.com"}
                     </a>
                 </span>
