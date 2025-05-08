@@ -36,8 +36,8 @@ function DataSEO_Home(): DataSEOTargetOneType {
     
         /* Data Helmet et JSON-LD */
         img: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-grossesse/dans-les-yeux-de-sacha.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[17].path}#service-portrait-grossesse`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
-        serviceType: "Découverte des services de photographie professionnelle",
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[0].path}#home`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
+        serviceType: "Découverte des prestations de photographie professionnelle proposées par l'Atelier Photo Montpellier",
     };
 
     return (
