@@ -1,0 +1,19 @@
+# Autoriser tous les robots à explorer le site
+User-agent: *
+Allow: /
+
+# Bloquer les dossiers sensibles ou inutiles pour l’indexation
+Disallow: /admin/
+Disallow: /compte/
+Disallow: /admin/user-systeme/
+
+# Bloquer les URLs avec paramètres spécifiques (si applicable)
+# Disallow: /*?*
+
+# Empêcher l’indexation des fichiers sensibles (optionnel)
+Disallow: /*.env$
+Disallow: /*.log$
+Disallow: /config/
+
+# Indiquer l’emplacement du sitemap (quand il sera créé)
+Sitemap: https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250/sitemap.xml
