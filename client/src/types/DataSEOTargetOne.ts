@@ -28,7 +28,8 @@ type DataSEOTargetOneType = {
         music: string;
         profile: string;
     };
-    img: string;
+    img_JSON_LD: string;
+    img_Helmet: string;
     id_Service: string; // @id SEO-friendly, correspond à l'URL de la page + mots clés
     serviceType: string; // Type de service
 }
