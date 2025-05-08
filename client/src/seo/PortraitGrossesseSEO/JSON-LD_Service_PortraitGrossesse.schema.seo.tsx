@@ -19,7 +19,7 @@ function JSON_LD_Service_PortraitGrossesse_Schema_SEO() : string {
         "@id": DataSEO_PortraitGrossesse.id_Service,
         "serviceType": "Photographie grossesse",
         "name": DataSEORoot.name, /* (Obligatoire) Nom de l'entreprise */
-        "image": DataSEO_PortraitGrossesse.img, /* (Obligatoire) URL de l'image de l'entreprise */
+        "image": DataSEO_PortraitGrossesse.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
         "description": DataSEO_PortraitGrossesse.description,
         "provider": {
             "@id": DataSEORoot.id_LocalBusiness /* (Obligatoire) Référence à l'ID de l'Entreprise */
