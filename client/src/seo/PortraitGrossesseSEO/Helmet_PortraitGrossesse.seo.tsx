@@ -1,33 +1,42 @@
 import { Helmet } from "react-helmet-async";
-import DataSEORoot from "../DataSEORoot.seo";
-import DataSEO_PortraitGrossesse from "./DataSEO_PortraitGrossesse.seo";
+import DataSEOHelmetType from "../../types/DataSEOHelmet";
+
+import DataSEORoots from "../DataSEORoot.seo";
+import DataSEO_PortraitGrossesses from "./DataSEO_PortraitGrossesse.seo";
+
+import DataSEORootType from "../../types/DataSEORoot.type";
+import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
+
 import JSON_LD_LocalBusiness_Root_Schema_SEO from "../JSON-LD_LocalBusiness_Root.schema.seo";
 import JSON_LD_Service_PortraitGrossesse_Schema_SEO from "./JSON-LD_Service_PortraitGrossesse.schema.seo";
 
-const SEO = {
-    title: DataSEO_PortraitGrossesse.title,
-    autor: DataSEORoot.autor,
-    description: DataSEO_PortraitGrossesse.description,
-    id: DataSEORoot.id_LocalBusiness, 
-    url: DataSEO_PortraitGrossesse.url,
-    img: DataSEO_PortraitGrossesse.img,
-    twitterUrlImg: DataSEO_PortraitGrossesse.twitterUrlImg || DataSEO_PortraitGrossesse.img, // fallback
-    twitterCompte: DataSEORoot.twitterCompte,
-    keywords: DataSEO_PortraitGrossesse.keywords,
-    type: DataSEO_PortraitGrossesse.type,
-};
 
 function Helmet_PortraitGrossesse_SEO() {
+    const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
+    const DataSEO_PortraitGrossesse: DataSEOTargetOneType = DataSEO_PortraitGrossesses(); /* Récupération des données SEO Portrait Grossesse */
+
+    const SEO: DataSEOHelmetType = {
+        title: DataSEO_PortraitGrossesse.title,
+        autor: DataSEORoot.autor,
+        description: DataSEO_PortraitGrossesse.description,
+        url: DataSEO_PortraitGrossesse.url,
+        img: DataSEO_PortraitGrossesse.img,
+        twitterUrlImg: DataSEO_PortraitGrossesse.twitterUrlImg || DataSEO_PortraitGrossesse.img, // fallback
+        twitterCompte: DataSEORoot.twitterCompte,
+        keywords: DataSEO_PortraitGrossesse.keywords,
+        type: DataSEO_PortraitGrossesse.type,
+    };
+
     const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
 
     return (
         <Helmet>
             {/* JSON-LD */}
             <script type="application/ld+json">
-                {JSON_LD_LocalBusiness_Root_Schema_SEO}
+                {JSON_LD_LocalBusiness_Root_Schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_Service_PortraitGrossesse_Schema_SEO}
+                {JSON_LD_Service_PortraitGrossesse_Schema_SEO()}
             </script>
 
             {/* Langue principale du document */}

@@ -1,13 +1,17 @@
 import DataSEORoots from "../DataSEORoot.seo";
 import DataSEORootType from "../../types/DataSEORoot.type";
+
+import DataSEO_PortraitGrossesses from "./DataSEO_PortraitGrossesse.seo";
+import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
+
 import AvisClientGrossesseControllerData from "../../components/GrossesseRoot/AvisClientGrossesseControllerData";
 import generateAverageRatingSEO from "../../utils/generateAverageRatingSEO.utils";
 import generateReviewArraySEO from "../../utils/generateReviewArraySEO.utils";
-import DataSEO_PortraitGrossesse from "./DataSEO_PortraitGrossesse.seo";
 
 
 function JSON_LD_Service_PortraitGrossesse_Schema_SEO() : string {
     const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
+    const DataSEO_PortraitGrossesse: DataSEOTargetOneType = DataSEO_PortraitGrossesses(); /* Récupération des données SEO Portrait Grossesse */
 
     const JSON_LD = JSON.stringify({
         "@context": DataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
