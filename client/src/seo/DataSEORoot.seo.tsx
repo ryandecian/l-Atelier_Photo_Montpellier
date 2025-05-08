@@ -161,6 +161,16 @@ function DataSEORoot(): DataSEORootType {
             },
             {
                 "@type": "Place",
+                "name": "Clermont L'Hérault",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Clermont L'Hérault",
+                    "postalCode": "34800",
+                    "addressCountry": "FR"
+                }
+            },
+            {
+                "@type": "Place",
                 "name": "Villeneuve-lès-Maguelone",
                 "address": {
                     "@type": "PostalAddress",
@@ -186,6 +196,16 @@ function DataSEORoot(): DataSEORootType {
                     "@type": "PostalAddress",
                     "addressLocality": "Prades-le-Lez",
                     "postalCode": "34730",
+                    "addressCountry": "FR"
+                }
+            },
+            {
+                "@type": "Place",
+                "name": "Lodeve",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Lodeve",
+                    "postalCode": "34700",
                     "addressCountry": "FR"
                 }
             },
@@ -301,6 +321,16 @@ function DataSEORoot(): DataSEORootType {
             },
             {
                 "@type": "Place",
+                "name": "Agde",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "LuneAgde",
+                    "postalCode": "34300",
+                    "addressCountry": "FR"
+                }
+            },
+            {
+                "@type": "Place",
                 "name": "La Grande-Motte",
                 "address": {
                     "@type": "PostalAddress",
@@ -341,10 +371,40 @@ function DataSEORoot(): DataSEORootType {
             },
             {
                 "@type": "Place",
+                "name": "Castries",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Castries",
+                    "postalCode": "34160",
+                    "addressCountry": "FR"
+                }
+            },
+            {
+                "@type": "Place",
+                "name": "Aniane",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Castelnau-le-LezAniane",
+                    "postalCode": "34150",
+                    "addressCountry": "FR"
+                }
+            },
+            {
+                "@type": "Place",
                 "name": "Gignac",
                 "address": {
                     "@type": "PostalAddress",
                     "addressLocality": "Gignac",
+                    "postalCode": "34150",
+                    "addressCountry": "FR"
+                }
+            },
+            {
+                "@type": "Place",
+                "name": "Montpeyrou",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Montpeyrou",
                     "postalCode": "34150",
                     "addressCountry": "FR"
                 }
@@ -361,11 +421,31 @@ function DataSEORoot(): DataSEORootType {
             },
             {
                 "@type": "Place",
+                "name": "Pezenas",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Pezenas",
+                    "postalCode": "34120",
+                    "addressCountry": "FR"
+                }
+            },
+            {
+                "@type": "Place",
                 "name": "Frontignan",
                 "address": {
                     "@type": "PostalAddress",
                     "addressLocality": "Frontignan",
                     "postalCode": "34110",
+                    "addressCountry": "FR"
+                }
+            },
+            {
+                "@type": "Place",
+                "name": "Sommières",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Sommières",
+                    "postalCode": "30250",
                     "addressCountry": "FR"
                 }
             },
