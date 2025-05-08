@@ -7,7 +7,7 @@ function DataSEO_PortraitGrossesse(): DataSEOTargetOneType {
         title: "Portrait Grossesse et nouveau né - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
         description: "Avec l’Atelier Photo Montpellier, Anne SAUNIER capture la magie de la grossesse et les premiers instants de vie à travers des portraits doux et authentiques.",
-        url: `${import.meta.env.URL_CLIENT}${ListDataRouter[17].path}`, /*URL de la page*/
+        url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[17].path}`, /*URL de la page*/
         twitterUrlImg: "", /* Lien URL de l'image */
         keywords: {
             1: "Anne SAUNIER", /* 1 mot clés */
