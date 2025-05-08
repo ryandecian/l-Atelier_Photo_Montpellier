@@ -20,8 +20,8 @@ function Helmet_Home_SEO() {
         autor: DataSEORoot.autor,
         description: DataSEO_Home.description,
         url: DataSEO_Home.url,
-        img: DataSEO_Home.img,
-        twitterUrlImg: DataSEO_Home.twitterUrlImg || DataSEO_Home.img, // fallback
+        img: DataSEO_Home.img_JSON_LD,
+        twitterUrlImg: DataSEO_Home.twitterUrlImg || DataSEO_Home.img_JSON_LD, // fallback
         twitterCompte: DataSEORoot.twitterCompte,
         keywords: DataSEO_Home.keywords,
         type: DataSEO_Home.type,

@@ -19,7 +19,7 @@ function JSON_LD_Service_Home_Schema_SEO() : string {
         "@id": DataSEO_Home.id_Service,
         "serviceType": "Photographie grossesse",
         "name": DataSEORoot.name, /* (Obligatoire) Nom de l'entreprise */
-        "image": DataSEO_Home.img, /* (Obligatoire) URL de l'image de l'entreprise */
+        "image": DataSEO_Home.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
         "description": DataSEO_Home.description,
         "provider": {
             "@id": DataSEORoot.id_LocalBusiness /* (Obligatoire) Référence à l'ID de l'Entreprise */
