@@ -341,10 +341,30 @@ function DataSEORoot(): DataSEORootType {
             },
             {
                 "@type": "Place",
+                "name": "Aniane",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Castelnau-le-LezAniane",
+                    "postalCode": "34150",
+                    "addressCountry": "FR"
+                }
+            },
+            {
+                "@type": "Place",
                 "name": "Gignac",
                 "address": {
                     "@type": "PostalAddress",
                     "addressLocality": "Gignac",
+                    "postalCode": "34150",
+                    "addressCountry": "FR"
+                }
+            },
+            {
+                "@type": "Place",
+                "name": "Montpeyrou",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Montpeyrou",
                     "postalCode": "34150",
                     "addressCountry": "FR"
                 }
