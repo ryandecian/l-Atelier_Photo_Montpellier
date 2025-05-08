@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250/portfolio</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250/tarifs</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250/portrait-corporate</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250/portrait-mariage</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250/portrait-lifestyle</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250/portrait-solo</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250/portrait-duo</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250/portraits-familles-amis</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250/portraits-nouveaux-nes</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250/portraits-grossesses</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250/portraits-hobbies</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://l-atelier-photo-montpellier.decian.ddnsfree.com/contacts</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250/qui-suis-je</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250/mentions-legales</loc>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250/conditions-generales-de-vente</loc>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>
