@@ -23,9 +23,9 @@ function DataSEORoot(): DataSEORootType {
         "openingHours": [
             "Mo-Su 10:00-13:00",
             "Mo-Su 14:00-19:00"
-        ], // Horaires d'ouverture du lundi au dimanche de 10h à 13h et de 14h à 19h
+        ], // Horaires d'ouverture du lundi au dimanche de 10h à 13het de 14h à 19h
         "sameAs": [
-            externalLinks.instagram, // Compte Instagram
+            externalLinks.instagram, // Compte Instagram 
             externalLinks.facebook, // A modifier car ce n'est pas le bon compte
         ],
         "areaServed": [
@@ -131,6 +131,26 @@ function DataSEORoot(): DataSEORootType {
             },
             {
                 "@type": "Place",
+                "name": "Laverune",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Laverune",
+                    "postalCode": "34880",
+                    "addressCountry": "FR"
+                }
+            },
+            {
+                "@type": "Place",
+                "name": "Clapiers",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Clapiers",
+                    "postalCode": "34830",
+                    "addressCountry": "FR"
+                }
+            },
+            {
+                "@type": "Place",
                 "name": "Jacou",
                 "address": {
                     "@type": "PostalAddress",
@@ -151,11 +171,41 @@ function DataSEORoot(): DataSEORootType {
             },
             {
                 "@type": "Place",
+                "name": "Vendargues",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Villeneuve-lès-MaguelonVeargues",
+                    "postalCode": "34740",
+                    "addressCountry": "FR"
+                }
+            },
+            {
+                "@type": "Place",
+                "name": "Prades-le-Lez",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Prades-le-Lez",
+                    "postalCode": "34730",
+                    "addressCountry": "FR"
+                }
+            },
+            {
+                "@type": "Place",
                 "name": "Fabrègues",
                 "address": {
                     "@type": "PostalAddress",
                     "addressLocality": "Fabrègues",
                     "postalCode": "34690",
+                    "addressCountry": "FR"
+                }
+            },
+            {
+                "@type": "Place",
+                "name": "Baillargues",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Baillargues",
+                    "postalCode": "34670",
                     "addressCountry": "FR"
                 }
             },
@@ -176,6 +226,36 @@ function DataSEORoot(): DataSEORootType {
                     "@type": "PostalAddress",
                     "addressLocality": "Pignan",
                     "postalCode": "34570",
+                    "addressCountry": "FR"
+                }
+            },
+            {
+                "@type": "Place",
+                "name": "Saint-Paul-et-Valmalle",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Saint-Paul-et-Valmalle",
+                    "postalCode": "34570",
+                    "addressCountry": "FR"
+                }
+            },
+            {
+                "@type": "Place",
+                "name": "Poussan",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Poussan",
+                    "postalCode": "34570",
+                    "addressCountry": "FR"
+                }
+            },
+            {
+                "@type": "Place",
+                "name": "Montbazin",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Montbazin",
+                    "postalCode": "34560",
                     "addressCountry": "FR"
                 }
             },
@@ -261,6 +341,16 @@ function DataSEORoot(): DataSEORootType {
             },
             {
                 "@type": "Place",
+                "name": "Gignac",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Gignac",
+                    "postalCode": "34150",
+                    "addressCountry": "FR"
+                }
+            },
+            {
+                "@type": "Place",
                 "name": "Mauguio",
                 "address": {
                     "@type": "PostalAddress",
@@ -271,7 +361,8 @@ function DataSEORoot(): DataSEORootType {
             },
             {
                 "@type": "Place",
-                "name": "Frontignan",           "address": {
+                "name": "Frontignan",
+                "address": {
                     "@type": "PostalAddress",
                     "addressLocality": "Frontignan",
                     "postalCode": "34110",
