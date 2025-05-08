@@ -35,7 +35,8 @@ function DataSEO_PortraitGrossesse(): DataSEOTargetOneType {
         },
     
         /* Data Helmet et JSON-LD */
-        img: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-grossesse/dans-les-yeux-de-sacha.jpg`, /*Lien URL public de l'image*/
+        img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-grossesse/photo-portrait-professionnel-grossesse-montpellier.jpg`, /*Lien URL public de l'image*/
+        img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-grossesse/dans-les-yeux-de-sacha.jpg`, /*Lien URL public de l'image*/
         id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[17].path}#service-portrait-grossesse`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
         serviceType: "Photographie grossesse et nouveau-né",
     };
