@@ -1,5 +1,6 @@
 import externalLinks from "../constants/externalLinks";
 import DataSEORootType from "../types/DataSEORoot.type";
+import ListDataRouter from "../router/router";
 
 function DataSEORoot(): DataSEORootType {
     const DataSEORoots = {
@@ -28,6 +29,7 @@ function DataSEORoot(): DataSEORootType {
             externalLinks.instagram, // Compte Instagram 
             externalLinks.facebook, // A modifier car ce n'est pas le bon compte
         ],
+        termsOfService: `${import.meta.env.URL_CLIENT}/${ListDataRouter[9].path}`, // Conditions d'utilisation de l'entreprise (Dynamique)
         "areaServed": [
             {
                 "@type": "Place",
