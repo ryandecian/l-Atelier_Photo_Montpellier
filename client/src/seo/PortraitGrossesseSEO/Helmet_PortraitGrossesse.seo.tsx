@@ -20,8 +20,8 @@ function Helmet_PortraitGrossesse_SEO() {
         autor: DataSEORoot.autor,
         description: DataSEO_PortraitGrossesse.description,
         url: DataSEO_PortraitGrossesse.url,
-        img: DataSEO_PortraitGrossesse.img,
-        twitterUrlImg: DataSEO_PortraitGrossesse.twitterUrlImg || DataSEO_PortraitGrossesse.img, // fallback
+        img: DataSEO_PortraitGrossesse.img_Helmet,
+        twitterUrlImg: DataSEO_PortraitGrossesse.twitterUrlImg || DataSEO_PortraitGrossesse.img_Helmet, // fallback
         twitterCompte: DataSEORoot.twitterCompte,
         keywords: DataSEO_PortraitGrossesse.keywords,
         type: DataSEO_PortraitGrossesse.type,
