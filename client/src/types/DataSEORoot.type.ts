@@ -15,6 +15,7 @@ type DataSEORootType = {
     img: string;
     openingHours: string[];
     sameAs: string[];
+    termsOfService: string;
     areaServed: {
         "@type": string;
         name: string;
