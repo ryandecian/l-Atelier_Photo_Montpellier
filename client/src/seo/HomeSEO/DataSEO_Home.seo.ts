@@ -35,8 +35,8 @@ function DataSEO_Home(): DataSEOTargetOneType {
         },
     
         /* Data Helmet et JSON-LD */
-        img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/home/photo-portrait-professionnel-lifestyle-montpellier.jpg`, /*Lien URL public de l'image*/
-        img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/home/photo-portrait-professionnel-lifestyle-montpellier.jpg`, /*Lien URL public de l'image*/
+        img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/home/google/photo-professionnel-portrait-lifestyle-montpellier.jpg`, /*Lien URL public de l'image*/
+        img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/home/helmet/reflets-de-memoire-anne-saunier.jpg`, /*Lien URL public de l'image*/
         id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[0].path}#home`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
         serviceType: "Découverte des prestations de photographie professionnelle proposées par l'Atelier Photo Montpellier",
     };
