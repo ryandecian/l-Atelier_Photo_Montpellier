@@ -1,11 +1,11 @@
 import { Helmet } from "react-helmet-async";
 import NavRoot from "../../components/NavRoot/NavRoot";
 import style from "../stylePage.module.css";
-import CorporateRoot from "../../components/CorporateRoot/CorporateRoot";
+import PortraitCorporateRoot from "../../components/PortraitCorporateRoot/PortraitCorporateRoot";
 import FooterRoot from "../../components/FooterRoot/FooterRoot";
 import ListDataRouter from "../../router/router";
 
-function CorporatePage() {
+function PortraitCorporatePage() {
     const SEO = {
         title: "Portrait Corporate - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
@@ -81,7 +81,7 @@ function CorporatePage() {
                  <NavRoot />
             </header>
             <main className={style.Main}>
-                <CorporateRoot />
+                <PortraitCorporateRoot />
             </main>
             <footer className={style.Footer}>
                 <FooterRoot />
@@ -90,4 +90,4 @@ function CorporatePage() {
     )
 }
 
-export default CorporatePage;
+export default PortraitCorporatePage;

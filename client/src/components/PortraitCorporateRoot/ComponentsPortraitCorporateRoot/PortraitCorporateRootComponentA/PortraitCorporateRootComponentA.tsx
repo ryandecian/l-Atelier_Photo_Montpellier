@@ -1,10 +1,10 @@
 import style from "../../../StyleRootComponent.module.css";
 import Container4ImagesPortraitRoot from "../../../ContainerImageRoot/Container4ImagesPortraitRoot/Container4ImagesPortraitRoot";
-import ImagesCorporateControllerData from "../../ImagesCorporateControllerData";
+import ImagesPortraitCorporateControllerData from "../../ImagesPortraitCorporateControllerData";
 
-function CorporateRootComponentA() {
+function PortraitCorporateRootComponentA() {
     return (
-        <section className={`CorporateRootComponentA ${style.ContainerRoot}`}>
+        <section className={`PortraitCorporateRootComponentA ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2}>
                     Votre visage, votre signature, ce que vous souhaitez transmettre y sera !
@@ -36,14 +36,14 @@ function CorporateRootComponentA() {
 
                 {/* Container 1 : Container image portrait Corporate */}
                 <Container4ImagesPortraitRoot 
-                img1={ImagesCorporateControllerData[0].src}
-                MetaNameImg1={ImagesCorporateControllerData[0].alt}
-                img2={ImagesCorporateControllerData[1].src}
-                MetaNameImg2={ImagesCorporateControllerData[1].alt}
-                img3={ImagesCorporateControllerData[2].src}
-                MetaNameImg3={ImagesCorporateControllerData[2].alt}
-                img4={ImagesCorporateControllerData[3].src}
-                MetaNameImg4={ImagesCorporateControllerData[3].alt}
+                img1={ImagesPortraitCorporateControllerData[0].src}
+                MetaNameImg1={ImagesPortraitCorporateControllerData[0].alt}
+                img2={ImagesPortraitCorporateControllerData[1].src}
+                MetaNameImg2={ImagesPortraitCorporateControllerData[1].alt}
+                img3={ImagesPortraitCorporateControllerData[2].src}
+                MetaNameImg3={ImagesPortraitCorporateControllerData[2].alt}
+                img4={ImagesPortraitCorporateControllerData[3].src}
+                MetaNameImg4={ImagesPortraitCorporateControllerData[3].alt}
                 />
 
                 <br />
@@ -63,4 +63,4 @@ function CorporateRootComponentA() {
     )
 }
 
-export default CorporateRootComponentA;
+export default PortraitCorporateRootComponentA;

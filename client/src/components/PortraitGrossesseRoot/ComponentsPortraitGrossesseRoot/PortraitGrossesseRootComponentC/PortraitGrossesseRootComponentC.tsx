@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import style from "../../../StyleRootComponent.module.css";
 import ListDataRouter from "../../../../router/router";
 
-function GrossesseRootComponenetC() {
+function PortraitGrossesseRootComponenetC() {
     return (
-        <article className={`GrossesseRootComponentC ${style.ContainerRoot}`}>
+        <article className={`PortraitGrossesseRootComponentC ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2}>
                     {"Un service clé en main : douceur, organisation et qualité"}
@@ -48,7 +48,7 @@ function GrossesseRootComponenetC() {
             </h2>
 
            <p className={style.TextP4}>
-                Une grossesse, un nouveau-né… ces instants sont de véritables trésors. Chaque moment compte, surtout ceux-là. <br />  
+                Une Grossesse, un nouveau-né… ces instants sont de véritables trésors. Chaque moment compte, surtout ceux-là. <br />  
                 Confiez-moi le soin de les rendre éternels. <br />
                 <span className={style.SpanLink}>
                     <Link to={ListDataRouter[3].path}>
@@ -60,4 +60,4 @@ function GrossesseRootComponenetC() {
     )
 }
 
-export default GrossesseRootComponenetC;
+export default PortraitGrossesseRootComponenetC;
