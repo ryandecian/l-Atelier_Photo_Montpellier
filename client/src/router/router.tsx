@@ -14,7 +14,7 @@ import UserSystemePage from "../pages/UserSystemePage/UserSystemePage";
 import ContactPage from "../pages/ContactPage/ContactPage";
 import PortraitCorporatePage from "../pages/PortraitCorporatePage/PortraitCorporatePage";
 import PortraitSoloPage from "../pages/PortraitSoloPage/PortraitSoloPage";
-import GrossessePage from "../pages/GrosssessePage/GrossessePage";
+import PortraitGrossessePage from "../pages/PortraitGrosssessePage/PortraitGrossessePage";
 import PortraitDuoPage from "../pages/PortraitDuoPage/PortraitDuoPage";
 
 /**
@@ -118,12 +118,12 @@ const ListDataRouter: RouterItemsType[] = [
     /* {ListDataRouter[17].path} */
     {
         path: "/portraits-nouveaux-nes",
-        element: <GrossessePage />,
+        element: <PortraitGrossessePage />,
     },
     /* {ListDataRouter[18].path} */
     {
-        path: "/portraits-grossesses",
-        element: <GrossessePage />,
+        path: "/portrait-grossesse",
+        element: <PortraitGrossessePage />,
     },
     /* {ListDataRouter[19].path} */
     {
