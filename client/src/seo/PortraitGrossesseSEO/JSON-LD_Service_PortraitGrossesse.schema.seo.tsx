@@ -4,7 +4,7 @@ import DataSEORootType from "../../types/DataSEORoot.type";
 import DataSEO_PortraitGrossesses from "./DataSEO_PortraitGrossesse.seo";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
 
-import AvisClientGrossesseControllerData from "../../components/GrossesseRoot/AvisClientGrossesseControllerData";
+import AvisClientPortraitGrossesseControllerData from "../../components/PortraitGrossesseRoot/AvisClientPortraitGrossesseControllerData";
 import generateAverageRatingSEO from "../../utils/generateAverageRatingSEO.utils";
 import generateReviewArraySEO from "../../utils/generateReviewArraySEO.utils";
 
@@ -29,8 +29,8 @@ function JSON_LD_Service_PortraitGrossesse_Schema_SEO() : string {
         "@type": "ServiceChannel",
         "serviceUrl": DataSEO_PortraitGrossesse.url
         },
-        "aggregateRating": generateAverageRatingSEO(AvisClientGrossesseControllerData),
-        "review": generateReviewArraySEO(AvisClientGrossesseControllerData)
+        "aggregateRating": generateAverageRatingSEO(AvisClientPortraitGrossesseControllerData),
+        "review": generateReviewArraySEO(AvisClientPortraitGrossesseControllerData)
     });
 
     return (

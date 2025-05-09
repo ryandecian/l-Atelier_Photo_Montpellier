@@ -1,7 +1,4 @@
 import DataSEORoots from "./DataSEORoot.seo";
-import AvisClientGrossesseControllerData from "../components/GrossesseRoot/AvisClientGrossesseControllerData";
-import generateAverageRatingSEO from "../utils/generateAverageRatingSEO.utils";
-import generateReviewArraySEO from "../utils/generateReviewArraySEO.utils";
 import DataSEORootType from "../types/DataSEORoot.type";
 
 function JSON_LD_LocalBusiness_Root_Schema_SEO(): string {
@@ -11,6 +8,12 @@ function JSON_LD_LocalBusiness_Root_Schema_SEO(): string {
         "@context": DataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
         "@type": DataSEORoot["@type"].Local, /* (Obligatoire) Type de la donnée */
         "@id": DataSEORoot.id_LocalBusiness,
+        "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "SIRET",
+            "value": "80255882500021"
+        },
+        // "logo": "https://www.tonsite.com/images/logo-latelier-photo.png", /* (Obligatoire) URL du logo de l'entreprise */
         "name": DataSEORoot.name, /* (Obligatoire) Nom de l'entreprise */
         "image": DataSEORoot.img, /* (Obligatoire) URL de l'image de l'entreprise */
         "description": DataSEORoot.description,
@@ -27,8 +30,6 @@ function JSON_LD_LocalBusiness_Root_Schema_SEO(): string {
         "priceRange": "€€",
         "openingHours": DataSEORoot.openingHours, /* Horaires d'ouverture de l'entreprise */
         "sameAs": DataSEORoot.sameAs, /* Liens vers les réseaux sociaux de l'entreprise */
-        "aggregateRating": generateAverageRatingSEO(AvisClientGrossesseControllerData), /* Met à disposition la note moyenne dans le SEO avec les bonnes clés */
-        "review": generateReviewArraySEO(AvisClientGrossesseControllerData), /* Met à disposition les avis clients dans le SEO avec les bonnes clés */
     });
     
     return (

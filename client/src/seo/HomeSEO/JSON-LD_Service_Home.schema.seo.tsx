@@ -4,7 +4,7 @@ import DataSEORootType from "../../types/DataSEORoot.type";
 import DataSEO_Homes from "./DataSEO_Home.seo";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
 
-import AvisClientGrossesseControllerData from "../../components/GrossesseRoot/AvisClientGrossesseControllerData";
+import AvisClientHomeControllerData from "../../components/HomeRoot/AvisClientHomeControllerData";
 import generateAverageRatingSEO from "../../utils/generateAverageRatingSEO.utils";
 import generateReviewArraySEO from "../../utils/generateReviewArraySEO.utils";
 
@@ -29,8 +29,8 @@ function JSON_LD_Service_Home_Schema_SEO() : string {
         "@type": "ServiceChannel",
         "serviceUrl": DataSEO_Home.url
         },
-        "aggregateRating": generateAverageRatingSEO(AvisClientGrossesseControllerData),
-        "review": generateReviewArraySEO(AvisClientGrossesseControllerData)
+        "aggregateRating": generateAverageRatingSEO(AvisClientHomeControllerData),
+        "review": generateReviewArraySEO(AvisClientHomeControllerData)
     });
 
     return (
