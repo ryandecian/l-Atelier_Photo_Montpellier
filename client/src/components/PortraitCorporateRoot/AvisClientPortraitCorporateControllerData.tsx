@@ -1,6 +1,6 @@
 import AvisClientControllerDataType from "../../types/AvisClientControllerData.type";
 
-const AvisClientCorporateControllerData: AvisClientControllerDataType[] = [
+const AvisClientPortraitCorporateControllerData: AvisClientControllerDataType[] = [
     /* Commentaire 1 */
     {
         id: 1,
@@ -25,4 +25,4 @@ const AvisClientCorporateControllerData: AvisClientControllerDataType[] = [
     },
 ];
 
-export default AvisClientCorporateControllerData;
+export default AvisClientPortraitCorporateControllerData;
