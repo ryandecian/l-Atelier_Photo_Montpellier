@@ -1,28 +1,28 @@
 import AvisClientControllerDataType from "../../types/AvisClientControllerData.type";
 
-const AvisClientGrossesseControllerData: AvisClientControllerDataType[] = [
+const AvisClientPortraitCorporateControllerData: AvisClientControllerDataType[] = [
     /* Commentaire 1 */
     {
         id: 1,
         nom: "Emma",
         note: 5,
         commentaire: "Test",
-        date: "2024-09-14",
+        date: "14 septembre 2024",
     },
     {
         id: 2,
         nom: "Marie Pierre",
         note: 5,
         commentaire: "Test",
-        date: "2022-07-16",
+        date: "16 juillet 2022",
     },
     {
         id: 3,
         nom: "Philippe",
         note: 5,
         commentaire: "Test",
-        date: "2022-07-16",
+        date: "16 juillet 2022",
     },
 ];
 
-export default AvisClientGrossesseControllerData;
+export default AvisClientPortraitCorporateControllerData;

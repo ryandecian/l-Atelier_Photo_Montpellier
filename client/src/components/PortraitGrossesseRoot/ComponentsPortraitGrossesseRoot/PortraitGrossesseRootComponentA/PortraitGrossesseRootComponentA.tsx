@@ -1,18 +1,18 @@
 import style from "../../../StyleRootComponent.module.css";
 import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
-import ImagesGrossesseControllerData from "../../ImagesGrossesseControllerData";
+import ImagesPortraitGrossesseControllerData from "../../ImagesPortraitGrossesseControllerData";
 
-function GrossesseRootComponentA() {
+function PortraitGrossesseRootComponentA() {
     return (
-        <section className={`GrossesseRootComponentA ${style.ContainerRoot}`}>
+        <section className={`PortraitGrossesseRootComponentA ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2}>
-                    {"Une photo de grossesse ou de naissance, c’est bien plus qu’un souvenir"}
+                    {"Une photo de Grossesse ou de naissance, c’est bien plus qu’un souvenir"}
                 </h2>
             </header>
 
             <p className={style.TextP4}>
-                Une séance grossesse ou nouveau-né, c’est une parenthèse. <br />
+                Une séance Grossesse ou nouveau-né, c’est une parenthèse. <br />
                 Un temps suspendu pour capter ce qui est en train de se créer : un lien, une attente, un amour déjà immense.
             </p>
 
@@ -26,14 +26,14 @@ function GrossesseRootComponentA() {
             </p>
 
             <Container4ImagesRoot
-                img1={ImagesGrossesseControllerData[0].src}
-                MetaNameImg1={ImagesGrossesseControllerData[0].alt}
-                img2={ImagesGrossesseControllerData[1].src}
-                MetaNameImg2={ImagesGrossesseControllerData[1].alt}
-                img3={ImagesGrossesseControllerData[2].src}
-                MetaNameImg3={ImagesGrossesseControllerData[2].alt}
-                img4={ImagesGrossesseControllerData[3].src}
-                MetaNameImg4={ImagesGrossesseControllerData[3].alt}
+                img1={ImagesPortraitGrossesseControllerData[0].src}
+                MetaNameImg1={ImagesPortraitGrossesseControllerData[0].alt}
+                img2={ImagesPortraitGrossesseControllerData[1].src}
+                MetaNameImg2={ImagesPortraitGrossesseControllerData[1].alt}
+                img3={ImagesPortraitGrossesseControllerData[2].src}
+                MetaNameImg3={ImagesPortraitGrossesseControllerData[2].alt}
+                img4={ImagesPortraitGrossesseControllerData[3].src}
+                MetaNameImg4={ImagesPortraitGrossesseControllerData[3].alt}
             />
 
             <article className={style.ContainerText}>
@@ -61,7 +61,7 @@ function GrossesseRootComponentA() {
                 </p>
 
                 <p className={style.TextP4}>
-                    Que ce soit pour une grossesse ou un nouveau-né, je propose un 
+                    Que ce soit pour une Grossesse ou un nouveau-né, je propose un 
                     <span className={style.SpanBold}>
                         {" accompagnement complet : "}
                     </span>
@@ -79,4 +79,4 @@ function GrossesseRootComponentA() {
     )
 }
 
-export default GrossesseRootComponentA;
+export default PortraitGrossesseRootComponentA;

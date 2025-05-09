@@ -1,10 +1,10 @@
 import style from "../../../StyleRootComponent.module.css";
 import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
-import ImagesGrossesseControllerData from "../../ImagesGrossesseControllerData";
+import ImagesPortraitGrossesseControllerData from "../../ImagesPortraitGrossesseControllerData";
 
-function GrossesseRootComponentB() {
+function PortraitGrossesseRootComponentB() {
     return (
-        <section className={`GrossesseRootComponentB ${style.ContainerRoot}`}>
+        <section className={`PortraitGrossesseRootComponentB ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2}>
                     {"Prêt(e) à figer ces moments uniques avec sensibilité et simplicité ?"}
@@ -27,19 +27,19 @@ function GrossesseRootComponentB() {
             </p>
 
             <Container4ImagesRoot
-                img1={ImagesGrossesseControllerData[4].src}
-                MetaNameImg1={ImagesGrossesseControllerData[4].alt}
-                img2={ImagesGrossesseControllerData[5].src}
-                MetaNameImg2={ImagesGrossesseControllerData[5].alt}
-                img3={ImagesGrossesseControllerData[6].src}
-                MetaNameImg3={ImagesGrossesseControllerData[6].alt}
-                img4={ImagesGrossesseControllerData[7].src}
-                MetaNameImg4={ImagesGrossesseControllerData[7].alt}
+                img1={ImagesPortraitGrossesseControllerData[4].src}
+                MetaNameImg1={ImagesPortraitGrossesseControllerData[4].alt}
+                img2={ImagesPortraitGrossesseControllerData[5].src}
+                MetaNameImg2={ImagesPortraitGrossesseControllerData[5].alt}
+                img3={ImagesPortraitGrossesseControllerData[6].src}
+                MetaNameImg3={ImagesPortraitGrossesseControllerData[6].alt}
+                img4={ImagesPortraitGrossesseControllerData[7].src}
+                MetaNameImg4={ImagesPortraitGrossesseControllerData[7].alt}
             />
 
             <article className={style.ContainerText}>
                 <h3 className={style.TitleNH3}>
-                    {"Les séances grossesse"}
+                    {"Les séances PortraitGrossesse"}
                 </h3>
 
                 <ul className={style.ContainerUl}>
@@ -84,4 +84,4 @@ function GrossesseRootComponentB() {
     )
 }
 
-export default GrossesseRootComponentB;
+export default PortraitGrossesseRootComponentB;

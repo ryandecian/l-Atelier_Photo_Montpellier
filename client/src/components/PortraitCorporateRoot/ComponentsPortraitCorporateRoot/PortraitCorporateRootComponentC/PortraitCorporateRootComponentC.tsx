@@ -1,10 +1,10 @@
 import style from "../../../StyleRootComponent.module.css";
-import css from "./CorporateRootComponentC.module.css"
+import css from "./PortraitCorporateRootComponentC.module.css"
 import externalLinks from "../../../../constants/externalLinks";
 
-function CorporateRootComponentC() {
+function PortraitCorporateRootComponentC() {
     return (
-        <section className={`CorporateRootComponentC ${style.ContainerRootRacine}`}>
+        <section className={`PortraitCorporateRootComponentC ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2}>
                     {"Un service clé en main pour les entreprises : simplicité et efficacité !"}
@@ -13,7 +13,7 @@ function CorporateRootComponentC() {
 
             <article className={style.ContainerText}>
                 <p className={style.TextP4}>
-                    Faire réaliser un portrait corporate ne 
+                    Faire réaliser un portrait Corporate ne 
                     <span className={style.SpanBold}>
                         {" doit pas être une contrainte. "}
                     </span>
@@ -96,4 +96,4 @@ function CorporateRootComponentC() {
     )
 }
 
-export default CorporateRootComponentC;
+export default PortraitCorporateRootComponentC;
