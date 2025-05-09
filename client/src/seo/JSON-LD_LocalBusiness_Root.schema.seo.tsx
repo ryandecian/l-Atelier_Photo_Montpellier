@@ -8,6 +8,11 @@ function JSON_LD_LocalBusiness_Root_Schema_SEO(): string {
         "@context": DataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
         "@type": DataSEORoot["@type"].Local, /* (Obligatoire) Type de la donnée */
         "@id": DataSEORoot.id_LocalBusiness,
+        "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "SIRET",
+            "value": "80255882500021"
+        },
         "name": DataSEORoot.name, /* (Obligatoire) Nom de l'entreprise */
         "image": DataSEORoot.img, /* (Obligatoire) URL de l'image de l'entreprise */
         "description": DataSEORoot.description,
