@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import NavRoot from "../../components/NavRoot/NavRoot";
 import style from "../stylePage.module.css";
-import MariageRoot from "../../components/MariageRoot/MariageRoot";
+import PortraitMariageRoot from "../../components/PortraitMariageRoot/MariageRoot";
 import FooterRoot from "../../components/FooterRoot/FooterRoot";
 import ListDataRouter from "../../router/router";
 
@@ -81,7 +81,7 @@ function MariagePage() {
                  <NavRoot />
             </header>
             <main className={style.Main}>
-                <MariageRoot />
+                <PortraitMariageRoot />
             </main>
             <footer className={style.Footer}>
                 <FooterRoot />
