@@ -1,8 +1,8 @@
 import style from "../../../StyleRootComponent.module.css";
 
-function MariageRootComponentC() {
+function PortraitMariageRootComponentC() {
     return (
-        <article className={`PortraitSoloRootComponentC ${style.ContainerRoot}`}>
+        <article className={`PortraitMariageRootComponentC ${style.ContainerRoot}`}>
             <h2 className={style.TitleH2}>
                 Le Repérage des Lieux : Une Préparation Essentielle
             </h2>
@@ -28,4 +28,4 @@ function MariageRootComponentC() {
     );
 }
 
-export default MariageRootComponentC;
+export default PortraitMariageRootComponentC;
