@@ -1,26 +1,26 @@
 import DataSEORoots from "../DataSEORoot.seo";
 import DataSEORootType from "../../types/DataSEORoot.type";
 
-import DataSEO_PortraitGrossesses from "./DataSEO_PortraitCorporate.seo";
+import DataSEO_PortraitCorporates from "./DataSEO_PortraitCorporate.seo";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
 
-import AvisClientPortraitGrossesseControllerData from "../../components/PortraitGrossesseRoot/AvisClientPortraitGrossesseControllerData";
+import AvisClientPortraitCorporateControllerData from "../../components/PortraitCorporateRoot/AvisClientPortraitCorporateControllerData";
 import generateAverageRatingSEO from "../../utils/generateAverageRatingSEO.utils";
 import generateReviewArraySEO from "../../utils/generateReviewArraySEO.utils";
 
 
-function JSON_LD_Service_PortraitGrossesse_Schema_SEO() : string {
+function JSON_LD_Service_PortraitCorporate_Schema_SEO() : string {
     const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
-    const DataSEO_PortraitGrossesse: DataSEOTargetOneType = DataSEO_PortraitGrossesses(); /* Récupération des données SEO Portrait Grossesse */
+    const DataSEO_PortraitCorporate: DataSEOTargetOneType = DataSEO_PortraitCorporates(); /* Récupération des données SEO Portrait Grossesse */
 
     const JSON_LD = JSON.stringify({
         "@context": DataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
         "@type": DataSEORoot["@type"].Service, /* (Obligatoire) Type de la donnée */
-        "@id": DataSEO_PortraitGrossesse.id_Service,
-        "serviceType": "Photographie grossesse",
+        "@id": DataSEO_PortraitCorporate.id_Service,
+        "serviceType": "Photographie portrait corporate",
         "name": DataSEORoot.name, /* (Obligatoire) Nom de l'entreprise */
-        "image": DataSEO_PortraitGrossesse.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
-        "description": DataSEO_PortraitGrossesse.description,
+        "image": DataSEO_PortraitCorporate.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
+        "description": DataSEO_PortraitCorporate.description,
         "termsOfService": DataSEORoot.termsOfService,
         "provider": {
             "@id": DataSEORoot.id_LocalBusiness /* (Obligatoire) Référence à l'ID de l'Entreprise */
@@ -28,10 +28,10 @@ function JSON_LD_Service_PortraitGrossesse_Schema_SEO() : string {
         "areaServed": DataSEORoot.areaServed, /* Zone géographique desservie par le service */
         "availableChannel": {
         "@type": "ServiceChannel",
-        "serviceUrl": DataSEO_PortraitGrossesse.url
+        "serviceUrl": DataSEO_PortraitCorporate.url
         },
-        "aggregateRating": generateAverageRatingSEO(AvisClientPortraitGrossesseControllerData),
-        "review": generateReviewArraySEO(AvisClientPortraitGrossesseControllerData)
+        "aggregateRating": generateAverageRatingSEO(AvisClientPortraitCorporateControllerData),
+        "review": generateReviewArraySEO(AvisClientPortraitCorporateControllerData)
     });
 
     return (
@@ -39,4 +39,4 @@ function JSON_LD_Service_PortraitGrossesse_Schema_SEO() : string {
     )
 }
 
-export default JSON_LD_Service_PortraitGrossesse_Schema_SEO;
+export default JSON_LD_Service_PortraitCorporate_Schema_SEO;
