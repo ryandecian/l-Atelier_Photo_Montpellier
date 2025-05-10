@@ -6,7 +6,7 @@ import MentionsLegalesPage from "../pages/MentionsLegalesPage/MentionsLegalesPag
 import LifeStylePage from "../pages/LifeStylePage/LifeStylePage";
 import Error404 from "../pages/Error404Page/Error404Page";
 import CGVPage from "../pages/CGVPage/CGVPage";
-import MariagePage from "../pages/MariagePage/MariagePage";
+import PortraitMariagePage from "../pages/PortraitMariagePage/PortraitMariagePage";
 import AdminPage from "../pages/AdminPage/AdminPage";
 import ComptePage from "../pages/ComptePage/ComptePage";
 import LoginPage from "../pages/LoginPage/LoginPage";
@@ -98,7 +98,7 @@ const ListDataRouter: RouterItemsType[] = [
     /* {ListDataRouter[13].path} */
     {
         path: "/portrait-mariage",
-        element: <MariagePage />,
+        element: <PortraitMariagePage />,
     },
     /* {ListDataRouter[14].path} */
     {
