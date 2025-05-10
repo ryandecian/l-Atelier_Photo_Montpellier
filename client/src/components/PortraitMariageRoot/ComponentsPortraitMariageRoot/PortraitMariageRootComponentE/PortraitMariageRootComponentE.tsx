@@ -1,8 +1,8 @@
 import style from "../../../StyleRootComponent.module.css";
 
-function MariageRootComponentE() {
+function PortraitMariageRootComponentE() {
     return (
-        <article className={`PortraitSoloRootComponentE ${style.ContainerRoot}`}>
+        <article className={`PortraitMariageRootComponentE ${style.ContainerRoot}`}>
             <h2 className={style.TitleH2}>
                 Une Expérience Sereine et Détendue
             </h2>
@@ -43,4 +43,4 @@ function MariageRootComponentE() {
     );
 }
 
-export default MariageRootComponentE;
+export default PortraitMariageRootComponentE;
