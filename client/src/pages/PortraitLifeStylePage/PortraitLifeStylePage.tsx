@@ -5,7 +5,7 @@ import LifeStyleRoot from "../../components/LifeStyleRoot/LifeStyleRoot";
 import FooterRoot from "../../components/FooterRoot/FooterRoot";
 import ListDataRouter from "../../router/router";
 
-function LifeStylePage() {
+function PortraitLifeStylePage() {
     const SEO = {
         title: "Portrait LifeStyle - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
@@ -43,7 +43,7 @@ function LifeStylePage() {
      const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
 
      return (
-        <div className={`LifeStylePage ${style.Page}`}>
+        <div className={`PortraitLifeStylePage ${style.Page}`}>
             <Helmet>
                   {/* Balises SEO */}
                      {/* Balise pour indexation général */}
@@ -90,4 +90,4 @@ function LifeStylePage() {
     )
 }
 
-export default LifeStylePage;
+export default PortraitLifeStylePage;
