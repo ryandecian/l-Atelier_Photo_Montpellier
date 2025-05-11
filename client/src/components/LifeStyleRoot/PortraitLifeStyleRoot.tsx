@@ -2,6 +2,9 @@ import style from "../StyleRootComponent.module.css";
 import ImagesPortraitLifeStyleControllerData from "./ImagesPortraitLifeStyleControllerData";
 import Container4ImagesRoot from "../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 
+import AvisClientPortraitLifeStyleControllerData from "./AvisClientPortraitLifeStyleControllerData";
+import GeneratorCardAvisClient from "../GeneratorCardAvisClient/GeneratorCardAvisClient";
+
 import PortraitLifeStyleRootComponentA from "./ComponentsPortraitLifeStyleRoot/PortraitLifeStyleRootComponentA/PortraitLifeStyleRootComponentA";
 import PortraitLifeStyleRootComponentB from "./ComponentsPortraitLifeStyleRoot/PortraitLifeStyleRootComponentB/PortraitLifeStyleRootComponentB";
 import PortraitLifeStyleRootComponentC from "./ComponentsPortraitLifeStyleRoot/PortraitLifeStyleRootComponentC/PortraitLifeStyleRootComponentC";
@@ -92,6 +95,9 @@ function PortraitLifeStyleRoot() {
             img4={ImagesPortraitLifeStyleControllerData[29].src}
             MetaNameImg4={ImagesPortraitLifeStyleControllerData[29].alt}
             />
+
+            {/* Container 5 : Avis clients */}
+            <GeneratorCardAvisClient avisClients = {AvisClientPortraitLifeStyleControllerData} />
         </section>
     );
 }

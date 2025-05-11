@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import css from "./LifeStyleRootComponentB.module.css";
+import css from "./PortraitLifeStyleRootComponentB.module.css";
 import ListDataRouter from "../../../../router/router";
 import ImagesPortraitLifeStyleControllerData from "../../ImagesPortraitLifeStyleControllerData";
 
