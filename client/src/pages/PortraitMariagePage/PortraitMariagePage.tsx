@@ -4,10 +4,10 @@ import PortraitMariageRoot from "../../components/PortraitMariageRoot/MariageRoo
 import FooterRoot from "../../components/FooterRoot/FooterRoot";
 import Helmet_PortraitMariage_SEO from "../../seo/PortraitMariageSEO/Helmet_PortraitMariage.seo";
 
-function MariagePage() {
+function PortraitMariagePage() {
 
      return (
-        <div className={`MariagePage ${style.Page}`}>
+        <div className={`PortraitMariagePage ${style.Page}`}>
             <Helmet_PortraitMariage_SEO />
             <header className={style.Header}>
                  <NavRoot />
@@ -22,4 +22,4 @@ function MariagePage() {
     )
 }
 
-export default MariagePage;
+export default PortraitMariagePage;
