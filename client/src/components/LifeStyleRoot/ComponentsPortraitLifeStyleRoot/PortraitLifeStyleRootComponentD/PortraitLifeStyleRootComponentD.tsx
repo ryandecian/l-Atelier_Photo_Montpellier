@@ -1,9 +1,9 @@
 import style from "../../../StyleRootComponent.module.css";
 import { Check } from "lucide-react";
 
-function LifeStyleRootComponentD() {
+function PortraitLifeStyleRootComponentD() {
     return (
-        <section className={`LifeStyleRootComponentD ${style.ContainerRoot}`}>
+        <section className={`PortraitLifeStyleRootComponentD ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2px2}>
                     Toi & Moi : Un portrait à deux, sans filtres et sans mode d’emploi ❤️ 
@@ -79,4 +79,4 @@ function LifeStyleRootComponentD() {
     );
 }
 
-export default LifeStyleRootComponentD;
+export default PortraitLifeStyleRootComponentD;

@@ -1,9 +1,9 @@
 import style from "../../../StyleRootComponent.module.css";
 import { Check } from "lucide-react";
 
-function LifeStyleRootComponentC() {
+function PortraitLifeStyleRootComponentC() {
     return (
-        <section className={`LifeStyleRootComponentC ${style.ContainerRoot}`}>
+        <section className={`PortraitLifeStyleRootComponentC ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2px2}>
                     Portrait Solo: Se voir autrement
@@ -62,4 +62,4 @@ function LifeStyleRootComponentC() {
     );
 }
 
-export default LifeStyleRootComponentC;
+export default PortraitLifeStyleRootComponentC;

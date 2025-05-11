@@ -1,9 +1,9 @@
 import style from "../../../StyleRootComponent.module.css";
 import { Check } from "lucide-react";
 
-function LifeStyleRootComponentF() {
+function PortraitLifeStyleRootComponentF() {
     return (
-        <section className={`LifeStyleRootComponentF ${style.ContainerRoot}`}>
+        <section className={`PortraitLifeStyleRootComponentF ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2px2}>
                     1er Cris (Nouveaux-nés) : Une séance tout en délicatesse, à son rythme
@@ -57,4 +57,4 @@ function LifeStyleRootComponentF() {
     );
 }
 
-export default LifeStyleRootComponentF;
+export default PortraitLifeStyleRootComponentF;

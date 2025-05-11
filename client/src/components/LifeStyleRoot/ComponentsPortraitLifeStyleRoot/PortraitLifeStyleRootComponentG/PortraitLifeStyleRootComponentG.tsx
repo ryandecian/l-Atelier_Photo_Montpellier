@@ -2,9 +2,9 @@ import style from "../../../StyleRootComponent.module.css";
 import { Check } from "lucide-react";
 import externalLinks from "../../../../constants/externalLinks";
 
-function LifeStyleRootComponentG() {
+function PortraitLifeStyleRootComponentG() {
     return (
-        <section className={`LifeStyleRootComponentG ${style.ContainerRoot}`}>
+        <section className={`PortraitLifeStyleRootComponentG ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2px2}>
                     9 Mois (Grossesse) : Immortaliser cette étape unique 
@@ -101,4 +101,4 @@ function LifeStyleRootComponentG() {
     );
 }
 
-export default LifeStyleRootComponentG;
+export default PortraitLifeStyleRootComponentG;
