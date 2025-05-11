@@ -1,5 +1,5 @@
 import style from "../StyleRootComponent.module.css";
-import ImagesLifeStyleControllerData from "./ImagesLifeStyleControllerData";
+import ImagesLifeStyleControllerData from "./ImagesPortraitLifeStyleControllerData";
 import Container4ImagesRoot from "../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 
 import LifeStyleRootComponentA from "./ComponentsLifeStyleRoot/LifeStyleRootComponentA/LifeStyleRootComponentA";
