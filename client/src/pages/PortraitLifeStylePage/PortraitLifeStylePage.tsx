@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import NavRoot from "../../components/NavRoot/NavRoot";
 import style from "../stylePage.module.css";
-import PortraitLifeStyleRoot from "../../components/LifeStyleRoot/PortraitLifeStyleRoot";
+import PortraitLifeStyleRoot from "../../components/PortraitLifeStyleRoot/PortraitLifeStyleRoot";
 import FooterRoot from "../../components/FooterRoot/FooterRoot";
 import ListDataRouter from "../../router/router";
 
