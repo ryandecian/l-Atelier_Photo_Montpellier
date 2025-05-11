@@ -5,4 +5,20 @@ Ce qu'il manque :
   - Page Hobbie Helmet
 
 
-  Il faudra revoir tout les typeService des dataSEO de chaque page à l'exception de Mariage
+Il faudra revoir tout les typeService des dataSEO de chaque page à l'exception de Mariage
+
+
+Il faut refactoriser les pages :
+  - Solo
+  - NavRoot et TargetHome
+  - Footer
+
+Il faut éditer les pages : 
+ - Duo
+ - Nouveau né
+ - Famille
+ - Hobbie
+ - Portfolio
+ - Qui suis je
+
+Il faudra créer de nouveau hook pour les fetchs
