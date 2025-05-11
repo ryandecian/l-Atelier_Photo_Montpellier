@@ -2,9 +2,9 @@ import style from "../../../StyleRootComponent.module.css";
 import { Check } from "lucide-react";
 import externalLinks from "../../../../constants/externalLinks";
 
-function LifeStyleRootComposantH() {
+function PortraitLifeStyleRootComposantH() {
     return (
-        <section className={`LifeStyleRootComponentH ${style.ContainerRoot}`}>
+        <section className={`PortraitLifeStyleRootComponentH ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2px2}>
                     Passions Lives : Mettez en scène ce qui vous passionne 
@@ -82,4 +82,4 @@ function LifeStyleRootComposantH() {
     );
 }
 
-export default LifeStyleRootComposantH;
+export default PortraitLifeStyleRootComposantH;
