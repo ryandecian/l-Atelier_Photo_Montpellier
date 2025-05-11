@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import NavRoot from "../../components/NavRoot/NavRoot";
 import style from "../stylePage.module.css";
-import LifeStyleRoot from "../../components/LifeStyleRoot/LifeStyleRoot";
+import PortraitLifeStyleRoot from "../../components/LifeStyleRoot/PortraitLifeStyleRoot";
 import FooterRoot from "../../components/FooterRoot/FooterRoot";
 import ListDataRouter from "../../router/router";
 
@@ -81,7 +81,7 @@ function PortraitLifeStylePage() {
                  <NavRoot />
             </header>
             <main className={style.Main}>
-                <LifeStyleRoot />
+                <PortraitLifeStyleRoot />
             </main>
             <footer className={style.Footer}>
                 <FooterRoot />
