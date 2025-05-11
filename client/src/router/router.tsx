@@ -3,7 +3,6 @@ import { ReactNode } from "react"
 /* Liste des pages en import */
 import HomePage from "../pages/HomePage/HomePage";
 import MentionsLegalesPage from "../pages/MentionsLegalesPage/MentionsLegalesPage";
-import LifeStylePage from "../pages/LifeStylePage/LifeStylePage";
 import Error404 from "../pages/Error404Page/Error404Page";
 import CGVPage from "../pages/CGVPage/CGVPage";
 import PortraitMariagePage from "../pages/PortraitMariagePage/PortraitMariagePage";
@@ -13,9 +12,10 @@ import LoginPage from "../pages/LoginPage/LoginPage";
 import UserSystemePage from "../pages/UserSystemePage/UserSystemePage";
 import ContactPage from "../pages/ContactPage/ContactPage";
 import PortraitCorporatePage from "../pages/PortraitCorporatePage/PortraitCorporatePage";
-import PortraitSoloPage from "../pages/PortraitSoloPage/PortraitSoloPage";
-import PortraitGrossessePage from "../pages/PortraitGrosssessePage/PortraitGrossessePage";
 import PortraitDuoPage from "../pages/PortraitDuoPage/PortraitDuoPage";
+import PortraitGrossessePage from "../pages/PortraitGrosssessePage/PortraitGrossessePage";
+import PortraitLifeStylePage from "../pages/PortraitLifeStylePage/PortraitLifeStylePage";
+import PortraitSoloPage from "../pages/PortraitSoloPage/PortraitSoloPage";
 
 /**
  * Utilisation : 
@@ -93,7 +93,7 @@ const ListDataRouter: RouterItemsType[] = [
     /* {ListDataRouter[12].path} */
     {
         path: "/portrait-lifestyle",
-        element: <LifeStylePage />,
+        element: <PortraitLifeStylePage />,
     },
     /* {ListDataRouter[13].path} */
     {
