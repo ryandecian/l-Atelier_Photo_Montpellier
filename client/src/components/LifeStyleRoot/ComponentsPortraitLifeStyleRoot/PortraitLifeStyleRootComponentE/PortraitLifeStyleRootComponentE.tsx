@@ -2,9 +2,9 @@ import style from "../../../StyleRootComponent.module.css";
 import { Check } from "lucide-react";
 import externalLinks from "../../../../constants/externalLinks";
 
-function LifeStyleRootComponentE() {
+function PortraitLifeStyleRootComponentE() {
     return (
-        <section className={`LifeStyleRootComponentE ${style.ContainerRoot}`}>
+        <section className={`PortraitLifeStyleRootComponentE ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2px2}>
                     Portrait Famille – Amis (La Smala): Des images qui traversent le temps   
@@ -71,4 +71,4 @@ function LifeStyleRootComponentE() {
     );
 }
 
-export default LifeStyleRootComponentE;
+export default PortraitLifeStyleRootComponentE;

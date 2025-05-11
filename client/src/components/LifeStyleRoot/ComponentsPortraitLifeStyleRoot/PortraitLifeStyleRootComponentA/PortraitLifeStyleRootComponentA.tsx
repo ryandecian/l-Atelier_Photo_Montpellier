@@ -1,8 +1,8 @@
 import style from "../../../StyleRootComponent.module.css";
 
-function LifeStyleRootComponentA() {
+function PortraitLifeStyleRootComponentA() {
     return (
-        <section className={`LifeStyleRootComponentA ${style.ContainerRoot}`}>
+        <section className={`PortraitLifeStyleRootComponentA ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2px2}>
                     Un shooting pensé pour vous mettre à l’aise et révéler votre personnalité
@@ -46,4 +46,4 @@ function LifeStyleRootComponentA() {
     );
 }
 
-export default LifeStyleRootComponentA;
+export default PortraitLifeStyleRootComponentA;
