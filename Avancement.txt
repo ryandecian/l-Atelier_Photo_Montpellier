@@ -8,8 +8,9 @@ Ce qu'il manque :
 Il faudra revoir tout les typeService des dataSEO de chaque page à l'exception de Mariage
 
 
-Il faut refactoriser les pages :
+Il faut refactoriser SEO les pages :
   - Solo
+  - Contact
   - NavRoot et TargetHome
   - Footer
 
