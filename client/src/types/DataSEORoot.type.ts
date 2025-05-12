@@ -13,6 +13,7 @@ type DataSEORootType = {
     email: string;
     url: string;
     img: string;
+    logo: string;
     openingHours: string[];
     sameAs: string[];
     termsOfService: string;
