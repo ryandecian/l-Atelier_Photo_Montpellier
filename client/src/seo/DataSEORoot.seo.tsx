@@ -21,6 +21,7 @@ function DataSEORoot(): DataSEORootType {
         "email": externalLinks.emailAnne, // Adresse email de l'entreprise (Dynamique)
         "url": `${import.meta.env.URL_CLIENT}`, // URL de la page d'accueil de l'entreprise (Dynamique)
         img: `${import.meta.env.URL_CLIENT}/dans-les-yeux-de-sacha.jpg`, // Lien URL public de l'image de l'entreprise (Dynamique)
+        logo: `${import.meta.env.URL_CLIENT}/logo-LAPM-l-atelier-photo-montpellier.png`, // Lien URL public du logo de l'entreprise (Dynamique)
         "openingHours": [
             "Mo-Su 10:00-13:00",
             "Mo-Su 14:00-19:00"
