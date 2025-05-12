@@ -13,7 +13,7 @@ function JSON_LD_LocalBusiness_Root_Schema_SEO(): string {
             "propertyID": "SIRET",
             "value": "80255882500021"
         },
-        // "logo": "https://www.tonsite.com/images/logo-latelier-photo.png", /* (Obligatoire) URL du logo de l'entreprise */
+        "logo": DataSEORoot.logo, /* (Obligatoire) URL du logo de l'entreprise */
         "name": DataSEORoot.name, /* (Obligatoire) Nom de l'entreprise */
         "image": DataSEORoot.img, /* (Obligatoire) URL de l'image de l'entreprise */
         "description": DataSEORoot.description,
