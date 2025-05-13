@@ -8,7 +8,7 @@ import DataSEORootType from "../../types/DataSEORoot.type";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
 
 import JSON_LD_LocalBusiness_Root_Schema_SEO from "../JSON-LD_LocalBusiness_Root.schema.seo";
-import JSON_LD_Service_PortraitGrossesse_Schema_SEO from "./JSON-LD_Service_PortraitGrossesse.schema.seo";
+import JSON_LD_Service_PortraitGrossesse_Schema_SEO from "./JSON-LD_Service_PortraitSolo.schema.seo";
 
 
 function Helmet_PortraitGrossesse_SEO() {
