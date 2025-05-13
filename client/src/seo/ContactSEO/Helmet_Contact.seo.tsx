@@ -2,29 +2,29 @@ import { Helmet } from "react-helmet-async";
 import DataSEOHelmetType from "../../types/DataSEOHelmet";
 
 import DataSEORoots from "../DataSEORoot.seo";
-import DataSEO_PortraitSolos from "./DataSEO_Contact.seo";
+import DataSEO_Contacts from "./DataSEO_Contact.seo";
 
 import DataSEORootType from "../../types/DataSEORoot.type";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
 
 import JSON_LD_LocalBusiness_Root_Schema_SEO from "../JSON-LD_LocalBusiness_Root.schema.seo";
-import JSON_LD_Service_PortraitSolo_Schema_SEO from "./JSON-LD_ContactPage_Contact.schema.seo";
+import JSON_LD_ContactPage_Contact_Schema_SEO from "./JSON-LD_ContactPage_Contact.schema.seo";
 
 
-function Helmet_PortraitSolo_SEO() {
+function Helmet_Contact_SEO() {
     const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
-    const DataSEO_PortraitSolo: DataSEOTargetOneType = DataSEO_PortraitSolos(); /* Récupération des données SEO Portrait Solo */
+    const DataSEO_Contact: DataSEOTargetOneType = DataSEO_Contacts(); /* Récupération des données SEO Portrait Solo */
 
     const SEO: DataSEOHelmetType = {
-        title: DataSEO_PortraitSolo.title,
+        title: DataSEO_Contact.title,
         autor: DataSEORoot.autor,
-        description: DataSEO_PortraitSolo.description,
-        url: DataSEO_PortraitSolo.url,
-        img: DataSEO_PortraitSolo.img_Helmet,
-        twitterUrlImg: DataSEO_PortraitSolo.twitterUrlImg || DataSEO_PortraitSolo.img_Helmet, // fallback
+        description: DataSEO_Contact.description,
+        url: DataSEO_Contact.url,
+        img: DataSEO_Contact.img_Helmet,
+        twitterUrlImg: DataSEO_Contact.twitterUrlImg || DataSEO_Contact.img_Helmet, // fallback
         twitterCompte: DataSEORoot.twitterCompte,
-        keywords: DataSEO_PortraitSolo.keywords,
-        type: DataSEO_PortraitSolo.type,
+        keywords: DataSEO_Contact.keywords,
+        type: DataSEO_Contact.type,
     };
 
     const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
@@ -36,7 +36,7 @@ function Helmet_PortraitSolo_SEO() {
                 {JSON_LD_LocalBusiness_Root_Schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_Service_PortraitSolo_Schema_SEO()}
+                {JSON_LD_ContactPage_Contact_Schema_SEO()}
             </script>
 
             {/* Langue principale du document */}
@@ -74,4 +74,4 @@ function Helmet_PortraitSolo_SEO() {
     );
 }
 
-export default Helmet_PortraitSolo_SEO;
+export default Helmet_Contact_SEO;

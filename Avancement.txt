@@ -1,7 +1,7 @@
 Ce qu'il manque : 
 
 - Il manque les images 
-  - Page Hobbie Helmet
+  - Page contact Helmet et Service
 
 
 Il faudra revoir tout les typeService des dataSEO de chaque page à l'exception de Mariage
