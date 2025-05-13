@@ -5,6 +5,7 @@ type DataSEORootType = {
     "@type": {
       Local: string;
       Service: string;
+      ContactPage: string;
     };
     id_LocalBusiness: string;
     description: string;
