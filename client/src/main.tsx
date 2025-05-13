@@ -12,7 +12,7 @@ const router = createBrowserRouter([
      element: <App />,
      children: ListDataRouter
     },
-  ]);
+]);
 
 const rootElement = document.getElementById("root");
 if (rootElement == null) {
@@ -21,6 +21,6 @@ if (rootElement == null) {
 
 createRoot(document.getElementById('root')!).render(
      <HelmetProvider>
-       <RouterProvider router={router}/>
+       <RouterProvider router={router} />
      </HelmetProvider>
 )

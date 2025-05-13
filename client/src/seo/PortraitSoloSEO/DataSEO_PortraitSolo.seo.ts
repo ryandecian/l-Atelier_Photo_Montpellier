@@ -1,13 +1,13 @@
 import ListDataRouter from "../../router/router";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
 
-function DataSEO_PortraitCorporate(): DataSEOTargetOneType {
+function DataSEO_PortraitSolo(): DataSEOTargetOneType {
     const DataSEO = {
         /* Data Helmet */
-        title: "Portrait Corporate - l'Atelier Photo Montpellier",
+        title: "Service Portrait Solo - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
-        description: "Portrait Corporate à Montpellier – Une séance photo professionnelle pour valoriser votre image, inspirer confiance et marquer les esprits. Par Anne SAUNIER, photographe à l’Atelier Photo Montpellier.",
-        url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[11].path}`, /*URL de la page*/
+        description: "Portrait Solo à Montpellier – Une séance photo pour se recentrer, se révéler et se faire du bien. Un regard bienveillant par Anne SAUNIER, photographe professionnelle.",
+        url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[14].path}`, /*URL de la page*/
         twitterUrlImg: "", /* Lien URL de l'image */
         keywords: {
             1: "Anne SAUNIER", /* 1 mot clés */
@@ -16,7 +16,7 @@ function DataSEO_PortraitCorporate(): DataSEOTargetOneType {
             4: "l'Atelier Photo Montpellier", /* 4 mots clés */
             5: "LAPM", /* 5 mots clés */
             6: "Service", /* 6 mots clés */
-            7: "Portrait Corporate", /* 7 mots clés */
+            7: "Portrait Solo", /* 7 mots clés */
             8: "", /* 8 mots clés */
             9: "", /* 9 mots clés */
             10: "", /* 10 mots clés */
@@ -35,10 +35,10 @@ function DataSEO_PortraitCorporate(): DataSEOTargetOneType {
         },
     
         /* Data Helmet et JSON-LD */
-        img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-corporate/google/photo-portrait-corporate-professionnel-montpellier.jpg`, /*Lien URL public de l'image*/
-        img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-corporate/helmet/photo-portrait-corporate-professionnel-montpellier.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[11].path}#service-portrait-corporate`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
-        serviceType: "Photographie corporate pour CV, LinkedIn et site web",
+        img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-grossesse/google/photo-professionnel-portrait-grossesse-montpellier.jpg`, /*Lien URL public de l'image*/
+        img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-grossesse/helmet/photo-professionnel-portrait-grossesse-montpellier.jpg`, /*Lien URL public de l'image*/
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[14].path}#service-portrait-solo`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
+        serviceType: "Photo – portrait solo – séance de photographie individuelle en studio ou en extérieur",
     };
 
     return (
@@ -46,4 +46,4 @@ function DataSEO_PortraitCorporate(): DataSEOTargetOneType {
     )
 }
 
-export default DataSEO_PortraitCorporate;
+export default DataSEO_PortraitSolo;
