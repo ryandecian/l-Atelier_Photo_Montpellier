@@ -1,13 +1,13 @@
 import ListDataRouter from "../../router/router";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
 
-function DataSEO_PortraitGrossesse(): DataSEOTargetOneType {
+function DataSEO_PortraitSolo(): DataSEOTargetOneType {
     const DataSEO = {
         /* Data Helmet */
-        title: "Portrait Grossesse et nouveau né - l'Atelier Photo Montpellier",
+        title: "Service Portrait Solo - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
-        description: "Avec l’Atelier Photo Montpellier, Anne SAUNIER capture la magie de la grossesse et les premiers instants de vie à travers des portraits doux et authentiques.",
-        url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[17].path}`, /*URL de la page*/
+        description: "Portrait Solo à Montpellier – Une séance photo pour se recentrer, se révéler et se faire du bien. Un regard bienveillant par Anne SAUNIER, photographe professionnelle.",
+        url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[14].path}`, /*URL de la page*/
         twitterUrlImg: "", /* Lien URL de l'image */
         keywords: {
             1: "Anne SAUNIER", /* 1 mot clés */
@@ -16,8 +16,8 @@ function DataSEO_PortraitGrossesse(): DataSEOTargetOneType {
             4: "l'Atelier Photo Montpellier", /* 4 mots clés */
             5: "LAPM", /* 5 mots clés */
             6: "Service", /* 6 mots clés */
-            7: "Portrait Grossesse", /* 7 mots clés */
-            8: "Portrait nouveau né", /* 8 mots clés */
+            7: "Portrait Solo", /* 7 mots clés */
+            8: "", /* 8 mots clés */
             9: "", /* 9 mots clés */
             10: "", /* 10 mots clés */
             11: "", /* 11 mots clés */
@@ -37,8 +37,8 @@ function DataSEO_PortraitGrossesse(): DataSEOTargetOneType {
         /* Data Helmet et JSON-LD */
         img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-grossesse/google/photo-professionnel-portrait-grossesse-montpellier.jpg`, /*Lien URL public de l'image*/
         img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-grossesse/helmet/photo-professionnel-portrait-grossesse-montpellier.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[17].path}#service-portrait-grossesse`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
-        serviceType: "Photographie grossesse et nouveau-né",
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[14].path}#service-portrait-solo`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
+        serviceType: "Photo – portrait solo – séance de photographie individuelle en studio ou en extérieur",
     };
 
     return (
@@ -46,4 +46,4 @@ function DataSEO_PortraitGrossesse(): DataSEOTargetOneType {
     )
 }
 
-export default DataSEO_PortraitGrossesse;
+export default DataSEO_PortraitSolo;
