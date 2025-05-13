@@ -8,7 +8,6 @@ Il faudra revoir tout les typeService des dataSEO de chaque page à l'exception 
 
 
 Il faut refactoriser SEO les pages :
-  - Solo
   - Contact
   - NavRoot et TargetHome
   - Footer
