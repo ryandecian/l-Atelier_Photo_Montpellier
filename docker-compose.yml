@@ -10,6 +10,7 @@ services:
     restart: always # Permet de redémarrer le conteneur automatiquement en cas de plantage
     environment:
       - DOMAIN=https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250
+      - VITE_NODE_ENV=production
 
   server:
     build:
