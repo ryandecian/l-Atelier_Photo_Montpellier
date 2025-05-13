@@ -1,7 +1,6 @@
 Ce qu'il manque : 
 
 - Il manque les images 
-  - Page LifeStyle Service et Helmet
   - Page Hobbie Helmet
 
 
