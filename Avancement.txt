@@ -1,14 +1,13 @@
 Ce qu'il manque : 
 
 - Il manque les images 
-  - Page Hobbie Helmet
+  - Page contact Helmet et Service
 
-
+Tout les JSON-LD individuel doivent ajouter url et voir la légitimité de serviceUrl
 Il faudra revoir tout les typeService des dataSEO de chaque page à l'exception de Mariage
 
 
 Il faut refactoriser SEO les pages :
-  - Solo
   - Contact
   - NavRoot et TargetHome
   - Footer
