@@ -8,7 +8,7 @@ import DataSEORootType from "../../types/DataSEORoot.type";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
 
 import JSON_LD_LocalBusiness_Root_Schema_SEO from "../JSON-LD_LocalBusiness_Root.schema.seo";
-import JSON_LD_Service_PortraitGrossesse_Schema_SEO from "./JSON-LD_Service_Home.schema.seo";
+import JSON_LD_HomePage_Home_Schema_SEO from "./JSON-LD_HomePage_Home.schema.seo";
 
 
 function Helmet_Home_SEO() {
@@ -36,7 +36,7 @@ function Helmet_Home_SEO() {
                 {JSON_LD_LocalBusiness_Root_Schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_Service_PortraitGrossesse_Schema_SEO()}
+                {JSON_LD_HomePage_Home_Schema_SEO()}
             </script>
 
             {/* Langue principale du document */}
