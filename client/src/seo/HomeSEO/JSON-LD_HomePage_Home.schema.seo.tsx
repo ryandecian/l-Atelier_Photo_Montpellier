@@ -28,7 +28,16 @@ function JSON_LD_HomePage_Home_Schema_SEO() : string {
         "provider": {
             "@id": DataSEORoot.id_LocalBusiness /* (Obligatoire) Référence à l'ID de l'Entreprise */
         },
-        "areaServed": DataSEORoot.areaServed, /* Zone géographique desservie par le service */
+        "publisher": {
+            "@type": "Organization",
+            "name": DataSEORoot.name,
+            "logo": {
+            "@type": "ImageObject",
+            "url": DataSEORoot.logo,
+            "width": 200,
+            "height": 200
+            },
+        },
         // ⚠️ A décommanter lors du passage de site vitrine en e-commerce si achat ou mise au panier possible sur cette page
         // "availableChannel": {
         // "@type": "ServiceChannel",

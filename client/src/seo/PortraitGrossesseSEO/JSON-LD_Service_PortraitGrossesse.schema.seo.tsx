@@ -26,6 +26,16 @@ function JSON_LD_Service_PortraitGrossesse_Schema_SEO() : string {
         "provider": {
             "@id": DataSEORoot.id_LocalBusiness /* (Obligatoire) Référence à l'ID de l'Entreprise */
         },
+        "publisher": {
+            "@type": "Organization",
+            "name": DataSEORoot.name,
+            "logo": {
+            "@type": "ImageObject",
+            "url": DataSEORoot.logo,
+            "width": 200,
+            "height": 200
+            },
+        },
         "areaServed": DataSEORoot.areaServed, /* Zone géographique desservie par le service */
         // ⚠️ A décommenter lors du passage de site vitrine en e-commerce
         // "availableChannel": {
