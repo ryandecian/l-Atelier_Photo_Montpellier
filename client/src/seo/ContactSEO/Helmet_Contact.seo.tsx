@@ -9,11 +9,12 @@ import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
 
 import JSON_LD_LocalBusiness_Root_Schema_SEO from "../JSON-LD_LocalBusiness_Root.schema.seo";
 import JSON_LD_ContactPage_Contact_Schema_SEO from "./JSON-LD_ContactPage_Contact.schema.seo";
+import JSON_LD_Breadcrumb_Contact_Schema_SEO from "./JSON-LD_Breadcrumb_Contact.schema.seo";
 
 
 function Helmet_Contact_SEO() {
     const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
-    const DataSEO_Contact: DataSEOTargetOneType = DataSEO_Contacts(); /* Récupération des données SEO Portrait Solo */
+    const DataSEO_Contact: DataSEOTargetOneType = DataSEO_Contacts(); /* Récupération des données SEO de la page */
 
     const SEO: DataSEOHelmetType = {
         title: DataSEO_Contact.title,
@@ -37,6 +38,9 @@ function Helmet_Contact_SEO() {
             </script>
             <script type="application/ld+json">
                 {JSON_LD_ContactPage_Contact_Schema_SEO()}
+            </script>
+            <script type="application/ld+json">
+                {JSON_LD_Breadcrumb_Contact_Schema_SEO()}
             </script>
 
             {/* Langue principale du document */}
