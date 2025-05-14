@@ -27,7 +27,7 @@ function JSON_LD_Service_PortraitCorporate_Schema_SEO() : string {
             "@id": DataSEORoot.id_LocalBusiness /* (Obligatoire) Référence à l'ID de l'Entreprise */
         },
         "areaServed": DataSEORoot.areaServed, /* Zone géographique desservie par le service */
-        // ⚠️ A décommanter lors du passage de site vitrine en e-commerce
+        // ⚠️ A décommenter lors du passage de site vitrine en e-commerce
         // "availableChannel": {
         // "@type": "ServiceChannel",
         // "serviceUrl": DataSEO_PortraitCorporate.url
