@@ -3,9 +3,10 @@ Ce qu'il manque :
 - Il manque les images 
   - Page contact Helmet et Service
 
-Tout les JSON-LD individuel doivent ajouter url et voir la légitimité de serviceUrl
-Il faudra revoir tout les typeService des dataSEO de chaque page à l'exception de Mariage
-
+Création du JSON-LD_Breadcrumb
+  - Ajout des clés position et name dans DataSEO
+  - Mise a disposition du nouveau JSON-LD dans Helmet
+  - Rectification des commentaires de const DataSEO_One dans JSON-LD Service et Helmet
 
 Il faut refactoriser SEO les pages :
   - Contact

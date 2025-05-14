@@ -1,12 +1,12 @@
 import DataSEORoots from "../DataSEORoot.seo";
 import DataSEORootType from "../../types/DataSEORoot.type";
 
-import DataSEO_Homes from "./DataSEO_Home.seo";
+import DataSEO_Contacts from "./DataSEO_Contact.seo";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
 
-function JSON_LD_Breadcrumb_Home_Schema_SEO() : string {
+function JSON_LD_Breadcrumb_Contact_Schema_SEO() : string {
     const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
-    const DataSEO_Home: DataSEOTargetOneType = DataSEO_Homes(); /* Récupération des données SEO de la page */
+    const DataSEO_Contact: DataSEOTargetOneType = DataSEO_Contacts(); /* Récupération des données SEO de la page */
 
     const JSON_LD = JSON.stringify({
         "@context": DataSEORoot["@context"],
@@ -14,9 +14,9 @@ function JSON_LD_Breadcrumb_Home_Schema_SEO() : string {
         "itemListElement": [
             {
                 "@type": "ListItem",
-                "position": DataSEO_Home.position,
-                "name": DataSEO_Home.title,
-                "item": DataSEO_Home.url,
+                "position": DataSEO_Contact.position,
+                "name": DataSEO_Contact.title,
+                "item": DataSEO_Contact.url,
             },
         ],
     });
@@ -26,4 +26,4 @@ function JSON_LD_Breadcrumb_Home_Schema_SEO() : string {
     )
 }
 
-export default JSON_LD_Breadcrumb_Home_Schema_SEO;
+export default JSON_LD_Breadcrumb_Contact_Schema_SEO;
