@@ -6,7 +6,7 @@ import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
 
 function JSON_LD_Breadcrumb_Home_Schema_SEO() : string {
     const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
-    const DataSEO_Home: DataSEOTargetOneType = DataSEO_Homes(); /* Récupération des données SEO */
+    const DataSEO_Home: DataSEOTargetOneType = DataSEO_Homes(); /* Récupération des données SEO de la page */
 
     const JSON_LD = JSON.stringify({
         "@context": DataSEORoot["@context"],
