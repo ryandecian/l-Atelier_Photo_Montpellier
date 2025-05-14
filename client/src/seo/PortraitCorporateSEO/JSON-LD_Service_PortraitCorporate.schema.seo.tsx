@@ -11,7 +11,7 @@ import generateReviewArraySEO from "../../utils/generateReviewArraySEO.utils";
 
 function JSON_LD_Service_PortraitCorporate_Schema_SEO() : string {
     const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
-    const DataSEO_PortraitCorporate: DataSEOTargetOneType = DataSEO_PortraitCorporates(); /* Récupération des données SEO Portrait Grossesse */
+    const DataSEO_PortraitCorporate: DataSEOTargetOneType = DataSEO_PortraitCorporates(); /* Récupération des données SEO de la page */
 
     const JSON_LD = JSON.stringify({
         "@context": DataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
