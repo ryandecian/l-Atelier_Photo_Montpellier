@@ -17,19 +17,21 @@ function JSON_LD_Service_PortraitCorporate_Schema_SEO() : string {
         "@context": DataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
         "@type": DataSEORoot["@type"].Service, /* (Obligatoire) Type de la donnée */
         "@id": DataSEO_PortraitCorporate.id_Service,
-        "serviceType": "Photographie portrait corporate",
+        "serviceType": DataSEO_PortraitCorporate.serviceType,
         "name": DataSEORoot.name, /* (Obligatoire) Nom de l'entreprise */
         "image": DataSEO_PortraitCorporate.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
         "description": DataSEO_PortraitCorporate.description,
+        "url": DataSEO_PortraitCorporate.url,
         "termsOfService": DataSEORoot.termsOfService,
         "provider": {
             "@id": DataSEORoot.id_LocalBusiness /* (Obligatoire) Référence à l'ID de l'Entreprise */
         },
         "areaServed": DataSEORoot.areaServed, /* Zone géographique desservie par le service */
-        "availableChannel": {
-        "@type": "ServiceChannel",
-        "serviceUrl": DataSEO_PortraitCorporate.url
-        },
+        // ⚠️ A décommenter lors du passage de site vitrine en e-commerce
+        // "availableChannel": {
+        // "@type": "ServiceChannel",
+        // "serviceUrl": DataSEO_PortraitCorporate.url
+        // },
         "aggregateRating": generateAverageRatingSEO(AvisClientPortraitCorporateControllerData),
         "review": generateReviewArraySEO(AvisClientPortraitCorporateControllerData)
     });
