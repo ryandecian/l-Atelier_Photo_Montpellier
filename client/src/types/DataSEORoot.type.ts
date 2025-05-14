@@ -4,6 +4,7 @@ type DataSEORootType = {
     "@context": string;
     "@type": {
       Local: string;
+      BreadcrumbList: string;
       Service: string;
       ContactPage: string;
       HomePage: string;

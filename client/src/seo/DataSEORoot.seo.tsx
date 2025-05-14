@@ -12,6 +12,7 @@ function DataSEORoot(): DataSEORootType {
         "@context": "https://schema.org",
         "@type": {
             Local: "LocalBusiness",
+            BreadcrumbList: "BreadcrumbList",
             Service: "Service",
             ContactPage: "ContactPage",
             HomePage: "HomePage",
