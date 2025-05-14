@@ -17,19 +17,21 @@ function JSON_LD_Service_PortraitSolo_Schema_SEO() : string {
         "@context": DataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
         "@type": DataSEORoot["@type"].Service, /* (Obligatoire) Type de la donnée */
         "@id": DataSEO_PortraitSolo.id_Service,
-        "serviceType": "Photographie Solo",
+        "serviceType": DataSEO_PortraitSolo.serviceType,
         "name": DataSEORoot.name, /* (Obligatoire) Nom de l'entreprise */
         "image": DataSEO_PortraitSolo.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
         "description": DataSEO_PortraitSolo.description,
+        "url": DataSEO_PortraitSolo.url,
         "termsOfService": DataSEORoot.termsOfService,
         "provider": {
             "@id": DataSEORoot.id_LocalBusiness /* (Obligatoire) Référence à l'ID de l'Entreprise */
         },
         "areaServed": DataSEORoot.areaServed, /* Zone géographique desservie par le service */
-        "availableChannel": {
-        "@type": "ServiceChannel",
-        "serviceUrl": DataSEO_PortraitSolo.url
-        },
+        // ⚠️ A décommenter lors du passage de site vitrine en e-commerce
+        // "availableChannel": {
+        // "@type": "ServiceChannel",
+        // "serviceUrl": DataSEO_PortraitSolo.url
+        // },
         "aggregateRating": generateAverageRatingSEO(AvisClientPortraitSoloControllerData),
         "review": generateReviewArraySEO(AvisClientPortraitSoloControllerData)
     });
