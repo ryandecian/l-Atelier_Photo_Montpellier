@@ -14,7 +14,7 @@ function JSON_LD_Breadcrumb_Home_Schema_SEO() : string {
         "itemListElement": [
             {
                 "@type": "ListItem",
-                "position": 1,
+                "position": DataSEO_Home.position,
                 "name": DataSEO_Home.title,
                 "item": DataSEO_Home.url,
             },
