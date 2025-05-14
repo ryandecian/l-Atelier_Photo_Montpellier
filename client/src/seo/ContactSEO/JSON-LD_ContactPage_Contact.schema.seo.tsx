@@ -24,6 +24,16 @@ function JSON_LD_ContactPage_Contact_Schema_SEO() : string {
         "provider": {
             "@id": DataSEORoot.id_LocalBusiness /* (Obligatoire) Référence à l'ID de l'Entreprise */
         },
+        "publisher": {
+            "@type": "Organization",
+            "name": DataSEORoot.name,
+            "logo": {
+            "@type": "ImageObject",
+            "url": DataSEORoot.logo,
+            "width": 200,
+            "height": 200
+            },
+        },
     });
 
     return (
