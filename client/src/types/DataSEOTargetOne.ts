@@ -3,6 +3,8 @@ type DataSEOTargetOneType = {
     autor: string;
     description: string;
     url: string;
+    position: number;
+    name: string;
     twitterUrlImg?: string; // fallback
     keywords: {
         1: string; // 1 mot clé
