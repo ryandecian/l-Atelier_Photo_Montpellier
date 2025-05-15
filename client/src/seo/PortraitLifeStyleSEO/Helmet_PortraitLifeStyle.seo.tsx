@@ -9,11 +9,12 @@ import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
 
 import JSON_LD_LocalBusiness_Root_Schema_SEO from "../JSON-LD_LocalBusiness_Root.schema.seo";
 import JSON_LD_Service_PortraitLifeStyle_Schema_SEO from "./JSON-LD_Service_PortraitLifeStyle.schema.seo";
+import JSON_LD_Breadcrumb_PortraitLifeStyle_Schema_SEO from "./JSON-LD_Breadcrumb_PortraitLifeStyle.schema.seo";
 
 
 function Helmet_PortraitLifeStyle_SEO() {
     const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
-    const DataSEO_PortraitLifeStyle: DataSEOTargetOneType = DataSEO_PortraitLifeStyles(); /* Récupération des données SEO Portrait LifeStyle */
+    const DataSEO_PortraitLifeStyle: DataSEOTargetOneType = DataSEO_PortraitLifeStyles(); /* Récupération des données SEO de la page */
 
     const SEO: DataSEOHelmetType = {
         title: DataSEO_PortraitLifeStyle.title,
@@ -37,6 +38,9 @@ function Helmet_PortraitLifeStyle_SEO() {
             </script>
             <script type="application/ld+json">
                 {JSON_LD_Service_PortraitLifeStyle_Schema_SEO()}
+            </script>
+            <script type="application/ld+json">
+                {JSON_LD_Breadcrumb_PortraitLifeStyle_Schema_SEO()}
             </script>
 
             {/* Langue principale du document */}

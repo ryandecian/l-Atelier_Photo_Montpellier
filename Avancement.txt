@@ -11,7 +11,6 @@ Création du JSON-LD_Breadcrumb
   - Rectification des commentaires de const DataSEO_One dans JSON-LD Service et Helmet
 
   Il reste les pages : 
-  - Grossesse
   - LifeStyle
   - Mariage
   - Solo
