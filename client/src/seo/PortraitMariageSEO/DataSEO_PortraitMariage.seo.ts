@@ -8,6 +8,8 @@ function DataSEO_PortraitMariage(): DataSEOTargetOneType {
         autor: "Anne SAUNIER",
         description: "Portrait Mariage à Montpellier – Une séance photo professionnelle pour valoriser votre image, inspirer confiance et marquer les esprits. Par Anne SAUNIER, photographe à l’Atelier Photo Montpellier.",
         url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[13].path}`, /*URL de la page*/
+        position: 2, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
+        name: "Portrait Mariage", /* Clé pour Breadcrumb qui est = à title sans le nom de l'entreprise */
         twitterUrlImg: "", /* Lien URL de l'image */
         keywords: {
             1: "Anne SAUNIER", /* 1 mot clés */
