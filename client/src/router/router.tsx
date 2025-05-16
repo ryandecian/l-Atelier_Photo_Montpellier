@@ -116,12 +116,12 @@ const ListDataRouter: RouterItemsType[] = [
     },
     /* {ListDataRouter[16].path} */
     {
-        path: "/portraits-familles-amis",
+        path: "/portrait-famille-ami",
         element: <h1>Route : Portraits familles - amis</h1>,
     },
     /* {ListDataRouter[17].path} */
     {
-        path: "/portraits-nouveaux-nes",
+        path: "/portrait-nouveau-ne",
         element: <PortraitNouveauNePage />,
     },
     /* {ListDataRouter[18].path} */
@@ -131,7 +131,7 @@ const ListDataRouter: RouterItemsType[] = [
     },
     /* {ListDataRouter[19].path} */
     {
-        path: "/portraits-hobbies",
+        path: "/portrait-hobbie",
         element: <h1>Route : Portraits Hobbies</h1>,
     },
     /* {ListDataRouter[20].path} */
