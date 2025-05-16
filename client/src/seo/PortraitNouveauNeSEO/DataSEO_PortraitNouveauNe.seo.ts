@@ -1,15 +1,15 @@
 import ListDataRouter from "../../router/router";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
 
-function DataSEO_PortraitGrossesse(): DataSEOTargetOneType {
+function DataSEO_PortraitNouveauNe(): DataSEOTargetOneType {
     const DataSEO = {
         /* Data Helmet */
         title: "Portrait Grossesse et nouveau né - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
-        description: "Avec l’Atelier Photo Montpellier, Anne SAUNIER capture la magie de la grossesse et les premiers instants de vie à travers des portraits doux et authentiques.",
+        description: "Un souffle de vie, un regard naissant. Anne SAUNIER révèle la tendresse des premiers jours à travers des portraits à chérir pour toujours.",
         url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[17].path}`, /*URL de la page*/
         position: 3, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
-        name: "Portrait Nouveau Né", /* Clé pour Breadcrumb qui est = à title sans le nom de l'entreprise */
+        name: "Portrait Nouveau Né et grossesse", /* Clé pour Breadcrumb qui est = à title sans le nom de l'entreprise */
         twitterUrlImg: "", /* Lien URL de l'image */
         keywords: {
             1: "Anne SAUNIER", /* 1 mot clés */
@@ -37,10 +37,10 @@ function DataSEO_PortraitGrossesse(): DataSEOTargetOneType {
         },
     
         /* Data Helmet et JSON-LD */
-        img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-grossesse/google/photo-professionnel-portrait-grossesse-montpellier.jpg`, /*Lien URL public de l'image*/
-        img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-grossesse/helmet/photo-professionnel-portrait-grossesse-montpellier.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[17].path}#service-portrait-grossesse`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
-        serviceType: "Photographie grossesse et nouveau-né",
+        img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-nouveau-ne/google/photo-portrait-nouveau-ne-professionnel-montpellier.jpg`, /*Lien URL public de l'image*/
+        img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-nouveau-ne/helmet/photo-portrait-nouveau-ne-professionnel-montpellier.jpg`, /*Lien URL public de l'image*/
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[17].path}#service-portrait-nouveau-ne`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
+        serviceType: "Photographie grossesse et nouveau-né.",
     };
 
     return (
@@ -48,4 +48,4 @@ function DataSEO_PortraitGrossesse(): DataSEOTargetOneType {
     )
 }
 
-export default DataSEO_PortraitGrossesse;
+export default DataSEO_PortraitNouveauNe;
