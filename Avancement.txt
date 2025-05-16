@@ -7,14 +7,14 @@ Ce qu'il manque :
 
 Il faut refactoriser SEO les pages :
   - Contact
-  - NavRoot et TargetHome
+  - NavTargetHome a faire
   - Footer
 
 ------------------------------------------------------------------------------
 
 Il faut éditer les pages : 
  - Duo
- - Nouveau né
+ - Nouveau né : en cours. 
  - Famille
  - Hobbie
  - Portfolio
