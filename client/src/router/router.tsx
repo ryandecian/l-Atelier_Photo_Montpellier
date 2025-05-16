@@ -1,20 +1,24 @@
 import { ReactNode } from "react"
 
 /* Liste des pages en import */
-import HomePage from "../pages/HomePage/HomePage";
-import MentionsLegalesPage from "../pages/MentionsLegalesPage/MentionsLegalesPage";
-import Error404 from "../pages/Error404Page/Error404Page";
-import CGVPage from "../pages/CGVPage/CGVPage";
-import PortraitMariagePage from "../pages/PortraitMariagePage/PortraitMariagePage";
+/* Page Frontend vérrouillée */
 import AdminPage from "../pages/AdminPage/AdminPage";
 import ComptePage from "../pages/ComptePage/ComptePage";
-import LoginPage from "../pages/LoginPage/LoginPage";
 import UserSystemePage from "../pages/UserSystemePage/UserSystemePage";
+
+/* Page Frontend public */
+import CGVPage from "../pages/CGVPage/CGVPage";
 import ContactPage from "../pages/ContactPage/ContactPage";
+import Error404 from "../pages/Error404Page/Error404Page";
+import HomePage from "../pages/HomePage/HomePage";
+import LoginPage from "../pages/LoginPage/LoginPage";
+import MentionsLegalesPage from "../pages/MentionsLegalesPage/MentionsLegalesPage";
 import PortraitCorporatePage from "../pages/PortraitCorporatePage/PortraitCorporatePage";
 import PortraitDuoPage from "../pages/PortraitDuoPage/PortraitDuoPage";
 import PortraitGrossessePage from "../pages/PortraitGrosssessePage/PortraitGrossessePage";
 import PortraitLifeStylePage from "../pages/PortraitLifeStylePage/PortraitLifeStylePage";
+import PortraitMariagePage from "../pages/PortraitMariagePage/PortraitMariagePage";
+import PortraitNouveauNePage from "../pages/PotraitNouveauNePage/PortraitNouveauNePage";
 import PortraitSoloPage from "../pages/PortraitSoloPage/PortraitSoloPage";
 
 /**
@@ -118,7 +122,7 @@ const ListDataRouter: RouterItemsType[] = [
     /* {ListDataRouter[17].path} */
     {
         path: "/portraits-nouveaux-nes",
-        element: <PortraitGrossessePage />,
+        element: <PortraitNouveauNePage />,
     },
     /* {ListDataRouter[18].path} */
     {
