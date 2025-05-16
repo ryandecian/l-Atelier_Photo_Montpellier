@@ -3,7 +3,7 @@ import css from "./HomeRootComponentF.module.css"
 import AnneSAUNIER from "../../../../assets/Images/AnneSAUNIER/AnneSAUNIER.jpg";
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../../router/router";
-import { useState, useEffect } from "react";
+import useMediaQueriesWidth from "../../../../hook/mediaQueriesWidth.utils";
 
 type textHTMLType = {
     htmlA: string,
@@ -59,21 +59,7 @@ function HomePCAutorComponentF() {
         ),
     }
 
-    const [viewportWidth, setViewportWidth] = useState<number>(window.innerWidth);
-
-    useEffect(() => {
-        const updateWidth = () => {
-          setViewportWidth(window.innerWidth);
-        };
-    
-        // Ajout de l'écouteur d'événements pour la redimensionnement de la fenêtre
-        window.addEventListener("resize", updateWidth);
-    
-        // Nettoyage lors du démontage du composant
-        return () => {
-          window.removeEventListener("resize", updateWidth);
-        };
-    }, []);
+    const viewportWidth: number = useMediaQueriesWidth();
 
 
   return (
