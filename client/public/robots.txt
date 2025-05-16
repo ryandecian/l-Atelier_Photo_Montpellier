@@ -2,18 +2,31 @@
 User-agent: *
 Allow: /
 
-# Bloquer les dossiers sensibles ou inutiles pour l’indexation
+# Bloquer les dossiers sensibles ou réservés
 Disallow: /admin/
-Disallow: /compte/
 Disallow: /admin/user-systeme/
+Disallow: /compte/
+Disallow: /portrait-grossesse/
 
-# Bloquer les URLs avec paramètres spécifiques (si applicable)
-# Disallow: /*?*
-
-# Empêcher l’indexation des fichiers sensibles (optionnel)
+# Bloquer les fichiers sensibles (sécurité et SEO)
 Disallow: /*.env$
 Disallow: /*.log$
+Disallow: /*.sql$
+Disallow: /*.bak$
 Disallow: /config/
+Disallow: /server/
+Disallow: /src/
+Disallow: /node_modules/
 
-# Indiquer l’emplacement du sitemap (quand il sera créé)
+# Bloquer les URL générées avec des paramètres (optionnel — à activer si besoin)
+# Disallow: /*?*
+# Disallow: /*&*
+
+# Bloquer l'accès aux fichiers de configuration React ou JS s'ils sont exposés
+Disallow: /vite.config.*
+Disallow: /package.json
+Disallow: /tsconfig.json
+Disallow: /.git/
+
+# Sitemap (met le bon domaine et le bon port s’il est en HTTPS)
 Sitemap: https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250/sitemap.xml
