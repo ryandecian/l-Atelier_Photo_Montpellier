@@ -1,27 +1,27 @@
 import DataSEORoots from "../DataSEORoot.seo";
 import DataSEORootType from "../../types/DataSEORoot.type";
 
-import DataSEO_PortraitGrossesses from "./DataSEO_PortraitNouveauNe.seo";
+import DataSEO_PortraitNouveauNes from "./DataSEO_PortraitNouveauNe.seo";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
 
-import AvisClientPortraitGrossesseControllerData from "../../components/PortraitGrossesseRoot/AvisClientPortraitGrossesseControllerData";
+import AvisClientPortraitNouveauNeControllerData from "../../components/PortraitGrossesseRoot/AvisClientPortraitGrossesseControllerData";
 import generateAverageRatingSEO from "../../utils/generateAverageRatingSEO.utils";
 import generateReviewArraySEO from "../../utils/generateReviewArraySEO.utils";
 
 
-function JSON_LD_Service_PortraitGrossesse_Schema_SEO() : string {
+function JSON_LD_Service_PortraitNouveauNe_Schema_SEO() : string {
     const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
-    const DataSEO_PortraitGrossesse: DataSEOTargetOneType = DataSEO_PortraitGrossesses(); /* Récupération des données SEO de la page */
+    const DataSEO_PortraitNouveauNe: DataSEOTargetOneType = DataSEO_PortraitNouveauNes(); /* Récupération des données SEO de la page */
 
     const JSON_LD = JSON.stringify({
         "@context": DataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
         "@type": DataSEORoot["@type"].Service, /* (Obligatoire) Type de la donnée */
-        "@id": DataSEO_PortraitGrossesse.id_Service,
-        "serviceType": DataSEO_PortraitGrossesse.serviceType,
+        "@id": DataSEO_PortraitNouveauNe.id_Service,
+        "serviceType": DataSEO_PortraitNouveauNe.serviceType,
         "name": DataSEORoot.name, /* (Obligatoire) Nom de l'entreprise */
-        "image": DataSEO_PortraitGrossesse.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
-        "description": DataSEO_PortraitGrossesse.description,
-        "url": DataSEO_PortraitGrossesse.url,
+        "image": DataSEO_PortraitNouveauNe.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
+        "description": DataSEO_PortraitNouveauNe.description,
+        "url": DataSEO_PortraitNouveauNe.url,
         "termsOfService": DataSEORoot.termsOfService,
         "provider": {
             "@id": DataSEORoot.id_LocalBusiness /* (Obligatoire) Référence à l'ID de l'Entreprise */
@@ -40,10 +40,10 @@ function JSON_LD_Service_PortraitGrossesse_Schema_SEO() : string {
         // ⚠️ A décommenter lors du passage de site vitrine en e-commerce
         // "availableChannel": {
         // "@type": "ServiceChannel",
-        // "serviceUrl": DataSEO_PortraitGrossesse.url
+        // "serviceUrl": DataSEO_PortraitNouveauNe.url
         // },
-        "aggregateRating": generateAverageRatingSEO(AvisClientPortraitGrossesseControllerData),
-        "review": generateReviewArraySEO(AvisClientPortraitGrossesseControllerData)
+        "aggregateRating": generateAverageRatingSEO(AvisClientPortraitNouveauNeControllerData),
+        "review": generateReviewArraySEO(AvisClientPortraitNouveauNeControllerData)
     });
 
     return (
@@ -51,4 +51,4 @@ function JSON_LD_Service_PortraitGrossesse_Schema_SEO() : string {
     )
 }
 
-export default JSON_LD_Service_PortraitGrossesse_Schema_SEO;
+export default JSON_LD_Service_PortraitNouveauNe_Schema_SEO;

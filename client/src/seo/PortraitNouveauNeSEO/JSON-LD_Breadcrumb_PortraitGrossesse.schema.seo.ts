@@ -1,12 +1,12 @@
 import DataSEORoots from "../DataSEORoot.seo";
 import DataSEORootType from "../../types/DataSEORoot.type";
 
-import DataSEO_PortraitGrossesses from "./DataSEO_PortraitNouveauNe.seo";
+import DataSEO_PortraitNouveauNes from "./DataSEO_PortraitNouveauNe.seo";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
 
-function JSON_LD_Breadcrumb_PortraitGrossesse_Schema_SEO() : string {
+function JSON_LD_Breadcrumb_PortraitNouveauNe_Schema_SEO() : string {
     const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
-    const DataSEO_PortraitGrossesse: DataSEOTargetOneType = DataSEO_PortraitGrossesses(); /* Récupération des données SEO de la page */
+    const DataSEO_PortraitNouveauNe: DataSEOTargetOneType = DataSEO_PortraitNouveauNes(); /* Récupération des données SEO de la page */
 
     const JSON_LD = JSON.stringify({
         "@context": DataSEORoot["@context"],
@@ -14,9 +14,9 @@ function JSON_LD_Breadcrumb_PortraitGrossesse_Schema_SEO() : string {
         "itemListElement": [
             {
                 "@type": "ListItem",
-                "position": DataSEO_PortraitGrossesse.position,
-                "name": DataSEO_PortraitGrossesse.title,
-                "item": DataSEO_PortraitGrossesse.url,
+                "position": DataSEO_PortraitNouveauNe.position,
+                "name": DataSEO_PortraitNouveauNe.title,
+                "item": DataSEO_PortraitNouveauNe.url,
             },
         ],
     });
@@ -26,4 +26,4 @@ function JSON_LD_Breadcrumb_PortraitGrossesse_Schema_SEO() : string {
     )
 }
 
-export default JSON_LD_Breadcrumb_PortraitGrossesse_Schema_SEO;
+export default JSON_LD_Breadcrumb_PortraitNouveauNe_Schema_SEO;
