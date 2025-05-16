@@ -148,6 +148,7 @@ Pour attendre que l'utilisateur soit vraiment sur la page pour la charger
 /* Espace commentaire : */
 
 /* ATTENTION, pour ce site tout spécialement la limite entre mobile et PC est 800px et non 768px */
+/* Mobile < 800px et PC <= 800px */
 
 
 /* Décalage du des composant, texte, card ou img de 24px a droite et gauche */
