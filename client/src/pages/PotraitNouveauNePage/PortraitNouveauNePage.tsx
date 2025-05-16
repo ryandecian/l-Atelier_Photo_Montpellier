@@ -4,6 +4,8 @@ import PortraitGrossesseRoot from "../../components/PortraitGrossesseRoot/Portra
 import FooterRoot from "../../components/FooterRoot/FooterRoot";
 import Helmet_PortraitGrossesse_SEO from "../../seo/PortraitGrossesseSEO/Helmet_PortraitGrossesse.seo";
 
+/* Cette page reprend la quasi totalité des éléments éléments et composant de la page Portrait Grossesse */
+
 function PortraitNouveauNePage() {
      return (
         <section className={`PortraitNouveauNePage ${style.Page}`}>
