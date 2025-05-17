@@ -105,7 +105,6 @@
 .TextP5,
 .TextP6,
 .TextLiP4 {
-    font-size: var(--h4);
     width: calc(100% - 3rem); /* 100% - 48px */
     margin: 0rem 1.5rem; /* 0px 24px 0px 24px */
     border: 0;
