@@ -1,79 +1,66 @@
 import style from "../../../StyleRootComponent.module.css";
-import css from "../../../StyleRootComponent.module.css";
 import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ImagesPortraitDuoControllerData from "../../ImagesPortraitDuoControllerData";
 
-function PortraitDuoRootComponentA() {
+function PortraitDuoRootComponentB() {
   return (
-    <section className={`PortraitDuoRootComponentA ${style.ContainerRoot}`}>
+    <article className={`PortraitDuoRootComponentA ${style.ContainerRoot}`}>
         <header className={style.ContainerTitle}>
             <h2 className={style.TitleH2}>
-                {"Parce que chaque duo a son histoire, offrez-vous un portrait fidèle à votre complicité"}
+                {"Envie d’un portrait de couple qui a du sens ?"}
             </h2>
         </header>
 
         <p className={style.TextP4}>
-            Un portrait de couple, ce n’est pas seulement une jolie photo à deux. <br />
-            C’est un 
-            <span className={style.SpanBold}>
-                {" instant suspendu, "}
-            </span>
-            une respiration dans vos quotidiens bien remplis, une façon de 
-            <span className={style.SpanBold}>
-                {" vous (re)voir autrement, "}
-            </span>
-            ensemble.
+            Avant de déclencher l’appareil, on échange sur votre histoire, votre dynamique, ce que vous aimez faire à deux. <br />
+            Je vous propose un lieu adapté : un décor sobre au studio, un coin de nature autour de Montpellier, ou même chez vous si vous le souhaitez.
         </p>
 
         <p className={style.TextP4}>
-            Rires complices, gestes tendres, regards pleins de sous-entendus... <br />
-            Je photographie 
+            Nous définissons ensemble 
             <span className={style.SpanBold}>
-                {" ce qui existe déjà entre vous, "}
+                {" l’ambiance visuelle : "}
             </span>
-            sans filtres, sans caricature, dans une ambiance douce, vraie et sans pression.
+            lumineux et spontané ? doux et minimaliste ? cinématographique ? <br />
+            Puis on crée ce moment rien qu’à vous, loin des clichés, proche de vous.
         </p>
 
         <Container4ImagesRoot
-            img1={ImagesPortraitDuoControllerData[0].src}
-            MetaNameImg1={ImagesPortraitDuoControllerData[0].alt}
-            img2={ImagesPortraitDuoControllerData[1].src}
-            MetaNameImg2={ImagesPortraitDuoControllerData[1].alt}
-            img3={ImagesPortraitDuoControllerData[2].src}
-            MetaNameImg3={ImagesPortraitDuoControllerData[2].alt}
-            img4={ImagesPortraitDuoControllerData[3].src}
-            MetaNameImg4={ImagesPortraitDuoControllerData[3].alt}
+            img1={ImagesPortraitDuoControllerData[4].src}
+            MetaNameImg1={ImagesPortraitDuoControllerData[4].alt}
+            img2={ImagesPortraitDuoControllerData[5].src}
+            MetaNameImg2={ImagesPortraitDuoControllerData[5].alt}
+            img3={ImagesPortraitDuoControllerData[6].src}
+            MetaNameImg3={ImagesPortraitDuoControllerData[6].alt}
+            img4={ImagesPortraitDuoControllerData[7].src}
+            MetaNameImg4={ImagesPortraitDuoControllerData[7].alt}
         />
 
-        <article className={style.ContainerText}>
-            <h3 className={css.TitleNH3}>
-                {"Pourquoi faire appel à l’Atelier Photo Montpellier ?"}
-            </h3>
-
-            <p className={style.TextP4}>
-                Parce que je ne cherche pas à faire "poser" les couples. <br />
-                Je crée 
+        <h3 className={style.TitleNH3}>
+            {"🧡 Ce portrait est pour vous si..."}
+        </h3>
+        <ul className={style.ContainerUl}>
+            <li className={style.TextLiP4}>
+                {"Vous voulez garder un souvenir vrai de votre lien"}
+            </li>
+            <li className={style.TextLiP4}>
+                {"Vous n’avez jamais fait de séance photo ensemble mais vous en rêviez"}
+            </li>
+            <li className={style.TextLiP4}>
+                {"Vous avez traversé une étape de vie et vous voulez l’honorer"}
+            </li>
+            <li className={style.TextLiP4}>
+                {"Vous êtes timides et cherchez une expérience douce, bienveillante"}
+            </li>
+            <li className={style.TextLiP4}>
+                {"Vous voulez simplement "}
                 <span className={style.SpanBold}>
-                    {" une bulle de confiance et d’intimité, "}
+                    {"vous faire un cadeau ensemble"}
                 </span>
-                où vous pourrez simplement être vous-mêmes. <br />
-                Avant la séance, on prend le temps d’échanger sur 
-                <span className={style.SpanBold}>
-                    {" ce qui vous lie, ce que vous voulez garder en image : "}
-                </span>
-                douceur ? force ? joie ? pudeur ?
-            </p>
-
-            <p className={style.TextP4}>
-                Que ce soit en studio ou en extérieur, je mets tout en œuvre pour que l’expérience soit aussi belle que les images.
-            </p>
-
-            <p className={style.TextP4}>
-                🎯 Résultat : un reportage visuel sensible, fidèle à votre lien.
-            </p>
-        </article>
-    </section>
+            </li>
+        </ul>
+    </article>
   );
 }
 
-export default PortraitDuoRootComponentA;
+export default PortraitDuoRootComponentB;
