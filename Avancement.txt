@@ -13,8 +13,7 @@ Il faut refactoriser SEO les pages :
 ------------------------------------------------------------------------------
 
 Il faut éditer les pages : 
- - Duo
- - Nouveau né : en cours. 
+ - Duo : En cours
  - Famille
  - Hobbie
  - Portfolio
