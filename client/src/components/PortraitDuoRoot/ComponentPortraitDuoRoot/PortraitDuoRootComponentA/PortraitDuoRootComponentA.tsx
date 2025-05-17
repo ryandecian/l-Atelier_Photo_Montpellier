@@ -1,4 +1,5 @@
 import style from "../../../StyleRootComponent.module.css";
+import css from "../../../StyleRootComponent.module.css";
 import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ImagesPortraitDuoControllerData from "../../ImagesPortraitDuoControllerData";
 
@@ -43,6 +44,34 @@ function PortraitDuoRootComponentA() {
             img4={ImagesPortraitDuoControllerData[3].src}
             MetaNameImg4={ImagesPortraitDuoControllerData[3].alt}
         />
+
+        <article className={style.ContainerText}>
+            <h3 className={css.TitleNH3}>
+                {"Pourquoi faire appel à l’Atelier Photo Montpellier ?"}
+            </h3>
+
+            <p className={style.TextP4}>
+                Parce que je ne cherche pas à faire "poser" les couples. <br />
+                Je crée 
+                <span className={style.SpanBold}>
+                    {" une bulle de confiance et d’intimité, "}
+                </span>
+                où vous pourrez simplement être vous-mêmes. <br />
+                Avant la séance, on prend le temps d’échanger sur 
+                <span className={style.SpanBold}>
+                    {" ce qui vous lie, ce que vous voulez garder en image : "}
+                </span>
+                douceur ? force ? joie ? pudeur ?
+            </p>
+
+            <p className={style.TextP4}>
+                Que ce soit en studio ou en extérieur, je mets tout en œuvre pour que l’expérience soit aussi belle que les images.
+            </p>
+
+            <p className={style.TextP4}>
+                🎯 Résultat : un reportage visuel sensible, fidèle à votre lien.
+            </p>
+        </article>
     </section>
   );
 }

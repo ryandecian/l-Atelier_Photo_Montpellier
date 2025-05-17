@@ -1,5 +1,6 @@
 import style from "../StyleRootComponent.module.css";
 import PortraitDuoRootComponentA from "./ComponentPortraitDuoRoot/PortraitDuoRootComponentA/PortraitDuoRootComponentA";
+import PortraitDuoRootComponentB from "./ComponentPortraitDuoRoot/PortraitDuoRootComponentB/PortraitDuoRootComponentB";
 
 function PortraitDuoRoot() {
     return (
@@ -14,6 +15,7 @@ function PortraitDuoRoot() {
             <PortraitDuoRootComponentA />
 
             {/* Container B */}
+            <PortraitDuoRootComponentB />
 
             {/* Container C : Avis Clients */}
         </section>
