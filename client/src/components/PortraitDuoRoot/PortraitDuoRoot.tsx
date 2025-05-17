@@ -1,4 +1,7 @@
 import style from "../StyleRootComponent.module.css";
+import GeneratorCardAvisClient from "../GeneratorCardAvisClient/GeneratorCardAvisClient";
+import AvisClientPortraitDuoControllerData from "./AvisClientPortraitDuoControllerData";
+
 import PortraitDuoRootComponentA from "./ComponentPortraitDuoRoot/PortraitDuoRootComponentA/PortraitDuoRootComponentA";
 import PortraitDuoRootComponentB from "./ComponentPortraitDuoRoot/PortraitDuoRootComponentB/PortraitDuoRootComponentB";
 import PortraitDuoRootComponentC from "./ComponentPortraitDuoRoot/PortraitDuoRootComponentC/PortraitDuoRootComponentC";
@@ -20,6 +23,9 @@ function PortraitDuoRoot() {
 
             {/* Container C */}
             <PortraitDuoRootComponentC />
+
+            {/* Container D : Avis client */}
+            <GeneratorCardAvisClient avisClients={AvisClientPortraitDuoControllerData}/>
         </section>
     )
 }
