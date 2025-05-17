@@ -1,4 +1,5 @@
 import style from "../StyleRootComponent.module.css";
+import PortraitDuoRootComponentA from "./ComponentPortraitDuoRoot/PortraitDuoRootComponentA/PortraitDuoRootComponentA";
 
 function PortraitDuoRoot() {
     return (
@@ -10,6 +11,7 @@ function PortraitDuoRoot() {
             </header>
 
             {/* Container A */}
+            <PortraitDuoRootComponentA />
 
             {/* Container B */}
 
