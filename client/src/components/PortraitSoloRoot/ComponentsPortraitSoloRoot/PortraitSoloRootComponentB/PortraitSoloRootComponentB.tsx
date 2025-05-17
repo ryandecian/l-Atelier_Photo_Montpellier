@@ -91,7 +91,6 @@ function PortraitSoloRootComponentB() {
                 <p className={style.TextP4}>
                     📸 Sélection de 10 à 20 photos retouchées avec soin, livrées en galerie privée
                 </p>
-                <br />
             </article>
 
             <h2 className={style.TitleH2}>
