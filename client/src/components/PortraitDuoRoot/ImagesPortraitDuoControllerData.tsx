@@ -5,6 +5,11 @@ import Image2 from "../../assets/images/ImagePortraitDuo/portrait-couple-studio-
 import Image3 from "../../assets/images/ImagePortraitDuo/portrait-tandem-exterieur.jpg";
 import Image4 from "../../assets/images/ImagePortraitDuo/portrait-couple-montpellier.jpg";
 
+import Image5 from "../../assets/images/ImagePortraitDuo/couple-studio-detente.jpg";
+import Image6 from "../../assets/images/ImagePortraitDuo/duo-flash-studio-domicile.jpg";
+import Image7 from "../../assets/images/ImagePortraitDuo/portrait-duo-exterieur.jpg";
+import Image8 from "../../assets/images/ImagePortraitDuo/portrait-couple-studio-domicile.jpg";
+
 const ImagesPortraitDuoControllerData: ImagesControllerDataType[] = [
     /* Tableau 1 : PortraitDuoComponentA */
     /* {ImagesPortraitDuoControllerData[0].src} */
@@ -33,23 +38,23 @@ const ImagesPortraitDuoControllerData: ImagesControllerDataType[] = [
     /* Tableau 2 : PortraitDuoComponentB */
     /* {ImagesPortraitDuoControllerData[4].src} */
     {
-        src: "",
-        alt: "",
+        src: Image5,
+        alt: "Couple studio détente",
     },
     /* {ImagesPortraitDuoControllerData[5].src} */
     {
-        src: "",
-        alt: "",
+        src: Image6,
+        alt: "Duo flash studio domicile",
     },
     /* {ImagesPortraitDuoControllerData[6].src} */
     {
-        src: "",
-        alt: "",
+        src: Image7,
+        alt: "Portrait duo extérieur",
     },
     /* {ImagesPortraitDuoControllerData[7].src} */
     {
-        src: "",
-        alt: "",
+        src: Image8,
+        alt: "Portrait couple studio domicile",
     },
 
 
