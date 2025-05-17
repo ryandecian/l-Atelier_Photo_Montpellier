@@ -1,6 +1,7 @@
 import style from "../StyleRootComponent.module.css";
 import PortraitDuoRootComponentA from "./ComponentPortraitDuoRoot/PortraitDuoRootComponentA/PortraitDuoRootComponentA";
 import PortraitDuoRootComponentB from "./ComponentPortraitDuoRoot/PortraitDuoRootComponentB/PortraitDuoRootComponentB";
+import PortraitDuoRootComponentC from "./ComponentPortraitDuoRoot/PortraitDuoRootComponentC/PortraitDuoRootComponentC";
 
 function PortraitDuoRoot() {
     return (
@@ -17,7 +18,8 @@ function PortraitDuoRoot() {
             {/* Container B */}
             <PortraitDuoRootComponentB />
 
-            {/* Container C : Avis Clients */}
+            {/* Container C */}
+            <PortraitDuoRootComponentC />
         </section>
     )
 }

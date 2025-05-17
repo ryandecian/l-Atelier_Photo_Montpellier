@@ -4,7 +4,7 @@ import ImagesPortraitDuoControllerData from "../../ImagesPortraitDuoControllerDa
 
 function PortraitDuoRootComponentB() {
   return (
-    <article className={`PortraitDuoRootComponentA ${style.ContainerRoot}`}>
+    <article className={`PortraitDuoRootComponentB ${style.ContainerRoot}`}>
         <header className={style.ContainerTitle}>
             <h2 className={style.TitleH2}>
                 {"Envie d’un portrait de couple qui a du sens ?"}
