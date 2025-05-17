@@ -1,6 +1,6 @@
 import style from "../stylePage.module.css";
 import NavRoot from "../../components/NavRoot/NavRoot";
-import PortraitDuoRoot from "../../components/PortraitDuoRoot/PortraitDuoRoot";
+import PortfolioRoot from "../../components/PortfolioRoot/PortfolioRoot";
 import FooterRoot from "../../components/FooterRoot/FooterRoot";
 import Helmet_PortraitDuo_SEO from "../../seo/PortraitDuoSEO/Helmet_PortraitDuo.seo";
 
@@ -12,7 +12,7 @@ function PortfolioPage() {
                  <NavRoot />
             </header>
             <main className={style.Main}>
-                <PortraitDuoRoot />
+                <PortfolioRoot />
             </main>
             <footer className={style.Footer}>
                 <FooterRoot />
