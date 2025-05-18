@@ -1,6 +1,7 @@
 import style from "../StyleRootComponent.module.css";
 import PortfolioRootComponentA from "./ComponentPortfolioRoot/PortfolioRootComponentA/PortfolioRootComponentA";
 import PortfolioRootComponentB from "./ComponentPortfolioRoot/PortfolioRootComponentB/PortfolioRootComponentB";
+import PortfolioRootComponentC from "./ComponentPortfolioRoot/PortfolioRootComponentC/PortfolioRootComponentC";
 
 function PortfolioRoot() {
     return (
@@ -35,6 +36,7 @@ function PortfolioRoot() {
             <PortfolioRootComponentB />
 
             {/* Composant C : Photographies de rue - Street Photography */}
+            <PortfolioRootComponentC />
 
             {/* Composant D : Photographies urbaine et architectures */}
 
