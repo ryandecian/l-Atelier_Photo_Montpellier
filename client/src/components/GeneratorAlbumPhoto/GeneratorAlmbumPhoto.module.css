@@ -1,0 +1,39 @@
+.flexWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1.5rem 1rem;
+}
+
+.ContainerImg {
+  height: 240px; /* Hauteur qui definit la taille des images */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  flex: 0 0 auto;
+  transition: height 0.3s ease;
+}
+/* Responsive : écran < 768px (tablette et petits téléphones) */
+@media screen and (max-width: 768px) {
+  .ContainerImg {
+    height: 180px;
+  }
+}
+/* Responsive : écran très petit (iPhone SE ~320px) */
+@media screen and (max-width: 400px) {
+  .ContainerImg {
+    height: 140px;
+  }
+}
+
+.Image {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  display: block;
+}
