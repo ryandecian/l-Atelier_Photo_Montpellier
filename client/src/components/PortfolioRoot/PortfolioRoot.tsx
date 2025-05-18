@@ -2,6 +2,8 @@ import style from "../StyleRootComponent.module.css";
 import PortfolioRootComponentA from "./ComponentPortfolioRoot/PortfolioRootComponentA/PortfolioRootComponentA";
 import PortfolioRootComponentB from "./ComponentPortfolioRoot/PortfolioRootComponentB/PortfolioRootComponentB";
 import PortfolioRootComponentC from "./ComponentPortfolioRoot/PortfolioRootComponentC/PortfolioRootComponentC";
+import PortfolioRootComponentD from "./ComponentPortfolioRoot/PortfolioRootComponentD/PortfolioRootComponentD";
+import PortfolioRootComponentE from "./ComponentPortfolioRoot/PortfolioRootComponentE/PortfolioRootComponentE";
 
 function PortfolioRoot() {
     return (
@@ -39,8 +41,10 @@ function PortfolioRoot() {
             <PortfolioRootComponentC />
 
             {/* Composant D : Photographies urbaine et architectures */}
+            <PortfolioRootComponentD />
 
             {/* Composant E : Un regard artistique multiple */}
+            <PortfolioRootComponentE />
     </section>
   );
 }
