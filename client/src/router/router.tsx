@@ -13,6 +13,7 @@ import Error404 from "../pages/Error404Page/Error404Page";
 import HomePage from "../pages/HomePage/HomePage";
 import LoginPage from "../pages/LoginPage/LoginPage";
 import MentionsLegalesPage from "../pages/MentionsLegalesPage/MentionsLegalesPage";
+import PortfolioPage from "../pages/PortfolioPage/PortfolioPage";
 import PortraitCorporatePage from "../pages/PortraitCorporatePage/PortraitCorporatePage";
 import PortraitDuoPage from "../pages/PortraitDuoPage/PortraitDuoPage";
 import PortraitGrossessePage from "../pages/PortraitGrosssessePage/PortraitGrossessePage";
@@ -76,7 +77,7 @@ const ListDataRouter: RouterItemsType[] = [
     /* {ListDataRouter[8].path} */
     {
         path: "/portfolio",
-        element: <h1>Route : Page Portfolio</h1>,
+        element: <PortfolioPage />,
     },
     /* {ListDataRouter[9].path} */
     {
