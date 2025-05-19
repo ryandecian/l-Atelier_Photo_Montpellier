@@ -1,4 +1,5 @@
 // Import général
+import "./config/dotenv.config";
 import express, { Request, Response } from "express";
 import router from "./router/router";
 import cors from "cors";
