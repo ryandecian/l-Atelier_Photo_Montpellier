@@ -57,38 +57,6 @@ const ImagesPortraitPortfolioControllerData: ListeAlbumType = {
             src: ImageAlbum_Test_2,
             alt: "",
         },
-        {
-            src: ImageAlbum_Test_3,
-            alt: "",
-        },
-        {
-            src: ImageAlbum_Test_4,
-            alt: "",
-        },
-        {
-            src: ImageAlbum_Test_5,
-            alt: "",
-        },
-        {
-            src: ImageAlbum_Test_3,
-            alt: "",
-        },
-        {
-            src: ImageAlbum_Test_2,
-            alt: "",
-        },
-        {
-            src: ImageAlbum_Test_3,
-            alt: "",
-        },
-        {
-            src: ImageAlbum_Test_4,
-            alt: "",
-        },
-        {
-            src: ImageAlbum_Test_5,
-            alt: "",
-        },
     ],
 };
 

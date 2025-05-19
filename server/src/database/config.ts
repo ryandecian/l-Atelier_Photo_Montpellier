@@ -1,6 +1,11 @@
 import "dotenv/config";
 import mysql from "mysql2/promise";
 import chalk from "chalk";
+import ENV from "../config/ENV.config";
+import { RowDataPacket } from "mysql2";
+
+type TestConnectionResult = RowDataPacket & { test: number };
+
 
 // ✅ Stockage du pool dans une variable globale
 let pool: mysql.Pool | null = null;
@@ -12,17 +17,44 @@ function initializePool() {
     if (!pool) {
         try {
             pool = mysql.createPool({
-                host: process.env.DB_HOST || "localhost",
-                port: Number(process.env.DB_PORT || "3306"),
-                user: process.env.DB_USER || "root",
-                password: process.env.DB_PASSWORD || "password",
-                database: process.env.DB_NAME || "DB_AESF",
+                host: ENV("process.env.DB_HOST", "Warning") || "localhost",
+                port: Number(ENV("process.env.DB_PORT", "Warning") || "3306"),
+                user: ENV("process.env.DB_USER", "Warning") || "root",
+                password: ENV("process.env.DB_PASSWORD", "Warning") || "password",
+                database: ENV("process.env.DB_NAME", "Warning") || "DB_CarePlan",
                 waitForConnections: true, // Attend qu'une connexion soit disponible au lieu de planter
                 connectionLimit: 10, // Maximum 10 connexions simultanées
                 queueLimit: 0 // Aucune limite d'attente (les requêtes attendent leur tour)
             });
 
-             console.info(chalk.green(`${"✅ "}Pool de connexions MySQL créé avec succès !`));
+            console.info(chalk.green(`${"✅ "}Pool de connexions MySQL créé avec succès !`));
+            
+            // ✅ Test réel de connexion MySQL
+            async function testPoolConnection(pool: mysql.Pool) {
+                try {
+                    // On demande a la base de données de nous renvoyer une clé qui se nomme test et qui vaut 1
+                    const [result] = await pool.query<TestConnectionResult[]>("SELECT 1 as test");
+     
+                    if (
+                        result.length === 1 /* Vérifie le nombre de ligne retourné est bien 1 */
+                        &&
+                        result[0].test === 1 /* On vérifie que la clé test vaux bien 1 */
+                    ) {
+                        console.info(chalk.green("✅ Connexion MySQL vérifiée avec succès !"));
+                    }
+     
+                    else {
+                        throw new Error("❌ La requête de test MySQL a retourné un résultat inattendu.");
+                    }
+                }
+                catch (error) {
+                    console.error(chalk.red(`${"❌ "}Connexion MySQL impossible :`));
+                    console.error(chalk.red(`${"⚠️ "} Arret du serveur !`), error);
+                    process.exit(1); // Arrête le serveur si la connexion échoue
+                }
+            }
+            testPoolConnection(pool); // 👈 on l'appelle ici
+
         }
 
         catch (error) {

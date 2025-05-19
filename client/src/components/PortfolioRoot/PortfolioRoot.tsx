@@ -31,8 +31,6 @@ function PortfolioRoot() {
                 urbain.
             </p>
 
-            {/* Composant A : Portrait de particuliers et professionnels */}
-            <PortfolioRootComponentA />
 
             {/* Composant B : Photographies de paysages natunels */}
             <PortfolioRootComponentB />
@@ -45,6 +43,8 @@ function PortfolioRoot() {
 
             {/* Composant E : Un regard artistique multiple */}
             <PortfolioRootComponentE />
+            {/* Composant A : Portrait de particuliers et professionnels */}
+            <PortfolioRootComponentA />
     </section>
   );
 }
