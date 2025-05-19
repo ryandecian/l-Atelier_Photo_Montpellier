@@ -1,8 +1,8 @@
 // Ne touche pas à l'import de hooks et types
 import { useEffect, useState, ChangeEvent } from "react";
 import { useNavigate } from "react-router-dom";
-import useAuthCheck from "../../hook/useAuthCheck";
-import useLogout from "../../hook/useLogout";
+import useAuthCheck from "../../hook/useAuthCheck.utils.hook";
+import useLogout from "../../hook/useLogout.hook";
 import DataUserType from "../../types/dataUser.type";
 import style from "./UserSystemeRoot.module.css";
 
