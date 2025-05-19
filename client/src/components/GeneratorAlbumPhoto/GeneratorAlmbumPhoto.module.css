@@ -24,8 +24,14 @@
     height: 180px;
   }
 }
-/* Responsive : écran très petit (iPhone SE ~320px) */
+/* Responsive : écran très petit (iPhone SE ~360 - 400px) */
 @media screen and (max-width: 400px) {
+  .ContainerImg {
+    height: 140px;
+  }
+}
+/* Responsive : écran très petit (iPhone SE ~320 - 360px) */
+@media screen and (max-width: 360px) {
   .ContainerImg {
     height: 140px;
   }

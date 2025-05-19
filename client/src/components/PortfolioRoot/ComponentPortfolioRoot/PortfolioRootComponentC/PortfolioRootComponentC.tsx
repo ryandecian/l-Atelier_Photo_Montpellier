@@ -8,18 +8,19 @@ function PortfolioRootComponentC() {
         <article className={`PortfolioRootComponentC ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2}>
-                    {"Photographie de rue – Street Photography"}
+                    {"Photographie urbaine et architecture"}
                 </h2>
             </header>
 
             <p className={style.TextP4}>
-                Dans la rue, je cherche le mouvement, l’inattendu, l’instant de vérité. Je capte des scènes de vie, des regards, des gestes anodins qui 
-                deviennent, en photo, profondément humains. La photo de rue développe mon instinct, affine mon œil et m’inspire pour mes séances portraits.
+                L’architecture me parle à travers ses lignes, ses textures, ses contrastes. Je photographie les bâtiments, les détails urbains, 
+                les compositions graphiques offertes par la ville. À Montpellier, les contrastes entre le centre historique et les quartiers modernes 
+                offrent des angles riches et variés.
             </p>
 
             <p className={style.TextP4}>
-                À Montpellier, j’aime photographier les marchés, les ruelles vivantes, les ambiances de quartier. C’est un travail plus libre, plus 
-                brut, mais qui nourrit ma créativité.
+                Je cherche à isoler des formes, à jouer avec les perspectives ou les ombres pour créer des images structurées, parfois minimalistes, 
+                toujours équilibrées.
             </p>
 
             <GeneratorAlbumPhoto album={Album} />

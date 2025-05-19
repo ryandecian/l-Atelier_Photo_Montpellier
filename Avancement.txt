@@ -6,7 +6,6 @@ Ce qu'il manque :
 ------------------------------------------------------------------------------
 
 Il faut refactoriser SEO les pages :
-  - Contact
   - NavTargetHome a faire
   - Footer
 
@@ -15,7 +14,7 @@ Il faut refactoriser SEO les pages :
 Il faut éditer les pages : 
  - Famille
  - Hobbie
- - Portfolio
+ - Portfolio : A terminer avec la cliente
  - Qui suis je
 
 Il faudra créer de nouveau hook pour les fetchs

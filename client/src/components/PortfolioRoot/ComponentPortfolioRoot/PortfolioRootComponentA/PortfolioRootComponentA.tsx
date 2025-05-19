@@ -8,19 +8,19 @@ function PortfolioRootComponentA() {
         <article className={`PortfolioRootComponentA ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2}>
-                    {"Portraits de particuliers et professionnels"}
+                    {"Photographies de paysages naturels"}
                 </h2>
             </header>
 
             <p className={style.TextP4}>
-                Le portrait est au cœur de mon activité. J’aime créer une relation de confiance avec la personne photographiée, pour révéler sa 
-                personnalité, sa douceur ou sa force. Mon objectif : que chacun se sente bien en photo, et ait envie de la partager.
+                Les paysages sont pour moi une source d’inspiration et de sérénité. Autour de Montpellier, la nature offre des décors sublimes, entre 
+                mer, vignes, garrigues et rizières camarguaises. J’y capte la lumière du matin, les reflets sur l’eau, les ombres qui dansent sur les 
+                collines.
             </p>
 
             <p className={style.TextP4}>
-                Je réalise des portraits en lumière naturelle ou en studio à domicile, pour les familles, les futurs parents, les nouveaux-nés ou les 
-                professionnels. Chaque séance est préparée avec soin, dans une ambiance bienveillante. Le résultat : des images authentiques, 
-                expressives, valorisantes.
+                Ce sont souvent des images épurées, douces ou puissantes, selon l’énergie du lieu. J’aime traduire l’émotion ressentie face à un 
+                horizon, un arbre solitaire ou un ciel chargé.
             </p>
 
             <GeneratorAlbumPhoto album={Album} />
