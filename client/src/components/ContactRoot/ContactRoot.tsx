@@ -5,7 +5,7 @@ import externalLinks from "../../constants/externalLinks";
 
 function ContactRoot() {
   return (
-    <section className={`${css.ContactRoot} ${style.ContainerRootRacine}`}>
+    <section className={`ContactRoot ${css.ContactRoot} ${style.ContainerRootRacine}`}>
         <header className={style.ContainerTitle}>
             <h1 className={style.TitleH1}>Contactez-moi</h1>
         </header>
