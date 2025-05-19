@@ -8,19 +8,38 @@ function PortfolioRootComponentD() {
         <article className={`PortfolioRootComponentD ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2}>
-                    {"Photographie urbaine et architecture"}
+                    {"Un regard artistique multiple"}
                 </h2>
             </header>
 
             <p className={style.TextP4}>
-                L’architecture me parle à travers ses lignes, ses textures, ses contrastes. Je photographie les bâtiments, les détails urbains, 
-                les compositions graphiques offertes par la ville. À Montpellier, les contrastes entre le centre historique et les quartiers modernes 
-                offrent des angles riches et variés.
+                Mon travail se situe à la croisée de plusieurs genres photographiques et désormais aussi vidéo. <br />
+                Ce portfolio en est le reflet. Mon approche reste constante : créer des images 
+                <span className={style.SpanBold}>
+                    {" vivantes, cohérentes, lumineuses "}
+                </span>
+                – qu’il s’agisse d’un portrait, d’un paysage ou d’un film court. Que je photographie ou filme un visage, une ambiance ou un lieu, je 
+                cherche toujours à capter une 
+                <span className={style.SpanBold}>
+                    {" vérité, "}
+                </span>
+                une
+                <span className={style.SpanBold}>
+                    {" harmonie, "}
+                </span>
+                une
+                <span className={style.SpanBold}>
+                    {" sensation."}
+                </span>
             </p>
 
             <p className={style.TextP4}>
-                Je cherche à isoler des formes, à jouer avec les perspectives ou les ombres pour créer des images structurées, parfois minimalistes, 
-                toujours équilibrées.
+                La vidéo me permet d’aller plus loin dans la narration, d’ajouter du rythme, de la voix, du mouvement à vos souvenirs.
+            </p>
+
+            <p className={style.TextP4}>
+                Ce portfolio n’est qu’un aperçu. Si vous êtes touché(e) par mon univers, je vous invite à découvrir mes offres pour les portraits, 
+                les mariages, ou les projets sur mesure.
             </p>
 
             <GeneratorAlbumPhoto album={Album} />

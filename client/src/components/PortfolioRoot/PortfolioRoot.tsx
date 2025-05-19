@@ -1,6 +1,6 @@
 import style from "../StyleRootComponent.module.css";
-import PortfolioRootComponentA from "./ComponentPortfolioRoot/PortfolioRootComponentA/PortfolioRootComponentA";
-import PortfolioRootComponentB from "./ComponentPortfolioRoot/PortfolioRootComponentB/PortfolioRootComponentB";
+import PortfolioRootComponentA from "./ComponentPortfolioRoot/PortfolioRootComponentF/PortfolioRootComponentA";
+import PortfolioRootComponentB from "./ComponentPortfolioRoot/PortfolioRootComponentA/PortfolioRootComponentA";
 import PortfolioRootComponentC from "./ComponentPortfolioRoot/PortfolioRootComponentC/PortfolioRootComponentC";
 import PortfolioRootComponentD from "./ComponentPortfolioRoot/PortfolioRootComponentD/PortfolioRootComponentD";
 import PortfolioRootComponentE from "./ComponentPortfolioRoot/PortfolioRootComponentE/PortfolioRootComponentE";
@@ -31,20 +31,20 @@ function PortfolioRoot() {
                 urbain.
             </p>
 
+            {/* Composant A : Photographies de paysages natunels */}
+            <PortfolioRootComponentA />
 
-            {/* Composant B : Photographies de paysages natunels */}
+            {/* Composant B : Photographies de rue - Street Photography */}
             <PortfolioRootComponentB />
 
-            {/* Composant C : Photographies de rue - Street Photography */}
+            {/* Composant C : Photographies urbaine et architectures */}
             <PortfolioRootComponentC />
 
-            {/* Composant D : Photographies urbaine et architectures */}
+            {/* Composant D : Un regard artistique multiple */}
             <PortfolioRootComponentD />
 
-            {/* Composant E : Un regard artistique multiple */}
+            {/* Composant E : Portrait de particuliers et professionnels */}
             <PortfolioRootComponentE />
-            {/* Composant A : Portrait de particuliers et professionnels */}
-            <PortfolioRootComponentA />
     </section>
   );
 }
