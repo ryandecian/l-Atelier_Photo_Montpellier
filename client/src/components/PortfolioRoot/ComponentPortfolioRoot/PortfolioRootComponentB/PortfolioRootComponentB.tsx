@@ -8,18 +8,19 @@ function PortfolioRootComponentB() {
         <article className={`PortfolioRootComponentB ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2}>
-                    {"Photographie de rue – Street Photography"}
+                    {"Photographies de paysages naturels"}
                 </h2>
             </header>
 
             <p className={style.TextP4}>
-                Dans la rue, je cherche le mouvement, l’inattendu, l’instant de vérité. Je capte des scènes de vie, des regards, des gestes anodins qui 
-                deviennent, en photo, profondément humains. La photo de rue développe mon instinct, affine mon œil et m’inspire pour mes séances portraits.
+                Les paysages sont pour moi une source d’inspiration et de sérénité. Autour de Montpellier, la nature offre des décors sublimes, entre 
+                mer, vignes, garrigues et rizières camarguaises. J’y capte la lumière du matin, les reflets sur l’eau, les ombres qui dansent sur les 
+                collines.
             </p>
 
             <p className={style.TextP4}>
-                À Montpellier, j’aime photographier les marchés, les ruelles vivantes, les ambiances de quartier. C’est un travail plus libre, plus 
-                brut, mais qui nourrit ma créativité.
+                Ce sont souvent des images épurées, douces ou puissantes, selon l’énergie du lieu. J’aime traduire l’émotion ressentie face à un 
+                horizon, un arbre solitaire ou un ciel chargé.
             </p>
 
             <GeneratorAlbumPhoto album={Album} />
