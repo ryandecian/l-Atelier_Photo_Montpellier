@@ -1,10 +1,10 @@
 import css from "./AdminRoot.module.css";
 import style from "../StyleRootComponent.module.css";
-import useAuthCheck from "../../hook/useAuthCheck";
+import useAuthCheck from "../../hook/useAuthCheck.utils.hook";
 import ServiceCardComponent from "../ServiceCardComponent/ServiceCardComponent";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import useLogout from "../../hook/useLogout";
+import useLogout from "../../hook/useLogout.hook";
 import ListDataRouter from "../../router/router";
 
 function AdminRoot() {

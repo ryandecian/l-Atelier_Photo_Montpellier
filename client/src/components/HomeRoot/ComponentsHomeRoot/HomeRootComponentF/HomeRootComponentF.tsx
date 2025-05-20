@@ -3,7 +3,7 @@ import css from "./HomeRootComponentF.module.css"
 import AnneSAUNIER from "../../../../assets/Images/AnneSAUNIER/AnneSAUNIER.jpg";
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../../router/router";
-import useMediaQueriesWidth from "../../../../hook/mediaQueriesWidth.utils";
+import useMediaQueriesWidth from "../../../../hook/mediaQueriesWidth.utils.hook";
 
 type textHTMLType = {
     htmlA: string,

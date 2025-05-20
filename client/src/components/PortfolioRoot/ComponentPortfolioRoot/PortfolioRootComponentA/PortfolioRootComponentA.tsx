@@ -1,30 +1,27 @@
 import style from "../../../StyleRootComponent.module.css";
-import GeneratorAlbumPhoto from "../../../GeneratorAlbumPhoto/GeneratorAlbumPhoto";
-import ImagesPortraitPortfolioControllerData from "../../ImagesPortfolioControllerData";
 
 function PortfolioRootComponentA() {
-    const Album = ImagesPortraitPortfolioControllerData.Album_Test;
     return (
-        <article className={`PortfolioRootComponentA ${style.ContainerRoot}`}>
-            <header className={style.ContainerTitle}>
-                <h2 className={style.TitleH2}>
-                    {"Photographies de paysages naturels"}
-                </h2>
-            </header>
-
+        <div className={`PortfolioRootComponentA ${style.ContainerRoot}`}>
             <p className={style.TextP4}>
-                Les paysages sont pour moi une source d’inspiration et de sérénité. Autour de Montpellier, la nature offre des décors sublimes, entre 
-                mer, vignes, garrigues et rizières camarguaises. J’y capte la lumière du matin, les reflets sur l’eau, les ombres qui dansent sur les 
-                collines.
+                Bienvenue dans mon portfolio. Je suis photographe professionnelle à Montpellier, et ce que vous allez découvrir ici est un aperçu de 
+                mon univers visuel. Je photographie aussi bien les gens que les lieux, les instants posés comme ceux saisis sur le vif. Ce portfolio 
+                vous propose une sélection de mes travaux personnels et professionnels, à travers plusieurs catégories : paysages, photographie de rue, 
+                images urbaine, portraits...
             </p>
 
             <p className={style.TextP4}>
-                Ce sont souvent des images épurées, douces ou puissantes, selon l’énergie du lieu. J’aime traduire l’émotion ressentie face à un 
-                horizon, un arbre solitaire ou un ciel chargé.
+                Mon approche est guidée par la lumière naturelle ou artificielle comme le flash, la recherche de cadrages soignés, et une sensibilité 
+                artistique nourrie par l’émotion. Que ce soit en studio, en pleine nature ou en ville, chaque photo est l’occasion de raconter une 
+                histoire, de révéler une ambiance, une personnalité ou une harmonie.
             </p>
 
-            <GeneratorAlbumPhoto album={Album} />
-        </article>
+            <p className={style.TextP4}>
+                Photographe à Montpellier, je me déplace dans la région pour réaliser des portraits de particuliers, de futurs mariés, de familles, 
+                ou de collaborateurs en entreprise. En parallèle, mon œil s’exerce aussi à capter la beauté de l’environnement, qu’il soit sauvage ou 
+                urbain.
+            </p>
+        </div>
     )
 }
 
