@@ -3,6 +3,7 @@ import mysql from "mysql2/promise";
 import chalk from "chalk";
 import ENV from "../config/ENV.config";
 import { RowDataPacket } from "mysql2";
+import testPoolConnection from "../repository/testPoolConnection.config.repository";
 
 type TestConnectionResult = RowDataPacket & { test: number };
 
@@ -30,31 +31,29 @@ function initializePool() {
             console.info(chalk.green(`${"✅ "}Pool de connexions MySQL créé avec succès !`));
             
             // ✅ Test réel de connexion MySQL
-            async function testPoolConnection(pool: mysql.Pool) {
-                try {
-                    // On demande a la base de données de nous renvoyer une clé qui se nomme test et qui vaut 1
-                    const [result] = await pool.query<TestConnectionResult[]>("SELECT 1 as test");
-     
-                    if (
-                        result.length === 1 /* Vérifie le nombre de ligne retourné est bien 1 */
-                        &&
-                        result[0].test === 1 /* On vérifie que la clé test vaux bien 1 */
-                    ) {
-                        console.info(chalk.green("✅ Connexion MySQL vérifiée avec succès !"));
-                    }
-     
-                    else {
-                        throw new Error("❌ La requête de test MySQL a retourné un résultat inattendu.");
-                    }
-                }
-                catch (error) {
-                    console.error(chalk.red(`${"❌ "}Connexion MySQL impossible :`));
-                    console.error(chalk.red(`${"⚠️ "} Arret du serveur !`), error);
-                    process.exit(1); // Arrête le serveur si la connexion échoue
-                }
+            try {
+                testPoolConnection(pool);
             }
-            testPoolConnection(pool); // 👈 on l'appelle ici
-
+            catch (error) {
+                const testPoolConnectionError = error as Error;
+                console.error({
+                    identity: 'config.ts',
+                    type: 'Fichier de configuration database',
+                    chemin: 'src/database/config.ts',
+                    "❌ Nature de l'erreur":
+                    "Erreur détecté lors de l'utilisation de la fonction testPoolConnection",
+                    testPoolConnection: {
+                        identity: 'testPoolConnection.config.repository.ts',
+                        type: 'Repository',
+                        chemin: 'src/repository/testPoolConnection.config.repository.ts',
+                        /* Erreur retourné par le composant : */
+                        "❌ Nature de l'erreur": testPoolConnectionError.message,
+                        '❌ Erreur': testPoolConnectionError.name,
+                    },
+                });
+                console.error(chalk.red(`${'⚠️ '} Arret du serveur !`));
+                process.exit(1); // Arrête le serveur si la connexion échoue
+            }
         }
 
         catch (error) {

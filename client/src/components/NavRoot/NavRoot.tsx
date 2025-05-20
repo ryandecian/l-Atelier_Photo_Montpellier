@@ -1,6 +1,6 @@
 import NavMobile from "./NavMobile/NavMobile";
 import NavPC from "./NavPC/NavPC";
-import useMediaQueriesWidth from "../../hook/mediaQueriesWidth.utils";
+import useMediaQueriesWidth from "../../hook/mediaQueriesWidth.utils.hook";
 
 function NavRoot() {
     const viewportWidth: number = useMediaQueriesWidth();
