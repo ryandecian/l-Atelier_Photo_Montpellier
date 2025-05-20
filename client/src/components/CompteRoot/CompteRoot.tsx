@@ -1,7 +1,7 @@
 import { useEffect, useState, ChangeEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import style from "./CompteRoot.module.css";
-import useAuthCheck from "../../hook/useAuthCheck";
+import useAuthCheck from "../../hook/useAuthCheck.utils.hook";
 import DataUserType from "../../types/dataUser.type";
 
 function CompteRoot() {

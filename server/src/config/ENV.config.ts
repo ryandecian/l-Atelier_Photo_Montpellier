@@ -87,7 +87,12 @@ function ENV(env: ParamsType["env"], lvl?: ParamsType["lvl"]) {
     }
     
     // Récupération de la variable d'environnement demandée
-    let env_verify: any = env_array.reduce((acc, key) => acc?.[key], globalThis as Record<string, any>);
+    let env_verify: unknown = env_array.reduce<unknown>((acc, key) => {
+        if (typeof acc === "object" && acc !== null && key in acc) {
+            return (acc as Record<string, unknown>)[key];
+        }
+        return undefined;
+    }, globalThis as unknown);
     
     // Logique principale : 
     if (typeof env_verify !== "string") {
@@ -113,7 +118,7 @@ function ENV(env: ParamsType["env"], lvl?: ParamsType["lvl"]) {
     }
     
     
-    return (env_verify); // Retourne la valeur de l'environnement sans undefined
+    return (env_verify as string); // Retourne la valeur de l'environnement sans undefined
 }
 
 export default ENV;
