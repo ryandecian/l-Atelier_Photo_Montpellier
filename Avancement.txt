@@ -19,6 +19,7 @@ Il faut éditer les pages :
  - Qui suis je
 
 Il faudra créer de nouveau hook pour les fetchs
+
 idée, plutot que importer useAuthCheck dans chaque page pour l'utiliser et vérifier si l'utilisateur
 est du bon role sinon on le redirige. Sur des route protégé on va toujour utiliser la même logique et réécrire
 encore et encore et encore. L'objectif serait de créer un nouveau Hook personnalisé de React dans lequel on pourrais
