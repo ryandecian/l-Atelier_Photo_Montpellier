@@ -39,11 +39,33 @@ const data_Album_Street = [
     "lapm-photographie-professionnelle-restaurant-street-photo-l-atelier-photo-montpellier.jpg"
 ];
 
+const data_Album_Urbaine = [
+    "lapm-photographie-professionnelle-urbain-architecture-faux-semblant-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-urbain-architecture-photo-centre-pompidou-metz-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-urbain-architecture-photo-passerelle-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-urbain-boulangerie-lacoste-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-urbain-colline-lisbonne-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-urbain-embleme-paris-tour-eiffel-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-urbain-escalator-gare-lisbonne-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-urbain-grande-librairie-prendre-son-envol-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-urbain-immeuble-escalier-architecture-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-urbain-jardin-tuilerie-face-a-face-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-urbain-Lisbonne-by-night-gare-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-urbain-lisbonne-street-art-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-urbain-metro-antre-urbain-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-urbain-mobilier-urbain-sanisette-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-urbain-montgolfieres-photo-noir-blanc-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-urbain-montpellier-paysage-variation-reflet-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-urbain-montpellier-rues-de-nuit-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-urbain-palce-vendome-paris-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-urbain-paysage-urbain-nuit-montreal-l-atelier-photo-montpellier.jpg"
+];
+
 type ListeAlbumType = {
-    Album_Pro_Perso: ImagesControllerDataType[];
     Album_Paysage: ImagesControllerDataType[];
     Album_Rue_Street: ImagesControllerDataType[];
     Album_Urbaine: ImagesControllerDataType[];
+    Album_Pro_Perso: ImagesControllerDataType[];
     Album_Test: ImagesControllerDataType[];
 }
 
@@ -69,17 +91,13 @@ function GenerateTableImg(nbImg: number, basePath: string, allFileNames: string[
 
 const Album_Paysage = GenerateTableImg(10, "/images/image-portfolio/album-paysage/", data_Album_Paysage);
 const Album_Rue_Street = GenerateTableImg(5, "/images/image-portfolio/album-rue-street/", data_Album_Street);
+const Album_Urbaine = GenerateTableImg(10, "/images/image-portfolio/album-urbaine/", data_Album_Urbaine);
 
 const ImagesPortraitPortfolioControllerData: ListeAlbumType = {
     /* Portrait de particuliers et professionnels */
     Album_Paysage,
     Album_Rue_Street,
-    Album_Urbaine: [
-        {
-            src: "",
-            alt: "",
-        }
-    ],
+    Album_Urbaine,
     Album_Pro_Perso: [
         {
             src: "",
