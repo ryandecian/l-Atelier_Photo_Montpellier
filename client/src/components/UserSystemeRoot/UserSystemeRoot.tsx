@@ -32,6 +32,7 @@ function UserSystemeRoot() {
       return;
     }
 
+    // Fetch 1 -------------------------------------------------------------------------------------------
     fetch(`${import.meta.env.VITE_DOMAIN_SERVER}/users`, {
       credentials: "include",
     })
@@ -49,6 +50,7 @@ function UserSystemeRoot() {
       .finally(() => setLoading(false));
   }, [isChecking, isLoggedIn, userInfo, navigate]);
 
+  // Fetch 2 -------------------------------------------------------------------------------------------
   const handleDeleteUser = async (id: number) => {
     if (!confirm("⚠️ Supprimer cet utilisateur ?")) return;
 
@@ -93,6 +95,7 @@ function UserSystemeRoot() {
       role: editedUser.role ?? original.role,
     };
 
+    // Fetch 3 -------------------------------------------------------------------------------------------
     try {
       const response = await fetch(`${import.meta.env.VITE_DOMAIN_SERVER}/users/${editUserId}`, {
         method: "PUT",
