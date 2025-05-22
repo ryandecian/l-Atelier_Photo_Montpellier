@@ -1,5 +1,5 @@
 .AdminRoot {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     justify-content: start;
     flex-direction: column;
@@ -10,7 +10,7 @@
   .TopBar {
     width: calc(100% - 4rem);
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 1rem 2rem 0 2rem; 
   }
   

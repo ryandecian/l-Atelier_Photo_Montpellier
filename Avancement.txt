@@ -20,16 +20,5 @@ Il faut éditer les pages :
 
 Il faudra créer de nouveau hook pour les fetchs
 
-idée, plutot que importer useAuthCheck dans chaque page pour l'utiliser et vérifier si l'utilisateur
-est du bon role sinon on le redirige. Sur des route protégé on va toujour utiliser la même logique et réécrire
-encore et encore et encore. L'objectif serait de créer un nouveau Hook personnalisé de React dans lequel on pourrais
-créer un typage explicite qui donnerais les deux seuls valeurs de possibles à passer en paramètre a cette fonction. 
-Les valeurs seraient admin ou user.
-La fonction devras alors vérifier si l'utilisateur est connecté avec useAuthCheck et vérifier quel est le role
-de l'utilisateur. Si le role ne correspond pas exactement au paramètre de vérouillage du role, alors il sera 
-redirigé avec useNavigate vers la page de compte affecté à son utilisateur. De cette manière, on auras juste a 
-importer notre Hook personnalisé et lui donner le paramètre. Si on ne donne pas exactement une des deux valeur 
-exactement la fonction doit nous retourner une erreur. 
-
-Pour le nom de la fonction, on peut utiliser un mot qui tourne autour de verouillage en français ou anglais ou autour
-du mot Role, Verify ou encore Navigate. Mon préféré est Verouillage comme useLocked
+La création du Hook UseLockedPage étant terminé, il faut maintenant la testé dans une page et voir comment il réagit. 
+Je cible les page admin, et userSystème. 

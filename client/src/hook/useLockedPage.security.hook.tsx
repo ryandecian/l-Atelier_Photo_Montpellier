@@ -22,12 +22,21 @@ function useLockedPage(userTarget: UserType) {
   }, [isChecking, userInfo, navigate, redirectRoute, userStranger]);
 
     // En attente de vérification du token
-    if (isChecking) return <p>Chargement...</p>;
+    if (isChecking) return null;
 
     // Sécurité supplémentaire
-    if (!isLoggedIn || !userInfo) return <p>Accès refusé</p>;
+    if (!isLoggedIn || !userInfo) return null;
     
     return userInfo;
 }
 
 export default useLockedPage;
+
+/**
+  Notice d'utilisation :
+
+  import useLockedPage from "../../hook/useLockedPage.security.hook";
+
+  const userInfo = useLockedPage("admin");
+  if (!userInfo) return <p>Chargement...</p>;
+ */
