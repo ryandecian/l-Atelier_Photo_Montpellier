@@ -31,6 +31,14 @@ const data_Album_Paysage = [
     "lapm-photographie-professionnelle-printemps-nature-coquelicot-l-atelier-photo-montpellier.jpg"
 ];
 
+const data_Album_Street = [
+    "lapm-photographie-professionnelle-photo-street-a-table-photo-rue-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-photo-street-rue-peniche-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-photo-street-service-compris-photo-rue-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-photo-street-vendeur-lunettes-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-restaurant-street-photo-l-atelier-photo-montpellier.jpg"
+];
+
 type ListeAlbumType = {
     Album_Pro_Perso: ImagesControllerDataType[];
     Album_Paysage: ImagesControllerDataType[];
@@ -60,23 +68,19 @@ function GenerateTableImg(nbImg: number, basePath: string, allFileNames: string[
 }
 
 const Album_Paysage = GenerateTableImg(10, "/images/image-portfolio/album-paysage/", data_Album_Paysage);
+const Album_Rue_Street = GenerateTableImg(5, "/images/image-portfolio/album-rue-street/", data_Album_Street);
 
 const ImagesPortraitPortfolioControllerData: ListeAlbumType = {
     /* Portrait de particuliers et professionnels */
     Album_Paysage,
-    Album_Pro_Perso: [
-        {
-            src: "",
-            alt: "",
-        }
-    ],
-    Album_Rue_Street: [
-        {
-            src: "",
-            alt: "",
-        }
-    ],
+    Album_Rue_Street,
     Album_Urbaine: [
+        {
+            src: "",
+            alt: "",
+        }
+    ],
+    Album_Pro_Perso: [
         {
             src: "",
             alt: "",
