@@ -1,11 +1,5 @@
 import ImagesControllerDataType from "../../types/ImagesControllerData.type";
 
-import ImageAlbum_Test_1 from "../../assets/Images/ImagePortfolio/test/1-1_1.jpg";
-import ImageAlbum_Test_2 from "../../assets/Images/ImagePortfolio/test/2-3_4-H.jpg";
-import ImageAlbum_Test_3 from "../../assets/Images/ImagePortfolio/test/3-1_1.jpg";
-import ImageAlbum_Test_4 from "../../assets/Images/ImagePortfolio/test/4-4_3-P.jpg";
-import ImageAlbum_Test_5 from "../../assets/Images/ImagePortfolio/test/5-3_4-H.jpg";
-
 const data_Album_Paysage = [
     "lapm-photographie-professionnelle-depart-ou-arrivee-tage-paysage-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-flamands-camargue-dos-a-dos-l-atelier-photo-montpellier.jpg",
@@ -24,7 +18,6 @@ const data_Album_Paysage = [
     "lapm-photographie-professionnelle-paysage-remparts-aigues-mortes-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-paysage-immensité-sable-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-paysage-jetee-cap-breton-l-atelier-photo-montpellier.jpg",
-    "lapm-photographie-professionnelle-paysage-lac-salagou-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-paysage-remparts-aigues-mortes-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-paysage-salins-aigues-mortes-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-paysage-sunset-flamands-l-atelier-photo-montpellier.jpg",
@@ -61,13 +54,51 @@ const data_Album_Urbaine = [
     "lapm-photographie-professionnelle-urbain-paysage-urbain-nuit-montreal-l-atelier-photo-montpellier.jpg"
 ];
 
+const data_Album_Pro_Perso = [
+    "lapm-photographie-professionnelle-portrait-duo-generation-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-duo-mere-fils-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-duo-pere-fils-clair-obscur-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-duo-western-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-feelgood-solo-femme-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-feelgood-solo-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-feelgood-solo-nb-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-femme-nb-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-femme-rock-flash-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-femme-rock-flash-nb-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-femme-rock-nb-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-flash-couple-ages-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-flash-couple-domicile-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-flash-duo-cox-boy-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-flash-grand-pere-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-flash-lifestyle-cowboy-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-jeune-homme-fellgood-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-jeune-homme-life-style-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-lifestyle-exterieur-flash-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-lifestyle-flash-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-lifesytle-femme-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-serie-annee-vingt-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-serie-peaky-blinders-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-solo-femme-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-solo-femme-soleil-rasant-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-solo-jeune-homme-reflet-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-studio-couple-duo-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-studio-couple-flash-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-studio-couple-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-studio-duo-couleur-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-studio-duo-flash-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-studio-homme-nb-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-studio-nb-flash-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-studio-nb-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-studio-solo-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-portrait-studio-type-harcourt-l-atelier-photo-montpellier.jpg"
+];
+
 type ListeAlbumType = {
     Album_Paysage: ImagesControllerDataType[];
     Album_Rue_Street: ImagesControllerDataType[];
     Album_Urbaine: ImagesControllerDataType[];
     Album_Pro_Perso: ImagesControllerDataType[];
-    Album_Test: ImagesControllerDataType[];
-}
+};
 
 function generateAltFromFilename(filename: string): string {
   return filename
@@ -92,68 +123,14 @@ function GenerateTableImg(nbImg: number, basePath: string, allFileNames: string[
 const Album_Paysage = GenerateTableImg(10, "/images/image-portfolio/album-paysage/", data_Album_Paysage);
 const Album_Rue_Street = GenerateTableImg(5, "/images/image-portfolio/album-rue-street/", data_Album_Street);
 const Album_Urbaine = GenerateTableImg(10, "/images/image-portfolio/album-urbaine/", data_Album_Urbaine);
+const Album_Pro_Perso = GenerateTableImg(20, "/images/image-portfolio/album-pro-perso/", data_Album_Pro_Perso);
 
 const ImagesPortraitPortfolioControllerData: ListeAlbumType = {
     /* Portrait de particuliers et professionnels */
     Album_Paysage,
     Album_Rue_Street,
     Album_Urbaine,
-    Album_Pro_Perso: [
-        {
-            src: "",
-            alt: "",
-        }
-    ],
-    Album_Test: [
-        {
-            src: ImageAlbum_Test_1,
-            alt: "",
-        },
-        {
-            src: ImageAlbum_Test_2,
-            alt: "",
-        },
-        {
-            src: ImageAlbum_Test_3,
-            alt: "",
-        },
-        {
-            src: ImageAlbum_Test_2,
-            alt: "",
-        },
-        {
-            src: ImageAlbum_Test_3,
-            alt: "",
-        },
-        {
-            src: ImageAlbum_Test_4,
-            alt: "",
-        },
-        {
-            src: ImageAlbum_Test_5,
-            alt: "",
-        },
-        {
-            src: ImageAlbum_Test_3,
-            alt: "",
-        },
-        {
-            src: ImageAlbum_Test_2,
-            alt: "",
-        },
-        {
-            src: ImageAlbum_Test_3,
-            alt: "",
-        },
-        {
-            src: ImageAlbum_Test_4,
-            alt: "",
-        },
-        {
-            src: ImageAlbum_Test_5,
-            alt: "",
-        },
-    ],
+    Album_Pro_Perso,
 };
 
 export default ImagesPortraitPortfolioControllerData;

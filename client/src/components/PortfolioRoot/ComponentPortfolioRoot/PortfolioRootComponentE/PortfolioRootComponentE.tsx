@@ -1,9 +1,9 @@
 import style from "../../../StyleRootComponent.module.css";
-import GeneratorAlbumPhoto from "../../../GeneratorAlbumPhoto/GeneratorAlbumPhoto";
-import ImagesPortraitPortfolioControllerData from "../../ImagesPortfolioControllerData";
+// import GeneratorAlbumPhoto from "../../../GeneratorAlbumPhoto/GeneratorAlbumPhoto";
+// import ImagesPortraitPortfolioControllerData from "../../ImagesPortfolioControllerData";
 
 function PortfolioRootComponentE() {
-    const Album = ImagesPortraitPortfolioControllerData.Album_Test;
+    // const Album = ImagesPortraitPortfolioControllerData.Album_Test;
     return (
         <article className={`PortfolioRootComponentE ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
@@ -42,7 +42,7 @@ function PortfolioRootComponentE() {
                 les mariages, ou les projets sur mesure.
             </p>
 
-            <GeneratorAlbumPhoto album={Album} />
+            {/* <GeneratorAlbumPhoto album={Album} /> */}
         </article>
     )
 }

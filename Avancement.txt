@@ -22,3 +22,5 @@ Il faudra créer de nouveau hook pour les fetchs
 
 La création du Hook UseLockedPage étant terminé, il faut maintenant la testé dans une page et voir comment il réagit. 
 Je cible les page admin, et userSystème. 
+
+Page portfolio composant E mise en commentaire le code des albums
