@@ -28,7 +28,7 @@
 /* Responsive : écran très petit (iPhone SE ~360 - 400px) */
 @media screen and (max-width: 480px) {
   .ContainerImg {
-    height: 120px;
+    height: 100px;
   }
 }
 /* Responsive : écran très petit (iPhone SE ~320 - 360px) */
