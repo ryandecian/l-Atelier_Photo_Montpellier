@@ -4,6 +4,9 @@ Ce qu'il manque :
   - Page contact Helmet et Service
 
 ------------------------------------------------------------------------------
+Ajouter les commentaires pour chaque page, avis client
+
+------------------------------------------------------------------------------
 
 Il faut refactoriser SEO les pages :
   - NavTargetHome a faire
