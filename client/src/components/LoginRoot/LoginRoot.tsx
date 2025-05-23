@@ -56,18 +56,20 @@ function LoginRoot() {
     <section className={css.LoginRoot}>
       <h1>Connexion 🔐</h1>
       <form onSubmit={formulaireLogin} className={css.form}>
-        <label>Email</label>
+        <label htmlFor="email">Email</label>
         <input
           className={css.input}
+          id="email"
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
         />
 
-        <label>Mot de passe</label>
+        <label htmlFor="password">Mot de passe</label>
         <input
           className={css.input}
+          id="password"
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
