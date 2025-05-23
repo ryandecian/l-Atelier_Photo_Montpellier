@@ -20,6 +20,8 @@ function PremiumCardImgSudoRoot (Props: ImageZoomProps) {
         className={className}
         role="button"
         onClick={() => setIsOpen(true)}
+        onContextMenu={(e) => e.preventDefault()}
+        onDragStart={(e) => e.preventDefault()}
       />
 
       {/* Modal d'affichage en grand */}
@@ -29,7 +31,7 @@ function PremiumCardImgSudoRoot (Props: ImageZoomProps) {
             <span className={style.close} onClick={() => setIsOpen(false)}>
               &times;
             </span>
-            <img src={src} alt={alt} className={style.fullImage} />
+            <img src={src} alt={alt} className={style.fullImage}onContextMenu={(e) => e.preventDefault()} onDragStart={(e) => e.preventDefault()}/>
           </div>
         </div>
       )}

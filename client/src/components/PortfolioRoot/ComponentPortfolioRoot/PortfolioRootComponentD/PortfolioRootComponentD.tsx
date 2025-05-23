@@ -3,7 +3,7 @@ import GeneratorAlbumPhoto from "../../../GeneratorAlbumPhoto/GeneratorAlbumPhot
 import ImagesPortraitPortfolioControllerData from "../../ImagesPortfolioControllerData";
 
 function PortfolioRootComponentD() {
-    const Album = ImagesPortraitPortfolioControllerData.Album_Test;
+    const Album = ImagesPortraitPortfolioControllerData.Album_Urbaine;
     return (
         <article className={`PortfolioRootComponentD ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
