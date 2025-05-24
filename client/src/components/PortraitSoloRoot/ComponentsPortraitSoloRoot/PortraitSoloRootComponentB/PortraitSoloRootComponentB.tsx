@@ -89,7 +89,7 @@ function PortraitSoloRootComponentB() {
                     Des images qui vous font du bien
                 </h4>
                 <p className={style.TextP4}>
-                    📸 Sélection de 10 à 20 photos retouchées avec soin, livrées en galerie privée
+                    📸 Sélection de 6 à 18 photos retouchées avec soin, livrées en galerie privée
                 </p>
             </article>
 
