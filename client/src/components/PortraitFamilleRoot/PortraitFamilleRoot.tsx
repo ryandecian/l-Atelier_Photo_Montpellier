@@ -1,6 +1,6 @@
 import style from "../StyleRootComponent.module.css";
-// import GeneratorCardAvisClient from "../GeneratorCardAvisClient/GeneratorCardAvisClient";
-// import AvisClientPortraitFamilleControllerData from "./AvisClientPortraitFamilleControllerData";
+import GeneratorCardAvisClient from "../GeneratorCardAvisClient/GeneratorCardAvisClient";
+import AvisClientPortraitFamilleControllerData from "./AvisClientPortraitFamilleControllerData";
 
 import PortraitFamilleRootComponentA from "./ComponentPortraitFamilleRoot/PortraitFamilleRootComponentA/PortraitFamilleRootComponentA";
 import PortraitFamilleRootComponentB from "./ComponentPortraitFamilleRoot/PortraitFamilleRootComponentB/PortraitFamilleRootComponentB";
@@ -19,11 +19,9 @@ function PortraitFamilleRoot() {
 
             {/* Container B */}
             <PortraitFamilleRootComponentB />
-            
-            {/* Container C */}
 
             {/* Container D : Avis client */}
-            {/* <GeneratorCardAvisClient avisClients={AvisClientPortraitFamilleControllerData}/> */}
+            <GeneratorCardAvisClient avisClients={AvisClientPortraitFamilleControllerData}/>
         </section>
     )
 }
