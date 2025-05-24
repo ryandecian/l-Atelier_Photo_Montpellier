@@ -152,7 +152,25 @@ function PortraitHobbieRootComponentB() {
         </article>
 
         <article className={style.ContainerText}>
-            <h3 className={style.TitleH2}></h3>
+            <h2 className={style.TitleH2}>
+                Les portraits Hobbies sont faits pour vous si :
+            </h2>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    {"Vous pratiquez une activité artistique, créative, sportive ou artisanale"}
+                </li>
+                <li className={style.TextLiP4}>
+                    {"Vous voulez une image authentique, qui vous représente vraiment"}
+                </li>
+                <li className={style.TextLiP4}>
+                    {"Vous souhaitez fêter une étape (compétition, première scène, diplôme d’art, nouveau projet…)"}
+                </li>
+                <li className={style.TextLiP4}>
+                    {"Vous n’êtes pas forcément à l’aise devant l’objectif, mais vous avez envie de tenter l’expérience avec bienveillance"}
+                </li>
+                <br />
+            </ul>
         </article>
     </section>
   );
