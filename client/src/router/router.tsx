@@ -22,6 +22,7 @@ import PortraitLifeStylePage from "../pages/PortraitLifeStylePage/PortraitLifeSt
 import PortraitMariagePage from "../pages/PortraitMariagePage/PortraitMariagePage";
 import PortraitNouveauNePage from "../pages/PotraitNouveauNePage/PortraitNouveauNePage";
 import PortraitSoloPage from "../pages/PortraitSoloPage/PortraitSoloPage";
+import PortraitFamillePage from "../pages/PortraitFamillePage/PortraitFamillePage";
 
 /**
  * Utilisation : 
@@ -119,7 +120,7 @@ const ListDataRouter: RouterItemsType[] = [
     /* {ListDataRouter[16].path} */
     {
         path: "/portrait-famille-ami",
-        element: <h1>Route : Portraits familles - amis</h1>,
+        element: <PortraitFamillePage />,
     },
     /* {ListDataRouter[17].path} */
     {
