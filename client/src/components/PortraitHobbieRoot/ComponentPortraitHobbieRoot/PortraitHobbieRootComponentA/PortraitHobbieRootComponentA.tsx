@@ -13,25 +13,22 @@ function PortraitHobbieRootComponentA() {
         </header>
 
         <p className={style.TextP4}>
-            Un portrait de couple, ce n’est pas seulement une jolie photo à deux. <br />
-            C’est un 
+            On a tous un truc qui nous fait vibrer. <br />
+            Un art, un sport, un instrument, un geste maîtrisé. <br />
+            Que vous soyez judoka, cavalière, danseuse, batteur du dimanche, passionné de jardinage ou collectionneur de vinyles, 
             <span className={style.SpanBold}>
-                {" instant suspendu, "}
+                {" votre passion fait partie de votre identité."}
             </span>
-            une respiration dans vos quotidiens bien remplis, une façon de 
-            <span className={style.SpanBold}>
-                {" vous (re)voir autrement, "}
-            </span>
-            ensemble.
         </p>
 
         <p className={style.TextP4}>
-            Rires complices, gestes tendres, regards pleins de sous-entendus... <br />
-            Je photographie 
+            Alors pourquoi ne pas lui donner une place en image ? <br />
+            Un
             <span className={style.SpanBold}>
-                {" ce qui existe déjà entre vous, "}
+                {" portrait centré sur ce que vous aimez, "}
             </span>
-            sans filtres, sans caricature, dans une ambiance douce, vraie et sans pression.
+            c’est l’occasion de figer un moment de fierté, de plaisir, de concentration ou de mouvement. C’est aussi une façon de dire : “voilà qui je 
+            suis, au-delà du boulot, au-delà des apparences”.
         </p>
 
         {/* <Container4ImagesRoot
