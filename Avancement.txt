@@ -12,12 +12,15 @@ Il faut refactoriser SEO les pages :
   - NavTargetHome a faire
   - Footer
   - Portfolio
+  - Famille
+  - Hobbie
+  - Qui suis-je
 
 ------------------------------------------------------------------------------
 
 Il faut éditer les pages : 
- - Famille
- - Hobbie
+ - Famille : En cours
+ - Hobbie : Commencé, a vérifier le word puis continuer
  - Portfolio : A terminer avec la cliente
  - Qui suis je
 
