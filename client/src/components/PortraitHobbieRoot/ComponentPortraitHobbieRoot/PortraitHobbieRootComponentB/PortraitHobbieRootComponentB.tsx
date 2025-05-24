@@ -1,6 +1,8 @@
 import style from "../../../StyleRootComponent.module.css";
 import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ImagesPortraitHobbieControllerData from "../../ImagesPortraitHobbieControllerData";
+import { Link } from "react-router-dom";
+import ListDataRouter from "../../../../router/router";
 
 function PortraitHobbieRootComponentB() {
   return (
@@ -172,6 +174,21 @@ function PortraitHobbieRootComponentB() {
                 <br />
             </ul>
         </article>
+
+        <h2 className={style.TitleH2}>
+            {"Et si vous vous offriez un instant rien qu’à vous – On en parle ensemble ?"}
+        </h2>
+
+        <p className={style.TextP4}>
+            Un portrait, c’est bien plus qu’une image. C’est un moment pour se (re)découvrir, se révéler, s’honorer. <br />
+            Que ce soit pour marquer un cap, célébrer une étape ou simplement se faire plaisir… <br />
+            <br />
+            <span className={style.SpanLink}>
+                <Link to={ListDataRouter[3].path}>
+                    Parlons de ce que vous aimeriez capturer, pour que votre lumière vous ressemble.
+                </Link>
+            </span>
+        </p>
     </section>
   );
 }
