@@ -12,65 +12,95 @@ function PortraitFamilleRootComponentA() {
             </h2>
         </header>
 
-        <p className={style.TextP4}>
-            Un portrait de couple, ce n’est pas seulement une jolie photo à deux. <br />
-            C’est un 
-            <span className={style.SpanBold}>
-                {" instant suspendu, "}
-            </span>
-            une respiration dans vos quotidiens bien remplis, une façon de 
-            <span className={style.SpanBold}>
-                {" vous (re)voir autrement, "}
-            </span>
-            ensemble.
-        </p>
-
-        <p className={style.TextP4}>
-            Rires complices, gestes tendres, regards pleins de sous-entendus... <br />
-            Je photographie 
-            <span className={style.SpanBold}>
-                {" ce qui existe déjà entre vous, "}
-            </span>
-            sans filtres, sans caricature, dans une ambiance douce, vraie et sans pression.
-        </p>
-
-        <Container4ImagesRoot
-            img1={ImagesPortraitFamilleControllerData[0].src}
-            MetaNameImg1={ImagesPortraitFamilleControllerData[0].alt}
-            img2={ImagesPortraitFamilleControllerData[1].src}
-            MetaNameImg2={ImagesPortraitFamilleControllerData[1].alt}
-            img3={ImagesPortraitFamilleControllerData[2].src}
-            MetaNameImg3={ImagesPortraitFamilleControllerData[2].alt}
-            img4={ImagesPortraitFamilleControllerData[3].src}
-            MetaNameImg4={ImagesPortraitFamilleControllerData[3].alt}
-        />
-
         <article className={style.ContainerText}>
-            <h3 className={css.TitleNH3}>
-                {"Pourquoi faire appel à l’Atelier Photo Montpellier ?"}
+            <h3 className={style.TitleNH3}>
+                💞 Ces instants qui ne reviendront pas
             </h3>
 
             <p className={style.TextP4}>
-                Parce que je ne cherche pas à faire "poser" les couples. <br />
-                Je crée 
-                <span className={style.SpanBold}>
-                    {" une bulle de confiance et d’intimité, "}
-                </span>
-                où vous pourrez simplement être vous-mêmes. <br />
-                Avant la séance, on prend le temps d’échanger sur 
-                <span className={style.SpanBold}>
-                    {" ce qui vous lie, ce que vous voulez garder en image : "}
-                </span>
-                douceur ? force ? joie ? pudeur ?
+                Un regard de fierté pendant une remise de diplôme. <br />
+                Un baiser volé sur le front d’un enfant baptisé. <br />
+                Une robe ou un costume pour le bal de fin d’année, un sourire timide, un papa ému dans un coin.
             </p>
 
             <p className={style.TextP4}>
-                Que ce soit en studio ou en extérieur, je mets tout en œuvre pour que l’expérience soit aussi belle que les images.
+                Ces moments-là, ils passent vite. Trop vite. <br />
+                Et pourtant, ils marquent toute une vie. <br />
+                Alors pourquoi ne pas les garder, vraiment ?
             </p>
 
             <p className={style.TextP4}>
-                🎯 Résultat : un reportage visuel sensible, fidèle à votre lien.
+                Chez L’Atelier Photo Montpellier, je vous propose de figer ces instants précieux, de les transformer en 
+                <span className={style.SpanBold}>
+                    {" souvenirs vivants, "}
+                </span>
+                que vous regarderez ensemble, plus tard.
             </p>
+
+            <Container4ImagesRoot
+                img1={ImagesPortraitFamilleControllerData[0].src}
+                MetaNameImg1={ImagesPortraitFamilleControllerData[0].alt}
+                img2={ImagesPortraitFamilleControllerData[1].src}
+                MetaNameImg2={ImagesPortraitFamilleControllerData[1].alt}
+                img3={ImagesPortraitFamilleControllerData[2].src}
+                MetaNameImg3={ImagesPortraitFamilleControllerData[2].alt}
+                img4={ImagesPortraitFamilleControllerData[3].src}
+                MetaNameImg4={ImagesPortraitFamilleControllerData[3].alt}
+            />
+        </article>
+
+        <article className={style.ContainerText}>
+            <h3 className={css.TitleNH3}>
+                {"🌿 Photographier les étapes de la vie, ensemble"}
+            </h3>
+
+            <h4 className={style.TitleNH4}></h4>
+
+            <p className={style.TextP4}>
+                Quelques exemples de ces moments clés :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    <span className={style.SpanBold}>
+                        {" Baptême : "}
+                    </span>
+                    dans l’église ou juste après, entre émotion et câlins de famille.
+                </li>
+                <li className={style.TextLiP4}>
+                    <span className={style.SpanBold}>
+                        {" Remise de diplôme : "}
+                    </span>
+                    les yeux brillants, la toge, les embrassades de fin de parcours.
+                </li>
+                <li className={style.TextLiP4}>
+                    <span className={style.SpanBold}>
+                        {" Bal de fin d’année : "}
+                    </span>
+                    l’élégance d’un soir, les premiers souvenirs d’adulte.
+                </li>
+                <li className={style.TextLiP4}>
+                    <span className={style.SpanBold}>
+                        {" Anniversaire marquant : "}
+                    </span>
+                    1 an, 18 ans, 40 ans, 70 ans... chaque âge a son éclat.
+                </li>
+                <li className={style.TextLiP4}>
+                    <span className={style.SpanBold}>
+                        {" Déménagement : "}
+                    </span>
+                    pour marquer le début d’une nouvelle aventure.
+                </li>
+                <br />
+            </ul>
+        
+                <p className={style.TextP4}>
+                    Ces rendez-vous sont autant d’occasions de rassembler plusieurs générations autour d’un même moment. Et de créer un
+                    <span className={style.SpanBold}>
+                        {" album émotionnel "}
+                    </span>
+                    que vos enfants, vos parents, vos petits-enfants feuilletteront plus tard.
+                </p>
         </article>
     </section>
   );
