@@ -1,6 +1,6 @@
 import style from "../StyleRootComponent.module.css";
-// import GeneratorCardAvisClient from "../GeneratorCardAvisClient/GeneratorCardAvisClient";
-// import AvisClientPortraitHobbieControllerData from "./AvisClientPortraitHobbieControllerData";
+import GeneratorCardAvisClient from "../GeneratorCardAvisClient/GeneratorCardAvisClient";
+import AvisClientPortraitHobbieControllerData from "./AvisClientPortraitHobbieControllerData";
 
 import PortraitHobbieRootComponentA from "./ComponentPortraitHobbieRoot/PortraitHobbieRootComponentA/PortraitHobbieRootComponentA";
 import PortraitHobbieRootComponentB from "./ComponentPortraitHobbieRoot/PortraitHobbieRootComponentB/PortraitHobbieRootComponentB";
@@ -20,10 +20,8 @@ function PortraitHobbieRoot() {
             {/* Container B */}
             <PortraitHobbieRootComponentB />
 
-            {/* Container C */}
-
             {/* Container D : Avis client */}
-            {/* <GeneratorCardAvisClient avisClients={AvisClientPortraitHobbieControllerData}/> */}
+            <GeneratorCardAvisClient avisClients={AvisClientPortraitHobbieControllerData}/>
         </section>
     )
 }
