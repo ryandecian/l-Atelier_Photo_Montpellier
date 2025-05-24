@@ -1,39 +1,34 @@
-import Image1 from "../../assets/Images/ImageHomePage/Portrait-Studio-Corporate.jpg";
-import Image2 from "../../assets/Images/ImageHomePage/Portrait-Pere-et-fils-LifeStyle.jpg";
-import Image3 from "../../assets/Images/ImageHomePage/Portrait-jeune-femme-lumiere-naturelle.jpg";
-import Image4 from "../../assets/Images/ImageHomePage/Shooting-couple-studio.jpg";
+import ImagesControllerDataType from "../../types/ImagesControllerData.type";
 
-import Image5 from "../../assets/Images/ImageHomePage/Les-maries-vers-la-mairie.jpg";
-import Image6 from "../../assets/Images/ImageHomePage/Maries-parc-tour-magne.jpg";
-import Image7 from "../../assets/Images/ImageHomePage/Photo-de-mariage-Sun-Glass.jpg";
-import Image8 from "../../assets/Images/ImageHomePage/Pride-et-mariage.jpg";
+/**
+ * Compteur mot clés : 
+ * 
+ * photographe-professionnelle : 4/4
+ * photo-professionnel : 2/2
+ * photographie-professionnelle : 2/2
+ */
 
-interface ImagesHomeControllerDataType {
-    src: string;
-    alt: string;
-}
-
-const ImagesHomeControllerData: ImagesHomeControllerDataType[] = [
+const ImagesHomeControllerData: ImagesControllerDataType[] = [
     /* Tableau 1 d'images : 4 images */
     /* {ImagesHomeControllerData[0].src} */
     {
-        src: Image1,
-        alt: "Portrait Studio Corporate",
+        src: "/images/image-home/lapm-photo-professionnelle-portrait-corporate-flash-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo professionnelle - portrait corporate - flash - L'Atelier Photo Montpellier",
     },
     /* {ImagesHomeControllerData[1].src} */
     {
-        src: Image2,
-        alt: "Portrait Père et fils LifeStyle",
+        src: "/images/image-home/lapm-photo-professionnelle-portrait-duo-pere-fils-lifestyle-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo professionnelle - portrait duo - père et fils - lifestyle - L'Atelier Photo Montpellier",
     },
     /* {ImagesHomeControllerData[2].src} */
     {
-        src: Image3,
-        alt: "Portrait jeune femme lumière naturelle",
+        src: "/images/image-home/lapm-photographie-professionnelle-portrait-solo-jeune-femme-lumiere-douce-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographie professionnelle - portrait solo - jeune femme - lumière douce - L'Atelier Photo Montpellier",
     },
     /* {ImagesHomeControllerData[3].src} */
     {
-        src: Image4,
-        alt: "Shooting couple studio",
+        src: "/images/image-home/lapm-photographe-professionnelle-portrait-studio-couple-couleur-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnelle - portrait studio - couple - couleur - L'Atelier Photo Montpellier",
     },
 
 
@@ -41,23 +36,23 @@ const ImagesHomeControllerData: ImagesHomeControllerDataType[] = [
     /* Tableau 2 d'images : 4 images */
     /* {ImagesHomeControllerData[4].src} */
     {
-        src: Image5,
-        alt: "Les mariés vers la mairie",
+        src: "/images/image-home/lapm-photographe-professionnel-portrait-mariage-vers-la-mairie-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait mariage - vers la mairie - L'Atelier Photo Montpellier",
     },
     /* {ImagesHomeControllerData[5].src} */
     {
-        src: Image6,
-        alt: "Mariés parc tour magne",
+        src: "/images/image-home/lapm-photographie-professionnelle-portrait-mariage-tour-magne-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographie professionnelle - portrait mariage - Tour Magne - L'Atelier Photo Montpellier",
     },
     /* {ImagesHomeControllerData[6].src} */
     {
-        src: Image7,
-        alt: "Photo de mariage Sun Glass",
+        src: "/images/image-home/lapm-photographe-professionnel-portrait-mariage-sun-glass-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait mariage - lunettes de soleil - L'Atelier Photo Montpellier",
     },
     /* {ImagesHomeControllerData[7].src} */
     {
-        src: Image8,
-        alt: "Pride et mariage",
+        src: "/images/image-home/lapm-photographe-professionnel-portrait-mariage-sortie-mairie-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait mariage - sortie de la mairie - L'Atelier Photo Montpellier",
     },
 ];
 
