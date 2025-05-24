@@ -4,10 +4,7 @@ Ce qu'il manque :
   - Page contact Helmet et Service
 
 ------------------------------------------------------------------------------
-Mettre un espace sur chaque page au niveau de la page contact
-
-------------------------------------------------------------------------------
-Ajouter les commentaires pour chaque page, avis client
+Ajouter les commentaires pour chaque page, controller Images et remplacement des images du site entier !
 
 ------------------------------------------------------------------------------
 
@@ -22,7 +19,6 @@ Il faut refactoriser SEO les pages :
 ------------------------------------------------------------------------------
 
 Il faut éditer les pages : 
- - Famille : En cours
  - Hobbie : Commencé, a vérifier le word puis continuer
  - Portfolio : A terminer avec la cliente
  - Qui suis je
