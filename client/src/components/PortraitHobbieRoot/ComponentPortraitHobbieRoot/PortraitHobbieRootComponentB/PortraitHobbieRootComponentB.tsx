@@ -7,38 +7,74 @@ function PortraitHobbieRootComponentB() {
     <section className={`PortraitHobbieRootComponentB ${style.ContainerRoot}`}>
         <header className={style.ContainerTitle}>
             <h2 className={style.TitleH2}>
-                {"Parce que chaque Hobbie a son histoire, offrez-vous un portrait fidèle à votre complicité"}
+                {"Parce que chaque Hobbie a son histoire, offrez-vous un portrait fidèle à votre complicité."}
             </h2>
         </header>
 
-        <p className={style.TextP4}>
-            On a tous un truc qui nous fait vibrer. <br />
-            Un art, un sport, un instrument, un geste maîtrisé. <br />
-            Que vous soyez judoka, cavalière, danseuse, batteur du dimanche, passionné de jardinage ou collectionneur de vinyles, 
-            <span className={style.SpanBold}>
-                {" votre passion fait partie de votre identité."}
-            </span>
-        </p>
+        <h3 className={style.TitleH2}>
+            {"Pourquoi faire un portrait de votre passion ?"}
+        </h3>
 
-        <p className={style.TextP4}>
-            Alors pourquoi ne pas lui donner une place en image ? <br />
-            Un
-            <span className={style.SpanBold}>
-                {" portrait centré sur ce que vous aimez, "}
-            </span>
-            c’est l’occasion de figer un moment de fierté, de plaisir, de concentration ou de mouvement. C’est aussi une façon de dire : “voilà qui je 
-            suis, au-delà du boulot, au-delà des apparences”.
-        </p>
+        <ul className={style.ContainerUl}>
+            <li className={style.TextLiP4}>
+                Pour 
+                <span className={style.SpanBold}>
+                    {" garder une trace "}
+                </span>
+                d’une période importante de votre vie.
+            </li>
+            <li className={style.TextLiP4}>
+                Pour 
+                <span className={style.SpanBold}>
+                    {" célébrer vos progrès, "}
+                </span>
+                vos réussites, ou simplement votre constance.
+            </li>
+            <li className={style.TextLiP4}>
+                Pour 
+                <span className={style.SpanBold}>
+                    {" vous reconnecter à vous-même "}
+                </span>
+                à travers ce que vous aimez faire.
+            </li>
+            <li className={style.TextLiP4}>
+                Pour 
+                <span className={style.SpanBold}>
+                    {" partager "}
+                </span>
+                cette facette de vous avec vos proches ou sur les réseaux.
+            </li>
+            <li className={style.TextLiP4}>
+                Parce que vous méritez une image de vous… dans votre élément
+            </li>
+            <br />
+        </ul>
+
+        <article className={style.ContainerText}>
+            <h3 className={style.TitleNH3}>
+                {"Pourquoi choisir l’Atelier Photo Montpellier ?"}
+            </h3>
+
+            <p className={style.TextP4}>
+                Parce que chez moi, on ne “pose” pas. <br />
+                On
+                <span className={style.SpanBold}>
+                    {" vit la photo, "}
+                </span>
+                on la construit ensemble, avec ce que vous êtes, ce que vous faites, ce qui vous touche.
+            </p>
+        </article>
+
 
         <Container4ImagesRoot
-            img1={ImagesPortraitHobbieControllerData[0].src}
-            MetaNameImg1={ImagesPortraitHobbieControllerData[0].alt}
-            img2={ImagesPortraitHobbieControllerData[1].src}
-            MetaNameImg2={ImagesPortraitHobbieControllerData[1].alt}
-            img3={ImagesPortraitHobbieControllerData[2].src}
-            MetaNameImg3={ImagesPortraitHobbieControllerData[2].alt}
-            img4={ImagesPortraitHobbieControllerData[3].src}
-            MetaNameImg4={ImagesPortraitHobbieControllerData[3].alt}
+            img1={ImagesPortraitHobbieControllerData[4].src}
+            MetaNameImg1={ImagesPortraitHobbieControllerData[4].alt}
+            img2={ImagesPortraitHobbieControllerData[5].src}
+            MetaNameImg2={ImagesPortraitHobbieControllerData[5].alt}
+            img3={ImagesPortraitHobbieControllerData[6].src}
+            MetaNameImg3={ImagesPortraitHobbieControllerData[6].alt}
+            img4={ImagesPortraitHobbieControllerData[7].src}
+            MetaNameImg4={ImagesPortraitHobbieControllerData[7].alt}
         />
     </section>
   );

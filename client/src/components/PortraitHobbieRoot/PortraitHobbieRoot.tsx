@@ -3,6 +3,7 @@ import style from "../StyleRootComponent.module.css";
 // import AvisClientPortraitHobbieControllerData from "./AvisClientPortraitHobbieControllerData";
 
 import PortraitHobbieRootComponentA from "./ComponentPortraitHobbieRoot/PortraitHobbieRootComponentA/PortraitHobbieRootComponentA";
+import PortraitHobbieRootComponentB from "./ComponentPortraitHobbieRoot/PortraitHobbieRootComponentB/PortraitHobbieRootComponentB";
 
 function PortraitHobbieRoot() {
     return (
@@ -16,10 +17,8 @@ function PortraitHobbieRoot() {
             {/* Container A */}
             <PortraitHobbieRootComponentA />
 
-            {/* H2 nb 1 : Parce que chaque Hobbie a son histoire, offrez-vous un portrait fidèle à votre complicité. */}
-            {/* H2 nb 2 : Votre passion raconte une histoire : faisons-la parler en images. */}
-
             {/* Container B */}
+            <PortraitHobbieRootComponentB />
 
             {/* Container C */}
 
