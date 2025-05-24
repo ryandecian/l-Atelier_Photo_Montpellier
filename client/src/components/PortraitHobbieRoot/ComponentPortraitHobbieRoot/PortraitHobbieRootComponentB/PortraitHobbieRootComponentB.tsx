@@ -2,9 +2,9 @@ import style from "../../../StyleRootComponent.module.css";
 import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ImagesPortraitHobbieControllerData from "../../ImagesPortraitHobbieControllerData";
 
-function PortraitHobbieRootComponentA() {
+function PortraitHobbieRootComponentB() {
   return (
-    <section className={`PortraitHobbieRootComponentA ${style.ContainerRoot}`}>
+    <section className={`PortraitHobbieRootComponentB ${style.ContainerRoot}`}>
         <header className={style.ContainerTitle}>
             <h2 className={style.TitleH2}>
                 {"Parce que chaque Hobbie a son histoire, offrez-vous un portrait fidèle à votre complicité"}
@@ -44,4 +44,4 @@ function PortraitHobbieRootComponentA() {
   );
 }
 
-export default PortraitHobbieRootComponentA;
+export default PortraitHobbieRootComponentB;
