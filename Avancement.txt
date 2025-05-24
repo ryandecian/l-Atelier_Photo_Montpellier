@@ -19,7 +19,6 @@ Il faut refactoriser SEO les pages :
 ------------------------------------------------------------------------------
 
 Il faut éditer les pages : 
- - Hobbie : Commencé, a vérifier le word puis continuer
  - Portfolio : A terminer avec la cliente
  - Qui suis je
 
