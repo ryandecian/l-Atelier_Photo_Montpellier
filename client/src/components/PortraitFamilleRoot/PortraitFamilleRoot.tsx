@@ -3,6 +3,7 @@ import style from "../StyleRootComponent.module.css";
 // import AvisClientPortraitFamilleControllerData from "./AvisClientPortraitFamilleControllerData";
 
 import PortraitFamilleRootComponentA from "./ComponentPortraitFamilleRoot/PortraitFamilleRootComponentA/PortraitFamilleRootComponentA";
+import PortraitFamilleRootComponentB from "./ComponentPortraitFamilleRoot/PortraitFamilleRootComponentB/PortraitFamilleRootComponentB";
 
 function PortraitFamilleRoot() {
     return (
@@ -17,7 +18,8 @@ function PortraitFamilleRoot() {
             <PortraitFamilleRootComponentA />
 
             {/* Container B */}
-
+            <PortraitFamilleRootComponentB />
+            
             {/* Container C */}
 
             {/* Container D : Avis client */}
