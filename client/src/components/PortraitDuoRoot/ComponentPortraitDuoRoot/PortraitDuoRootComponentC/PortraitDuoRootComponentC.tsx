@@ -36,7 +36,7 @@ function PortraitDuoRootComponentC() {
             {"Des images sensibles et naturelles"}
         </h3>
         <p className={style.TextP4}>
-            🖼️ 10 à 20 images livrées via galerie privée, avec des retouches douces et cohérentes.
+            🖼️ 6 à 18 images livrées via galerie privée, avec des retouches douces et cohérentes.
         </p>
 
         <h2 className={style.TitleH2}>
@@ -46,6 +46,7 @@ function PortraitDuoRootComponentC() {
         <p className={style.TextP4}>
             Un portrait, c’est bien plus qu’une image. C’est un moment pour se (re)découvrir, se révéler, s’honorer. <br />
             Que ce soit pour marquer un cap, célébrer une étape ou simplement se faire plaisir… <br />
+            <br />
             <span className={style.SpanLink}>
                 <Link to={ListDataRouter[3].path}>
                     Parlons de ce que vous aimeriez capturer, pour que votre lumière vous ressemble.

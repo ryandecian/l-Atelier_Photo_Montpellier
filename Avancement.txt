@@ -4,6 +4,9 @@ Ce qu'il manque :
   - Page contact Helmet et Service
 
 ------------------------------------------------------------------------------
+Mettre un espace sur chaque page au niveau de la page contact
+
+------------------------------------------------------------------------------
 Ajouter les commentaires pour chaque page, avis client
 
 ------------------------------------------------------------------------------
