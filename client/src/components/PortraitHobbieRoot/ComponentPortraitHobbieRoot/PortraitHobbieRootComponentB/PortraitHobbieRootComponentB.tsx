@@ -63,8 +63,39 @@ function PortraitHobbieRootComponentB() {
                 </span>
                 on la construit ensemble, avec ce que vous êtes, ce que vous faites, ce qui vous touche.
             </p>
-        </article>
 
+            <p className={style.TextP4}>
+                Je vous accompagne de A à Z :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    <span className={style.SpanBold}>
+                        {"On échange "}
+                    </span>
+                    avant la séance sur votre pratique, votre style, vos envies.
+                </li>
+                <li className={style.TextLiP4}>
+                    <span className={style.SpanBold}>
+                        {"On réfléchit ensemble "}
+                    </span>
+                    {"à un lieu ou une mise en scène cohérente (au studio, chez vous, sur le terrain, dans votre atelier…)"}
+                </li>
+                <li className={style.TextLiP4}>
+                    <span className={style.SpanBold}>
+                        {"Je vous guide avec bienveillance, "}
+                    </span>
+                    que vous soyez à l’aise ou pas du tout avec l’objectif.
+                </li>
+                <li className={style.TextLiP4}>
+                    <span className={style.SpanBold}>
+                        {"On prend le temps, "}
+                    </span>
+                    pour que chaque image reflète vraiment votre énergie et votre passion.
+                </li>
+                <br />
+            </ul>
+        </article>
 
         <Container4ImagesRoot
             img1={ImagesPortraitHobbieControllerData[4].src}
@@ -76,6 +107,53 @@ function PortraitHobbieRootComponentB() {
             img4={ImagesPortraitHobbieControllerData[7].src}
             MetaNameImg4={ImagesPortraitHobbieControllerData[7].alt}
         />
+
+        <article className={style.ContainerText}>
+            <h3 className={style.TitleH2}>
+                Un accompagnement complet sur mesure
+            </h3>
+
+            <h4 className={style.TitleNH4}>
+                Une séance sur-mesure, sans pression
+            </h4>
+            <p className={style.TextP4}>
+                📍 Au studio à Montpellier ou en lumière naturelle, sur le lieu de votre pratique 
+                (terrain de sport, atelier, cuisine, manège, garage, salle de danse… c’est votre univers, et je m’y adapte).
+            </p>
+
+            <h4 className={style.TitleNH4}>
+                Un lieu rassurant ou un extérieur inspirant
+            </h4>
+            <p className={style.TextP4}>
+                🎯 On avance à votre rythme, en jouant avec les postures, la lumière, les émotions.
+            </p>
+
+            <h4 className={style.TitleNH4}>
+                Direction naturelle et mise en confiance
+            </h4>
+            <p className={style.TextP4}>
+                💬 Même si vous n’aimez pas l’objectif, je vous guide pas à pas, toujours dans la bienveillance. <br />
+                💬 Je peux aussi venir discrètement capter un 
+                <span className={style.SpanBold}>
+                    {" moment en action "}
+                </span>
+                {"(entraînement, répétition, prestation), ou bien mettre en scène "}
+                <span className={style.SpanBold}>
+                    {"une ambiance plus artistique ou symbolique."}
+                </span>
+            </p>
+
+            <h4 className={style.TitleNH4}>
+                Des images qui vous font du bien
+            </h4>
+            <p className={style.TextP4}>
+                📸 Sélection de 6 à 18 photos retouchées avec soin, livrées en galerie privée
+            </p>
+        </article>
+
+        <article className={style.ContainerText}>
+            <h3 className={style.TitleH2}></h3>
+        </article>
     </section>
   );
 }
