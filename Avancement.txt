@@ -7,6 +7,14 @@ Ce qu'il manque :
 Ajouter les commentaires pour chaque page, controller Images et remplacement des images du site entier !
 
 ------------------------------------------------------------------------------
+Mise a jour des import d'image :
+ - Corporate : En cours
+ - Mariage
+ - Lifestyle
+ - Solo
+ - Duo
+ - Grossesse
+------------------------------------------------------------------------------
 
 Il faut refactoriser SEO les pages :
   - NavTargetHome a faire
