@@ -3,9 +3,9 @@ import ImagesControllerDataType from "../../types/ImagesControllerData.type";
 /**
  * Compteur mot clés : 
  * 
- * photographe-professionnelle : 4/4
- * photo-professionnel : 2/2
- * photographie-professionnelle : 2/2
+ * photographe-professionnelle : 0/4
+ * photo-professionnel : 0/2
+ * photographie-professionnelle : 0/2
  */
 
 const ImagesPortraitCorporateControllerData: ImagesControllerDataType[] = [
@@ -13,7 +13,7 @@ const ImagesPortraitCorporateControllerData: ImagesControllerDataType[] = [
     /* {ImagesPortraitCorporateControllerData[0].src} */
     {
         src: "/images/image-corporate/lapm-photographe-pro-portrait-corporate-agence-immo-l-atelier-photo-montpellier.jpg",
-        alt: "",
+        alt: "LAPM - photographe pro - portrait corporate - agence immobilière - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitCorporateControllerData[1].src} */
     {
