@@ -8,7 +8,7 @@ Ajouter les commentaires pour chaque page, controller Images et remplacement des
 
 ------------------------------------------------------------------------------
 Mise a jour des import d'image :
- - Corporate
+ - Corporate : En cours
  - Mariage
  - Lifestyle
  - Solo
