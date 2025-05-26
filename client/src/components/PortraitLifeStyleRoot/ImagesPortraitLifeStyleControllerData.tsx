@@ -1,10 +1,5 @@
 import ImagesControllerDataType from "../../types/ImagesControllerData.type";
 
-import Image7 from "../../assets/Images/ImagePortraitLifeStyle/Solo/Life-style-exterieur-domicile.jpg";
-import Image8 from "../../assets/Images/ImagePortraitLifeStyle/Solo/Portrait-Francois-Feel-good.jpg";
-import Image9 from "../../assets/Images/ImagePortraitLifeStyle/Solo/Life-style-exterieur.jpg";
-import Image10 from "../../assets/Images/ImageHomePage/Portrait-jeune-femme-lumiere-naturelle.jpg";
-
 import Image11 from "../../assets/Images/ImagePortraitLifeStyle/Couple/portrait-couple-studio-bis.jpg";
 import image12 from "../../assets/Images/ImagePortraitLifeStyle/Couple/portrait-couple-jeune-studio.jpg";
 import Image13 from "../../assets/Images/ImagePortraitLifeStyle/Couple/portrait-tandem-exterieur.jpg";
@@ -19,6 +14,14 @@ import Image27 from "../../assets/Images/ImagePortraitLifeStyle/Hobbie/Portrait-
 import Image28 from "../../assets/Images/ImagePortraitLifeStyle/Hobbie/Canicross-osteopathe.jpg";
 import Image29 from "../../assets/Images/ImagePortraitLifeStyle/Hobbie/Portraits-Synrie-Far-West-nb.jpg";
 import Image30 from "../../assets/Images/ImagePortraitLifeStyle/Hobbie/Gardienne-but-Portrait-Flash-4.jpg";
+
+/**
+ * Compteur mot clés : 
+ * 
+ * photographe-professionnelle : 6
+ * photo-professionnel : 3
+ * photographie-professionnelle : 1
+ */
 
 const ImagesPortraitLifeStyleControllerData: ImagesControllerDataType[] = [
     /* Menu en image PortraitLifeStyle : 6 images */
@@ -58,23 +61,23 @@ const ImagesPortraitLifeStyleControllerData: ImagesControllerDataType[] = [
     /* Tableau 1 :  4 images : Portrait Solo */
     /* {ImagesPortraitLifeStyleControllerData[6].src} */
     {
-        src: Image7,
-        alt: "Life style exterieur domicile",
+        src: "/images/image-portrait-lifestyle/solo/lapm-photo-professionnel-portrait-lifestyle-feel-good-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo professionnel - portrait lifestyle - feel good - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitLifeStyleControllerData[7].src} */
     {
-        src: Image8,
-        alt: "Portrait François Feel good",
+        src: "/images/image-portrait-lifestyle/solo/lapm-photographe-professionnel-portrait-lifestyle-homme-noir-et-blanc-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait lifestyle - homme - noir et blanc - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitLifeStyleControllerData[8].src} */
     {
-        src: Image9,
-        alt: "Life style exterieur",
+        src: "/images/image-portrait-lifestyle/solo/lapm-photographe-professionnel-portrait-lifestyle-feel-good-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait lifestyle - feel good - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitLifeStyleControllerData[9].src} */
     {
-        src: Image10,
-        alt: "",
+        src: "/images/image-portrait-lifestyle/solo/lapm-photographie-professionnelle-portrait-solo-jeune-femme-lumiere-douce-l-atelier-photo-montpellie.jpg",
+        alt: "LAPM - photographie professionnelle - portrait solo - jeune femme - lumière douce - L'Atelier Photo Montpellier",
     },
 
 

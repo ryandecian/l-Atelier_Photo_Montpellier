@@ -7,6 +7,11 @@ Ce qu'il manque :
 Ajouter les commentaires pour chaque page, controller Images et remplacement des images du site entier !
 
 ------------------------------------------------------------------------------
+Bug détecté dans la page LifeStyle, les coche violet avec react lucide pète lorsque pas assez de place, notamment en version mobile
+Solution : Retirer react Lucide et utiliser cette emoji : ✔️
+Penser a retirer le style de stylePage.module.css dans components
+
+------------------------------------------------------------------------------
 Mise a jour des import d'image : ATTENTION, Revoir tout les nom d'images, Anne a fais n'importe quoi
  - Lifestyle : En cours
  - Solo
