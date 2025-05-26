@@ -84,23 +84,23 @@ const ImagePortraitMariageControllerData: ImagesControllerDataType[] = [
     /* Tableau 4 d'images : 4 images */
     /* {ImagePortraitMariageControllerData[12].src} */
     {
-        src: "/images/image-portrait-mariage/",
-        alt: "",
+        src: "/images/image-portrait-mariage/lapm-photographe-professionnel-portrait-mariage-signature-maries-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait mariage - signature des mariés - L'Atelier Photo Montpellier",
     },
     /* {ImagePortraitMariageControllerData[13].src} */
     {
-        src: "/images/image-portrait-mariage/",
-        alt: "",
+        src: "/images/image-portrait-mariage/lapm-photographe-professionnel-portrait-mariage-maries-canisses-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait mariage - mariés et canisses - L'Atelier Photo Montpellier",
     },
     /* {ImagePortraitMariageControllerData[14].src} */
     {
-        src: "/images/image-portrait-mariage/",
-        alt: "",
+        src: "/images/image-portrait-mariage/lapm-photographe-professionnel-portrait-mariage-bouquet-mariee-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait mariage - bouquet de mariée - L'Atelier Photo Montpellier",
     },
     /* {ImagePortraitMariageControllerData[15].src} */
     {
-        src: "/images/image-portrait-mariage/",
-        alt: "",
+        src: "/images/image-portrait-mariage/lapm-photographie-professionnelle-portrait-mariage-alliances-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographie professionnelle - portrait mariage - alliances - L'Atelier Photo Montpellier",
     },
 
 
@@ -108,23 +108,23 @@ const ImagePortraitMariageControllerData: ImagesControllerDataType[] = [
     /* Tableau 5 d'images : 4 images */
     /* {ImagePortraitMariageControllerData[16].src} */
     {
-        src: "/images/image-portrait-mariage/",
-        alt: "",
+        src: "/images/image-portrait-mariage/lapm-photo-professionnel-portrait-mariage-au-parc-de-gramont-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo professionnel - portrait mariage au Parc de Grammont - L'Atelier Photo Montpellier",
     },
     /* {ImagePortraitMariageControllerData[17].src} */
     {
-        src: "/images/image-portrait-mariage/",
-        alt: "",
+        src: "/images/image-portrait-mariage/lapm-photographe-professionnel-portrait-mariage-parc-fontaine-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait mariage - Parc de la Fontaine - L'Atelier Photo Montpellier",
     },
     /* {ImagePortraitMariageControllerData[18].src} */
     {
-        src: "/images/image-portrait-mariage/",
-        alt: "",
+        src: "/images/image-portrait-mariage/lapm-photographie-professionnelle-portrait-mariage-la-guiguette-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographie professionnelle - portrait mariage - La Guinguette - L'Atelier Photo Montpellier",
     },
     /* {ImagePortraitMariageControllerData[19].src} */
     {
-        src: "/images/image-portrait-mariage/",
-        alt: "",
+        src: "/images/image-portrait-mariage/lapm-photographie-professionnelle-portrait-mariage-maries-canisse-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographie professionnelle - portrait mariage - mariés et canisse - L'Atelier Photo Montpellier",
     },
 ];
 
