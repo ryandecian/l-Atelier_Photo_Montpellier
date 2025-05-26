@@ -25,6 +25,14 @@ import Image18 from "../../assets/Images/ImagePortraitMariage/Parc-de-la-Fontain
 import Image19 from "../../assets/Images/ImagePortraitMariage/La-guiguette-de-villeneuve-les-Maguelones.jpg";
 import Image20 from "../../assets/Images/ImagePortraitMariage/maries-canisses-BW.jpg";
 
+/**
+ * Compteur mot clés : 
+ * 
+ * photographe-professionnelle : 3/10
+ * photo-professionnel : 3/5
+ * photographie-professionnelle : 3/5
+ */
+
 const ImagePortraitMariageControllerData: ImagesControllerDataType[] = [
     /* Tableau 1 d'images : 4 images */
     /* {ImagePortraitMariageControllerData[0].src} */
