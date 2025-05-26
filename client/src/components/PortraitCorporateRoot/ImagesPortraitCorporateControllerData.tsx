@@ -12,23 +12,23 @@ const ImagesPortraitCorporateControllerData: ImagesControllerDataType[] = [
     /* Tableau 1 : PortraitCorporateComponentA */
     /* {ImagesPortraitCorporateControllerData[0].src} */
     {
-        src: "/images/image-corporate/lapm-photographe-pro-portrait-corporate-agence-immo-l-atelier-photo-montpellier.jpg",
-        alt: "LAPM - photographe pro - portrait corporate - agence immobilière - L'Atelier Photo Montpellier",
+        src: "/images/image-corporate/lapm-photographie-professionnelle-portrait-corporate-agence-immo-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographie professionnelle - portrait corporate - agence immobilière - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitCorporateControllerData[1].src} */
     {
-        src: "/images/image-corporate/",
-        alt: "",
+        src: "/images/image-corporate/lapm-photo-professionnel-portrait-corporate-commerciale-immo-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo professionnel - portrait corporate - commerciale immobilière - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitCorporateControllerData[2].src} */
     {
-        src: "/images/image-corporate/",
-        alt: "",
+        src: "/images/image-corporate/lapm-photographie-professionnelle-portrait-corporate-assistante-direction-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographie professionnelle - portrait corporate - assistante de direction - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitCorporateControllerData[3].src} */
     {
-        src: "/images/image-corporate/",
-        alt: "",
+        src: "/images/image-corporate/lapm-photographe-professionnel-portrait-corporate-chercheuse-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait corporate - chercheuse - L'Atelier Photo Montpellier",
     },
 
 
