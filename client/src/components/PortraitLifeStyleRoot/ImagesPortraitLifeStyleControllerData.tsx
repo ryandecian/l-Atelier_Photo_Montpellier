@@ -1,10 +1,5 @@
 import ImagesControllerDataType from "../../types/ImagesControllerData.type";
 
-import Image11 from "../../assets/Images/ImagePortraitLifeStyle/Couple/portrait-couple-studio-bis.jpg";
-import image12 from "../../assets/Images/ImagePortraitLifeStyle/Couple/portrait-couple-jeune-studio.jpg";
-import Image13 from "../../assets/Images/ImagePortraitLifeStyle/Couple/portrait-tandem-exterieur.jpg";
-import Image14 from "../../assets/Images/ImageHomePage/Shooting-couple-studio.jpg";
-
 import Image15 from "../../assets/Images/ImagePortraitLifeStyle/Famille/Les-2-Freres.jpg";
 import Image16 from "../../assets/Images/ImagePortraitLifeStyle/Famille/Amies-d-Enfance-Flash.jpg";
 import Image17 from "../../assets/Images/ImagePortraitLifeStyle/Famille/Mere-Fils-portrait-interieur.jpg";
@@ -18,8 +13,8 @@ import Image30 from "../../assets/Images/ImagePortraitLifeStyle/Hobbie/Gardienne
 /**
  * Compteur mot clés : 
  * 
- * photographe-professionnelle : 6
- * photo-professionnel : 3
+ * photographe-professionnelle : 8
+ * photo-professionnel : 5
  * photographie-professionnelle : 1
  */
 
@@ -85,23 +80,23 @@ const ImagesPortraitLifeStyleControllerData: ImagesControllerDataType[] = [
     /* Tableau 2 : 4 images : Portrait Couple */
     /* {ImagesPortraitLifeStyleControllerData[10].src} */
     {
-        src: Image11,
-        alt: "portrait couple studio bis",
+        src: "/images/image-portrait-lifestyle/couple/lapm-photo-professionnel-portrait-couple-espagnol-engagement-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo professionnel - portrait couple - espagnol - engagement - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitLifeStyleControllerData[11].src} */
     {
-        src: image12,
-        alt: "portrait couple jeune studio",
+        src: "/images/image-portrait-lifestyle/couple/lapm-photo-professionnel-portrait-duo-studio-jeune-noir-et-blanc-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo professionnel - portrait duo - studio - jeune - noir et blanc - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitLifeStyleControllerData[12].src} */
     {
-        src: Image13,
-        alt: "portrait tandem exterieur",
+        src: "/images/image-portrait-lifestyle/couple/lapm-photographe-professionnel-portrait-mariage-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait mariage - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitLifeStyleControllerData[13].src} */
     {
-        src: Image14,
-        alt: "Shooting couple studio",
+        src: "/images/image-portrait-lifestyle/couple/lapm-photographe-professionnelle-portrait-studio-couple-couleur-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnelle - portrait studio - couple - couleur - L'Atelier Photo Montpellier",
     },
 
 
