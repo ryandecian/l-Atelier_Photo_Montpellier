@@ -1,12 +1,5 @@
 import ImagesControllerDataType from "../../types/ImagesControllerData.type";
 
-import Image1 from "../../assets/Images/ImagePortraitLifeStyle/Card/Femme-a-la-cigarette.jpg";
-import Image2 from "../../assets/Images/ImagePortraitLifeStyle/Card/portrait-duo-exterieur.jpg";
-import Image3 from "../../assets/Images/ImagePortraitLifeStyle/Card/Portraits-Famille-Flash.jpg";
-import Image4 from "../../assets/Images/ImagePortraitLifeStyle/Card/Premier-jour-portrait.jpg";
-import Image5 from "../../assets/Images/ImagePortraitLifeStyle/Card/portrait-9-mois-domicile.jpg";
-import Image6 from "../../assets/Images/ImagePortraitLifeStyle/Card/Portrait-Serie-PeakyBlinders.jpg";
-
 import Image7 from "../../assets/Images/ImagePortraitLifeStyle/Solo/Life-style-exterieur-domicile.jpg";
 import Image8 from "../../assets/Images/ImagePortraitLifeStyle/Solo/Portrait-Francois-Feel-good.jpg";
 import Image9 from "../../assets/Images/ImagePortraitLifeStyle/Solo/Life-style-exterieur.jpg";
@@ -31,33 +24,33 @@ const ImagesPortraitLifeStyleControllerData: ImagesControllerDataType[] = [
     /* Menu en image PortraitLifeStyle : 6 images */
     /* {ImagesPortraitLifeStyleControllerData[0].src} */
     {
-        src: Image1,
-        alt: "",
+        src: "/images/image-portrait-lifestyle/card/lapm-photographe-professionnel-portrait-solo-femme-cigarette-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait solo - femme à la cigarette - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitLifeStyleControllerData[1].src} */
     {
-        src: Image2,
-        alt: "",
+        src: "/images/image-portrait-lifestyle/card/lapm-photographe-professionnel-portrait-duo-love-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait duo - love - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitLifeStyleControllerData[2].src} */
     {
-        src: Image3,
-        alt: "",
+        src: "/images/image-portrait-lifestyle/card/lapm-photographe-professionnel-portrait-famille-flash-cool-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait famille - flash cool - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitLifeStyleControllerData[3].src} */
     {
-        src: Image4,
-        alt: "",
+        src: "/images/image-portrait-lifestyle/card/lapm-photo-professionnel-portrait-nouveau-ne-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo professionnel - portrait nouveau-né - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitLifeStyleControllerData[4].src} */
     {
-        src: Image5,
-        alt: "",
+        src: "/images/image-portrait-lifestyle/card/lapm-photographe-professionnel-portrait-grossesse-fleurs-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait grossesse - fleurs - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitLifeStyleControllerData[5].src} */
     {
-        src: Image6,
-        alt: "",
+        src: "/images/image-portrait-lifestyle/card/lapm-photo-professionnel-portrait-hobbie-serie-peaky-blinders-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo professionnel - portrait hobbie - série Peaky Blinders - L'Atelier Photo Montpellier",
     },
 
 
