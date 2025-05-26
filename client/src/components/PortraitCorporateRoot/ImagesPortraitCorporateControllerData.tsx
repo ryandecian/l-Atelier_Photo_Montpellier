@@ -36,12 +36,12 @@ const ImagesPortraitCorporateControllerData: ImagesControllerDataType[] = [
     /* Tableau 2 : PortraitCorporateComponentB */
     /* {ImagesPortraitCorporateControllerData[4].src} */
     {
-        src: "/images/image-corporate/",
+        src: "/images/image-corporate/lapm-photographe-professionnel-portrait-corporate-recherche-emploi-l-atelier-photo-montpellier.jpg",
         alt: "",
     },
     /* {ImagesPortraitCorporateControllerData[5].src} */
     {
-        src: "/images/image-corporate/",
+        src: "/images/image-corporate/lapm-photographe-professionnel-portrait-corporate-studio-l-atelier-photo-montpellier.jpg",
         alt: "",
     },
     /* {ImagesPortraitCorporateControllerData[6].src} */
@@ -51,7 +51,7 @@ const ImagesPortraitCorporateControllerData: ImagesControllerDataType[] = [
     },
     /* {ImagesPortraitCorporateControllerData[7].src} */
     {
-        src: "/images/image-corporate/",
+        src: "/images/image-corporate/lapm-photo-professionnel-portrait-corporate-negociatrice-immo-l-atelier-photo-montpellier.jpg",
         alt: "",
     },
 ];
