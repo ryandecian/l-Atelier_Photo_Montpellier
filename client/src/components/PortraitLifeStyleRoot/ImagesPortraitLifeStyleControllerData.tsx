@@ -1,10 +1,5 @@
 import ImagesControllerDataType from "../../types/ImagesControllerData.type";
 
-import Image15 from "../../assets/Images/ImagePortraitLifeStyle/Famille/Les-2-Freres.jpg";
-import Image16 from "../../assets/Images/ImagePortraitLifeStyle/Famille/Amies-d-Enfance-Flash.jpg";
-import Image17 from "../../assets/Images/ImagePortraitLifeStyle/Famille/Mere-Fils-portrait-interieur.jpg";
-import Image18 from "../../assets/Images/ImagePortraitLifeStyle/Famille/life-style-pere-fils.jpg";
-
 import Image27 from "../../assets/Images/ImagePortraitLifeStyle/Hobbie/Portrait-Serie-PeakyBlinders.jpg";
 import Image28 from "../../assets/Images/ImagePortraitLifeStyle/Hobbie/Canicross-osteopathe.jpg";
 import Image29 from "../../assets/Images/ImagePortraitLifeStyle/Hobbie/Portraits-Synrie-Far-West-nb.jpg";
@@ -13,8 +8,8 @@ import Image30 from "../../assets/Images/ImagePortraitLifeStyle/Hobbie/Gardienne
 /**
  * Compteur mot clés : 
  * 
- * photographe-professionnelle : 8
- * photo-professionnel : 5
+ * photographe-professionnelle : 10
+ * photo-professionnel : 7
  * photographie-professionnelle : 1
  */
 
@@ -104,23 +99,23 @@ const ImagesPortraitLifeStyleControllerData: ImagesControllerDataType[] = [
     /* Tableau 3 : 4 images : Portrait Famille */
     /* {ImagesPortraitLifeStyleControllerData[14].src} */
     {
-        src: Image15,
-        alt: "Les 2 Freres",
+        src: "/images/image-portrait-lifestyle/famille/lapm-photographe-professionnel-portrait-famille-les-deux-freres-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait famille - les deux frères - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitLifeStyleControllerData[15].src} */
     {
-        src: Image16,
-        alt: "Amies d'Enfance Flash",
+        src: "/images/image-portrait-lifestyle/famille/lapm-photo-professionnel-portrait-amies-enfance-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo professionnel - portrait amies d'enfance - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitLifeStyleControllerData[16].src} */
     {
-        src: Image17,
-        alt: "Mere Fils portrait interieur",
+        src: "/images/image-portrait-lifestyle/famille/lapm-photographe-professionnel-portrait-famille-mere-et-fils-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait famille - mère et fils - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitLifeStyleControllerData[17].src} */
     {
-        src: Image18,
-        alt: "life style pere fils",
+        src: "/images/image-portrait-lifestyle/famille/lapm-photo-professionnel-portrait-lifestyle-pere-fils-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo professionnel - portrait lifestyle - père et fils - L'Atelier Photo Montpellier",
     },
 
 
