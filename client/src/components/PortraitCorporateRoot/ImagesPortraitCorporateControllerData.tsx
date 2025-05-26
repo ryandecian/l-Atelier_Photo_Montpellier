@@ -3,9 +3,9 @@ import ImagesControllerDataType from "../../types/ImagesControllerData.type";
 /**
  * Compteur mot clés : 
  * 
- * photographe-professionnelle : 0/4
- * photo-professionnel : 0/2
- * photographie-professionnelle : 0/2
+ * photographe-professionnelle : 4/4
+ * photo-professionnel : 2/2
+ * photographie-professionnelle : 2/2
  */
 
 const ImagesPortraitCorporateControllerData: ImagesControllerDataType[] = [
@@ -37,22 +37,22 @@ const ImagesPortraitCorporateControllerData: ImagesControllerDataType[] = [
     /* {ImagesPortraitCorporateControllerData[4].src} */
     {
         src: "/images/image-corporate/lapm-photographe-professionnel-portrait-corporate-recherche-emploi-l-atelier-photo-montpellier.jpg",
-        alt: "",
+        alt: "LAPM - photographe professionnel - portrait corporate - recherche d'emploi - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitCorporateControllerData[5].src} */
     {
         src: "/images/image-corporate/lapm-photographe-professionnel-portrait-corporate-studio-l-atelier-photo-montpellier.jpg",
-        alt: "",
+        alt: "LAPM - photographe professionnel - portrait corporate - studio - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitCorporateControllerData[6].src} */
     {
-        src: "/images/image-corporate/",
-        alt: "",
+        src: "/images/image-corporate/lapm-photographe-professionnel-portrait-corporate-directrice-ecole-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait corporate - directrice d'école - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitCorporateControllerData[7].src} */
     {
         src: "/images/image-corporate/lapm-photo-professionnel-portrait-corporate-negociatrice-immo-l-atelier-photo-montpellier.jpg",
-        alt: "",
+        alt: "LAPM - photo professionnel - portrait corporate - négociatrice immobilière - L'Atelier Photo Montpellier",
     },
 ];
 
