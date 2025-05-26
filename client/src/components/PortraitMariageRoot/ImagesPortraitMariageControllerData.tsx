@@ -28,9 +28,9 @@ import Image20 from "../../assets/Images/ImagePortraitMariage/maries-canisses-BW
 /**
  * Compteur mot clés : 
  * 
- * photographe-professionnelle : 3/10
- * photo-professionnel : 3/5
- * photographie-professionnelle : 3/5
+ * photographe-professionnelle : 6/10
+ * photo-professionnel : 5/5
+ * photographie-professionnelle : 5/5
  */
 
 const ImagePortraitMariageControllerData: ImagesControllerDataType[] = [
