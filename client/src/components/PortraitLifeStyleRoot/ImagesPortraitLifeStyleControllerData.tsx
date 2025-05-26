@@ -1,25 +1,10 @@
 import ImagesControllerDataType from "../../types/ImagesControllerData.type";
 
-import Image11 from "../../assets/Images/ImagePortraitLifeStyle/Couple/portrait-couple-studio-bis.jpg";
-import image12 from "../../assets/Images/ImagePortraitLifeStyle/Couple/portrait-couple-jeune-studio.jpg";
-import Image13 from "../../assets/Images/ImagePortraitLifeStyle/Couple/portrait-tandem-exterieur.jpg";
-import Image14 from "../../assets/Images/ImageHomePage/Shooting-couple-studio.jpg";
-
-import Image15 from "../../assets/Images/ImagePortraitLifeStyle/Famille/Les-2-Freres.jpg";
-import Image16 from "../../assets/Images/ImagePortraitLifeStyle/Famille/Amies-d-Enfance-Flash.jpg";
-import Image17 from "../../assets/Images/ImagePortraitLifeStyle/Famille/Mere-Fils-portrait-interieur.jpg";
-import Image18 from "../../assets/Images/ImagePortraitLifeStyle/Famille/life-style-pere-fils.jpg";
-
-import Image27 from "../../assets/Images/ImagePortraitLifeStyle/Hobbie/Portrait-Serie-PeakyBlinders.jpg";
-import Image28 from "../../assets/Images/ImagePortraitLifeStyle/Hobbie/Canicross-osteopathe.jpg";
-import Image29 from "../../assets/Images/ImagePortraitLifeStyle/Hobbie/Portraits-Synrie-Far-West-nb.jpg";
-import Image30 from "../../assets/Images/ImagePortraitLifeStyle/Hobbie/Gardienne-but-Portrait-Flash-4.jpg";
-
 /**
  * Compteur mot clés : 
  * 
- * photographe-professionnelle : 6
- * photo-professionnel : 3
+ * photographe-professionnelle : 12
+ * photo-professionnel : 9
  * photographie-professionnelle : 1
  */
 
@@ -85,23 +70,23 @@ const ImagesPortraitLifeStyleControllerData: ImagesControllerDataType[] = [
     /* Tableau 2 : 4 images : Portrait Couple */
     /* {ImagesPortraitLifeStyleControllerData[10].src} */
     {
-        src: Image11,
-        alt: "portrait couple studio bis",
+        src: "/images/image-portrait-lifestyle/couple/lapm-photo-professionnel-portrait-couple-espagnol-engagement-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo professionnel - portrait couple - espagnol - engagement - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitLifeStyleControllerData[11].src} */
     {
-        src: image12,
-        alt: "portrait couple jeune studio",
+        src: "/images/image-portrait-lifestyle/couple/lapm-photo-professionnel-portrait-duo-studio-jeune-noir-et-blanc-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo professionnel - portrait duo - studio - jeune - noir et blanc - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitLifeStyleControllerData[12].src} */
     {
-        src: Image13,
-        alt: "portrait tandem exterieur",
+        src: "/images/image-portrait-lifestyle/couple/lapm-photographe-professionnel-portrait-mariage-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait mariage - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitLifeStyleControllerData[13].src} */
     {
-        src: Image14,
-        alt: "Shooting couple studio",
+        src: "/images/image-portrait-lifestyle/couple/lapm-photographe-professionnelle-portrait-studio-couple-couleur-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnelle - portrait studio - couple - couleur - L'Atelier Photo Montpellier",
     },
 
 
@@ -109,23 +94,23 @@ const ImagesPortraitLifeStyleControllerData: ImagesControllerDataType[] = [
     /* Tableau 3 : 4 images : Portrait Famille */
     /* {ImagesPortraitLifeStyleControllerData[14].src} */
     {
-        src: Image15,
-        alt: "Les 2 Freres",
+        src: "/images/image-portrait-lifestyle/famille/lapm-photographe-professionnel-portrait-famille-les-deux-freres-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait famille - les deux frères - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitLifeStyleControllerData[15].src} */
     {
-        src: Image16,
-        alt: "Amies d'Enfance Flash",
+        src: "/images/image-portrait-lifestyle/famille/lapm-photo-professionnel-portrait-amies-enfance-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo professionnel - portrait amies d'enfance - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitLifeStyleControllerData[16].src} */
     {
-        src: Image17,
-        alt: "Mere Fils portrait interieur",
+        src: "/images/image-portrait-lifestyle/famille/lapm-photographe-professionnel-portrait-famille-mere-et-fils-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait famille - mère et fils - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitLifeStyleControllerData[17].src} */
     {
-        src: Image18,
-        alt: "life style pere fils",
+        src: "/images/image-portrait-lifestyle/famille/lapm-photo-professionnel-portrait-lifestyle-pere-fils-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo professionnel - portrait lifestyle - père et fils - L'Atelier Photo Montpellier",
     },
 
 
@@ -181,23 +166,23 @@ const ImagesPortraitLifeStyleControllerData: ImagesControllerDataType[] = [
     /* Tableau 6 : 4 images : Portrait Hobbies */
     /* {ImagesPortraitLifeStyleControllerData[26].src} */
     {
-        src: Image27,
-        alt: "Portrait Serie PeakyBlinders",
+        src: "/images/image-portrait-lifestyle/hobbie/lapm-photo-professionnel-portrait-hobbie-series-costumes-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo professionnel - portrait hobbie - séries et costumes - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitLifeStyleControllerData[27].src} */
     {
-        src: Image28,
-        alt: "Canicross osteopathe",
+        src: "/images/image-portrait-lifestyle/hobbie/lapm-photo-professionnel-portrait-passion-chien-cani-cross-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo professionnel - portrait passion - chien cani-cross - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitLifeStyleControllerData[28].src} */
     {
-        src: Image29,
-        alt: "Portraits Synrie Far West nb",
+        src: "/images/image-portrait-lifestyle/hobbie/lapm-photographe-professionnelle-portrait-hobbie-synrie-far-west-l-atelier-photo.jpg",
+        alt: "LAPM - photographe professionnelle - portrait hobbie - série Far West - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitLifeStyleControllerData[29].src} */
     {
-        src: Image30,
-        alt: "Gardienne but Portrait Flash 4",
+        src: "/images/image-portrait-lifestyle/hobbie/lapm-photographe-professionnelle-portrait-hobbie-gardienne-but-l-atelier-photo.jpg",
+        alt: "LAPM - photographe professionnelle - portrait hobbie - gardienne de but - L'Atelier Photo Montpellier",
     },
 
 ];
