@@ -1,15 +1,10 @@
 import ImagesControllerDataType from "../../types/ImagesControllerData.type";
 
-import Image27 from "../../assets/Images/ImagePortraitLifeStyle/Hobbie/Portrait-Serie-PeakyBlinders.jpg";
-import Image28 from "../../assets/Images/ImagePortraitLifeStyle/Hobbie/Canicross-osteopathe.jpg";
-import Image29 from "../../assets/Images/ImagePortraitLifeStyle/Hobbie/Portraits-Synrie-Far-West-nb.jpg";
-import Image30 from "../../assets/Images/ImagePortraitLifeStyle/Hobbie/Gardienne-but-Portrait-Flash-4.jpg";
-
 /**
  * Compteur mot clés : 
  * 
- * photographe-professionnelle : 10
- * photo-professionnel : 7
+ * photographe-professionnelle : 12
+ * photo-professionnel : 9
  * photographie-professionnelle : 1
  */
 
@@ -171,23 +166,23 @@ const ImagesPortraitLifeStyleControllerData: ImagesControllerDataType[] = [
     /* Tableau 6 : 4 images : Portrait Hobbies */
     /* {ImagesPortraitLifeStyleControllerData[26].src} */
     {
-        src: Image27,
-        alt: "Portrait Serie PeakyBlinders",
+        src: "/images/image-portrait-lifestyle/hobbie/lapm-photo-professionnel-portrait-hobbie-series-costumes-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo professionnel - portrait hobbie - séries et costumes - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitLifeStyleControllerData[27].src} */
     {
-        src: Image28,
-        alt: "Canicross osteopathe",
+        src: "/images/image-portrait-lifestyle/hobbie/lapm-photo-professionnel-portrait-passion-chien-cani-cross-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo professionnel - portrait passion - chien cani-cross - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitLifeStyleControllerData[28].src} */
     {
-        src: Image29,
-        alt: "Portraits Synrie Far West nb",
+        src: "/images/image-portrait-lifestyle/hobbie/lapm-photographe-professionnelle-portrait-hobbie-synrie-far-west-l-atelier-photo.jpg",
+        alt: "LAPM - photographe professionnelle - portrait hobbie - série Far West - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitLifeStyleControllerData[29].src} */
     {
-        src: Image30,
-        alt: "Gardienne but Portrait Flash 4",
+        src: "/images/image-portrait-lifestyle/hobbie/lapm-photographe-professionnelle-portrait-hobbie-gardienne-but-l-atelier-photo.jpg",
+        alt: "LAPM - photographe professionnelle - portrait hobbie - gardienne de but - L'Atelier Photo Montpellier",
     },
 
 ];
