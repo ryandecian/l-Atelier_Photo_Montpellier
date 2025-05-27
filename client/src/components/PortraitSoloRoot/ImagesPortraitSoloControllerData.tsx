@@ -4,7 +4,7 @@ import ImagesControllerDataType from "../../types/ImagesControllerData.type";
  * Compteur mot clés : 
  * 
  * photographe-professionnel : 2/4
- * photo-professionnel : 1/2
+ * photo-professionnel : 2/2
  * photographie-professionnelle : 2/2
  */
 
