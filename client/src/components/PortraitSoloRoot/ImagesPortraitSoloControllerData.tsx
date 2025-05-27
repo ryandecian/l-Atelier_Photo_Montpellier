@@ -36,22 +36,22 @@ const ImagesPortraitSoloControllerData: ImagesControllerDataType[] = [
     /* Tableau 2 : CorporateComponentB */
     /* {ImagesPortraitSoloControllerData[4].src} */
     {
-        src: "/images/image-portrait-solo/",
+        src: "/images/image-portrait-solo/lapm-photo-professionnel-portrait-solo-clair-obscur-homme-studio-l-atelier-photo-montpellier.jpg",
         alt: "",
     },
     /* {ImagesPortraitSoloControllerData[5].src} */
     {
-        src: "/images/image-portrait-solo/",
+        src: "/images/image-portrait-solo/lapm-photographe-professionnel-portrait-solo-homme-montpellier-l-atelier-photo-montpellier.jpg",
         alt: "",
     },
     /* {ImagesPortraitSoloControllerData[6].src} */
     {
-        src: "/images/image-portrait-solo/",
+        src: "/images/image-portrait-solo/lapm-photographe-professionnel-portrait-solo-exterieur-domicile-l-atelier-photo-montpellier.jpg",
         alt: "",
     },
     /* {ImagesPortraitSoloControllerData[7].src} */
     {
-        src: "/images/image-portrait-solo/",
+        src: "/images/image-portrait-solo/lapm-photo-professionnel-portrait-solo-parc-de-fontcolombe-flash-l-atelier-photo-montpellier.jpg",
         alt: "",
     },
 ];
