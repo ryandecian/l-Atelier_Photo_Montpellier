@@ -3,9 +3,9 @@ import ImagesControllerDataType from "../../types/ImagesControllerData.type";
 /**
  * Compteur mot clés : 
  * 
- * photographe-professionnelle : 0/4
- * photo-professionnel : 0/2
- * photographie-professionnelle : 0/2
+ * photographe-professionnel : 2/4
+ * photo-professionnel : 1/2
+ * photographie-professionnelle : 2/2
  */
 
 const ImagesPortraitSoloControllerData: ImagesControllerDataType[] = [
