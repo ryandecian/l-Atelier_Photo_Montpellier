@@ -1,5 +1,4 @@
 import style from "../../../StyleRootComponent.module.css";
-import { Check } from "lucide-react";
 import externalLinks from "../../../../constants/externalLinks";
 
 function PortraitLifeStyleRootComposantH() {
@@ -18,14 +17,17 @@ function PortraitLifeStyleRootComposantH() {
                     un moment plus posé, cette séance est pensée pour capturer ce qui vous anime, avec un rendu qui vous 
                     ressemble.
                 </p>
+
                 <p className={style.TextP4}>
                     <span className={style.SpanBoldSpace}>
                         {"📷 Un shooting sur-mesure, fidèle à votre univers"}
                     </span> 
                 </p>
+
                 <p className={style.TextP4}>
                     Loin des portraits classiques, cette séance s’adapte à votre style et à ce qui vous motive :
                 </p>
+
                 <p className={style.TextP4}>
                     <span className={style.SpanBold}>
                         {"🏃 En action :"}
@@ -40,31 +42,26 @@ function PortraitLifeStyleRootComposantH() {
                     </span> 
                     {" "} chevaux, chiens, instruments, accessoires… tout ce qui fait partie de votre passion. <br />
                 </p>
+
                 <p className={style.TextP4}>
                     Que vous souhaitiez un rendu brut et réaliste ou une mise en scène travaillée, tout est pensé pour 
                     refléter votre vision.
                 </p>
+
                 <p className={style.TextP4}>
                     <span className={style.SpanBold}>
                         {"Pour qui ?"}
                     </span> 
                 </p>
+
                 <p className={style.TextP4}>
                     {"Cette séance est faite pour vous si :"}
                     <br />
-                    <span className={style.SpanLucide}>
-                        <Check className={style.CheckLucide} /> &nbsp;
-                        Vous voulez des photos dynamiques et naturelles, en plein cœur de votre passion.
-                    </span>
-                    <span className={style.SpanLucide}>
-                        <Check className={style.CheckLucide} /> &nbsp;
-                        Vous souhaitez recréer une ambiance, une époque, ou un univers qui vous inspire.
-                    </span>
-                    <span className={style.SpanLucide}>
-                        <Check className={style.CheckLucide} /> &nbsp;
-                        Vous êtes sportif, artiste, passionné d’histoire, de cinéma ou de culture geek.
-                    </span>
+                    ✔️ Vous voulez des photos dynamiques et naturelles, en plein cœur de votre passion. <br />
+                    ✔️ Vous souhaitez recréer une ambiance, une époque, ou un univers qui vous inspire. <br />
+                    ✔️ Vous êtes sportif, artiste, passionné d’histoire, de cinéma ou de culture geek.
                 </p>
+
                 <p className={style.TextP4}>
                     <span className={style.SpanBold}>
                         {"📩 Envie de donner vie à votre passion en images ?"}

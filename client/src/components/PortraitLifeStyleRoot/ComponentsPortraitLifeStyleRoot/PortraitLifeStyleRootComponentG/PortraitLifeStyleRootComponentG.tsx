@@ -1,5 +1,4 @@
 import style from "../../../StyleRootComponent.module.css";
-import { Check } from "lucide-react";
 import externalLinks from "../../../../constants/externalLinks";
 
 function PortraitLifeStyleRootComponentG() {
@@ -24,6 +23,7 @@ function PortraitLifeStyleRootComponentG() {
                     </span> 
                     {" "} sans artifices, avec authenticité et élégance.
                 </p>
+
                 <p className={style.TextP4}>
                     Chaque femme vit sa grossesse différemment, et chaque séance est pensée en fonction de vos envies. 
                     Que vous souhaitiez un rendu naturel en extérieur, une ambiance intime à domicile ou un {" "}
@@ -32,6 +32,7 @@ function PortraitLifeStyleRootComponentG() {
                     </span> 
                     {" "} l’objectif est simple : mettre en lumière ce moment si particulier.
                 </p>
+
                 <p className={style.TextP4}>
                     <span className={style.SpanBold}>
                         {"🏞️ En extérieur :"}
@@ -46,44 +47,38 @@ function PortraitLifeStyleRootComponentG() {
                     </span> 
                     {" "} pour un rendu épuré et intemporel. <br />
                 </p>
+
                 <p className={style.TextP4}>
                     Seule ou avec votre partenaire, cette séance est avant tout un moment pour vous, où vous prenez le 
                     temps de vous arrêter et d’apprécier cette étape avant l’arrivée de bébé.
                 </p>
+
                 <p className={style.TextP4}>
                     <span className={style.SpanBoldSpace}>
                         {"Quand faire votre séance ?"}
                     </span> 
                 </p>
+
                 <p className={style.TextP4}>
                     L’idéal est de réaliser la séance entre le 7ᵉ et le 8ᵉ mois, lorsque le ventre est bien arrondi tout 
                     en gardant une bonne mobilité.
                 </p>
+
                 <p className={style.TextP4}>
                     <span className={style.SpanBold}>
                         {"Pour qui ?"}
                     </span> 
                 </p>
+
                 <p className={style.TextP4}>
                     {"Cette séance est faite pour vous si :"}
                     <br />
-                    <span className={style.SpanLucide}>
-                        <Check className={style.CheckLucide} /> &nbsp;
-                        Celles qui veulent un souvenir sincère et naturel de leur grossesse.
-                    </span>
-                    <span className={style.SpanLucide}>
-                        <Check className={style.CheckLucide} /> &nbsp;
-                        Celles qui souhaitent un moment pour elles, pour se reconnecter à leur corps.
-                    </span>
-                    <span className={style.SpanLucide}>
-                        <Check className={style.CheckLucide} /> &nbsp;
-                        Celles qui veulent un souvenir puissant de leur grossesse.
-                    </span>
-                    <span className={style.SpanLucide}>
-                        <Check className={style.CheckLucide} /> &nbsp;
-                        Pour se sentir belle et rayonner avant l’arrivée de bébé.
-                    </span>
+                    ✔️ Celles qui veulent un souvenir sincère et naturel de leur grossesse. <br />
+                    ✔️ Celles qui souhaitent un moment pour elles, pour se reconnecter à leur corps. <br />
+                    ✔️ Celles qui veulent un souvenir puissant de leur grossesse. <br />
+                    ✔️ Pour se sentir belle et rayonner avant l’arrivée de bébé.
                 </p>
+
                 <p className={style.TextP4}>
                     <span className={style.SpanBold}>
                         {"📩 Envie de figer ces instants avant l’arrivée de bébé ?"}
