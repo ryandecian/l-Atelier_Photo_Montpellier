@@ -42,7 +42,7 @@ function PortraitLifeStyleRootComponentC() {
                     <span className={style.SpanBold}>
                         {" se réconcilier avec leur image."}
                     </span> <br />
-                    ✔️ Une nouvelle étape de vie, une envie de se voir autrement.
+                    ✔️ Une nouvelle étape de vie, une envie de se voir autrement. <br />
                     ✔️ Un souvenir unique, juste pour soi.
                 </p>
 
