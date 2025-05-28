@@ -73,9 +73,9 @@ function PortraitLifeStyleRootComponentG() {
                 <p className={style.TextP4}>
                     {"Cette séance est faite pour vous si :"}
                     <br />
-                    ✔️ Celles qui veulent un souvenir sincère et naturel de leur grossesse.
-                    ✔️ Celles qui souhaitent un moment pour elles, pour se reconnecter à leur corps.
-                    ✔️ Celles qui veulent un souvenir puissant de leur grossesse.
+                    ✔️ Celles qui veulent un souvenir sincère et naturel de leur grossesse. <br />
+                    ✔️ Celles qui souhaitent un moment pour elles, pour se reconnecter à leur corps. <br />
+                    ✔️ Celles qui veulent un souvenir puissant de leur grossesse. <br />
                     ✔️ Pour se sentir belle et rayonner avant l’arrivée de bébé.
                 </p>
 
