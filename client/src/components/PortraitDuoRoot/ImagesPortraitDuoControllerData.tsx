@@ -5,22 +5,22 @@ const ImagesPortraitDuoControllerData: ImagesControllerDataType[] = [
     /* {ImagesPortraitDuoControllerData[0].src} */
     {
         src: "",
-        alt: "Portrait couple jeune studio",
+        alt: "",
     },
     /* {ImagesPortraitDuoControllerData[1].src} */
     {
         src: "",
-        alt: "Portrait couple studio bis",
+        alt: "",
     },
     /* {ImagesPortraitDuoControllerData[2].src} */
     {
         src: "",
-        alt: "Portrait tandem extérieur",
+        alt: "",
     },
     /* {ImagesPortraitDuoControllerData[3].src} */
     {
         src: "",
-        alt: "Portrait couple Montpellier",
+        alt: "",
     },
 
 
@@ -29,22 +29,22 @@ const ImagesPortraitDuoControllerData: ImagesControllerDataType[] = [
     /* {ImagesPortraitDuoControllerData[4].src} */
     {
         src: "",
-        alt: "Couple studio détente",
+        alt: "",
     },
     /* {ImagesPortraitDuoControllerData[5].src} */
     {
         src: "",
-        alt: "Duo flash studio domicile",
+        alt: "",
     },
     /* {ImagesPortraitDuoControllerData[6].src} */
     {
         src: "",
-        alt: "Portrait duo extérieur",
+        alt: "",
     },
     /* {ImagesPortraitDuoControllerData[7].src} */
     {
         src: "",
-        alt: "Portrait couple studio domicile",
+        alt: "",
     },
 ];
 
