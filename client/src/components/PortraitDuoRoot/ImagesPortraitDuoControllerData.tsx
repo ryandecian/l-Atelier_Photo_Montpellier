@@ -1,36 +1,34 @@
 import ImagesControllerDataType from "../../types/ImagesControllerData.type";
 
-import Image1 from "../../assets/images/ImagePortraitDuo/portrait-couple-jeune-studio.jpg";
-import Image2 from "../../assets/images/ImagePortraitDuo/portrait-couple-studio-bis.jpg";
-import Image3 from "../../assets/images/ImagePortraitDuo/portrait-tandem-exterieur.jpg";
-import Image4 from "../../assets/images/ImagePortraitDuo/portrait-couple-montpellier.jpg";
-
-import Image5 from "../../assets/images/ImagePortraitDuo/couple-studio-detente.jpg";
-import Image6 from "../../assets/images/ImagePortraitDuo/duo-flash-studio-domicile.jpg";
-import Image7 from "../../assets/images/ImagePortraitDuo/portrait-duo-exterieur.jpg";
-import Image8 from "../../assets/images/ImagePortraitDuo/portrait-couple-studio-domicile.jpg";
+/**
+ * Compteur mot clés : 
+ * 
+ * photographe-professionnel : 3/4
+ * photo-professionnel : 3/2
+ * photographie-professionnelle : 2/2
+ */
 
 const ImagesPortraitDuoControllerData: ImagesControllerDataType[] = [
     /* Tableau 1 : PortraitDuoComponentA */
     /* {ImagesPortraitDuoControllerData[0].src} */
     {
-        src: Image1,
-        alt: "Portrait couple jeune studio",
+        src: "/images/image-portrait-duo-couple/lapm-photographe-professionnel-portrait-duo-jeune-couple-studio-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait duo - jeune couple - studio - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitDuoControllerData[1].src} */
     {
-        src: Image2,
-        alt: "Portrait couple studio bis",
+        src: "/images/image-portrait-duo-couple/lapm-photographie-professionnel-portrait-duo-couple-studio-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographie professionnel - portrait duo - couple - studio - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitDuoControllerData[2].src} */
     {
-        src: Image3,
-        alt: "Portrait tandem extérieur",
+        src: "/images/image-portrait-duo-couple/lapm-photo-professionnel-portrait-duo-tandem-exterieur-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo professionnel - portrait duo - tandem - extérieur - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitDuoControllerData[3].src} */
     {
-        src: Image4,
-        alt: "Portrait couple Montpellier",
+        src: "/images/image-portrait-duo-couple/lapm-photo-professionnel-portrait-duo-couple-montpellier-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo professionnel - portrait duo - couple - Montpellier - L'Atelier Photo Montpellier",
     },
 
 
@@ -38,95 +36,23 @@ const ImagesPortraitDuoControllerData: ImagesControllerDataType[] = [
     /* Tableau 2 : PortraitDuoComponentB */
     /* {ImagesPortraitDuoControllerData[4].src} */
     {
-        src: Image5,
-        alt: "Couple studio détente",
+        src: "/images/image-portrait-duo-couple/lapm-photo-professionnel-portrait-duo-flash-studio-detente-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo professionnel - portrait duo - flash studio - détente - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitDuoControllerData[5].src} */
     {
-        src: Image6,
-        alt: "Duo flash studio domicile",
+        src: "/images/image-portrait-duo-couple/lapm-photographe-professionnel-portrait-duo-flash-studio-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait duo - flash studio - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitDuoControllerData[6].src} */
     {
-        src: Image7,
-        alt: "Portrait duo extérieur",
+        src: "/images/image-portrait-duo-couple/lapm-photographe-professionnelle-portrait-duo-exterieur-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnelle - portrait duo - extérieur - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitDuoControllerData[7].src} */
     {
-        src: Image8,
-        alt: "Portrait couple studio domicile",
-    },
-
-
-
-    /* Tableau 3 : */
-    /* {ImagesPortraitDuoControllerData[8].src} */
-    {
-        src: "",
-        alt: "",
-    },
-    /* {ImagesPortraitDuoControllerData[9].src} */
-    {
-        src: "",
-        alt: "",
-    },
-    /* {ImagesPortraitDuoControllerData[10].src} */
-    {
-        src: "",
-        alt: "",
-    },
-    /* {ImagesPortraitDuoControllerData[11].src} */
-    {
-        src: "",
-        alt: "",
-    },
-
-
-
-    /* Tableau 4 : */
-    /* {ImagesPortraitDuoControllerData[12].src} */
-    {
-        src: "",
-        alt: "",
-    },
-    /* {ImagesPortraitDuoControllerData[13].src} */
-    {
-        src: "",
-        alt: "",
-    },
-    /* {ImagesPortraitDuoControllerData[14].src} */
-    {
-        src: "",
-        alt: "",
-    },
-    /* {ImagesPortraitDuoControllerData[15].src} */
-    {
-        src: "",
-        alt: "",
-    },
-
-
-
-    /* Tableau 5 : */
-    /* {ImagesPortraitDuoControllerData[16].src} */
-    {
-        src: "",
-        alt: "",
-    },
-    /* {ImagesPortraitDuoControllerData[17].src} */
-    {
-        src: "",
-        alt: "",
-    },
-    /* {ImagesPortraitDuoControllerData[18].src} */
-    {
-        src: "",
-        alt: "",
-    },
-    /* {ImagesPortraitDuoControllerData[19].src} */
-    {
-        src: "",
-        alt: "",
+        src: "/images/image-portrait-duo-couple/lapm-photographie-professionnelle-portrait-duo-studio-couple-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographie professionnelle - portrait duo - studio - couple - L'Atelier Photo Montpellier",
     },
 ];
 
