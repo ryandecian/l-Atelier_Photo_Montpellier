@@ -1,31 +1,34 @@
 import ImagesControllerDataType from "../../types/ImagesControllerData.type";
 
-import Image1 from "../../assets/images/ImagePortraitGrossesse/emmy-cinq-jours.jpg";
-import Image2 from "../../assets/images/ImagePortraitGrossesse/portrait-9-mois-domicile.jpg";
-import Image3 from "../../assets/images/ImagePortraitGrossesse/parents-bebe.jpeg";
-import Image4 from "../../assets/images/ImagePortraitGrossesse/Premier-jour-portrait.jpg";
+/**
+ * Compteur mot clés : 
+ * 
+ * photographe-professionnel : 5/4
+ * photo-professionnel : 0/2
+ * photographie-professionnelle : 0/2
+ */
 
 const ImagesPortraitGrossesseControllerData: ImagesControllerDataType[] = [
     /* Tableau 1 : PortraitGrossesseComponentA */
     /* {ImagesPortraitGrossesseControllerData[0].src} */
     {
-        src: Image1,
-        alt: "Emmy, 5 jours",
+        src: "/images/image-portrait-grossesse/lapm-photographe-professionnel-portrait-premiers-cris-emmy-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait grossesse - premiers cris Emmy - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitGrossesseControllerData[1].src} */
     {
-        src: Image2,
-        alt: "Portrait 9 mois domicile",
+        src: "/images/image-portrait-grossesse/lapm-photographe-professionnel-portrait-grossesse-neuf-mois-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait grossesse - neuf mois - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitGrossesseControllerData[2].src} */
     {
-        src: Image3,
-        alt: "Parents et bébé",
+        src: "/images/image-portrait-grossesse/lapm-photographe-professionnel-portrait-nouveaux-nes-famille-l-atelier-photo-montpellier.jpeg",
+        alt: "LAPM - photographe professionnel - portrait grossesse - nouveaux nés - famille - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitGrossesseControllerData[3].src} */
     {
-        src: Image4,
-        alt: "Premier jour, portrait",
+        src: "/images/image-portrait-grossesse/lapm-photographe-professionnelle-portrait-premieres-images-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnelle - portrait grossesse - premières images - L'Atelier Photo Montpellier",
     },
 
 
@@ -33,94 +36,22 @@ const ImagesPortraitGrossesseControllerData: ImagesControllerDataType[] = [
     /* Tableau 2 : PortraitGrossesseComponentB */
     /* {ImagesPortraitGrossesseControllerData[4].src} */
     {
-        src: "",
-        alt: "",
+        src: "/images/image-portrait-grossesse/lapm-photographe-professionnel-portrait-nouveaux-nes-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait grossesse - nouveaux nés - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitGrossesseControllerData[5].src} */
     {
-        src: "",
+        src: "/images/image-portrait-grossesse/",
         alt: "",
     },
     /* {ImagesPortraitGrossesseControllerData[6].src} */
     {
-        src: "",
+        src: "/images/image-portrait-grossesse/",
         alt: "",
     },
     /* {ImagesPortraitGrossesseControllerData[7].src} */
     {
-        src: "",
-        alt: "",
-    },
-
-
-
-    /* Tableau 3 : */
-    /* {ImagesPortraitGrossesseControllerData[8].src} */
-    {
-        src: "",
-        alt: "",
-    },
-    /* {ImagesPortraitGrossesseControllerData[9].src} */
-    {
-        src: "",
-        alt: "",
-    },
-    /* {ImagesPortraitGrossesseControllerData[10].src} */
-    {
-        src: "",
-        alt: "",
-    },
-    /* {ImagesPortraitGrossesseControllerData[11].src} */
-    {
-        src: "",
-        alt: "",
-    },
-
-
-
-    /* Tableau 4 : */
-    /* {ImagesPortraitGrossesseControllerData[12].src} */
-    {
-        src: "",
-        alt: "",
-    },
-    /* {ImagesPortraitGrossesseControllerData[13].src} */
-    {
-        src: "",
-        alt: "",
-    },
-    /* {ImagesPortraitGrossesseControllerData[14].src} */
-    {
-        src: "",
-        alt: "",
-    },
-    /* {ImagesPortraitGrossesseControllerData[15].src} */
-    {
-        src: "",
-        alt: "",
-    },
-
-
-
-    /* Tableau 5 : */
-    /* {ImagesPortraitGrossesseControllerData[16].src} */
-    {
-        src: "",
-        alt: "",
-    },
-    /* {ImagesPortraitGrossesseControllerData[17].src} */
-    {
-        src: "",
-        alt: "",
-    },
-    /* {ImagesPortraitGrossesseControllerData[18].src} */
-    {
-        src: "",
-        alt: "",
-    },
-    /* {ImagesPortraitGrossesseControllerData[19].src} */
-    {
-        src: "",
+        src: "/images/image-portrait-grossesse/",
         alt: "",
     },
 ];
