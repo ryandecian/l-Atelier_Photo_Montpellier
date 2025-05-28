@@ -1,5 +1,4 @@
 import style from "../../../StyleRootComponent.module.css";
-import { Check } from "lucide-react";
 import externalLinks from "../../../../constants/externalLinks";
 
 function PortraitLifeStyleRootComponentE() {
@@ -24,6 +23,7 @@ function PortraitLifeStyleRootComponentE() {
                         {"“Tu te souviens de ce jour-là ?”."}
                     </span> 
                 </p>
+
                 <p className={style.TextP4}>
                     C’est exactement ce que je veux capturer : des souvenirs qui vivent. Pas des images figées, mais des 
                     éclats de rire, des bras qui s’attrapent, des regards complices. Une vraie séance de famille, 
@@ -38,22 +38,15 @@ function PortraitLifeStyleRootComponentE() {
                         {"Pour qui ?"}
                     </span> 
                 </p>
+
                 <p className={style.TextP4}>
                     {"Cette séance est faite pour vous si :"}
                     <br />
-                    <span className={style.SpanLucide}>
-                        <Check className={style.CheckLucide} /> &nbsp;
-                        Vous voulez des images qui ne dorment pas sur un disque dur, mais s’impriment, s’accrochent, se partagent.
-                    </span>
-                    <span className={style.SpanLucide}>
-                        <Check className={style.CheckLucide} /> &nbsp;
-                        Vous cherchez des souvenirs sincères, des photos pleines de vie à glisser dans un album familial.
-                    </span>
-                    <span className={style.SpanLucide}>
-                        <Check className={style.CheckLucide} /> &nbsp;
-                        Vous voulez que, dans 10 ans, ces images racontent encore votre histoire.
-                    </span>
+                    ✔️ Vous voulez des images qui ne dorment pas sur un disque dur, mais s’impriment, s’accrochent, se partagent.
+                    ✔️ Vous cherchez des souvenirs sincères, des photos pleines de vie à glisser dans un album familial.
+                    ✔️ Vous voulez que, dans 10 ans, ces images racontent encore votre histoire.
                 </p>
+
                 <p className={style.TextP4}>
                     <span className={style.SpanBold}>
                         {"📩 Et si on créait ensemble ces souvenirs ?"}
