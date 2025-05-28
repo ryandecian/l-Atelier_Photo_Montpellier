@@ -4,22 +4,22 @@ const ImagesPortraitDuoControllerData: ImagesControllerDataType[] = [
     /* Tableau 1 : PortraitDuoComponentA */
     /* {ImagesPortraitDuoControllerData[0].src} */
     {
-        src: "",
+        src: "/images/image-duo-couple/",
         alt: "",
     },
     /* {ImagesPortraitDuoControllerData[1].src} */
     {
-        src: "",
+        src: "/images/image-duo-couple/",
         alt: "",
     },
     /* {ImagesPortraitDuoControllerData[2].src} */
     {
-        src: "",
+        src: "/images/image-duo-couple/",
         alt: "",
     },
     /* {ImagesPortraitDuoControllerData[3].src} */
     {
-        src: "",
+        src: "/images/image-duo-couple/",
         alt: "",
     },
 
@@ -28,22 +28,22 @@ const ImagesPortraitDuoControllerData: ImagesControllerDataType[] = [
     /* Tableau 2 : PortraitDuoComponentB */
     /* {ImagesPortraitDuoControllerData[4].src} */
     {
-        src: "",
+        src: "/images/image-duo-couple/",
         alt: "",
     },
     /* {ImagesPortraitDuoControllerData[5].src} */
     {
-        src: "",
+        src: "/images/image-duo-couple/",
         alt: "",
     },
     /* {ImagesPortraitDuoControllerData[6].src} */
     {
-        src: "",
+        src: "/images/image-duo-couple/",
         alt: "",
     },
     /* {ImagesPortraitDuoControllerData[7].src} */
     {
-        src: "",
+        src: "/images/image-duo-couple/",
         alt: "",
     },
 ];
