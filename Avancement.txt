@@ -4,15 +4,6 @@ Ce qu'il manque :
   - Page contact Helmet et Service
 
 ------------------------------------------------------------------------------
-Ajouter les commentaires pour chaque page, controller Images et remplacement des images du site entier !
-
-------------------------------------------------------------------------------
-Bug détecté dans la page LifeStyle, les coche violet avec react lucide pète lorsque pas assez de place, notamment en version mobile
-Solution : Retirer react Lucide et utiliser cette emoji : ✔️
-Penser a retirer le style de stylePage.module.css dans components
-Supprimer la dépendance React-Lucide
-
-------------------------------------------------------------------------------
 
 Il faut refactoriser SEO les pages :
   - NavTargetHome a faire
