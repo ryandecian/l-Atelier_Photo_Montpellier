@@ -61,10 +61,10 @@ function PortraitLifeStyleRootComponentD() {
                 <p className={style.TextP4}>
                     {"Cette séance est faite pour vous si :"}
                     <br />
-                    ✔️ Vous voulez des photos qui vous ressemblent, sans artifices ni mode d’emploi.
+                    ✔️ Vous voulez des photos qui vous ressemblent, sans artifices ni mode d’emploi. <br />
                     ✔️ Vous cherchez un souvenir authentique de votre relation, que ce soit en couple, entre amis ou en duo 
-                        parent/enfant
-                    ✔️ Vous avez envie d’un prétexte pour ralentir un peu, et juste profiter du moment.
+                        parent/enfant <br />
+                    ✔️ Vous avez envie d’un prétexte pour ralentir un peu, et juste profiter du moment. <br />
                     ✔️ C’est votre histoire, et je la photographie avec mon cœur.
                 </p>
             </article>
