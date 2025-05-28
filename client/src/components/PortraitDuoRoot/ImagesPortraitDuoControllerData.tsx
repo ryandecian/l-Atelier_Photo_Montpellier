@@ -28,22 +28,22 @@ const ImagesPortraitDuoControllerData: ImagesControllerDataType[] = [
     /* Tableau 2 : PortraitDuoComponentB */
     /* {ImagesPortraitDuoControllerData[4].src} */
     {
-        src: "/images/image-portrait-duo-couple/",
+        src: "/images/image-portrait-duo-couple/lapm-photo-professionnel-portrait-duo-flash-studio-detente-l-atelier-photo-montpellier.jpg",
         alt: "",
     },
     /* {ImagesPortraitDuoControllerData[5].src} */
     {
-        src: "/images/image-duo-couple/",
+        src: "/images/image-portrait-duo-couple/lapm-photographe-professionnel-portrait-duo-flash-studio-l-atelier-photo-montpellier.jpg",
         alt: "",
     },
     /* {ImagesPortraitDuoControllerData[6].src} */
     {
-        src: "/images/image-portrait-duo-couple/",
+        src: "/images/image-portrait-duo-couple/lapm-photographe-professionnelle-portrait-duo-exterieur-l-atelier-photo-montpellier.jpg",
         alt: "",
     },
     /* {ImagesPortraitDuoControllerData[7].src} */
     {
-        src: "/images/image-portrait-duo-couple/",
+        src: "/images/image-portrait-duo-couple/lapm-photographie-professionnelle-portrait-duo-studio-couple-l-atelier-photo-montpellier.jpg",
         alt: "",
     },
 ];
