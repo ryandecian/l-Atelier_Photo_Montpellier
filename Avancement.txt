@@ -13,8 +13,7 @@ Penser a retirer le style de stylePage.module.css dans components
 
 ------------------------------------------------------------------------------
 Mise a jour des import d'image : ATTENTION, Revoir tout les nom d'images, Anne a fais n'importe quoi
- - Solo : En cours
- - Duo
+ - Duo : En cours
  - Grossesse
 ------------------------------------------------------------------------------
 
