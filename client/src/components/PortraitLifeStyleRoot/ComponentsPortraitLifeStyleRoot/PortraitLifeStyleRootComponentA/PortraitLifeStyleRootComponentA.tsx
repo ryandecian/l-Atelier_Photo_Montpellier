@@ -20,6 +20,7 @@ function PortraitLifeStyleRootComponentA() {
                     lumières douces et aux instants volés. Je mêle spontanéité et direction artistique, avec une approche 
                     où le naturel rencontre une lumière travaillée, même au flash en extérieur.
                 </p>
+                
                 <p className={style.TextP4}>
                     Contrairement aux portraits figés et ultra-posés, je cherche à {" "}
                     <span className={style.SpanBold}>
@@ -32,9 +33,11 @@ function PortraitLifeStyleRootComponentA() {
                     {" "} il sculpte le sujet, équilibre les contrastes, apporte du relief, même en pleine nature ou en 
                     milieu urbain. 
                 </p>
+                
                 <p className={style.TextP4}>
                     En une phrase : je cherche un équilibre entre authenticité et esthétisme ! Envie de tenter l’expérience ? 
                 </p>
+                
                 <p className={style.TextP4}>
                     <span className={style.SpanBold}>
                         {"Choisissez le format qui vous convient le mieux :"}
