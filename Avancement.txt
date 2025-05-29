@@ -9,7 +9,7 @@ Il faut refactoriser SEO les pages :
   - NavTargetHome a faire
   - Footer
   - Portfolio
-  - Famille
+  - Famille : En cours
   - Hobbie
   - Qui suis-je
 
