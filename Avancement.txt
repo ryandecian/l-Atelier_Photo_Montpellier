@@ -9,9 +9,15 @@ Il faut refactoriser SEO les pages :
   - NavTargetHome a faire
   - Footer
   - Portfolio
-  - Famille : En cours
-  - Hobbie
+  - Hobbie : En cours
   - Qui suis-je
+
+A revoir : 
+  - Corporate
+  - Mariage
+  - Solo
+  - Duo
+  - Grossesse
 
 ------------------------------------------------------------------------------
 
