@@ -1,27 +1,27 @@
 import DataSEORoots from "../DataSEORoot.seo";
 import DataSEORootType from "../../types/DataSEORoot.type";
 
-import DataSEO_PortraitDuos from "./DataSEO_PortraitFamille.seo";
+import DataSEO_PortraitFamilles from "./DataSEO_PortraitFamille.seo";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
 
-import AvisClientPortraitDuoControllerData from "../../components/PortraitDuoRoot/AvisClientPortraitDuoControllerData";
+import AvisClientPortraitFamilleControllerData from "../../components/PortraitFamilleRoot/AvisClientPortraitFamilleControllerData";
 import generateAverageRatingSEO from "../../utils/generateAverageRatingSEO.utils";
 import generateReviewArraySEO from "../../utils/generateReviewArraySEO.utils";
 
 
-function JSON_LD_Service_PortraitDuo_Schema_SEO() : string {
+function JSON_LD_Service_PortraitFamille_Schema_SEO() : string {
     const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
-    const DataSEO_PortraitDuo: DataSEOTargetOneType = DataSEO_PortraitDuos(); /* Récupération des données SEO de la page */
+    const DataSEO_PortraitFamille: DataSEOTargetOneType = DataSEO_PortraitFamilles(); /* Récupération des données SEO de la page */
 
     const JSON_LD = JSON.stringify({
         "@context": DataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
         "@type": DataSEORoot["@type"].Service, /* (Obligatoire) Type de la donnée */
-        "@id": DataSEO_PortraitDuo.id_Service,
-        "serviceType": DataSEO_PortraitDuo.serviceType,
+        "@id": DataSEO_PortraitFamille.id_Service,
+        "serviceType": DataSEO_PortraitFamille.serviceType,
         "name": DataSEORoot.name, /* (Obligatoire) Nom de l'entreprise */
-        "image": DataSEO_PortraitDuo.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
-        "description": DataSEO_PortraitDuo.description,
-        "url": DataSEO_PortraitDuo.url,
+        "image": DataSEO_PortraitFamille.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
+        "description": DataSEO_PortraitFamille.description,
+        "url": DataSEO_PortraitFamille.url,
         "termsOfService": DataSEORoot.termsOfService,
         "provider": {
             "@id": DataSEORoot.id_LocalBusiness /* (Obligatoire) Référence à l'ID de l'Entreprise */
@@ -40,10 +40,10 @@ function JSON_LD_Service_PortraitDuo_Schema_SEO() : string {
         // ⚠️ A décommenter lors du passage de site vitrine en e-commerce
         // "availableChannel": {
         // "@type": "ServiceChannel",
-        // "serviceUrl": DataSEO_PortraitDuo.url
+        // "serviceUrl": DataSEO_PortraitFamille.url
         // },
-        "aggregateRating": generateAverageRatingSEO(AvisClientPortraitDuoControllerData),
-        "review": generateReviewArraySEO(AvisClientPortraitDuoControllerData)
+        "aggregateRating": generateAverageRatingSEO(AvisClientPortraitFamilleControllerData),
+        "review": generateReviewArraySEO(AvisClientPortraitFamilleControllerData)
     });
 
     return (
@@ -51,4 +51,4 @@ function JSON_LD_Service_PortraitDuo_Schema_SEO() : string {
     )
 }
 
-export default JSON_LD_Service_PortraitDuo_Schema_SEO;
+export default JSON_LD_Service_PortraitFamille_Schema_SEO;

@@ -7,7 +7,7 @@ function DataSEO_PortraitFamille(): DataSEOTargetOneType {
         title: "Portrait Famille - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
         description: "Portrait famille signé L'Atelier Photo Montpellier : une photo aujourd’hui, un héritage de demain. Offrez-vous un moment à partager en famille.",
-        url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[17].path}`, /*URL de la page*/
+        url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[16].path}`, /*URL de la page*/
         position: 3, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
         name: "Portrait Famille", /* Clé pour Breadcrumb qui est = à title sans le nom de l'entreprise */
         twitterUrlImg: "", /* Lien URL de l'image */
@@ -39,7 +39,7 @@ function DataSEO_PortraitFamille(): DataSEOTargetOneType {
         /* Data Helmet et JSON-LD */
         img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-famille/google/lapm-photo-portrait-famille-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
         img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-famille/helmet/lapm-photo-portrait-famille-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[17].path}#service-portrait-famille`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[16].path}#service-portrait-famille`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
         serviceType: "Séance photo portrait famille, pour immortaliser les liens intergénérationnels à travers des images naturelles et chaleureuses, en studio ou en extérieur.",
     };
 

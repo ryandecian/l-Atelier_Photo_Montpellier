@@ -1,12 +1,12 @@
 import DataSEORoots from "../DataSEORoot.seo";
 import DataSEORootType from "../../types/DataSEORoot.type";
 
-import DataSEO_PortraitDuos from "./DataSEO_PortraitFamille.seo";
+import DataSEO_PortraitFamilles from "./DataSEO_PortraitFamille.seo";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
 
-function JSON_LD_Breadcrumb_PortraitDuo_Schema_SEO() : string {
+function JSON_LD_Breadcrumb_PortraitFamille_Schema_SEO() : string {
     const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
-    const DataSEO_PortraitDuo: DataSEOTargetOneType = DataSEO_PortraitDuos(); /* Récupération des données SEO de la page */
+    const DataSEO_PortraitFamille: DataSEOTargetOneType = DataSEO_PortraitFamilles(); /* Récupération des données SEO de la page */
 
     const JSON_LD = JSON.stringify({
         "@context": DataSEORoot["@context"],
@@ -14,9 +14,9 @@ function JSON_LD_Breadcrumb_PortraitDuo_Schema_SEO() : string {
         "itemListElement": [
             {
                 "@type": "ListItem",
-                "position": DataSEO_PortraitDuo.position,
-                "name": DataSEO_PortraitDuo.title,
-                "item": DataSEO_PortraitDuo.url,
+                "position": DataSEO_PortraitFamille.position,
+                "name": DataSEO_PortraitFamille.title,
+                "item": DataSEO_PortraitFamille.url,
             },
         ],
     });
@@ -26,4 +26,4 @@ function JSON_LD_Breadcrumb_PortraitDuo_Schema_SEO() : string {
     )
 }
 
-export default JSON_LD_Breadcrumb_PortraitDuo_Schema_SEO;
+export default JSON_LD_Breadcrumb_PortraitFamille_Schema_SEO;
