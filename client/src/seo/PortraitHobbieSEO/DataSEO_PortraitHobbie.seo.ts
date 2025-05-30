@@ -39,7 +39,7 @@ function DataSEO_PortraitHobbie(): DataSEOTargetOneType {
         /* Data Helmet et JSON-LD */
         img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-hobbie/google/photo-professionnel-portrait-hobbie-montpellier.jpg`, /*Lien URL public de l'image*/
         img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-hobbie/helmet/photo-professionnel-portrait-hobbie-montpellier.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[19].path}#service-portrait-Hobbie`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[19].path}#service-portrait-hobbie`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
         serviceType: "Séance photo portrait hobbie, pour capturer votre passion dans un style naturel et expressif, en studio ou dans un lieu qui vous ressemble.",
     };
 
