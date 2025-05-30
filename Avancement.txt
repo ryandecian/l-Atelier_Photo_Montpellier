@@ -9,11 +9,10 @@ Il faut refactoriser SEO les pages :
   - NavTargetHome a faire
   - Footer
   - Portfolio
-  - Hobbie : En cours
   - Qui suis-je
 
 A revoir : 
-  - Corporate
+  - Corporate : En cours
   - Mariage
   - Solo
   - Duo
