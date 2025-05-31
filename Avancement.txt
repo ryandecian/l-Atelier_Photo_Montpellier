@@ -13,9 +13,6 @@ Il faut refactoriser SEO les pages :
   - Portfolio
   - Qui suis-je
 
-A revoir : 
-  - Grossesse
-
 ------------------------------------------------------------------------------
 
 Il faut éditer les pages : 
