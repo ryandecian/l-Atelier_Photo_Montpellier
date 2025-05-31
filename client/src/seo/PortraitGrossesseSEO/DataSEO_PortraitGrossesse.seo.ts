@@ -7,7 +7,7 @@ function DataSEO_PortraitGrossesse(): DataSEOTargetOneType {
         title: "Portrait Grossesse et nouveau né - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
         description: "Avec l’Atelier Photo Montpellier, Anne SAUNIER capture la magie de la grossesse et les premiers instants de vie à travers des portraits doux et authentiques.",
-        url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[17].path}`, /*URL de la page*/
+        url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[18].path}`, /*URL de la page*/
         position: 3, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
         name: "Portrait Grossesse", /* Clé pour Breadcrumb qui est = à title sans le nom de l'entreprise */
         twitterUrlImg: "", /* Lien URL de l'image */
@@ -37,9 +37,9 @@ function DataSEO_PortraitGrossesse(): DataSEOTargetOneType {
         },
     
         /* Data Helmet et JSON-LD */
-        img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-grossesse/google/photo-professionnel-portrait-grossesse-montpellier.jpg`, /*Lien URL public de l'image*/
-        img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-grossesse/helmet/photo-professionnel-portrait-grossesse-montpellier.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[17].path}#service-portrait-grossesse`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
+        img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-grossesse/google/lapm-photo-portrait-grossesse-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
+        img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-grossesse/helmet/lapm-photo-portrait-grossesse-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[18].path}#service-portrait-grossesse`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
         serviceType: "Photographie grossesse et nouveau-né",
     };
 

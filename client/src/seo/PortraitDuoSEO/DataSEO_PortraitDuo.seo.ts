@@ -7,7 +7,7 @@ function DataSEO_PortraitDuo(): DataSEOTargetOneType {
         title: "Portrait Duo - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
         description: "Un lien unique, deux âmes en harmonie. Laissez parler vos émotions à travers un portrait duo ou couple plein de sincérité.",
-        url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[17].path}`, /*URL de la page*/
+        url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[15].path}`, /*URL de la page*/
         position: 3, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
         name: "Portrait Duo", /* Clé pour Breadcrumb qui est = à title sans le nom de l'entreprise */
         twitterUrlImg: "", /* Lien URL de l'image */
@@ -39,7 +39,7 @@ function DataSEO_PortraitDuo(): DataSEOTargetOneType {
         /* Data Helmet et JSON-LD */
         img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-duo/google/lapm-photo-portrait-duo-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
         img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-duo/helmet/lapm-photo-portrait-duo-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[17].path}#service-portrait-duo`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[15].path}#service-portrait-duo`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
         serviceType: "Séance photo professionnelle en duo, pour couples, amis ou proches, capturant les liens forts à travers des portraits expressifs et naturels.",
     };
 
