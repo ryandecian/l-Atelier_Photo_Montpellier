@@ -10,7 +10,7 @@ Attention, le sitemap.xml et le robot.txt sont configuré pour le Nas ! Il faudr
 Il faut refactoriser SEO les pages :
   - NavTargetHome a faire
   - Footer
-  - Portfolio
+  - Portfolio : En cours
   - Qui suis-je
 
 ------------------------------------------------------------------------------
