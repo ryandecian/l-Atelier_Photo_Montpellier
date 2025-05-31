@@ -16,7 +16,6 @@ Il faut refactoriser SEO les pages :
 A revoir : 
   - Mariage : En cours
   - Solo
-  - Duo
   - Grossesse
 
 ------------------------------------------------------------------------------
