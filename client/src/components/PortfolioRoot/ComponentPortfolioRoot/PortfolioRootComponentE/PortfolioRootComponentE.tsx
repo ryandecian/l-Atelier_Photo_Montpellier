@@ -1,9 +1,9 @@
 import style from "../../../StyleRootComponent.module.css";
 // import GeneratorAlbumPhoto from "../../../GeneratorAlbumPhoto/GeneratorAlbumPhoto";
-// import ImagesPortraitPortfolioControllerData from "../../ImagesPortfolioControllerData";
+// import AlbumPortfolio from "../../AlbumPortfolio";
 
 function PortfolioRootComponentE() {
-    // const Album = ImagesPortraitPortfolioControllerData.Album_Test;
+    // const Album = AlbumPortfolio.Album_Test;
     return (
         <article className={`PortfolioRootComponentE ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
