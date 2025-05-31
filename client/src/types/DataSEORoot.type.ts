@@ -3,11 +3,12 @@ type DataSEORootType = {
     twitterCompte: string;
     "@context": string;
     "@type": {
-      Local: string;
-      BreadcrumbList: string;
-      Service: string;
-      ContactPage: string;
-      HomePage: string;
+        Local: string;
+        BreadcrumbList: string;
+        Service: string;
+        ContactPage: string;
+        HomePage: string;
+        CollectionPage: string;
     };
     id_LocalBusiness: string;
     description: string;

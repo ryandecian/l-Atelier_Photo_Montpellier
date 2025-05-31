@@ -4,15 +4,17 @@ import DataSEORootType from "../../types/DataSEORoot.type";
 import DataSEO_Portfolios from "./DataSEO_Portfolio.seo";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
 
-function JSON_LD_Service_Portfolio_Schema_SEO() : string {
+import generatePortfolioHasPartSEO from "./utils/generatePortfolioHashPartSEO.utils";
+
+function JSON_LD_Collection_Portfolio_Schema_SEO() : string {
     const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
     const DataSEO_Portfolio: DataSEOTargetOneType = DataSEO_Portfolios(); /* Récupération des données SEO de la page */
 
     const JSON_LD = JSON.stringify({
         "@context": DataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
-        "@type": DataSEORoot["@type"].Service, /* (Obligatoire) Type de la donnée */
+        "@type": DataSEORoot["@type"].CollectionPage, /* (Obligatoire) Type de la donnée */
         "@id": DataSEO_Portfolio.id_Service,
-        "serviceType": DataSEO_Portfolio.serviceType,
+        "about": DataSEO_Portfolio.serviceType,
         "name": DataSEORoot.name, /* (Obligatoire) Nom de l'entreprise */
         "image": DataSEO_Portfolio.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
         "description": DataSEO_Portfolio.description,
@@ -27,12 +29,7 @@ function JSON_LD_Service_Portfolio_Schema_SEO() : string {
             "height": 200
             },
         },
-        "areaServed": DataSEORoot.areaServed, /* Zone géographique desservie par le service */
-        // ⚠️ A décommenter lors du passage de site vitrine en e-commerce
-        // "availableChannel": {
-        // "@type": "ServiceChannel",
-        // "serviceUrl": DataSEO_Portfolio.url
-        // },
+        "hasPart": generatePortfolioHasPartSEO(), /* (Obligatoire) Liste des images du portfolio */
     });
 
     return (
@@ -40,4 +37,4 @@ function JSON_LD_Service_Portfolio_Schema_SEO() : string {
     )
 }
 
-export default JSON_LD_Service_Portfolio_Schema_SEO;
+export default JSON_LD_Collection_Portfolio_Schema_SEO;
