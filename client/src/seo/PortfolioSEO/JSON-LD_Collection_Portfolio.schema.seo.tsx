@@ -22,10 +22,6 @@ function JSON_LD_Service_PortraitDuo_Schema_SEO() : string {
         "image": DataSEO_PortraitDuo.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
         "description": DataSEO_PortraitDuo.description,
         "url": DataSEO_PortraitDuo.url,
-        "termsOfService": DataSEORoot.termsOfService,
-        "provider": {
-            "@id": DataSEORoot.id_LocalBusiness /* (Obligatoire) Référence à l'ID de l'Entreprise */
-        },
         "publisher": {
             "@type": "Organization",
             "name": DataSEORoot.name,
