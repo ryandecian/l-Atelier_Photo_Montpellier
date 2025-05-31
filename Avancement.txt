@@ -13,9 +13,6 @@ Il faut refactoriser SEO les pages :
   - Portfolio
   - Qui suis-je
 
-A revoir : 
-  - Grossesse
-
 ------------------------------------------------------------------------------
 
 Il faut éditer les pages : 
@@ -42,5 +39,6 @@ Liste des choses a faire Anne SAUNIER
  - Faire les avis clients pour chaques pages !!!!
  - Photos : 
    - Dans le dossier maitre LAPM/site internet/developpement site/famille : il y a 2 photos reprendre. Format !== de 1:1 et poids > à 200 ko
+   - 2 images pour helmet et google
    - Manque 2 photos dans Hobbie
    - Manque 4 photos dans Grossesse
