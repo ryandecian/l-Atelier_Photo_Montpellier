@@ -14,8 +14,7 @@ Il faut refactoriser SEO les pages :
   - Qui suis-je
 
 A revoir : 
-  - Corporate : En cours
-  - Mariage
+  - Mariage : En cours
   - Solo
   - Duo
   - Grossesse
