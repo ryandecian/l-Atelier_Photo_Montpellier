@@ -8,8 +8,8 @@ import DataSEORootType from "../../types/DataSEORoot.type";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
 
 import JSON_LD_LocalBusiness_Root_Schema_SEO from "../JSON-LD_LocalBusiness_Root.schema.seo";
-import JSON_LD_Service_PortraitDuo_Schema_SEO from "./JSON-LD_Service_PortraitDuo.schema.seo";
-import JSON_LD_Breadcrumb_PortraitDuo_Schema_SEO from "./JSON-LD_Breadcrumb_PortraitDuo.schema.seo";
+import JSON_LD_Service_PortraitDuo_Schema_SEO from "./JSON-LD_Collection_Portfolio.schema.seo";
+import JSON_LD_Breadcrumb_PortraitDuo_Schema_SEO from "./JSON-LD_Breadcrumb_Portfolio.schema.seo";
 
 
 function Helmet_PortraitDuo_SEO() {

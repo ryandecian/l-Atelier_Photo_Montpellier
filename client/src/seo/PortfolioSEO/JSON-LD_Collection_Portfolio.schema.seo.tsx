@@ -1,27 +1,24 @@
 import DataSEORoots from "../DataSEORoot.seo";
 import DataSEORootType from "../../types/DataSEORoot.type";
 
-import DataSEO_PortraitDuos from "./DataSEO_Portfolio.seo";
+import DataSEO_Portfolios from "./DataSEO_Portfolio.seo";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
 
-import AvisClientPortraitDuoControllerData from "../../components/PortraitDuoRoot/AvisClientPortraitDuoControllerData";
-import generateAverageRatingSEO from "../../utils/generateAverageRatingSEO.utils";
-import generateReviewArraySEO from "../../utils/generateReviewArraySEO.utils";
+import generatePortfolioHasPartSEO from "./utils/generatePortfolioHashPartSEO.utils";
 
-
-function JSON_LD_Service_PortraitDuo_Schema_SEO() : string {
+function JSON_LD_Collection_Portfolio_Schema_SEO() : string {
     const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
-    const DataSEO_PortraitDuo: DataSEOTargetOneType = DataSEO_PortraitDuos(); /* Récupération des données SEO de la page */
+    const DataSEO_Portfolio: DataSEOTargetOneType = DataSEO_Portfolios(); /* Récupération des données SEO de la page */
 
     const JSON_LD = JSON.stringify({
         "@context": DataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
-        "@type": DataSEORoot["@type"].Service, /* (Obligatoire) Type de la donnée */
-        "@id": DataSEO_PortraitDuo.id_Service,
-        "serviceType": DataSEO_PortraitDuo.serviceType,
+        "@type": DataSEORoot["@type"].CollectionPage, /* (Obligatoire) Type de la donnée */
+        "@id": DataSEO_Portfolio.id_Service,
+        "about": DataSEO_Portfolio.serviceType,
         "name": DataSEORoot.name, /* (Obligatoire) Nom de l'entreprise */
-        "image": DataSEO_PortraitDuo.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
-        "description": DataSEO_PortraitDuo.description,
-        "url": DataSEO_PortraitDuo.url,
+        "image": DataSEO_Portfolio.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
+        "description": DataSEO_Portfolio.description,
+        "url": DataSEO_Portfolio.url,
         "publisher": {
             "@type": "Organization",
             "name": DataSEORoot.name,
@@ -32,14 +29,7 @@ function JSON_LD_Service_PortraitDuo_Schema_SEO() : string {
             "height": 200
             },
         },
-        "areaServed": DataSEORoot.areaServed, /* Zone géographique desservie par le service */
-        // ⚠️ A décommenter lors du passage de site vitrine en e-commerce
-        // "availableChannel": {
-        // "@type": "ServiceChannel",
-        // "serviceUrl": DataSEO_PortraitDuo.url
-        // },
-        "aggregateRating": generateAverageRatingSEO(AvisClientPortraitDuoControllerData),
-        "review": generateReviewArraySEO(AvisClientPortraitDuoControllerData)
+        "hasPart": generatePortfolioHasPartSEO(), /* (Obligatoire) Liste des images du portfolio */
     });
 
     return (
@@ -47,4 +37,4 @@ function JSON_LD_Service_PortraitDuo_Schema_SEO() : string {
     )
 }
 
-export default JSON_LD_Service_PortraitDuo_Schema_SEO;
+export default JSON_LD_Collection_Portfolio_Schema_SEO;
