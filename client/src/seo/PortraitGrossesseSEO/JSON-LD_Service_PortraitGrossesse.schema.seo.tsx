@@ -18,7 +18,7 @@ function JSON_LD_Service_PortraitGrossesse_Schema_SEO() : string {
         "@type": DataSEORoot["@type"].Service, /* (Obligatoire) Type de la donnée */
         "@id": DataSEO_PortraitGrossesse.id_Service,
         "serviceType": DataSEO_PortraitGrossesse.serviceType,
-        "name": DataSEORoot.name, /* (Obligatoire) Nom de l'entreprise */
+        "name": DataSEO_PortraitGrossesse.name_Service, /* (Obligatoire) Nom du service */
         "image": DataSEO_PortraitGrossesse.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
         "description": DataSEO_PortraitGrossesse.description,
         "url": DataSEO_PortraitGrossesse.url,
