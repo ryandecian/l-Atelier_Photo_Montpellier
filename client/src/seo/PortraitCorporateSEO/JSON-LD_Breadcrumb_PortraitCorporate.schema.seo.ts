@@ -15,7 +15,7 @@ function JSON_LD_Breadcrumb_PortraitCorporate_Schema_SEO() : string {
             {
                 "@type": "ListItem",
                 "position": DataSEO_PortraitCorporate.position,
-                "name": DataSEO_PortraitCorporate.title,
+                "name": DataSEO_PortraitCorporate.name_Breadcrumb, /* Le libellé du lien dans le fil d’Ariane */
                 "item": DataSEO_PortraitCorporate.url,
             },
         ],
