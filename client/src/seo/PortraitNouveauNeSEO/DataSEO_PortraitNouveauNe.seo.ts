@@ -9,7 +9,8 @@ function DataSEO_PortraitNouveauNe(): DataSEOTargetOneType {
         description: "Un souffle de vie, un regard naissant. Anne SAUNIER révèle la tendresse des premiers jours à travers des portraits à chérir pour toujours.",
         url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[17].path}`, /*URL de la page*/
         position: 3, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
-        name: "Portrait Nouveau Né et grossesse", /* Clé pour Breadcrumb qui est = à title sans le nom de l'entreprise */
+        name_Breadcrumb: "Portrait Grossesse et nouveau né", /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Duo */
+        name_Service: "Portrait Grossesse et nouveau né - l'Atelier Photo Montpellier", /* Nom du service, utilisé dans le JSON-LD Service */
         twitterUrlImg: "", /* Lien URL de l'image */
         keywords: {
             1: "Anne SAUNIER", /* 1 mot clés */
