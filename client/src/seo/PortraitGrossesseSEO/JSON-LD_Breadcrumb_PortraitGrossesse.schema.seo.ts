@@ -15,7 +15,7 @@ function JSON_LD_Breadcrumb_PortraitGrossesse_Schema_SEO() : string {
             {
                 "@type": "ListItem",
                 "position": DataSEO_PortraitGrossesse.position,
-                "name": DataSEO_PortraitGrossesse.title,
+                "name": DataSEO_PortraitGrossesse.name_Breadcrumb, /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Grossesse */
                 "item": DataSEO_PortraitGrossesse.url,
             },
         ],
