@@ -18,7 +18,7 @@ function JSON_LD_Service_PortraitMariage_Schema_SEO() : string {
         "@type": DataSEORoot["@type"].Service, /* (Obligatoire) Type de la donnée */
         "@id": DataSEO_PortraitMariage.id_Service,
         "serviceType": DataSEO_PortraitMariage.serviceType,
-        "name": DataSEORoot.name, /* (Obligatoire) Nom de l'entreprise */
+        "name": DataSEO_PortraitMariage.name_Service, /* (Obligatoire) Nom du service */
         "image": DataSEO_PortraitMariage.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
         "description": DataSEO_PortraitMariage.description,
         "url": DataSEO_PortraitMariage.url,
