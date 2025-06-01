@@ -19,12 +19,12 @@ function DataSEO_Portfolio(): DataSEOTargetOneType {
             5: "LAPM", /* 5 mots clés */
             6: "Service", /* 6 mots clés */
             7: "Portfolio", /* 7 mots clés */
-            8: "", /* 8 mots clés */
-            9: "", /* 9 mots clés */
-            10: "", /* 10 mots clés */
-            11: "", /* 11 mots clés */
-            12: "", /* 12 mots clés */
-            13: "", /* 13 mots clés */
+            8: "Portrait Rue", /* 8 mots clés */
+            9: "Portrait Urbain", /* 9 mots clés */
+            10: "Portrait Paysage", /* 10 mots clés */
+            11: "Portrait Mariage", /* 11 mots clés */
+            12: "Portrait Corporate", /* 12 mots clés */
+            13: "Portrait LifeStyle", /* 13 mots clés */
             14: "", /* 14 mots clés */
             15: "", /* 15 mots clés */
         }, /* 10 a 15 mots max */
