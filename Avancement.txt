@@ -2,15 +2,11 @@ Ce qu'il manque :
 
 Attention, le sitemap.xml et le robot.txt sont configuré pour le Nas ! Il faudra les adapté pour la prod
 
-- Il manque les images 
-  - Page contact Helmet et Service
-
 ------------------------------------------------------------------------------
 
 Il faut refactoriser SEO les pages :
   - NavTargetHome a faire
   - Footer
-  - Portfolio : En cours
   - Qui suis-je
 
 ------------------------------------------------------------------------------
