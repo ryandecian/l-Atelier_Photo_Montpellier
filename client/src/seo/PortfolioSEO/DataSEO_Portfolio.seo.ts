@@ -11,6 +11,7 @@ function DataSEO_Portfolio(): DataSEOTargetOneType {
         position: 2, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
         name_Breadcrumb: "Portfolio", /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Duo */
         name_ImageGalery: "Portfolio et Galerie photo – L'Atelier Photo Montpellier", /* Nom de la galerie photo, utilisé dans le JSON-LD ImageGallery */
+        name_Collection: "Portfolio et Galerie photo – L'Atelier Photo Montpellier", /* Nom de la page de collection, utilisé dans le JSON-LD CollectionPage */
         twitterUrlImg: "", /* Lien URL de l'image */
         keywords: {
             1: "Anne SAUNIER", /* 1 mot clés */

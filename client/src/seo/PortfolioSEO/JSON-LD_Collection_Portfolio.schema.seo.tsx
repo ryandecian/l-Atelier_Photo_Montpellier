@@ -15,7 +15,7 @@ function JSON_LD_Collection_Portfolio_Schema_SEO() : string {
         "@type": DataSEORoot["@type"].CollectionPage, /* (Obligatoire) Type de la donnée */
         "@id": DataSEO_Portfolio.id_Service,
         "about": DataSEO_Portfolio.serviceType,
-        "name": DataSEO_Portfolio.title, /* (Obligatoire) Correspond au H1 ou title de la page */
+        "name": DataSEO_Portfolio.name_Collection, /* (Obligatoire) Correspond au H1 ou title de la page */
         "image": DataSEO_Portfolio.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
         "description": DataSEO_Portfolio.description,
         "url": DataSEO_Portfolio.url,
