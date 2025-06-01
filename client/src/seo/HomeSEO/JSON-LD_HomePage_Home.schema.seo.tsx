@@ -21,7 +21,7 @@ function JSON_LD_HomePage_Home_Schema_SEO() : string {
         "url": DataSEO_Home.url, /* (Obligatoire) URL de la page */
         "about": {
             "@type": DataSEORoot["@type"].Local,
-            "name": DataSEORoot.name,
+            "name": DataSEO_Home.name_HomePage, /* (Obligatoire) Nom de la page d'accueil */
         },
         "image": DataSEO_Home.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
         "description": DataSEO_Home.description,
@@ -38,11 +38,6 @@ function JSON_LD_HomePage_Home_Schema_SEO() : string {
             "height": 200
             },
         },
-        // ⚠️ A décommanter lors du passage de site vitrine en e-commerce si achat ou mise au panier possible sur cette page
-        // "availableChannel": {
-        // "@type": "ServiceChannel",
-        // "serviceUrl": DataSEO_Home.url
-        // },
         "aggregateRating": generateAverageRatingSEO(AvisClientHomeControllerData),
         "review": generateReviewArraySEO(AvisClientHomeControllerData)
     });
