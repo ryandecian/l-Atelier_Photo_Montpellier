@@ -18,7 +18,7 @@ function JSON_LD_Service_PortraitDuo_Schema_SEO() : string {
         "@type": DataSEORoot["@type"].Service, /* (Obligatoire) Type de la donnée */
         "@id": DataSEO_PortraitDuo.id_Service,
         "serviceType": DataSEO_PortraitDuo.serviceType,
-        "name": DataSEORoot.name, /* (Obligatoire) Nom de l'entreprise */
+        "name": DataSEO_PortraitDuo.name_Service, /* (Obligatoire) Nom du service */
         "image": DataSEO_PortraitDuo.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
         "description": DataSEO_PortraitDuo.description,
         "url": DataSEO_PortraitDuo.url,
