@@ -7,15 +7,14 @@ import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
 import generatePortfolioHasPartSEO from "./utils/generatePortfolioHashPartSEO.utils";
 
 function JSON_LD_ImageGallery_Portfolio_Schema_SEO(): string {
-  const baseUrl = import.meta.env.VITE_DOMAIN_CLIENT;
   const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
   const DataSEO_Portfolio: DataSEOTargetOneType = DataSEO_Portfolios(); /* Récupération des données SEO de la page */
 
   const JSON_LD = JSON.stringify({
     "@context": DataSEORoot["@context"],
-    "@type": "ImageGallery",
-    "name": "Galerie photo – L'Atelier Photo Montpellier",
-    "url": `${baseUrl}/portfolio`,
+    "@type": DataSEORoot["@type"].ImageGallery, /* (Obligatoire) Type de la donnée */
+    "name": DataSEO_Portfolio.name_ImageGalery, /* Nom de la Galerie */
+    "url": DataSEO_Portfolio.url, /* URL de la page */
     "associatedMedia": generatePortfolioHasPartSEO()
   });
 
