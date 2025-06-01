@@ -9,6 +9,7 @@ type DataSEORootType = {
         ContactPage: string;
         HomePage: string;
         CollectionPage: string;
+        ImageGallery: string;
     };
     id_LocalBusiness: string;
     description: string;
