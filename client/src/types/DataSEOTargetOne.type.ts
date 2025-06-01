@@ -9,15 +9,17 @@ type DataSEOTargetOneType = {
     name_ImageGalery?: string; /* Nom de la galerie photo, utilisé dans le JSON-LD ImageGallery */
     name_Collection?: string; /* Nom de la collection, utilisé dans le JSON-LD Collection */
     name_ContactPage?: string; /* Nom de la page de contact, utilisé dans le JSON-LD ContactPage */
+    name_HomePage?: string; /* Nom de la page d'accueil, utilisé dans le JSON-LD HomePage */
     twitterUrlImg?: string; /* fallback */
     keywords: {
-        1: string; /* 1 mot clé */
-        2: string; /* 2 mots clés */
-        3: string; /* 3 mots clés */
-        5: string; /* 5 mots clés */
-        6: string; /* 6 mots clés */
-        7: string; /* 7 mots clés */
-        8: string; /* 8 mots clés */
+        1?: string; /* 1 mot clé */
+        2?: string; /* 2 mots clés */
+        3?: string; /* 3 mots clés */
+        4?: string; /* 4 mots clés */
+        5?: string; /* 5 mots clés */
+        6?: string; /* 6 mots clés */
+        7?: string; /* 7 mots clés */
+        8?: string; /* 8 mots clés */
         9?: string; /* 9 mots clés (optionnel) */
         10?: string; /* 10 mots clés (optionnel) */
         11?: string; /* 11 mots clés (optionnel) */

@@ -7,14 +7,14 @@ type DataSEOHelmetType = {
     twitterUrlImg?: string; // fallback
     twitterCompte: string;
     keywords: {
-        1: string; // 1 mot clé
-        2: string; // 2 mots clés
-        3: string; // 3 mots clés
-        4: string; // 4 mots clés
-        5: string; // 5 mots clés
-        6: string; // 6 mots clés
-        7: string; // 7 mots clés
-        8: string; // 8 mots clés
+        1?: string; // 1 mot clé
+        2?: string; // 2 mots clés
+        3?: string; // 3 mots clés
+        4?: string; // 4 mots clés
+        5?: string; // 5 mots clés
+        6?: string; // 6 mots clés
+        7?: string; // 7 mots clés
+        8?: string; // 8 mots clés
         9?: string; // 9 mots clés (optionnel)
         10?: string; // 10 mots clés (optionnel)
         11?: string; // 11 mots clés (optionnel)
