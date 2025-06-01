@@ -1,25 +1,7 @@
 import styles from './PricingCard.module.css';
+import PrestationType from '../../../types/Prestations.type';
 
-type PricingData = {
-  line1: { value1: string; value2: string };
-  line2: { value1: string; value2: string };
-  line3: { value1: string; value2: string };
-  line4: { value1: string; value2: string };
-  line5: { value1: string; value2: string };
-  line6: { value1: string; value2: string };
-  line7: { value1: string; value2: string };
-  line8?: { value1: string; value2: string };
-  line9?: { value1: string; value2: string };
-  line10?: { value1: string; value2: string };
-};
-
-type PrestationType = {
-  essentiel: PricingData;
-  confort: PricingData;
-  premium: PricingData;
-};
-
-const test: PrestationType = {
+const Prestations: PrestationType = {
   essentiel: {
     line1: { value1: 'Durée Séance', value2: '45min' },
     line2: { value1: 'Extérieur', value2: 'Non' },
@@ -52,16 +34,18 @@ const test: PrestationType = {
 function PricingCardRoot() {
   return (
     <section className={styles.container}>
-      {Object.entries(test).map(([formulaKey, data]) => {
+      {/* Convertie Prestations en un tableau d'entrée : [["essentiel", { ... }], ["confort", { ... }], ["premium", { ... }]] */}
+      {/* On parcourt avec maps chaque paire clé/valeur exemple formulaKey = essentiel et data = {} */}
+      {Object.entries(Prestations).map(([formulaKey, data]) => {
         /* Transforme la première lettre en majuscule : essentiel = Essentiel */
         const formulaName = formulaKey.charAt(0).toUpperCase() + formulaKey.slice(1);
 
         return (
-          <div
+          <article
             key={formulaKey}
             className={`${styles.card} ${formulaKey === 'premium' ? styles.premium : ''}`}
           >
-            <div className={styles.header}>{formulaName}</div>
+            <h3 className={styles.header}>{formulaName}</h3>
             <ul className={styles.list}>
               {Object.entries(data).map(([lineKey, line]) => (
                 <li key={lineKey} className={styles.item}>
@@ -71,7 +55,7 @@ function PricingCardRoot() {
               ))}
             </ul>
             <button className={styles.button}>Réserver cette formule</button>
-          </div>
+          </article>
         );
       })}
     </section>
