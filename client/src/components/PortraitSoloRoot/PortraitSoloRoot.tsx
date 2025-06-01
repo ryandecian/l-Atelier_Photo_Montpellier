@@ -6,6 +6,8 @@ import GeneratorCardAvisClient from "../GeneratorCardAvisClient/GeneratorCardAvi
 import PortraitSoloRootComponentA from "./ComponentsPortraitSoloRoot/PortraitSoloRootComponentA/PortraitSoloRootComponentA";
 import PortraitSoloRootComponentB from "./ComponentsPortraitSoloRoot/PortraitSoloRootComponentB/PortraitSoloRootComponentB";
 
+import PricingCardRoot from "./Carte/PricingCardRoot";
+
 function PortraitSoloRoot() {
     return (
         <section className={`PortraitSoloRoot ${style.ContainerRootRacine}`}>
@@ -20,6 +22,9 @@ function PortraitSoloRoot() {
 
             {/* Container B */}
             <PortraitSoloRootComponentB />
+
+            {/* Tarifs test */}
+            <PricingCardRoot />
 
             {/* Container C : Avis Clients */}
             <GeneratorCardAvisClient avisClients={AvisClientPortraitSoloControllerData} />
