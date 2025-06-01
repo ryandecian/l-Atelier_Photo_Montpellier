@@ -2,7 +2,7 @@ import DataSEORoots from "../DataSEORoot.seo";
 import DataSEORootType from "../../types/DataSEORoot.type";
 
 import DataSEO_PortraitSolos from "./DataSEO_PortraitSolo.seo";
-import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
+import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
 import AvisClientPortraitSoloControllerData from "../../components/PortraitSoloRoot/AvisClientPortraitSoloControllerData";
 import generateAverageRatingSEO from "../../utils/generateAverageRatingSEO.utils";

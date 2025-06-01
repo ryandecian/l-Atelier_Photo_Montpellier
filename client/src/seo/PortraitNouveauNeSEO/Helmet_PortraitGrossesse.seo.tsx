@@ -5,7 +5,7 @@ import DataSEORoots from "../DataSEORoot.seo";
 import DataSEO_PortraitNouveauNes from "./DataSEO_PortraitNouveauNe.seo";
 
 import DataSEORootType from "../../types/DataSEORoot.type";
-import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
+import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
 import JSON_LD_LocalBusiness_Root_Schema_SEO from "../JSON-LD_LocalBusiness_Root.schema.seo";
 import JSON_LD_Service_PortraitNouveauNe_Schema_SEO from "./JSON-LD_Service_PortraitNouveauNe.schema.seo";
