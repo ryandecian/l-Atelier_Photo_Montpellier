@@ -15,7 +15,7 @@ function JSON_LD_Breadcrumb_Home_Schema_SEO() : string {
             {
                 "@type": "ListItem",
                 "position": DataSEO_Home.position,
-                "name": DataSEO_Home.title,
+                "name": DataSEO_Home.name_Breadcrumb, /* Le libellé du lien dans le fil d’Ariane */
                 "item": DataSEO_Home.url,
             },
         ],
