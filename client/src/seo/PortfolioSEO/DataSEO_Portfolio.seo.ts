@@ -1,15 +1,15 @@
 import ListDataRouter from "../../router/router";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
 
-function DataSEO_PortraitDuo(): DataSEOTargetOneType {
+function DataSEO_Portfolio(): DataSEOTargetOneType {
     const DataSEO = {
         /* Data Helmet */
-        title: "Portrait Duo - l'Atelier Photo Montpellier",
+        title: "Portfolio - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
         description: "Découvrez mon univers en images : une sélection de portraits et instants capturés avec passion, entre émotion, lumière et authenticité.",
-        url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[15].path}`, /*URL de la page*/
-        position: 3, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
-        name: "Portrait Duo", /* Clé pour Breadcrumb qui est = à title sans le nom de l'entreprise */
+        url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[8].path}`, /*URL de la page*/
+        position: 2, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
+        name: "Portrait", /* Clé pour Breadcrumb qui est = à title sans le nom de l'entreprise */
         twitterUrlImg: "", /* Lien URL de l'image */
         keywords: {
             1: "Anne SAUNIER", /* 1 mot clés */
@@ -18,8 +18,8 @@ function DataSEO_PortraitDuo(): DataSEOTargetOneType {
             4: "l'Atelier Photo Montpellier", /* 4 mots clés */
             5: "LAPM", /* 5 mots clés */
             6: "Service", /* 6 mots clés */
-            7: "Portrait Duo", /* 7 mots clés */
-            8: "Portrait Couple", /* 8 mots clés */
+            7: "Portfolio", /* 7 mots clés */
+            8: "", /* 8 mots clés */
             9: "", /* 9 mots clés */
             10: "", /* 10 mots clés */
             11: "", /* 11 mots clés */
@@ -39,7 +39,7 @@ function DataSEO_PortraitDuo(): DataSEOTargetOneType {
         /* Data Helmet et JSON-LD */
         img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-duo/google/lapm-photo-portrait-duo-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
         img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-duo/helmet/lapm-photo-portrait-duo-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[15].path}#service-portrait-duo`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[8].path}#service-portrait-duo`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
         serviceType: "Découvrez l’univers visuel d’Anne SAUNIER à travers des clichés de portrait, paysage et photographie urbaine à Montpellier.", /* Utilisé pour la clé about dans JSON-LD_Collection car pas de serviceType dan ce JSON-LD */
     };
 
@@ -48,4 +48,4 @@ function DataSEO_PortraitDuo(): DataSEOTargetOneType {
     )
 }
 
-export default DataSEO_PortraitDuo;
+export default DataSEO_Portfolio;
