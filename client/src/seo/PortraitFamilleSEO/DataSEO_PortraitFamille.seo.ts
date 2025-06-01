@@ -9,7 +9,8 @@ function DataSEO_PortraitFamille(): DataSEOTargetOneType {
         description: "Portrait famille signé L'Atelier Photo Montpellier : une photo aujourd’hui, un héritage de demain. Offrez-vous un moment à partager en famille.",
         url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[16].path}`, /*URL de la page*/
         position: 3, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
-        name: "Portrait Famille", /* Clé pour Breadcrumb qui est = à title sans le nom de l'entreprise */
+        name_Breadcrumb: "Portrait Famille", /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Duo */
+        name_Service: "Portrait Famille - l'Atelier Photo Montpellier", /* Nom du service, utilisé dans le JSON-LD Service */
         twitterUrlImg: "", /* Lien URL de l'image */
         keywords: {
             1: "Anne SAUNIER", /* 1 mot clés */

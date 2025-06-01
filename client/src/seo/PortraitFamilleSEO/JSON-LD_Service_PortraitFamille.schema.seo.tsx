@@ -18,7 +18,7 @@ function JSON_LD_Service_PortraitFamille_Schema_SEO() : string {
         "@type": DataSEORoot["@type"].Service, /* (Obligatoire) Type de la donnée */
         "@id": DataSEO_PortraitFamille.id_Service,
         "serviceType": DataSEO_PortraitFamille.serviceType,
-        "name": DataSEORoot.name, /* (Obligatoire) Nom de l'entreprise */
+        "name": DataSEO_PortraitFamille.name_Service, /* (Obligatoire) Nom du service */
         "image": DataSEO_PortraitFamille.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
         "description": DataSEO_PortraitFamille.description,
         "url": DataSEO_PortraitFamille.url,

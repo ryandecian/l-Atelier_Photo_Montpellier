@@ -15,7 +15,7 @@ function JSON_LD_Breadcrumb_PortraitFamille_Schema_SEO() : string {
             {
                 "@type": "ListItem",
                 "position": DataSEO_PortraitFamille.position,
-                "name": DataSEO_PortraitFamille.title,
+                "name": DataSEO_PortraitFamille.name_Breadcrumb, /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Famille */
                 "item": DataSEO_PortraitFamille.url,
             },
         ],
