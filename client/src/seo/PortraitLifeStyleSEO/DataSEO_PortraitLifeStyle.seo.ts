@@ -9,7 +9,8 @@ function DataSEO_PortraitLifeStyle(): DataSEOTargetOneType {
         description: "Découvrez le Portrait LifeStyle : des photos naturelles, spontanées, qui racontent votre histoire. Un regard unique signé l'Atelier Photo Montpellier.",
         url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[12].path}`, /*URL de la page*/
         position: 2, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
-        name: "Portrait LifeStyle", /* Clé pour Breadcrumb qui est = à title sans le nom de l'entreprise */
+        name_Breadcrumb: "Portrait LifeStyle", /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Duo */
+        name_Service: "Portrait LifeStyle - l'Atelier Photo Montpellier", /* Nom du service, utilisé dans le JSON-LD Service */
         twitterUrlImg: "", /* Lien URL de l'image */
         keywords: {
             1: "Anne SAUNIER", /* 1 mot clés */
