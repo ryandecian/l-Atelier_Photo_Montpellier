@@ -10,8 +10,7 @@ type DataAlbumPhotoType = {
     album: AlbumPhotoType[];
 }
 
-function GeneratorAlbumPhoto(Props: DataAlbumPhotoType) {
-    const { album } = Props;
+function GeneratorAlbumPhoto({ album }: DataAlbumPhotoType) {
     return (
       <div className={css.flexWrap}>
         {album.map((img, index) => (

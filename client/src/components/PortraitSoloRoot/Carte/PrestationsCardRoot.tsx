@@ -1,4 +1,4 @@
-import styles from './PricingCard.module.css';
+import styles from './PrestationsCard.module.css';
 import PrestationType from '../../../types/Prestations.type';
 
 const Prestations: PrestationType = {
@@ -31,7 +31,7 @@ const Prestations: PrestationType = {
   },
 };
 
-function PricingCardRoot() {
+function PrestationsCardRoot() {
   return (
     <section className={styles.container}>
       {/* Convertie Prestations en un tableau d'entrée : [["essentiel", { ... }], ["confort", { ... }], ["premium", { ... }]] */}
@@ -62,4 +62,4 @@ function PricingCardRoot() {
   );
 }
 
-export default PricingCardRoot;
+export default PrestationsCardRoot;

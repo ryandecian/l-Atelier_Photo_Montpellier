@@ -6,7 +6,7 @@ import GeneratorCardAvisClient from "../GeneratorCardAvisClient/GeneratorCardAvi
 import PortraitSoloRootComponentA from "./ComponentsPortraitSoloRoot/PortraitSoloRootComponentA/PortraitSoloRootComponentA";
 import PortraitSoloRootComponentB from "./ComponentsPortraitSoloRoot/PortraitSoloRootComponentB/PortraitSoloRootComponentB";
 
-import PricingCardRoot from "./Carte/PricingCardRoot";
+import PricingCardRoot from "./Carte/PrestationsCardRoot";
 
 function PortraitSoloRoot() {
     return (
