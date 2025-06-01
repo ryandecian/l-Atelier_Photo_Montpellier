@@ -5,6 +5,7 @@ type DataSEOTargetOneType = {
     url: string;
     position: number;
     name: string;
+    name_ImageGalery?: string; // Nom de la galerie photo, utilisé dans le JSON-LD ImageGallery
     twitterUrlImg?: string; // fallback
     keywords: {
         1: string; // 1 mot clé
