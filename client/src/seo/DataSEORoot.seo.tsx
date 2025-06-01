@@ -5,7 +5,7 @@ import ListDataRouter from "../router/router";
 function DataSEORoot(): DataSEORootType {
     const DataSEORoots = {
         /* Data Helmet */
-        autor: "Anne SAUNIER", // Nom de l'auteur
+        autor: "Anne SAUNIER", /* Nom de l'auteur */
         twitterCompte: "", /*@MonCompteTwitter*/ /*Permet d'identifier le compte officiel*/
     
         /* Data JSON-LD */
@@ -19,23 +19,23 @@ function DataSEORoot(): DataSEORootType {
             CollectionPage: "CollectionPage",
             ImageGallery: "ImageGallery",
         },
-        id_LocalBusiness: `${import.meta.env.URL_CLIENT}#lapm`, // @id SEO-friendly, correspond id unique de l'entreprise
+        id_LocalBusiness: `${import.meta.env.URL_CLIENT}#lapm`, /* @id SEO-friendly, correspond id unique de l'entreprise */
         description: "L'Atelier Photo Montpellier, dirigé par Anne SAUNIER, propose des prestations photographiques professionnelles à Montpellier et ses environs : grossesse, mariage, portraits corporate, lifestyle...", // Description de l'entreprise
-        "name": "L'Atelier Photo Montpellier",
-        "telephone": "+33 6 52 67 73 33", // Numéro de téléphone de l'entreprise (Manuel)
-        "email": externalLinks.emailAnne, // Adresse email de l'entreprise (Dynamique)
-        "url": `${import.meta.env.URL_CLIENT}`, // URL de la page d'accueil de l'entreprise (Dynamique)
-        img: `${import.meta.env.URL_CLIENT}/dans-les-yeux-de-sacha.jpg`, // Lien URL public de l'image de l'entreprise (Dynamique)
-        logo: `${import.meta.env.URL_CLIENT}/logo-LAPM-l-atelier-photo-montpellier.png`, // Lien URL public du logo de l'entreprise (Dynamique)
+        "name": "L'Atelier Photo Montpellier", /* Nom de l'entreprise */
+        "telephone": "+33 6 52 67 73 33", /* Numéro de téléphone de l'entreprise (Manuel) */
+        "email": externalLinks.emailAnne, /* Adresse email de l'entreprise (Dynamique) */
+        "url": `${import.meta.env.URL_CLIENT}`, /* URL de la page d'accueil de l'entreprise (Dynamique) */
+        img: `${import.meta.env.URL_CLIENT}/dans-les-yeux-de-sacha.jpg`, // Lien URL public de l'image de l'entreprise (Dynamique) */
+        logo: `${import.meta.env.URL_CLIENT}/logo-LAPM-l-atelier-photo-montpellier.png`, // Lien URL public du logo de l'entreprise (Dynamique) */
         "openingHours": [
             "Mo-Su 10:00-13:00",
             "Mo-Su 14:00-19:00"
-        ], // Horaires d'ouverture du lundi au dimanche de 10h à 13het de 14h à 19h
+        ], /* Horaires d'ouverture du lundi au dimanche de 10h à 13het de 14h à 19h */
         "sameAs": [
-            externalLinks.instagram, // Compte Instagram 
-            externalLinks.facebook, // A modifier car ce n'est pas le bon compte
+            externalLinks.instagram, /* Compte Instagram */
+            externalLinks.facebook, /* A modifier car ce n'est pas le bon compte */
         ],
-        termsOfService: `${import.meta.env.URL_CLIENT}/${ListDataRouter[9].path}`, // Conditions d'utilisation de l'entreprise (Dynamique)
+        termsOfService: `${import.meta.env.URL_CLIENT}/${ListDataRouter[9].path}`, /* Conditions d'utilisation de l'entreprise (Dynamique) */
         "areaServed": [
             {
                 "@type": "Place",
