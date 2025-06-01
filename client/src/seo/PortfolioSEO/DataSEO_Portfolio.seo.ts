@@ -9,7 +9,7 @@ function DataSEO_Portfolio(): DataSEOTargetOneType {
         description: "Découvrez mon univers en images : une sélection de portraits et instants capturés avec passion, entre émotion, lumière et authenticité.",
         url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[8].path}`, /*URL de la page*/
         position: 2, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
-        name: "Portfolio", /* Clé pour Breadcrumb qui est = à title sans le nom de l'entreprise */
+        name_Breadcrumb: "Portfolio", /* Clé pour Breadcrumb qui est = à title sans le nom de l'entreprise */
         name_ImageGalery: "Portfolio et Galerie photo – L'Atelier Photo Montpellier", /* Nom de la galerie photo, utilisé dans le JSON-LD ImageGallery */
         twitterUrlImg: "", /* Lien URL de l'image */
         keywords: {
