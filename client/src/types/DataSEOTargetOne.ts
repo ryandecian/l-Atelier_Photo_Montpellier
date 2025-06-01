@@ -4,7 +4,7 @@ type DataSEOTargetOneType = {
     description: string;
     url: string;
     position: number;
-    name: string;
+    name_Breadcrumb: string; /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Duo */
     name_ImageGalery?: string; // Nom de la galerie photo, utilisé dans le JSON-LD ImageGallery
     twitterUrlImg?: string; // fallback
     keywords: {
