@@ -9,6 +9,7 @@ import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
 
 import JSON_LD_LocalBusiness_Root_Schema_SEO from "../JSON-LD_LocalBusiness_Root.schema.seo";
 import JSON_LD_Collection_Portfolio_Schema_SEO from "./JSON-LD_Collection_Portfolio.schema.seo";
+import JSON_LD_ImageGallery_Portfolio_Schema_SEO from "./JSON-LD_ImageGallery_Portfolio.schema.seo";
 import JSON_LD_Breadcrumb_Portfolio_Schema_SEO from "./JSON-LD_Breadcrumb_Portfolio.schema.seo";
 
 
@@ -38,6 +39,9 @@ function Helmet_Portfolio_SEO() {
             </script>
             <script type="application/ld+json">
                 {JSON_LD_Collection_Portfolio_Schema_SEO()}
+            </script>
+            <script type="application/ld+json">
+                {JSON_LD_ImageGallery_Portfolio_Schema_SEO()}
             </script>
             <script type="application/ld+json">
                 {JSON_LD_Breadcrumb_Portfolio_Schema_SEO()}
