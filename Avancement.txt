@@ -36,4 +36,3 @@ Liste des choses a faire Anne SAUNIER
  - Photos : 
    - Dans le dossier maitre LAPM/site internet/developpement site/famille : il y a 2 photos reprendre. Format !== de 1:1 et poids > à 200 ko
    - Manque 2 photos dans Hobbie
-   - Manque 4 photos dans Grossesse
