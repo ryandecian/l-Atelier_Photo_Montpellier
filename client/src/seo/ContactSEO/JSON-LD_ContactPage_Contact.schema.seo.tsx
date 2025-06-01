@@ -2,7 +2,7 @@ import DataSEORoots from "../DataSEORoot.seo";
 import DataSEORootType from "../../types/DataSEORoot.type";
 
 import DataSEO_Contacts from "./DataSEO_Contact.seo";
-import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
+import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
 
 function JSON_LD_ContactPage_Contact_Schema_SEO() : string {
@@ -13,7 +13,7 @@ function JSON_LD_ContactPage_Contact_Schema_SEO() : string {
         "@context": DataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
         "@type": DataSEORoot["@type"].ContactPage, /* (Obligatoire) Type de la donnée */
         "@id": DataSEO_Contact.id_Service,
-        "name": DataSEORoot.name, /* (Obligatoire) Nom de l'entreprise */
+        "name": DataSEO_Contact.name_ContactPage, /* (Obligatoire) Nom de la page de contact */
         "url": DataSEO_Contact.url, /* (Obligatoire) URL de la page */
         "about": {
             "@type": DataSEORoot["@type"].Local,

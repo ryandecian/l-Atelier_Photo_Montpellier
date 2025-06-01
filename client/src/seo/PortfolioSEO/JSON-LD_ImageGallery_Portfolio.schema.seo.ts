@@ -2,7 +2,7 @@ import DataSEORoots from "../DataSEORoot.seo";
 import DataSEORootType from "../../types/DataSEORoot.type";
 
 import DataSEO_Portfolios from "./DataSEO_Portfolio.seo";
-import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
+import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
 import generatePortfolioHasPartSEO from "./utils/generatePortfolioHashPartSEO.utils";
 

@@ -1,5 +1,5 @@
 import ListDataRouter from "../../router/router";
-import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
+import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
 function DataSEO_PortraitGrossesse(): DataSEOTargetOneType {
     const DataSEO = {

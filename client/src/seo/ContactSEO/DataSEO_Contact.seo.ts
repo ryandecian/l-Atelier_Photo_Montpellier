@@ -1,5 +1,5 @@
 import ListDataRouter from "../../router/router";
-import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
+import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
 function DataSEO_Contact(): DataSEOTargetOneType {
     const DataSEO = {
@@ -9,7 +9,8 @@ function DataSEO_Contact(): DataSEOTargetOneType {
         description: "Une idée, un projet photo ? Contactez Anne SAUNIER par téléphone ou email. À l’Atelier Photo Montpellier, chaque demande est traitée avec attention et réactivité.",
         url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[3].path}`, /*URL de la page*/
         position: 2, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
-        name: "Contact", /* Clé pour Breadcrumb qui est = à title sans le nom de l'entreprise */
+        name_Breadcrumb: "Contact", /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Duo */
+        name_ContactPage: "Contact - l'Atelier Photo Montpellier", /* Nom de la page de contact, utilisé dans le JSON-LD ContactPage */
         twitterUrlImg: "", /* Lien URL de l'image */
         keywords: {
             1: "Anne SAUNIER", /* 1 mot clés */
