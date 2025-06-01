@@ -2,7 +2,7 @@ import DataSEORoots from "../DataSEORoot.seo";
 import DataSEORootType from "../../types/DataSEORoot.type";
 
 import DataSEO_Homes from "./DataSEO_Home.seo";
-import DataSEOTargetOneType from "../../types/DataSEOTargetOne";
+import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
 import AvisClientHomeControllerData from "../../components/HomeRoot/AvisClientHomeControllerData";
 import generateAverageRatingSEO from "../../utils/generateAverageRatingSEO.utils";
