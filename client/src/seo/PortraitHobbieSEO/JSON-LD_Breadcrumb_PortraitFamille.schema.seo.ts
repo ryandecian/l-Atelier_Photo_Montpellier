@@ -15,7 +15,7 @@ function JSON_LD_Breadcrumb_PortraitHobbie_Schema_SEO() : string {
             {
                 "@type": "ListItem",
                 "position": DataSEO_PortraitHobbie.position,
-                "name": DataSEO_PortraitHobbie.title,
+                "name": DataSEO_PortraitHobbie.name_Breadcrumb, /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Hobbies */
                 "item": DataSEO_PortraitHobbie.url,
             },
         ],
