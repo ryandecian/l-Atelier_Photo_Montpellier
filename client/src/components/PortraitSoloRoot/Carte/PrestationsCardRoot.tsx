@@ -1,4 +1,4 @@
-import styles from './PricingCard.module.css';
+import styles from './PrestationsCard.module.css';
 import PrestationType from '../../../types/Prestations.type';
 
 const Prestations: PrestationType = {
