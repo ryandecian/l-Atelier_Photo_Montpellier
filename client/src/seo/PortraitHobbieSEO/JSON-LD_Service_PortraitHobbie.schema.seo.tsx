@@ -18,7 +18,7 @@ function JSON_LD_Service_PortraitHobbie_Schema_SEO() : string {
         "@type": DataSEORoot["@type"].Service, /* (Obligatoire) Type de la donnée */
         "@id": DataSEO_PortraitHobbie.id_Service,
         "serviceType": DataSEO_PortraitHobbie.serviceType,
-        "name": DataSEORoot.name, /* (Obligatoire) Nom de l'entreprise */
+        "name": DataSEO_PortraitHobbie.name_Service, /* (Obligatoire) Nom du service */
         "image": DataSEO_PortraitHobbie.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
         "description": DataSEO_PortraitHobbie.description,
         "url": DataSEO_PortraitHobbie.url,
