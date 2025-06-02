@@ -4,6 +4,9 @@ Attention, le sitemap.xml et le robot.txt sont configuré pour le Nas ! Il faudr
 
 ------------------------------------------------------------------------------
 
+Pour le coposant Prestation, l'objectif est un composant réutilisable. Il faut commencer par editer le css
+------------------------------------------------------------------------------
+
 Il faut refactoriser SEO les pages :
   - NavTargetHome a faire
   - Footer
