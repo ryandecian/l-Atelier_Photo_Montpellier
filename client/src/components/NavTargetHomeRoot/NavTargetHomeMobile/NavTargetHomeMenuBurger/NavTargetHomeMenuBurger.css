@@ -80,6 +80,7 @@
     position: fixed;
     top: 0.4rem;
     right: 0.5rem;
+    z-index: 100;
     background: none;
     border: none;
     outline: none;
