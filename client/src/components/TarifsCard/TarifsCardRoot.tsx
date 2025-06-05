@@ -1,5 +1,6 @@
 import css from './TarifsCardRoot.module.css';
 import PrestationType from '../../types/Prestations.type';
+import externalLinks from '../../constants/externalLinks';
 
 type TarifCardRootProps = {
   tarifs: PrestationType;
@@ -29,7 +30,7 @@ function TarifCardRoot({tarifs, id}: TarifCardRootProps) {
                 </li>
               ))}
             </ul>
-            <button className={css.button}>Réserver cette formule</button>
+            <a href={externalLinks.emailAnne} className={css.button}>Réserver cette formule</a>
           </article>
         );
       })}

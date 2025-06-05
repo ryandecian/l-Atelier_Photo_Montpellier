@@ -1,3 +1,4 @@
+/* Bloc logique 1 */
 type PricingData = {
   line1: { value1: string; value2: string };
   line2: { value1: string; value2: string };
@@ -11,10 +12,34 @@ type PricingData = {
   line10?: { value1: string; value2: string };
 };
 
+
 type PrestationType = {
   essentiel: PricingData;
   confort: PricingData;
   premium: PricingData;
 };
 
-export default PrestationType;
+/* ---------- ----------- ---------- ---------- ---------- */
+
+/* Bloc logique 2 */
+type FormuleType = {
+  essentiel: string;
+  confort: string;
+  premium: string;
+}
+
+/* ---------- ----------- ---------- ---------- ---------- */
+
+type DataRootType = {
+  mailto: string;
+  subject: string;
+  body: string;
+}
+
+type DataRootEmailType = {
+  essentiel: DataRootType;
+  confort: DataRootType;
+  premium: DataRootType;
+}
+
+export type { PrestationType, FormuleType, DataRootEmailType };
