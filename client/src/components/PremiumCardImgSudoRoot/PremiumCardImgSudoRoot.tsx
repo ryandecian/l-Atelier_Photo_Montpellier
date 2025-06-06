@@ -7,8 +7,7 @@ interface ImageZoomProps {
   className: string;
 }
 
-function PremiumCardImgSudoRoot (Props: ImageZoomProps) {
-  const { src, alt, className } = Props;
+function PremiumCardImgSudoRoot ({src, alt, className}: ImageZoomProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (

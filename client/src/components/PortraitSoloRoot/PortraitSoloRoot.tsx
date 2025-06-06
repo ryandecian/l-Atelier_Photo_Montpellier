@@ -6,7 +6,8 @@ import GeneratorCardAvisClient from "../GeneratorCardAvisClient/GeneratorCardAvi
 import PortraitSoloRootComponentA from "./ComponentsPortraitSoloRoot/PortraitSoloRootComponentA/PortraitSoloRootComponentA";
 import PortraitSoloRootComponentB from "./ComponentsPortraitSoloRoot/PortraitSoloRootComponentB/PortraitSoloRootComponentB";
 
-import PricingCardRoot from "./Carte/PrestationsCardRoot";
+import TarifCardRoot from "../TarifsCard/TarifsCardRoot";
+import { TarifsPortraitSolo, MailtoLinkPortraitSolo } from "./TarifsPortraitSolo";
 
 function PortraitSoloRoot() {
     return (
@@ -24,7 +25,7 @@ function PortraitSoloRoot() {
             <PortraitSoloRootComponentB />
 
             {/* Tarifs test */}
-            <PricingCardRoot />
+            <TarifCardRoot id="tarifs-portrait-solo" tarifs={TarifsPortraitSolo} mailtoLink={MailtoLinkPortraitSolo} />
 
             {/* Container C : Avis Clients */}
             <GeneratorCardAvisClient avisClients={AvisClientPortraitSoloControllerData} />
