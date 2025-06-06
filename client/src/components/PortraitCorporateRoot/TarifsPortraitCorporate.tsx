@@ -54,7 +54,7 @@ const Formule: FormuleType = {
 const dataRootEmail: DataRootEmailType = {
     essentiel: {
         mailto: externalLinks.emailAnne,
-        subject: `Réservation ${Service} - Formule ${Formule.essentiel}`,
+        subject: `${Service} - Formule ${Formule.essentiel}`,
         body: `Bonjour Anne, %0D%0A %0D%0A Je souhaite réserver la formule ${Formule.essentiel} pour un portrait Corporate. %0D%0A Pouvez-vous de me recontacter. %0D%0A %0D%0A Cordialement,`
     },
     confort: {
