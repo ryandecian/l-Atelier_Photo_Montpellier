@@ -4,7 +4,7 @@ import {PrestationType, FormuleType, DataRootEmailType} from "../../types/Presta
 /* ---------- ----------- ---------- ---------- ---------- */
 /* Bloc logique 1 */
 
-const TarifsPortraitCorporate: PrestationType = {
+const TarifsPortraitDuo: PrestationType = {
     essentiel: {
         line1: { value1: 'Durée Séance', value2: '45min' },
         line2: { value1: 'Extérieur', value2: 'Non' },
@@ -30,16 +30,16 @@ const TarifsPortraitCorporate: PrestationType = {
         line4: { value1: 'Post Traitement', value2: 'oui' },
         line5: { value1: 'Galerie en Ligne', value2: 'oui' },
         line6: { value1: 'Nombre de photos', value2: '22' },
-        line7: { value1: 'Prix', value2: '199 €' },
+        line7: { value1: 'Prix', value2: '219 €' },
     },
 };
 
-export {TarifsPortraitCorporate};
+export {TarifsPortraitDuo};
 
 /* ---------- ----------- ---------- ---------- ---------- */
 /* Bloc logique 2 */
 
-const Service: string = "Réservation Portrait Corporate"; /* Bloc a modifier si besoin */
+const Service: string = "Réservation Portrait Duo"; /* Bloc a modifier si besoin */
 
 /* Nom des formules disponibles */
 const Formule: FormuleType = {
@@ -55,17 +55,17 @@ const dataRootEmail: DataRootEmailType = {
     essentiel: {
         mailto: externalLinks.emailAnne,
         subject: `Réservation ${Service} - Formule ${Formule.essentiel}`,
-        body: `Bonjour Anne, %0D%0A %0D%0A Je souhaite réserver la formule ${Formule.essentiel} pour un portrait Corporate. %0D%0A Pouvez-vous de me recontacter. %0D%0A %0D%0A Cordialement,`
+        body: `Bonjour Anne, %0D%0A %0D%0A Je souhaite réserver la formule ${Formule.essentiel} pour un portrait Duo. %0D%0A Pouvez-vous de me recontacter. %0D%0A %0D%0A Cordialement,`
     },
     confort: {
         mailto: externalLinks.emailAnne,
-        subject: `Réservation ${Service} - Formule ${Formule.confort}`,
-        body: `Bonjour Anne, %0D%0A %0D%0A Je souhaite réserver la formule ${Formule.confort} pour un portrait Corporate. %0D%0A Pouvez-vous de me recontacter. %0D%0A %0D%0A Cordialement,`
+        subject: `${Service} - Formule ${Formule.confort}`,
+        body: `Bonjour Anne, %0D%0A %0D%0A Je souhaite réserver la formule ${Formule.confort} pour un portrait Duo. %0D%0A Pouvez-vous de me recontacter. %0D%0A %0D%0A Cordialement,`
     },
     premium: {
         mailto: externalLinks.emailAnne,
         subject: `Réservation ${Service} - Formule ${Formule.premium}`,
-        body: `Bonjour Anne, %0D%0A %0D%0A Je souhaite réserver la formule ${Formule.premium} pour un portrait Corporate. %0D%0A Pouvez-vous de me recontacter. %0D%0A %0D%0A Cordialement,`
+        body: `Bonjour Anne, %0D%0A %0D%0A Je souhaite réserver la formule ${Formule.premium} pour un portrait Duo. %0D%0A Pouvez-vous de me recontacter. %0D%0A %0D%0A Cordialement,`
     },
 };
 
@@ -73,10 +73,10 @@ const dataRootEmail: DataRootEmailType = {
 /* Bloc logique 4 */
 
 /* Mail structuré pour les carte de tarifs */
-const MailtoLinkPortraitCorporate: FormuleType = {
+const MailtoLinkPortraitDuo: FormuleType = {
     essentiel: `${dataRootEmail.essentiel.mailto}?subject=${dataRootEmail.essentiel.subject}&body=${dataRootEmail.essentiel.body}`,
     confort: `${dataRootEmail.confort.mailto}?subject=${dataRootEmail.confort.subject}&body=${dataRootEmail.confort.body}`,
     premium: `${dataRootEmail.premium.mailto}?subject=${dataRootEmail.premium.subject}&body=${dataRootEmail.premium.body}`,
 }
 
-export {MailtoLinkPortraitCorporate};
+export {MailtoLinkPortraitDuo};

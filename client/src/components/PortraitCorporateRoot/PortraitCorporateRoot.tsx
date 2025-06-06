@@ -32,7 +32,7 @@ function PortraitCorporateRoot() {
             {/* Container D : Carte des tarifs */}
             <TarifCardRoot id="tarifs-portrait-corporate" tarifs={TarifsPortraitCorporate} mailtoLink={MailtoLinkPortraitCorporate} />
 
-            {/* Container D : Avis clients */}
+            {/* Container E : Avis clients */}
             <GeneratorCardAvisClient
                 avisClients={AvisClientPortraitCorporateControllerData}
             />

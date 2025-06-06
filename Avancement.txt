@@ -3,8 +3,8 @@ Ce qu'il manque :
 Attention, le sitemap.xml et le robot.txt sont configuré pour le Nas ! Il faudra les adapté pour la prod
 
 ------------------------------------------------------------------------------
+Les formules Corporate ne sont pas édité correctement
 
-Pour le coposant Prestation, l'objectif est un composant réutilisable. Il faut commencer par editer le css
 ------------------------------------------------------------------------------
 
 Il faut refactoriser SEO les pages :
@@ -15,7 +15,6 @@ Il faut refactoriser SEO les pages :
 ------------------------------------------------------------------------------
 
 Il faut éditer les pages : 
- - Portfolio : A terminer avec la cliente
  - Qui suis je
 
 Il faudra créer de nouveau hook pour les fetchs
