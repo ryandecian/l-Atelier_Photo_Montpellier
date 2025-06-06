@@ -1,6 +1,10 @@
 import style from "../StyleRootComponent.module.css";
+
 import AvisClientPortraitCorporateControllerData from "./AvisClientPortraitCorporateControllerData";
 import GeneratorCardAvisClient from "../GeneratorCardAvisClient/GeneratorCardAvisClient";
+
+import TarifCardRoot from "../TarifsCard/TarifsCardRoot";
+import { TarifsPortraitCorporate, MailtoLinkPortraitCorporate } from "./TarifsPortraitCorporate";
 
 import PortraitCorporateRootComponentA from "./ComponentsPortraitCorporateRoot/PortraitCorporateRootComponentA/PortraitCorporateRootComponentA";
 import PortraitCorporateRootComponentB from "./ComponentsPortraitCorporateRoot/PortraitCorporateRootComponentB/PortraitCorporateRootComponentB";
@@ -20,10 +24,13 @@ function PortraitCorporateRoot() {
             <PortraitCorporateRootComponentA />
 
             {/* Container B : Client cible Entreprise */}
-            < PortraitCorporateRootComponentB />
+            <PortraitCorporateRootComponentB />
 
             {/* Container C : Client cible Entreprise */}
-            < PortraitCorporateRootComponentC />
+            <PortraitCorporateRootComponentC />
+
+            {/* Container D : Carte des tarifs */}
+            <TarifCardRoot id="tarifs-portrait-corporate" tarifs={TarifsPortraitCorporate} mailtoLink={MailtoLinkPortraitCorporate} />
 
             {/* Container D : Avis clients */}
             <GeneratorCardAvisClient
