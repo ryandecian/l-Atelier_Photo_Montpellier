@@ -59,12 +59,12 @@ const dataRootEmail: DataRootEmailType = {
     },
     confort: {
         mailto: externalLinks.emailAnne,
-        subject: `Réservation ${Service} - Formule ${Formule.confort}`,
+        subject: `${Service} - Formule ${Formule.confort}`,
         body: `Bonjour Anne, %0D%0A %0D%0A Je souhaite réserver la formule ${Formule.confort} pour un portrait solo. %0D%0A Pouvez-vous de me recontacter. %0D%0A %0D%0A Cordialement,`
     },
     premium: {
         mailto: externalLinks.emailAnne,
-        subject: `Réservation ${Service} - Formule ${Formule.premium}`,
+        subject: `${Service} - Formule ${Formule.premium}`,
         body: `Bonjour Anne, %0D%0A %0D%0A Je souhaite réserver la formule ${Formule.premium} pour un portrait solo. %0D%0A Pouvez-vous de me recontacter. %0D%0A %0D%0A Cordialement,`
     },
 };
