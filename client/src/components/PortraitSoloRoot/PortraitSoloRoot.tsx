@@ -7,7 +7,7 @@ import PortraitSoloRootComponentA from "./ComponentsPortraitSoloRoot/PortraitSol
 import PortraitSoloRootComponentB from "./ComponentsPortraitSoloRoot/PortraitSoloRootComponentB/PortraitSoloRootComponentB";
 
 import TarifCardRoot from "../TarifsCard/TarifsCardRoot";
-import TarifsPortraitSolo from "./TarifsPortraitSolo";
+import { TarifsPortraitSolo, MailtoLinkPortraitSolo } from "./TarifsPortraitSolo";
 
 function PortraitSoloRoot() {
     return (
@@ -25,7 +25,7 @@ function PortraitSoloRoot() {
             <PortraitSoloRootComponentB />
 
             {/* Tarifs test */}
-            <TarifCardRoot id="tarifs-portrait-solo" tarifs={TarifsPortraitSolo} />
+            <TarifCardRoot id="tarifs-portrait-solo" tarifs={TarifsPortraitSolo} mailtoLink={MailtoLinkPortraitSolo} />
 
             {/* Container C : Avis Clients */}
             <GeneratorCardAvisClient avisClients={AvisClientPortraitSoloControllerData} />

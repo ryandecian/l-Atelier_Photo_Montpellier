@@ -69,4 +69,14 @@ const dataRootEmail: DataRootEmailType = {
     },
 };
 
+/* ---------- ----------- ---------- ---------- ---------- */
+/* Bloc logique 4 */
 
+/* Mail structuré pour les carte de tarifs */
+const MailtoLinkPortraitSolo: FormuleType = {
+    essentiel: `${dataRootEmail.essentiel.mailto}?subject=${dataRootEmail.essentiel.subject}&body=${dataRootEmail.essentiel.body}`,
+    confort: `${dataRootEmail.confort.mailto}?subject=${dataRootEmail.confort.subject}&body=${dataRootEmail.confort.body}`,
+    premium: `${dataRootEmail.premium.mailto}?subject=${dataRootEmail.premium.subject}&body=${dataRootEmail.premium.body}`,
+}
+
+export {MailtoLinkPortraitSolo};

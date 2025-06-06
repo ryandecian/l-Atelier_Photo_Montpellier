@@ -1,5 +1,8 @@
 Ce qu'il manque : 
 
+Corriger avec des médiaquery le padding de .list dans les carte de prestation.
+Il est à 40px en grande taille soit 2.5rem. Il faut l'adapter en mobile first
+
 Attention, le sitemap.xml et le robot.txt sont configuré pour le Nas ! Il faudra les adapté pour la prod
 
 ------------------------------------------------------------------------------
