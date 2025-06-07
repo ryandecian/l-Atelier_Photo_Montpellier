@@ -92,33 +92,40 @@ const Formule: FormuleCorporateType = {
 /* Bloc logique 3 */
 
 const SegmentTexte = {
-    intro: "Bonjour Anne, %0D%0A %0D%0A Je souhaite réserver la formule",
-    contact: `%0D%0A Pouvez-vous me recontacter ?`,
-    cordialement: `%0D%0A %0D%0A Cordialement`,
+    /* Professionnel et Particulier */
+    intro1: "Bonjour Anne, %0D%0A %0D%0A Je souhaite réserver la formule",
+    /* Particulier */
+    contact1: `%0D%0A Pouvez-vous me recontacter ?`,
     info: `%0D%0A %0D%0A [Prénom - Téléphone éventuel]`,
-    ps: `%0D%0A P.S : (au besoin) Je vous donne ci-dessous quelques précisions utiles : %0D%0A [disponibilités, souhaits particuliers, objectif du portrait, autres...]`,
+    cordialement1: `%0D%0A %0D%0A Cordialement`,
+    ps1: `%0D%0A P.S : (au besoin) Je vous donne ci-dessous quelques précisions utiles : %0D%0A [disponibilités, souhaits particuliers, objectif du portrait, autres...]`,
+    /* Professionnel */
+    intro2: ", et j’aimerais échanger avec vous afin de vous faire part de mes attentes pour cette séance photo.",
+    contact2: `%0D%0A Vous pouvez me recontacter de préférence par mail, ou par téléphone au 04 XX XX XX XX / 06 XX XX XX XX, idéalement sur le créneau suivant : [préciser votre disponibilité].`,
+    cordialement2: `%0D%0A %0D%0A Cordialement %0D%0A [Nom] %0D%0A [Coordonnées éventuelles : téléphone, mail]`,
+    ps2: `%0D%0A %0D%0A P.S. : Voici quelques précisions complémentaires si besoin : %0D%0A [...]`,
 }
 
 const dataRootEmail: DataCorporateEmailType = {
     confiance: {
         mailto: externalLinks.emailAnne,
         subject: `${Service} - Formule ${Formule.confiance}`,
-        body: `${SegmentTexte.intro} ${Formule.confiance} pour un ${Service}. ${SegmentTexte.contact} ${SegmentTexte.cordialement} ${SegmentTexte.info} ${SegmentTexte.ps}`
+        body: `${SegmentTexte.intro1} ${Formule.confiance} pour un ${Service}. ${SegmentTexte.contact1} ${SegmentTexte.cordialement1} ${SegmentTexte.info} ${SegmentTexte.ps1}`
     },
     classique: {
         mailto: externalLinks.emailAnne,
         subject: `${Service} - Formule ${Formule.classique}`,
-        body: `${SegmentTexte.intro} ${Formule.classique} pour un ${Service}. ${SegmentTexte.contact} ${SegmentTexte.cordialement} ${SegmentTexte.info} ${SegmentTexte.ps}`
+        body: `${SegmentTexte.intro1} ${Formule.classique} pour un ${Service}${SegmentTexte.intro2} ${SegmentTexte.contact2} ${SegmentTexte.cordialement2} ${SegmentTexte.info} ${SegmentTexte.ps2}`
     },
     flash: {
         mailto: externalLinks.emailAnne,
         subject: `${Reservation} - Formule ${Formule.flash}`,
-        body: `${SegmentTexte.intro} ${Formule.flash} pour un ${Service}. ${SegmentTexte.contact} ${SegmentTexte.cordialement} ${SegmentTexte.info} ${SegmentTexte.ps}`
+        body: `${SegmentTexte.intro1} ${Formule.flash} pour un ${Service}${SegmentTexte.intro2} ${SegmentTexte.contact2} ${SegmentTexte.cordialement2} ${SegmentTexte.info} ${SegmentTexte.ps2}`
     },
     signature: {
         mailto: externalLinks.emailAnne,
         subject: `${Reservation} - Formule ${Formule.signature}`,
-        body: `${SegmentTexte.intro} ${Formule.signature} pour un ${Service}. ${SegmentTexte.contact} ${SegmentTexte.cordialement} ${SegmentTexte.info} ${SegmentTexte.ps}`
+        body: `${SegmentTexte.intro1} ${Formule.signature} pour un ${Service}${SegmentTexte.intro2} ${SegmentTexte.contact2} ${SegmentTexte.cordialement2} ${SegmentTexte.info} ${SegmentTexte.ps2}`
     },
 };
 
