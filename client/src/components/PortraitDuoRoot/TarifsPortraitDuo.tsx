@@ -39,7 +39,8 @@ export {TarifsPortraitDuo};
 /* ---------- ----------- ---------- ---------- ---------- */
 /* Bloc logique 2 */
 
-const Service: string = "Réservation Portrait Duo"; /* Bloc a modifier si besoin */
+const Service: string = "Portrait Duo"; /* Bloc a modifier si besoin */
+const Reservation: string = `Réservation ${Service}`; /* Bloc a modifier si besoin */
 
 /* Nom des formules disponibles */
 const Formule: FormuleType = {
@@ -51,21 +52,29 @@ const Formule: FormuleType = {
 /* ---------- ----------- ---------- ---------- ---------- */
 /* Bloc logique 3 */
 
+const SegmentTexte = {
+    intro: "Bonjour Anne, %0D%0A %0D%0A Je souhaite réserver la formule",
+    contact: `%0D%0A Pouvez-vous me recontacter ?`,
+    cordialement: `%0D%0A %0D%0A Cordialement`,
+    info: `%0D%0A %0D%0A [Prénom - Téléphone éventuel]`,
+    ps: `%0D%0A P.S : (au besoin) Je vous donne ci-dessous quelques précisions utiles : %0D%0A [disponibilités, souhaits particuliers, objectif du portrait, autres...]`,
+}
+
 const dataRootEmail: DataRootEmailType = {
     essentiel: {
         mailto: externalLinks.emailAnne,
         subject: `${Service} - Formule ${Formule.essentiel}`,
-        body: `Bonjour Anne, %0D%0A %0D%0A Je souhaite réserver la formule ${Formule.essentiel} pour un portrait Duo. %0D%0A Pouvez-vous de me recontacter. %0D%0A %0D%0A Cordialement,`
+        body: `${SegmentTexte.intro} ${Formule.essentiel} pour un ${Service}. ${SegmentTexte.contact} ${SegmentTexte.cordialement} ${SegmentTexte.info} ${SegmentTexte.ps}`
     },
     confort: {
         mailto: externalLinks.emailAnne,
         subject: `${Service} - Formule ${Formule.confort}`,
-        body: `Bonjour Anne, %0D%0A %0D%0A Je souhaite réserver la formule ${Formule.confort} pour un portrait Duo. %0D%0A Pouvez-vous de me recontacter. %0D%0A %0D%0A Cordialement,`
+        body: `${SegmentTexte.intro} ${Formule.confort} pour un ${Service}. ${SegmentTexte.contact} ${SegmentTexte.cordialement} ${SegmentTexte.info} ${SegmentTexte.ps}`
     },
     premium: {
         mailto: externalLinks.emailAnne,
-        subject: `${Service} - Formule ${Formule.premium}`,
-        body: `Bonjour Anne, %0D%0A %0D%0A Je souhaite réserver la formule ${Formule.premium} pour un portrait Duo. %0D%0A Pouvez-vous de me recontacter. %0D%0A %0D%0A Cordialement,`
+        subject: `${Reservation} - Formule ${Formule.premium}`,
+        body: `${SegmentTexte.intro} ${Formule.premium} pour un ${Service}. ${SegmentTexte.contact} ${SegmentTexte.cordialement} ${SegmentTexte.info} ${SegmentTexte.ps}`
     },
 };
 
