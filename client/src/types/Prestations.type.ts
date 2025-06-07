@@ -1,12 +1,13 @@
 /* Bloc logique 1 */
 type PricingData = {
-  line1: { value1: string; value2: string };
-  line2: { value1: string; value2: string };
-  line3: { value1: string; value2: string };
-  line4: { value1: string; value2: string };
-  line5: { value1: string; value2: string };
-  line6: { value1: string; value2: string };
-  line7: { value1: string; value2: string };
+  line0?: { value1: string; value2: string };
+  line1?: { value1: string; value2: string };
+  line2?: { value1: string; value2: string };
+  line3?: { value1: string; value2: string };
+  line4?: { value1: string; value2: string };
+  line5?: { value1: string; value2: string };
+  line6?: { value1: string; value2: string };
+  line7?: { value1: string; value2: string };
   line8?: { value1: string; value2: string };
   line9?: { value1: string; value2: string };
   line10?: { value1: string; value2: string };
@@ -14,9 +15,13 @@ type PricingData = {
 
 
 type PrestationType = {
-  essentiel: PricingData;
-  confort: PricingData;
-  premium: PricingData;
+  essentiel?: PricingData;
+  confort?: PricingData;
+  premium?: PricingData;
+  confiance?: PricingData;
+  flash?: PricingData;
+  classique?: PricingData;
+  signature? : PricingData;
 };
 
 /* ---------- ----------- ---------- ---------- ---------- */
