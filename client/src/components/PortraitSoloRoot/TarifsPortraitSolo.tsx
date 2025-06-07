@@ -64,12 +64,12 @@ const dataRootEmail: DataRootEmailType = {
     essentiel: {
         mailto: externalLinks.emailAnne,
         subject: `${Service} - Formule ${Formule.essentiel}`,
-        body: `Bonjour Anne, %0D%0A %0D%0A Je souhaite réserver la formule ${Formule.essentiel} pour un portrait solo. %0D%0A Pouvez-vous de me recontacter. %0D%0A %0D%0A Cordialement,`
+        body: `${SegmentTexte.intro} ${Formule.essentiel} pour un ${Service}. ${SegmentTexte.contact} ${SegmentTexte.cordialement} ${SegmentTexte.info} ${SegmentTexte.ps}`
     },
     confort: {
         mailto: externalLinks.emailAnne,
         subject: `${Service} - Formule ${Formule.confort}`,
-        body: `Bonjour Anne, %0D%0A %0D%0A Je souhaite réserver la formule ${Formule.confort} pour un portrait solo. %0D%0A Pouvez-vous de me recontacter. %0D%0A %0D%0A Cordialement,`
+        body: `${SegmentTexte.intro} ${Formule.confort} pour un ${Service}. ${SegmentTexte.contact} ${SegmentTexte.cordialement} ${SegmentTexte.info} ${SegmentTexte.ps}`
     },
     premium: {
         mailto: externalLinks.emailAnne,
