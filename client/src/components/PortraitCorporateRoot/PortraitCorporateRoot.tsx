@@ -3,7 +3,7 @@ import style from "../StyleRootComponent.module.css";
 import AvisClientPortraitCorporateControllerData from "./AvisClientPortraitCorporateControllerData";
 import GeneratorCardAvisClient from "../GeneratorCardAvisClient/GeneratorCardAvisClient";
 
-import TarifCardRoot from "../TarifsCard/TarifsCardRoot";
+import TarifCardCorporate from "./ComponentsPortraitCorporateRoot/TarifsComponentsCorporate/TarifsCardCorporate";
 import { TarifsPortraitCorporate, MailtoLinkPortraitCorporate } from "./TarifsPortraitCorporate";
 
 import PortraitCorporateRootComponentA from "./ComponentsPortraitCorporateRoot/PortraitCorporateRootComponentA/PortraitCorporateRootComponentA";
@@ -30,7 +30,7 @@ function PortraitCorporateRoot() {
             <PortraitCorporateRootComponentC />
 
             {/* Container D : Carte des tarifs */}
-            <TarifCardRoot id="tarifs-portrait-corporate" tarifs={TarifsPortraitCorporate} mailtoLink={MailtoLinkPortraitCorporate} />
+            <TarifCardCorporate id="tarifs-portrait-corporate" tarifs={TarifsPortraitCorporate} mailtoLink={MailtoLinkPortraitCorporate} />
 
             {/* Container E : Avis clients */}
             <GeneratorCardAvisClient
