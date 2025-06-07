@@ -3,7 +3,7 @@ import style from "../StyleRootComponent.module.css";
 import AvisClientPortraitCorporateControllerData from "./AvisClientPortraitCorporateControllerData";
 import GeneratorCardAvisClient from "../GeneratorCardAvisClient/GeneratorCardAvisClient";
 
-import TarifCardCorporate from "./TarifsCardCorporate";
+import TarifCardCorporate from "./ComponentsPortraitCorporateRoot/TarifsComponentsCorporate/TarifsCardCorporate";
 import { TarifsPortraitCorporate, MailtoLinkPortraitCorporate } from "./TarifsPortraitCorporate";
 
 import PortraitCorporateRootComponentA from "./ComponentsPortraitCorporateRoot/PortraitCorporateRootComponentA/PortraitCorporateRootComponentA";

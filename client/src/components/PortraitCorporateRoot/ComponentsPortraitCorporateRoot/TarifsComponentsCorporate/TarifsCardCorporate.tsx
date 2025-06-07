@@ -1,5 +1,5 @@
-import css from './TarifsCardRoot.module.css';
-import { PrestationType } from '../../types/Prestations.type';
+import css from './TarifsCardCorporate.module.css';
+import { PrestationType } from '../../../../types/Prestations.type';
 
 type FormuleCorporateType = {
   confiance: string;
