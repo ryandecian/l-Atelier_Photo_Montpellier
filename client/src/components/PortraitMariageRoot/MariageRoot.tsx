@@ -1,14 +1,20 @@
 import style from "../StyleRootComponent.module.css";
+
 import PortraitMariageRootComponentA from "./ComponentsPortraitMariageRoot/PortraitMariageRootComponentA/PortraitMariageRootComponentA";
 import PortraitMariageRootComponentB from "./ComponentsPortraitMariageRoot/PortraitMariageRootComponentB/PortraitMariageRootComponentB";
 import PortraitMariageRootComponentC from "./ComponentsPortraitMariageRoot/PortraitMariageRootComponentC/PortraitMariageRootComponentC";
 import PortraitMariageRootComponentD from "./ComponentsPortraitMariageRoot/PortraitMariageRootComponentD/PortraitMariageRootComponentD";
 import PortraitMariageRootComponentE from "./ComponentsPortraitMariageRoot/PortraitMariageRootComponentE/PortraitMariageRootComponentE";
 import PortraitMariageRootComponentF from "./ComponentsPortraitMariageRoot/PortraitMariageRootComponentF/PortraitMariageRootComponentF";
+
 import Container4ImagesRoot from "./../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ControllerDataImagePortraitMariage from "./ImagesPortraitMariageControllerData";
+
 import GeneratorCardAvisClient from "./../GeneratorCardAvisClient/GeneratorCardAvisClient";
 import AvisClientPortraitMariageControllerData from "./AvisClientPortraitMariageControllerData";
+
+import TarifCardRoot from "../TarifsCard/TarifsCardRoot";
+import { TarifsPortraitMariage, MailtoLinkPortraitMariage } from "./TarifsPortraitMariage";
 
 function PortraitMariageRoot() {
     return (
@@ -129,6 +135,9 @@ function PortraitMariageRoot() {
 
             {/* Composant F Conclusion : Des Photos Qui Vous Rappellent un Moment Unique : */}
             <PortraitMariageRootComponentF />
+
+            {/* Carte Tarifs */}
+            <TarifCardRoot id="tarifs-portrait-mariage" tarifs={TarifsPortraitMariage} mailtoLink={MailtoLinkPortraitMariage} />
 
             {/* Avis Client : */}
             <GeneratorCardAvisClient avisClients={AvisClientPortraitMariageControllerData} />
