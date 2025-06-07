@@ -23,6 +23,7 @@ import PortraitMariagePage from "../pages/PortraitMariagePage/PortraitMariagePag
 import PortraitNouveauNePage from "../pages/PotraitNouveauNePage/PortraitNouveauNePage";
 import PortraitSoloPage from "../pages/PortraitSoloPage/PortraitSoloPage";
 import PortraitFamillePage from "../pages/PortraitFamillePage/PortraitFamillePage";
+import PrestationPage from "../pages/PrestationPage/PrestationPage";
 
 /**
  * Utilisation : 
@@ -49,7 +50,7 @@ const ListDataRouter: RouterItemsType[] = [
     /* {ListDataRouter[2].path} */
     {
         path: "/tarifs",
-        element: <h1>Route : Page Tarifs</h1>,
+        element: <PrestationPage />,
     },
     /* {ListDataRouter[3].path} */
     {

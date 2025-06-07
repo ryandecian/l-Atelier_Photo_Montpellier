@@ -3,7 +3,11 @@ Ce qu'il manque :
 Attention, le sitemap.xml et le robot.txt sont configuré pour le Nas ! Il faudra les adapté pour la prod
 
 ------------------------------------------------------------------------------
-Les formules Corporate ne sont pas édité correctement
+Edition de la page tarif : 
+ - Faire le SEO
+ - Editer la page 
+  - Barre de recherche
+  - Carte de prestation
 
 ------------------------------------------------------------------------------
 
