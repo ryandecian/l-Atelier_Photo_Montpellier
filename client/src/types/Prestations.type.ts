@@ -11,6 +11,10 @@ type PricingData = {
   line8?: { value1: string; value2: string };
   line9?: { value1: string; value2: string };
   line10?: { value1: string; value2: string };
+  line11?: { value1: string; value2: string };
+  line12?: { value1: string; value2: string };
+  line13?: { value1: string; value2: string };
+  line14?: { value1: string; value2: string };
 };
 
 
