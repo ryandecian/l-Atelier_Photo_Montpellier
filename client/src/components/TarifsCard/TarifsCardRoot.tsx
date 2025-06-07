@@ -32,7 +32,7 @@ function TarifCardRoot({tarifs, mailtoLink, id}: TarifCardRootProps) {
                 </li>
               ))}
             </ul>
-            <a href={`mailto:${mailtoLink[key]}`} className={css.button}>Réserver cette formule</a>
+            <a href={`mailto:${mailtoLink[key]}`} className={css.button}>Plus d'infos</a>
           </article>
         );
       })}
