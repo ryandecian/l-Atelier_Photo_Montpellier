@@ -4,7 +4,7 @@ import {PrestationType, FormuleType, DataRootEmailType} from "../../types/Presta
 /* ---------- ----------- ---------- ---------- ---------- */
 /* Bloc logique 1 */
 
-const TarifsPortraitSolo: PrestationType = {
+const TarifsPortraitMariage: PrestationType = {
     essentiel: {
         line1: { value1: 'Durée Séance', value2: '45min' },
         line2: { value1: 'Extérieur', value2: 'Oui' },
@@ -34,12 +34,12 @@ const TarifsPortraitSolo: PrestationType = {
     },
 };
 
-export {TarifsPortraitSolo};
+export {TarifsPortraitMariage};
 
 /* ---------- ----------- ---------- ---------- ---------- */
 /* Bloc logique 2 */
 
-const Service: string = "Portrait Solo"; /* Bloc a modifier si besoin */
+const Service: string = "Portrait Mariage"; /* Bloc a modifier si besoin */
 const Reservation: string = `Réservation ${Service}`; /* Bloc a modifier si besoin */
 
 /* Nom des formules disponibles */
@@ -82,10 +82,10 @@ const dataRootEmail: DataRootEmailType = {
 /* Bloc logique 4 */
 
 /* Mail structuré pour les carte de tarifs */
-const MailtoLinkPortraitSolo: FormuleType = {
+const MailtoLinkPortraitMariage: FormuleType = {
     essentiel: `${dataRootEmail.essentiel.mailto}?subject=${dataRootEmail.essentiel.subject}&body=${dataRootEmail.essentiel.body}`,
     confort: `${dataRootEmail.confort.mailto}?subject=${dataRootEmail.confort.subject}&body=${dataRootEmail.confort.body}`,
     premium: `${dataRootEmail.premium.mailto}?subject=${dataRootEmail.premium.subject}&body=${dataRootEmail.premium.body}`,
 }
 
-export {MailtoLinkPortraitSolo};
+export {MailtoLinkPortraitMariage};
