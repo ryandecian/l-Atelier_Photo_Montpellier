@@ -1,14 +1,20 @@
-import css from './TarifsCardRoot.module.css';
-import { PrestationType } from '../../types/Prestations.type';
-import { FormuleType } from '../../types/Prestations.type';
+import css from './TarifsCardCorporate.module.css';
+import { PrestationType } from '../../../../types/Prestations.type';
+
+type FormuleCorporateType = {
+  confiance: string;
+  flash: string;
+  classique: string;
+  signature: string;
+}
 
 type TarifCardRootProps = {
   tarifs: PrestationType;
   id: string;
-  mailtoLink: FormuleType;
+  mailtoLink: FormuleCorporateType;
 };
 
-function TarifCardRoot({tarifs, mailtoLink, id}: TarifCardRootProps) {
+function TarifCardCorporate({tarifs, mailtoLink, id}: TarifCardRootProps) {
   return (
     <section id={id} className={css.container}>
       {/* Convertie Prestations en un tableau d'entrée : [["essentiel", { ... }], ["confort", { ... }], ["premium", { ... }]] */}
@@ -16,7 +22,7 @@ function TarifCardRoot({tarifs, mailtoLink, id}: TarifCardRootProps) {
       {Object.entries(tarifs).map(([formulaKey, data]) => {
         /* Transforme la première lettre en majuscule : essentiel = Essentiel */
         const formulaName = formulaKey.charAt(0).toUpperCase() + formulaKey.slice(1);
-        const key = formulaKey as keyof FormuleType; // ✅ Cast pour accéder proprement à mailtoLink
+        const key = formulaKey as keyof FormuleCorporateType; // ✅ Cast pour accéder proprement à mailtoLink
 
         return (
           <article
@@ -40,4 +46,4 @@ function TarifCardRoot({tarifs, mailtoLink, id}: TarifCardRootProps) {
   );
 }
 
-export default TarifCardRoot;
+export default TarifCardCorporate;
