@@ -1,4 +1,3 @@
-// src/components/PrestationRoot/PrestationRoot.tsx
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import css from "./PrestationRoot.module.css";
