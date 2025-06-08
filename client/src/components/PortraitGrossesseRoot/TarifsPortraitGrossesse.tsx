@@ -4,10 +4,10 @@ import {PrestationType, FormuleType, DataRootEmailType} from "../../types/Presta
 /* ---------- ----------- ---------- ---------- ---------- */
 /* Bloc logique 1 */
 
-const TarifsPortraitFamille: PrestationType = {
+const TarifsPortraitGrossesse: PrestationType = {
     essentiel: {
         line1: { value1: 'Durée Séance', value2: '45 min' },
-        line2: { value1: 'Extérieur', value2: 'Oui' },
+        line2: { value1: 'Sur site', value2: 'Oui' },
         line3: { value1: 'Studio', value2: 'Non' },
         line4: { value1: 'Post Traitement', value2: 'Oui' },
         line5: { value1: 'Galerie en Ligne', value2: 'Oui' },
@@ -16,7 +16,7 @@ const TarifsPortraitFamille: PrestationType = {
     },
     confort: {
         line1: { value1: 'Durée Séance', value2: '1h00' },
-        line2: { value1: 'Extérieur', value2: 'Oui' },
+        line2: { value1: 'Sur site', value2: 'Oui' },
         line3: { value1: 'Ou Studio', value2: 'Oui' },
         line4: { value1: 'Post Traitement', value2: 'Oui' },
         line5: { value1: 'Galerie en Ligne', value2: 'Oui' },
@@ -25,8 +25,8 @@ const TarifsPortraitFamille: PrestationType = {
     },
     premium: {
         line1: { value1: 'Durée Séance', value2: '2h00' },
-        line2: { value1: 'Extérieur', value2: 'Oui' },
-        line3: { value1: 'Et Studio', value2: 'Oui' },
+        line2: { value1: 'Sur site', value2: 'Oui' },
+        line3: { value1: 'Ou Studio', value2: 'Oui' },
         line4: { value1: 'Post Traitement', value2: 'Oui' },
         line5: { value1: 'Galerie en Ligne', value2: 'Oui' },
         line6: { value1: 'Nombre de photos', value2: '15' },
@@ -34,12 +34,12 @@ const TarifsPortraitFamille: PrestationType = {
     },
 };
 
-export {TarifsPortraitFamille};
+export {TarifsPortraitGrossesse};
 
 /* ---------- ----------- ---------- ---------- ---------- */
 /* Bloc logique 2 */
 
-const Service: string = "Portrait Famille"; /* Bloc a modifier si besoin */
+const Service: string = "Portrait Grossesse / Nouveau Né"; /* Bloc a modifier si besoin */
 const Reservation: string = `Réservation ${Service}`; /* Bloc a modifier si besoin */
 
 /* Nom des formules disponibles */
@@ -82,10 +82,10 @@ const dataRootEmail: DataRootEmailType = {
 /* Bloc logique 4 */
 
 /* Mail structuré pour les carte de tarifs */
-const MailtoLinkPortraitFamille: FormuleType = {
+const MailtoLinkPortraitGrossesse: FormuleType = {
     essentiel: `${dataRootEmail.essentiel.mailto}?subject=${dataRootEmail.essentiel.subject}&body=${dataRootEmail.essentiel.body}`,
     confort: `${dataRootEmail.confort.mailto}?subject=${dataRootEmail.confort.subject}&body=${dataRootEmail.confort.body}`,
     premium: `${dataRootEmail.premium.mailto}?subject=${dataRootEmail.premium.subject}&body=${dataRootEmail.premium.body}`,
 }
 
-export {MailtoLinkPortraitFamille};
+export {MailtoLinkPortraitGrossesse};
