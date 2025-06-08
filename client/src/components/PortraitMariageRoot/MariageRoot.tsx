@@ -1,4 +1,5 @@
 import style from "../StyleRootComponent.module.css";
+import useScrollToHash from "../../hook/useScrollToHash";
 
 import PortraitMariageRootComponentA from "./ComponentsPortraitMariageRoot/PortraitMariageRootComponentA/PortraitMariageRootComponentA";
 import PortraitMariageRootComponentB from "./ComponentsPortraitMariageRoot/PortraitMariageRootComponentB/PortraitMariageRootComponentB";
@@ -17,6 +18,8 @@ import TarifCardRoot from "../TarifsCard/TarifsCardRoot";
 import { TarifsPortraitMariage, MailtoLinkPortraitMariage } from "./TarifsPortraitMariage";
 
 function PortraitMariageRoot() {
+    useScrollToHash() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
+    
     return (
         <section className={`PortraitMariageRoot ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
