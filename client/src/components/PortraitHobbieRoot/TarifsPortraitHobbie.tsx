@@ -4,42 +4,42 @@ import {PrestationType, FormuleType, DataRootEmailType} from "../../types/Presta
 /* ---------- ----------- ---------- ---------- ---------- */
 /* Bloc logique 1 */
 
-const TarifsPortraitSolo: PrestationType = {
+const TarifsPortraitHobbie: PrestationType = {
     essentiel: {
         line1: { value1: 'Durée Séance', value2: '45 min' },
         line2: { value1: 'Extérieur', value2: 'Oui' },
-        line3: { value1: 'Studio', value2: 'Non' },
+        line3: { value1: 'Flash', value2: 'Non' },
         line4: { value1: 'Post Traitement', value2: 'Oui' },
         line5: { value1: 'Galerie en Ligne', value2: 'Oui' },
-        line6: { value1: 'Nombre de photos', value2: '5' },
-        line7: { value1: 'Prix', value2: '99 €' },
+        line6: { value1: 'Nombre de photos', value2: '10' },
+        line7: { value1: 'Prix', value2: '159 €' },
     },
     confort: {
         line1: { value1: 'Durée Séance', value2: '1h00' },
         line2: { value1: 'Extérieur', value2: 'Oui' },
-        line3: { value1: 'Ou Studio', value2: 'Oui' },
+        line3: { value1: 'Flash', value2: 'Oui' },
         line4: { value1: 'Post Traitement', value2: 'Oui' },
         line5: { value1: 'Galerie en Ligne', value2: 'Non' },
         line6: { value1: 'Nombre de photos', value2: '15' },
-        line7: { value1: 'Prix', value2: '149 €' },
+        line7: { value1: 'Prix', value2: '199 €' },
     },
     premium: {
         line1: { value1: 'Durée Séance', value2: '2h00' },
         line2: { value1: 'Extérieur', value2: 'Oui' },
-        line3: { value1: 'Et Studio', value2: 'Oui' },
+        line3: { value1: 'Flash', value2: 'Oui' },
         line4: { value1: 'Post Traitement', value2: 'Oui' },
         line5: { value1: 'Galerie en Ligne', value2: 'Oui' },
-        line6: { value1: 'Nombre de photos', value2: '22' },
-        line7: { value1: 'Prix', value2: '199 €' },
+        line6: { value1: 'Nombre de photos', value2: '20' },
+        line7: { value1: 'Prix', value2: '249 €' },
     },
 };
 
-export {TarifsPortraitSolo};
+export {TarifsPortraitHobbie};
 
 /* ---------- ----------- ---------- ---------- ---------- */
 /* Bloc logique 2 */
 
-const Service: string = "Portrait Solo"; /* Bloc a modifier si besoin */
+const Service: string = "Portrait Hobbie"; /* Bloc a modifier si besoin */
 const Reservation: string = `Réservation ${Service}`; /* Bloc a modifier si besoin */
 
 /* Nom des formules disponibles */
@@ -82,10 +82,10 @@ const dataRootEmail: DataRootEmailType = {
 /* Bloc logique 4 */
 
 /* Mail structuré pour les carte de tarifs */
-const MailtoLinkPortraitSolo: FormuleType = {
+const MailtoLinkPortraitHobbie: FormuleType = {
     essentiel: `${dataRootEmail.essentiel.mailto}?subject=${dataRootEmail.essentiel.subject}&body=${dataRootEmail.essentiel.body}`,
     confort: `${dataRootEmail.confort.mailto}?subject=${dataRootEmail.confort.subject}&body=${dataRootEmail.confort.body}`,
     premium: `${dataRootEmail.premium.mailto}?subject=${dataRootEmail.premium.subject}&body=${dataRootEmail.premium.body}`,
 }
 
-export {MailtoLinkPortraitSolo};
+export {MailtoLinkPortraitHobbie};
