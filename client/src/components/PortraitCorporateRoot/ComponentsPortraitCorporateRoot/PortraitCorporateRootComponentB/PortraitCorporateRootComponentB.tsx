@@ -1,6 +1,6 @@
 import style from "../../../StyleRootComponent.module.css";
 import externalLinks from "../../../../constants/externalLinks";
-import Container4ImagesPortraitRoot from "../../../ContainerImageRoot/Container4ImagesPortraitRoot/Container4ImagesPortraitRoot";
+import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ImagesPortraitCorporateControllerData from "../../ImagesPortraitCorporateControllerData";
 
 function PortraitCorporateRootComponentB() {
@@ -49,7 +49,7 @@ function PortraitCorporateRootComponentB() {
                 </p>
     
                 {/* Container 2 : Container image portrait Corporate */}
-                <Container4ImagesPortraitRoot 
+                <Container4ImagesRoot 
                     img1={ImagesPortraitCorporateControllerData[4].src}
                     MetaNameImg1={ImagesPortraitCorporateControllerData[4].alt}
                     img2={ImagesPortraitCorporateControllerData[5].src}
