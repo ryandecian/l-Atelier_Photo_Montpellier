@@ -1,6 +1,10 @@
 import style from "../StyleRootComponent.module.css";
+
 import GeneratorCardAvisClient from "../GeneratorCardAvisClient/GeneratorCardAvisClient";
 import AvisClientPortraitHobbieControllerData from "./AvisClientPortraitHobbieControllerData";
+
+import TarifCardRoot from "../TarifsCard/TarifsCardRoot";
+import { TarifsPortraitHobbie, MailtoLinkPortraitHobbie } from "./TarifsPortraitHobbie";
 
 import PortraitHobbieRootComponentA from "./ComponentPortraitHobbieRoot/PortraitHobbieRootComponentA/PortraitHobbieRootComponentA";
 import PortraitHobbieRootComponentB from "./ComponentPortraitHobbieRoot/PortraitHobbieRootComponentB/PortraitHobbieRootComponentB";
@@ -19,6 +23,9 @@ function PortraitHobbieRoot() {
 
             {/* Container B */}
             <PortraitHobbieRootComponentB />
+
+            {/* Container C : Carte tarifs */}
+            <TarifCardRoot id="tarifs-portrait-hobbie" tarifs={TarifsPortraitHobbie} mailtoLink={MailtoLinkPortraitHobbie} />
 
             {/* Container D : Avis client */}
             <GeneratorCardAvisClient avisClients={AvisClientPortraitHobbieControllerData}/>
