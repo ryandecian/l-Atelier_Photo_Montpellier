@@ -27,8 +27,8 @@ const ImagesPortraitDuoControllerData: ImagesControllerDataType[] = [
     },
     /* {ImagesPortraitDuoControllerData[3].src} */
     {
-        src: "/images/image-portrait-duo-couple/lapm-photo-professionnel-portrait-duo-couple-montpellier-l-atelier-photo-montpellier.jpg",
-        alt: "LAPM - photo professionnel - portrait duo - couple - Montpellier - L'Atelier Photo Montpellier",
+        src: "/images/image-portrait-duo-couple/lapm-photographie-professionnelle-portrait-duo-studio-couple-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographie professionnelle - portrait duo - studio - couple - L'Atelier Photo Montpellier",
     },
 
 
@@ -36,13 +36,13 @@ const ImagesPortraitDuoControllerData: ImagesControllerDataType[] = [
     /* Tableau 2 : PortraitDuoComponentB */
     /* {ImagesPortraitDuoControllerData[4].src} */
     {
-        src: "/images/image-portrait-duo-couple/lapm-photo-professionnel-portrait-duo-flash-studio-detente-l-atelier-photo-montpellier.jpg",
-        alt: "LAPM - photo professionnel - portrait duo - flash studio - détente - L'Atelier Photo Montpellier",
+        src: "/images/image-portrait-duo-couple/lapm-photographe-professionnel-portrait-duo-flash-studio-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait duo - flash studio - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitDuoControllerData[5].src} */
     {
-        src: "/images/image-portrait-duo-couple/lapm-photographe-professionnel-portrait-duo-flash-studio-l-atelier-photo-montpellier.jpg",
-        alt: "LAPM - photographe professionnel - portrait duo - flash studio - L'Atelier Photo Montpellier",
+        src: "/images/image-portrait-duo-couple/lapm-photo-professionnel-portrait-duo-flash-studio-detente-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo professionnel - portrait duo - flash studio - détente - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitDuoControllerData[6].src} */
     {
@@ -51,8 +51,8 @@ const ImagesPortraitDuoControllerData: ImagesControllerDataType[] = [
     },
     /* {ImagesPortraitDuoControllerData[7].src} */
     {
-        src: "/images/image-portrait-duo-couple/lapm-photographie-professionnelle-portrait-duo-studio-couple-l-atelier-photo-montpellier.jpg",
-        alt: "LAPM - photographie professionnelle - portrait duo - studio - couple - L'Atelier Photo Montpellier",
+        src: "/images/image-portrait-duo-couple/lapm-photo-professionnel-portrait-duo-couple-montpellier-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo professionnel - portrait duo - couple - Montpellier - L'Atelier Photo Montpellier",
     },
 ];
 
