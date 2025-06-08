@@ -1,9 +1,9 @@
 import style from "../../../StyleRootComponent.module.css";
 import css from "./HomeRootComponentF.module.css"
-import AnneSAUNIER from "../../../../assets/Images/AnneSAUNIER/AnneSAUNIER.jpg";
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../../router/router";
 import useMediaQueriesWidth from "../../../../hook/mediaQueriesWidth.utils.hook";
+import PremiumCardImgSudoRoot from "../../../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
 
 type textHTMLType = {
     htmlA: string,
@@ -43,7 +43,7 @@ function HomePCAutorComponentF() {
         ),
         htmlK: (
             <figure className={css.ContainerPortraitAutor}>
-                    <img src={AnneSAUNIER} alt="Portrait de la photographe professionnelle Anne SAUNIER" className={css.AutorImg}/>
+                    <PremiumCardImgSudoRoot src="./images/anne-saunier/lapm-photographe-professionnelle-anne-saunier-grabels-l-atelier-photo-montpellier.jpg" alt="Portrait de la photographe professionnelle Anne SAUNIER" className={css.AutorImg} />
                     <figcaption className={style.SpanBold}>
                         Anne SAUNIER
                     </figcaption>
