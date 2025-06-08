@@ -1,13 +1,14 @@
 .container {
   padding: 2rem;
-  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .searchBar {
   width: 100%;
   max-width: 400px;
   margin: 0 auto 2rem;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
   font-size: 1rem;
   border-radius: 8px;
   border: 1px solid #ccc;
@@ -21,18 +22,51 @@
 }
 
 .card {
-  background-color: #f7f7f7;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 12px;
-  padding: 1.5rem;
-  text-align: left;
   width: 250px;
+  height: 280px;
   text-decoration: none;
-  color: inherit;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* léger noircissement */
+  z-index: 0;
+}
+
 .card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.03);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent 80%);
+  padding: 1rem;
+  width: 100%;
+  border-radius: 0 0 12px 12px;
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.cardDescription {
+  margin-top: 0.25rem;
+  font-size: 0.95rem;
 }

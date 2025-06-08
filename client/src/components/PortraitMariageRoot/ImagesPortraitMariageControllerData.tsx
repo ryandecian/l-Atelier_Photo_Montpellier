@@ -75,8 +75,8 @@ const ImagePortraitMariageControllerData: ImagesControllerDataType[] = [
     },
     /* {ImagePortraitMariageControllerData[11].src} */
     {
-        src: "/images/image-portrait-mariage/lapm-photographie-professionnelle-portrait-mariage-mariage-pride-l-atelier-photo-montpellier.jpg",
-        alt: "LAPM - photographie professionnelle - portrait mariage - mariage Pride - L'Atelier Photo Montpellier",
+        src: "/images/image-portrait-mariage/lapm-photographie-professionnelle-portrait-mariage-shooting-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographie professionnelle - portrait mariage - Shooting - L'Atelier Photo Montpellier",
     },
 
 
