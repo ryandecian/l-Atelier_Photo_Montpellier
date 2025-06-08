@@ -1,4 +1,6 @@
 import style from "../StyleRootComponent.module.css";
+import useScrollToHash from "../../hook/useScrollToHash";
+
 import ImagesPortraitLifeStyleControllerData from "./ImagesPortraitLifeStyleControllerData";
 import Container4ImagesRoot from "../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 
@@ -15,6 +17,8 @@ import PortraitLifeStyleRootComponentG from "./ComponentsPortraitLifeStyleRoot/P
 import PortraitLifeStyleRootComponentH from "./ComponentsPortraitLifeStyleRoot/PortraitLifeStyleRootComponentH/PortraitLifeStyleRootComponentH";
 
 function PortraitLifeStyleRoot() {
+    useScrollToHash() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
+    
     return (
         <section className={`PortraitLifeStyleRoot ${style.ContainerRootRacine}`}>
 
