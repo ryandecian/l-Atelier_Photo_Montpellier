@@ -34,11 +34,17 @@ function HomeRootComponentB() {
                         </Link>
                     </span>
                     , {" "} 
-                    réalisés en lumière naturelle ou au flash – je mets tout en œuvre pour saisir la 
-                    personnalité unique de chacun. La photographie de portrait professionnel 
+                    réalisés en lumière naturelle ou au flash – je mets tout en œuvre pour 
+                    saisir la
+                    <span className={style.SpanBold}>
+                        {" personnalité unique de chacun. "}
+                    </span>  
+                    La photographie de portrait professionnel 
                     n’est pas seulement une technique, c’est une véritable passion que je 
-                    développe afin que chacun et chacune puisse porter un regard sur lui 
-                    (elle) positif et valorisant.
+                    développe afin que chacun et chacune puisse 
+                    <span className={style.SpanBold}>
+                        {" porter un regard sur lui (elle) positif et valorisant."}
+                    </span> 
                 </p>
             </article>
             <article className={style.ContainerText}>
@@ -46,7 +52,10 @@ function HomeRootComponentB() {
                     <span className={style.SpanBold}>
                         {"Ma vision du mariage"}
                     </span>
-                    {" "} se décline sous la forme d’un reportage photographique. 
+                    {" "} se décline sous la forme d’un 
+                    <span className={style.SpanBold}>
+                        {" reportage photographique."}
+                    </span>
                     Plutôt que de créer de simples poses figées, je privilégie l’instantanéité 
                     et la spontanéité des émotions vécues durant la cérémonie. Je cherche à 
                     être au plus près de tous ces instants afin qu’ils restent gravés, et cette 
