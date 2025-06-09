@@ -13,7 +13,10 @@ function PortraitSoloRootComponentA() {
             
             <p className={style.TextP4}>
                 C'est un moment pour soi. <br />
-                Un espace-temps rare où l’on se pose, on respire, on ose être soi-même… devant l’objectif, mais aussi en dedans.
+                <span className={style.SpanBold}>
+                    {"Un espace-temps rare où l’on se pose, "}
+                </span>
+                on respire, on ose être soi-même… devant l’objectif, mais aussi en dedans.
             </p>
 
             <p className={style.TextP4}>
@@ -52,7 +55,7 @@ function PortraitSoloRootComponentA() {
                 <p className={style.TextP4}>
                     Parce que j’ai fait de l'
                     <span className={style.SpanBold}>
-                        {" humain "}
+                        {"humain "}
                     </span>
                     le cœur de mon métier. <br />
                     Mon objectif : que vous repartiez 
@@ -68,13 +71,22 @@ function PortraitSoloRootComponentA() {
 
                 <ul className={style.ContainerUl}>
                     <li className={style.TextLiP4}>
-                        On échange en amont sur vos envies, vos doutes, votre rapport à la photo.
+                        <span className={style.SpanBold}>
+                            {"On échange en amont sur vos envies, "}
+                        </span>
+                        vos doutes, votre rapport à la photo.
                     </li>
                     <li className={style.TextLiP4}>
-                        Je vous guide doucement pendant la séance, sans jamais vous forcer.
+                        <span className={style.SpanBold}>
+                            {"Je vous guide doucement "}
+                        </span>
+                        pendant la séance, sans jamais vous forcer.
                     </li>
                     <li className={style.TextLiP4}>
-                        On prend le temps de faire les choses bien, dans une atmosphère détendue, conviviale et créative.
+                        On prend le temps de faire les choses bien, 
+                        <span className={style.SpanBold}>
+                            {" dans une atmosphère détendue,"}
+                        </span> conviviale et créative.
                     </li>
                     <br />
                 </ul>
