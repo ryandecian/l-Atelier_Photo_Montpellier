@@ -41,8 +41,8 @@ const ImagesPortraitSoloControllerData: ImagesControllerDataType[] = [
     },
     /* {ImagesPortraitSoloControllerData[5].src} */
     {
-        src: "/images/image-portrait-solo/lapm-photographe-professionnel-portrait-solo-homme-montpellier-l-atelier-photo-montpellier.jpg",
-        alt: "LAPM - photographe professionnel - portrait solo - homme - Montpellier - L'Atelier Photo Montpellier",
+        src: "/images/image-portrait-solo/lapm-photo-professionnel-portrait-solo-parc-de-fontcolombe-flash-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo professionnel - portrait solo - parc de Fontcolombe - flash - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitSoloControllerData[6].src} */
     {
@@ -51,8 +51,8 @@ const ImagesPortraitSoloControllerData: ImagesControllerDataType[] = [
     },
     /* {ImagesPortraitSoloControllerData[7].src} */
     {
-        src: "/images/image-portrait-solo/lapm-photo-professionnel-portrait-solo-parc-de-fontcolombe-flash-l-atelier-photo-montpellier.jpg",
-        alt: "LAPM - photo professionnel - portrait solo - parc de Fontcolombe - flash - L'Atelier Photo Montpellier",
+        src: "/images/image-portrait-solo/lapm-photographe-professionnel-portrait-solo-homme-montpellier-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait solo - homme - Montpellier - L'Atelier Photo Montpellier",
     },
 ];
 

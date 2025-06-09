@@ -1,48 +1,11 @@
-// src/components/PrestationRoot/PrestationRoot.tsx
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import css from "./PrestationRoot.module.css";
-import ListDataRouter from "../../router/router";
-
-type Prestation = {
-  path: string;
-  id: string;
-  title: string;
-  description: string;
-  image: string;
-};
+import CardPrestation from "./DataCardPrestationRoot";
+import CardPrestationType from "../../types/CardPrestation.type";
 
 function PrestationRoot() {
-  const prestations: Prestation[] = [
-    {
-      path: ListDataRouter[14].path,
-      id: "tarifs-portrait-solo",
-      title: "Portrait Solo",
-      description: "Un portrait individuel élégant.",
-      image: "./images/image-portrait-solo/lapm-photographe-professionnel-portrait-solo-en-jardin-lifestyle-l-atelier-photo-montpellier.jpg",
-    },
-    {
-      path: ListDataRouter[14].path,
-      id: "tarifs-portrait-duo",
-      title: "Portrait Duo",
-      description: "Un moment capturé à deux.",
-      image: "./images/image-portrait-solo/lapm-photographe-professionnel-portrait-solo-en-jardin-lifestyle-l-atelier-photo-montpellier.jpg",
-    },
-    {
-      path: ListDataRouter[14].path,
-      id: "tarifs-portrait-famille",
-      title: "Portrait Famille",
-      description: "Souvenirs de famille intemporels.",
-      image: "./images/image-portrait-solo/lapm-photographe-professionnel-portrait-solo-en-jardin-lifestyle-l-atelier-photo-montpellier.jpg",
-    },
-    {
-      path: ListDataRouter[14].path,
-      id: "tarifs-portrait-grossesse",
-      title: "Portrait Grossesse",
-      description: "Capture des neuf mois magiques.",
-      image: "./images/image-portrait-solo/lapm-photographe-professionnel-portrait-solo-en-jardin-lifestyle-l-atelier-photo-montpellier.jpg",
-    },
-  ];
+  const prestations: CardPrestationType[] = CardPrestation();
 
   const [search, setSearch] = useState("");
 
