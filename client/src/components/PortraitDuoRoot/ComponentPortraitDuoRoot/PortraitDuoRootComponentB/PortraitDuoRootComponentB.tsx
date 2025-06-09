@@ -21,7 +21,7 @@ function PortraitDuoRootComponentB() {
             <span className={style.SpanBold}>
                 {" l’ambiance visuelle : "}
             </span>
-            lumineux et spontané ? doux et minimaliste ? cinématographique ? <br />
+            lumineux et spontané, doux et minimaliste, cinématographique ? <br />
             Puis on crée ce moment rien qu’à vous, loin des clichés, proche de vous.
         </p>
 
@@ -41,16 +41,29 @@ function PortraitDuoRootComponentB() {
         </h3>
         <ul className={style.ContainerUl}>
             <li className={style.TextLiP4}>
-                {"Vous voulez garder un souvenir vrai de votre lien"}
+                <span className={style.SpanBold}>
+                    {"Vous voulez garder un souvenir "}
+                </span>
+                {"vrai de votre lien"}
             </li>
             <li className={style.TextLiP4}>
-                {"Vous n’avez jamais fait de séance photo ensemble mais vous en rêviez"}
+                Vous n’avez jamais fait de 
+                <span className={style.SpanBold}>
+                    {" séance photo ensemble "}
+                </span>
+                 mais vous en rêviez
             </li>
             <li className={style.TextLiP4}>
-                {"Vous avez traversé une étape de vie et vous voulez l’honorer"}
+                <span className={style.SpanBold}>
+                    {"Vous avez traversé une étape de vie "}
+                </span>
+                {"et vous voulez l’honorer"}
             </li>
             <li className={style.TextLiP4}>
-                {"Vous êtes timides et cherchez une expérience douce, bienveillante"}
+                Vous êtes timides et cherchez une 
+                <span className={style.SpanBold}>
+                    {" expérience douce, "}
+                </span> bienveillante
             </li>
             <li className={style.TextLiP4}>
                 {"Vous voulez simplement "}
