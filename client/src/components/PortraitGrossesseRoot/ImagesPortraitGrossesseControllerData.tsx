@@ -3,9 +3,9 @@ import ImagesControllerDataType from "../../types/ImagesControllerData.type";
 /**
  * Compteur mot clés : 
  * 
- * photographe-professionnel : 3/4
- * photo-professionnel : 2/2
- * photographie-professionnelle : 2/2
+ * photographe-professionnel : 6/6
+ * photo-professionnel : 3/3
+ * photographie-professionnelle : 3/3
  */
 
 const ImagesPortraitGrossesseControllerData: ImagesControllerDataType[] = [
@@ -53,6 +53,30 @@ const ImagesPortraitGrossesseControllerData: ImagesControllerDataType[] = [
     {
         src: "/images/image-portrait-grossesse/lapm-photographe-professionnel-portrait-nouveau-ne-un-regard-l-atelier-photo-montpellier.jpg",
         alt: "LAPM - photographe professionnel - portrait - nouveau né - un regard - L'Atelier Photo Montpellier",
+    },
+
+
+
+    /* Tableau 3 : PortraitGrossesseComponentC */
+    /* {ImagesPortraitGrossesseControllerData[8].src} */
+    {
+        src: "/images/image-portrait-grossesse/lapm-photographe-professionnel-portrait-grossesse-noir-et-blanc-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait grossesse - noir et blanc - L'Atelier Photo Montpellier",
+    },
+    /* {ImagesPortraitGrossesseControllerData[9].src} */
+    {
+        src: "/images/image-portrait-grossesse/lapm-photo-professionnel-portrait-grossesse-annee50-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo professionnel - portrait grossesse - année 50 - L'Atelier Photo Montpellier",
+    },
+    /* {ImagesPortraitGrossesseControllerData[10].src} */
+    {
+        src: "/images/image-portrait-grossesse/lapm-photographe-professionnel-portrait-grossesse-contre-jour-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait grossesse - contre-jour - L'Atelier Photo Montpellier",
+    },
+    /* {ImagesPortraitGrossesseControllerData[11].src} */
+    {
+        src: "/images/image-portrait-grossesse/lapm-photographie-professionnelle-portrait-grossesse-bain-de-lait-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographie professionnelle - portrait grossesse - bain de lait - L'Atelier Photo Montpellier",
     },
 ];
 
