@@ -12,8 +12,11 @@ function PortraitLifeStyleRootComposantH() {
 
             <article className={style.ContainerText}>
                 <p className={style.TextP4}>
-                    Que ce soit un sport, un art, un animal ou un univers qui vous inspire, vos passions méritent d’être 
-                    mises en lumière. Que vous soyez en pleine action, plongé dans un univers qui vous fascine, ou dans 
+                    Que ce soit un sport, un art, un animal ou un univers qui vous inspire, 
+                    <span className={style.SpanBold}>
+                        {" vos passions méritent d’être mises en lumière. "}
+                    </span>
+                    Que vous soyez en pleine action, plongé dans un univers qui vous fascine, ou dans 
                     un moment plus posé, cette séance est pensée pour capturer ce qui vous anime, avec un rendu qui vous 
                     ressemble.
                 </p>
@@ -57,8 +60,14 @@ function PortraitLifeStyleRootComposantH() {
                 <p className={style.TextP4}>
                     {"Cette séance est faite pour vous si :"}
                     <br />
-                    ✔️ Vous voulez des photos dynamiques et naturelles, en plein cœur de votre passion. <br />
-                    ✔️ Vous souhaitez recréer une ambiance, une époque, ou un univers qui vous inspire. <br />
+                    ✔️ Vous voulez des photos dynamiques et naturelles, 
+                    <span className={style.SpanBold}>
+                        {" en plein cœur de votre passion."}
+                    </span> <br />
+                    ✔️ Vous souhaitez 
+                    <span className={style.SpanBold}>
+                        {" recréer une ambiance, "}
+                    </span> une époque, ou un univers qui vous inspire. <br />
                     ✔️ Vous êtes sportif, artiste, passionné d’histoire, de cinéma ou de culture geek.
                 </p>
 
