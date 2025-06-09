@@ -1,39 +1,27 @@
 import ListDataRouter from "../../router/router";
 import CardPrestationType from "../../types/CardPrestation.type";
 
-function CardPrestation() {
+function DataCardPrestation() {
     const tab: CardPrestationType[] = [
         {
-            path: ListDataRouter[14].path,
-            id: "tarifs-portrait-solo",
-            title: "Portrait Solo",
+            reactKey: 1,
+            path: ListDataRouter[13].path,
+            id: "tarifs-portrait-mariage",
+            title: "After day / trash the dress",
             description: "Un portrait individuel élégant.",
-            image: "/images/image-portrait-solo/lapm-photographe-professionnel-portrait-solo-homme-lifestyle-l-atelier-photo-montpellier.jpg",
+            image: "/images/image-prestation-card/",
         },
         {
+            reactKey: 2,
             path: ListDataRouter[14].path,
-            id: "tarifs-portrait-duo",
-            title: "Portrait Duo",
-            description: "Un moment capturé à deux.",
-            image: "/images/image-portrait-solo/lapm-photographe-professionnel-portrait-solo-homme-lifestyle-l-atelier-photo-montpellier.jpg",
-        },
-        {
-            path: ListDataRouter[14].path,
-            id: "tarifs-portrait-famille",
-            title: "Portrait Famille",
-            description: "Souvenirs de famille intemporels.",
-            image: "/images/image-portrait-solo/lapm-photographe-professionnel-portrait-solo-homme-lifestyle-l-atelier-photo-montpellier.jpg",
-        },
-        {
-            path: ListDataRouter[14].path,
-            id: "tarifs-portrait-famille",
-            title: "Portrait Famille",
-            description: "Souvenirs de famille intemporels.",
-            image: "/images/image-portrait-solo/lapm-photographe-professionnel-portrait-solo-homme-lifestyle-l-atelier-photo-montpellier.jpg",
+            id: "tarifs-portrait-mariage",
+            title: "After day / trash the dress",
+            description: "Un portrait individuel élégant.",
+            image: "/images/image-prestation-card/",
         },
     ]
     return tab;
 }
 
 
-export default CardPrestation;
+export default DataCardPrestation;
