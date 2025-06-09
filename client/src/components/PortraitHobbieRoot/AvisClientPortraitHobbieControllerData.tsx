@@ -4,24 +4,24 @@ const AvisClientPortraitHobbieControllerData: AvisClientControllerDataType[] = [
     /* Commentaire 1 */
     {
         id: 1,
-        nom: "Emma",
+        nom: "Quentin Z",
         note: 5,
-        commentaire: "Merci pour ces magnifiques photos ! Anne a su capturer l’ambiance du moment avec grande justesse, mettant en valeur chacun de nos invités. Son travail est de grande qualité, et nous avons de superbes souvenirs grâce à elle. En plus d’être une photographe talentueuse, elle est une personne adorable qui met en confiance. Je la recommande mille fois ! ",
-        date: "10 mars 2025",
+        commentaire: "Suis fan de la série Peaky Blinders et Anne a trouvé le lieu et la casquette aussi pour que j'endosse le rôle de Thomas Shelby. Le rendu m'a bluffé, bravo !",
+        date: "XXX 10 mars 2025",
     },
     {
         id: 2,
-        nom: "Marc",
+        nom: "Marylou L",
         note: 5,
-        commentaire: "Un immense merci à Anne pour son talent et son professionnalisme ! Les photos sont magnifiques, pleine d’émotion et de naturel. En plus de son talent, Anne est d’une grande réactivité : en un temps record, nous avons reçu un grand nombre de clichés sublimement retravaillés. Grâce à elle, nous avons des souvenirs inoubliables à partager avec nos proches ",
-        date: "14 février 2025",
+        commentaire: "Ouahh supers photos pendant la course et à côté de Milou ! Bonne continuation et je recommande vraiment, beaucoup de patience et n'hésites pas à se mettre ne 4 pour avoir la photo que je souhaitais.",
+        date: "XXX 14 février 2025",
     },
     {
         id: 3,
-        nom: "Karine",
+        nom: "Sheïma B",
         note: 5,
-        commentaire: "Un immense merci à Anne pour son talent et son regard unique. Elle a su capturer chaque instant de notre mariage avec une sensibilité et une élégance incroyable. Chaque photo raconte une histoire, reflète l’émotion du moment et nous permet de revivre cette journée magique encore et encore. Grâce à elle, nous avons de magnifiques souvenirs à partager avec nos proches. Si vous cherchez une photographe passionnée et douée, n’hésitez pas une seconde !",
-        date: "30 janvier 2025",
+        commentaire: "Des photos vraiment différentes et le rendu est vraiment professionnel. J'ai vu la différence, le flash a été un réel plus je pense et c'est là qu'on voit la différence entre des photos amateurs et des photos faite par une professionnelle!",
+        date: "XXX 30 janvier 2025",
     },
 ];
 
