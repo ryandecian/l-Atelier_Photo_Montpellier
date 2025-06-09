@@ -6,14 +6,14 @@ const AvisClientPortraitFamilleControllerData: AvisClientControllerDataType[] = 
         id: 1,
         nom: "Stephane PEROUZE",
         note: 5,
-        commentaire: "Les photos pros sont vraiment différentes des photos persos. Les préparatifs avec Anne étaient faits avec soin pour un super résultat. L’ambiance conviviale nous a mis à l’aise. Je n’ai pas l’habitude de faire la vedette mais avec différents vêtements, différentes poses, des décors variés le résultat est bluffant, plein d’expression et de style différent. J’étais étonnée d’être mise en valeur comme ça et vraiment je recommande. Je recommande à tel point que j’ai fait un autre shooting avec mes fils, et une fois de plus le rendu était super.",
+        commentaire: "C’était une première pour mon père et moi, et elle a su nous mettre vraiment à l’aise. Elle avait d’excellentes idées, et le résultat était vraiment superbe ! Je recommande vivement !",
         date: "07 juin 2025",
     },
     {
         id: 2,
         nom: "Sarah HAGUE",
         note: 5,
-        commentaire: "C’était une première pour mon père et moi, et elle a su nous mettre vraiment à l’aise. Elle avait d’excellentes idées, et le résultat était vraiment superbe ! Je recommande vivement !",
+        commentaire: "Les photos pros sont vraiment différentes des photos persos. Les préparatifs avec Anne étaient faits avec soin pour un super résultat. L’ambiance conviviale nous a mis à l’aise. Je n’ai pas l’habitude de faire la vedette mais avec différents vêtements, différentes poses, des décors variés le résultat est bluffant, plein d’expression et de style différent. J’étais étonnée d’être mise en valeur comme ça et vraiment je recommande. Je recommande à tel point que j’ai fait un autre shooting avec mes fils, et une fois de plus le rendu était super.",
         date: "20 mai 2025",
     },
     {

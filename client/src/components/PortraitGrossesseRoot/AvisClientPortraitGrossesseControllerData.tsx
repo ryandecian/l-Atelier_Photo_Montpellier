@@ -6,7 +6,7 @@ const AvisClientPortraitGrossesseControllerData: AvisClientControllerDataType[] 
         id: 1,
         nom: "Thomas R",
         note: 5,
-        commentaire: "De chouettes photos de couple et enfant ! J'en referai d'autres avec Anne car elle nous a mis dans une bonne ambiance détendue sas pression, j'ai apprécié !",
+        commentaire: "De chouettes photos de couple et enfant ! J'en referai d'autres avec Anne car elle nous a mis dans une bonne ambiance détendue sans pression, j'ai apprécié !",
         date: "19 avril 2025",
     },
     {
