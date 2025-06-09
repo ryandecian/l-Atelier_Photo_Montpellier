@@ -4,7 +4,7 @@ const AvisClientPortraitDuoControllerData: AvisClientControllerDataType[] = [
     /* Commentaire 1 */
     {
         id: 1,
-        nom: "Emma",
+        nom: "Sacha LS",
         note: 5,
         commentaire: "Merci pour ces magnifiques photos ! Anne a su capturer l’ambiance du moment avec grande justesse, mettant en valeur chacun de nos invités. Son travail est de grande qualité, et nous avons de superbes souvenirs grâce à elle. En plus d’être une photographe talentueuse, elle est une personne adorable qui met en confiance. Je la recommande mille fois ! ",
         date: "10 mars 2025",
