@@ -36,7 +36,7 @@ function PortraitDuoRootComponentC() {
             {"Des images sensibles et naturelles"}
         </h3>
         <p className={style.TextP4}>
-            🖼️ 6 à 18 images livrées via galerie privée, avec des retouches douces et cohérentes.
+            🖼️ 5 à 22 images livrées via galerie privée, avec des retouches douces et cohérentes.
         </p>
 
         <h2 className={style.TitleH2}>
@@ -49,7 +49,7 @@ function PortraitDuoRootComponentC() {
             <br />
             <span className={style.SpanLink}>
                 <Link to={ListDataRouter[3].path}>
-                    Parlons de ce que vous aimeriez capturer, pour que votre lumière vous ressemble.
+                    Parlons de ce que vous aimeriez capturer pour que votre lumière vous ressemble.
                 </Link>
             </span>
         </p>
