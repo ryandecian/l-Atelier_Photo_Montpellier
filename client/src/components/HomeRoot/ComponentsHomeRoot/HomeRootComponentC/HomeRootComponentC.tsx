@@ -26,7 +26,7 @@ function HomeRootComponentC() {
 
             <article className={style.ContainerText}>
                 <p className={`${style.TextP4} ${style.TargetText1}`}>
-                    Et je cherche à capturer ces histoires. Pour son entreprise, pour ses réseaux 
+                    Et je cherche à capturer ces histoires. Pour votre entreprise, pour vos réseaux 
                     sociaux, pour une connivence…je cherche à trouver la photo de portrait qui fait 
                     votre force, votre énergie, {" "}
                     <span className={style.SpanBold}>
@@ -56,10 +56,13 @@ function HomeRootComponentC() {
             <article className={style.ContainerText}>
                 <p className={style.TextP4}>
                     Et pour moi la réussite d’un shooting tient à ce que vous repartiez non seulement 
-                    après avoir passé un bon moment, mais surtout avec des photos qui vous plaisent, 
-                    que vous avez envie de partager sur vos réseaux, et vous puissiez vous dire {" "}
+                    après avoir passé un bon moment, mais surtout avec 
+                    <span className={style.SpanBold}>
+                        {" des photos qui vous plaisent, "}
+                    </span> 
+                    que vous avez envie de partager sur vos réseaux, et que vous puissiez vous dire {" "}
                     <span className={style.SpanLine}>
-                        {"ah oui je m’aime bien dessus !"}
+                        {`"ah oui je m’aime bien dessus ! "`}
                     </span>
                     {" "} Commencez à planifier dès maintenant {" "}
                     <span className={style.SpanLink}>
