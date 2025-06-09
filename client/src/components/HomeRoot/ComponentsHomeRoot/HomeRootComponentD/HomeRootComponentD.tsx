@@ -42,13 +42,17 @@ function HomeRootComponentD() {
                 <p className={style.TextP4}>
                     Discrète mais toujours présente, je me fonds parmi vos invités pour saisir les éclats de rire, les 
                     étreintes sincères, les petites attentions qui font toute la différence. Je travaille comme un témoin 
-                    invisible, figeant {" "}
+                    invisible, 
                     <span className={style.SpanBold}>
-                        {"l’instant sans jamais le forcer."}
+                        {" figeant l’instant sans jamais le forcer. "}
                     </span>
-                    {" "} Et après la fête, lorsque tout semble redevenu silencieux, il restera ces images, ce déroulé de 
-                    cette énorme journée, ces clichés que vous redécouvrirez au fil des années, que vous partagerez avec 
-                    vos proches, que vous transmettrez peut-être un jour.  
+                    Et après la fête, lorsque tout semble redevenu silencieux, il restera ces images, ce déroulé de 
+                    cette journée, ces clichés que vous 
+                    <span className={style.SpanBold}>
+                        {" redécouvrirez au fil des années, "}
+                    </span>
+                    que vous partagerez avec 
+                    vos proches et que vous transmettrez peut-être un jour.  
                 </p>
             </article>
             <article className={style.ContainerText}>
