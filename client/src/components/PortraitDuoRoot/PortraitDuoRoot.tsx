@@ -18,7 +18,7 @@ function PortraitDuoRoot() {
         <section className={`PortraitDuoRoot ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
-                    {"Portrait duo et couple : immortalisez votre complicité avec authenticité"}
+                    {"Portrait Duo et Couple : Immortalisez votre complicité avec authenticité"}
                 </h1>
             </header>
 
