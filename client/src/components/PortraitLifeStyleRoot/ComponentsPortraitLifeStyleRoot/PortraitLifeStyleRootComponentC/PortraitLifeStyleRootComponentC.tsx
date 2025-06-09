@@ -5,22 +5,22 @@ function PortraitLifeStyleRootComponentC() {
         <section className={`PortraitLifeStyleRootComponentC ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2px2}>
-                    Portrait Solo: Se voir autrement
+                    Portrait Solo : Se voir autrement
                 </h2>
             </header>
 
             <article className={style.ContainerText}>
                 <p className={style.TextP4}>
-                    Vous avez déjà regardé une photo de vous en vous disant {" "}
+                    Vous avez déjà regardé une photo de vous en vous disant
                     <span className={style.SpanBold}>
-                        {`"Ce n'est pas moi"`}
+                        {` "Ce n'est pas moi" `}
                     </span> 
-                    {" "} ? Oubliez les clichés figés et les regards crispés. Ici, c’est un moment rien que pour vous, 
-                    une parenthèse où vous pouvez être pleinement vous-même. Je l’appelle {" "}
+                    ? Oubliez les clichés figés et les regards crispés. Ici, c’est un moment rien que pour vous, 
+                    une parenthèse où vous pouvez être pleinement vous-même. Je l’appelle
                     <span className={style.SpanBold}>
-                        {"le moment Feel Good"}
+                        {" le moment Feel Good "}
                     </span> 
-                    {" "}, car sur le moment vous êtes bien et après n’en croyez pas vos yeux, vous vous aimez en photo !
+                    , car sur le moment vous êtes bien et après n’en croyez pas vos yeux, vous vous aimez en photo !
                 </p>
 
                 <p className={style.TextP4}>
@@ -36,20 +36,26 @@ function PortraitLifeStyleRootComponentC() {
                 </p>
 
                 <p className={style.TextP4}>
-                    {"Cette séance est faite pour vous si :"}
+                    {"Cette séance est faite pour :"}
+                    <br />
                     <br />
                     ✔️ Ceux qui veulent
                     <span className={style.SpanBold}>
                         {" se réconcilier avec leur image."}
                     </span> <br />
-                    ✔️ Une nouvelle étape de vie, une envie de se voir autrement. <br />
-                    ✔️ Un souvenir unique, juste pour soi.
-                </p>
-
-                <p className={style.TextP4}>
+                    ✔️ Une nouvelle étape de vie, 
                     <span className={style.SpanBold}>
-                        {"Mettre sa photo sur une appli de rencontre"}
-                    </span> 
+                        {" une envie de se voir autrement."}
+                    </span> <br />
+                    ✔️ 
+                    <span className={style.SpanBold}>
+                        {" Un souvenir unique, "}
+                    </span>
+                    juste pour soi. <br />
+                    ✔️ Mettre sa photo sur une
+                    <span className={style.SpanBold}>
+                        {" appli de rencontre"}
+                    </span>
                 </p>
             </article>
             
