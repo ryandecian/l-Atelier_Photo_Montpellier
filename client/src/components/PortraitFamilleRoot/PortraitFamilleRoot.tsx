@@ -12,12 +12,12 @@ import PortraitFamilleRootComponentB from "./ComponentPortraitFamilleRoot/Portra
 
 function PortraitFamilleRoot() {
     useScrollToHash() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
-    
+
     return (
         <section className={`PortraitFamilleRoot ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
-                    {"Portrait Famille : créez des souvenirs précieux avec ceux que vous aimez."}
+                    {"Portrait Famille - Amis : créez des souvenirs précieux avec ceux que vous aimez."}
                 </h1>
             </header>
 
