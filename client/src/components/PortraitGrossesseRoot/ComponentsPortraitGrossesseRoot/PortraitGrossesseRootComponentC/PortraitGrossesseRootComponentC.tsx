@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 import style from "../../../StyleRootComponent.module.css";
 import ListDataRouter from "../../../../router/router";
 
+import Container4ImagesPortraitRoot from "../../../ContainerImageRoot/Container4ImagesPortraitRoot/Container4ImagesPortraitRoot";
+import ImagesPortraitGrossesseControllerData from "../../ImagesPortraitGrossesseControllerData";
+
 function PortraitGrossesseRootComponenetC() {
     return (
         <article className={`PortraitGrossesseRootComponentC ${style.ContainerRoot}`}>
@@ -42,6 +45,17 @@ function PortraitGrossesseRootComponenetC() {
             <p className={style.TextP4}>
                 Galerie privée, fichiers optimisés pour le tirage papier, l’album photo ou le partage en ligne.
             </p>
+
+            <Container4ImagesPortraitRoot
+                img1={ImagesPortraitGrossesseControllerData[8].src}
+                MetaNameImg1={ImagesPortraitGrossesseControllerData[8].alt}
+                img2={ImagesPortraitGrossesseControllerData[9].src}
+                MetaNameImg2={ImagesPortraitGrossesseControllerData[9].alt}
+                img3={ImagesPortraitGrossesseControllerData[10].src}
+                MetaNameImg3={ImagesPortraitGrossesseControllerData[10].alt}
+                img4={ImagesPortraitGrossesseControllerData[11].src}
+                MetaNameImg4={ImagesPortraitGrossesseControllerData[11].alt}
+            />
 
             <h2 className={style.TitleH2}>
                 {"Votre histoire mérite d’être racontée avec délicatesse – On en parle ensemble ?"}
