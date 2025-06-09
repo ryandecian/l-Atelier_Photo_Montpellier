@@ -18,7 +18,7 @@ function PortraitDuoRootComponentA() {
             <span className={style.SpanBold}>
                 {" instant suspendu, "}
             </span>
-            une respiration dans vos quotidiens bien remplis, une façon de 
+            une respiration dans votre quotidien bien rempli, une façon de 
             <span className={style.SpanBold}>
                 {" vous (re)voir autrement, "}
             </span>
@@ -65,7 +65,10 @@ function PortraitDuoRootComponentA() {
             </p>
 
             <p className={style.TextP4}>
-                Que ce soit en studio ou en extérieur, je mets tout en œuvre pour que l’expérience soit aussi belle que les images.
+                <span className={style.SpanBold}>
+                    {"Que ce soit en studio ou en extérieur, "}
+                </span>
+                je mets tout en œuvre pour que l’expérience soit aussi belle que les images.
             </p>
 
             <p className={style.TextP4}>
