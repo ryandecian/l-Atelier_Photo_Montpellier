@@ -12,30 +12,37 @@ function PortraitLifeStyleRootComponentA() {
             <article className={style.ContainerText}>
                 <p className={style.TextP4}>
                     Sans renier la technique mais en la rendant invisible je vous propose avec mon œil photographique de 
-                    vivre un de ces instants où {" "}
+                    vivre un de ces instants où
                     <span className={style.SpanBold}>
-                        {"le naturel et la créativité se rejoignent."}
+                        {" nle naturel et la créativité se rejoignent. "}
                     </span> 
-                    {" "} Comme photographie professionnelle spécialisée dans les portraits je ne me limite pas aux 
+                    Comme photographe professionnel spécialisée dans les portraits je ne me limite pas aux 
                     lumières douces et aux instants volés. Je mêle spontanéité et direction artistique, avec une approche 
-                    où le naturel rencontre une lumière travaillée, même au flash en extérieur.
+                    <span className={style.SpanBold}>
+                        {" où le naturel rencontre une lumière travaillée, "}
+                    </span>
+                    même au flash en extérieur.
                 </p>
                 
                 <p className={style.TextP4}>
-                    Contrairement aux portraits figés et ultra-posés, je cherche à {" "}
+                    Contrairement aux portraits figés et ultra-posés, je cherche à
                     <span className={style.SpanBold}>
-                        {"capturer une dynamique réelle,"}
+                        {" capturer une dynamique réelle, "}
                     </span> 
-                    {" "} une expression sincère, tout en soignant la lumière et la mise en scène. Ici, {" "}
+                    une expression sincère, tout en soignant la lumière et la mise en scène. Ici,
                     <span className={style.SpanBold}>
-                        {"le flash devient un outil créatif :"}
+                        {" le flash devient un outil créatif : "}
                     </span> 
-                    {" "} il sculpte le sujet, équilibre les contrastes, apporte du relief, même en pleine nature ou en 
+                    il sculpte le sujet, équilibre les contrastes, apporte du relief, même en pleine nature ou en 
                     milieu urbain. 
                 </p>
                 
                 <p className={style.TextP4}>
-                    En une phrase : je cherche un équilibre entre authenticité et esthétisme ! Envie de tenter l’expérience ? 
+                    En une phrase : 
+                    <span className={style.SpanBold}>
+                        {" je cherche un équilibre entre authenticité et esthétisme ! "}
+                    </span> 
+                    Envie de tenter l’expérience ? 
                 </p>
                 
                 <p className={style.TextP4}>
