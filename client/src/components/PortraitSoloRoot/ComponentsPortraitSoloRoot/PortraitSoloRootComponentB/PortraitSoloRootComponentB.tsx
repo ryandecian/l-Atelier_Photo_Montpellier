@@ -44,16 +44,25 @@ function PortraitSoloRootComponentB() {
 
                 <ul className={style.ContainerUl}>
                     <li className={style.TextLiP4}>
-                        Vous n’aimez jamais les photos de vous, mais vous aimeriez changer ça ?
+                        Vous n’aimez jamais les photos de vous, mais vous aimeriez changer ça.
                     </li>
                     <li className={style.TextLiP4}>
-                        Vous traversez une étape (pro/perso) et souhaitez marquer ce moment ?
+                        Vous 
+                        <span className={style.SpanBold}>
+                            {" traversez une étape "}
+                        </span> (pro/perso) et souhaitez marquer ce moment.
                     </li>
                     <li className={style.TextLiP4}>
-                        Vous avez besoin de vous reconnecter à votre confiance, à votre beauté ?
+                        Vous 
+                        <span className={style.SpanBold}>
+                            {" avez besoin de vous reconnecter "}
+                        </span> à votre confiance, à votre beauté.
                     </li>
                     <li className={style.TextLiP4}>
-                        Vous avez juste envie d’un beau souvenir, pour vous, pour toujours ?
+                        Vous 
+                        <span className={style.SpanBold}>
+                            {" avez juste envie d’un beau souvenir, "}
+                        </span>pour vous, pour toujours.
                     </li>
                 </ul>
                 <br />
@@ -103,7 +112,7 @@ function PortraitSoloRootComponentB() {
                 <br />
                 <span className={style.SpanLink}>
                     <Link to={ListDataRouter[3].path}>
-                        Parlons de ce que vous aimeriez capturer, pour que votre lumière vous ressemble.
+                        Parlons de ce que vous aimeriez capturer pour que votre lumière vous ressemble.
                     </Link>
                 </span>
             </p>
