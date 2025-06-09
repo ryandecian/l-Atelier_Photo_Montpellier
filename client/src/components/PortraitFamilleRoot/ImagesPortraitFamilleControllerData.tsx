@@ -5,7 +5,7 @@ import ImagesControllerDataType from "../../types/ImagesControllerData.type";
  * 
  * photographe-professionnelle : 4/4
  * photo-professionnel : 1/2
- * photographie-professionnelle : 1/2
+ * photographie-professionnelle : 2/2
  */
 
 const ImagesPortraitFamilleControllerData: ImagesControllerDataType[] = [
@@ -36,23 +36,23 @@ const ImagesPortraitFamilleControllerData: ImagesControllerDataType[] = [
     /* Tableau 2 : PortraitFamilleComponentB */
     /* {ImagesPortraitFamilleControllerData[4].src} */
     {
-        src: "/images/image-portrait-famille/lapm-photo-professionnel-portrait-famille-intergenerationnel-l-atelier-photo-montpellier.jpg",
-        alt: "LAPM - photo professionnel - portrait famille intergénérationnel - L'Atelier Photo Montpellier",
+        src: "/images/image-portrait-famille/lapm-photo-professionnel-portrait-famille-fratrie-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo professionnel - portrait famille - fratrie - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitFamilleControllerData[5].src} */
     {
-        src: "/images/image-portrait-famille/",
-        alt: "",
+        src: "/images/image-portrait-famille/lapm-photographie-professionnelle-portrait-famille-fratrie-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographie professionnelle - portrait famille - fratrie - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitFamilleControllerData[6].src} */
     {
-        src: "/images/image-portrait-famille/",
-        alt: "",
+        src: "/images/image-portrait-famille/lapm-photo-professionnel-portrait-famille-mamies-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo professionnel - portrait famille - mamies - L'Atelier Photo Montpellier",
     },
     /* {ImagesPortraitFamilleControllerData[7].src} */
     {
-        src: "/images/image-portrait-famille/lapm-photographie-professionnelle-portrait-famille-parent-enfants-l-atelier-photo-montpellier.jpg",
-        alt: "LAPM - photographie professionnelle - portrait famille - parent et enfants - L'Atelier Photo Montpellier",
+        src: "/images/image-portrait-famille/lapm-photo-professionnel-portrait-famille-intergenerationnel-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo professionnel - portrait famille intergénérationnel - L'Atelier Photo Montpellier",
     },
 ];
 
