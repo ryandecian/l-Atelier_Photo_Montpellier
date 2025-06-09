@@ -3,9 +3,9 @@ import ImagesControllerDataType from "../../types/ImagesControllerData.type";
 /**
  * Compteur mot clés : 
  * 
- * photographe-professionnel : 3/4
- * photo-professionnel : 2/2
- * photographie-professionnelle : 2/2
+ * photographe-professionnel : 4/6
+ * photo-professionnel : 2/3
+ * photographie-professionnelle : 2/3
  */
 
 const ImagesPortraitGrossesseControllerData: ImagesControllerDataType[] = [
@@ -53,6 +53,30 @@ const ImagesPortraitGrossesseControllerData: ImagesControllerDataType[] = [
     {
         src: "/images/image-portrait-grossesse/lapm-photographe-professionnel-portrait-nouveau-ne-un-regard-l-atelier-photo-montpellier.jpg",
         alt: "LAPM - photographe professionnel - portrait - nouveau né - un regard - L'Atelier Photo Montpellier",
+    },
+
+
+
+    /* Tableau 3 : PortraitGrossesseComponentC */
+    /* {ImagesPortraitGrossesseControllerData[8].src} */
+    {
+        src: "/images/image-portrait-grossesse/lapm-photo-professionnel-portrait-grossesse-ne-berceau-et-tableau-l-atelier-photo-montpellier.jpg",
+        alt: "",
+    },
+    /* {ImagesPortraitGrossesseControllerData[9].src} */
+    {
+        src: "/images/image-portrait-grossesse/lapm-photographie-professionnelle-portrait-nouveau-ne-pere-fils-l-atelier-photo-montpellier.jpg",
+        alt: "",
+    },
+    /* {ImagesPortraitGrossesseControllerData[10].src} */
+    {
+        src: "/images/image-portrait-grossesse/lapm-photographe-professionnel-portrait-nouveau-ne-famille-l-atelier-photo-montpellier.jpg",
+        alt: "",
+    },
+    /* {ImagesPortraitGrossesseControllerData[11].src} */
+    {
+        src: "/images/image-portrait-grossesse/lapm-photographe-professionnel-portrait-nouveau-ne-un-regard-l-atelier-photo-montpellier.jpg",
+        alt: "",
     },
 ];
 
