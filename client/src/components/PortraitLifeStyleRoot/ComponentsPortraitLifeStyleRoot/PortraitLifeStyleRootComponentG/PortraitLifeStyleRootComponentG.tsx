@@ -12,25 +12,25 @@ function PortraitLifeStyleRootComponentG() {
 
             <article className={style.ContainerText}>
                 <p className={style.TextP4}>
-                    La grossesse est une période intense, faite de changements et d’émotions. {" "}
+                    La grossesse est une période intense, faite de changements et d’émotions.
                     <span className={style.SpanBold}>
-                        {"Votre corps évolue,"}
+                        {" Votre corps évolue, "}
                     </span> 
-                    {" "} votre quotidien aussi, et ces neuf mois passent finalement bien plus vite qu’on ne l’imagine. 
-                    Cette séance photo est là pour {" "}
+                    votre quotidien aussi, et ces neuf mois passent finalement bien plus vite qu’on ne l’imagine. 
+                    Cette séance photo est là pour
                     <span className={style.SpanBold}>
-                        {"capturer cette transition,"}
+                        {" capturer cette transition, "}
                     </span> 
-                    {" "} sans artifices, avec authenticité et élégance.
+                    sans artifices, avec authenticité et élégance.
                 </p>
 
                 <p className={style.TextP4}>
                     Chaque femme vit sa grossesse différemment, et chaque séance est pensée en fonction de vos envies. 
-                    Que vous souhaitiez un rendu naturel en extérieur, une ambiance intime à domicile ou un {" "}
+                    Que vous souhaitiez un rendu naturel en extérieur, une ambiance intime à domicile ou un
                     <span className={style.SpanBold}>
-                        {"shooting plus artistique en studio,"}
+                        {" shooting plus artistique en studio. "}
                     </span> 
-                    {" "} l’objectif est simple : mettre en lumière ce moment si particulier.
+                    L’objectif est simple : mettre en lumière ce moment si particulier.
                 </p>
 
                 <p className={style.TextP4}>
@@ -56,7 +56,7 @@ function PortraitLifeStyleRootComponentG() {
                 <p className={style.TextP4}>
                     <span className={style.SpanBoldSpace}>
                         {"Quand faire votre séance ?"}
-                    </span> 
+                    </span>
                 </p>
 
                 <p className={style.TextP4}>
@@ -71,12 +71,24 @@ function PortraitLifeStyleRootComponentG() {
                 </p>
 
                 <p className={style.TextP4}>
-                    {"Cette séance est faite pour vous si :"}
+                    {"Cette séance est faite pour :"}
                     <br />
-                    ✔️ Celles qui veulent un souvenir sincère et naturel de leur grossesse. <br />
-                    ✔️ Celles qui souhaitent un moment pour elles, pour se reconnecter à leur corps. <br />
-                    ✔️ Celles qui veulent un souvenir puissant de leur grossesse. <br />
-                    ✔️ Pour se sentir belle et rayonner avant l’arrivée de bébé.
+                    ✔️ Celles qui veulent un souvenir 
+                    <span className={style.SpanBold}>
+                        {" sincère et naturel"}
+                    </span> de leur grossesse. <br />
+                    ✔️ Celles qui souhaitent un moment pour elles, pour 
+                    <span className={style.SpanBold}>
+                        {" se reconnecter à leur corps."}
+                    </span> <br />
+                    ✔️ Celles qui veulent un 
+                    <span className={style.SpanBold}>
+                        {" souvenir puissant "}
+                    </span> de leur grossesse. <br />
+                    ✔️ Se sentir belle et 
+                    <span className={style.SpanBold}>
+                        {" rayonner avant l’arrivée de bébé."}
+                    </span>
                 </p>
 
                 <p className={style.TextP4}>

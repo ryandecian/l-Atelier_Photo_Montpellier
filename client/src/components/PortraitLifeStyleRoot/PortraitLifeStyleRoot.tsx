@@ -24,7 +24,7 @@ function PortraitLifeStyleRoot() {
 
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
-                    Portrait PortraitLifeStyle : fusion de l'instant et de la lumière
+                    Portrait Portrait LifeStyle : fusion de l'instant et de la lumière
                 </h1>
             </header>
 
