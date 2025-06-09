@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import css from "./PrestationRoot.module.css";
-import CardPrestation from "./DataCardPrestationRoot";
+import DataCardPrestation from "./DataCardPrestationRoot";
 import CardPrestationType from "../../types/CardPrestation.type";
 
 function PrestationRoot() {
-  const prestations: CardPrestationType[] = CardPrestation();
+  const prestations: CardPrestationType[] = DataCardPrestation();
 
   const [search, setSearch] = useState("");
 
@@ -26,7 +26,7 @@ function PrestationRoot() {
       <div className={css.cardsContainer}>
         {filtered.map((prestation) => (
           <Link
-            key={prestation.id}
+            key={prestation.reactKey}
             to={`${prestation.path}#${prestation.id}`}
             className={css.card}
             style={{ backgroundImage: `url(${prestation.image})` }}

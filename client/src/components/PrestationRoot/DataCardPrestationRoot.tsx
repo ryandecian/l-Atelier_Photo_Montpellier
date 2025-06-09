@@ -1,9 +1,10 @@
 import ListDataRouter from "../../router/router";
 import CardPrestationType from "../../types/CardPrestation.type";
 
-function CardPrestation() {
+function DataCardPrestation() {
     const tab: CardPrestationType[] = [
         {
+            reactKey: 1,
             path: ListDataRouter[14].path,
             id: "tarifs-portrait-solo",
             title: "Portrait Solo",
@@ -11,6 +12,7 @@ function CardPrestation() {
             image: "/images/image-portrait-solo/lapm-photographe-professionnel-portrait-solo-homme-lifestyle-l-atelier-photo-montpellier.jpg",
         },
         {
+            reactKey: 2,
             path: ListDataRouter[14].path,
             id: "tarifs-portrait-duo",
             title: "Portrait Duo",
@@ -18,6 +20,7 @@ function CardPrestation() {
             image: "/images/image-portrait-solo/lapm-photographe-professionnel-portrait-solo-homme-lifestyle-l-atelier-photo-montpellier.jpg",
         },
         {
+            reactKey: 3,
             path: ListDataRouter[14].path,
             id: "tarifs-portrait-famille",
             title: "Portrait Famille",
@@ -25,6 +28,7 @@ function CardPrestation() {
             image: "/images/image-portrait-solo/lapm-photographe-professionnel-portrait-solo-homme-lifestyle-l-atelier-photo-montpellier.jpg",
         },
         {
+            reactKey: 4,
             path: ListDataRouter[14].path,
             id: "tarifs-portrait-famille",
             title: "Portrait Famille",
@@ -36,4 +40,4 @@ function CardPrestation() {
 }
 
 
-export default CardPrestation;
+export default DataCardPrestation;
