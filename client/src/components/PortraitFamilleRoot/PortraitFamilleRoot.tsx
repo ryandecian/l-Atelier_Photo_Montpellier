@@ -17,7 +17,7 @@ function PortraitFamilleRoot() {
         <section className={`PortraitFamilleRoot ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
-                    {"Portrait Famille - Amis : créez des souvenirs précieux avec ceux que vous aimez."}
+                    {"Portrait Famille - Amis : Créez des souvenirs précieux avec ceux que vous aimez."}
                 </h1>
             </header>
 
