@@ -23,7 +23,10 @@ function PortraitGrossesseRootComponentB() {
                     {" ambiance visuelle, "}
                 </span>
                 des envies particulières (objets symboliques, photos de famille, fratrie…). <br />
-                Puis, le jour J, je m’adapte à votre rythme – particulièrement si bébé est tout petit. Pas de pression, pas de chrono serré.
+                Puis, le jour J, 
+                <span className={style.SpanBold}>
+                    {" je m’adapte à votre rythme – particulièrement si bébé est tout petit. "}
+                </span> Pas de pression, pas de chrono serré.
             </p>
 
             <Container4ImagesRoot
@@ -39,7 +42,7 @@ function PortraitGrossesseRootComponentB() {
 
             <article className={style.ContainerText}>
                 <h3 className={style.TitleNH3}>
-                    {"Les séances PortraitGrossesse"}
+                    {"Les séances Portraits Grossesses"}
                 </h3>
 
                 <ul className={style.ContainerUl}>
@@ -61,7 +64,7 @@ function PortraitGrossesseRootComponentB() {
 
             <article className={style.ContainerText}>
                 <h3 className={style.TitleNH3}>
-                    {"Les séances nouveaux-nés"}
+                    {"Les séances Nouveaux-Nés"}
                 </h3>
 
                 <ul className={style.ContainerUl}>
