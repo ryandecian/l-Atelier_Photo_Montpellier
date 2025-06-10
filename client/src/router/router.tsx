@@ -17,7 +17,7 @@ import PortfolioPage from "../pages/PortfolioPage/PortfolioPage";
 import PortraitCorporatePage from "../pages/PortraitCorporatePage/PortraitCorporatePage";
 import PortraitDuoPage from "../pages/PortraitDuoPage/PortraitDuoPage";
 import PortraitGrossessePage from "../pages/PortraitGrosssessePage/PortraitGrossessePage";
-import PortraitHobbiePage from "../pages/PortraitHobbiePage/PortraitHobbiePage";
+import PortraitHobbyPage from "../pages/PortraitHobbyPage/PortraitHobbyPage";
 import PortraitLifeStylePage from "../pages/PortraitLifeStylePage/PortraitLifeStylePage";
 import PortraitMariagePage from "../pages/PortraitMariagePage/PortraitMariagePage";
 import PortraitNouveauNePage from "../pages/PotraitNouveauNePage/PortraitNouveauNePage";
@@ -135,8 +135,8 @@ const ListDataRouter: RouterItemsType[] = [
     },
     /* {ListDataRouter[19].path} */
     {
-        path: "/portrait-hobbie",
-        element: <PortraitHobbiePage />,
+        path: "/portrait-hobby",
+        element: <PortraitHobbyPage />,
     },
     /* {ListDataRouter[20].path} */
     {
