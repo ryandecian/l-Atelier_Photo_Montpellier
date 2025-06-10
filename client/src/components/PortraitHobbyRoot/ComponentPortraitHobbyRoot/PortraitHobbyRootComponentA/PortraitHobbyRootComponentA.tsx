@@ -1,13 +1,13 @@
 import style from "../../../StyleRootComponent.module.css";
 import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
-import ImagesPortraitHobbieControllerData from "../PortraitHobbyRootComponentB/ImagesPortraitHobbyControllerData";
+import ImagesPortraitHobbyControllerData from "../../ImagesPortraitHobbyControllerData";
 
-function PortraitHobbieRootComponentA() {
+function PortraitHobbyRootComponentA() {
   return (
-    <section className={`PortraitHobbieRootComponentA ${style.ContainerRoot}`}>
+    <section className={`PortraitHobbyRootComponentA ${style.ContainerRoot}`}>
         <header className={style.ContainerTitle}>
             <h2 className={style.TitleH2}>
-                {"Parce que chaque Hobbie a son histoire, offrez-vous un portrait fidèle à votre complicité"}
+                {"Parce que chaque Hobby a son histoire, offrez-vous un portrait fidèle à votre complicité"}
             </h2>
         </header>
 
@@ -31,17 +31,17 @@ function PortraitHobbieRootComponentA() {
         </p>
 
         <Container4ImagesRoot
-            img1={ImagesPortraitHobbieControllerData[0].src}
-            MetaNameImg1={ImagesPortraitHobbieControllerData[0].alt}
-            img2={ImagesPortraitHobbieControllerData[1].src}
-            MetaNameImg2={ImagesPortraitHobbieControllerData[1].alt}
-            img3={ImagesPortraitHobbieControllerData[2].src}
-            MetaNameImg3={ImagesPortraitHobbieControllerData[2].alt}
-            img4={ImagesPortraitHobbieControllerData[3].src}
-            MetaNameImg4={ImagesPortraitHobbieControllerData[3].alt}
+            img1={ImagesPortraitHobbyControllerData[0].src}
+            MetaNameImg1={ImagesPortraitHobbyControllerData[0].alt}
+            img2={ImagesPortraitHobbyControllerData[1].src}
+            MetaNameImg2={ImagesPortraitHobbyControllerData[1].alt}
+            img3={ImagesPortraitHobbyControllerData[2].src}
+            MetaNameImg3={ImagesPortraitHobbyControllerData[2].alt}
+            img4={ImagesPortraitHobbyControllerData[3].src}
+            MetaNameImg4={ImagesPortraitHobbyControllerData[3].alt}
         />
     </section>
   );
 }
 
-export default PortraitHobbieRootComponentA;
+export default PortraitHobbyRootComponentA;
