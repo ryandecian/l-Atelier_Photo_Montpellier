@@ -1,0 +1,13 @@
+.TitleH2 {
+    color : var(--ColorBlack);
+    font-weight: var(--font-weight-title);
+    font-style: var(--font-style-title);
+    font-family: var(--font-family-title); 
+    font-size: calc(var(--h2) + 0.125rem); /* 26px */
+    font-display: swap;
+    text-align: start;
+    width: calc(100% - 3rem); /* 100% - 48px */
+    margin: 1.25rem 1.5rem 0rem 1.5rem; /* 20px 24px 20px 24px */
+    padding: 0;
+    border: 0;
+}

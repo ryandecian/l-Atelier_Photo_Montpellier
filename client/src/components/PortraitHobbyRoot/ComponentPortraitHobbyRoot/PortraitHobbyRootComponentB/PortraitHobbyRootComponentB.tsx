@@ -1,4 +1,5 @@
 import style from "../../../StyleRootComponent.module.css";
+import css from "./PortraitHobbyRootComponentB.module.css"
 import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ImagesPortraitHobbyControllerData from "../../ImagesPortraitHobbyControllerData";
 import { Link } from "react-router-dom";
@@ -8,8 +9,8 @@ function PortraitHobbyRootComponentB() {
   return (
     <section className={`PortraitHobbyRootComponentB ${style.ContainerRoot}`}>
         <header className={style.ContainerTitle}>
-            <h2 className={style.TitleH2}>
-                {"Parce que chaque Hobby a son histoire, offrez-vous un portrait fidèle à votre complicité."}
+            <h2 className={css.TitleH2}>
+                {"Parce que chaque passion a son histoire, vivez là en image !"}
             </h2>
         </header>
 
@@ -59,11 +60,11 @@ function PortraitHobbyRootComponentB() {
 
             <p className={style.TextP4}>
                 Parce que chez moi, on ne “pose” pas. <br />
-                On
+                On vit la photo,
                 <span className={style.SpanBold}>
-                    {" vit la photo, "}
+                    {" on la construit ensemble, "}
                 </span>
-                on la construit ensemble, avec ce que vous êtes, ce que vous faites, ce qui vous touche.
+                avec ce que vous êtes, ce que vous faites, ce qui vous touche.
             </p>
 
             <p className={style.TextP4}>
@@ -185,7 +186,7 @@ function PortraitHobbyRootComponentB() {
             <br />
             <span className={style.SpanLink}>
                 <Link to={ListDataRouter[3].path}>
-                    Parlons de ce que vous aimeriez capturer, pour que votre lumière vous ressemble.
+                    Parlons de ce que vous aimeriez capturer pour que votre lumière vous ressemble.
                 </Link>
             </span>
         </p>
