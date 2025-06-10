@@ -1,4 +1,5 @@
 import style from "../../../StyleRootComponent.module.css";
+import css from "./PortraitHobbyRootComponentB.module.css"
 import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ImagesPortraitHobbyControllerData from "../../ImagesPortraitHobbyControllerData";
 import { Link } from "react-router-dom";
@@ -8,8 +9,8 @@ function PortraitHobbyRootComponentB() {
   return (
     <section className={`PortraitHobbyRootComponentB ${style.ContainerRoot}`}>
         <header className={style.ContainerTitle}>
-            <h2 className={style.TitleH2}>
-                {"Parce que chaque Hobby a son histoire, offrez-vous un portrait fidèle à votre complicité."}
+            <h2 className={css.TitleH2}>
+                {"Parce que chaque passion a son histoire, vivez là en image !"}
             </h2>
         </header>
 
