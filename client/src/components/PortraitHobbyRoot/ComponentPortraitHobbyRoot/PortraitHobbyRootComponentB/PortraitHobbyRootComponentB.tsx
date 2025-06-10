@@ -1,6 +1,6 @@
 import style from "../../../StyleRootComponent.module.css";
 import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
-import ImagesPortraitHobbieControllerData from "../../ImagesPortraitHobbieControllerData";
+import ImagesPortraitHobbieControllerData from "../../ImagesPortraitHobbyControllerData";
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../../router/router";
 

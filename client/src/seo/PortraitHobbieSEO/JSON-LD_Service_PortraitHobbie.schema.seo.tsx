@@ -4,7 +4,7 @@ import DataSEORootType from "../../types/DataSEORoot.type";
 import DataSEO_PortraitHobbies from "./DataSEO_PortraitHobbie.seo";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
-import AvisClientPortraitHobbieControllerData from "../../components/PortraitHobbieRoot/AvisClientPortraitHobbieControllerData";
+import AvisClientPortraitHobbieControllerData from "../../components/PortraitHobbyRoot/AvisClientPortraitHobbyControllerData";
 import generateAverageRatingSEO from "../../utils/generateAverageRatingSEO.utils";
 import generateReviewArraySEO from "../../utils/generateReviewArraySEO.utils";
 

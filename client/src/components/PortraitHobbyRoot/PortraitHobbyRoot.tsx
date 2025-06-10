@@ -2,13 +2,13 @@ import style from "../StyleRootComponent.module.css";
 import useScrollToHash from "../../hook/useScrollToHash";
 
 import GeneratorCardAvisClient from "../GeneratorCardAvisClient/GeneratorCardAvisClient";
-import AvisClientPortraitHobbieControllerData from "./AvisClientPortraitHobbieControllerData";
+import AvisClientPortraitHobbieControllerData from "./AvisClientPortraitHobbyControllerData";
 
 import TarifCardRoot from "../TarifsCard/TarifsCardRoot";
-import { TarifsPortraitHobbie, MailtoLinkPortraitHobbie } from "./TarifsPortraitHobbie";
+import { TarifsPortraitHobbie, MailtoLinkPortraitHobbie } from "./TarifsPortraitHobby";
 
-import PortraitHobbieRootComponentA from "./ComponentPortraitHobbieRoot/PortraitHobbieRootComponentA/PortraitHobbieRootComponentA";
-import PortraitHobbieRootComponentB from "./ComponentPortraitHobbieRoot/PortraitHobbieRootComponentB/PortraitHobbieRootComponentB";
+import PortraitHobbieRootComponentA from "./ComponentPortraitHobbyRoot/PortraitHobbyRootComponentA/PortraitHobbyRootComponentA";
+import PortraitHobbieRootComponentB from "./ComponentPortraitHobbyRoot/PortraitHobbyRootComponentB/PortraitHobbyRootComponentB";
 
 function PortraitHobbieRoot() {
     useScrollToHash() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */

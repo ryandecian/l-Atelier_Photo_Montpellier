@@ -1,6 +1,6 @@
 import style from "../stylePage.module.css";
 import NavRoot from "../../components/NavRoot/NavRoot";
-import PortraitHobbieRoot from "../../components/PortraitHobbieRoot/PortraitHobbieRoot";
+import PortraitHobbieRoot from "../../components/PortraitHobbyRoot/PortraitHobbyRoot";
 import FooterRoot from "../../components/FooterRoot/FooterRoot";
 import Helmet_PortraitHobbie_SEO from "../../seo/PortraitHobbieSEO/Helmet_PortraitHobbie.seo";
 
