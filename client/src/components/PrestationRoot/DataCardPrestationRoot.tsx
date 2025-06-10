@@ -313,7 +313,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-grossesse",
             title: "Portrait femme enceinte",
             description: "Une séance en douceur et en lumière.",
-            image: "/images/image-prestation-card/grossesse.jpg",
+            image: "/images/image-prestation-card/ventre.jpg",
         },
         {
             reactKey: 40,
@@ -321,7 +321,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-famille",
             title: "Portrait générationnel",
             description: "Célébrez les liens entre les générations.",
-            image: "/images/image-prestation-card/famille.jpg",
+            image: "/images/image-prestation-card/generationnel.jpg",
         },
         {
             reactKey: 41,
@@ -337,7 +337,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-solo",
             title: "Portrait individuel",
             description: "Un moment pour vous, en toute authenticité.",
-            image: "/images/image-prestation-card/solo.jpg",
+            image: "/images/image-prestation-card/individuel.jpg",
         },
         {
             reactKey: 44,
@@ -345,15 +345,15 @@ function DataCardPrestation() {
             id: "tarifs-portrait-famille",
             title: "Portrait intergénérationnel",
             description: "Célébrez les liens entre les générations.",
-            image: "/images/image-prestation-card/famille.jpg",
+            image: "/images/image-prestation-card/intergenerationnel.jpg",
         },
         {
             reactKey: 45,
             path: ListDataRouter[13].path,
             id: "tarifs-portrait-mariage",
             title: "Portrait invités",
-            description: "Des souvenirs authentiques de vos proches.",
-            image: "/images/image-prestation-card/mariage.jpg",
+            description: "Des souvenirs authentiques de votre mariage.",
+            image: "/images/image-prestation-card/invite.jpg",
         },
         {
             reactKey: 46,
@@ -369,7 +369,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-grossesse",
             title: "Portrait nouveau-né",
             description: "Capturez les tout premiers instants de bébé.",
-            image: "/images/image-prestation-card/bebe.jpg",
+            image: "/images/image-prestation-card/baby.jpg",
         },
         {
             reactKey: 48,
@@ -377,7 +377,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-hobby",
             title: "Portrait passion",
             description: "Mettez en scène votre passion.",
-            image: "/images/image-prestation-card/hobby.jpg",
+            image: "/images/image-prestation-card/hobbie.jpg",
         },
         {
             reactKey: 49,
@@ -385,7 +385,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-solo",
             title: "Portrait pour soi",
             description: "Un regard neuf sur vous-même.",
-            image: "/images/image-prestation-card/reseau.jpg",
+            image: "/images/image-prestation-card/soi.jpg",
         },
         {
             reactKey: 51,
@@ -393,7 +393,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-hobby",
             title: "Portrait sport",
             description: "Capturez l’intensité de votre pratique.",
-            image: "/images/image-prestation-card/danse.jpg",
+            image: "/images/image-prestation-card/sport.jpg",
         },
         {
             reactKey: 52,
@@ -401,7 +401,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-hobby",
             title: "Portrait sportif",
             description: "Célébrez votre discipline en image.",
-            image: "/images/image-prestation-card/danse.jpg",
+            image: "/images/image-prestation-card/sportif.jpg",
         },
         {
             reactKey: 54,
@@ -417,7 +417,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-mariage",
             title: "Préparatifs mariage",
             description: "Immortalisez les instants avant le \"oui\".",
-            image: "/images/image-prestation-card/mariage.jpg",
+            image: "/images/image-prestation-card/preparatif.jpg",
         },
         {
             reactKey: 56,
@@ -433,7 +433,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-mariage",
             title: "Reportage mariage",
             description: "Racontez en images l’histoire de votre grand jour.",
-            image: "/images/image-prestation-card/mariage.jpg",
+            image: "/images/image-prestation-card/reportage.jpg",
         },
         {
             reactKey: 58,
@@ -441,7 +441,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-mariage",
             title: "Séance engagement",
             description: "Une séance avant le jour J pour se découvrir en photo.",
-            image: "/images/image-prestation-card/mariage.jpg",
+            image: "/images/image-prestation-card/engagement.jpg",
         },
         {
             reactKey: 59,
@@ -449,7 +449,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-grossesse",
             title: "Séance naissance",
             description: "Des souvenirs précieux à chérir.",
-            image: "/images/image-prestation-card/bebe.jpg",
+            image: "/images/image-prestation-card/naissance.jpg",
         },
         {
             reactKey: 61,
@@ -457,7 +457,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-duo",
             title: "Shooting couple",
             description: "Immortalisez votre histoire d’amour.",
-            image: "/images/image-prestation-card/couple.jpg",
+            image: "/images/image-prestation-card/love.jpg",
         },
         {
             reactKey: 62,
@@ -465,7 +465,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-mariage",
             title: "Shooting couple mariage",
             description: "Capturez l’émotion et la complicité des mariés.",
-            image: "/images/image-prestation-card/mariage.jpg",
+            image: "/images/image-prestation-card/maria.jpg",
         },
         {
             reactKey: 64,
@@ -473,7 +473,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-grossesse",
             title: "Shooting future maman",
             description: "Célébrez la magie de l’attente.",
-            image: "/images/image-prestation-card/grossesse.jpg",
+            image: "/images/image-prestation-card/terme.jpg",
         },
         {
             reactKey: 66,
@@ -481,7 +481,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-hobby",
             title: "Shooting musicien/musicienne",
             description: "Des images qui vibrent au rythme de votre art.",
-            image: "/images/image-prestation-card/danse.jpg",
+            image: "/images/image-prestation-card/musicien.jpg",
         },
         {
             reactKey: 67,
@@ -489,7 +489,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-solo",
             title: "Shooting solo",
             description: "Exprimez votre personnalité en images.",
-            image: "/images/image-prestation-card/solo.jpg",
+            image: "/images/image-prestation-card/cigarette.jpg",
         },
         {
             reactKey: 68,
@@ -497,7 +497,15 @@ function DataCardPrestation() {
             id: "tarifs-portrait-famille",
             title: "Shooting tribu",
             description: "Une séance fun et décontractée.",
-            image: "/images/image-prestation-card/famille.jpg",
+            image: "/images/image-prestation-card/tribu.jpg",
+        },
+        {
+            reactKey: 68,
+            path: ListDataRouter[16].path,
+            id: "tarifs-portrait-mariage",
+            title: "Mariage Pride",
+            description: "Célébrez l'amour en arc-en-ciel.",
+            image: "/images/image-prestation-card/pride.jpg",
         },
     ]
     return tab;
