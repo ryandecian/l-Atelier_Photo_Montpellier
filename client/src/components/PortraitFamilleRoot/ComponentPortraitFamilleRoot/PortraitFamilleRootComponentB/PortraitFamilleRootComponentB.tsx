@@ -22,7 +22,10 @@ function PortraitFamilleRootComponentB() {
         </p>
 
         <p className={style.TextP4}>
-            L’objectif ? Garder le souvenir et les moments de ceux qui comptent. <br />
+            L’objectif ? 
+            <span className={style.SpanBold}>
+                {" Garder le souvenir et les moments de ceux qui comptent."}
+            </span> <br />
             C’est dans ces échanges, souvent silencieux, que naissent les images les plus fortes.
         </p>
 
@@ -81,7 +84,7 @@ function PortraitFamilleRootComponentB() {
                     <span className={style.SpanBold}>
                         {" On échange : "}
                     </span>
-                    Qu’est-ce que vous voulez raconter ? Quel moment marquer ?
+                    Que voulez-vous raconter ? Quels moments marquants ?
                 </li>
                 <li className={style.TextLiP4}>
                     <span className={style.SpanBold}>
@@ -108,28 +111,6 @@ function PortraitFamilleRootComponentB() {
             </ul>
         </article>
 
-        <article className={style.ContainerText}>
-            <h3 className={style.TitleNH3}>
-                {"📚 Des souvenirs à feuilleter, pas à faire défiler"}
-            </h3>
-
-            <p className={style.TextP4}>
-                Les photos numériques, c’est pratique. Mais un 
-                <span className={style.SpanBold}>
-                    {" album, "}
-                </span>
-                un vrai, qu’on ouvre à table un dimanche ou qu’on transmet à son enfant... ça a une autre saveur.
-            </p>
-
-            <p className={style.TextP4}>
-                Je propose une option 
-                <span className={style.SpanBold}>
-                    {" livre photo relié, "}
-                </span>
-                pensé pour durer, à personnaliser selon votre histoire.
-            </p>
-        </article>
-
         <h3 className={style.TitleNH3}>
             {"📍 Montpellier & alentours – Des lieux remplis d’histoires"}
         </h3>
@@ -154,7 +135,7 @@ function PortraitFamilleRootComponentB() {
             <br />
             <span className={style.SpanLink}>
                 <Link to={ListDataRouter[3].path}>
-                    Parlons de ce que vous aimeriez capturer, pour que votre lumière vous ressemble.
+                    Parlons de ce que vous aimeriez capturer pour que votre lumière vous ressemble.
                 </Link>
             </span>
         </p>
