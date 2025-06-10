@@ -19,7 +19,7 @@ function PortraitCorporateRoot() {
 
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
-                    {"Portrait Corporate : valorisez votre image professionnelle !"}
+                    {"Portrait Corporate : Valorisez votre image professionnelle !"}
                 </h1>
             </header>
 
