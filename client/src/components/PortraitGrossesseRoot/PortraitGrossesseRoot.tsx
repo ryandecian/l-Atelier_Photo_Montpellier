@@ -18,7 +18,7 @@ function PortraitGrossesseRoot() {
 
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
-                    {"Grossesse & nouveau-né : capturer la magie de la vie dès ses premiers instants !"}
+                    {"Grossesse & Nouveaux-Nés : Capturer la magie de la vie dès ses premiers instants !"}
                 </h1>
             </header>
 
