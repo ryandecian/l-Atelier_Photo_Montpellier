@@ -24,9 +24,13 @@ function PortraitFamilleRootComponentA() {
             </p>
 
             <p className={style.TextP4}>
-                Ces moments-là, ils passent vite. Trop vite. <br />
+                <span className={style.SpanBold}>
+                    {"Ces moments-là, ils passent vite, "}
+                </span> trop vite. <br />
                 Et pourtant, ils marquent toute une vie. <br />
-                Alors pourquoi ne pas les garder, vraiment ?
+                <span className={style.SpanBold}>
+                    {"Alors pourquoi ne pas les garder, "}
+                </span> vraiment ?
             </p>
 
             <p className={style.TextP4}>
@@ -99,7 +103,7 @@ function PortraitFamilleRootComponentA() {
                     <span className={style.SpanBold}>
                         {" album émotionnel "}
                     </span>
-                    que vos enfants, vos parents, vos petits-enfants feuilletteront plus tard.
+                    que vos enfants ou vos parents ou vos petits-enfants feuilletteront plus tard.
                 </p>
         </article>
     </section>
