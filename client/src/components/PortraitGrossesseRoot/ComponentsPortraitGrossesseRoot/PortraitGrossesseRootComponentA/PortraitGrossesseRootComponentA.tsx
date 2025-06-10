@@ -7,22 +7,33 @@ function PortraitGrossesseRootComponentA() {
         <section className={`PortraitGrossesseRootComponentA ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2}>
-                    {"Une photo de Grossesse ou de naissance, c’est bien plus qu’un souvenir"}
+                    {"Une photo de grossesse ou de naissance, c’est bien plus qu’un souvenir ..."}
                 </h2>
             </header>
 
             <p className={style.TextP4}>
-                Une séance Grossesse ou nouveau-né, c’est une parenthèse. <br />
-                Un temps suspendu pour capter ce qui est en train de se créer : un lien, une attente, un amour déjà immense.
+                Une séance grossesse ou nouveau-né, c’est une parenthèse. <br />
+                Un temps suspendu pour 
+                <span className={style.SpanBold}>
+                    {" capter ce qui est en train de se créer : "}
+                </span> un lien, une attente, un amour déjà immense.
             </p>
 
             <p className={style.TextP4}>
-                Photographier ces instants, c’est offrir à votre histoire une mémoire visuelle, douce, sincère et respectueuse. <br />
-                Pas de poses figées, pas de mise en scène caricaturale : je vous propose des images vivantes, simples et délicates, où vous pourrez vous reconnaître.
+                Photographier ces instants, c’est 
+                <span className={style.SpanBold}>
+                    {" offrir à votre histoire une mémoire visuelle, "}
+                </span> douce, sincère et respectueuse. <br />
+                Pas de poses figées, pas de mise en scène caricaturale : je vous propose des images vivantes, simples et délicates, 
+                où vous pourrez vous reconnaître.
             </p>
 
             <p className={style.TextP4}>
-                Ce sont des photos que vous aurez plaisir à transmettre, à revoir, à encadrer. Des images qui traversent le temps, à hauteur de cœur.
+                Ce sont des photos que vous aurez plaisir 
+                <span className={style.SpanBold}>
+                    {" à transmettre, à revoir, à encadrer. "}
+                </span> Des images qui traversent le 
+                temps, à hauteur de cœur.
             </p>
 
             <Container4ImagesRoot
@@ -47,15 +58,16 @@ function PortraitGrossesseRootComponentA() {
                         {" cocon visuel "}
                     </span>
                     autour de vous. <br />
-                    Je vous accueille dans un cadre chaleureux (à domicile ou en studio), en prenant le temps d’écouter votre histoire, vos envies, 
+                    Je vous accueille dans un studio chaleureux, ou je me déplace à votre domicile en prenant le temps d’écouter 
+                    votre histoire, vos envies, 
                     vos appréhensions aussi. <br />
                     Mon objectif ? Que vous vous sentiez 
                     <span className={style.SpanBold}>
-                        {" vous-mêmes. "}
+                        {" vous-même. "}
                     </span>
                     Que vous puissiez 
                     <span className={style.SpanBold}>
-                        {" respirer, sourire, être touchés, "}
+                        {" respirer, sourire, être touché, "}
                     </span>
                     sans vous forcer.
                 </p>
