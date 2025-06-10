@@ -56,7 +56,10 @@ function PortraitCorporateRootComponentA() {
                     </span>
                     Elle affirme votre présence et véhicule le message que vous souhaitez faire passer comme le sérieux, l’écoute, la compétence... 
                     En prenant le temps d’échanger sur vos attentes, je serai en force de proposition pour que vos photos s’inscrivent dans votre 
-                    communication globale d’entreprise. Et vous pourrez même être tenté par une vidéo d’entreprise pour vous démarquer en mieux !  
+                    communication globale d’entreprise. 
+                    <span className={style.SpanBold}>
+                        {" Et vous pourrez même être tenté par une vidéo d’entreprise "}
+                    </span> (renseignements à demander directement) pour vous démarquer.
                 </p>
             </article>
         </section>
