@@ -207,7 +207,7 @@ function DataCardPrestation() {
             reactKey: 26,
             path: ListDataRouter[19].path,
             id: "tarifs-portrait-hobby",
-            title: "Portrait créatif",
+            title: "Portrait hobby",
             description: "Un shooting sur-mesure pour votre univers.",
             image: "/images/image-prestation-card/createur.jpg",
         },
@@ -273,7 +273,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-famille",
             title: "Portrait enfants",
             description: "Des instants précieux en famille.",
-            image: "/images/image-prestation-card/famille.jpg",
+            image: "/images/image-prestation-card/enfant.jpg",
         },
         {
             reactKey: 35,
@@ -500,8 +500,8 @@ function DataCardPrestation() {
             image: "/images/image-prestation-card/tribu.jpg",
         },
         {
-            reactKey: 68,
-            path: ListDataRouter[16].path,
+            reactKey: 69,
+            path: ListDataRouter[13].path,
             id: "tarifs-portrait-mariage",
             title: "Mariage Pride",
             description: "Célébrez l'amour en arc-en-ciel.",
