@@ -1,16 +1,16 @@
 import ListDataRouter from "../../router/router";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
-function DataSEO_PortraitHobbie(): DataSEOTargetOneType {
+function DataSEO_PortraitHobby(): DataSEOTargetOneType {
     const DataSEO = {
         /* Data Helmet */
-        title: "Portrait Hobbie - l'Atelier Photo Montpellier",
+        title: "Portrait Hobby - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
-        description: "Portrait hobbie signé L'Atelier Photo Montpellier : une séance pour mettre en lumière votre passion et révéler ce qui vous anime.",
+        description: "Portrait Hobby signé L'Atelier Photo Montpellier : une séance pour mettre en lumière votre passion et révéler ce qui vous anime.",
         url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[19].path}`, /*URL de la page*/
         position: 3, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
-        name_Breadcrumb: "Portrait Hobbie", /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Duo */
-        name_Service: "Portrait Hobbie - l'Atelier Photo Montpellier", /* Nom du service, utilisé dans le JSON-LD Service */
+        name_Breadcrumb: "Portrait Hobby", /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Duo */
+        name_Service: "Portrait Hobby - l'Atelier Photo Montpellier", /* Nom du service, utilisé dans le JSON-LD Service */
         twitterUrlImg: "", /* Lien URL de l'image */
         keywords: {
             1: "Anne SAUNIER", /* 1 mot clés */
@@ -19,7 +19,7 @@ function DataSEO_PortraitHobbie(): DataSEOTargetOneType {
             4: "l'Atelier Photo Montpellier", /* 4 mots clés */
             5: "LAPM", /* 5 mots clés */
             6: "Service", /* 6 mots clés */
-            7: "Portrait Hobbie", /* 7 mots clés */
+            7: "Portrait Hobby", /* 7 mots clés */
             8: "", /* 8 mots clés */
             9: "", /* 9 mots clés */
             10: "", /* 10 mots clés */
@@ -38,10 +38,10 @@ function DataSEO_PortraitHobbie(): DataSEOTargetOneType {
         },
     
         /* Data Helmet et JSON-LD */
-        img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-hobbie/google/lapm-photo-portrait-hobbie-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-hobbie/helmet/lapm-photo-portrait-hobbie-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[19].path}#service-portrait-hobbie`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
-        serviceType: "Séance photo portrait hobbie, pour capturer votre passion dans un style naturel et expressif, en studio ou dans un lieu qui vous ressemble.",
+        img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-hobby/google/lapm-photo-portrait-hobby-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
+        img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-hobby/helmet/lapm-photo-portrait-hobby-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[19].path}#service-portrait-hobby`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
+        serviceType: "Séance photo portrait hobby, pour capturer votre passion dans un style naturel et expressif, en studio ou dans un lieu qui vous ressemble.",
     };
 
     return (
@@ -49,4 +49,4 @@ function DataSEO_PortraitHobbie(): DataSEOTargetOneType {
     )
 }
 
-export default DataSEO_PortraitHobbie;
+export default DataSEO_PortraitHobby;

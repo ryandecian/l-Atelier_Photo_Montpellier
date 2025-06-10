@@ -4,7 +4,7 @@ import {PrestationType, FormuleType, DataRootEmailType} from "../../types/Presta
 /* ---------- ----------- ---------- ---------- ---------- */
 /* Bloc logique 1 */
 
-const TarifsPortraitHobbie: PrestationType = {
+const TarifsPortraitHobby: PrestationType = {
     essentiel: {
         line1: { value1: 'Durée Séance', value2: '45 min' },
         line2: { value1: 'Extérieur', value2: 'Oui' },
@@ -34,12 +34,12 @@ const TarifsPortraitHobbie: PrestationType = {
     },
 };
 
-export {TarifsPortraitHobbie};
+export {TarifsPortraitHobby};
 
 /* ---------- ----------- ---------- ---------- ---------- */
 /* Bloc logique 2 */
 
-const Service: string = "Portrait Hobbie"; /* Bloc a modifier si besoin */
+const Service: string = "Portrait Hobby"; /* Bloc a modifier si besoin */
 const Reservation: string = `Réservation ${Service}`; /* Bloc a modifier si besoin */
 
 /* Nom des formules disponibles */
@@ -82,10 +82,10 @@ const dataRootEmail: DataRootEmailType = {
 /* Bloc logique 4 */
 
 /* Mail structuré pour les carte de tarifs */
-const MailtoLinkPortraitHobbie: FormuleType = {
+const MailtoLinkPortraitHobby: FormuleType = {
     essentiel: `${dataRootEmail.essentiel.mailto}?subject=${dataRootEmail.essentiel.subject}&body=${dataRootEmail.essentiel.body}`,
     confort: `${dataRootEmail.confort.mailto}?subject=${dataRootEmail.confort.subject}&body=${dataRootEmail.confort.body}`,
     premium: `${dataRootEmail.premium.mailto}?subject=${dataRootEmail.premium.subject}&body=${dataRootEmail.premium.body}`,
 }
 
-export {MailtoLinkPortraitHobbie};
+export {MailtoLinkPortraitHobby};
