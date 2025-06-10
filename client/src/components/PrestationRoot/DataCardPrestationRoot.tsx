@@ -9,7 +9,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-mariage",
             title: "After day / trash the dress",
             description: "Prolongez la magie après le mariage.",
-            image: "/images/image-prestation-card/mariage.jpg",
+            image: "/images/image-prestation-card/canette.jpg",
         },
         {
             reactKey: 2,
@@ -25,7 +25,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-mariage",
             title: "Enterrement de vie jeune fille",
             description: "Immortalisez ce moment unique entre proches.",
-            image: "/images/image-prestation-card/mariage.jpg",
+            image: "/images/image-prestation-card/evjf.jpg",
         },
         {
             reactKey: 4,
@@ -33,7 +33,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-mariage",
             title: "Enterrement de vie garçon",
             description: "Immortalisez ce moment unique entre proches.",
-            image: "/images/image-prestation-card/mariage.jpg",
+            image: "/images/image-prestation-card/evg.jpg",
         },
         {
             reactKey: 5,
@@ -41,7 +41,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-mariage",
             title: "EVJF / EVG",
             description: "Immortalisez l'enterrement de votre vie de célibataire.",
-            image: "/images/image-prestation-card/mariage.jpg",
+            image: "/images/image-prestation-card/soleil.jpg",
         },
         {
             reactKey: 6,
@@ -57,7 +57,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-corporate",
             title: "Photo CV",
             description: "Donnez une première impression percutante.",
-            image: "/images/image-prestation-card/corporate.jpg",
+            image: "/images/image-prestation-card/cv.jpg",
         },
         {
             reactKey: 8,
@@ -81,7 +81,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-solo",
             title: "Photo Instagram",
             description: "Un portrait stylisé pour embellir votre feed.",
-            image: "/images/image-prestation-card/reseau.jpg",
+            image: "/images/image-prestation-card/insta.jpg",
         },
         {
             reactKey: 11,
@@ -89,7 +89,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-corporate",
             title: "Photo Linkedin",
             description: "Un portrait qui inspire confiance.",
-            image: "/images/image-prestation-card/corporate.jpg",
+            image: "/images/image-prestation-card/linkedin.jpg",
         },
         {
             reactKey: 12,
@@ -97,7 +97,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-solo",
             title: "Photo réseaux sociaux",
             description: "Un cliché soigné pour vous démarquer en ligne.",
-            image: "/images/image-prestation-card/reseau.jpg",
+            image: "/images/image-prestation-card/social.jpg",
         },
         {
             reactKey: 13,
@@ -105,7 +105,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-corporate",
             title: "Photo site internet",
             description: "Une image cohérente pour votre communication digitale.",
-            image: "/images/image-prestation-card/corporate.jpg",
+            image: "/images/image-prestation-card/internet.jpg",
         },
         {
             reactKey: 14,
@@ -113,7 +113,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-duo",
             title: "Portrait amis",
             description: "Des souvenirs complices à partager.",
-            image: "/images/image-prestation-card/couple.jpg",
+            image: "/images/image-prestation-card/amis.jpg",
         },
         {
             reactKey: 15,
@@ -121,7 +121,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-hobby",
             title: "Portrait animaux",
             description: "Mettez en lumière votre lien unique avec votre compagnon.",
-            image: "/images/image-prestation-card/chien.jpg",
+            image: "/images/image-prestation-card/animaux.jpg",
         },
         {
             reactKey: 16,
@@ -137,7 +137,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-hobby",
             title: "Portrait artisan/créateur",
             description: "Valorisez votre savoir-faire en images.",
-            image: "/images/image-prestation-card/createur.jpg",
+            image: "/images/image-prestation-card/artisant.jpg",
         },
         {
             reactKey: 18,
@@ -145,7 +145,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-hobby",
             title: "Portrait artistique",
             description: "Créez un portrait unique, à votre image.",
-            image: "/images/image-prestation-card/createur.jpg",
+            image: "/images/image-prestation-card/artiste.jpg",
         },
         {
             reactKey: 19,
@@ -193,7 +193,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-hobby",
             title: "Portrait cosplay",
             description: "Mettez en lumière vos personnages préférés.",
-            image: "/images/image-prestation-card/createur.jpg",
+            image: "/images/image-prestation-card/cosplay.jpg",
         },
         {
             reactKey: 25,
@@ -257,7 +257,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-duo",
             title: "Portrait duo créatif",
             description: "Un shooting original pour raconter votre histoire à deux.",
-            image: "/images/image-prestation-card/couple.jpg",
+            image: "/images/image-prestation-card/creatif.jpg",
         },
         {
             reactKey: 33,
@@ -265,7 +265,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-duo",
             title: "Portrait en duo",
             description: "Célébrez votre complicité en images.",
-            image: "/images/image-prestation-card/couple.jpg",
+            image: "/images/image-prestation-card/duo.jpg",
         },
         {
             reactKey: 34,
@@ -281,7 +281,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-corporate",
             title: "Portrait entrepreneur",
             description: "Valorisez votre marque personnelle.",
-            image: "/images/image-prestation-card/corporate.jpg",
+            image: "/images/image-prestation-card/entrepreneur.jpg",
         },
         {
             reactKey: 36,
@@ -305,7 +305,7 @@ function DataCardPrestation() {
             id: "tarifs-portrait-solo",
             title: "Portrait feel good",
             description: "Une séance pour se reconnecter à soi.",
-            image: "/images/image-prestation-card/solo.jpg",
+            image: "/images/image-prestation-card/feel-good.jpg",
         },
         {
             reactKey: 39,
