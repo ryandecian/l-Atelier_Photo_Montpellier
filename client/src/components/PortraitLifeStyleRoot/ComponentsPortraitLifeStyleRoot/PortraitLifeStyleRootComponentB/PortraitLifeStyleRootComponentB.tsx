@@ -42,7 +42,7 @@ function PortraitLifeStyleRootComponentB() {
         { 
             id: 6, 
             title: "Passions Lives", 
-            name: "Portrait Hobbies - Sport", 
+            name: "Portrait Hobby - Sport", 
             path: ListDataRouter[19].path, 
             img: ImagesPortraitLifeStyleControllerData[5].src
         },

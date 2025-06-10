@@ -1,18 +1,18 @@
 import style from "../stylePage.module.css";
 import NavRoot from "../../components/NavRoot/NavRoot";
-import PortraitHobbieRoot from "../../components/PortraitHobbieRoot/PortraitHobbieRoot";
+import PortraitHobbyRoot from "../../components/PortraitHobbyRoot/PortraitHobbyRoot";
 import FooterRoot from "../../components/FooterRoot/FooterRoot";
-import Helmet_PortraitHobbie_SEO from "../../seo/PortraitHobbieSEO/Helmet_PortraitHobbie.seo";
+import Helmet_PortraitHobby_SEO from "../../seo/PortraitHobbySEO/Helmet_PortraitHobby.seo";
 
-function PortraitHobbiePage() {
+function PortraitHobbyPage() {
      return (
-        <section className={`PortraitHobbie ${style.Page}`}>
-            <Helmet_PortraitHobbie_SEO />
+        <section className={`PortraitHobby ${style.Page}`}>
+            <Helmet_PortraitHobby_SEO />
             <header className={style.Header}>
                  <NavRoot />
             </header>
             <main className={style.Main}>
-                <PortraitHobbieRoot />
+                <PortraitHobbyRoot />
             </main>
             <footer className={style.Footer}>
                 <FooterRoot />
@@ -21,4 +21,4 @@ function PortraitHobbiePage() {
     )
 }
 
-export default PortraitHobbiePage;
+export default PortraitHobbyPage;
