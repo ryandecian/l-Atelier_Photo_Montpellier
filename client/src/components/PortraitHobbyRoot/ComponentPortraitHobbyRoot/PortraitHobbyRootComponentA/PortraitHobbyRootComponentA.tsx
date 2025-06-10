@@ -7,7 +7,7 @@ function PortraitHobbyRootComponentA() {
     <section className={`PortraitHobbyRootComponentA ${style.ContainerRoot}`}>
         <header className={style.ContainerTitle}>
             <h2 className={style.TitleH2}>
-                {"Parce que chaque Hobby a son histoire, offrez-vous un portrait fidèle à votre complicité"}
+                {"Parce que chaque hobby a son histoire, offrez-vous un portrait fidèle à cette complicité"}
             </h2>
         </header>
 
