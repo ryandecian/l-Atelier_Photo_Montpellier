@@ -60,11 +60,11 @@ function PortraitHobbyRootComponentB() {
 
             <p className={style.TextP4}>
                 Parce que chez moi, on ne “pose” pas. <br />
-                On
+                On vit la photo,
                 <span className={style.SpanBold}>
-                    {" vit la photo, "}
+                    {" on la construit ensemble, "}
                 </span>
-                on la construit ensemble, avec ce que vous êtes, ce que vous faites, ce qui vous touche.
+                avec ce que vous êtes, ce que vous faites, ce qui vous touche.
             </p>
 
             <p className={style.TextP4}>
@@ -186,7 +186,7 @@ function PortraitHobbyRootComponentB() {
             <br />
             <span className={style.SpanLink}>
                 <Link to={ListDataRouter[3].path}>
-                    Parlons de ce que vous aimeriez capturer, pour que votre lumière vous ressemble.
+                    Parlons de ce que vous aimeriez capturer pour que votre lumière vous ressemble.
                 </Link>
             </span>
         </p>
