@@ -1,6 +1,6 @@
 import style from "../../../StyleRootComponent.module.css";
 import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
-import ImagesPortraitHobbieControllerData from "../../ImagesPortraitHobbyControllerData";
+import ImagesPortraitHobbieControllerData from "../PortraitHobbyRootComponentB/ImagesPortraitHobbyControllerData";
 
 function PortraitHobbieRootComponentA() {
   return (

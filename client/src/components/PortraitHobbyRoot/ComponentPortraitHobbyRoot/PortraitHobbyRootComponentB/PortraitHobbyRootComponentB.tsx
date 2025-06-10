@@ -1,15 +1,15 @@
 import style from "../../../StyleRootComponent.module.css";
 import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
-import ImagesPortraitHobbieControllerData from "../../ImagesPortraitHobbyControllerData";
+import ImagesPortraitHobbyControllerData from "../../ImagesPortraitHobbyControllerData";
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../../router/router";
 
-function PortraitHobbieRootComponentB() {
+function PortraitHobbyRootComponentB() {
   return (
-    <section className={`PortraitHobbieRootComponentB ${style.ContainerRoot}`}>
+    <section className={`PortraitHobbyRootComponentB ${style.ContainerRoot}`}>
         <header className={style.ContainerTitle}>
             <h2 className={style.TitleH2}>
-                {"Parce que chaque Hobbie a son histoire, offrez-vous un portrait fidèle à votre complicité."}
+                {"Parce que chaque Hobby a son histoire, offrez-vous un portrait fidèle à votre complicité."}
             </h2>
         </header>
 
@@ -100,14 +100,14 @@ function PortraitHobbieRootComponentB() {
         </article>
 
         <Container4ImagesRoot
-            img1={ImagesPortraitHobbieControllerData[4].src}
-            MetaNameImg1={ImagesPortraitHobbieControllerData[4].alt}
-            img2={ImagesPortraitHobbieControllerData[5].src}
-            MetaNameImg2={ImagesPortraitHobbieControllerData[5].alt}
-            img3={ImagesPortraitHobbieControllerData[6].src}
-            MetaNameImg3={ImagesPortraitHobbieControllerData[6].alt}
-            img4={ImagesPortraitHobbieControllerData[7].src}
-            MetaNameImg4={ImagesPortraitHobbieControllerData[7].alt}
+            img1={ImagesPortraitHobbyControllerData[4].src}
+            MetaNameImg1={ImagesPortraitHobbyControllerData[4].alt}
+            img2={ImagesPortraitHobbyControllerData[5].src}
+            MetaNameImg2={ImagesPortraitHobbyControllerData[5].alt}
+            img3={ImagesPortraitHobbyControllerData[6].src}
+            MetaNameImg3={ImagesPortraitHobbyControllerData[6].alt}
+            img4={ImagesPortraitHobbyControllerData[7].src}
+            MetaNameImg4={ImagesPortraitHobbyControllerData[7].alt}
         />
 
         <article className={style.ContainerText}>
@@ -193,4 +193,4 @@ function PortraitHobbieRootComponentB() {
   );
 }
 
-export default PortraitHobbieRootComponentB;
+export default PortraitHobbyRootComponentB;
