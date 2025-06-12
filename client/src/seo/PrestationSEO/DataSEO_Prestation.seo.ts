@@ -1,16 +1,16 @@
 import ListDataRouter from "../../router/router";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
-function DataSEO_PortraitNouveauNe(): DataSEOTargetOneType {
+function DataSEO_Prestation(): DataSEOTargetOneType {
     const DataSEO = {
         /* Data Helmet */
-        title: "Portrait Grossesse et nouveau né - l'Atelier Photo Montpellier",
+        title: "Liste des prestations photographiques - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
-        description: "Un souffle de vie, un regard naissant. Anne SAUNIER révèle la tendresse des premiers jours à travers des portraits à chérir pour toujours.",
-        url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[17].path}`, /*URL de la page*/
-        position: 3, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
-        name_Breadcrumb: "Prestation", /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Duo */
-        name_Service: "", /* Nom du service, utilisé dans le JSON-LD Service */
+        description: "Découvrez toutes les prestations proposées par l'Atelier Photo Montpellier, de la séance portrait au reportage de mariage.",
+        url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[2].path}`, /*URL de la page*/
+        position: 2, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
+        name_Breadcrumb: "Liste des prestations photographiques", /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Duo */
+        name_Service: "Liste des prestations photographiques - l'Atelier Photo Montpellier", /* Nom du service, utilisé dans le JSON-LD Service */
         twitterUrlImg: "", /* Lien URL de l'image */
         keywords: {
             1: "Anne SAUNIER", /* 1 mot clés */
@@ -40,7 +40,7 @@ function DataSEO_PortraitNouveauNe(): DataSEOTargetOneType {
         /* Data Helmet et JSON-LD */
         img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-nouveau-ne/google/lapm-photo-portrait-nouveau-ne-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
         img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-nouveau-ne/helmet/lapm-photo-portrait-nouveau-ne-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[17].path}#service-portrait-nouveau-ne`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[2].path}#service-portrait-nouveau-ne`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
         serviceType: "", /* Type de service, utilisé dans le JSON-LD Service */
     };
 
@@ -49,4 +49,4 @@ function DataSEO_PortraitNouveauNe(): DataSEOTargetOneType {
     )
 }
 
-export default DataSEO_PortraitNouveauNe;
+export default DataSEO_Prestation;
