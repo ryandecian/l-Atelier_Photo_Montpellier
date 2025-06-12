@@ -1,10 +1,8 @@
 import NavRoot from "../../components/NavRoot/NavRoot";
 import style from "../stylePage.module.css";
-// import PortraitGrossesseRoot from "../../components/PortraitGrossesseRoot/PortraitGrossesseRoot";
+import QuiSuisJeRoot from "../../components/QuiSuisJeRoot/QuiSuisJeRoot";
 import FooterRoot from "../../components/FooterRoot/FooterRoot";
 // import Helmet_PortraitGrossesse_SEO from "../../seo/PortraitGrossesseSEO/Helmet_PortraitGrossesse.seo";
-
-/* Cette page reprend la quasi totalité des éléments éléments et composant de la page Portrait Grossesse */
 
 function QuiSuisJePage() {
      return (
@@ -14,7 +12,7 @@ function QuiSuisJePage() {
                  <NavRoot />
             </header>
             <main className={style.Main}>
-                {/* <PortraitGrossesseRoot /> */}
+                <QuiSuisJeRoot />
             </main>
             <footer className={style.Footer}>
                 <FooterRoot />
