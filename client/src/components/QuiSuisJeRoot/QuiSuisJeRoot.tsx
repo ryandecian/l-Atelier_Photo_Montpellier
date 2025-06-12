@@ -6,7 +6,7 @@ function QuiSuisJeRoot() {
         <section className={`QuiSuisJe ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
-                    Portrait Solo : Une séance photos pour renouer avec votre image !
+                    Mon Parcours de Photographe : De l'Argentique au Numérique, Une Passion Retrouvée
                 </h1>
             </header>
 
