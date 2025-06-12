@@ -24,6 +24,7 @@ import PortraitNouveauNePage from "../pages/PotraitNouveauNePage/PortraitNouveau
 import PortraitSoloPage from "../pages/PortraitSoloPage/PortraitSoloPage";
 import PortraitFamillePage from "../pages/PortraitFamillePage/PortraitFamillePage";
 import PrestationPage from "../pages/PrestationPage/PrestationPage";
+import QuiSuisJePage from "../pages/QuiSuisJePage/QuiSuisJePage";
 
 /**
  * Utilisation : 
@@ -75,7 +76,7 @@ const ListDataRouter: RouterItemsType[] = [
     /* {ListDataRouter[7].path} */
     {
         path: "/qui-suis-je",
-        element: <h1>Route : Page Qui-suis-je</h1>,
+        element: <QuiSuisJePage />
     },
     /* {ListDataRouter[8].path} */
     {
