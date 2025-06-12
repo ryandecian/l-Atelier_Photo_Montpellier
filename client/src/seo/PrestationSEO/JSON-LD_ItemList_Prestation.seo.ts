@@ -24,7 +24,7 @@ function JSON_LD_ItemList_Prestation_Schema_SEO() {
             "name": prestation.title,
             "description": prestation.description,
             "url": `https://atelier-photo-montpellier.fr${prestation.path}#${prestation.id}`,
-            "image": `${process.env.VITE_DOMAIN_CLIENT}${prestation.image}`
+            "image": `${import.meta.env.VITE_DOMAIN_CLIENT}${prestation.image}`
         }))
     })
 
