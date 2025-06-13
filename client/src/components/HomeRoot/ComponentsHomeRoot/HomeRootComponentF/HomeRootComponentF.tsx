@@ -43,11 +43,11 @@ function HomePCAutorComponentF() {
         ),
         htmlK: (
             <figure className={css.ContainerPortraitAutor}>
-                    <PremiumCardImgSudoRoot src="./images/anne-saunier/lapm-photographe-professionnelle-anne-saunier-grabels-l-atelier-photo-montpellier.jpg" alt="Portrait de la photographe professionnelle Anne SAUNIER" className={css.AutorImg} />
-                    <figcaption className={style.SpanBold}>
-                        Anne SAUNIER
-                    </figcaption>
-                </figure>
+                <PremiumCardImgSudoRoot src="./images/anne-saunier/lapm-photographe-professionnelle-anne-saunier-grabels-l-atelier-photo-montpellier.jpg" alt="Portrait de la photographe professionnelle Anne SAUNIER" className={css.AutorImg} />
+                <figcaption className={style.SpanBold}>
+                    Anne SAUNIER
+                </figcaption>
+            </figure>
         ),
         htmlL: "📸 **Laissez-vous guider, repartez avec des images qui vous AIMEZ. ",
         htmlM: (
