@@ -1,9 +1,11 @@
 import style from "../StyleRootComponent.module.css";
 import css from "./QuiSuisJeRoot.module.css";
+import { Link } from "react-router-dom";
 
 import PremiumCardImgSudoRoot from "../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
 import useMediaQueriesWidth from "../../hook/mediaQueriesWidth.utils.hook";
-import { text } from "stream/consumers";
+
+import ListDataRouter from "../../router/router";
 
 type textHTMLType = {
     htmlA: JSX.Element;
@@ -16,13 +18,15 @@ type textHTMLType = {
     htmlH: string;
     htmlI: string;
     htmlJ: string;
-    htmlK: string;
+    htmlK: JSX.Element;
     htmlL: string;
     htmlM: string;
+    htmlN: JSX.Element;
 }
 
 function QuiSuisJeRoot() {
     const viewportWidth: number = useMediaQueriesWidth();
+    const router = ListDataRouter[2].path; // Tarifs
 
     const textHTML: textHTMLType = {
         htmlA: (
@@ -42,13 +46,27 @@ function QuiSuisJeRoot() {
             </span>
         ),
         htmlF: "L’utilisation du post-traitement, devenu incontournable dans la photographie numérique, a été un axe fondamental de mon apprentissage. ",
+        /* -------------------------------------------------- */
         htmlG: "Le confinement a été aussi un tournant dans mon parcours, m’offrant l’occasion de perfectionner mes compétences en éclairage, notamment grâce à l'utilisation du flash. ",
         htmlH: "Avec mes modèles familiaux présents à la maison, j’ai expérimenté et peaufiné mes techniques de portrait en lumière artificielle. ",
         htmlI: "J’ai également suivi une formation au studio B612, ce qui m’a permis de comprendre de manière plus approfondie les subtilités du flash et son impact dans la création d’images à la fois dramatiques et naturelles. ",
-        htmlJ: "",
-        htmlK: "",
-        htmlL: "",
-        htmlM: ""
+        /* -------------------------------------------------- */
+        htmlJ: "Aujourd'hui, ",
+        htmlK: (
+            <span className={style.SpanBold}>
+                {"je me spécialise dans les portraits, aussi bien en studio qu’en extérieur, et dans les reportages de mariage. "}
+            </span>
+        ),
+        htmlL: `Mon approche se veut personnalisée, créant des projets uniques comme "Amies sur les bancs de l'école 70 ans plus tard" ou "Devenez Peaky Blinders le temps d'un shooting". `,
+        htmlM: "Toujours à la recherche de l’authenticité et de l’émotion, je mets tout en œuvre pour offrir une expérience photographique inoubliable. ",
+        /* -------------------------------------------------- */
+        htmlN: (
+            <span className={style.SpanLink}>
+                <Link to={router}>
+                    {"Découvrez mes prestations et trouvez celle qui vous correspond le mieux !"}
+                </Link>
+            </span>
+        )
     };
 
     return (
@@ -74,7 +92,161 @@ function QuiSuisJeRoot() {
             {viewportWidth <= 550 && (
                 <>
                     {textHTML.htmlA}
-                    
+                    <br />
+                    <p className={style.TextP4}>
+                        {textHTML.htmlB}
+                        {textHTML.htmlC}
+                        {textHTML.htmlD}
+                        {textHTML.htmlE}
+                        {textHTML.htmlF}
+                    </p>
+                    <p className={style.TextP4}>
+                        {textHTML.htmlG}
+                        {textHTML.htmlH}
+                        {textHTML.htmlI}
+                    </p>
+                    <p className={style.TextP4}>
+                        {textHTML.htmlJ}
+                        {textHTML.htmlK}
+                        {textHTML.htmlL}
+                        {textHTML.htmlM}
+                    </p>
+                    <p className={style.TextP4}>
+                        {textHTML.htmlN}
+                    </p>
+                </>
+            )}
+
+            {/* MediaQuery maison */}
+            {viewportWidth > 550 && viewportWidth <= 700 && (
+                <>
+                    <div className={css.Container}>
+                        {textHTML.htmlA}
+                        <div className={css.SubContainer}>
+                            <p className={css.TextP4}>
+                                {textHTML.htmlB}
+                                {textHTML.htmlC}
+                                {textHTML.htmlD}
+                                {textHTML.htmlE}
+                                {textHTML.htmlF}
+                            </p>
+                            {/* MediaQuery maison */}
+                            {viewportWidth > 580 && viewportWidth <= 610 && (
+                                <p className={css.TextP4}>
+                                    {"Le confinnement a été aussi un"}
+                                </p>
+                            )}
+                            {/* MediaQuery maison */}
+                            {viewportWidth > 610 && viewportWidth <= 640 && (
+                                <p className={css.TextP4}>
+                                    {"Le confinnement a été aussi un tournant dans mon parcours,"}
+                                </p>
+                            )}
+                            {/* MediaQuery maison */}
+                            {viewportWidth > 640 && viewportWidth <= 655 && (
+                                <p className={css.TextP4}>
+                                    {"Le confinnement a été aussi un tournant dans mon parcours, m'offrant l'occasion de perfectionner"}
+                                </p>
+                            )}
+                            {/* MediaQuery maison */}
+                            {viewportWidth > 655 && viewportWidth <= 662 && (
+                                <p className={css.TextP4}>
+                                    {"Le confinnement a été aussi un tournant dans mon parcours, m'offrant l'occasion de perfectionner mes compétences en éclairage,"}
+                                </p>
+                            )}
+                            {/* MediaQuery maison */}
+                            {viewportWidth > 662 && (
+                                <p className={css.TextP4}>
+                                    {"Le confinnement a été aussi un tournant dans mon parcours, m'offrant l'occasion de perfectionner mes compétences en éclairage, notamment grâce à l'utilisation du flash."}
+                                </p>
+                            )}
+                        </div>
+                    </div>
+
+                    {/* MediaQuery maison */}
+                    {viewportWidth > 580 && viewportWidth <= 610 && (
+                        <p className={style.TextP4}>
+                            {"tournant dans mon parcours, m'offrant l'occasion de perfectionner mes compétences en éclairage, notamment grâce à l'utilisation du flash."}
+                        </p>
+                    )}
+                    {/* MediaQuery maison */}
+                    {viewportWidth > 610 && viewportWidth <= 640 && (
+                        <p className={style.TextP4}>
+                            {"m'offrant l'occasion de perfectionner mes compétences en éclairage, notamment grâce à l'utilisation du flash."}
+                        </p>
+                    )}
+                    {/* MediaQuery maison */}
+                    {viewportWidth > 640 && viewportWidth <= 655 && (
+                        <p className={style.TextP4}>
+                            {"mes compétences en éclairage, notamment grâce à l'utilisation du flash."}
+                        </p>
+                    )}
+                    {/* MediaQuery maison */}
+                    {viewportWidth > 655 && viewportWidth <= 662 && (
+                        <p className={style.TextP4}>
+                            {"notamment grâce à l'utilisation du flash."}
+                        </p>
+                    )}
+                    <p className={style.TextP4}>
+                        {textHTML.htmlH}
+                        {textHTML.htmlI}
+                    </p>
+                    <p className={style.TextP4}>
+                        {textHTML.htmlJ}
+                        {textHTML.htmlK}
+                        {textHTML.htmlL}
+                        {textHTML.htmlM}
+                    </p>
+                    <p className={style.TextP4}>
+                        {textHTML.htmlN}
+                    </p>
+                </>
+            )}
+
+            {/* MediaQuery maison */}
+            {viewportWidth > 700 && viewportWidth <= 5000 && (
+                <>
+                    <div className={css.Container}>
+                        {textHTML.htmlA}
+                        <div className={css.SubContainer}>
+                            <p className={css.TextP4}>
+                                {textHTML.htmlB}
+                                {textHTML.htmlC}
+                                {textHTML.htmlD}
+                                {textHTML.htmlE}
+                                {textHTML.htmlF}
+                            </p>
+                            <p className={css.TextP4}>
+                                {textHTML.htmlG}
+                            </p>
+                            {/* MediaQuery maison */}
+                            {viewportWidth > 580 && viewportWidth <= 610 && (
+                                <p className={css.TextP4}>
+                                    {"Le confinnement a été aussi un"}
+                                </p>
+                            )}
+                        </div>
+                    </div>
+
+                    {/* MediaQuery maison */}
+                    {viewportWidth > 580 && viewportWidth <= 610 && (
+                        <p className={style.TextP4}>
+                            {"tournant dans mon parcours, m'offrant l'occasion de perfectionner mes compétences en éclairage, notamment grâce à l'utilisation du flash."}
+                        </p>
+                    )}
+                    <p className={style.TextP4}>
+                        {textHTML.htmlH}
+                        {textHTML.htmlI}
+                    </p>
+                    <p className={style.TextP4}>
+                        {textHTML.htmlJ}
+                        {textHTML.htmlK}
+                        {textHTML.htmlL}
+                        {textHTML.htmlM}
+                    </p>
+                    <p className={style.TextP4}>
+                        {textHTML.htmlN}
+                    </p>
                 </>
             )}
         </section>
