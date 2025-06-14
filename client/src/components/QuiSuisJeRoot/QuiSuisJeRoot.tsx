@@ -38,7 +38,7 @@ function QuiSuisJeRoot() {
             </figure>
         ),
         htmlB: "C’est par la photographie immobilière que je suis revenue à mes premières amours. ",
-        htmlC: "J'ai progressivement redécouvert la magie de l’image, tout en me familiarisant avec les nouvelles technologies numériques.",
+        htmlC: "J'ai progressivement redécouvert la magie de l’image, tout en me familiarisant avec les nouvelles technologies numériques. ",
         htmlD: "Depuis 7 ans, mon engagement en photographie est devenu plus profond, et ",
         htmlE: (
             <span className={style.SpanBold}>
@@ -204,7 +204,7 @@ function QuiSuisJeRoot() {
             )}
 
             {/* MediaQuery maison */}
-            {viewportWidth > 700 && viewportWidth <= 5000 && (
+            {viewportWidth > 700 && viewportWidth <= 710 && (
                 <>
                     <div className={css.Container}>
                         {textHTML.htmlA}
@@ -218,26 +218,84 @@ function QuiSuisJeRoot() {
                             </p>
                             <p className={css.TextP4}>
                                 {textHTML.htmlG}
-                            </p>
                             {/* MediaQuery maison */}
-                            {viewportWidth > 580 && viewportWidth <= 610 && (
-                                <p className={css.TextP4}>
-                                    {"Le confinnement a été aussi un"}
-                                </p>
+                            {viewportWidth > 700 && viewportWidth <= 708 && (
+                                <>
+                                    {"Avec mes modeles familiaux présents à la maison, j'ai expérimenté et paufiné mes techniques de portrait en"}
+                                </>
                             )}
+                            {/* MediaQuery maison */}
+                            {viewportWidth > 708 && (
+                                <>
+                                    {"Avec mes modeles familiaux présents à la maison, j'ai expérimenté et paufiné mes techniques de portrait en lumiere artificielle."}
+                                </>
+                            )}
+                            </p>
                         </div>
                     </div>
 
                     {/* MediaQuery maison */}
-                    {viewportWidth > 580 && viewportWidth <= 610 && (
+                    {viewportWidth > 700 && viewportWidth <= 708 && (
                         <p className={style.TextP4}>
-                            {"tournant dans mon parcours, m'offrant l'occasion de perfectionner mes compétences en éclairage, notamment grâce à l'utilisation du flash."}
+                            {"lumiere artificielle."}
                         </p>
                     )}
                     <p className={style.TextP4}>
-                        {textHTML.htmlH}
                         {textHTML.htmlI}
                     </p>
+                    <p className={style.TextP4}>
+                        {textHTML.htmlJ}
+                        {textHTML.htmlK}
+                        {textHTML.htmlL}
+                        {textHTML.htmlM}
+                    </p>
+                    <p className={style.TextP4}>
+                        {textHTML.htmlN}
+                    </p>
+                </>
+            )}
+
+            {/* MediaQuery maison */}
+            {viewportWidth > 710 && viewportWidth <= 5000 && (
+                <>
+                    <div className={css.Container}>
+                        {textHTML.htmlA}
+                        <div className={css.SubContainer}>
+                            <p className={css.TextP4}>
+                                {textHTML.htmlB}
+                                {textHTML.htmlC}
+                                {textHTML.htmlD}
+                                {textHTML.htmlE}
+                                {textHTML.htmlF}
+                            </p>
+                            <p className={css.TextP4}>
+                                {textHTML.htmlG}
+                                {textHTML.htmlH}
+                            {/* MediaQuery maison */}
+                            {viewportWidth > 710 && viewportWidth <= 745 && (
+                                <>
+                                    {"J'ai également suivi une formation au studio B612, ce qui m'a"}
+                                </>
+                            )}
+                            {/* MediaQuery maison */}
+                            {viewportWidth > 745 && viewportWidth <= 5000 && (
+                                <>
+                                    {"J'ai également suivi une formation au studio B612, ce qui m'a permis"}
+                                </>
+                            )}
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* MediaQuery maison */}
+                    {/* {viewportWidth > 700 && viewportWidth <= 708 && (
+                        <p className={style.TextP4}>
+                            {"lumiere artificielle."}
+                        </p>
+                    )} */}
+                    {/* <p className={style.TextP4}>
+                        {textHTML.htmlI}
+                    </p> */}
                     <p className={style.TextP4}>
                         {textHTML.htmlJ}
                         {textHTML.htmlK}
