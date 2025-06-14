@@ -278,9 +278,39 @@ function QuiSuisJeRoot() {
                                 </>
                             )}
                             {/* MediaQuery maison */}
-                            {viewportWidth > 745 && viewportWidth <= 5000 && (
+                            {viewportWidth > 745 && viewportWidth <= 751 && (
                                 <>
-                                    {"J'ai également suivi une formation au studio B612, ce qui m'a permis"}
+                                    {"J'ai également suivi une formation au studio B612, ce qui m'a permis de comprendre de"}
+                                </>
+                            )}
+                            {/* MediaQuery maison */}
+                            {viewportWidth > 751 && viewportWidth <= 770 && (
+                                <>
+                                    {"J'ai également suivi une formation au studio B612, ce qui m'a permis de comprendre de manière plus"}
+                                </>
+                            )}
+                            {/* MediaQuery maison */}
+                            {viewportWidth > 770 && viewportWidth <= 774 && (
+                                <>
+                                    {"J'ai également suivi une formation au studio B612, ce qui m'a permis de comprendre de manière plus profonde les subtilités du flash et de son impacte"}
+                                </>
+                            )}
+                            {/* MediaQuery maison */}
+                            {viewportWidth > 774 && viewportWidth <= 791 && (
+                                <>
+                                    {"J'ai également suivi une formation au studio B612, ce qui m'a permis de comprendre de manière plus profonde les subtilités du flash et de son impacte dans la"}
+                                </>
+                            )}
+                            {/* MediaQuery maison */}
+                            {viewportWidth > 791 && viewportWidth <= 800 && (
+                                <>
+                                    {"J'ai également suivi une formation au studio B612, ce qui m'a permis de comprendre de manière plus profonde les subtilités du flash et de son impacte dans la création"}
+                                </>
+                            )}
+                            {/* MediaQuery maison */}
+                            {viewportWidth > 800 && viewportWidth <= 5000 && (
+                                <>
+                                    {"J'ai également suivi une formation au studio B612, ce qui m'a permis de comprendre de manière plus profonde les subtilités du flash et de son impacte dans la création d'images à la fois dramatiques et naturelles."}
                                 </>
                             )}
                             </p>
