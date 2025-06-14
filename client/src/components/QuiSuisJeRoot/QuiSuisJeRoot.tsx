@@ -256,7 +256,7 @@ function QuiSuisJeRoot() {
             )}
 
             {/* MediaQuery maison */}
-            {viewportWidth > 710 && viewportWidth <= 5000 && (
+            {viewportWidth > 710 && viewportWidth <= 815 && (
                 <>
                     <div className={css.Container}>
                         {textHTML.htmlA}
@@ -308,7 +308,7 @@ function QuiSuisJeRoot() {
                                 </>
                             )}
                             {/* MediaQuery maison */}
-                            {viewportWidth > 800 && viewportWidth <= 5000 && (
+                            {viewportWidth > 800 && (
                                 <>
                                     {"J'ai également suivi une formation au studio B612, ce qui m'a permis de comprendre de manière plus profonde les subtilités du flash et de son impacte dans la création d'images à la fois dramatiques et naturelles."}
                                 </>
@@ -318,20 +318,242 @@ function QuiSuisJeRoot() {
                     </div>
 
                     {/* MediaQuery maison */}
-                    {/* {viewportWidth > 700 && viewportWidth <= 708 && (
+                    {viewportWidth > 710 && viewportWidth <= 745 && (
                         <p className={style.TextP4}>
-                            {"lumiere artificielle."}
+                            {"permis de comprendre de manière plus profonde les subtilités du flash et de son impacte dans la création d'images à la fois dramatiques et naturelles."}
                         </p>
-                    )} */}
-                    {/* <p className={style.TextP4}>
-                        {textHTML.htmlI}
-                    </p> */}
+                    )}
+                    {/* MediaQuery maison */}
+                    {viewportWidth > 745 && viewportWidth <= 751 && (
+                        <p className={style.TextP4}>
+                            {"manière plus profonde les subtilités du flash et de son impacte dans la création d'images à la fois dramatiques et naturelles."}
+                        </p>
+                    )}
+                    {/* MediaQuery maison */}
+                    {viewportWidth > 751 && viewportWidth <= 770 && (
+                        <p className={style.TextP4}>
+                            {"profonde les subtilités du flash et de son impacte dans la création d'images à la fois dramatiques et naturelles."}
+                        </p>
+                    )}
+                    {/* MediaQuery maison */}
+                    {viewportWidth > 770 && viewportWidth <= 774 && (
+                        <p className={style.TextP4}>
+                            {"dans la création d'images à la fois dramatiques et naturelles."}
+                        </p>
+                    )}
+                    {/* MediaQuery maison */}
+                    {viewportWidth > 774 && viewportWidth <= 791 && (
+                        <p className={style.TextP4}>
+                            {"création d'images à la fois dramatiques et naturelles."}
+                        </p>
+                    )}
+                    {/* MediaQuery maison */}
+                    {viewportWidth > 791 && viewportWidth <= 800 && (
+                        <p className={style.TextP4}>
+                            {"d'images à la fois dramatiques et naturelles."}
+                        </p>
+                    )}
                     <p className={style.TextP4}>
                         {textHTML.htmlJ}
                         {textHTML.htmlK}
                         {textHTML.htmlL}
                         {textHTML.htmlM}
                     </p>
+                    <p className={style.TextP4}>
+                        {textHTML.htmlN}
+                    </p>
+                </>
+            )}
+
+            {/* MediaQuery maison */}
+            {viewportWidth > 815 && viewportWidth <= 5000 && (
+                <>
+                    <div className={css.Container}>
+                        {textHTML.htmlA}
+                        <div className={css.SubContainer}>
+                            <p className={css.TextP4}>
+                                {textHTML.htmlB}
+                                {textHTML.htmlC}
+                                {textHTML.htmlD}
+                                {textHTML.htmlE}
+                                {textHTML.htmlF}
+                            </p>
+                            <p className={css.TextP4}>
+                                {textHTML.htmlG}
+                                {textHTML.htmlH}
+                                {textHTML.htmlI}
+                            </p>
+                            <p className={css.TextP4}>
+                                {/* MediaQuery maison */}
+                                {viewportWidth > 830 && viewportWidth <= 840 && (
+                                    <>
+                                        {textHTML.htmlJ}
+                                        <span className={style.SpanBold}>
+                                            {"je me spécialise dans les portraits, aussi bien"}
+                                        </span>
+                                    </>
+                                )}
+                                {/* MediaQuery maison */}
+                                {viewportWidth > 840 && viewportWidth <= 887 && (
+                                    <>
+                                        {textHTML.htmlJ}
+                                        <span className={style.SpanBold}>
+                                            {"je me spécialise dans les portraits, aussi bien en"}
+                                        </span>
+                                    </>
+                                )}
+                                {/* MediaQuery maison */}
+                                {viewportWidth > 887 && viewportWidth <= 891 && (
+                                    <>
+                                        {textHTML.htmlJ}
+                                        {textHTML.htmlK}
+                                        {"Mon"}
+                                    </>
+                                )}
+                                {/* MediaQuery maison */}
+                                {viewportWidth > 891 && viewportWidth <= 926 && (
+                                    <>
+                                        {textHTML.htmlJ}
+                                        {textHTML.htmlK}
+                                        {`Mon approche se veut personnalisée, créant des projets uniques "Amies sur les`}
+                                    </>
+                                )}
+                                {/* MediaQuery maison */}
+                                {viewportWidth > 926 && viewportWidth <= 932 && (
+                                    <>
+                                        {textHTML.htmlJ}
+                                        {textHTML.htmlK}
+                                        {`Mon approche se veut personnalisée, créant des projets uniques "Amies sur les bancs de`}
+                                    </>
+                                )}
+                                {/* MediaQuery maison */}
+                                {viewportWidth > 932 && viewportWidth <= 937 && (
+                                    <>
+                                        {textHTML.htmlJ}
+                                        {textHTML.htmlK}
+                                        {`Mon approche se veut personnalisée, créant des projets uniques "Amies sur les bancs de l'école 70 ans plus tard" ou "Devenez Peaky Blinders le temps d'un `}
+                                    </>
+                                )}
+                                {/* MediaQuery maison */}
+                                {viewportWidth > 937 && viewportWidth <= 995 && (
+                                    <>
+                                        {textHTML.htmlJ}
+                                        {textHTML.htmlK}
+                                        {textHTML.htmlL}
+                                    </>
+                                )}
+                                {/* MediaQuery maison */}
+                                {viewportWidth > 995 && viewportWidth <= 1010 && (
+                                    <>
+                                        {textHTML.htmlJ}
+                                        {textHTML.htmlK}
+                                        {textHTML.htmlL}
+                                        {"Toujours, à la recherche de l'authenticité et de l'émotion, je mets tout en œuvre pour offrir une"}
+                                    </>
+                                )}
+                                {/* MediaQuery maison */}
+                                {viewportWidth > 1010 && viewportWidth <= 1020 && (
+                                    <>
+                                        {textHTML.htmlJ}
+                                        {textHTML.htmlK}
+                                        {textHTML.htmlL}
+                                        {"Toujours, à la recherche de l'authenticité et de l'émotion, je mets tout en œuvre pour offrir une expérience"}
+                                    </>
+                                )}
+                                {/* MediaQuery maison */}
+                                {viewportWidth > 1020 && viewportWidth <= 1027 && (
+                                    <>
+                                        {textHTML.htmlJ}
+                                        {textHTML.htmlK}
+                                        {textHTML.htmlL}
+                                        {"Toujours, à la recherche de l'authenticité et de l'émotion, je mets tout en œuvre pour offrir une expérience photographique"}
+                                    </>
+                                )}
+                                {/* MediaQuery maison */}
+                                {viewportWidth > 1027 && viewportWidth <= 5000 && (
+                                    <>
+                                        {textHTML.htmlJ}
+                                        {textHTML.htmlK}
+                                        {textHTML.htmlL}
+                                        {textHTML.htmlM}
+                                    </>
+                                )}
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* MediaQuery maison */}
+                    {viewportWidth > 830 && viewportWidth <= 840 && (
+                        <p className={style.TextP4}>
+                            <span className={style.SpanBold}>
+                                {"en studio qu’en extérieur, et dans les reportages de mariage. "}
+                            </span>
+                            {textHTML.htmlL}
+                            {textHTML.htmlM}
+                        </p>
+                    )}
+                    {/* MediaQuery maison */}
+                    {viewportWidth > 840 && viewportWidth <= 887 && (
+                        <p className={style.TextP4}>
+                            <span className={style.SpanBold}>
+                                {"studio qu’en extérieur, et dans les reportages de mariage. "}
+                            </span>
+                            {textHTML.htmlL}
+                            {textHTML.htmlM}
+                        </p>
+                    )}
+                    {/* MediaQuery maison */}
+                    {viewportWidth > 887 && viewportWidth <= 891 && (
+                        <p className={style.TextP4}>
+                            {`approche se veut personnalisée, créant des projets uniques "Amies sur les bancs de l'école 70 ans plus tard" ou "Devenez Peaky Blinders le temps d'un shooting". `}
+                            {textHTML.htmlM}
+                        </p>
+                    )}
+                    {/* MediaQuery maison */}
+                    {viewportWidth > 891 && viewportWidth <= 926 && (
+                        <p className={style.TextP4}>
+                            {`bancs de l'école 70 ans plus tard" ou "Devenez Peaky Blinders le temps d'un shooting". `}
+                            {textHTML.htmlM}
+                        </p>
+                    )}
+                    {/* MediaQuery maison */}
+                    {viewportWidth > 926 && viewportWidth <= 932 && (
+                        <p className={style.TextP4}>
+                            {`l'école 70 ans plus tard" ou "Devenez Peaky Blinders le temps d'un shooting". `}
+                            {textHTML.htmlM}
+                        </p>
+                    )}
+                    {/* MediaQuery maison */}
+                    {viewportWidth > 932 && viewportWidth <= 937 && (
+                        <p className={style.TextP4}>
+                            {`shooting". `}
+                            {textHTML.htmlM}
+                        </p>
+                    )}
+                    {/* MediaQuery maison */}
+                    {viewportWidth > 937 && viewportWidth <= 995 && (
+                        <p className={style.TextP4}>
+                            {`Toujour à la recherche de l'authenticité et de l'émotion, je mets tout en œuvre pour offrir une expérience photographique inoubliable. `}
+                        </p>
+                    )}
+                    {/* MediaQuery maison */}
+                    {viewportWidth > 995 && viewportWidth <= 1010 && (
+                        <p className={style.TextP4}>
+                            {`expérience photographique inoubliable. `}
+                        </p>
+                    )}
+                    {/* MediaQuery maison */}
+                    {viewportWidth > 1010 && viewportWidth <= 1020 && (
+                        <p className={style.TextP4}>
+                            {`photographique inoubliable. `}
+                        </p>
+                    )}
+                    {/* MediaQuery maison */}
+                    {viewportWidth > 1020 && viewportWidth <= 1027 && (
+                        <p className={style.TextP4}>
+                            {`inoubliable. `}
+                        </p>
+                    )}
                     <p className={style.TextP4}>
                         {textHTML.htmlN}
                     </p>
