@@ -366,7 +366,7 @@ function QuiSuisJeRoot() {
             )}
 
             {/* MediaQuery maison */}
-            {viewportWidth > 815 && viewportWidth <= 5000 && (
+            {viewportWidth > 815 && viewportWidth <= 1118 && (
                 <>
                     <div className={css.Container}>
                         {textHTML.htmlA}
@@ -470,7 +470,7 @@ function QuiSuisJeRoot() {
                                     </>
                                 )}
                                 {/* MediaQuery maison */}
-                                {viewportWidth > 1027 && viewportWidth <= 5000 && (
+                                {viewportWidth > 1027 && (
                                     <>
                                         {textHTML.htmlJ}
                                         {textHTML.htmlK}
@@ -557,6 +557,38 @@ function QuiSuisJeRoot() {
                     <p className={style.TextP4}>
                         {textHTML.htmlN}
                     </p>
+                </>
+            )}
+
+            {/* MediaQuery maison */}
+            {viewportWidth > 1118 && (
+                <>
+                    <div className={css.Container}>
+                        {textHTML.htmlA}
+                        <div className={css.SubContainer}>
+                            <p className={css.TextP4}>
+                                {textHTML.htmlB}
+                                {textHTML.htmlC}
+                                {textHTML.htmlD}
+                                {textHTML.htmlE}
+                                {textHTML.htmlF}
+                            </p>
+                            <p className={css.TextP4}>
+                                {textHTML.htmlG}
+                                {textHTML.htmlH}
+                                {textHTML.htmlI}
+                            </p>
+                            <p className={css.TextP4}>
+                                {textHTML.htmlJ}
+                                {textHTML.htmlK}
+                                {textHTML.htmlL}
+                                {textHTML.htmlM}
+                            </p>
+                            <p className={css.TextP4}>
+                                {textHTML.htmlN}
+                            </p>
+                        </div>
+                    </div>
                 </>
             )}
         </section>
