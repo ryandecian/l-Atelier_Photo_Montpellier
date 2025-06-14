@@ -8,6 +8,8 @@ Edition de la page tarif :
   - Page Tarifs faire le SEO avec JSON-LD et Helmet
   - Faire le SEO pour la page Blog
 
+Mettre les images Helmet de la page Prestation pour google et helmet
+
 ------------------------------------------------------------------------------
 Note d'information, dans la navigation du site, 
 Les page compte et panier vont être retirer provisoirement le temps de les éditer.
