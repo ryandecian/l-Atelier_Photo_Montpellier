@@ -5,7 +5,7 @@
 }
 
 .searchBar {
-  width: calc(100% - 2rem);
+  width: 100%;
   max-width: 400px;
   margin: 0 auto 2rem;
   padding: 0.75rem 1rem;
@@ -22,13 +22,17 @@
 }
 
 .card {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around; */
+  
   position: relative;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 12px;
-  width: 250px;
-  height: 280px;
+  width: 15.625rem; /* 250px */
+  height: 17.5rem; /* 280px */
   text-decoration: none;
   color: white;
   display: flex;
@@ -52,21 +56,51 @@
 }
 
 .overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
   position: relative;
   z-index: 1;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent 80%);
   padding: 1rem;
-  width: 100%;
+  width: calc(100% - 2rem);
+  height: calc(100% - 2rem);
   border-radius: 0 0 12px 12px;
 }
 
 .cardTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
   margin: 0;
+  margin-top: 1rem;
+  border: 0;
+  padding: 0;
   font-size: 1.2rem;
   font-weight: bold;
 }
 
+.containerDescription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 .cardDescription {
-  margin-top: 0.25rem;
-  font-size: 0.95rem;
+  margin: 0;
+  font-size: calc(var(--h4) - 0.05rem);
+}
+
+.cardDate {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: var(--h5);
+  width: 100%;
+  margin: 0;
 }
