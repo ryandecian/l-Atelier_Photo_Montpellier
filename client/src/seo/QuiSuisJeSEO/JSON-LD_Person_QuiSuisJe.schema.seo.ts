@@ -19,19 +19,9 @@ function JSON_LD_Service_QuiSuisJe_Schema_SEO() {
         "gender": "Female",
         "worksFor": DataSEORoot.worksFor, /* Indique de la personne est liée à cette activité */
         "alumniOf": DataSEORoot.alumniOf, /* Établissement d'enseignement supérieur où l'auteur a étudié */
-        "knowsAbout": [
-            "Portrait photo",
-            "Photographie studio",
-            "Photographie de mariage",
-            "Éclairage au flash",
-            "Post-traitement numérique",
-            "Composition photographique"
-        ],
-        "sameAs": [
-            "https://www.instagram.com/atelierphotomontpellier",
-            "https://www.facebook.com/atelierphotomontpellier"
-        ],
-        "url": "https://www.nom-de-domaine.fr/qui-suis-je"
+        "knowsAbout": DataSEORoot.knowsAbout, /* Liste des domaines de compétence de la personne */
+        "sameAs": DataSEORoot.sameAs, /* Liste des profils sociaux de la personne */
+        "url": DataSEO_QuiSuisJe.url, /* (Obligatoire) Lien URL de la page */
     })
 
     return (

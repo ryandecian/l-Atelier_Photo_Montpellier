@@ -55,6 +55,69 @@ function DataSEORoot(): DataSEORootType {
             //     "name": "Studio B612"
             // },
         ],
+        "knowsAbout": [
+            /* Compétences générales */
+            "Photographie professionnelle",
+            "Portrait photo",
+            "Photographie de mariage",
+            "Photographie de grossesse",
+            "Photographie de nouveau-né",
+            "Photographie de famille",
+            "Photographie lifestyle",
+            "Photographie corporate",
+            "Reportage photo",
+
+            /* Techniques */
+            "Photographie en studio",
+            "Photographie en lumière naturelle",
+            "Éclairage au flash",
+            "Éclairage en intérieur",
+            "Utilisation de réflecteurs",
+            "Gestion des ombres et lumières",
+            "Techniques de composition photo",
+            "Cadrage artistique",
+            "Mise en scène photographique",
+
+            /* Post-traitement & outils numériques */
+            "Post-traitement numérique",
+            "Retouche photo professionnelle",
+            "Utilisation de Lightroom",
+            "Utilisation de Photoshop",
+            "Calibration des couleurs",
+            "Étalonnage d’image",
+            "Workflow numérique pour photographes",
+            "Archivage et organisation des clichés",
+
+            /* Relation client / métier */
+            "Direction de modèle",
+            "Communication avec les clients",
+            "Gestion de séance photo",
+            "Création de portfolio",
+            "Création de packs et formules photo",
+            "Rédaction de contrats de prestation",
+            "Gestion d’un studio photo indépendant",
+            "Entrepreneuriat en photographie",
+            "Développement d’identité visuelle",
+            "Optimisation de l’expérience client",
+
+            /* Web / communication visuelle */
+            "Création de contenu visuel pour les réseaux sociaux",
+            "Photographie pour Instagram",
+            "Photographie événementielle",
+            "Photographie émotionnelle",
+            "Optimisation visuelle pour site web",
+            "Photographie commerciale",
+            "Storytelling visuel",
+
+            /* Autres domaines connexes */
+            "Esthétique visuelle",
+            "Analyse d’image",
+            "Histoire de la photographie",
+            "Suivi de tendance visuelle",
+            "Techniques d’impression photo",
+            "Sélection et édition d’albums photo",
+            "Création de books photo"
+        ],
         "areaServed": [
             {
                 "@type": "Place",
