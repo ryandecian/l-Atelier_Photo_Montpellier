@@ -38,6 +38,14 @@ function DataSEORoot(): DataSEORootType {
             externalLinks.facebook, /* A modifier car ce n'est pas le bon compte */
         ],
         termsOfService: `${import.meta.env.URL_CLIENT}/${ListDataRouter[9].path}`, /* Conditions d'utilisation de l'entreprise (Dynamique) */
+        "birthPlace": {
+            "@type": "Place",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Boulogne-Billancourt",
+                "addressCountry": "FR"
+            }
+        }, /* Ville de naissance de l'artiste */
         "areaServed": [
             {
                 "@type": "Place",
