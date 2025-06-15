@@ -35,7 +35,8 @@ import QuiSuisJePage from "../pages/QuiSuisJePage/QuiSuisJePage";
 
 interface RouterItemsType {
     path: string
-    element: ReactNode
+    element?: ReactNode
+    children?: RouterItemsType[]
 }
 
 const ListDataRouter: RouterItemsType[] = [
@@ -62,7 +63,19 @@ const ListDataRouter: RouterItemsType[] = [
     /* {ListDataRouter[4].path} */
     {
         path: "/blog",
-        element: <BlogPage />,
+        children: [
+            /* Element principale, page racine ! */
+            {
+                path: "",
+                element: <BlogPage />,
+            },
+            /* Page de blog */
+            /* {ListDataRouter[4].children?.[1].path} */
+            {
+                path: "test",
+                element: <h1>Route : Page Test</h1>,
+            },
+        ],
     },
     /* {ListDataRouter[5].path} */
     {
