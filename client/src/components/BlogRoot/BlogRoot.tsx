@@ -1,15 +1,15 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import css from "./BlogRoot.module.css";
-import DataCardPrestation from "./DataCardBlogRoot";
-import CardPrestationType from "../../types/CardPrestation.type";
+import DataCardBlog from "./DataCardBlogRoot";
+import CardBlogType from "../../types/CardBlog.type";
 
 function BlogRoot() {
-  const prestations: CardPrestationType[] = DataCardPrestation();
+  const dataBlog: CardBlogType[] = DataCardBlog();
 
   const [search, setSearch] = useState("");
 
-  const filtered = prestations.filter((p) =>
+  const filtered = dataBlog.filter((p) =>
     p.title.toLowerCase().includes(search.toLowerCase())
   );
 
@@ -24,18 +24,18 @@ function BlogRoot() {
       />
 
       <div className={css.cardsContainer}>
-        {filtered.map((prestation) => (
+        {filtered.map((articleBlog) => (
           <Link
-            key={prestation.reactKey}
-            to={`${prestation.path}#${prestation.id}`}
+            key={articleBlog.reactKey}
+            to={`${articleBlog.path}#${articleBlog.id}`}
             className={css.card}
-            style={{ backgroundImage: `url(${prestation.image})` }}
+            style={{ backgroundImage: `url(${articleBlog.image})` }}
           >
             <div className={css.overlay}>
-                <h3 className={css.cardTitle}>{prestation.title}</h3>
+                <h3 className={css.cardTitle}>{articleBlog.title}</h3>
                 <div className={css.containerDescription}>
-                    <p className={css.cardDescription}>{prestation.description}</p>
-                    <p className={css.cardDate}>11/04/2025</p>
+                    <p className={css.cardDescription}>{articleBlog.description}</p>
+                    <p className={css.cardDate}>{articleBlog.date}</p>
                 </div>
             </div>
           </Link>
