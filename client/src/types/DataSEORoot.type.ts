@@ -33,6 +33,7 @@ type DataSEORootType = {
         "@type": string;
         name: string;
     }[];
+    knowsAbout: string[];
     areaServed: {
         "@type": string;
         name: string;
