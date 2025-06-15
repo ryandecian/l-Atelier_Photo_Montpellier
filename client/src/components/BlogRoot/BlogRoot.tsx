@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import css from "./PrestationRoot.module.css";
+import css from "./BlogRoot.module.css";
 import DataCardPrestation from "./DataCardBlogRoot";
 import CardPrestationType from "../../types/CardPrestation.type";
 
@@ -32,8 +32,11 @@ function BlogRoot() {
             style={{ backgroundImage: `url(${prestation.image})` }}
           >
             <div className={css.overlay}>
-              <h3 className={css.cardTitle}>{prestation.title}</h3>
-              <p className={css.cardDescription}>{prestation.description}</p>
+                <h3 className={css.cardTitle}>{prestation.title}</h3>
+                <div className={css.containerDescription}>
+                    <p className={css.cardDescription}>{prestation.description}</p>
+                    <p className={css.cardDate}>11/04/2025</p>
+                </div>
             </div>
           </Link>
         ))}
