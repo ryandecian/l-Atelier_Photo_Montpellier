@@ -38,14 +38,23 @@ function DataSEORoot(): DataSEORootType {
             externalLinks.facebook, /* A modifier car ce n'est pas le bon compte */
         ],
         termsOfService: `${import.meta.env.URL_CLIENT}/${ListDataRouter[9].path}`, /* Conditions d'utilisation de l'entreprise (Dynamique) */
-        "birthPlace": {
-            "@type": "Place",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Boulogne-Billancourt",
-                "addressCountry": "FR"
-            }
-        }, /* Ville de naissance de l'artiste */
+        "worksFor": {
+            /* Indique de la personne est liée à cette activité */
+            "@type": "Organization",
+            "name": "l'Atelier Photo Montpellier",
+            "url": `${import.meta.env.URL_CLIENT}`
+        },
+        "alumniOf": [
+            /* Établissement d'enseignement supérieur où l'auteur a étudié */
+            {
+                "@type": "EducationalOrganization",
+                "name": "Studio B612"
+            },
+            // {
+            //     "@type": "EducationalOrganization",
+            //     "name": "Studio B612"
+            // },
+        ],
         "areaServed": [
             {
                 "@type": "Place",

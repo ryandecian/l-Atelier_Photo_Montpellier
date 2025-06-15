@@ -24,14 +24,15 @@ type DataSEORootType = {
     openingHours: string[];
     sameAs: string[];
     termsOfService: string;
-    birthPlace: {
+    worksFor: {
         "@type": string;
-        address: {
-            "@type": string;
-            addressLocality: string;
-            addressCountry: string;
-        };
-    }
+        name: string;
+        url: string;
+    };
+    alumniOf: {
+        "@type": string;
+        name: string;
+    }[];
     areaServed: {
         "@type": string;
         name: string;

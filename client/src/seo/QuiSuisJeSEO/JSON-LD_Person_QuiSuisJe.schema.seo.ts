@@ -17,27 +17,8 @@ function JSON_LD_Service_QuiSuisJe_Schema_SEO() {
         "image": DataSEO_QuiSuisJe.img_JSON_LD, /* (Obligatoire) Lien URL de l'image */
         "jobTitle": "Photographe professionnelle",
         "gender": "Female",
-        "birthPlace": {
-            "@type": "Place",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Boulogne-Billancourt",
-                "addressCountry": "FR"
-            }
-        },
-        "nationality": {
-        "@type": "Country",
-        "name": "France"
-        },
-        "worksFor": {
-            "@type": "Organization",
-            "name": "l'Atelier Photo Montpellier",
-            "url": "https://www.nom-de-domaine.fr"
-        },
-        "alumniOf": {
-            "@type": "EducationalOrganization",
-            "name": "Studio B612"
-        },
+        "worksFor": DataSEORoot.worksFor, /* Indique de la personne est liée à cette activité */
+        "alumniOf": DataSEORoot.alumniOf, /* Établissement d'enseignement supérieur où l'auteur a étudié */
         "knowsAbout": [
             "Portrait photo",
             "Photographie studio",
