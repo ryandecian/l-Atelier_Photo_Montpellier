@@ -11,6 +11,7 @@ type DataSEORootType = {
         CollectionPage: string;
         ImageGallery: string;
         ItemList: string;
+        Person: string;
     };
     id_LocalBusiness: string;
     description: string;
@@ -23,6 +24,16 @@ type DataSEORootType = {
     openingHours: string[];
     sameAs: string[];
     termsOfService: string;
+    worksFor: {
+        "@type": string;
+        name: string;
+        url: string;
+    };
+    alumniOf: {
+        "@type": string;
+        name: string;
+    }[];
+    knowsAbout: string[];
     areaServed: {
         "@type": string;
         name: string;
