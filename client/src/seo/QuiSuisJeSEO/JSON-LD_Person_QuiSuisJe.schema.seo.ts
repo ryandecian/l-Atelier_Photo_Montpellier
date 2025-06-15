@@ -4,7 +4,7 @@ import DataSEORootType from "../../types/DataSEORoot.type";
 import DataSEO_QuiSuisJes from "./DataSEO_QuiSuisJe.seo";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
-function JSON_LD_Service_QuiSuisJe_Schema_SEO() {
+function JSON_LD_Person_QuiSuisJe_Schema_SEO() {
     const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
     const DataSEO_QuiSuisJe: DataSEOTargetOneType = DataSEO_QuiSuisJes(); /* Récupération des données SEO de la page */
     
@@ -29,4 +29,4 @@ function JSON_LD_Service_QuiSuisJe_Schema_SEO() {
     )
 }
 
-export default JSON_LD_Service_QuiSuisJe_Schema_SEO;
+export default JSON_LD_Person_QuiSuisJe_Schema_SEO;
