@@ -8,7 +8,7 @@ import DataSEORootType from "../../types/DataSEORoot.type";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
 import JSON_LD_LocalBusiness_Root_Schema_SEO from "../JSON-LD_LocalBusiness_Root.schema.seo";
-import JSON_LD_ItemList_Prestation_Schema_SEO from "./JSON-LD_ItemList_Prestation.seo";
+import JSON_LD_ItemList_Prestation_Schema_SEO from "./JSON-LD_ItemList_Prestation.schema.seo";
 import JSON_LD_Breadcrumb_Prestation_Schema_SEO from "./JSON-LD_Breadcrumb_Prestation.schema.seo";
 
 
