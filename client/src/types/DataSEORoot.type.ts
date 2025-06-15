@@ -11,6 +11,7 @@ type DataSEORootType = {
         CollectionPage: string;
         ImageGallery: string;
         ItemList: string;
+        Person: string;
     };
     id_LocalBusiness: string;
     description: string;
