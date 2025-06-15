@@ -7,6 +7,7 @@ import ComptePage from "../pages/ComptePage/ComptePage";
 import UserSystemePage from "../pages/UserSystemePage/UserSystemePage";
 
 /* Page Frontend public */
+import BlogPage from "../pages/BlogPage/BlogPage";
 import CGVPage from "../pages/CGVPage/CGVPage";
 import ContactPage from "../pages/ContactPage/ContactPage";
 import Error404 from "../pages/Error404Page/Error404Page";
@@ -61,7 +62,7 @@ const ListDataRouter: RouterItemsType[] = [
     /* {ListDataRouter[4].path} */
     {
         path: "/blog",
-        element: <h1>Route : Page Blog</h1>,
+        element: <BlogPage />,
     },
     /* {ListDataRouter[5].path} */
     {
