@@ -9,6 +9,7 @@ Edition de la page tarif :
   - Faire le SEO pour la page Blog
 
 Mettre les images Helmet de la page Prestation pour google et helmet
+Mettre a jour les nom des fichier de JSON-LD avec schema. Toutes les pages doivent y passer
 
 ------------------------------------------------------------------------------
 Note d'information, dans la navigation du site, 

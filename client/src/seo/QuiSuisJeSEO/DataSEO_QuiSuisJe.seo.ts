@@ -1,7 +1,7 @@
 import ListDataRouter from "../../router/router";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
-function DataSEO_PortraitSolo(): DataSEOTargetOneType {
+function DataSEO_QuiSuisJe(): DataSEOTargetOneType {
     const DataSEO = {
         /* Data Helmet */
         title: "Qui suis-je – Anne SAUNIER, photographe professionnelle - l'Atelier Photo Montpellier",
@@ -18,8 +18,8 @@ function DataSEO_PortraitSolo(): DataSEOTargetOneType {
             3: "Photographe Montpellier", /* 3 mots clés */
             4: "l'Atelier Photo Montpellier", /* 4 mots clés */
             5: "LAPM", /* 5 mots clés */
-            6: "Service", /* 6 mots clés */
-            7: "Portrait Solo", /* 7 mots clés */
+            6: "Qui suis-je", /* 6 mots clés */
+            7: "Photographe professionnelle", /* 7 mots clés */
             8: "", /* 8 mots clés */
             9: "", /* 9 mots clés */
             10: "", /* 10 mots clés */
@@ -38,10 +38,10 @@ function DataSEO_PortraitSolo(): DataSEOTargetOneType {
         },
     
         /* Data Helmet et JSON-LD */
-        img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-grossesse/google/lapm-photo-portrait-solo-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-grossesse/helmet/lapm-photo-portrait-solo-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[7].path}#service-portrait-solo`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
-        serviceType: "Photo – portrait solo – séance de photographie individuelle en studio ou en extérieur",
+        img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/qui-suis-je/google/lapm-photo-professionnel-photographe-anne-saunier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
+        img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/qui-suis-je/helmet/lapm-photo-professionnel-photographe-anne-saunier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[7].path}#qui-suis-je`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
+        serviceType: "",
     };
 
     return (
@@ -49,4 +49,4 @@ function DataSEO_PortraitSolo(): DataSEOTargetOneType {
     )
 }
 
-export default DataSEO_PortraitSolo;
+export default DataSEO_QuiSuisJe;
