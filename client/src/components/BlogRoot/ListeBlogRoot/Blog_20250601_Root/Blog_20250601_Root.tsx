@@ -1,6 +1,6 @@
 import style from "../../../StyleRootComponent.module.css";
-// import ListDataRouter from "../../../../router/router";
-// import { Link } from "react-router-dom";
+import ListDataRouter from "../../../../router/router";
+import { Link } from "react-router-dom";
 
 import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ImagesBlog_20250601_RootControllerData from "./ImagesBlog_20250601_RootControllerData";
@@ -247,7 +247,32 @@ function Blog_20250601_Root() {
                 Avec moi, pas de stress ni de sur-jeu. Juste vous, votre amour, vos proches, et la beauté de l’instant présent.
             </p>
 
-            <p className={style.TextP4}></p>
+            {/* ----------- ---------- ---------- ---------- ---------- */}
+
+            <h2 className={style.TitleNH2}>
+                {`Envie d’en savoir plus ?`}
+            </h2>
+
+            <p className={style.TextP4}>
+                <span className={style.SpanBold}>
+                    {`En tant que photographe de mariage à Montpellier, je me déplace partout en France et à l’étranger 
+                    pour immortaliser vos plus beaux moments.`}
+                </span>
+            </p>
+
+            <p className={style.TextP4}>
+                Je serais heureuse d’en discuter avec vous autour d’un café ou en visio. Envoyez-moi un message via mon 
+                formulaire de contact et je vous enverrai ma brochure avec toutes les informations pratiques.
+            </p>
+
+            <p className={style.TextP4}>
+                <span className={style.SpanLink}>
+                    <Link to={ListDataRouter[3].path}>
+                        {`Cliquez ici pour me contacter et recevoir la brochure `}
+                    </Link>
+                </span>
+                {" "} 📩
+            </p>
         </section>
     );
 }
