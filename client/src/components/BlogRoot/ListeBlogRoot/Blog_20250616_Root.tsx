@@ -2,7 +2,7 @@ import style from "../../StyleRootComponent.module.css";
 
 function Blog_20250616_Root() {
     return (
-        <section className={`Blog_20250616_Root ${style.ContainerRootRacine}`}>
+        <section id="blog_20250616" className={`Blog_20250616_Root ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
                     {`Photo professionnelle pour CV : comment capter l’attention des recruteurs à Montpellier`}
