@@ -173,7 +173,7 @@ function Blog_20250616_Root() {
                 MetaNameImg3={ImagesBlog_20250616_RootControllerData[2].alt}
                 img4={ImagesBlog_20250616_RootControllerData[3].src}
                 MetaNameImg4={ImagesBlog_20250616_RootControllerData[3].alt}
-                />
+            />
             
             <h3 className={style.TitleNH3}>
                 {`Portrait en studio (fond neutre)`}
