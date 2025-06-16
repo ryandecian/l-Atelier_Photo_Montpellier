@@ -40,24 +40,24 @@ function PortraitMariageRootComponentF() {
                 </span>
                 {" "} se reflète dans chaque image. Votre journée, votre style, vos moments, capturés avec 
                 <span className={style.SpanBold}>
-                    {"authenticité et passion."}
+                    {" authenticité et passion."}
                 </span>
             </p>          
             <p className={style.TextP4}>
-                Si vous êtes prêts à faire de votre mariage un événement inoubliable, 
+                Si vous êtes prêts à faire de votre mariage un événement inoubliable, {" "}
                 <span className={style.SpanLink}>
                     <a href={ListDataRouter[2].path} target="_blank" rel="noopener noreferrer">
-                        {"contactez-moi"}
+                        {" contactez-moi"}
                     </a>
                 </span>
                 {" "} pour commencer à discuter de ce que vous attendez de vos 
                 <span className={style.SpanBold}>
-                    {"souvenirs photographiques."}
+                    {" souvenirs photographiques."}
                 </span>
                 {" "} Pour connaître mes prestations tarifaires, rendez-vous sur ma {" "}
                 <span className={style.SpanLink}>
                     <a href={ListDataRouter[2].path} target="_blank" rel="noopener noreferrer">
-                        {"page tarif."}
+                        {" page tarif."}
                     </a>
                 </span>
             </p>          
