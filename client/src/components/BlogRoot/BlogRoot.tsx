@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import css from "./BlogRoot.module.css";
-import DataCardBlog from "./DataCardBlogRoot";
+import DataCardBlogRoot from "./DataCardBlogRoot";
 import CardBlogType from "../../types/CardBlog.type";
 
 function parseDateFr(dateStr: string): Date {
@@ -10,7 +10,7 @@ function parseDateFr(dateStr: string): Date {
 }
 
 function BlogRoot() {
-  const dataBlog: CardBlogType[] = DataCardBlog();
+  const dataBlog: CardBlogType[] = DataCardBlogRoot();
 
   const [search, setSearch] = useState("");
 

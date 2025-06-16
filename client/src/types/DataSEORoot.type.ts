@@ -1,5 +1,13 @@
 type DataSEORootType = {
-    autor: string;
+    author: {
+        "@type": string;
+        name: string;
+        url: string;
+    };
+    creator: {
+        "@type": string;
+        name: string;
+    };
     twitterCompte: string;
     "@context": string;
     "@type": {
@@ -13,6 +21,7 @@ type DataSEORootType = {
         ItemList: string;
         Person: string;
         Blog: string;
+        BlogPosting: string;
     };
     id_LocalBusiness: string;
     description: string;

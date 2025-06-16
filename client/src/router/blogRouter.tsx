@@ -16,12 +16,12 @@ const blogRouter: blogRouterType[] = [
     /* Page de blog */
     /* {ListDataRouter[4].children?.[1].path} */
     {
-        path: "2025/06/16",
+        path: "2025-06-16",
         element: <Blog_20250616_Page />,
     },
     /* {ListDataRouter[4].children?.[1].path} */
     {
-        path: "2025/06/01",
+        path: "2025-06-01",
         element: <Blog_20250601_Page />,
     },
 ]
