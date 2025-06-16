@@ -1,11 +1,14 @@
 import style from "../../../StyleRootComponent.module.css";
 import ListDataRouter from "../../../../router/router";
 import { Link } from "react-router-dom";
+import useScrollToHash from "../../../../hook/useScrollToHash";
 
 import Container4ImagesPortraitRoot from "../../../ContainerImageRoot/Container4ImagesPortraitRoot/Container4ImagesPortraitRoot";
 import ImagesBlog_20250616_RootControllerData from "./ImagesBlog_20250616_RootControllerData";
 
 function Blog_20250616_Root() {
+    useScrollToHash(); // Hook pour gérer le scroll vers les ancres
+    
     return (
         <section id="blog_20250616" className={`Blog_20250616_Root ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
