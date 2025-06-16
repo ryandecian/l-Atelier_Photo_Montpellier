@@ -13,6 +13,7 @@ type DataSEORootType = {
         ItemList: string;
         Person: string;
         Blog: string;
+        BlogPosting: string;
     };
     id_LocalBusiness: string;
     description: string;
