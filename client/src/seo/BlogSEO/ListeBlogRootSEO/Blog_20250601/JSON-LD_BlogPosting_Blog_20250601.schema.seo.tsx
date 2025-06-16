@@ -43,29 +43,16 @@ function JSON_LD_BlogPosting_Blog_20250601_Schema_SEO() : string {
         "datePublished": convertDateFrToISO(DataCardBlogRoot[1].date), /* Date de publication au format ISO 8601 */
 
         /* Auteur */
-        "author": {
+        "author": DataSEORoot.author, /* Auteur de l'article, défini dans DataSEORoot */
+
+        /* Éditeur */
+        "publisher": DataSEORoot.publisher, /* Éditeur de l'article, défini dans DataSEORoot */
+
+        /* Créatrice */
+        "creator": {
             "@type": "Person",
-            "name": "Anne SAUNIER",
-            "url": "https://www.latelierphotomontpellier.fr/qui-suis-je"
-  },
-
-  /* Éditeur */
-  "publisher": {
-    "@type": "Organization",
-    "name": "l'Atelier Photo Montpellier",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.latelierphotomontpellier.fr/logo-LAPM-l-atelier-photo-montpellier.png",
-      "width": 200,
-      "height": 200
-    }
-  },
-
-  /* Créatrice */
-  "creator": {
-    "@type": "Person",
-    "name": "Anne SAUNIER"
-  }
+            "name": "Anne SAUNIER"
+        },
     })
 
     return (

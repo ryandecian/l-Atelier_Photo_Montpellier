@@ -11,6 +11,10 @@ function DataSEORoot(): DataSEORootType {
             "name": "Anne SAUNIER",
             "url": `${import.meta.env.VITE_DOMAIN_CLIENT}${router[7].path}` // Page "Qui suis-je"
         },
+        creator: {
+            "@type": "Person",
+            "name": "Anne SAUNIER"
+        },
         twitterCompte: "", /*@MonCompteTwitter*/ /*Permet d'identifier le compte officiel*/
     
         /* Data JSON-LD */

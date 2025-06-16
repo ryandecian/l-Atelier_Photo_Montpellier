@@ -4,6 +4,10 @@ type DataSEORootType = {
         name: string;
         url: string;
     };
+    creator: {
+        "@type": string;
+        name: string;
+    };
     twitterCompte: string;
     "@context": string;
     "@type": {
