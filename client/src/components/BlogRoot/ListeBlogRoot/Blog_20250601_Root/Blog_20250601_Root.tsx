@@ -155,6 +155,98 @@ function Blog_20250601_Root() {
                 sans pression, sans devoir "réussir" une photo. C’est le photographe qui s’adapte à vous, pas l’inverse.
             </p>
 
+            {/* ----------- ---------- ---------- ---------- ---------- */}
+
+            <h2 className={style.TitleNH2}>
+                {`Comment se prépare une prestation en style reportage ?`}
+            </h2>
+
+            <h3 className={style.TitleNH3}>
+                {`Une rencontre essentielle en amont`}
+            </h3>
+
+            <p className={style.TextP4}>
+                Avant le mariage, un entretien (visio ou autour d’un café) permet de cerner vos personnalités, votre 
+                histoire, vos envies.
+            </p>
+
+            <p className={style.TextP4}>
+                On parle de votre lieu, de votre programme, mais aussi de ce que vous redoutez, de ce que vous aimez. 
+                Cette phase est fondamentale pour créer une relation de confiance.
+            </p>
+
+            <h3 className={style.TitleNH3}>
+                {`Une présence adaptée le jour J`}
+            </h3>
+
+            <p className={style.TextP4}>
+                Le photographe arrive souvent pendant les préparatifs pour commencer le récit dès les premières émotions. 
+                Il suit ensuite votre journée comme un fil, sans l’interrompre.
+            </p>
+
+            <p className={style.TextP4}>
+                Pas de « pause photo » imposée, mais des images récoltées au fil de l’eau. Et si une photo de groupe ou 
+                de couple est prévue, elle est intégrée de manière fluide, en toute simplicité.
+            </p>
+
+            <h3 className={style.TitleNH3}>
+                {`Un post-traitement qui respecte l’authentique`}
+            </h3>
+
+            <p className={style.TextP4}>
+                Les images sont travaillées après coup pour en sublimer la lumière et les couleurs, sans dénaturer le moment.
+            </p>
+
+            <p className={style.TextP4}>
+                Le rendu reste naturel, élégant, sans effets de mode. L’objectif est que vos photos soient belles 
+                <span className={style.SpanBold}>
+                    {` et intemporelles.`}
+                </span>
+            </p>
+
+            {/* ----------- ---------- ---------- ---------- ---------- */}
+
+            <h2 className={style.TitleNH2}>
+                {`Le reportage, un héritage pour demain`}
+            </h2>
+
+            <p className={style.TextP4}>
+                Un reportage photo, c’est plus qu’un souvenir visuel : c’est une 
+                <span className={style.SpanBold}>
+                    {` trace vivante `}
+                </span>
+                de votre histoire. C’est un moyen de transmettre l’ambiance de votre mariage à ceux qui n’étaient pas 
+                là, de revivre des instants oubliés, de se rappeler ce que l’on a ressenti.
+            </p>
+
+            <p className={style.TextP4}>
+                Dans dix, vingt, trente ans, ces images seront un témoignage précieux, sincère, profond. Elles seront 
+                vos souvenirs, mais aussi ceux de vos proches.
+            </p>
+
+            {/* ----------- ---------- ---------- ---------- ---------- */}
+
+            <h2 className={style.TitleNH2}>
+                {`Pourquoi choisir l’Atelier Photo Montpellier pour votre reportage ?`}
+            </h2>
+
+            <p className={style.TextP4}>
+                Je suis Anne, photographe professionnelle à Montpellier, spécialisée dans les portraits et les 
+                mariages. Mon approche est centrée sur 
+                <span className={style.SpanBold}>
+                    {` l’humain, l’émotion et la bienveillance.`}
+                </span>
+            </p>
+
+            <p className={style.TextP4}>
+                J’adore raconter les histoires vraies, celles qui se déroulent entre les grandes étapes, dans les 
+                petits gestes, les regards, les instants partagés.
+            </p>
+
+            <p className={style.TextP4}>
+                Avec moi, pas de stress ni de sur-jeu. Juste vous, votre amour, vos proches, et la beauté de l’instant présent.
+            </p>
+
             <p className={style.TextP4}></p>
         </section>
     );
