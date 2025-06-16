@@ -1,4 +1,4 @@
-import style from "../stylePage.module.css";
+import style from "../../stylePage.module.css";
 import NavRoot from "../../../components/NavRoot/NavRoot";
 import Blog_20250616_Root from "../../../components/BlogRoot/ListeBlogRoot/Blog_20250616_Root";
 import FooterRoot from "../../../components/FooterRoot/FooterRoot";

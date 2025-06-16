@@ -1,6 +1,6 @@
 type CardBlogType = {
   reactKey: number;
-  path: string;
+  path: string | undefined;
   id: string;
   title: string;
   description: string;
