@@ -3,9 +3,14 @@ import DataSEORootType from "../types/DataSEORoot.type";
 import ListDataRouter from "../router/router";
 
 function DataSEORoot(): DataSEORootType {
+    const router = ListDataRouter; /* Récupération des données du routeur */
     const DataSEORoots = {
         /* Data Helmet */
-        autor: "Anne SAUNIER", /* Nom de l'auteur */
+        author: {
+            "@type": "Person",
+            "name": "Anne SAUNIER",
+            "url": `${import.meta.env.VITE_DOMAIN_CLIENT}${router[7].path}` // Page "Qui suis-je"
+        },
         twitterCompte: "", /*@MonCompteTwitter*/ /*Permet d'identifier le compte officiel*/
     
         /* Data JSON-LD */
@@ -54,7 +59,7 @@ function DataSEORoot(): DataSEORootType {
             externalLinks.instagram, /* Compte Instagram */
             externalLinks.facebook, /* A modifier car ce n'est pas le bon compte */
         ],
-        termsOfService: `${import.meta.env.URL_CLIENT}/${ListDataRouter[9].path}`, /* Conditions d'utilisation de l'entreprise (Dynamique) */
+        termsOfService: `${import.meta.env.URL_CLIENT}/${router[9].path}`, /* Conditions d'utilisation de l'entreprise (Dynamique) */
         "worksFor": {
             /* Indique de la personne est liée à cette activité */
             "@type": "Organization",

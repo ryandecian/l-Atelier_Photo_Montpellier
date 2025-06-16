@@ -1,5 +1,9 @@
 type DataSEORootType = {
-    autor: string;
+    author: {
+        "@type": string;
+        name: string;
+        url: string;
+    };
     twitterCompte: string;
     "@context": string;
     "@type": {
