@@ -1,6 +1,7 @@
 import style from "../../../StyleRootComponent.module.css";
 
-// import Container4ImagesPortraitRoot from "../../../ContainerImageRoot/Container4ImagesPortraitRoot/Container4ImagesPortraitRoot";
+import Container4ImagesPortraitRoot from "../../../ContainerImageRoot/Container4ImagesPortraitRoot/Container4ImagesPortraitRoot";
+import ImagesBlog_20250616_RootControllerData from "./ImagesBlog_20250616_RootControllerData";
 
 function Blog_20250616_Root() {
     return (
@@ -65,6 +66,7 @@ function Blog_20250616_Root() {
                 <li className={style.TextLiP4}>
                     Valoriser votre personnalité et votre potentiel
                 </li>
+                <br />
             </ul>
 
             <p className={style.TextP4}>
@@ -146,6 +148,7 @@ function Blog_20250616_Root() {
                 <li className={style.TextLiP4}>
                     Une cohérence avec l’image que vous souhaitez transmettre
                 </li>
+                <br />
             </ul>
 
             <p className={style.TextP4}>
@@ -158,6 +161,100 @@ function Blog_20250616_Root() {
             <h2 className={style.TitleH2}>
                 {`Quel type de portrait professionnel choisir pour son CV ?`}
             </h2>
+
+            <Container4ImagesPortraitRoot
+                img1={ImagesBlog_20250616_RootControllerData[0].src}
+                MetaNameImg1={ImagesBlog_20250616_RootControllerData[0].alt}
+                img2={ImagesBlog_20250616_RootControllerData[1].src}
+                MetaNameImg2={ImagesBlog_20250616_RootControllerData[1].alt}
+                img3={ImagesBlog_20250616_RootControllerData[2].src}
+                MetaNameImg3={ImagesBlog_20250616_RootControllerData[2].alt}
+                img4={ImagesBlog_20250616_RootControllerData[3].src}
+                MetaNameImg4={ImagesBlog_20250616_RootControllerData[3].alt}
+                />
+            
+            <h3 className={style.TitleNH3}>
+                {`Portrait en studio (fond neutre)`}
+            </h3>
+            <p className={style.TextP4}>
+                Idéal pour les secteurs formels (finance, droit, RH, administration). Renvoie un message de sérieux et 
+                de rigueur.
+            </p>
+            
+            <h3 className={style.TitleNH3}>
+                {`Portrait en extérieur (cadre urbain ou naturel)`}
+            </h3>
+            <p className={style.TextP4}>
+                Convient aux secteurs créatifs, startups, professions indépendantes. <br />
+                Communique un côté accessible et moderne.
+            </p>
+            
+            <h3 className={style.TitleNH3}>
+                {`Portrait lifestyle`}
+            </h3>
+            <p className={style.TextP4}>
+                Pour les profils où la personnalité joue un rôle clé : entrepreneurs, artistes, professions relationnelles. <br />
+                Permet de révéler une facette plus humaine et engageante.
+            </p>
+
+            {/* ----------- ---------- ---------- ---------- ---------- */}
+
+            <h2 className={style.TitleH2}>
+                {`Pourquoi faire appel à un photographe portrait pro à Montpellier ?`}
+            </h2>
+
+            <p className={style.TextP4}>
+                Un 
+                <span className={style.SpanBold}>
+                    {` photographe professionnel spécialisé en portrait `}
+                </span>
+                saura : 
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    Vous guider pour adopter la bonne posture
+                </li>
+                <li className={style.TextLiP4}>
+                    Créer une atmosphère détendue pour obtenir un sourire naturel
+                </li>
+                <li className={style.TextLiP4}>
+                    Adapter le style du portrait à votre secteur d’activité
+                </li>
+                <li className={style.TextLiP4}>
+                    Garantir une cohérence entre votre image et le message que vous voulez transmettre
+                </li>
+                <br />
+            </ul>
+
+            <p className={style.TextP4}>
+                En tant que 
+                <span className={style.SpanBold}>
+                    {` photographe portrait professionnel à Montpellier, `}
+                </span>
+                 j’accompagne régulièrement des cadres, étudiants, indépendants ou personnes en reconversion souhaitant 
+                 soigner leur image pour optimiser leur CV.
+            </p>
+
+            {/* ----------- ---------- ---------- ---------- ---------- */}
+
+            <h2 className={style.TitleH2}>
+                {`Conclusion : boostez votre CV avec un portrait professionnel`}
+            </h2>
+
+            <p className={style.TextP4}>
+                Une
+                <span className={style.SpanBold}>
+                    {` photo professionnelle bien exécutée `}
+                </span>
+                est bien plus qu’un simple portrait. <br />
+                C’est un outil stratégique pour capter l’attention des recruteurs, renforcer l’impact de votre candidature 
+                et créer une première impression mémorable.
+            </p>
+            
+            <p className={style.TextP4}>
+                Si vous êtes à Montpellier ou dans l’Hérault et que vous souhaitez optimiser votre CV avec un portrait de qualité :
+            </p>
         </section>
     );
 }

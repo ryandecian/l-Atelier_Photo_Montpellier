@@ -11,7 +11,7 @@ function PortraitMariageRootComponentB() {
                 Un mariage est un moment qui vous est cher, et c’est pourquoi je m’investis pleinement avant le 
                 grand jour. Chaque couple a ses propres attentes, ses propres envies, et ses propres goûts.
                 <span className={style.SpanBold}>
-                    {" Une discussion approfondie. "}
+                    {" Une discussion approfondie, "}
                 </span> 
                 en amont de la journée est donc essentielle. Je prends le temps d’apprendre à vous connaître, 
                 de comprendre vos préférences et ce que vous attendez des photos de votre mariage.
