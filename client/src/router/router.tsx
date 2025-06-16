@@ -96,7 +96,7 @@ const ListDataRouter: RouterItemsType[] = [
         element: <h1>Route : Page faq</h1>,
     },
     /* Route des SubMenu */
-    /* {ListDataRouter[11].path} */
+    /* {ListDataRouter[11].path} ou {`${ListDataRouter[11].path}#PortraitCorporateRoot`} */
     {
         path: "/portrait-corporate",
         element: <PortraitCorporatePage />,
