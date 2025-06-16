@@ -42,7 +42,7 @@ function Blog_20250601_Root() {
                 MetaNameImg3={ImagesBlog_20250601_RootControllerData[2].alt}
                 img4={ImagesBlog_20250601_RootControllerData[3].src}
                 MetaNameImg4={ImagesBlog_20250601_RootControllerData[3].alt}
-                />
+            />
 
             <p className={style.TextP4}>
                 La photographie de mariage en style reportage, aussi appelée "documentaire", consiste à raconter l’histoire 
@@ -92,6 +92,70 @@ function Blog_20250601_Root() {
             <h3 className={style.TitleNH3}>
                 {`Vivre pleinement l’instant présent`}
             </h3>
+
+            <Container4ImagesRoot
+                img1={ImagesBlog_20250601_RootControllerData[4].src}
+                MetaNameImg1={ImagesBlog_20250601_RootControllerData[4].alt}
+                img2={ImagesBlog_20250601_RootControllerData[5].src}
+                MetaNameImg2={ImagesBlog_20250601_RootControllerData[5].alt}
+                img3={ImagesBlog_20250601_RootControllerData[6].src}
+                MetaNameImg3={ImagesBlog_20250601_RootControllerData[6].alt}
+                img4={ImagesBlog_20250601_RootControllerData[7].src}
+                MetaNameImg4={ImagesBlog_20250601_RootControllerData[7].alt}
+            />
+
+            <p className={style.TextP4}>
+                L’avantage premier de ce style, c’est qu’il vous permet d’être pleinement présents le jour de votre 
+                mariage. Pas besoin de vous interrompre pour poser ou pour changer de lieu toutes les 10 minutes.
+            </p>
+
+            <p className={style.TextP4}>
+                Le photographe est là, mais sans vous accaparer. Vous vivez, vous échangez, vous ressentez. Et tout 
+                cela est capturé naturellement.
+            </p>
+
+            <h3 className={style.TitleNH3}>
+                {`Des souvenirs réels, fidèles à votre journée`}
+            </h3>
+
+            <p className={style.TextP4}>
+                Les images issues d’un reportage sont souvent chargées d’émotions. Un regard complice, une larme 
+                d’émotion, un fou rire entre amis... Ces petits riens sont les grandes choses de votre journée, et 
+                ce sont souvent ces images qui résonnent le plus fort dans les années à venir.
+            </p>
+
+            <p className={style.TextP4}>
+                Les photos ne sont pas figées dans une pose : elles vivent.
+            </p>
+
+            <h3 className={style.TitleNH3}>
+                {`Une ambiance naturelle et chaleureuse`}
+            </h3>
+
+            <p className={style.TextP4}>
+                Le style reportage respecte l’ambiance de votre mariage. Que vous soyez en pleine nature, dans une 
+                salle chic ou en bord de mer, la lumière naturelle, les couleurs et les décors sont capturés tels 
+                quels, sans filtres excessifs ni mises en scène artificielles.
+            </p>
+
+            <p className={style.TextP4}>
+                Vous gardez une trace de votre journée, pas d’un mariage standardisé.
+            </p>
+
+            <h3 className={style.TitleNH3}>
+                {`Idéal pour les couples qui n'aiment pas poser`}
+            </h3>
+
+            <p className={style.TextP4}>
+                Vous n’êtes pas à l’aise devant l’objectif ? Le style reportage est fait pour vous.
+            </p>
+
+            <p className={style.TextP4}>
+                Le photographe devient un observateur attentif, pas un metteur en scène. Vous pouvez être vous-mêmes, 
+                sans pression, sans devoir "réussir" une photo. C’est le photographe qui s’adapte à vous, pas l’inverse.
+            </p>
+
+            <p className={style.TextP4}></p>
         </section>
     );
 }
