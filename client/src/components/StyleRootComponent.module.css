@@ -91,7 +91,7 @@
 }
 .TitleNH2 {
     font-size: var(--h2);
-    margin: 1.25rem 1.5rem 0rem 1.5rem; /* 20px 24px 20px 24px */
+    margin: 1.25rem 1.5rem 0rem 1.5rem; /* 20px 24px 0px 24px */
 }
 .TitleNH3 {
     font-size: var(--h3); /* 20px */
