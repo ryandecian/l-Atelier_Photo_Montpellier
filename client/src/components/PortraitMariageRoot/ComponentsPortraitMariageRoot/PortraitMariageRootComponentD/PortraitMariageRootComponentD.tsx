@@ -19,7 +19,7 @@ function PortraitMariageRootComponentD() {
                 </span>
                 {" "} qu’elle soit simple et épurée, 
                 <span className={style.SpanBold}>
-                    {"sophistiquée et raffinée,"}
+                    {" sophistiquée et raffinée,"}
                 </span>
                 {" "} ou {" "}
                 <span className={style.SpanBold}>
