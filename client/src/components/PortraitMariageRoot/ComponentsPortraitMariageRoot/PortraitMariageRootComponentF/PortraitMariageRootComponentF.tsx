@@ -1,5 +1,7 @@
 import style from "../../../StyleRootComponent.module.css";
 import ListDataRouter from "../../../../router/router";
+import { Link } from "react-router-dom";
+
 function PortraitMariageRootComponentF() {
     return (
         <article className={`PortraitMariageRootComponentF ${style.ContainerRoot}`}>
@@ -46,9 +48,9 @@ function PortraitMariageRootComponentF() {
             <p className={style.TextP4}>
                 Si vous êtes prêts à faire de votre mariage un événement inoubliable, {" "}
                 <span className={style.SpanLink}>
-                    <a href={ListDataRouter[2].path} target="_blank" rel="noopener noreferrer">
-                        {" contactez-moi"}
-                    </a>
+                    <Link to={ListDataRouter[3].path}>
+                        {" contactez-moi "}
+                    </Link>
                 </span>
                 {" "} pour commencer à discuter de ce que vous attendez de vos 
                 <span className={style.SpanBold}>
@@ -56,9 +58,9 @@ function PortraitMariageRootComponentF() {
                 </span>
                 {" "} Pour connaître mes prestations tarifaires, rendez-vous sur ma {" "}
                 <span className={style.SpanLink}>
-                    <a href={ListDataRouter[2].path} target="_blank" rel="noopener noreferrer">
+                    <Link to={ListDataRouter[2].path}>
                         {" page tarif."}
-                    </a>
+                    </Link>
                 </span>
             </p>          
         </article>

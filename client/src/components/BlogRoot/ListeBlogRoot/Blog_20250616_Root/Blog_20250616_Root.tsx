@@ -1,4 +1,5 @@
 import style from "../../../StyleRootComponent.module.css";
+import { Link } from "react-router-dom";
 
 import Container4ImagesPortraitRoot from "../../../ContainerImageRoot/Container4ImagesPortraitRoot/Container4ImagesPortraitRoot";
 import ImagesBlog_20250616_RootControllerData from "./ImagesBlog_20250616_RootControllerData";
@@ -254,6 +255,17 @@ function Blog_20250616_Root() {
             
             <p className={style.TextP4}>
                 Si vous êtes à Montpellier ou dans l’Hérault et que vous souhaitez optimiser votre CV avec un portrait de qualité :
+            </p>
+
+            <p className={style.TextP4}>
+                Je vous propose des séances Portrait Pro sur-mesure, en studio ou en extérieur, adaptées à votre secteur 
+                et à votre personnalité.
+            </p>
+
+            <p className={style.TextP4}>
+                <span className={style.SpanLink}>
+                    <Link></Link>
+                </span>
             </p>
         </section>
     );
