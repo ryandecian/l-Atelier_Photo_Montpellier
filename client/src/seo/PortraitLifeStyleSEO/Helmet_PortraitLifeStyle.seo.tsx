@@ -18,7 +18,7 @@ function Helmet_PortraitLifeStyle_SEO() {
 
     const SEO: DataSEOHelmetType = {
         title: DataSEO_PortraitLifeStyle.title,
-        autor: DataSEORoot.autor,
+        autor: DataSEO_PortraitLifeStyle.autor,
         description: DataSEO_PortraitLifeStyle.description,
         url: DataSEO_PortraitLifeStyle.url,
         img: DataSEO_PortraitLifeStyle.img_Helmet,

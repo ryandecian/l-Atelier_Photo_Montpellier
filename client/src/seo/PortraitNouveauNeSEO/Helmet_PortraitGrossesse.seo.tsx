@@ -18,7 +18,7 @@ function Helmet_PortraitNouveauNe_SEO() {
 
     const SEO: DataSEOHelmetType = {
         title: DataSEO_PortraitNouveauNe.title,
-        autor: DataSEORoot.autor,
+        autor: DataSEO_PortraitNouveauNe.autor,
         description: DataSEO_PortraitNouveauNe.description,
         url: DataSEO_PortraitNouveauNe.url,
         img: DataSEO_PortraitNouveauNe.img_Helmet,

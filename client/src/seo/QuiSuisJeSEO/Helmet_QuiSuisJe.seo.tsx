@@ -18,7 +18,7 @@ function Helmet_QuiSuisJe_SEO() {
 
     const SEO: DataSEOHelmetType = {
         title: DataSEO_QuiSuisJe.title,
-        autor: DataSEORoot.autor,
+        autor: DataSEO_QuiSuisJe.autor,
         description: DataSEO_QuiSuisJe.description,
         url: DataSEO_QuiSuisJe.url,
         img: DataSEO_QuiSuisJe.img_Helmet,
