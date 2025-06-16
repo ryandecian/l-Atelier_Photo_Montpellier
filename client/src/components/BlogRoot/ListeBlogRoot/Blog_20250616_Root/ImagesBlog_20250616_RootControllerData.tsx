@@ -12,23 +12,23 @@ const ImagesBlog_20250616_RootControllerData: ImagesControllerDataType[] = [
     /* Tableau 1 : Blog_20250616_RootComponentA */
     /* {ImagesBlog_20250616_RootControllerData[0].src} */
     {
-        src: "/images/image-portrait-corporate/lapm-photographie-professionnelle-portrait-corporate-agence-immo-l-atelier-photo-montpellier.jpg",
-        alt: "LAPM - photographie professionnelle - portrait corporate - agence immobilière - L'Atelier Photo Montpellier",
+        src: "/images/image-blog/blog_20250616/lapm-photographie-professionnelle-blog-portrait-en-studio-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographie professionnelle - portrait corporate - en studio - L'Atelier Photo Montpellier",
     },
     /* {ImagesBlog_20250616_RootControllerData[1].src} */
     {
-        src: "/images/image-portrait-corporate/lapm-photo-professionnel-portrait-corporate-commerciale-immo-l-atelier-photo-montpellier.jpg",
-        alt: "LAPM - photo professionnel - portrait corporate - commerciale immobilière - L'Atelier Photo Montpellier",
+        src: "/images/image-blog/blog_20250616/lapm-photo-professionnel-blog-portrait-lumiere-naturelle-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo professionnel - portrait corporate - lumière naturelle - L'Atelier Photo Montpellier",
     },
     /* {ImagesBlog_20250616_RootControllerData[2].src} */
     {
-        src: "/images/image-portrait-corporate/lapm-photographie-professionnelle-portrait-corporate-assistante-direction-l-atelier-photo-montpellier.jpg",
-        alt: "LAPM - photographie professionnelle - portrait corporate - assistante de direction - L'Atelier Photo Montpellier",
+        src: "/images/image-blog/blog_20250616/lapm-photographie-professionnelle-blog-portrait-interieur-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographie professionnelle - portrait corporate - intérieur - L'Atelier Photo Montpellier",
     },
     /* {ImagesBlog_20250616_RootControllerData[3].src} */
     {
-        src: "/images/image-portrait-corporate/lapm-photographe-professionnel-portrait-corporate-chercheuse-l-atelier-photo-montpellier.jpg",
-        alt: "LAPM - photographe professionnel - portrait corporate - chercheuse - L'Atelier Photo Montpellier",
+        src: "/images/image-blog/blog_20250616/lapm-photographe-professionnel-blog-portrait-pro-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait pro - L'Atelier Photo Montpellier",
     },
 ];
 
