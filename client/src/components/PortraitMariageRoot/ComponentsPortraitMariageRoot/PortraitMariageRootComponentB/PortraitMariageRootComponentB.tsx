@@ -9,29 +9,29 @@ function PortraitMariageRootComponentB() {
 
             <p className={style.TextP4}>
                 Un mariage est un moment qui vous est cher, et c’est pourquoi je m’investis pleinement avant le 
-                grand jour. Chaque couple a ses propres attentes, ses propres envies, et ses propres goûts. {" "}
+                grand jour. Chaque couple a ses propres attentes, ses propres envies, et ses propres goûts.
                 <span className={style.SpanBold}>
-                    {"Une discussion approfondie."}
+                    {" Une discussion approfondie. "}
                 </span> 
-                {" "} en amont de la journée est donc essentielle. Je prends le temps d’apprendre à vous connaître, 
+                en amont de la journée est donc essentielle. Je prends le temps d’apprendre à vous connaître, 
                 de comprendre vos préférences et ce que vous attendez des photos de votre mariage.
             </p>
             <p className={style.TextP4}>
                 Nous discuterons ensemble de vos envies concernant le style de photos que vous souhaitez. 
-                    Voulez-vous un {" "}
+                    Voulez-vous un
                 <span className={style.SpanBold}>
-                    {"style simple et naturel,"}
+                    {" style simple et naturel, "}
                 </span> 
-                {" "} proche du documentaire ? Ou un {" "}
+                proche du documentaire ? Ou un
                 <span className={style.SpanBold}>
-                    {"style plus sophistiqué"}
+                    {" style plus sophistiqué "}
                 </span> 
-                {" "} et travaillé, avec des photos plus posées et scénarisées ? Peut-être êtes-vous un couple 
-                influencé par les {" "}
+                et travaillé, avec des photos plus posées et scénarisées ? Peut-être êtes-vous un couple 
+                influencé par les
                 <span className={style.SpanBold}>
-                    {"tendances Instagram"}
+                    {" tendances Instagram "}
                 </span> 
-                {" "} et préférez-vous des images plus modernes et stylisées ? Quelle que soit votre vision, 
+                et préférez-vous des images plus modernes et stylisées ? Quelle que soit votre vision, 
                 je serai à l’écoute de vos attentes pour réaliser des photos qui vous ressemblent.
             </p>          
         </article>
