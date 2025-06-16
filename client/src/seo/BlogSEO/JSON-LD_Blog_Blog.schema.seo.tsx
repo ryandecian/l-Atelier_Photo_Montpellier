@@ -5,6 +5,7 @@ import DataSEO_Blogs from "./DataSEO_Blog.seo";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
 import ListDataRouter from "../../router/router";
+import extractKeywordsFromDataSEO from "../../utils/extractKeywordsFromDataSEO.utils";
 
 function JSON_LD_Blog_Blog_Schema_SEO() : string {
     const router = ListDataRouter
@@ -28,27 +29,19 @@ function JSON_LD_Blog_Blog_Schema_SEO() : string {
         "publisher": DataSEORoot.publisher, // Informations sur l'éditeur
         "image": {
            "@type": "ImageObject",
-           "url": "https://www.latelierphotomontpellier.fr/images/blog-banner.jpg", // Image représentative de la section blog
+           "url": DataSEO_Blog.img_JSON_LD, // Image représentative de la section blog
            "width": 1200,
-           "height": 628
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.latelierphotomontpellier.fr/blog"
-  },
-  "creator": {
-    "@type": "Person",
-    "name": "Anne SAUNIER"
-  },
-  "keywords": [
-    "blog photo",
-    "conseils séance photo",
-    "photographe Montpellier",
-    "astuces photographie",
-    "portrait professionnel"
-  ],
-  "dateCreated": "2024-04-01", // Date de création de la section blog
-  "dateModified": "2025-06-16"  // À mettre à jour dynamiquement si besoin
+           "height": 800
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": DataSEO_Blog.url,
+        },
+        "creator": {
+            "@type": "Person",
+            "name": DataSEO_Blog.autor, // Nom de l'auteur du blog
+        },
+       "keywords": extractKeywordsFromDataSEO(DataSEO_Blog.keywords), // Mots-clés associés à la section blog
     })
 
     return (
