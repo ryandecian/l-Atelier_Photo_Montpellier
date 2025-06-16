@@ -5,12 +5,13 @@ import DataSEO_Blog_20250601s from "./DataSEO_Blog_20250601.seo";
 import DataSEOTargetOneType from "../../../../types/DataSEOTargetOne.type";
 
 import DataCardBlogRoots from "../../../../components/BlogRoot/DataCardBlogRoot";
+import CardBlogType from "../../../../types/CardBlog.type";
 
 import extractKeywordsFromDataSEO from "../../../../utils/extractKeywordsFromDataSEO.utils";
 import convertDateFrToISO from "../../../../utils/convertDateFrToISO.utils";
 
 function JSON_LD_BlogPosting_Blog_20250601_Schema_SEO() : string {
-    const DataCardBlogRoot = DataCardBlogRoots(); /* Récupération des données de la carte du blog */
+    const DataCardBlogRoot: CardBlogType[] = DataCardBlogRoots(); /* Récupération des données de la carte du blog */
     const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
     const DataSEO_Blog_20250601: DataSEOTargetOneType = DataSEO_Blog_20250601s(); /* Récupération des données SEO de la page */
 
@@ -49,10 +50,7 @@ function JSON_LD_BlogPosting_Blog_20250601_Schema_SEO() : string {
         "publisher": DataSEORoot.publisher, /* Éditeur de l'article, défini dans DataSEORoot */
 
         /* Créatrice */
-        "creator": {
-            "@type": "Person",
-            "name": "Anne SAUNIER"
-        },
+        "creator": DataSEORoot.creator, /* Créatrice de l'article, défini dans DataSEORoot */
     })
 
     return (
