@@ -14,12 +14,12 @@ function DataCardPrestation() {
         },
         {
             reactKey: 2,
-            path: ListDataRouter[13].path,
-            id: "tarifs-portrait-mariage",
-            title: "After day / trash the dress",
-            description: "Prolongez la magie après le mariage.",
-            date: "10/10/2025",
-            image: "/images/image-prestation-card/canette.jpg",
+            path: ListDataRouter[4].children?.[2].path,
+            id: "blog_20250601",
+            title: "Photographie de Mariage en Style Reportage",
+            description: "L'Art de Capturer l’Authentique",
+            date: "01/06/2025",
+            image: "/images/image-blog/cartes/blog_20250616.jpg",
         },
     ]
     return tab;
