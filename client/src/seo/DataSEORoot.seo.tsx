@@ -20,6 +20,7 @@ function DataSEORoot(): DataSEORootType {
             ImageGallery: "ImageGallery",
             ItemList: "ItemList",
             Person: "Person",
+            Blog: "Blog",
         },
         id_LocalBusiness: `${import.meta.env.URL_CLIENT}#lapm`, /* @id SEO-friendly, correspond id unique de l'entreprise */
         description: "L'Atelier Photo Montpellier, dirigé par Anne SAUNIER, propose des prestations photographiques professionnelles à Montpellier et ses environs : grossesse, mariage, portraits corporate, lifestyle...", // Description de l'entreprise
@@ -28,12 +29,27 @@ function DataSEORoot(): DataSEORootType {
         "email": externalLinks.emailAnne, /* Adresse email de l'entreprise (Dynamique) */
         "url": `${import.meta.env.URL_CLIENT}`, /* URL de la page d'accueil de l'entreprise (Dynamique) */
         img: `${import.meta.env.URL_CLIENT}/dans-les-yeux-de-sacha.jpg`, // Lien URL public de l'image de l'entreprise (Dynamique) */
-        logo: `${import.meta.env.URL_CLIENT}/logo-LAPM-l-atelier-photo-montpellier.png`, // Lien URL public du logo de l'entreprise (Dynamique) */
-        "openingHours": [
+        publisher: {
+            "@type": "Organization",
+            "name": "l'Atelier Photo Montpellier",
+            "logo": {
+                "@type": "ImageObject",
+                "url": `${import.meta.env.URL_CLIENT}/logo-LAPM-l-atelier-photo-montpellier.png`, // Logo au format carré si possible
+                "width": 200,
+                "height": 200
+            },
+        },
+        logo: {
+            "@type": "ImageObject",
+            "url": `${import.meta.env.URL_CLIENT}/logo-LAPM-l-atelier-photo-montpellier.png`, // Logo au format carré si possible
+            "width": 200,
+            "height": 200
+        },
+        openingHours: [
             "Mo-Su 10:00-13:00",
             "Mo-Su 14:00-19:00"
         ], /* Horaires d'ouverture du lundi au dimanche de 10h à 13het de 14h à 19h */
-        "sameAs": [
+        sameAs: [
             externalLinks.instagram, /* Compte Instagram */
             externalLinks.facebook, /* A modifier car ce n'est pas le bon compte */
         ],

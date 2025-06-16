@@ -38,9 +38,9 @@ function DataSEO_Blog(): DataSEOTargetOneType {
         },
     
         /* Data Helmet et JSON-LD */
-        img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-duo/google/lapm-photo-portrait-duo-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-duo/helmet/lapm-photo-portrait-duo-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[4].path}#service-portrait-duo`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
+        img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/google/lapm-photo-portrait-professionnel-anne-saunier-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
+        img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/helmet/lapm-photo-portrait-professionnel-anne-saunier-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[4].path}#blog-latelier-photo-montpellier`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
         serviceType: "Blog de conseils et d'inspiration en photographie, par Anne SAUNIER, photographe professionnelle à Montpellier.",
     };
 
