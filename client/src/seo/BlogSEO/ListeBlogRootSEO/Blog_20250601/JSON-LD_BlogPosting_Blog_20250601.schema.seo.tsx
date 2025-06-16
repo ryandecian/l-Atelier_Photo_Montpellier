@@ -5,7 +5,7 @@ import DataSEO_Blog_20250601s from "./DataSEO_Blog_20250601.seo";
 import DataSEOTargetOneType from "../../../../types/DataSEOTargetOne.type";
 
 import ListDataRouter from "../../../../router/router";
-// import extractKeywordsFromDataSEO from "../../../../utils/extractKeywordsFromDataSEO.utils";
+import extractKeywordsFromDataSEO from "../../../../utils/extractKeywordsFromDataSEO.utils";
 
 function JSON_LD_BlogPosting_Blog_20250601_Schema_SEO() : string {
     const router = ListDataRouter
@@ -14,39 +14,28 @@ function JSON_LD_BlogPosting_Blog_20250601_Schema_SEO() : string {
 
     const JSON_LD = JSON.stringify({
         "@context": DataSEORoot["@context"],
-        "@type": "BlogPosting",
+        "@type": DataSEORoot["@type"].BlogPosting,
 
         /* Identifiants & URL */
-        "@id": "https://www.latelierphotomontpellier.fr/blog/20250601#photographie-reportage-mariage",
+        "@id": DataSEO_Blog_20250601.id_Service, /* @id SEO-friendly, correspond à l'URL de la page + mots clés */
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://www.latelierphotomontpellier.fr/blog/20250601"
+            "@id": DataSEO_Blog_20250601.url,
         },
-        "url": "https://www.latelierphotomontpellier.fr/blog/20250601",
+        "url": DataSEO_Blog_20250601.url,
 
-  /* Métadonnées principales */
-  "headline": "Photographie de Mariage en Style Reportage : L’Art de Capturer l’Authentique",
-  "description": "Découvrez l’approche naturelle et sincère du reportage photo pour mariage, une manière unique de capturer l’émotion du jour J.",
-  "keywords": [
-    "photographie de mariage",
-    "reportage photo",
-    "style naturel",
-    "émotions mariage",
-    "photographe Montpellier",
-    "Anne SAUNIER",
-    "photo spontanée",
-    "mariage authentique",
-    "portrait reportage",
-    "photo de couple naturelle"
-  ],
+        /* Métadonnées principales */
+        "headline": DataSEO_Blog_20250601.name_Service, /* Titre principal affiché par Google */
+        "description": DataSEO_Blog_20250601.description, /* Description de l'article de blog */
+        "keywords": extractKeywordsFromDataSEO(DataSEO_Blog_20250601.keywords), /* Extraction des mots clés */
 
-  /* Image principale */
-  "image": {
-    "@type": "ImageObject",
-    "url": "https://www.latelierphotomontpellier.fr/images-seo/blog/20250601/google/lapm-photo-mariage-style-reportage-anne-saunier.jpg",
-    "width": 1200,
-    "height": 628
-  },
+        /* Image principale */
+        "image": {
+            "@type": "ImageObject",
+            "url": DataSEO_Blog_20250601.img_JSON_LD, /* Lien URL public de l'image */
+            "width": 1200,
+            "height": 628
+        },
 
   /* Dates */
   "datePublished": "2025-06-01",
