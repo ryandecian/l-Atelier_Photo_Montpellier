@@ -1,6 +1,8 @@
 import style from "../../../StyleRootComponent.module.css";
+import css from "./Blog_20250601_Root.module.css";
 import ListDataRouter from "../../../../router/router";
 import { Link } from "react-router-dom";
+import PremiumCardImgSudoRoot from "../../../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
 
 import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ImagesBlog_20250601_RootControllerData from "./ImagesBlog_20250601_RootControllerData";
@@ -192,6 +194,14 @@ function Blog_20250601_Root() {
             <h3 className={style.TitleNH3}>
                 {`Un post-traitement qui respecte l’authentique`}
             </h3>
+
+            <div className={css.ContainerImg}>
+                <PremiumCardImgSudoRoot
+                    src={ImagesBlog_20250601_RootControllerData[8].src}
+                    alt={ImagesBlog_20250601_RootControllerData[8].alt}
+                    className={css.ImgPremiumCardSudo}
+                />
+            </div>
 
             <p className={style.TextP4}>
                 Les images sont travaillées après coup pour en sublimer la lumière et les couleurs, sans dénaturer le moment.
