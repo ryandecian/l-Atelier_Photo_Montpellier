@@ -8,41 +8,41 @@ function PortraitMariageRootComponentD() {
             </h2>
 
             <p className={style.TextP4}>
-                Votre mariage est un {" "}
+                Votre mariage est un
                 <span className={style.SpanBold}>
-                    {"réflexe de votre personnalité"}
+                    {" réflexe de votre personnalité "}
                 </span>
-                {" "} et de vos goûts. Vous souhaitez des photos qui traduisent l’esprit de votre union, mais aussi de 
-                vos valeurs et de vos envies esthétiques. C’est pourquoi je m’engage à respecter votre {" "}
+                et de vos goûts. Vous souhaitez des photos qui traduisent l’esprit de votre union, mais aussi de 
+                vos valeurs et de vos envies esthétiques. C’est pourquoi je m’engage à respecter votre
                 <span className={style.SpanBold}>
-                    {"vision de l’image,"}
+                    {" vision de l’image, "}
                 </span>
-                {" "} qu’elle soit simple et épurée, 
+                qu’elle soit simple et épurée, 
                 <span className={style.SpanBold}>
-                    {"sophistiquée et raffinée,"}
+                    {" sophistiquée et raffinée, "}
                 </span>
-                {" "} ou {" "}
+                ou
                 <span className={style.SpanBold}>
-                    {"très moderne et dynamique,"}
+                    {" très moderne et dynamique, "}
                 </span>
-                {" "} inspirée des dernières {" "}
+                inspirée des dernières
                 <span className={style.SpanBold}>
-                    {"tendances Instagram."}
+                    {" tendances Instagram."}
                 </span>
             </p>
             <p className={style.TextP4}>
-                Certains couples préfèrent des clichés {" "}
+                Certains couples préfèrent des clichés
                 <span className={style.SpanBold}>
-                    {"très naturels"}
+                    {" très naturels "}
                 </span>
-                {" "} avec un minimum d’intervention, tandis que d’autres souhaitent des photos plus 
-                {" "} avec des mises en scène plus soignées. Je m’adapte à votre demande et vous accompagne dans le 
+                avec un minimum d’intervention, tandis que d’autres souhaitent des photos plus 
+                avec des mises en scène plus soignées. Je m’adapte à votre demande et vous accompagne dans le 
                 choix du style qui vous correspond le mieux, tout en veillant à ce que chaque photo conserve son 
-                authenticité. Mon objectif est d’être votre {" "}
+                authenticité. Mon objectif est d’être votre
                 <span className={style.SpanBold}>
-                    {"partenaire photographique,"}
+                    {" partenaire photographique, "}
                 </span>
-                {" "} celui qui capte chaque sourire, chaque regard, chaque moment avec fidélité.
+                celui qui capte chaque sourire, chaque regard, chaque moment avec fidélité.
             </p>          
         </article>
     );
