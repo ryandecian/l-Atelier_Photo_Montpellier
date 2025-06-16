@@ -19,7 +19,7 @@ function DataCardPrestation() {
             title: "Photographie de Mariage en Style Reportage",
             description: "L'Art de Capturer l’Authentique",
             date: "01/06/2025",
-            image: "/images/image-blog/cartes/blog_20250616.jpg",
+            image: "/images/image-blog/cartes/blog_20250601.jpg",
         },
     ]
     return tab;
