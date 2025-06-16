@@ -29,4 +29,4 @@ Disallow: /tsconfig.json
 Disallow: /.git/
 
 # Sitemap (met le bon domaine et le bon port s’il est en HTTPS)
-Sitemap: https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250/sitemap.xml
+Sitemap: https://atelier-photo-montpellier.fr/sitemap.xml
