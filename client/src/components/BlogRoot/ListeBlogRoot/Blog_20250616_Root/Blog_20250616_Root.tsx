@@ -1,4 +1,6 @@
 import style from "../../../StyleRootComponent.module.css";
+import ListDataRouter from "../../../../router/router";
+import { Link } from "react-router-dom";
 
 import Container4ImagesPortraitRoot from "../../../ContainerImageRoot/Container4ImagesPortraitRoot/Container4ImagesPortraitRoot";
 import ImagesBlog_20250616_RootControllerData from "./ImagesBlog_20250616_RootControllerData";
@@ -254,6 +256,27 @@ function Blog_20250616_Root() {
             
             <p className={style.TextP4}>
                 Si vous êtes à Montpellier ou dans l’Hérault et que vous souhaitez optimiser votre CV avec un portrait de qualité :
+            </p>
+
+            <p className={style.TextP4}>
+                Je vous propose des séances Portrait Pro sur-mesure, en studio ou en extérieur, adaptées à votre secteur 
+                et à votre personnalité.
+            </p>
+
+            <p className={style.TextP4}>
+                <span className={style.SpanLink}>
+                    <Link to={ListDataRouter[3].path}>
+                        {`Contactez-moi dès aujourd’hui pour réserver votre séance Portrait CV à Montpellier !`}
+                    </Link>
+                </span>
+            </p>
+
+            <p className={style.TextP4}>
+                <span className={style.SpanLink}>
+                    <Link to={`${ListDataRouter[11].path}#PortraitCorporateRoot`}>
+                        {`Découvrez mes offres Portrait Professionnel et Portrait Corporate.`}
+                    </Link>
+                </span>
             </p>
         </section>
     );
