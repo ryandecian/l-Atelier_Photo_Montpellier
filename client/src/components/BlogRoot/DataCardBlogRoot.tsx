@@ -10,7 +10,7 @@ function DataCardPrestation() {
             title: "Photo professionnelle pour CV",
             description: "Comment capter l'attention des recruteurs à Montpellier",
             date: "16/06/2025",
-            image: "/images/image-prestation-card/canette.jpg",
+            image: "/images/image-blog/cartes/blog_20250616.jpg",
         },
         {
             reactKey: 2,
