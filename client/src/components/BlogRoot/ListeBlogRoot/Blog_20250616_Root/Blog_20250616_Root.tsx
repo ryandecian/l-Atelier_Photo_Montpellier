@@ -1,4 +1,6 @@
-import style from "../../StyleRootComponent.module.css";
+import style from "../../../StyleRootComponent.module.css";
+
+// import Container4ImagesPortraitRoot from "../../../ContainerImageRoot/Container4ImagesPortraitRoot/Container4ImagesPortraitRoot";
 
 function Blog_20250616_Root() {
     return (
@@ -15,7 +17,7 @@ function Blog_20250616_Root() {
             </p>
 
             {/* ----------- ---------- ---------- ---------- ---------- */}
-            
+
             <h2 className={style.TitleH2}>
                 {`Pourquoi ajouter une photo professionnelle à son CV ?`}
             </h2>
@@ -153,7 +155,9 @@ function Blog_20250616_Root() {
 
             {/* ----------- ---------- ---------- ---------- ---------- */}
 
-            <h2 className={style.TitleH2}></h2>
+            <h2 className={style.TitleH2}>
+                {`Quel type de portrait professionnel choisir pour son CV ?`}
+            </h2>
         </section>
     );
 }
