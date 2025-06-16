@@ -1,7 +1,7 @@
 import ListDataRouter from "../../router/router";
 import CardBlogType from "../../types/CardBlog.type";
 
-function DataCardPrestation() {
+function DataCardBlogRoot() {
     const tab: CardBlogType[] = [
         {
             reactKey: 1,
@@ -26,4 +26,4 @@ function DataCardPrestation() {
 }
 
 
-export default DataCardPrestation;
+export default DataCardBlogRoot;

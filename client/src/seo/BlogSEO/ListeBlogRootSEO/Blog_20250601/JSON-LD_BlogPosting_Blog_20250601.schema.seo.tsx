@@ -4,11 +4,13 @@ import DataSEORootType from "../../../../types/DataSEORoot.type";
 import DataSEO_Blog_20250601s from "./DataSEO_Blog_20250601.seo";
 import DataSEOTargetOneType from "../../../../types/DataSEOTargetOne.type";
 
-import ListDataRouter from "../../../../router/router";
+import DataCardBlogRoots from "../../../../components/BlogRoot/DataCardBlogRoot";
+
 import extractKeywordsFromDataSEO from "../../../../utils/extractKeywordsFromDataSEO.utils";
+import convertDateFrToISO from "../../../../utils/convertDateFrToISO.utils";
 
 function JSON_LD_BlogPosting_Blog_20250601_Schema_SEO() : string {
-    const router = ListDataRouter
+    const DataCardBlogRoot = DataCardBlogRoots(); /* Récupération des données de la carte du blog */
     const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
     const DataSEO_Blog_20250601: DataSEOTargetOneType = DataSEO_Blog_20250601s(); /* Récupération des données SEO de la page */
 
@@ -34,18 +36,17 @@ function JSON_LD_BlogPosting_Blog_20250601_Schema_SEO() : string {
             "@type": "ImageObject",
             "url": DataSEO_Blog_20250601.img_JSON_LD, /* Lien URL public de l'image */
             "width": 1200,
-            "height": 628
+            "height": 800
         },
 
-  /* Dates */
-  "datePublished": "2025-06-01",
-  "dateModified": "2025-06-01",
+        /* Dates */
+        "datePublished": convertDateFrToISO(DataCardBlogRoot[1].date), /* Date de publication au format ISO 8601 */
 
-  /* Auteur */
-  "author": {
-    "@type": "Person",
-    "name": "Anne SAUNIER",
-    "url": "https://www.latelierphotomontpellier.fr/qui-suis-je"
+        /* Auteur */
+        "author": {
+            "@type": "Person",
+            "name": "Anne SAUNIER",
+            "url": "https://www.latelierphotomontpellier.fr/qui-suis-je"
   },
 
   /* Éditeur */
