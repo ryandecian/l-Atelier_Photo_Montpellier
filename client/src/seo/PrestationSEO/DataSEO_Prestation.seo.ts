@@ -19,9 +19,9 @@ function DataSEO_Prestation(): DataSEOTargetOneType {
             4: "l'Atelier Photo Montpellier", /* 4 mots clés */
             5: "LAPM", /* 5 mots clés */
             6: "Service", /* 6 mots clés */
-            7: "Portrait Grossesse", /* 7 mots clés */
-            8: "Portrait nouveau né", /* 8 mots clés */
-            9: "", /* 9 mots clés */
+            7: "Prestations", /* 7 mots clés */
+            8: "Tarifs", /* 8 mots clés */
+            9: "Recherchez votre besoin", /* 9 mots clés */
             10: "", /* 10 mots clés */
             11: "", /* 11 mots clés */
             12: "", /* 12 mots clés */
@@ -38,9 +38,9 @@ function DataSEO_Prestation(): DataSEOTargetOneType {
         },
     
         /* Data Helmet et JSON-LD */
-        img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-nouveau-ne/google/lapm-photo-portrait-nouveau-ne-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-nouveau-ne/helmet/lapm-photo-portrait-nouveau-ne-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[2].path}#service-portrait-nouveau-ne`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
+        img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-nouveau-ne/google/lapm-photo-portrait-duo-femmes-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
+        img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-nouveau-ne/helmet/lapm-photo-portrait-duo-femmes-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[2].path}#prestations-tarifs`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
         serviceType: "", /* Type de service, utilisé dans le JSON-LD Service */
     };
 
