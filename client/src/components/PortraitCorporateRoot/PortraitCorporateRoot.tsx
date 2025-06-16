@@ -15,7 +15,7 @@ function PortraitCorporateRoot() {
     useScrollToHash() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
     
     return (
-        <section className={`PortraitCorporateRoot ${style.ContainerRootRacine}`}>
+        <section id="PortraitCorporateRoot" className={`PortraitCorporateRoot ${style.ContainerRootRacine}`}>
 
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
