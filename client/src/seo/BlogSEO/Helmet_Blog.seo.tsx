@@ -18,7 +18,7 @@ function Helmet_Blog_SEO() {
 
     const SEO: DataSEOHelmetType = {
         title: DataSEO_Blog.title,
-        autor: DataSEORoot.autor,
+        autor: DataSEO_Blog.autor,
         description: DataSEO_Blog.description,
         url: DataSEO_Blog.url,
         img: DataSEO_Blog.img_Helmet,

@@ -18,7 +18,7 @@ function Helmet_Contact_SEO() {
 
     const SEO: DataSEOHelmetType = {
         title: DataSEO_Contact.title,
-        autor: DataSEORoot.autor,
+        autor: DataSEO_Contact.autor,
         description: DataSEO_Contact.description,
         url: DataSEO_Contact.url,
         img: DataSEO_Contact.img_Helmet,

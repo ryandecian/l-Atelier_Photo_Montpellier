@@ -18,7 +18,7 @@ function Helmet_PortraitGrossesse_SEO() {
 
     const SEO: DataSEOHelmetType = {
         title: DataSEO_PortraitGrossesse.title,
-        autor: DataSEORoot.autor,
+        autor: DataSEO_PortraitGrossesse.autor,
         description: DataSEO_PortraitGrossesse.description,
         url: DataSEO_PortraitGrossesse.url,
         img: DataSEO_PortraitGrossesse.img_Helmet,
