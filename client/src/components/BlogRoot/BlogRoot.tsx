@@ -25,7 +25,7 @@ function BlogRoot() {
   );
 
   return (
-    <section className={css.container}>
+    <section className={`BlogRoot ${css.container}`}>
       <input
         type="text"
         placeholder="Rechercher une prestation..."
