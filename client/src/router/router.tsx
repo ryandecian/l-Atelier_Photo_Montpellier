@@ -7,7 +7,7 @@ import ComptePage from "../pages/ComptePage/ComptePage";
 import UserSystemePage from "../pages/UserSystemePage/UserSystemePage";
 
 /* Page Frontend public */
-import BlogPage from "../pages/BlogPage/BlogPage";
+import blogRouter from "./blogRouter";
 import CGVPage from "../pages/CGVPage/CGVPage";
 import ContactPage from "../pages/ContactPage/ContactPage";
 import Error404 from "../pages/Error404Page/Error404Page";
@@ -63,19 +63,7 @@ const ListDataRouter: RouterItemsType[] = [
     /* {ListDataRouter[4].path} */
     {
         path: "/blog",
-        children: [
-            /* Element principale, page racine ! */
-            {
-                path: "",
-                element: <BlogPage />,
-            },
-            /* Page de blog */
-            /* {ListDataRouter[4].children?.[1].path} */
-            {
-                path: "test",
-                element: <h1>Route : Page Test</h1>,
-            },
-        ],
+        children: blogRouter,
     },
     /* {ListDataRouter[5].path} */
     {
