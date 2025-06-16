@@ -54,6 +54,14 @@ const ImagesBlog_20250601_RootControllerData: ImagesControllerDataType[] = [
         src: "/images/image-blog/blog_20250601/lapm-photographe-professionnel-blog-portrait-mariage-reportage-l-atelier-photo-montpellier.jpg",
         alt: "LAPM - photographe professionnel - blog portrait mariage reportage - L'Atelier Photo Montpellier",
     },
+
+
+
+    /* {ImagesBlog_20250601_RootControllerData[8].src} */
+    {
+        src: "/images/image-blog/blog_20250601/lapm-photographe-professionnel-blog-portrait-mariage-les-invite-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - blog portrait mariage les invités - L'Atelier Photo Montpellier",
+    },
 ];
 
 export default ImagesBlog_20250601_RootControllerData;
