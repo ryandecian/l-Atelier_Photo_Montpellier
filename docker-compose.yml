@@ -1,26 +1,46 @@
 version: '3.8'
+
+# Chargement du fichier d'environnement
+env_file: .env.docker.root
+
 services:
 
   client:
     build:
       context: ./client
+      dockerfile: Dockerfile
     container_name: client
     ports: 
-      - "8087:80"  # le port externe 8087 redirige vers le port 80 interne nginx
+      - "${VITE_PORT_FRONT}:80"  # le port externe 4000 redirige vers le port 80 interne nginx
     restart: always # Permet de redémarrer le conteneur automatiquement en cas de plantage
     environment:
-      - DOMAIN=https://l-atelier-photo-montpellier.decian.ddnsfree.com:1250
+      - DOMAIN=${VITE_DOMAIN_FRONT}
       - VITE_NODE_ENV=production
 
   server:
     build:
       context: ./server
+      dockerfile: Dockerfile
     container_name: server
     ports:
-      - "8088:8080"  # le port externe 8088 redirige vers le port 8080 interne de l'application
+      - "${VITE_PORT_SERVER}:${VITE_PORT_SERVER}"  # le port externe 8080 redirige vers le port 8080 interne de l'application
     restart: always # Permet de redémarrer le conteneur automatiquement en cas de plantage
     environment:
       - NODE_ENV=production
-      - DOMAIN=https://lapm-server.decian.ddnsfree.com:1270
+      - DOMAIN=https://api.atelier-photo-montpellier.fr
     depends_on:
       - db
+
+  db:
+    image: mariadb:11
+    container_name: db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: lapm_db
+      MYSQL_USER: lapm_user
+      MYSQL_PASSWORD: lapm_password
+    volumes:
+      - db_data:/var/lib/mysql
+    ports:
+      - "3306:3306"  # facultatif si accès externe voulu (sinon à enlever pour la sécurité)
