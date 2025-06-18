@@ -1,8 +1,5 @@
 version: '3.8'
 
-# Chargement du fichier d'environnement
-env_file: .env.docker.root
-
 services:
   nginx:
     image: nginx:latest
@@ -20,6 +17,7 @@ services:
       - server
 
   db:
+    env_file: .env.docker.root
     image: mariadb:11
     container_name: db
     restart: always
@@ -35,6 +33,7 @@ services:
 
 
   client:
+    env_file: .env.docker.root
     build:
       context: ./client
       dockerfile: Dockerfile
@@ -48,6 +47,7 @@ services:
       - VITE_DOMAIN_SERVER=${VITE_DOMAIN_BACK}
 
   server:
+    env_file: .env.docker.root
     build:
       context: ./server
       dockerfile: Dockerfile
