@@ -4,26 +4,56 @@ version: '3.8'
 env_file: .env.docker.root
 
 services:
+  nginx:
+    image: nginx:latest
+    container_name: nginx-reverse
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/conf.d:/etc/nginx/conf.d:ro
+      - ./nginx/certs:/etc/nginx/certs
+      - ./nginx/html:/usr/share/nginx/html
+    depends_on:
+      - client
+      - server
+
+  db:
+    image: mariadb:11
+    container_name: db
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
+      - MYSQL_DATABASE=${DB_NAME}
+      - MYSQL_USER=${DB_USER}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - db_data:/var/lib/mysql
+    expose:
+      - "3306"  # facultatif si accès externe voulu (sinon à enlever pour la sécurité)
+
 
   client:
     build:
       context: ./client
       dockerfile: Dockerfile
     container_name: client
-    ports: 
-      - "${VITE_PORT_FRONT}:80"  # le port externe 4000 redirige vers le port 80 interne nginx
+    expose: 
+      - "80"
     restart: always # Permet de redémarrer le conteneur automatiquement en cas de plantage
     environment:
       - VITE_NODE_ENV=production
-      - DOMAIN=${VITE_DOMAIN_FRONT}
+      - VITE_DOMAIN_CLIENT=${VITE_DOMAIN_FRONT}
+      - VITE_DOMAIN_SERVER=${VITE_DOMAIN_BACK}
 
   server:
     build:
       context: ./server
       dockerfile: Dockerfile
     container_name: server
-    ports:
-      - "${VITE_PORT_SERVER}:8080"  # le port externe 8080 redirige vers le port 8080 interne de l'application
+    expose:
+      - "8080"
     restart: always # Permet de redémarrer le conteneur automatiquement en cas de plantage
     environment:
       - NODE_ENV=production
@@ -38,17 +68,3 @@ services:
       - DB_NAME=${DB_NAME}
     depends_on:
       - db
-
-  db:
-    image: mariadb:11
-    container_name: db
-    restart: always
-    environment:
-      - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
-      - MYSQL_DATABASE=${DB_NAME}
-      - MYSQL_USER=${DB_USER}
-      - MYSQL_PASSWORD=${DB_PASSWORD}
-    volumes:
-      - db_data:/var/lib/mysql
-    ports:
-      - "${DB_PORT}:${DB_PORT}"  # facultatif si accès externe voulu (sinon à enlever pour la sécurité)
