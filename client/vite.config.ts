@@ -38,7 +38,7 @@ export default defineConfig(() => {
         plugins: [react()],
         server: {
             host: true,
-            port: 4000
+            port: 4000,
         },
 
     // // Redéfinit import.meta.env à la main pour bloquer tout chargement implicite, ne charge plus les .env par défauts
