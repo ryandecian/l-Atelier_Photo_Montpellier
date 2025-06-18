@@ -11,47 +11,23 @@ import chalk from 'chalk';
  * Si elle n'est pas définie, on utilise "development" par défaut.
  */
 const VerifENV = (process.env.NODE_ENV || "development") as EnvironnementType;
-const Environnement: EnvironnementType = VerifENV;
-const ENV_Base: string = "base";
-const envPath: string = path.resolve(__dirname, `../../.env.${Environnement}`);
-const envBasePath: string = path.resolve(__dirname, `../../.env.${ENV_Base}`);
+const envDevPath: string = path.resolve(__dirname, `../../.env.${VerifENV}`);
 
-// Vérifie si le fichier .env.base existe
-if (!fs.existsSync(envBasePath)) {
-  console.error(
-    {
+if (VerifENV === "development") {
+  // Vérifie si le fichier .env.base existe
+  if (!fs.existsSync(envDevPath)) {
+    console.error(
+      {
         identity: "dotenv.config.ts",
         type: "fichier de configuration",
         chemin: "/server/src/config/dotenv.config.ts",
-        "❌ Nature de l'erreur": `Fichier .env.base introuvable !`,
-        route: envBasePath,
-    }
+        "❌ Nature de l'erreur": `Fichier .env.development introuvable !`,
+        route: envDevPath,
+      }
     );
-  process.exit(1); // Arrête le serveur si les variables d'environnement ne sont pas disponibles
+    process.exit(1); // Arrête le serveur si les variables d'environnement ne sont pas disponibles
+  }
+  // Charge le fichier .env.development pour les variables d'environnements
+  dotenv.config({ path: envDevPath });
+  console.info(chalk.magenta(`Environnement .env.${VerifENV} chargé !`));
 }
-
-// Vérifie si le fichier .env existe
-if (!fs.existsSync(envPath)) {
-  console.error(
-    {
-        identity: "dotenv.config.ts",
-        type: "fichier de configuration",
-        chemin: "/server/src/config/dotenv.config.ts",
-        "❌ Nature de l'erreur": `Fichier .env.${Environnement} introuvable !`,
-        route: envPath,
-    }
-    );
-  process.exit(1); // Arrête le serveur si les variables d'environnement ne sont pas disponibles
-}
-
-// Charge les variables d'environnement
-
-  // Charge le fichier .env.base pour les variables de base communes a tous les environnements
-  dotenv.config({ path: envBasePath });
-  console.info(chalk.magenta(`Environnement .env.${ENV_Base} chargé !`));
-  
-  // Charge le fichier .env correspondant à l'environnement (dévelopment ou production)
-  dotenv.config({ path: envPath });
-  console.info(chalk.magenta(`Environnement .env.${Environnement} chargé !`));
-
-export {Environnement, envPath};

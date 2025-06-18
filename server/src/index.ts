@@ -5,7 +5,6 @@ import router from "./router/router";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import "./config/dotenv.config";
-import corsOrigins from "./config/CorsOrigins.config";
 import chalk from "chalk";
 import ENV from "./config/ENV.config";
 
@@ -13,7 +12,7 @@ const app = express();
 const port = ENV("process.env.VITE_PORT_SERVER", "Critical");
 
 app.use(cors({
-  origin: corsOrigins(),
+  origin: ENV("process.env.VITE_DOMAIN_FRONT", "Warning"),
   credentials: true,
 }));
 
@@ -60,3 +59,5 @@ app.use( async (req: Request, res: Response) => {
 app.listen(port, async () => {
   console.info(chalk.cyan(`Server lancé sur ${ await ENV("process.env.VITE_DOMAIN_BACK", "Warning")}`));
 });
+
+console.log( "test", ENV("process.env.VITE_DOMAIN_FRONT", "Warning"));
