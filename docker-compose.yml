@@ -21,7 +21,7 @@ services:
     image: mariadb:11
     container_name: db
     restart: always
-    env_file: .env.docker.root
+    env_file: .env
     environment:
       - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
       - MYSQL_DATABASE=${DB_NAME}
@@ -37,7 +37,7 @@ services:
     build:
       context: ./client
       dockerfile: Dockerfile
-    env_file: /home/ubuntu/projets/l-Atelier_Photo_Montpellier/.env.docker.root
+    env_file: .env
     restart: always
     environment:
       - VITE_NODE_ENV=production
@@ -52,7 +52,7 @@ services:
     build:
       context: ./server
       dockerfile: Dockerfile
-    env_file: /home/ubuntu/projets/l-Atelier_Photo_Montpellier/.env.docker.root
+    env_file: .env
     restart: always
     expose:
       - "8080"
