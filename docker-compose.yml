@@ -8,18 +8,20 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
-      - ./nginx/certs:/etc/nginx/certs
-      - ./nginx/html:/usr/share/nginx/html
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro               # Fichier de configuration Nginx personnalisé
+      - ./nginx/certs:/etc/nginx/certs                            # Certificats TLS (Let's Encrypt)
+      - /etc/letsencrypt:/etc/letsencrypt:ro
+      - ./nginx/html:/usr/share/nginx/html                        # Page HTML statique (optionnel, ex: page maintenance)
+      - client-dist:/usr/share/nginx/html/lapm                   # Volume monté contenant les fichiers buildés du frontend
     depends_on:
       - client
       - server
 
   db:
-    env_file: .env.docker.root
     image: mariadb:11
     container_name: db
     restart: always
+    env_file: .env.docker.root
     environment:
       - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
       - MYSQL_DATABASE=${DB_NAME}
@@ -28,36 +30,37 @@ services:
     volumes:
       - db_data:/var/lib/mysql
     expose:
-      - "3306"  # facultatif si accès externe voulu (sinon à enlever pour la sécurité)
-
+      - "3306"  # seulement accessible entre services Docker (sécurité)
 
   client:
-    env_file: .env.docker.root
+    container_name: client
     build:
       context: ./client
       dockerfile: Dockerfile
-    container_name: client
-    restart: always # Permet de redémarrer le conteneur automatiquement en cas de plantage
+    env_file: /home/ubuntu/projets/l-Atelier_Photo_Montpellier/.env.docker.root
+    restart: always
     environment:
       - VITE_NODE_ENV=production
       - VITE_DOMAIN_CLIENT=${VITE_DOMAIN_FRONT}
       - VITE_DOMAIN_SERVER=${VITE_DOMAIN_BACK}
+    volumes:
+      - client-dist:/app/dist  # Rend disponible le build Vite pour Nginx
+    command: [ "sleep", "infinity" ]
 
   server:
-    env_file: .env.docker.root
+    container_name: server
     build:
       context: ./server
       dockerfile: Dockerfile
-    container_name: server
+    env_file: /home/ubuntu/projets/l-Atelier_Photo_Montpellier/.env.docker.root
+    restart: always
     expose:
       - "8080"
-    restart: always # Permet de redémarrer le conteneur automatiquement en cas de plantage
     environment:
       - NODE_ENV=production
       - VITE_DOMAIN_BACK=${VITE_DOMAIN_BACK}
       - VITE_DOMAIN_FRONT=${VITE_DOMAIN_FRONT}
       - VITE_PORT_SERVER=${VITE_PORT_SERVER}
-      # Variable d'environnement pour la connexion à la base de données
       - DB_HOST=${DB_HOST}
       - DB_PORT=${DB_PORT}
       - DB_USER=${DB_USER}
@@ -68,3 +71,4 @@ services:
 
 volumes:
   db_data:
+  client-dist:

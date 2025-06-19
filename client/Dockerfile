@@ -19,6 +19,12 @@ RUN npm run build
 # Étape 2 : Image minimale contenant juste les fichiers buildés
 FROM alpine
 
+# Crée un dossier de travail
 WORKDIR /app
 
+# Copie uniquement le dossier dist généré depuis l’étape précédente
 COPY --from=build /app/dist ./dist
+
+# Ce conteneur ne sert pas les fichiers directement
+# Il sera utilisé uniquement pour partager le dossier dist avec Nginx via un volume
+CMD ["sh"]
