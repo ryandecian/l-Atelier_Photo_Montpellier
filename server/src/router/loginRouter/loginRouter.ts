@@ -3,7 +3,7 @@ import express from "express";
 const loginRouter = express.Router();
 
 // Import des Middlewares : 
-import RouteLimiterRequestIP from "../../security/middlewareSecurity/RouteLimiterRequestIP";
+import RouteLimiterRequestIP from "../../securitys/middlewareSecurity/RouteLimiterRequestIP";
 import VerifyKeys from "../../middleware/VerifyKeys/VerifyKeys";
 import VerifyEmailTrue from "../../middleware/VerifyEmail/VerifyEmailTrue";
 import VerifyPassword from "../../middleware/Argon/VerifyPassword";

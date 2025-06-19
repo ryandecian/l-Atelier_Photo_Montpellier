@@ -1,7 +1,7 @@
 import express from "express";
 
 // Import des Middlewares : Commun à toutes les routes
-import RouteLimiterRequestIP from '../../security/middlewareSecurity/RouteLimiterRequestIP';
+import RouteLimiterRequestIP from '../../securitys/middlewareSecurity/RouteLimiterRequestIP';
 import VerifyKeys from '../../middleware/VerifyKeys/VerifyKeys';
 import SendMailer_Middleware from "../../services/mailer/SendMailer_Middleware";
 
