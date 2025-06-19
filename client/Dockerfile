@@ -1,5 +1,5 @@
 # Étape 1 : Build avec Node + Alpine
-FROM node:23-alpine AS build
+FROM node:20-alpine AS build
 
 # Crée un dossier de travail
 WORKDIR /app
@@ -17,7 +17,7 @@ COPY . .
 RUN npm run build
 
 # Étape 2 : Serveur de production avec Nginx + Alpine
-FROM nginx:23-alpine
+FROM nginx:1.25-alpine
 
 # Nettoie les fichiers Nginx par défaut
 RUN rm -rf /usr/share/nginx/html/*
