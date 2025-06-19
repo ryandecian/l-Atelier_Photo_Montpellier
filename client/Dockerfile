@@ -1,5 +1,5 @@
 # Étape 1 : Build avec Node + Alpine
-FROM node:23-alpine AS build
+FROM node:20-alpine AS build
 
 # Crée un dossier de travail
 WORKDIR /app
@@ -16,25 +16,15 @@ COPY . .
 # Lance le build Vite (génère le dossier dist/)
 RUN npm run build
 
-# Étape 2 : Serveur de production avec Nginx + Alpine
-FROM nginx:23-alpine
+# Étape 2 : Image minimale contenant juste les fichiers buildés
+FROM alpine
 
-# Nettoie les fichiers Nginx par défaut
-RUN rm -rf /usr/share/nginx/html/*
+# Crée un dossier de travail
+WORKDIR /app
 
-# Copie le build depuis l'étape précédente
-COPY --from=build /app/dist /usr/share/nginx/html
+# Copie uniquement le dossier dist généré depuis l’étape précédente
+COPY --from=build /app/dist ./dist
 
-# Copie la config Nginx personnalisée ici (incluant error_page 404 etc.)
-COPY ./nginx.conf /etc/nginx/conf.d/default.conf
-
-# Ouvre le port 80 (HTTP standard)
-EXPOSE 80
-
-# Commande de démarrage
-CMD ["nginx", "-g", "daemon off;"]
-
-
-# nginx → exécute le serveur
-# -g → permet de passer des options globales
-# 'daemon off;' → dit à nginx de ne pas se lancer en arrière-plan, ce qui est crucial dans Docker !
+# Ce conteneur ne sert pas les fichiers directement
+# Il sera utilisé uniquement pour partager le dossier dist avec Nginx via un volume
+CMD ["sh"]
