@@ -6,7 +6,7 @@ const resetPasswordConfirmController = express.Router();
 import { ResultSetHeader, RowDataPacket } from 'mysql2';
 
 // Import des Middlewares :
-import RouteLimiterRequestIP from '../securitys/middlewareSecurity/RouteLimiterRequestIP';
+import RouteLimiterRequestIP from '../security/middlewareSecurity/RouteLimiterRequestIP';
 import VerifyKeys from '../middleware/VerifyKeys/VerifyKeys';
 
 // Import des Repositories :
