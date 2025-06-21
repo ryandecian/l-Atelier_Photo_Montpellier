@@ -36,7 +36,7 @@ function HomePCAutorComponentF() {
         htmlI: `Pour en savoir encore un peu plus sur moi rendez vous sur ma page `,
         htmlJ: (
             <span className={style.SpanLink}>
-                <Link to={ListDataRouter[7].path}>
+                <Link to={`${ListDataRouter[7].path}#top`}>
                     QUI SUIS-JE
                 </Link>
             </span>
@@ -52,7 +52,7 @@ function HomePCAutorComponentF() {
         htmlL: "📸 **Laissez-vous guider, repartez avec des images qui vous AIMEZ. ",
         htmlM: (
             <span className={style.SpanLink}>
-                <Link to={ListDataRouter[8].path}>
+                <Link to={`${ListDataRouter[8].path}`}>
                     Découvez mon Portfolio !
                 </Link>
             </span>

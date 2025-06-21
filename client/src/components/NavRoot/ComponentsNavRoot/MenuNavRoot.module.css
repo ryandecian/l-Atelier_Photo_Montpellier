@@ -110,11 +110,26 @@
 
 .MenuUlPC {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
+    align-items: center;
     position: relative;
+    width: calc(100% - 5rem); /* 100% - 32px */
+    margin: 0rem 2rem 0rem 3rem; /* 0px 32px */
+    border: 0;
     padding: 0;
-    width: 90%;
-    background-color: inherit;
+    gap: 1.1rem; /* 17.6px */
+}
+@media (min-width: 830px) {
+    .MenuUlPC {
+        gap: 1.5rem; /* 24px */
+    }
+    
+}
+@media (min-width: 1000px) {
+    .MenuUlPC {
+        gap: 2rem; /* 24px */
+    }
+    
 }
 
 .MenuLiPC {
