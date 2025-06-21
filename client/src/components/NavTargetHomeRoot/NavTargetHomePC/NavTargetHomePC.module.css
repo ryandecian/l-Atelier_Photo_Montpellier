@@ -41,6 +41,12 @@
         margin: 1.5625rem 0rem 0.125rem 2rem; /* 25px 0px 2px 48px */
     }
 }
+@media (min-width: 1000px) {
+    .TitleNavTargetHomePC {
+        width: calc(100% - 3rem);
+        margin: 1.5625rem 0rem 0.125rem 3rem; /* 25px 0px 2px 48px */
+    }
+}
 
 .TitleNavTargetHomePC > a {
     font-size: var(--h1);
