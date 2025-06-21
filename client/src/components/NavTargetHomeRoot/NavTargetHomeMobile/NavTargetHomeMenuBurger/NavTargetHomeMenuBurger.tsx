@@ -59,16 +59,6 @@ function NavTargetHomeMenuBurger() {
                         </span>
                     </button>
                  }
-
-                 {/* <button type="button" 
-                 id="openBtn"
-                 onClick={funcActive}>
-                    <span className="menuBurger">
-                        <span />
-                        <span />
-                        <span />
-                    </span>
-                 </button> */}
         </>
     );
 }
