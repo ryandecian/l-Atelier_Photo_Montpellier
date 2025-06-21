@@ -3,16 +3,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    background-color: var(--backgroundwhite);
     box-shadow: var(--box-shadow);
+    width: 100%;
     margin: 0px;
     padding: 0px;
-    background-color: var(--backgroundwhite);
-}
-@media (max-width: 800px) {
-    .NavPC {
-        display: none;
-    }
 }
 
 /* Container Logo */
@@ -20,55 +15,70 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 20rem; /* 320px */
+}
+@media (min-width: 845px) {
+    .ContainerLogoNavPC {
+        font-size: calc(var(--h1) + 5px);
+        width: 20.625rem; /* 330px */
+    }
+}
+@media (min-width: 1000px) {
+    .ContainerLogoNavPC {
+        font-size: calc(var(--h1) + 5px);
+        width: 23.4375rem; /* 375px */
+    }
 }
 
 .TitleNavPC {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 0px 0px 48px;
+    width: calc(100% - 1.5rem);
+    margin: 1.5625rem 0rem 0.125rem 1.5rem; /* 25px 0px 2px 24px */
 }
-@media (min-width: 800px) and (max-width: 845px) {
+@media (min-width: 845px) {
     .TitleNavPC {
-        margin: 0px 0px 0px 24px;
+        width: calc(100% - 2rem);
+        margin: 1.5625rem 0rem 0.125rem 2rem; /* 25px 0px 2px 48px */
     }
 }
-@media (min-width: 845px) and (max-width: 895px) {
+@media (min-width: 1000px) {
     .TitleNavPC {
-        margin: 0px 0px 0px 32px;
+        width: calc(100% - 3rem);
+        margin: 1.5625rem 0rem 0.125rem 3rem; /* 25px 0px 2px 48px */
     }
 }
 
 .TitleNavPC > a {
     font-size: var(--h1);
-    font-family: AnneSignature;
-    font-weight: normal;
     color: var(--ColorBlack);
+    font-family: AnneSignature;
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
     text-decoration: none;
-    width: 295px;
+    width: 100%;
 }
+
+/* ---------- ---------- ---------- ----------- ----------- */
+
 /* Container Navigation */
 .ContainerNavigationNavPC {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 600px;
+    width: calc(100% - 20rem); /* 100% - 320px */
 }
 @media (max-width: 845px) {
     .ContainerNavigationNavPC {
-        width: calc(100% - 295px - 24px);
+        width: calc(100% - 20.625); /* 100% - 330px */
     }
     
 }
-@media (min-width: 845px) and (max-width: 895px) {
+@media (min-width: 1000px) {
     .ContainerNavigationNavPC {
-        width: 500px;
-    }
-    
-}
-@media (min-width: 895px) and (max-width: 945px) {
-    .ContainerNavigationNavPC {
-        width: 550px;
+        width: calc(100% - 23.4375rem); /* 100% - 375px */
     }
     
 }
