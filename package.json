@@ -8,7 +8,8 @@
     "rename-img": "bash ./npm-run-rename-img.sh ./client/public",
     "commit": "bash ./npm-run-commit.sh",
     "pull-force": "bash ./npm-run-pull-force.sh",
-    "dev": "concurrently \"npm --prefix client run dev\" \"npm --prefix server run dev\""
+    "dev": "concurrently \"npm --prefix client run dev\" \"npm --prefix server run dev\"",
+    "vps": "ssh -i ~/.ssh/id_vps_infomaniak_anne_saunier ubuntu@195.15.215.83"
   },
   "keywords": [],
   "author": "",
