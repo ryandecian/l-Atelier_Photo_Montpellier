@@ -60,28 +60,24 @@
     width: 100%;
 }
 
+/* ---------- ---------- ---------- ----------- ----------- */
+
 /* Container Navigation */
 .ContainerNavigationNavTargetHomePC {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 600px;
+    width: calc(100% - 20rem); /* 100% - 320px */
 }
 @media (max-width: 845px) {
     .ContainerNavigationNavTargetHomePC {
-        width: calc(100% - 295px - 24px);
+        width: calc(100% - 20.625); /* 100% - 330px */
     }
     
 }
-@media (min-width: 845px) and (max-width: 895px) {
+@media (min-width: 1000px) {
     .ContainerNavigationNavTargetHomePC {
-        width: 500px;
-    }
-    
-}
-@media (min-width: 895px) and (max-width: 945px) {
-    .ContainerNavigationNavTargetHomePC {
-        width: 550px;
+        width: calc(100% - 23.4375rem); /* 100% - 375px */
     }
     
 }
