@@ -6,7 +6,7 @@
     flex-direction: column;
     width: 100%;
     /* background-color: var(--ColorPrincipal); */
-    background-image: url("../../../assets/Images/ImageFooter/ImgFooter3.jpg");
+    background-image: url("../../assets/Images/ImageFooter/img-footer.jpg");
     background-size: cover;
     background-position: center center;
     margin: 0px;

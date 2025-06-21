@@ -1,7 +1,7 @@
 import css from "./FooterRoot.module.css";
 import { Link } from "react-router-dom";
-import ListDataRouter from "../../../router/router";
-import externalLinks from "../../../constants/externalLinks";
+import ListDataRouter from "../../router/router";
+import externalLinks from "../../constants/externalLinks";
 
 function FooterRoot() {
 
@@ -106,8 +106,8 @@ function FooterRoot() {
                     </ul>
                     <ul className={css.UlText}>
                         <li className={css.LiTextLink}>
-                            <Link to={ListDataRouter[10].path}>
-                                FAQ
+                            <Link to={ListDataRouter[4].path}>
+                                Blog
                             </Link>
                         </li>
                     </ul>
