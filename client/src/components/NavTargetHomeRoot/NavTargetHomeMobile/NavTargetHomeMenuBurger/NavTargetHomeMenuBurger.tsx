@@ -48,7 +48,7 @@ function NavTargetHomeMenuBurger() {
 
                  </div>
 
-                 {active === false &&
+                {active === false &&
                     <button type="button" 
                         id="openBtn"
                         onClick={funcActive}>
@@ -58,7 +58,7 @@ function NavTargetHomeMenuBurger() {
                             <span />
                         </span>
                     </button>
-                 }
+                }
         </>
     );
 }
