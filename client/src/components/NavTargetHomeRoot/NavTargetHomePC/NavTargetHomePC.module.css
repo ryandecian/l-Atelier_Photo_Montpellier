@@ -19,16 +19,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 25px 0px 0px 48px;
+    margin: 25px 0px 0px 24px;
 }
-@media (min-width: 800px) and (max-width: 845px) {
-    .TitleNavTargetHomePC {
-        margin: 25px 0px 0px 24px;
-    }
-}
-@media (min-width: 845px) and (max-width: 895px) {
+@media (min-width: 800px) {
     .TitleNavTargetHomePC {
         margin: 25px 0px 0px 32px;
+    }
+}
+@media (min-width: 845px) {
+    .TitleNavTargetHomePC {
+        margin: 25px 0px 0px 48px;
     }
 }
 
