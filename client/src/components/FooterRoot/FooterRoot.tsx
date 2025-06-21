@@ -8,7 +8,7 @@ function FooterRoot() {
     const dateNow = new Date().getFullYear();
 
     return (
-        <section className={css.FooterPC}>
+        <section className={css.FooterRoot}>
 
             {/* Container 1 : Title du Footer */}
             <header className={css.TitleFooter}>
