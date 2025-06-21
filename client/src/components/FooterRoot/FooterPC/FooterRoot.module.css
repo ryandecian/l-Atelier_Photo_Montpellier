@@ -1,5 +1,5 @@
 /* Container principal : FooterPC */
-.FooterPC {
+.FooterRoot {
     display: flex;
     justify-content: center;
     align-items: center;
