@@ -135,7 +135,7 @@ function GenerateTableImg(nbImg: number, basePath: string, allFileNames: string[
   }));
 }
 
-const Album_Paysage = GenerateTableImg(10, "/images/image-portfolio/album-paysage/", data_Album_Paysage);
+const Album_Paysage = GenerateTableImg(15, "/images/image-portfolio/album-paysage/", data_Album_Paysage);
 const Album_Rue_Street = GenerateTableImg(5, "/images/image-portfolio/album-rue-street/", data_Album_Street);
 const Album_Urbaine = GenerateTableImg(10, "/images/image-portfolio/album-urbaine/", data_Album_Urbaine);
 const Album_Pro_Perso = GenerateTableImg(20, "/images/image-portfolio/album-pro-perso/", data_Album_Pro_Perso);
