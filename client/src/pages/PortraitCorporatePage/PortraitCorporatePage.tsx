@@ -11,7 +11,7 @@ function PortraitCorporatePage() {
     return (
         <section className={`CorporatePage ${style.Page}`}>
             <Helmet_PortraitCorporate_SEO />
-            <header className={style.Header}>
+            <header id="top" className={style.Header}>
                  <NavRoot />
             </header>
             <main className={style.Main}>
