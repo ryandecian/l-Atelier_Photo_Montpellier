@@ -3,9 +3,12 @@ import NavRoot from "../../components/NavRoot/NavRoot";
 import PortraitFamilleRoot from "../../components/PortraitFamilleRoot/PortraitFamilleRoot";
 import FooterRoot from "../../components/FooterRoot/FooterRoot";
 import Helmet_PortraitFamille_SEO from "../../seo/PortraitFamilleSEO/Helmet_PortraitFamille.seo";
+import useScrollToHash from "../../hook/useScrollToHash";
 
 function PortraitFamillePage() {
-     return (
+    useScrollToHash() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
+
+    return (
         <section className={`PortraitFamille ${style.Page}`}>
             <Helmet_PortraitFamille_SEO />
             <header className={style.Header}>

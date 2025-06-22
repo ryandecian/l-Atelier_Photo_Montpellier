@@ -1,5 +1,4 @@
 import style from "../StyleRootComponent.module.css";
-import useScrollToHash from "../../hook/useScrollToHash";
 
 import GeneratorCardAvisClient from "../GeneratorCardAvisClient/GeneratorCardAvisClient";
 import AvisClientPortraitGrossesseControllerData from "./AvisClientPortraitGrossesseControllerData";
@@ -11,7 +10,6 @@ import PortraitGrossesseRootComponentB from "./ComponentsPortraitGrossesseRoot/P
 import PortraitGrossesseRootComponentC from "./ComponentsPortraitGrossesseRoot/PortraitGrossesseRootComponentC/PortraitGrossesseRootComponentC";
 
 function PortraitGrossesseRoot() {
-    useScrollToHash() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
     
     return (
         <section className={`PortraitGrossesseRoot ${style.ContainerRootRacine}`}>
