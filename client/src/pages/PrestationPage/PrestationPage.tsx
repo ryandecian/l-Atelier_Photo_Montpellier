@@ -8,7 +8,7 @@ function TarifsPage() {
      return (
         <section className={`TarifsPage ${style.Page}`}>
             <Helmet_Prestation_SEO />
-            <header className={style.Header}>
+            <header id="top" className={style.Header}>
                  <NavRoot />
             </header>
             <main className={style.Main}>
