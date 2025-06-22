@@ -9,7 +9,8 @@
     "commit": "bash ./npm-run-commit.sh",
     "pull-force": "bash ./npm-run-pull-force.sh",
     "dev": "concurrently \"npm --prefix client run dev\" \"npm --prefix server run dev\"",
-    "vps": "ssh -i ~/.ssh/id_vps_infomaniak_anne_saunier ubuntu@195.15.215.83"
+    "vps": "ssh -i ~/.ssh/id_vps_infomaniak_anne_saunier ubuntu@195.15.215.83",
+    "vps-client": "scp -r -i ~/.ssh/id_vps_infomaniak_anne_saunier ./client ubuntu@195.15.215.83:~/projets/l-Atelier_Photo_Montpellier/client"
   },
   "keywords": [],
   "author": "",
