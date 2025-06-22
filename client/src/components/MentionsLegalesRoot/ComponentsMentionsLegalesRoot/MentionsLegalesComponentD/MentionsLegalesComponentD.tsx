@@ -18,7 +18,7 @@ function MentionsLegalesComponentD() {
                 </span>
                 , l’utilisateur du site {" "}
                 <span className={style.SpanBold}>
-                    {"https://latelierphotomontpellier.fr"}
+                    {"https://atelier-photo-montpellier.fr"}
                 </span>
                 {" "} dispose d’un droit d’accès, de modification et de suppression des informations collectées. 
                 Pour exercer ce droit, envoyez un message à notre Délégué à la Protection des Données : {" "}
@@ -39,7 +39,7 @@ function MentionsLegalesComponentD() {
                 Pour plus d’informations sur la façon dont nous traitons vos données (type de données, finalité, 
                 destinataire…), lisez notre {" "}
                 <span className={style.SpanBold}>
-                    {"https://latelierphotomontpellier.fr"}
+                    {"https://atelier-photo-montpellier.fr"}
                 </span>
             </p>
         </article>
