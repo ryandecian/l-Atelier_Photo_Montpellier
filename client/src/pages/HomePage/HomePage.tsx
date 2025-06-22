@@ -8,7 +8,7 @@ function HomePage() {
      return (
         <section className={`HomePage ${css.Page}`}>
             <Helmet_Home_SEO />
-            <header className={css.HeaderHomePage}>
+            <header id="top" className={css.HeaderHomePage}>
                  <NavTargetHomeRoot />
             </header>
             <main className={css.Main}>

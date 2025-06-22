@@ -13,7 +13,7 @@ function PortraitNouveauNePage() {
     return (
         <section className={`PortraitNouveauNePage ${style.Page}`}>
             <Helmet_PortraitGrossesse_SEO />
-            <header className={style.Header}>
+            <header id="top" className={style.Header}>
                  <NavRoot />
             </header>
             <main className={style.Main}>

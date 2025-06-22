@@ -11,7 +11,7 @@ function PortfolioPage() {
     return (
         <section className={`Portfolio ${style.Page}`}>
             <Helmet_PortraitDuo_SEO />
-            <header className={style.Header}>
+            <header id="top" className={style.Header}>
                  <NavRoot />
             </header>
             <main className={style.Main}>
