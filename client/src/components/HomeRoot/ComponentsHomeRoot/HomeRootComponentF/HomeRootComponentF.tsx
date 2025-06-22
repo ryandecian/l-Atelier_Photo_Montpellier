@@ -52,7 +52,7 @@ function HomePCAutorComponentF() {
         htmlL: "📸 **Laissez-vous guider, repartez avec des images qui vous AIMEZ. ",
         htmlM: (
             <span className={style.SpanLink}>
-                <Link to={`${ListDataRouter[8].path}`}>
+                <Link to={`${ListDataRouter[8].path}#top`}>
                     Découvez mon Portfolio !
                 </Link>
             </span>
