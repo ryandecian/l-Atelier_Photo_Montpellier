@@ -12,7 +12,6 @@ const data_Album_Paysage = [
     "lapm-photographie-professionnelle-paysage-chateau-roche-posay-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-paysage-flamand-camargue-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-paysage-heure-bleue-meze-l-atelier-photo-montpellier.jpg",
-    "lapm-photographie-professionnelle-paysage-immensité-sable-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-paysage-jetee-cap-breton-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-paysage-lac-salagou-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-paysage-remparts-aigues-mortes-l-atelier-photo-montpellier.jpg",
