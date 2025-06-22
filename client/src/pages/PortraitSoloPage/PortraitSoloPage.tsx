@@ -3,9 +3,12 @@ import NavRoot from "../../components/NavRoot/NavRoot";
 import PortraitSoloRoot from "../../components/PortraitSoloRoot/PortraitSoloRoot";
 import FooterRoot from "../../components/FooterRoot/FooterRoot";
 import Helmet_PortraitSolo_SEO from "../../seo/PortraitSoloSEO/Helmet_PortraitSolo.seo";
+import useScrollToHash from "../../hook/useScrollToHash";
 
 function PortraitSoloPage() {
-     return (
+    useScrollToHash() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
+
+    return (
         <section className={`PortraitSoloPage ${style.Page}`}>
             <Helmet_PortraitSolo_SEO />
             <header className={style.Header}>

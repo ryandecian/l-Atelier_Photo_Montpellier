@@ -6,8 +6,9 @@ import Helmet_QuiSuisJe_SEO from "../../seo/QuiSuisJeSEO/Helmet_QuiSuisJe.seo";
 import useScrollToHash from "../../hook/useScrollToHash";
 
 function QuiSuisJePage() {
-    useScrollToHash();
-     return (
+    useScrollToHash() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
+
+    return (
         <section id="top" className={`QuiSuisJePage ${style.Page}`}>
             <Helmet_QuiSuisJe_SEO />
             <header className={style.Header}>
