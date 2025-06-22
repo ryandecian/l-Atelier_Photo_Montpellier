@@ -7,33 +7,44 @@
     margin: 0px;
     padding: 0px;
 }
-@media (max-width: 800px) {
-    .NavTargetHomePC {
-        display: none;
-    }
-}
 
 /* Container Logo */
 .ContainerLogoNavTargetHomePC {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 20rem; /* 320px */
+}
+@media (min-width: 845px) {
+    .ContainerLogoNavTargetHomePC {
+        font-size: calc(var(--h1) + 5px);
+        width: 20.625rem; /* 330px */
+    }
+}
+@media (min-width: 1000px) {
+    .ContainerLogoNavTargetHomePC {
+        font-size: calc(var(--h1) + 5px);
+        width: 23.4375rem; /* 375px */
+    }
 }
 
 .TitleNavTargetHomePC {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 25px 0px 0px 48px;
+    width: calc(100% - 1.5rem);
+    margin: 1.5625rem 0rem 0.125rem 1.5rem; /* 25px 0px 2px 24px */
 }
-@media (min-width: 800px) and (max-width: 845px) {
+@media (min-width: 845px) {
     .TitleNavTargetHomePC {
-        margin: 25px 0px 0px 24px;
+        width: calc(100% - 2rem);
+        margin: 1.5625rem 0rem 0.125rem 2rem; /* 25px 0px 2px 48px */
     }
 }
-@media (min-width: 845px) and (max-width: 895px) {
+@media (min-width: 1000px) {
     .TitleNavTargetHomePC {
-        margin: 25px 0px 0px 32px;
+        width: calc(100% - 3rem);
+        margin: 1.5625rem 0rem 0.125rem 3rem; /* 25px 0px 2px 48px */
     }
 }
 
@@ -41,41 +52,31 @@
     font-size: var(--h1);
     color: var(--textColorMenu);
     font-family: AnneSignature;
-    /* font-family: "Saira Condensed", sans-serif; */
     font-weight: 300;
     font-style: normal;
     font-display: swap;
     text-decoration: none;
-    width: 295px;
+    width: 100%;
 }
-@media (min-width: 1000px) {
-    .TitleNavTargetHomePC > a {
-        font-size: calc(var(--h1) + 5px);
-        width: 350px;
-    }
-}
+
+/* ---------- ---------- ---------- ----------- ----------- */
+
 /* Container Navigation */
 .ContainerNavigationNavTargetHomePC {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 600px;
+    width: calc(100% - 20rem); /* 100% - 320px */
 }
 @media (max-width: 845px) {
     .ContainerNavigationNavTargetHomePC {
-        width: calc(100% - 295px - 24px);
+        width: calc(100% - 20.625); /* 100% - 330px */
     }
     
 }
-@media (min-width: 845px) and (max-width: 895px) {
+@media (min-width: 1000px) {
     .ContainerNavigationNavTargetHomePC {
-        width: 500px;
-    }
-    
-}
-@media (min-width: 895px) and (max-width: 945px) {
-    .ContainerNavigationNavTargetHomePC {
-        width: 550px;
+        width: calc(100% - 23.4375rem); /* 100% - 375px */
     }
     
 }

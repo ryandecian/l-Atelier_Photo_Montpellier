@@ -80,7 +80,7 @@
     position: fixed;
     top: 0.4rem;
     right: 0.5rem;
-    z-index: 100;
+    z-index: 1;
     background: none;
     border: none;
     outline: none;
@@ -91,7 +91,7 @@
     display: block;
     width: 35px;
     height: 5px;
-    background-color: var(--textColorMenu);
+    background-color: var(--ColorBlack);
     margin: 0.5rem 0rem;
 }
 @media (max-width: 250px) {
