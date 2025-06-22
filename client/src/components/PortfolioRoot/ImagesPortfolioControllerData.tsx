@@ -12,7 +12,6 @@ const data_Album_Paysage = [
     "lapm-photographie-professionnelle-paysage-chateau-roche-posay-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-paysage-flamand-camargue-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-paysage-heure-bleue-meze-l-atelier-photo-montpellier.jpg",
-    "lapm-photographie-professionnelle-paysage-immensité-sable-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-paysage-jetee-cap-breton-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-paysage-lac-salagou-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-paysage-remparts-aigues-mortes-l-atelier-photo-montpellier.jpg",
@@ -20,7 +19,24 @@ const data_Album_Paysage = [
     "lapm-photographie-professionnelle-paysage-jetee-cap-breton-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-paysage-salins-aigues-mortes-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-paysage-sunset-flamands-l-atelier-photo-montpellier.jpg",
-    "lapm-photographie-professionnelle-printemps-nature-coquelicot-l-atelier-photo-montpellier.jpg"
+    "lapm-photographie-professionnelle-printemps-nature-coquelicot-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-profesionnelle-camargue-chevaux-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-paysage-mont-saint-baudille-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-paysage-moselle-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-paysage-neige-arbres-aigoual-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-paysage-neige-mont-aigoual-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-paysage-penichel-atelier-photo-montpellier.jpg",
+    "lapm-photo-professionnelle-paysage-agde-l-atelier-photo-montpellier.jpg",
+    "lapm-photo-professionnelle-paysage-etang-de-thau-l-atelier-photo-montpellier.jpg",
+    "lapm-photo-professionnelle-paysage-lever-de-soleil-l-atelier-photo-montpellier.jpg",
+    "lapm-photo-professionnelle-paysage-montagne-devoluy-l-atelier-photo-montpellier.jpg",
+    "lapm-photo-professionnelle-paysage-neige-arbres-aigoual-l-atelier-photo-montpellier.jpg",
+    "lapm-photo-professionnelle-paysage-neige-mont-aigoual-l-atelier-photo-montpellier.jpg",
+    "lapm-photo-professionnelle-paysage-peniche-moselle-l-atelier-photo-montpellier.jpg",
+    "lapm-photo-professionnelle-paysage-remparts-aigues-mortes-l-atelier-photo-montpellier.jpg",
+    "lapm-photo-professionnelle-paysage-salins-aigues-mortes-l-atelier-photo-montpellier.jpg",
+    "lapm-photo-professionnelle-paysage-vignes-salagou-l-atelier-photo-montpellier.jpg",
+    "lapm-photo-professionnelle-route-moureze-l-atelier-photo-montpellier.jpg",
 ];
 
 const data_Album_Street = [
@@ -119,7 +135,7 @@ function GenerateTableImg(nbImg: number, basePath: string, allFileNames: string[
   }));
 }
 
-const Album_Paysage = GenerateTableImg(10, "/images/image-portfolio/album-paysage/", data_Album_Paysage);
+const Album_Paysage = GenerateTableImg(15, "/images/image-portfolio/album-paysage/", data_Album_Paysage);
 const Album_Rue_Street = GenerateTableImg(5, "/images/image-portfolio/album-rue-street/", data_Album_Street);
 const Album_Urbaine = GenerateTableImg(10, "/images/image-portfolio/album-urbaine/", data_Album_Urbaine);
 const Album_Pro_Perso = GenerateTableImg(20, "/images/image-portfolio/album-pro-perso/", data_Album_Pro_Perso);
