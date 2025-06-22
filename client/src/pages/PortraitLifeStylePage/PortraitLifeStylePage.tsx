@@ -8,7 +8,7 @@ function PortraitLifeStylePage() {
      return (
         <div className={`PortraitLifeStylePage ${style.Page}`}>
             <Helmet_PortraitLifeStyle_SEO />
-            <header className={style.Header}>
+            <header id="top" className={style.Header}>
                  <NavRoot />
             </header>
             <main className={style.Main}>
