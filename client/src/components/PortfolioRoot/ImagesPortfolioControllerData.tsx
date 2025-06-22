@@ -44,7 +44,13 @@ const data_Album_Street = [
     "lapm-photographie-professionnelle-photo-street-rue-peniche-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-photo-street-service-compris-photo-rue-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-photo-street-vendeur-lunettes-l-atelier-photo-montpellier.jpg",
-    "lapm-photographie-professionnelle-restaurant-street-photo-l-atelier-photo-montpellier.jpg"
+    "lapm-photographie-professionnelle-restaurant-street-photo-l-atelier-photo-montpellier.jpg",
+    "lapm-photographe-professionnel-photo-street-boulangerie-l-attente-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-photo-street-aeroport-l-attente-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-photo-street-canal-photo-rue-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-photo-street-dame-agee-photo-rue-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-photo-street-tenue-camouflage-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-table-photo-rue-l-atelier-photo-montpellier.jpg",
 ];
 
 const data_Album_Urbaine = [
@@ -66,7 +72,26 @@ const data_Album_Urbaine = [
     "lapm-photographie-professionnelle-urbain-montpellier-paysage-variation-reflet-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-urbain-montpellier-rues-de-nuit-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-urbain-palce-vendome-paris-l-atelier-photo-montpellier.jpg",
-    "lapm-photographie-professionnelle-urbain-paysage-urbain-nuit-montreal-l-atelier-photo-montpellier.jpg"
+    "lapm-photographie-professionnelle-urbain-paysage-urbain-nuit-montreal-l-atelier-photo-montpellier.jpg",
+    "lapm-photographe-professionnel-grande-librairie-banker-l-atelier-photo-montpellier.jpg",
+    "lapm-photographe-professionnel-hublot-l-atelier-photo-montpellier.jpg",
+    "lapm-photographe-professionnel-urbain-volet-vert-l-atelier-photo-montpellier.jpg",
+    "lapm-photo-pro-architecture-ciel-l-atelier-photo-montpellier.jpg",
+    "lapm-photo-pro-architecture-matt-tage-lisbonne-l-atelier-photo-montpellier.jpg",
+    "lapm-photo-pro-architecture-montpellier-l-atelier-photo-montpellier.jpg",
+    "lapm-photo-pro-architecture-port-mariane-l-atelier-photo-montpellier.jpg",
+    "lapm-photo-professionnel-arceaux-acqueduc-l-atelier-photo-montpellier.jpg",
+    "lapm-photo-professionnel-bougainvilliers-lisbonne-l-atelier-photo-montpellier.jpg",
+    "lapm-photo-professionnel-cycliste-canaux-amsterdam-l-atelier-photo-montpellier.jpg",
+    "lapm-photo-professionnel-facade-jaune-lisbonne-l-atelier-photo-montpellier.jpg",
+    "lapm-photo-professionnel-lampadaires-lisbonne-l-atelier-photo-montpellier.jpg",
+    "lapm-photo-professionnel-paysage-acqueduc-quartier-arceaux-l-atelier-photo-montpellier.jpg",
+    "lapm-photo-professionnel-paysage-urbain-amsterdam-l-atelier-photo-montpellier.jpg",
+    "lapm-photo-professionnel-paysage-urbain-marseille-immeuble-l-atelier-photo-montpellier.jpg",
+    "lapm-photo-professionnel-urbain-arbre-l-atelier-photo-montpellier.jpg",
+    "lapm-photo-professionnel-urbain-architect-musee-l-atelier-photo-montpellier.jpg",
+    "lapm-photo-professionnel-urbain-architecture-l-atelier-photo-montpellier.jpg",
+    "lapm-photo-professionnel-vers-le-sacre-coeur-paris-l-atelier-photo-montpellieres.jpg",
 ];
 
 const data_Album_Pro_Perso = [
@@ -136,8 +161,8 @@ function GenerateTableImg(nbImg: number, basePath: string, allFileNames: string[
 }
 
 const Album_Paysage = GenerateTableImg(15, "/images/image-portfolio/album-paysage/", data_Album_Paysage);
-const Album_Rue_Street = GenerateTableImg(5, "/images/image-portfolio/album-rue-street/", data_Album_Street);
-const Album_Urbaine = GenerateTableImg(10, "/images/image-portfolio/album-urbaine/", data_Album_Urbaine);
+const Album_Rue_Street = GenerateTableImg(10, "/images/image-portfolio/album-rue-street/", data_Album_Street);
+const Album_Urbaine = GenerateTableImg(15, "/images/image-portfolio/album-urbaine/", data_Album_Urbaine);
 const Album_Pro_Perso = GenerateTableImg(20, "/images/image-portfolio/album-pro-perso/", data_Album_Pro_Perso);
 
 const ImagesPortraitPortfolioControllerData: ListeAlbumType = {
