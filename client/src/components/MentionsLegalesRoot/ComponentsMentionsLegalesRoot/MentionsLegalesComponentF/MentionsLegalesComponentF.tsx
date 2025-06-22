@@ -11,7 +11,7 @@ function MentionsLegalesComponentF() {
             <p className={style.TextP4}>
             Tout litige en relation avec l’utilisation du site {" "}
             <span className={style.SpanBold}>
-                    {"https://latelierphotomontpellier.fr"}
+                    {"https://atelier-photo-montpellier.fr"}
                 </span>
             {" "} est soumis au droit français. En dehors des cas où la loi ne le permet pas, il est fait attribution 
             exclusive de juridiction aux tribunaux compétents de {" "}
