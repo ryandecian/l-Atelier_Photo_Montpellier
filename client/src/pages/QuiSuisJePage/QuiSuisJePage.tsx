@@ -9,9 +9,9 @@ function QuiSuisJePage() {
     useScrollToHash() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
 
     return (
-        <section id="top" className={`QuiSuisJePage ${style.Page}`}>
+        <section className={`QuiSuisJePage ${style.Page}`}>
             <Helmet_QuiSuisJe_SEO />
-            <header className={style.Header}>
+            <header id="top" className={style.Header}>
                  <NavRoot />
             </header>
             <main className={style.Main}>

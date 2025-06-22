@@ -11,7 +11,7 @@ function PortraitFamillePage() {
     return (
         <section className={`PortraitFamille ${style.Page}`}>
             <Helmet_PortraitFamille_SEO />
-            <header className={style.Header}>
+            <header id="top" className={style.Header}>
                  <NavRoot />
             </header>
             <main className={style.Main}>
