@@ -1,5 +1,4 @@
 import style from "../StyleRootComponent.module.css";
-import useScrollToHash from "../../hook/useScrollToHash";
 
 import AvisClientPortraitSoloControllerData from "./AvisClientPortraitSoloControllerData";
 import GeneratorCardAvisClient from "../GeneratorCardAvisClient/GeneratorCardAvisClient";
@@ -11,7 +10,6 @@ import TarifCardRoot from "../TarifsCard/TarifsCardRoot";
 import { TarifsPortraitSolo, MailtoLinkPortraitSolo } from "./TarifsPortraitSolo";
 
 function PortraitSoloRoot() {
-    useScrollToHash() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
 
     return (
         <section className={`PortraitSoloRoot ${style.ContainerRootRacine}`}>
