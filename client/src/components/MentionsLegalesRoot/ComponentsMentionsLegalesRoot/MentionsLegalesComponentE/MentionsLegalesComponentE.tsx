@@ -12,16 +12,16 @@ function MentionsLegalesComponentE() {
             <p className={style.TextP4}>
                 Le site {" "}
                 <span className={style.SpanBold}>
-                    {"https://latelierphotomontpellier.fr"}
+                    {"https://atelier-photo-montpellier.fr"}
                 </span>
                 {" "} contient des liens hypertextes vers d’autres sites et dégage toute responsabilité à propos de ces 
                 liens externes ou des liens créés par d’autres sites vers {" "}
                 <span className={style.SpanBold}>
-                    {"https://latelierphotomontpellier.fr"}
+                    {"https://atelier-photo-montpellier.fr"}
                 </span>
                 {" "} La navigation sur le site {" "}
                 <span className={style.SpanBold}>
-                    {"https://latelierphotomontpellier.fr"}
+                    {"https://atelier-photo-montpellier.fr"}
                 </span>
                 {" "} est susceptible de provoquer l’installation de cookie(s) sur l’ordinateur de l’utilisateur.
             </p>
