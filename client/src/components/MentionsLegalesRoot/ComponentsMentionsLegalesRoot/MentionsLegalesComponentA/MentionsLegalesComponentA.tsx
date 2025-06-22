@@ -18,7 +18,7 @@ function MentionsLegalesComponentA() {
                 </span>
                 {" "} pour la confiance dans l’économie numérique, il est précisé aux utilisateurs du site internet {" "} 
                 <span className={style.SpanBold}>
-                    {"https://latelierphotomontpellier.fr"}
+                    {"https://atelier-photo-montpellier.fr"}
                 </span>
                 {" "} l’identité des différents intervenants dans le cadre de sa réalisation et de son suivi:
             </p>
