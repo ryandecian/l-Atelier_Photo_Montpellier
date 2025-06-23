@@ -5,7 +5,10 @@ function generateReviewArraySEO(data : AvisClientControllerDataType[]) {
 
     return data.map((avis) => ({
         "@type": "Review",
-        author: avis.nom,
+        author: {
+            "@type": "Person",
+            "name": avis.nom
+        },
         datePublished: avis.date,
         reviewBody: avis.commentaire,
         reviewRating: {
