@@ -6,7 +6,7 @@ import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
 import AvisClientPortraitMariageControllerData from "../../components/PortraitMariageRoot/AvisClientPortraitMariageControllerData";
 import generateAverageRatingSEO from "../../utils/generateAverageRatingSEO.utils";
-import generateReviewArraySEO from "../../utils/generateReviewArraySEO.utils";
+// import generateReviewArraySEO from "../../utils/generateReviewArraySEO.utils";
 
 
 function JSON_LD_Service_PortraitMariage_Schema_SEO() : string {
@@ -42,8 +42,9 @@ function JSON_LD_Service_PortraitMariage_Schema_SEO() : string {
         // "@type": "ServiceChannel",
         // "serviceUrl": DataSEO_PortraitMariage.url
         // },
-        "aggregateRating": generateAverageRatingSEO(AvisClientPortraitMariageControllerData),
-        "review": generateReviewArraySEO(AvisClientPortraitMariageControllerData)
+        "aggregateRating": generateAverageRatingSEO(AvisClientPortraitMariageControllerData), /* Note moyenne des avis clients */
+        /* ⚠️ La ligne suivante est actuellement refusé par google */
+        // "review": generateReviewArraySEO(AvisClientPortraitMariageControllerData) /* Tableau des avis clients spécifique a google. */
     });
 
     return (
