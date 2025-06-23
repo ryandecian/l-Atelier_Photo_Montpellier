@@ -14,7 +14,7 @@ function PortraitLifeStyleRootComponentA() {
                     Sans renier la technique mais en la rendant invisible je vous propose avec mon œil photographique de 
                     vivre un de ces instants où
                     <span className={style.SpanBold}>
-                        {" nle naturel et la créativité se rejoignent. "}
+                        {" le naturel et la créativité se rejoignent. "}
                     </span> 
                     Comme photographe professionnel spécialisée dans les portraits je ne me limite pas aux 
                     lumières douces et aux instants volés. Je mêle spontanéité et direction artistique, avec une approche 
