@@ -6,7 +6,7 @@ function DataSEO_MentionsLegales(): DataSEOTargetOneType {
         /* Data Helmet */
         title: "Mentions Legales - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
-        description: "Mentions légales de l'Atelier Photo Montpellier : informations sur l’éditeur du site, l’hébergement, les droits d’auteur et les conditions d’utilisation.",
+        description: "Mentions légales de l’Atelier Photo Montpellier. Retrouvez toutes les informations juridiques concernant le site, l’éditeur, l’hébergement et la propriété intellectuelle.",
         url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[1].path}`, /*URL de la page*/
         position: 2, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
         name_Breadcrumb: "Mentions Legales", /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Duo */
