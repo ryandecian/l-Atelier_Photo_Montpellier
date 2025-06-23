@@ -6,7 +6,7 @@ import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
 import AvisClientPortraitNouveauNeControllerData from "../../components/PortraitGrossesseRoot/AvisClientPortraitGrossesseControllerData";
 import generateAverageRatingSEO from "../../utils/generateAverageRatingSEO.utils";
-import generateReviewArraySEO from "../../utils/generateReviewArraySEO.utils";
+// import generateReviewArraySEO from "../../utils/generateReviewArraySEO.utils";
 
 
 function JSON_LD_Service_PortraitNouveauNe_Schema_SEO() : string {
@@ -43,7 +43,8 @@ function JSON_LD_Service_PortraitNouveauNe_Schema_SEO() : string {
         // "serviceUrl": DataSEO_PortraitNouveauNe.url
         // },
         "aggregateRating": generateAverageRatingSEO(AvisClientPortraitNouveauNeControllerData),
-        "review": generateReviewArraySEO(AvisClientPortraitNouveauNeControllerData)
+        /* ⚠️ La ligne suivante est actuellement refusée par google */
+        // "review": generateReviewArraySEO(AvisClientPortraitNouveauNeControllerData) /* Tableau des avis clients spécifique a google. */
     });
 
     return (
