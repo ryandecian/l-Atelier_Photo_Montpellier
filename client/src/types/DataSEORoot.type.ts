@@ -36,6 +36,11 @@ type DataSEORootType = {
         name: string;
         url: string;
     }
+    mainEntity: {
+        "@type": string;
+        name: string;
+        url: string;
+    };
     publisher: {
         "@type": string;
         "name": string;
