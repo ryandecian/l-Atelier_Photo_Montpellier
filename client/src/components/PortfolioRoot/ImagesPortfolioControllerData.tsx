@@ -64,7 +64,6 @@ const data_Album_Urbaine = [
     "lapm-photographie-professionnelle-urbain-grande-librairie-prendre-son-envol-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-urbain-immeuble-escalier-architecture-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-urbain-jardin-tuilerie-face-a-face-l-atelier-photo-montpellier.jpg",
-    "lapm-photographie-professionnelle-urbain-Lisbonne-by-night-gare-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-urbain-lisbonne-street-art-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-urbain-metro-antre-urbain-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-urbain-mobilier-urbain-sanisette-l-atelier-photo-montpellier.jpg",
