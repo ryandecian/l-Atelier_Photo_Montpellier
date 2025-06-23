@@ -31,6 +31,11 @@ type DataSEORootType = {
     email: string;
     url: string;
     img: string;
+    isPartOf: {
+        "@type": string;
+        name: string;
+        url: string;
+    }
     publisher: {
         "@type": string;
         "name": string;
