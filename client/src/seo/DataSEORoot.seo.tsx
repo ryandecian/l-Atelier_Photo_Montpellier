@@ -31,27 +31,38 @@ function DataSEORoot(): DataSEORootType {
             Person: "Person",
             Blog: "Blog",
             BlogPosting: "BlogPosting",
+            WebPage: "WebPage"
         },
-        id_LocalBusiness: `${import.meta.env.URL_CLIENT}#lapm`, /* @id SEO-friendly, correspond id unique de l'entreprise */
+        id_LocalBusiness: `${import.meta.env.VITE_DOMAIN_CLIENT}#lapm`, /* @id SEO-friendly, correspond id unique de l'entreprise */
         description: "L'Atelier Photo Montpellier, dirigé par Anne SAUNIER, propose des prestations photographiques professionnelles à Montpellier et ses environs : grossesse, mariage, portraits corporate, lifestyle...", // Description de l'entreprise
-        "name": "L'Atelier Photo Montpellier", /* Nom de l'entreprise */
-        "telephone": "+33 6 52 67 73 33", /* Numéro de téléphone de l'entreprise (Manuel) */
-        "email": externalLinks.emailAnne, /* Adresse email de l'entreprise (Dynamique) */
-        "url": `${import.meta.env.URL_CLIENT}`, /* URL de la page d'accueil de l'entreprise (Dynamique) */
-        img: `${import.meta.env.URL_CLIENT}/dans-les-yeux-de-sacha.jpg`, // Lien URL public de l'image de l'entreprise (Dynamique) */
+        name: "L'Atelier Photo Montpellier", /* Nom de l'entreprise */
+        telephone: "+33 6 52 67 73 33", /* Numéro de téléphone de l'entreprise (Manuel) */
+        email: externalLinks.emailAnne, /* Adresse email de l'entreprise (Dynamique) */
+        url: `${import.meta.env.VITE_DOMAIN_CLIENT}`, /* URL de la page d'accueil de l'entreprise (Dynamique) */
+        img: `${import.meta.env.VITE_DOMAIN_CLIENT}/dans-les-yeux-de-sacha.jpg`, // Lien URL public de l'image de l'entreprise (Dynamique) */
+        isPartOf: {
+            "@type": "WebSite",
+            "name": "l'Atelier Photo Montpellier",
+            "url": `${import.meta.env.VITE_DOMAIN_CLIENT}` /* URL de la page d'accueil de l'entreprise (Dynamique) */
+        },
+        mainEntity: {
+            "@type": "Organization", 
+            "name": "l'Atelier Photo Montpellier",
+            "url": "https://atelier-photo-montpellier.fr",
+        }, /* Entité principale de l'entreprise */
         publisher: {
             "@type": "Organization",
             "name": "l'Atelier Photo Montpellier",
             "logo": {
                 "@type": "ImageObject",
-                "url": `${import.meta.env.URL_CLIENT}/logo-LAPM-l-atelier-photo-montpellier.png`, // Logo au format carré si possible
+                "url": `${import.meta.env.VITE_DOMAIN_CLIENT}/logo-LAPM-l-atelier-photo-montpellier.png`, // Logo au format carré si possible
                 "width": 200,
                 "height": 200
             },
         },
         logo: {
             "@type": "ImageObject",
-            "url": `${import.meta.env.URL_CLIENT}/logo-LAPM-l-atelier-photo-montpellier.png`, // Logo au format carré si possible
+            "url": `${import.meta.env.VITE_DOMAIN_CLIENT}/logo-LAPM-l-atelier-photo-montpellier.png`, // Logo au format carré si possible
             "width": 200,
             "height": 200
         },
@@ -63,12 +74,12 @@ function DataSEORoot(): DataSEORootType {
             externalLinks.instagram, /* Compte Instagram */
             externalLinks.facebook, /* A modifier car ce n'est pas le bon compte */
         ],
-        termsOfService: `${import.meta.env.URL_CLIENT}/${router[9].path}`, /* Conditions d'utilisation de l'entreprise (Dynamique) */
+        termsOfService: `${import.meta.env.VITE_DOMAIN_CLIENT}/${router[9].path}`, /* Conditions d'utilisation de l'entreprise (Dynamique) */
         "worksFor": {
             /* Indique de la personne est liée à cette activité */
             "@type": "Organization",
             "name": "l'Atelier Photo Montpellier",
-            "url": `${import.meta.env.URL_CLIENT}`
+            "url": `${import.meta.env.VITE_DOMAIN_CLIENT}`
         },
         "alumniOf": [
             /* Établissement d'enseignement supérieur où l'auteur a étudié */
@@ -76,10 +87,6 @@ function DataSEORoot(): DataSEORootType {
                 "@type": "EducationalOrganization",
                 "name": "Studio B612"
             },
-            // {
-            //     "@type": "EducationalOrganization",
-            //     "name": "Studio B612"
-            // },
         ],
         "knowsAbout": [
             /* Compétences générales */

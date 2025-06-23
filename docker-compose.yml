@@ -41,7 +41,7 @@ services:
     restart: always
     environment:
       - VITE_NODE_ENV=production
-      - VITE_DOMAIN_CLIENT=${VITE_DOMAIN_FRONT}
+      - VITE_DOMAIN_CLIENT=${VITE_DOMAIN_CLIENT}
       - VITE_DOMAIN_SERVER=${VITE_DOMAIN_BACK}
     volumes:
       - client-dist:/app/dist  # Rend disponible le build Vite pour Nginx
