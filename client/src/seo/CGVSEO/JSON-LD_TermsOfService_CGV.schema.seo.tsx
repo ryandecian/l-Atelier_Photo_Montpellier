@@ -10,19 +10,25 @@ function JSON_LD_TermsOfService_CGV_Schema_SEO() : string {
 
     const JSON_LD = JSON.stringify({
         "@context": DataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
-        "@type": DataSEORoot["@type"].WebPage, /* (Obligatoire) Type de la donnée */
+        "@type": DataSEORoot["@type"].TermsOfService, /* (Obligatoire) Type de la donnée */
         "@id": DataSEO_CGV.id_Service,
         "name": DataSEO_CGV.name_Service, /* (Obligatoire) Nom de l'entreprise */
         "url": DataSEO_CGV.url,
         "description": DataSEO_CGV.description,
+        "inLanguage": "fr", /* (Obligatoire) Langue de la page */
+        "creativeWorkStatus": "Published",
         "image": DataSEO_CGV.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
-        "termsOfService": DataSEORoot.termsOfService,
         "provider": {
             "@id": DataSEORoot.id_LocalBusiness /* (Obligatoire) Référence à l'ID de l'Entreprise */
         },
         "isPartOf": DataSEORoot.isPartOf,
         "mainEntity": DataSEORoot.mainEntity,
         "publisher": DataSEORoot.publisher,
+        "about": {
+            "@type": "Service",
+            "name": DataSEO_CGV.serviceType,
+            "url": DataSEO_CGV.url
+        },
     });
 
     return (
