@@ -22,6 +22,8 @@ type DataSEORootType = {
         Person: string;
         Blog: string;
         BlogPosting: string;
+        WebPage: string;
+        TermsOfService: string;
     };
     id_LocalBusiness: string;
     description: string;
@@ -30,6 +32,16 @@ type DataSEORootType = {
     email: string;
     url: string;
     img: string;
+    isPartOf: {
+        "@type": string;
+        name: string;
+        url: string;
+    }
+    mainEntity: {
+        "@type": string;
+        name: string;
+        url: string;
+    };
     publisher: {
         "@type": string;
         "name": string;
