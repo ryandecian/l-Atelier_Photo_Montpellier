@@ -38,8 +38,8 @@ function DataSEO_MentionsLegales(): DataSEOTargetOneType {
         },
     
         /* Data Helmet et JSON-LD */
-        img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-corporate/google/lapm-photo-portrait-corporate-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-corporate/helmet/lapm-photo-portrait-corporate-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
+        img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/mentions-legales/google/lapm-photo-professionnel-portrait-lifestyle-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
+        img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/mentions-legales/helmet/lapm-photo-professionnel-portrait-lifestyle-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
         id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[1].path}#mentions-legales`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
         serviceType: "Page d'information légale sur les obligations de l’éditeur et de l’utilisateur du site.",
     };
