@@ -21,6 +21,8 @@ function JSON_LD_WebPage_MentionsLegales_Schema_SEO() : string {
             "@id": DataSEORoot.id_LocalBusiness /* (Obligatoire) Référence à l'ID de l'Entreprise */
         },
         "isPartOf": DataSEORoot.isPartOf,
+        "mainEntity": DataSEORoot.mainEntity,
+        "publisher": DataSEORoot.publisher,
     });
 
     return (

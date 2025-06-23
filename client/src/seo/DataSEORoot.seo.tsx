@@ -87,10 +87,6 @@ function DataSEORoot(): DataSEORootType {
                 "@type": "EducationalOrganization",
                 "name": "Studio B612"
             },
-            // {
-            //     "@type": "EducationalOrganization",
-            //     "name": "Studio B612"
-            // },
         ],
         "knowsAbout": [
             /* Compétences générales */
