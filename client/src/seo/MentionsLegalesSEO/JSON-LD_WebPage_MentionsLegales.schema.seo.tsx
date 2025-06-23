@@ -15,6 +15,7 @@ function JSON_LD_WebPage_MentionsLegales_Schema_SEO() : string {
         "name": DataSEO_MentionLegale.name_Service, /* (Obligatoire) Nom de l'entreprise */
         "url": DataSEO_MentionLegale.url,
         "description": DataSEO_MentionLegale.description,
+        "inLanguage": "fr", /* (Obligatoire) Langue de la page */
         "image": DataSEO_MentionLegale.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
         "termsOfService": DataSEORoot.termsOfService,
         "provider": {

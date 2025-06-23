@@ -15,6 +15,7 @@ function JSON_LD_WebPage_CGV_Schema_SEO() : string {
         "name": DataSEO_CGV.name_Service, /* (Obligatoire) Nom de l'entreprise */
         "url": DataSEO_CGV.url,
         "description": DataSEO_CGV.description,
+        "inLanguage": "fr", /* (Obligatoire) Langue de la page */
         "image": DataSEO_CGV.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
         "termsOfService": DataSEORoot.termsOfService,
         "provider": {
