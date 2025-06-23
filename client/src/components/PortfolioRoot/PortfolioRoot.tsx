@@ -10,7 +10,7 @@ function PortfolioRoot() {
     return (
         <section className={`PortfolioRoot ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
-                <h1 className={style.TitleH1}>Mon portfolio photo - L'Atelier Photo Montpellier</h1>
+                <h1 className={style.TitleH1}>Mon Portfolio photo - L'Atelier Photo Montpellier</h1>
             </header>
 
             {/* Composant A : Introduction */}
