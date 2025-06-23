@@ -31,7 +31,8 @@ function DataSEORoot(): DataSEORootType {
             Person: "Person",
             Blog: "Blog",
             BlogPosting: "BlogPosting",
-            WebPage: "WebPage"
+            WebPage: "WebPage",
+            TermsOfService: "TermsOfService"
         },
         id_LocalBusiness: `${import.meta.env.VITE_DOMAIN_CLIENT}#lapm`, /* @id SEO-friendly, correspond id unique de l'entreprise */
         description: "L'Atelier Photo Montpellier, dirigé par Anne SAUNIER, propose des prestations photographiques professionnelles à Montpellier et ses environs : grossesse, mariage, portraits corporate, lifestyle...", // Description de l'entreprise
