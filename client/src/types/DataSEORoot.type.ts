@@ -23,6 +23,7 @@ type DataSEORootType = {
         Blog: string;
         BlogPosting: string;
         WebPage: string;
+        TermsOfService: string;
     };
     id_LocalBusiness: string;
     description: string;
