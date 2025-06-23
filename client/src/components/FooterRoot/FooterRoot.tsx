@@ -30,21 +30,21 @@ function FooterRoot() {
 
                     <ul className={css.UlText}>
                         <li className={css.LiTextLink}>
-                            <Link to={ListDataRouter[7].path}>
+                            <Link to={`${ListDataRouter[7].path}#top`}>
                                 Qui suis-je ?
                             </Link>
                         </li>
                     </ul>
                     <ul className={css.UlText}>
                         <li className={css.LiTextLink}>
-                            <Link to={ListDataRouter[3].path}>
+                            <Link to={`${ListDataRouter[3].path}#top`}>
                                 Me contacter
                             </Link>
                         </li>
                     </ul>
                     <ul className={css.UlText}>
                         <li className={css.LiTextLink}>
-                            <Link to={ListDataRouter[8].path}>
+                            <Link to={`${ListDataRouter[8].path}#top`}>
                                 Portfolio
                             </Link>
                         </li>
@@ -92,21 +92,21 @@ function FooterRoot() {
 
                     <ul className={css.UlText}>
                         <li className={css.LiTextLink}>
-                            <Link to={ListDataRouter[1].path}>
+                            <Link to={`${ListDataRouter[1].path}#top`}>
                                 Mentions légales
                             </Link>
                         </li>
                     </ul>
                     <ul className={css.UlText}>
                         <li className={css.LiTextLink}>
-                            <Link to={ListDataRouter[9].path}>
+                            <Link to={`${ListDataRouter[9].path}#top`}>
                                 CGV
                             </Link>
                         </li>
                     </ul>
                     <ul className={css.UlText}>
                         <li className={css.LiTextLink}>
-                            <Link to={ListDataRouter[4].path}>
+                            <Link to={`${ListDataRouter[4].path}#top`}>
                                 Blog
                             </Link>
                         </li>
