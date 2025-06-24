@@ -3,7 +3,7 @@ name: Déploiement en Production
 on:
   push:
     branches:
-      - Production
+      - SEO
 
 jobs:
   deploy:
@@ -22,10 +22,24 @@ jobs:
     - name: 🚀 Déployer sur le VPS
       run: |
         ssh -o StrictHostKeyChecking=no ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
+          set -e  # Stoppe à la moindre erreur
+
+          echo "📁 Accès au dossier du projet"
           cd ${{ secrets.PROJECT_PATH }}
-          sudo docker stop $(sudo docker ps -q) && \ sudo docker rm $(sudo docker ps -aq) && \ sudo docker volume rm l-atelier_photo_montpellier_client-dist
-          sleep 20
+
+          echo "🛑 Stop + remove containers"
+          sudo docker stop $(sudo docker ps -q) || true
+          sudo docker rm $(sudo docker ps -aq) || true
+
+          echo "🧹 Suppression du volume client-dist"
+          sudo docker volume rm l-atelier_photo_montpellier_client-dist || true
+
+          echo "🔀 Checkout de la bonne branche"
           git checkout Production
+
+          echo "🚀 Build + redémarrage"
           git pull origin Production
           sudo docker compose up -d --build
+
+          echo "✅ Déploiement terminé"
         EOF
