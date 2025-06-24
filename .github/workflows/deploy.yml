@@ -28,8 +28,8 @@ jobs:
           cd ${{ secrets.PROJECT_PATH }}
 
           echo "🛑 Stop + remove containers"
-          sudo docker stop \$(sudo docker ps -q) || true
-          sudo docker rm \$(sudo docker ps -aq) || true
+          sudo docker stop $(sudo docker ps -q) || true
+          sudo docker rm $(sudo docker ps -aq) || true
 
           echo "🧹 Suppression du volume client-dist"
           sudo docker volume rm l-atelier_photo_montpellier_client-dist || true
