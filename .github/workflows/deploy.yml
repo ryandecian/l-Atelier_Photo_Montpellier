@@ -35,10 +35,10 @@ jobs:
           sudo docker volume rm l-atelier_photo_montpellier_client-dist || true
 
           echo "🔀 Checkout de la bonne branche"
-          git checkout SEO
+          git checkout Production
 
           echo "🚀 Build + redémarrage"
-          git pull origin SEO
+          git pull origin Production
           sudo docker compose up -d --build
 
           echo "✅ Déploiement terminé"
