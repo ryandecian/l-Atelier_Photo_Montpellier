@@ -31,8 +31,6 @@ jobs:
             sudo docker compose down
 
             echo "🔄 Pull depuis la branche Production"
-            git reset --hard HEAD       # annule toutes modifs locales éventuelles
-            git clean -fd               # supprime les fichiers non trackés
             git pull origin Production
 
             echo "🧹 Suppression du volume dist pour un rebuild propre"
