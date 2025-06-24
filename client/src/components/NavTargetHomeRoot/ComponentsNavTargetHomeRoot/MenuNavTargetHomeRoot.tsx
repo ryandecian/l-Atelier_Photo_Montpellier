@@ -72,7 +72,7 @@ function MenuNavTargetHomeRoot(Props: MenuNavTargetHomeRootProps) {
       </li>
 
       <li className={`${moduleMenuLi} ${moduleMenuLiTarget4}`}>
-        <Link to={ListDataRouter[4].path} className={moduleMenuLink}>BLOG</Link>
+        <Link to={ListDataRouter[8].path} className={moduleMenuLink}>PORTFOLIO</Link>
       </li>
 
       {/* <li className={`${moduleMenuLi} ${moduleMenuLiTarget5}`}>

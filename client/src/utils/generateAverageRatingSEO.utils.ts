@@ -11,8 +11,8 @@ function generateAverageRatingSEO(data: AvisClientControllerDataType[]) {
     // Retourne tout l'objet aggregateRating
     return {
         "@type": "AggregateRating",
-        ratingValue: average.toString(),
-        reviewCount: data.length.toString()
+        ratingValue: average.toString(), /* Note moyenne */
+        reviewCount: data.length.toString() /* Nombre total de notes */
       };
 }
 
