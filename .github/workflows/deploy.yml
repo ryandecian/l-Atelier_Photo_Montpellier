@@ -34,16 +34,10 @@ jobs:
             git pull origin Production
 
             echo "🧹 Suppression du volume dist pour un rebuild propre"
-            sudo docker volume rm l-atelier_photo_montpellier_client-dist || true
-
-            echo "🔨 Reconstruction de l'image client sans cache"
-            sudo docker compose build --no-cache client
+            sudo docker volume rm -rf l-atelier_photo_montpellier_client-dist || true
 
             echo "🚀 Redémarrage des services"
-            sudo docker compose up -d
-
-            echo "🔎 Vérification du contenu dist copié dans le volume (via client)"
-            docker run --rm l-atelier_photo_montpellier_client ls -l /app/dist || echo "⚠️ Rien trouvé dans /app/dist"
+            sudo docker compose up -d --build
 
             echo "✅ Déploiement terminé avec succès"
           EOF
