@@ -37,15 +37,15 @@ function FooterRoot() {
                     </ul>
                     <ul className={css.UlText}>
                         <li className={css.LiTextLink}>
-                            <Link to={`${ListDataRouter[3].path}#top`}>
-                                Me contacter
+                            <Link to={`${ListDataRouter[8].path}#top`}>
+                                Portfolio
                             </Link>
                         </li>
                     </ul>
                     <ul className={css.UlText}>
                         <li className={css.LiTextLink}>
-                            <Link to={`${ListDataRouter[8].path}#top`}>
-                                Portfolio
+                            <Link to={`${ListDataRouter[4].path}#top`}>
+                                Blog
                             </Link>
                         </li>
                     </ul>
@@ -92,6 +92,13 @@ function FooterRoot() {
 
                     <ul className={css.UlText}>
                         <li className={css.LiTextLink}>
+                            <Link to={`${ListDataRouter[3].path}#top`}>
+                                Me contacter
+                            </Link>
+                        </li>
+                    </ul>
+                    <ul className={css.UlText}>
+                        <li className={css.LiTextLink}>
                             <Link to={`${ListDataRouter[1].path}#top`}>
                                 Mentions légales
                             </Link>
@@ -101,13 +108,6 @@ function FooterRoot() {
                         <li className={css.LiTextLink}>
                             <Link to={`${ListDataRouter[9].path}#top`}>
                                 CGV
-                            </Link>
-                        </li>
-                    </ul>
-                    <ul className={css.UlText}>
-                        <li className={css.LiTextLink}>
-                            <Link to={`${ListDataRouter[4].path}#top`}>
-                                Blog
                             </Link>
                         </li>
                     </ul>
