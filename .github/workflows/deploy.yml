@@ -3,7 +3,7 @@ name: Déploiement en Production
 on:
   push:
     branches:
-      - Production
+      - SEO
 
 jobs:
   deploy:
@@ -27,5 +27,6 @@ jobs:
           sleep 20
           git checkout Production
           git pull origin Production
+          sleep 10
           sudo docker compose up -d --build
         EOF
