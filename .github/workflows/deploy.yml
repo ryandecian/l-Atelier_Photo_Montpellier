@@ -25,8 +25,8 @@ jobs:
           cd ${{ secrets.PROJECT_PATH }}
           sudo docker stop $(sudo docker ps -q) && \ sudo docker rm $(sudo docker ps -aq) && \ sudo docker volume rm l-atelier_photo_montpellier_client-dist
           sleep 20
-          git checkout Production
-          git pull origin Production
+          git checkout SEO
+          git pull origin SEO
           sleep 10
           sudo docker compose up -d --build
         EOF
