@@ -11,41 +11,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📥 Checkout du code
-        uses: actions/checkout@v3
+    - name: 📥 Checkout du code
+      uses: actions/checkout@v3
 
-      - name: 🔐 Connexion SSH via clé privée
-        uses: webfactory/ssh-agent@v0.7.0
-        with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+    - name: 🔐 Connexion SSH via clé privée
+      uses: webfactory/ssh-agent@v0.7.0
+      with:
+        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      - name: 🚀 Déployer sur le VPS
-        run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
-            set -e  # Arrêt du script en cas d'erreur à n'importe quelle étape
-
-            echo "📁 Accès au dossier du projet"
-            cd ${{ secrets.PROJECT_PATH }}
-
-            echo "🛑 Arrêt des conteneurs Docker"
-            sudo docker compose down
-
-            echo "🔄 Pull depuis la branche Production"
-            git reset --hard HEAD       # annule toutes modifs locales éventuelles
-            git clean -fd               # supprime les fichiers non trackés
-            git pull origin Production
-
-            echo "🧹 Suppression du volume dist pour un rebuild propre"
-            sudo docker volume rm l-atelier_photo_montpellier_client-dist || true
-
-            echo "🔨 Reconstruction de l'image client sans cache"
-            sudo docker compose build --no-cache client
-
-            echo "🚀 Redémarrage des services"
-            sudo docker compose up -d
-
-            echo "🔎 Vérification du contenu dist copié dans le volume (via client)"
-            docker run --rm l-atelier_photo_montpellier_client ls -l /app/dist || echo "⚠️ Rien trouvé dans /app/dist"
-
-            echo "✅ Déploiement terminé avec succès"
-          EOF
+    - name: 🚀 Déployer sur le VPS
+      run: |
+        ssh -o StrictHostKeyChecking=no ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
+          cd ${{ secrets.PROJECT_PATH }}
+          sudo docker stop $(sudo docker ps -q) && \ sudo docker rm $(sudo docker ps -aq) && \ sudo docker volume rm l-atelier_photo_montpellier_client-dist
+          sleep 20
+          git checkout Production
+          git pull origin Production
+          sudo docker compose up -d --build
+        EOF
