@@ -1,0 +1,30 @@
+name: Déploiement en Production
+
+on:
+  push:
+    branches:
+      - Production
+
+jobs:
+  deploy:
+    name: Déploiement VPS
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 📥 Checkout du code
+      uses: actions/checkout@v3
+
+    - name: 🔐 Connexion SSH via clé privée
+      uses: webfactory/ssh-agent@v0.7.0
+      with:
+        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+    - name: 🚀 Déployer sur le VPS
+      run: |
+        ssh -o StrictHostKeyChecking=no ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
+          cd ${{ secrets.PROJECT_PATH }}
+          sudo docker compose down
+          sudo docker volume rm l-atelier_photo_montpellier_client-dist || true
+          git pull origin Production
+          sudo docker compose up -d --build
+        EOF
