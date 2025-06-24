@@ -24,7 +24,8 @@ jobs:
         ssh -o StrictHostKeyChecking=no ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
           cd ${{ secrets.PROJECT_PATH }}
           sudo docker stop $(sudo docker ps -q) && \ sudo docker rm $(sudo docker ps -aq) && \ sudo docker volume rm l-atelier_photo_montpellier_client-dist
-          sleep 30
+          sleep 20
+          rm -rf client
           git pull origin Production
           sudo docker compose up -d --build
         EOF
