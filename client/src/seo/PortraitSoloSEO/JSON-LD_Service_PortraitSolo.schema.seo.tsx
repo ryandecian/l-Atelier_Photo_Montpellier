@@ -4,11 +4,6 @@ import DataSEORootType from "../../types/DataSEORoot.type";
 import DataSEO_PortraitSolos from "./DataSEO_PortraitSolo.seo";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
-import AvisClientPortraitSoloControllerData from "../../components/PortraitSoloRoot/AvisClientPortraitSoloControllerData";
-import generateAverageRatingSEO from "../../utils/generateAverageRatingSEO.utils";
-// import generateReviewArraySEO from "../../utils/generateReviewArraySEO.utils";
-
-
 function JSON_LD_Service_PortraitSolo_Schema_SEO() : string {
     const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
     const DataSEO_PortraitSolo: DataSEOTargetOneType = DataSEO_PortraitSolos(); /* Récupération des données SEO de la page */
@@ -42,9 +37,6 @@ function JSON_LD_Service_PortraitSolo_Schema_SEO() : string {
         // "@type": "ServiceChannel",
         // "serviceUrl": DataSEO_PortraitSolo.url
         // },
-        "aggregateRating": generateAverageRatingSEO(AvisClientPortraitSoloControllerData),
-        /* ⚠️ La ligne suivante est actuellement refusée par google */
-        // "review": generateReviewArraySEO(AvisClientPortraitSoloControllerData) /* Tableau des avis clients spécifique a google. */
     });
 
     return (
