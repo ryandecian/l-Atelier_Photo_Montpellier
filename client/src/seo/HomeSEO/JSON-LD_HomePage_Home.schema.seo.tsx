@@ -4,11 +4,6 @@ import DataSEORootType from "../../types/DataSEORoot.type";
 import DataSEO_Homes from "./DataSEO_Home.seo";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
-import AvisClientHomeControllerData from "../../components/HomeRoot/AvisClientHomeControllerData";
-import generateAverageRatingSEO from "../../utils/generateAverageRatingSEO.utils";
-import generateReviewArraySEO from "../../utils/generateReviewArraySEO.utils";
-
-
 function JSON_LD_HomePage_Home_Schema_SEO() : string {
     const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
     const DataSEO_Home: DataSEOTargetOneType = DataSEO_Homes(); /* Récupération des données SEO */
@@ -38,8 +33,6 @@ function JSON_LD_HomePage_Home_Schema_SEO() : string {
             "height": 200
             },
         },
-        "aggregateRating": generateAverageRatingSEO(AvisClientHomeControllerData),
-        "review": generateReviewArraySEO(AvisClientHomeControllerData)
     });
 
     return (
