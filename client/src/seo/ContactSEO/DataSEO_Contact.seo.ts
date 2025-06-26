@@ -40,7 +40,7 @@ function DataSEO_Contact(): DataSEOTargetOneType {
         /* Data Helmet et JSON-LD */
         img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/contact/google/lapm-photo-portrait-solo-professionnel-contact-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
         img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/contact/helmet/lapm-photo-professionnel-contact-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[3].path}#contact`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[3].path}/#contact`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
         serviceType: "",
     };
 

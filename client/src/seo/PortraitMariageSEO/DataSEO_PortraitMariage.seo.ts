@@ -40,7 +40,7 @@ function DataSEO_PortraitMariage(): DataSEOTargetOneType {
         /* Data Helmet et JSON-LD */
         img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-mariage/google/lapm-photo-portrait-mariage-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
         img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-mariage/helmet/lapm-photo-portrait-mariage-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[13].path}#service-portrait-mariage`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[13].path}/#service-portrait-mariage`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
         serviceType: "Photographe professionnelle spécialisée en portraits, événements et cérémonies de mariage à Montpellier",
     };
 

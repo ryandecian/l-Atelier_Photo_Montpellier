@@ -40,7 +40,7 @@ function DataSEO_PortraitNouveauNe(): DataSEOTargetOneType {
         /* Data Helmet et JSON-LD */
         img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-nouveau-ne/google/lapm-photo-portrait-nouveau-ne-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
         img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-nouveau-ne/helmet/lapm-photo-portrait-nouveau-ne-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[17].path}#service-portrait-nouveau-ne`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[17].path}/#service-portrait-nouveau-ne`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
         serviceType: "Photographie grossesse et nouveau-né.",
     };
 

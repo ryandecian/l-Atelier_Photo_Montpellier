@@ -16,7 +16,12 @@ function JSON_LD_Breadcrumb_PortraitSolo_Schema_SEO() : string {
                 "@type": "ListItem",
                 "position": DataSEO_PortraitSolo.position,
                 "name": DataSEO_PortraitSolo.name_Breadcrumb, /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Solo */
-                "item": DataSEO_PortraitSolo.url,
+                "item": {
+                    "@type": DataSEORoot["@type"].WebPage,
+                    "@id": DataSEO_PortraitSolo.id_Service,
+                    "url": DataSEO_PortraitSolo.url,
+                    "name": DataSEO_PortraitSolo.name_Breadcrumb
+                }
             },
         ],
     });

@@ -16,7 +16,12 @@ function JSON_LD_Breadcrumb_Portfolio_Schema_SEO() : string {
                 "@type": "ListItem",
                 "position": DataSEO_Portfolio.position,
                 "name": DataSEO_Portfolio.title,
-                "item": DataSEO_Portfolio.url,
+                "item": {
+                    "@type": DataSEORoot["@type"].WebPage,
+                    "@id": DataSEO_Portfolio.id_Service,
+                    "url": DataSEO_Portfolio.url,
+                    "name": DataSEO_Portfolio.name_Breadcrumb
+                }
             },
         ],
     });

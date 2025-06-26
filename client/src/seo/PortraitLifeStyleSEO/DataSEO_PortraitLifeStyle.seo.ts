@@ -40,7 +40,7 @@ function DataSEO_PortraitLifeStyle(): DataSEOTargetOneType {
         /* Data Helmet et JSON-LD */
         img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-lifestyle/google/lapm-photo-portrait-lifestyle-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
         img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-lifestyle/helmet/lapm-photo-portrait-lifestyle-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[12].path}#service-portrait-lifestyle`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[12].path}/#service-portrait-lifestyle`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
         serviceType: "Photographe professionnelle spécialisée en portraits LifeStyle en tout genre à Montpellier",
     };
 
