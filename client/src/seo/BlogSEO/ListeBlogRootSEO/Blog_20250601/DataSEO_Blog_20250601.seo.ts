@@ -42,7 +42,7 @@ function DataSEO_Blog_20250601(): DataSEOTargetOneType {
         /* Data Helmet et JSON-LD */
         img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/liste-blog-root/blog_20250601/google/lapm-photo-professionnel-portrait-mariage-blog-20250601-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
         img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/liste-blog-root/blog_20250601/helmet/lapm-photo-professionnel-portrait-mariage-blog-20250601-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[4].children?.[1].path}#blog_20250601`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[4].children?.[1].path}/#blog_20250601`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
         serviceType: "Article de blog sur le style reportage en photographie de mariage, par Anne SAUNIER, photographe professionnelle à Montpellier.",
     };
 
