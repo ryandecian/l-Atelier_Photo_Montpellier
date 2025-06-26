@@ -3,7 +3,7 @@ name: Déploiement en Production
 on:
   push:
     branches:
-      - SEO
+      - Production
 
 jobs:
   deploy:

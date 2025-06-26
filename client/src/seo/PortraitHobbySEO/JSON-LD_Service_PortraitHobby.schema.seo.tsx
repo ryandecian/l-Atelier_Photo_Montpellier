@@ -4,11 +4,6 @@ import DataSEORootType from "../../types/DataSEORoot.type";
 import DataSEO_PortraitHobbys from "./DataSEO_PortraitHobby.seo";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
-import AvisClientPortraitHobbyControllerData from "../../components/PortraitHobbyRoot/AvisClientPortraitHobbyControllerData";
-import generateAverageRatingSEO from "../../utils/generateAverageRatingSEO.utils";
-// import generateReviewArraySEO from "../../utils/generateReviewArraySEO.utils";
-
-
 function JSON_LD_Service_PortraitHobby_Schema_SEO() : string {
     const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
     const DataSEO_PortraitHobby: DataSEOTargetOneType = DataSEO_PortraitHobbys(); /* Récupération des données SEO de la page */
@@ -42,9 +37,6 @@ function JSON_LD_Service_PortraitHobby_Schema_SEO() : string {
         // "@type": "ServiceChannel",
         // "serviceUrl": DataSEO_PortraitHobby.url
         // },
-        "aggregateRating": generateAverageRatingSEO(AvisClientPortraitHobbyControllerData),
-        /* ⚠️ La ligne suivante est actuellement refusée par google */
-        // "review": generateReviewArraySEO(AvisClientPortraitHobbyControllerData) /* Tableau des avis clients spécifique a google. */
     });
 
     return (
