@@ -34,6 +34,7 @@ function JSON_LD_LocalBusiness_Root_Schema_SEO(): string {
         "openingHours": DataSEORoot.openingHours, /* Horaires d'ouverture de l'entreprise */
         "sameAs": DataSEORoot.sameAs, /* Liens vers les réseaux sociaux de l'entreprise */
         "aggregateRating": generateAverageRatingSEO(AvisClientGlobalData), /* Note moyenne et nb d'avis clients */
+        // "review": generateReviewArraySEO(AvisClientPortraitSoloControllerData) /* Tableau des avis clients spécifique a google. */
     });
     
     return (
