@@ -16,7 +16,12 @@ function JSON_LD_Breadcrumb_Home_Schema_SEO() : string {
                 "@type": "ListItem",
                 "position": DataSEO_Home.position,
                 "name": DataSEO_Home.name_Breadcrumb, /* Le libellé du lien dans le fil d’Ariane */
-                "item": DataSEO_Home.url,
+                "item": {
+                    "@type": DataSEORoot["@type"].WebPage,
+                    "@id": DataSEO_Home.id_Service,
+                    "url": DataSEO_Home.url,
+                    "name": DataSEO_Home.name_Breadcrumb
+                }
             },
         ],
     });
