@@ -16,7 +16,12 @@ function JSON_LD_Breadcrumb_MentionsLegales_Schema_SEO() : string {
                 "@type": "ListItem",
                 "position": DataSEO_MentionLegale.position,
                 "name": DataSEO_MentionLegale.name_Breadcrumb, /* Le libellé du lien dans le fil d’Ariane */
-                "item": DataSEO_MentionLegale.url,
+                "item": {
+                    "@type": DataSEORoot["@type"].WebPage,
+                    "@id": DataSEO_MentionLegale.id_Service,
+                    "url": DataSEO_MentionLegale.url,
+                    "name": DataSEO_MentionLegale.name_Breadcrumb
+                }
             },
         ],
     });

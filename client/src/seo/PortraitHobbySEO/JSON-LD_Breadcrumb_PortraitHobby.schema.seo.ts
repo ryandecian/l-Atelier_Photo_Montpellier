@@ -16,7 +16,12 @@ function JSON_LD_Breadcrumb_PortraitHobby_Schema_SEO() : string {
                 "@type": "ListItem",
                 "position": DataSEO_PortraitHobby.position,
                 "name": DataSEO_PortraitHobby.name_Breadcrumb, /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Hobbys */
-                "item": DataSEO_PortraitHobby.url,
+                "item": {
+                    "@type": DataSEORoot["@type"].WebPage,
+                    "@id": DataSEO_PortraitHobby.id_Service,
+                    "url": DataSEO_PortraitHobby.url,
+                    "name": DataSEO_PortraitHobby.name_Breadcrumb
+                }
             },
         ],
     });

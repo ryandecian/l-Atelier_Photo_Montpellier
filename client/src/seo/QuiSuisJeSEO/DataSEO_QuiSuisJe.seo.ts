@@ -40,7 +40,7 @@ function DataSEO_QuiSuisJe(): DataSEOTargetOneType {
         /* Data Helmet et JSON-LD */
         img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/qui-suis-je/google/lapm-photo-professionnel-photographe-anne-saunier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
         img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/qui-suis-je/helmet/lapm-photo-professionnel-photographe-anne-saunier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[7].path}#qui-suis-je`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[7].path}/#qui-suis-je`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
         serviceType: "",
     };
 
