@@ -42,7 +42,7 @@ function DataSEO_Blog_20250616(): DataSEOTargetOneType {
         /* Data Helmet et JSON-LD */
         img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/liste-blog-root/blog_20250616/google/lapm-photo-professionnel-portrait-corporate-blog-20250616-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
         img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/liste-blog-root/blog_20250616/helmet/lapm-photo-professionnel-portrait-corporate-blog-20250616-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[4].children?.[0].path}#blog_20250616`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[4].children?.[0].path}/#blog_20250616`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
         serviceType: "Article de blog dédié à la photographie professionnelle pour CV, avec conseils pour optimiser son image et capter l'attention des recruteurs à Montpellier.",
     };
 
