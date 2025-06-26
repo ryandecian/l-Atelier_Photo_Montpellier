@@ -40,7 +40,7 @@ function DataSEO_Prestation(): DataSEOTargetOneType {
         /* Data Helmet et JSON-LD */
         img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-nouveau-ne/google/lapm-photo-portrait-duo-femmes-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
         img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-nouveau-ne/helmet/lapm-photo-portrait-duo-femmes-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[2].path}#prestations-tarifs`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[2].path}/#prestations-tarifs`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
         serviceType: "", /* Type de service, utilisé dans le JSON-LD Service */
     };
 

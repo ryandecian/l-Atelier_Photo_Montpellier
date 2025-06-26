@@ -16,7 +16,12 @@ function JSON_LD_Breadcrumb_PortraitMariage_Schema_SEO() : string {
                 "@type": "ListItem",
                 "position": DataSEO_PortraitMariage.position,
                 "name": DataSEO_PortraitMariage.name_Breadcrumb, /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Mariage */
-                "item": DataSEO_PortraitMariage.url,
+                "item": {
+                    "@type": DataSEORoot["@type"].WebPage,
+                    "@id": DataSEO_PortraitMariage.id_Service,
+                    "url": DataSEO_PortraitMariage.url,
+                    "name": DataSEO_PortraitMariage.name_Breadcrumb
+                }
             },
         ],
     });

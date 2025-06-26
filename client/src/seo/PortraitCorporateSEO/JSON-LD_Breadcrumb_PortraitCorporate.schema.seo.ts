@@ -16,7 +16,12 @@ function JSON_LD_Breadcrumb_PortraitCorporate_Schema_SEO() : string {
                 "@type": "ListItem",
                 "position": DataSEO_PortraitCorporate.position,
                 "name": DataSEO_PortraitCorporate.name_Breadcrumb, /* Le libellé du lien dans le fil d’Ariane */
-                "item": DataSEO_PortraitCorporate.url,
+                "item": {
+                    "@type": DataSEORoot["@type"].WebPage,
+                    "@id": DataSEO_PortraitCorporate.id_Service,
+                    "url": DataSEO_PortraitCorporate.url,
+                    "name": DataSEO_PortraitCorporate.name_Breadcrumb
+                }
             },
         ],
     });
