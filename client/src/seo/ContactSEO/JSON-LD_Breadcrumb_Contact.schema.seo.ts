@@ -16,7 +16,12 @@ function JSON_LD_Breadcrumb_Contact_Schema_SEO() : string {
                 "@type": "ListItem",
                 "position": DataSEO_Contact.position,
                 "name": DataSEO_Contact.name_Breadcrumb, /* Le libellé du lien dans le fil d’Ariane. Exemple : Contact */
-                "item": DataSEO_Contact.url,
+                "item": {
+                    "@type": DataSEORoot["@type"].WebPage,
+                    "@id": DataSEO_Contact.id_Service,
+                    "url": DataSEO_Contact.url,
+                    "name": DataSEO_Contact.name_Breadcrumb
+                }
             },
         ],
     });
