@@ -7,7 +7,7 @@ function DataSEO_Home(): DataSEOTargetOneType {
         title: "Accueil - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
         description: "Photographe professionnelle à Montpellier, Anne SAUNIER vous accueille à l’Atelier Photo Montpellier pour des portraits vrais, élégants et lumineux.",
-        url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[0].path}`, /*URL de la page*/
+        url: `${import.meta.env.VITE_DOMAIN_CLIENT}`, /*URL de la page*/
         position: 1, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
         name_Breadcrumb: "Accueil", /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Duo */
         name_HomePage: "Accueil - l'Atelier Photo Montpellier", /* Nom de la page d'accueil, utilisé dans le JSON-LD HomePage */
