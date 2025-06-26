@@ -1,6 +1,9 @@
 import DataSEORoots from "./DataSEORoot.seo";
 import DataSEORootType from "../types/DataSEORoot.type";
 
+import generateAverageRatingSEO from "../utils/generateAverageRatingSEO.utils";
+import AvisClientGlobalData from "./AvisClientGlobalData";
+
 function JSON_LD_LocalBusiness_Root_Schema_SEO(): string {
     const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
 
@@ -30,6 +33,7 @@ function JSON_LD_LocalBusiness_Root_Schema_SEO(): string {
         "priceRange": "€€",
         "openingHours": DataSEORoot.openingHours, /* Horaires d'ouverture de l'entreprise */
         "sameAs": DataSEORoot.sameAs, /* Liens vers les réseaux sociaux de l'entreprise */
+        "aggregateRating": generateAverageRatingSEO(AvisClientGlobalData), /* Note moyenne et nb d'avis clients */
     });
     
     return (
