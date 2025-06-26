@@ -16,7 +16,12 @@ function JSON_LD_Breadcrumb_Blog_20250601_Schema_SEO() : string {
                 "@type": "ListItem",
                 "position": DataSEO_Blog_20250601.position,
                 "name": DataSEO_Blog_20250601.name_Breadcrumb, /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Duo */
-                "item": DataSEO_Blog_20250601.url,
+                "item": {
+                    "@type": DataSEORoot["@type"].WebPage,
+                    "@id": DataSEO_Blog_20250601.id_Service,
+                    "url": DataSEO_Blog_20250601.url,
+                    "name": DataSEO_Blog_20250601.name_Breadcrumb
+                }
             },
         ],
     });
