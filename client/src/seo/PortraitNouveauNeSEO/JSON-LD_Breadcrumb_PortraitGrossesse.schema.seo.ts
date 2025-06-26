@@ -16,7 +16,12 @@ function JSON_LD_Breadcrumb_PortraitNouveauNe_Schema_SEO() : string {
                 "@type": "ListItem",
                 "position": DataSEO_PortraitNouveauNe.position,
                 "name": DataSEO_PortraitNouveauNe.name_Breadcrumb, /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Nouveau-Né */
-                "item": DataSEO_PortraitNouveauNe.url,
+                "item": {
+                    "@type": DataSEORoot["@type"].WebPage,
+                    "@id": DataSEO_PortraitNouveauNe.id_Service,
+                    "url": DataSEO_PortraitNouveauNe.url,
+                    "name": DataSEO_PortraitNouveauNe.name_Breadcrumb
+                }
             },
         ],
     });

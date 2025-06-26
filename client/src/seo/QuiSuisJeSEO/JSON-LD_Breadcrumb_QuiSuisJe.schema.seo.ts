@@ -16,7 +16,12 @@ function JSON_LD_Breadcrumb_QuiSuisJe_Schema_SEO() : string {
                 "@type": "ListItem",
                 "position": DataSEO_QuiSuisJe.position,
                 "name": DataSEO_QuiSuisJe.name_Breadcrumb, /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Nouveau-Né */
-                "item": DataSEO_QuiSuisJe.url,
+                "item": {
+                    "@type": DataSEORoot["@type"].WebPage,
+                    "@id": DataSEO_QuiSuisJe.id_Service,
+                    "url": DataSEO_QuiSuisJe.url,
+                    "name": DataSEO_QuiSuisJe.name_Breadcrumb
+                }
             },
         ],
     });

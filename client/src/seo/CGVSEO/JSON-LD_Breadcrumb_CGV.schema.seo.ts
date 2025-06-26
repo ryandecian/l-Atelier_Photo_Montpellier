@@ -16,7 +16,12 @@ function JSON_LD_Breadcrumb_CGV_Schema_SEO() : string {
                 "@type": "ListItem",
                 "position": DataSEO_CGV.position,
                 "name": DataSEO_CGV.name_Breadcrumb, /* Le libellé du lien dans le fil d’Ariane */
-                "item": DataSEO_CGV.url,
+                "item": {
+                    "@type": DataSEORoot["@type"].WebPage,
+                    "@id": DataSEO_CGV.id_Service,
+                    "url": DataSEO_CGV.url,
+                    "name": DataSEO_CGV.name_Breadcrumb
+                }
             },
         ],
     });

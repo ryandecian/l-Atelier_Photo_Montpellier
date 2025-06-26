@@ -40,7 +40,7 @@ function DataSEO_PortraitFamille(): DataSEOTargetOneType {
         /* Data Helmet et JSON-LD */
         img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-famille/google/lapm-photo-portrait-famille-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
         img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-famille/helmet/lapm-photo-portrait-famille-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[16].path}#service-portrait-famille`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[16].path}/#service-portrait-famille`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
         serviceType: "Séance photo portrait famille, pour immortaliser les liens intergénérationnels à travers des images naturelles et chaleureuses, en studio ou en extérieur.",
     };
 
