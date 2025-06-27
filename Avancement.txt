@@ -1,14 +1,7 @@
 Ce qu'il manque : 
 
-Attention, le sitemap.xml et le robot.txt sont configuré pour le Nas ! Il faudra les adapté pour la prod
 
 ------------------------------------------------------------------------------
-Edition de la page tarif : 
- - Faire le SEO
-  - Page Tarifs faire le SEO avec JSON-LD et Helmet
-  - Faire le SEO pour la page Blog
-
-Mettre les images Helmet de la page Prestation pour google et helmet
 
 ------------------------------------------------------------------------------
 Note d'information, dans la navigation du site, 
@@ -16,15 +9,7 @@ Les page compte et panier vont être retirer provisoirement le temps de les édi
 
 ------------------------------------------------------------------------------
 
-Il faut refactoriser SEO les pages :
-  - NavTargetHome a faire
-  - Footer
-  - Qui suis-je
-
 ------------------------------------------------------------------------------
-
-Il faut éditer les pages : 
- - Qui suis je
 
 Il faudra créer de nouveau hook pour les fetchs
 
@@ -35,15 +20,17 @@ Page portfolio composant E mise en commentaire le code des albums
 
 
 ------------------------------------------------------------------------------
-------------------------------------------------------------------------------
-------------------------------------------------------------------------------
-------------------------------------------------------------------------------
-------------------------------------------------------------------------------
+Projet de création de script pour générer le sitemap
+/scripts
+  ├── generate-sitemap.ts
+  └── data/
+       ├── sitemapPages.ts               ← liste des pages et priorité
+       └── reuse tes fichiers existants :
+          ├── ImagesPortraitDuoControllerData.ts
+          ├── ImagesPortfolioControllerData.ts
+          └── etc.
 
-Liste des choses a faire Anne SAUNIER
-
- - Completer ses tarifs
- - Faire les avis clients pour chaques pages !!!!
- - Photos : 
-   - Dans le dossier maitre LAPM/site internet/developpement site/famille : il y a 2 photos reprendre. Format !== de 1:1 et poids > à 200 ko
-   - Manque 2 photos dans Hobbie
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
