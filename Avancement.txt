@@ -21,15 +21,16 @@ Page portfolio composant E mise en commentaire le code des albums
 
 ------------------------------------------------------------------------------
 Projet de création de script pour générer le sitemap
-/scripts
-  ├── generate-sitemap.ts
-  └── data/
-       ├── sitemapPages.ts               ← liste des pages et priorité
-       └── reuse tes fichiers existants :
-          ├── ImagesPortraitDuoControllerData.ts
-          ├── ImagesPortfolioControllerData.ts
-          └── etc.
-
+/client/
+  ├── src/
+  ├── public/
+  ├── tsconfig.json
+  ├── package.json
+  └── sitemap/
+       ├── tsconfig.json              ✅ dédié à ce dossier uniquement
+       ├── generate-sitemap.ts        ✅ script principal
+       └── data/
+            └── sitemapPages.ts       ✅ tableau de pages + images
 ------------------------------------------------------------------------------
 ------------------------------------------------------------------------------
 ------------------------------------------------------------------------------
