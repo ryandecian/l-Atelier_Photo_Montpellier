@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "commit": "bash ./npm-run-commit.sh",
-    "pull-force": "bash ./npm-run-pull-force.sh"
+    "pull-force": "bash ./npm-run-pull-force.sh",
+    "build:sitemap": "ts-node --project tsconfig.sitemap.json scripts/generate-sitemap.ts"
   },
   "dependencies": {
     "helmet": "^8.0.0",
@@ -22,7 +23,6 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
-    "@types/node": "^22.15.8",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
     "@vitejs/plugin-react": "^4.3.4",
@@ -30,6 +30,7 @@
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.16",
     "globals": "^15.14.0",
+    "ts-node": "^10.9.2",
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.18.2",
     "vite": "^6.0.5"
