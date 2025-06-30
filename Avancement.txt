@@ -42,7 +42,8 @@ soit bien prise en compte, il faudra que Anne SAUNIER le crée sur le site. Une 
 téléverser son contenue. 
 
 Autre subjection, son site enregistrera les liens de l'album de son nas. Une carte ou ligne
-affichera le mot de passe pour accéder a son contenue. 
+affichera le mot de passe pour accéder a son contenue. Dans ce cas précis, il n'y auras pas 
+besoin de serveur Express pour gérer les photos et vidéos. 
 ------------------------------------------------------------------------------
 ------------------------------------------------------------------------------
 ------------------------------------------------------------------------------
