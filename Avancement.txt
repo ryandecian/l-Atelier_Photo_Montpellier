@@ -32,6 +32,17 @@ Projet de création de script pour générer le sitemap
        └── data/
             └── sitemapPages.ts       ✅ tableau de pages + images
 ------------------------------------------------------------------------------
+Idée, 
+
+Déployer server sur le NAS d'Anne SAUNIER pour les photos et vidéos. Le serveur
+sera sous Express. L'objectif de ce serveur est de visualiser les dossiers présent
+dans un dossier cible. Chaque dossier representera un albums, on y mettra du contenue
+comme photos ou vidéos. Le serveur détectera et les afficheras. Pour que l'album (séance)
+soit bien prise en compte, il faudra que Anne SAUNIER le crée sur le site. Une fois fait
+téléverser son contenue. 
+
+Autre subjection, son site enregistrera les liens de l'album de son nas. Une carte ou ligne
+affichera le mot de passe pour accéder a son contenue. 
 ------------------------------------------------------------------------------
 ------------------------------------------------------------------------------
 ------------------------------------------------------------------------------
