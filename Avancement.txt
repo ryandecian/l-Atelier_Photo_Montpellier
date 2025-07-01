@@ -45,6 +45,5 @@ Autre subjection, son site enregistrera les liens de l'album de son nas. Une car
 affichera le mot de passe pour accéder a son contenue. Dans ce cas précis, il n'y auras pas 
 besoin de serveur Express pour gérer les photos et vidéos. 
 ------------------------------------------------------------------------------
-test
 ------------------------------------------------------------------------------
 ------------------------------------------------------------------------------
