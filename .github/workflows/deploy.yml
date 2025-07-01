@@ -3,7 +3,7 @@ name: Déploiement en Production
 on:
   push:
     branches:
-      - Production
+      - Deploy
 
 jobs:
   deploy:
@@ -35,10 +35,10 @@ jobs:
           sudo docker volume rm l-atelier_photo_montpellier_client-dist || true
 
           echo "🔀 Checkout de la bonne branche"
-          git checkout Production
+          git checkout Deploy
 
           echo "🚀 Build + redémarrage"
-          git pull origin Production
+          git pull origin Deploy
           sudo docker compose up -d --build
 
           echo "✅ Déploiement terminé"
