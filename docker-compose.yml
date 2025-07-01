@@ -68,6 +68,8 @@ services:
       - DB_NAME=${DB_NAME}
     depends_on:
       - db
+    volumes:
+      - ./server/uploads:/app/uploads # Dossier pour les fichiers uploadés
 
 volumes:
   db_data:
