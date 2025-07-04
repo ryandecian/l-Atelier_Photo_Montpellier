@@ -10,7 +10,7 @@ function Blog_20250616_Root() {
     useScrollToHash(); // Hook pour gérer le scroll vers les ancres
     
     return (
-        <section id="blog_20250616" className={`Blog_20250616_Root ${style.ContainerRootRacine}`}>
+        <section className={`Blog_20250616_Root ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
                     {`Photo professionnelle pour CV : comment capter l’attention des recruteurs à Montpellier`}
