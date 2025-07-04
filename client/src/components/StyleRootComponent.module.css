@@ -115,6 +115,7 @@
     margin: 0rem 1.5rem; /* 0px 24px 0px 24px */
     border: 0;
     padding-bottom: 1.25rem; /* 0px 0px 20px 0px */
+    line-height: 1.6; /* Hauteur des lignes de texte */
 }
 .TextP1 {
     font-size: var(--h1); /* 32px */
