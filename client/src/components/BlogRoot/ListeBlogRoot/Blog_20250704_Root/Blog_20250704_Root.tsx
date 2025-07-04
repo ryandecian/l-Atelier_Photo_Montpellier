@@ -22,7 +22,33 @@ function Blog_20250704_Root() {
                 vous-même et offrir des souvenirs inoubliables à partager avec votre famille ou sur vos réseaux sociaux.
             </p>
 
-            <h2 className={style.TitleH2}></h2>
+            <h2 className={style.TitleH2}>
+                {`Pourquoi réaliser un portrait lifestyle ?`}
+            </h2>
+
+            <p className={style.TextP4}>
+                Dans un monde où l’image occupe une place centrale, un portrait lifestyle va bien au-delà d’une simple photo : 
+                il raconte une histoire, capture une émotion et révèle votre personnalité dans un cadre naturel qui vous ressemble.
+            </p>
+
+            <p className={style.TextP4}>
+                Un portrait lifestyle, c’est avant tout une expérience. <br />
+                En tant que photographe portraitiste à Montpellier, j’observe chaque jour à quel point ces séances permettent 
+                à mes clients de se découvrir sous un jour nouveau et de se sentir fiers d’eux-mêmes.
+            </p>
+
+            <Container4ImagesPortraitRoot
+                img1={ImagesBlog_20250704_RootControllerData[0].src}
+                MetaNameImg1={ImagesBlog_20250704_RootControllerData[0].alt}
+                img2={ImagesBlog_20250704_RootControllerData[1].src}
+                MetaNameImg2={ImagesBlog_20250704_RootControllerData[1].alt}
+                img3={ImagesBlog_20250704_RootControllerData[2].src}
+                MetaNameImg3={ImagesBlog_20250704_RootControllerData[2].alt}
+                img4={ImagesBlog_20250704_RootControllerData[3].src}
+                MetaNameImg4={ImagesBlog_20250704_RootControllerData[3].alt}
+            />
+
+            g
         </section>
     )
 }
