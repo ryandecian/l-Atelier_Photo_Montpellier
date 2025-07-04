@@ -7,6 +7,8 @@ import Container4ImagesPortraitRoot from "../../../ContainerImageRoot/Container4
 import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ImagesBlog_20250704_RootControllerData from "./ImagesBlog_20250704_RootControllerData";
 
+import CardPortraitLifeStyle from "./CardPortraitLifeStyle";
+
 function Blog_20250704_Root() {
     useScrollToHash(); // Hook pour gérer le scroll vers les ancres
 
@@ -169,6 +171,79 @@ function Blog_20250704_Root() {
                 <br />
             </ul>
 
+            <h2 className={style.TitleH2}>
+                {`Où réaliser un portrait lifestyle à Montpellier ?`}
+            </h2>
+
+            <p className={style.TextP4}>
+                🌿 Les champs de coquelicots au printemps <br />
+                🌳 Les parcs de Montpellier – Nîmes – Béziers ou ailleurs <br />
+                🏖️ Les plages en fin de journée pour une lumière douce et dorée <br />
+                🏙️ Les ruelles pittoresques de Montpellier pour une ambiance urbaine et élégante
+            </p>
+
+            <h2 className={style.TitleH2}>
+                {`Pourquoi faire appel à un photographe portrait pro pour un shooting lifestyle ?`}
+            </h2>
+
+            <p className={style.TextP4}>
+                Un photographe spécialisé saura :
+            </p>
+            
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    Créer un climat de confiance pour des photos naturelles
+                </li>
+                <li className={style.TextLiP4}>
+                    Choisir le lieu, la lumière et le timing parfaits
+                </li>
+                <li className={style.TextLiP4}>
+                    {`Vous accompagner pour vous sentir à l’aise, même si vous pensez « ne pas être photogénique »`}
+                </li>
+                <li className={style.TextLiP4}>
+                    Valoriser votre personnalité et révéler le meilleur de vous-même
+                </li>
+                <br />
+            </ul>
+
+            <p className={style.TextP4}>
+                En tant que photographe portrait lifestyle à Montpellier, j’accompagne régulièrement des familles, des 
+                couples et des personnes qui souhaitent offrir ou s’offrir un souvenir unique, beau et authentique.
+            </p>
+
+            <h2 className={style.TitleH2}>
+                {`Offrez-vous une séance photo qui révèle votre beauté naturelle`}
+            </h2>
+
+            <p className={style.TextP4}>
+                👉 Un portrait lifestyle est plus qu’une simple séance photo : c’est une parenthèse de plaisir, un booster 
+                de confiance et un moyen unique de célébrer qui vous êtes.
+            </p>
+
+            <p className={style.TextP4}>
+                🎯 Si vous êtes à Montpellier ou dans l’Hérault et que vous souhaitez vivre cette expérience : <br />
+                Je vous propose des séances Portrait Lifestyle sur-mesure, adaptées à vos envies et à votre personnalité.
+            </p>
+
+            <p className={style.TextP4}>
+                👉 {` `}
+                <span className={style.SpanLink}>
+                    <Link to={`${ListDataRouter[3].path}`}>
+                        {` Contactez-moi dès aujourd’hui pour réserver votre séance Portrait Lifestyle à Montpellier !`}
+                    </Link>
+                </span>
+            </p>
+
+            <p id="tarif" className={style.TextP4}>
+                👉 {` `}
+                <span className={style.SpanLink}>
+                    <Link to={`${ListDataRouter[4].path}/${ListDataRouter[4].children?.[3].path}#tarif`}>
+                        {` Découvrez mes offres Portrait Lifestyle et Portrait Feel Good.`}
+                    </Link>
+                </span>
+            </p>
+
+            <CardPortraitLifeStyle />
         </section>
     )
 }
