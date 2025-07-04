@@ -12,7 +12,7 @@ function Blog_20250601_Root() {
     useScrollToHash(); // Hook pour gérer le scroll vers les ancres
     
     return (
-        <section id="blog_20250601" className={`Blog_20250601_Root ${style.ContainerRootRacine}`}>
+        <section className={`Blog_20250601_Root ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
                     {`Photographie de Mariage en Style Reportage : L’Art de Capturer l’Authentique`}
