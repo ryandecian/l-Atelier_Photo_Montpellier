@@ -249,5 +249,3 @@ function Blog_20250704_Root() {
 }
 
 export default Blog_20250704_Root;
-
-// Photographie de Portrait LifeStyle : 
