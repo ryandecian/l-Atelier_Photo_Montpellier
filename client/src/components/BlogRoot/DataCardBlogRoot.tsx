@@ -21,6 +21,15 @@ function DataCardBlogRoot() {
             date: "01/06/2025",
             image: "/images/image-blog/cartes/blog_20250601.jpg",
         },
+        {
+            reactKey: 3,
+            path: ListDataRouter[4].children?.[3].path,
+            id: "blog_20250704",
+            title: "Photographie de Portrait LifeStyle",
+            description: "Découvrez une version valorisante de vous-même",
+            date: "04/07/2025",
+            image: "/images/image-blog/cartes/blog_20250704.jpg",
+        },
     ]
     return tab;
 }
