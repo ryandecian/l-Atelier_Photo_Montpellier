@@ -234,6 +234,15 @@ function Blog_20250704_Root() {
                 </span>
             </p>
 
+            <p id="tarif" className={style.TextP4}>
+                👉 {` `}
+                <span className={style.SpanLink}>
+                    <Link to={`${ListDataRouter[4].path}/${ListDataRouter[4].children?.[3].path}#tarif`}>
+                        {` Découvrez mes offres Portrait Lifestyle et Portrait Feel Good.`}
+                    </Link>
+                </span>
+            </p>
+
             <CardPortraitLifeStyle />
         </section>
     )
