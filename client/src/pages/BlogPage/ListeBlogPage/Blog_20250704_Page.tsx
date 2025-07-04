@@ -8,7 +8,7 @@ function Blog_20250704_Page() {
      return (
         <section className={`Blog_20260616_Page ${style.Page}`}>
             <Helmet_Blog_20250704_SEO />
-            <header className={style.Header}>
+            <header id="top" className={style.Header}>
                  <NavRoot />
             </header>
             <main className={style.Main}>
