@@ -13,7 +13,7 @@ function Blog_20250704_Root() {
     useScrollToHash(); // Hook pour gérer le scroll vers les ancres
 
     return (
-        <section id="blog_20250704" className={`Blog_20250704_Root ${style.ContainerRootRacine}`}>
+        <section className={`Blog_20250704_Root ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
                     {`Photographie de Portrait LifeStyle : découvrez une version valorisante de vous-même`}
