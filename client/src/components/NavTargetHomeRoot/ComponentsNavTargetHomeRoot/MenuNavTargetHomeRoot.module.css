@@ -150,7 +150,7 @@
 }
 .MenuLinkPC:hover {
     transform: scale(1.2); /* Augmente légèrement la taille */
-    color: var(--textColorMenuHover); /* Change la couleur en Rose */
+    color: var(--ColorPink); /* Change la couleur en Rose */
 }
 
 .SubMenuPortraitsPC {

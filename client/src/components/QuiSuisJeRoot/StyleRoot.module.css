@@ -1,12 +1,4 @@
-.TextContent {
-  max-width: 100%;
-  margin: 0 1.5rem;
-  font-size: var(--p);
-  line-height: 1.6;
-  position: relative;
-}
-
-.divTest {
+.ContainerImg {
     float: left;
     display: flex;
     justify-content: center;
@@ -14,13 +6,13 @@
     flex-direction: column;
     width: 280px;
     max-width: 40%;
-    margin: 0 1.5rem 1rem 0;
+    margin: 0rem 1.25rem; /* 0px 20px 0px 20px */
 }
 
-.FloatingImage {
+.Img {
     width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .Caption {
@@ -32,12 +24,3 @@
   font-size: var(--p);
 }
 
-@media screen and (max-width: 768px) {
-  .FloatingImage,
-  .Caption {
-    float: none;
-    display: block;
-    margin: 0 auto 1rem auto;
-    text-align: center;
-  }
-}
