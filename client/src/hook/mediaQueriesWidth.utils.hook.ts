@@ -33,5 +33,11 @@ export default useMediaQueriesWidth;
  * 
  * Utilisation : 
  * 
+ * 1) Déclarer la const : 
+ * const viewportWidth: number = useMediaQueriesWidth();
  * 
- */
+ * 2) Utiliser la variable viewportWidth. Le nombre de px est ajustable
+ * {viewportWidth <= 550 && ()}
+ * 
+ */ 
+ 
