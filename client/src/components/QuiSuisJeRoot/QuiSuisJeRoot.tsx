@@ -6,6 +6,9 @@ import useMediaQueriesWidth from "../../hook/mediaQueriesWidth.utils.hook";
 
 
 function QuiSuisJeRoot() {
+    const viewportWidth: number = useMediaQueriesWidth();
+
+    
     return (
         <section className={style.ContainerRootRacine}>
             <header className={style.ContainerTitle}>
