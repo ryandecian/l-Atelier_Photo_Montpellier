@@ -2,6 +2,8 @@ import style from "../StyleRootComponent.module.css";
 import css from "./StyleRoot.module.css";
 import { Link } from "react-router-dom";
 
+import useMediaQueriesWidth from "../../hook/mediaQueriesWidth.utils.hook";
+
 
 function QuiSuisJeRoot() {
     return (
