@@ -18,7 +18,9 @@ function QuiSuisJeRoot() {
             </header>
 
             {/* Version mobile */}
-            {viewportWidth <= 550 && ()}
+            {viewportWidth <= 550 && (
+                <div>Test</div>
+            )}
             {/* Version PC */}
             {viewportWidth > 550 && (
                 <div className={style.ContainerFloat}>
