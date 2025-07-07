@@ -3,7 +3,6 @@ import ListDataRouter from "../../../../router/router";
 import { Link } from "react-router-dom";
 import useScrollToHash from "../../../../hook/useScrollToHash";
 
-import Container4ImagesPortraitRoot from "../../../ContainerImageRoot/Container4ImagesPortraitRoot/Container4ImagesPortraitRoot";
 import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ImagesBlog_20250704_RootControllerData from "./ImagesBlog_20250704_RootControllerData";
 
@@ -78,62 +77,59 @@ function Blog_20250704_Root() {
                     <br />
                 </ul>
             </div>
-            
+
             <br />
 
-            <Container4ImagesRoot
-                img1={ImagesBlog_20250704_RootControllerData[4].src}
-                MetaNameImg1={ImagesBlog_20250704_RootControllerData[4].alt}
-                img2={ImagesBlog_20250704_RootControllerData[5].src}
-                MetaNameImg2={ImagesBlog_20250704_RootControllerData[5].alt}
-                img3={ImagesBlog_20250704_RootControllerData[6].src}
-                MetaNameImg3={ImagesBlog_20250704_RootControllerData[6].alt}
-                img4={ImagesBlog_20250704_RootControllerData[7].src}
-                MetaNameImg4={ImagesBlog_20250704_RootControllerData[7].alt}
-            />
+            <div className={style.ContainerFloat}>
+                <PremiumCardImgSudoRoot
+                    src={ImagesBlog_20250704_RootControllerData[4].src}
+                    alt={ImagesBlog_20250704_RootControllerData[4].alt}
+                    className={style.FloatRightImg}
+                />
 
-            <h2 className={style.TitleH2}>
-                {`Les ingrédients d’un portrait lifestyle réussi`}
-            </h2>
+                <h2 className={style.TitleH2}>
+                    {`Les ingrédients d’un portrait lifestyle réussi`}
+                </h2>
 
-            <p className={style.TextP4}>
-                <span className={style.SpanBold}>
-                    {`1️⃣ Spontanéité`}
-                </span>
-            </p>
-            <p className={style.TextP4}>
-                L’objectif est de capturer des instants vrais, loin des poses figées.
-            </p>
+                <p className={style.TextP4}>
+                    <span className={style.SpanBold}>
+                        {`1️⃣ Spontanéité`}
+                    </span>
+                </p>
+                <p className={style.TextP4}>
+                    L’objectif est de capturer des instants vrais, loin des poses figées.
+                </p>
 
-            <p className={style.TextP4}>
-                <span className={style.SpanBold}>
-                    {`2️⃣ Confort`}
-                </span>
-            </p>
-            <p className={style.TextP4}>
-                Choisir un décor qui vous met à l’aise : un coin de nature, une ruelle colorée, votre lieu préféré... 
-                Le cadre est essentiel pour que vous vous sentiez bien.
-            </p>
+                <p className={style.TextP4}>
+                    <span className={style.SpanBold}>
+                        {`2️⃣ Confort`}
+                    </span>
+                </p>
+                <p className={style.TextP4}>
+                    Choisir un décor qui vous met à l’aise : un coin de nature, une ruelle colorée, votre lieu préféré... 
+                    Le cadre est essentiel pour que vous vous sentiez bien.
+                </p>
 
-            <p className={style.TextP4}>
-                <span className={style.SpanBold}>
-                    {`3️⃣ Émotion`}
-                </span>
-            </p>
-            <p className={style.TextP4}>
-                Un portrait lifestyle réussi, c’est un portrait qui transmet quelque chose. Joie, tendresse, fierté... 
-                Ces émotions rendent la photo unique.
-            </p>
+                <p className={style.TextP4}>
+                    <span className={style.SpanBold}>
+                        {`3️⃣ Émotion`}
+                    </span>
+                </p>
+                <p className={style.TextP4}>
+                    Un portrait lifestyle réussi, c’est un portrait qui transmet quelque chose. Joie, tendresse, fierté... 
+                    Ces émotions rendent la photo unique.
+                </p>
 
-            <p className={style.TextP4}>
-                <span className={style.SpanBold}>
-                    {`4️⃣ Accompagnement bienveillant`}
-                </span>
-            </p>
-            <p className={style.TextP4}>
-                Un photographe professionnel sait vous guider pas à pas pour vous aider à relâcher la pression et à profiter 
-                pleinement de l’expérience.
-            </p>
+                <p className={style.TextP4}>
+                    <span className={style.SpanBold}>
+                        {`4️⃣ Accompagnement bienveillant`}
+                    </span>
+                </p>
+                <p className={style.TextP4}>
+                    Un photographe professionnel sait vous guider pas à pas pour vous aider à relâcher la pression et à profiter 
+                    pleinement de l’expérience.
+                </p>
+            </div>
 
             <Container4ImagesRoot
                 img1={ImagesBlog_20250704_RootControllerData[8].src}
