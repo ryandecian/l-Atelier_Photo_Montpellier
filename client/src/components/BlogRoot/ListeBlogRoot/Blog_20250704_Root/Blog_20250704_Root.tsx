@@ -8,6 +8,7 @@ import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRo
 import ImagesBlog_20250704_RootControllerData from "./ImagesBlog_20250704_RootControllerData";
 
 import CardPortraitLifeStyle from "./CardPortraitLifeStyle";
+import PremiumCardImgSudoRoot from "../../../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
 
 function Blog_20250704_Root() {
     useScrollToHash(); // Hook pour gérer le scroll vers les ancres
@@ -40,46 +41,45 @@ function Blog_20250704_Root() {
                 à mes clients de se découvrir sous un jour nouveau et de se sentir fiers d’eux-mêmes.
             </p>
 
-            <Container4ImagesPortraitRoot
-                img1={ImagesBlog_20250704_RootControllerData[0].src}
-                MetaNameImg1={ImagesBlog_20250704_RootControllerData[0].alt}
-                img2={ImagesBlog_20250704_RootControllerData[1].src}
-                MetaNameImg2={ImagesBlog_20250704_RootControllerData[1].alt}
-                img3={ImagesBlog_20250704_RootControllerData[2].src}
-                MetaNameImg3={ImagesBlog_20250704_RootControllerData[2].alt}
-                img4={ImagesBlog_20250704_RootControllerData[3].src}
-                MetaNameImg4={ImagesBlog_20250704_RootControllerData[3].alt}
-            />
+            <div className={style.ContainerFloat}>
+                <PremiumCardImgSudoRoot
+                    src={ImagesBlog_20250704_RootControllerData[0].src}
+                    alt={ImagesBlog_20250704_RootControllerData[0].alt}
+                    className={style.FloatLeftImg}
+                />
 
-            <h2 className={style.TitleH2}>
-                {`Comment un portrait lifestyle nourrit l’estime de soi`}
-            </h2>
+                <h2 className={style.TitleH2}>
+                    {`Comment un portrait lifestyle nourrit l’estime de soi`}
+                </h2>
 
-            <p className={style.TextP4}>
-                Une fois la glace rompue, la séance se transforme en moment complice et ludique. <br />
-                C’est souvent à ce moment précis que les plus belles photos naissent : <br />
-                {`📸 des sourires sincères, des regards confiants, un naturel retrouvé.`}
-            </p>
+                <p className={style.TextP4}>
+                    Une fois la glace rompue, la séance se transforme en moment complice et ludique. <br />
+                    C’est souvent à ce moment précis que les plus belles photos naissent : <br />
+                    {`📸 des sourires sincères, des regards confiants, un naturel retrouvé.`}
+                </p>
 
-            <p className={style.TextP4}>
-                Un portrait lifestyle bien réalisé permet de : <br />
-            </p>
+                <p className={style.TextP4}>
+                    Un portrait lifestyle bien réalisé permet de : <br />
+                </p>
             
-            <ul className={style.ContainerUl}>
-                <li className={style.TextLiP4}>
-                    Vous voir sous un angle valorisant que vous ne soupçonniez pas
-                </li>
-                <li className={style.TextLiP4}>
-                    Renforcer votre confiance en vous grâce à des images où vous vous trouvez beau/belle
-                </li>
-                <li className={style.TextLiP4}>
-                    Partager des photos authentiques et lumineuses avec vos proches
-                </li>
-                <li className={style.TextLiP4}>
-                    Communiquer une image engageante et positive sur vos réseaux sociaux
-                </li>
-                <br />
-            </ul>
+                <ul className={style.ContainerUl}>
+                    <li className={style.TextLiP4}>
+                        Vous voir sous un angle valorisant que vous ne soupçonniez pas
+                    </li>
+                    <li className={style.TextLiP4}>
+                        Renforcer votre confiance en vous grâce à des images où vous vous trouvez beau/belle
+                    </li>
+                    <li className={style.TextLiP4}>
+                        Partager des photos authentiques et lumineuses avec vos proches
+                    </li>
+                    <li className={style.TextLiP4}>
+                        Communiquer une image engageante et positive sur vos réseaux sociaux
+                    </li>
+                    <br />
+                </ul>
+            </div>
+            
+            <br />
 
             <Container4ImagesRoot
                 img1={ImagesBlog_20250704_RootControllerData[4].src}
