@@ -15,8 +15,7 @@
 
 /* Style des container de texte ou titre */
 .ContainerTitle,
-.ContainerText,
-.ContainerUl {
+.ContainerText {
     display: flex;
     justify-content: center;
     align-items: start;
@@ -27,8 +26,11 @@
     border: 0;
 }
 .ContainerUl {
+    display: block;
     width: calc(100% - 2.5rem); /* 100% - 40px */
     padding: 0 0 0 2.5rem; /* 0px 0px 0px 40px */
+    list-style-position: inside; /* Position des points de la liste */
+    list-style-type: disc; /* Type de point pour les liste. Ici c'est un point rond noir */
 }
 
 /*--------------------------------------------------*/
@@ -169,6 +171,46 @@
 }
 
 /*-------------------------------------*/
+/* Positionnement texte avec Float*/
+.ContainerFloat {
+  width: 100%;
+  font-size: var(--p);
+  position: relative;
+}
+
+/* Positionnement cible unique */
+.FloatLeft {
+    float: left;
+    margin: 0rem 1.25rem; /* 0px 20px 0px 20px */
+}
+.FloatRight {
+    float: right;
+    margin: 0rem 1.25rem; /* 0px 20px 0px 20px */
+}
+
+/* Positionnement et dimension image avec float */
+.FloatLeftImg {
+    float: left;
+    width: calc(100% - 2.5rem); /* 100% - 40px */
+    padding: 0rem 1.25rem; /* 0px 20px 0px 20px */
+    margin: 0rem;
+    @media (min-width: 400px) {
+        width: 340px; /* 280px */
+        max-width: 40%; /* 40% de la largeur du parent */
+    }
+}
+
+.FloatRightImg {
+    float: right;
+    width: 100%;
+    @media (min-width: 400px) {
+        width: 340px; /* 280px */
+        max-width: 40%; /* 40% de la largeur du parent */
+        margin: 0rem 1.25rem; /* 0px 20px 0px 20px */
+    }
+}
+
+/*-------------------------------------*/
 /* Autre style spéciaux */
 
 .TargetText1 {
@@ -189,10 +231,4 @@
     display: flex;
     justify-content: start;
     align-items: center;
-}
-
-.ContainerFloat {
-  max-width: 100%;
-  font-size: var(--p);
-  position: relative;
 }
