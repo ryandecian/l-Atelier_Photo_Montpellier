@@ -44,7 +44,7 @@ function Blog_20250704_Root() {
                 <PremiumCardImgSudoRoot
                     src={ImagesBlog_20250704_RootControllerData[0].src}
                     alt={ImagesBlog_20250704_RootControllerData[0].alt}
-                    className={style.FloatLeftImg}
+                    className={style.FloatLeftImg_Po}
                 />
 
                 <h2 className={style.TitleH2}>
@@ -78,18 +78,18 @@ function Blog_20250704_Root() {
                 </ul>
             </div>
 
-            <br />
+            {/* <br /> */}
+
+            <h2 className={style.TitleH2}>
+                {`Les ingrédients d’un portrait lifestyle réussi`}
+            </h2>
 
             <div className={style.ContainerFloat}>
                 <PremiumCardImgSudoRoot
                     src={ImagesBlog_20250704_RootControllerData[4].src}
                     alt={ImagesBlog_20250704_RootControllerData[4].alt}
-                    className={style.FloatRightImg}
+                    className={style.FloatRightImg_Pa}
                 />
-
-                <h2 className={style.TitleH2}>
-                    {`Les ingrédients d’un portrait lifestyle réussi`}
-                </h2>
 
                 <p className={style.TextP4}>
                     <span className={style.SpanBold}>
