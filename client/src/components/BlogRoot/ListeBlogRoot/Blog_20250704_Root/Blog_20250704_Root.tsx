@@ -3,11 +3,9 @@ import ListDataRouter from "../../../../router/router";
 import { Link } from "react-router-dom";
 import useScrollToHash from "../../../../hook/useScrollToHash";
 
-import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ImagesBlog_20250704_RootControllerData from "./ImagesBlog_20250704_RootControllerData";
-
-import CardPortraitLifeStyle from "./CardPortraitLifeStyle";
 import PremiumCardImgSudoRoot from "../../../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
+import PortraitLifeStyleRootComponentB from "../../../PortraitLifeStyleRoot/ComponentsPortraitLifeStyleRoot/PortraitLifeStyleRootComponentB/PortraitLifeStyleRootComponentB";
 
 function Blog_20250704_Root() {
     useScrollToHash(); // Hook pour gérer le scroll vers les ancres
@@ -40,16 +38,16 @@ function Blog_20250704_Root() {
                 à mes clients de se découvrir sous un jour nouveau et de se sentir fiers d’eux-mêmes.
             </p>
 
+            <h2 className={style.TitleH2}>
+                {`Comment un portrait lifestyle nourrit l’estime de soi`}
+            </h2>
+
             <div className={style.ContainerFloat}>
                 <PremiumCardImgSudoRoot
                     src={ImagesBlog_20250704_RootControllerData[0].src}
                     alt={ImagesBlog_20250704_RootControllerData[0].alt}
                     className={style.FloatLeftImg_Po}
                 />
-
-                <h2 className={style.TitleH2}>
-                    {`Comment un portrait lifestyle nourrit l’estime de soi`}
-                </h2>
 
                 <p className={style.TextP4}>
                     Une fois la glace rompue, la séance se transforme en moment complice et ludique. <br />
@@ -86,8 +84,8 @@ function Blog_20250704_Root() {
 
             <div className={style.ContainerFloat}>
                 <PremiumCardImgSudoRoot
-                    src={ImagesBlog_20250704_RootControllerData[4].src}
-                    alt={ImagesBlog_20250704_RootControllerData[4].alt}
+                    src={ImagesBlog_20250704_RootControllerData[1].src}
+                    alt={ImagesBlog_20250704_RootControllerData[1].alt}
                     className={style.FloatRightImg_Pa}
                 />
 
@@ -131,41 +129,38 @@ function Blog_20250704_Root() {
                 </p>
             </div>
 
-            <Container4ImagesRoot
-                img1={ImagesBlog_20250704_RootControllerData[8].src}
-                MetaNameImg1={ImagesBlog_20250704_RootControllerData[8].alt}
-                img2={ImagesBlog_20250704_RootControllerData[9].src}
-                MetaNameImg2={ImagesBlog_20250704_RootControllerData[9].alt}
-                img3={ImagesBlog_20250704_RootControllerData[10].src}
-                MetaNameImg3={ImagesBlog_20250704_RootControllerData[10].alt}
-                img4={ImagesBlog_20250704_RootControllerData[11].src}
-                MetaNameImg4={ImagesBlog_20250704_RootControllerData[11].alt}
-            />
-
             <h2 className={style.TitleH2}>
                 {`Portrait lifestyle VS photo posée : quelles différences ?`}
             </h2>
+
+            <div className={style.ContainerFloat}>
+                <PremiumCardImgSudoRoot
+                    src={ImagesBlog_20250704_RootControllerData[2].src}
+                    alt={ImagesBlog_20250704_RootControllerData[2].alt}
+                    className={style.FloatLeftImg_Pa}
+                />
             
-            <p className={style.TextP4}>
-                Une photo classique peut être belle, mais elle manque souvent de vie et de naturel. <br />
-                👉 Un portrait lifestyle, c’est :
-            </p>
+                <p className={style.TextP4}>
+                    Une photo classique peut être belle, mais elle manque souvent de vie et de naturel. <br />
+                    👉 Un portrait lifestyle, c’est :
+                </p>
             
-            <ul className={style.ContainerUl}>
-                <li className={style.TextLiP4}>
-                    Un moment partagé qui crée un souvenir
-                </li>
-                <li className={style.TextLiP4}>
-                    Une image qui raconte votre histoire
-                </li>
-                <li className={style.TextLiP4}>
-                    Un résultat où vous êtes vous-même, sublimé sans artifice
-                </li>
-                <li className={style.TextLiP4}>
-                    Des photos intemporelles que vous aurez envie de transmettre à vos enfants et petits-enfants
-                </li>
-                <br />
-            </ul>
+                <ul className={style.ContainerUl}>
+                    <li className={style.TextLiP4}>
+                        Un moment partagé qui crée un souvenir
+                    </li>
+                    <li className={style.TextLiP4}>
+                        Une image qui raconte votre histoire
+                    </li>
+                    <li className={style.TextLiP4}>
+                        Un résultat où vous êtes vous-même, sublimé sans artifice
+                    </li>
+                    <li className={style.TextLiP4}>
+                        Des photos intemporelles que vous aurez envie de transmettre à vos enfants et petits-enfants
+                    </li>
+                    <br />
+                </ul>
+            </div>
 
             <h2 className={style.TitleH2}>
                 {`Où réaliser un portrait lifestyle à Montpellier ?`}
@@ -239,7 +234,7 @@ function Blog_20250704_Root() {
                 </span>
             </p>
 
-            <CardPortraitLifeStyle />
+            <PortraitLifeStyleRootComponentB />
         </section>
     )
 }
