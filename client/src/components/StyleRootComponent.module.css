@@ -189,23 +189,50 @@
 }
 
 /* Positionnement et dimension image avec float */
-.FloatLeftImg {
+/* Po = Portrait */
+.FloatLeftImg_Po {
     float: left;
     width: calc(100% - 2.5rem); /* 100% - 40px */
     padding: 0rem 1.25rem; /* 0px 20px 0px 20px */
     margin: 0rem;
     @media (min-width: 400px) {
-        width: 340px; /* 280px */
+        width: 280px; /* 280px */
         max-width: 40%; /* 40% de la largeur du parent */
+        margin: 0rem; /* 0px 0px 0px 0px */
     }
 }
 
-.FloatRightImg {
+.FloatRightImg_Po {
     float: right;
     width: 100%;
+    margin: 0rem 1.25rem 1.25rem 1.25rem; /* 0px 20px 0px 20px */
     @media (min-width: 400px) {
         width: 340px; /* 280px */
         max-width: 40%; /* 40% de la largeur du parent */
+        margin: 0rem 1.25rem; /* 0px 20px 0px 20px */
+    }
+}
+
+/* Pa = Paysage */
+.FloatLeftImg_Pa {
+    float: left;
+    width: calc(100% - 2.5rem); /* 100% - 40px */
+    padding: 0rem 1.25rem; /* 0px 20px 0px 20px */
+    margin: 0rem;
+    @media (min-width: 400px) {
+        width: 370px; /* 280px */
+        max-width: 50%; /* 40% de la largeur du parent */
+        margin: 0rem; /* 0px 0px 0px 0px */
+    }
+}
+
+.FloatRightImg_Pa {
+    float: right;
+    width: calc(100% - 2.5rem); /* 100% - 40px */
+    margin: 0rem 1.25rem 1.25rem 1.25rem; /* 0px 20px 0px 20px */
+    @media (min-width: 400px) {
+        width: 370px; /* 280px */
+        max-width: 50%; /* 40% de la largeur du parent */
         margin: 0rem 1.25rem; /* 0px 20px 0px 20px */
     }
 }
