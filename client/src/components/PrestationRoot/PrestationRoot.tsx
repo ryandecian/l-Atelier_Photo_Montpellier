@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import css from "./PrestationRoot.module.css";
 import DataCardPrestation from "./DataCardPrestationRoot";
 import CardPrestationType from "../../types/CardPrestation.type";
+import style from "../StyleRootComponent.module.css";
 
 function PrestationRoot() {
   const prestations: CardPrestationType[] = DataCardPrestation();
@@ -15,6 +16,11 @@ function PrestationRoot() {
 
   return (
     <section className={css.container}>
+      <header className={style.ContainerTitle}>
+        <h1 className={style.TitleH1}>
+          {`Tarifs à la carte`}
+        </h1>
+      </header>
       <input
         type="text"
         placeholder="Rechercher une prestation..."
