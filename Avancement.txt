@@ -2,6 +2,14 @@ Ce qu'il manque :
 
 
 ------------------------------------------------------------------------------
+En attente de la validation client puis passage au développement du compte client
+dans le compte client il y a la question des albums et photo.
+Pour les vidéos on devra passer par le nas.
+
+Le problème est que les photos et video pèse lourd et le vps ne peut les supporter.
+Il faudra donc possiblement créer un micro service sur le nas pour la gestion et stockage des images et vidéo
+puis compte admin
+puis statistique
 
 ------------------------------------------------------------------------------
 Note d'information, dans la navigation du site, 

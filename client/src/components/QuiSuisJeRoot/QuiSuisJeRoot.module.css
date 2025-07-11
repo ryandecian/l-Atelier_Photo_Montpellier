@@ -1,46 +1,14 @@
-.Container {
-    display: flex;
-    justify-content: space-around;
-    align-items: start;
-    margin: 0rem 1.5rem 1.25rem 1.5rem; /* 0px 24px 20px 24px */
-    border: 0rem;
-    padding: 0rem;
-    width: calc(100% - 3rem); /* 100% - 48px */
-}
-
-.SubContainer {
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    flex-direction: column;
-    margin: 0rem;
-    border: 0rem;
-    padding: 0rem;
+.Img {
     width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.TextP4 {
-    width: calc(100% - 1rem); /* 100% - 48px */
-    margin: 0rem 0rem 0rem 1rem; /* 0px 0px 0px 24px */
-    border: 0;
-    padding-bottom: 1.25rem; /* 0px 0px 20px 0px */
-    font-size: var(--h4); /* 18px */
-}
-
-.ContainerPortraitAutor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0rem 0rem 0.125rem 0rem; /* 0px 0px 2px 0px */;
-    padding: 0;
-    border: 0;
-
-    flex-direction: column;
-    width: 100%; /* 248px */;
-    max-width: 300px;
-}
-
-.AutorImg {
-    width: 100%;
-    margin: 0rem 1.5rem; /* 0px 24px 0px 24px */;
+.Caption {
+  /* clear: left; */
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+  font-size: var(--p);
 }
