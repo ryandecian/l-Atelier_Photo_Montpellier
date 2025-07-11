@@ -3,15 +3,15 @@ import ListDataRouter from "../../../../router/router";
 import { Link } from "react-router-dom";
 import useScrollToHash from "../../../../hook/useScrollToHash";
 
-import ImagesBlog_20250704_RootControllerData from "./ImagesBlog_20250704_RootControllerData";
+import ImagesBlog_20250710_RootControllerData from "./ImagesBlog_20250710_RootControllerData";
 import PremiumCardImgSudoRoot from "../../../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
 import PortraitLifeStyleRootComponentB from "../../../PortraitLifeStyleRoot/ComponentsPortraitLifeStyleRoot/PortraitLifeStyleRootComponentB/PortraitLifeStyleRootComponentB";
 
-function Blog_20250704_Root() {
+function Blog_20250710_Root() {
     useScrollToHash(); // Hook pour gérer le scroll vers les ancres
 
     return (
-        <section className={`Blog_20250704_Root ${style.ContainerRootRacine}`}>
+        <section className={`Blog_20250710_Root ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
                     {`Photographie de Portrait LifeStyle : découvrez une version valorisante de vous-même`}
@@ -44,8 +44,8 @@ function Blog_20250704_Root() {
 
             <div className={style.ContainerFloat}>
                 <PremiumCardImgSudoRoot
-                    src={ImagesBlog_20250704_RootControllerData[0].src}
-                    alt={ImagesBlog_20250704_RootControllerData[0].alt}
+                    src={ImagesBlog_20250710_RootControllerData[0].src}
+                    alt={ImagesBlog_20250710_RootControllerData[0].alt}
                     className={style.FloatLeftImg_Po}
                 />
 
@@ -84,8 +84,8 @@ function Blog_20250704_Root() {
 
             <div className={style.ContainerFloat}>
                 <PremiumCardImgSudoRoot
-                    src={ImagesBlog_20250704_RootControllerData[1].src}
-                    alt={ImagesBlog_20250704_RootControllerData[1].alt}
+                    src={ImagesBlog_20250710_RootControllerData[1].src}
+                    alt={ImagesBlog_20250710_RootControllerData[1].alt}
                     className={style.FloatRightImg_Pa}
                 />
 
@@ -135,8 +135,8 @@ function Blog_20250704_Root() {
 
             <div className={style.ContainerFloat}>
                 <PremiumCardImgSudoRoot
-                    src={ImagesBlog_20250704_RootControllerData[2].src}
-                    alt={ImagesBlog_20250704_RootControllerData[2].alt}
+                    src={ImagesBlog_20250710_RootControllerData[2].src}
+                    alt={ImagesBlog_20250710_RootControllerData[2].alt}
                     className={style.FloatLeftImg_Pa}
                 />
             
@@ -239,4 +239,4 @@ function Blog_20250704_Root() {
     )
 }
 
-export default Blog_20250704_Root;
+export default Blog_20250710_Root;

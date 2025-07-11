@@ -16,7 +16,6 @@ const data_Album_Paysage = [
     "lapm-photographie-professionnelle-paysage-lac-salagou-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-paysage-remparts-aigues-mortes-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-paysage-immensité-sable-l-atelier-photo-montpellier.jpg",
-    "lapm-photographie-professionnelle-paysage-jetee-cap-breton-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-paysage-salins-aigues-mortes-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-paysage-sunset-flamands-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-printemps-nature-coquelicot-l-atelier-photo-montpellier.jpg",
