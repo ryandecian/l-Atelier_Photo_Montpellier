@@ -1,7 +1,7 @@
 import ListDataRouter from "../../../../router/router";
 import DataSEOTargetOneType from "../../../../types/DataSEOTargetOne.type";
 
-function DataSEO_Blog_20250704(): DataSEOTargetOneType {
+function DataSEO_Blog_20250710(): DataSEOTargetOneType {
     const DataSEO = {
         /* Data Helmet */
         title: "Portrait LifeStyle : révélez votre personnalité en image – Blog - l'Atelier Photo Montpellier",
@@ -40,9 +40,9 @@ function DataSEO_Blog_20250704(): DataSEOTargetOneType {
         },
 
         /* Data Helmet et JSON-LD */
-        img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/liste-blog-root/blog_20250704/google/lapm-photo-professionnel-portrait-lifestyle-blog-20250704-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/liste-blog-root/blog_20250704/helmet/lapm-photo-professionnel-portrait-lifestyle-blog-20250704-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[4].children?.[3].path}/#blog_20250704`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
+        img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/liste-blog-root/blog_20250710/google/lapm-photo-professionnel-portrait-lifestyle-blog-20250710-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
+        img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/liste-blog-root/blog_20250710/helmet/lapm-photo-professionnel-portrait-lifestyle-blog-20250710-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[4].children?.[3].path}/#blog_20250710`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
         serviceType: "Article de blog dédié à la photographie portrait lifestyle, révélant la personnalité de chacun à travers des images naturelles, expressives et valorisantes à Montpellier.",
     };
 
@@ -51,4 +51,4 @@ function DataSEO_Blog_20250704(): DataSEOTargetOneType {
     )
 }
 
-export default DataSEO_Blog_20250704;
+export default DataSEO_Blog_20250710;
