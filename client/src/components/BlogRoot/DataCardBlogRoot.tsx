@@ -27,7 +27,7 @@ function DataCardBlogRoot() {
             id: "top",
             title: "Photographie de Portrait LifeStyle",
             description: "Découvrez une version valorisante de vous-même",
-            date: "04/07/2025",
+            date: "10/07/2025",
             image: "/images/image-blog/cartes/blog_20250710.jpg",
         },
     ]
