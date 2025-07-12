@@ -1,19 +1,19 @@
-import "./NavPC.css";
+import css from "./NavPC.module.css";
 import { Link } from "react-router-dom";
 import MenuNavRoot from "../ComponentsNavRoot/MenuNavRoot";
 import style from "../ComponentsNavRoot/MenuNavRoot.module.css";
 
 function NavPC() {
     return (
-        <nav className="NavPC">
-            <div className="ContainerLogoNavPC">
-                <p className="TitleNavPC">
+        <nav className={css.NavPC}>
+            <div className={css.ContainerLogoNavPC}>
+                <p className={css.TitleNavPC}>
                     <Link to="/" >
                         l'Atelier Photo Montpellier
                     </Link>
                 </p>
             </div>
-            <div className="ContainerNavigationNavPC">
+            <div className={css.ContainerNavigationNavPC}>
                 <MenuNavRoot
                     moduleMenuUl={style.MenuUlPC}
                     moduleMenuLi={style.MenuLiPC}
