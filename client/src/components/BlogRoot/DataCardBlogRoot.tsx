@@ -34,5 +34,4 @@ function DataCardBlogRoot() {
     return tab;
 }
 
-
 export default DataCardBlogRoot;
