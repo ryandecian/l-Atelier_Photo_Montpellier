@@ -1,5 +1,5 @@
 import { useState } from "react";
-import style from "./PremiumCardImgSudoRoot.module.css";
+import css from "./PremiumCardImgSudoRoot.module.css";
 
 interface ImageZoomProps {
   src: string; 
@@ -16,7 +16,7 @@ function PremiumCardImgSudoRoot ({src, alt, className}: ImageZoomProps) {
       <img
         src={src}
         alt={alt}
-        className={className}
+        className={`${className} ${css.img}`}
         role="button"
         onClick={() => setIsOpen(true)}
         onContextMenu={(e) => e.preventDefault()}
@@ -25,12 +25,12 @@ function PremiumCardImgSudoRoot ({src, alt, className}: ImageZoomProps) {
 
       {/* Modal d'affichage en grand */}
       {isOpen && (
-        <div className={style.modal} onClick={() => setIsOpen(false)}>
-          <div className={style.modalContent} onClick={(e) => e.stopPropagation()}>
-            <span className={style.close} onClick={() => setIsOpen(false)}>
+        <div className={css.modal} onClick={() => setIsOpen(false)}>
+          <div className={css.modalContent} onClick={(e) => e.stopPropagation()}>
+            <span className={css.close} onClick={() => setIsOpen(false)}>
               &times;
             </span>
-            <img src={src} alt={alt} className={style.fullImage}onContextMenu={(e) => e.preventDefault()} onDragStart={(e) => e.preventDefault()}/>
+            <img src={src} alt={alt} className={css.fullImage}onContextMenu={(e) => e.preventDefault()} onDragStart={(e) => e.preventDefault()}/>
           </div>
         </div>
       )}
