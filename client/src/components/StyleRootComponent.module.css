@@ -195,6 +195,7 @@
     width: calc(100% - 2.5rem); /* 100% - 40px */
     padding: 0rem 1.25rem; /* 0px 20px 0px 20px */
     margin: 0rem;
+    cursor: pointer; /* main au survol */
     @media (min-width: 400px) {
         width: 280px; /* 280px */
         max-width: 40%; /* 40% de la largeur du parent */
@@ -206,6 +207,7 @@
     float: right;
     width: 100%;
     margin: 0rem 1.25rem 1.25rem 1.25rem; /* 0px 20px 0px 20px */
+    cursor: pointer; /* main au survol */
     @media (min-width: 400px) {
         width: 340px; /* 280px */
         max-width: 40%; /* 40% de la largeur du parent */
@@ -219,6 +221,7 @@
     width: calc(100% - 2.5rem); /* 100% - 40px */
     padding: 0rem 1.25rem; /* 0px 20px 0px 20px */
     margin: 0rem;
+    cursor: pointer; /* main au survol */
     @media (min-width: 400px) {
         width: 370px; /* 280px */
         max-width: 50%; /* 40% de la largeur du parent */
@@ -230,6 +233,7 @@
     float: right;
     width: calc(100% - 2.5rem); /* 100% - 40px */
     margin: 0rem 1.25rem 1.25rem 1.25rem; /* 0px 20px 0px 20px */
+    cursor: pointer; /* main au survol */
     @media (min-width: 400px) {
         width: 370px; /* 280px */
         max-width: 50%; /* 40% de la largeur du parent */
