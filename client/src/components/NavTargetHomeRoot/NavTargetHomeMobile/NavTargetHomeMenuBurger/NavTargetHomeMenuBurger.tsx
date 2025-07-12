@@ -1,7 +1,7 @@
 import { useState } from "react";
 import MenuNavTargetHomeRoot from "../../../NavTargetHomeRoot/ComponentsNavTargetHomeRoot/MenuNavTargetHomeRoot";
 import style from "../../ComponentsNavTargetHomeRoot/MenuNavTargetHomeRoot.module.css";
-import "./NavTargetHomeMenuBurger.css";
+import css from "./NavTargetHomeMenuBurger.module.css";
 
 
 
@@ -12,15 +12,13 @@ function NavTargetHomeMenuBurger() {
         }
     return (
         <>
-            <button className={`sideCloseNav ${active ? "active" : ""}`} type="button" onClick={funcActive}>Fermer</button>
-            <div className={`sideNav ${active ? "active" : ""}`} id="mySideNav">
-
+            <button className={`${css.sideCloseNav} ${active ? css.active : ""}`} type="button" onClick={funcActive}>Fermer</button>
+            <div className={`${css.sideNav} ${active ? css.active : ""} ${css.mySideNav}`}>
                 <div>
                     <button type="button" 
-                    id="closeBtn" 
-                    className="close"
-                    onClick={funcActive}>
-                        x
+                        className={`${css.close} ${css.closeBtn}`}
+                        onClick={funcActive}>
+                            x
                     </button>
                 </div>
 
@@ -44,15 +42,13 @@ function NavTargetHomeMenuBurger() {
 
                     moduleButtonSubMenu={style.ButtonSubMenuMobile}
                 />
-
-
             </div>
 
             {active === false &&
-                <button type="button" 
-                    id="openBtn"
+                <button type="button"
+                    className={css.openBtn}
                     onClick={funcActive}>
-                    <span className="menuBurger">
+                    <span className={css.menuBurger}>
                         <span />
                         <span />
                         <span />

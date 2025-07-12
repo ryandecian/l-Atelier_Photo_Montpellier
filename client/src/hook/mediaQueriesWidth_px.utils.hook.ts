@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function useMediaQueriesWidth(): number {
+function useMediaQueriesWidth_px(): number {
 
   const [viewportWidth, setViewportWidth] = useState<number>(window.innerWidth);
 
@@ -23,7 +23,7 @@ function useMediaQueriesWidth(): number {
     )
 }
 
-export default useMediaQueriesWidth;
+export default useMediaQueriesWidth_px;
 
 /**
  * Documentation : 
@@ -34,7 +34,7 @@ export default useMediaQueriesWidth;
  * Utilisation : 
  * 
  * 1) Déclarer la const : 
- * const viewportWidth: number = useMediaQueriesWidth();
+ * const viewportWidth: number = useMediaQueriesWidth_px();
  * 
  * 2) Utiliser la variable viewportWidth. Le nombre de px est ajustable
  * {viewportWidth <= 550 && ()}
