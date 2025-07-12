@@ -6,8 +6,8 @@
     background-color: var(--ColorWhite);
     box-shadow: var(--box-shadow);
     width: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0rem;
+    padding: 0rem;
 }
 
 /* Container Logo */
@@ -17,15 +17,15 @@
     align-items: center;
     width: 20rem; /* 320px */
 }
-@media (min-width: 845px) {
+@media (min-width: 52.8125rem) { /* 845px */
     .ContainerLogoNavPC {
-        font-size: calc(var(--h1) + 5px);
+        font-size: calc(var(--h1) + 0.3125rem); /* 5px */
         width: 20.625rem; /* 330px */
     }
 }
-@media (min-width: 1000px) {
+@media (min-width: 62.5rem) { /* 1000px */
     .ContainerLogoNavPC {
-        font-size: calc(var(--h1) + 5px);
+        font-size: calc(var(--h1) + 0.3125rem); /* 5px */
         width: 23.4375rem; /* 375px */
     }
 }
@@ -34,18 +34,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(100% - 1.5rem);
+    width: calc(100% - 1.5rem); /* 100% - 24px */
     margin: 1.5625rem 0rem 0.125rem 1.5rem; /* 25px 0px 2px 24px */
 }
-@media (min-width: 845px) {
+@media (min-width: 52.8125rem) { /* 845px */
     .TitleNavPC {
-        width: calc(100% - 2rem);
+        width: calc(100% - 2rem); /* 100% - 32px */
         margin: 1.5625rem 0rem 0.125rem 2rem; /* 25px 0px 2px 48px */
     }
 }
-@media (min-width: 1000px) {
+@media (min-width: 62.5rem) { /* 1000px */
     .TitleNavPC {
-        width: calc(100% - 3rem);
+        width: calc(100% - 3rem); /* 100% - 48px */
         margin: 1.5625rem 0rem 0.125rem 3rem; /* 25px 0px 2px 48px */
     }
 }
@@ -70,15 +70,14 @@
     align-items: center;
     width: calc(100% - 20rem); /* 100% - 320px */
 }
-@media (max-width: 845px) {
+@media (min-width: 52.8125rem) { /* 845px */
     .ContainerNavigationNavPC {
         width: calc(100% - 20.625); /* 100% - 330px */
     }
     
 }
-@media (min-width: 1000px) {
+@media (min-width: 62.5rem) { /* 1000px */
     .ContainerNavigationNavPC {
         width: calc(100% - 23.4375rem); /* 100% - 375px */
     }
-    
 }
