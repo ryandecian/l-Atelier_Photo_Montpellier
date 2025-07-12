@@ -192,7 +192,7 @@
 /* Po = Portrait */
 .FloatLeftImg_Po {
     float: left;
-    width: calc(100% - 2.5rem); /* 100% - 40px */
+    width: 100%;
     padding: 0rem 1.25rem; /* 0px 20px 0px 20px */
     margin: 0rem;
     @media (min-width: 400px) {
@@ -204,7 +204,7 @@
 
 .FloatRightImg_Po {
     float: right;
-    width: 100%;
+    width: calc(100% - 2.5rem); /* 100% - 40px */
     margin: 0rem 1.25rem 1.25rem 1.25rem; /* 0px 20px 0px 20px */
     @media (min-width: 400px) {
         width: 340px; /* 280px */
@@ -239,6 +239,14 @@
 
 /*-------------------------------------*/
 /* Autre style spéciaux */
+
+.OmbreLeft {
+    box-shadow: -8px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.OmbreRight {
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3);
+}
 
 .TargetText1 {
     padding: 1.25rem 0; /* 20px 0px 20px 0px */
