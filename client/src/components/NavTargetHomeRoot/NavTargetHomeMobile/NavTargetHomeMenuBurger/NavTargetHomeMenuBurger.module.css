@@ -29,12 +29,11 @@
 }
 
 .sideNav {
-    /* width: 250px; */
     height: 100%;
     position: fixed;
     z-index: var(--z-index_10);
     top: 0;
-    right: -250px;
+    right: -15.625rem; /* -250px */
     background-color: var(--BackgroudMenuBurger); /*-------------------------------------------------*/
     transition: right 0.5s ease;
     box-shadow: var(--box-shadow);
