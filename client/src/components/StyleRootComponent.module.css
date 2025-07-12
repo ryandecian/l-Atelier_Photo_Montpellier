@@ -192,10 +192,9 @@
 /* Po = Portrait */
 .FloatLeftImg_Po {
     float: left;
-    width: calc(100% - 2.5rem); /* 100% - 40px */
+    width: 100%;
     padding: 0rem 1.25rem; /* 0px 20px 0px 20px */
     margin: 0rem;
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3);
     @media (min-width: 400px) {
         width: 280px; /* 280px */
         max-width: 40%; /* 40% de la largeur du parent */
@@ -205,9 +204,8 @@
 
 .FloatRightImg_Po {
     float: right;
-    width: 100%;
+    width: calc(100% - 2.5rem); /* 100% - 40px */
     margin: 0rem 1.25rem 1.25rem 1.25rem; /* 0px 20px 0px 20px */
-    box-shadow: -8px 8px 16px rgba(0, 0, 0, 0.3);
     @media (min-width: 400px) {
         width: 340px; /* 280px */
         max-width: 40%; /* 40% de la largeur du parent */
@@ -221,7 +219,6 @@
     width: calc(100% - 2.5rem); /* 100% - 40px */
     padding: 0rem 1.25rem; /* 0px 20px 0px 20px */
     margin: 0rem;
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3);
     @media (min-width: 400px) {
         width: 370px; /* 280px */
         max-width: 50%; /* 40% de la largeur du parent */
@@ -233,7 +230,6 @@
     float: right;
     width: calc(100% - 2.5rem); /* 100% - 40px */
     margin: 0rem 1.25rem 1.25rem 1.25rem; /* 0px 20px 0px 20px */
-    box-shadow: -8px 8px 16px rgba(0, 0, 0, 0.3);
     @media (min-width: 400px) {
         width: 370px; /* 280px */
         max-width: 50%; /* 40% de la largeur du parent */
