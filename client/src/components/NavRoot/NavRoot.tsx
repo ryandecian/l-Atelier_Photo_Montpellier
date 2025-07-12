@@ -8,11 +8,11 @@ function NavRoot() {
     return (
         <>
             {/* MediaQuery maison */}
-            {viewportWidth < 800 && (
+            {viewportWidth < 50 && (
                 <NavMobile />
             )}
             {/* MediaQuery maison */}
-            {viewportWidth >= 800 && (
+            {viewportWidth >= 50 && (
                 <NavPC />
             )}
         </>
