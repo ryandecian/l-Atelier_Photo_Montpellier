@@ -46,7 +46,7 @@
 }
 
 /*Logique ouverture et fermeture MenuBurger*/
-#closeBtn {
+.closeBtn {
     margin: 1rem 0rem 0rem 1rem;
     text-decoration: none;
     text-align: center;
@@ -63,17 +63,17 @@
     cursor: pointer;
 }
 @media (max-width: 250px) {
-    #closeBtn {
+    .closeBtn {
         padding: 0.3rem 1.2rem;
     }
 }
 @media (min-width: 250px) and (max-width: 350px) {
-    #closeBtn {
+    .closeBtn {
         padding: 0.4rem 1.35rem;
     }
 }
 
-#openBtn {
+.openBtn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,7 +110,7 @@
 /*-----------------------------------------------*/
 
 /*Contenu du Menu Burger*/
-.sideNav>div {
+.sideNav > div {
     display: flex;
     justify-content: start;
     padding: 0rem 0rem 3rem 0rem;
