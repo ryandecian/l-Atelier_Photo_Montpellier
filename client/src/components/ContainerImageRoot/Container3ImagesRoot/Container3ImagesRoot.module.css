@@ -1,14 +1,14 @@
 .Container3ImagesRoot {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    width: calc(100vw - 48px);
-    max-width: 1400px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.625rem; /* 10px */
+    width: calc(100vw - 2.5rem); /* 100% - 40px */
+    max-width: 87.5rem; /* 1400px */
     margin: auto;
 }
-@media (max-width: 800.02px) {
+@media (min-width: 800px) {
     .ContainerImgLifeStyleRoot {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
