@@ -1,6 +1,6 @@
 Ce qu'il manque : 
 
-
+J'en suis à la NavRoot qui doit être terminé. 
 ------------------------------------------------------------------------------
 En attente de la validation client puis passage au développement du compte client
 dans le compte client il y a la question des albums et photo.

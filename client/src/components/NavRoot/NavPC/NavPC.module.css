@@ -72,7 +72,7 @@
 }
 @media (min-width: 52.8125rem) { /* 845px */
     .ContainerNavigationNavPC {
-        width: calc(100% - 20.625); /* 100% - 330px */
+        width: calc(100% - 20.625rem); /* 100% - 330px */
     }
     
 }
