@@ -188,18 +188,14 @@
     padding: 0.25rem 1rem; /* 4px 16px 4px 16px */
     background-color: var(--BackgroudMenuBurger);
 }
-.SubMenuLiTarget1PC {
-    border-top: 1.5px solid var(--borderWhite);
-    border-left: 1.5px solid var(--borderWhite);
-    border-right: 1.5px solid var(--borderWhite);
-}
+.SubMenuLiTarget1PC,
 .SubMenuLiTarget2PC {
-    border-top: 1.5px solid var(--borderWhite);
-    border-left: 1.5px solid var(--borderWhite);
-    border-right: 1.5px solid var(--borderWhite);
+    border-top: 0.09375rem solid var(--borderWhite); /* 1.5px */
+    border-left: 0.09375rem solid var(--borderWhite); /* 1.5px */
+    border-right: 0.09375rem solid var(--borderWhite); /* 1.5px */
 }
 .SubMenuLiTarget3PC {
-    border: 1.5px solid var(--borderWhite);
+    border: 0.09375rem solid var(--borderWhite); /* 1.5px */
 }
 
 .SubMenuLinkPC {
