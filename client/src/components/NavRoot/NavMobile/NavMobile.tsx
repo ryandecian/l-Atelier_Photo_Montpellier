@@ -16,7 +16,7 @@ function NavMobile() {
                 </p>
             </div>
 
-                <MenuBurger />
+            <MenuBurger />
         </nav>
     )
 }

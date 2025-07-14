@@ -3,40 +3,40 @@ import { Link } from "react-router-dom";
 import ListDataRouter from "../../../router/router";
 
 interface MenuNavRootProps {
-  moduleMenuUl: string;
-  moduleMenuLi: string;
-  moduleMenuLink: string;
-  moduleSubMenuUl: string;
-  moduleSubMenuLi: string;
-  moduleSubMenuLink: string;
-  moduleSpanPortraits?: string;
-  moduleSubMenuPortraits?: string;
+    moduleMenuUl: string;
+    moduleMenuLi: string;
+    moduleMenuLink: string;
+    moduleSubMenuUl: string;
+    moduleSubMenuLi: string;
+    moduleSubMenuLink: string;
+    moduleSpanPortraits?: string;
+    moduleSubMenuPortraits?: string;
 
-  moduleMenuLiTarget1?: string;
-  moduleMenuLiTarget2?: string;
-  moduleMenuLiTarget3?: string;
-  moduleMenuLiTarget4?: string;
-  moduleMenuLiTarget5?: string;
-  moduleMenuLiTarget6?: string;
+    moduleMenuLiTarget1?: string;
+    moduleMenuLiTarget2?: string;
+    moduleMenuLiTarget3?: string;
+    moduleMenuLiTarget4?: string;
+    moduleMenuLiTarget5?: string;
+    moduleMenuLiTarget6?: string;
 
-  moduleButtonSubMenu?: string;
-  moduleSubMenuLiTarget1?: string;
-  moduleSubMenuLiTarget2?: string;
-  moduleSubMenuLiTarget3?: string;
+    moduleButtonSubMenu?: string;
+    moduleSubMenuLiTarget1?: string;
+    moduleSubMenuLiTarget2?: string;
+    moduleSubMenuLiTarget3?: string;
 }
 
 function MenuNavRoot(Props: MenuNavRootProps) {
-  const { moduleMenuUl, moduleMenuLi, 
-    moduleMenuLink, moduleSubMenuUl, 
-    moduleSubMenuLi, moduleSubMenuLink, 
-    moduleSpanPortraits, moduleSubMenuPortraits, 
-    moduleMenuLiTarget1, moduleMenuLiTarget2, 
-    moduleMenuLiTarget3, moduleMenuLiTarget4,
-    // moduleMenuLiTarget5, moduleMenuLiTarget6,
-    moduleSubMenuLiTarget1,moduleSubMenuLiTarget2,
-    moduleSubMenuLiTarget3, moduleButtonSubMenu } = Props;
+    const { moduleMenuUl, moduleMenuLi, 
+        moduleMenuLink, moduleSubMenuUl, 
+        moduleSubMenuLi, moduleSubMenuLink, 
+        moduleSpanPortraits, moduleSubMenuPortraits, 
+        moduleMenuLiTarget1, moduleMenuLiTarget2, 
+        moduleMenuLiTarget3, moduleMenuLiTarget4,
+        // moduleMenuLiTarget5, moduleMenuLiTarget6,
+        moduleSubMenuLiTarget1,moduleSubMenuLiTarget2,
+        moduleSubMenuLiTarget3, moduleButtonSubMenu } = Props;
 
-  const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
+    const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
 
   return (
     <ul className={moduleMenuUl}>
