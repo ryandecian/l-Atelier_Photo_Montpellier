@@ -5,9 +5,9 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    margin: 0;
-    border: 0;
-    padding: 0;
+    margin: 0rem;
+    border: 0rem;
+    padding: 0rem;
 }
 
 /* Container de la page d'accueil */
@@ -21,23 +21,23 @@
     background-image: url("../../../../assets/Background-img/studio-montpellier-robes-rouges.jpg");
     background-size: cover;
     background-position: top center;
-    margin: 0;
-    border: 0;
-    padding: 0;
+    margin: 0rem;
+    border: 0rem;
+    padding: 0rem;
 }
 /*----------------------------------------------------------------------------------*/
 
 /* Version inférieur a heigth 400px */
 .ContainerSloganMobile {
-    border: 0;
-    padding: 0;
+    border: 0rem;
+    padding: 0rem;
     text-align: center;
-    margin-top: 6.875rem; /* 110px 0px 0px 0px*/
+    margin: 6.875rem 0rem 0rem 0rem; /* 110px 0px 0px 0px*/
 }
 
 /* Voici les 2 éléments du ContainerAccueil*/
 .SloganMobile {
-    font-size: var(--h3); /* 18px */
+    font-size: var(--h3); 
     color: var(--ColorWhite); /* Couleur du texte */
     margin: 0rem 1rem; /* 0px 24px 0px 24px */
     font-family: "Saira Condensed", sans-serif;
@@ -47,17 +47,17 @@
     transform: scaleY(1.60);
     transform: scaleX(1.00);
 }
-@media (min-height: 300px) {
+@media (min-height: 18.75rem) { /* 300px */
     .SloganMobile {
         font-size: calc(var(--h3) + 0.125rem); /* 20px */
     }
 }
-@media (min-height: 330px) {
+@media (min-height: 20.625rem) { /* 330px */
     .SloganMobile {
         font-size: calc(var(--h3) + 0.25rem); /* 22px */
     }
 }
-@media (min-height: 360px) {
+@media (min-height: 22.5rem) { /* 360px */
     .SloganMobile {
         font-size: var(--h2); /* 24px */
     }
@@ -71,8 +71,8 @@
     color: var(--ColorWhite);
     width: calc(100% - 3rem); /* 100% - 48px */
     margin: 0rem; /* 0px 24px 0px 24px */
-    border: 0;
-    padding: 0;
+    border: 0rem;
+    padding: 0rem;
 }
 
 .ContainerTitleMobile > h1 {
@@ -86,20 +86,20 @@
     transform: scaleX(1.00);
     text-align: center;
     width: 100%;
-    padding: 0rem 0rem 0.625rem 0rem;
-    margin: 0;
+    padding: 0rem 0rem 0.625rem 0rem; /* 0px 0px 10px 0px */
+    margin: 0rem;
 }
-@media (min-height: 360px) {
+@media (min-height: 22.5rem) { /* 360px */
     .ContainerTitleMobile > h1 {
         font-size: calc(var(--h2) - 0.25rem); /* 20px */
     }
 }
-@media (min-height: 400px) {
+@media (min-height: 25rem) { /* 400px */
     .ContainerTitleMobile > h1 {
         font-size: calc(var(--h2) - 0.125rem); /* 22px */
     }
 }
-@media (min-height: 450px) {
+@media (min-height: 28.125rem) { /* 450px */
     .ContainerTitleMobile > h1 {
         font-size: var(--h2); /* 24px */
         text-align: start;
@@ -113,16 +113,12 @@
     border: 0;
     padding: 0;
     text-align: center;
+    width: 100%;
+    margin: 8.03125rem 0rem 0rem 0rem; /* 128.5px 0px 0px 0px */
 }
-@media (min-width: 0px) {
+@media (min-width: 28.125rem) { /* 450px */
     .ContainerSlogan {
-        width: 100%;
-        margin: 128.5px 0px 0px 0px;
-    }
-}
-@media (min-width: 450px) {
-    .ContainerSlogan {
-        margin: 8.75rem 0rem 0rem 3.125rem;
+        margin: 8.75rem 0rem 0rem 3.125rem; /* 140px 0px 0px 50px */
         width: auto;
     }
 }
@@ -131,7 +127,7 @@
 .Slogan {
     font-size: var(--h1); /* 44px */
     color: var(--ColorWhite); /* Couleur du texte */
-    margin: 0rem 1rem; /* 0px 24px 0px 24px */
+    margin: 0rem 1rem; /* 0px 16px 0px 16px */
     font-family: "Saira Condensed", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -139,17 +135,17 @@
     transform: scaleY(1.60);
     transform: scaleX(1.00);
 }
-@media (min-width: 370px) {
+@media (min-width: 23.125rem) { /* 370px */
     .Slogan {
         font-size: calc(var(--h1) + 0.375rem); /* 38px */
     }
 }
-@media (min-width: 400px) {
+@media (min-width: 25rem) { /* 400px */
     .Slogan {
         font-size: calc(var(--h1) + 0.6875rem); /* 42px */
     }
 }
-@media (min-width: 450px) {
+@media (min-width: 28.125rem) { /* 450px */
     .Slogan {
         font-size: calc(var(--h1) + 0.75rem); /* 44px */
     }
@@ -162,8 +158,8 @@
     color: var(--ColorWhite);
     width: calc(100% - 3rem); /* 100% - 48px */
     margin: 0rem 1.5rem; /* 0px 24px 0px 24px */
-    border: 0;
-    padding: 0;
+    border: 0rem;
+    padding: 0rem;
 }
 
 .ContainerTitle > h1 {
@@ -177,19 +173,19 @@
     transform: scaleX(1.00);
     text-align: center;
     width: 100%;
-    padding: 0rem 0rem 0.625rem 0rem;
+    padding: 0rem 0rem 0.625rem 0rem; /* 0px 0px 10px 0px */
 }
-@media (min-width: 370px) {
+@media (min-width: 23.125rem) { /* 370px */
     .ContainerTitle > h1 {
         font-size: calc(var(--h2) - 0.25rem); /* 20px */
     }
 }
-@media (min-width: 400px) {
+@media (min-width: 25rem) { /* 400px */
     .ContainerTitle > h1 {
         font-size: calc(var(--h2) - 0.125rem); /* 22px */
     }
 }
-@media (min-width: 450px) {
+@media (min-width: 28.125rem) { /* 450px */
     .ContainerTitle > h1 {
         font-size: var(--h2); /* 24px */
         text-align: start;
