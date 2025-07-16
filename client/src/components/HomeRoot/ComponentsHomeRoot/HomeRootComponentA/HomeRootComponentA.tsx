@@ -1,28 +1,15 @@
 import css from "./HomeRootComponentA.module.css";
-import { useState, useEffect } from "react";
+import useMediaQueriesHeight_rem from "../../../../hook/useMediaQueriesHeight_rem.utils.hook";
 
 function HomeRootComponentA() {
-    const [viewportHeight, setViewportHeight] = useState<number>(window.innerHeight);
+    const viewportHeight: number = useMediaQueriesHeight_rem();
 
-    useEffect(() => {
-        const updateHeight = () => {
-          setViewportHeight(window.innerHeight);
-        };
-    
-        // Ajout de l'écouteur d'événements pour la redimensionnement de la fenêtre
-        window.addEventListener("resize", updateHeight);
-    
-        // Nettoyage lors du démontage du composant
-        return () => {
-          window.removeEventListener("resize", updateHeight);
-        };
-    }, []);
     return (
         <section className={`HomeRootComponentA ${css.ContainerAccueil}`}>
             <div className={css.ContainerSubAccueil}>
 
-            {/* MediaQuery maison */}
-            {viewportHeight <= 450 && (
+            {/* MediaQuery maison en rem */}
+            {viewportHeight <= 28.125 && (
                 <>
                     <article className={css.ContainerSloganMobile}>
                         <p className={css.SloganMobile}>
@@ -45,8 +32,8 @@ function HomeRootComponentA() {
             )}
 
 
-            {/* MediaQuery maison */}
-            {viewportHeight > 450 && (
+            {/* MediaQuery maison en rem */}
+            {viewportHeight > 28.125 && (
                 <>
                     <article className={css.ContainerSlogan}>
                         <p className={css.Slogan}>
