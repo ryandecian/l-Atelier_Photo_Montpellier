@@ -1,5 +1,4 @@
 import style from "../StyleRootComponent.module.css";
-import css from "./QuiSuisJeRoot.module.css";
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../router/router";
 
@@ -14,16 +13,16 @@ function QuiSuisJeRoot() {
             </header>
 
             <div className={style.ContainerFloat}>
-                <div className={style.FloatLeftImg_Po}>
+                <figure className={style.FloatLeftImg_Po}>
                     <img
-                        className={css.Img}
+                        className={style.ImgOnFigure}
                         src="/images/image-qui-suis-je/lapm-photographe-anne-saunier-l-atelier-photo-montpellier.jpg"
                         alt="Portrait de la photographe professionnelle Anne SAUNIER"
                     />
-                    <figcaption className={css.Caption}>
+                    <figcaption className={style.Figcaption}>
                         Anne SAUNIER
                     </figcaption>
-                </div>
+                </figure>
     
                 <p className={style.TextP4}>
                     Mon aventure photographique a commencé dès mon plus jeune âge avec un appareil argentique et un agrandisseur que je montais et démontais dans la salle de bains de mes parents.
