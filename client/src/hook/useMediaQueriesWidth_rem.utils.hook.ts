@@ -2,26 +2,26 @@ import { useEffect, useState } from "react";
 
 /* Récupère la valeur d'un rem sur le navigateur de l'utilisateur */
 function getRemBase(): number {
-  return parseFloat(getComputedStyle(document.documentElement).fontSize);
+    return parseFloat(getComputedStyle(document.documentElement).fontSize);
 }
 
 function useMediaQueriesWidth_rem(): number {
-  const [viewportWidthRem, setViewportWidthRem] = useState<number>(() => {
-    const rem = getRemBase();
-    return window.innerWidth / rem;
-  });
+    const [viewportWidthRem, setViewportWidthRem] = useState<number>(() => {
+        const rem = getRemBase();
+        return window.innerWidth / rem;
+    });
 
-  useEffect(() => {
-    const updateWidth = () => {
-      const rem = getRemBase();
-      setViewportWidthRem(window.innerWidth / rem);
-    };
+    useEffect(() => {
+        const updateWidth = () => {
+            const rem = getRemBase();
+            setViewportWidthRem(window.innerWidth / rem);
+        };
 
-    window.addEventListener("resize", updateWidth);
-    return () => window.removeEventListener("resize", updateWidth);
-  }, []);
+        window.addEventListener("resize", updateWidth);
+        return () => window.removeEventListener("resize", updateWidth);
+    }, []);
 
-  return viewportWidthRem;
+    return viewportWidthRem;
 }
 
 export default useMediaQueriesWidth_rem;
