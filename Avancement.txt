@@ -16,7 +16,8 @@ Note d'information, dans la navigation du site,
 Les page compte et panier vont être retirer provisoirement le temps de les éditer.
 
 ------------------------------------------------------------------------------
-
+useMediaQuery : 
+Lorsque toutes les pages seront refactorisées, il faudra supprimé l'ancien hook mediaQueryWidth
 ------------------------------------------------------------------------------
 
 Il faudra créer de nouveau hook pour les fetchs
