@@ -17,7 +17,7 @@ function MenuBurger() {
 
                 <div>
                     <button type="button" 
-                    className={`${css.close} ${css.closeBtn}`}
+                    className={css.closeBtn}
                     onClick={funcActive}>
                         x
                     </button>
@@ -48,9 +48,9 @@ function MenuBurger() {
             </div>
             {active === false &&
                 <button type="button" 
-                    id="openBtn"
+                    className={css.openBtn}
                     onClick={funcActive}>
-                    <span className="menuBurger">
+                    <span className={css.menuBurger}>
                         <span />
                         <span />
                         <span />

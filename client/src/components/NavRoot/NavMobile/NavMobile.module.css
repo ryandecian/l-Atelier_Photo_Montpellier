@@ -6,9 +6,6 @@
     width: 100%;
     background-color: inherit;
     box-shadow: var(--box-shadow);
-    @media (min-width: 800.02px) {
-        display: none;
-    }
 }
 
 .ContainerLogoNavMobile {
