@@ -65,7 +65,6 @@ function HomeRootComponentD() {
                         </span>
                     </p>
                 </article>
-
         </section>
     );
 }
