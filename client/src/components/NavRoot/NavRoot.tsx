@@ -7,11 +7,11 @@ function NavRoot() {
 
     return (
         <>
-            {/* MediaQuery maison */}
+            {/* MediaQuery maison 800px */}
             {viewportWidth < 50 && (
                 <NavMobile />
             )}
-            {/* MediaQuery maison */}
+            {/* MediaQuery maison 800px */}
             {viewportWidth >= 50 && (
                 <NavPC />
             )}

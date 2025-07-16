@@ -38,6 +38,8 @@ export default useMediaQueriesHeight_rem;
  * const viewportHeight: number = useMediaQueriesHeight_rem();
  * 
  * 2) Utiliser la variable viewportHeight. Le nombre de px est ajustable
+ * 
+ * { MediaQuery maison 450px }
  * {viewportHeight <= 20 && ()}
  * 
  */ 
