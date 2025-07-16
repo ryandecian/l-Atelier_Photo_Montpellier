@@ -38,52 +38,60 @@ function MenuNavRoot(Props: MenuNavRootProps) {
 
     const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
 
-  return (
-    <ul className={moduleMenuUl}>
+    return (
+        <ul className={moduleMenuUl}>
 
-      {/* Menu déroulant pour Portraits */}
-      <li className={`${moduleMenuLi} ${moduleMenuLiTarget1}`} onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}>
-        <span className={`${moduleMenuLink} ${moduleSubMenuPortraits}`}>
-          PRESTATIONS <span className={moduleSpanPortraits}>{isSubMenuOpen? "▲" : "▼"}</span>
-        </span>
-        {isSubMenuOpen && (<>
-          <button type="button" className={moduleButtonSubMenu} onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}>Fermer</button>
-          <ul className={moduleSubMenuUl}>
+            {/* Menu déroulant pour Portraits */}
+            <li className={`${moduleMenuLi} ${moduleMenuLiTarget1}`} onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}>
+                <span className={`${moduleMenuLink} ${moduleSubMenuPortraits}`}>
+                    PRESTATIONS <span className={moduleSpanPortraits}>{isSubMenuOpen? "▲" : "▼"}</span>
+                </span>
 
-            <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget1}`}>
-              <Link to={ListDataRouter[11].path} className={moduleSubMenuLink}>Corporate</Link>
+                {isSubMenuOpen && (
+                    <>
+                        <button 
+                            type="button" 
+                            className={moduleButtonSubMenu} 
+                            onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}>
+                                Fermer
+                        </button>
+
+                        <ul className={moduleSubMenuUl}>
+                            <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget1}`}>
+                                <Link to={ListDataRouter[11].path} className={moduleSubMenuLink}>Corporate</Link>
+                            </li>
+                            <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget2}`}>
+                                <Link to={ListDataRouter[12].path} className={moduleSubMenuLink}>LifeStyle</Link>
+                            </li>
+                            <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget3}`}>
+                                <Link to={ListDataRouter[13].path} className={moduleSubMenuLink}>Mariage</Link>
+                            </li>
+                        </ul>
+                    </>
+                )}
             </li>
-            <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget2}`}>
-              <Link to={ListDataRouter[12].path} className={moduleSubMenuLink}>LifeStyle</Link>
+
+            <li className={`${moduleMenuLi} ${moduleMenuLiTarget2}`}>
+                <Link to={ListDataRouter[2].path} className={moduleMenuLink}>TARIFS</Link>
             </li>
-            <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget3}`}>
-              <Link to={ListDataRouter[13].path} className={moduleSubMenuLink}>Mariage</Link>
+
+            <li className={`${moduleMenuLi} ${moduleMenuLiTarget3}`}>
+                <Link to={ListDataRouter[3].path} className={moduleMenuLink}>CONTACT</Link>
             </li>
-          </ul>
-        </>)}
-      </li>
 
-      <li className={`${moduleMenuLi} ${moduleMenuLiTarget2}`}>
-        <Link to={ListDataRouter[2].path} className={moduleMenuLink}>TARIFS</Link>
-      </li>
+            <li className={`${moduleMenuLi} ${moduleMenuLiTarget4}`}>
+                <Link to={ListDataRouter[8].path} className={moduleMenuLink}>PORTFOLIO</Link>
+            </li>
 
-      <li className={`${moduleMenuLi} ${moduleMenuLiTarget3}`}>
-        <Link to={ListDataRouter[3].path} className={moduleMenuLink}>CONTACT</Link>
-      </li>
+            {/* <li className={`${moduleMenuLi} ${moduleMenuLiTarget5}`}>
+                <Link to={ListDataRouter[5].path} className={moduleMenuLink}>PANIER</Link>
+            </li>
 
-      <li className={`${moduleMenuLi} ${moduleMenuLiTarget4}`}>
-        <Link to={ListDataRouter[8].path} className={moduleMenuLink}>PORTFOLIO</Link>
-      </li>
-
-      {/* <li className={`${moduleMenuLi} ${moduleMenuLiTarget5}`}>
-        <Link to={ListDataRouter[5].path} className={moduleMenuLink}>PANIER</Link>
-      </li>
-
-      <li className={`${moduleMenuLi} ${moduleMenuLiTarget6}`}>
-        <Link to={ListDataRouter[6].path} className={moduleMenuLink}>COMPTE</Link>
-      </li> */}
-    </ul>
-  );
+            <li className={`${moduleMenuLi} ${moduleMenuLiTarget6}`}>
+                <Link to={ListDataRouter[6].path} className={moduleMenuLink}>COMPTE</Link>
+            </li> */}
+        </ul>
+    );
 }
 
 export default MenuNavRoot;
