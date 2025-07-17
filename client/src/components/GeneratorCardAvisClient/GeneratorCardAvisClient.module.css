@@ -5,9 +5,9 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
+    margin: 0rem;
+    padding: 0rem;
+    border: 0rem;
 }
   
 /* Titre principal */
@@ -16,13 +16,13 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 0px;
-    border: 0px;
-    margin-bottom: 20px;
+    padding: 0rem;
+    border: 0rem;
+    margin-bottom: 1.25rem; /* 20px */
 }
   
 .title {
-    font-size: 26px;
+    font-size: calc(var(--h2) + 0.125rem); /* 26px */
     font-weight: bold;
     color: #333;
 }
@@ -33,11 +33,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 5px;
+    gap: 0.3125rem; /* 5px */
     width: 100%;
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
+    margin: 0rem;
+    padding: 0rem;
+    border: 0rem;
 }
 
 /* Carte d'un avis */
@@ -50,8 +50,8 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     background: #fff;
-    margin: 20px;
-    padding: 20px;
+    margin: 1.25rem; /* 20px 20px 20px 20px */
+    padding: 1.25rem; /* 20px 20px 20px 20px */
     transition: transform 0.3s ease-in-out;
 }
 .CardAvisContainer:hover {
@@ -61,9 +61,9 @@
 /* Nom du client */
 .nom {
     font-weight: bold;
-    font-size: 16px;
+    font-size: var(--h4);
     color: #222;
-    margin-bottom: 8px;
+    margin: 0rem 0rem 0.5rem 0rem; /* 0px 0px 8px 0px */
 }
   
 /* Conteneur de la note et de la date */
@@ -71,10 +71,10 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    gap: 10px; /* Espacement entre les étoiles et la date */
-    margin: 10px 0px 0px 0px;
-    padding: 0px;
-    border: 0px;
+    gap: 0.625rem; /* 10px : Espacement entre les étoiles et la date */
+    margin: 0.625rem 0rem 0rem 0rem; /* 10px 0px 0px 0px */
+    padding: 0rem;
+    border: 0rem;
 }
   
 /* Note étoilée */
@@ -95,8 +95,8 @@
   
 /* Date de l'avis */
 .date {
-    font-size: 14px;
-    color: #777;
+    font-size: var(--h5);
+    color: black;
     white-space: nowrap;
 }
   
@@ -106,8 +106,8 @@
     font-size: var(--p);
     font-style: italic;
     color: #555;
-    margin: 10px 0px 0px 0px;
-    padding: 0px;
+    margin: 0.625rem 0rem 0rem 0rem; /* 10px 0px 0px 0px */
+    padding: 0rem;
     transition: max-height 0.3s ease-in-out;
 }
   
@@ -116,11 +116,10 @@
     color: #007bff;
     cursor: pointer;
     font-weight: bold;
-    margin-left: 5px;
+    margin: 0rem 0rem 0rem 0.3125rem; /* 0px 0px 0px 5px */
     display: inline-block;
 }
   
 .toggle:hover {
     text-decoration: underline;
 }
-  
