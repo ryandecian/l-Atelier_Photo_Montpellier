@@ -64,6 +64,18 @@ const data_Album_Street = [
     "lapm-photographie-professionnelle-photo-street-dame-agee-photo-rue-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-photo-street-tenue-camouflage-l-atelier-photo-montpellier.jpg",
     "lapm-photographie-professionnelle-table-photo-rue-l-atelier-photo-montpellier.jpg",
+    "lapm-photographe-montpellier-concert-contrebassiste-l-atelier-photo-montpellier.jpg",
+    "lapm-photographe-montpellier-street-gay-pride-montpellier-l-atelier-photo-montpellier.jpg",
+    "lapm-photographe-professionel-street-festival-bresilien-polygone-l-atelier-photo-montpellier.jpg",
+    "lapm-photographe-professionel-street-festival-etang-de-thau-l-atelier-photo-montpellier.jpg",
+    "lapm-photographe-professionel-street-gare-lisbonne-l-atelier-photo-montpellier.jpg",
+    "lapm-photographe-professionel-street-homme-ecusson-l-atelier-photo-montpellier.jpg",
+    "lapm-photographe-professionel-street-homme-festival-bresilien-l-atelier-photo-montpellier.jpg",
+    "lapm-photographe-professionnelle-gay-pride-montpellier-char-l-atelier-photo-montpellier.jpg",
+    "lapm-photographe-professionnelle-street-cap-breton-l-atelier-photo-montpellier.jpg",
+    "lapm-photographe-professionnel-portrait-jeune-femme-street-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-pro-street-octobre-rose-toutes-a-moto-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-pro-street-port-mariane-reflets-l-atelier-photo-montpellier.jpg",
 ];
 
 const data_Album_Urbaine = [
@@ -104,6 +116,13 @@ const data_Album_Urbaine = [
     "lapm-photo-professionnel-urbain-architect-musee-l-atelier-photo-montpellier.jpg",
     "lapm-photo-professionnel-urbain-architecture-l-atelier-photo-montpellier.jpg",
     "lapm-photo-professionnel-vers-le-sacre-coeur-paris-l-atelier-photo-montpelliere.jpg",
+    "lapm-photographe-professionel-mobilier-urbain-gare-lisbonne-balance-l-atelier-photo-montpellier.jpg",
+    "lapm-photographe-professionel-urbain-escalier-rome-l-atelier-photo-montpellier.jpg",
+    "lapm-photographe-professionnel-paysage-urbain-arbre-l-atelier-photo-montpellier.jpg",
+    "lapm-photographe-professionnel-street-urbain-luma-arles-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-pro-architecture-nuit-noir-et-blanc-arc-de-triumph-l-atelier-photo-montpellier.jpg",
+    "lapm-photographie-professionnelle-urbaine-louvre-l-atelier-photo-montpellier.jpg",
+    "lapm-photograpie-professionnelle-urbaine-lisbonne-collines-l-atelier-photo-montpellier.jpg",
 ];
 
 const data_Album_Pro_Perso = [
