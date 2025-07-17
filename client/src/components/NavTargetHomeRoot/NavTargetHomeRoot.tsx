@@ -1,19 +1,19 @@
 import NavTargetHomePC from "./NavTargetHomePC/NavTargetHomePC";
 import NavTargetHomeMobile from "./NavTargetHomeMobile/NavTargetHomeMobile";
-import useMediaQueriesWidth from "../../hook/mediaQueriesWidth.utils.hook";
+import useMediaQueriesWidth_rem from "../../hook/useMediaQueriesWidth_rem.utils.hook";
 
 function NavTargetHomeRoot() {
-    const viewportWidth: number = useMediaQueriesWidth();
+    const viewportWidth: number = useMediaQueriesWidth_rem();
 
     return (
         <>
-            {/* MediaQuery maison */}
-            {viewportWidth <= 800 && (
+            {/* MediaQuery maison 800px*/}
+            {viewportWidth <= 50 && (
                 <NavTargetHomeMobile />
             )}
 
-            {/* MediaQuery maison */}
-            {viewportWidth > 800 && (
+            {/* MediaQuery maison 800px */}
+            {viewportWidth > 50 && (
                 <NavTargetHomePC />
             )}
         </>

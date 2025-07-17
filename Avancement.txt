@@ -1,6 +1,6 @@
 Ce qu'il manque : 
 
-
+Le problème vient de GeneratorCardAvisClient, Voir avec GPT pour l'accessibilité
 ------------------------------------------------------------------------------
 En attente de la validation client puis passage au développement du compte client
 dans le compte client il y a la question des albums et photo.
@@ -16,7 +16,8 @@ Note d'information, dans la navigation du site,
 Les page compte et panier vont être retirer provisoirement le temps de les éditer.
 
 ------------------------------------------------------------------------------
-
+useMediaQuery : 
+Lorsque toutes les pages seront refactorisées, il faudra supprimé l'ancien hook mediaQueryWidth
 ------------------------------------------------------------------------------
 
 Il faudra créer de nouveau hook pour les fetchs
