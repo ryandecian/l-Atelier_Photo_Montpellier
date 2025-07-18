@@ -1,6 +1,8 @@
 Ce qu'il manque : 
 
 Le problème vient de GeneratorCardAvisClient, Voir avec GPT pour l'accessibilité
+Le problème étant résolue, il: faut maintenant mettre a jour le css dans GeneratorCardAvisClient
+avec des var de couleur dans css Root
 ------------------------------------------------------------------------------
 En attente de la validation client puis passage au développement du compte client
 dans le compte client il y a la question des albums et photo.
