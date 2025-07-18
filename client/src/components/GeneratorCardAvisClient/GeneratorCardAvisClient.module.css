@@ -105,7 +105,7 @@
     width: 100%;
     font-size: var(--p);
     font-style: italic;
-    color: #555;
+    color: #333;
     margin: 0.625rem 0rem 0rem 0rem; /* 10px 0px 0px 0px */
     padding: 0rem;
     transition: max-height 0.3s ease-in-out;
@@ -113,7 +113,7 @@
   
 /* Bouton "Voir plus..." */
 .toggle {
-    color: #007bff;
+    color: #0056b3;
     cursor: pointer;
     font-weight: bold;
     margin: 0rem 0rem 0rem 0.3125rem; /* 0px 0px 0px 5px */
