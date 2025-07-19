@@ -3,8 +3,6 @@ import MenuNavRoot from "../../ComponentsNavRoot/MenuNavRoot";
 import style from "../../ComponentsNavRoot/MenuNavRoot.module.css";
 import css from "./MenuBurger.module.css";
 
-
-
 function MenuBurger() {
     const [active, setActive] = useState<boolean>(false)
         const funcActive = () => {
@@ -18,6 +16,7 @@ function MenuBurger() {
                 <div>
                     <button type="button" 
                     className={css.closeBtn}
+                    aria-label="Fermer le menu principal"
                     onClick={funcActive}>
                         x
                     </button>
@@ -49,6 +48,7 @@ function MenuBurger() {
             {active === false &&
                 <button type="button" 
                     className={css.openBtn}
+                    aria-label="Ouvrir le menu principal"
                     onClick={funcActive}>
                     <span className={css.menuBurger}>
                         <span />

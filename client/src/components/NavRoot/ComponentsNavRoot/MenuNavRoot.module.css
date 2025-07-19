@@ -28,9 +28,15 @@
 }
 
 .MenuLinkMobile {
-    text-decoration: none;
     font-size: var(--h5);
+    font: inherit; /* Héritage de la police du parent */
     color: var(--ColorTexteMenuBurger);
+    background: none;
+    text-decoration: none;
+    margin: 0rem;
+    border: none;
+    padding: 0rem;
+    cursor: pointer;
 }
 @media (min-width: 18.75rem) { /* 300px */
     .MenuLinkMobile {
