@@ -17,6 +17,7 @@ function NavTargetHomeMenuBurger() {
                 <div>
                     <button type="button" 
                         className={`${css.close} ${css.closeBtn}`}
+                        aria-label="Fermer le menu principal"
                         onClick={funcActive}>
                             x
                     </button>
@@ -47,6 +48,7 @@ function NavTargetHomeMenuBurger() {
             {active === false &&
                 <button type="button"
                     className={css.openBtn}
+                    aria-label="Ouvrir le menu principal"
                     onClick={funcActive}>
                     <span className={css.menuBurger}>
                         <span />
