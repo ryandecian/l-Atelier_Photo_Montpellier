@@ -37,12 +37,12 @@ services:
     build:
       context: ./client
       dockerfile: Dockerfile
+      args: # Arguments pour le build qui remplace "environment". Necessaire pour vite ! A configurer également dans le Dockerfile
+        - VITE_NODE_ENV=production
+        - VITE_DOMAIN_CLIENT=${VITE_DOMAIN_CLIENT}
+        - VITE_DOMAIN_API_SERVER=${VITE_DOMAIN_API_SERVER}
     env_file: .env
     restart: always
-    args: # Arguments pour le build qui remplace "environment". Necessaire pour vite ! A configurer également dans le Dockerfile
-      - VITE_NODE_ENV=production
-      - VITE_DOMAIN_CLIENT=${VITE_DOMAIN_CLIENT}
-      - VITE_DOMAIN_API_SERVER=${VITE_DOMAIN_API_SERVER}
     volumes:
       - client-dist:/app/dist  # Rend disponible le build Vite pour Nginx
     command: [ "sleep", "infinity" ]
