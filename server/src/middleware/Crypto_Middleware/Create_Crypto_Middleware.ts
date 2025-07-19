@@ -46,7 +46,7 @@ async function Create_Crypto_Middleware(req: Request, res: Response, next: NextF
         };
 
         // Lien de réinitialisation
-        const resetLink = `${process.env.VITE_DOMAIN_FRONT}/reset-password?token=${token}`;
+        const resetLink = `${process.env.VITE_DOMAIN_CLIENT}/reset-password?token=${token}`;
 
         // Préparation des données pour l'envoi par email
         // Stocker la réponse de la DB pour l'envoyer par email
