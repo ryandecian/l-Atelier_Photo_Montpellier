@@ -58,8 +58,8 @@ services:
       - "8080"
     environment:
       - NODE_ENV=production
-      - VITE_DOMAIN_API_SERVER=${VITE_DOMAIN_API_SERVER}
       - VITE_DOMAIN_CLIENT=${VITE_DOMAIN_CLIENT}
+      - VITE_DOMAIN_API_SERVER=${VITE_DOMAIN_API_SERVER}
       - VITE_PORT_API_SERVER=${VITE_PORT_API_SERVER}
       - DB_HOST=${DB_HOST}
       - DB_PORT=${DB_PORT}
