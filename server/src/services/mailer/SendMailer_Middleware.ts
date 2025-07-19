@@ -3,6 +3,7 @@
 import transporter from "./mailer";
 import { Request, Response, NextFunction } from "express";
 import "dotenv/config";
+import ENV from "../../config/ENV.config";
 
 /**
  * Middleware pour envoyer un mail
@@ -63,7 +64,7 @@ async function SendMailer_Middleware( req: Request, res: Response, next: NextFun
         };
 
         const info = await transporter.sendMail({
-            from: `"l'Atelier Photo Montpellier" <${process.env.EMAIL_USER}>`, // email de l'expéditeur
+            from: `"l'Atelier Photo Montpellier" <${ENV("process.env.MAIL_SERVER_ADMIN", "Warning")}>`, // email de l'expéditeur
             to: req.body.to, // liste email des destinataires
             subject: req.body.subject, // objet du mail
             text: req.body.text, // Contenu du mail
