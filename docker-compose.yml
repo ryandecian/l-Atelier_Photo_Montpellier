@@ -39,7 +39,7 @@ services:
       dockerfile: Dockerfile
     env_file: .env
     restart: always
-    environment:
+    args: # Arguments pour le build qui remplace "environment". Necessaire pour vite ! A configurer également dans le Dockerfile
       - VITE_NODE_ENV=production
       - VITE_DOMAIN_CLIENT=${VITE_DOMAIN_CLIENT}
       - VITE_DOMAIN_API_SERVER=${VITE_DOMAIN_API_SERVER}
