@@ -1,32 +1,36 @@
+import { Suspense, lazy } from "react";
 import style from "../StyleRootComponent.module.css";
-import HomeRootComponentA from "./ComponentsHomeRoot/HomeRootComponentA/HomeRootComponentA";
-import HomeRootComponentB from "./ComponentsHomeRoot/HomeRootComponentB/HomeRootComponentB";
-import HomeRootComponentC from "./ComponentsHomeRoot/HomeRootComponentC/HomeRootComponentC";
-import HomeRootComponentD from "./ComponentsHomeRoot/HomeRootComponentD/HomeRootComponentD";
-import HomeRootComponentE from "./ComponentsHomeRoot/HomeRootComponentE/HomeRootComponentE";
-import HomeRootComponentF from "./ComponentsHomeRoot/HomeRootComponentF/HomeRootComponentF";
+
+const HomeRootComponentA = lazy(() => import("./ComponentsHomeRoot/HomeRootComponentA/HomeRootComponentA"));
+const HomeRootComponentB = lazy(() => import("./ComponentsHomeRoot/HomeRootComponentB/HomeRootComponentB"));
+const HomeRootComponentC = lazy(() => import("./ComponentsHomeRoot/HomeRootComponentC/HomeRootComponentC"));
+const HomeRootComponentD = lazy(() => import("./ComponentsHomeRoot/HomeRootComponentD/HomeRootComponentD"));
+const HomeRootComponentE = lazy(() => import("./ComponentsHomeRoot/HomeRootComponentE/HomeRootComponentE"));
+const HomeRootComponentF = lazy(() => import("./ComponentsHomeRoot/HomeRootComponentF/HomeRootComponentF"));
 
 function HomeRoot() {
+    
     return (
         <section className={`HomeRoot ${style.ContainerRootRacine}`}>
-            {/* Container A : Accueil */}
-            <HomeRootComponentA />
+            <Suspense fallback={null}>
+                {/* Container A : Accueil */}
+                <HomeRootComponentA />
 
-            {/* Container B : Introduction */}
-            <HomeRootComponentB />
+                {/* Container B : Introduction */}
+                <HomeRootComponentB />
 
-            {/* Container C : Portrait */}
-            <HomeRootComponentC />
+                {/* Container C : Portrait */}
+                <HomeRootComponentC />
             
-            {/* Container D : Mariage */}
-            <HomeRootComponentD />
+                {/* Container D : Mariage */}
+                <HomeRootComponentD />
 
-            {/* Container E : Avis Client */}
-            <HomeRootComponentE />
+                {/* Container E : Avis Client */}
+                <HomeRootComponentE />
 
-            {/* Container F : Autor */}
-            <HomeRootComponentF />
-
+                {/* Container F : Autor */}
+                <HomeRootComponentF />
+            </Suspense>
         </section>
     );
 }
