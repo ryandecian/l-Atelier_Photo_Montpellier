@@ -43,17 +43,26 @@ function MenuNavRoot(Props: MenuNavRootProps) {
 
             {/* Menu déroulant pour Portraits */}
             <li className={`${moduleMenuLi} ${moduleMenuLiTarget1}`} onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}>
-                <span className={`${moduleMenuLink} ${moduleSubMenuPortraits}`}>
-                    PRESTATIONS <span className={moduleSpanPortraits}>{isSubMenuOpen? "▲" : "▼"}</span>
-                </span>
+            <button
+                type="button"
+                className={`${moduleMenuLink} ${moduleSubMenuPortraits}`}
+                onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}
+                aria-expanded={isSubMenuOpen}
+                aria-controls="submenu-prestations"
+                aria-haspopup="true"
+            >
+                PRESTATIONS <span className={moduleSpanPortraits}>{isSubMenuOpen ? "▲" : "▼"}</span>
+            </button>
 
                 {isSubMenuOpen && (
                     <>
                         <button 
                             type="button" 
-                            className={moduleButtonSubMenu} 
-                            onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}>
-                                Fermer
+                            className={moduleButtonSubMenu}
+                            aria-label="Fermer le menu principal"
+                            onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}
+                        >
+                            Fermer
                         </button>
 
                         <ul className={moduleSubMenuUl}>
