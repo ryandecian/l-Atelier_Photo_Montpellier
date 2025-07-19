@@ -10,6 +10,7 @@
          --ColorPink: #ff007f;
          --ColorGreyBlack: #555;
          --ColorLink: rgb(14, 83, 193);
+         --ColorButtonAvis: #0056b3; /* Vérifier pour refacto ok */
 
          /*Couleur des textes général*/
          --ColorPrincipal: #DCA54A;

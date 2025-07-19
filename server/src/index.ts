@@ -9,10 +9,10 @@ import chalk from "chalk";
 import ENV from "./config/ENV.config";
 
 const app = express();
-const port = ENV("process.env.VITE_PORT_SERVER", "Critical");
+const port = ENV("process.env.VITE_PORT_API_SERVER", "Critical");
 
 app.use(cors({
-  origin: ENV("process.env.VITE_DOMAIN_FRONT", "Warning"),
+  origin: ENV("process.env.VITE_DOMAIN_CLIENT", "Warning"),
   credentials: true,
 }));
 
@@ -57,7 +57,7 @@ app.use( async (req: Request, res: Response) => {
  * Le server se lance sur le port 8080
  */
 app.listen(port, async () => {
-  console.info(chalk.cyan(`Server lancé sur ${ await ENV("process.env.VITE_DOMAIN_BACK", "Warning")}`));
+  console.info(chalk.cyan(`Server lancé sur ${ await ENV("process.env.VITE_DOMAIN_API_SERVER", "Warning")}`));
 });
 
-console.log( "test", ENV("process.env.VITE_DOMAIN_FRONT", "Warning"));
+console.log( "test", ENV("process.env.VITE_DOMAIN_CLIENT", "Warning"));
