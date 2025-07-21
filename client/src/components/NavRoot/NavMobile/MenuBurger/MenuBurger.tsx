@@ -1,7 +1,8 @@
 import { useState } from "react";
 import MenuNavRoot from "../../ComponentsNavRoot/MenuNavRoot";
-import style from "../../ComponentsNavRoot/MenuNavRoot.module.css";
+import cssNav from "../../ComponentsNavRoot/MenuNavRoot.module.css";
 import css from "./MenuBurger.module.css";
+import style from "../../../StyleRootComponent.module.css";
 
 function MenuBurger() {
     const [active, setActive] = useState<boolean>(false)
@@ -15,7 +16,7 @@ function MenuBurger() {
 
                 <div>
                     <button type="button" 
-                    className={css.closeBtn}
+                    className={`${css.closeBtn} ${style.Button}`}
                     aria-label="Fermer le menu principal"
                     onClick={funcActive}>
                         x
@@ -25,22 +26,22 @@ function MenuBurger() {
                 {/*Le style de ce composant est directement géré par le module CSS :
                 MenuNavRoot.module.css*/}
                 <MenuNavRoot
-                    moduleMenuUl={style.MenuUlMobile}
-                    moduleMenuLi={style.MenuLiMobile}
-                    moduleMenuLink={style.MenuLinkMobile}
-                    moduleSubMenuUl={style.SubMenuUlMobile}
-                    moduleSubMenuLi={style.SubMenuLiMobile}
-                    moduleSubMenuLink={style.SubMenuLinkMobile}
-                    moduleSpanPortraits={style.SpanPortraitsMobile}
+                    moduleMenuUl={cssNav.MenuUlMobile}
+                    moduleMenuLi={cssNav.MenuLiMobile}
+                    moduleMenuLink={cssNav.MenuLinkMobile}
+                    moduleSubMenuUl={cssNav.SubMenuUlMobile}
+                    moduleSubMenuLi={cssNav.SubMenuLiMobile}
+                    moduleSubMenuLink={cssNav.SubMenuLinkMobile}
+                    moduleSpanPortraits={cssNav.SpanPortraitsMobile}
 
-                    moduleMenuLiTarget1={style.MenuLiTarget1Mobile}
-                    moduleMenuLiTarget2={style.MenuLiTarget2Mobile}
-                    moduleMenuLiTarget3={style.MenuLiTarget3Mobile}
-                    moduleMenuLiTarget4={style.MenuLiTarget4Mobile}
-                    moduleMenuLiTarget5={style.MenuLiTarget5Mobile}
-                    moduleMenuLiTarget6={style.MenuLiTarget6Mobile}
+                    moduleMenuLiTarget1={cssNav.MenuLiTarget1Mobile}
+                    moduleMenuLiTarget2={cssNav.MenuLiTarget2Mobile}
+                    moduleMenuLiTarget3={cssNav.MenuLiTarget3Mobile}
+                    moduleMenuLiTarget4={cssNav.MenuLiTarget4Mobile}
+                    moduleMenuLiTarget5={cssNav.MenuLiTarget5Mobile}
+                    moduleMenuLiTarget6={cssNav.MenuLiTarget6Mobile}
 
-                    moduleButtonSubMenu={style.ButtonSubMenuMobile}
+                    moduleButtonSubMenu={cssNav.ButtonSubMenuMobile}
                 />
 
 
