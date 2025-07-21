@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../router/router";
+import style from "../../StyleRootComponent.module.css";
 
 interface MenuNavTargetHomeRootProps {
     moduleMenuUl: string;
@@ -45,7 +46,7 @@ function MenuNavTargetHomeRoot(Props: MenuNavTargetHomeRootProps) {
             <li className={`${moduleMenuLi} ${moduleMenuLiTarget1}`} onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}>
                 <button
                     type="button"
-                    className={`${moduleMenuLink} ${moduleSubMenuPortraits}`}
+                    className={`${moduleMenuLink} ${moduleSubMenuPortraits} ${style.Button}`}
                     onClick={() => setIsSubMenuOpen(!isSubMenuOpen)}
                     aria-expanded={isSubMenuOpen}
                     aria-controls="submenu-prestations"
@@ -58,7 +59,7 @@ function MenuNavTargetHomeRoot(Props: MenuNavTargetHomeRootProps) {
                     <>
                         <button 
                             type="button" 
-                            className={moduleButtonSubMenu} 
+                            className={`${moduleButtonSubMenu} ${style.Button}`} 
                             aria-label="Fermer le menu principal"
                             onClick={() => setIsSubMenuOpen(!isSubMenuOpen)} 
                         >

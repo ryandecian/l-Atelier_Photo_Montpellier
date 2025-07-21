@@ -263,6 +263,15 @@
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+.Button {
+    /* Il faudra mettre par défaut margin et padding à 0 */
+    background: none;   /* Supprime l’arrière-plan du bouton (souvent gris par défaut) */
+    border: none;       /* Supprime les bordures (souvent visibles sur les boutons natifs) */
+    font: inherit;      /* Utilise la même police que son parent (au lieu de la police par défaut du navigateur) */
+    color: inherit;     /* Utilise la même couleur de texte que son parent */
+    cursor: pointer;    /* Affiche un curseur en forme de main pour indiquer qu’il est cliquable */
+}
+
 .TargetText1 {
     padding: 1.25rem 0; /* 20px 0px 20px 0px */
 }
