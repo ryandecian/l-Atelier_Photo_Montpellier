@@ -36,12 +36,16 @@
         /* Couleur backgound général hors nav, footer et menu burger */
             --ColorBackgroundLeft: #f3f3f3; /* Vérifier pour refacto ok */
             --ColorBackgroundRight: #f5fbff; /* Vérifier pour refacto ok */
-
-        /* Couleur Background Nav Root */
-            --ColorBackgroundWhite: rgb(255, 255, 255); /* Vérifier pour refacto ok */
-            --ColorBackgroundBlack: rgb(0, 0, 0); /* Vérifier pour refacto ok */
-
+            
         /* Couleur Background Nav Target Home */
+            --ColorBackgroundNavHomeWhite: rgb(255, 255, 255); /* Vérifier pour refacto ok */
+            --ColorBackgroundNavHomeBlack: rgb(0, 0, 0); /* Vérifier pour refacto ok */
+            --ColorBackgroundNavHomeGrey: rgba(218, 216, 216, 0.882); /* Vérifier pour refacto ok */
+            
+            /* Couleur Background Nav Root */
+            --ColorBackgroundNavRootWhite: rgb(255, 255, 255); /* Vérifier pour refacto ok */
+            --ColorBackgroundNavRootBlack: rgb(0, 0, 0); /* Vérifier pour refacto ok */
+            --ColorBackgroundNavRootGrey: rgba(218, 216, 216, 0.882); /* Vérifier pour refacto ok */
 
     /* ✨ Ombre du site */
         /**

@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--ColorBackgroundWhite);
+    background-color: var(--ColorBackgroundNavRootWhite);
     box-shadow: var(--box-shadow-bottom);
     width: 100%;
     margin: 0rem;
