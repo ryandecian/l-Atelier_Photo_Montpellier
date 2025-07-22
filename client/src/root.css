@@ -106,6 +106,7 @@
 
     /* Liste des Z-index */
         --z-index_1: 1; /* Niv 1 */
+            /* Bouton d'ouverture du menu burger Nav Target Home */
             /* Bouton d'ouverture du menu burger Nav Root */
         
         --z-index_9: 9; /* Niv 9 */

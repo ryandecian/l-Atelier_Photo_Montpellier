@@ -30,7 +30,7 @@
     z-index: var(--z-index_10);
     top: 0;
     right: -15.625rem; /* -250px */
-    background-color: var(--BackgroudMenuBurger); /*-------------------------------------------------*/
+    background-color: var(--BackgroudMenuBurger); 
     transition: right 0.5s ease;
     box-shadow: var(--box-shadow);
     border-left: 0.0625rem solid var(--borderWhite); /* 1px */

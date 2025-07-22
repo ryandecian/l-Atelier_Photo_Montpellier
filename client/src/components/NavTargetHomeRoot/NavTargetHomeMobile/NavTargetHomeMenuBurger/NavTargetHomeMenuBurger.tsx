@@ -19,7 +19,7 @@ function NavTargetHomeMenuBurger() {
             >
                 Fermer
             </button>
-            
+
             <div className={`${css.sideNav} ${active ? css.active : ""} ${css.mySideNav}`}>
                 <div>
                     <button type="button" 
@@ -55,7 +55,7 @@ function NavTargetHomeMenuBurger() {
 
             {active === false &&
                 <button type="button"
-                    className={css.openBtn}
+                    className={`${css.openBtn} ${style.Button}`}
                     aria-label="Ouvrir le menu principal"
                     onClick={funcActive}>
                     <span className={css.menuBurger}>
