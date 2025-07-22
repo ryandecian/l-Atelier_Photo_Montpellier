@@ -16,6 +16,9 @@
 
         /* Couleurs textes Nav Target Home */
             --ColorTextNavHomeWhite: rgb(255, 255, 255); /* Vérifier pour refacto ok */
+            --ColorTextNavHomeBlack: rgb(0, 0, 0); /* Vérifier pour refacto ok */
+            --ColorTextNavHomePink: #ff0080; /* Vérifier pour refacto ok */
+            --ColorTextNavHomeLink: rgb(14, 83, 193); /* Vérifier pour refacto ok */
             
             /* Couleurs textes Nav Root */
             --ColorTextNavRootBlack: rgb(0, 0, 0); /* Vérifier pour refacto ok */

@@ -21,15 +21,15 @@
 .MenuLiTarget4Mobile,
 .MenuLiTarget5Mobile,
 .MenuLiTarget6Mobile {
-    border-top: 0.0625rem solid var(--ColorBorderMenuBurger); /* 1px */
+    border-top: 0.0625rem solid var(--ColorBackgroundNavHomeWhite); /* 1px */
 }
 .MenuLiTarget6Mobile {
-    border-bottom: 0.0625rem solid var(--ColorBorderMenuBurger); /* 1px */
+    border-bottom: 0.0625rem solid var(--ColorBackgroundNavHomeWhite); /* 1px */
 }
 
 .MenuLinkMobile {
     font-size: var(--h5);
-    color: var(--textColorMenuBurger);
+    color: var(--ColorTextNavHomeBlack);
     text-decoration: none;
     margin: 0rem;
     border: none;
@@ -86,7 +86,7 @@
 
 .SubMenuLinkMobile {
     font-size: var(--h6);
-    color: var(--textColorMenuBurger); /*-----------------------------------------------------*/
+    color: var(--ColorTextNavHomeBlack); /*-----------------------------------------------------*/
     text-decoration: none;
 }
 @media (min-width: 18.75rem) { /* 300px */
@@ -136,7 +136,7 @@
     display: inline-block;
     font-size: var(--h4);
     text-decoration: none;
-    color: var(--ColorWhite);
+    color: var(--ColorTextNavHomeWhite);
     font-family: "Saira Condensed", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -145,7 +145,7 @@
 }
 .MenuLinkPC:hover {
     transform: scale(1.2); /* Augmente légèrement la taille */
-    color: var(--ColorPink); /* Change la couleur en Rose */
+    color: var(--ColorTextNavHomePink); /* Change la couleur en Rose */
 }
 
 .SubMenuPortraitsPC {
@@ -165,7 +165,6 @@
     list-style: none;
     margin: 0.5rem 0rem; /* 8px 0px 8px 0px */
     padding: 0;
-    box-shadow: var(--box-shadow);
 }
 
 .ButtonSubMenuPC {
@@ -193,22 +192,22 @@
 
 .SubMenuLiPC {
     padding: 0.25rem 1rem; /* 4px 16px 4px 16px */
-    background-color: var(--BackgroudSubMenuBurger);
+    background-color: var(--ColorBackgroundNavHomeGrey);
 }
 .SubMenuLiTarget1PC,
 .SubMenuLiTarget2PC {
-    border-top: 0.09375rem solid var(--borderWhite); /* 1.5px */
-    border-left: 0.09375rem solid var(--borderWhite); /* 1.5px */
-    border-right: 0.09375rem solid var(--borderWhite); /* 1.5px */
+    border-top: 0.09375rem solid var(--ColorBackgroundNavHomeWhite); /* 1.5px */
+    border-left: 0.09375rem solid var(--ColorBackgroundNavHomeWhite); /* 1.5px */
+    border-right: 0.09375rem solid var(--ColorBackgroundNavHomeWhite); /* 1.5px */
 }
 .SubMenuLiTarget3PC {
-    border: 0.09375rem solid var(--borderWhite); /* 1.5px */
+    border: 0.09375rem solid var(--ColorBackgroundNavHomeWhite); /* 1.5px */
 }
 
 .SubMenuLinkPC {
     display: inline-block;
     font-size: var(--h5);
-    color: var(--textColorMenu);
+    color: var(--ColorTextNavHomeWhite);
     text-decoration: none;
     transition: color 0.2s ease;
 }
@@ -216,5 +215,5 @@
 .SubMenuLinkPC:hover {
     transform: scale(1.2); /* Effet de zoom de 20% */
     transform-origin: center center; /* Zoom qui part du centre et va vers le centre */
-    color: var(--ColorLink);
+    color: var(--ColorTextNavHomeLink);
 }
