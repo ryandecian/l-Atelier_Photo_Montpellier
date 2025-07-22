@@ -4,48 +4,53 @@
 
 :root {
     /*Couleur des textes*/
-         /* Couleur des textes général Restructuration */
-         --ColorBlack: rgb(0, 0, 0);
-         --ColorWhite: rgb(255, 255, 255);
-         --ColorPink: #ff0080;
-         --ColorGreyBlack: #555;
-         --ColorLink: rgb(14, 83, 193);
-         --ColorButtonAvis: #0056b3; /* Vérifier pour refacto ok */
+        /* Couleur des textes général Restructuration */
+            --ColorBlack: rgb(0, 0, 0);
+            --ColorWhite: rgb(255, 255, 255);
+            --ColorPink: #ff0080;
+            --ColorGreyBlack: #555;
+            --ColorLink: rgb(14, 83, 193);
+            --ColorButtonAvis: #0056b3; /* Vérifier pour refacto ok */
 
-         /*Couleur des textes général*/
-         --ColorPrincipal: #DCA54A;
-         --ColorSecondaire: #3a240f;
-         --ColorClaire: #523711;
-         --ColorTexte: #3A3A3A;
-         --ColorGrey: rgb(230, 230, 230);
-         --backgroundBlack: black;
-         --backgroundWhite: white;
+        /* Couleur texte Footer */
+            --Copyright: #ff007f;
 
+        /*Couleur des textes général*/
+            --ColorPrincipal: #DCA54A;
+            --ColorSecondaire: #3a240f;
+            --ColorClaire: #523711;
+            --ColorTexte: #3A3A3A;
+            --ColorGrey: rgb(230, 230, 230);
+            --backgroundBlack: black;
+            --backgroundWhite: white;
+/*⬆️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⬆️*/     
+    /* Couleur background du site */
+            --ColorBackgroundLeft: #f3f3f3;
+            --ColorBackgroundRight: #f5fbff;
+            
+    /* Couleurs du Menu Burger */
+        --Background1: #A9CCE3;
+        --BackgroudSubMenuBurger: rgba(218, 216, 216, 0.675);
+        --BackgroudMenuBurger: rgba(218, 216, 216, 0.882);
+        --textColorMenu: white;
+        --textColorMenuHover: rgb(137, 228, 255);
+        --textColorMenuBurger: black;
+        --textColorSubMenuHover: black;
+        --spanMenuBurger: black;
+/*⬇️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⬇️*/     
     /* Couleur des border */
-         --borderWhite: white;
-
+        --borderWhite: white;
+/*⬆️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⬆️*/     
+/*⬇️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⬇️*/     
     /* Autre paramètre de dépendance */
-         --box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
-
-     /*Couleur des textes du Footer*/
-         --Copyright: #ff007f;
-
+        --box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+/*⬆️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⬆️*/     
+/*⬇️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⬇️*/     
  /*Backgound du site*/
      /*Backgound du général*/
          --textColorBlack: black;
          --textColorWhite: white;
-
-     /* Couleurs du Menu Burger */
-         --Background1: #A9CCE3;
-         --BackgroudSubMenuBurger: rgba(218, 216, 216, 0.675);
-         --BackgroudMenuBurger: rgba(218, 216, 216, 0.882);
-         --textColorMenu: white;
-         --textColorMenuHover: rgb(137, 228, 255);
-         --textColorMenuBurger: black;
-         --textColorSubMenuHover: black;
-         --spanMenuBurger: black;
-
-         
+/*⬆️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⬆️*/     
     /*Logique taille police d'écriture site*/
          --font-size-root: 1rem; /* 16 px : Ref size, dimensionne tout le site*/
          --p: var(--font-size-root); /*16px*/
@@ -75,7 +80,7 @@
          --font-style-title: var(--font-style-titles);
 
          /* Attention, il ne gère pas le ContainerAccueilHomeRoot */
-
+/*⬇️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⬇️*/     
     /* Liste des Z-index */
          --z-index_-2: -2; /* NavMobile.css et NavPC.css : Même logique : Background en lien avec l'opacité de l'img vague */
          --z-index_-1: -1; /* NavMobile.css et NavPC : Même logique : Img de vague transparent */
@@ -84,12 +89,13 @@
          --z-index_5: 5; /* MenuNavRoot.module.css : Etage du sous-menu de Portrait dans NavPC via des props */
          --z-index_9: 9; /* NavMobile.css : Bouton-écran de fermeture MenuBurger div = viewport */
          --z-index_10: 10; /* NavMobile.css : Position du MenuBurger */
-
+/*⬆️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⬆️*/     
+/*⬇️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⬇️*/     
     /* Personalisation du MenuBurger */
          --ColorTexteMenuBurger: var(--ColorSecondaire);
          --ColorBorderMenuBurger: white;
 }
-
+/*⬆️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⬆️*/     
 body {
     font-family: "Quicksand", sans-serif;
     padding: 0;
