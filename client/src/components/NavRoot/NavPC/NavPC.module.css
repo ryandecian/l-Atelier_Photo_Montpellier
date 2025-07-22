@@ -3,8 +3,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--ColorWhite);
-    box-shadow: var(--box-shadow);
+    background-color: var(--ColorBackgroundNavRootWhite);
+    box-shadow: var(--box-shadow-bottom);
     width: 100%;
     margin: 0rem;
     padding: 0rem;
@@ -52,7 +52,7 @@
 
 .TitleNavPC > a {
     font-size: var(--h1);
-    color: var(--ColorBlack);
+    color: var(--ColorTextNavRootBlack);
     font-family: AnneSignature;
     font-weight: 300;
     font-style: normal;
