@@ -21,4 +21,5 @@
     font-weight: normal;
     text-decoration: none;
     color: var(--ColorTextNavRootBlack);
+    margin: 2rem 0rem; /* 32px 0px 32px 0px */
 }
