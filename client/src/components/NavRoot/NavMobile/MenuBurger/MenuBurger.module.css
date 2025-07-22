@@ -1,5 +1,5 @@
-/*Menu Burger*/
-/*Position du Menu Burger*/
+/* Menu Burger */
+/* Position du Menu Burger */
 .sideCloseNav {
     position: fixed;
     top: 0rem;
@@ -8,13 +8,9 @@
     width: 100vw;
     height: 100vh;
     background-color: transparent;
-    background: none;
     padding: 0rem;
     margin: 0rem;
-    border: 0rem;
-    outline: none;
     opacity: 0;
-    cursor: pointer;
 
     /* Masquer le texte de manière propre et accessible */
     text-indent: -625rem; /* 10000px */
@@ -70,18 +66,14 @@
     position: fixed;
     top: 0.4rem; /* 6.4px */
     right: 0.5rem; /* 8px */
-    z-index: 1;
-    background: none;
-    border: none;
-    outline: none;
-    cursor: pointer;
+    z-index: var(--z-index_1);
 }
 
 .menuBurger > span {
     display: block;
     width: 1.875rem; /* 30px */
     height: 0.25rem; /* 4px */
-    background-color: var(--ColorBlack);
+    background-color: var(--ColorBackgroundBlack);
     margin: 0.5rem 0rem; /* 8px 0px 8px 0px */
 }
 @media (min-width: 15.625rem) { /* 250px */

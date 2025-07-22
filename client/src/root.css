@@ -3,7 +3,7 @@
 @import "./assets/Fonts/SairaCondensed/stylesheet.css";
 
 :root {
-    /* Couleur des textes */
+    /* ✨ Couleur des textes */
         /* Couleur des textes général Restructuration */
             --ColorTextBlack: rgb(0, 0, 0); /* Vérifier pour refacto ok */
             --ColorButtonAvis: #0056b3; /* Vérifier pour refacto ok */
@@ -21,7 +21,7 @@
             --ColorTextNavRootBlack: rgb(0, 0, 0); /* Vérifier pour refacto ok */
 
         /* Couleurs texte Footer */
-            --Copyright: #ff007f;
+            --Copyright: #ff007f; /* ⚠️ */
 
         /*Couleurs des textes général*/
             --ColorPrincipal: #DCA54A; /* ⚠️ */
@@ -32,17 +32,18 @@
             --backgroundBlack: black; /* ⚠️ */
             --backgroundWhite: white; /* ⚠️ */
 
-        /* Couleur background du site */
-            /* Couleur backgound général hors nav, footer et menu burger */
-                --ColorBackgroundLeft: #f3f3f3; /* Vérifier pour refacto ok */
-                --ColorBackgroundRight: #f5fbff; /* Vérifier pour refacto ok */
+    /* ✨ Couleur background du site */
+        /* Couleur backgound général hors nav, footer et menu burger */
+            --ColorBackgroundLeft: #f3f3f3; /* Vérifier pour refacto ok */
+            --ColorBackgroundRight: #f5fbff; /* Vérifier pour refacto ok */
 
-            /* Couleur Background Nav Root */
-                --ColorBackgroundWhite: rgb(255, 255, 255); /* Vérifier pour refacto ok */
+        /* Couleur Background Nav Root */
+            --ColorBackgroundWhite: rgb(255, 255, 255); /* Vérifier pour refacto ok */
+            --ColorBackgroundBlack: rgb(0, 0, 0); /* Vérifier pour refacto ok */
 
-                /* Couleur Background Nav Target Home */
+        /* Couleur Background Nav Target Home */
 
-    /* Ombre du site */
+    /* ✨ Ombre du site */
         /**
         * rgba( AA, BB, CC, DD) EE FF GG
         * AA, BB, CC : Couleur de l'ombre
@@ -104,13 +105,19 @@
             /* Attention, il ne gère pas le ContainerAccueilHomeRoot */
 
     /* Liste des Z-index */
-        --z-index_-2: -2; /* NavMobile.css et NavPC.css : Même logique : Background en lien avec l'opacité de l'img vague */
-        --z-index_-1: -1; /* NavMobile.css et NavPC : Même logique : Img de vague transparent */
-        --z-index_1: 1; /* MenuNavRoot.module.css : Button de fermeture du subMenu dans la NavPC */
-        --z-index_4: 4; /* MenuNavRoot.module.css : Position du sous-menu de Portrait dans NavPC via des props */
-        --z-index_5: 5; /* MenuNavRoot.module.css : Etage du sous-menu de Portrait dans NavPC via des props */
-        --z-index_9: 9; /* NavMobile.css : Bouton-écran de fermeture MenuBurger div = viewport */
-        --z-index_10: 10; /* NavMobile.css : Position du MenuBurger */
+        --z-index_1: 1; /* Niv 1 */
+            /* Bouton d'ouverture du menu burger Nav Root */
+        
+        --z-index_9: 9; /* Niv 9 */
+            /* Bouton invisible de fermeture du menu burger Nav Target Home */
+
+        --z-index_10: 10; /* Niv 10 */
+            /* Hauteur du menu burger Nav Target Home */
+        
+        /* ⚠️ */ --z-index_-2: -2; /* NavMobile.css et NavPC.css : Même logique : Background en lien avec l'opacité de l'img vague */
+        /* ⚠️ */ --z-index_-1: -1; /* NavMobile.css et NavPC : Même logique : Img de vague transparent */
+        /* ⚠️ */ --z-index_4: 4; /* MenuNavRoot.module.css : Position du sous-menu de Portrait dans NavPC via des props */
+        /* ⚠️ */ --z-index_5: 5; /* MenuNavRoot.module.css : Etage du sous-menu de Portrait dans NavPC via des props */
 
     /* Personalisation du MenuBurger */
         --ColorTexteMenuBurger: var(--ColorSecondaire); /* ⚠️ */
