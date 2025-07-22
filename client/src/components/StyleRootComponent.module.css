@@ -267,6 +267,7 @@
     /* Il faudra mettre par défaut margin et padding à 0 */
     background: none;   /* Supprime l’arrière-plan du bouton (souvent gris par défaut) */
     border: none;       /* Supprime les bordures (souvent visibles sur les boutons natifs) */
+    outline: none;      /* Supprime le contour par défaut du bouton */
     font: inherit;      /* Utilise la même police que son parent (au lieu de la police par défaut du navigateur) */
     color: inherit;     /* Utilise la même couleur de texte que son parent */
     cursor: pointer;    /* Affiche un curseur en forme de main pour indiquer qu’il est cliquable */

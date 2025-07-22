@@ -50,7 +50,7 @@
 
 .TitleNavTargetHomePC > a {
     font-size: var(--h1);
-    color: var(--textColorMenu);
+    color: var(--ColorTextNavHomeWhite);
     font-family: AnneSignature;
     font-weight: 300;
     font-style: normal;
