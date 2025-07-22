@@ -5,7 +5,7 @@
     align-items: center;
     width: 100%;
     background-color: inherit;
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow-bottom);
 }
 
 .ContainerLogoNavMobile {
@@ -15,13 +15,11 @@
     width: 100%;
 }
 
-.TitleNavMobile {
+.ContainerLogoNavMobile > a {
     font-size: var(--h1);
     font-family: AnneSignature;
     font-weight: normal;
-}
-
-.TitleNavMobile > a {
     text-decoration: none;
-    color: var(--ColorBlack);
+    color: var(--ColorTextNavRootBlack);
+    margin: 2rem 0rem; /* 32px 0px 32px 0px */
 }

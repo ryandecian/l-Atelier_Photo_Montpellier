@@ -13,14 +13,21 @@ function NavTargetHomeMenuBurger() {
         }
     return (
         <>
-            <button className={`${css.sideCloseNav} ${active ? css.active : ""}`} type="button" onClick={funcActive}>Fermer</button>
+            <button 
+                className={`${css.sideCloseNav} ${active ? css.active : ""} ${style.Button}`}
+                type="button" onClick={funcActive}
+            >
+                Fermer
+            </button>
+
             <div className={`${css.sideNav} ${active ? css.active : ""} ${css.mySideNav}`}>
                 <div>
                     <button type="button" 
                         className={`${css.closeBtn} ${style.Button}`}
                         aria-label="Fermer le menu principal"
-                        onClick={funcActive}>
-                            x
+                        onClick={funcActive}
+                    >
+                        x
                     </button>
                 </div>
 
@@ -48,7 +55,7 @@ function NavTargetHomeMenuBurger() {
 
             {active === false &&
                 <button type="button"
-                    className={css.openBtn}
+                    className={`${css.openBtn} ${style.Button}`}
                     aria-label="Ouvrir le menu principal"
                     onClick={funcActive}>
                     <span className={css.menuBurger}>

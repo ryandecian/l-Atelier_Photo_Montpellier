@@ -1,7 +1,7 @@
+import style from "../ComponentsNavRoot/MenuNavRoot.module.css";
 import css from "./NavPC.module.css";
 import { Link } from "react-router-dom";
 import MenuNavRoot from "../ComponentsNavRoot/MenuNavRoot";
-import style from "../ComponentsNavRoot/MenuNavRoot.module.css";
 
 function NavPC() {
     return (
