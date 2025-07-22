@@ -1,7 +1,7 @@
+import style from "../ComponentsNavTargetHomeRoot/MenuNavTargetHomeRoot.module.css";
 import css from "./NavTargetHomePC.module.css";
 import { Link } from "react-router-dom";
 import MenuNavTargetHomeRoot from "../ComponentsNavTargetHomeRoot/MenuNavTargetHomeRoot";
-import style from "../ComponentsNavTargetHomeRoot/MenuNavTargetHomeRoot.module.css";
 
 function NavTargetHomePC() {
     return (
