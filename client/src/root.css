@@ -25,8 +25,8 @@
             --backgroundWhite: white;
 /*⬆️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⬆️*/     
     /* Couleur background du site */
-            --ColorBackgroundLeft: #f3f3f3;
-            --ColorBackgroundRight: #f5fbff;
+            --ColorBackgroundLeft: #f3f3f3; /* Vérifier pour refacto ok */
+            --ColorBackgroundRight: #f5fbff; /* Vérifier pour refacto ok */
             
     /* Couleurs du Menu Burger */
         --Background1: #A9CCE3;
