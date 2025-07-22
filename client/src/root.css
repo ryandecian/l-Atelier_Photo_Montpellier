@@ -5,16 +5,20 @@
 :root {
     /* Couleur des textes */
         /* Couleur des textes général Restructuration */
+            --ColorTextBlack: rgb(0, 0, 0); /* Vérifier pour refacto ok */
+            --ColorButtonAvis: #0056b3; /* Vérifier pour refacto ok */
+
             --ColorBlack: rgb(0, 0, 0); /* ⚠️ */
             --ColorWhite: rgb(255, 255, 255); /* ⚠️ */
             --ColorPink: #ff0080; /* ⚠️ */
             --ColorGreyBlack: #555; /* ⚠️ */
             --ColorLink: rgb(14, 83, 193); /* ⚠️ */
-            --ColorButtonAvis: #0056b3; /* Vérifier pour refacto ok */
 
         /* Couleurs textes Nav Target Home */
+            --ColorTextNavHomeWhite: rgb(255, 255, 255); /* Vérifier pour refacto ok */
 
         /* Couleurs textes Nav Root */
+            --ColorTextNavRootBlack: rgb(0, 0, 0); /* Vérifier pour refacto ok */
 
         /* Couleurs texte Footer */
             --Copyright: #ff007f;
@@ -33,10 +37,10 @@
                 --ColorBackgroundLeft: #f3f3f3; /* Vérifier pour refacto ok */
                 --ColorBackgroundRight: #f5fbff; /* Vérifier pour refacto ok */
 
-            /* Couleur Background Nav Target Home */
-
             /* Couleur Background Nav Root */
                 --ColorBackgroundWhite: rgb(255, 255, 255); /* Vérifier pour refacto ok */
+
+                /* Couleur Background Nav Target Home */
 
     /* Ombre du site */
         /**

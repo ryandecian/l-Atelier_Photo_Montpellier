@@ -52,7 +52,7 @@
 
 .TitleNavPC > a {
     font-size: var(--h1);
-    color: var(--ColorBlack);
+    color: var(--ColorTextNavRootBlack);
     font-family: AnneSignature;
     font-weight: 300;
     font-style: normal;
