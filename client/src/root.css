@@ -115,21 +115,30 @@
             /* Attention, il ne gère pas le ContainerAccueilHomeRoot */
 
     /* Liste des Z-index */
+        --z-index_-1: -1; /* Z-index -1 à partir du Niv 10 */
+            /* Bouton de fermeture du sous menu des PRESTATIONS de Nav Target Home */
+            /* Bouton de fermeture du sous menu des PRESTATIONS de Nav Root */
+
         --z-index_1: 1; /* Niv 1 */
             /* Bouton d'ouverture du menu burger Nav Target Home */
             /* Bouton d'ouverture du menu burger Nav Root */
-        
+            
+        --z-index_4: 4; /* Z-index 4 à partir du Niv 10 */
+            /* Bouton de fermeture du sous menu de Nav Target Home */
+            /* Bouton de fermeture du sous menu de Nav Root */
+
+        --z-index_5: 5; /* Z-index 5 à partir du Niv 10 */
+            /* Bouton d'ouverture du sous menu nommé PRESTATIONS de nav Target Home */
+            /* Bouton d'ouverture du sous menu nommé PRESTATIONS de nav Root */
+
         --z-index_9: 9; /* Niv 9 */
             /* Bouton invisible de fermeture du menu burger Nav Target Home */
+            /* Bouton invisible de fermeture du menu burger Nav Root */
 
         --z-index_10: 10; /* Niv 10 */
             /* Hauteur du menu burger Nav Target Home */
+            /* Hauteur du menu burger Nav Root */
         
-        /* ⚠️ */ --z-index_-2: -2; /* NavMobile.css et NavPC.css : Même logique : Background en lien avec l'opacité de l'img vague */
-        /* ⚠️ */ --z-index_-1: -1; /* NavMobile.css et NavPC : Même logique : Img de vague transparent */
-        /* ⚠️ */ --z-index_4: 4; /* MenuNavRoot.module.css : Position du sous-menu de Portrait dans NavPC via des props */
-        /* ⚠️ */ --z-index_5: 5; /* MenuNavRoot.module.css : Etage du sous-menu de Portrait dans NavPC via des props */
-
     /* Personalisation du MenuBurger */
         --ColorTexteMenuBurger: var(--ColorSecondaire); /* ⚠️ */
         --ColorBorderMenuBurger: white; /* ⚠️ */

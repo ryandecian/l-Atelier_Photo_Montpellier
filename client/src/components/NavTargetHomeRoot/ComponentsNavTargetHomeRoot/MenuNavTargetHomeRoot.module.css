@@ -150,7 +150,7 @@
 
 .SubMenuPortraitsPC {
     position: relative;
-    z-index: var(--z-index_5); /* Assure que le lien est au-dessus du sous-menu */
+    z-index: var(--z-index_5); /* Met le bouton d'ouverture PRESTATIONS 5 Niv au dessus du menu burger */
     cursor: pointer;
 }
 
@@ -160,7 +160,7 @@
 
 /* Sous menu de Portraits*/
 .SubMenuUlPC {
-    z-index: var(--z-index_5);
+    z-index: var(--z-index_5); /* Place le sous menu au même niveau que le bouton PRESTATIONS */
     position: absolute;
     list-style: none;
     margin: 0.5rem 0rem; /* 8px 0px 8px 0px */
@@ -171,7 +171,7 @@
     position: fixed;
     top: 0rem;
     left: 0rem;
-    z-index: var(--z-index_4);
+    z-index: var(--z-index_4); /* Place le boutton de fermeture juste en dessous du sous menu */
     width: 100vw;
     height: 100vh;
     background-color: transparent;
