@@ -14,13 +14,10 @@
     width: 100%;
 }
 
-.TitleNavTargetHomeMobile {
+.ContainerLogoNavTargetHomeMobile > a {
     font-size: var(--h1);
     font-family: AnneSignature;
     font-weight: normal;
-}
-
-.TitleNavTargetHomeMobile > a {
     text-decoration: none;
-    color: var(--textColorMenu);
+    color: var(--ColorTextNavHomeWhite);
 }
