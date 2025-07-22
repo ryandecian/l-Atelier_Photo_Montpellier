@@ -16,9 +16,12 @@
 
         /* Couleurs textes Nav Target Home */
             --ColorTextNavHomeWhite: rgb(255, 255, 255); /* Vérifier pour refacto ok */
-
-        /* Couleurs textes Nav Root */
+            
+            /* Couleurs textes Nav Root */
             --ColorTextNavRootBlack: rgb(0, 0, 0); /* Vérifier pour refacto ok */
+            --ColorTextNavRootDarkBrown: #3a240f; /* Vérifier pour refacto ok */
+            --ColorTextNavRootPink: #ff0080; /* Vérifier pour refacto ok */
+            --ColorTextNavRootLink: rgb(14, 83, 193); /* Vérifier pour refacto ok */
 
         /* Couleurs texte Footer */
             --Copyright: #ff007f; /* ⚠️ */

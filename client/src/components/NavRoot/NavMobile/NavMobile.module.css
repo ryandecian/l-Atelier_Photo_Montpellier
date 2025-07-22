@@ -5,7 +5,7 @@
     align-items: center;
     width: 100%;
     background-color: inherit;
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow-bottom);
 }
 
 .ContainerLogoNavMobile {

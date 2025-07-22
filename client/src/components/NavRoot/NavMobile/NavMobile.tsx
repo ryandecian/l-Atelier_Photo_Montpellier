@@ -7,9 +7,9 @@ function NavMobile() {
     return (
         <nav className={css.NavMobile}>
             <div className={css.ContainerLogoNavMobile}>
-                    <Link to="/">
+                <Link to="/">
                         l'Atelier Photo Montpellier
-                    </Link>
+                </Link>
             </div>
 
             <MenuBurger />
