@@ -3,55 +3,73 @@
 @import "./assets/Fonts/SairaCondensed/stylesheet.css";
 
 :root {
-    /*Couleur des textes*/
+    /* Couleur des textes */
         /* Couleur des textes général Restructuration */
-            --ColorBlack: rgb(0, 0, 0);
-            --ColorWhite: rgb(255, 255, 255);
-            --ColorPink: #ff0080;
-            --ColorGreyBlack: #555;
-            --ColorLink: rgb(14, 83, 193);
+            --ColorBlack: rgb(0, 0, 0); /* ⚠️ */
+            --ColorWhite: rgb(255, 255, 255); /* ⚠️ */
+            --ColorPink: #ff0080; /* ⚠️ */
+            --ColorGreyBlack: #555; /* ⚠️ */
+            --ColorLink: rgb(14, 83, 193); /* ⚠️ */
             --ColorButtonAvis: #0056b3; /* Vérifier pour refacto ok */
 
-        /* Couleur texte Footer */
+        /* Couleurs textes Nav Target Home */
+
+        /* Couleurs textes Nav Root */
+
+        /* Couleurs texte Footer */
             --Copyright: #ff007f;
 
-        /*Couleur des textes général*/
-            --ColorPrincipal: #DCA54A;
-            --ColorSecondaire: #3a240f;
-            --ColorClaire: #523711;
-            --ColorTexte: #3A3A3A;
-            --ColorGrey: rgb(230, 230, 230);
-            --backgroundBlack: black;
-            --backgroundWhite: white;
-/*⬆️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⬆️*/     
-    /* Couleur background du site */
-            --ColorBackgroundLeft: #f3f3f3; /* Vérifier pour refacto ok */
-            --ColorBackgroundRight: #f5fbff; /* Vérifier pour refacto ok */
-            
-    /* Couleurs du Menu Burger */
-        --Background1: #A9CCE3;
-        --BackgroudSubMenuBurger: rgba(218, 216, 216, 0.675);
-        --BackgroudMenuBurger: rgba(218, 216, 216, 0.882);
-        --textColorMenu: white;
-        --textColorMenuHover: rgb(137, 228, 255);
-        --textColorMenuBurger: black;
-        --textColorSubMenuHover: black;
-        --spanMenuBurger: black;
-/*⬇️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⬇️*/     
-    /* Couleur des border */
-        --borderWhite: white;
-/*⬆️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⬆️*/     
-/*⬇️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⬇️*/     
-    /* Autre paramètre de dépendance */
+        /*Couleurs des textes général*/
+            --ColorPrincipal: #DCA54A; /* ⚠️ */
+            --ColorSecondaire: #3a240f; /* ⚠️ */
+            --ColorClaire: #523711; /* ⚠️ */
+            --ColorTexte: #3A3A3A; /* ⚠️ */
+            --ColorGrey: rgb(230, 230, 230); /* ⚠️ */
+            --backgroundBlack: black; /* ⚠️ */
+            --backgroundWhite: white; /* ⚠️ */
+
+        /* Couleur background du site */
+            /* Couleur backgound général hors nav, footer et menu burger */
+                --ColorBackgroundLeft: #f3f3f3; /* Vérifier pour refacto ok */
+                --ColorBackgroundRight: #f5fbff; /* Vérifier pour refacto ok */
+
+            /* Couleur Background Nav Target Home */
+
+            /* Couleur Background Nav Root */
+                --ColorBackgroundWhite: rgb(255, 255, 255); /* Vérifier pour refacto ok */
+
+    /* Ombre du site */
+        /**
+        * rgba( AA, BB, CC, DD) EE FF GG
+        * AA, BB, CC : Couleur de l'ombre
+        * DD : Opacité avec 0 transparence total et 1 opaque
+        * EE : Décalage horizontal ←→ : négatif vers gauche et positif vers droite. Valeur en px
+        * FF : Décalage vertical ↑↓ : négatif vers le haut et positif vers le bas. Valeur en px
+        * GG : Flou de l'ombre. Valeur en px
+        */
+
+        /* Ombre Nav Root */
+        --box-shadow-bottom: rgba(0, 0, 0, 0.1) 0px 4px 6px; /* Vérifier pour refacto ok */
         --box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
-/*⬆️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⬆️*/     
-/*⬇️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⬇️*/     
+
+    /* Couleurs du Menu Burger */
+        --Background1: #A9CCE3; /* ⚠️ */
+        --BackgroudSubMenuBurger: rgba(218, 216, 216, 0.675); /* ⚠️ */
+        --BackgroudMenuBurger: rgba(218, 216, 216, 0.882); /* ⚠️ */
+        --textColorMenu: white; /* ⚠️ */
+        --textColorMenuHover: rgb(137, 228, 255); /* ⚠️ */
+        --textColorMenuBurger: black; /* ⚠️ */
+        --textColorSubMenuHover: black; /* ⚠️ */
+        --spanMenuBurger: black; /* ⚠️ */
+    /* Couleur des border */
+        --borderWhite: white; /* ⚠️ */
+
  /*Backgound du site*/
      /*Backgound du général*/
-         --textColorBlack: black;
-         --textColorWhite: white;
-/*⬆️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⬆️*/     
-    /*Logique taille police d'écriture site*/
+         --textColorBlack: black; /* ⚠️ */
+         --textColorWhite: white; /* ⚠️ */
+
+         /*Logique taille police d'écriture site*/
          --font-size-root: 1rem; /* 16 px : Ref size, dimensionne tout le site*/
          --p: var(--font-size-root); /*16px*/
          --h1: calc(var(--font-size-root) * 2); /*32px*/
@@ -64,38 +82,37 @@
          --h8: calc(var(--font-size-root) - 0.5rem); /*8px*/
 
     /* Attention, les 3 déclarations sont obligatoire pour les titres */
-    /*Logique des Titres*/
-         --font-family-normal: "Quicksand", sans-serif;
-         --font-family-titles: "Saira Condensed", sans-serif;
+        /*Logique des Titres*/
+            --font-family-normal: "Quicksand", sans-serif;
+            --font-family-titles: "Saira Condensed", sans-serif;
 
-         --font-weight-normal: none;
-         --font-weight-titles: 600;
+            --font-weight-normal: none;
+            --font-weight-titles: 600;
          
-         --font-style-normal: normal;
-         --font-style-titles: normal;
+            --font-style-normal: normal;
+            --font-style-titles: normal;
 
 
-         --font-family-title: var(--font-family-titles);
-         --font-weight-title: var(--font-weight-titles);
-         --font-style-title: var(--font-style-titles);
+            --font-family-title: var(--font-family-titles);
+            --font-weight-title: var(--font-weight-titles);
+            --font-style-title: var(--font-style-titles);
 
-         /* Attention, il ne gère pas le ContainerAccueilHomeRoot */
-/*⬇️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⬇️*/     
+            /* Attention, il ne gère pas le ContainerAccueilHomeRoot */
+
     /* Liste des Z-index */
-         --z-index_-2: -2; /* NavMobile.css et NavPC.css : Même logique : Background en lien avec l'opacité de l'img vague */
-         --z-index_-1: -1; /* NavMobile.css et NavPC : Même logique : Img de vague transparent */
-         --z-index_1: 1; /* MenuNavRoot.module.css : Button de fermeture du subMenu dans la NavPC */
-         --z-index_4: 4; /* MenuNavRoot.module.css : Position du sous-menu de Portrait dans NavPC via des props */
-         --z-index_5: 5; /* MenuNavRoot.module.css : Etage du sous-menu de Portrait dans NavPC via des props */
-         --z-index_9: 9; /* NavMobile.css : Bouton-écran de fermeture MenuBurger div = viewport */
-         --z-index_10: 10; /* NavMobile.css : Position du MenuBurger */
-/*⬆️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⬆️*/     
-/*⬇️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⬇️*/     
+        --z-index_-2: -2; /* NavMobile.css et NavPC.css : Même logique : Background en lien avec l'opacité de l'img vague */
+        --z-index_-1: -1; /* NavMobile.css et NavPC : Même logique : Img de vague transparent */
+        --z-index_1: 1; /* MenuNavRoot.module.css : Button de fermeture du subMenu dans la NavPC */
+        --z-index_4: 4; /* MenuNavRoot.module.css : Position du sous-menu de Portrait dans NavPC via des props */
+        --z-index_5: 5; /* MenuNavRoot.module.css : Etage du sous-menu de Portrait dans NavPC via des props */
+        --z-index_9: 9; /* NavMobile.css : Bouton-écran de fermeture MenuBurger div = viewport */
+        --z-index_10: 10; /* NavMobile.css : Position du MenuBurger */
+
     /* Personalisation du MenuBurger */
-         --ColorTexteMenuBurger: var(--ColorSecondaire);
-         --ColorBorderMenuBurger: white;
+        --ColorTexteMenuBurger: var(--ColorSecondaire); /* ⚠️ */
+        --ColorBorderMenuBurger: white; /* ⚠️ */
 }
-/*⬆️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⬆️*/     
+
 body {
     font-family: "Quicksand", sans-serif;
     padding: 0;
