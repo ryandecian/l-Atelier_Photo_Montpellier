@@ -30,6 +30,15 @@ function DataCardBlogRoot() {
             date: "10/07/2025",
             image: "/images/image-blog/cartes/blog_20250710.jpg",
         },
+        {
+            reactKey: 4,
+            path: ListDataRouter[4].children?.[4].path,
+            id: "top",
+            title: "Calendrier idéal pour les photos de grossesse",
+            description: "Quand programmer votre shooting grossesse ?",
+            date: "24/07/2025",
+            image: "/images/image-blog/cartes/blog_20250724.jpg",
+        },
     ]
     return tab;
 }
