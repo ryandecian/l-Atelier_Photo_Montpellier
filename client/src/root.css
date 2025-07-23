@@ -5,6 +5,7 @@
 :root {
     /* ✨ Couleur des textes */
         /* Couleur des textes général Restructuration */
+            --ColorTextWhite: rgb(255, 255, 255); /* Vérifier pour refacto ok */
             --ColorTextBlack: rgb(0, 0, 0); /* Vérifier pour refacto ok */
             --ColorButtonAvis: #0056b3; /* Vérifier pour refacto ok */
 
