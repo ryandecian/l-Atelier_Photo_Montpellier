@@ -1,0 +1,27 @@
+.ContainerImg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0rem 1.25rem ; /* 20px 0px 20px 0px */
+    padding: 0rem 0rem 1.25rem 0rem; /* 0px 0px 20px 0px */
+    width: calc(100% - 2.5rem); /* 100% - 40px */
+    gap: 1rem; /* 16px */
+}
+@media (min-width: 49.75rem) { /* 796px */
+    .ContainerImg {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+}
+
+.Img1 {
+    width: calc(50% - 0.5rem); /* 50% - 8px */
+    height: auto;
+    max-width: 370px;
+}
+.Img2 {
+    width: calc(50% - 0.5rem); /* 50% - 8px */
+    height: auto;
+    max-width: 370px;
+}
