@@ -5,6 +5,7 @@
 :root {
     /* ✨ Couleur des textes */
         /* Couleur des textes général Restructuration */
+            --ColorTextWhite: rgb(255, 255, 255); /* Vérifier pour refacto ok */
             --ColorTextBlack: rgb(0, 0, 0); /* Vérifier pour refacto ok */
             --ColorButtonAvis: #0056b3; /* Vérifier pour refacto ok */
 
@@ -25,9 +26,10 @@
             --ColorTextNavRootDarkBrown: #3a240f; /* Vérifier pour refacto ok */
             --ColorTextNavRootPink: #ff0080; /* Vérifier pour refacto ok */
             --ColorTextNavRootLink: rgb(14, 83, 193); /* Vérifier pour refacto ok */
-
-        /* Couleurs texte Footer */
-            --Copyright: #ff007f; /* ⚠️ */
+            
+            /* Couleurs texte Footer */
+            --ColorTextFooterWhite: rgb(255, 255, 255); /* Vérifier pour refacto ok */
+            --ColorTextFooterPink: #ff0080; /* Vérifier pour refacto ok */
 
         /*Couleurs des textes général*/
             --ColorPrincipal: #DCA54A; /* ⚠️ */
@@ -65,7 +67,7 @@
 
         /* Ombre Nav Root */
         --box-shadow-bottom: rgba(0, 0, 0, 0.1) 0px 4px 6px; /* Vérifier pour refacto ok */
-        --box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+        --box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px; /* ⚠️ */
 
     /* Couleurs du Menu Burger */
         --Background1: #A9CCE3; /* ⚠️ */

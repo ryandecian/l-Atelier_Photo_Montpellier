@@ -66,9 +66,9 @@ function HomeRootComponentC() {
                     </span>
                     {" "} Commencez à planifier dès maintenant {" "}
                     <span className={style.SpanLink}>
-                            <Link to={ListDataRouter[12].path}>
-                                {"votre séance"}
-                            </Link>
+                        <Link to={ListDataRouter[12].path}>
+                            {"votre séance"}
+                        </Link>
                     </span>
                     {" !"}
                 </p>
