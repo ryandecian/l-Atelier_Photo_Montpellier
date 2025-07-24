@@ -237,7 +237,10 @@ function Blog_20250724_Root() {
 
             <p className={style.TextP4}>
                 <span className={style.SpanLink}>
-                    <Link to={`${ListDataRouter[18].path}#top`}>
+                    <Link 
+                        to={`${ListDataRouter[18].path}#top`} 
+                        title="Voir les prestations grossesse proposées par l'Atelier Photo Montpellier"
+                    >
                         {`Envie de créer vos propres souvenirs ? Découvrez mes prestations dédiées à la photo de grossesse.`}
                     </Link>
                 </span>
