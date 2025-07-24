@@ -7,8 +7,8 @@ import {PrestationType, FormuleType, DataRootEmailType} from "../../types/Presta
 const TarifsPortraitGrossesse: PrestationType = {
     essentiel: {
         line1: { value1: 'Durée Séance', value2: '45 min' },
-        line2: { value1: 'Sur site', value2: 'Oui' },
-        line3: { value1: 'Studio', value2: 'Non' },
+        line2: { value1: 'Sur site', value2: 'Non' },
+        line3: { value1: 'Studio', value2: 'Oui' },
         line4: { value1: 'Post Traitement', value2: 'Oui' },
         line5: { value1: 'Galerie en Ligne', value2: 'Oui' },
         line6: { value1: 'Nombre de photos', value2: '5' },
