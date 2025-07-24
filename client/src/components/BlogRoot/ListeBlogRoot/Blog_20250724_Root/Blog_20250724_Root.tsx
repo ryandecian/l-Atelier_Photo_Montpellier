@@ -165,7 +165,7 @@ function Blog_20250724_Root() {
             </ul>
 
             <p className={style.TextP4}>
-                Les photos de grossesse à Montpellier ou ailleurs traversent le temps. Elles deviennent des repères, des 
+                Les portraits de grossesse à Montpellier ou ailleurs traversent le temps. Elles deviennent des repères, des 
                 souvenirs de ce qu’était votre corps, votre énergie, vos attentes avant cette grande rencontre.
             </p>
 
