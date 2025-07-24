@@ -6,7 +6,7 @@ import Helmet_Blog_20250710_SEO from "../../../seo/BlogSEO/ListeBlogRootSEO/Blog
 
 function Blog_20250710_Page() {
      return (
-        <section className={`Blog_20260616_Page ${style.Page}`}>
+        <section className={`Blog_20250710_Page ${style.Page}`}>
             <Helmet_Blog_20250710_SEO />
             <header id="top" className={style.Header}>
                  <NavRoot />
