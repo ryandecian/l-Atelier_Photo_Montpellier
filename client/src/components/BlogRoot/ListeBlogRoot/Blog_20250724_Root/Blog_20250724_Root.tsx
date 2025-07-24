@@ -1,7 +1,7 @@
 import style from "../../../StyleRootComponent.module.css";
 import css from "./Blog_20250724_Root.module.css";
-// import ListDataRouter from "../../../../router/router";
-// import { Link } from "react-router-dom";
+import ListDataRouter from "../../../../router/router";
+import { Link } from "react-router-dom";
 import useScrollToHash from "../../../../hook/useScrollToHash";
 
 import ImagesBlog_20250724_RootControllerData from "./ImagesBlog_20250724_RootControllerData";
@@ -103,11 +103,11 @@ function Blog_20250724_Root() {
             </p>
 
             <h2 className={style.TitleH2}>
-                {`Photographe grossesse : immortaliser ce moment unique`}
+                {`Photographe grossesse à Montpellier : des souvenirs pleins d’émotion`}
             </h2>
 
             <p className={style.TextP4}>
-                Ce qui frappe, séance après séance, ce sont les récits. <br />
+                Ce qui frappe, séance après séance, ce sont les récits, les histoires entre reconnexion à soi et mémoire émotionnelle. <br />
                 Les doutes sur le regard que l’on porte sur soi. La surprise de se trouver belle. L’émotion de voir son 
                 corps sous un autre angle.
             </p>
@@ -213,6 +213,34 @@ function Blog_20250724_Root() {
                     {` prévoir des tenues neutres, `}
                 </span>
                 intemporelles, qui ne volent pas la vedette à l’émotion.
+            </p>
+
+            <h2 className={style.TitleH2}>
+                {`Immortaliser votre grossesse : et si le moment était venu ?`}
+            </h2>
+
+            <p className={style.TextP4}>
+                Faire une séance photo de grossesse à Montpellier par un photographe professionnel, ce n’est pas répondre 
+                à une mode. <br />
+                C’est décider que 
+                <span className={style.SpanBold}>
+                    {` ce moment mérite d’être vu, gardé, célébré.`}
+                </span>
+            </p>
+
+            <p className={style.TextP4}>
+                Entre la 28e et la 34e semaine, le corps parle, raconte. Il suffit de l’écouter, de lui donner un cadre, 
+                une lumière, une pause. <br />
+                Et peut-être qu’un jour, dans quelques années, votre enfant regardera ces images avec tendresse. <br />
+                Et vous, avec fierté.
+            </p>
+
+            <p className={style.TextP4}>
+                <span className={style.SpanLink}>
+                    <Link to={`${ListDataRouter[18].path}#top`}>
+                        {`Envie de créer vos propres souvenirs ? Découvrez mes prestations dédiées à la photo de grossesse.`}
+                    </Link>
+                </span>
             </p>
         </section>
     )
