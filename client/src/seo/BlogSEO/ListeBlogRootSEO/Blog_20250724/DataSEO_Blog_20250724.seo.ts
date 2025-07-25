@@ -17,13 +17,13 @@ function DataSEO_Blog_20250724(): DataSEOTargetOneType {
             1: "photo grossesse Montpellier", /* 1 mot clé */
             2: "photographe grossesse Montpellier", /* 2 mots clés */
             3: "séance photo grossesse", /* 3 mots clés */
-            4: "portrait grossesse naturel", /* 4 mots clés */
+            4: "portrait grossesse naturelle", /* 4 mots clés */
             5: "photographe maternité Montpellier", /* 5 mots clés */
             6: "shooting grossesse professionnel", /* 6 mots clés */
             7: "souvenir de grossesse", /* 7 mots clés */
             8: "immortaliser grossesse", /* 8 mots clés */
             9: "photo ventre rond", /* 9 mots clés */
-            10: "photographie grossesse artistique", /* 10 mots clés */
+            10: "séance photo grossesse Montpellier", /* 10 mots clés */
             11: "photo future maman Montpellier", /* 11 mots clés */
             12: "grossesse studio Montpellier", /* 12 mots clés */
             13: "séance maternité extérieure", /* 13 mots clés */
