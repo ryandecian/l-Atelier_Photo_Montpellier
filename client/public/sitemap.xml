@@ -28,7 +28,7 @@
 
     <url>
         <loc>https://atelier-photo-montpellier.fr/blog</loc>
-        <lastmod>2025-07-10</lastmod>
+        <lastmod>2025-07-24</lastmod>
         <priority>0.8</priority>
     </url>
 
@@ -47,6 +47,12 @@
     <url>
         <loc>https://atelier-photo-montpellier.fr/blog/2025-07-10</loc>
         <lastmod>2025-07-10</lastmod>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://atelier-photo-montpellier.fr/blog/2025-07-24</loc>
+        <lastmod>2025-07-24</lastmod>
         <priority>0.7</priority>
     </url>
 
