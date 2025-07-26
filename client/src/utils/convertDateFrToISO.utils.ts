@@ -1,10 +1,25 @@
-function convertDateFrToISO(dateFr: string): string {
-  const [day, month, year] = dateFr.split("/").map(Number);
-  return `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+/* Fonction utilitaire pour convertir une date en format FR (DD/MM/YYYY) vers ISO (YYYY-MM-DD) */
+
+/* Sortie en String */
+/* Tri par date du plus récent au plus ancien */
+function convertDateFrToISO_String(dateFr: string): string {
+  const [jour, mois, annee] = dateFr.split("/").map(Number);
+
+  /* Format ISO exploitable par JavaScript */
+  return (
+    `${annee}-${String(mois).padStart(2, "0")}-${String(jour).padStart(2, "0")}`
+  );
 }
 
-export default convertDateFrToISO;
+export { convertDateFrToISO_String };
 
+/* Sortie en Date */
+/* Tri par date du plus récent au plus ancien */
+function convertDateFrToISO_Date(dateFr: string): Date {
+  const [jour, mois, annee] = dateFr.split("/").map(Number);
+  return new Date(annee, mois - 1, jour);
+}
+export { convertDateFrToISO_Date };
 /**
  * Documentation : 
  * 
