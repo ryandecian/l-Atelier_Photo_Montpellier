@@ -1,24 +1,20 @@
 import { useState } from "react";
 import style from "./GeneratorCardAvisClient.module.css";
+import AvisClientControllerDataType from "../../types/AvisClientControllerData.type";
+import { convertDateFrToISO_String } from "../../utils/convertDateFrToISO.utils";
 
-interface AvisClientType {
-    id: number;
-    nom: string;
-    note: number;
-    commentaire: string;
-    date: string;
-}
 
 // Ajout d'une interface pour les props
 interface DataAvisClientProps {
-    avisClients: AvisClientType[];
+    avisClients: AvisClientControllerDataType[];
 }
 
 function GeneratorCardAvisClient(Props: DataAvisClientProps) {
     const { avisClients } = Props;
-    
+
     const [expandedComments, setExpandedComments] = useState<{ [key: number]: boolean }>({});
 
+    /* Option de déroulement des commentaires */
     const toggleComment = (id: number) => {
         setExpandedComments((prev) => ({
             ...prev,
@@ -26,6 +22,15 @@ function GeneratorCardAvisClient(Props: DataAvisClientProps) {
         }));
     };
 
+    // Fonction utilitaire pour convertir une date en format FR (DD/MM/YYYY) vers ISO (YYYY-MM-DD)
+    const convertDateFrToISO = convertDateFrToISO_String;
+
+    // Tri des avis du plus récent au plus ancien selon la date
+    const avisTries = [...avisClients].sort((a, b) => {
+        return new Date(convertDateFrToISO_String(b.date)).getTime() - new Date(convertDateFrToISO(a.date)).getTime();
+    });
+
+    /* Fonction pour afficher les étoiles en fonction de la note */
     const renderStars = (rating: number) => {
         return Array.from({ length: 5 }, (_, i) => (
             <span key={i} className={i < rating ? style.starFilled : style.starEmpty}>★</span>
@@ -41,7 +46,8 @@ function GeneratorCardAvisClient(Props: DataAvisClientProps) {
             </header>
 
             <div className={style.ContainerAvis}>
-                {avisClients.map((data) => {
+                {/* Parcours des avis triés du plus récent au plus ancien */}
+                {avisTries.map((data) => {
                     const isLongComment = data.commentaire.length > 100;
                     const isExpanded = expandedComments[data.id] || false;
 
@@ -55,7 +61,12 @@ function GeneratorCardAvisClient(Props: DataAvisClientProps) {
                             </div>
 
                             <p className={style.comment}>
-                                {isExpanded || !isLongComment ? data.commentaire : `${data.commentaire.substring(0, 100)}... `}
+                                {/* Affichage du commentaire tronqué ou complet selon état */}
+                                {isExpanded || !isLongComment
+                                    ? data.commentaire
+                                    : `${data.commentaire.substring(0, 100)}... `}
+                                
+                                {/* Ajout d’un bouton "Voir plus / Voir moins" si le commentaire est long */}
                                 {isLongComment && (
                                     <span className={style.toggle} onClick={() => toggleComment(data.id)}>
                                         {isExpanded ? " Voir moins..." : "Voir plus..."}

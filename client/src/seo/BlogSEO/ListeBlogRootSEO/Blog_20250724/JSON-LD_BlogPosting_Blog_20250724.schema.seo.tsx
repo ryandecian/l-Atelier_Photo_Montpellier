@@ -8,7 +8,7 @@ import DataCardBlogRoots from "../../../../components/BlogRoot/DataCardBlogRoot"
 import CardBlogType from "../../../../types/CardBlog.type";
 
 import extractKeywordsFromDataSEO from "../../../../utils/extractKeywordsFromDataSEO.utils";
-import convertDateFrToISO from "../../../../utils/convertDateFrToISO.utils";
+import { convertDateFrToISO_String } from "../../../../utils/convertDateFrToISO.utils";
 
 function JSON_LD_BlogPosting_Blog_20250724_Schema_SEO() : string {
     const DataCardBlogRoot: CardBlogType[] = DataCardBlogRoots(); /* Récupération des données de la carte du blog */
@@ -41,7 +41,7 @@ function JSON_LD_BlogPosting_Blog_20250724_Schema_SEO() : string {
         },
 
         /* Dates */
-        "datePublished": convertDateFrToISO(DataCardBlogRoot[0].date), /* Date de publication au format ISO 8601 */
+        "datePublished": convertDateFrToISO_String(DataCardBlogRoot[0].date), /* Date de publication au format ISO 8601 */
 
         /* Auteur */
         "author": DataSEORoot.author, /* Auteur de l'article, défini dans DataSEORoot */
