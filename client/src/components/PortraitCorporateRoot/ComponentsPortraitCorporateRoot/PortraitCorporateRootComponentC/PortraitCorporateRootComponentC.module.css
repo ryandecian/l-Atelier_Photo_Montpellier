@@ -5,9 +5,9 @@
     font-weight: var(--font-weight-title);
     font-style: var(--font-style-title);
     font-display: swap;
-    color: var(--ColorBlack);
-    width: calc(100% - 3rem); /* 100% - 48px */
-    margin: 0rem 1.5rem; /* 0px 24px 0px 24px */
-    border: 0;
-    padding: 0;
+    color: var(--ColorTextBlack);
+    width: calc(100% - 2.5rem); /* 100% - 40px */
+    margin: 0rem 1.25rem; /* 0px 20px 0px 20px */
+    border: none;
+    padding: 0rem;
 }
