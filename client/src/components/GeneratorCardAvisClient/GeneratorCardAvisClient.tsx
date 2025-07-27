@@ -1,5 +1,5 @@
 import { useState } from "react";
-import style from "./GeneratorCardAvisClient.module.css";
+import css from "./GeneratorCardAvisClient.module.css";
 import AvisClientControllerDataType from "../../types/AvisClientControllerData.type";
 import { convertDateFrToISO_String } from "../../utils/convertDateFrToISO.utils";
 
@@ -33,34 +33,34 @@ function GeneratorCardAvisClient(Props: DataAvisClientProps) {
     /* Fonction pour afficher les étoiles en fonction de la note */
     const renderStars = (rating: number) => {
         return Array.from({ length: 5 }, (_, i) => (
-            <span key={i} className={i < rating ? style.starFilled : style.starEmpty}>★</span>
+            <span key={i} className={i < rating ? css.starFilled : css.starEmpty}>★</span>
         ));
     };
 
     return (
-        <section className={style.GeneratorCardAvisClient}>
-            <header className={style.ContainerTitle}>
-                <h3 className={style.title}>
+        <section className={css.GeneratorCardAvisClient}>
+            <header className={css.ContainerTitle}>
+                <h3 className={css.title}>
                     Avis Clients
                 </h3>
             </header>
 
-            <div className={style.ContainerAvis}>
+            <div className={css.ContainerAvis}>
                 {/* Parcours des avis triés du plus récent au plus ancien */}
                 {avisTries.map((data) => {
                     const isLongComment = data.commentaire.length > 100;
                     const isExpanded = expandedComments[data.id] || false;
 
                     return (
-                        <article key={data.id} className={style.CardAvisContainer}>
-                            <p className={style.nom}>{data.nom}</p>
+                        <article key={data.id} className={css.CardAvisContainer}>
+                            <p className={css.nom}>{data.nom}</p>
 
-                            <div className={style.starsContainer}>
-                                <div className={style.stars}>{renderStars(data.note)}</div>
-                                <p className={style.date}>{data.date}</p>
+                            <div className={css.starsContainer}>
+                                <div className={css.stars}>{renderStars(data.note)}</div>
+                                <p className={css.date}>{data.date}</p>
                             </div>
 
-                            <p className={style.comment}>
+                            <p className={css.comment}>
                                 {/* Affichage du commentaire tronqué ou complet selon état */}
                                 {isExpanded || !isLongComment
                                     ? data.commentaire
@@ -68,7 +68,7 @@ function GeneratorCardAvisClient(Props: DataAvisClientProps) {
                                 
                                 {/* Ajout d’un bouton "Voir plus / Voir moins" si le commentaire est long */}
                                 {isLongComment && (
-                                    <span className={style.toggle} onClick={() => toggleComment(data.id)}>
+                                    <span className={css.toggle} onClick={() => toggleComment(data.id)}>
                                         {isExpanded ? " Voir moins..." : "Voir plus..."}
                                     </span>
                                 )}
