@@ -1,16 +1,16 @@
 .container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1rem; /* 16px */
   justify-content: center;
-  padding: 1rem 1.5rem;
-  width: calc(100% - 3rem);
+  padding: 1rem 1.25rem; /* 16px 20px 16px 20px */
+  width: calc(100% - 2.5rem); /* 100% - 40px */
   max-width: 100vw;
-  background: radial-gradient(circle at top left, #f5f5f5, #eaeaea);
+  background: radial-gradient(circle at top left, var(--ColorBackgroundTarifCard_ContainerLeft), var(--ColorBackgroundTarifCard_ContainerRight));
 }
-@media (min-width: 540px) {
+@media (min-width: 33.75rem) { /* 540px */
   .container {
-    padding: 2rem 1.5rem;
+    padding: 2rem 1.25rem; /* 32px 20px 32px 20px */
   }
 }
 
@@ -18,90 +18,90 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  backdrop-filter: blur(12px);
-  background: rgba(255, 255, 255, 0.55);
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px); /* Applique un filtre sur l’arrière-plan derrière un élément semi-transparent */
+  background: var(--ColorBackgroundTarifCard_Clear_55_White);
+  border: 0.0625rem solid var(--ColorBackgroundTarifCard_Clear_40_White); /* 1px */
   border-radius: 20px;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
-  width: calc(100% - 3rem);
-  max-width: 200px;
+  box-shadow: var(--box-shadow-card-tarif);
+  width: calc(100% - 2.5rem); /* 100% - 40px */
+  max-width: 12.5rem; /* 200px */
   overflow: hidden;
-  padding: 1.5rem;
+  padding: 1.5rem; /* 24px 24px 24px 24px */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
 }
-@media (min-width: 400px) {
+@media (min-width: 25rem) { /* 400px */
   .card {
-    max-width: 250px;
+    max-width: 15.625rem; /* 250px */
   }
 }
-@media (min-width: 540px) {
+@media (min-width: 33.75rem) { /* 540px */
   .card {
-    max-width: 180px;
+    max-width: 11.25rem; /* 180px */
   }
 }
-@media (min-width: 580px) {
+@media (min-width: 36.25rem) { /* 580px */
   .card {
-    max-width: 200px;
+    max-width: 12.5rem; /* 200px */
   }
 }
-@media (min-width: 620px) {
+@media (min-width: 38.75rem) { /* 620px */
   .card {
-    max-width: 200px;
-    padding: 2rem;
+    max-width: 12.5rem; /* 200px */
+    padding: 2rem; /* 32px 32px 32px 32px */
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 50rem) { /* 800px */
   .card {
-    max-width: 250px;
+    max-width: 15.625rem; /* 250px */
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 56.25rem) { /* 900px */
   .card {
-    max-width: 200px;
-    padding: 1.5rem;
+    max-width: 12.5rem; /* 200px */
+    padding: 1.5rem; /* 24px 24px 24px 24px */
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 62.5rem) { /* 1000px */
   .card {
-    max-width: 230px;
-    padding: 2rem;
+    max-width: 14.375rem; /* 230px */
+    padding: 2rem; /* 32px 32px 32px 32px */
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 68.75rem) { /* 1100px */
   .card {
-    max-width: 250px;
+    max-width: 15.625rem; /* 250px */
   }
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.15) 0 18px 40px;
 }
 
 .card.premium {
-  border: 2px solid #d4af37;
-  box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+  border: 0.125rem solid var(--ColorBackgroundTarifCardPremium_Border); /* 2px */
+  box-shadow: var(--box-shadow-card-tarif-premium);
 }
 
 .header {
-  font-size: 1.6rem;
+  font-size: 1.6rem; /* 25.6px */
   font-weight: 700;
-  color: #222;
+  color: var(--ColorTextCardTarif_Black-Grey);
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem; /* 24px */
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem; /* 1px */
 }
 
 .list {
   display: flex;
   flex-direction: column;
-  width: calc(100% - 1.25rem);
+  width: calc(100% - 1.25rem); /* 100% - 20px */
   gap: 1rem;
-  padding: 0 0 0 1.25rem;
+  padding: 0rem 0rem 0rem 1.25rem; /* 0px 0px 0px 20px */
 }
-@media (min-width: 800px) { /* */
+@media (min-width: 50rem) { /* 800px */
   .list {
     width: calc(100% - 2.5rem); /* 0px 0px 0px 40px*/
     padding: 0 0 0 2.5rem; /* 0px 0px 0px 40px*/
@@ -129,35 +129,34 @@
 .item {
   display: flex;
   justify-content: space-between;
-  font-size: 0.95rem;
+  font-size: 0.95rem; /* 15.2px */
   font-weight: 400;
-  color: #444;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  padding-bottom: 0.5rem;
+  border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.05); /* 1px */
+  padding-bottom: 0.5rem; /* 8px */
 }
 
 .label {
   font-weight: 500;
-  color: #666;
+  color: var(--ColorTextCardTarif_Grey);
 }
 
 .value {
   font-weight: 600;
-  color: #222;
+  color: var(--ColorTextCardTarif_Black-Grey);
 }
 
 .button {
-  margin-top: 2rem;
-  background: linear-gradient(135deg, #c17e5b, #a76446);
-  color: white;
+  margin-top: 2rem; /* 32px */
+  background: linear-gradient(135deg, var(--ColorBackgroundTarifCard_Button_A), var(--ColorBackgroundTarifCard_Button_B));
+  color: var(--ColorTextCardTarif_Button);
   border: none;
-  padding: 0.75rem;
-  font-size: 1rem;
+  padding: 0.75rem; /* 12px 12px 12px 12px */
+  font-size: 1rem; /* 16px */
   font-weight: 500;
   border-radius: 8px;
   cursor: pointer;
-  width: calc(100% - 1.5rem);
-  max-width: 200px;
+  width: calc(100% - 1.5rem); /* 100% - 24px */
+  max-width: 12.5rem; /* 200px */
   text-decoration: none;
   display: block; /* ✅ Ajout essentiel pour centrer un <a> */
   text-align: center; /* ✅ En bonus : centre le texte du lien */
@@ -165,11 +164,11 @@
 }
 
 .button:hover {
-  background: linear-gradient(135deg, #a76446, #c17e5b);
+  background: linear-gradient(135deg, var(--ColorBackgroundTarifCard_Button_B), var(--ColorBackgroundTarifCard_Button_A));
 }
 
 /* Responsive */
-@media (min-width: 768px) {
+@media (min-width: 48rem) { /* 768px */
   .container {
     flex-direction: row;
     justify-content: center;
