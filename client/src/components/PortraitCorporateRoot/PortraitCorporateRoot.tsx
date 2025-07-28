@@ -21,7 +21,6 @@ function PortraitCorporateRoot() {
                     {"Portrait Corporate : Valorisez votre image professionnelle !"}
                 </h1>
             </header>
-            <h4 className={style.TitleNH4}>Test</h4>
 
             {/* ---------- ---------- ---------- ---------- ---------- */}
 
