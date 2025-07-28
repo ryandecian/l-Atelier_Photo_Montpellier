@@ -1,8 +1,9 @@
 Ce qui est fait pour refacto : 
 
-- Corporate (En cours)
+- Corporate
 - Footer
 - Home
+- Mariage (En cours)
 - NavRoot
 - NavTargetHome
 - root.css
