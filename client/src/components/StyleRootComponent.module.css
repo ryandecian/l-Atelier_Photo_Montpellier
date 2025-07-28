@@ -73,34 +73,45 @@
 .TitleH1 {
     font-size: var(--h1); /* 32px */
     text-align: center;
+    min-height: var(--h1); /* 32px */
+    line-height: 1.578125; /* Hauteur des lignes de texte */
 }
 .TitleH2 {
     font-size: var(--h2); /* 24px */
+    line-height: 1.5625; /* Hauteur des lignes de texte */
 }
 .TitleH3 {
-    font-size: var(--h3); /* 20px */
+    font-size: var(--h3); /* 18px */
+    line-height: 1.5833333333; /* Hauteur des lignes de texte */
 }
 .TitleH4 {
-    font-size: var(--h4); /* 18px */
+    font-size: var(--h4); /* 16px */
+    line-height: 1.7857142857; /* Hauteur des lignes de texte */
 }
 .TitleH5 {
     font-size: var(--h5); /* 14px */
+    line-height: 1.5714285714; /* Hauteur des lignes de texte */
 }
 .TitleH6 {
     font-size: var(--h6); /* 11px */
+    line-height: 1.5909090909; /* Hauteur des lignes de texte */
 }
 .TitleH2px2 {
     font-size: calc(var(--h2) + 0.125rem); /* 26px */
+    line-height: 1.5769230769; /* Hauteur des lignes de texte */
 }
 .TitleNH2 {
-    font-size: var(--h2);
+    font-size: var(--h2); /* 24px */
+    line-height: 1.5625; /* Hauteur des lignes de texte */
     margin: 1.25rem 1.25rem 0rem 1.25rem; /* 20px 20px 0px 20px */
 }
 .TitleNH3 {
-    font-size: var(--h3); /* 20px */
+    font-size: var(--h3); /* 18px */
+    line-height: 1.5833333333; /* Hauteur des lignes de texte */
 }
 .TitleNH4 {
-    font-size: calc(var(--h4) + 0.0625rem); /* 19px */
+    font-size: calc(var(--h4) + 0.0625rem); /* 17px */
+    line-height: 1.2647058824; /* Hauteur des lignes de texte */
     margin: 0rem 1.25rem; /* 0px 20px 0px 20px */
 }
 

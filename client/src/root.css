@@ -177,7 +177,11 @@ body {
     padding: 0;
     margin: 0;
     width: 100%;
+    min-height: 100vh;
     box-sizing: border-box;
+}
+h1, h2 {
+    font-family: "Saira Condensed", "Arial Narrow", sans-serif;
 }
 #root {
      width: 100%;
