@@ -146,9 +146,10 @@
 }
 
 .button {
-  margin-top: 2rem; /* 32px */
+  display: block;
   background: linear-gradient(135deg, var(--ColorBackgroundTarifCard_Button_A), var(--ColorBackgroundTarifCard_Button_B));
   color: var(--ColorTextCardTarif_Button);
+  margin-top: 2rem; /* 32px */
   border: none;
   padding: 0.75rem; /* 12px 12px 12px 12px */
   font-size: 1rem; /* 16px */
@@ -158,8 +159,7 @@
   width: calc(100% - 1.5rem); /* 100% - 24px */
   max-width: 12.5rem; /* 200px */
   text-decoration: none;
-  display: block; /* ✅ Ajout essentiel pour centrer un <a> */
-  text-align: center; /* ✅ En bonus : centre le texte du lien */
+  text-align: center;
   transition: background 0.3s ease;
 }
 
