@@ -3,11 +3,7 @@ import { Link } from "react-router-dom";
 import css from "./BlogRoot.module.css";
 import DataCardBlogRoot from "./DataCardBlogRoot";
 import CardBlogType from "../../types/CardBlog.type";
-
-function parseDateFr(dateStr: string): Date {
-  const [day, month, year] = dateStr.split("/").map(Number);
-  return new Date(year, month - 1, day);
-}
+import { convertDateFrToISO_Date } from "../../utils/convertDateFrToISO.utils";
 
 function BlogRoot() {
   const dataBlog: CardBlogType[] = DataCardBlogRoot();
@@ -16,7 +12,7 @@ function BlogRoot() {
 
   // Tri par date du plus récent au plus ancien
   const sortedData = dataBlog.slice().sort((a, b) => {
-    return parseDateFr(b.date).getTime() - parseDateFr(a.date).getTime();
+    return convertDateFrToISO_Date(b.date).getTime() - convertDateFrToISO_Date(a.date).getTime();
   });
 
   // Filtrage après tri
