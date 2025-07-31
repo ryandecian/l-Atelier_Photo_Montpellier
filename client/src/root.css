@@ -183,6 +183,9 @@ body {
 h1, h2 {
     font-family: "Saira Condensed", "Arial Narrow", sans-serif;
 }
+p {
+    line-height: 1.6; /* Hauteur des lignes de texte */
+}
 #root {
      width: 100%;
      min-height: 100vh;
