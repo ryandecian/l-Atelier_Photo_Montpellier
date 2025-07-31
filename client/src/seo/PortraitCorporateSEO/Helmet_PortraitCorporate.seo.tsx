@@ -52,28 +52,6 @@ function Helmet_PortraitCorporate_SEO() {
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <meta name="description" content={SEO.description} />
             <meta name="author" content={SEO.autor} />
-            <link
-                rel="preload"
-                href="/assets/Fonts/SairaCondensed/SairaCondensed-SemiBold.woff2"
-                as="font"
-                type="font/woff2"
-                crossOrigin="anonymous"
-            />
-            <link
-                rel="preload"
-                href="/assets/Fonts/Quicksand/Quicksand-Medium.woff2"
-                as="font"
-                type="font/woff2"
-                crossOrigin="anonymous"
-            />
-            <link
-                rel="preload"
-                href="/assets/Fonts/AnneSignature/AnneSignature.woff2"
-                as="font"
-                type="font/woff2"
-                crossOrigin="anonymous"
-            />
-
             {filterKeywords && <meta name="keywords" content={filterKeywords} />}
 
             {/* SEO pour les moteurs de recherche */}
