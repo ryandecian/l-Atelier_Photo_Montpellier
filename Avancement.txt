@@ -3,7 +3,7 @@ Ce qui est fait pour refacto :
 - Corporate
 - Footer
 - Home
-- Mariage (En cours)
+- Mariage
 - NavRoot
 - NavTargetHome
 - root.css
