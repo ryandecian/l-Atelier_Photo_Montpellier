@@ -3,7 +3,7 @@ Ce qui est fait pour refacto :
 - Corporate
 - Footer
 - Home
-- LifeStyle (En cours)
+- LifeStyle (En cours) Il reste a réduire le poids des images !
 - Mariage
 - NavRoot
 - NavTargetHome
