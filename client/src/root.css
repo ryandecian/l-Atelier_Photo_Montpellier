@@ -49,6 +49,9 @@
         /* Couleur backgound général hors nav, footer et menu burger */
             --ColorBackgroundLeft: #f3f3f3; /* Vérifier pour refacto ok */
             --ColorBackgroundRight: #f5fbff; /* Vérifier pour refacto ok */
+        
+        /* Assombrissement tiré vers le noir */
+            --ColorBackgroundBlack_40: rgba(0, 0, 0, 0.4); /* Vérifier pour refacto ok */
             
         /* Couleur Background Nav Target Home */
             --ColorBackgroundNavHomeWhite: rgb(255, 255, 255); /* Vérifier pour refacto ok */
@@ -94,6 +97,10 @@
 
             /* Ombre appliqué sur une carte tarif Premium */
                 --box-shadow-card-tarif-premium: rgba(212, 175, 55, 0.3) 0px 0px 15px; /* Vérifier pour refacto ok */
+        
+        /* Ombre des cartes dans la page LifeStyle */
+            /* Ombre appliqué sur une carte LifeStyle */
+                --box-shadow-card-lifestyle: rgba(0, 0, 0, 0.2) 0px 0.25px 0.5px; /* Vérifier pour refacto ok */
 
     /* Couleurs du Menu Burger */
         --Background1: #A9CCE3; /* ⚠️ */
@@ -150,6 +157,7 @@
         --z-index_1: 1; /* Niv 1 */
             /* Bouton d'ouverture du menu burger Nav Target Home */
             /* Bouton d'ouverture du menu burger Nav Root */
+            /**/
             
         --z-index_4: 4; /* Z-index 4 à partir du Niv 10 */
             /* Bouton de fermeture du sous menu de Nav Target Home */
