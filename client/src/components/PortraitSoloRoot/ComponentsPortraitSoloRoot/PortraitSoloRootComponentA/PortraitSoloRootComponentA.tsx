@@ -5,11 +5,9 @@ import ImagesPortraitSoloControllerData from "../../ImagesPortraitSoloController
 function PortraitSoloRootComponentA() {
     return (
         <section className={`PortraitSoloRootComponentA ${style.ContainerRoot}`}>
-            <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2}>
                     Un Portrait Feel Good, ce n'est pas qu'un beau cliché !
                 </h2>
-            </header>
             
             <p className={style.TextP4}>
                 C'est un moment pour soi. <br />
@@ -47,7 +45,6 @@ function PortraitSoloRootComponentA() {
                 MetaNameImg4={ImagesPortraitSoloControllerData[3].alt}
             />
 
-            <article className={style.ContainerText}>
                 <h3 className={style.TitleNH3}>
                     Pourquoi choisir l’Atelier Photo Montpellier ?
                 </h3>
@@ -98,7 +95,6 @@ function PortraitSoloRootComponentA() {
                     </span>
                     et les extérieurs autour de Montpellier offrent des décors inspirants si vous préférez un shooting nature. 
                 </p>
-            </article>
         </section>
     )
 }

@@ -7,11 +7,9 @@ import ImagesPortraitSoloControllerData from "../../ImagesPortraitSoloController
 function PortraitSoloRootComponentB() {
     return (
         <section className={`PortraitSoloRootComponentB ${style.ContainerRoot}`}>
-            <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2}>
                     Envie de reprendre le pouvoir sur votre image ?
                 </h2>
-            </header>
 
             <p className={style.TextP4}>
                 Je propose des séances sur mesure, pensées pour faire ressortir le meilleur de vous. <br />
@@ -34,7 +32,6 @@ function PortraitSoloRootComponentB() {
                 MetaNameImg4={ImagesPortraitSoloControllerData[7].alt}
             />
 
-            <article className={style.ContainerText}>
                 <br />
                 <p className={style.TextP4}>
                     <span className={style.SpanBold}>
@@ -66,9 +63,7 @@ function PortraitSoloRootComponentB() {
                     </li>
                 </ul>
                 <br />
-            </article>
 
-            <article className={style.ContainerText}>
                 <h3 className={style.TitleH2}>
                     Un accompagnement complet et bienveillant
                 </h3>
@@ -100,7 +95,6 @@ function PortraitSoloRootComponentB() {
                 <p className={style.TextP4}>
                     📸 Sélection de 5 à 22 photos retouchées avec soin, livrées en galerie privée sécurisée avec mot de passe.
                 </p>
-            </article>
 
             <h2 className={style.TitleH2}>
                 {"Et si vous vous offriez un instant rien qu’à vous – On en parle ensemble ?"}
