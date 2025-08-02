@@ -275,6 +275,13 @@
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+/* Espacement des blocs */
+.br {
+    width: 100%;
+    margin: 0rem;
+    padding: 1.25rem 0rem 0rem 0rem; /* 20px 0px 0px 0px */
+}
+
 .Button {
     /* Il faudra mettre par défaut margin et padding à 0 */
     background: none;   /* Supprime l’arrière-plan du bouton (souvent gris par défaut) */
