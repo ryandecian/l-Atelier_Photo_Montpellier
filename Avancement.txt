@@ -7,7 +7,7 @@ Ce qui est fait pour refacto :
 - Mariage
 - NavRoot
 - NavTargetHome
-- Portrait Solo (En cours) CSS
+- Portrait Solo
 - root.css
 - StyleRootComponent.module.css
 - stylePage.module.css
