@@ -5,11 +5,9 @@ import ListDataRouter from "../../../../router/router";
 function PortraitDuoRootComponentC() {
   return (
     <article className={`PortraitDuoRootComponentC ${style.ContainerRoot}`}>
-        <header className={style.ContainerTitle}>
             <h2 className={style.TitleH2}>
                 {"Un accompagnement complet et bienveillant, pensé pour les duos"}
             </h2>
-        </header>
 
         <h3 className={style.TitleNH4}>
             {"Une séance sur-mesure, sans pression"}

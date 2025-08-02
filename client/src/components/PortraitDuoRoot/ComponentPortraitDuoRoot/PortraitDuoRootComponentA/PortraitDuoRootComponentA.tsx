@@ -1,16 +1,13 @@
 import style from "../../../StyleRootComponent.module.css";
-import css from "../../../StyleRootComponent.module.css";
 import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ImagesPortraitDuoControllerData from "../../ImagesPortraitDuoControllerData";
 
 function PortraitDuoRootComponentA() {
   return (
     <section className={`PortraitDuoRootComponentA ${style.ContainerRoot}`}>
-        <header className={style.ContainerTitle}>
             <h2 className={style.TitleH2}>
                 {"Parce que chaque duo a son histoire, offrez-vous un portrait fidèle à votre complicité"}
             </h2>
-        </header>
 
         <p className={style.TextP4}>
             Un portrait de couple, ce n’est pas seulement une jolie photo à deux. <br />
@@ -45,8 +42,7 @@ function PortraitDuoRootComponentA() {
             MetaNameImg4={ImagesPortraitDuoControllerData[3].alt}
         />
 
-        <article className={style.ContainerText}>
-            <h3 className={css.TitleNH3}>
+            <h3 className={style.TitleNH3}>
                 {"Pourquoi faire appel à l’Atelier Photo Montpellier ?"}
             </h3>
 
@@ -74,7 +70,6 @@ function PortraitDuoRootComponentA() {
             <p className={style.TextP4}>
                 🎯 Résultat : un reportage visuel sensible, fidèle à votre lien.
             </p>
-        </article>
     </section>
   );
 }

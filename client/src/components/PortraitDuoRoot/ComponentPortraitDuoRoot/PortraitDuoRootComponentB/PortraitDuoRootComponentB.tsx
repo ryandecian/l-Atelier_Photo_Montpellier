@@ -5,11 +5,9 @@ import ImagesPortraitDuoControllerData from "../../ImagesPortraitDuoControllerDa
 function PortraitDuoRootComponentB() {
   return (
     <article className={`PortraitDuoRootComponentB ${style.ContainerRoot}`}>
-        <header className={style.ContainerTitle}>
             <h2 className={style.TitleH2}>
                 {"Envie d’un portrait de couple qui a du sens ?"}
             </h2>
-        </header>
 
         <p className={style.TextP4}>
             Avant de déclencher l’appareil, on échange sur votre histoire, votre dynamique, ce que vous aimez faire à deux. <br />
