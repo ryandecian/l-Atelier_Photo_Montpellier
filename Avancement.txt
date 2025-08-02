@@ -3,10 +3,11 @@ Ce qui est fait pour refacto :
 - Corporate
 - Footer
 - Home
-- LifeStyle (En cours) Il reste a réduire le poids des images !
+- LifeStyle
 - Mariage
 - NavRoot
 - NavTargetHome
+- Portrait Solo (En cours) Problème accessibilité avec Li + Images non vérifiés + CSS
 - root.css
 - StyleRootComponent.module.css
 - stylePage.module.css
