@@ -1,18 +1,14 @@
 import style from "../../../StyleRootComponent.module.css";
-import css from "../../../StyleRootComponent.module.css";
 import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ImagesPortraitFamilleControllerData from "../../ImagesPortraitFamilleControllerData";
 
 function PortraitFamilleRootComponentA() {
   return (
     <section className={`PortraitFamilleRootComponentA ${style.ContainerRoot}`}>
-        <header className={style.ContainerTitle}>
             <h2 className={style.TitleH2}>
                 {"Offrez-vous une séance photo en famille, entre amis ou en groupe pour des souvenirs authentiques."}
             </h2>
-        </header>
 
-        <article className={style.ContainerText}>
             <h3 className={style.TitleNH3}>
                 💞 Ces instants qui ne reviendront pas
             </h3>
@@ -51,10 +47,8 @@ function PortraitFamilleRootComponentA() {
                 img4={ImagesPortraitFamilleControllerData[3].src}
                 MetaNameImg4={ImagesPortraitFamilleControllerData[3].alt}
             />
-        </article>
 
-        <article className={style.ContainerText}>
-            <h3 className={css.TitleNH3}>
+            <h3 className={style.TitleNH3}>
                 {"🌿 Photographier les étapes de la vie, ensemble"}
             </h3>
 
@@ -105,7 +99,6 @@ function PortraitFamilleRootComponentA() {
                     </span>
                     que vos enfants ou vos parents ou vos petits-enfants feuilletteront plus tard.
                 </p>
-        </article>
     </section>
   );
 }

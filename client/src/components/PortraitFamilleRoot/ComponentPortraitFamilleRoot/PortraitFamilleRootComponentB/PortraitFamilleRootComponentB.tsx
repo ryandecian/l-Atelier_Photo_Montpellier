@@ -7,11 +7,9 @@ import ListDataRouter from "../../../../router/router";
 function PortraitFamilleRootComponentB() {
   return (
     <section className={`PortraitFamilleRootComponentB ${style.ContainerRoot}`}>
-        <header className={style.ContainerTitle}>
             <h2 className={style.TitleH2}>
                 {"Un portrait pour rassembler les générations et célébrer les liens de famille."}
             </h2>
-        </header>
 
         <p className={style.TextP4}>
             Chez L’Atelier Photo Montpellier, je crée des images qui racontent
@@ -40,7 +38,6 @@ function PortraitFamilleRootComponentB() {
             MetaNameImg4={ImagesPortraitFamilleControllerData[7].alt}
         />
 
-        <article className={style.ContainerText}>
             <h3 className={style.TitleH2}>
                 {"Un accompagnement complet et bienveillant"}
             </h3>
@@ -72,9 +69,7 @@ function PortraitFamilleRootComponentB() {
             <p className={style.TextP4}>
                 📸 Sélection de 5 à 15 photos retouchées avec soin, livrées en galerie privée
             </p>
-        </article>
 
-        <article className={style.ContainerText}>
             <h3 className={style.TitleNH3}>
                 {"📷 Une séance, concrètement, c’est quoi ?"}
             </h3>
@@ -109,7 +104,6 @@ function PortraitFamilleRootComponentB() {
                 </li>
                 <br />
             </ul>
-        </article>
 
         <h3 className={style.TitleNH3}>
             {"📍 Montpellier & alentours – Des lieux remplis d’histoires"}
