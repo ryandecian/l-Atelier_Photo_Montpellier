@@ -1,0 +1,85 @@
+.container {
+  padding: 2rem; /* 32px */
+  width: calc(100% - 4rem); /* 100% - 64px */
+  margin: 0 auto;
+}
+
+.searchBar {
+  width: calc(100% - 2rem);
+  max-width: 31.25rem; /* 500px */
+  margin: 0 auto 2rem; /* 0 auto 32px */
+  padding: 0.75rem 1rem; /* 12px 16px 12px 16px */
+  font-size: 1rem; /* 16px */
+  border-radius: 8px;
+  border: 0.0625rem solid #ccc; /* 1px solid #ccc */
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem; /* 24px */
+}
+
+.card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  width: 15.625rem; /* 250px */
+  height: 17.5rem; /* 280px */
+  text-decoration: none;
+  color: var(--ColorTextWhite);
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  box-shadow: var(--box-shadow-card-prestation);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* léger noircissement */
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: var(--box-shadow-card-prestation-hover);
+}
+
+.overlay {
+  position: relative;
+  z-index: var(--z-index_1);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent 80%);
+  padding: 1rem; /* 16px 16px 16px 16px */
+  width: 100%;
+  border-radius: 0 0 12px 12px;
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: 1.2rem; /* 19.2px */
+  font-weight: bold;
+}
+
+.cardDescription {
+  margin-top: 0.25rem; /* 4px */
+  font-size: 0.95rem; /* 15.2px */
+}
+
+.TitleLNH3 {
+    color : var(--ColorBlack);
+    font-weight: var(--font-weight-title);
+    font-style: var(--font-style-title);
+    font-display: swap;
+    text-align: start;
+    width: calc(100% - 1.25rem); /* 100% - 20px */
+    margin: 0rem 1.25rem 1.25rem 0rem; /* 0px 20px 20px 0px */
+    padding: 0rem;
+    border: 0rem;
+    font-size: var(--h3); /* 18px */
+    line-height: 1.5833333333; /* Hauteur des lignes de texte */
+}
