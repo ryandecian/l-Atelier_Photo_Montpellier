@@ -26,7 +26,7 @@ function PortraitFamilleRoot() {
                 {"Offrez-vous une séance photo en famille, entre amis ou en groupe pour des souvenirs authentiques."}
             </h2>
 
-            <h3 className={style.TitleNH3}>
+            <h3 className={style.TitleLNH3}>
                 💞 Ces instants qui ne reviendront pas
             </h3>
 
@@ -179,7 +179,7 @@ function PortraitFamilleRoot() {
                 📸 Sélection de 5 à 15 photos retouchées avec soin, livrées en galerie privée
             </p>
 
-            <h3 className={style.TitleNH3}>
+            <h3 className={style.TitleNH3R}>
                 {"📷 Une séance, concrètement, c’est quoi ?"}
             </h3>
 
