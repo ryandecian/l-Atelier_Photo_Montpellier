@@ -121,6 +121,7 @@ function PortraitDuoRoot() {
             <h3 className={style.TitleNH3}>
                 {"🧡 Ce portrait est pour vous si..."}
             </h3>
+            
             <ul className={style.ContainerUl}>
                 <li className={style.TextLiP4}>
                     <span className={style.SpanBold}>
