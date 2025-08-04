@@ -13,7 +13,6 @@ import TarifCardRoot from "../TarifsCard/TarifsCardRoot";
 import { TarifsPortraitFamille, MailtoLinkPortraitFamille } from "./TarifsPortraitFamille";
 
 function PortraitFamilleRoot() {
-
     return (
         <section className={`PortraitFamilleRoot ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>

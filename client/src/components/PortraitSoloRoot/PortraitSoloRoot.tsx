@@ -13,7 +13,6 @@ import TarifCardRoot from "../TarifsCard/TarifsCardRoot";
 import { TarifsPortraitSolo, MailtoLinkPortraitSolo } from "./TarifsPortraitSolo";
 
 function PortraitSoloRoot() {
-
     return (
         <section className={`PortraitSoloRoot ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
