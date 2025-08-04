@@ -5,11 +5,9 @@ import ImagesPortraitGrossesseControllerData from "../../ImagesPortraitGrossesse
 function PortraitGrossesseRootComponentB() {
     return (
         <section className={`PortraitGrossesseRootComponentB ${style.ContainerRoot}`}>
-            <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2}>
                     {"Prêt(e) à figer ces moments uniques avec sensibilité et simplicité ?"}
                 </h2>
-            </header>
 
             <p className={style.TextP4}>
                 Avant même de sortir l’appareil, on prend le temps d’échanger. <br />
@@ -40,7 +38,6 @@ function PortraitGrossesseRootComponentB() {
                 MetaNameImg4={ImagesPortraitGrossesseControllerData[7].alt}
             />
 
-            <article className={style.ContainerText}>
                 <h3 className={style.TitleNH3}>
                     {"Les séances Portraits Grossesses"}
                 </h3>
@@ -60,9 +57,7 @@ function PortraitGrossesseRootComponentB() {
                     </li>
                 </ul>
                 <br />
-            </article>
 
-            <article className={style.ContainerText}>
                 <h3 className={style.TitleNH3}>
                     {"Les séances Nouveaux-Nés"}
                 </h3>
@@ -82,7 +77,6 @@ function PortraitGrossesseRootComponentB() {
                     </li>
                 </ul>
                 <br />
-            </article>
         </section>
     )
 }

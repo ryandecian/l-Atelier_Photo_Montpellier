@@ -5,11 +5,9 @@ import ImagesPortraitGrossesseControllerData from "../../ImagesPortraitGrossesse
 function PortraitGrossesseRootComponentA() {
     return (
         <section className={`PortraitGrossesseRootComponentA ${style.ContainerRoot}`}>
-            <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2}>
                     {"Une photo de grossesse ou de naissance, c’est bien plus qu’un souvenir ..."}
                 </h2>
-            </header>
 
             <p className={style.TextP4}>
                 Une séance grossesse ou nouveau-né, c’est une parenthèse. <br />
@@ -47,7 +45,6 @@ function PortraitGrossesseRootComponentA() {
                 MetaNameImg4={ImagesPortraitGrossesseControllerData[3].alt}
             />
 
-            <article className={style.ContainerText}>
                 <h3 className={style.TitleNH3}>
                     {"Pourquoi choisir l’Atelier Photo Montpellier ?"}
                 </h3>
@@ -86,7 +83,6 @@ function PortraitGrossesseRootComponentA() {
                         {" douce, fluide et bienveillante."}
                     </span>
                 </p>
-            </article>
         </section>
     )
 }

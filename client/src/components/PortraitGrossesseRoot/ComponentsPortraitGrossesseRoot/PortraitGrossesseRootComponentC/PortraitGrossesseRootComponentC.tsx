@@ -8,11 +8,9 @@ import ImagesPortraitGrossesseControllerData from "../../ImagesPortraitGrossesse
 function PortraitGrossesseRootComponenetC() {
     return (
         <article className={`PortraitGrossesseRootComponentC ${style.ContainerRoot}`}>
-            <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2}>
                     {"Un service clé en main : douceur, organisation et qualité"}
                 </h2>
-            </header>
 
             <h3 className={style.TitleNH4}>
                 {"Séance pensée pour vous mettre à l’aise"}
