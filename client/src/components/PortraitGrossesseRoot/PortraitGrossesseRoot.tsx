@@ -10,7 +10,6 @@ import PortraitGrossesseRootComponentB from "./ComponentsPortraitGrossesseRoot/P
 import PortraitGrossesseRootComponentC from "./ComponentsPortraitGrossesseRoot/PortraitGrossesseRootComponentC/PortraitGrossesseRootComponentC";
 
 function PortraitGrossesseRoot() {
-    
     return (
         <section className={`PortraitGrossesseRoot ${style.ContainerRootRacine}`}>
 
