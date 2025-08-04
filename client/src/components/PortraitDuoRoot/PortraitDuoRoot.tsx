@@ -14,7 +14,6 @@ import { TarifsPortraitDuo, MailtoLinkPortraitDuo } from "./TarifsPortraitDuo";
 
 
 function PortraitDuoRoot() {
-    
     return (
         <section className={`PortraitDuoRoot ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
