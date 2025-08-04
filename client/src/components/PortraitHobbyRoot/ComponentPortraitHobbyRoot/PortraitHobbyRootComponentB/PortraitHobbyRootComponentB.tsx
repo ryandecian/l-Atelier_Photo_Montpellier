@@ -8,11 +8,9 @@ import ListDataRouter from "../../../../router/router";
 function PortraitHobbyRootComponentB() {
   return (
     <section className={`PortraitHobbyRootComponentB ${style.ContainerRoot}`}>
-        <header className={style.ContainerTitle}>
             <h2 className={css.TitleH2}>
                 {"Parce que chaque passion a son histoire, vivez là en image !"}
             </h2>
-        </header>
 
         <h3 className={style.TitleH2}>
             {"Pourquoi faire un portrait de votre passion ?"}
@@ -53,7 +51,6 @@ function PortraitHobbyRootComponentB() {
             <br />
         </ul>
 
-        <article className={style.ContainerText}>
             <h3 className={style.TitleNH3}>
                 {"Pourquoi choisir l’Atelier Photo Montpellier ?"}
             </h3>
@@ -98,7 +95,6 @@ function PortraitHobbyRootComponentB() {
                 </li>
                 <br />
             </ul>
-        </article>
 
         <Container4ImagesRoot
             img1={ImagesPortraitHobbyControllerData[4].src}
@@ -111,7 +107,6 @@ function PortraitHobbyRootComponentB() {
             MetaNameImg4={ImagesPortraitHobbyControllerData[7].alt}
         />
 
-        <article className={style.ContainerText}>
             <h3 className={style.TitleH2}>
                 Un accompagnement complet sur mesure
             </h3>
@@ -152,9 +147,7 @@ function PortraitHobbyRootComponentB() {
             <p className={style.TextP4}>
                 📸 Sélection de 6 à 18 photos retouchées avec soin, livrées en galerie privée
             </p>
-        </article>
 
-        <article className={style.ContainerText}>
             <h2 className={style.TitleH2}>
                 Les portraits Hobbies sont faits pour vous si :
             </h2>
@@ -174,7 +167,6 @@ function PortraitHobbyRootComponentB() {
                 </li>
                 <br />
             </ul>
-        </article>
 
         <h2 className={style.TitleH2}>
             {"Et si vous vous offriez un instant rien qu’à vous – On en parle ensemble ?"}
