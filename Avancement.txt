@@ -8,8 +8,9 @@ Ce qui est fait pour refacto :
 - NavRoot
 - NavTargetHome
 - Portrait Duo
-- Portrait Grossesse
 - Portrait Famille
+- Portrait Hobbie
+- Portrait Grossesse
 - Portrait Solo
 - root.css
 - StyleRootComponent.module.css
