@@ -13,7 +13,6 @@ import { Link } from "react-router-dom";
 import ListDataRouter from "../../router/router";
 
 function PortraitMariageRoot() {
-    
     return (
         <section className={`PortraitMariageRoot ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
