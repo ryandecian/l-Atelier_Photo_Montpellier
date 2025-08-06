@@ -63,7 +63,7 @@
             --ColorBackgroundNavRootBlack: rgb(0, 0, 0); /* Vérifier pour refacto ok */
             --ColorBackgroundNavRootGrey: rgba(218, 216, 216, 0.882); /* Vérifier pour refacto ok */
 
-        /* Couleur Background Tarif Card */
+        /* Couleur Background des Tarif Card sur chacun des pages de prestations de service */
             /* Fond couleur background du container card tarif */
                 --ColorBackgroundTarifCard_ContainerLeft: #f5f5f5; /* Vérifier pour refacto ok */
                 --ColorBackgroundTarifCard_ContainerRight: #eaeaea; /* Vérifier pour refacto ok */
@@ -75,6 +75,13 @@
                 --ColorBackgroundTarifCard_Button_B: #a76446; /* Vérifier pour refacto ok */
             /* Effet des cartes Premiums */
                 --ColorBackgroundTarifCardPremium_Border: #d4af37; /* Vérifier pour refacto ok */
+
+        /* Couleur background de la page Tarifs aussi appelé composant "Prestations" */
+            /* Effet de couleur du border de la barre de recherche (searchBar) */
+                --ColorBackgroundPrestationSeachBar_Border: #ccc; /* Vérifier pour refacto ok */
+            /* Effet de couleur background appliqué individuellement sur chaque carte de prestation */
+                --ColorBackgroundPrestationCard_Before: rgba(0, 0, 0, 0.5); /* Vérifier pour refacto ok */
+                --ColorBackgroundPrestationCard_Overlay: rgba(0, 0, 0, 0.6); /* Vérifier pour refacto ok */
 
     /* ✨ Ombre du site */
         /**
@@ -162,8 +169,8 @@
         --z-index_1: 1; /* Niv 1 */
             /* Bouton d'ouverture du menu burger Nav Target Home */
             /* Bouton d'ouverture du menu burger Nav Root */
-            /* Link de cards de prestations dans la page Tarifs */
-            
+            /* Link sur cartes de prestations dans la page Tarifs les rendant cliquables */
+
         --z-index_4: 4; /* Z-index 4 à partir du Niv 10 */
             /* Bouton de fermeture du sous menu de Nav Target Home */
             /* Bouton de fermeture du sous menu de Nav Root */
