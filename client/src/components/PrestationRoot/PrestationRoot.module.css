@@ -70,3 +70,17 @@
   margin-top: 0.25rem;
   font-size: 0.95rem;
 }
+
+.TitleLNH3 {
+    color : var(--ColorBlack);
+    font-weight: var(--font-weight-title);
+    font-style: var(--font-style-title);
+    font-display: swap;
+    text-align: start;
+    width: calc(100% - 1.25rem); /* 100% - 20px */
+    margin: 0rem 1.25rem 1.25rem 0rem; /* 0px 20px 20px 0px */
+    padding: 0rem;
+    border: 0rem;
+    font-size: var(--h3); /* 18px */
+    line-height: 1.5833333333; /* Hauteur des lignes de texte */
+}
