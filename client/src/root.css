@@ -88,19 +88,24 @@
 
         --box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px; /* ⚠️ */
 
-        /* Ombre Nav Root */
+        /* Ombres Nav Root */
             --box-shadow-bottom: rgba(0, 0, 0, 0.1) 0px 4px 6px; /* Vérifier pour refacto ok */
         
-        /* Ombre des cartes Tarifs */
-            /* Ombre appliqué sur une carte tarif */
+        /* Ombres des cartes Tarifs */
+            /* Ombres appliqué sur une carte tarif */
                 --box-shadow-card-tarif: rgba(0, 0, 0, 0.1) 0px 12px 35px; /* Vérifier pour refacto ok */
 
-            /* Ombre appliqué sur une carte tarif Premium */
+            /* Ombres appliqué sur une carte tarif Premium */
                 --box-shadow-card-tarif-premium: rgba(212, 175, 55, 0.3) 0px 0px 15px; /* Vérifier pour refacto ok */
         
-        /* Ombre des cartes dans la page LifeStyle */
-            /* Ombre appliqué sur une carte LifeStyle */
+        /* Ombres des cartes dans la page LifeStyle */
+            /* Ombres appliquées sur une carte LifeStyle */
                 --box-shadow-card-lifestyle: rgba(0, 0, 0, 0.2) 0px 0.25px 0.5px; /* Vérifier pour refacto ok */
+        
+        /* Ombres dans la page Tarifs */
+            /* Ombres appliquées sur une carte tarif */
+                --box-shadow-card-prestation: rgba(0, 0, 0, 0.15) 0 2px 8px; /* Vérifier pour refacto ok */
+                --box-shadow-card-prestation-hover: rgba(0, 0, 0, 0.3) 0 4px 14px; /* Vérifier pour refacto ok */
 
     /* Couleurs du Menu Burger */
         --Background1: #A9CCE3; /* ⚠️ */
@@ -157,7 +162,7 @@
         --z-index_1: 1; /* Niv 1 */
             /* Bouton d'ouverture du menu burger Nav Target Home */
             /* Bouton d'ouverture du menu burger Nav Root */
-            /**/
+            /* Link de cards de prestations dans la page Tarifs */
             
         --z-index_4: 4; /* Z-index 4 à partir du Niv 10 */
             /* Bouton de fermeture du sous menu de Nav Target Home */
