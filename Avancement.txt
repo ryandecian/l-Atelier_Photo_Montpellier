@@ -1,6 +1,6 @@
 Ce qui est fait pour refacto : 
 
-- Contacts (En cours)
+- Contacts (En cours) Il manquera le css, le sitemap
 - Corporate
 - Footer
 - Home
