@@ -5,7 +5,7 @@
 .Subtitle {
     color: var(--ColorGreyBlack);
     text-align: center;
-    margin-bottom: 2rem; /* 32px 0px 32px 0px */
+    margin-bottom: 2rem; /* 0px 0px 32px 0px */
 }
   
 .ContactContainer {
