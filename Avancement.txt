@@ -1,6 +1,6 @@
 Ce qui est fait pour refacto : 
 
-- Contacts
+- Contacts (En cours)
 - Corporate
 - Footer
 - Home
