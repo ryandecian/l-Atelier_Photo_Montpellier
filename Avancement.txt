@@ -1,5 +1,6 @@
 Ce qui est fait pour refacto : 
 
+- Contacts (En cours) Il manquera le css, le sitemap
 - Corporate
 - Footer
 - Home
@@ -15,6 +16,7 @@ Ce qui est fait pour refacto :
 - root.css
 - StyleRootComponent.module.css
 - stylePage.module.css
+- Tarifs
 ------------------------------------------------------------------------------
 En attente de la validation client puis passage au développement du compte client
 dans le compte client il y a la question des albums et photo.
