@@ -3,11 +3,11 @@
 }
 
 .Subtitle {
-    color: var(--ColorGreyBlack);
+    color: var(--ColorTextGreyBlack);
     text-align: center;
     margin-bottom: 2rem; /* 0px 0px 32px 0px */
 }
-  
+
 .ContactContainer {
     gap: 1.5rem; /* 24px */
 }
@@ -17,19 +17,19 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 0.75rem;
+    gap: 0.75rem; /* 12px */
     font-size: var(--h3); /* 18px */
     text-decoration: none;
-    color: var(--ColorPink);
+    color: var(--ColorTextPink);
     margin: 0rem 1.5rem; /* 0px 24px 0px 24px */
-    border: 0;
-    padding: 0;
+    border: 0rem;
+    padding: 0rem;
     transition: transform 0.2s ease, color 0.2s ease;
 }
   
 .ContactItem:hover {
     transform: scale(1.05);
-    color: var(--ColorPink);
+    color: var(--ColorTextPink);
 }
 
   
