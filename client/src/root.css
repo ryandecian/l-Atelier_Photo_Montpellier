@@ -7,6 +7,8 @@
         /* Couleur des textes général Restructuration */
             --ColorTextWhite: rgb(255, 255, 255); /* Vérifier pour refacto ok */
             --ColorTextBlack: rgb(0, 0, 0); /* Vérifier pour refacto ok */
+            --ColorTextGreyBlack: #555; /* Vérifier pour refacto ok */
+            --ColorTextPink: #ff0080; /* Vérifier pour refacto ok */
             --ColorButtonAvis: #0056b3; /* Vérifier pour refacto ok */
 
             --ColorBlack: rgb(0, 0, 0); /* ⚠️ */
