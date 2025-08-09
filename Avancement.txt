@@ -1,6 +1,7 @@
 Ce qui est fait pour refacto : 
 
 - Contacts (En cours) Il manquera le css, le sitemap
+- Mention Légale (En cours)
 - Corporate
 - Footer
 - Home
