@@ -13,7 +13,7 @@ function MentionsLegalesRoot() {
     return (
         <section className={`MentionsLegalesRoot ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitleH1}>
-                <h1 className={style.Title}>
+                <h1 className={style.TitleH1}>
                     Mentions Légales
                 </h1>
             </header>
