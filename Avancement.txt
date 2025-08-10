@@ -9,7 +9,7 @@ Ce qui est fait pour refacto :
 - NavRoot
 - NavTargetHome
 - Mention Légale (En cours)
-- Portfolio (En cours)
+- Portfolio
 - Portrait Duo
 - Portrait Famille
 - Portrait Hobbie
