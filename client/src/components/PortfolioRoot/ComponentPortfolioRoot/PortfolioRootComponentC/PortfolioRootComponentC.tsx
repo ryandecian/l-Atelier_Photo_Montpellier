@@ -5,7 +5,7 @@ import AlbumPortfolio from "../../AlbumPortfolio";
 function PortfolioRootComponentC() {
     const Album = AlbumPortfolio.Album_Rue_Street;
     return (
-        <article className={`PortfolioRootComponentC ${style.ContainerRoot}`}>
+        <section className={`PortfolioRootComponentC ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2}>
                     {"Photographie de rue – Street Photography"}
@@ -23,7 +23,7 @@ function PortfolioRootComponentC() {
             </p>
 
             <GeneratorAlbumPhoto album={Album} />
-        </article>
+        </section>
     )
 }
 
