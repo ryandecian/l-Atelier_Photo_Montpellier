@@ -5,7 +5,7 @@ import style from "../../../StyleRootComponent.module.css";
 function PortfolioRootComponentE() {
     // const Album = AlbumPortfolio.Album_Test;
     return (
-        <article className={`PortfolioRootComponentE ${style.ContainerRoot}`}>
+        <section className={`PortfolioRootComponentE ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2}>
                     {"Un regard artistique multiple"}
@@ -43,7 +43,7 @@ function PortfolioRootComponentE() {
             </p>
 
             {/* <GeneratorAlbumPhoto album={Album} /> */}
-        </article>
+        </section>
     )
 }
 

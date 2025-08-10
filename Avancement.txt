@@ -8,6 +8,8 @@ Ce qui est fait pour refacto :
 - Mariage
 - NavRoot
 - NavTargetHome
+- Mention Légale (En cours)
+- Portfolio (En cours)
 - Portrait Duo
 - Portrait Famille
 - Portrait Hobbie
