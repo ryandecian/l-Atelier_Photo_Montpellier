@@ -57,7 +57,7 @@ function Blog_20250601_Root() {
                 privilégie l’émotion, l’imprévu, le mouvement, le naturel.
             </p>
 
-            <h3 className={style.TitleNH3}>
+            <h3 className={style.TitleNH3R}>
                 Quelques caractéristiques du style reportage :
             </h3>
 
@@ -77,7 +77,6 @@ function Blog_20250601_Root() {
                 <li className={style.TextLiP4}>
                     Interaction minimale du photographe
                 </li>
-                <br />
             </ul>
 
             <p className={style.TextP4}>
