@@ -1,6 +1,7 @@
 Ce qui est fait pour refacto : 
 
-- CGV (En cours)
+- Blog (Page racine) (En cours)
+- CGV
 - Contacts
 - Corporate
 - Footer
