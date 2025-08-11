@@ -1,6 +1,8 @@
 Ce qui est fait pour refacto : 
 
-- Blog (Page racine) (En cours)
+- Blog (Page racine)
+- Blog_20250601
+- Blog_20250616 (En cours)
 - CGV
 - Contacts
 - Corporate
