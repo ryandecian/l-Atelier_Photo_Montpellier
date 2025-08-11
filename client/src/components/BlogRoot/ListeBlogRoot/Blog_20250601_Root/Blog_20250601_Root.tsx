@@ -3,14 +3,11 @@ import css from "./Blog_20250601_Root.module.css";
 import ListDataRouter from "../../../../router/router";
 import { Link } from "react-router-dom";
 import PremiumCardImgSudoRoot from "../../../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
-import useScrollToHash from "../../../../hook/useScrollToHash";
 
 import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ImagesBlog_20250601_RootControllerData from "./ImagesBlog_20250601_RootControllerData";
 
-function Blog_20250601_Root() {
-    useScrollToHash(); // Hook pour gérer le scroll vers les ancres
-    
+function Blog_20250601_Root() {    
     return (
         <section className={`Blog_20250601_Root ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
