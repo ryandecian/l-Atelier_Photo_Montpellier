@@ -1,6 +1,7 @@
 Ce qui est fait pour refacto : 
 
-- Contacts (En cours) Il manquera le css, le sitemap
+- CGV (En cours)
+- Contacts
 - Corporate
 - Footer
 - Home
@@ -8,7 +9,7 @@ Ce qui est fait pour refacto :
 - Mariage
 - NavRoot
 - NavTargetHome
-- Mention Légale (En cours)
+- Mention Légale
 - Portfolio
 - Portrait Duo
 - Portrait Famille
