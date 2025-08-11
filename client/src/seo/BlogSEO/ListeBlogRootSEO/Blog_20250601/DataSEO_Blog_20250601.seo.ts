@@ -7,7 +7,7 @@ function DataSEO_Blog_20250601(): DataSEOTargetOneType {
         title: "Photographie de Mariage en Style Reportage – Blog - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
         description: "Découvrez l’approche naturelle et sincère du reportage photo pour mariage, une manière unique de capturer l’émotion du jour J.",
-        url: `${ListDataRouter[4].children?.[1].path}`, /*URL de la page*/
+        url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[4].path}${ListDataRouter[4].children?.[1].path}`, /*URL de la page*/
         position: 3, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
         name_Breadcrumb: "Photographie de mariage en style reportage", /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Duo */
         name_Service: "Photographie de mariage en style reportage – Blog - l'Atelier Photo Montpellier", /* Nom du service, utilisé dans le JSON-LD Service */
@@ -42,7 +42,7 @@ function DataSEO_Blog_20250601(): DataSEOTargetOneType {
         /* Data Helmet et JSON-LD */
         img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/liste-blog-root/blog_20250601/google/lapm-photo-professionnel-portrait-mariage-blog-20250601-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
         img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/liste-blog-root/blog_20250601/helmet/lapm-photo-professionnel-portrait-mariage-blog-20250601-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[4].children?.[1].path}/#blog_20250601`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[4].path}${ListDataRouter[4].children?.[1].path}/#blog_20250601`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
         serviceType: "Article de blog sur le style reportage en photographie de mariage, par Anne SAUNIER, photographe professionnelle à Montpellier.",
     };
 
