@@ -11,7 +11,7 @@
   padding: 0.75rem 1rem; /* 12px 16px 12px 16px */
   font-size: 1rem; /* 16px */
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--ColorBackgroundBlogRoot_Border);
 }
 
 .cardsContainer {
@@ -30,11 +30,11 @@
   width: 15.625rem; /* 250px */
   height: 17.5rem; /* 280px */
   text-decoration: none;
-  color: white;
+  color: var(--ColorTextWhite);
   display: flex;
   align-items: flex-end;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) 0 2px 8px ;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -42,13 +42,13 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* léger noircissement */
+  background-color: var(--ColorBackgroundBlack_50); /* léger noircissement */
   z-index: 0;
 }
 
 .card:hover {
   transform: scale(1.03);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+  box-shadow: rgba(0, 0, 0, 0.3) 0 4px 14px;
 }
 
 .overlay {
