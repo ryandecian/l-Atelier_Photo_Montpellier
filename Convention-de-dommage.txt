@@ -1,0 +1,14 @@
+Fichier tsx : 
+    - const : 
+        - const composant : PascalCase
+            Pour les const qui déclare une fonction qui va être un composant à exporter
+        - const clasique : camelCase
+            Pour les const de valeur comme tableau, objet, string, number.
+    
+    - fonction : 
+        - fonction de composant : PascalCase
+            Pour les fonctions qui servents a déclarer les composants.
+        - fonction de logique : camelCase
+            Pour les fonctions de logique locale interne. 
+        - fonction réutilisable (utils) : camelCase
+            Pour les fonctions séparé en ts ou tsx exporté pour être réutilisé.

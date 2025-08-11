@@ -7,20 +7,19 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    margin: 0;
-    padding: 0;
-    border: 0;
+    margin: 0rem;
+    padding: 0rem;
+    border: 0rem;
 }
 .ContainerArticle {
     align-items: start;
 }
 .ContainerList {
     align-items: start;
-    width: calc(100% - 2.5rem);
-    padding: 0 0 0 2.5rem; /* 0px 0px 0px 40px */
+    width: calc(100% - 2.5rem); /* 100% - 40px */
+    padding: 0rem 0rem 0rem 2.5rem; /* 0px 0px 0px 40px */
 }
 
-.TitleH1, 
 .TitleH2,
 .TitleH3,
 .TitleH4 {
@@ -30,14 +29,10 @@
     font-style: var(--font-style-title);
     font-display: swap;
     text-align: start;
-    width: calc(100% - 3rem); /* 100% - 48px */
-    margin: 0rem 1.5rem; /* 20px 24px 20px 24px */
-    padding: 0;
-    border: 0;
-}
-.TitleH1 {
-    font-size: var(--h1); /* 32px */
-    text-align: center;
+    width: calc(100% - 2.5rem); /* 100% - 40px */
+    margin: 0rem 1.25rem; /* 0px 20px 0px 20px */
+    padding: 0rem;
+    border: 0rem;
 }
 .TitleH2 {
     font-size: var(--h2); /* 24px */
@@ -63,16 +58,16 @@
 .Separator20,
 .Separator30 {
     width: 100%;
-    height: 0px;
-    margin: 0px;
-    border: 0px;
+    height: 0rem;
+    margin: 0rem;
+    border: 0rem;
 }
 .Separator10 {
-    padding: 10px 0px 0px 0px;
+    padding: 0.625rem 0rem 0rem 0rem; /* 10px 0px 0px 0px */
 }
 .Separator20 {
-    padding: 20px 0px 0px 0px;
+    padding: 1.25rem 0rem 0rem 0rem; /* 20px 0px 0px 0px */
 }
 .Separator30 {
-    padding: 30px 0px 0px 0px;
+    padding: 1.875rem 0rem 0rem 0rem; /* 30px 0px 0px 0px */
 }
