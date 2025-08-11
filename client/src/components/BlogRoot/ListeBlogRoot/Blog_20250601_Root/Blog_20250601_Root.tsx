@@ -7,7 +7,7 @@ import PremiumCardImgSudoRoot from "../../../PremiumCardImgSudoRoot/PremiumCardI
 import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ImagesBlog_20250601_RootControllerData from "./ImagesBlog_20250601_RootControllerData";
 
-function Blog_20250601_Root() {    
+function Blog_20250601_Root() {
     return (
         <section className={`Blog_20250601_Root ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
