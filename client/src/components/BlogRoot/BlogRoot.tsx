@@ -1,6 +1,7 @@
+import style from "../StyleRootComponent.module.css";
+import css from "./BlogRoot.module.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import css from "./BlogRoot.module.css";
 import DataCardBlogRoot from "./DataCardBlogRoot";
 import CardBlogType from "../../types/CardBlog.type";
 import { convertDateFrToISO_Date } from "../../utils/convertDateFrToISO.utils";
@@ -24,6 +25,14 @@ function BlogRoot() {
 
     return (
         <section className={`BlogRoot ${css.container}`}>
+            <h1 className={style.TitleH1}>
+                {`Blog photo professionnel : conseils, astuces et inspiration à Montpellier`}
+            </h1>
+
+            <h2 className={style.TitleLNH3}>
+                {`Retrouvez nos conseils photo et reportages inspirants à Montpellier`}
+            </h2>
+
             <input
                 type="text"
                 placeholder="Rechercher une prestation..."
