@@ -7,7 +7,7 @@ function DataSEO_Blog_20250710(): DataSEOTargetOneType {
         title: "Portrait LifeStyle : révélez votre personnalité en image – Blog - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
         description: "Découvrez comment un portrait lifestyle peut transformer votre image, nourrir votre estime de vous-même et vous offrir des souvenirs authentiques à Montpellier.",
-        url: `${ListDataRouter[4].children?.[3].path}`, /*URL de la page*/
+        url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[4].path}${ListDataRouter[4].children?.[3].path}`, /*URL de la page*/
         position: 3, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
         name_Breadcrumb: "Portrait LifeStyle", /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Duo */
         name_Service: "Portrait LifeStyle – Blog - l'Atelier Photo Montpellier", /* Nom du service, utilisé dans le JSON-LD Service */
@@ -42,7 +42,7 @@ function DataSEO_Blog_20250710(): DataSEOTargetOneType {
         /* Data Helmet et JSON-LD */
         img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/liste-blog-root/blog_20250710/google/lapm-photo-professionnel-portrait-lifestyle-blog-20250710-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
         img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/liste-blog-root/blog_20250710/helmet/lapm-photo-professionnel-portrait-lifestyle-blog-20250710-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[4].children?.[3].path}/#blog_20250710`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[4].path}${ListDataRouter[4].children?.[3].path}/#blog_20250710`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
         serviceType: "Article de blog dédié à la photographie portrait lifestyle, révélant la personnalité de chacun à travers des images naturelles, expressives et valorisantes à Montpellier.",
     };
 
