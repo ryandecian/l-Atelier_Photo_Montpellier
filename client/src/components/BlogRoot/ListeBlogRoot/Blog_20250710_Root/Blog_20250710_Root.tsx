@@ -15,7 +15,7 @@ function Blog_20250710_Root() {
                 </h1>
             </header>
 
-            <p className={style.TextP4}>
+            <p className={style.TextLiP4}>
                 Découvrez pourquoi un portrait lifestyle soigné peut transformer votre image, renforcer votre estime de 
                 vous-même et offrir des souvenirs inoubliables à partager avec votre famille ou sur vos réseaux sociaux.
             </p>
@@ -52,7 +52,7 @@ function Blog_20250710_Root() {
                     {`📸 des sourires sincères, des regards confiants, un naturel retrouvé.`}
                 </p>
 
-                <p className={style.TextP4}>
+                <p className={style.TextLiP4}>
                     Un portrait lifestyle bien réalisé permet de : <br />
                 </p>
             
@@ -69,7 +69,6 @@ function Blog_20250710_Root() {
                     <li className={style.TextLiP4}>
                         Communiquer une image engageante et positive sur vos réseaux sociaux
                     </li>
-                    <br />
                 </ul>
             </div>
 
@@ -137,7 +136,7 @@ function Blog_20250710_Root() {
                     className={style.FloatLeftImg_Pa}
                 />
             
-                <p className={style.TextP4}>
+                <p className={style.TextLiP4}>
                     Une photo classique peut être belle, mais elle manque souvent de vie et de naturel. <br />
                     👉 Un portrait lifestyle, c’est :
                 </p>
@@ -155,7 +154,6 @@ function Blog_20250710_Root() {
                     <li className={style.TextLiP4}>
                         Des photos intemporelles que vous aurez envie de transmettre à vos enfants et petits-enfants
                     </li>
-                    <br />
                 </ul>
             </div>
 
@@ -174,7 +172,7 @@ function Blog_20250710_Root() {
                 {`Pourquoi faire appel à un photographe portrait pro pour un shooting lifestyle ?`}
             </h2>
 
-            <p className={style.TextP4}>
+            <p className={style.TextLiP4}>
                 Un photographe spécialisé saura :
             </p>
             
@@ -191,7 +189,6 @@ function Blog_20250710_Root() {
                 <li className={style.TextLiP4}>
                     Valoriser votre personnalité et révéler le meilleur de vous-même
                 </li>
-                <br />
             </ul>
 
             <p className={style.TextP4}>
