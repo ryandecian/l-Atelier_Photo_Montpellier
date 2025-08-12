@@ -24,6 +24,7 @@ Ce qui est fait pour refacto :
 - stylePage.module.css
 - Tarifs
 ------------------------------------------------------------------------------
+------------------------------------------------------------------------------
 En attente de la validation client puis passage au développement du compte client
 dans le compte client il y a la question des albums et photo.
 Pour les vidéos on devra passer par le nas.
