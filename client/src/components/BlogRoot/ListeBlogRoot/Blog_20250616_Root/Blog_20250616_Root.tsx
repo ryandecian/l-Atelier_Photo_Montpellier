@@ -14,7 +14,7 @@ function Blog_20250616_Root() {
                 </h1>
             </header>
 
-            <p className={style.TextP4}>
+            <p className={style.TextLiP4}>
                 Découvrez pourquoi un portrait professionnel soigné peut faire toute la différence sur votre CV et 
                 renforcer l’impact de votre candidature auprès des recruteurs.
             </p>
