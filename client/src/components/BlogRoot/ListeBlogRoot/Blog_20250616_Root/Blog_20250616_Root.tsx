@@ -46,7 +46,7 @@ function Blog_20250616_Root() {
                 {`Comment un portrait pro influence la perception des recruteurs ?`}
             </h2>
 
-            <p className={style.TextP4}>
+            <p className={style.TextLiP4}>
                 Les recruteurs passent en moyenne moins de 30 secondes sur un CV. <br />
                 Une 
                 <span className={style.SpanBold}>
@@ -68,7 +68,6 @@ function Blog_20250616_Root() {
                 <li className={style.TextLiP4}>
                     Valoriser votre personnalité et votre potentiel
                 </li>
-                <br />
             </ul>
 
             <p className={style.TextP4}>
@@ -127,7 +126,7 @@ function Blog_20250616_Root() {
                 {`Photo professionnelle VS photo amateur : quelles différences pour un CV ?`}
             </h2>
 
-            <p className={style.TextP4}>
+            <p className={style.TextLiP4}>
                 De nombreux candidats utilisent encore des photos informelles (soirée, événement, selfie). <br />
                 Or, ces images ne renvoient pas le même degré de professionnalisme. <br />
                 Une 
@@ -150,7 +149,6 @@ function Blog_20250616_Root() {
                 <li className={style.TextLiP4}>
                     Une cohérence avec l’image que vous souhaitez transmettre
                 </li>
-                <br />
             </ul>
 
             <p className={style.TextP4}>
@@ -205,7 +203,7 @@ function Blog_20250616_Root() {
                 {`Pourquoi faire appel à un photographe portrait pro à Montpellier ?`}
             </h2>
 
-            <p className={style.TextP4}>
+            <p className={style.TextLiP4}>
                 Un 
                 <span className={style.SpanBold}>
                     {` photographe professionnel spécialisé en portrait `}
@@ -226,7 +224,6 @@ function Blog_20250616_Root() {
                 <li className={style.TextLiP4}>
                     Garantir une cohérence entre votre image et le message que vous voulez transmettre
                 </li>
-                <br />
             </ul>
 
             <p className={style.TextP4}>
