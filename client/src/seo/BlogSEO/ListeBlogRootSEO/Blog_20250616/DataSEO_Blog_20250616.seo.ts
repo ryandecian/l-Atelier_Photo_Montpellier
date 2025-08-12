@@ -7,7 +7,7 @@ function DataSEO_Blog_20250616(): DataSEOTargetOneType {
         title: "Photo professionnelle pour CV : captez l’attention des recruteurs – Blog - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
         description: "Découvrez comment un portrait professionnel soigné peut renforcer votre image sur votre CV et faire la différence auprès des recruteurs à Montpellier.",
-        url: `${ListDataRouter[4].children?.[0].path}`, /*URL de la page*/
+        url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[4].path}${ListDataRouter[4].children?.[2].path}`, /*URL de la page*/
         position: 3, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
         name_Breadcrumb: "Photo professionnelle pour CV", /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Duo */
         name_Service: "Photo professionnelle pour CV – Blog - l'Atelier Photo Montpellier", /* Nom du service, utilisé dans le JSON-LD Service */
@@ -42,7 +42,7 @@ function DataSEO_Blog_20250616(): DataSEOTargetOneType {
         /* Data Helmet et JSON-LD */
         img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/liste-blog-root/blog_20250616/google/lapm-photo-professionnel-portrait-corporate-blog-20250616-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
         img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/liste-blog-root/blog_20250616/helmet/lapm-photo-professionnel-portrait-corporate-blog-20250616-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[4].children?.[0].path}/#blog_20250616`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[4].path}${ListDataRouter[4].children?.[2].path}/#blog_20250616`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
         serviceType: "Article de blog dédié à la photographie professionnelle pour CV, avec conseils pour optimiser son image et capter l'attention des recruteurs à Montpellier.",
     };
 
