@@ -7,7 +7,7 @@ function DataSEO_Blog_20250724(): DataSEOTargetOneType {
         title: "Photographe grossesse à Montpellier : quand réserver votre séance photo ? – Blog - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
         description: "Découvrez le moment idéal pour une séance photo de grossesse à Montpellier, entre émotions, préparation et souvenirs à transmettre.",
-        url: `${ListDataRouter[4].children?.[4].path}`, /*URL de la page*/
+        url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[4].path}${ListDataRouter[4].children?.[4].path}`, /*URL de la page*/
         position: 3, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
         name_Breadcrumb: "Photo grossesse", /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Duo */
         name_Service: "Photographe grossesse à Montpellier – Blog - l'Atelier Photo Montpellier", /* Nom du service, utilisé dans le JSON-LD Service */
@@ -42,7 +42,7 @@ function DataSEO_Blog_20250724(): DataSEOTargetOneType {
         /* Data Helmet et JSON-LD */
         img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/liste-blog-root/blog_20250724/google/lapm-photo-professionnel-portrait-grossesse-blog-20250724-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
         img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/liste-blog-root/blog_20250724/helmet/lapm-photo-professionnel-portrait-grossesse-blog-20250724-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[4].children?.[4].path}/#blog_20250724`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[4].path}${ListDataRouter[4].children?.[4].path}/#blog_20250724`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
         serviceType: "Article de blog dédié à la photographie grossesse, pour vous aider à choisir le bon moment, bien préparer votre séance et créer des souvenirs uniques à Montpellier.",
     };
 
