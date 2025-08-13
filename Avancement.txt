@@ -2,7 +2,9 @@ Ce qui est fait pour refacto :
 
 - Blog (Page racine)
 - Blog_20250601
-- Blog_20250616 (En cours) Manque l'accessibilité Li + SEO dans data SEO url Canonical
+- Blog_20250616
+- Blog_20250710
+- Blog_20250724 (En cours)
 - CGV
 - Contacts
 - Corporate
