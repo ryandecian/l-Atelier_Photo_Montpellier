@@ -65,7 +65,7 @@ function Helmet_Blog_20250724_SEO() {
             <meta property="og:description" content={SEO.description} />
             <meta property="og:image" content={SEO.img} />
             <meta property="og:url" content={SEO.url} />
-            <meta property="og:type" content={SEO.type.website} />
+            <meta property="og:type" content={SEO.type.article} />
             <meta property="og:locale" content="fr_FR" />
 
             {/* Twitter Cards */}
