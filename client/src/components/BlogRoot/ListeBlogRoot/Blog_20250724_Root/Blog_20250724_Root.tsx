@@ -60,7 +60,7 @@ function Blog_20250724_Root() {
                 nombreuses futures mamans.
             </p>
 
-            <h3 className={style.TitleNH3}>
+            <h3 className={style.TitleNH3L}>
                 {`Pourquoi 28 à 34 semaines offrent le meilleur rendu photo`}
             </h3>
 
@@ -82,7 +82,6 @@ function Blog_20250724_Root() {
                 <li className={style.TextLiP4}>
                     Parce que le c’est souvent une période où la future maman commence à réaliser que oui, c’est bientôt.
                 </li>
-                <br />
             </ul>
 
             <p className={style.TextP4}>
@@ -134,7 +133,7 @@ function Blog_20250724_Root() {
                 {`Séance photo grossesse, les atouts pour une mère et son enfant`}
             </h3>
 
-            <p className={style.TextP4}>
+            <p className={style.TextLiP4}>
                 Ce n’est pas juste une série de clichés. C’est une expérience.
             </p>
 
@@ -158,7 +157,6 @@ function Blog_20250724_Root() {
                     </span>
                     {`pour vous, pour votre enfant, pour plus tard.`}
                 </li>
-                <br />
             </ul>
 
             <p className={style.TextP4}>
