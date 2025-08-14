@@ -4,7 +4,7 @@ Ce qui est fait pour refacto :
 - Blog_20250601
 - Blog_20250616
 - Blog_20250710
-- Blog_20250724 (En cours)
+- Blog_20250724
 - CGV
 - Contacts
 - Corporate
