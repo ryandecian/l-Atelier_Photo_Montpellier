@@ -25,6 +25,7 @@ Ce qui est fait pour refacto :
 - StyleRootComponent.module.css
 - stylePage.module.css
 - Tarifs
+
 ------------------------------------------------------------------------------
 ------------------------------------------------------------------------------
 En attente de la validation client puis passage au développement du compte client
