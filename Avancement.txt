@@ -1,33 +1,8 @@
 Ce qui est fait pour refacto : 
 
-- Blog (Page racine)
-- Blog_20250601
-- Blog_20250616
-- Blog_20250710
-- Blog_20250724
-- CGV
-- Contacts
-- Corporate
-- Footer
-- Home
-- LifeStyle
-- Mariage
-- NavRoot
-- NavTargetHome
-- Mention Légale
-- Portfolio
-- Portrait Duo
-- Portrait Famille
-- Portrait Hobbie
-- Portrait Grossesse
-- Portrait Solo
-- root.css
-- StyleRootComponent.module.css
-- stylePage.module.css
-- Tarifs
-
 ------------------------------------------------------------------------------
-
+- On va maintenant : 
+  - Nettoyer css root et le hook use media query
 ------------------------------------------------------------------------------
 En attente de la validation client puis passage au développement du compte client
 dans le compte client il y a la question des albums et photo.
