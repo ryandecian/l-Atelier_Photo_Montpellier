@@ -9,13 +9,9 @@
             --ColorTextBlack: rgb(0, 0, 0); /* Vérifier pour refacto ok */
             --ColorTextGreyBlack: #555; /* Vérifier pour refacto ok */
             --ColorTextPink: #ff0080; /* Vérifier pour refacto ok */
+            --ColorTextPurple: rgb(138, 43, 226); /* Vérifier pour refacto ok */
+            --ColorTextLink: rgb(14, 83, 193); /* Vérifier pour refacto ok */
             --ColorButtonAvis: #0056b3; /* Vérifier pour refacto ok */
-
-            --ColorBlack: rgb(0, 0, 0); /* ⚠️ */
-            --ColorWhite: rgb(255, 255, 255); /* ⚠️ */
-            --ColorPink: #ff0080; /* ⚠️ */
-            --ColorGreyBlack: #555; /* ⚠️ */
-            --ColorLink: rgb(14, 83, 193); /* ⚠️ */
 
         /* Couleurs textes Nav Target Home */
             --ColorTextNavHomeWhite: rgb(255, 255, 255); /* Vérifier pour refacto ok */
@@ -38,14 +34,6 @@
                 --ColorTextCardTarif_Grey: #666; /* Vérifier pour refacto ok */
                 --ColorTextCardTarif_Button: rgb(255, 255, 255); /* Vérifier pour refacto ok */
             
-        /*Couleurs des textes général*/
-            --ColorPrincipal: #DCA54A; /* ⚠️ */
-            --ColorSecondaire: #3a240f; /* ⚠️ */
-            --ColorClaire: #523711; /* ⚠️ */
-            --ColorTexte: #3A3A3A; /* ⚠️ */
-            --ColorGrey: rgb(230, 230, 230); /* ⚠️ */
-            --backgroundBlack: black; /* ⚠️ */
-            --backgroundWhite: white; /* ⚠️ */
 
     /* ✨ Couleur background du site */
         /* Couleur backgound général hors nav, footer et menu burger */
@@ -90,8 +78,9 @@
             /* Effet de couleur de la page BlogRoot (Page racine) */
                 --ColorBackgroundBlogRoot_Border: #ccc; /* Vérifier pour refacto ok */
 
+          
     /* ✨ Ombre du site */
-        /**
+        /** Documentation
         * rgba( AA, BB, CC, DD) EE FF GG
         * AA, BB, CC : Couleur de l'ombre
         * DD : Opacité avec 0 transparence total et 1 opaque
@@ -99,8 +88,6 @@
         * FF : Décalage vertical ↑↓ : négatif vers le haut et positif vers le bas. Valeur en px
         * GG : Flou de l'ombre. Valeur en px
         */
-
-        --box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px; /* ⚠️ */
 
         /* Ombres Nav Root */
             --box-shadow-bottom: rgba(0, 0, 0, 0.1) 0px 4px 6px; /* Vérifier pour refacto ok */
@@ -121,24 +108,8 @@
                 --box-shadow-card-prestation: rgba(0, 0, 0, 0.15) 0 2px 8px; /* Vérifier pour refacto ok */
                 --box-shadow-card-prestation-hover: rgba(0, 0, 0, 0.3) 0 4px 14px; /* Vérifier pour refacto ok */
 
-    /* Couleurs du Menu Burger */
-        --Background1: #A9CCE3; /* ⚠️ */
-        --BackgroudSubMenuBurger: rgba(218, 216, 216, 0.675); /* ⚠️ */
-        --BackgroudMenuBurger: rgba(218, 216, 216, 0.882); /* ⚠️ */
-        --textColorMenu: white; /* ⚠️ */
-        --textColorMenuHover: rgb(137, 228, 255); /* ⚠️ */
-        --textColorMenuBurger: black; /* ⚠️ */
-        --textColorSubMenuHover: black; /* ⚠️ */
-        --spanMenuBurger: black; /* ⚠️ */
-    /* Couleur des border */
-        --borderWhite: white; /* ⚠️ */
 
- /*Backgound du site*/
-     /*Backgound du général*/
-         --textColorBlack: black; /* ⚠️ */
-         --textColorWhite: white; /* ⚠️ */
-
-    /*Logique taille police d'écriture site*/
+    /* ✨ Logique taille police d'écriture site*/
         --font-size-root: 1rem; /* 16 px : Ref size, dimensionne tout le site*/
         --p: var(--font-size-root); /*16px*/
         --h1: calc(var(--font-size-root) * 2); /*32px*/
@@ -150,7 +121,7 @@
         --h7: calc(var(--font-size-root) - 0.4375rem); /*9px*/
         --h8: calc(var(--font-size-root) - 0.5rem); /*8px*/
 
-    /* Attention, les 3 déclarations sont obligatoire pour les titres */
+    /* ✨ Attention, les 3 déclarations sont obligatoire pour les titres */
         /*Logique des Titres*/
             --font-family-normal: "Quicksand", sans-serif;
             --font-family-titles: "Saira Condensed", sans-serif;
@@ -168,7 +139,7 @@
 
             /* Attention, il ne gère pas le ContainerAccueilHomeRoot */
 
-    /* Liste des Z-index */
+    /* ✨ Liste des Z-index */
         --z-index_-1: -1; /* Z-index -1 à partir du Niv 10 */
             /* Bouton de fermeture du sous menu des PRESTATIONS de Nav Target Home */
             /* Bouton de fermeture du sous menu des PRESTATIONS de Nav Root */
@@ -193,10 +164,6 @@
         --z-index_10: 10; /* Niv 10 */
             /* Hauteur du menu burger Nav Target Home */
             /* Hauteur du menu burger Nav Root */
-        
-    /* Personalisation du MenuBurger */
-        --ColorTexteMenuBurger: var(--ColorSecondaire); /* ⚠️ */
-        --ColorBorderMenuBurger: white; /* ⚠️ */
 }
 
 body {
@@ -217,23 +184,6 @@ p {
      width: 100%;
      min-height: 100vh;
  }
-/* Responsive */
-
-/* 320px a 359px
-Textes
-p = h6
-h1 = h3
-h2 = h4
-h3 = h5
-*/
-
-/* 359px a 400px
-Textes
-p = h5
-h1 = h2
-h2 = h3
-h3 = h4
-*/
 
 /*
 Pour attendre que l'utilisateur soit vraiment sur la page pour la charger
@@ -244,8 +194,8 @@ Pour attendre que l'utilisateur soit vraiment sur la page pour la charger
 /* Code pour accessibilité button */
 /* .button {
     position: fixed;
-    top: 0px;
-    left: 0px;
+    top: 0rem;
+    left: 0rem;
     width: 100vw;
     height: 100vh;
     background-color: transparent;
@@ -253,10 +203,10 @@ Pour attendre que l'utilisateur soit vraiment sur la page pour la charger
     border: none;
     outline: none;
     opacity: 0;
-    font-size: 0px;
+    font-size: 0rem;
     clip-path: inset(50%);
-    width: 1px;
-    height: 1px;
+    width: 0.0625rem;
+    height: 0.0625rem;
     overflow: hidden;
     cursor: pointer;
 } */
