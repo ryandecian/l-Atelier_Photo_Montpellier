@@ -109,7 +109,7 @@
                 --box-shadow-card-prestation-hover: rgba(0, 0, 0, 0.3) 0 4px 14px; /* Vérifier pour refacto ok */
 
 
-    /*Logique taille police d'écriture site*/
+    /* ✨ Logique taille police d'écriture site*/
         --font-size-root: 1rem; /* 16 px : Ref size, dimensionne tout le site*/
         --p: var(--font-size-root); /*16px*/
         --h1: calc(var(--font-size-root) * 2); /*32px*/
@@ -121,7 +121,7 @@
         --h7: calc(var(--font-size-root) - 0.4375rem); /*9px*/
         --h8: calc(var(--font-size-root) - 0.5rem); /*8px*/
 
-    /* Attention, les 3 déclarations sont obligatoire pour les titres */
+    /* ✨ Attention, les 3 déclarations sont obligatoire pour les titres */
         /*Logique des Titres*/
             --font-family-normal: "Quicksand", sans-serif;
             --font-family-titles: "Saira Condensed", sans-serif;
@@ -139,7 +139,7 @@
 
             /* Attention, il ne gère pas le ContainerAccueilHomeRoot */
 
-    /* Liste des Z-index */
+    /* ✨ Liste des Z-index */
         --z-index_-1: -1; /* Z-index -1 à partir du Niv 10 */
             /* Bouton de fermeture du sous menu des PRESTATIONS de Nav Target Home */
             /* Bouton de fermeture du sous menu des PRESTATIONS de Nav Root */
