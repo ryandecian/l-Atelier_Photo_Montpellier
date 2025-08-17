@@ -2,7 +2,7 @@ Ce qui est fait pour refacto :
 
 ------------------------------------------------------------------------------
 - On va maintenant : 
-  - Nettoyer css root et le hook use media query
+  - Passer au server node
 ------------------------------------------------------------------------------
 En attente de la validation client puis passage au développement du compte client
 dans le compte client il y a la question des albums et photo.
