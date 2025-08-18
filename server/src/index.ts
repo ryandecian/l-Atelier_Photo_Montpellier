@@ -60,4 +60,3 @@ app.listen(port, async () => {
   console.info(chalk.cyan(`Server lancé sur ${ await ENV("process.env.VITE_DOMAIN_API_SERVER", "Warning")}`));
 });
 
-console.log( "test", ENV("process.env.VITE_DOMAIN_CLIENT", "Warning"));
