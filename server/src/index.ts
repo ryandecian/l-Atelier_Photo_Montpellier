@@ -11,10 +11,12 @@ import ENV from "./config/ENV.config";
 const app = express();
 const port = ENV("process.env.VITE_PORT_API_SERVER", "Critical");
 
-app.use(cors({
-  origin: ENV("process.env.VITE_DOMAIN_CLIENT", "Warning"),
-  credentials: true,
-}));
+app.use(cors(
+    {
+        origin: ENV("process.env.VITE_DOMAIN_CLIENT", "Warning"),
+        credentials: true,
+    }
+));
 
 app.use(express.json());
 app.use(cookieParser());
