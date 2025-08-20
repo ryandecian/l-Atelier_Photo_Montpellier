@@ -3,7 +3,7 @@ import { createDate_Number_Utils } from "./createDateUtils";
 import jwt from "jsonwebtoken";
 import { Request } from "express";
 
-import ENV from "../config/ENV.config";
+import ENV from "../config/ENV.configs";
 
 // Récupération de la clé secrète Server
 const SECRET_KEY_TOKEN_SERVER: string | undefined = ENV("process.env.SECRET_KEY_TOKEN_API_SERVER", "Warning");        

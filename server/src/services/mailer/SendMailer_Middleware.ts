@@ -3,7 +3,7 @@
 import transporter from "./mailer";
 import { Request, Response, NextFunction } from "express";
 import "dotenv/config";
-import ENV from "../../config/ENV.config";
+import ENV from "../../config/ENV.configs";
 
 /**
  * Middleware pour envoyer un mail
