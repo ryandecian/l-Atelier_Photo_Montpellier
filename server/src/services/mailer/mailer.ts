@@ -1,7 +1,7 @@
 import nodemailer from "nodemailer";
 import "dotenv/config";
 
-import ENV from "../../config/ENV.config";
+import ENV from "../../config/ENV.configs";
 
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",

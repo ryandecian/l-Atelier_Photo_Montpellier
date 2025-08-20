@@ -2,7 +2,7 @@ import transporter from "./mailer";
 import MailOptionsType from "../../types/mailOptionsType";
 import { SentMessageInfo } from "nodemailer/lib/sendmail-transport";
 
-import ENV from "../../config/ENV.config";
+import ENV from "../../config/ENV.configs";
 
 /* Cette fonction doit être appelé dans un try catch pour la gestion des erreur */
 
