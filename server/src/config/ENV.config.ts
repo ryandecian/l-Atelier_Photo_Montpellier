@@ -1,124 +1,65 @@
-import chalk from "chalk";
-
 /**
- * Cette fonction a pour objectif de : 
- * - Récupérer la variable d'environnement demandée
- * - Vérifier si elle est définie
- * - Si elle n'est pas définie, afficher un message d'erreur et ou arrêter le serveur
- * - Si elle est définie, la retourner en valeur stricte sans undefined
+ * Ce composant permet au démarrage du serveur de vérifier et récupérer toute les variables d'environnement nécessaires.
+ * Si une ou plusieurs variables sont manquantes, cela permet de lancer immédiatement un averticement dans la console. 
  */
 
-// Déclaration des tableaux avec const assertions
-const valeurCritical = ["Critical", "critical", "Critique", "critique", "1", 1, "Haut", "haut"] as const;
-const valeurWarning = ["Warning", "warning", "Avertissement", "avertissement", "2", 2, "Moyen", "moyen", "Faible", "faible", "Bas", "bas"] as const;
+/* Liste des variable d'environnement du serveur à récupérer et tester */
+const envVariablesListe = [
+    "VITE_DOMAIN_CLIENT",
+    "VITE_DOMAIN_API_SERVER",
+    "VITE_PORT_API_SERVER",
+    "DB_HOST",
+    "DB_PORT",
+    "DB_USER",
+    "DB_PASSWORD",
+    "DB_NAME",
+    "MAIL_SERVER_ADMIN",
+    "MAIL_PASSWORD",
+    "SECRET_KEY_TOKEN_CLIENT",
+    "SECRET_KEY_TOKEN_API_SERVER"
+]
 
-// Types automatiquement dérivés des tableaux
-type ValeurCritical = typeof valeurCritical[number]; // [number] car référence à l'index du tableau qui se définit par un number
-type ValeurWarning = typeof valeurWarning[number];
-type NiveauErreur = ValeurCritical | ValeurWarning | undefined;
-
-type ParamsType = {
-  env: string;
-  lvl?: NiveauErreur;
+/* Création des types à partir du tableau. */
+/* Cela donne : DB_HOST: string, DB_PORT: string etc... */
+type EnvVariablesType = {
+    [K in (typeof envVariablesListe)[number]]: string;
 };
 
-function ENV(env: ParamsType["env"], lvl?: ParamsType["lvl"]) {
-    
-    // Vérification du type d'erreur (Warning ou Critical ?)
-    let lvl_verify: ParamsType["lvl"] = lvl;
-    
-    if (valeurWarning.includes(lvl as any) || !lvl) {
-        lvl_verify = "Warning";
-    }
-    if (valeurCritical.includes(lvl as any)) {
-        lvl_verify = "Critical";
-    }
-    
-    // Vérification : env existe t-il ? 
-    if (!env || typeof env !== "string" || !env.trim()) {
-        if (lvl_verify === "Warning") {
-            console.error(chalk.bold.yellow(`Erreur Warning...`));
-            console.error(chalk.yellow(`identity : ENV.config.ts`));
-            console.error(chalk.yellow(`type : fichier de configuration`));
-            console.error(chalk.yellow(`chemin : /server/src/config/ENV.config.ts`));
-            console.error(chalk.yellow(`❌ Nature de l'erreur : Erreur d'utilisation de la fonction ENV`));
-            console.error(chalk.yellow(`❌ Nature de l'erreur : Aucune variable d'environnement n'a été demandée !`));
-            console.error(chalk.bold.yellow(`${"⚠️ "} Utilisation : ENV("process.env.NOM_VARIABLE")`));
-            return "Error";
+function getEnvVariables() {
+    /* Création d'un objet vide ne pouvant contenir que les types définis pour valeur */
+    const envVars: Partial<EnvVariablesType> = {};
+
+    /* Boucle de récupération des variables d'environnement */
+    envVariablesListe.forEach((key) => {
+        const value = process.env[key];
+        /* Si la variable n'existe pas, cela renvois un avertissement */
+        if (!value) {
+            console.info(`⚠️  Variable d'environnement manquante : ${key}`);
         }
-        if (lvl_verify === "Critical") {
-            console.error(chalk.bold.red(`Erreur Critical...`));
-            console.error(chalk.red(`identity : ENV.config.ts`));
-            console.error(chalk.red(`type : fichier de configuration`));
-            console.error(chalk.red(`chemin : /server/src/config/ENV.config.ts`));
-            console.error(chalk.red(`❌ Nature de l'erreur : Erreur d'utilisation de la fonction ENV`));
-            console.error(chalk.red(`❌ Nature de l'erreur : Aucune variable d'environnement n'a été demandée !`));
-            console.error(chalk.bold.red(`${"⚠️ "} Utilisation : ENV("process.env.NOM_VARIABLE")`));
-            console.error(chalk.bold.red(`${"⚠️ "} Arret du serveur !`));
-            process.exit(1); // Arrête le serveur si les variables d'environnement ne sont pas disponibles
+        /* Si la variable existe, on l'ajoute à l'objet envVars sous forme de clé/valeur */
+        else {
+            envVars[key] = value;
         }
-    }
-    
-    // Vérification de la syntaxe de la variable d'environnement demandée
-    const env_array: string[] = env.split(".");
-    
-    if (!env_array || (env_array?.length < 2) || env_array[0] !== "process" || env_array[1] !== "env") {
-        if (lvl_verify === "Warning") {
-            console.error(chalk.bold.yellow(`Erreur Warning...`));
-            console.error(chalk.yellow(`identity : ENV.config.ts`));
-            console.error(chalk.yellow(`type : fichier de configuration`));
-            console.error(chalk.yellow(`chemin : /server/src/config/ENV.config.ts`));
-            console.error(chalk.yellow(`❌ Nature de l'erreur : Erreur d'utilisation de la fonction ENV`));
-            console.error(chalk.yellow(`❌ Nature de l'erreur : La syntaxe de la variable d'environnement demandée n'est pas valide !`));
-            console.error(chalk.bold.yellow(`${"⚠️ "} Utilisation : ENV("process.env.NOM_VARIABLE")`));
-            return "Error";
-        }
-        if (lvl_verify === "Critical") {
-            console.error(chalk.bold.red(`Erreur Critical...`));
-            console.error(chalk.red(`identity : ENV.config.ts`));
-            console.error(chalk.red(`type : fichier de configuration`));
-            console.error(chalk.red(`chemin : /server/src/config/ENV.config.ts`));
-            console.error(chalk.red(`❌ Nature de l'erreur : Erreur d'utilisation de la fonction ENV`));
-            console.error(chalk.red(`❌ Nature de l'erreur : La syntaxe de la variable d'environnement demandée n'est pas valide !`));
-            console.error(chalk.bold.red(`${"⚠️ "} Utilisation : ENV("process.env.NOM_VARIABLE")`));
-            console.error(chalk.bold.red(`${"⚠️ "} Arret du serveur !`));
-            process.exit(1); // Arrête le serveur si les variables d'environnement ne sont pas disponibles
-        }
-    }
-    
-    // Récupération de la variable d'environnement demandée
-    let env_verify: unknown = env_array.reduce<unknown>((acc, key) => {
-        if (typeof acc === "object" && acc !== null && key in acc) {
-            return (acc as Record<string, unknown>)[key];
-        }
-        return undefined;
-    }, globalThis as unknown);
-    
-    // Logique principale : 
-    if (typeof env_verify !== "string") {
-        if (lvl_verify === "Warning") {
-            console.error(chalk.bold.yellow(`Erreur Warning...`));
-            console.error(chalk.yellow(`identity : ENV.config.ts`));
-            console.error(chalk.yellow(`type : fichier de configuration`));
-            console.error(chalk.yellow(`chemin : /server/src/config/ENV.config.ts`));
-            console.error(chalk.yellow(`❌ Nature de l'erreur : La variable d'environnement ${env} n'existe pas !`));
-            console.error(chalk.bold.yellow(`${"⚠️ "} Conseil : Vérifiez si vous ne vous êtes pas trompé dans le nom de la variable !`));
-            console.error(chalk.bold.yellow(`${"⚠️ "} Conseil : Vérifiez si vous avez bien défini la variable dans un fichier .env !`));
-            return "Error";
-        }
-        if (lvl_verify === "Critical") {
-            console.error(chalk.bold.red(`Erreur Critical...`));
-            console.error(chalk.red(`identity : ENV.config.ts`));
-            console.error(chalk.red(`type : fichier de configuration`));
-            console.error(chalk.red(`chemin : /server/src/config/ENV.config.ts`));
-            console.error(chalk.red(`❌ Nature de l'erreur : La variable d'environnement ${env} n'existe pas !`));
-            console.error(chalk.bold.red(`${"⚠️ "} Arret du serveur !`));
-            process.exit(1); // Arrête le serveur si les variables d'environnement ne sont pas disponibles
-        }
-    }
-    
-    
-    return (env_verify as string); // Retourne la valeur de l'environnement sans undefined
+    });
+
+    return (
+        envVars
+    )
 }
 
+const ENV = getEnvVariables();
+
 export default ENV;
+
+/**
+ * Documentation
+ * 
+ * Pour utiliser ce composant il faut importer ENV puis lancer une vérification
+ * pour savoir si la variable cible n'est existe bien et éliminer le possible undefined
+ * 
+ * Exemple avec if : 
+ * 
+ * if (!ENV.DB_HOST) {
+ *     res.status(500).json({ message: "Erreur interne serveur." });
+ * }
+ */

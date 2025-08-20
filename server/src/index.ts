@@ -6,15 +6,17 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 import "./config/dotenv.config";
 import chalk from "chalk";
-import ENV from "./config/ENV.config";
+import ENV from "./config/ENV.configs";
 
 const app = express();
 const port = ENV("process.env.VITE_PORT_API_SERVER", "Critical");
 
-app.use(cors({
-  origin: ENV("process.env.VITE_DOMAIN_CLIENT", "Warning"),
-  credentials: true,
-}));
+app.use(cors(
+    {
+        origin: ENV("process.env.VITE_DOMAIN_CLIENT", "Warning"),
+        credentials: true,
+    }
+));
 
 app.use(express.json());
 app.use(cookieParser());
@@ -34,12 +36,14 @@ app.get("/", (req: Request, res: Response) => {
  * Gestion des routes innexistante
  */
 app.use( async (req: Request, res: Response) => {
-    res.status(404).json({
-      success: false,
-      message: "Route non trouvée",
-      method: req.method,
-      path: req.originalUrl,
-    });
+    res.status(404).json(
+        {
+            success: false,
+            message: "Route non trouvée",
+            method: req.method,
+            path: req.originalUrl,
+        }
+    );
     console.error(
         {
             identity: "index.ts",
@@ -57,7 +61,5 @@ app.use( async (req: Request, res: Response) => {
  * Le server se lance sur le port 8080
  */
 app.listen(port, async () => {
-  console.info(chalk.cyan(`Server lancé sur ${ await ENV("process.env.VITE_DOMAIN_API_SERVER", "Warning")}`));
+    console.info(chalk.cyan(`Server lancé sur ${ await ENV("process.env.VITE_DOMAIN_API_SERVER", "Warning")}`));
 });
-
-console.log( "test", ENV("process.env.VITE_DOMAIN_CLIENT", "Warning"));

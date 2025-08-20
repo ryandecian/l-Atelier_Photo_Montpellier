@@ -1,7 +1,7 @@
 import "dotenv/config";
 import mysql from "mysql2/promise";
 import chalk from "chalk";
-import ENV from "../config/ENV.config";
+import ENV from "../config/ENV.configs";
 import { RowDataPacket } from "mysql2";
 import testPoolConnection from "../repository/testPoolConnection.config.repository";
 
