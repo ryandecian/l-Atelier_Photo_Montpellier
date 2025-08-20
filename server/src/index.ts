@@ -36,12 +36,14 @@ app.get("/", (req: Request, res: Response) => {
  * Gestion des routes innexistante
  */
 app.use( async (req: Request, res: Response) => {
-    res.status(404).json({
-      success: false,
-      message: "Route non trouvée",
-      method: req.method,
-      path: req.originalUrl,
-    });
+    res.status(404).json(
+        {
+            success: false,
+            message: "Route non trouvée",
+            method: req.method,
+            path: req.originalUrl,
+        }
+    );
     console.error(
         {
             identity: "index.ts",
@@ -59,6 +61,5 @@ app.use( async (req: Request, res: Response) => {
  * Le server se lance sur le port 8080
  */
 app.listen(port, async () => {
-  console.info(chalk.cyan(`Server lancé sur ${ await ENV("process.env.VITE_DOMAIN_API_SERVER", "Warning")}`));
+    console.info(chalk.cyan(`Server lancé sur ${ await ENV("process.env.VITE_DOMAIN_API_SERVER", "Warning")}`));
 });
-
