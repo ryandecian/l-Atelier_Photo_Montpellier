@@ -6,7 +6,7 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 import "./config/dotenv.config";
 import chalk from "chalk";
-import ENV from "./config/ENV.config";
+import ENV from "./config/ENV.configs";
 
 const app = express();
 const port = ENV("process.env.VITE_PORT_API_SERVER", "Critical");
