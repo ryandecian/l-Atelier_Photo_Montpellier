@@ -49,7 +49,7 @@ function getEnvVariables() {
 
 const ENV = getEnvVariables();
 
-export default ENV;
+export {ENV};
 
 /**
  * Documentation
@@ -63,3 +63,9 @@ export default ENV;
  *     res.status(500).json({ message: "Erreur interne serveur." });
  * }
  */
+
+function ENV_SAFE() {
+    h
+}
+
+export {ENV_SAFE};
