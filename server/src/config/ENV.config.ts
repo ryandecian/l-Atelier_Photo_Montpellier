@@ -64,8 +64,17 @@ export {ENV};
  * }
  */
 
-function ENV_SAFE() {
-    h
+function ENV_SAFE(key: keyof typeof ENV): string  {
+    const value = ENV[key];
+
+    if (!value) {
+        console.error(`❌ La variable d'environnement ${key} est manquante`);
+        process.exit(1); // Arrête le serveur immédiatement
+    }
+
+    return (
+        value
+    );
 }
 
 export {ENV_SAFE};
