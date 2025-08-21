@@ -1,14 +1,14 @@
 import "dotenv/config";
 import mysql from "mysql2/promise";
 import chalk from "chalk";
-import ENV from "../config/ENV.configs";
+import { ENV_SAFE } from "../config/ENV.config";
 import { RowDataPacket } from "mysql2";
 import testPoolConnection from "../repository/testPoolConnection.config.repository";
 
 type TestConnectionResult = RowDataPacket & { test: number };
 
 
-// ✅ Stockage du pool dans une variable globale
+// Stockage du pool dans une variable globale
 let pool: mysql.Pool | null = null;
 
 /**
@@ -18,11 +18,11 @@ function initializePool() {
     if (!pool) {
         try {
             pool = mysql.createPool({
-                host: ENV("process.env.DB_HOST", "Warning") || "localhost",
-                port: Number(ENV("process.env.DB_PORT", "Warning") || "3306"),
-                user: ENV("process.env.DB_USER", "Warning") || "root",
-                password: ENV("process.env.DB_PASSWORD", "Warning") || "password",
-                database: ENV("process.env.DB_NAME", "Warning") || "DB_CarePlan",
+                host: ENV_SAFE("DB_HOST"),
+                port: Number(ENV_SAFE("DB_PORT")),
+                user: ENV_SAFE("DB_USER"),
+                password: ENV_SAFE("DB_PASSWORD"),
+                database: ENV_SAFE("DB_NAME"),
                 waitForConnections: true, // Attend qu'une connexion soit disponible au lieu de planter
                 connectionLimit: 10, // Maximum 10 connexions simultanées
                 queueLimit: 0 // Aucune limite d'attente (les requêtes attendent leur tour)
