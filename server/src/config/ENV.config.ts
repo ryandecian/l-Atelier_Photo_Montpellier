@@ -1,3 +1,5 @@
+import chalk from "chalk";
+
 /**
  * Ce composant permet au démarrage du serveur de vérifier et récupérer toute les variables d'environnement nécessaires.
  * Si une ou plusieurs variables sont manquantes, cela permet de lancer immédiatement un averticement dans la console. 
@@ -68,7 +70,7 @@ function ENV_SAFE(key: keyof typeof ENV): string  {
     const value = ENV[key];
 
     if (!value) {
-        console.error(`❌ La variable d'environnement ${key} est manquante`);
+        console.error(chalk.yellow(`❌ La variable d'environnement ${key} est manquante`));
         process.exit(1); // Arrête le serveur immédiatement
     }
 
