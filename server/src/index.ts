@@ -1,19 +1,21 @@
 // Import général
 import "./config/dotenv.config";
 import express, { Request, Response } from "express";
+
 import router from "./router/router";
 import cors from "cors";
 import cookieParser from "cookie-parser";
+
 import "./config/dotenv.config";
 import chalk from "chalk";
-import ENV from "./config/ENV.configs";
+import {ENV_SAFE} from "./config/ENV.config";
 
 const app = express();
-const port = ENV("process.env.VITE_PORT_API_SERVER", "Critical");
+const port = ENV_SAFE("VITE_PORT_API_SERVER");
 
 app.use(cors(
     {
-        origin: ENV("process.env.VITE_DOMAIN_CLIENT", "Warning"),
+        origin: ENV_SAFE("VITE_DOMAIN_CLIENT"),
         credentials: true,
     }
 ));
@@ -55,11 +57,11 @@ app.use( async (req: Request, res: Response) => {
             contenu : req.body
         },
     );
-  });
+});
 
 /**
  * Le server se lance sur le port 8080
  */
 app.listen(port, async () => {
-    console.info(chalk.cyan(`Server lancé sur ${ await ENV("process.env.VITE_DOMAIN_API_SERVER", "Warning")}`));
+    console.info(chalk.cyan(`Server lancé sur ${ await ENV_SAFE("VITE_DOMAIN_API_SERVER")}`));
 });
