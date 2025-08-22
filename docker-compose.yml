@@ -31,6 +31,7 @@ services:
       - db_data:/var/lib/mysql
     expose:
       # - "3306"  # seulement accessible entre services Docker (sécurité)
+    ports:
       - "3306:3306"  # DB accessible depuis l'extérieur le temps du dev
 
   client:
