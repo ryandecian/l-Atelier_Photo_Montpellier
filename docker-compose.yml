@@ -29,8 +29,10 @@ services:
       - MYSQL_PASSWORD=${DB_PASSWORD}
     volumes:
       - db_data:/var/lib/mysql
+    # Exposition du port vers les services internes de docker
     expose:
       - "3306"  # seulement accessible entre services Docker (sécurité)
+    # Exposition de la DB vers l'extérieur en dehors de Docker
     ports:
       - "3306:3306"  # DB accessible depuis l'extérieur le temps du dev
 
