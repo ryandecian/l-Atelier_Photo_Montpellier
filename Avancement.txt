@@ -2,8 +2,8 @@ Ce qui est fait pour refacto :
 - Une mise a jour des mentions légales doit être fait, hébergeur pas a jour
 - Autre contributeur : développeur web site Ryan DECIAN
 ------------------------------------------------------------------------------
-- On va maintenant : 
-  - Passer au server node
+Connexion à la db sur vps : 
+sudo docker exec -it db mariadb -u "LAPM" -p
 ------------------------------------------------------------------------------
 En attente de la validation client puis passage au développement du compte client
 dans le compte client il y a la question des albums et photo.
