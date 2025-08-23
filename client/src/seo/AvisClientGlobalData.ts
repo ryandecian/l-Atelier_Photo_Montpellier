@@ -1,8 +1,8 @@
 /* Import des composants d'avis clients */
-import AvisClientPortraitCorporateControllerData from "../components/PortraitCorporateRoot/AvisClientPortraitCorporateControllerData";
-import AvisClientPortraitDuoControllerData from "../components/PortraitDuoRoot/AvisClientPortraitDuoControllerData";
-import AvisClientPortraitFamilleControllerData from "../components/PortraitFamilleRoot/AvisClientPortraitFamilleControllerData";
-import AvisClientPortraitGrossesseControllerData from "../components/PortraitGrossesseRoot/AvisClientPortraitGrossesseControllerData";
+import AvisClientPortraitCorporateControllerData from "../components/Public/PortraitCorporateRoot/AvisClientPortraitCorporateControllerData";
+import AvisClientPortraitDuoControllerData from "../components/Public/PortraitDuoRoot/AvisClientPortraitDuoControllerData";
+import AvisClientPortraitFamilleControllerData from "../components/Public/PortraitFamilleRoot/AvisClientPortraitFamilleControllerData";
+import AvisClientPortraitGrossesseControllerData from "../components/Public/PortraitGrossesseRoot/AvisClientPortraitGrossesseControllerData";
 import AvisClientPortraitHobbyControllerData from "../components/Public/PortraitHobbyRoot/AvisClientPortraitHobbyControllerData";
 import AvisClientPortraitLifeStyleControllerData from "../components/Public/PortraitLifeStyleRoot/AvisClientPortraitLifeStyleControllerData";
 import AvisClientPortraitMariageControllerData from "../components/Public/PortraitMariageRoot/AvisClientPortraitMariageControllerData";
