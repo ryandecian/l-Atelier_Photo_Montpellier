@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import css from "./PortraitLifeStyleRootComponentB.module.css";
-import ListDataRouter from "../../../../router/router";
+import ListDataRouter from "../../../../../router/router";
 import ImagesPortraitLifeStyleControllerData from "../../ImagesPortraitLifeStyleControllerData";
 
 function PortraitLifeStyleRootComponentB() {

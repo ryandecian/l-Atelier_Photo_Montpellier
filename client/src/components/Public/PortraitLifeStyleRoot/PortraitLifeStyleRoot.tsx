@@ -1,13 +1,13 @@
-import style from "../StyleRootComponent.module.css";
+import style from "../../StyleRootComponent.module.css";
 
-import externalLinks from "../../constants/externalLinks";
-import useScrollToHash from "../../hook/useScrollToHash";
+import externalLinks from "../../../constants/externalLinks";
+import useScrollToHash from "../../../hook/useScrollToHash";
 
 import ImagesPortraitLifeStyleControllerData from "./ImagesPortraitLifeStyleControllerData";
-import Container4ImagesRoot from "../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
+import Container4ImagesRoot from "../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 
 import AvisClientPortraitLifeStyleControllerData from "./AvisClientPortraitLifeStyleControllerData";
-import GeneratorCardAvisClient from "../GeneratorCardAvisClient/GeneratorCardAvisClient";
+import GeneratorCardAvisClient from "../../GeneratorCardAvisClient/GeneratorCardAvisClient";
 
 import PortraitLifeStyleRootComponentB from "./ComponentsPortraitLifeStyleRoot/PortraitLifeStyleRootComponentB/PortraitLifeStyleRootComponentB";
 
