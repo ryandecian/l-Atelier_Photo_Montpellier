@@ -1,5 +1,5 @@
 import css from "./HomeRootComponentA.module.css";
-import useMediaQueriesHeight_rem from "../../../../hook/useMediaQueriesHeight_rem.utils.hook";
+import useMediaQueriesHeight_rem from "../../../../../hook/useMediaQueriesHeight_rem.utils.hook";
 
 function HomeRootComponentA() {
     const viewportHeight: number = useMediaQueriesHeight_rem();
