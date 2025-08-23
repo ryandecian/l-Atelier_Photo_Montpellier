@@ -1,6 +1,6 @@
 import style from "../../stylePage.module.css";
 import NavRoot from "../../../components/NavRoot/NavRoot";
-import PortraitSoloRoot from "../../../components/PortraitSoloRoot/PortraitSoloRoot";
+import PortraitSoloRoot from "../../../components/Public/PortraitSoloRoot/PortraitSoloRoot";
 import FooterRoot from "../../../components/FooterRoot/FooterRoot";
 import Helmet_PortraitSolo_SEO from "../../../seo/PortraitSoloSEO/Helmet_PortraitSolo.seo";
 import useScrollToHash from "../../../hook/useScrollToHash";
