@@ -4,7 +4,7 @@ import DataSEORootType from "../../types/DataSEORoot.type";
 import DataSEO_Prestations from "./DataSEO_Prestation.seo";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
-import DataCardPrestations from "../../components/PrestationRoot/DataCardPrestationRoot";
+import DataCardPrestations from "../../components/Public/PrestationRoot/DataCardPrestationRoot";
 
 function JSON_LD_ItemList_Prestation_Schema_SEO() {
     const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
