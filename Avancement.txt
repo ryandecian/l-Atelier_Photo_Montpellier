@@ -5,14 +5,34 @@ Ce qui est fait pour refacto :
 Connexion à la db sur vps : 
 sudo docker exec -it db mariadb -u "LAPM" -p
 ------------------------------------------------------------------------------
-En attente de la validation client puis passage au développement du compte client
-dans le compte client il y a la question des albums et photo.
-Pour les vidéos on devra passer par le nas.
+Interface Login, 
+- Ajouter un bouton créer un compte. 
+- Ajouter un bouton mot de passe oublié. 
 
-Le problème est que les photos et video pèse lourd et le vps ne peut les supporter.
-Il faudra donc possiblement créer un micro service sur le nas pour la gestion et stockage des images et vidéo
-puis compte admin
-puis statistique
+Créer une page de modification du mot de passe, lien non accessible via le site mais par le mail. 
+------------------------------------------------------------------------------
+Interface CLIENT : On va commencer par créer et structurer l'interface comme l'admin avec des cards
+                   On va également comprendre et refactoriser si necessaire le verouillage d'une page
+- Section 1 : Mes informations
+- Section 2 : Mes Séances
+- Section 3 : Mes factures
+- Section 4 : Déconnexion
+
+------------------------------------------------------------------------------
+Interface Admin : 
+- Section 1 : Gestions des utilisateurs : - Besoin d'une page contenant une liste des clients sans limite dans l'ordre alphabétique avec
+                                            une barre de recherche qui peut retrouver un client via l'ID, le Nom ou le Prénom.
+                                          - La liste des clients récupérer en DB doit être stocker dans une const, tableau d'objet pour 
+                                            éviter les requête innutile. Dans la liste seul les paire de clé valeur ID, Prénom, Nom et Email
+                                            doivent être affiché dans la liste. A la limite, recréer le tableau avec les 3 clés. Un bouton modifier
+                                            devra être rajouté. 
+                                          - Je vais également devoir créer un composant réutilisable permettant de récupérer les datas du client cible,
+                                            afficher les données de l'utilisateur avec possibilité de modifier chaque champs et enregistrer. 
+- Section 2 : Gestion des Album : (Attribuer une url album synology à un client ou modifier celui-ci) Option, lors du collage 
+                                  de l'url synology brut, celui-ci le convertie automatiquement avant de l'enregistrer dans la db.
+- Section 3 : Gestions des factures
+- Section 4 : Gestions des statistiques
+- Section 5 : Outils (Conversion url Synology drive)
 
 ------------------------------------------------------------------------------
 Note d'information, dans la navigation du site, 
