@@ -1,6 +1,6 @@
-import style from "../StyleRootComponent.module.css";
+import style from "../../StyleRootComponent.module.css";
 import { Link } from "react-router-dom";
-import ListDataRouter from "../../router/router";
+import ListDataRouter from "../../../router/router";
 
 function QuiSuisJeRoot() {
     
