@@ -24,7 +24,7 @@ import PortraitMariagePage from "../pages/Public/PortraitMariagePage/PortraitMar
 import PortraitNouveauNePage from "../pages/Public/PotraitNouveauNePage/PortraitNouveauNePage";
 import PortraitSoloPage from "../pages/Public/PortraitSoloPage/PortraitSoloPage";
 import PortraitFamillePage from "../pages/Public/PortraitFamillePage/PortraitFamillePage";
-import PrestationPage from "../pages/PrestationPage/PrestationPage";
+import PrestationPage from "../pages/Public/PrestationPage/PrestationPage";
 import QuiSuisJePage from "../pages/QuiSuisJePage/QuiSuisJePage";
 
 /**
