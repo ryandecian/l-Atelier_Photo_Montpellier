@@ -17,11 +17,11 @@ import MentionsLegalesPage from "../pages/MentionsLegalesPage/MentionsLegalesPag
 import PortfolioPage from "../pages/PortfolioPage/PortfolioPage";
 import PortraitCorporatePage from "../pages/PortraitCorporatePage/PortraitCorporatePage";
 import PortraitDuoPage from "../pages/PortraitDuoPage/PortraitDuoPage";
-import PortraitGrossessePage from "../pages/PortraitGrosssessePage/PortraitGrossessePage";
+import PortraitGrossessePage from "../pages/Public/PortraitGrosssessePage/PortraitGrossessePage";
 import PortraitHobbyPage from "../pages/Public/PortraitHobbyPage/PortraitHobbyPage";
 import PortraitLifeStylePage from "../pages/Public/PortraitLifeStylePage/PortraitLifeStylePage";
 import PortraitMariagePage from "../pages/Public/PortraitMariagePage/PortraitMariagePage";
-import PortraitNouveauNePage from "../pages/PotraitNouveauNePage/PortraitNouveauNePage";
+import PortraitNouveauNePage from "../pages/Public/PotraitNouveauNePage/PortraitNouveauNePage";
 import PortraitSoloPage from "../pages/Public/PortraitSoloPage/PortraitSoloPage";
 import PortraitFamillePage from "../pages/PortraitFamillePage/PortraitFamillePage";
 import PrestationPage from "../pages/PrestationPage/PrestationPage";

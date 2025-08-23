@@ -1,9 +1,9 @@
-import NavRoot from "../../components/NavRoot/NavRoot";
-import style from "../stylePage.module.css";
-import PortraitGrossesseRoot from "../../components/PortraitGrossesseRoot/PortraitGrossesseRoot";
-import FooterRoot from "../../components/FooterRoot/FooterRoot";
-import Helmet_PortraitGrossesse_SEO from "../../seo/PortraitGrossesseSEO/Helmet_PortraitGrossesse.seo";
-import useScrollToHash from "../../hook/useScrollToHash";
+import style from "../../stylePage.module.css";
+import NavRoot from "../../../components/NavRoot/NavRoot";
+import PortraitGrossesseRoot from "../../../components/Public/PortraitGrossesseRoot/PortraitGrossesseRoot";
+import FooterRoot from "../../../components/FooterRoot/FooterRoot";
+import Helmet_PortraitGrossesse_SEO from "../../../seo/PortraitGrossesseSEO/Helmet_PortraitGrossesse.seo";
+import useScrollToHash from "../../../hook/useScrollToHash";
 
 /* Cette page reprend la quasi totalité des éléments éléments et composant de la page Portrait Grossesse */
 
