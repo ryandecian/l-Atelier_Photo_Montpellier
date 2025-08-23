@@ -25,7 +25,7 @@ import PortraitNouveauNePage from "../pages/Public/PotraitNouveauNePage/Portrait
 import PortraitSoloPage from "../pages/Public/PortraitSoloPage/PortraitSoloPage";
 import PortraitFamillePage from "../pages/Public/PortraitFamillePage/PortraitFamillePage";
 import PrestationPage from "../pages/Public/PrestationPage/PrestationPage";
-import QuiSuisJePage from "../pages/QuiSuisJePage/QuiSuisJePage";
+import QuiSuisJePage from "../pages/Public/QuiSuisJePage/QuiSuisJePage";
 
 /**
  * Utilisation : 
