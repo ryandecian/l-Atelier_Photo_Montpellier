@@ -1,15 +1,15 @@
-import style from "../StyleRootComponent.module.css";
+import style from "../../StyleRootComponent.module.css";
 
-import Container4ImagesRoot from "../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
+import Container4ImagesRoot from "../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ImagesPortraitFamilleControllerData from "./ImagesPortraitFamilleControllerData";
 
 import { Link } from "react-router-dom";
-import ListDataRouter from "../../router/router";
+import ListDataRouter from "../../../router/router";
 
-import GeneratorCardAvisClient from "../GeneratorCardAvisClient/GeneratorCardAvisClient";
+import GeneratorCardAvisClient from "../../GeneratorCardAvisClient/GeneratorCardAvisClient";
 import AvisClientPortraitFamilleControllerData from "./AvisClientPortraitFamilleControllerData";
 
-import TarifCardRoot from "../TarifsCard/TarifsCardRoot";
+import TarifCardRoot from "../../TarifsCard/TarifsCardRoot";
 import { TarifsPortraitFamille, MailtoLinkPortraitFamille } from "./TarifsPortraitFamille";
 
 function PortraitFamilleRoot() {

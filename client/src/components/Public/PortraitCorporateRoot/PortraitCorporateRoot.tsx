@@ -1,14 +1,14 @@
-import style from "../StyleRootComponent.module.css";
+import style from "../../StyleRootComponent.module.css";
 import css from "./PortraitCorporateRoot.module.css";
 
-import externalLinks from "../../constants/externalLinks";
+import externalLinks from "../../../constants/externalLinks";
 
-import Container4ImagesRoot from "../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
-import Container4ImagesPortraitRoot from "../ContainerImageRoot/Container4ImagesPortraitRoot/Container4ImagesPortraitRoot";
+import Container4ImagesRoot from "../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
+import Container4ImagesPortraitRoot from "../../ContainerImageRoot/Container4ImagesPortraitRoot/Container4ImagesPortraitRoot";
 import ImagesPortraitCorporateControllerData from "./ImagesPortraitCorporateControllerData";
 
 import AvisClientPortraitCorporateControllerData from "./AvisClientPortraitCorporateControllerData";
-import GeneratorCardAvisClient from "../GeneratorCardAvisClient/GeneratorCardAvisClient";
+import GeneratorCardAvisClient from "../../GeneratorCardAvisClient/GeneratorCardAvisClient";
 
 import TarifCardCorporate from "./ComponentsPortraitCorporateRoot/TarifsComponentsCorporate/TarifsCardCorporate";
 import { TarifsPortraitCorporate, MailtoLinkPortraitCorporate } from "./TarifsPortraitCorporate";

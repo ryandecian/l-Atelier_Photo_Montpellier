@@ -1,4 +1,4 @@
-import AvisClientControllerDataType from "../../types/AvisClientControllerData.type";
+import AvisClientControllerDataType from "../../../types/AvisClientControllerData.type";
 
 const AvisClientPortraitDuoControllerData: AvisClientControllerDataType[] = [
     /* Commentaire 1 */
