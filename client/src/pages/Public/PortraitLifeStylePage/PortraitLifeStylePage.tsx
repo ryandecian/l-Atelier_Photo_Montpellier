@@ -1,6 +1,6 @@
 import NavRoot from "../../../components/NavRoot/NavRoot";
-import style from "../stylePage.module.css";
-import PortraitLifeStyleRoot from "../../components/PortraitLifeStyleRoot/PortraitLifeStyleRoot";
+import style from "../../stylePage.module.css";
+import PortraitLifeStyleRoot from "../../../components/Public/PortraitLifeStyleRoot/PortraitLifeStyleRoot";
 import FooterRoot from "../../../components/FooterRoot/FooterRoot";
 import Helmet_PortraitLifeStyle_SEO from "../../../seo/PortraitLifeStyleSEO/Helmet_PortraitLifeStyle.seo";
 
