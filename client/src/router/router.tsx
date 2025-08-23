@@ -22,7 +22,7 @@ import PortraitHobbyPage from "../pages/PortraitHobbyPage/PortraitHobbyPage";
 import PortraitLifeStylePage from "../pages/PortraitLifeStylePage/PortraitLifeStylePage";
 import PortraitMariagePage from "../pages/PortraitMariagePage/PortraitMariagePage";
 import PortraitNouveauNePage from "../pages/PotraitNouveauNePage/PortraitNouveauNePage";
-import PortraitSoloPage from "../pages/PortraitSoloPage/PortraitSoloPage";
+import PortraitSoloPage from "../pages/Public/PortraitSoloPage/PortraitSoloPage";
 import PortraitFamillePage from "../pages/PortraitFamillePage/PortraitFamillePage";
 import PrestationPage from "../pages/PrestationPage/PrestationPage";
 import QuiSuisJePage from "../pages/QuiSuisJePage/QuiSuisJePage";
