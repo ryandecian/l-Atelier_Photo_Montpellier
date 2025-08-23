@@ -1,8 +1,8 @@
-import NavTargetHomeRoot from "../../components/NavTargetHomeRoot/NavTargetHomeRoot";
-import css from "../stylePage.module.css"
-import HomeRoot from "../../components/HomeRoot/HomeRoot";
-import FooterRoot from "../../components/FooterRoot/FooterRoot";
-import Helmet_Home_SEO from "../../seo/HomeSEO/Helmet_Home.seo";
+import css from "../../stylePage.module.css"
+import NavTargetHomeRoot from "../../../components/NavTargetHomeRoot/NavTargetHomeRoot";
+import HomeRoot from "../../../components/Public/HomeRoot/HomeRoot";
+import FooterRoot from "../../../components/FooterRoot/FooterRoot";
+import Helmet_Home_SEO from "../../../seo/HomeSEO/Helmet_Home.seo";
 
 function HomePage() {
      return (

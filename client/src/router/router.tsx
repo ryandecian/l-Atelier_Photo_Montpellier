@@ -11,7 +11,7 @@ import blogRouter from "./blogRouter";
 import CGVPage from "../pages/CGVPage/CGVPage";
 import ContactPage from "../pages/ContactPage/ContactPage";
 import Error404 from "../pages/Error404Page/Error404Page";
-import HomePage from "../pages/HomePage/HomePage";
+import HomePage from "../pages/Public/HomePage/HomePage";
 import LoginPage from "../pages/LoginPage/LoginPage";
 import MentionsLegalesPage from "../pages/MentionsLegalesPage/MentionsLegalesPage";
 import PortfolioPage from "../pages/Public/PortfolioPage/PortfolioPage";
