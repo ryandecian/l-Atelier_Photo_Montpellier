@@ -1,16 +1,16 @@
-import style from "../StyleRootComponent.module.css";
+import style from "../../StyleRootComponent.module.css";
 
-import Container4ImagesRoot from "./../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
+import Container4ImagesRoot from "../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ControllerDataImagePortraitMariage from "./ImagesPortraitMariageControllerData";
 
-import GeneratorCardAvisClient from "./../GeneratorCardAvisClient/GeneratorCardAvisClient";
+import GeneratorCardAvisClient from "../../GeneratorCardAvisClient/GeneratorCardAvisClient";
 import AvisClientPortraitMariageControllerData from "./AvisClientPortraitMariageControllerData";
 
-import TarifCardRoot from "../TarifsCard/TarifsCardRoot";
+import TarifCardRoot from "../../TarifsCard/TarifsCardRoot";
 import { TarifsPortraitMariage, MailtoLinkPortraitMariage } from "./TarifsPortraitMariage";
 
 import { Link } from "react-router-dom";
-import ListDataRouter from "../../router/router";
+import ListDataRouter from "../../../router/router";
 
 function PortraitMariageRoot() {
     return (

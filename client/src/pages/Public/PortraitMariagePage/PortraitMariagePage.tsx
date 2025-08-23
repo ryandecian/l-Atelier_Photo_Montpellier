@@ -1,6 +1,6 @@
 import style from "../../stylePage.module.css";
 import NavRoot from "../../../components/NavRoot/NavRoot";
-import PortraitMariageRoot from "../../../components/PortraitMariageRoot/MariageRoot";
+import PortraitMariageRoot from "../../../components/Public/PortraitMariageRoot/MariageRoot";
 import FooterRoot from "../../../components/FooterRoot/FooterRoot";
 import Helmet_PortraitMariage_SEO from "../../../seo/PortraitMariageSEO/Helmet_PortraitMariage.seo";
 import useScrollToHash from "../../../hook/useScrollToHash";
