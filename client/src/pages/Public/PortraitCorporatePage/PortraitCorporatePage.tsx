@@ -1,9 +1,9 @@
-import NavRoot from "../../components/NavRoot/NavRoot";
-import style from "../stylePage.module.css";
-import PortraitCorporateRoot from "../../components/PortraitCorporateRoot/PortraitCorporateRoot";
-import FooterRoot from "../../components/FooterRoot/FooterRoot";
-import Helmet_PortraitCorporate_SEO from "../../seo/PortraitCorporateSEO/Helmet_PortraitCorporate.seo";
-import useScrollToHash from "../../hook/useScrollToHash";
+import style from "../../stylePage.module.css";
+import NavRoot from "../../../components/NavRoot/NavRoot";
+import PortraitCorporateRoot from "../../../components/Public/PortraitCorporateRoot/PortraitCorporateRoot";
+import FooterRoot from "../../../components/FooterRoot/FooterRoot";
+import Helmet_PortraitCorporate_SEO from "../../../seo/PortraitCorporateSEO/Helmet_PortraitCorporate.seo";
+import useScrollToHash from "../../../hook/useScrollToHash";
 
 function PortraitCorporatePage() {
     useScrollToHash() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
