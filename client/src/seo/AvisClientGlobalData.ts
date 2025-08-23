@@ -3,7 +3,7 @@ import AvisClientPortraitCorporateControllerData from "../components/PortraitCor
 import AvisClientPortraitDuoControllerData from "../components/PortraitDuoRoot/AvisClientPortraitDuoControllerData";
 import AvisClientPortraitFamilleControllerData from "../components/PortraitFamilleRoot/AvisClientPortraitFamilleControllerData";
 import AvisClientPortraitGrossesseControllerData from "../components/PortraitGrossesseRoot/AvisClientPortraitGrossesseControllerData";
-import AvisClientPortraitHobbyControllerData from "../components/PortraitHobbyRoot/AvisClientPortraitHobbyControllerData";
+import AvisClientPortraitHobbyControllerData from "../components/Public/PortraitHobbyRoot/AvisClientPortraitHobbyControllerData";
 import AvisClientPortraitLifeStyleControllerData from "../components/Public/PortraitLifeStyleRoot/AvisClientPortraitLifeStyleControllerData";
 import AvisClientPortraitMariageControllerData from "../components/Public/PortraitMariageRoot/AvisClientPortraitMariageControllerData";
 import AvisClientPortraitSoloControllerData from "../components/Public/PortraitSoloRoot/AvisClientPortraitSoloControllerData";
