@@ -1,15 +1,15 @@
-import style from "../StyleRootComponent.module.css";
+import style from "../../StyleRootComponent.module.css";
 
-import Container4ImagesRoot from "../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
+import Container4ImagesRoot from "../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ImagesPortraitSoloControllerData from "./ImagesPortraitSoloControllerData";
 
 import { Link } from "react-router-dom";
-import ListDataRouter from "../../router/router";
+import ListDataRouter from "../../../router/router";
 
 import AvisClientPortraitSoloControllerData from "./AvisClientPortraitSoloControllerData";
-import GeneratorCardAvisClient from "../GeneratorCardAvisClient/GeneratorCardAvisClient";
+import GeneratorCardAvisClient from "../../GeneratorCardAvisClient/GeneratorCardAvisClient";
 
-import TarifCardRoot from "../TarifsCard/TarifsCardRoot";
+import TarifCardRoot from "../../TarifsCard/TarifsCardRoot";
 import { TarifsPortraitSolo, MailtoLinkPortraitSolo } from "./TarifsPortraitSolo";
 
 function PortraitSoloRoot() {
