@@ -1,5 +1,5 @@
-import ListDataRouter from "../../router/router";
-import CardPrestationType from "../../types/CardPrestation.type";
+import ListDataRouter from "../../../router/router";
+import CardPrestationType from "../../../types/CardPrestation.type";
 
 function DataCardPrestation() {
     const tab: CardPrestationType[] = [

@@ -1,9 +1,9 @@
+import style from "../../StyleRootComponent.module.css";
+import css from "./PrestationRoot.module.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import css from "./PrestationRoot.module.css";
 import DataCardPrestation from "./DataCardPrestationRoot";
-import CardPrestationType from "../../types/CardPrestation.type";
-import style from "../StyleRootComponent.module.css";
+import CardPrestationType from "../../../types/CardPrestation.type";
 
 function PrestationRoot() {
     const prestations: CardPrestationType[] = DataCardPrestation();
