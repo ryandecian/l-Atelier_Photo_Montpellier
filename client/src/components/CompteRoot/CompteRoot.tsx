@@ -1,115 +1,119 @@
-import { useEffect, useState, ChangeEvent } from "react";
+import { useState, useEffect, ChangeEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import style from "./CompteRoot.module.css";
-import useAuthCheck from "../../hook/useAuthCheck.utils.hook";
+import useLockedPage from "../../hook/useLockedPage.security.hook";
 import DataUserType from "../../types/dataUser.type";
 
 function CompteRoot() {
-  const { isLoggedIn, userInfo, isChecking } = useAuthCheck();
-  const [editedUser, setEditedUser] = useState<Partial<DataUserType>>({});
-  const [successMessage, setSuccessMessage] = useState("");
-  const navigate = useNavigate();
-  
-  // Vérification du Role
-  useEffect(() => {
-    if (!isChecking && userInfo?.role === "admin") {
-      navigate("/admin");
-    }
-  }, [isChecking, userInfo, navigate]);
+    const userInfo = useLockedPage("user");
+    const navigate = useNavigate();
 
-  // Remplit les champs dès que les données du token sont prêtes
-  useEffect(() => {
-    if (userInfo) {
-      setEditedUser(userInfo);
-    }
-  }, [userInfo]);
+    const [editedUser, setEditedUser] = useState<Partial<DataUserType>>({});
+    const [successMessage, setSuccessMessage] = useState("");
 
-  // En attente de vérification du token
-  if (isChecking) return <p>Chargement...</p>;
+    // Préremplissage du formulaire dès que userInfo est disponible/mis à jour
+    useEffect(() => {
+        if (userInfo !== null) {
+            setEditedUser(userInfo);
+        }
+    }, [userInfo]);
 
-  // Gère les modifications de formulaire
-  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    setEditedUser((prev) => ({ ...prev, [name]: value }));
-  };
+    if (!userInfo) return <p>Chargement...</p>;
 
-  // Envoie les modifications au serveur
-  const handleSave = async () => {
-    try {
-      const response = await fetch(`${import.meta.env.VITE_DOMAIN_API_SERVER}/users/me`, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        credentials: "include", // Auth via cookie HttpOnly
-        body: JSON.stringify(editedUser),
-      });
+    // Gestion des modifications de formulaire
+    const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
+        const { name, value } = e.target;
+        setEditedUser((prev) => ({ ...prev, [name]: value }));
+    };
 
-      if (!response.ok) {
-        const data = await response.json();
-        throw new Error(data.message || "Erreur lors de la mise à jour.");
-      }
+    // Envoi des modifications au serveur
+    const handleSave = async () => {
+        try {
+            const response = await fetch(`${import.meta.env.VITE_DOMAIN_API_SERVER}/users/me`, {
+                method: "PUT",
+                headers: { "Content-Type": "application/json" },
+                credentials: "include", // Auth via cookie HttpOnly
+                body: JSON.stringify(editedUser),
+            });
 
-      const data = await response.json();
-      setEditedUser(data.data || data);
-      setSuccessMessage("✅ Modifications enregistrées avec succès.");
-      setTimeout(() => setSuccessMessage(""), 3000);
-    } catch (err: unknown) {
-      alert(err instanceof Error ? err.message : "Erreur inconnue.");
-    }
-  };
+            const data = await response.json();
 
-  // Déconnexion : suppression du token client
-  const handleLogout = () => {
-    localStorage.removeItem("jwtTokenClientLAPM");
-    navigate("/login");
-  };
+            if (!response.ok) {
+                throw new Error(data?.message || "Erreur lors de la mise à jour.");
+            }
 
-  // Sécurité supplémentaire (même si redirection faite dans le hook)
-  if (!isLoggedIn || !userInfo) return <p>Accès refusé</p>;
+            setEditedUser(data.data || data);
+            setSuccessMessage("✅ Modifications enregistrées avec succès.");
+            setTimeout(() => setSuccessMessage(""), 3000);
+        } catch (err: unknown) {
+            alert(err instanceof Error ? err.message : "Erreur inconnue.");
+        }
+    };
 
-  return (
-    <div className={style.ComptePC}>
-      <div className={style.topBar}>
-        <h1>👤 Mon Compte</h1>
-        <button onClick={handleLogout} className={style.logoutBtn}>Déconnexion</button>
-      </div>
+    // Déconnexion : suppression du token client
+    const handleLogout = () => {
+        localStorage.removeItem("jwtTokenClientLAPM");
+        navigate("/login", { replace: true });
+    };
 
-      {successMessage && <p className={style.success}>{successMessage}</p>}
+    return (
+        <div className={style.ComptePC}>
+            <div className={style.topBar}>
+                <h1>👤 Mon Compte</h1>
+                <button onClick={handleLogout} className={style.logoutBtn}>
+                    Déconnexion
+                </button>
+            </div>
 
-      <div className={style.form}>
-        <label>Prénom :</label>
-        <input
-          name="firstname"
-          value={editedUser.firstname || ""}
-          onChange={handleInputChange}
-        />
+            {successMessage && <p className={style.success}>{successMessage}</p>}
 
-        <label>Nom :</label>
-        <input
-          name="lastname"
-          value={editedUser.lastname || ""}
-          onChange={handleInputChange}
-        />
+            <div className={style.form}>
+                <label htmlFor="firstname">Prénom :</label>
+                <input
+                    id="firstname"
+                    name="firstname"
+                    type="text"
+                    autoComplete="given-name"
+                    value={editedUser.firstname ?? ""}
+                    onChange={handleInputChange}
+                />
 
-        <label>Email :</label>
-        <input
-          name="email"
-          value={editedUser.email || ""}
-          onChange={handleInputChange}
-        />
+                <label htmlFor="lastname">Nom :</label>
+                <input
+                    id="lastname"
+                    name="lastname"
+                    type="text"
+                    autoComplete="family-name"
+                    value={editedUser.lastname ?? ""}
+                    onChange={handleInputChange}
+                />
 
-        <label>Adresse :</label>
-        <input
-          name="address"
-          value={editedUser.address || ""}
-          onChange={handleInputChange}
-        />
+                <label htmlFor="email">Email :</label>
+                <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autoComplete="email"
+                    value={editedUser.email ?? ""}
+                    onChange={handleInputChange}
+                />
 
-        <button onClick={handleSave} className={style.ButtonSave}>💾 Enregistrer les modifications</button>
-      </div>
-    </div>
-  );
+                <label htmlFor="address">Adresse :</label>
+                <input
+                    id="address"
+                    name="address"
+                    type="text"
+                    autoComplete="street-address"
+                    value={editedUser.address ?? ""}
+                    onChange={handleInputChange}
+                />
+
+                <button onClick={handleSave} className={style.ButtonSave}>
+                    💾 Enregistrer les modifications
+                </button>
+            </div>
+        </div>
+    );
 }
 
 export default CompteRoot;
