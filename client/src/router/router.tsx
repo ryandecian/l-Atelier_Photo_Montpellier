@@ -14,7 +14,7 @@ import Error404 from "../pages/Error404Page/Error404Page";
 import HomePage from "../pages/HomePage/HomePage";
 import LoginPage from "../pages/LoginPage/LoginPage";
 import MentionsLegalesPage from "../pages/MentionsLegalesPage/MentionsLegalesPage";
-import PortfolioPage from "../pages/PortfolioPage/PortfolioPage";
+import PortfolioPage from "../pages/Public/PortfolioPage/PortfolioPage";
 import PortraitCorporatePage from "../pages/Public/PortraitCorporatePage/PortraitCorporatePage";
 import PortraitDuoPage from "../pages/Public/PortraitDuoPage/PortraitDuoPage";
 import PortraitGrossessePage from "../pages/Public/PortraitGrosssessePage/PortraitGrossessePage";
