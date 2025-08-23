@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import ImagesBlog_20250710_RootControllerData from "./ImagesBlog_20250710_RootControllerData";
 import PremiumCardImgSudoRoot from "../../../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
-import PortraitLifeStyleRootComponentB from "../../../PortraitLifeStyleRoot/ComponentsPortraitLifeStyleRoot/PortraitLifeStyleRootComponentB/PortraitLifeStyleRootComponentB";
+import PortraitLifeStyleRootComponentB from "../../../Public/PortraitLifeStyleRoot/ComponentsPortraitLifeStyleRoot/PortraitLifeStyleRootComponentB/PortraitLifeStyleRootComponentB";
 
 function Blog_20250710_Root() {
     return (
