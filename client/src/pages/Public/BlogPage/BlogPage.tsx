@@ -1,9 +1,9 @@
-import style from "../stylePage.module.css";
-import NavRoot from "../../components/NavRoot/NavRoot";
-import BlogRoot from "../../components/BlogRoot/BlogRoot";
-import FooterRoot from "../../components/FooterRoot/FooterRoot";
-import Helmet_Blog_SEO from "../../seo/BlogSEO/Helmet_Blog.seo";
-import useScrollToHash from "../../hook/useScrollToHash";
+import style from "../../stylePage.module.css";
+import NavRoot from "../../../components/NavRoot/NavRoot";
+import BlogRoot from "../../../components/Public/BlogRoot/BlogRoot";
+import FooterRoot from "../../../components/FooterRoot/FooterRoot";
+import Helmet_Blog_SEO from "../../../seo/BlogSEO/Helmet_Blog.seo";
+import useScrollToHash from "../../../hook/useScrollToHash";
 
 function BlogPage() {
     useScrollToHash() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
