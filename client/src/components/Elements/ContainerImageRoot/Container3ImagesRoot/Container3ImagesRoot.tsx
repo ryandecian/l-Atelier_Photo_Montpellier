@@ -1,5 +1,5 @@
-import style from "./Container3ImagesRoot.module.css";
-import PremiumCardImgSudoRoot from "../../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
+import css from "./Container3ImagesRoot.module.css";
+import PremiumCardImgSudoRoot from "../../../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
 
 interface Container3ImagesRootType {
     img1: string;
@@ -17,26 +17,26 @@ function Container3ImagesRoot(Props: Container3ImagesRootType) {
     } = Props;
 
     return (
-        <div className={style.Container3ImagesRoot}>
-            <div className={style.ContainerImg}>
+        <div className={css.Container3ImagesRoot}>
+            <div className={css.ContainerImg}>
                 <PremiumCardImgSudoRoot
                 src={img1}
                 alt={MetaNameImg1}
-                className={style.Image}
+                className={css.Image}
                 />
             </div>
-            <div className={style.ContainerImg}>
+            <div className={css.ContainerImg}>
                 <PremiumCardImgSudoRoot
                 src={img2}
                 alt={MetaNameImg2}
-                className={style.Image}
+                className={css.Image}
                 />
             </div>
-            <div className={style.ContainerImg}>
+            <div className={css.ContainerImg}>
                 <PremiumCardImgSudoRoot
                 src={img3}
                 alt={MetaNameImg3}
-                className={style.Image}
+                className={css.Image}
                 />
             </div>
         </div>
