@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import ListDataRouter from "../../../router/router";
-import style from "../../StyleRootComponent.module.css";
+import ListDataRouter from "../../../../router/router";
+import style from "../../../StyleRootComponent.module.css";
 
 interface MenuNavTargetHomeRootProps {
     moduleMenuUl: string;
