@@ -4,7 +4,7 @@ import { ReactNode } from "react"
 /* Page Frontend vérrouillée */
 import AdminPage from "../pages/Private/Admin/AdminPage/AdminPage";
 import ComptePage from "../pages/Private/Users/ComptePage/ComptePage";
-import UserSystemePage from "../pages/UserSystemePage/UserSystemePage";
+import UserSystemePage from "../pages/Private/Admin/UserSystemePage/UserSystemePage";
 
 /* Page Frontend public */
 import blogRouter from "./blogRouter";
