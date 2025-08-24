@@ -1,5 +1,5 @@
 import style from "../../stylePage.module.css";
-import NavRoot from "../../../components/NavRoot/NavRoot";
+import NavRoot from "../../../components/Layout/NavRoot/NavRoot";
 import PortfolioRoot from "../../../components/Public/PortfolioRoot/PortfolioRoot";
 import FooterRoot from "../../../components/FooterRoot/FooterRoot";
 import Helmet_PortraitDuo_SEO from "../../../seo/PortraitDuoSEO/Helmet_PortraitDuo.seo";
