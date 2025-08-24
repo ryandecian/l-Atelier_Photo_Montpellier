@@ -1,7 +1,7 @@
-import style from "./Container4ImagesRoot.module.css";
-import PremiumCardImgSudoRoot from "../../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
+import css from "./Container4ImagesPortraitRoot.module.css";
+import PremiumCardImgSudoRoot from "../../../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
 
-interface ContainerImgHomeRootType {
+interface Container4ImagesPortraitRootType {
     img1: string;
     img2: string;
     img3: string;
@@ -13,43 +13,43 @@ interface ContainerImgHomeRootType {
     MetaNameImg4: string;
 }
 
-function Container4ImagesRoot(Props: ContainerImgHomeRootType) {
+function Container4ImagesPortraitRoot(Props: Container4ImagesPortraitRootType) {
     const {img1, img2, img3, img4, 
         MetaNameImg1, MetaNameImg2, MetaNameImg3, MetaNameImg4
     } = Props;
 
     return (
-        <div className={style.Container4ImagesRoot}>
-            <div className={style.ContainerImg}>
+        <div className={css.Container4ImagesRoot}>
+            <div className={css.ContainerImg}>
                 <PremiumCardImgSudoRoot
                 src={img1}
                 alt={MetaNameImg1}
-                className={style.Image}
+                className={css.Image}
                 />
             </div>
-            <div className={style.ContainerImg}>
+            <div className={css.ContainerImg}>
                 <PremiumCardImgSudoRoot
                 src={img2}
                 alt={MetaNameImg2}
-                className={style.Image}
+                className={css.Image}
                 />
             </div>
-            <div className={style.ContainerImg}>
+            <div className={css.ContainerImg}>
                 <PremiumCardImgSudoRoot
                 src={img3}
                 alt={MetaNameImg3}
-                className={style.Image}
+                className={css.Image}
                 />
             </div>
-            <div className={style.ContainerImg}>
+            <div className={css.ContainerImg}>
                 <PremiumCardImgSudoRoot
                 src={img4}
                 alt={MetaNameImg4}
-                className={style.Image}
+                className={css.Image}
                 />
             </div>
         </div>
     );
 }
 
-export default Container4ImagesRoot;
+export default Container4ImagesPortraitRoot;
