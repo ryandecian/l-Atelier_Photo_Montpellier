@@ -1,5 +1,5 @@
 import style from "../../stylePage.module.css";
-import NavRoot from "../../../components/NavRoot/NavRoot";
+import NavRoot from "../../../components/Layout/NavRoot/NavRoot";
 import MentionsLegalesRoot from "../../../components/Public/MentionsLegalesRoot/MentionsLegalesRoot";
 import FooterRoot from "../../../components/FooterRoot/FooterRoot";
 import Helmet_MentionLegale_SEO from "../../../seo/MentionsLegalesSEO/Helmet_MentionsLegales.seo";

@@ -1,4 +1,4 @@
-import NavRoot from "../../../components/NavRoot/NavRoot";
+import NavRoot from "../../../components/Layout/NavRoot/NavRoot";
 import style from "../../stylePage.module.css";
 import PortraitLifeStyleRoot from "../../../components/Public/PortraitLifeStyleRoot/PortraitLifeStyleRoot";
 import FooterRoot from "../../../components/FooterRoot/FooterRoot";

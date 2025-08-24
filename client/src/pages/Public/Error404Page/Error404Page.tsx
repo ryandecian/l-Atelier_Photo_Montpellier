@@ -1,5 +1,5 @@
 import style from "../../stylePage.module.css";
-import NavRoot from "../../../components/NavRoot/NavRoot";
+import NavRoot from "../../../components/Layout/NavRoot/NavRoot";
 import Error404Root from "../../../components/Public/Error404Root/Error404Root";
 import FooterRoot from "../../../components/FooterRoot/FooterRoot";
 
