@@ -2,7 +2,7 @@ import { ReactNode } from "react"
 
 /* Liste des pages en import */
 /* Page Frontend vérrouillée */
-import AdminPage from "../pages/AdminPage/AdminPage";
+import AdminPage from "../pages/Private/Admin/AdminPage/AdminPage";
 import ComptePage from "../pages/ComptePage/ComptePage";
 import UserSystemePage from "../pages/UserSystemePage/UserSystemePage";
 
