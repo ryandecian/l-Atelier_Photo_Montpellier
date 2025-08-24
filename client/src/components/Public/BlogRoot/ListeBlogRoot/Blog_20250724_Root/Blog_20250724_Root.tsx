@@ -1,10 +1,10 @@
-import style from "../../../StyleRootComponent.module.css";
+import style from "../../../../StyleRootComponent.module.css";
 import css from "./Blog_20250724_Root.module.css";
-import ListDataRouter from "../../../../router/router";
+import ListDataRouter from "../../../../../router/router";
 import { Link } from "react-router-dom";
 
 import ImagesBlog_20250724_RootControllerData from "./ImagesBlog_20250724_RootControllerData";
-import PremiumCardImgSudoRoot from "../../../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
+import PremiumCardImgSudoRoot from "../../../../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
 
 function Blog_20250724_Root() {
     return (

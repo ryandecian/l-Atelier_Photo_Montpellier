@@ -4,7 +4,7 @@ import DataSEORootType from "../../../../types/DataSEORoot.type";
 import DataSEO_Blog_20250710s from "./DataSEO_Blog_20250710.seo";
 import DataSEOTargetOneType from "../../../../types/DataSEOTargetOne.type";
 
-import DataCardBlogRoots from "../../../../components/BlogRoot/DataCardBlogRoot";
+import DataCardBlogRoots from "../../../../components/Public/BlogRoot/DataCardBlogRoot";
 import CardBlogType from "../../../../types/CardBlog.type";
 
 import extractKeywordsFromDataSEO from "../../../../utils/extractKeywordsFromDataSEO.utils";
