@@ -1,5 +1,5 @@
 import css from "../../stylePage.module.css"
-import NavTargetHomeRoot from "../../../components/NavTargetHomeRoot/NavTargetHomeRoot";
+import NavTargetHomeRoot from "../../../components/Layout/NavTargetHomeRoot/NavTargetHomeRoot";
 import HomeRoot from "../../../components/Public/HomeRoot/HomeRoot";
 import FooterRoot from "../../../components/Layout/FooterRoot/FooterRoot";
 import Helmet_Home_SEO from "../../../seo/HomeSEO/Helmet_Home.seo";
