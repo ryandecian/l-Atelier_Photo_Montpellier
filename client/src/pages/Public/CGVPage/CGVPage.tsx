@@ -1,9 +1,9 @@
-import style from "../stylePage.module.css";
-import NavRoot from "../../components/NavRoot/NavRoot";
-import CGVRoot from "../../components/CGVRoot/CGVRoot";
-import FooterRoot from "../../components/FooterRoot/FooterRoot";
-import Helmet_CGV_SEO from "../../seo/CGVSEO/Helmet_CGV.seo";
-import useScrollToHash from "../../hook/useScrollToHash";
+import style from "../../stylePage.module.css";
+import NavRoot from "../../../components/NavRoot/NavRoot";
+import CGVRoot from "../../../components/Public/CGVRoot/CGVRoot";
+import FooterRoot from "../../../components/FooterRoot/FooterRoot";
+import Helmet_CGV_SEO from "../../../seo/CGVSEO/Helmet_CGV.seo";
+import useScrollToHash from "../../../hook/useScrollToHash";
 
 function CGVPage() {
     useScrollToHash() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */

@@ -1,4 +1,4 @@
-import style from "../StyleRootComponent.module.css";
+import style from "../../StyleRootComponent.module.css";
 import CGVComposantA from "./ComponentsCGVRoot/CGVComponentA/CGVComponentA";
 import CGVComposantB from "./ComponentsCGVRoot/CGVComponentB/CGVComponentB";
 import CGVComposantC from "./ComponentsCGVRoot/CGVComponentC/CGVComponentC";
