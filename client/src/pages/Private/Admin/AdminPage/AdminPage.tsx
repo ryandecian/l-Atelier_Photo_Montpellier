@@ -1,7 +1,7 @@
-import style from "../stylePage.module.css";
-import NavRoot from "../../components/Layout/NavRoot/NavRoot";
-import AdminRoot from "../../components/AdminRoot/AdminRoot";
-import FooterRoot from "../../components/Layout/FooterRoot/FooterRoot";
+import style from "../../../stylePage.module.css";
+import NavRoot from "../../../../components/Layout/NavRoot/NavRoot";
+import AdminRoot from "../../../../components/Private/Admin/AdminRoot/AdminRoot";
+import FooterRoot from "../../../../components/Layout/FooterRoot/FooterRoot";
 
 function AdminPage() {
     return (
