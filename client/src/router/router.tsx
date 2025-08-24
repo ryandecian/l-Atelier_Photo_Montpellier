@@ -10,7 +10,7 @@ import UserSystemePage from "../pages/UserSystemePage/UserSystemePage";
 import blogRouter from "./blogRouter";
 import CGVPage from "../pages/Public/CGVPage/CGVPage";
 import ContactPage from "../pages/Public/ContactPage/ContactPage";
-import Error404 from "../pages/Error404Page/Error404Page";
+import Error404 from "../pages/Public/Error404Page/Error404Page";
 import HomePage from "../pages/Public/HomePage/HomePage";
 import LoginPage from "../pages/LoginPage/LoginPage";
 import MentionsLegalesPage from "../pages/Public/MentionsLegalesPage/MentionsLegalesPage";
