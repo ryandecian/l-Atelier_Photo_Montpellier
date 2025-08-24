@@ -3,7 +3,7 @@ import { ReactNode } from "react"
 /* Liste des pages en import */
 /* Page Frontend vérrouillée */
 import AdminPage from "../pages/Private/Admin/AdminPage/AdminPage";
-import ComptePage from "../pages/ComptePage/ComptePage";
+import ComptePage from "../pages/Private/Users/ComptePage/ComptePage";
 import UserSystemePage from "../pages/UserSystemePage/UserSystemePage";
 
 /* Page Frontend public */
