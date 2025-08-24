@@ -1,8 +1,8 @@
 import { useState, useEffect, ChangeEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import style from "./CompteRoot.module.css";
-import useLockedPage from "../../hook/useLockedPage.security.hook";
-import DataUserType from "../../types/dataUser.type";
+import useLockedPage from "../../../../hook/useLockedPage.security.hook";
+import DataUserType from "../../../../types/dataUser.type";
 
 function CompteRoot() {
     const userInfo = useLockedPage("user");
