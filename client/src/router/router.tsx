@@ -8,7 +8,7 @@ import UserSystemePage from "../pages/UserSystemePage/UserSystemePage";
 
 /* Page Frontend public */
 import blogRouter from "./blogRouter";
-import CGVPage from "../pages/CGVPage/CGVPage";
+import CGVPage from "../pages/Public/CGVPage/CGVPage";
 import ContactPage from "../pages/Public/ContactPage/ContactPage";
 import Error404 from "../pages/Error404Page/Error404Page";
 import HomePage from "../pages/Public/HomePage/HomePage";
