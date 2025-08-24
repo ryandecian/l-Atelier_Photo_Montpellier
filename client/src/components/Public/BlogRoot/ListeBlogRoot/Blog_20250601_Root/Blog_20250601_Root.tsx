@@ -4,7 +4,7 @@ import ListDataRouter from "../../../../../router/router";
 import { Link } from "react-router-dom";
 import PremiumCardImgSudoRoot from "../../../../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
 
-import Container4ImagesRoot from "../../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
+import Container4ImagesRoot from "../../../../Elements/ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ImagesBlog_20250601_RootControllerData from "./ImagesBlog_20250601_RootControllerData";
 
 function Blog_20250601_Root() {
