@@ -1,6 +1,6 @@
 import NavTargetHomePC from "./NavTargetHomePC/NavTargetHomePC";
 import NavTargetHomeMobile from "./NavTargetHomeMobile/NavTargetHomeMobile";
-import useMediaQueriesWidth_rem from "../../hook/useMediaQueriesWidth_rem.utils.hook";
+import useMediaQueriesWidth_rem from "../../../hook/useMediaQueriesWidth_rem.utils.hook";
 
 function NavTargetHomeRoot() {
     const viewportWidth: number = useMediaQueriesWidth_rem();
