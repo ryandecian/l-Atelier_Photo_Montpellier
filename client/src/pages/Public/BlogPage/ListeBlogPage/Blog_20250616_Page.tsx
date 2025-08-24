@@ -1,7 +1,7 @@
 import style from "../../../stylePage.module.css";
 import NavRoot from "../../../../components/Layout/NavRoot/NavRoot";
 import Blog_20250616_Root from "../../../../components/Public/BlogRoot/ListeBlogRoot/Blog_20250616_Root/Blog_20250616_Root";
-import FooterRoot from "../../../../components/FooterRoot/FooterRoot";
+import FooterRoot from "../../../../components/Layout/FooterRoot/FooterRoot";
 import Helmet_Blog_20250616_SEO from "../../../../seo/BlogSEO/ListeBlogRootSEO/Blog_20250616/Helmet_Blog_20250616.seo";
 import useScrollToHash from "../../../../hook/useScrollToHash";
 

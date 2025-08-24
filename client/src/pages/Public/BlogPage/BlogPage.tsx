@@ -1,7 +1,7 @@
 import style from "../../stylePage.module.css";
 import NavRoot from "../../../components/Layout/NavRoot/NavRoot";
 import BlogRoot from "../../../components/Public/BlogRoot/BlogRoot";
-import FooterRoot from "../../../components/FooterRoot/FooterRoot";
+import FooterRoot from "../../../components/Layout/FooterRoot/FooterRoot";
 import Helmet_Blog_SEO from "../../../seo/BlogSEO/Helmet_Blog.seo";
 import useScrollToHash from "../../../hook/useScrollToHash";
 

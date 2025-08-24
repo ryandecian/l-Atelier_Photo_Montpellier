@@ -1,7 +1,7 @@
 import css from "./FooterRoot.module.css";
 import { Link } from "react-router-dom";
-import ListDataRouter from "../../router/router";
-import externalLinks from "../../constants/externalLinks";
+import ListDataRouter from "../../../router/router";
+import externalLinks from "../../../constants/externalLinks";
 
 function FooterRoot() {
 
