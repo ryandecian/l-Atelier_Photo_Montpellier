@@ -2,7 +2,7 @@ import { useState } from "react";
 import MenuNavRoot from "../../ComponentsNavRoot/MenuNavRoot";
 import cssNav from "../../ComponentsNavRoot/MenuNavRoot.module.css";
 import css from "./MenuBurger.module.css";
-import style from "../../../StyleRootComponent.module.css";
+import style from "../../../../StyleRootComponent.module.css";
 
 function MenuBurger() {
     const [active, setActive] = useState<boolean>(false)

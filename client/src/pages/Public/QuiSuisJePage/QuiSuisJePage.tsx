@@ -1,5 +1,5 @@
 import style from "../../stylePage.module.css";
-import NavRoot from "../../../components/NavRoot/NavRoot";
+import NavRoot from "../../../components/Layout/NavRoot/NavRoot";
 import QuiSuisJeRoot from "../../../components/Public/QuiSuisJeRoot/QuiSuisJeRoot";
 import FooterRoot from "../../../components/FooterRoot/FooterRoot";
 import Helmet_QuiSuisJe_SEO from "../../../seo/QuiSuisJeSEO/Helmet_QuiSuisJe.seo";
