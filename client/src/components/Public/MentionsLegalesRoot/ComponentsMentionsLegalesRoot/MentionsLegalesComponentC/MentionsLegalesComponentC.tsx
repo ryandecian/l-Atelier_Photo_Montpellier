@@ -1,4 +1,4 @@
-import style from "../../../StyleRootComponent.module.css";
+import style from "../../../../StyleRootComponent.module.css";
 
 function MentionsLegalesComponentC() {
     return (

@@ -13,7 +13,7 @@ import ContactPage from "../pages/Public/ContactPage/ContactPage";
 import Error404 from "../pages/Error404Page/Error404Page";
 import HomePage from "../pages/Public/HomePage/HomePage";
 import LoginPage from "../pages/LoginPage/LoginPage";
-import MentionsLegalesPage from "../pages/MentionsLegalesPage/MentionsLegalesPage";
+import MentionsLegalesPage from "../pages/Public/MentionsLegalesPage/MentionsLegalesPage";
 import PortfolioPage from "../pages/Public/PortfolioPage/PortfolioPage";
 import PortraitCorporatePage from "../pages/Public/PortraitCorporatePage/PortraitCorporatePage";
 import PortraitDuoPage from "../pages/Public/PortraitDuoPage/PortraitDuoPage";
