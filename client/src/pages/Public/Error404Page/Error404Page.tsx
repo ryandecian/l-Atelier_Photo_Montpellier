@@ -1,7 +1,7 @@
 import style from "../../stylePage.module.css";
 import NavRoot from "../../../components/Layout/NavRoot/NavRoot";
 import Error404Root from "../../../components/Public/Error404Root/Error404Root";
-import FooterRoot from "../../../components/FooterRoot/FooterRoot";
+import FooterRoot from "../../../components/Layout/FooterRoot/FooterRoot";
 
 function Error404() {
      return (
