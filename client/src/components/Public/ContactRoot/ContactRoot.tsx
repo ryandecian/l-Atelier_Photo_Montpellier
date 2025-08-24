@@ -1,7 +1,7 @@
+import style from "../../StyleRootComponent.module.css";
 import css from "./ContactRoot.module.css";
-import style from "../StyleRootComponent.module.css";
 import { Mail, Phone } from "lucide-react";
-import externalLinks from "../../constants/externalLinks";
+import externalLinks from "../../../constants/externalLinks";
 
 function ContactRoot() {
     return (
