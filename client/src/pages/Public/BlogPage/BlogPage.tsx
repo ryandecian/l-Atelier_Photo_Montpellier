@@ -1,21 +1,21 @@
 import style from "../../stylePage.module.css";
 import NavRoot from "../../../components/NavRoot/NavRoot";
-import Blog_20250601_Root from "../../../components/BlogRoot/ListeBlogRoot/Blog_20250601_Root/Blog_20250601_Root";
+import BlogRoot from "../../../components/Public/BlogRoot/BlogRoot";
 import FooterRoot from "../../../components/FooterRoot/FooterRoot";
-import Helmet_Blog_20250601_SEO from "../../../seo/BlogSEO/ListeBlogRootSEO/Blog_20250601/Helmet_Blog_20250601.seo";
+import Helmet_Blog_SEO from "../../../seo/BlogSEO/Helmet_Blog.seo";
 import useScrollToHash from "../../../hook/useScrollToHash";
 
-function Blog_20250601_Page() {
+function BlogPage() {
     useScrollToHash() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
-    
+
      return (
-        <section className={`Blog_20250601_Page ${style.Page}`}>
-            <Helmet_Blog_20250601_SEO />
+        <section className={`BlogPage ${style.Page}`}>
+            <Helmet_Blog_SEO />
             <header id="top" className={style.Header}>
                  <NavRoot />
             </header>
             <main className={style.Main}>
-                <Blog_20250601_Root />
+                <BlogRoot />
             </main>
             <footer className={style.Footer}>
                 <FooterRoot />
@@ -24,4 +24,4 @@ function Blog_20250601_Page() {
     )
 }
 
-export default Blog_20250601_Page;
+export default BlogPage;

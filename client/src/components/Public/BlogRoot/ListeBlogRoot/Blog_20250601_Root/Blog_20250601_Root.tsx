@@ -1,10 +1,10 @@
-import style from "../../../StyleRootComponent.module.css";
+import style from "../../../../StyleRootComponent.module.css";
 import css from "./Blog_20250601_Root.module.css";
-import ListDataRouter from "../../../../router/router";
+import ListDataRouter from "../../../../../router/router";
 import { Link } from "react-router-dom";
-import PremiumCardImgSudoRoot from "../../../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
+import PremiumCardImgSudoRoot from "../../../../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
 
-import Container4ImagesRoot from "../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
+import Container4ImagesRoot from "../../../../ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ImagesBlog_20250601_RootControllerData from "./ImagesBlog_20250601_RootControllerData";
 
 function Blog_20250601_Root() {

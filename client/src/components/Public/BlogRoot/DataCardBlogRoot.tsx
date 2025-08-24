@@ -1,5 +1,5 @@
-import ListDataRouter from "../../router/router";
-import CardBlogType from "../../types/CardBlog.type";
+import ListDataRouter from "../../../router/router";
+import CardBlogType from "../../../types/CardBlog.type";
 
 function DataCardBlogRoot() {
     const tab: CardBlogType[] = [
