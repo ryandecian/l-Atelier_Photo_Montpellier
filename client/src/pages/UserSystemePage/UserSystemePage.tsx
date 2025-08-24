@@ -1,7 +1,7 @@
 import style from "../stylePage.module.css";
 import NavRoot from "../../components/Layout/NavRoot/NavRoot";
 import UserSystemeRoot from "../../components/UserSystemeRoot/UserSystemeRoot";
-import FooterRoot from "../../components/FooterRoot/FooterRoot";
+import FooterRoot from "../../components/Layout/FooterRoot/FooterRoot";
 
 function UserSystemePage() {
     return (

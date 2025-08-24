@@ -1,7 +1,7 @@
 import style from "../../stylePage.module.css";
 import NavRoot from "../../../components/Layout/NavRoot/NavRoot";
 import CGVRoot from "../../../components/Public/CGVRoot/CGVRoot";
-import FooterRoot from "../../../components/FooterRoot/FooterRoot";
+import FooterRoot from "../../../components/Layout/FooterRoot/FooterRoot";
 import Helmet_CGV_SEO from "../../../seo/CGVSEO/Helmet_CGV.seo";
 import useScrollToHash from "../../../hook/useScrollToHash";
 

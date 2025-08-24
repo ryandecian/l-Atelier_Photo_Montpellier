@@ -1,7 +1,7 @@
 import style from "../../stylePage.module.css";
 import NavRoot from "../../../components/Layout/NavRoot/NavRoot";
 import PortraitHobbyRoot from "../../../components/Public/PortraitHobbyRoot/PortraitHobbyRoot";
-import FooterRoot from "../../../components/FooterRoot/FooterRoot";
+import FooterRoot from "../../../components/Layout/FooterRoot/FooterRoot";
 import Helmet_PortraitHobby_SEO from "../../../seo/PortraitHobbySEO/Helmet_PortraitHobby.seo";
 import useScrollToHash from "../../../hook/useScrollToHash";
 
