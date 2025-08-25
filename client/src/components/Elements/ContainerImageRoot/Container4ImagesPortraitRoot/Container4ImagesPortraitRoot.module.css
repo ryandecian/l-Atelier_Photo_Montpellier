@@ -6,7 +6,7 @@
     max-width: 87.5rem; /* 1400px */
     margin: auto;
 }
-@media (min-width: 800px) {
+@media (min-width: 50rem) { /* 800px */
     .Container4ImagesRoot {
         grid-template-columns: repeat(4, 1fr);
     }
