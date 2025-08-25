@@ -33,7 +33,12 @@
                 --ColorTextCardTarif_Black-Grey: #222; /* Vérifier pour refacto ok */
                 --ColorTextCardTarif_Grey: #666; /* Vérifier pour refacto ok */
                 --ColorTextCardTarif_Button: rgb(255, 255, 255); /* Vérifier pour refacto ok */
-            
+        
+        /* Couleur texte de la page admin */
+            /* Couleur texte des boutons de services */
+                --ColorTextAdminButton_EtatOn: #065f46; /* Vérifier pour refacto ok */
+                --ColorTextAdminButton_EtatOff: #991b1b; /* Vérifier pour refacto ok */
+                --ColorTextAdminButton_Title: #333; /* Vérifier pour refacto ok */
 
     /* ✨ Couleur background du site */
         /* Couleur backgound général hors nav, footer et menu burger */
@@ -77,6 +82,10 @@
         /* Couleur du background et border des la pages Blogs */
             /* Effet de couleur de la page BlogRoot (Page racine) */
                 --ColorBackgroundBlogRoot_Border: #ccc; /* Vérifier pour refacto ok */
+        /* Couleur background de la page admin */
+            /* Effet de couleur des boutons de services */
+                --ColorBackgroundAdminButton_EtatOn: #d1fae5; /* Vérifier pour refacto ok */
+                --ColorBackgroundAdminButton_EtatOff: #fee2e2; /* Vérifier pour refacto ok */
 
           
     /* ✨ Ombre du site */
