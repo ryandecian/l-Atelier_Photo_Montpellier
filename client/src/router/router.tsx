@@ -12,7 +12,7 @@ import CGVPage from "../pages/Public/CGVPage/CGVPage";
 import ContactPage from "../pages/Public/ContactPage/ContactPage";
 import Error404 from "../pages/Public/Error404Page/Error404Page";
 import HomePage from "../pages/Public/HomePage/HomePage";
-import LoginPage from "../pages/LoginPage/LoginPage";
+import LoginPage from "../pages/Public/LoginPage/LoginPage";
 import MentionsLegalesPage from "../pages/Public/MentionsLegalesPage/MentionsLegalesPage";
 import PortfolioPage from "../pages/Public/PortfolioPage/PortfolioPage";
 import PortraitCorporatePage from "../pages/Public/PortraitCorporatePage/PortraitCorporatePage";

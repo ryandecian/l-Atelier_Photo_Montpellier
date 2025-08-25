@@ -4,7 +4,7 @@ import ListDataRouter from "../../../../../router/router";
 import { Link } from "react-router-dom";
 
 import ImagesBlog_20250724_RootControllerData from "./ImagesBlog_20250724_RootControllerData";
-import PremiumCardImgSudoRoot from "../../../../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
+import PremiumCardImgSudoRoot from "../../../../Elements/PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
 
 function Blog_20250724_Root() {
     return (
