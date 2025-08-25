@@ -25,9 +25,9 @@
 }
 
 .title {
-    font-size: 1.1rem; /* 17.6px */
+    font-size: var(--h3);
     font-weight: 600;
-    color: #333;
+    color: var(--ColorTextAdminButton_Title);
     margin-bottom: 1rem; /* 16px */
     text-align: center;
 }
@@ -35,17 +35,17 @@
 .etatOn {
     font-weight: 500;
     padding: 0.4rem 0.8rem; /* 6px 12px */
-    background-color: #d1fae5;
-    color: #065f46;
+    background-color: var(--ColorBackgroundAdminButton_EtatOn);
+    color: var(--ColorTextAdminButton_EtatOn);
     border-radius: 8px;
-    font-size: 0.9rem; /* 14.4px */
+    font-size: var(--h5);
 }
 
 .etatOff {
     font-weight: 500;
     padding: 0.4rem 0.8rem; /* 6px 12px 6px 12px */
-    background-color: #fee2e2;
-    color: #991b1b;
+    background-color: var(--ColorBackgroundAdminButton_EtatOff);
+    color: var(--ColorTextAdminButton_EtatOff);
     border-radius: 8px;
-    font-size: 0.9rem; /* 14.4px */
+    font-size: var(--h5);
 }
