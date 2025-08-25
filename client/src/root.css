@@ -52,6 +52,7 @@
         /* Assombrissement tiré vers le noir */
             --ColorBackgroundBlack_40: rgba(0, 0, 0, 0.4); /* Vérifier pour refacto ok */
             --ColorBackgroundBlack_50: rgba(0, 0, 0, 0.5); /* Vérifier pour refacto ok */
+            --ColorBackgroundBlack_80: rgba(0, 0, 0, 0.8); /* Vérifier pour refacto ok */
 
         /* Couleur Background Nav Target Home */
             --ColorBackgroundNavHomeWhite: rgb(255, 255, 255); /* Vérifier pour refacto ok */
