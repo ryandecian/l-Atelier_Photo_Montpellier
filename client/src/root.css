@@ -7,7 +7,13 @@
         /* Couleur des textes général Restructuration */
             --ColorTextWhite: rgb(255, 255, 255); /* Vérifier pour refacto ok */
             --ColorTextBlack: rgb(0, 0, 0); /* Vérifier pour refacto ok */
-            --ColorTextGreyBlack: #555; /* Vérifier pour refacto ok */
+            --ColorTextWhiteGrey: #ccc; /* Vérifier pour refacto ok */
+            --ColorTextDark_666: #666; /* Vérifier pour refacto ok */
+            --ColorTextDark_555: #555; /* Vérifier pour refacto ok */
+            --ColorTextDark_444: #444; /* Vérifier pour refacto ok */
+            --ColorTextDark_333: #333; /* Vérifier pour refacto ok */
+            --ColorTextDark_222: #222; /* Vérifier pour refacto ok */
+            --ColorTextGold: #ffd700; /* Vérifier pour refacto ok */
             --ColorTextPink: #ff0080; /* Vérifier pour refacto ok */
             --ColorTextPurple: rgb(138, 43, 226); /* Vérifier pour refacto ok */
             --ColorTextLink: rgb(14, 83, 193); /* Vérifier pour refacto ok */
@@ -48,6 +54,7 @@
         /* Assombrissement tiré vers le noir */
             --ColorBackgroundBlack_40: rgba(0, 0, 0, 0.4); /* Vérifier pour refacto ok */
             --ColorBackgroundBlack_50: rgba(0, 0, 0, 0.5); /* Vérifier pour refacto ok */
+            --ColorBackgroundBlack_80: rgba(0, 0, 0, 0.8); /* Vérifier pour refacto ok */
 
         /* Couleur Background Nav Target Home */
             --ColorBackgroundNavHomeWhite: rgb(255, 255, 255); /* Vérifier pour refacto ok */
