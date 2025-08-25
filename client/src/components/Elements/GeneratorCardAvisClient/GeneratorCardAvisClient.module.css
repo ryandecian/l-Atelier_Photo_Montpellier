@@ -24,7 +24,7 @@
 .title {
     font-size: calc(var(--h2) + 0.125rem); /* 26px */
     font-weight: bold;
-    color: #333;
+    color: var(--ColorTextDark);
 }
   
 /* Liste des avis */
@@ -47,9 +47,9 @@
     align-items: start;
     flex-direction: column;
     width: calc(100% - 80px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 10px;
     border-radius: 12px;
-    background: #fff;
+    background: var(--ColorTextWhite);
     margin: 1.25rem; /* 20px 20px 20px 20px */
     padding: 1.25rem; /* 20px 20px 20px 20px */
     transition: transform 0.3s ease-in-out;
@@ -62,7 +62,7 @@
 .nom {
     font-weight: bold;
     font-size: var(--h4);
-    color: #222;
+    color: var(--ColorTextDarkDark);
     margin: 0rem 0rem 0.5rem 0rem; /* 0px 0px 8px 0px */
 }
   
@@ -85,18 +85,18 @@
   
 /* Étoile pleine */
 .starFilled {
-    color: #FFD700;
+    color: var(--ColorTextGold);
 }
   
 /* Étoile vide */
 .starEmpty {
-    color: #ccc;
+    color: var(--ColorTextWhiteGrey);
 }
   
 /* Date de l'avis */
 .date {
     font-size: var(--h5);
-    color: black;
+    color: var(--ColorTextBlack);
     white-space: nowrap;
 }
   
@@ -105,7 +105,7 @@
     width: 100%;
     font-size: var(--p);
     font-style: italic;
-    color: #333;
+    color: var(--ColorTextDark);
     margin: 0.625rem 0rem 0rem 0rem; /* 10px 0px 0px 0px */
     padding: 0rem;
     transition: max-height 0.3s ease-in-out;
