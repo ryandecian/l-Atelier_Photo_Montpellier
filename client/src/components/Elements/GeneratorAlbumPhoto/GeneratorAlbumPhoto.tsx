@@ -1,4 +1,4 @@
-import css from "./GeneratorAlmbumPhoto.module.css";
+import css from "./GeneratorAlbumPhoto.module.css";
 import PremiumCardImgSudoRoot from "../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
 
 type AlbumPhotoType = {
