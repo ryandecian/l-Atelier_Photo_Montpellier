@@ -1,43 +1,43 @@
 .flexWrap {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1rem; /* 16px */
     justify-content: center;
-    padding: 0rem 1.5rem;
+    padding: 0rem 1.5rem; /* 0px 24px 0px 24px */
     max-width: 100vw;
 }
 
+/* Responsive : écran très petit (iPhone SE ~320 - 360px) */
 .ContainerImg {
-    height: 240px; /* Hauteur qui définit la taille des images */
+    height: 5rem; /* 80px */ /* Hauteur qui définit la taille des images */
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     border-radius: 10px;
     background-color: #f4f4f4;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: rgba(0, 0, 0, 0.08) 0 4px 12px;
     flex: 0 0 auto;
     transition: height 0.3s ease;
 }
 
-/* Responsive : écran < 768px (tablette et petits téléphones) */
-@media screen and (max-width: 768px) {
+/* Responsive : écran smartphone moyenne et grande taille (iphone X et pro max ~360 - 480px) */
+@media (min-width: 22.5rem) { /* 360px */
     .ContainerImg {
-        height: 180px;
+        height: 6.25rem; /* 100px */
     }
 }
 
-/* Responsive : écran très petit (iPhone SE ~360 - 400px) */
-@media screen and (max-width: 480px) {
+@media (min-width: 30rem) { /* 480px */
     .ContainerImg {
-        height: 100px;
+        height: 11.25rem; /* 180px */
     }
 }
 
-/* Responsive : écran très petit (iPhone SE ~320 - 360px) */
-@media screen and (max-width: 360px) {
+/* Responsive : écran > 768px (tablette et PC) */
+@media (min-width: 48rem) { /* 768px */
     .ContainerImg {
-        height: 80px;
+        height: 15rem; /* 240px */
     }
 }
 
