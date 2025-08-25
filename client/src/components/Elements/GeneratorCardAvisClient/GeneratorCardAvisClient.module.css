@@ -24,7 +24,7 @@
 .title {
     font-size: calc(var(--h2) + 0.125rem); /* 26px */
     font-weight: bold;
-    color: var(--ColorTextDark);
+    color: var(--ColorTextDark_333);
 }
   
 /* Liste des avis */
@@ -62,7 +62,7 @@
 .nom {
     font-weight: bold;
     font-size: var(--h4);
-    color: var(--ColorTextDarkDark);
+    color: var(--ColorTextDark_222);
     margin: 0rem 0rem 0.5rem 0rem; /* 0px 0px 8px 0px */
 }
   
@@ -105,7 +105,7 @@
     width: 100%;
     font-size: var(--p);
     font-style: italic;
-    color: var(--ColorTextDark);
+    color: var(--ColorTextDark_333);
     margin: 0.625rem 0rem 0rem 0rem; /* 10px 0px 0px 0px */
     padding: 0rem;
     transition: max-height 0.3s ease-in-out;
