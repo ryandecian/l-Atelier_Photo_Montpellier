@@ -3,7 +3,7 @@ import style from "../../StyleRootComponent.module.css";
 import Container4ImagesRoot from "../../Elements/ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ControllerDataImagePortraitMariage from "./ImagesPortraitMariageControllerData";
 
-import GeneratorCardAvisClient from "../../GeneratorCardAvisClient/GeneratorCardAvisClient";
+import GeneratorCardAvisClient from "../../Elements/GeneratorCardAvisClient/GeneratorCardAvisClient";
 import AvisClientPortraitMariageControllerData from "./AvisClientPortraitMariageControllerData";
 
 import TarifCardRoot from "../../TarifsCard/TarifsCardRoot";

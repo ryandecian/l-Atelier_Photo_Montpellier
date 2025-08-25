@@ -7,7 +7,7 @@ import ImagesPortraitLifeStyleControllerData from "./ImagesPortraitLifeStyleCont
 import Container4ImagesRoot from "../../Elements/ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 
 import AvisClientPortraitLifeStyleControllerData from "./AvisClientPortraitLifeStyleControllerData";
-import GeneratorCardAvisClient from "../../GeneratorCardAvisClient/GeneratorCardAvisClient";
+import GeneratorCardAvisClient from "../../Elements/GeneratorCardAvisClient/GeneratorCardAvisClient";
 
 import PortraitLifeStyleRootComponentB from "./ComponentsPortraitLifeStyleRoot/PortraitLifeStyleRootComponentB/PortraitLifeStyleRootComponentB";
 

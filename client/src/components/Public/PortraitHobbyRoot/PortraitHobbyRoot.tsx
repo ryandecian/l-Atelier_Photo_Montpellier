@@ -7,7 +7,7 @@ import ListDataRouter from "../../../router/router";
 import Container4ImagesRoot from "../../Elements/ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
 import ImagesPortraitHobbyControllerData from "./ImagesPortraitHobbyControllerData";
 
-import GeneratorCardAvisClient from "../../GeneratorCardAvisClient/GeneratorCardAvisClient";
+import GeneratorCardAvisClient from "../../Elements/GeneratorCardAvisClient/GeneratorCardAvisClient";
 import AvisClientPortraitHobbyControllerData from "./AvisClientPortraitHobbyControllerData";
 
 import TarifCardRoot from "../../TarifsCard/TarifsCardRoot";
