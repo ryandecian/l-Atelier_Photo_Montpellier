@@ -1,5 +1,5 @@
 import css from "./GeneratorAlmbumPhoto.module.css";
-import PremiumCardImgSudoRoot from "../../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
+import PremiumCardImgSudoRoot from "../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
 
 type AlbumPhotoType = {
     src: string;
