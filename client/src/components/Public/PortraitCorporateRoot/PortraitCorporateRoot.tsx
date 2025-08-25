@@ -8,7 +8,7 @@ import Container4ImagesPortraitRoot from "../../Elements/ContainerImageRoot/Cont
 import ImagesPortraitCorporateControllerData from "./ImagesPortraitCorporateControllerData";
 
 import AvisClientPortraitCorporateControllerData from "./AvisClientPortraitCorporateControllerData";
-import GeneratorCardAvisClient from "../../GeneratorCardAvisClient/GeneratorCardAvisClient";
+import GeneratorCardAvisClient from "../../Elements/GeneratorCardAvisClient/GeneratorCardAvisClient";
 
 import TarifCardCorporate from "./ComponentsPortraitCorporateRoot/TarifsComponentsCorporate/TarifsCardCorporate";
 import { TarifsPortraitCorporate, MailtoLinkPortraitCorporate } from "./TarifsPortraitCorporate";

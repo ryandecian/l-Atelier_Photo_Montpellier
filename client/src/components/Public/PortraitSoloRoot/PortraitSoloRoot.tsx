@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import ListDataRouter from "../../../router/router";
 
 import AvisClientPortraitSoloControllerData from "./AvisClientPortraitSoloControllerData";
-import GeneratorCardAvisClient from "../../GeneratorCardAvisClient/GeneratorCardAvisClient";
+import GeneratorCardAvisClient from "../../Elements/GeneratorCardAvisClient/GeneratorCardAvisClient";
 
 import TarifCardRoot from "../../TarifsCard/TarifsCardRoot";
 import { TarifsPortraitSolo, MailtoLinkPortraitSolo } from "./TarifsPortraitSolo";
