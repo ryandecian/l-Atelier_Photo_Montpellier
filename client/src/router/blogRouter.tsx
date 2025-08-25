@@ -1,8 +1,8 @@
-import BlogPage from "../pages/BlogPage/BlogPage";
-import Blog_20250601_Page from "../pages/BlogPage/ListeBlogPage/Blog_20250601_Page";
-import Blog_20250616_Page from "../pages/BlogPage/ListeBlogPage/Blog_20250616_Page";
-import Blog_20250710_Page from "../pages/BlogPage/ListeBlogPage/Blog_20250710_Page";
-import Blog_20250724_Page from "../pages/BlogPage/ListeBlogPage/Blog_20250724_Page";
+import BlogPage from "../pages/Public/BlogPage/BlogPage";
+import Blog_20250601_Page from "../pages/Public/BlogPage/ListeBlogPage/Blog_20250601_Page";
+import Blog_20250616_Page from "../pages/Public/BlogPage/ListeBlogPage/Blog_20250616_Page";
+import Blog_20250710_Page from "../pages/Public/BlogPage/ListeBlogPage/Blog_20250710_Page";
+import Blog_20250724_Page from "../pages/Public/BlogPage/ListeBlogPage/Blog_20250724_Page";
 
 type blogRouterType = {
     path: string;
