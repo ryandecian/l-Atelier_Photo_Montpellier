@@ -1,5 +1,5 @@
 import css from "./Container3ImagesRoot.module.css";
-import PremiumCardImgSudoRoot from "../../../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
+import PremiumCardImgSudoRoot from "../../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
 
 interface Container3ImagesRootType {
     img1: string;
