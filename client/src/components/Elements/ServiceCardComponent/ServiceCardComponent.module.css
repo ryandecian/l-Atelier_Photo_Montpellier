@@ -1,0 +1,51 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+
+    background-color: var(--ColorTextWhite);
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.08) 0 4px 8px;
+
+    padding: 1.5rem; /* 24px */
+    margin: 0.5rem; /* 8px */
+
+    width: 100%;
+    max-width: 12.5rem; /* 200px */
+    min-height: 7.5rem; /* 120px */
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: rgba(0, 0, 0, 0.12) 0 8px 16px;
+}
+
+.title {
+    font-size: var(--h3);
+    font-weight: 600;
+    color: var(--ColorTextAdminButton_Title);
+    margin-bottom: 1rem; /* 16px */
+    text-align: center;
+}
+
+.etatOn {
+    font-weight: 500;
+    padding: 0.4rem 0.8rem; /* 6px 12px */
+    background-color: var(--ColorBackgroundAdminButton_EtatOn);
+    color: var(--ColorTextAdminButton_EtatOn);
+    border-radius: 8px;
+    font-size: var(--h5);
+}
+
+.etatOff {
+    font-weight: 500;
+    padding: 0.4rem 0.8rem; /* 6px 12px 6px 12px */
+    background-color: var(--ColorBackgroundAdminButton_EtatOff);
+    color: var(--ColorTextAdminButton_EtatOff);
+    border-radius: 8px;
+    font-size: var(--h5);
+}
