@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom";
 import css from "./ServiceCardComponent.module.css";
 
+/**
+ * Documentation
+ * 
+ * Ce composant permet de créer un bouton cliquable dans l'interface admin pour un service
+ */
+
 type ServiceCardType = {
     nameService: string;
     etat: boolean;
