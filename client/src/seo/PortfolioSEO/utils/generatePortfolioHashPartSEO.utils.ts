@@ -1,4 +1,4 @@
-import AlbumPortfolio from "../../../components/PortfolioRoot/AlbumPortfolio";
+import AlbumPortfolio from "../../../components/Public/PortfolioRoot/AlbumPortfolio";
 
 export default function generatePortfolioHasPartSEO() {
   const baseUrl = import.meta.env.VITE_DOMAIN_CLIENT;
