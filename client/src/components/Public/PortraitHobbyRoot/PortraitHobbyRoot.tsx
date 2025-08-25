@@ -10,7 +10,7 @@ import ImagesPortraitHobbyControllerData from "./ImagesPortraitHobbyControllerDa
 import GeneratorCardAvisClient from "../../Elements/GeneratorCardAvisClient/GeneratorCardAvisClient";
 import AvisClientPortraitHobbyControllerData from "./AvisClientPortraitHobbyControllerData";
 
-import TarifCardRoot from "../../TarifsCard/TarifsCardRoot";
+import TarifCardRoot from "../../Elements/TarifsCard/TarifsCardRoot";
 import { TarifsPortraitHobby, MailtoLinkPortraitHobby } from "./TarifsPortraitHobby";
 
 function PortraitHobbyRoot() {

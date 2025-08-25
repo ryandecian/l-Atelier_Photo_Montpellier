@@ -6,7 +6,7 @@ import ControllerDataImagePortraitMariage from "./ImagesPortraitMariageControlle
 import GeneratorCardAvisClient from "../../Elements/GeneratorCardAvisClient/GeneratorCardAvisClient";
 import AvisClientPortraitMariageControllerData from "./AvisClientPortraitMariageControllerData";
 
-import TarifCardRoot from "../../TarifsCard/TarifsCardRoot";
+import TarifCardRoot from "../../Elements/TarifsCard/TarifsCardRoot";
 import { TarifsPortraitMariage, MailtoLinkPortraitMariage } from "./TarifsPortraitMariage";
 
 import { Link } from "react-router-dom";
