@@ -1,6 +1,6 @@
 import style from "../../../stylePage.module.css";
 import NavRoot from "../../../../components/Layout/NavRoot/NavRoot";
-import DataUserRoot from "../../../../components/Private/Users/UserRoot/UserRoot";
+import DataUserRoot from "../../../../components/Private/All/DataUserRoot/DataUserRoot";
 import FooterRoot from "../../../../components/Layout/FooterRoot/FooterRoot";
 
 function DataUserPage() {
