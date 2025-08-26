@@ -36,6 +36,12 @@ async function fetchAPI(methode: MethodeType, uri: string, body?: Record<string,
         /* Si c'est le cas on le récupère son contenu */
         if (contentType.includes("application/json")) {
             data = await response.json();
+
+            /* Vérification si data contient un token */
+            if (data && typeof data.jwtTokenClientLAPM === "string") {
+                // On ne stocke que le token
+                localStorage.setItem("jwtTokenClientLAPM", data.jwtTokenClientLAPM);
+            }
         }
         /* Si ce n'est pas le cas, on met un objet vide par convention */
         else {

@@ -17,8 +17,7 @@ import payloadType from "../types/payloadType";
 
 // Import des utils
 import { verifyPasswordArgonUtils } from "../utils/hashArgonUtils";
-import { createJwtTokenServerLAPM } from "../utils/jwtTokenLAPMUtils";
-import { createJwtTokenClientLAPM } from "../utils/jwtTokenLAPMUtils";
+import { createJwtTokenClientLAPM, createJwtTokenServerLAPM } from "../utils/jwtTokenLAPMUtils";
 
 
 // URI : /api/login
