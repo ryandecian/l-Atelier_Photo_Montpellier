@@ -1,16 +1,16 @@
 import style from "../../../stylePage.module.css";
 import NavRoot from "../../../../components/Layout/NavRoot/NavRoot";
-import EditUserRoot from "../../../../components/Private/Users/EditUserRoot/EditUserRoot";
+import DataUserRoot from "../../../../components/Private/All/DataUserRoot/DataUserRoot";
 import FooterRoot from "../../../../components/Layout/FooterRoot/FooterRoot";
 
-function EditUserPage() {
+function DataUserPage() {
     return (
-        <div className={`EditUserPage ${style.Page}`}>
+        <div className={`DataUserPage ${style.Page}`}>
             <header className={style.Header}>
                 <NavRoot />
             </header>
             <main className={style.Main}>
-                <EditUserRoot />
+                <DataUserRoot />
             </main>
             <footer className={style.Footer}>
                 <FooterRoot />
@@ -19,4 +19,4 @@ function EditUserPage() {
     );
 }
 
-export default EditUserPage;
+export default DataUserPage;
