@@ -21,7 +21,9 @@ import { deleteUserRepository } from "../repository/deleteUserRepository";
 
 // Import des utils
 import dataUserType from "../types/dataUserType";
+import { hashPasswordArgonUtils } from "../utils/hashArgonUtils";
 
+/* Récupération de tous les utilisateurs en tant qu'admin */
 // URI : /api/users
 usersController.get("/", 
     
@@ -72,7 +74,7 @@ usersController.get("/",
     }
 );
 
-
+/* Récupération de ses propre données utilisateurs */
 // URI : /api/users/me
 usersController.get("/me",
     
@@ -123,6 +125,7 @@ usersController.get("/me",
     }
 );
 
+/* Modification de ses propre données utilisateurs */
 // URI : /api/users/me
 usersController.put("/me",
     
@@ -131,7 +134,14 @@ usersController.put("/me",
     Verify_JWT_Middleware,
     async (req: Request, res: Response) => {
         try {
-            // Logique métier 1 : Modifier l'utilisateur connecté
+            /* Logique métier 1 : Vérifier s'il y a une demande de modification de mot de passe */
+            if (req.body.password) {
+                // Si un mot de passe est fourni, le hacher
+                const hashedPassword = await hashPasswordArgonUtils(req.body.password);
+                req.body.password = hashedPassword;
+            }
+
+            // Logique métier 2 : Modifier l'utilisateur connecté
                 const putDataUser: ResultSetHeader = await putUserMeRepository(req.body)
             
                 if (putDataUser.affectedRows === 0) {
@@ -153,7 +163,7 @@ usersController.put("/me",
                     return;
                 }
             
-            // Logique métier 2 : Recuperer l'utilisateur connecté
+            // Logique métier 3 : Recuperer l'utilisateur connecté
                 const dataUser: RowDataPacket[] = await getOneUserByIdRepository(req.body.dataUser.id)
                 if (dataUser.length === 0) {
                     res.status(404).json({ message: "Aucun utilisateur trouvé" });
@@ -175,7 +185,7 @@ usersController.put("/me",
                     return;
                 }
             
-            // Logique métier 3 : Envois des données de l'utilisateur
+            // Logique métier 4 : Envois des données de l'utilisateur
                 res.status(200).json({ data: dataUser });
                 return;
         }
@@ -195,7 +205,7 @@ usersController.put("/me",
     }
 );
 
-
+/* Modifier les données utilisateurs en tant qu'admin */
 // URI : /api/users/:id
 usersController.put("/:id",
     
@@ -271,7 +281,7 @@ usersController.put("/:id",
     }
 );
 
-
+/* Suppression d'un utilisateur en tant qu'admin */
 // URI : /api/users/:id
 usersController.delete("/:id",
     

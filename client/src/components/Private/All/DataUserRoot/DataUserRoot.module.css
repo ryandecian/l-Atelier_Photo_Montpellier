@@ -1,0 +1,52 @@
+.ContainerRoot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem; /* 16px */
+    padding: 2rem; /* 32px */
+}
+
+.FormGroup {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 25rem; /* 400px */
+}
+
+.Label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #707070; /* Gray-700 */
+    margin-bottom: 0.25rem;
+}
+
+.Input {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #d1d5db; /* Gray-300 */
+    border-radius: 6px;
+    background-color: #f9fafb; /* Gray-50 */
+    color: var(--ColorTextBlack);
+}
+
+.Input:disabled {
+    background-color: #f3f4f6; /* Gray-100 */
+    color: #6b7280; /* Gray-500 */
+    cursor: not-allowed;
+}
+
+.EditButton {
+    font-size: var(--h4);
+    text-decoration: none;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #4f46e5;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+.EditButton:hover {
+    text-decoration: underline;
+    color: #3730a3;
+}
