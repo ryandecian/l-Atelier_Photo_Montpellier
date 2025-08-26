@@ -3,6 +3,7 @@ type dataUserType = {
     firstname?: string;
     lastname?: string;
     email?: string;
+    password?: string;
     address?: string;
     role?: string;
     date_save?: Date;
@@ -11,6 +12,7 @@ type dataUserType = {
         firstname?: string;
         lastname?: string;
         email?: string;
+        password?: string;
         address?: string;
         role?: string;
         date_save?: Date;
