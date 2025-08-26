@@ -75,11 +75,11 @@ export default fetchAPI;
  * Pour utiliser cet utils il faut : 
  * - Importer la fonction dans votre composant
  * - Créer une variable qui va stocker la réponse de l'API
- * - Appeler la fonction avec les paramètres nécessaires
- * 
- * Exemple : 
- * const res = fetchAPI("GET", "/api/user", body)
- * 
+ * - Appeler la fonction avec les paramètres nécessaires et un await !
+ *
+ * Exemple :
+ * const res = await fetchAPI("GET", "/api/user", body)
+ *
  * Conseil, créer une const body = {var1, var2, var3 etc...}
  * Sachant que chaque var est en général une useState pour les formulaire
  */
