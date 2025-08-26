@@ -50,7 +50,9 @@
         /* Couleur backgound général hors nav, footer et menu burger */
             --ColorBackgroundLeft: #f3f3f3; /* Vérifier pour refacto ok */
             --ColorBackgroundRight: #f5fbff; /* Vérifier pour refacto ok */
-        
+            --ColorBackgroundMelon: #effff7; /* Vérifier pour refacto ok */
+            --ColorBackgroundRedSmall: #fee2e2; /* Vérifier pour refacto ok */
+
         /* Assombrissement tiré vers le noir */
             --ColorBackgroundBlack_40: rgba(0, 0, 0, 0.4); /* Vérifier pour refacto ok */
             --ColorBackgroundBlack_50: rgba(0, 0, 0, 0.5); /* Vérifier pour refacto ok */
