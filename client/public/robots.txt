@@ -8,6 +8,7 @@ Disallow: /admin/user/
 Disallow: /admin/user-systeme/
 Disallow: /compte/
 Disallow: /compte/user/
+Disallow: /compte/user/-edit-user/
 Disallow: /portrait-grossesse/
 
 # Bloquer les fichiers sensibles (sécurité et SEO)
