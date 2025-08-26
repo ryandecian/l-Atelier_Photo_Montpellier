@@ -21,7 +21,7 @@ function EditUserRoot() {
      * Récupération des données de l’utilisateur connecté via le token (hook sécurisé).
      * ⚠️ Le serveur ne renvoie jamais le champ password → il reste donc vide.
      */
-    const userInfo: DataUserType | null = useLockedPage("user");
+    const userInfo: DataUserType | null = useLockedPage("all");
 
     /**
      * State du formulaire contrôlé.

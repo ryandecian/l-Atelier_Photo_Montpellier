@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import useLockedPage from "../../../../hook/useLockedPage.security.hook";
 
 function DataUserRoot() {
-    const userInfo = useLockedPage("user");
+    const userInfo = useLockedPage("all");
     const navigate = useNavigate();
 
     return (

@@ -17,30 +17,47 @@ import ListDataRouter from "../router/router";
  *  - Token valide mais l'utilisateur n'a pas le rôle requis = redirection sur sa page privée
  */
 
-type UserType = "admin" | "user";
+type UserType = "admin" | "user" | "all";
 
 /* Cette fonction prend en parametre une string qui indique quel utilisateur est autorisé sur la page */
 function useLockedPage(userTarget: UserType) {
     const { isLoggedIn, userInfo, isChecking } = useAuthCheck();
     const navigate = useNavigate();
 
-    /* Détermination du rôle interdit et de la route de redirection */
-    const userStranger: UserType = userTarget === "admin" ? "user" : "admin"; /* Est ce que le role autorisé est admin ? Si oui user est interdit, sinon admin est interdit */
-    const redirectRoute: string = userTarget === "admin" ? ListDataRouter[6].path : ListDataRouter[21].path;
+    /* Détermination des routes de redirection */
+    const loginRoute: string = ListDataRouter[22].path;
+    const adminRedirect: string = ListDataRouter[6].path;  /* Redirection si rôle admin requis mais non autorisé */
+    const userRedirect: string = ListDataRouter[21].path;  /* Redirection si rôle user requis mais non autorisé */
 
     /* Vérification du Role et de la connexion */
     useEffect(() => {
-        if (!isChecking && userInfo?.role === userStranger) {
-            navigate(redirectRoute);
+        if (isChecking) return;
+
+        /* Token client absent ou invalide = redirection sur la page login */
+        if (!isLoggedIn || !userInfo) {
+            navigate(loginRoute);
+            return;
         }
-  }, [isChecking, userInfo, navigate, redirectRoute, userStranger]);
+
+        if (userTarget !== "all") {
+            /* Est ce que le role interdit */
+            /* Le role autorisé est admin ? Si oui le user est interdit sinon admin est interdit sur cette page */
+            const userStranger: UserType = userTarget === "admin" ? "user" : "admin";
+            const redirectRoute: string = userTarget === "admin" ? adminRedirect : userRedirect;
+
+            /* Token valide mais l'utilisateur n'a pas le rôle requis = redirection sur sa page privée */
+            if (userInfo.role === userStranger) {
+                navigate(redirectRoute);
+            }
+        }
+    }, [isChecking, isLoggedIn, userInfo, userTarget, navigate, loginRoute, adminRedirect, userRedirect]);
 
     /* En attente de vérification du token */
     if (isChecking) return null;
 
     /* Sécurité supplémentaire */
-    if (!isLoggedIn || !userInfo) return null; /* Si non connecté et  */
-    
+    if (!isLoggedIn || !userInfo) return null; /* Si non connecté et pas de données utilisateur */
+
     /* Retourne les datas utilisateur */
     return userInfo;
 }
@@ -48,10 +65,14 @@ function useLockedPage(userTarget: UserType) {
 export default useLockedPage;
 
 /**
-  Notice d'utilisation :
+  Exemple d’utilisation :
 
-  import useLockedPage from "../../hook/useLockedPage.security.hook";
+  - Page admin seulement :
+    const userInfo = useLockedPage("admin");
 
-  const userInfo = useLockedPage("admin");
-  if (!userInfo) return <p>Chargement...</p>;
+  - Page user seulement :
+    const userInfo = useLockedPage("user");
+
+  - Page accessible à tout utilisateur connecté (admin ou user) :
+    const userInfo = useLockedPage("all");
  */
