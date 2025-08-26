@@ -4,7 +4,7 @@ import { ReactNode } from "react"
 /* Page Frontend vérrouillée */
 import AdminPage from "../pages/Private/Admin/AdminPage/AdminPage";
 import ComptePage from "../pages/Private/Users/ComptePage/ComptePage";
-import UserPage from "../pages/Private/Users/EditUserPage/UserPage";
+import DataUserPage from "../pages/Private/All/DataUser/DataUserPage";
 import UserSystemePage from "../pages/Private/Admin/UserSystemePage/UserSystemePage";
 
 /* Page Frontend public */
@@ -165,7 +165,12 @@ const ListDataRouter: RouterItemsType[] = [
     /* {ListDataRouter[24].path} */
     {
         path: "/compte/user",
-        element: <UserPage />,
+        element: <DataUserPage />,
+    },
+    /* {ListDataRouter[24].path} */
+    {
+        path: "/admin/user",
+        element: <DataUserPage />,
     }
 ]
 
