@@ -3,10 +3,10 @@ import fetchAPI from "../utils/fetchAPI.utils";
 
 function useLogout() {
     const navigate = useNavigate();
-    const res = fetchAPI("POST", "/api/logout");
 
     const logout = () => {
         localStorage.removeItem("jwtTokenClientLAPM");
+        fetchAPI("POST", "/api/logout");
         navigate("/login");
     };
 
