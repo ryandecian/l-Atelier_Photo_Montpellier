@@ -1,9 +1,10 @@
-import { ResultSetHeader, RowDataPacket } from "mysql2";
+import { ResultSetHeader } from "mysql2";
 import usePoolConnection from "../database/config";
-import dataUserType from "../types/dataUserType";
+import dataUserPutType from "../types/dataUserPut.type";
 
-async function putUserMeRepository(dataUser: dataUserType): Promise<ResultSetHeader> {
-    const { firstname, lastname, email, password, address, id } = dataUser;
+async function putUserMeRepository(body: dataUserPutType): Promise<ResultSetHeader> {
+    const { firstname, lastname, email, password, address } = body;
+    const id: number = body.dataUser.id;
 
     const setClauses: string[] = [
         "firstname = ?",

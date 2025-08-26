@@ -16,12 +16,16 @@ import { getAllUsersRepository } from "../repository/getUserRepository";
 import { getOneUserByIdRepository } from "../repository/getUserRepository";
 import { putUserMeRepository } from "../repository/putUserRepository";
 import { deleteUserRepository } from "../repository/deleteUserRepository";
+import verifyEmailFalseRepository from "../repository/emailRepository";
 
 // Import des Types :
+import payloadType from "../types/payloadType";
+import dataUserPutType from "../types/dataUserPut.type";
 
 // Import des utils
 import dataUserType from "../types/dataUserType";
 import { hashPasswordArgonUtils } from "../utils/hashArgonUtils";
+import { createJwtTokenClientLAPM, createJwtTokenServerLAPM } from "../utils/jwtTokenLAPMUtils";
 
 /* Récupération de tous les utilisateurs en tant qu'admin */
 // URI : /api/users
@@ -134,14 +138,33 @@ usersController.put("/me",
     Verify_JWT_Middleware,
     async (req: Request, res: Response) => {
         try {
-            /* Logique métier 1 : Vérifier s'il y a une demande de modification de mot de passe */
-            if (req.body.password) {
-                // Si un mot de passe est fourni, le hacher
-                const hashedPassword = await hashPasswordArgonUtils(req.body.password);
-                req.body.password = hashedPassword;
-            }
+            /* Logique métier 1 : Vérifier que l'email demandé en modification n'existe pas en DB */
+                /* Vérification que l'email du formulaire est différent de celui du token */
+                /* Si l'email est différent alors l'utilisateur veux volontairement modifier son email */
+                if (req.body.email !== req.body.dataUser.email) {
+                    const dataUserDB: RowDataPacket[] = await verifyEmailFalseRepository(req.body.email);
 
-            // Logique métier 2 : Modifier l'utilisateur connecté
+                    // Si l'email existe déjà dans la DB, on ne peut pas continuer.
+                    if (dataUserDB.length > 0) { // Si c'est supérieur à 0 et que l'email est différent c'est que l'email existe déjà
+                        res.status(409).json({ message: "Cet email est déjà utilisé. Veuillez en choisir un autre." });
+                        return;
+                    }
+                }
+
+            /* Logique métier 2 : Vérifier s'il y a une demande de modification de mot de passe */
+                /* Si password est vide ou seulement des espaces, on l’enlève */
+                if (typeof req.body.password === "string" && req.body.password.trim() === "") {
+                    delete req.body.password;
+                }
+
+                /* Si un mot de passe est fourni on le hache et le met à jour */
+                if (req.body.password) {
+                    // Si un mot de passe est fourni, le hacher
+                    const hashedPassword = await hashPasswordArgonUtils(req.body.password);
+                    req.body.password = hashedPassword;
+                } 
+
+            // Logique métier 3 : Modifier l'utilisateur connecté
                 const putDataUser: ResultSetHeader = await putUserMeRepository(req.body)
             
                 if (putDataUser.affectedRows === 0) {
@@ -163,7 +186,7 @@ usersController.put("/me",
                     return;
                 }
             
-            // Logique métier 3 : Recuperer l'utilisateur connecté
+            // Logique métier 4 : Recuperer l'utilisateur connecté
                 const dataUser: RowDataPacket[] = await getOneUserByIdRepository(req.body.dataUser.id)
                 if (dataUser.length === 0) {
                     res.status(404).json({ message: "Aucun utilisateur trouvé" });
@@ -185,8 +208,31 @@ usersController.put("/me",
                     return;
                 }
             
-            // Logique métier 4 : Envois des données de l'utilisateur
-                res.status(200).json({ data: dataUser });
+                /* Logique métier 5 : Réédition des token de l'utilisateur */
+                    // Création du token server
+                    const jwtTokenServerLAPM: string | boolean = await createJwtTokenServerLAPM(dataUser[0] as payloadType);
+                    // Création du token client
+                    const jwtTokenClientLAPM: string | boolean = await createJwtTokenClientLAPM(dataUser[0] as payloadType);
+
+                    // Vérification des clés secrète Server et Client si elles existent
+                // Si l'une d'entre elles n'existe pas, on renvoie une erreur 500
+                if (!jwtTokenServerLAPM || !jwtTokenClientLAPM) {
+                    res.status(500).json({ message: "Erreur interne serveur." });
+                    return;
+                }
+            
+            // Logique métier 6 : Envois des données de l'utilisateur
+                res.status(200)
+                .cookie("jwtTokenServerLAPM", jwtTokenServerLAPM, {
+                    httpOnly: true,
+                    // secure: true, seulment en production
+                    sameSite: "lax",
+                    maxAge: 60 * 60 * 1000, // 1 heure
+                })
+                .json({
+                    message: "Modification réussie",
+                    jwtTokenClientLAPM: jwtTokenClientLAPM,
+                });
                 return;
         }
         catch (error) {
@@ -217,7 +263,7 @@ usersController.put("/:id",
         try {
             // Logique métier 1 : Modifier un utilisateur par son id
                 req.body.id = parseInt(req.params.id, 10);
-                const dataUserTarget: dataUserType = req.body
+                const dataUserTarget: dataUserPutType = req.body
                 
                 const putDataUser: ResultSetHeader = await putUserMeRepository(dataUserTarget)
                 

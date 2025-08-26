@@ -5,6 +5,7 @@ import { ReactNode } from "react"
 import AdminPage from "../pages/Private/Admin/AdminPage/AdminPage";
 import ComptePage from "../pages/Private/Users/ComptePage/ComptePage";
 import DataUserPage from "../pages/Private/All/DataUser/DataUserPage";
+import EditUserPage from "../pages/Private/All/EditUserPage/EditUserPage";
 import UserSystemePage from "../pages/Private/Admin/UserSystemePage/UserSystemePage";
 
 /* Page Frontend public */
@@ -167,10 +168,20 @@ const ListDataRouter: RouterItemsType[] = [
         path: "/compte/user",
         element: <DataUserPage />,
     },
-    /* {ListDataRouter[24].path} */
+    /* {ListDataRouter[25].path} */
+    {
+        path: "/compte/user/edit-user",
+        element: <EditUserPage />,
+    },
+    /* {ListDataRouter[26].path} */
     {
         path: "/admin/user",
         element: <DataUserPage />,
+    },
+    /* {ListDataRouter[27].path} */
+    {
+        path: "/admin/user/edit-user",
+        element: <EditUserPage />,
     }
 ]
 
