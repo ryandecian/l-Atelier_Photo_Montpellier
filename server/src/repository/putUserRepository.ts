@@ -3,14 +3,29 @@ import usePoolConnection from "../database/config";
 import dataUserType from "../types/dataUserType";
 
 async function putUserMeRepository(dataUser: dataUserType): Promise<ResultSetHeader> {
-  const { firstname, lastname, email, address, id } = dataUser;
+    const { firstname, lastname, email, password, address, id } = dataUser;
 
-  const [updateResult] = await usePoolConnection.query<ResultSetHeader>(
-    "UPDATE user SET firstname = ?, lastname = ?, email = ?, address = ? WHERE id = ?",
-    [firstname, lastname, email, address, id]
-  );
+    const setClauses: string[] = [
+        "firstname = ?",
+        "lastname = ?",
+        "email = ?",
+        "address = ?"
+    ];
+    const params: Array<string | number | undefined> = [firstname, lastname, email, address];
 
-  return updateResult
+    // Ajout conditionnel du mot de passe (déjà hashé)
+    if (typeof password === "string" && password.trim().length > 0) {
+        setClauses.push("password = ?");
+        params.push(password);
+    }
+
+    // id toujours en dernier
+    params.push(id);
+
+    const sql = `UPDATE user SET ${setClauses.join(", ")} WHERE id = ?`;
+
+    const [updateResult] = await usePoolConnection.query<ResultSetHeader>(sql, params);
+    return updateResult;
 }
 
 export { putUserMeRepository };

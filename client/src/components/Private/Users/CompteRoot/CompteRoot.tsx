@@ -26,7 +26,7 @@ function CompteRoot() {
             <div className={css.ContainerCard}>
                 <ServiceCardUserLink
                     nameService="Mes informations"
-                    link={ListDataRouter[23].path}
+                    link={ListDataRouter[24].path}
                 />
                 <ServiceCardUserLink
                     nameService="Mes séances"
