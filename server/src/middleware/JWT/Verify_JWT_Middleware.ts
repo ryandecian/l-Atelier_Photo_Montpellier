@@ -42,9 +42,10 @@ function Verify_JWT_Middleware(req: Request, res: Response, next: NextFunction) 
         res.status(403)
         .clearCookie("jwtTokenServerLAPM", {
           httpOnly: true,
-          secure: true,
-          sameSite: "strict",
-        })        
+          // secure: true,
+          sameSite: "lax",
+          path: "/"
+        })
         .json({ message: "Token invalide ou expiré." });
         console.warn({
             identity: "Verify_JWT_Middleware.ts",
