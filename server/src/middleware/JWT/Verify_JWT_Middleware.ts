@@ -2,11 +2,11 @@ import jwt from "jsonwebtoken";
 import { Request, Response, NextFunction } from "express";
 import payloadType from "../../types/payloadType";
 
-const SECRET_KEY_TOKEN_SERVER = process.env.SECRET_KEY_TOKEN_SERVER;
+const SECRET_KEY_TOKEN_API_SERVER = process.env.SECRET_KEY_TOKEN_API_SERVER;
 
 function Verify_JWT_Middleware(req: Request, res: Response, next: NextFunction) {
   try {
-    if (!SECRET_KEY_TOKEN_SERVER) {
+    if (!SECRET_KEY_TOKEN_API_SERVER) {
       res.status(500).json({ error: "Erreur interne serveur." });
       console.error({
         identity: "Verify_JWT_Middleware.ts",
@@ -33,7 +33,7 @@ function Verify_JWT_Middleware(req: Request, res: Response, next: NextFunction) 
 
     // Vérification du token
     try {
-        const payload: payloadType = jwt.verify(token, SECRET_KEY_TOKEN_SERVER) as payloadType;
+        const payload: payloadType = jwt.verify(token, SECRET_KEY_TOKEN_API_SERVER) as payloadType;
         // Stocke les infos du token dans req.body.dataUser
         req.body.dataUser = payload;
     }

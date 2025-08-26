@@ -1,6 +1,6 @@
 import css from "./AdminRoot.module.css";
 import style from "../../../StyleRootComponent.module.css";
-import ServiceCardComponent from "../../../Elements/ServiceCardComponent/ServiceCardComponent";
+import { ServiceCardAdminLink, ServiceCardAdminButton } from "../../../Elements/ServiceCardComponent/ServiceCardAdmin";
 import useLogout from "../../../../hook/useLogout.hook";
 import ListDataRouter from "../../../../router/router";
 import useLockedPage from "../../../../hook/useLockedPage.security.hook";
@@ -19,38 +19,40 @@ function AdminRoot() {
                 <p>
                     Bonjour {userInfo.firstname} {userInfo.lastname}
                 </p>
-                <button className={css.LogoutButton} onClick={logout}>
-                    Déconnexion
-                </button>
             </div>
 
             <h1 className={css.Title}>👑 Interface Admin</h1>
 
             <div className={css.ContainerCard}>
-                <ServiceCardComponent
+                <ServiceCardAdminLink
                     nameService="Gestion des utilisateurs"
                     etat={true}
                     link={ListDataRouter[23].path}
                 />
-                <ServiceCardComponent
+                <ServiceCardAdminLink
                     nameService="Gestion des factures"
                     etat={false}
                     link="#"
                 />
-                <ServiceCardComponent
+                <ServiceCardAdminLink
                     nameService="Gestion des statistiques"
                     etat={false}
                     link="#"
                 />
-                <ServiceCardComponent
+                <ServiceCardAdminLink
                     nameService="Gestion des albums"
                     etat={false}
                     link="#"
                 />
-                <ServiceCardComponent
+                <ServiceCardAdminLink
                     nameService="Gestion des photos"
                     etat={false}
                     link="#"
+                />
+                <ServiceCardAdminButton
+                    nameService="Déconnexion"
+                    etat={true}
+                    onClick={logout}
                 />
             </div>
         </section>
