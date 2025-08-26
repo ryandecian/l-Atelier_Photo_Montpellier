@@ -8,7 +8,7 @@ function DataUserRoot() {
     const navigate = useNavigate();
 
     return (
-        <div className={style.ContainerRootRacine}>
+        <div className={style.ContainerRootRacine} style={{ position: "relative" }}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>Mes informations</h1>
             </header>

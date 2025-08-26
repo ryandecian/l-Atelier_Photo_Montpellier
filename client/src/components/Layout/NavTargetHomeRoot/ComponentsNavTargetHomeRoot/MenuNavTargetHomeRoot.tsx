@@ -33,7 +33,7 @@ function MenuNavTargetHomeRoot(Props: MenuNavTargetHomeRootProps) {
         moduleSpanPortraits, moduleSubMenuPortraits, 
         moduleMenuLiTarget1, moduleMenuLiTarget2, 
         moduleMenuLiTarget3, moduleMenuLiTarget4,
-        // moduleMenuLiTarget5, moduleMenuLiTarget6,
+        /* moduleMenuLiTarget5,*/ moduleMenuLiTarget6,
         moduleSubMenuLiTarget1,moduleSubMenuLiTarget2,
         moduleSubMenuLiTarget3, moduleButtonSubMenu } = Props;
 
@@ -92,14 +92,14 @@ function MenuNavTargetHomeRoot(Props: MenuNavTargetHomeRootProps) {
             <li className={`${moduleMenuLi} ${moduleMenuLiTarget4}`}>
                 <Link to={ListDataRouter[8].path} className={moduleMenuLink}>PORTFOLIO</Link>
             </li>
-
-            {/* <li className={`${moduleMenuLi} ${moduleMenuLiTarget5}`}>
+{/* 
+            <li className={`${moduleMenuLi} ${moduleMenuLiTarget5}`}>
                 <Link to={ListDataRouter[5].path} className={moduleMenuLink}>PANIER</Link>
-            </li>
+            </li> */}
 
             <li className={`${moduleMenuLi} ${moduleMenuLiTarget6}`}>
                 <Link to={ListDataRouter[6].path} className={moduleMenuLink}>COMPTE</Link>
-            </li> */}
+            </li>
         </ul>
     );
 }

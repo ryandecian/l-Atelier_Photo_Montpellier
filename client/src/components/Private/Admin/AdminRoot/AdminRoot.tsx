@@ -25,6 +25,11 @@ function AdminRoot() {
 
             <div className={css.ContainerCard}>
                 <ServiceCardAdminLink
+                    nameService="Mes informations"
+                    etat={true}
+                    link={ListDataRouter[26].path}
+                />
+                <ServiceCardAdminLink
                     nameService="Gestion des utilisateurs"
                     etat={true}
                     link={ListDataRouter[23].path}
