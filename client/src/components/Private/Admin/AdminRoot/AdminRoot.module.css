@@ -4,46 +4,29 @@
     justify-content: start;
     flex-direction: column;
     align-items: center;
-  }
-  
-  /* Bouton en haut à droite */
-  .TopBar {
+}
+
+/* Bouton en haut à droite */
+.TopBar {
     width: calc(100% - 4rem);
     display: flex;
     justify-content: space-between;
-    padding: 1rem 2rem 0 2rem; 
-  }
-  
-  /* Bouton de déconnexion */
-  .LogoutButton {
-    padding: 0.5rem 1rem;
-    background-color: #e74c3c;
-    border: none;
-    color: white;
-    font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-  }
-  
-  .LogoutButton:hover {
-    background-color: #c0392b;
-  }
-  
-  /* Titre centré */
-  .Title {
+    padding: 1rem 2rem 0 2rem;
+}
+
+/* Titre centré */
+.Title {
     font-size: 2rem;
     font-weight: bold;
     margin: 1.5rem 0;
     text-align: center;
-  }
-  
-  /* Cartes */
-  .ContainerCard {
+}
+
+/* Cartes */
+.ContainerCard {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
     padding: 2rem;
-  }
-  
+}
