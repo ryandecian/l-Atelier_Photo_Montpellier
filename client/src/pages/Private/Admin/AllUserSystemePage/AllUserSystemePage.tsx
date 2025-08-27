@@ -1,16 +1,16 @@
 import style from "../../../stylePage.module.css";
 import NavRoot from "../../../../components/Layout/NavRoot/NavRoot";
-import UserSystemeRoot from "../../../../components/Private/Admin/UserSystemeRoot/UserSystemeRoot";
+import AllUserSystemeRoot from "../../../../components/Private/Admin/AllUserSystemeRoot/AllUserSystemeRoot";
 import FooterRoot from "../../../../components/Layout/FooterRoot/FooterRoot";
 
-function UserSystemePage() {
+function AllUserSystemePage() {
     return (
         <div className={`UserSystemePage ${style.Page}`}>
             <header className={style.Header}>
                 <NavRoot />
             </header>
             <main className={style.Main}>
-                <UserSystemeRoot />
+                <AllUserSystemeRoot />
             </main>
             <footer className={style.Footer}>
                 <FooterRoot />
@@ -19,4 +19,4 @@ function UserSystemePage() {
     );
 }
 
-export default UserSystemePage;
+export default AllUserSystemePage;
