@@ -1,0 +1,132 @@
+.SearchBarRow {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* 8px */
+    width: calc(100% - 2.5rem);
+    max-width: 45rem; /* 720px */
+    margin: 0 auto 1.5rem auto; /* centré, avec marge sous le header */
+    padding: 0rem 1.25rem; /* 0px 20px 0px 20px */
+}
+
+.SearchInput {
+    flex: 1 1 auto;
+    height: 2.75rem; /* 44px */
+    padding: 0rem 2.5rem 0rem 1rem; /* 0px 40px 0px 20px */ /* espace pour le bouton clear à droite */
+    border: 0.0625rem solid #d1d5db; /* 1px */
+    border-radius: 10px;
+    background: #ffffff;
+    font-size: var(--h5);
+    color: var(--ColorTextBlack, #111827);
+    outline: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: rgba(79, 70, 229, 0) 0 0 0 0;
+}
+@media (min-width: 25rem) { /* 400px */
+    .SearchInput {
+        font-size: var(--h4);
+    }
+}
+
+.SearchInput::placeholder {
+    color: #9ca3af;
+}
+
+.SearchInput:focus {
+    border-color: #6366f1;
+    box-shadow: rgba(99, 102, 241, 0.2) 0 0 0 3px;
+}
+
+/* Bouton clear “✕” intégré, style minimal */
+.ClearButton {
+    flex: 0 0 auto;
+    height: 2.75rem;
+    padding: 0 0.9rem;
+    border: 0.0625rem solid #d1d5db; /* 1px */
+    border-radius: 10px;
+    background: #f9fafb;
+    color: #6b7280;
+    cursor: pointer;
+    transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.ClearButton:hover {
+    background: #f3f4f6;
+    color: #374151;
+    border-color: #cbd5e1;
+}
+
+.ClearButton:active {
+    transform: translateY(1px);
+}
+
+.ClearButton:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
+}
+
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem; /* 24px */
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    width: 250px; /* 250px */
+    height: 220px; /* 200px */
+    text-decoration: none;
+    color: var(--ColorTextBlack);
+    overflow: hidden;
+    box-shadow: var(--box-shadow-card-prestation);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: linear-gradient(135deg, #eef2ff 0%, #cffafe 100%);
+}
+
+.ContainerDataUser {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 0rem 1rem 0rem 1rem; /* 0px 16px 0px 16px */
+    width: calc(100% - 2rem);
+}
+
+.label {
+    margin: 0.5rem 0rem; /* 8px 0px 8px 0px */
+    padding: 0rem;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.ContainerRoleAction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem 0.5rem 1rem; /* 0px 16px 8px 16px */
+    width: calc(100% - 2rem); /* 100% - 32px */
+}
+
+.ButtonEdit {
+    padding: 0.5rem 1rem; /* 8px 16px 8px 16px */
+    background-color: #111;
+    color: var(--ColorTextWhite);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.ButtonEdit:hover {
+    background-color: #444;
+}
