@@ -3,10 +3,10 @@ import { ReactNode } from "react"
 /* Liste des pages en import */
 /* Page Frontend vérrouillée */
 import AdminPage from "../pages/Private/Admin/AdminPage/AdminPage";
+import AllUserSystemePage from "../pages/Private/Admin/AllUserSystemePage/AllUserSystemePage";
 import ComptePage from "../pages/Private/Users/ComptePage/ComptePage";
 import DataUserPage from "../pages/Private/All/DataUser/DataUserPage";
 import EditUserPage from "../pages/Private/All/EditUserPage/EditUserPage";
-import UserSystemePage from "../pages/Private/Admin/UserSystemePage/UserSystemePage";
 
 /* Page Frontend public */
 import blogRouter from "./blogRouter";
@@ -160,8 +160,8 @@ const ListDataRouter: RouterItemsType[] = [
     },
     /* {ListDataRouter[23].path} */
     {
-        path: "/admin/user-systeme",
-        element: <UserSystemePage />,
+        path: "/admin/all-user-systeme",
+        element: <AllUserSystemePage />,
     },
     /* {ListDataRouter[24].path} */
     {
