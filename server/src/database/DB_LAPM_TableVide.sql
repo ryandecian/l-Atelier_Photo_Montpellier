@@ -6,6 +6,7 @@ CREATE TABLE album (
     id INT NOT NULL AUTO_INCREMENT,
     date DATE NOT NULL DEFAULT curdate(),
     lien VARCHAR(255) NOT NULL,
+    access_code VARCHAR(255) DEFAULT NULL,
     user_id INT UNSIGNED NOT NULL,
     PRIMARY KEY (id),
     KEY user_id (user_id),
