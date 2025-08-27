@@ -251,6 +251,64 @@ usersController.put("/me",
     }
 );
 
+/* Récupérer les données d'un utilisateur en tant qu'admin via l'id */
+// URI : /api/users/:id
+usersController.get("/:id",
+
+    // Vérification :
+    Verify_JWT_Middleware,
+    isAdmin,
+    async (req: Request, res: Response) => {
+        try {
+            // Logique métier 1 : Recupération des data de l'utilisateur
+                /* Récupération de l'ID de l'utilisateur  dans l'URL */
+                const userId = parseInt(req.params.id, 10);
+                if (!Number.isFinite(userId) || userId <= 0) {
+                    res.status(400).json({ message: "ID invalide" });
+                return;
+            }
+
+                const dataUser: RowDataPacket[] = await getOneUserByIdRepository(userId)
+
+                if (dataUser.length === 0) {
+                    res.status(404).json({ message: "Aucun utilisateur trouvé" });
+                    console.error({
+                        identity: "usersController.ts",
+                        type: "controller",
+                        URI: "/api/users/:id",
+                        methode: "GET",
+                        chemin: "/server/src/controllers/usersController.ts",
+                        "❌ Nature de l'erreur": "Erreur lors de la récupération des données de l'utilisateur.",
+                        getOneUserByIdRepository: {
+                            identity: "getOneUserByIdRepository.ts",
+                            type: "repository",
+                            chemin: "/server/src/repository/getUserRepository.ts",
+                            "❌ Nature de l'erreur": "Erreur lors de la récupération des données de l'utilisateur.",
+                        }
+                    });
+                    return;
+                }
+
+            // Logique métier 2 : Envois de la liste de tout les utilisateurs
+                res.status(200).json({ data: dataUser });
+                return;
+        }
+        catch (error) {
+            res.status(500).json({ error: "Erreur interne serveur." });
+            console.error({
+                identity: "usersController.ts",
+                type: "controller",
+                URI: "/api/users/:id",
+                methode: "GET",
+                chemin: "/server/src/controllers/usersController.ts",
+                "❌ Nature de l'erreur": "Erreur non gérée dans le serveur !",
+                details: error,
+            });
+            return;
+        }
+    }
+)
+
 /* Modifier les données utilisateurs en tant qu'admin */
 // URI : /api/users/:id
 usersController.put("/:id",
