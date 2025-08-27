@@ -1,4 +1,4 @@
-type dataUserPutType = {
+type dataUserMePutType = {
     id: number;
     firstname: string;
     lastname: string;
@@ -12,4 +12,4 @@ type dataUserPutType = {
     };
 }
 
-export default dataUserPutType;
+export default dataUserMePutType;
