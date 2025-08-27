@@ -407,18 +407,16 @@ usersController.put("/",
 );
 
 /* Suppression d'un utilisateur en tant qu'admin */
-// URI : /api/users/:id
-usersController.delete("/:id",
+// URI : /api/users
+usersController.delete("/",
     
     // Vérification :
+    VerifyKeys(["id"]),
     Verify_JWT_Middleware,
     isAdmin,
     async (req: Request, res: Response) => {
         try {
-            // Logique métier 1 : Recuperer un utilisateur par son id
-                req.body.id = parseInt(req.params.id, 10);
-                const dataUserTarget: dataUserType = req.body
-                
+            // Logique métier 1 : Suppression de l'utilisateur dans la DB
                 const deleteDataUser: ResultSetHeader = await deleteUserRepository(req.body.id)
                 
                 if (deleteDataUser.affectedRows === 0) {

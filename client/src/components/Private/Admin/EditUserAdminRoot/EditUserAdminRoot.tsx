@@ -6,6 +6,7 @@ import useLockedPage from "../../../../hook/useLockedPage.security.hook";
 import DataUserType from "../../../../types/dataUser.type";
 import fetchAPI from "../../../../utils/fetchAPI.utils";
 
+/** Structure du formulaire de modification */
 type EditForm = {
     firstname: string;
     lastname: string;
@@ -14,10 +15,13 @@ type EditForm = {
 };
 
 function EditUserAdminRoot() {
+    /** Sécurise l'accès à la page aux administrateurs uniquement */
     useLockedPage("admin");
+
     const navigate = useNavigate();
     const { id } = useParams<{ id: string }>();
 
+    /** Formulaire contrôlé */
     const [form, setForm] = useState<EditForm>({
         firstname: "",
         lastname: "",
@@ -25,12 +29,15 @@ function EditUserAdminRoot() {
         email: "",
     });
 
+    /** Données d'origine de l'utilisateur à comparer */
     const [originalUser, setOriginalUser] = useState<DataUserType | null>(null);
+
+    /** Gestion des états de chargement, soumission et erreurs */
     const [loading, setLoading] = useState(true);
     const [saving, setSaving] = useState(false);
     const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
-    /** Récupération de l'utilisateur ciblé dès que l’ID est présent dans l’URL */
+    /** Récupère l'utilisateur ciblé dès que l'ID est présent dans l'URL */
     useEffect(() => {
         async function fetchUser() {
             if (!id) {
@@ -71,7 +78,7 @@ function EditUserAdminRoot() {
         setForm((prev) => ({ ...prev, [name]: value }));
     };
 
-    /** Vérifie si le formulaire a été modifié */
+    /** Vérifie si des modifications ont été apportées */
     const isDirty =
         !!originalUser &&
         (
@@ -81,10 +88,10 @@ function EditUserAdminRoot() {
             form.email !== (originalUser.email || "")
         );
 
-    /** Validation de l'email */
+    /** Validation simple de l'e-mail */
     const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email);
 
-    /** Soumission du formulaire */
+    /** Soumission du formulaire (modification de l'utilisateur) */
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         if (saving || !id) return;
@@ -97,7 +104,7 @@ function EditUserAdminRoot() {
             lastname: form.lastname.trim(),
             address: form.address.trim(),
             email: form.email.trim(),
-            id: parseInt(id, 10), // nécessaire côté serveur pour le repo PUT
+            id: parseInt(id, 10),
         };
 
         const { error } = await fetchAPI("PUT", "/api/users", body);
@@ -112,7 +119,31 @@ function EditUserAdminRoot() {
         navigate("/admin/all-user-systeme");
     };
 
+    /** Suppression de l'utilisateur ciblé */
+    const handleDelete = async () => {
+        if (!id) return;
+
+        const confirmation = window.confirm("Êtes-vous sûr de vouloir supprimer cet utilisateur ?");
+        if (!confirmation) return;
+
+        setSaving(true);
+        setErrorMsg(null);
+
+        const { error } = await fetchAPI("DELETE", "/api/users", { id: parseInt(id, 10) });
+
+        if (error) {
+            setErrorMsg(error);
+            setSaving(false);
+            return;
+        }
+
+        navigate("/admin/all-user-systeme");
+    };
+
+    /** Affichage si en cours de chargement */
     if (loading) return <p>Chargement des données utilisateur...</p>;
+
+    /** Affichage en cas d'erreur */
     if (errorMsg) return <p className={css.ErrorMsg}>{errorMsg}</p>;
 
     return (
@@ -203,6 +234,14 @@ function EditUserAdminRoot() {
                     }
                 >
                     {saving ? "Enregistrement..." : "Enregistrer"}
+                </button>
+                <button
+                    type="button"
+                    className={css.DeleteButton}
+                    onClick={handleDelete}
+                    disabled={saving}
+                >
+                    Supprimer
                 </button>
             </div>
         </div>
