@@ -4,9 +4,9 @@ import { useNavigate } from "react-router-dom";
 import useAuthCheck from "../../../../hook/useAuthCheck.utils.hook";
 import useLogout from "../../../../hook/useLogout.hook";
 import DataUserType from "../../../../types/dataUser.type";
-import css from "./UserSystemeRoot.module.css";
+import css from "./AllUserSystemeRoot.module.css";
 
-function UserSystemeRoot() {
+function AllUserSystemeRoot() {
     const { isLoggedIn, userInfo, isChecking } = useAuthCheck();
     const logout = useLogout();
     const navigate = useNavigate();
@@ -215,4 +215,4 @@ function UserSystemeRoot() {
     );
 }
 
-export default UserSystemeRoot;
+export default AllUserSystemeRoot;
