@@ -2,9 +2,6 @@ Ce qui est fait pour refacto :
 - Une mise a jour des mentions légales doit être fait, hébergeur pas a jour
 - Autre contributeur : développeur web site Ryan DECIAN
 
-Je viens de tester et il est vrais qu'avec les card c'est gros quand même, 
-si dans la DB on a 1000 utilisateur cela va faire 1000 card soit beaucoup de 
-recherche 
 ------------------------------------------------------------------------------
 Connexion à la db sur vps : 
 sudo docker exec -it db mariadb -u "LAPM" -p
