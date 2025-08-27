@@ -141,7 +141,7 @@ function AllUserSystemeRoot() {
                                 <button
                                     className={css.ButtonEdit}
                                     aria-label={`Modifier l'utilisateur ${user.firstname} ${user.lastname}`}
-                                    onClick={() => navigate(`/compte/user/${user.id}/edit`)}
+                                    onClick={() => navigate(`/admin/all-user-systeme/edit-user/${user.id}`)}
                                 >
                                     Modifier
                                 </button>
