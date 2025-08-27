@@ -1,6 +1,6 @@
 import { ResultSetHeader } from "mysql2";
 import usePoolConnection from "../database/config";
-import dataUserPutType from "../types/dataUserPut.type";
+import dataUserPutType from "../types/dataUserMePut.type";
 
 async function putUserMeRepository(body: dataUserPutType): Promise<ResultSetHeader> {
     const { firstname, lastname, email, password, address } = body;

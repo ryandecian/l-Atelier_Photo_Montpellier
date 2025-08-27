@@ -6,6 +6,7 @@ import AdminPage from "../pages/Private/Admin/AdminPage/AdminPage";
 import AllUserSystemePage from "../pages/Private/Admin/AllUserSystemePage/AllUserSystemePage";
 import ComptePage from "../pages/Private/Users/ComptePage/ComptePage";
 import DataUserPage from "../pages/Private/All/DataUser/DataUserPage";
+import EditUserAdminPage from "../pages/Private/Admin/EditUserAdminPage/EditUserAdminPage";
 import EditUserPage from "../pages/Private/All/EditUserPage/EditUserPage";
 
 /* Page Frontend public */
@@ -182,6 +183,11 @@ const ListDataRouter: RouterItemsType[] = [
     {
         path: "/admin/user/edit-user",
         element: <EditUserPage />,
+    },
+    /* {ListDataRouter[28].path} */
+    {
+        path: "/admin/all-user-systeme/edit-user/:id",
+        element: <EditUserAdminPage />,
     }
 ]
 
