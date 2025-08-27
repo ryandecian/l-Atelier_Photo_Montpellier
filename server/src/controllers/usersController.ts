@@ -17,10 +17,12 @@ import { getOneUserByIdRepository } from "../repository/getUserRepository";
 import { putUserMeRepository } from "../repository/putUserRepository";
 import { deleteUserRepository } from "../repository/deleteUserRepository";
 import verifyEmailFalseRepository from "../repository/emailRepository";
+import { putOneUserRepository } from "../repository/putOneUserRepository";
 
 // Import des Types :
 import payloadType from "../types/payloadType";
-import dataUserPutType from "../types/dataUserPut.type";
+import dataUserMePutType from "../types/dataUserMePut.type";
+import dataOneUserPutType from "../types/dataOneUserPut.type";
 
 // Import des utils
 import dataUserType from "../types/dataUserType";
@@ -310,21 +312,40 @@ usersController.get("/:id",
 )
 
 /* Modifier les données utilisateurs en tant qu'admin */
-// URI : /api/users/:id
-usersController.put("/:id",
+// URI : /api/users
+usersController.put("/",
     
     // Vérification :
-    VerifyKeys(["firstname", "lastname", "email"]),
+    VerifyKeys(["id", "firstname", "lastname", "email"]),
     Verify_JWT_Middleware,
     isAdmin,
     async (req: Request, res: Response) => {
         try {
-            // Logique métier 1 : Modifier un utilisateur par son id
-                req.body.id = parseInt(req.params.id, 10);
-                const dataUserTarget: dataUserPutType = req.body
-                
-                const putDataUser: ResultSetHeader = await putUserMeRepository(dataUserTarget)
-                
+            /* Logique métier 1 : Vérification si l'email existe */
+                const dataUserDB: RowDataPacket[] = await verifyEmailFalseRepository(req.body.email);
+
+                // Si l'email existe déjà dans la DB, on ne peut pas continuer.
+                if (dataUserDB.length > 0) { // Si c'est supérieur à 0, c'est que l'email existe déjà
+                    res.status(409).json({ message: "Cet email est déjà utilisé. Veuillez en choisir un autre." });
+                    console.error(
+                        {
+                            identity: "usersController.ts",
+                            type: "controller",
+                            URI: "/api/users/:id",
+                            methode: "PUT",
+                            metier: "Logique métier 1",
+                            codeStatus: "409 : Conflict",
+                            chemin: "/server/src/middleware/VerifyEmail/VerifyEmailFalse.ts",
+                            "❌ Nature de l'erreur": "L'email existe déjà dans la DB, impossible de continuer.",
+                        },
+                    );
+                    return;
+                }
+
+            // Logique métier 2 : Modifier un utilisateur par son id
+
+                const putDataUser: ResultSetHeader = await putOneUserRepository(req.body)
+
                 if (putDataUser.affectedRows === 0) {
                     res.status(404).json({ message: "Aucun utilisateur trouvé" });
                     console.error({
@@ -334,8 +355,8 @@ usersController.put("/:id",
                         methode: "PUT",
                         chemin: "/server/src/controllers/usersController.ts",
                         "❌ Nature de l'erreur": "Erreur lors de la modification des données de l'utilisateur.",
-                        putUserMeRepository: {
-                            identity: "putUserMeRepository.ts",
+                        putOneUserRepository: {
+                            identity: "putOneUserRepository.ts",
                             type: "repository",
                             chemin: "/server/src/repository/putUserRepository.ts",
                             "❌ Nature de l'erreur": "Erreur lors de la modification des données de l'utilisateur.",
@@ -344,7 +365,7 @@ usersController.put("/:id",
                     return;
                 }
             
-            // Logique métier 2 : Recuperer l'utilisateur par son id
+            // Logique métier 3 : Recuperer l'utilisateur par son id
                 const dataUser: RowDataPacket[] = await getOneUserByIdRepository(req.body.id)
                 if (dataUser.length === 0) {
                     res.status(404).json({ message: "Aucun utilisateur trouvé" });
@@ -365,7 +386,7 @@ usersController.put("/:id",
                     return;
                 }
             
-            // Logique métier 3 : Envois des données de l'utilisateur
+            // Logique métier 4 : Envois des données de l'utilisateur
                 res.status(200).json({ data: dataUser });
                 return;
         }
