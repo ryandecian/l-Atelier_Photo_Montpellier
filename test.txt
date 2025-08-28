@@ -1,0 +1,21 @@
+[Utilisateur] -> [Navigateur]
+         |           |
+         |      HTTPS 443
+         v           v
+                 [NGINX - reverse proxy]
+                 /           \
+    (assets React/Vite)     (proxy /api)
+               |                 |
+               v                 v
+           [Front statique]   [Express/Node API]
+                                   |
+                            SQL TCP 3306
+                                   |
+                                [MariaDB]
+                                   |
+                         (lien vers répertoires)
+                                   |
+                             [NAS Synology]
+ 
+[GitHub Actions CI/CD] -- build/deploy --> [VPS Docker Compose]
+[Certbot] <----> [NGINX]  (certificats SSL)
