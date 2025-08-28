@@ -10,6 +10,8 @@ A date du 28/08/2025
 Il faut créer un dossier contenant tout les controller user. 
 Créer un router qui nomme la route user et redirige vers le bon controller, un deuxième router appelé userRouter.ts qui ne s'occupe que des route user. 
 
+Modifier le path api du server Express et corriger dans le client
+
 Convention de nommage des controller : Nommage ne camelCase
  - Méthode (GET,POST, PUT, DELETE) en minuscule
  - Quantité (All ou One)
