@@ -21,7 +21,16 @@ function JSON_LD_HomePage_Home_Schema_SEO() : string {
         "image": DataSEO_Home.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
         "description": DataSEO_Home.description,
         "provider": {
-            "@id": DataSEORoot.id_LocalBusiness /* (Obligatoire) Référence à l'ID de l'Entreprise */
+            "@type": "LocalBusiness",
+            "@id": DataSEORoot.id_LocalBusiness,
+            "name": DataSEORoot.name,
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "13 Allée des Platanes",
+                "addressLocality": "Grabels",
+                "postalCode": "34790",
+                "addressCountry": "FR"
+            }
         },
         "publisher": {
             "@type": "Organization",
