@@ -9,7 +9,7 @@ import { ResultSetHeader, RowDataPacket } from "mysql2";
 // Import des Middlewares :
 import VerifyKeys from "../middleware/VerifyKeys/VerifyKeys";
 import Verify_JWT_Middleware from "../middleware/JWT/Verify_JWT_Middleware";
-import isAdmin from "../middleware/isAdmin/isAdmin";
+import isAdmin from "../middleware/isAdmin/isAdmin_Middleware";
 
 // Import des Repositories :
 import { getAllUsersRepository } from "../repository/getUserRepository";
@@ -21,8 +21,6 @@ import { putOneUserRepository } from "../repository/putOneUserRepository";
 
 // Import des Types :
 import payloadType from "../types/payloadType";
-import dataUserMePutType from "../types/dataUserMePut.type";
-import dataOneUserPutType from "../types/dataOneUserPut.type";
 
 // Import des utils
 import dataUserType from "../types/dataUserType";
@@ -36,7 +34,7 @@ usersController.get("/",
     // Vérification :
     Verify_JWT_Middleware,
     isAdmin,
-    async (req: Request, res: Response) => {
+    async ( req: Request, res: Response) => {
         try {
             // Logique métier 1 : Recuperer tous les utilisateurs
                 const datasUsers: RowDataPacket[] = await getAllUsersRepository()
