@@ -3,7 +3,6 @@ import express, { Request, Response } from "express";
 const usersController = express.Router();
 
 // Import des dépendances externes :
-// import jwt from "jsonwebtoken";
 import { ResultSetHeader, RowDataPacket } from "mysql2";
 
 // Import des Middlewares :
@@ -23,7 +22,6 @@ import { putOneUserRepository } from "../repository/putOneUserRepository";
 import payloadType from "../types/payloadType";
 
 // Import des utils
-import dataUserType from "../types/dataUserType";
 import { hashPasswordArgonUtils } from "../utils/hashArgonUtils";
 import { createJwtTokenClientLAPM, createJwtTokenServerLAPM } from "../utils/jwtTokenLAPMUtils";
 
