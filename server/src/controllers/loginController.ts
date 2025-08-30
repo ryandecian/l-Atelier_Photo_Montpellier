@@ -16,8 +16,8 @@ import verifyEmailTrueRepository from "../repository/emailRepository";
 import payloadType from "../types/payloadType";
 
 // Import des utils
-import { verifyPasswordArgonUtils } from "../utils/hashArgonUtils";
-import { createJwtTokenClientLAPM, createJwtTokenServerLAPM } from "../utils/jwtTokenLAPMUtils";
+import { verifyPasswordArgonUtils } from "../utils/hashArgon.utils";
+import { createJwtTokenClientLAPM, createJwtTokenServerLAPM } from "../utils/jwtTokenLAPM.utils";
 
 
 // URI : /api/login
