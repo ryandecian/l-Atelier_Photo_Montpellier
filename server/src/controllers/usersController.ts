@@ -79,6 +79,7 @@ usersController.get("/",
 
 /* Récupération de ses propre données utilisateurs */
 // URI : /api/users/me
+// Ok refacto
 usersController.get("/me",
     
     // Vérification :

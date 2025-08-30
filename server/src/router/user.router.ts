@@ -13,15 +13,18 @@ const userRouter = Router();
 
 
 /* Récupération de tous les utilisateurs en tant qu'admin */
-/* URI : /api/user */
+/* URI : /user */
 userRouter.get("/", Verify_JWT_Middleware, isAdmin_Middleware,
     getAllUser_controller
 );
 
 /* Récupération de ses propre données utilisateurs */
-/* URI : /api/users/me */
+/* URI : /user/me */
 userRouter.get("/me", Verify_JWT_Middleware,
     getMeUser_controller
 );
+
+/* Modification de ses propre données utilisateurs */
+/* URI : /user/me */
 
 export default userRouter;
