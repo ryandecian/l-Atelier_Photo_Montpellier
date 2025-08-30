@@ -1,4 +1,4 @@
-import express from "express";
+import { Router } from "express";
 
 // Import des sub route indépendante !
 import loginController from "../controllers/loginController"; /* Vérification ok */
@@ -7,15 +7,17 @@ import resetPasswordController from "../controllers/resetPasswordController";
 import resetPasswordConfirmController from "../controllers/resetPasswordConfirmController";
 import usersController from "../controllers/usersController";
 import logoutController from "../controllers/logoutController"; /* Vérification ok */
+import userRouter from "./user.router";
 
-const router = express.Router();
+const router = Router();
+
+router.use("/user", userRouter); /* 2 routes fonctionnelles */
 
 /* Liste des routes ! */
 router.use("/login", loginController); // 1 route fonctionnelle
 router.use("/register", registerController); // 1 route fonctionnelle
 router.use("/resetpassword", resetPasswordController); // 1 route fonctionnelle
 router.use("/resetpassword/confirm", resetPasswordConfirmController); // 1 route fonctionnelle
-router.use("/users", usersController); // 5 routes fonctionnelles
 router.use("/logout", logoutController); // 1 route fonctionnelle
 
 export default router;
