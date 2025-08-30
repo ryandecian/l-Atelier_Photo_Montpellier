@@ -2,13 +2,13 @@
 import { Request, Response } from "express";
 
 /* Import des Repositories : */
-import { getAllUsers_repository } from "../../repository/user/getAllUsers.repository";
+import { getAllUsers_repository } from "../../repository/user_tbl/getAllUsers.repository";
 
 /* Import des Types : */
 import getAllUsers_type from "../../types/user_type/getAllUsers.type";
 
 
-/* URI : /api/users */
+/* URI : /user */
 const getAllUser_controller = async (req: Request, res: Response) => {
     try {
         // Logique métier 1 : Recuperer tous les utilisateurs

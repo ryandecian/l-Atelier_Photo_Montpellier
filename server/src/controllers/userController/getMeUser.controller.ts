@@ -8,7 +8,7 @@ import { getOneUserById_repository } from "../../repository/user_tbl/getOneUserB
 import getOneUserById_type from "../../types/user_type/getOneUserById.type";
 
 
-/* URI : /api/users/me */
+/* URI : /user/me */
 const getMeUser_controller = async (req: Request, res: Response) => {
     try {
         // Logique métier 1 : Recuperer l'utilisateur connecté

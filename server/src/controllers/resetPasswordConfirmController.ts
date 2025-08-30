@@ -19,7 +19,7 @@ import sendMailerService from '../services/mailer/sendMailerService';
 // Import des Types :
 
 // Import des Outils :
-import { hashPasswordArgonUtils } from '../utils/hashArgonUtils';
+import { hashPasswordArgonUtils } from '../utils/hashArgon.utils';
 import updateNewPasswordUserRepository from '../repository/updateNewPasswordUserRepository';
 
 // Vérification :
