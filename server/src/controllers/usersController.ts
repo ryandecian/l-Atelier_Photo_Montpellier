@@ -23,7 +23,7 @@ import payloadType from "../types/payloadType";
 
 // Import des utils
 import { hashPasswordArgonUtils } from "../utils/hashArgon.utils";
-import { createJwtTokenClientLAPM, createJwtTokenServerLAPM } from "../utils/jwtTokenLAPMUtils";
+import { createJwtTokenClientLAPM, createJwtTokenServerLAPM } from "../utils/jwtTokenLAPM.utils";
 
 /* Récupération de tous les utilisateurs en tant qu'admin */
 // URI : /api/users

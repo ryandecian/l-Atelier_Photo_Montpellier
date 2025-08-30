@@ -1,16 +1,15 @@
 import payloadType from "../types/payloadType";
-import { createDate_Number_Utils } from "./createDateUtils";
+import { createDate_Number_Utils } from "./createDate.utils";
 import jwt from "jsonwebtoken";
 import { Request } from "express";
+import { ENV } from "../config/ENV.config";
 
-import ENV from "../config/ENV.configs";
+// import ENV from "../config/ENV.configs";
 
 // Récupération de la clé secrète Server
-const SECRET_KEY_TOKEN_SERVER: string | undefined = ENV("process.env.SECRET_KEY_TOKEN_API_SERVER", "Warning");        
+const SECRET_KEY_TOKEN_SERVER: string | undefined = ENV.SECRET_KEY_TOKEN_API_SERVER;        
 // Récupération de la clé secrète Client
-const SECRET_KEY_TOKEN_CLIENT: string | undefined = ENV("process.env.SECRET_KEY_TOKEN_CLIENT", "Warning");
-
-//--------------------------------------------------------------------------------------
+const SECRET_KEY_TOKEN_CLIENT: string | undefined = ENV.SECRET_KEY_TOKEN_CLIENT;
 
 async function createJwtTokenServerLAPM(dataUser: payloadType): Promise<string | boolean> {
     if (!SECRET_KEY_TOKEN_SERVER) {
