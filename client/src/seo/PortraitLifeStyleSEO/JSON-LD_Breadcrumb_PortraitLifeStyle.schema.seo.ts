@@ -1,7 +1,7 @@
 import DataSEORoots from "../DataSEORoot.seo";
 import DataSEORootType from "../../types/DataSEORoot.type";
 
-import DataSEO_PortraitLifeStyles from "./DataSEO_PortraitLifeStyle.seo";
+import DataSEO_PortraitLifeStyles from "./DataSEO_PortraitLifeStyle.data.seo";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
 function JSON_LD_Breadcrumb_PortraitLifeStyle_Schema_SEO() : string {
