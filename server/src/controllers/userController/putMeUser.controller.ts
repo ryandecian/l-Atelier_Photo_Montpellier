@@ -13,6 +13,7 @@ import getOneUserById_type from "../../types/user_type/getOneUserById.type";
 
 /* Import des utils : */
 import { hashPasswordArgon_utils } from "../../utils/hashArgon.utils";
+import { createJwtTokenServerLAPM_utils, createJwtTokenClientLAPM_utils } from "../../utils/jwtTokenLAPM.utils";
 
 
 /* Modification de ses propre données utilisateurs */
@@ -62,9 +63,9 @@ const putMeUser_controller = async (req: Request, res: Response) => {
 
         /* Logique métier 5 : Réédition des token de l'utilisateur */
         // Création du token server
-        const jwtTokenServerLAPM: string | boolean = await createJwtTokenServerLAPM(dataUser[0] as payloadType);
+        const jwtTokenServerLAPM: string | boolean = await createJwtTokenServerLAPM_utils(dataUser[0]);
         // Création du token client
-        const jwtTokenClientLAPM: string | boolean = await createJwtTokenClientLAPM(dataUser[0] as payloadType);
+        const jwtTokenClientLAPM: string | boolean = await createJwtTokenClientLAPM_utils(dataUser[0]);
 
         // Vérification des clés secrète Server et Client si elles existent
         // Si l'une d'entre elles n'existe pas, on renvoie une erreur 500
