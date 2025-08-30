@@ -1,7 +1,7 @@
 import DataSEORoots from "../DataSEORoot.seo";
 import DataSEORootType from "../../types/DataSEORoot.type";
 
-import DataSEO_QuiSuisJes from "./DataSEO_QuiSuisJe.seo";
+import DataSEO_QuiSuisJes from "./DataSEO_QuiSuisJe.data.seo";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
 function JSON_LD_Person_QuiSuisJe_Schema_SEO() {
