@@ -114,7 +114,7 @@ function EditUserRoot() {
         };
 
         // Requête API
-        const { error } = await fetchAPI("PUT", "/api/users/me", body);
+        const { error } = await fetchAPI("PUT", "/users/me", body);
 
         if (error) {
             setErrorMsg(error); // affiche l'erreur si problème serveur/API
