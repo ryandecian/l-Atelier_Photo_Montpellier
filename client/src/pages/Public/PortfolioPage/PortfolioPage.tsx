@@ -2,7 +2,7 @@ import style from "../../stylePage.module.css";
 import NavRoot from "../../../components/Layout/NavRoot/NavRoot";
 import PortfolioRoot from "../../../components/Public/PortfolioRoot/PortfolioRoot";
 import FooterRoot from "../../../components/Layout/FooterRoot/FooterRoot";
-import Helmet_PortraitDuo_SEO from "../../../seo/PortraitDuoSEO/Helmet_PortraitDuo.seo";
+import Helmet_PortraitDuo_SEO from "../../../seo/PortraitDuoSEO/Helmet_PortraitDuo.helmet.seo";
 import useScrollToHash from "../../../hook/useScrollToHash";
 
 function PortfolioPage() {
