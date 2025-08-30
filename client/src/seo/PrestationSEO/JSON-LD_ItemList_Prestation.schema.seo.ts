@@ -1,7 +1,7 @@
 import DataSEORoots from "../DataSEORoot.seo";
 import DataSEORootType from "../../types/DataSEORoot.type";
 
-import DataSEO_Prestations from "./DataSEO_Prestation.seo";
+import DataSEO_Prestations from "./DataSEO_Prestation.data.seo";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
 import DataCardPrestations from "../../components/Public/PrestationRoot/DataCardPrestationRoot";
