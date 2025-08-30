@@ -4,8 +4,10 @@ import { Request, Response } from "express";
 /* Import des Middlewares : */
 
 /* Import des Repositories : */
+import getOneUser
 
 /* Import des Types : */
+import getOneUserById_type from "../../types/user_type/getOneUserById.type";
 
 /* Import des utils : */
 
@@ -15,9 +17,9 @@ const getMeUser_controller = async (req: Request, res: Response) => {
     try {
         // Logique métier 1 : Recuperer l'utilisateur connecté
         const userId = req.body.dataUser.id; // Récupérer l'ID de l'utilisateur à partir du token JWT
-        const dataUser: RowDataPacket[] = await getOneUserByIdRepository(userId);
+        const dataUser: getOneUserById_type | null = await getOneUserByIdRepository(userId);
 
-        if (dataUser.length === 0) {
+        if (!dataUser) {
             res.status(404).json({ error: "Aucun utilisateur trouvé" });
             return;
         }
