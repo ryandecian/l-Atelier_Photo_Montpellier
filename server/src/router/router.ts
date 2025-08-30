@@ -11,14 +11,13 @@ import userRouter from "./user.router";
 
 const router = Router();
 
-router.use("/user", userRouter);
+router.use("/user", userRouter); /* 2 routes fonctionnelles */
 
 /* Liste des routes ! */
 router.use("/login", loginController); // 1 route fonctionnelle
 router.use("/register", registerController); // 1 route fonctionnelle
 router.use("/resetpassword", resetPasswordController); // 1 route fonctionnelle
 router.use("/resetpassword/confirm", resetPasswordConfirmController); // 1 route fonctionnelle
-router.use("/users", usersController); // 5 routes fonctionnelles
 router.use("/logout", logoutController); // 1 route fonctionnelle
 
 export default router;
