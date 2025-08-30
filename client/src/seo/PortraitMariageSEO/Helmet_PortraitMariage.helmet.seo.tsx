@@ -1,31 +1,31 @@
 import { Helmet } from "react-helmet-async";
 import DataSEOHelmetType from "../../types/DataSEOHelmet";
 
-import DataSEORoots from "../DataSEORoot.seo";
-import DataSEO_PortraitCorporates from "./DataSEO_PortraitCorporate.seo";
+import DataSEORoots from "../DataSEORoot.data.seo";
+import DataSEO_PortraitMariages from "./DataSEO_PortraitMariage.data.seo";
 
 import DataSEORootType from "../../types/DataSEORoot.type";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
 import JSON_LD_LocalBusiness_Root_Schema_SEO from "../JSON-LD_LocalBusiness_Root.schema.seo";
-import JSON_LD_Service_PortraitCorporate_Schema_SEO from "./JSON-LD_Service_PortraitCorporate.schema.seo";
-import JSON_LD_Breadcrumb_PortraitCorporate_Schema_SEO from "./JSON-LD_Breadcrumb_PortraitCorporate.schema.seo";
+import JSON_LD_Service_PortraitMariage_Schema_SEO from "./JSON-LD_Service_PortraitMariage.schema.seo";
+import JSON_LD_Breadcrumb_PortraitMariage_Schema_SEO from "./JSON-LD_Breadcrumb_PortraitMariage.schema.seo";
 
 
-function Helmet_PortraitCorporate_SEO() {
+function Helmet_PortraitMariage_SEO() {
     const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
-    const DataSEO_PortraitCorporate: DataSEOTargetOneType = DataSEO_PortraitCorporates(); /* Récupération des données SEO de la page */
+    const DataSEO_PortraitMariage: DataSEOTargetOneType = DataSEO_PortraitMariages(); /* Récupération des données SEO de la page */
 
     const SEO: DataSEOHelmetType = {
-        title: DataSEO_PortraitCorporate.title,
-        autor: DataSEO_PortraitCorporate.autor,
-        description: DataSEO_PortraitCorporate.description,
-        url: DataSEO_PortraitCorporate.url,
-        img: DataSEO_PortraitCorporate.img_Helmet,
-        twitterUrlImg: DataSEO_PortraitCorporate.twitterUrlImg || DataSEO_PortraitCorporate.img_Helmet, // fallback
+        title: DataSEO_PortraitMariage.title,
+        autor: DataSEO_PortraitMariage.autor,
+        description: DataSEO_PortraitMariage.description,
+        url: DataSEO_PortraitMariage.url,
+        img: DataSEO_PortraitMariage.img_Helmet,
+        twitterUrlImg: DataSEO_PortraitMariage.twitterUrlImg || DataSEO_PortraitMariage.img_Helmet, // fallback
         twitterCompte: DataSEORoot.twitterCompte,
-        keywords: DataSEO_PortraitCorporate.keywords,
-        type: DataSEO_PortraitCorporate.type,
+        keywords: DataSEO_PortraitMariage.keywords,
+        type: DataSEO_PortraitMariage.type,
     };
 
     const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
@@ -37,10 +37,10 @@ function Helmet_PortraitCorporate_SEO() {
                 {JSON_LD_LocalBusiness_Root_Schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_Service_PortraitCorporate_Schema_SEO()}
+                {JSON_LD_Service_PortraitMariage_Schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_Breadcrumb_PortraitCorporate_Schema_SEO()}
+                {JSON_LD_Breadcrumb_PortraitMariage_Schema_SEO()}
             </script>
 
             {/* Langue principale du document */}
@@ -78,4 +78,4 @@ function Helmet_PortraitCorporate_SEO() {
     );
 }
 
-export default Helmet_PortraitCorporate_SEO;
+export default Helmet_PortraitMariage_SEO;

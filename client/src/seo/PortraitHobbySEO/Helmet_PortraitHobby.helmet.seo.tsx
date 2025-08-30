@@ -1,31 +1,31 @@
 import { Helmet } from "react-helmet-async";
 import DataSEOHelmetType from "../../types/DataSEOHelmet";
 
-import DataSEORoots from "../DataSEORoot.seo";
-import DataSEO_PortraitSolos from "./DataSEO_PortraitSolo.seo";
+import DataSEORoots from "../DataSEORoot.data.seo";
+import DataSEO_PortraitHobbys from "./DataSEO_PortraitHobby.data.seo";
 
 import DataSEORootType from "../../types/DataSEORoot.type";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
 import JSON_LD_LocalBusiness_Root_Schema_SEO from "../JSON-LD_LocalBusiness_Root.schema.seo";
-import JSON_LD_Service_PortraitSolo_Schema_SEO from "./JSON-LD_Service_PortraitSolo.schema.seo";
-import JSON_LD_Breadcrumb_PortraitSolo_Schema_SEO from "./JSON-LD_Breadcrumb_PortraitSolo.schema.seo";
+import JSON_LD_Service_PortraitHobby_Schema_SEO from "./JSON-LD_Service_PortraitHobby.schema.seo";
+import JSON_LD_Breadcrumb_PortraitHobby_Schema_SEO from "./JSON-LD_Breadcrumb_PortraitHobby.schema.seo";
 
 
-function Helmet_PortraitSolo_SEO() {
+function Helmet_PortraitHobby_SEO() {
     const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
-    const DataSEO_PortraitSolo: DataSEOTargetOneType = DataSEO_PortraitSolos(); /* Récupération des données SEO de la page */
+    const DataSEO_PortraitHobby: DataSEOTargetOneType = DataSEO_PortraitHobbys(); /* Récupération des données SEO de la page */
 
     const SEO: DataSEOHelmetType = {
-        title: DataSEO_PortraitSolo.title,
-        autor: DataSEO_PortraitSolo.autor,
-        description: DataSEO_PortraitSolo.description,
-        url: DataSEO_PortraitSolo.url,
-        img: DataSEO_PortraitSolo.img_Helmet,
-        twitterUrlImg: DataSEO_PortraitSolo.twitterUrlImg || DataSEO_PortraitSolo.img_Helmet, // fallback
+        title: DataSEO_PortraitHobby.title,
+        autor: DataSEO_PortraitHobby.autor,
+        description: DataSEO_PortraitHobby.description,
+        url: DataSEO_PortraitHobby.url,
+        img: DataSEO_PortraitHobby.img_Helmet,
+        twitterUrlImg: DataSEO_PortraitHobby.twitterUrlImg || DataSEO_PortraitHobby.img_Helmet, // fallback
         twitterCompte: DataSEORoot.twitterCompte,
-        keywords: DataSEO_PortraitSolo.keywords,
-        type: DataSEO_PortraitSolo.type,
+        keywords: DataSEO_PortraitHobby.keywords,
+        type: DataSEO_PortraitHobby.type,
     };
 
     const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
@@ -37,10 +37,10 @@ function Helmet_PortraitSolo_SEO() {
                 {JSON_LD_LocalBusiness_Root_Schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_Service_PortraitSolo_Schema_SEO()}
+                {JSON_LD_Service_PortraitHobby_Schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_Breadcrumb_PortraitSolo_Schema_SEO()}
+                {JSON_LD_Breadcrumb_PortraitHobby_Schema_SEO()}
             </script>
 
             {/* Langue principale du document */}
@@ -78,4 +78,4 @@ function Helmet_PortraitSolo_SEO() {
     );
 }
 
-export default Helmet_PortraitSolo_SEO;
+export default Helmet_PortraitHobby_SEO;

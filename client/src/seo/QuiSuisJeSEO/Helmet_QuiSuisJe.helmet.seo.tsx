@@ -1,31 +1,31 @@
 import { Helmet } from "react-helmet-async";
 import DataSEOHelmetType from "../../types/DataSEOHelmet";
 
-import DataSEORoots from "../DataSEORoot.seo";
-import DataSEO_Blogs from "./DataSEO_Blog.seo";
+import DataSEORoots from "../DataSEORoot.data.seo";
+import DataSEO_QuiSuisJes from "./DataSEO_QuiSuisJe.data.seo";
 
 import DataSEORootType from "../../types/DataSEORoot.type";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
 import JSON_LD_LocalBusiness_Root_Schema_SEO from "../JSON-LD_LocalBusiness_Root.schema.seo";
-import JSON_LD_Blog_Blog_Schema_SEO from "./JSON-LD_Blog_Blog.schema.seo";
-import JSON_LD_Breadcrumb_Blog_Schema_SEO from "./JSON-LD_Breadcrumb_Blog.schema.seo";
+import JSON_LD_Person_QuiSuisJe_Schema_SEO from "./JSON-LD_Person_QuiSuisJe.schema.seo";
+import JSON_LD_Breadcrumb_QuiSuisJe_Schema_SEO from "./JSON-LD_Breadcrumb_QuiSuisJe.schema.seo";
 
 
-function Helmet_Blog_SEO() {
+function Helmet_QuiSuisJe_SEO() {
     const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
-    const DataSEO_Blog: DataSEOTargetOneType = DataSEO_Blogs(); /* Récupération des données SEO de la page */
+    const DataSEO_QuiSuisJe: DataSEOTargetOneType = DataSEO_QuiSuisJes(); /* Récupération des données SEO de la page */
 
     const SEO: DataSEOHelmetType = {
-        title: DataSEO_Blog.title,
-        autor: DataSEO_Blog.autor,
-        description: DataSEO_Blog.description,
-        url: DataSEO_Blog.url,
-        img: DataSEO_Blog.img_Helmet,
-        twitterUrlImg: DataSEO_Blog.twitterUrlImg || DataSEO_Blog.img_Helmet, // fallback
+        title: DataSEO_QuiSuisJe.title,
+        autor: DataSEO_QuiSuisJe.autor,
+        description: DataSEO_QuiSuisJe.description,
+        url: DataSEO_QuiSuisJe.url,
+        img: DataSEO_QuiSuisJe.img_Helmet,
+        twitterUrlImg: DataSEO_QuiSuisJe.twitterUrlImg || DataSEO_QuiSuisJe.img_Helmet, // fallback
         twitterCompte: DataSEORoot.twitterCompte,
-        keywords: DataSEO_Blog.keywords,
-        type: DataSEO_Blog.type,
+        keywords: DataSEO_QuiSuisJe.keywords,
+        type: DataSEO_QuiSuisJe.type,
     };
 
     const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
@@ -37,10 +37,10 @@ function Helmet_Blog_SEO() {
                 {JSON_LD_LocalBusiness_Root_Schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_Blog_Blog_Schema_SEO()}
+                {JSON_LD_Person_QuiSuisJe_Schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_Breadcrumb_Blog_Schema_SEO()}
+                {JSON_LD_Breadcrumb_QuiSuisJe_Schema_SEO()}
             </script>
 
             {/* Langue principale du document */}
@@ -78,4 +78,4 @@ function Helmet_Blog_SEO() {
     );
 }
 
-export default Helmet_Blog_SEO;
+export default Helmet_QuiSuisJe_SEO;

@@ -1,7 +1,7 @@
-import DataSEORoots from "../DataSEORoot.seo";
+import DataSEORoots from "../DataSEORoot.data.seo";
 import DataSEORootType from "../../types/DataSEORoot.type";
 
-import DataSEO_Blogs from "./DataSEO_Blog.seo";
+import DataSEO_Blogs from "./DataSEO_Blog.data.seo";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
 import ListDataRouter from "../../router/router";
