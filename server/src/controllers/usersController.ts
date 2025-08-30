@@ -22,8 +22,8 @@ import { putOneUserRepository } from "../repository/putOneUserRepository";
 import payloadType from "../types/payloadType";
 
 // Import des utils
-import { hashPasswordArgonUtils } from "../utils/hashArgon.utils";
-import { createJwtTokenClientLAPM, createJwtTokenServerLAPM } from "../utils/jwtTokenLAPM.utils";
+import { hashPasswordArgon_utils } from "../utils/hashArgon.utils";
+import { createJwtTokenClientLAPM_utils, createJwtTokenServerLAPM_utils } from "../utils/jwtTokenLAPM.utils";
 
 /* Récupération de tous les utilisateurs en tant qu'admin */
 // URI : /api/users
@@ -131,6 +131,7 @@ usersController.get("/me",
 
 /* Modification de ses propre données utilisateurs */
 // URI : /api/users/me
+// Ok refacto
 usersController.put("/me",
     
     // Vérification :
@@ -160,7 +161,7 @@ usersController.put("/me",
                 /* Si un mot de passe est fourni on le hache et le met à jour */
                 if (req.body.password) {
                     // Si un mot de passe est fourni, le hacher
-                    const hashedPassword = await hashPasswordArgonUtils(req.body.password);
+                    const hashedPassword = await hashPasswordArgon_utils(req.body.password);
                     req.body.password = hashedPassword;
                 } 
 
@@ -210,9 +211,9 @@ usersController.put("/me",
             
                 /* Logique métier 5 : Réédition des token de l'utilisateur */
                     // Création du token server
-                    const jwtTokenServerLAPM: string | boolean = await createJwtTokenServerLAPM(dataUser[0] as payloadType);
+                    const jwtTokenServerLAPM: string | boolean = await createJwtTokenServerLAPM_utils(dataUser[0] as payloadType);
                     // Création du token client
-                    const jwtTokenClientLAPM: string | boolean = await createJwtTokenClientLAPM(dataUser[0] as payloadType);
+                    const jwtTokenClientLAPM: string | boolean = await createJwtTokenClientLAPM_utils(dataUser[0] as payloadType);
 
                     // Vérification des clés secrète Server et Client si elles existent
                 // Si l'une d'entre elles n'existe pas, on renvoie une erreur 500
