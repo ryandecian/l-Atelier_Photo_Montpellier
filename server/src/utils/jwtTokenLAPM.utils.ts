@@ -1,49 +1,48 @@
 import payloadType from "../types/payloadType";
-import { createDate_Number_Utils } from "./createDate.utils";
+import { createDate_Number_utils } from "./createDate.utils";
 import jwt from "jsonwebtoken";
 import { Request } from "express";
 import { ENV } from "../config/ENV.config";
 
-// import ENV from "../config/ENV.configs";
 
-// Récupération de la clé secrète Server
-const SECRET_KEY_TOKEN_SERVER: string | undefined = ENV.SECRET_KEY_TOKEN_API_SERVER;        
-// Récupération de la clé secrète Client
+/* Récupération de la clé secrète Server */
+const SECRET_KEY_TOKEN_SERVER: string | undefined = ENV.SECRET_KEY_TOKEN_API_SERVER;
+/* Récupération de la clé secrète Client */
 const SECRET_KEY_TOKEN_CLIENT: string | undefined = ENV.SECRET_KEY_TOKEN_CLIENT;
 
-async function createJwtTokenServerLAPM(dataUser: payloadType): Promise<string | boolean> {
+async function createJwtTokenServerLAPM_utils(dataUser: payloadType): Promise<string | boolean> {
     if (!SECRET_KEY_TOKEN_SERVER) {
         return false
     }
 
-    // Création des variables token
-    const expiresIn: number = 60 * 60; // 1 heure
-    const dateNow: number = await createDate_Number_Utils(); // Date actuelle en timestamp UNIX
+    /* Création des variables token */
+    const expiresIn: number = 60 * 60; /* 1 heure */
+    const dateNow: number = await createDate_Number_utils(); /* Date actuelle en timestamp UNIX */
 
     const payload_server: payloadType = {
         id: dataUser.id,
         email: dataUser.email,
         role: dataUser.role,
-        iat: dateNow, // ⏳ Date de création du token
+        iat: dateNow, /* ⏳ Date de création du token */
     }
 
-    // Création du token server
+    /* Création du token server */
     const jwtTokenServerLAPM = jwt.sign(payload_server, SECRET_KEY_TOKEN_SERVER, { expiresIn })
 
     return jwtTokenServerLAPM;
 }
 
-export { createJwtTokenServerLAPM };
+export { createJwtTokenServerLAPM_utils };
 
 
-async function createJwtTokenClientLAPM(dataUser: payloadType): Promise<string | boolean> {
+async function createJwtTokenClientLAPM_utils(dataUser: payloadType): Promise<string | boolean> {
     if (!SECRET_KEY_TOKEN_CLIENT) {
         return false
     }
 
-    // Création des variables token
-    const expiresIn: number = 60 * 60; // 1 heure
-    const dateNow: number = await createDate_Number_Utils(); // Date actuelle en timestamp UNIX
+    /* Création des variables token */
+    const expiresIn: number = 60 * 60; /* 1 heure */
+    const dateNow: number = await createDate_Number_utils(); /* Date actuelle en timestamp UNIX */
 
     const payload_client: payloadType = {
         id: dataUser.id,
@@ -53,19 +52,19 @@ async function createJwtTokenClientLAPM(dataUser: payloadType): Promise<string |
         address: dataUser.address,
         role: dataUser.role,
         date_save: dataUser.date_save,
-        iat: dateNow, // ⏳ Date de création du token
+        iat: dateNow, /* ⏳ Date de création du token */
     }
 
-    // Création du token client
+    /* Création du token client */
     const jwtTokenClientLAPM = jwt.sign(payload_client, SECRET_KEY_TOKEN_CLIENT, { expiresIn })
 
     return jwtTokenClientLAPM;
 }
 
-export { createJwtTokenClientLAPM };
+export { createJwtTokenClientLAPM_utils };
 
 
-async function verifyJwtTokenLAPM(req: Request): Promise<payloadType | boolean> {
+async function verifyJwtTokenLAPM_utils(req: Request): Promise<payloadType | boolean> {
     try {
         if (!SECRET_KEY_TOKEN_SERVER) {
             return false
@@ -84,4 +83,4 @@ async function verifyJwtTokenLAPM(req: Request): Promise<payloadType | boolean> 
     }
 }
 
-export { verifyJwtTokenLAPM };
+export { verifyJwtTokenLAPM_utils };
