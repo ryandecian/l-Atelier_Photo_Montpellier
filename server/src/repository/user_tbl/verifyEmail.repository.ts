@@ -1,7 +1,7 @@
 import usePoolConnection from "../../database/config";
 import getAllUsers_type from "../../types/user_type/getAllUsers.type";
 
-async function verifyEmailRepository(email: string): Promise<getAllUsers_type[]> {
+async function verifyEmail_repository(email: string): Promise<getAllUsers_type[]> {
     /* Vérification : l'email reçu existe t-il dans la DB ? */
     const [dataUser] = await usePoolConnection.query<getAllUsers_type[]>(
         "SELECT * FROM user WHERE email= ?",
@@ -10,4 +10,4 @@ async function verifyEmailRepository(email: string): Promise<getAllUsers_type[]>
     return dataUser;
 }
 
-export default verifyEmailRepository;
+export default verifyEmail_repository;

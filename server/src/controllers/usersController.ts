@@ -22,7 +22,7 @@ import { putOneUserRepository } from "../repository/putOneUserRepository";
 import payloadType from "../types/payloadType";
 
 // Import des utils
-import { hashPasswordArgonUtils } from "../utils/hashArgonUtils";
+import { hashPasswordArgonUtils } from "../utils/hashArgon.utils";
 import { createJwtTokenClientLAPM, createJwtTokenServerLAPM } from "../utils/jwtTokenLAPMUtils";
 
 /* Récupération de tous les utilisateurs en tant qu'admin */

@@ -15,7 +15,7 @@ import verifyEmailFalseRepository from "../repository/emailRepository";
 import InsertUserRepository from "../repository/insertUserRepository";
 
 // Impot des Outils :
-import { hashPasswordArgonUtils } from '../utils/hashArgonUtils';
+import { hashPasswordArgonUtils } from '../utils/hashArgon.utils';
 
 // URI : /api/register
 registerController.post("/", 

@@ -1,9 +1,18 @@
 /* Import des dépendances externes : */
 import { Request, Response } from "express";
+import { ResultSetHeader } from "mysql2";
 
 /* Import des Repositories : */
+import verifyEmail_repository from "../../repository/user_tbl/verifyEmail.repository";
+import { putMeUserById_repository } from "../../repository/user_tbl/putMeUserById.repository";
+import { getOneUserById_repository } from "../../repository/user_tbl/getOneUserById.repository";
 
 /* Import des Types : */
+import getAllUsers_type from "../../types/user_type/getAllUsers.type";
+import getOneUserById_type from "../../types/user_type/getOneUserById.type";
+
+/* Import des utils : */
+import { hashPasswordArgon_utils } from "../../utils/hashArgon.utils";
 
 
 /* Modification de ses propre données utilisateurs */
@@ -14,11 +23,11 @@ const putMeUser_controller = async (req: Request, res: Response) => {
         /* Vérification que l'email du formulaire est différent de celui du token */
         /* Si l'email est différent alors l'utilisateur veux volontairement modifier son email */
         if (req.body.email !== req.body.dataUser.email) {
-            const dataUserDB: RowDataPacket[] = await verifyEmailFalseRepository(req.body.email);
+            const dataUserDB: getAllUsers_type[] = await verifyEmail_repository(req.body.email);
 
             // Si l'email existe déjà dans la DB, on ne peut pas continuer.
-            if (dataUserDB.length > 0) { // Si c'est supérieur à 0 et que l'email est différent c'est que l'email existe déjà
-                res.status(409).json({ message: "Cet email est déjà utilisé. Veuillez en choisir un autre." });
+            if (dataUserDB.length > 0) { /* Si c'est supérieur à 0 et que l'email est différent c'est que l'email existe déjà */
+                res.status(409).json({ error: "Cet email est déjà utilisé. Veuillez en choisir un autre." });
                 return;
             }
         }
@@ -32,12 +41,12 @@ const putMeUser_controller = async (req: Request, res: Response) => {
         /* Si un mot de passe est fourni on le hache et le met à jour */
         if (req.body.password) {
             // Si un mot de passe est fourni, le hacher
-            const hashedPassword = await hashPasswordArgonUtils(req.body.password);
+            const hashedPassword = await hashPasswordArgon_utils(req.body.password);
             req.body.password = hashedPassword;
         }
 
         /* Logique métier 3 : Modifier l'utilisateur connecté */
-        const putDataUser: ResultSetHeader = await putUserMeRepository(req.body);
+        const putDataUser: ResultSetHeader = await putMeUserById_repository(req.body);
 
         if (putDataUser.affectedRows === 0) {
             res.status(404).json({ error: "Aucun utilisateur trouvé" });
@@ -45,8 +54,8 @@ const putMeUser_controller = async (req: Request, res: Response) => {
         }
 
         /* Logique métier 4 : Recuperer l'utilisateur connecté */
-        const dataUser: RowDataPacket[] = await getOneUserByIdRepository(req.body.dataUser.id);
-        if (dataUser.length === 0) {
+        const dataUser: getOneUserById_type | null = await getOneUserById_repository(req.body.dataUser.id);
+        if (!dataUser) {
             res.status(404).json({ error: "Aucun utilisateur trouvé" });
             return;
         }
