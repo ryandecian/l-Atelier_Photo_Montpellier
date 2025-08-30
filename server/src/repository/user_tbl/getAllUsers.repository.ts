@@ -1,6 +1,5 @@
 import usePoolConnection from "../../database/config";
-import { RowDataPacket } from "mysql2";
-import getAllUsers_type from "../../types/user/getAllUsers.type";
+import getAllUsers_type from "../../types/user_type/getAllUsers.type";
 
 async function getAllUsers_repository(): Promise<getAllUsers_type[]> {
     const [results] = await usePoolConnection.query<getAllUsers_type[]>(

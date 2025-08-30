@@ -5,7 +5,7 @@ import { Request, Response } from "express";
 import { getAllUsers_repository } from "../../repository/user/getAllUsers.repository";
 
 /* Import des Types : */
-import getAllUsers_type from "../../types/user/getAllUsers.type";
+import getAllUsers_type from "../../types/user_type/getAllUsers.type";
 
 
 /* URI : /api/users */

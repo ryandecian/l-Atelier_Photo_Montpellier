@@ -7,7 +7,7 @@ import resetPasswordController from "../controllers/resetPasswordController";
 import resetPasswordConfirmController from "../controllers/resetPasswordConfirmController";
 import usersController from "../controllers/usersController";
 import logoutController from "../controllers/logoutController"; /* Vérification ok */
-import routerUser from "./router.user";
+import routerUser from "./user.router";
 
 const router = Router();
 

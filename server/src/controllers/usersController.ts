@@ -27,6 +27,7 @@ import { createJwtTokenClientLAPM, createJwtTokenServerLAPM } from "../utils/jwt
 
 /* Récupération de tous les utilisateurs en tant qu'admin */
 // URI : /api/users
+// Ok refacto
 usersController.get("/", 
     
     // Vérification :
