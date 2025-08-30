@@ -46,7 +46,7 @@ function EditUserAdminRoot() {
                 return;
             }
 
-            const { error, data } = await fetchAPI("GET", `/api/users/${id}`);
+            const { error, data } = await fetchAPI("GET", `/users/${id}`);
             if (error) {
                 setErrorMsg(error);
                 setLoading(false);
@@ -107,7 +107,7 @@ function EditUserAdminRoot() {
             id: parseInt(id, 10),
         };
 
-        const { error } = await fetchAPI("PUT", "/api/users", body);
+        const { error } = await fetchAPI("PUT", "/user", body);
 
         if (error) {
             setErrorMsg(error);

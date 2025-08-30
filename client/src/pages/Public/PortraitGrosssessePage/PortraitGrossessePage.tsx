@@ -2,7 +2,7 @@ import style from "../../stylePage.module.css";
 import NavRoot from "../../../components/Layout/NavRoot/NavRoot";
 import PortraitGrossesseRoot from "../../../components/Public/PortraitGrossesseRoot/PortraitGrossesseRoot";
 import FooterRoot from "../../../components/Layout/FooterRoot/FooterRoot";
-import Helmet_PortraitGrossesse_SEO from "../../../seo/PortraitGrossesseSEO/Helmet_PortraitGrossesse.seo";
+import Helmet_PortraitGrossesse_SEO from "../../../seo/PortraitGrossesseSEO/Helmet_PortraitGrossesse.helmet.seo";
 import useScrollToHash from "../../../hook/useScrollToHash";
 
 function PortraitGrossessePage() {

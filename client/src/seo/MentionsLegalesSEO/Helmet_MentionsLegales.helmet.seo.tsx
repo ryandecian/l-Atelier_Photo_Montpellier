@@ -1,31 +1,31 @@
 import { Helmet } from "react-helmet-async";
-import DataSEOHelmetType from "../../../../types/DataSEOHelmet";
+import DataSEOHelmetType from "../../types/DataSEOHelmet";
 
-import DataSEORoots from "../../../DataSEORoot.seo";
-import DataSEO_Blog_20250724s from "./DataSEO_Blog_20250724.seo";
+import DataSEORoots from "../DataSEORoot.data.seo";
+import DataSEO_MentionsLegales from "./DataSEO_MentionsLegales.data.seo";
 
-import DataSEORootType from "../../../../types/DataSEORoot.type";
-import DataSEOTargetOneType from "../../../../types/DataSEOTargetOne.type";
+import DataSEORootType from "../../types/DataSEORoot.type";
+import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
-import JSON_LD_LocalBusiness_Root_Schema_SEO from "../../../JSON-LD_LocalBusiness_Root.schema.seo";
-import JSON_LD_BlogPosting_Blog_20250724_Schema_SEO from "./JSON-LD_BlogPosting_Blog_20250724.schema.seo";
-import JSON_LD_Breadcrumb_Blog_20250724_Schema_SEO from "./JSON-LD_Breadcrumb_Blog_20250724.schema.seo";
+import JSON_LD_LocalBusiness_Root_Schema_SEO from "../JSON-LD_LocalBusiness_Root.schema.seo";
+import JSON_LD_WebPage_MentionsLegales_Schema_SEO from "./JSON-LD_WebPage_MentionsLegales.schema.seo";
+import JSON_LD_Breadcrumb_MentionsLegales_Schema_SEO from "./JSON-LD_Breadcrumb_MentionsLegales.schema.seo";
 
 
-function Helmet_Blog_20250724_SEO() {
+function Helmet_MentionLegale_SEO() {
     const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
-    const DataSEO_Blog_20250724: DataSEOTargetOneType = DataSEO_Blog_20250724s(); /* Récupération des données SEO de la page */
+    const DataSEO_MentionLegale: DataSEOTargetOneType = DataSEO_MentionsLegales(); /* Récupération des données SEO de la page */
 
     const SEO: DataSEOHelmetType = {
-        title: DataSEO_Blog_20250724.title,
-        autor: DataSEO_Blog_20250724.autor,
-        description: DataSEO_Blog_20250724.description,
-        url: DataSEO_Blog_20250724.url,
-        img: DataSEO_Blog_20250724.img_Helmet,
-        twitterUrlImg: DataSEO_Blog_20250724.twitterUrlImg || DataSEO_Blog_20250724.img_Helmet, // fallback
+        title: DataSEO_MentionLegale.title,
+        autor: DataSEO_MentionLegale.autor,
+        description: DataSEO_MentionLegale.description,
+        url: DataSEO_MentionLegale.url,
+        img: DataSEO_MentionLegale.img_Helmet,
+        twitterUrlImg: DataSEO_MentionLegale.twitterUrlImg || DataSEO_MentionLegale.img_Helmet, // fallback
         twitterCompte: DataSEORoot.twitterCompte,
-        keywords: DataSEO_Blog_20250724.keywords,
-        type: DataSEO_Blog_20250724.type,
+        keywords: DataSEO_MentionLegale.keywords,
+        type: DataSEO_MentionLegale.type,
     };
 
     const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
@@ -37,10 +37,10 @@ function Helmet_Blog_20250724_SEO() {
                 {JSON_LD_LocalBusiness_Root_Schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_BlogPosting_Blog_20250724_Schema_SEO()}
+                {JSON_LD_WebPage_MentionsLegales_Schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_Breadcrumb_Blog_20250724_Schema_SEO()}
+                {JSON_LD_Breadcrumb_MentionsLegales_Schema_SEO()}
             </script>
 
             {/* Langue principale du document */}
@@ -65,7 +65,7 @@ function Helmet_Blog_20250724_SEO() {
             <meta property="og:description" content={SEO.description} />
             <meta property="og:image" content={SEO.img} />
             <meta property="og:url" content={SEO.url} />
-            <meta property="og:type" content={SEO.type.article} />
+            <meta property="og:type" content={SEO.type.website} />
             <meta property="og:locale" content="fr_FR" />
 
             {/* Twitter Cards */}
@@ -78,4 +78,4 @@ function Helmet_Blog_20250724_SEO() {
     );
 }
 
-export default Helmet_Blog_20250724_SEO;
+export default Helmet_MentionLegale_SEO;

@@ -1,7 +1,7 @@
-import DataSEORoots from "../DataSEORoot.seo";
+import DataSEORoots from "../DataSEORoot.data.seo";
 import DataSEORootType from "../../types/DataSEORoot.type";
 
-import DataSEO_Homes from "./DataSEO_Home.seo";
+import DataSEO_Homes from "./DataSEO_Home.data.seo";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
 function JSON_LD_HomePage_Home_Schema_SEO() : string {

@@ -1,31 +1,31 @@
 import { Helmet } from "react-helmet-async";
-import DataSEOHelmetType from "../../types/DataSEOHelmet";
+import DataSEOHelmetType from "../../../../types/DataSEOHelmet";
 
-import DataSEORoots from "../DataSEORoot.seo";
-import DataSEO_PortraitGrossesses from "./DataSEO_PortraitGrossesse.seo";
+import DataSEORoots from "../../../DataSEORoot.data.seo";
+import DataSEO_Blog_20250616s from "./DataSEO_Blog_20250616.data.seo";
 
-import DataSEORootType from "../../types/DataSEORoot.type";
-import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
+import DataSEORootType from "../../../../types/DataSEORoot.type";
+import DataSEOTargetOneType from "../../../../types/DataSEOTargetOne.type";
 
-import JSON_LD_LocalBusiness_Root_Schema_SEO from "../JSON-LD_LocalBusiness_Root.schema.seo";
-import JSON_LD_Service_PortraitGrossesse_Schema_SEO from "./JSON-LD_Service_PortraitGrossesse.schema.seo";
-import JSON_LD_Breadcrumb_PortraitGrossesse_Schema_SEO from "./JSON-LD_Breadcrumb_PortraitGrossesse.schema.seo";
+import JSON_LD_LocalBusiness_Root_Schema_SEO from "../../../JSON-LD_LocalBusiness_Root.schema.seo";
+import JSON_LD_BlogPosting_Blog_20250616_Schema_SEO from "./JSON-LD_BlogPosting_Blog_20250616.schema.seo";
+import JSON_LD_Breadcrumb_Blog_20250616_Schema_SEO from "./JSON-LD_Breadcrumb_Blog_20250616.schema.seo";
 
 
-function Helmet_PortraitGrossesse_SEO() {
+function Helmet_Blog_20250616_SEO() {
     const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
-    const DataSEO_PortraitGrossesse: DataSEOTargetOneType = DataSEO_PortraitGrossesses(); /* Récupération des données SEO de la page */
+    const DataSEO_Blog_20250616: DataSEOTargetOneType = DataSEO_Blog_20250616s(); /* Récupération des données SEO de la page */
 
     const SEO: DataSEOHelmetType = {
-        title: DataSEO_PortraitGrossesse.title,
-        autor: DataSEO_PortraitGrossesse.autor,
-        description: DataSEO_PortraitGrossesse.description,
-        url: DataSEO_PortraitGrossesse.url,
-        img: DataSEO_PortraitGrossesse.img_Helmet,
-        twitterUrlImg: DataSEO_PortraitGrossesse.twitterUrlImg || DataSEO_PortraitGrossesse.img_Helmet, // fallback
+        title: DataSEO_Blog_20250616.title,
+        autor: DataSEO_Blog_20250616.autor,
+        description: DataSEO_Blog_20250616.description,
+        url: DataSEO_Blog_20250616.url,
+        img: DataSEO_Blog_20250616.img_Helmet,
+        twitterUrlImg: DataSEO_Blog_20250616.twitterUrlImg || DataSEO_Blog_20250616.img_Helmet, // fallback
         twitterCompte: DataSEORoot.twitterCompte,
-        keywords: DataSEO_PortraitGrossesse.keywords,
-        type: DataSEO_PortraitGrossesse.type,
+        keywords: DataSEO_Blog_20250616.keywords,
+        type: DataSEO_Blog_20250616.type,
     };
 
     const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
@@ -37,10 +37,10 @@ function Helmet_PortraitGrossesse_SEO() {
                 {JSON_LD_LocalBusiness_Root_Schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_Service_PortraitGrossesse_Schema_SEO()}
+                {JSON_LD_BlogPosting_Blog_20250616_Schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_Breadcrumb_PortraitGrossesse_Schema_SEO()}
+                {JSON_LD_Breadcrumb_Blog_20250616_Schema_SEO()}
             </script>
 
             {/* Langue principale du document */}
@@ -65,7 +65,7 @@ function Helmet_PortraitGrossesse_SEO() {
             <meta property="og:description" content={SEO.description} />
             <meta property="og:image" content={SEO.img} />
             <meta property="og:url" content={SEO.url} />
-            <meta property="og:type" content={SEO.type.website} />
+            <meta property="og:type" content={SEO.type.article} />
             <meta property="og:locale" content="fr_FR" />
 
             {/* Twitter Cards */}
@@ -78,4 +78,4 @@ function Helmet_PortraitGrossesse_SEO() {
     );
 }
 
-export default Helmet_PortraitGrossesse_SEO;
+export default Helmet_Blog_20250616_SEO;

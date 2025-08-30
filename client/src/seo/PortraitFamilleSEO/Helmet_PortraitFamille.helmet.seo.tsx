@@ -1,31 +1,31 @@
 import { Helmet } from "react-helmet-async";
-import DataSEOHelmetType from "../../../../types/DataSEOHelmet";
+import DataSEOHelmetType from "../../types/DataSEOHelmet";
 
-import DataSEORoots from "../../../DataSEORoot.seo";
-import DataSEO_Blog_20250616s from "./DataSEO_Blog_20250616.seo";
+import DataSEORoots from "../DataSEORoot.data.seo";
+import DataSEO_PortraitFamilles from "./DataSEO_PortraitFamille.data.seo";
 
-import DataSEORootType from "../../../../types/DataSEORoot.type";
-import DataSEOTargetOneType from "../../../../types/DataSEOTargetOne.type";
+import DataSEORootType from "../../types/DataSEORoot.type";
+import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
-import JSON_LD_LocalBusiness_Root_Schema_SEO from "../../../JSON-LD_LocalBusiness_Root.schema.seo";
-import JSON_LD_BlogPosting_Blog_20250616_Schema_SEO from "./JSON-LD_BlogPosting_Blog_20250616.schema.seo";
-import JSON_LD_Breadcrumb_Blog_20250616_Schema_SEO from "./JSON-LD_Breadcrumb_Blog_20250616.schema.seo";
+import JSON_LD_LocalBusiness_Root_Schema_SEO from "../JSON-LD_LocalBusiness_Root.schema.seo";
+import JSON_LD_Service_PortraitFamille_Schema_SEO from "./JSON-LD_Service_PortraitFamille.schema.seo";
+import JSON_LD_Breadcrumb_PortraitFamille_Schema_SEO from "./JSON-LD_Breadcrumb_PortraitFamille.schema.seo";
 
 
-function Helmet_Blog_20250616_SEO() {
+function Helmet_PortraitFamille_SEO() {
     const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
-    const DataSEO_Blog_20250616: DataSEOTargetOneType = DataSEO_Blog_20250616s(); /* Récupération des données SEO de la page */
+    const DataSEO_PortraitFamille: DataSEOTargetOneType = DataSEO_PortraitFamilles(); /* Récupération des données SEO de la page */
 
     const SEO: DataSEOHelmetType = {
-        title: DataSEO_Blog_20250616.title,
-        autor: DataSEO_Blog_20250616.autor,
-        description: DataSEO_Blog_20250616.description,
-        url: DataSEO_Blog_20250616.url,
-        img: DataSEO_Blog_20250616.img_Helmet,
-        twitterUrlImg: DataSEO_Blog_20250616.twitterUrlImg || DataSEO_Blog_20250616.img_Helmet, // fallback
+        title: DataSEO_PortraitFamille.title,
+        autor: DataSEO_PortraitFamille.autor,
+        description: DataSEO_PortraitFamille.description,
+        url: DataSEO_PortraitFamille.url,
+        img: DataSEO_PortraitFamille.img_Helmet,
+        twitterUrlImg: DataSEO_PortraitFamille.twitterUrlImg || DataSEO_PortraitFamille.img_Helmet, // fallback
         twitterCompte: DataSEORoot.twitterCompte,
-        keywords: DataSEO_Blog_20250616.keywords,
-        type: DataSEO_Blog_20250616.type,
+        keywords: DataSEO_PortraitFamille.keywords,
+        type: DataSEO_PortraitFamille.type,
     };
 
     const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
@@ -37,10 +37,10 @@ function Helmet_Blog_20250616_SEO() {
                 {JSON_LD_LocalBusiness_Root_Schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_BlogPosting_Blog_20250616_Schema_SEO()}
+                {JSON_LD_Service_PortraitFamille_Schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_Breadcrumb_Blog_20250616_Schema_SEO()}
+                {JSON_LD_Breadcrumb_PortraitFamille_Schema_SEO()}
             </script>
 
             {/* Langue principale du document */}
@@ -65,7 +65,7 @@ function Helmet_Blog_20250616_SEO() {
             <meta property="og:description" content={SEO.description} />
             <meta property="og:image" content={SEO.img} />
             <meta property="og:url" content={SEO.url} />
-            <meta property="og:type" content={SEO.type.article} />
+            <meta property="og:type" content={SEO.type.website} />
             <meta property="og:locale" content="fr_FR" />
 
             {/* Twitter Cards */}
@@ -78,4 +78,4 @@ function Helmet_Blog_20250616_SEO() {
     );
 }
 
-export default Helmet_Blog_20250616_SEO;
+export default Helmet_PortraitFamille_SEO;
