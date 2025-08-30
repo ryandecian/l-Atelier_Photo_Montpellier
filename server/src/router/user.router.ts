@@ -3,6 +3,7 @@ import { Router } from "express";
 /* Import des Controllers */
 import getAllUser_controller from "../controllers/userController/getAllUser.controller";
 import getMeUser_controller from "../controllers/userController/getMeUser.controller";
+import putMeUser_controller from "../controllers/userController/putMeUser.controller";
 
 /* Import des Middlewares */
 import VerifyKeys from "../middleware/VerifyKeys/VerifyKeys";
@@ -26,5 +27,8 @@ userRouter.get("/me", Verify_JWT_Middleware,
 
 /* Modification de ses propre données utilisateurs */
 /* URI : /user/me */
+userRouter.put("/me", VerifyKeys(["firstname", "lastname", "email"]), Verify_JWT_Middleware,
+    putMeUser_controller
+);
 
 export default userRouter;
