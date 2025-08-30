@@ -7,11 +7,11 @@ import resetPasswordController from "../controllers/resetPasswordController";
 import resetPasswordConfirmController from "../controllers/resetPasswordConfirmController";
 import usersController from "../controllers/usersController";
 import logoutController from "../controllers/logoutController"; /* Vérification ok */
-import routerUser from "./user.router";
+import userRouter from "./user.router";
 
 const router = Router();
 
-router.use("/user", routerUser);
+router.use("/user", userRouter);
 
 /* Liste des routes ! */
 router.use("/login", loginController); // 1 route fonctionnelle
