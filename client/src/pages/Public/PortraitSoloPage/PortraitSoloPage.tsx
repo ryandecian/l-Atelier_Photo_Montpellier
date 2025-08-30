@@ -2,7 +2,7 @@ import style from "../../stylePage.module.css";
 import NavRoot from "../../../components/Layout/NavRoot/NavRoot";
 import PortraitSoloRoot from "../../../components/Public/PortraitSoloRoot/PortraitSoloRoot";
 import FooterRoot from "../../../components/Layout/FooterRoot/FooterRoot";
-import Helmet_PortraitSolo_SEO from "../../../seo/PortraitSoloSEO/Helmet_PortraitSolo.seo";
+import Helmet_PortraitSolo_SEO from "../../../seo/PortraitSoloSEO/Helmet_PortraitSolo.helmet.seo";
 import useScrollToHash from "../../../hook/useScrollToHash";
 
 function PortraitSoloPage() {
