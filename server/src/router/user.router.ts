@@ -4,6 +4,7 @@ import { Router } from "express";
 import getAllUser_controller from "../controllers/userController/getAllUser.controller";
 import getMeUser_controller from "../controllers/userController/getMeUser.controller";
 import putMeUser_controller from "../controllers/userController/putMeUser.controller";
+import getOneUserById_controller from "../controllers/userController/getOneUserById.controller";
 
 /* Import des Middlewares */
 import VerifyKeys from "../middleware/VerifyKeys/VerifyKeys";
@@ -33,5 +34,8 @@ userRouter.put("/me", VerifyKeys(["firstname", "lastname", "email"]), Verify_JWT
 
 /* Récupérer les données d'un utilisateur en tant qu'admin via l'id */
 /* URI : /user/:id */
+userRouter.get("/:id", Verify_JWT_Middleware, isAdmin_Middleware,
+    getOneUserById_controller
+);
 
 export default userRouter;
