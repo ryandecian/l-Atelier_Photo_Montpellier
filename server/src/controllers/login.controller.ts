@@ -65,5 +65,4 @@ const login_controller = async (req: Request, res: Response) => {
     }
 };
 
-
 export default login_controller;
