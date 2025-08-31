@@ -11,7 +11,7 @@ import userRouter from "./user.router";
 
 const router = Router();
 
-router.use("/user", userRouter); /* 4 routes fonctionnelles */
+router.use("/user", userRouter); /* 5 routes fonctionnelles */
 
 /* Liste des routes ! */
 router.use("/login", loginController); // 1 route fonctionnelle
