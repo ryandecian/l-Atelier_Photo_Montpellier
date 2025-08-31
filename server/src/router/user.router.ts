@@ -1,12 +1,12 @@
 import { Router } from "express";
 
 /* Import des Controllers */
-import getAllUser_controller from "../controllers/userController/getAllUser.controller";
-import getOneUserById_controller from "../controllers/userController/getOneUserById.controller";
-import getMeUser_controller from "../controllers/userController/getMeUser.controller";
-import putMeUser_controller from "../controllers/userController/putMeUser.controller";
-import putOneUser_controller from "../controllers/userController/putOneUser.controller";
-import deleteOneUser_controller from "../controllers/userController/deleteOneUser.controller";
+import getAllUser_controller from "../controllers/user_controller/getAllUser.controller";
+import getOneUserById_controller from "../controllers/user_controller/getOneUserById.controller";
+import getMeUser_controller from "../controllers/user_controller/getMeUser.controller";
+import putMeUser_controller from "../controllers/user_controller/putMeUser.controller";
+import putOneUser_controller from "../controllers/user_controller/putOneUser.controller";
+import deleteOneUser_controller from "../controllers/user_controller/deleteOneUser.controller";
 
 /* Import des Middlewares */
 import VerifyKeys from "../middleware/VerifyKeys/VerifyKeys";
