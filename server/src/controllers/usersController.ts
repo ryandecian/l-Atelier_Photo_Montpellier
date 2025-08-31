@@ -254,6 +254,7 @@ usersController.put("/me",
 
 /* Récupérer les données d'un utilisateur en tant qu'admin via l'id */
 // URI : /api/users/:id
+// Ok refacto
 usersController.get("/:id",
 
     // Vérification :
