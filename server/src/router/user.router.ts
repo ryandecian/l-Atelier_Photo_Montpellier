@@ -5,6 +5,7 @@ import getAllUser_controller from "../controllers/userController/getAllUser.cont
 import getOneUserById_controller from "../controllers/userController/getOneUserById.controller";
 import getMeUser_controller from "../controllers/userController/getMeUser.controller";
 import putMeUser_controller from "../controllers/userController/putMeUser.controller";
+import putOneUser_controller from "../controllers/userController/putOneUser.controller";
 
 /* Import des Middlewares */
 import VerifyKeys from "../middleware/VerifyKeys/VerifyKeys";
@@ -43,5 +44,8 @@ userRouter.put("/me", VerifyKeys(["firstname", "lastname", "email"]), Verify_JWT
 
 /* Route 5 */
 /* Modifier les données utilisateurs en tant qu'admin */
+userRouter.put("/:id", VerifyKeys(["id", "firstname", "lastname", "email"]), Verify_JWT_Middleware, isAdmin_Middleware,
+    putOneUser_controller
+);
 
 export default userRouter;
