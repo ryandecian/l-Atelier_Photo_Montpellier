@@ -6,13 +6,13 @@ import userRouter from "./user.router";
 /* Import des Controllers */
 import login_controller from "../controllers/login.controller"; /* Vérification ok */
 import logout_controller from "../controllers/logout.controller";
+import registerController from "../controllers/user_controller/register.controller";
 
 /* Import des Middlewares */
 import RouteLimiterRequestIP from "../security/middlewareSecurity/RouteLimiterRequestIP";
 import VerifyKeys from "../middleware/VerifyKeys/VerifyKeys";
 
 // Import des sub route indépendante !
-import registerController from "../controllers/registerController";
 import resetPasswordController from "../controllers/resetPasswordController";
 import resetPasswordConfirmController from "../controllers/resetPasswordConfirmController";
 
@@ -36,12 +36,16 @@ router.post("/logout",
     logout_controller
 );
 
+/* Register : Création d'un utilisateur */
+/* URI : /register */
+router.post("/register", RouteLimiterRequestIP, VerifyKeys(["firstname", "lastname", "email", "password"]),
+    register_controller
+);
 
 
 
 
 /* Liste des routes ! */
-router.use("/register", registerController); // 1 route fonctionnelle
 router.use("/resetpassword", resetPasswordController); // 1 route fonctionnelle
 router.use("/resetpassword/confirm", resetPasswordConfirmController); // 1 route fonctionnelle
 
