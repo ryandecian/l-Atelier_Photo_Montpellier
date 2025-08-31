@@ -12,14 +12,13 @@ import RouteLimiterRequestIP from "../security/middlewareSecurity/RouteLimiterRe
 import VerifyKeys from "../middleware/VerifyKeys/VerifyKeys";
 
 // Import des sub route indépendante !
-import registerController from "../controllers/registerController";
 import resetPasswordController from "../controllers/resetPasswordController";
 import resetPasswordConfirmController from "../controllers/resetPasswordConfirmController";
 
 const router = Router();
 
 /* Redirection vers un router secondaire */
-router.use("/user", userRouter); /* 6 routes fonctionnelles */
+router.use("/user", userRouter); /* 7 routes fonctionnelles */
 
 
 /* Redirection directe vers un controller */
@@ -41,7 +40,6 @@ router.post("/logout",
 
 
 /* Liste des routes ! */
-router.use("/register", registerController); // 1 route fonctionnelle
 router.use("/resetpassword", resetPasswordController); // 1 route fonctionnelle
 router.use("/resetpassword/confirm", resetPasswordConfirmController); // 1 route fonctionnelle
 
