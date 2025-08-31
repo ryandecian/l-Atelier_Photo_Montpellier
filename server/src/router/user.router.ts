@@ -1,10 +1,12 @@
 import { Router } from "express";
 
 /* Import des Controllers */
-import getAllUser_controller from "../controllers/userController/getAllUser.controller";
-import getOneUserById_controller from "../controllers/userController/getOneUserById.controller";
-import getMeUser_controller from "../controllers/userController/getMeUser.controller";
-import putMeUser_controller from "../controllers/userController/putMeUser.controller";
+import getAllUser_controller from "../controllers/user_controller/getAllUser.controller";
+import getOneUserById_controller from "../controllers/user_controller/getOneUserById.controller";
+import getMeUser_controller from "../controllers/user_controller/getMeUser.controller";
+import putMeUser_controller from "../controllers/user_controller/putMeUser.controller";
+import putOneUser_controller from "../controllers/user_controller/putOneUser.controller";
+import deleteOneUser_controller from "../controllers/user_controller/deleteOneUser.controller";
 
 /* Import des Middlewares */
 import VerifyKeys from "../middleware/VerifyKeys/VerifyKeys";
@@ -43,5 +45,15 @@ userRouter.put("/me", VerifyKeys(["firstname", "lastname", "email"]), Verify_JWT
 
 /* Route 5 */
 /* Modifier les données utilisateurs en tant qu'admin */
+userRouter.put("/:id", VerifyKeys(["id", "firstname", "lastname", "email"]), Verify_JWT_Middleware, isAdmin_Middleware,
+    putOneUser_controller
+);
+
+/* Route 6 */
+/* Suppression d'un utilisateur en tant qu'admin */
+/* URI : /user */
+userRouter.delete("/", VerifyKeys(["id"]), Verify_JWT_Middleware, isAdmin_Middleware,
+    deleteOneUser_controller
+);
 
 export default userRouter;

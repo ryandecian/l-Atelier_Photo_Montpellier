@@ -1,23 +1,48 @@
 import { Router } from "express";
 
+/* Import des routers secondaires */
+import userRouter from "./user.router";
+
+/* Import des Controllers */
+import login_controller from "../controllers/login.controller"; /* Vérification ok */
+import logout_controller from "../controllers/logout.controller";
+
+/* Import des Middlewares */
+import RouteLimiterRequestIP from "../security/middlewareSecurity/RouteLimiterRequestIP";
+import VerifyKeys from "../middleware/VerifyKeys/VerifyKeys";
+
 // Import des sub route indépendante !
-import loginController from "../controllers/loginController"; /* Vérification ok */
 import registerController from "../controllers/registerController";
 import resetPasswordController from "../controllers/resetPasswordController";
 import resetPasswordConfirmController from "../controllers/resetPasswordConfirmController";
-import usersController from "../controllers/usersController";
-import logoutController from "../controllers/logoutController"; /* Vérification ok */
-import userRouter from "./user.router";
 
 const router = Router();
 
-router.use("/user", userRouter); /* 4 routes fonctionnelles */
+/* Redirection vers un router secondaire */
+router.use("/user", userRouter); /* 6 routes fonctionnelles */
+
+
+/* Redirection directe vers un controller */
+
+/* Login : Connexion de l'utilisateur */
+/* URI : /login */
+router.get("/login", RouteLimiterRequestIP, VerifyKeys(["email", "password"]),
+    login_controller
+);
+
+/* Déconnexion : Déconnexion de l'utilisateur */
+/* URI : /logout */
+router.post("/logout",
+    logout_controller
+);
+
+
+
+
 
 /* Liste des routes ! */
-router.use("/login", loginController); // 1 route fonctionnelle
 router.use("/register", registerController); // 1 route fonctionnelle
 router.use("/resetpassword", resetPasswordController); // 1 route fonctionnelle
 router.use("/resetpassword/confirm", resetPasswordConfirmController); // 1 route fonctionnelle
-router.use("/logout", logoutController); // 1 route fonctionnelle
 
 export default router;
