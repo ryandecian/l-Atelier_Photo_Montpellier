@@ -21,6 +21,7 @@ const router = Router();
 /* Redirection vers un router secondaire */
 router.use("/user", userRouter); /* 6 routes fonctionnelles */
 
+
 /* Redirection directe vers un controller */
 
 /* Login : Connexion de l'utilisateur */

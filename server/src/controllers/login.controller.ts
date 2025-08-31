@@ -12,14 +12,8 @@ import getAllUsers_type from "../types/user_type/getAllUsers.type";
 import { verifyPasswordArgon_utils } from "../utils/hashArgon.utils";
 import { createJwtTokenServerLAPM_utils, createJwtTokenClientLAPM_utils } from "../utils/jwtTokenLAPM.utils";
 
-
-
-// Import des Types :
-import payloadType from "../types/payloadType";
-
-
-
-// URI : /api/login
+/* Login : Connexion de l'utilisateur */
+/* URI : /login */
 const login_controller = async (req: Request, res: Response) => {
     try {
         /* Logique métier 1 : Vérification si l'email existe */
@@ -44,7 +38,7 @@ const login_controller = async (req: Request, res: Response) => {
         // Création du token client
         const jwtTokenClientLAPM: string | boolean = await createJwtTokenClientLAPM_utils(dataUser[0]);
 
-        // Vérification des clés secrète Server et Client si elles existent
+        // Vérification des tokens Server et Client si elles existent
         // Si l'une d'entre elles n'existe pas, on renvoie une erreur 500
         if (!jwtTokenServerLAPM || !jwtTokenClientLAPM) {
             res.status(500).json({ message: "Erreur interne serveur." });
@@ -66,7 +60,7 @@ const login_controller = async (req: Request, res: Response) => {
         return;
     }
     catch (error) {
-        res.status(500).json({ message: "Erreur interne serveur." });
+        res.status(500).json({ error: "Erreur interne serveur." });
         return;
     }
 };
