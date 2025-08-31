@@ -8,7 +8,7 @@ interface getAllUsers_type extends RowDataPacket {
     password: string;
     address: string;
     role: string;
-    date_save: Date;
+    date_save: string;
 };
 
 export default getAllUsers_type;
