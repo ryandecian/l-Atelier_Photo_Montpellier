@@ -313,6 +313,7 @@ usersController.get("/:id",
 
 /* Modifier les données utilisateurs en tant qu'admin */
 // URI : /api/users
+// Refacto ok
 usersController.put("/",
     
     // Vérification :

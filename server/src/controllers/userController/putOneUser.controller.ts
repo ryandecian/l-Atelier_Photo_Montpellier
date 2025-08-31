@@ -11,7 +11,6 @@ import { getOneUserById_repository } from "../../repository/user_tbl/getOneUserB
 import getAllUsers_type from "../../types/user_type/getAllUsers.type";
 import getOneUserById_type from "../../types/user_type/getOneUserById.type";
 
-/* Import des utils : */
 
 /* Modifier les données utilisateurs en tant qu'admin */
 /* URI : /user */
