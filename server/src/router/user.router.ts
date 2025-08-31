@@ -6,6 +6,7 @@ import getOneUserById_controller from "../controllers/userController/getOneUserB
 import getMeUser_controller from "../controllers/userController/getMeUser.controller";
 import putMeUser_controller from "../controllers/userController/putMeUser.controller";
 import putOneUser_controller from "../controllers/userController/putOneUser.controller";
+import deleteOneUser_controller from "../controllers/userController/deleteOneUser.controller";
 
 /* Import des Middlewares */
 import VerifyKeys from "../middleware/VerifyKeys/VerifyKeys";
@@ -46,6 +47,13 @@ userRouter.put("/me", VerifyKeys(["firstname", "lastname", "email"]), Verify_JWT
 /* Modifier les données utilisateurs en tant qu'admin */
 userRouter.put("/:id", VerifyKeys(["id", "firstname", "lastname", "email"]), Verify_JWT_Middleware, isAdmin_Middleware,
     putOneUser_controller
+);
+
+/* Route 6 */
+/* Suppression d'un utilisateur en tant qu'admin */
+/* URI : /user */
+userRouter.delete("/", VerifyKeys(["id"]), Verify_JWT_Middleware, isAdmin_Middleware,
+    deleteOneUser_controller
 );
 
 export default userRouter;
