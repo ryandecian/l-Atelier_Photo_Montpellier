@@ -7,11 +7,13 @@ import getMeUser_controller from "../controllers/user_controller/getMeUser.contr
 import putMeUser_controller from "../controllers/user_controller/putMeUser.controller";
 import putOneUser_controller from "../controllers/user_controller/putOneUser.controller";
 import deleteOneUser_controller from "../controllers/user_controller/deleteOneUser.controller";
+import register_controller from "../controllers/user_controller/register.controller";
 
 /* Import des Middlewares */
 import VerifyKeys from "../middleware/VerifyKeys/VerifyKeys";
 import Verify_JWT_Middleware from "../middleware/JWT/Verify_JWT_Middleware";
 import isAdmin_Middleware from "../middleware/isAdmin/isAdmin_Middleware";
+import RouteLimiterRequestIP from "../security/middlewareSecurity/RouteLimiterRequestIP";
 
 const userRouter = Router();
 
@@ -54,6 +56,13 @@ userRouter.put("/:id", VerifyKeys(["id", "firstname", "lastname", "email"]), Ver
 /* URI : /user */
 userRouter.delete("/", VerifyKeys(["id"]), Verify_JWT_Middleware, isAdmin_Middleware,
     deleteOneUser_controller
+);
+
+/* Route 7 */
+/* Register : Création d'un utilisateur */
+/* URI : /register */
+userRouter.post("/register", RouteLimiterRequestIP, VerifyKeys(["firstname", "lastname", "email", "password"]),
+    register_controller
 );
 
 export default userRouter;
