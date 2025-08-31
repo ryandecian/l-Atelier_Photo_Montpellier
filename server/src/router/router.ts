@@ -5,6 +5,7 @@ import userRouter from "./user.router";
 
 /* Import des Controllers */
 import login_controller from "../controllers/login.controller"; /* Vérification ok */
+import logout_controller from "../controllers/logout.controller";
 
 /* Import des Middlewares */
 import RouteLimiterRequestIP from "../security/middlewareSecurity/RouteLimiterRequestIP";
@@ -14,7 +15,6 @@ import VerifyKeys from "../middleware/VerifyKeys/VerifyKeys";
 import registerController from "../controllers/registerController";
 import resetPasswordController from "../controllers/resetPasswordController";
 import resetPasswordConfirmController from "../controllers/resetPasswordConfirmController";
-import logoutController from "../controllers/logoutController"; /* Vérification ok */
 
 const router = Router();
 
@@ -30,6 +30,11 @@ router.get("/login", RouteLimiterRequestIP, VerifyKeys(["email", "password"]),
     login_controller
 );
 
+/* Déconnexion : Déconnexion de l'utilisateur */
+/* URI : /logout */
+router.post("/logout",
+    logout_controller
+);
 
 
 
@@ -39,6 +44,5 @@ router.get("/login", RouteLimiterRequestIP, VerifyKeys(["email", "password"]),
 router.use("/register", registerController); // 1 route fonctionnelle
 router.use("/resetpassword", resetPasswordController); // 1 route fonctionnelle
 router.use("/resetpassword/confirm", resetPasswordConfirmController); // 1 route fonctionnelle
-router.use("/logout", logoutController); // 1 route fonctionnelle
 
 export default router;
