@@ -31,4 +31,7 @@ userRouter.put("/me", VerifyKeys(["firstname", "lastname", "email"]), Verify_JWT
     putMeUser_controller
 );
 
+/* Récupérer les données d'un utilisateur en tant qu'admin via l'id */
+/* URI : /user/:id */
+
 export default userRouter;
