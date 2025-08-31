@@ -1,8 +1,14 @@
-import payloadType from "../types/payloadType";
-import { createDate_Number_utils } from "./createDate.utils";
-import jwt from "jsonwebtoken";
+/* Import des dépendances externes : */
 import { Request } from "express";
 import { ENV } from "../config/ENV.config";
+import jwt from "jsonwebtoken";
+
+/* Import des Types : */
+import getAllUsers_type from "../types/user_type/getAllUsers.type";
+import payloadType from "../types/payloadType";
+
+/* Import des utils : */
+import { createDate_Number_utils } from "./createDate.utils";
 
 
 /* Récupération de la clé secrète Server */
@@ -10,7 +16,7 @@ const SECRET_KEY_TOKEN_SERVER: string | undefined = ENV.SECRET_KEY_TOKEN_API_SER
 /* Récupération de la clé secrète Client */
 const SECRET_KEY_TOKEN_CLIENT: string | undefined = ENV.SECRET_KEY_TOKEN_CLIENT;
 
-async function createJwtTokenServerLAPM_utils(dataUser: payloadType): Promise<string | boolean> {
+async function createJwtTokenServerLAPM_utils(dataUser: getAllUsers_type): Promise<string | boolean> {
     if (!SECRET_KEY_TOKEN_SERVER) {
         return false
     }
@@ -35,7 +41,7 @@ async function createJwtTokenServerLAPM_utils(dataUser: payloadType): Promise<st
 export { createJwtTokenServerLAPM_utils };
 
 
-async function createJwtTokenClientLAPM_utils(dataUser: payloadType): Promise<string | boolean> {
+async function createJwtTokenClientLAPM_utils(dataUser: getAllUsers_type): Promise<string | boolean> {
     if (!SECRET_KEY_TOKEN_CLIENT) {
         return false
     }
