@@ -2,6 +2,7 @@ import { Router } from "express";
 
 /* Import des Controllers */
 import postResetPassword_controller from "../controllers/reset_password_controller/postResetPassword.controller";
+import deleteUseResetPassword_controller from "../controllers/reset_password_controller/deleteUseResetPassword.controller";
 
 /* Import des Middlewares */
 import RouteLimiterRequestIP from "../security/middlewareSecurity/RouteLimiterRequestIP";
@@ -14,6 +15,13 @@ const resetPasswordRouter = Router();
 /* URI : /reset-password */
 resetPasswordRouter.post("/", RouteLimiterRequestIP, VerifyKeys(["email"]), 
     postResetPassword_controller
+);
+
+/* Route 2 */
+/* Réinitialisation du mot de passe : utilisation du token et enregistrement du nouveau mot de passe */
+/* URI : /reset-password */
+resetPasswordRouter.post("/", RouteLimiterRequestIP, VerifyKeys(["token", "newPassword"]), 
+    deleteUseResetPassword_controller
 );
 
 export default resetPasswordRouter;
