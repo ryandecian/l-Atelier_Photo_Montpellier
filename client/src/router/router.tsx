@@ -200,7 +200,12 @@ const ListDataRouter: RouterItemsType[] = [
     {
         path: "/reset-password/confirm",
         element: <ResetPasswordConfirmPage />,
-    }
+    },
+    /* {ListDataRouter[31].path} */
+    {
+        path: "/register",
+        element: <RegisterPage />,
+    },
 ]
 
 export default ListDataRouter;

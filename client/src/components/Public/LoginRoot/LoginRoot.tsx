@@ -78,13 +78,16 @@ function LoginRoot() {
                     required
                 />
 
-                {/* ✅ Lien mot de passe oublié */}
+                <button type="submit" className={css.Button}>Se connecter</button>
+                {error && <p className={css.error}>{error}</p>}
+
+                <Link to={ListDataRouter[29].path} className={css.linkReset}>
+                    Créer un compte ?
+                </Link>
+                
                 <Link to={ListDataRouter[29].path} className={css.linkReset}>
                     Mot de passe oublié ?
                 </Link>
-
-                <button type="submit" className={css.Button}>Se connecter</button>
-                {error && <p className={css.error}>{error}</p>}
             </form>
         </section>
     );
