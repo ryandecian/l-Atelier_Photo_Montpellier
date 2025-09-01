@@ -9,7 +9,7 @@ import { ENV } from "../../config/ENV.config";
 import verifyEmail_repository from "../../repository/user_tbl/verifyEmail.repository";
 import { insertTokenResetPassword_repository } from "../../repository/reset_password_tbl/insertTokenResetPassword.repository";
 import { getAllTokenResetPassword_repository } from "../../repository/reset_password_tbl/getAllTokenResetPassword.repository";
-import { deleteVariousTokenReset_repository } from "../../repository/reset_password_tbl/deleteTokenResetPassword.repository";
+import { deleteVariousTokenReset_repository } from "../../repository/reset_password_tbl/deleteVariousTokenResetPassword.repository";
 
 /* Import des Services : */
 import sendOneMailer_service from "../../services/mailer/sendOneMailer.service";
