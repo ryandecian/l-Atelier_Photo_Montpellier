@@ -1,7 +1,7 @@
-import usePoolConnection from "../database/config";
+import usePoolConnection from "../../database/config";
 import { FieldPacket, ResultSetHeader } from "mysql2";
 
-async function updateNewPasswordUserRepository(id: number, password: string): Promise<ResultSetHeader> {
+async function putOneUserPasswordById_repository(id: number, password: string): Promise<ResultSetHeader> {
     const [results]: [ResultSetHeader, FieldPacket[]] = await usePoolConnection.query<ResultSetHeader>(
         "UPDATE user SET password = ? WHERE id = ?",
         [password, id],
@@ -9,4 +9,4 @@ async function updateNewPasswordUserRepository(id: number, password: string): Pr
     return results
 }
 
-export default updateNewPasswordUserRepository;
+export { putOneUserPasswordById_repository };
