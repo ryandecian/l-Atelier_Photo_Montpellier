@@ -9,4 +9,4 @@ async function putOneUserPasswordById_repository(id: number, password: string): 
     return results
 }
 
-export default putOneUserPasswordById_repository;
+export { putOneUserPasswordById_repository };

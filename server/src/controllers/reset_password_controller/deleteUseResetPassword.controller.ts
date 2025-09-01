@@ -7,7 +7,8 @@ import { ResultSetHeader } from "mysql2";
 /* Import des Repositories : */
 import { getOneTokenReset_repository } from "../../repository/reset_password_tbl/getOneTokenResetPassword.repository";
 import { getOneUserById_repository } from "../../repository/user_tbl/getOneUserById.repository";
-import putOneUserPasswordById_repository from "../../repository/user_tbl/putOneUserPasswordById.repository";
+import { putOneUserPasswordById_repository } from "../../repository/user_tbl/putOneUserPasswordById.repository";
+import { deleteOneTokenResetPassword_repository } from "../../repository/reset_password_tbl/deleteOneTokenResetPassword.repository";
 
 /* Import des Services : */
 
@@ -63,7 +64,7 @@ const deleteUseResetPassword_controller = async (req: Request, res: Response) =>
         }
 
         /* Logique métier 5 : Suppression du token dans la DB */
-        const deleteToken: number = await deletOneTokenResetRepository(req.body.token);
+        const deleteToken: number = await deleteOneTokenResetPassword_repository(req.body.token);
 
         /* Vérification si le token a bien été supprimé */
         if (deleteToken === 0) {

@@ -43,7 +43,7 @@ async function sendOneMailer_service(mailOptions: MailOptions_type): Promise<Sen
 
         /* Création de l'objet filtré pour l'envoi */
         const filterMailOption: MailOptions_type = {
-            from: MAIL_SERVER_ADMIN,
+            from: `"LAPM - l'Atelier Photo Montpellier" <${MAIL_SERVER_ADMIN}>`,
             to: mailOptions.to,
             subject: mailOptions.subject.trim(),
         };
