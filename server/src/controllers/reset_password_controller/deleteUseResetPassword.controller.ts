@@ -1,22 +1,29 @@
 /* Import des dépendances externes : */
 import { Request, Response } from "express";
+import { ResultSetHeader } from "mysql2";
 
 /* Import des composants de config : */
 
 /* Import des Repositories : */
+import { getOneTokenReset_repository } from "../../repository/reset_password_tbl/getOneTokenResetPassword.repository";
+import { getOneUserById_repository } from "../../repository/user_tbl/getOneUserById.repository";
+import putOneUserPasswordById_repository from "../../repository/user_tbl/putOneUserPasswordById.repository";
 
 /* Import des Services : */
 
 /* Import des Types : */
+import getAllTokenResetPassword_type from "../../types/reset_password_type/getAllTokenResetPassword.type";
+import getOneUserById_type from "../../types/user_type/getOneUserById.type";
 
 /* Import des utils */
+import { hashPasswordArgon_utils } from "../../utils/hashArgon.utils";
 
 /* Réinitialisation du mot de passe : utilisation du token et enregistrement du nouveau mot de passe */
 /* URI : /reset-password */
 const deleteUseResetPassword_controller = async (req: Request, res: Response) => {
     try {
         /* Logique métier 1 : Récupération et vérification du token dans la DB */
-        const tokenDB: RowDataPacket[] = await getOneTokenResetRepository(req.body.token);
+        const tokenDB: getAllTokenResetPassword_type[] = await getOneTokenReset_repository(req.body.token);
 
         /* Vérification si le token existe en DB */
         if (tokenDB.length === 0) {
@@ -35,19 +42,19 @@ const deleteUseResetPassword_controller = async (req: Request, res: Response) =>
         }
 
         /* Logique métier 2 : Récupération de l'utilisateur en DB */
-        const dataUser: RowDataPacket[] = await getOneUserByIdRepository(tokenDB[0].user_id);
+        const dataUser: getOneUserById_type | null = await getOneUserById_repository(tokenDB[0].user_id);
 
         /* Vérification si l'utilisateur existe en DB ou que la requête a fonctionné */
-        if (dataUser.length === 0) {
+        if (!dataUser) {
             res.status(404).json({ error: "Utilisateur introuvable." });
             return;
         }
 
         /* Logique métier 3 : Hachage du nouveau mot de passe utilisateur */
-        const hash: string = await hashPasswordArgonUtils(req.body.newPassword);
+        const hash: string = await hashPasswordArgon_utils(req.body.newPassword);
 
         /* Logique métier 4 : Enregistrement du nouveau mot de passe dans la DB */
-        const updatePassword: ResultSetHeader = await updateNewPasswordUserRepository(dataUser[0].id, hash);
+        const updatePassword: ResultSetHeader = await putOneUserPasswordById_repository(dataUser[0].id, hash);
 
         /* Vérification si le mot de passe a bien été mis à jour */
         if (updatePassword.affectedRows === 0) {
