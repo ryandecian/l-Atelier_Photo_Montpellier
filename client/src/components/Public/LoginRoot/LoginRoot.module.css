@@ -24,8 +24,7 @@
     color: #1976d2;
     text-decoration: underline;
     cursor: pointer;
-    margin-top: -0.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0rem;
 }
 .linkReset:hover {
     color: #125aa2; /* teinte plus foncée au survol */
