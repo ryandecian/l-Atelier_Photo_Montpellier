@@ -3,7 +3,7 @@ import { Request, Response } from "express";
 import { RowDataPacket } from "mysql2";
 
 /* Import des Repositories : */
-import verifyEmail_repository from "../repository/user_tbl/verifyEmail.repository";
+import verifyEmailByEmail_repository from "../repository/user_tbl/verifyEmailByEmail.repository";
 
 /* Import des Types : */
 import getAllUsers_type from "../types/user_type/getAllUsers.type";
@@ -17,7 +17,7 @@ import { createJwtTokenServerLAPM_utils, createJwtTokenClientLAPM_utils } from "
 const login_controller = async (req: Request, res: Response) => {
     try {
         /* Logique métier 1 : Vérification si l'email existe */
-        const dataUser: getAllUsers_type[] = await verifyEmail_repository(req.body.email);
+        const dataUser: getAllUsers_type[] = await verifyEmailByEmail_repository(req.body.email);
 
         if (dataUser.length === 0) {
             res.status(404).json({ error: "Email ou mot de passe incorrect" });
