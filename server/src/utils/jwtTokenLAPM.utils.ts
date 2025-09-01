@@ -4,7 +4,7 @@ import { ENV } from "../config/ENV.config";
 import jwt from "jsonwebtoken";
 
 /* Import des Types : */
-import getAllUsers_type from "../types/user_type/getAllUsers.type";
+import getOneUserById_type from "../types/user_type/getOneUserById.type";
 import payloadJwtTokenServerLAPM_type from "../types/payload_JWT_type/payloadJwtTokenServerLAPM.type";
 import payloadJwtTokenClientLAPM_type from "../types/payload_JWT_type/payloadJwtTokenClientLAPM.type";
 
@@ -17,7 +17,7 @@ const SECRET_KEY_TOKEN_SERVER: string | undefined = ENV.SECRET_KEY_TOKEN_API_SER
 /* Récupération de la clé secrète Client */
 const SECRET_KEY_TOKEN_CLIENT: string | undefined = ENV.SECRET_KEY_TOKEN_CLIENT;
 
-async function createJwtTokenServerLAPM_utils(dataUser: getAllUsers_type): Promise<string | boolean> {
+async function createJwtTokenServerLAPM_utils(dataUser: getOneUserById_type): Promise<string | boolean> {
     if (!SECRET_KEY_TOKEN_SERVER) {
         return false
     }
@@ -42,7 +42,7 @@ async function createJwtTokenServerLAPM_utils(dataUser: getAllUsers_type): Promi
 export { createJwtTokenServerLAPM_utils };
 
 
-async function createJwtTokenClientLAPM_utils(dataUser: getAllUsers_type): Promise<string | boolean> {
+async function createJwtTokenClientLAPM_utils(dataUser: getOneUserById_type): Promise<string | boolean> {
     if (!SECRET_KEY_TOKEN_CLIENT) {
         return false
     }

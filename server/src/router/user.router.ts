@@ -47,7 +47,7 @@ userRouter.put("/me", VerifyKeys(["firstname", "lastname", "email"]), Verify_JWT
 
 /* Route 5 */
 /* Modifier les données utilisateurs en tant qu'admin */
-userRouter.put("/:id", VerifyKeys(["id", "firstname", "lastname", "email"]), Verify_JWT_Middleware, isAdmin_Middleware,
+userRouter.put("/", VerifyKeys(["id", "firstname", "lastname", "email"]), Verify_JWT_Middleware, isAdmin_Middleware,
     putOneUser_controller
 );
 

@@ -24,7 +24,7 @@ router.use("/reset-password", resetPasswordRouter); /* 2 routes fonctionnelles *
 
 /* Login : Connexion de l'utilisateur */
 /* URI : /login */
-router.get("/login", RouteLimiterRequestIP, VerifyKeys(["email", "password"]),
+router.post("/login", RouteLimiterRequestIP, VerifyKeys(["email", "password"]),
     login_controller
 );
 
