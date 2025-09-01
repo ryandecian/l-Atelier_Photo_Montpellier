@@ -9,7 +9,7 @@ import { ENV } from "../../config/ENV.config";
 import verifyEmail_repository from "../../repository/user_tbl/verifyEmail.repository";
 import { insertTokenResetPassword_repository } from "../../repository/reset_password_tbl/insertTokenResetPassword.repository";
 import { getAllTokenResetPassword_repository } from "../../repository/reset_password_tbl/getAllTokenResetPassword.repository";
-import { deleteVariousTokenReset_repository } from "../../repository/reset_password_tbl/deleteTokenResetPassword.repository";
+import { deleteVariousTokenReset_repository } from "../../repository/reset_password_tbl/deleteVariousTokenResetPassword.repository";
 
 /* Import des Services : */
 import sendOneMailer_service from "../../services/mailer/sendOneMailer.service";
@@ -25,7 +25,7 @@ import { createExpireDate_utils } from "../../utils/createDate.utils";
 
 /* Réinitialisation du mot de passe : enregistrement d'un token de réinitialisation */
 /* URI : /reset-password */
-const resetPassword_controller = async (req: Request, res: Response) => {
+const postResetPassword_controller = async (req: Request, res: Response) => {
     try {
         /* Logique métier 1 : Vérification si l'email existe */
         const dataUser: getAllUsers_type[] = await verifyEmail_repository(req.body.email);
@@ -86,7 +86,6 @@ const resetPassword_controller = async (req: Request, res: Response) => {
         }
         catch (error) {
             res.status(500).json({ error: "Erreur lors de l'envoi de l'email." });
-            const sendMailerServiceError = (error as Error).message; /* Récupération du message d'erreur */
             return;
         }
 
@@ -122,4 +121,4 @@ const resetPassword_controller = async (req: Request, res: Response) => {
     }
 };
 
-export default resetPassword_controller;
+export default postResetPassword_controller;

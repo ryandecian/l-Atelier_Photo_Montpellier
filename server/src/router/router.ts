@@ -12,14 +12,13 @@ import logout_controller from "../controllers/logout.controller";
 import RouteLimiterRequestIP from "../security/middlewareSecurity/RouteLimiterRequestIP";
 import VerifyKeys from "../middleware/VerifyKeys/VerifyKeys";
 
-/* Import des sub route indépendante ! */
-import resetPasswordConfirmController from "../controllers/resetPasswordConfirmController";
-
 const router = Router();
+
 
 /* Redirection vers un router secondaire */
 router.use("/user", userRouter); /* 7 routes fonctionnelles */
-router.use("/reset-password", resetPasswordRouter); /* 1 route fonctionnelle */
+router.use("/reset-password", resetPasswordRouter); /* 2 routes fonctionnelles */
+
 
 /* Redirection directe vers un controller */
 
@@ -34,14 +33,5 @@ router.get("/login", RouteLimiterRequestIP, VerifyKeys(["email", "password"]),
 router.post("/logout",
     logout_controller
 );
-
-/* Réinitialisation du mot de passe : enregistrement d'un token de réinitialisation */
-/* URI : /reset-password */
-
-
-
-
-/* Liste des routes ! */
-router.use("/resetpassword/confirm", resetPasswordConfirmController); // 1 route fonctionnelle
 
 export default router;
