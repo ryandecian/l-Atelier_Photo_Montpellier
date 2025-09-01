@@ -54,7 +54,6 @@ const deleteUseResetPassword_controller = async (req: Request, res: Response) =>
 
         /* Logique métier 3 : Hachage du nouveau mot de passe utilisateur */
         const hash: string = await hashPasswordArgon_utils(req.body.password);
-        console.info("Logique métier 3 ok");
 
         /* Logique métier 4 : Enregistrement du nouveau mot de passe dans la DB */
         const updatePassword: ResultSetHeader = await putOneUserPasswordById_repository(dataUser.id, hash);
