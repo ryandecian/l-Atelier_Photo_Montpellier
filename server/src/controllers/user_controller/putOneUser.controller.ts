@@ -1,9 +1,9 @@
 /* Import des dépendances externes : */
 import { Request, Response } from "express";
-import { RowDataPacket, ResultSetHeader } from "mysql2";
+import { ResultSetHeader } from "mysql2";
 
 /* Import des Repositories : */
-import verifyEmail_repository from "../../repository/user_tbl/verifyEmail.repository";
+import verifyEmailByEmail_repository from "../../repository/user_tbl/verifyEmailByEmail.repository";
 import { putOneUser_repository } from "../../repository/user_tbl/putOneUserById.repository";
 import { getOneUserById_repository } from "../../repository/user_tbl/getOneUserById.repository";
 
@@ -17,7 +17,7 @@ import getOneUserById_type from "../../types/user_type/getOneUserById.type";
 const putOneUser_controller = async (req: Request, res: Response) => {
     try {
         /* Logique métier 1 : Vérification si l'email existe */
-        const dataUserDB: getAllUsers_type[] = await verifyEmail_repository(req.body.email);
+        const dataUserDB: getAllUsers_type[] = await verifyEmailByEmail_repository(req.body.email);
 
         // Si l'email existe déjà dans la DB, on ne peut pas continuer.
         if (dataUserDB.length > 0) { // Si c'est supérieur à 0, c'est que l'email existe déjà

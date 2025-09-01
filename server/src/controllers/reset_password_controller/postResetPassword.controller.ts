@@ -6,7 +6,7 @@ import { ResultSetHeader } from "mysql2";
 import { ENV } from "../../config/ENV.config";
 
 /* Import des Repositories : */
-import verifyEmail_repository from "../../repository/user_tbl/verifyEmail.repository";
+import verifyEmail_repository from "../../repository/user_tbl/verifyEmailByEmail.repository";
 import { insertTokenResetPassword_repository } from "../../repository/reset_password_tbl/insertTokenResetPassword.repository";
 import { getAllTokenResetPassword_repository } from "../../repository/reset_password_tbl/getAllTokenResetPassword.repository";
 import { deleteVariousTokenReset_repository } from "../../repository/reset_password_tbl/deleteVariousTokenResetPassword.repository";

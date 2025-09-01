@@ -3,7 +3,7 @@ import { Request, Response } from "express";
 import { ResultSetHeader } from "mysql2";
 
 /* Import des Repositories : */
-import verifyEmail_repository from "../../repository/user_tbl/verifyEmail.repository";
+import verifyEmailByEmail_repository from "../../repository/user_tbl/verifyEmailByEmail.repository";
 import { putMeUserById_repository } from "../../repository/user_tbl/putMeUserById.repository";
 import { getOneUserById_repository } from "../../repository/user_tbl/getOneUserById.repository";
 
@@ -24,7 +24,7 @@ const putMeUser_controller = async (req: Request, res: Response) => {
         /* Vérification que l'email du formulaire est différent de celui du token */
         /* Si l'email est différent alors l'utilisateur veux volontairement modifier son email */
         if (req.body.email !== req.body.dataUser.email) {
-            const dataUserDB: getAllUsers_type[] = await verifyEmail_repository(req.body.email);
+            const dataUserDB: getAllUsers_type[] = await verifyEmailByEmail_repository(req.body.email);
 
             // Si l'email existe déjà dans la DB, on ne peut pas continuer.
             if (dataUserDB.length > 0) { /* Si c'est supérieur à 0 et que l'email est différent c'est que l'email existe déjà */
