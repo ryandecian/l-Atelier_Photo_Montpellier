@@ -2,7 +2,7 @@ import style from "../../../stylePage.module.css";
 import NavRoot from "../../../../components/Layout/NavRoot/NavRoot";
 import Blog_20250601_Root from "../../../../components/Public/BlogRoot/ListeBlogRoot/Blog_20250601_Root/Blog_20250601_Root";
 import FooterRoot from "../../../../components/Layout/FooterRoot/FooterRoot";
-import Helmet_Blog_20250601_SEO from "../../../../seo/BlogSEO/ListeBlogRootSEO/Blog_20250601/Helmet_Blog_20250601.seo";
+import Helmet_Blog_20250601_SEO from "../../../../seo/BlogSEO/ListeBlogRootSEO/Blog_20250601/Helmet_Blog_20250601.helmet.seo";
 import useScrollToHash from "../../../../hook/useScrollToHash";
 
 function Blog_20250601_Page() {

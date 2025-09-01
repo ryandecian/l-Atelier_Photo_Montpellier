@@ -24,7 +24,7 @@ function AllUserSystemeRoot() {
     /** Récupération de tous les utilisateurs à l’affichage de la page */
     useEffect(() => {
         async function fetchUsers() {
-            const { error, data } = await fetchAPI("GET", "/api/users");
+            const { error, data } = await fetchAPI("GET", "/user");
 
             if (error) {
                 setError(error);

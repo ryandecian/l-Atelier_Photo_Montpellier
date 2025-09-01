@@ -6,7 +6,7 @@ function useLogout() {
 
     const logout = async () => {
         localStorage.removeItem("jwtTokenClientLAPM");
-        await fetchAPI("POST", "/api/logout");
+        await fetchAPI("POST", "/logout");
         navigate("/login");
     };
 

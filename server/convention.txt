@@ -1,0 +1,4 @@
+Les réponse JSON serveur doivents être soit : 
+- message : 
+- error : 
+- data : 

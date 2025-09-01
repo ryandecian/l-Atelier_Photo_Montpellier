@@ -1,21 +1,37 @@
-import express from "express";
+import { Router } from "express";
 
-// Import des sub route indépendante !
-import loginController from "../controllers/loginController"; /* Vérification ok */
-import registerController from "../controllers/registerController";
-import resetPasswordController from "../controllers/resetPasswordController";
-import resetPasswordConfirmController from "../controllers/resetPasswordConfirmController";
-import usersController from "../controllers/usersController";
-import logoutController from "../controllers/logoutController"; /* Vérification ok */
+/* Import des routers secondaires */
+import userRouter from "./user.router";
+import resetPasswordRouter from "./reset_password.router";
 
-const router = express.Router();
+/* Import des Controllers */
+import login_controller from "../controllers/login.controller"; /* Vérification ok */
+import logout_controller from "../controllers/logout.controller";
 
-/* Liste des routes ! */
-router.use("/login", loginController); // 1 route fonctionnelle
-router.use("/register", registerController); // 1 route fonctionnelle
-router.use("/resetpassword", resetPasswordController); // 1 route fonctionnelle
-router.use("/resetpassword/confirm", resetPasswordConfirmController); // 1 route fonctionnelle
-router.use("/users", usersController); // 5 routes fonctionnelles
-router.use("/logout", logoutController); // 1 route fonctionnelle
+/* Import des Middlewares */
+import RouteLimiterRequestIP from "../security/middlewareSecurity/RouteLimiterRequestIP";
+import VerifyKeys from "../middleware/VerifyKeys/VerifyKeys";
+
+const router = Router();
+
+
+/* Redirection vers un router secondaire */
+router.use("/user", userRouter); /* 7 routes fonctionnelles */
+router.use("/reset-password", resetPasswordRouter); /* 2 routes fonctionnelles */
+
+
+/* Redirection directe vers un controller */
+
+/* Login : Connexion de l'utilisateur */
+/* URI : /login */
+router.post("/login", RouteLimiterRequestIP, VerifyKeys(["email", "password"]),
+    login_controller
+);
+
+/* Déconnexion : Déconnexion de l'utilisateur */
+/* URI : /logout */
+router.post("/logout",
+    logout_controller
+);
 
 export default router;
