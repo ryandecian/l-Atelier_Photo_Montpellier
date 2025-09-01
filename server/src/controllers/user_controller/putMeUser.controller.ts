@@ -32,6 +32,7 @@ const putMeUser_controller = async (req: Request, res: Response) => {
                 return;
             }
         }
+        console.info("Logique metier 1")
 
         /* Logique métier 2 : Vérifier s'il y a une demande de modification de mot de passe */
         /* Si password est vide ou seulement des espaces, on l’enlève */
@@ -45,6 +46,7 @@ const putMeUser_controller = async (req: Request, res: Response) => {
             const hashedPassword = await hashPasswordArgon_utils(req.body.password);
             req.body.password = hashedPassword;
         }
+        console.info("Logique metier 2")
 
         /* Logique métier 3 : Modifier l'utilisateur connecté */
         const putDataUser: ResultSetHeader = await putMeUserById_repository(req.body);
@@ -53,6 +55,7 @@ const putMeUser_controller = async (req: Request, res: Response) => {
             res.status(404).json({ error: "Aucun utilisateur trouvé" });
             return;
         }
+        console.info("Logique metier 3")
 
         /* Logique métier 4 : Recuperer l'utilisateur connecté */
         const dataUser: getOneUserById_type | null = await getOneUserById_repository(req.body.dataUser.id);
@@ -60,12 +63,13 @@ const putMeUser_controller = async (req: Request, res: Response) => {
             res.status(404).json({ error: "Aucun utilisateur trouvé" });
             return;
         }
+        console.info("Logique metier 4", "datauser :", dataUser);
 
         /* Logique métier 5 : Réédition des token de l'utilisateur */
         // Création du token server
-        const jwtTokenServerLAPM: string | boolean = await createJwtTokenServerLAPM_utils(dataUser[0]);
+        const jwtTokenServerLAPM: string | boolean = await createJwtTokenServerLAPM_utils(dataUser);
         // Création du token client
-        const jwtTokenClientLAPM: string | boolean = await createJwtTokenClientLAPM_utils(dataUser[0]);
+        const jwtTokenClientLAPM: string | boolean = await createJwtTokenClientLAPM_utils(dataUser);
 
         // Vérification des clés secrète Server et Client si elles existent
         // Si l'une d'entre elles n'existe pas, on renvoie une erreur 500
@@ -74,6 +78,7 @@ const putMeUser_controller = async (req: Request, res: Response) => {
             console.error("Erreur dans la création des tokens");
             return;
         }
+        console.info("Logique metier 5")
 
         /* Logique métier 6 : Envois des données de l'utilisateur */
         res.status(200)
@@ -95,6 +100,5 @@ const putMeUser_controller = async (req: Request, res: Response) => {
         return;
     }
 };
-
 
 export default putMeUser_controller;
