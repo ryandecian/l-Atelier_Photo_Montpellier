@@ -25,7 +25,7 @@ import { createExpireDate_utils } from "../../utils/createDate.utils";
 
 /* Réinitialisation du mot de passe : enregistrement d'un token de réinitialisation */
 /* URI : /reset-password */
-const resetPassword_controller = async (req: Request, res: Response) => {
+const postResetPassword_controller = async (req: Request, res: Response) => {
     try {
         /* Logique métier 1 : Vérification si l'email existe */
         const dataUser: getAllUsers_type[] = await verifyEmail_repository(req.body.email);
@@ -122,4 +122,4 @@ const resetPassword_controller = async (req: Request, res: Response) => {
     }
 };
 
-export default resetPassword_controller;
+export default postResetPassword_controller;
