@@ -9,4 +9,4 @@ async function insertTokenResetPassword_repository(userId: number, token: string
     return results;
 }
 
-export default insertTokenResetPassword_repository;
+export { insertTokenResetPassword_repository };

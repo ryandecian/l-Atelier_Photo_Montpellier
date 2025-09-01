@@ -1,4 +1,4 @@
-type MailOptionsType = {
+type MailOptions_type = {
     from?: string;
     to: string;
     subject: string;
@@ -6,4 +6,4 @@ type MailOptionsType = {
     html?: string;
 };
 
-export default MailOptionsType;
+export default MailOptions_type;

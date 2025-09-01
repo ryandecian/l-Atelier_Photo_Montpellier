@@ -2,6 +2,7 @@ import { Router } from "express";
 
 /* Import des routers secondaires */
 import userRouter from "./user.router";
+import resetPasswordRouter from "./reset_password.router";
 
 /* Import des Controllers */
 import login_controller from "../controllers/login.controller"; /* Vérification ok */
@@ -11,15 +12,14 @@ import logout_controller from "../controllers/logout.controller";
 import RouteLimiterRequestIP from "../security/middlewareSecurity/RouteLimiterRequestIP";
 import VerifyKeys from "../middleware/VerifyKeys/VerifyKeys";
 
-// Import des sub route indépendante !
-import resetPasswordController from "../controllers/resetPasswordController";
+/* Import des sub route indépendante ! */
 import resetPasswordConfirmController from "../controllers/resetPasswordConfirmController";
 
 const router = Router();
 
 /* Redirection vers un router secondaire */
 router.use("/user", userRouter); /* 7 routes fonctionnelles */
-
+router.use("/reset-password", resetPasswordRouter); /* 1 route fonctionnelle */
 
 /* Redirection directe vers un controller */
 
@@ -42,7 +42,6 @@ router.post("/logout",
 
 
 /* Liste des routes ! */
-router.use("/resetpassword", resetPasswordController); // 1 route fonctionnelle
 router.use("/resetpassword/confirm", resetPasswordConfirmController); // 1 route fonctionnelle
 
 export default router;

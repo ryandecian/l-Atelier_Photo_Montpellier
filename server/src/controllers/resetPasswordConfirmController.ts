@@ -14,7 +14,7 @@ import { getOneTokenResetRepository, deletOneTokenResetRepository } from '../rep
 import { getOneUserByIdRepository } from '../repository/getUserRepository';
 
 // Import des Services :
-import sendMailerService from '../services/mailer/sendMailerService';
+import sendMailerService from '../services/mailer/sendOneMailer.service';
 
 // Import des Types :
 

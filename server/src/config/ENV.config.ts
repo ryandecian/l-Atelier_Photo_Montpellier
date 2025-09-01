@@ -80,3 +80,12 @@ function ENV_SAFE(key: keyof typeof ENV): string  {
 }
 
 export {ENV_SAFE};
+
+/**
+ * Documentation : 
+ * 
+ * Pour utiliser ce composant il faut faire comme ceci : 
+ * ENV_SAVE("Variable_cible")
+ * 
+ * Cela garantie une variable existante
+ */
