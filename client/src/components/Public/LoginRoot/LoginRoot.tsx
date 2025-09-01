@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { jwtDecode } from "jwt-decode";
 import css from "./LoginRoot.module.css";
 import DataUserType from "../../../types/dataUser.type";
+import ListDataRouter from "../../../router/router";
 
 function LoginRoot() {
     const [email, setEmail] = useState("");
@@ -76,6 +77,11 @@ function LoginRoot() {
                     onChange={(e) => setPassword(e.target.value)}
                     required
                 />
+
+                {/* ✅ Lien mot de passe oublié */}
+                <Link to={ListDataRouter[29].path} className={css.linkReset}>
+                    Mot de passe oublié ?
+                </Link>
 
                 <button type="submit" className={css.Button}>Se connecter</button>
                 {error && <p className={css.error}>{error}</p>}
