@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { jwtDecode } from "jwt-decode";
 import css from "./LoginRoot.module.css";
 import DataUserType from "../../../types/dataUser.type";
@@ -76,6 +76,11 @@ function LoginRoot() {
                     onChange={(e) => setPassword(e.target.value)}
                     required
                 />
+
+                {/* ✅ Lien mot de passe oublié */}
+                <Link to="/reset-password" className={css.linkReset}>
+                    Mot de passe oublié ?
+                </Link>
 
                 <button type="submit" className={css.Button}>Se connecter</button>
                 {error && <p className={css.error}>{error}</p>}
