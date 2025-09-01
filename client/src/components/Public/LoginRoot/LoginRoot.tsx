@@ -81,7 +81,7 @@ function LoginRoot() {
                 <button type="submit" className={css.Button}>Se connecter</button>
                 {error && <p className={css.error}>{error}</p>}
 
-                <Link to={ListDataRouter[29].path} className={css.linkReset}>
+                <Link to={ListDataRouter[31].path} className={css.linkReset}>
                     Créer un compte ?
                 </Link>
                 
