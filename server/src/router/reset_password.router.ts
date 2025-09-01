@@ -19,8 +19,8 @@ resetPasswordRouter.post("/", RouteLimiterRequestIP, VerifyKeys(["email"]),
 
 /* Route 2 */
 /* Réinitialisation du mot de passe : utilisation du token et enregistrement du nouveau mot de passe */
-/* URI : /reset-password/confirme */
-resetPasswordRouter.post("/confirme", RouteLimiterRequestIP, VerifyKeys(["token", "newPassword"]), 
+/* URI : /reset-password/confirm */
+resetPasswordRouter.post("/confirm", RouteLimiterRequestIP, VerifyKeys(["token", "password"]), 
     deleteUseResetPassword_controller
 );
 
