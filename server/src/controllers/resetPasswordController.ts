@@ -11,7 +11,7 @@ import VerifyKeys from '../middleware/VerifyKeys/VerifyKeys';
 
 // Import des Repositories :
 import VerifyEmailTrueRepository from "../repository/emailRepository";
-import insertTokenResetRepository from "../repository/insertTokenResetRepository";
+import insertTokenResetRepository from "../repository/reset_password_tbl/insertTokenResetPassword.repository";
 import {getTokenResetRepository, deleteTokenResetRepository} from "../repository/resetTokenRegulator";
 
 // Import des Services :
@@ -21,7 +21,7 @@ import sendMailerService from "../services/mailer/sendMailerService";
 import MailOptionsType from "../types/mailOptionsType";
 
 // Import des Outils :
-import { createCryptoUtils } from "../utils/cryptoUtils";
+import { createCryptoUtils } from "../utils/createCryptoToken.utils";
 import { createExpireDateUtils } from "../utils/createDate.utils";
 
 // URI : /api/resetpassword

@@ -35,6 +35,8 @@ router.post("/logout",
     logout_controller
 );
 
+/* Réinitialisation du mot de passe : enregistrement d'un token de réinitialisation */
+/* URI : /reset-password */
 
 
 
