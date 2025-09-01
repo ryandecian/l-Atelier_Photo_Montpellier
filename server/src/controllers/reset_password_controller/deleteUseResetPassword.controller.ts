@@ -21,7 +21,7 @@ import getOneUserById_type from "../../types/user_type/getOneUserById.type";
 import { hashPasswordArgon_utils } from "../../utils/hashArgon.utils";
 
 /* Réinitialisation du mot de passe : utilisation du token et enregistrement du nouveau mot de passe */
-/* URI : /reset-password */
+/* URI : /reset-password/confirme */
 const deleteUseResetPassword_controller = async (req: Request, res: Response) => {
     try {
         /* Logique métier 1 : Récupération et vérification du token dans la DB */
