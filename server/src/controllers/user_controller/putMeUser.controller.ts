@@ -71,6 +71,7 @@ const putMeUser_controller = async (req: Request, res: Response) => {
         // Si l'une d'entre elles n'existe pas, on renvoie une erreur 500
         if (!jwtTokenServerLAPM || !jwtTokenClientLAPM) {
             res.status(500).json({ error: "Erreur interne serveur." });
+            console.error("Erreur dans la création des tokens");
             return;
         }
 
@@ -90,6 +91,7 @@ const putMeUser_controller = async (req: Request, res: Response) => {
     }
     catch (error) {
         res.status(500).json({ error: "Erreur interne serveur inconnue." });
+        console.error("Erreur interne serveur dans le controller putMeUser : ", error);
         return;
     }
 };
