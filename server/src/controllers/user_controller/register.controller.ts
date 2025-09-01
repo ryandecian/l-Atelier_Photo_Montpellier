@@ -6,11 +6,11 @@ import { ResultSetHeader } from "mysql2";
 import verifyEmail_repository from "../../repository/user_tbl/verifyEmail.repository";
 import insertOneUser_repository from "../../repository/user_tbl/insertOneUser.repository";
 
-/* Import des utils */
-import { hashPasswordArgon_utils } from "../../utils/hashArgon.utils";
-
 /* Import des Types : */
 import getAllUsers_type from "../../types/user_type/getAllUsers.type";
+
+/* Import des utils */
+import { hashPasswordArgon_utils } from "../../utils/hashArgon.utils";
 
 
 /* Register : Création d'un utilisateur */
