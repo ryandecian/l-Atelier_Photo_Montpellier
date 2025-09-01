@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 import path from 'path';
 import fs from 'fs';
-import EnvironnementType from '../types/environnement.config.type';
+import environnement_type from '../types/environnement.config.type';
 import chalk from 'chalk';
 
 /**
@@ -10,7 +10,7 @@ import chalk from 'chalk';
  * NODE_ENV est une variable d'environnement du docker-compose.yml qui indique l'environnement d'exécution (développement, production, etc.).
  * Si elle n'est pas définie, on utilise "development" par défaut.
  */
-const VerifENV = (process.env.NODE_ENV || "development") as EnvironnementType;
+const VerifENV = (process.env.NODE_ENV || "development") as environnement_type;
 const envDevPath: string = path.resolve(__dirname, `../../.env.${VerifENV}`);
 
 if (VerifENV === "development") {
