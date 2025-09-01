@@ -3,6 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import { jwtDecode } from "jwt-decode";
 import css from "./LoginRoot.module.css";
 import DataUserType from "../../../types/dataUser.type";
+import ListDataRouter from "../../../router/router";
 
 function LoginRoot() {
     const [email, setEmail] = useState("");
@@ -78,7 +79,7 @@ function LoginRoot() {
                 />
 
                 {/* ✅ Lien mot de passe oublié */}
-                <Link to="/reset-password" className={css.linkReset}>
+                <Link to={ListDataRouter[29].path} className={css.linkReset}>
                     Mot de passe oublié ?
                 </Link>
 
