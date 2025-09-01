@@ -54,10 +54,11 @@ const deleteUseResetPassword_controller = async (req: Request, res: Response) =>
 
         /* Logique métier 3 : Hachage du nouveau mot de passe utilisateur */
         const hash: string = await hashPasswordArgon_utils(req.body.password);
+        console.info("Logique métier 3 ok");
 
         /* Logique métier 4 : Enregistrement du nouveau mot de passe dans la DB */
-        const updatePassword: ResultSetHeader = await putOneUserPasswordById_repository(dataUser[0].id, hash);
-
+        const updatePassword: ResultSetHeader = await putOneUserPasswordById_repository(dataUser.id, hash);
+        
         /* Vérification si le mot de passe a bien été mis à jour */
         if (updatePassword.affectedRows === 0) {
             res.status(500).json({ error: "Erreur lors de la mise à jour du mot de passe." });
@@ -76,11 +77,11 @@ const deleteUseResetPassword_controller = async (req: Request, res: Response) =>
         /* Logique métier 6 : Envoi d'un email de confirmation à l'utilisateur */
         try {
             const mailOptions = {
-                to: dataUser[0].email,
+                to: dataUser.email,
                 subject: "Confirmation de réinitialisation de mot de passe",
                 html: `
                     <h1>Réinitialisation de mot de passe</h1>
-                    <p>Bonjour ${dataUser[0].firstname},</p>
+                    <p>Bonjour ${dataUser.firstname},</p>
                     <p>Votre mot de passe a été réinitialisé avec succès.</p>
                     <p>Si vous n'êtes pas à l'origine de cette demande, veuillez contacter notre support.</p>
                     <p>Cordialement,</p>
@@ -88,7 +89,7 @@ const deleteUseResetPassword_controller = async (req: Request, res: Response) =>
                 `,
                 text: `
                     Réinitialisation de mot de passe
-                    Bonjour ${dataUser[0].firstname},
+                    Bonjour ${dataUser.firstname},
                     Votre mot de passe a été réinitialisé avec succès.
                     Si vous n'êtes pas à l'origine de cette demande, veuillez contacter notre support.
                     Cordialement,
