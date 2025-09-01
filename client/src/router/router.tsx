@@ -30,6 +30,7 @@ import PortraitFamillePage from "../pages/Public/PortraitFamillePage/PortraitFam
 import PrestationPage from "../pages/Public/PrestationPage/PrestationPage";
 import QuiSuisJePage from "../pages/Public/QuiSuisJePage/QuiSuisJePage";
 import ResetPasswordPage from "../pages/Public/ResetPasswordPage/ResetPasswordPage";
+import ResetPasswordConfirmPage from "../pages/Public/ResetPasswordConfirmPage/ResetPasswordConfirmPage";
 
 /**
  * Utilisation : 
@@ -198,7 +199,7 @@ const ListDataRouter: RouterItemsType[] = [
     /* {ListDataRouter[30].path} */
     {
         path: "/reset-password/confirm",
-        element: <ResetPasswordPage />,
+        element: <ResetPasswordConfirmPage />,
     }
 ]
 
