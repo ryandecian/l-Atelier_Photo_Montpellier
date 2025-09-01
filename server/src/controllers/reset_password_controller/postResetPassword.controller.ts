@@ -65,7 +65,7 @@ const postResetPassword_controller = async (req: Request, res: Response) => {
             return;
         }
 
-        const linkResetPassword: string = `${ENV.VITE_DOMAIN_CLIENT}/reset-password?token=${token}`;
+        const linkResetPassword: string = `${ENV.VITE_DOMAIN_CLIENT}/reset-password/confirm?token=${token}`;
 
         /* Logique métier 5 : Envoi de l'email de réinitialisation */
         const mailOptions: MailOptions_type = {
