@@ -194,6 +194,11 @@ const ListDataRouter: RouterItemsType[] = [
     {
         path: "/reset-password",
         element: <ResetPasswordPage />,
+    },
+    /* {ListDataRouter[30].path} */
+    {
+        path: "/reset-password/confirm",
+        element: <ResetPasswordPage />,
     }
 ]
 
