@@ -11,6 +11,7 @@ import { putOneUserPasswordById_repository } from "../../repository/user_tbl/put
 import { deleteOneTokenResetPassword_repository } from "../../repository/reset_password_tbl/deleteOneTokenResetPassword.repository";
 
 /* Import des Services : */
+import sendOneMailer_service from "../../services/mailer/sendOneMailer.service";
 
 /* Import des Types : */
 import getAllTokenResetPassword_type from "../../types/reset_password_type/getAllTokenResetPassword.type";
@@ -85,13 +86,20 @@ const deleteUseResetPassword_controller = async (req: Request, res: Response) =>
                     <p>Cordialement,</p>
                     <p>L'Atelier Photo Montpellier</p>
                 `,
+                text: `
+                    Réinitialisation de mot de passe
+                    Bonjour ${dataUser[0].firstname},
+                    Votre mot de passe a été réinitialisé avec succès.
+                    Si vous n'êtes pas à l'origine de cette demande, veuillez contacter notre support.
+                    Cordialement,
+                    L'Atelier Photo Montpellier
+                `
             };
 
-            await sendMailerService(mailOptions);
+            await sendOneMailer_service(mailOptions);
         }
         catch (error) {
             res.status(500).json({ error: "Erreur lors de l'envoi de l'email." });
-            const sendMailerServiceError = (error as Error).message; /* On récupère le message d'erreur de la fonction sendMailerService */
             return;
         }
 
@@ -100,7 +108,7 @@ const deleteUseResetPassword_controller = async (req: Request, res: Response) =>
         return;
     }
     catch (error) {
-        res.status(500).json({ error: "Erreur interne du serveur." });
+        res.status(500).json({ error: "Erreur interne du serveur inconnue." });
     }
 };
 

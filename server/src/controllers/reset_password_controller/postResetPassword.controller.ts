@@ -86,7 +86,6 @@ const postResetPassword_controller = async (req: Request, res: Response) => {
         }
         catch (error) {
             res.status(500).json({ error: "Erreur lors de l'envoi de l'email." });
-            const sendMailerServiceError = (error as Error).message; /* Récupération du message d'erreur */
             return;
         }
 
