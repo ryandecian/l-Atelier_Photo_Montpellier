@@ -1,7 +1,7 @@
 import { Router } from "express";
 
 /* Import des Controllers */
-import getAllAlbum_controller from "../controllers/album_controller/getAllAlbum.controller";
+import getAllAlbums_controller from "../controllers/album_controller/getAllAlbums.controller";
 
 /* Import des Middlewares */
 
@@ -11,7 +11,7 @@ const albumRouter = Router();
 /* Récupération de tous les albums */
 /* URI : /album */
 albumRouter.get("/", 
-    getAllAlbum_controller
+    getAllAlbums_controller
 );
 
 export default albumRouter;
