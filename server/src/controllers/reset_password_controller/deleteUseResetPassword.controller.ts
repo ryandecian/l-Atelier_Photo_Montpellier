@@ -42,7 +42,6 @@ const deleteUseResetPassword_controller = async (req: Request, res: Response) =>
             res.status(403).json({ error: "Token expiré." });
             return;
         }
-        console.info("Logique métier 1 ok");
 
         /* Logique métier 2 : Récupération de l'utilisateur en DB */
         const dataUser: getOneUserById_type | null = await getOneUserById_repository(tokenDB[0].user_id);
@@ -52,7 +51,6 @@ const deleteUseResetPassword_controller = async (req: Request, res: Response) =>
             res.status(404).json({ error: "Utilisateur introuvable." });
             return;
         }
-        console.info("Logique métier 2 ok");
 
         /* Logique métier 3 : Hachage du nouveau mot de passe utilisateur */
         const hash: string = await hashPasswordArgon_utils(req.body.password);
@@ -66,7 +64,6 @@ const deleteUseResetPassword_controller = async (req: Request, res: Response) =>
             res.status(500).json({ error: "Erreur lors de la mise à jour du mot de passe." });
             return;
         }
-        console.info("Logique métier 4 ok");
 
         /* Logique métier 5 : Suppression du token dans la DB */
         const deleteToken: number = await deleteOneTokenResetPassword_repository(req.body.token);
@@ -76,7 +73,6 @@ const deleteUseResetPassword_controller = async (req: Request, res: Response) =>
             res.status(500).json({ error: "Erreur lors de la suppression du token." });
             return;
         }
-        console.info("Logique métier 5 ok");
 
         /* Logique métier 6 : Envoi d'un email de confirmation à l'utilisateur */
         try {
@@ -107,7 +103,6 @@ const deleteUseResetPassword_controller = async (req: Request, res: Response) =>
             res.status(500).json({ error: "Erreur lors de l'envoi de l'email." });
             return;
         }
-        console.info("Logique métier 6 ok");
 
         /* Logique métier 7 : Envoi de la réponse au client */
         res.status(200).json({ message: "Mot de passe réinitialisé avec succès." });
