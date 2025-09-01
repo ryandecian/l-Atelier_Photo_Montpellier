@@ -21,7 +21,6 @@ async function createJwtTokenServerLAPM_utils(dataUser: getOneUserById_type): Pr
     if (!SECRET_KEY_TOKEN_SERVER) {
         return false
     }
-    console.info(dataUser)
 
     /* Création des variables token */
     const expiresIn: number = 60 * 60; /* 1 heure */
