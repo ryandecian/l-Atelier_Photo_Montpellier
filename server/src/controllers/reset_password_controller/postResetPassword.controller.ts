@@ -108,7 +108,7 @@ const postResetPassword_controller = async (req: Request, res: Response) => {
         if (deleteTokenReset === 0) { /* Si rien à supprimer → retourne undefined → pas d'erreur bloquante */
             /* Même s'il y a une erreur à ce stade, on renvoie une réponse de succès */
             console.error("Erreur lors de la suppression des tokens expirés.");
-            res.status(200).json({ message: "Email de réinitialisation envoyé." });
+            res.status(200).json({ message: "Un email de réinitialisation envoyé." });
             return;
         }
 

@@ -29,6 +29,7 @@ import PortraitSoloPage from "../pages/Public/PortraitSoloPage/PortraitSoloPage"
 import PortraitFamillePage from "../pages/Public/PortraitFamillePage/PortraitFamillePage";
 import PrestationPage from "../pages/Public/PrestationPage/PrestationPage";
 import QuiSuisJePage from "../pages/Public/QuiSuisJePage/QuiSuisJePage";
+import ResetPasswordPage from "../pages/Public/ResetPasswordPage/ResetPasswordPage";
 
 /**
  * Utilisation : 
@@ -188,6 +189,11 @@ const ListDataRouter: RouterItemsType[] = [
     {
         path: "/admin/all-user-systeme/edit-user/:id",
         element: <EditUserAdminPage />,
+    },
+    /* {ListDataRouter[29].path} */
+    {
+        path: "/reset-password",
+        element: <ResetPasswordPage />,
     }
 ]
 
