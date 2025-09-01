@@ -46,15 +46,16 @@ function EditUserAdminRoot() {
                 return;
             }
 
-            const { error, data } = await fetchAPI("GET", `/api/users/${id}`);
+            const { error, data } = await fetchAPI("GET", `/user/${id}`);
             if (error) {
                 setErrorMsg(error);
                 setLoading(false);
                 return;
             }
 
-            if (Array.isArray(data?.data) && data.data.length > 0) {
-                const user = data.data[0] as DataUserType;
+            if (data?.data) {
+                const user = data.data as DataUserType;
+
                 setOriginalUser(user);
                 setForm({
                     firstname: user.firstname || "",
@@ -107,7 +108,7 @@ function EditUserAdminRoot() {
             id: parseInt(id, 10),
         };
 
-        const { error } = await fetchAPI("PUT", "/api/users", body);
+        const { error } = await fetchAPI("PUT", "/user", body);
 
         if (error) {
             setErrorMsg(error);
@@ -129,7 +130,7 @@ function EditUserAdminRoot() {
         setSaving(true);
         setErrorMsg(null);
 
-        const { error } = await fetchAPI("DELETE", "/api/users", { id: parseInt(id, 10) });
+        const { error } = await fetchAPI("DELETE", "/user", { id: parseInt(id, 10) });
 
         if (error) {
             setErrorMsg(error);

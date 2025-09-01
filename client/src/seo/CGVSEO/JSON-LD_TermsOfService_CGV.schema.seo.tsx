@@ -1,7 +1,7 @@
-import DataSEORoots from "../DataSEORoot.seo";
+import DataSEORoots from "../DataSEORoot.data.seo";
 import DataSEORootType from "../../types/DataSEORoot.type";
 
-import DataSEO_CGVs from "./DataSEO_CGV.seo";
+import DataSEO_CGVs from "./DataSEO_CGV.data.seo";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
 function JSON_LD_TermsOfService_CGV_Schema_SEO() : string {

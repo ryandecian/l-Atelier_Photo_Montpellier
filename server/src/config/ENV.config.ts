@@ -57,7 +57,7 @@ export {ENV};
  * Documentation
  * 
  * Pour utiliser ce composant il faut importer ENV puis lancer une vérification
- * pour savoir si la variable cible n'est existe bien et éliminer le possible undefined
+ * pour savoir si la variable cible existe bien et éliminer le possible undefined
  * 
  * Exemple avec if : 
  * 
@@ -80,3 +80,12 @@ function ENV_SAFE(key: keyof typeof ENV): string  {
 }
 
 export {ENV_SAFE};
+
+/**
+ * Documentation : 
+ * 
+ * Pour utiliser ce composant il faut faire comme ceci : 
+ * ENV_SAVE("Variable_cible")
+ * 
+ * Cela garantie une variable existante
+ */

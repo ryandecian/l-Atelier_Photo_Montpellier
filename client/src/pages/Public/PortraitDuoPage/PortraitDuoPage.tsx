@@ -2,7 +2,7 @@ import style from "../../stylePage.module.css";
 import NavRoot from "../../../components/Layout/NavRoot/NavRoot";
 import PortraitDuoRoot from "../../../components/Public/PortraitDuoRoot/PortraitDuoRoot";
 import FooterRoot from "../../../components/Layout/FooterRoot/FooterRoot";
-import Helmet_PortraitDuo_SEO from "../../../seo/PortraitDuoSEO/Helmet_PortraitDuo.seo";
+import Helmet_PortraitDuo_SEO from "../../../seo/PortraitDuoSEO/Helmet_PortraitDuo.helmet.seo";
 import useScrollToHash from "../../../hook/useScrollToHash";
 
 function PortraitDuoPage() {
