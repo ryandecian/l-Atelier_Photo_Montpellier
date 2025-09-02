@@ -34,6 +34,9 @@ const postOneAlbum_controller = async (req: Request, res: Response) => {
             return;
         }
 
+        /* Remplacement de l'URL dans le body */
+        req.body.lien = lienVerifie;
+
         /* Logique métier 3 : Convertir la date au format SQL */
         let sqlDate: string;
         try {
