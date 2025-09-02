@@ -37,7 +37,7 @@ albumRouter.get("/:id", Verify_JWT_Middleware, isAdmin_Middleware,
 /* Route 4 */
 /* Mise à jour d'un album par son ID en tant qu'admin */
 /* URI : /album/one */
-albumRouter.put("/one", VerifyKeys(["id", "user_id", "lien", "access_code", "date"]), Verify_JWT_Middleware, isAdmin_Middleware,
+albumRouter.put("/", VerifyKeys(["id", "user_id", "lien", "access_code", "date"]), Verify_JWT_Middleware, isAdmin_Middleware,
     putOneAlbum_controller
 );
 
