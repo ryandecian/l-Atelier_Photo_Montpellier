@@ -219,6 +219,11 @@ const ListDataRouter: RouterItemsType[] = [
         path: "/admin/album",
         element: <AdminGestionAlbumPage />,
     },
+    /* {ListDataRouter[34].path} */
+    {
+        path: "/admin/album/create-album",
+        element: <AdminGestionAlbumPage />,
+    },
 ]
 
 export default ListDataRouter;

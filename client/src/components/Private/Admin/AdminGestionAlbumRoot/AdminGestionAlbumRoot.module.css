@@ -4,7 +4,7 @@
     gap: 0.5rem; /* 8px */
     width: calc(100% - 2.5rem);
     max-width: 45rem; /* 720px */
-    margin: 0 auto 1.5rem auto; /* centré, avec marge sous le header */
+    margin: 0 auto 1.25rem auto; /* centré, avec marge sous le header */
     padding: 0rem 1.25rem; /* 0px 20px 0px 20px */
 }
 
@@ -62,6 +62,31 @@
 .ClearButton:focus-visible {
     outline: none;
     box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
+}
+
+.ContainerInsertAlbum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 2.5rem);
+}
+
+.ButtonInsertAlbum {
+    width: 100%;
+    max-width: 350px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #ffd3d3 0%, #ffb4fe 100%);
+    padding: 0.5rem 1.25rem;
+    margin: 0rem 0rem 1.25rem 0rem;
+}
+.ButtonInsertAlbum:hover {
+    background: linear-gradient(135deg, #ffb4fe 0%, #ffd3d3 100%);
+    box-shadow: var(--box-shadow-card-prestation);
+    transition: transform 0.5s ease, box-shadow 0.2s ease;
+    transform: translateY(-2px);
 }
 
 .cardsContainer {

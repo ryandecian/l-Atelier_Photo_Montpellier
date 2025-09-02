@@ -1,7 +1,8 @@
 import css from "./AdminGestionAlbumRoot.module.css";
 import style from "../../../StyleRootComponent.module.css";
 import { useEffect, useMemo, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
+import ListDataRouter from "../../../../router/router";
 import useLockedPage from "../../../../hook/useLockedPage.security.hook";
 import DataAlbumAdminType from "../../../../types/DataAlbumAdmin.type";
 import fetchAPI from "../../../../utils/fetchAPI.utils";
@@ -86,7 +87,7 @@ function AdminGestionAlbumRoot() {
         <div className={style.ContainerRootRacine}>
             {/* Titre principal */}
             <header className={style.ContainerTitle}>
-                <h1 className={style.TitleH1}>Mes séances</h1>
+                <h1 className={style.TitleH1}>Gestion des Albums</h1>
             </header>
 
             {/* Barre de recherche */}
@@ -110,6 +111,13 @@ function AdminGestionAlbumRoot() {
                         ✕
                     </button>
                 )}
+            </div>
+
+            {/* Bonton création d'un utilisateur */}
+            <div className={css.ContainerInsertAlbum}>
+                <Link to={ListDataRouter[34].path} className={css.ButtonInsertAlbum}>
+                    Créer un album ?
+                </Link>
             </div>
 
             {/* Liste des albums sous forme de cards */}
