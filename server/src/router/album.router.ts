@@ -3,7 +3,7 @@ import { Router } from "express";
 /* Import des Controllers */
 import getAllAlbums_controller from "../controllers/album_controller/getAllAlbums.controller";
 import getMyAlbums_controller from "../controllers/album_controller/getMyAlbums.controller";
-import getOneAlbum_controller from "../controllers/album_controller/getOneAlbum.controller";
+import getOneAlbumById_controller from "../controllers/album_controller/getOneAlbumById.controller";
 
 /* Import des Middlewares */
 import Verify_JWT_Middleware from "../middleware/JWT/Verify_JWT_Middleware";
@@ -29,7 +29,7 @@ albumRouter.get("/my", Verify_JWT_Middleware,
 /* Récupération d'un album par son ID en tant qu'admin */
 /* URI : /album/:id */
 albumRouter.get("/:id", Verify_JWT_Middleware, isAdmin_Middleware,
-    getOneAlbum_controller
+    getOneAlbumById_controller
 );
 
 export default albumRouter;

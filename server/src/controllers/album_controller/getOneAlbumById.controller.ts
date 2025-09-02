@@ -11,7 +11,7 @@ import getOneUserById_type from "../../types/user_type/getOneUserById.type";
 
 /* Récupération d'un album par son ID en tant qu'admin */
 /* URI : /album/:id */
-const getOneAlbum_controller = async (req: Request, res: Response) => {
+const getOneAlbumById_controller = async (req: Request, res: Response) => {
     try {
         /* Logique métier 1 : Récupération de l'album cible */
         const albumId = parseInt(req.params.id, 10);
@@ -56,4 +56,4 @@ const getOneAlbum_controller = async (req: Request, res: Response) => {
     }
 }
 
-export default getOneAlbum_controller;
+export default getOneAlbumById_controller;
