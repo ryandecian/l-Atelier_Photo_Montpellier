@@ -6,11 +6,13 @@ import useLockedPage from "../../../../hook/useLockedPage.security.hook";
 import InsertAlbum_type from "../../../../types/InsertAlbum.type";
 import fetchAPI from "../../../../utils/fetchAPI.utils";
 
-/* Composant : InsertAlbumAdminRoot
-   Objectif : Page d'insertion d'un album côté admin.
-   Champs requis : date (string "12/05/2025"), lien (string), access_code (string), user_id (number).
-   Envoi : POST /album
-*/
+/* Typage minimal local de la réponse utile pour l’affichage des erreurs */
+type FetchApiRes = {
+    data?: { error?: string };
+    error?: string;
+};
+
+/* Aliasing pour rester cohérent avec ton usage */
 type EditForm = InsertAlbum_type;
 
 function InsertAlbumAdminRoot() {
@@ -27,13 +29,12 @@ function InsertAlbumAdminRoot() {
         user_id: 0,
     });
 
-    /* États de contrôle : chargement (soumission) et message d'erreur éventuel */
+    /* États UI : soumission en cours et message d’erreur à afficher */
     const [loading, setLoading] = useState(false);
     const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
     /* Handler générique de mise à jour des champs
-       - Conversion explicite en number pour user_id
-       - Trim au moment de la soumission (pas ici) */
+       - Conversion explicite en number pour user_id */
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
         if (name === "user_id") {
@@ -46,7 +47,7 @@ function InsertAlbumAdminRoot() {
     /* Validation minimale côté front :
        - Tous les champs non vides
        - user_id > 0 (number)
-       - Le format exact de date est géré et sécurisé côté backend */
+       - Le format de date est géré côté backend, pas de blocage ici */
     const canSubmit =
         form.date.trim().length > 0 &&
         form.lien.trim().length > 0 &&
@@ -56,8 +57,8 @@ function InsertAlbumAdminRoot() {
 
     /* Soumission :
        - POST /album
-       - Payload limité aux 4 champs requis
-       - Redirection vers /admin/album si succès */
+       - Priorité au message d’erreur serveur : res.data.error (si string)
+       - Fallback sur res.error (erreur technique/outillage) */
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         if (loading) {
@@ -68,16 +69,26 @@ function InsertAlbumAdminRoot() {
         setErrorMsg(null);
 
         const body: Record<string, unknown> = {
-            date: form.date.trim(),       /* Exemple attendu : "12/05/2025" */
+            date: form.date.trim(),        /* Exemple : "12/05/2025" */
             lien: form.lien.trim(),
             access_code: form.access_code.trim(),
-            user_id: form.user_id,        /* number */
+            user_id: form.user_id,         /* number */
         };
 
-        const { error } = await fetchAPI("POST", "/album", body);
+        const res = (await fetchAPI("POST", "/album", body)) as FetchApiRes;
 
-        if (error) {
-            setErrorMsg(error);
+        /* 1) Erreur métier renvoyée par le serveur (affichage prioritaire) */
+        const serverError = res?.data?.error;
+        if (typeof serverError === "string") {
+            setErrorMsg(serverError);
+            setLoading(false);
+            return;
+        }
+
+        /* 2) Erreur technique éventuelle (réseau, fetchAPI, etc.) */
+        const toolError = res?.error;
+        if (typeof toolError === "string") {
+            setErrorMsg(toolError);
             setLoading(false);
             return;
         }
@@ -86,6 +97,7 @@ function InsertAlbumAdminRoot() {
         navigate("/admin/album");
     };
 
+    /* Rendu */
     return (
         <div className={style.ContainerRootRacine}>
             <header className={style.ContainerTitle}>
@@ -106,7 +118,7 @@ function InsertAlbumAdminRoot() {
                         value={form.date}
                         onChange={handleChange}
                         className={css.Input}
-                        placeholder="ex 02/09/2025"
+                        placeholder="12/05/2025"
                         required
                     />
                 </div>
@@ -120,7 +132,6 @@ function InsertAlbumAdminRoot() {
                         value={form.lien}
                         onChange={handleChange}
                         className={css.Input}
-                        placeholder="Lien Synology brut"
                         required
                     />
                 </div>
