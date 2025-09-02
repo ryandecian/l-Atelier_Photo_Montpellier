@@ -1,6 +1,7 @@
 import { Router } from "express";
 
 /* Import des routers secondaires */
+import albumRouter from "./album.router";
 import userRouter from "./user.router";
 import resetPasswordRouter from "./reset_password.router";
 
@@ -16,9 +17,9 @@ const router = Router();
 
 
 /* Redirection vers un router secondaire */
+router.use("/album", albumRouter); /* 4 routes fonctionnelles */
 router.use("/user", userRouter); /* 7 routes fonctionnelles */
 router.use("/reset-password", resetPasswordRouter); /* 2 routes fonctionnelles */
-
 
 /* Redirection directe vers un controller */
 
