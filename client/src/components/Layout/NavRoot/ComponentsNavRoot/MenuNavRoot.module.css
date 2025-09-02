@@ -105,8 +105,8 @@
     justify-content: end;
     align-items: center;
     position: relative;
-    width: calc(100% - 5rem); /* 100% - 80px */
-    margin: 0rem 2rem 0rem 3rem; /* 0px 32px 0px 48px */
+    width: 100%;
+    margin: 0rem 0.625rem 0rem 0rem; /* 0px 32px 0px 48px */
     border: 0rem;
     padding: 0rem;
     gap: 1.1rem; /* 17.6px */
@@ -120,6 +120,7 @@
 @media (min-width: 62.5rem) { /* 1000px */
     .MenuUlPC {
         gap: 2rem; /* 32px */
+        margin: 0rem 2rem 0rem 3rem; /* 0px 32px 0px 48px */
     }
     
 }
@@ -135,6 +136,7 @@
     text-decoration: none;
     color: var(--ColorTextNavRootBlack);
     transition: transform 0.3s ease, color 0.2s ease;
+    white-space: nowrap;
 }
 .MenuLinkPC:hover {
     transform: scale(1.2); /* Augmente légèrement la taille */
@@ -145,6 +147,7 @@
     position: relative;
     z-index: var(--z-index_5); /* Met le bouton d'ouverture PRESTATIONS 5 Niv au dessus du menu burger */
     cursor: pointer;
+    padding: 0rem;
 }
 
 .SpanPortraitsPC {
