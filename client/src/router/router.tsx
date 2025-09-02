@@ -10,6 +10,7 @@ import DataUserPage from "../pages/Private/All/DataUser/DataUserPage";
 import EditAlbumAdminPage from "../pages/Private/Admin/EditAlbumAdminPage/EditAlbumAdminPage";
 import EditUserAdminPage from "../pages/Private/Admin/EditUserAdminPage/EditUserAdminPage";
 import EditUserPage from "../pages/Private/All/EditUserPage/EditUserPage";
+import InsertAlbumAdminPage from "../pages/Private/Admin/InsertAlbumAdminPage/InsertAlbumAdminPage";
 import UserGestionAlbumPage from "../pages/Private/Users/UserGestionAlbumPage/UserGestionAlbumPage";
 
 /* Page Frontend public */
@@ -224,6 +225,11 @@ const ListDataRouter: RouterItemsType[] = [
     {
         path: "/admin/album/edit-album/:id",
         element: <EditAlbumAdminPage />,
+    },
+    /* {ListDataRouter[35].path} */
+    {
+        path: "/admin/album/create-album",
+        element: <InsertAlbumAdminPage />,
     },
 ]
 
