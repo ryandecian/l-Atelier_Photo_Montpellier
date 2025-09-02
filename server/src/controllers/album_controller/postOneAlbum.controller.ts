@@ -11,6 +11,7 @@ import getOneUserById_type from "../../types/user_type/getOneUserById.type";
 
 /* Import des utils */
 import toSQLDate from "../../utils/toSQLDate.utils";
+import verifySynologyURL from "../../utils/verifySynologyURL.utils";
 
 /* Création d'un unique album */
 /* URI : /album */    
@@ -25,7 +26,15 @@ const postOneAlbum_controller = async (req: Request, res: Response) => {
             return;
         }
 
-        /* Logique métier 2 : Convertir la date au format SQL */
+        /* Logique métier 2 : Vérification de l'url du lien */
+        const lienVerifie = verifySynologyURL(req.body.lien);
+
+        if (!lienVerifie) {
+            res.status(400).json({ error: "URL Synology invalide ou non autorisée." });
+            return;
+        }
+
+        /* Logique métier 3 : Convertir la date au format SQL */
         let sqlDate: string;
         try {
             sqlDate = toSQLDate(req.body.date);
@@ -37,7 +46,7 @@ const postOneAlbum_controller = async (req: Request, res: Response) => {
         /* Remplacement de la date dans le body */
         req.body.date = sqlDate;
 
-        /* Logique métier 3 : Insertion du nouvel album dans la DB */
+        /* Logique métier 4 : Insertion du nouvel album dans la DB */
         const insertAlbum: ResultSetHeader = await insertOneAlbum_repository(req.body);
 
         if (insertAlbum.affectedRows === 0) {
@@ -45,7 +54,7 @@ const postOneAlbum_controller = async (req: Request, res: Response) => {
             return;
         }
 
-        /* Logique métier 4 : Réponse de succès */
+        /* Logique métier 5 : Réponse de succès */
         res.status(201).json({ message: "Enregistrement accepté." });
         return;
     }
