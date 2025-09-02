@@ -6,6 +6,7 @@ import getMyAlbums_controller from "../controllers/album_controller/getMyAlbums.
 import getOneAlbumById_controller from "../controllers/album_controller/getOneAlbumById.controller";
 import putOneAlbum_controller from "../controllers/album_controller/putOneAlbum.controller";
 import deleteOneAlbum_controller from "../controllers/album_controller/deleteOneAlbum.controller";
+import postOneAlbum_controller from "../controllers/album_controller/postOneAlbum.controller";
 
 /* Import des Middlewares */
 import Verify_JWT_Middleware from "../middleware/JWT/Verify_JWT_Middleware";
@@ -37,9 +38,16 @@ albumRouter.get("/:id", Verify_JWT_Middleware, isAdmin_Middleware,
 
 /* Route 4 */
 /* Mise à jour d'un album par son ID en tant qu'admin */
-/* URI : /album/one */
+/* URI : /album */
 albumRouter.put("/", VerifyKeys(["id", "user_id", "lien", "access_code", "date"]), Verify_JWT_Middleware, isAdmin_Middleware,
     putOneAlbum_controller
+);
+
+/* Route 5 */
+/* Création d'un album en tant qu'admin */
+/* URI : /album */
+albumRouter.post("/", VerifyKeys(["user_id", "lien", "access_code", "date"]), Verify_JWT_Middleware, isAdmin_Middleware,
+    postOneAlbum_controller
 );
 
 /* Route 6 */

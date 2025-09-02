@@ -12,12 +12,12 @@ import getOneUserById_type from "../../types/user_type/getOneUserById.type";
 /* Import des utils */
 import toSQLDate from "../../utils/toSQLDate.utils";
 
-/* Supression d'un unique album */
+/* Création d'un unique album */
 /* URI : /album */    
 const postOneAlbum_controller = async (req: Request, res: Response) => {
     try {
         /* Logique métier 1 : Vérification si l'utilisateur cible existe */
-        const dataUser: getOneUserById_type | null = await getOneUserById_repository(req.body.id);
+        const dataUser: getOneUserById_type | null = await getOneUserById_repository(req.body.user_id);
 
         /* Si l'utilisateur n'existe pas dans la DB, on ne peut pas continuer. */
         if (!dataUser) { /* Si c'est = à 0, c'est que l'utilisateur n'existe pas */
