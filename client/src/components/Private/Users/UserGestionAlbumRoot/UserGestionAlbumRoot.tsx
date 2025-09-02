@@ -1,18 +1,16 @@
-import css from "./AllUserSystemeRoot.module.css";
+import css from "./UserGestionAlbumRoot.module.css";
 import style from "../../../StyleRootComponent.module.css";
 import { useEffect, useMemo, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import useLockedPage from "../../../../hook/useLockedPage.security.hook";
-import DataUserType from "../../../../types/dataUser.type";
+import DataAlbumType from "../../../../types/DataAlbum.type";
 import fetchAPI from "../../../../utils/fetchAPI.utils";
 
 function UserGestionAlbumRoot() {
     /** Vérrouillage de la page accessible uniquement aux utilisateurs */
     useLockedPage("user");
-    const navigate = useNavigate();
 
     /** Liste des albums récupérés depuis l’API */
-    const [albums, setAlbums] = useState<DataUserType[]>([]);
+    const [albums, setAlbums] = useState<DataAlbumType[]>([]);
     /** Gestion du chargement */
     const [loading, setLoading] = useState(true);
     /** Gestion des erreurs éventuelles */
@@ -24,7 +22,7 @@ function UserGestionAlbumRoot() {
     /** Récupération de tous les utilisateurs à l’affichage de la page */
     useEffect(() => {
         async function fetchUsers() {
-            const { error, data } = await fetchAPI("GET", "/user");
+            const { error, data } = await fetchAPI("GET", "/album/my");
 
             if (error) {
                 setError(error);
@@ -34,7 +32,7 @@ function UserGestionAlbumRoot() {
 
             /** L’API renvoie les données dans `data.data` */
             if (Array.isArray(data?.data)) {
-                setAlbums(data.data as DataUserType[]);
+                setAlbums(data.data as DataAlbumType[]);
             }
 
             setLoading(false);
@@ -65,14 +63,14 @@ function UserGestionAlbumRoot() {
 
         return albums.filter((u) => {
             /** Si la recherche est un nombre, on compare avec l’ID exact */
-            if (isNumeric && u.id === qNum) return true;
+            if (isNumeric && u.id_album === qNum) return true;
 
-            /** Comparaison sur prénom, nom et email */
+            /** Comparaison sur prénom, nom et date */
             const first = normalize(u.firstname || "");
             const last = normalize(u.lastname || "");
-            const mail = normalize(u.email || "");
+            const date = normalize(u.date || "");
 
-            return first.includes(qNorm) || last.includes(qNorm) || mail.includes(qNorm);
+            return first.includes(qNorm) || last.includes(qNorm) || date.includes(qNorm);
         });
     }, [albums, query]);
 
@@ -85,7 +83,7 @@ function UserGestionAlbumRoot() {
         <div className={style.ContainerRootRacine}>
             {/* Titre principal */}
             <header className={style.ContainerTitle}>
-                <h1 className={style.TitleH1}>Gestion des utilisateurs</h1>
+                <h1 className={style.TitleH1}>Mes séances</h1>
             </header>
 
             {/* Barre de recherche */}
@@ -93,7 +91,7 @@ function UserGestionAlbumRoot() {
                 <input
                     type="text"
                     className={css.SearchInput}
-                    placeholder="Rechercher par ID, prénom, nom ou email…"
+                    placeholder="Rechercher par ID, prénom, nom ou date…"
                     aria-label="Rechercher un utilisateur"
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
@@ -118,33 +116,35 @@ function UserGestionAlbumRoot() {
                     <p className={css.EmptyState}>Aucun album ne correspond à “{query}”.</p>
                 ) : (
                     filteredAlbums.map((album) => (
-                        <div key={album.id} className={css.card}>
+                        <div key={album.id_album} className={css.card}>
                             {/* Données principales album */}
                             <div className={css.ContainerDataUser}>
                                 <p className={css.label}>
-                                    <span className={style.SpanBold}>ID :</span> {album.id}
+                                    <span className={style.SpanBold}>ID Album :</span> {album.id_album}
                                 </p>
                                 <p className={css.label}>
-                                    <span className={style.SpanBold}>Titre :</span> {album.title}
+                                    <span className={style.SpanBold}>Prénom :</span> {album.firstname}
                                 </p>
                                 <p className={css.label}>
                                     <span className={style.SpanBold}>Nom :</span> {album.lastname}
                                 </p>
                                 <p className={css.label} style={{ fontSize: "0.875rem" }}>
-                                    {album.email}
+                                    {album.access_password}
                                 </p>
                             </div>
 
                             {/* Rôle + action */}
                             <div className={css.ContainerRoleAction}>
-                                <p className={css.label}>{album.role}</p>
-                                <button
-                                    className={css.ButtonEdit}
-                                    aria-label={`Modifier l'album ${album.title}`}
-                                    onClick={() => navigate(`/admin/all-user-systeme/edit-album/${album.id}`)}
+                                <p className={css.label}>{album.date}</p>
+                                <a
+                                    className={css.LienConsulter}
+                                    href={album.lien}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label={`Consulter l'album sur ce lien ${album.lien}`}
                                 >
-                                    Modifier
-                                </button>
+                                    Consulter
+                                </a>
                             </div>
                         </div>
                     ))

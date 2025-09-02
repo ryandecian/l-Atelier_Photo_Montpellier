@@ -3,7 +3,8 @@ type DataAlbumType = {
     firstname: string;
     lastname: string;
     access_password: string;
-    date: number;
+    lien: string;
+    date: string;
 }
 
 export default DataAlbumType;
