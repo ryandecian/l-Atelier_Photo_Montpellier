@@ -53,7 +53,7 @@ albumRouter.post("/", VerifyKeys(["user_id", "lien", "access_code", "date"]), Ve
 /* Route 6 */
 /* Mise à jour d'un album par son ID en tant qu'admin */
 /* URI : /album */
-albumRouter.delete("/", VerifyKeys(["id"]), Verify_JWT_Middleware, isAdmin_Middleware,
+albumRouter.delete("/", VerifyKeys(["id_album"]), Verify_JWT_Middleware, isAdmin_Middleware,
     deleteOneAlbum_controller
 );
 
