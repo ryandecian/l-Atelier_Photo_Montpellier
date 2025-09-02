@@ -13,7 +13,7 @@ const albumRouter = Router();
 /* Route 1 */
 /* Récupération de tous les albums */
 /* URI : /album */
-albumRouter.get("/",
+albumRouter.get("/", Verify_JWT_Middleware, isAdmin_Middleware,
     getAllAlbums_controller
 );
 
