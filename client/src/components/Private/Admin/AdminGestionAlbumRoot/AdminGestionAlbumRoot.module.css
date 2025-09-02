@@ -117,9 +117,8 @@
     width: calc(100% - 2rem); /* 100% - 32px */
 }
 
-.LienConsulter {
+.ButtonEdit {
     padding: 0.5rem 1rem; /* 8px 16px 8px 16px */
-    text-decoration: none;
     background-color: #111;
     color: var(--ColorTextWhite);
     border: none;
@@ -128,6 +127,6 @@
     transition: background 0.2s ease;
 }
 
-.LienConsulter:hover {
+.ButtonEdit:hover {
     background-color: #444;
 }
