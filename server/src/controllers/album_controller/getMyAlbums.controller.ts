@@ -40,7 +40,7 @@ const getMyAlbums_controller = async (req: Request, res: Response) => {
                 firstname: user.firstname,
                 lastname: user.lastname,
                 access_password: album.access_code, /* DB: access_code -> réponse: access_password */
-                date: new Date(album.date).getTime() /* timestamp en ms */
+                date: new Date(album.date).toLocaleDateString("fr-FR") /* "12/05/2025" */
             };
         });
 

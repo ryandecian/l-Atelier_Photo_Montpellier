@@ -1,0 +1,84 @@
+/* Reprise du style des cards de AllUserSystemeRoot, avec un bouton “Consulter” */
+
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    width: 250px;
+    height: 220px;
+    text-decoration: none;
+    color: var(--ColorTextBlack);
+    overflow: hidden;
+    box-shadow: var(--box-shadow-card-prestation);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: linear-gradient(135deg, #eef2ff 0%, #cffafe 100%);
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+.ContainerDataUser {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 0rem 1rem 0rem 1rem;
+    width: calc(100% - 2rem);
+}
+
+.label {
+    margin: 0.5rem 0rem;
+    padding: 0rem;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* Bas de la carte : zone action à droite (placeholder à gauche pour l’équilibre) */
+.ContainerRoleAction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem 0.5rem 1rem;
+    width: calc(100% - 2rem);
+}
+
+.PlaceholderRight {
+    width: 1px;
+    height: 1px;
+}
+
+.ButtonConsult {
+    padding: 0.5rem 1rem;
+    background-color: #111;
+    color: var(--ColorTextWhite);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.ButtonConsult:hover {
+    background-color: #444;
+}
+
+/* État vide aligné au style global */
+.EmptyState {
+    opacity: 0.8;
+}
