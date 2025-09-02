@@ -12,14 +12,14 @@ import isAdmin_Middleware from "../middleware/isAdmin/isAdmin_Middleware";
 const albumRouter = Router();
 
 /* Route 1 */
-/* Récupération de tous les albums */
+/* Récupération de tous les albums en tant qu'admin */
 /* URI : /album */
 albumRouter.get("/", Verify_JWT_Middleware, isAdmin_Middleware,
     getAllAlbums_controller
 );
 
 /* Route 2 */
-/* Récupération de mes albums */
+/* Récupération des albums de l'utilisateur connecté */
 /* URI : /album/my */
 albumRouter.get("/my", Verify_JWT_Middleware,
     getMyAlbums_controller

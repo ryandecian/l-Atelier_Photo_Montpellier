@@ -9,7 +9,8 @@ import verifyEmailById_repository from "../../repository/user_tbl/verifyEmailByI
 import getAllUsers_type from "../../types/user_type/getAllUsers.type";
 import getAllAlbums_type from "../../types/album_type/getAllAlbums.type";
 
-/* URI : /album */
+/* Récupération des albums de l'utilisateur connecté */
+/* URI : /album/my */
 const getMyAlbums_controller = async (req: Request, res: Response) => {
     try {
         /* Logique métier 1 : Vérifier que l'utilisateur existe et récupérer ses données complètes */

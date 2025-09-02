@@ -9,6 +9,7 @@ import { getVariousUsersById_repository } from "../../repository/user_tbl/getVar
 import getAllAlbums_type from "../../types/album_type/getAllAlbums.type";
 import getVariousUsersById_type from "../../types/user_type/getVariousUsersById.type";
 
+/* Récupération de tous les albums en tant qu'admin */
 /* URI : /album */
 const getAllAlbums_controller = async (req: Request, res: Response) => {
     try {
