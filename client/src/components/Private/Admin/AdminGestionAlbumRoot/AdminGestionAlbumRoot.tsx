@@ -115,7 +115,7 @@ function AdminGestionAlbumRoot() {
 
             {/* Bonton création d'un utilisateur */}
             <div className={css.ContainerInsertAlbum}>
-                <Link to={ListDataRouter[34].path} className={css.ButtonInsertAlbum}>
+                <Link to={ListDataRouter[35].path} className={css.ButtonInsertAlbum}>
                     Créer un album ?
                 </Link>
             </div>
