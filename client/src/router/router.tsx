@@ -7,6 +7,7 @@ import AdminPage from "../pages/Private/Admin/AdminPage/AdminPage";
 import AllUserSystemePage from "../pages/Private/Admin/AllUserSystemePage/AllUserSystemePage";
 import ComptePage from "../pages/Private/Users/ComptePage/ComptePage";
 import DataUserPage from "../pages/Private/All/DataUser/DataUserPage";
+import EditAlbumAdminPage from "../pages/Private/Admin/EditAlbumAdminPage/EditAlbumAdminPage";
 import EditUserAdminPage from "../pages/Private/Admin/EditUserAdminPage/EditUserAdminPage";
 import EditUserPage from "../pages/Private/All/EditUserPage/EditUserPage";
 import UserGestionAlbumPage from "../pages/Private/Users/UserGestionAlbumPage/UserGestionAlbumPage";
@@ -221,8 +222,8 @@ const ListDataRouter: RouterItemsType[] = [
     },
     /* {ListDataRouter[34].path} */
     {
-        path: "/admin/album/create-album",
-        element: <AdminGestionAlbumPage />,
+        path: "/admin/album/edit-album/:id",
+        element: <EditAlbumAdminPage />,
     },
 ]
 
