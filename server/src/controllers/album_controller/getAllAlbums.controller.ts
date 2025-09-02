@@ -42,7 +42,7 @@ const getAllAlbums_controller = async (req: Request, res: Response) => {
                 firstname: user?.firstname ?? "",
                 lastname: user?.lastname ?? "",
                 email: user?.email ?? "",
-                date: new Date(album.date).getTime(), /* timestamp en ms donc type string => number */
+                date: new Date(album.date).toLocaleDateString("fr-FR") /* "12/05/2025" */
             };
         });
 
