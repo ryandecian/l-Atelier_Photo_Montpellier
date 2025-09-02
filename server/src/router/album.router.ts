@@ -4,9 +4,11 @@ import { Router } from "express";
 import getAllAlbums_controller from "../controllers/album_controller/getAllAlbums.controller";
 import getMyAlbums_controller from "../controllers/album_controller/getMyAlbums.controller";
 import getOneAlbumById_controller from "../controllers/album_controller/getOneAlbumById.controller";
+import putOneAlbum_controller from "../controllers/album_controller/putOneAlbum.controller";
 
 /* Import des Middlewares */
 import Verify_JWT_Middleware from "../middleware/JWT/Verify_JWT_Middleware";
+import VerifyKeys from "../middleware/VerifyKeys/VerifyKeys";
 import isAdmin_Middleware from "../middleware/isAdmin/isAdmin_Middleware";
 
 const albumRouter = Router();
@@ -30,6 +32,13 @@ albumRouter.get("/my", Verify_JWT_Middleware,
 /* URI : /album/:id */
 albumRouter.get("/:id", Verify_JWT_Middleware, isAdmin_Middleware,
     getOneAlbumById_controller
+);
+
+/* Route 4 */
+/* Mise à jour d'un album par son ID en tant qu'admin */
+/* URI : /album/one */
+albumRouter.put("/one", VerifyKeys(["id", "user_id", "lien", "access_code", "date"]), Verify_JWT_Middleware, isAdmin_Middleware,
+    putOneAlbum_controller
 );
 
 export default albumRouter;
