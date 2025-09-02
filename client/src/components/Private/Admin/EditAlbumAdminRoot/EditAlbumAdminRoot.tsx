@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import style from "../../../StyleRootComponent.module.css";
-import css from "./EditUserAdminRoot.module.css";
+import css from "./EditAlbumAdminRoot.module.css";
 import useLockedPage from "../../../../hook/useLockedPage.security.hook";
-import DataUserType from "../../../../types/dataUser.type";
+import DataOneAlbumAdminType from "../../../../types/DataOneAlbumAdmin.type";
 import fetchAPI from "../../../../utils/fetchAPI.utils";
 
 /** Structure du formulaire de modification */
 type EditForm = {
     id_album: number;
-    user_id: number;
+    id_user: number;
     firstname: string;
     lastname: string;
     email: string;
@@ -27,14 +27,18 @@ function EditAlbumAdminRoot() {
 
     /** Formulaire contrôlé */
     const [form, setForm] = useState<EditForm>({
-        id: "",
+        id_album: 0,
+        id_user: 0,
+        firstname: "",
         lastname: "",
-        address: "",
         email: "",
+        lien: "",
+        access_code: "",
+        date: "",
     });
 
-    /** Données d'origine de l'utilisateur à comparer */
-    const [originalUser, setOriginalUser] = useState<DataUserType | null>(null);
+    /** Données d'origine de l'album à comparer */
+    const [originalAlbum, setOriginalAlbum] = useState<DataOneAlbumAdminType | null>(null);
 
     /** Gestion des états de chargement, soumission et erreurs */
     const [loading, setLoading] = useState(true);
@@ -43,14 +47,14 @@ function EditAlbumAdminRoot() {
 
     /** Récupère l'utilisateur ciblé dès que l'ID est présent dans l'URL */
     useEffect(() => {
-        async function fetchUser() {
+        async function fetchAlbum() {
             if (!id) {
-                setErrorMsg("ID utilisateur manquant.");
+                setErrorMsg("ID album manquant.");
                 setLoading(false);
                 return;
             }
 
-            const { error, data } = await fetchAPI("GET", `/user/${id}`);
+            const { error, data } = await fetchAPI("GET", `/album/${id}`);
             if (error) {
                 setErrorMsg(error);
                 setLoading(false);
@@ -58,45 +62,57 @@ function EditAlbumAdminRoot() {
             }
 
             if (data?.data) {
-                const user = data.data as DataUserType;
+                const album = data.data as DataOneAlbumAdminType;
 
-                setOriginalUser(user);
+                setOriginalAlbum(album);
                 setForm({
-                    firstname: user.firstname || "",
-                    lastname: user.lastname || "",
-                    address: user.address || "",
-                    email: user.email || "",
+                    id_album: album.id_album || 0,
+                    id_user: album.id_user || 0,
+                    firstname: album.firstname || "",
+                    lastname: album.lastname || "",
+                    email: album.email || "",
+                    lien: album.lien || "",
+                    access_code: album.access_code || "",
+                    date: album.date || "",
                 });
             } else {
-                setErrorMsg("Utilisateur introuvable.");
+                setErrorMsg("Album introuvable.");
             }
 
             setLoading(false);
         }
 
-        fetchUser();
+        fetchAlbum();
     }, [id]);
 
     /** Mise à jour des champs du formulaire */
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
+
+        /* Forcer le typage numérique sur id_user pour éviter les comparaisons string/number
+           et les envois d'un string au backend pour un champ attendu en number. */
+        if (name === "id_user") {
+            setForm((prev) => ({ ...prev, id_user: value === "" ? 0 : Number(value) }));
+            return;
+        }
+
         setForm((prev) => ({ ...prev, [name]: value }));
     };
 
     /** Vérifie si des modifications ont été apportées */
     const isDirty =
-        !!originalUser &&
+        !!originalAlbum &&
         (
-            form.firstname !== (originalUser.firstname || "") ||
-            form.lastname !== (originalUser.lastname || "") ||
-            form.address !== (originalUser.address || "") ||
-            form.email !== (originalUser.email || "")
+            /* Comparaison strictement sur les 4 champs modifiables uniquement */
+            form.id_user !== originalAlbum.id_user ||
+            form.lien !== originalAlbum.lien ||
+            form.access_code !== originalAlbum.access_code ||
+            form.date !== originalAlbum.date
         );
 
-    /** Validation simple de l'e-mail */
-    const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email);
+    /* On supprime la validation email pour le bouton "Enregistrer" car l'email n'est pas modifiable. */
 
-    /** Soumission du formulaire (modification de l'utilisateur) */
+    /** Soumission du formulaire (modification de l'album) */
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         if (saving || !id) return;
@@ -105,14 +121,15 @@ function EditAlbumAdminRoot() {
         setErrorMsg(null);
 
         const body: Record<string, unknown> = {
-            firstname: form.firstname.trim(),
-            lastname: form.lastname.trim(),
-            address: form.address.trim(),
-            email: form.email.trim(),
-            id: parseInt(id, 10),
+            /* On n'envoie que ce qui est attendu par le backend pour la modification */
+            id: form.id_album,
+            user_id: form.id_user,
+            lien: form.lien.trim(),
+            access_code: form.access_code.trim(),
+            date: form.date.trim(), /* Le backend gère et convertit la date si besoin */
         };
 
-        const { error } = await fetchAPI("PUT", "/user", body);
+        const { error } = await fetchAPI("PUT", "/album", body);
 
         if (error) {
             setErrorMsg(error);
@@ -121,20 +138,21 @@ function EditAlbumAdminRoot() {
         }
 
         setSaving(false);
-        navigate("/admin/all-user-systeme");
+        /* Retour logique vers la liste des albums admin */
+        navigate("/admin/album");
     };
 
-    /** Suppression de l'utilisateur ciblé */
+    /** Suppression de l'album ciblé */
     const handleDelete = async () => {
         if (!id) return;
 
-        const confirmation = window.confirm("Êtes-vous sûr de vouloir supprimer cet utilisateur ?");
+        const confirmation = window.confirm("Êtes-vous sûr de vouloir supprimer cet album ?");
         if (!confirmation) return;
 
         setSaving(true);
         setErrorMsg(null);
 
-        const { error } = await fetchAPI("DELETE", "/user", { id: parseInt(id, 10) });
+        const { error } = await fetchAPI("DELETE", "/album", { id_album: parseInt(id, 10) });
 
         if (error) {
             setErrorMsg(error);
@@ -142,11 +160,11 @@ function EditAlbumAdminRoot() {
             return;
         }
 
-        navigate("/admin/all-user-systeme");
+        navigate("/admin/album");
     };
 
     /** Affichage si en cours de chargement */
-    if (loading) return <p>Chargement des données utilisateur...</p>;
+    if (loading) return <p>Chargement des données de l'album...</p>;
 
     /** Affichage en cas d'erreur */
     if (errorMsg) return <p className={css.ErrorMsg}>{errorMsg}</p>;
@@ -155,11 +173,41 @@ function EditAlbumAdminRoot() {
         <div className={style.ContainerRootRacine}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
-                    Modifier l’utilisateur n°{id}
+                    {/* Titre corrigé pour refléter l'édition d'un album */}
+                    Modifier l’album n°{form.id_album || id}
                 </h1>
             </header>
 
             <form id="edit-user-admin" className={css.ContainerRoot} onSubmit={handleSubmit}>
+                <div className={css.FormGroup}>
+                    <label className={css.Label} htmlFor="id_album">ID Album</label>
+                    <input
+                        id="id_album"
+                        name="id_album"
+                        type="text"
+                        value={form.id_album}
+                        onChange={handleChange}
+                        className={css.Input}
+                        /* Non modifiable */
+                        disabled
+                    />
+                </div>
+
+                <div className={css.FormGroup}>
+                    <label className={css.Label} htmlFor="id_user">ID User</label>
+                    <input
+                        id="id_user"
+                        name="id_user"
+                        /* Type number pour cohérence et UX */
+                        type="number"
+                        value={form.id_user}
+                        onChange={handleChange}
+                        className={css.Input}
+                        /* Modifiable */
+                        required
+                    />
+                </div>
+
                 <div className={css.FormGroup}>
                     <label className={css.Label} htmlFor="firstname">Prénom</label>
                     <input
@@ -170,7 +218,8 @@ function EditAlbumAdminRoot() {
                         onChange={handleChange}
                         className={css.Input}
                         autoComplete="given-name"
-                        required
+                        /* Non modifiable */
+                        disabled
                     />
                 </div>
 
@@ -184,20 +233,8 @@ function EditAlbumAdminRoot() {
                         onChange={handleChange}
                         className={css.Input}
                         autoComplete="family-name"
-                        required
-                    />
-                </div>
-
-                <div className={css.FormGroup}>
-                    <label className={css.Label} htmlFor="address">Adresse</label>
-                    <input
-                        id="address"
-                        name="address"
-                        type="text"
-                        value={form.address}
-                        onChange={handleChange}
-                        className={css.Input}
-                        autoComplete="street-address"
+                        /* Non modifiable */
+                        disabled
                     />
                 </div>
 
@@ -210,7 +247,49 @@ function EditAlbumAdminRoot() {
                         value={form.email}
                         onChange={handleChange}
                         className={css.Input}
-                        autoComplete="email"
+                        /* Non modifiable, et pas de required pour ne pas bloquer la soumission native */
+                        disabled
+                    />
+                </div>
+
+                <div className={css.FormGroup}>
+                    <label className={css.Label} htmlFor="lien">Lien</label>
+                    <input
+                        id="lien"
+                        name="lien"
+                        type="text"
+                        value={form.lien}
+                        onChange={handleChange}
+                        className={css.Input}
+                        /* Modifiable */
+                        required
+                    />
+                </div>
+
+                <div className={css.FormGroup}>
+                    <label className={css.Label} htmlFor="access_code">Code d'accès</label>
+                    <input
+                        id="access_code"
+                        name="access_code"
+                        type="text"
+                        value={form.access_code}
+                        onChange={handleChange}
+                        className={css.Input}
+                        /* Modifiable */
+                        required
+                    />
+                </div>
+
+                <div className={css.FormGroup}>
+                    <label className={css.Label} htmlFor="date">Date</label>
+                    <input
+                        id="date"
+                        name="date"
+                        type="text"
+                        value={form.date}
+                        onChange={handleChange}
+                        className={css.Input}
+                        /* Modifiable ; format attendu "12/05/2025" géré côté backend */
                         required
                     />
                 </div>
@@ -220,7 +299,7 @@ function EditAlbumAdminRoot() {
                 <button
                     type="button"
                     className={css.CancelButton}
-                    onClick={() => navigate("/admin/all-user-systeme")}
+                    onClick={() => navigate("/admin/album")}
                     disabled={saving}
                 >
                     Annuler
@@ -229,13 +308,12 @@ function EditAlbumAdminRoot() {
                     type="submit"
                     form="edit-user-admin"
                     className={css.SaveButton}
-                    disabled={saving || !isDirty || !emailValid}
+                    /* Le bouton n'est plus bloqué par la validation email ; on se base uniquement sur isDirty */
+                    disabled={saving || !isDirty}
                     title={
-                        !emailValid
-                            ? "Email invalide"
-                            : isDirty
-                                ? "Enregistrer les modifications"
-                                : "Aucune modification"
+                        isDirty
+                            ? "Enregistrer les modifications"
+                            : "Aucune modification"
                     }
                 >
                     {saving ? "Enregistrement..." : "Enregistrer"}

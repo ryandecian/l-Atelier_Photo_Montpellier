@@ -41,7 +41,7 @@ const getOneAlbumById_controller = async (req: Request, res: Response) => {
             message: "Album récupéré avec succès.",
             data: {
                 id_album: dataAlbum.id,
-                user_id: dataUser.id,
+                id_user: dataUser.id,
                 firstname: dataUser.firstname,
                 lastname: dataUser.lastname,
                 lien: dataAlbum.lien,
