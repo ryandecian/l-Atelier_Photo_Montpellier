@@ -19,14 +19,14 @@ albumRouter.get("/", Verify_JWT_Middleware, isAdmin_Middleware,
 );
 
 /* Route 2 */
-/* Récupération des albums de l'utilisateur connecté */
+/* Récupération des albums de l'utilisateur connecté non admin */
 /* URI : /album/my */
 albumRouter.get("/my", Verify_JWT_Middleware,
     getMyAlbums_controller
 );
 
 /* Route 3 */
-/* Récupération d'un album par son ID */
+/* Récupération d'un album par son ID en tant qu'admin */
 /* URI : /album/:id */
 albumRouter.get("/:id", Verify_JWT_Middleware, isAdmin_Middleware,
     getOneAlbum_controller
