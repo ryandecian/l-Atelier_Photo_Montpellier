@@ -2,6 +2,7 @@ import { ReactNode } from "react"
 
 /* Liste des pages en import */
 /* Page Frontend vérrouillée */
+import AdminGestionAlbumPage from "../pages/Private/Admin/AdminGestionAlbumPage/AdminGestionAlbumPage";
 import AdminPage from "../pages/Private/Admin/AdminPage/AdminPage";
 import AllUserSystemePage from "../pages/Private/Admin/AllUserSystemePage/AllUserSystemePage";
 import ComptePage from "../pages/Private/Users/ComptePage/ComptePage";
@@ -212,6 +213,11 @@ const ListDataRouter: RouterItemsType[] = [
     {
         path: "/compte/album",
         element: <UserGestionAlbumPage />,
+    },
+    /* {ListDataRouter[33].path} */
+    {
+        path: "/admin/album",
+        element: <AdminGestionAlbumPage />,
     },
 ]
 

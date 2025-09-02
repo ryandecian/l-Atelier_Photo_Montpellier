@@ -34,6 +34,11 @@ function AdminRoot() {
                     etat={true}
                     link={ListDataRouter[23].path}
                 />
+                    <ServiceCardAdminLink
+                        nameService="Gestion des albums"
+                        etat={true}
+                        link={ListDataRouter[33].path}
+                    />
                 <ServiceCardAdminLink
                     nameService="Gestion des factures"
                     etat={false}
@@ -41,16 +46,6 @@ function AdminRoot() {
                 />
                 <ServiceCardAdminLink
                     nameService="Gestion des statistiques"
-                    etat={false}
-                    link="#"
-                />
-                <ServiceCardAdminLink
-                    nameService="Gestion des albums"
-                    etat={false}
-                    link="#"
-                />
-                <ServiceCardAdminLink
-                    nameService="Gestion des photos"
                     etat={false}
                     link="#"
                 />
