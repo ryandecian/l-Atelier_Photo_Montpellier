@@ -10,7 +10,7 @@ import { deleteOneAlbumById_repository } from "../../repository/album_tbl/delete
 const deleteOneAlbum_controller = async (req: Request, res: Response) => {
     try {
         // Logique métier 1 : Suppression de l'album dans la DB
-        const deleteDataAlbum: ResultSetHeader = await deleteOneAlbumById_repository(req.body.id);
+        const deleteDataAlbum: ResultSetHeader = await deleteOneAlbumById_repository(req.body.id_album);
 
         if (deleteDataAlbum.affectedRows === 0) {
             res.status(404).json({ error: "Aucun album trouvé" });
