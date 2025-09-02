@@ -30,7 +30,7 @@ function CompteRoot() {
                 />
                 <ServiceCardUserLink
                     nameService="Mes séances"
-                    link="#"
+                    link={ListDataRouter[32].path}
                 />
                 <ServiceCardUserLink
                     nameService="Mes factures"

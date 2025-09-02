@@ -13,7 +13,7 @@ import getAllAlbums_type from "../../types/album_type/getAllAlbums.type";
 import toSQLDate from "../../utils/toSQLDate.utils";
 
 /* Mise à jour d'un album par son ID en tant qu'admin */
-/* URI : /album/one */
+/* URI : /album */
 const putOneAlbum_controller = async (req: Request, res: Response) => {
     try {
         /* Logique métier 1 : Récupérer l'album par son ID qui permet de valider son existence */
