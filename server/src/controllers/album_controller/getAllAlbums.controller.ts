@@ -42,7 +42,6 @@ const getAllAlbums_controller = async (req: Request, res: Response) => {
                 lastname: user?.lastname ?? "",
                 email: user?.email ?? "",
                 date: new Date(album.date).getTime(), /* timestamp en ms donc type string => number */
-                access_code: album.access_code
             };
         });
 
