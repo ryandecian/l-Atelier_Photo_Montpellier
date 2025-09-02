@@ -222,7 +222,7 @@ const ListDataRouter: RouterItemsType[] = [
     },
     /* {ListDataRouter[34].path} */
     {
-        path: "/admin/album/create-album",
+        path: "/admin/album/edit-album/:id",
         element: <EditAlbumAdminPage />,
     },
 ]

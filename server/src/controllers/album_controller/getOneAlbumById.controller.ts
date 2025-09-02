@@ -46,7 +46,7 @@ const getOneAlbumById_controller = async (req: Request, res: Response) => {
                 lastname: dataUser.lastname,
                 lien: dataAlbum.lien,
                 access_code: dataAlbum.access_code,
-                date: new Date(dataAlbum.date).getTime(),
+                date: new Date(dataAlbum.date).toLocaleDateString("fr-FR") /* "12/05/2025" */
             }
         });
     }
