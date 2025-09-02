@@ -17,7 +17,7 @@ const router = Router();
 
 
 /* Redirection vers un router secondaire */
-router.use("/album", albumRouter); /* 4 routes fonctionnelles */
+router.use("/album", albumRouter); /* 6 routes fonctionnelles */
 router.use("/user", userRouter); /* 7 routes fonctionnelles */
 router.use("/reset-password", resetPasswordRouter); /* 2 routes fonctionnelles */
 
