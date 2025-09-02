@@ -128,8 +128,8 @@ function UserGestionAlbumRoot() {
                                 <p className={css.label}>
                                     <span className={style.SpanBold}>Nom :</span> {album.lastname}
                                 </p>
-                                <p className={css.label} style={{ fontSize: "0.875rem" }}>
-                                    {album.access_password}
+                                <p className={css.label}>
+                                    <span className={style.SpanBold}>Password :</span> {album.access_password}
                                 </p>
                             </div>
 
