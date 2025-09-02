@@ -8,6 +8,7 @@ import ComptePage from "../pages/Private/Users/ComptePage/ComptePage";
 import DataUserPage from "../pages/Private/All/DataUser/DataUserPage";
 import EditUserAdminPage from "../pages/Private/Admin/EditUserAdminPage/EditUserAdminPage";
 import EditUserPage from "../pages/Private/All/EditUserPage/EditUserPage";
+import UserGestionAlbumPage from "../pages/Private/Users/UserGestionAlbumPage/UserGestionAlbumPage";
 
 /* Page Frontend public */
 import blogRouter from "./blogRouter";
@@ -206,6 +207,11 @@ const ListDataRouter: RouterItemsType[] = [
     {
         path: "/register",
         element: <RegisterPage />,
+    },
+    /* {ListDataRouter[32].path} */
+    {
+        path: "/compte/album",
+        element: <UserGestionAlbumPage />,
     },
 ]
 
