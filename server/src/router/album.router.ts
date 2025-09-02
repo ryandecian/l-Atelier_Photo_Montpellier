@@ -2,6 +2,7 @@ import { Router } from "express";
 
 /* Import des Controllers */
 import getAllAlbums_controller from "../controllers/album_controller/getAllAlbums.controller";
+import getOneAlbum_controller from "../controllers/album_controller/getOneAlbum.controller";
 
 /* Import des Middlewares */
 import Verify_JWT_Middleware from "../middleware/JWT/Verify_JWT_Middleware";
@@ -14,6 +15,13 @@ const albumRouter = Router();
 /* URI : /album */
 albumRouter.get("/", Verify_JWT_Middleware, isAdmin_Middleware,
     getAllAlbums_controller
+);
+
+/* Route 2 */
+/* Récupération d'un album par son ID */
+/* URI : /album/:id */
+albumRouter.get("/:id", Verify_JWT_Middleware, isAdmin_Middleware,
+    getOneAlbum_controller
 );
 
 export default albumRouter;
