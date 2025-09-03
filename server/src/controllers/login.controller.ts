@@ -40,7 +40,7 @@ const login_controller = async (req: Request, res: Response) => {
         // Vérification des tokens Server et Client si elles existent
         // Si l'une d'entre elles n'existe pas, on renvoie une erreur 500
         if (!jwtTokenServerLAPM || !jwtTokenClientLAPM) {
-            res.status(500).json({ message: "Erreur interne serveur." });
+            res.status(500).json({ error: "Erreur interne serveur." });
             return;
         }
 
@@ -48,7 +48,7 @@ const login_controller = async (req: Request, res: Response) => {
         res.status(200)
             .cookie("jwtTokenServerLAPM", jwtTokenServerLAPM, {
                 httpOnly: true,
-                // secure: true, seulement en production
+                // secure: true, cookie envoyé uniquement en https
                 sameSite: "lax",
                 maxAge: 60 * 60 * 1000, // 1 heure
             })

@@ -2,11 +2,7 @@ import "dotenv/config";
 import mysql from "mysql2/promise";
 import chalk from "chalk";
 import { ENV_SAFE } from "../config/ENV.config";
-import { RowDataPacket } from "mysql2";
 import testPoolConnection from "../repository/database_tbl/testPoolConnection.config.repository";
-
-type TestConnectionResult = RowDataPacket & { test: number };
-
 
 // Stockage du pool dans une variable globale
 let pool: mysql.Pool | null = null;
