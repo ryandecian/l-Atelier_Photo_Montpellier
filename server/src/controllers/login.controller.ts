@@ -1,6 +1,5 @@
 /* Import des dépendances externes : */
 import { Request, Response } from "express";
-import { RowDataPacket } from "mysql2";
 
 /* Import des Repositories : */
 import verifyEmailByEmail_repository from "../repository/user_tbl/verifyEmailByEmail.repository";
