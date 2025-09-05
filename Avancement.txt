@@ -6,18 +6,7 @@ Ce qui est fait pour refacto :
 Connexion à la db sur vps : 
 sudo docker exec -it db mariadb -u "LAPM" -p
 ------------------------------------------------------------------------------
-A date du 28/08/2025
-Il faut créer un dossier contenant tout les controller user. 
-Créer un router qui nomme la route user et redirige vers le bon controller, un deuxième router appelé userRouter.ts qui ne s'occupe que des route user. 
 
-Modifier le path api du server Express et corriger dans le client
-
-Convention de nommage des controller : Nommage ne camelCase
- - Méthode (GET,POST, PUT, DELETE) en minuscule
- - Quantité (All ou One)
- - Table cible (User)
- - Type de fichier (Repository)
- - .ts
 ------------------------------------------------------------------------------
 Interface Login, 
 - Ajouter un bouton créer un compte. 
