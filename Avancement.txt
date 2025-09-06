@@ -8,11 +8,7 @@ sudo docker exec -it db mariadb -u "LAPM" -p
 ------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------
-Interface Login, 
-- Ajouter un bouton créer un compte. 
-- Ajouter un bouton mot de passe oublié. 
 
-Créer une page de modification du mot de passe, lien non accessible via le site mais par le mail. 
 ------------------------------------------------------------------------------
 Interface CLIENT : On va commencer par créer et structurer l'interface comme l'admin avec des cards
                    On va également comprendre et refactoriser si necessaire le verouillage d'une page
