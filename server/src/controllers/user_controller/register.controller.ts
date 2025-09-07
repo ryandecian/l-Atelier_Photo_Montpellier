@@ -77,7 +77,7 @@ const register_controller = async (req: Request, res: Response) => {
         }
 
         /* Logique métier 5 : Réponse de succès */
-        res.status(201).json({ message: "Enregistrement accepté." });
+        res.status(201).json({ message: "Enregistrement accepté. Un mail de confirmation a été envoyé." });
         return;
     }
     catch (error) {
