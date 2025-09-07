@@ -3,12 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { jwtDecode } from "jwt-decode";
 import DataUserType from "../types/dataUser.type";
 
-/**
- * Documentation : 
- * 
- * Ce Hook permet la vérification d'authentification de l'utilisateur :
- */
-
 const useAuthCheck = () => {
     const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false); // False = non connecté
     const [userInfo, setUserInfo] = useState<DataUserType | null>(null); // DataUser
