@@ -116,3 +116,40 @@
     color: #125aa2;
     transform: scale(1.02);
 }
+
+/* Bloc consentement CGV / données personnelles */
+.ConsentRow {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    gap: 0.5rem 0.75rem;
+    margin-top: 0.25rem;
+}
+
+.Checkbox {
+    width: 1.1rem;
+    height: 1.1rem;
+    margin-top: 0.2rem;
+    accent-color: #1976d2;
+}
+
+.ConsentLabel {
+    line-height: 1.4;
+}
+
+.ConsentHelp {
+    margin: 0.25rem 0 0.5rem 1.85rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.link {
+    text-decoration: underline;
+    color: #1976d2;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.link:hover {
+    color: #125aa2;
+    transform: scale(1.02);
+}
