@@ -14,7 +14,7 @@ import sendOneMailer_service from "../../services/mailer/sendOneMailer.service";
 
 /* Import des Types : */
 import getAllUsers_type from "../../types/user_type/getAllUsers.type";
-import MailOptions_type from "../../types/mailOptions.type";
+import MailOptions_type from "../../types/mailer_type/mailOptions.type";
 
 /* Import des utils */
 import { hashPasswordArgon_utils } from "../../utils/hashArgon.utils";
