@@ -15,10 +15,8 @@ import MailOptions_type from "../../types/mailer_type/mailOptions.type";
 
 
 async function sendOneMailer_service(mailOptions: MailOptions_type): Promise<boolean> {
-        /* Récupération de l'email de l'expéditeur depuis les variables d'environnement */
-        const MAIL_SERVER_ADMIN: string = ENV_SAFE("MAIL_SERVER_ADMIN");
+    /* Logique métier 1 : Vérification des paramètres obligatoires */
 
-        /* Vérification des paramètres obligatoires */
         /* Si le champ 'to' est vide, on retourne une erreur */
         if (!mailOptions.to || (Array.isArray(mailOptions.to) && mailOptions.to.length === 0)) {
             return false;
@@ -29,24 +27,24 @@ async function sendOneMailer_service(mailOptions: MailOptions_type): Promise<boo
             return false;
         }
 
-        /* 
-            Vérifications de sécurité : anti-injection d'en-têtes SMTP
-            ----------------------------------------------------------
-            On bloque toute tentative d'injection de nouveaux en-têtes via 
-            l'insertion de "\r" ou "\n" dans les champs sensibles.
-        */
+    /* Logique métier 2 : Vérification des en-têtes de l'email */
+        /* On bloque toute tentative d'injection de nouveaux en-têtes via l'insertion de "\r" ou "\n" dans les champs sensibles. */
+
        /* Si le champ 'subject' contient des caractères interdits, on retourne une erreur */
         if (verifyHeaderInjectionMail_security(mailOptions.subject)) {
             return false;
         }
+
         /* Si le champ 'to' contient des caractères interdits, on retourne une erreur */
         if (!Array.isArray(mailOptions.to) && verifyHeaderInjectionMail_security(String(mailOptions.to))) {
             return false;
         }
 
+    /* Logique métier 3 : Création du contenu du mail */
+
         /* Création de l'objet filtré pour l'envoi */
         const filterMailOption: MailOptions_type = {
-            from: `"LAPM - l'Atelier Photo Montpellier" <${MAIL_SERVER_ADMIN}>`,
+            from: `"LAPM - l'Atelier Photo Montpellier" <${ENV_SAFE("MAIL_SERVER_ADMIN")}>`,
             to: mailOptions.to,
             subject: mailOptions.subject.trim(),
         };
@@ -63,6 +61,8 @@ async function sendOneMailer_service(mailOptions: MailOptions_type): Promise<boo
             return false;
         }
 
+    /* Logique métier 4 : Envoi de l'email */
+
         /* Envoi de l'email via Nodemailer */
         const sendMailer: SentMessageInfo = await transporter.sendMail(filterMailOption);
 
@@ -71,34 +71,10 @@ async function sendOneMailer_service(mailOptions: MailOptions_type): Promise<boo
             return false;
         }
 
+    /* Logique métier 5 : Renvoi du statut d'envoi */
+
         /* Si tout est bon, on retourne true pour annoncer que l'email a été envoyé avec succès */
         return true;
 }
 
 export default sendOneMailer_service;
-
-
-
-
-// Exemple d'utilisation de la fonction sendMailerService dans un contrôleur
-// const mailOptions: MailOptionsType = {
-//     to: dataUser[0].email,
-//     subject: "Réinitialisation de votre mot de passe",
-//     html: `<p>Bonjour ${dataUser[0].firstname},</p>
-//            <p>Cliquez sur le lien ci-dessous pour réinitialiser votre mot de passe :</p>
-//            <a href="${linkResetPassword}">${linkResetPassword}</a>
-//            <p>Ce lien expirera dans 1 heure.</p>`,
-//     text: `Bonjour ${dataUser[0].firstname},
-//            Cliquez sur le lien ci-dessous pour réinitialiser votre mot de passe :
-//            ${linkResetPassword}
-//            Ce lien expirera dans 1 heure.`
-// }
-//
-// try {
-//     await sendOneMailer_service(mailOptions) // Gestion des erreur directement avec le try/catch dans la fonction sendMailerService
-// }
-// catch (error) {
-//     res.status(500).json({ error: "Erreur lors de l'envoi de l'email de réinitialisation du mot de passe." });
-//     const sendMailerServiceError = (error as Error).message; /* On récupère le message d'erreur de la fonction sendMailerService */
-//     return;
-// }
