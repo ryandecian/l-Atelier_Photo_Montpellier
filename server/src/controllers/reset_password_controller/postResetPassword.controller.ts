@@ -88,6 +88,7 @@ const postResetPassword_controller = async (req: Request, res: Response) => {
 
         /* Logique métier 6 : Réponse de succès */
             res.status(200).json({ message: "Email de réinitialisation envoyé." });
+            return;
     }
     catch (error) {
         res.status(500).json({ error: "Erreur interne du serveur inconnue." });
