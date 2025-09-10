@@ -7,7 +7,7 @@ import { getOneUserById_repository } from "../../repository/user_tbl/getOneUserB
 /* Import des Types : */
 import getOneUserById_type from "../../types/user_type/getOneUserById.type";
 
-
+/* Récupérer les données de l'utilisateur connecté */
 /* URI : /user/me */
 const getMeUser_controller = async (req: Request, res: Response) => {
     try {
