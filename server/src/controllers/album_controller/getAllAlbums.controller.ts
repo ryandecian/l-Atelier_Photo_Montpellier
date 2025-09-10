@@ -51,6 +51,7 @@ const getAllAlbums_controller = async (req: Request, res: Response) => {
                 message: "Liste des albums récupérée avec succès.",
                 data: dataAlbums
             });
+            return;
     }
     catch (error) {
         res.status(500).json({ message: "Erreur interne serveur inconnue." });

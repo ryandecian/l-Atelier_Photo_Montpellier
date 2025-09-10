@@ -49,6 +49,7 @@ const getOneAlbumById_controller = async (req: Request, res: Response) => {
                     date: new Date(dataAlbum.date).toLocaleDateString("fr-FR") /* "12/05/2025" */
                 }
             });
+            return;
     }
     catch (error) {
         res.status(500).json({ message: "Erreur interne serveur inconnue." });

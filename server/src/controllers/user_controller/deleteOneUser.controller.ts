@@ -10,7 +10,7 @@ import { deleteOneUserById_repository } from "../../repository/user_tbl/deleteOn
 /* URI : /user */
 const deleteOneUser_controller = async (req: Request, res: Response) => {
     try {
-        // Logique métier 1 : Suppression de l'utilisateur dans la DB
+        /* Logique métier 1 : Suppression de l'utilisateur dans la DB */
             const deleteDataUser: ResultSetHeader = await deleteOneUserById_repository(req.body.id);
 
             if (deleteDataUser.affectedRows === 0) {
@@ -18,7 +18,7 @@ const deleteOneUser_controller = async (req: Request, res: Response) => {
                 return;
             }
 
-        // Logique métier 2 : Envois de la confirmation de la suppression
+        /* Logique métier 2 : Envois de la confirmation de la suppression */
             res.status(200).json({ message: "Suppression réussie" });
             return;
     }

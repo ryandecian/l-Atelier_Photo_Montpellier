@@ -46,6 +46,7 @@ const putOneAlbum_controller = async (req: Request, res: Response) => {
 
         /* Logique métier 4 : Répondre à la requête */
             res.status(200).json({ message: "Album mis à jour avec succès." });
+            return;
     }
     catch (error) {
         res.status(500).json({ error: "Erreur interne serveur inconnue." });
