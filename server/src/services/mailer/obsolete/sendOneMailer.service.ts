@@ -14,19 +14,18 @@ import transporter from "./transporter.service";
 import MailOptions_type from "../../types/mailer_type/mailOptions.type";
 
 
-async function sendOneMailer_service(mailOptions: MailOptions_type): Promise<boolean> {
+async function sendOneMailer_service(mailOptions: MailOptions_type): Promise<SentMessageInfo> {
+    try {
         /* Récupération de l'email de l'expéditeur depuis les variables d'environnement */
         const MAIL_SERVER_ADMIN: string = ENV_SAFE("MAIL_SERVER_ADMIN");
 
         /* Vérification des paramètres obligatoires */
-        /* Si le champ 'to' est vide, on retourne une erreur */
         if (!mailOptions.to || (Array.isArray(mailOptions.to) && mailOptions.to.length === 0)) {
-            return false;
+            throw new Error("Erreur : le champ 'to' est obligatoire.");
         }
 
-        /* Si le champ 'subject' est vide, on retourne une erreur */
         if (!mailOptions.subject || mailOptions.subject.trim().length === 0) {
-            return false;
+            throw new Error("Erreur : le champ 'subject' est obligatoire.");
         }
 
         /* 
@@ -35,13 +34,11 @@ async function sendOneMailer_service(mailOptions: MailOptions_type): Promise<boo
             On bloque toute tentative d'injection de nouveaux en-têtes via 
             l'insertion de "\r" ou "\n" dans les champs sensibles.
         */
-       /* Si le champ 'subject' contient des caractères interdits, on retourne une erreur */
         if (verifyHeaderInjectionMail_security(mailOptions.subject)) {
-            return false;
+            throw new Error("Erreur : 'subject' contient des caractères interdits.");
         }
-        /* Si le champ 'to' contient des caractères interdits, on retourne une erreur */
         if (!Array.isArray(mailOptions.to) && verifyHeaderInjectionMail_security(String(mailOptions.to))) {
-            return false;
+            throw new Error("Erreur : 'to' contient des caractères interdits.");
         }
 
         /* Création de l'objet filtré pour l'envoi */
@@ -58,21 +55,20 @@ async function sendOneMailer_service(mailOptions: MailOptions_type): Promise<boo
         if (mailOptions.html) {
             filterMailOption.html = mailOptions.html;
         }
-        /* Si le champ 'text' et 'html' sont vides, on retourne une erreur */
         if (!filterMailOption.text && !filterMailOption.html) {
-            return false;
+            throw new Error("Erreur : les champs 'text' et 'html' sont absents.");
         }
 
         /* Envoi de l'email via Nodemailer */
         const sendMailer: SentMessageInfo = await transporter.sendMail(filterMailOption);
-
-        /* Vérification : si l'email n'a pas été envoyé */
-        if (!sendMailer.accepted || sendMailer.accepted.length === 0) {
-            return false;
+        return sendMailer;
+    }
+    catch (error) {
+        if (error instanceof Error) {
+            throw error; /* on relance l'erreur d'origine, stack incluse */
         }
-
-        /* Si tout est bon, on retourne true pour annoncer que l'email a été envoyé avec succès */
-        return true;
+        throw new Error("Erreur inconnue lors de l’envoi d’email.");
+    }
 }
 
 export default sendOneMailer_service;
