@@ -17,7 +17,7 @@ import sendOneMailer_service from "../../services/mailer/sendOneMailer.service";
 /* Import des Types : */
 import getAllUsers_type from "../../types/user_type/getAllUsers.type";
 import getAllTokenResetPassword_type from "../../types/reset_password_type/getAllTokenResetPassword.type";
-import MailOptions_type from "../../types/mailOptions.type";
+import MailOptions_type from "../../types/mailer_type/mailOptions.type";
 
 /* Import des utils */
 import { createCryptoToken_utils } from "../../utils/createCryptoToken.utils";
