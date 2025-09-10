@@ -12,7 +12,7 @@ import { getAllTokenResetPassword_repository } from "../../repository/reset_pass
 import { deleteVariousTokenReset_repository } from "../../repository/reset_password_tbl/deleteVariousTokenResetPassword.repository";
 
 /* Import des Services : */
-import sendOneMailer_service from "../../services/mailer/sendOneMailer.service";
+import sendResetPassword_email from "../../mails/sendResetPassword.email";
 
 /* Import des Types : */
 import getAllUsers_type from "../../types/user_type/getAllUsers.type";
@@ -59,37 +59,10 @@ const postResetPassword_controller = async (req: Request, res: Response) => {
             return;
         }
 
-        /* Logique métier 4 : Création du lien de réinitialisation */
-        if (!ENV.VITE_DOMAIN_CLIENT) {
-            res.status(500).json({ error: "Erreur interne du serveur." });
-            return;
-        }
+        /* Logique métier 4 : Envoi de l'email de réinitialisation */
+        const sendEmail: boolean = await sendResetPassword_email(dataUser[0].email, dataUser[0].firstname, token);
 
-        const linkResetPassword: string = `${ENV.VITE_DOMAIN_CLIENT}/reset-password/confirm?token=${token}`;
-
-        /* Logique métier 5 : Envoi de l'email de réinitialisation */
-        const mailOptions: MailOptions_type = {
-            to: dataUser[0].email,
-            subject: "Réinitialisation de votre mot de passe",
-            html: `<p>Bonjour ${dataUser[0].firstname},</p>
-                   <p>Cliquez sur le lien ci-dessous pour réinitialiser votre mot de passe :</p>
-                   <a href="${linkResetPassword}">${linkResetPassword}</a>
-                   <p>Ce lien expirera dans 1 heure.</p>`,
-            text: `Bonjour ${dataUser[0].firstname},
-                   Cliquez sur le lien ci-dessous pour réinitialiser votre mot de passe :
-                   ${linkResetPassword}
-                   Ce lien expirera dans 1 heure.`
-        };
-
-        try {
-            await sendOneMailer_service(mailOptions); /* Gestion des erreurs directement dans sendMailerService */
-        }
-        catch (error) {
-            res.status(500).json({ error: "Erreur lors de l'envoi de l'email." });
-            return;
-        }
-
-        /* Logique métier 6 : Régulation et nettoyage des tokens expirés en DB */
+        /* Logique métier 5 : Régulation et nettoyage des tokens expirés en DB */
         const dataToken: getAllTokenResetPassword_type[] = await getAllTokenResetPassword_repository();
 
         if (dataToken.length === 0) { /* La table ne peut pas être vide car on vient d'enregistrer un token */
@@ -112,7 +85,7 @@ const postResetPassword_controller = async (req: Request, res: Response) => {
             return;
         }
 
-        /* Logique métier 7 : Réponse de succès */
+        /* Logique métier 6 : Réponse de succès */
         res.status(200).json({ message: "Email de réinitialisation envoyé." });
     }
     catch (error) {
