@@ -11,16 +11,16 @@ import { deleteOneUserById_repository } from "../../repository/user_tbl/deleteOn
 const deleteOneUser_controller = async (req: Request, res: Response) => {
     try {
         // Logique métier 1 : Suppression de l'utilisateur dans la DB
-        const deleteDataUser: ResultSetHeader = await deleteOneUserById_repository(req.body.id);
+            const deleteDataUser: ResultSetHeader = await deleteOneUserById_repository(req.body.id);
 
-        if (deleteDataUser.affectedRows === 0) {
-            res.status(404).json({ error: "Aucun utilisateur trouvé" });
-            return;
-        }
+            if (deleteDataUser.affectedRows === 0) {
+                res.status(404).json({ error: "Aucun utilisateur trouvé" });
+                return;
+            }
 
         // Logique métier 2 : Envois de la confirmation de la suppression
-        res.status(200).json({ message: "Suppression réussie" });
-        return;
+            res.status(200).json({ message: "Suppression réussie" });
+            return;
     }
     catch (error) {
         res.status(500).json({ error: "Erreur interne serveur inconnue." });
