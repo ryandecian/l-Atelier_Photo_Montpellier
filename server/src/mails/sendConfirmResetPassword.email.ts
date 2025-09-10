@@ -8,7 +8,7 @@ import sendOneMailer_service from "../services/mailer/sendOneMailer.service";
 import MailOptions_type from "../types/mailer_type/mailOptions.type";
 
 
-async function sendRegister_email(email: string, firstname: string): Promise<boolean> {
+async function sendConfirmResetPassword_email(email: string, firstname: string): Promise<boolean> {
     /* Logique métier 1 : Vérification des variables de paramètre */
         if (!email || !firstname) {
             return false;
@@ -17,18 +17,22 @@ async function sendRegister_email(email: string, firstname: string): Promise<boo
     /* Logique métier 2 : Création de l'email */
         const mailOptions: MailOptions_type = {
             to: email,
-            subject: "Création de votre compte",
+            subject: "Confirmation de réinitialisation de mot de passe",
             html: `
+                <h1>Réinitialisation de mot de passe</h1>
                 <p>Bonjour ${firstname},</p>
-                <p>Votre compte a été créé avec succès.</p>
-                <p>Cliquez sur le lien ci-dessous pour accéder à votre compte : </p>
-                <p><a href="${ENV_SAFE("VITE_DOMAIN_CLIENT")}/login">Se connecter</a></p>
-                `,
+                <p>Votre mot de passe a été réinitialisé avec succès.</p>
+                <p>Si vous n'êtes pas à l'origine de cette demande, veuillez contacter notre support.</p>
+                <p>Cordialement,</p>
+                <p>L'Atelier Photo Montpellier</p>
+            `,
             text: `
+                Réinitialisation de mot de passe
                 Bonjour ${firstname},
-                Votre compte a été créé avec succès.
-                Cliquez sur le lien ci-dessous pour accéder à votre compte :
-                ${ENV_SAFE("VITE_DOMAIN_CLIENT")}/login
+                Votre mot de passe a été réinitialisé avec succès.
+                Si vous n'êtes pas à l'origine de cette demande, veuillez contacter notre support.
+                Cordialement,
+                L'Atelier Photo Montpellier
             `
         };
 
@@ -44,15 +48,15 @@ async function sendRegister_email(email: string, firstname: string): Promise<boo
         return true;
 }
 
-export default sendRegister_email;
+export default sendConfirmResetPassword_email;
 
 /**
  * Documentation : 
  * 
  * Pour utiliser ce composant il faut faire comme ceci :
- * const sendEmail = await sendRegister_email(email, firstname);
+ * const sendEmail = await sendConfirmResetPassword_email(email, firstname);
  * 
- * if (!sendEmail) {
+  * if (!sendEmail) {
  *     // Gérer l'erreur d'envoi d'email
  * }
  * 

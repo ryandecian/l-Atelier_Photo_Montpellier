@@ -11,7 +11,7 @@ import { putOneUserPasswordById_repository } from "../../repository/user_tbl/put
 import { deleteOneTokenResetPassword_repository } from "../../repository/reset_password_tbl/deleteOneTokenResetPassword.repository";
 
 /* Import des Services : */
-import sendOneMailer_service from "../../services/mailer/sendOneMailer.service";
+import sendConfirmResetPassword_email from "../../mails/sendConfirmResetPassword.email";
 
 /* Import des Types : */
 import getAllTokenResetPassword_type from "../../types/reset_password_type/getAllTokenResetPassword.type";
@@ -74,37 +74,15 @@ const deleteUseResetPassword_controller = async (req: Request, res: Response) =>
         }
 
         /* Logique métier 6 : Envoi d'un email de confirmation à l'utilisateur */
-        try {
-            const mailOptions = {
-                to: dataUser.email,
-                subject: "Confirmation de réinitialisation de mot de passe",
-                html: `
-                    <h1>Réinitialisation de mot de passe</h1>
-                    <p>Bonjour ${dataUser.firstname},</p>
-                    <p>Votre mot de passe a été réinitialisé avec succès.</p>
-                    <p>Si vous n'êtes pas à l'origine de cette demande, veuillez contacter notre support.</p>
-                    <p>Cordialement,</p>
-                    <p>L'Atelier Photo Montpellier</p>
-                `,
-                text: `
-                    Réinitialisation de mot de passe
-                    Bonjour ${dataUser.firstname},
-                    Votre mot de passe a été réinitialisé avec succès.
-                    Si vous n'êtes pas à l'origine de cette demande, veuillez contacter notre support.
-                    Cordialement,
-                    L'Atelier Photo Montpellier
-                `
-            };
+        const sendEmail: boolean = await sendConfirmResetPassword_email(dataUser.email, dataUser.firstname);
 
-            await sendOneMailer_service(mailOptions);
-        }
-        catch (error) {
-            res.status(500).json({ error: "Erreur lors de l'envoi de l'email." });
+        if (!sendEmail) {
+            res.status(200).json({ message: "Mot de passe réinitialisé avec succès." });
             return;
         }
 
         /* Logique métier 7 : Envoi de la réponse au client */
-        res.status(200).json({ message: "Mot de passe réinitialisé avec succès." });
+        res.status(200).json({ message: "Mot de passe réinitialisé avec succès. Un email de confirmation a été envoyé." });
         return;
     }
     catch (error) {
