@@ -10,11 +10,10 @@ import verifyEmailByEmail_repository from "../../repository/user_tbl/verifyEmail
 import insertOneUser_repository from "../../repository/user_tbl/insertOneUser.repository";
 
 /* Import des Services : */
-import sendOneMailer_service from "../../services/mailer/sendOneMailer.service";
+import sendRegister_email from "../../services/mails/sendRegister.email";
 
 /* Import des Types : */
 import getAllUsers_type from "../../types/user_type/getAllUsers.type";
-import MailOptions_type from "../../types/mailer_type/mailOptions.type";
 
 /* Import des utils */
 import { hashPasswordArgon_utils } from "../../utils/hashArgon.utils";
@@ -50,29 +49,10 @@ const register_controller = async (req: Request, res: Response) => {
         console.info("Logique métier 3 ok")
 
         /* Logique métier 4 : Envois de l'email de confirmation de création de compte */
-        if (!ENV.VITE_DOMAIN_CLIENT) {
-            res.status(500).json({ error: "Erreur interne du serveur." });
-            return;
-        }
+        const sendEmail = await sendRegister_email(req.body.email, req.body.firstname);
 
-        const mailOptions: MailOptions_type = {
-            to: req.body.email,
-            subject: "Création de votre compte",
-            html: `<p>Bonjour ${req.body.firstname},</p>
-                   <p>Votre compte a été créé avec succès.</p>
-                   <p>Cliquez sur le lien ci-dessous pour accéder à votre compte : </p>
-                   <p><a href="${ENV.VITE_DOMAIN_CLIENT}/login">Se connecter</a></p>`,
-            text: `Bonjour ${req.body.firstname},
-                   Votre compte a été créé avec succès.
-                   Cliquez sur le lien ci-dessous pour accéder à votre compte :
-                   ${ENV.VITE_DOMAIN_CLIENT}/login`
-        };
-
-        try {
-            await sendOneMailer_service(mailOptions); /* Gestion des erreurs directement dans sendMailerService */
-        }
-        catch (error) {
-            res.status(500).json({ error: "Erreur lors de l'envoi de l'email." });
+        if (!sendEmail) {
+            res.status(201).json({ message: "Enregistrement accepté." });
             return;
         }
 

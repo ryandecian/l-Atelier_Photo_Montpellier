@@ -7,7 +7,8 @@ import sendOneMailer_service from "../mailer/sendOneMailer.service";
 /* Import des types */
 import MailOptions_type from "../../types/mailer_type/mailOptions.type";
 
-async function sendRegister_mail(email: string, firstname: string): Promise<boolean> {
+
+async function sendRegister_email(email: string, firstname: string): Promise<boolean> {
     /* Logique métier 1 : Vérification des variables de paramètre */
         if (!email || !firstname) {
             return false;
@@ -42,4 +43,17 @@ async function sendRegister_mail(email: string, firstname: string): Promise<bool
         return true;
 }
 
-export default sendRegister_mail;
+export default sendRegister_email;
+
+/**
+ * Documentation : 
+ * 
+ * Pour utiliser ce composant il faut faire comme ceci :
+ * const sendEmail = await sendRegister_email(email, firstname);
+ * 
+ * if (!sendEmail) {
+ *     // Gérer l'erreur d'envoi d'email
+ * }
+ * 
+ * Cela garantie une variable existante
+ */
