@@ -14,43 +14,43 @@ import getAllAlbums_type from "../../types/album_type/getAllAlbums.type";
 const getMyAlbums_controller = async (req: Request, res: Response) => {
     try {
         /* Logique métier 1 : Vérifier que l'utilisateur existe et récupérer ses données complètes */
-        const dataUser: getAllUsers_type[] | null = await verifyEmailById_repository(req.body.dataUser.id);
+            const dataUser: getAllUsers_type[] | null = await verifyEmailById_repository(req.body.dataUser.id);
 
-        if (!dataUser || dataUser.length === 0) {
-            res.status(404).json({ error: "Utilisateur non trouvé" });
-            return;
-        }
+            if (!dataUser || dataUser.length === 0) {
+                res.status(404).json({ error: "Utilisateur non trouvé" });
+                return;
+            }
 
-        /* On prend le premier (et unique) enregistrement utilisateur */
-        const user = dataUser[0];
+            /* On prend le premier (et unique) enregistrement utilisateur */
+            const user = dataUser[0];
 
         /* Logique métier 2 : Récupérer tous les albums privés de l'utilisateur connecté */
-        const albums: getAllAlbums_type[] = await getMyAlbums_repository(req.body.dataUser.id);
+            const albums: getAllAlbums_type[] = await getMyAlbums_repository(req.body.dataUser.id);
 
-        if (albums.length === 0) {
-            res.status(404).json({ error: "Aucun album trouvé" });
-            console.info("Aucun album trouvé");
-            return;
-        }
+            if (albums.length === 0) {
+                res.status(404).json({ error: "Aucun album trouvé" });
+                console.info("Aucun album trouvé");
+                return;
+            }
 
         /* Logique métier 3 : Construire le tableau d'objets attendu pour le front */
-        const dataAlbums = albums.map((album) => {
-            return {
-                id_album: album.id,
-                firstname: user.firstname,
-                lastname: user.lastname,
-                access_password: album.access_code,
-                lien: album.lien,
-                date: new Date(album.date).toLocaleDateString("fr-FR") /* "12/05/2025" */
-            };
-        });
+            const dataAlbums = albums.map((album) => {
+                return {
+                    id_album: album.id,
+                    firstname: user.firstname,
+                    lastname: user.lastname,
+                    access_password: album.access_code,
+                    lien: album.lien,
+                    date: new Date(album.date).toLocaleDateString("fr-FR") /* "12/05/2025" */
+                };
+            });
 
         /* Logique métier 4 : Réponse */
-        res.status(200).json({
-            message: "Liste des albums récupérée avec succès.",
-            data: dataAlbums
-        });
-        return;
+            res.status(200).json({
+                message: "Liste des albums récupérée avec succès.",
+                data: dataAlbums
+            });
+            return;
     }
     catch (error) {
         res.status(500).json({ message: "Erreur interne serveur inconnue." });

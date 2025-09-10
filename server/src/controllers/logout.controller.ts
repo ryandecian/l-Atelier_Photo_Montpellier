@@ -4,7 +4,7 @@ const logout_controller = async (req: Request, res: Response) => {
     try {
         res.clearCookie("jwtTokenServerLAPM", {
             httpOnly: true,
-            // secure: true, seulement en production
+            /* secure: true, seulement en production */
             sameSite: "lax",
             path: "/",
         });
