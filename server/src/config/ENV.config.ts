@@ -85,7 +85,7 @@ export {ENV_SAFE};
  * Documentation : 
  * 
  * Pour utiliser ce composant il faut faire comme ceci : 
- * ENV_SAVE("Variable_cible")
+ * ENV_SAFE("Variable_cible")
  * 
  * Cela garantie une variable existante
  */
