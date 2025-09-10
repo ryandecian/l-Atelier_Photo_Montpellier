@@ -9,8 +9,8 @@ import { ENV } from "../../config/ENV.config";
 import verifyEmailByEmail_repository from "../../repository/user_tbl/verifyEmailByEmail.repository";
 import insertOneUser_repository from "../../repository/user_tbl/insertOneUser.repository";
 
-/* Import des Services : */
-import sendRegister_email from "../../services/mails/sendRegister.email";
+/* Import des emails : */
+import sendRegister_email from "../../mails/sendRegister.email";
 
 /* Import des Types : */
 import getAllUsers_type from "../../types/user_type/getAllUsers.type";

@@ -1,11 +1,11 @@
 /* Import de la configuration : */
-import { ENV_SAFE } from "../../config/ENV.config";
+import { ENV_SAFE } from "../config/ENV.config";
 
 /* Import des services */
-import sendOneMailer_service from "../mailer/sendOneMailer.service";
+import sendOneMailer_service from "../services/mailer/sendOneMailer.service";
 
 /* Import des types */
-import MailOptions_type from "../../types/mailer_type/mailOptions.type";
+import MailOptions_type from "../types/mailer_type/mailOptions.type";
 
 
 async function sendRegister_email(email: string, firstname: string): Promise<boolean> {
