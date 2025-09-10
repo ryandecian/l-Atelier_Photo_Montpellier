@@ -14,41 +14,42 @@ import getOneUserById_type from "../../types/user_type/getOneUserById.type";
 const getOneAlbumById_controller = async (req: Request, res: Response) => {
     try {
         /* Logique métier 1 : Récupération de l'album cible */
-        const albumId = parseInt(req.params.id, 10);
-        if (!Number.isFinite(albumId) || albumId <= 0) {
-            res.status(400).json({ error: "ID d'album invalide" });
-            return;
-        }
+            const albumId = parseInt(req.params.id, 10);
+            if (!Number.isFinite(albumId) || albumId <= 0) {
+                res.status(400).json({ error: "ID d'album invalide" });
+                return;
+            }
 
-        const dataAlbum: getAllAlbums_type | null = await getOneAlbum_repository(albumId);
+            const dataAlbum: getAllAlbums_type | null = await getOneAlbum_repository(albumId);
 
-        if (!dataAlbum) {
-            res.status(404).json({ error: "Aucun album trouvé" });
-            return;
-        }
+            if (!dataAlbum) {
+                res.status(404).json({ error: "Aucun album trouvé" });
+                return;
+            }
 
         /* Logique métier 2 : Récupération des données de l'utilisateur associé */
-        const userId = dataAlbum.user_id;
-        const dataUser: getOneUserById_type | null = await getOneUserById_repository(userId);
+            const userId = dataAlbum.user_id;
+            const dataUser: getOneUserById_type | null = await getOneUserById_repository(userId);
 
-        if (!dataUser) {
-            res.status(404).json({ error: "Erreur dans la récupération des données de l'utilisateur associé" });
-            return;
-        }
+            if (!dataUser) {
+                res.status(404).json({ error: "Erreur dans la récupération des données de l'utilisateur associé" });
+                return;
+            }
 
         /* Logique métier 3 : Construction de la réponse */
-        res.status(200).json({
-            message: "Album récupéré avec succès.",
-            data: {
-                id_album: dataAlbum.id,
-                id_user: dataUser.id,
-                firstname: dataUser.firstname,
-                lastname: dataUser.lastname,
-                lien: dataAlbum.lien,
-                access_code: dataAlbum.access_code,
-                date: new Date(dataAlbum.date).toLocaleDateString("fr-FR") /* "12/05/2025" */
-            }
-        });
+            res.status(200).json({
+                message: "Album récupéré avec succès.",
+                data: {
+                    id_album: dataAlbum.id,
+                    id_user: dataUser.id,
+                    firstname: dataUser.firstname,
+                    lastname: dataUser.lastname,
+                    lien: dataAlbum.lien,
+                    access_code: dataAlbum.access_code,
+                    date: new Date(dataAlbum.date).toLocaleDateString("fr-FR") /* "12/05/2025" */
+                }
+            });
+            return;
     }
     catch (error) {
         res.status(500).json({ message: "Erreur interne serveur inconnue." });

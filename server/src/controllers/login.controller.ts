@@ -16,47 +16,47 @@ import { createJwtTokenServerLAPM_utils, createJwtTokenClientLAPM_utils } from "
 const login_controller = async (req: Request, res: Response) => {
     try {
         /* Logique métier 1 : Vérification si l'email existe */
-        const dataUser: getAllUsers_type[] = await verifyEmailByEmail_repository(req.body.email);
+            const dataUser: getAllUsers_type[] = await verifyEmailByEmail_repository(req.body.email);
 
-        if (dataUser.length === 0) {
-            res.status(404).json({ error: "Email ou mot de passe incorrect" });
-            return;
-        }
+            if (dataUser.length === 0) {
+                res.status(404).json({ error: "Email ou mot de passe incorrect" });
+                return;
+            }
 
         /* Logique métier 2 : Vérifier le mot de passe utilisateur */
-        const verifyPassword: boolean = await verifyPasswordArgon_utils(dataUser[0].password, req.body.password);
+            const verifyPassword: boolean = await verifyPasswordArgon_utils(dataUser[0].password, req.body.password);
 
-        if (!verifyPassword) { // Si c'est false, c'est que le mot de passe est incorrect
-            res.status(401).json({ error: "Email ou mot de passe incorrect" });
-            return;
-        }
+            if (!verifyPassword) { // Si c'est false, c'est que le mot de passe est incorrect
+                res.status(401).json({ error: "Email ou mot de passe incorrect" });
+                return;
+            }
 
         /* Logique métier 3 : Création du JWT client et server */
-        // Création du token server
-        const jwtTokenServerLAPM: string | boolean = await createJwtTokenServerLAPM_utils(dataUser[0]);
-        // Création du token client
-        const jwtTokenClientLAPM: string | boolean = await createJwtTokenClientLAPM_utils(dataUser[0]);
+            /* Création du token server */
+            const jwtTokenServerLAPM: string | boolean = await createJwtTokenServerLAPM_utils(dataUser[0]);
+            /* Création du token client */
+            const jwtTokenClientLAPM: string | boolean = await createJwtTokenClientLAPM_utils(dataUser[0]);
 
-        // Vérification des tokens Server et Client si elles existent
-        // Si l'une d'entre elles n'existe pas, on renvoie une erreur 500
-        if (!jwtTokenServerLAPM || !jwtTokenClientLAPM) {
-            res.status(500).json({ error: "Erreur interne serveur." });
-            return;
-        }
+            /* Vérification des tokens Server et Client si elles existent */
+            /* Si l'une d'entre elles n'existe pas, on renvoie une erreur 500 */
+            if (!jwtTokenServerLAPM || !jwtTokenClientLAPM) {
+                res.status(500).json({ error: "Erreur interne serveur." });
+                return;
+            }
 
         /* Logique métier 4 : Réponse au client */
-        res.status(200)
-            .cookie("jwtTokenServerLAPM", jwtTokenServerLAPM, {
-                httpOnly: true,
-                // secure: true, cookie envoyé uniquement en https
-                sameSite: "lax",
-                maxAge: 60 * 60 * 1000, // 1 heure
-            })
-            .json({
-                message: "Connexion réussie",
-                jwtTokenClientLAPM: jwtTokenClientLAPM,
-            });
-        return;
+            res.status(200)
+                .cookie("jwtTokenServerLAPM", jwtTokenServerLAPM, {
+                    httpOnly: true,
+                    /* secure: true, cookie envoyé uniquement en https */
+                    sameSite: "lax",
+                    maxAge: 60 * 60 * 1000, // 1 heure
+                })
+                .json({
+                    message: "Connexion réussie",
+                    jwtTokenClientLAPM: jwtTokenClientLAPM,
+                });
+            return;
     }
     catch (error) {
         res.status(500).json({ error: "Erreur interne serveur." });
