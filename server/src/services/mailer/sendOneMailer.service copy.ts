@@ -12,20 +12,21 @@ import transporter from "./transporter.service";
 
 /* Import des types */
 import MailOptions_type from "../../types/mailer_type/mailOptions.type";
-import SendOneMailerResponse_type from "../../types/mailer_type/sendOneMailerResponse.type";
 
 
-async function sendOneMailer_service(mailOptions: MailOptions_type): Promise<SendOneMailerResponse_type> {
+async function sendOneMailer_service(mailOptions: MailOptions_type): Promise<boolean> {
         /* Récupération de l'email de l'expéditeur depuis les variables d'environnement */
         const MAIL_SERVER_ADMIN: string = ENV_SAFE("MAIL_SERVER_ADMIN");
 
         /* Vérification des paramètres obligatoires */
+        /* Si le champ 'to' est vide, on retourne une erreur */
         if (!mailOptions.to || (Array.isArray(mailOptions.to) && mailOptions.to.length === 0)) {
-            return ({ error: "Erreur : le champ 'to' est obligatoire." });
+            return false;
         }
 
+        /* Si le champ 'subject' est vide, on retourne une erreur */
         if (!mailOptions.subject || mailOptions.subject.trim().length === 0) {
-            return ({ error: "Erreur : le champ 'subject' est obligatoire." });
+            return false;
         }
 
         /* 
@@ -34,11 +35,13 @@ async function sendOneMailer_service(mailOptions: MailOptions_type): Promise<Sen
             On bloque toute tentative d'injection de nouveaux en-têtes via 
             l'insertion de "\r" ou "\n" dans les champs sensibles.
         */
+       /* Si le champ 'subject' contient des caractères interdits, on retourne une erreur */
         if (verifyHeaderInjectionMail_security(mailOptions.subject)) {
-            return ({ error: "Erreur : 'subject' contient des caractères interdits." });
+            return false;
         }
+        /* Si le champ 'to' contient des caractères interdits, on retourne une erreur */
         if (!Array.isArray(mailOptions.to) && verifyHeaderInjectionMail_security(String(mailOptions.to))) {
-            return ({ error: "Erreur : 'to' contient des caractères interdits." });
+            return false;
         }
 
         /* Création de l'objet filtré pour l'envoi */
@@ -55,13 +58,21 @@ async function sendOneMailer_service(mailOptions: MailOptions_type): Promise<Sen
         if (mailOptions.html) {
             filterMailOption.html = mailOptions.html;
         }
+        /* Si le champ 'text' et 'html' sont vides, on retourne une erreur */
         if (!filterMailOption.text && !filterMailOption.html) {
-            return ({ error: "Erreur : les champs 'text' et 'html' sont absents." });
+            return false;
         }
 
         /* Envoi de l'email via Nodemailer */
         const sendMailer: SentMessageInfo = await transporter.sendMail(filterMailOption);
-        return sendMailer;
+
+        /* Vérification : si l'email n'a pas été envoyé */
+        if (!sendMailer.accepted || sendMailer.accepted.length === 0) {
+            return false;
+        }
+
+        /* Si tout est bon, on retourne true pour annoncer que l'email a été envoyé avec succès */
+        return true;
 }
 
 export default sendOneMailer_service;
