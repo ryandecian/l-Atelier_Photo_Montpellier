@@ -10,12 +10,6 @@ sudo docker exec -it db mariadb -u "LAPM" -p
 ------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------
-Interface CLIENT : On va commencer par créer et structurer l'interface comme l'admin avec des cards
-                   On va également comprendre et refactoriser si necessaire le verouillage d'une page
-- Section 1 : Mes informations
-- Section 2 : Mes Séances
-- Section 3 : Mes factures
-- Section 4 : Déconnexion
 
 ------------------------------------------------------------------------------
 Interface Admin : 
