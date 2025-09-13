@@ -6,6 +6,7 @@ Allow: /
 Disallow: /admin/
 Disallow: /compte/
 Disallow: /portrait-grossesse/
+Disallow: /reset-password/confirm/
 
 # Bloquer les fichiers sensibles (sécurité et SEO)
 Disallow: /*.env$
