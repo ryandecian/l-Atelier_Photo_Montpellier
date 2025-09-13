@@ -4,12 +4,7 @@ Allow: /
 
 # Bloquer les dossiers sensibles ou réservés
 Disallow: /admin/
-Disallow: /admin/user/
-Disallow: /admin/user-systeme/
-Disallow: /admin/user-systeme/edit-user
 Disallow: /compte/
-Disallow: /compte/user/
-Disallow: /compte/user/-edit-user/
 Disallow: /portrait-grossesse/
 
 # Bloquer les fichiers sensibles (sécurité et SEO)
