@@ -9,24 +9,6 @@
     </url>
 
     <url>
-        <loc>https://atelier-photo-montpellier.fr/mentions-legales</loc>
-        <lastmod>2025-08-10</lastmod>
-        <priority>0.3</priority>
-    </url>
-
-    <url>
-        <loc>https://atelier-photo-montpellier.fr/tarifs</loc>
-        <lastmod>2025-08-07</lastmod>
-        <priority>0.9</priority>
-    </url>
-
-    <url>
-        <loc>https://atelier-photo-montpellier.fr/contacts</loc>
-        <lastmod>2025-08-08</lastmod>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
         <loc>https://atelier-photo-montpellier.fr/blog</loc>
         <lastmod>2025-08-11</lastmod>
         <priority>0.8</priority>
@@ -57,9 +39,27 @@
     </url>
 
     <url>
-        <loc>https://atelier-photo-montpellier.fr/qui-suis-je</loc>
-        <lastmod>2025-07-19</lastmod>
+        <loc>https://atelier-photo-montpellier.fr/conditions-generales-de-vente</loc>
+        <lastmod>2025-08-11</lastmod>
+        <priority>0.3</priority>
+    </url>
+
+    <url>
+        <loc>https://atelier-photo-montpellier.fr/contacts</loc>
+        <lastmod>2025-08-08</lastmod>
         <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://atelier-photo-montpellier.fr/login</loc>
+        <lastmod>2025-08-24</lastmod>
+        <priority>0.3</priority>
+    </url>
+
+    <url>
+        <loc>https://atelier-photo-montpellier.fr/mentions-legales</loc>
+        <lastmod>2025-08-10</lastmod>
+        <priority>0.3</priority>
     </url>
 
     <url>
@@ -69,32 +69,8 @@
     </url>
 
     <url>
-        <loc>https://atelier-photo-montpellier.fr/conditions-generales-de-vente</loc>
-        <lastmod>2025-08-11</lastmod>
-        <priority>0.3</priority>
-    </url>
-
-    <url>
         <loc>https://atelier-photo-montpellier.fr/portrait-corporate</loc>
         <lastmod>2025-07-26</lastmod>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://atelier-photo-montpellier.fr/portrait-lifestyle</loc>
-        <lastmod>2025-08-02</lastmod>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://atelier-photo-montpellier.fr/portrait-mariage</loc>
-        <lastmod>2025-07-19</lastmod>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://atelier-photo-montpellier.fr/portrait-solo</loc>
-        <lastmod>2025-08-02</lastmod>
         <priority>0.8</priority>
     </url>
 
@@ -106,12 +82,6 @@
 
     <url>
         <loc>https://atelier-photo-montpellier.fr/portrait-famille-ami</loc>
-        <lastmod>2025-08-04</lastmod>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://atelier-photo-montpellier.fr/portrait-nouveau-ne</loc>
         <lastmod>2025-08-04</lastmod>
         <priority>0.8</priority>
     </url>
@@ -129,9 +99,51 @@
     </url>
 
     <url>
-        <loc>https://atelier-photo-montpellier.fr/login</loc>
-        <lastmod>2025-08-24</lastmod>
-        <priority>0.3</priority>
+        <loc>https://atelier-photo-montpellier.fr/portrait-lifestyle</loc>
+        <lastmod>2025-08-02</lastmod>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://atelier-photo-montpellier.fr/portrait-mariage</loc>
+        <lastmod>2025-07-19</lastmod>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://atelier-photo-montpellier.fr/portrait-nouveau-ne</loc>
+        <lastmod>2025-08-04</lastmod>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://atelier-photo-montpellier.fr/portrait-solo</loc>
+        <lastmod>2025-08-02</lastmod>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://atelier-photo-montpellier.fr/qui-suis-je</loc>
+        <lastmod>2025-07-19</lastmod>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://atelier-photo-montpellier.fr/register</loc>
+        <lastmod>2025-09-13</lastmod>
+        <priority>0.1</priority>
+    </url>
+
+    <url>
+        <loc>https://atelier-photo-montpellier.fr/reset-password</loc>
+        <lastmod>2025-09-13</lastmod>
+        <priority>0.0</priority>
+    </url>
+
+    <url>
+        <loc>https://atelier-photo-montpellier.fr/tarifs</loc>
+        <lastmod>2025-08-07</lastmod>
+        <priority>0.9</priority>
     </url>
 
     <url>
