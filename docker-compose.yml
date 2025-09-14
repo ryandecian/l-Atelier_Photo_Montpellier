@@ -50,9 +50,10 @@ services:
     volumes:
       - client-dist:/deploy  # Rend disponible le build Vite pour Nginx sur /deploy (PAS sur /app/dist)
     command: >
-      sh -c "rm -rf /deploy/* &&
+      sh -euxc "ls -la /app/dist &&
+        rm -rf /deploy/* &&
         cp -r /app/dist/* /deploy/ &&
-        echo '✅ Front copié dans le volume /deploy' && exit 0"
+        echo '✅ Front copié dans /deploy'"
 
   server:
     container_name: server
