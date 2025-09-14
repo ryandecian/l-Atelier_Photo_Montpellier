@@ -14,9 +14,9 @@ services:
       - ./nginx/html:/usr/share/nginx/html                        # Page HTML statique (optionnel, ex: page maintenance)
       - client-dist:/usr/share/nginx/html/lapm:ro                 # Volume monté contenant les fichiers buildés du frontend en lecture seule
     depends_on:
-      - client:
+      client:
         condition: service_completed_successfully
-      - server:
+      server:
         condition: service_started
 
   db:
@@ -37,6 +37,12 @@ services:
     # Exposition de la DB vers l'extérieur en dehors de Docker
     ports:
       - "3306:3306"  # DB accessible depuis l'extérieur le temps du dev
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -u$MYSQL_USER -p$MYSQL_PASSWORD --silent"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 25s
 
   client:
     container_name: client
@@ -84,7 +90,8 @@ services:
       - SECRET_KEY_TOKEN_CLIENT=${SECRET_KEY_TOKEN_CLIENT}
       - SECRET_KEY_TOKEN_API_SERVER=${SECRET_KEY_TOKEN_API_SERVER}
     depends_on:
-      - db
+      db:
+        condition: service_healthy
     volumes:
       - ./server/uploads:/app/uploads # Dossier pour les fichiers uploadés
 
