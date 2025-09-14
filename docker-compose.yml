@@ -12,10 +12,12 @@ services:
       - ./nginx/certs:/etc/nginx/certs                            # Certificats TLS (Let's Encrypt)
       - /etc/letsencrypt:/etc/letsencrypt:ro
       - ./nginx/html:/usr/share/nginx/html                        # Page HTML statique (optionnel, ex: page maintenance)
-      - client-dist:/usr/share/nginx/html/lapm                   # Volume monté contenant les fichiers buildés du frontend
+      - client-dist:/usr/share/nginx/html/lapm:ro                 # Volume monté contenant les fichiers buildés du frontend en lecture seule
     depends_on:
-      - client
-      - server
+      client:
+        condition: service_completed_successfully
+      server:
+        condition: service_started
 
   db:
     image: mariadb:11
@@ -35,6 +37,12 @@ services:
     # Exposition de la DB vers l'extérieur en dehors de Docker
     ports:
       - "3306:3306"  # DB accessible depuis l'extérieur le temps du dev
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -u$MYSQL_USER -p$MYSQL_PASSWORD --silent"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 25s
 
   client:
     container_name: client
@@ -46,10 +54,13 @@ services:
         - VITE_DOMAIN_CLIENT=${VITE_DOMAIN_CLIENT}
         - VITE_DOMAIN_API_SERVER=${VITE_DOMAIN_API_SERVER}
     env_file: .env
-    restart: always
+    restart: "no" # one-shot: s’arrête après la copie
     volumes:
-      - client-dist:/app/dist  # Rend disponible le build Vite pour Nginx
-    command: [ "sleep", "infinity" ]
+      - client-dist:/deploy  # Rend disponible le build Vite pour Nginx sur /deploy (PAS sur /app/dist)
+    command: >
+      sh -c "rm -rf /deploy/* &&
+        cp -r /app/dist/* /deploy/ &&
+        echo '✅ Front copié dans le volume /deploy' && exit 0"
 
   server:
     container_name: server
@@ -79,7 +90,8 @@ services:
       - SECRET_KEY_TOKEN_CLIENT=${SECRET_KEY_TOKEN_CLIENT}
       - SECRET_KEY_TOKEN_API_SERVER=${SECRET_KEY_TOKEN_API_SERVER}
     depends_on:
-      - db
+      db:
+        condition: service_healthy
     volumes:
       - ./server/uploads:/app/uploads # Dossier pour les fichiers uploadés
 
