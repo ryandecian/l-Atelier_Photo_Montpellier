@@ -37,12 +37,6 @@ services:
     # Exposition de la DB vers l'extérieur en dehors de Docker
     ports:
       - "3306:3306"  # DB accessible depuis l'extérieur le temps du dev
-    healthcheck:
-      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -uroot -p$MYSQL_ROOT_PASSWORD --silent"]
-      interval: 5s
-      timeout: 5s
-      retries: 20
-      start_period: 25s
 
   client:
     container_name: client
@@ -90,8 +84,7 @@ services:
       - SECRET_KEY_TOKEN_CLIENT=${SECRET_KEY_TOKEN_CLIENT}
       - SECRET_KEY_TOKEN_API_SERVER=${SECRET_KEY_TOKEN_API_SERVER}
     depends_on:
-      db:
-        condition: service_healthy
+      - db
     volumes:
       - ./server/uploads:/app/uploads # Dossier pour les fichiers uploadés
 
