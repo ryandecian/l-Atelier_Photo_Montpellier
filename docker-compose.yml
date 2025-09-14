@@ -12,10 +12,12 @@ services:
       - ./nginx/certs:/etc/nginx/certs                            # Certificats TLS (Let's Encrypt)
       - /etc/letsencrypt:/etc/letsencrypt:ro
       - ./nginx/html:/usr/share/nginx/html                        # Page HTML statique (optionnel, ex: page maintenance)
-      - client-dist:/usr/share/nginx/html/lapm                   # Volume monté contenant les fichiers buildés du frontend
+      - client-dist:/usr/share/nginx/html/lapm:ro                 # Volume monté contenant les fichiers buildés du frontend en lecture seule
     depends_on:
-      - client
-      - server
+      - client:
+        condition: service_completed_successfully
+      - server:
+        condition: service_started
 
   db:
     image: mariadb:11
@@ -46,10 +48,13 @@ services:
         - VITE_DOMAIN_CLIENT=${VITE_DOMAIN_CLIENT}
         - VITE_DOMAIN_API_SERVER=${VITE_DOMAIN_API_SERVER}
     env_file: .env
-    restart: always
+    restart: "no" # one-shot: s’arrête après la copie
     volumes:
-      - client-dist:/app/dist  # Rend disponible le build Vite pour Nginx
-    command: [ "sleep", "infinity" ]
+      - client-dist:/deploy  # Rend disponible le build Vite pour Nginx sur /deploy (PAS sur /app/dist)
+    command: >
+      sh -c "rm -rf /deploy/* &&
+        cp -r /app/dist/* /deploy/ &&
+        echo '✅ Front copié dans le volume /deploy' && exit 0"
 
   server:
     container_name: server
