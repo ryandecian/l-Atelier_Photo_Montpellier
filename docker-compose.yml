@@ -14,8 +14,8 @@ services:
       - ./nginx/html:/usr/share/nginx/html                        # Page HTML statique (optionnel, ex: page maintenance)
       - client-dist:/usr/share/nginx/html/lapm:ro                 # Volume monté contenant les fichiers buildés du frontend en lecture seule
     depends_on:
-      server:
-        condition: service_started
+      - client
+      - server
 
   db:
     image: mariadb:11
