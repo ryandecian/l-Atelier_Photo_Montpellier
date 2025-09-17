@@ -1,7 +1,7 @@
 import style from "../../stylePage.module.css";
-import NavRoot from "../../../components/Layout/NavRoot/NavRoot";
+import NavRoot from "../../../components/layout/NavRoot/NavRoot";
 import CGVRoot from "../../../components/Public/CGVRoot/CGVRoot";
-import FooterRoot from "../../../components/Layout/FooterRoot/FooterRoot";
+import Footer from "../../../components/layout/footer/Footer.layout";
 import Helmet_CGV_SEO from "../../../seo/CGVSEO/Helmet_CGV.helmet.seo";
 import useScrollToHash from "../../../hook/useScrollToHash";
 
@@ -18,7 +18,7 @@ function CGVPage() {
                 <CGVRoot />
             </main>
             <footer className={style.Footer}>
-                <FooterRoot />
+                <Footer />
             </footer>
         </section>
     )

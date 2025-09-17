@@ -1,7 +1,7 @@
 import style from "../../stylePage.module.css";
-import NavRoot from "../../../components/Layout/NavRoot/NavRoot";
+import NavRoot from "../../../components/layout/NavRoot/NavRoot";
 import MentionsLegalesRoot from "../../../components/Public/MentionsLegalesRoot/MentionsLegalesRoot";
-import FooterRoot from "../../../components/Layout/FooterRoot/FooterRoot";
+import Footer from "../../../components/layout/footer/Footer.layout";
 import Helmet_MentionLegale_SEO from "../../../seo/MentionsLegalesSEO/Helmet_MentionsLegales.helmet.seo";
 import useScrollToHash from "../../../hook/useScrollToHash";
 
@@ -17,7 +17,7 @@ function MentionsLegalesPage() {
                 <MentionsLegalesRoot />
             </main>
             <footer className={style.Footer}>
-                <FooterRoot />
+                <Footer />
             </footer>
         </section>
     )

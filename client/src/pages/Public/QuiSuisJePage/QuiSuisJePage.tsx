@@ -1,7 +1,7 @@
 import style from "../../stylePage.module.css";
-import NavRoot from "../../../components/Layout/NavRoot/NavRoot";
+import NavRoot from "../../../components/layout/NavRoot/NavRoot";
 import QuiSuisJeRoot from "../../../components/Public/QuiSuisJeRoot/QuiSuisJeRoot";
-import FooterRoot from "../../../components/Layout/FooterRoot/FooterRoot";
+import Footer from "../../../components/layout/footer/Footer.layout";
 import Helmet_QuiSuisJe_SEO from "../../../seo/QuiSuisJeSEO/Helmet_QuiSuisJe.helmet.seo";
 import useScrollToHash from "../../../hook/useScrollToHash";
 
@@ -18,7 +18,7 @@ function QuiSuisJePage() {
                 <QuiSuisJeRoot />
             </main>
             <footer className={style.Footer}>
-                <FooterRoot />
+                <Footer />
             </footer>
         </section>
     )
