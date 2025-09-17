@@ -1,0 +1,82 @@
+import { Helmet } from "react-helmet-async";
+import DataSEOHelmetType from "../../../../types/DataSEOHelmet.type";
+
+import { dataSEO_Root_data_SEO } from "../../../dataSEO_Root.data.seo";
+import { dataSEO_Blog_20250917_data_SEO } from "./dataSEO_Blog_20250917.data.seo";
+
+import DataSEORootType from "../../../../types/DataSEORoot.type";
+import DataSEOTargetOneType from "../../../../types/DataSEOTargetOne.type";
+
+/* Import des JSON_LD */
+import { JSON_LD_LocalBusiness_Root_schema_SEO } from "../../../JSON-LD_LocalBusiness_Root.schema.seo";
+import { JSON_LD_BlogPosting_Blog_20250917_schema_SEO } from "./JSON-LD_BlogPosting_Blog_20250917.schema.seo";
+import { JSON_LD_Breadcrumb_Blog_20250917_schema_SEO } from "./JSON-LD_Breadcrumb_Blog_20250917.schema.seo";
+
+
+function HelmetBlog20250917_helmet_SEO() {
+    const dataSEO_Root: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
+    const dataSEO_Blog_20250917: DataSEOTargetOneType = dataSEO_Blog_20250917_data_SEO(); /* Récupération des données SEO de la page */
+
+    const SEO: DataSEOHelmetType = {
+        title: dataSEO_Blog_20250917.title,
+        autor: dataSEO_Blog_20250917.autor,
+        description: dataSEO_Blog_20250917.description,
+        url: dataSEO_Blog_20250917.url,
+        img: dataSEO_Blog_20250917.img_Helmet,
+        twitterUrlImg: dataSEO_Blog_20250917.twitterUrlImg || dataSEO_Blog_20250917.img_Helmet, // fallback
+        twitterCompte: dataSEO_Root.twitterCompte,
+        keywords: dataSEO_Blog_20250917.keywords,
+        type: dataSEO_Blog_20250917.type,
+    };
+
+    const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
+
+    return (
+        <Helmet>
+            {/* JSON-LD */}
+            <script type="application/ld+json">
+                {JSON_LD_LocalBusiness_Root_schema_SEO()}
+            </script>
+            <script type="application/ld+json">
+                {JSON_LD_BlogPosting_Blog_20250917_schema_SEO()}
+            </script>
+            <script type="application/ld+json">
+                {JSON_LD_Breadcrumb_Blog_20250917_schema_SEO()}
+            </script>
+
+            {/* Langue principale du document */}
+            <html lang="fr" />
+
+            {/* Métadonnées générales */}
+            <title>{SEO.title}</title>
+            <meta charSet="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <meta name="description" content={SEO.description} />
+            <meta name="author" content={SEO.autor} />
+            {filterKeywords && <meta name="keywords" content={filterKeywords} />}
+
+            {/* SEO pour les moteurs de recherche */}
+            <meta name="robots" content="index, follow" />
+            <meta name="googlebot" content="index, follow" />
+            <meta name="bingbot" content="index, follow" />
+            <link rel="canonical" href={SEO.url} />
+
+            {/* Open Graph (Facebook, LinkedIn, WhatsApp...) */}
+            <meta property="og:title" content={SEO.title} />
+            <meta property="og:description" content={SEO.description} />
+            <meta property="og:image" content={SEO.img} />
+            <meta property="og:url" content={SEO.url} />
+            <meta property="og:type" content={SEO.type.article} />
+            <meta property="og:locale" content="fr_FR" />
+
+            {/* Twitter Cards */}
+            <meta name="twitter:title" content={SEO.title} />
+            <meta name="twitter:description" content={SEO.description} />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:image" content={SEO.twitterUrlImg} />
+            <meta name="twitter:site" content={SEO.twitterCompte} />
+        </Helmet>
+    );
+}
+
+export default HelmetBlog20250917_helmet_SEO;
