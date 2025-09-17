@@ -1,7 +1,7 @@
 import ListDataRouter from "../../../../router/router";
 import DataSEOTargetOneType from "../../../../types/DataSEOTargetOne.type";
 
-function DataSEO_Blog_20250724(): DataSEOTargetOneType {
+function dataSEO_Blog_20250724_data_seo(): DataSEOTargetOneType {
     const DataSEO = {
         /* Data Helmet */
         title: "Photographe grossesse à Montpellier : quand réserver votre séance photo ? – Blog - l'Atelier Photo Montpellier",
@@ -51,4 +51,4 @@ function DataSEO_Blog_20250724(): DataSEOTargetOneType {
     )
 }
 
-export default DataSEO_Blog_20250724;
+export {dataSEO_Blog_20250724_data_seo};
