@@ -1,4 +1,4 @@
-import DataSEORoots from "../dataSEO_Root.data.seo";
+import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
 import DataSEORootType from "../../types/DataSEORoot.type";
 
 import DataSEO_Prestations from "./DataSEO_Prestation.data.seo";
@@ -7,7 +7,7 @@ import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 import DataCardPrestations from "../../components/Public/PrestationRoot/DataCardPrestationRoot";
 
 function JSON_LD_ItemList_Prestation_Schema_SEO() {
-    const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
+    const DataSEORoot: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
     const DataSEO_Prestation: DataSEOTargetOneType = DataSEO_Prestations(); /* Récupération des données SEO de la page */
     const DataCardPrestation = DataCardPrestations(); /* Récupération des données des cartes de prestation */
 

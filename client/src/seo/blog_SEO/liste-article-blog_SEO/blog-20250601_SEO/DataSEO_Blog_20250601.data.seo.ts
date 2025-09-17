@@ -1,8 +1,8 @@
 import ListDataRouter from "../../../../router/router";
 import DataSEOTargetOneType from "../../../../types/DataSEOTargetOne.type";
 
-function DataSEO_Blog_20250601(): DataSEOTargetOneType {
-    const DataSEO = {
+function dataSEO_Blog_20250601_data_SEO(): DataSEOTargetOneType {
+    const dataSEO = {
         /* Data Helmet */
         title: "Photographie de Mariage en Style Reportage – Blog - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
@@ -47,8 +47,8 @@ function DataSEO_Blog_20250601(): DataSEOTargetOneType {
     };
 
     return (
-        DataSEO
+        dataSEO
     )
 }
 
-export default DataSEO_Blog_20250601;
+export { dataSEO_Blog_20250601_data_SEO };

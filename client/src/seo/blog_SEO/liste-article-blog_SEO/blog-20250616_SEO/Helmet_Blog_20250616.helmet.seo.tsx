@@ -1,19 +1,19 @@
 import { Helmet } from "react-helmet-async";
 import DataSEOHelmetType from "../../../../types/DataSEOHelmet.type";
 
-import DataSEORoots from "../../../dataSEO_Root.data.seo";
+import { dataSEO_Root_data_SEO } from "../../../dataSEO_Root.data.seo";
 import DataSEO_Blog_20250616s from "./DataSEO_Blog_20250616.data.seo";
 
 import DataSEORootType from "../../../../types/DataSEORoot.type";
 import DataSEOTargetOneType from "../../../../types/DataSEOTargetOne.type";
 
-import JSON_LD_LocalBusiness_Root_Schema_SEO from "../../../JSON-LD_LocalBusiness_Root.schema.seo";
+import { JSON_LD_LocalBusiness_Root_schema_SEO } from "../../../JSON-LD_LocalBusiness_Root.schema.seo";
 import JSON_LD_BlogPosting_Blog_20250616_Schema_SEO from "./JSON-LD_BlogPosting_Blog_20250616.schema.seo";
 import JSON_LD_Breadcrumb_Blog_20250616_Schema_SEO from "./JSON-LD_Breadcrumb_Blog_20250616.schema.seo";
 
 
 function Helmet_Blog_20250616_SEO() {
-    const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
+    const DataSEORoot: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
     const DataSEO_Blog_20250616: DataSEOTargetOneType = DataSEO_Blog_20250616s(); /* Récupération des données SEO de la page */
 
     const SEO: DataSEOHelmetType = {
@@ -34,7 +34,7 @@ function Helmet_Blog_20250616_SEO() {
         <Helmet>
             {/* JSON-LD */}
             <script type="application/ld+json">
-                {JSON_LD_LocalBusiness_Root_Schema_SEO()}
+                {JSON_LD_LocalBusiness_Root_schema_SEO()}
             </script>
             <script type="application/ld+json">
                 {JSON_LD_BlogPosting_Blog_20250616_Schema_SEO()}
