@@ -1,11 +1,11 @@
-import DataSEORoots from "../DataSEORoot.data.seo";
+import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
 import DataSEORootType from "../../types/DataSEORoot.type";
 
 import DataSEO_QuiSuisJes from "./DataSEO_QuiSuisJe.data.seo";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
 function JSON_LD_Person_QuiSuisJe_Schema_SEO() {
-    const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
+    const DataSEORoot: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
     const DataSEO_QuiSuisJe: DataSEOTargetOneType = DataSEO_QuiSuisJes(); /* Récupération des données SEO de la page */
     
     const JSON_LD = JSON.stringify({

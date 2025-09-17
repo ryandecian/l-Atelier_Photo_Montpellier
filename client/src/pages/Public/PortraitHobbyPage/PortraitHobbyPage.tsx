@@ -1,7 +1,7 @@
 import style from "../../stylePage.module.css";
-import NavRoot from "../../../components/Layout/NavRoot/NavRoot";
+import NavRoot from "../../../components/layout/NavRoot/NavRoot";
 import PortraitHobbyRoot from "../../../components/Public/PortraitHobbyRoot/PortraitHobbyRoot";
-import FooterRoot from "../../../components/Layout/FooterRoot/FooterRoot";
+import Footer from "../../../components/layout/footer/Footer.layout";
 import Helmet_PortraitHobby_SEO from "../../../seo/PortraitHobbySEO/Helmet_PortraitHobby.helmet.seo";
 import useScrollToHash from "../../../hook/useScrollToHash";
 
@@ -18,7 +18,7 @@ function PortraitHobbyPage() {
                 <PortraitHobbyRoot />
             </main>
             <footer className={style.Footer}>
-                <FooterRoot />
+                <Footer />
             </footer>
         </section>
     )

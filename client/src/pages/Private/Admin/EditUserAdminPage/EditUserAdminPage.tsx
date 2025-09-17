@@ -1,7 +1,7 @@
 import style from "../../../stylePage.module.css";
-import NavRoot from "../../../../components/Layout/NavRoot/NavRoot";
+import NavRoot from "../../../../components/layout/NavRoot/NavRoot";
 import EditUserAdminRoot from "../../../../components/Private/Admin/EditUserAdminRoot/EditUserAdminRoot";
-import FooterRoot from "../../../../components/Layout/FooterRoot/FooterRoot";
+import Footer from "../../../../components/layout/footer/Footer.layout";
 
 function EditUserAdminPage() {
     return (
@@ -13,7 +13,7 @@ function EditUserAdminPage() {
                 <EditUserAdminRoot />
             </main>
             <footer className={style.Footer}>
-                <FooterRoot />
+                <Footer />
             </footer>
         </div>
     );
