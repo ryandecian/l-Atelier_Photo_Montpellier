@@ -8,7 +8,7 @@ function Ghost_signature({ value }: GhostProps) {
 
     return (
         <span style={{ display: "none" }}>
-            {`${baseSignature} ${dateNow === 2025 ? `©2025 ` : `©2025-${dateNow}`} $${value ? ` | ${value}` : ""}`}
+            {`${baseSignature} ${dateNow === 2024 ? `©2024 ` : `©2024-${dateNow}`} $${value ? ` | ${value}` : ""}`}
         </span>
     );
 }

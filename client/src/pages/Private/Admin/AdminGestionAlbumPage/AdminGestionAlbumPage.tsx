@@ -1,7 +1,7 @@
 import style from "../../../stylePage.module.css";
-import NavRoot from "../../../../components/Layout/NavRoot/NavRoot";
+import NavRoot from "../../../../components/Llayout/NavRoot/NavRoot";
 import AdminGestionAlbumRoot from "../../../../components/Private/Admin/AdminGestionAlbumRoot/AdminGestionAlbumRoot";
-import FooterRoot from "../../../../components/Layout/FooterRoot/Footer.layout";
+import FooterRoot from "../../../../components/Llayout/footer/Footer.layout";
 
 function AdminGestionAlbumPage() {
     return (

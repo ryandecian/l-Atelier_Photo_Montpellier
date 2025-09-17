@@ -1,7 +1,7 @@
 import style from "../../stylePage.module.css";
-import NavRoot from "../../../components/Layout/NavRoot/NavRoot";
+import NavRoot from "../../../components/Llayout/NavRoot/NavRoot";
 import PortraitMariageRoot from "../../../components/Public/PortraitMariageRoot/MariageRoot";
-import FooterRoot from "../../../components/Layout/FooterRoot/Footer.layout";
+import FooterRoot from "../../../components/Llayout/footer/Footer.layout";
 import Helmet_PortraitMariage_SEO from "../../../seo/PortraitMariageSEO/Helmet_PortraitMariage.helmet.seo";
 import useScrollToHash from "../../../hook/useScrollToHash";
 

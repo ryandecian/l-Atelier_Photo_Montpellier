@@ -1,5 +1,5 @@
 import { useState } from "react";
-import MenuNavTargetHomeRoot from "../../../NavTargetHomeRoot/ComponentsNavTargetHomeRoot/MenuNavTargetHomeRoot";
+import MenuNavTargetHomeRoot from "../../ComponentsNavTargetHomeRoot/MenuNavTargetHomeRoot";
 import cssNav from "../../ComponentsNavTargetHomeRoot/MenuNavTargetHomeRoot.module.css";
 import css from "./NavTargetHomeMenuBurger.module.css";
 import style from "../../../../StyleRootComponent.module.css";

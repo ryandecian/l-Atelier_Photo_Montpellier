@@ -1,7 +1,7 @@
-import NavRoot from "../../../components/Layout/NavRoot/NavRoot";
+import NavRoot from "../../../components/Llayout/NavRoot/NavRoot";
 import style from "../../stylePage.module.css";
 import PortraitLifeStyleRoot from "../../../components/Public/PortraitLifeStyleRoot/PortraitLifeStyleRoot";
-import FooterRoot from "../../../components/Layout/FooterRoot/Footer.layout";
+import FooterRoot from "../../../components/Llayout/footer/Footer.layout";
 import Helmet_PortraitLifeStyle_SEO from "../../../seo/PortraitLifeStyleSEO/Helmet_PortraitLifeStyle.helmet.seo";
 
 function PortraitLifeStylePage() {
