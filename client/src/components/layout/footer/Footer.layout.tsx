@@ -1,4 +1,4 @@
-import css from "./Footer.layout.module.css";
+import css from "./footer.layout.module.css";
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../router/router";
 import externalLinks from "../../../constants/externalLinks";
