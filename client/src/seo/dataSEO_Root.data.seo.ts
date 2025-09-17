@@ -2,7 +2,7 @@ import externalLinks from "../constants/externalLinks";
 import DataSEORootType from "../types/DataSEORoot.type";
 import ListDataRouter from "../router/router";
 
-function DataSEORoot(): DataSEORootType {
+function dataSEO_Root_data_SEO(): DataSEORootType {
     const router = ListDataRouter; /* Récupération des données du routeur */
     const DataSEORoots = {
         /* Data Helmet */
@@ -630,4 +630,4 @@ function DataSEORoot(): DataSEORootType {
     )
 };
 
-export default DataSEORoot
+export { dataSEO_Root_data_SEO };

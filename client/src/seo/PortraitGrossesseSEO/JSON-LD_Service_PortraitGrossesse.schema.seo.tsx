@@ -1,4 +1,4 @@
-import DataSEORoots from "../DataSEORoot.data.seo";
+import DataSEORoots from "../dataSEO_Root.data.seo";
 import DataSEORootType from "../../types/DataSEORoot.type";
 
 import DataSEO_PortraitGrossesses from "./DataSEO_PortraitGrossesse.data.seo";

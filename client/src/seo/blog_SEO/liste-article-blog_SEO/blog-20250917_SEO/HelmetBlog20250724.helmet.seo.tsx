@@ -1,15 +1,15 @@
 import { Helmet } from "react-helmet-async";
 import DataSEOHelmetType from "../../../../types/DataSEOHelmet.type";
 
-import DataSEORoots from "../../../DataSEORoot.data.seo";
+import DataSEORoots from "../../../dataSEO_Root.data.seo";
 import { dataSEO_Blog_20250917_data_SEO } from "./dataSEO_Blog_20250917.data.seo";
 
 import DataSEORootType from "../../../../types/DataSEORoot.type";
 import DataSEOTargetOneType from "../../../../types/DataSEOTargetOne.type";
 
 import JSON_LD_LocalBusiness_Root_Schema_SEO from "../../../JSON-LD_LocalBusiness_Root.schema.seo";
-import JSON_LD_BlogPosting_Blog_20250724_Schema_SEO from "./JSON-LD_BlogPosting_Blog_20250724.schema.seo";
-import JSON_LD_Breadcrumb_Blog_20250724_Schema_SEO from "./JSON-LD_Breadcrumb_Blog_20250724.schema.seo";
+import JSON_LD_BlogPosting_Blog_20250724_Schema_SEO from "./JSON-LD_BlogPosting_Blog_20250917.schema.seo";
+import JSON_LD_Breadcrumb_Blog_20250724_Schema_SEO from "./JSON-LD_Breadcrumb_Blog_20250917.schema.seo";
 
 
 function HelmetBlog20250917_helmet_SEO() {
