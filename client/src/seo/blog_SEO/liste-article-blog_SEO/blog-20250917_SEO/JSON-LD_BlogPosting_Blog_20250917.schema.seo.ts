@@ -10,7 +10,7 @@ import CardBlogType from "../../../../types/CardBlog.type";
 import extractKeywordsFromDataSEO from "../../../../utils/extractKeywordsFromDataSEO.utils";
 import { convertDateFrToISO_String } from "../../../../utils/convertDateFrToISO.utils";
 
-function JSON_LD_BlogPosting_Blog_20250724_Schema_SEO() : string {
+function JSON_LD_BlogPosting_Blog_20250724_schema_SEO() : string {
     const dataCardBlogRoot: CardBlogType[] = DataCardBlogRoots(); /* Récupération des données de la carte du blog */
     const dataSEO_Root: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
     const dataSEO_Blog_20250724: DataSEOTargetOneType = dataSEO_Blog_20250917_data_SEO(); /* Récupération des données SEO de la page */
@@ -58,4 +58,4 @@ function JSON_LD_BlogPosting_Blog_20250724_Schema_SEO() : string {
     )
 }
 
-export default JSON_LD_BlogPosting_Blog_20250724_Schema_SEO;
+export default JSON_LD_BlogPosting_Blog_20250724_schema_SEO;
