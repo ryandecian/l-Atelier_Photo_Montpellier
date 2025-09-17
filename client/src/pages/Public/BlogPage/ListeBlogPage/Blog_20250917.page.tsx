@@ -2,7 +2,7 @@ import style from "../../../stylePage.module.css";
 import NavRoot from "../../../../components/layout/NavRoot/NavRoot";
 import Blog_20250917_Root from "../../../../components/Public/BlogRoot/ListeBlogRoot/Blog_20250917_Root/Blog_20250917.root";
 import Footer from "../../../../components/layout/footer/Footer.layout";
-import Helmet_Blog_20250917_SEO from "../../../../seo/blog_SEO/liste-article-blog_SEO/Blog_20250917/Helmet_Blog_20250917.helmet.seo";
+import { HelmetBlog20250917_helmet_SEO } from "../../../../seo/blog_SEO/liste-article-blog_SEO/blog-20250917_SEO/HelmetBlog20250724.helmet.seo";
 import useScrollToHash from "../../../../hook/useScrollToHash";
 
 function Blog_20250917_Page() {
@@ -10,7 +10,7 @@ function Blog_20250917_Page() {
 
      return (
         <section className={`Blog_20250917_Page ${style.Page}`}>
-            <Helmet_Blog_20250917_SEO />
+            <HelmetBlog20250917_helmet_SEO />
             <header id="top" className={style.Header}>
                  <NavRoot />
             </header>

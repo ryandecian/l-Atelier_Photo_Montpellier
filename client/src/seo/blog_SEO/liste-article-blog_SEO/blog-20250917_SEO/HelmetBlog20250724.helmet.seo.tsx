@@ -79,4 +79,4 @@ function HelmetBlog20250917_helmet_SEO() {
     );
 }
 
-export default HelmetBlog20250917_helmet_SEO;
+export { HelmetBlog20250917_helmet_SEO };

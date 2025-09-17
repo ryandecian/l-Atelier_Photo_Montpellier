@@ -1,4 +1,4 @@
-import DataSEORoots from "../dataSEO_Root.data.seo";
+import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
 import DataSEORootType from "../../types/DataSEORoot.type";
 
 import DataSEO_Blogs from "./DataSEO_Blog.data.seo";
@@ -9,7 +9,7 @@ import extractKeywordsFromDataSEO from "../../utils/extractKeywordsFromDataSEO.u
 
 function JSON_LD_Blog_Blog_Schema_SEO() : string {
     const router = ListDataRouter
-    const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
+    const DataSEORoot: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
     const DataSEO_Blog: DataSEOTargetOneType = DataSEO_Blogs(); /* Récupération des données SEO de la page */
 
     const JSON_LD = JSON.stringify({

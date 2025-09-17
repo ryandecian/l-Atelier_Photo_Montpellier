@@ -1,20 +1,20 @@
 import { Helmet } from "react-helmet-async";
 import DataSEOHelmetType from "../../types/DataSEOHelmet.type";
 
-import DataSEORoots from "../dataSEO_Root.data.seo";
+import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
 import DataSEO_CGVs from "./DataSEO_CGV.data.seo";
 
 import DataSEORootType from "../../types/DataSEORoot.type";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
-import JSON_LD_LocalBusiness_Root_Schema_SEO from "../JSON-LD_LocalBusiness_Root.schema.seo";
+import { JSON_LD_LocalBusiness_Root_schema_SEO } from "../JSON-LD_LocalBusiness_Root.schema.seo";
 import JSON_LD_WebPage_CGV_Schema_SEO from "./JSON-LD_WebPage_CGV.schema.seo";
 import JSON_LD_TermsOfService_CGV_Schema_SEO from "./JSON-LD_TermsOfService_CGV.schema.seo";
 import JSON_LD_Breadcrumb_CGV_Schema_SEO from "./JSON-LD_Breadcrumb_CGV.schema.seo";
 
 
 function Helmet_CGV_SEO() {
-    const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
+    const DataSEORoot: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
     const DataSEO_CGV: DataSEOTargetOneType = DataSEO_CGVs(); /* Récupération des données SEO de la page */
 
     const SEO: DataSEOHelmetType = {
@@ -35,7 +35,7 @@ function Helmet_CGV_SEO() {
         <Helmet>
             {/* JSON-LD */}
             <script type="application/ld+json">
-                {JSON_LD_LocalBusiness_Root_Schema_SEO()}
+                {JSON_LD_LocalBusiness_Root_schema_SEO()}
             </script>
             <script type="application/ld+json">
                 {JSON_LD_WebPage_CGV_Schema_SEO()}
