@@ -16,7 +16,11 @@ Pour le blog 20250917
 - Vérifier le composant dataSEO pour valider le chemin
 - Faire les deux JSON-LD avec convention de nommage
 ------------------------------------------------------------------------------
-
+RDV cliente: 
+- Suppression champs facture côté client
+- Mise a jour portfolio
+- Evolution de la DB : ajout de num tel (optionnel)
+- Modifier la date automatique du jour lors de la création d'un album
 ------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------
