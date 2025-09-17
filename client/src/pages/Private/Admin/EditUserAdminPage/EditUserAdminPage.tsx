@@ -1,7 +1,7 @@
 import style from "../../../stylePage.module.css";
-import NavRoot from "../../../../components/Llayout/NavRoot/NavRoot";
+import NavRoot from "../../../../components/layout/NavRoot/NavRoot";
 import EditUserAdminRoot from "../../../../components/Private/Admin/EditUserAdminRoot/EditUserAdminRoot";
-import FooterRoot from "../../../../components/Llayout/footer/Footer.layout";
+import FooterRoot from "../../../../components/layout/footer/Footer.layout";
 
 function EditUserAdminPage() {
     return (
