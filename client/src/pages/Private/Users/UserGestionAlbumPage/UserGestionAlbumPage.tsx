@@ -1,7 +1,7 @@
 import style from "../../../stylePage.module.css";
 import NavRoot from "../../../../components/layout/NavRoot/NavRoot";
 import UserGestionAlbumRoot from "../../../../components/Private/Users/UserGestionAlbumRoot/UserGestionAlbumRoot";
-import FooterRoot from "../../../../components/layout/footer/Footer.layout";
+import Footer from "../../../../components/layout/footer/Footer.layout";
 
 function UserGestionAlbumPage() {
     return (
@@ -13,7 +13,7 @@ function UserGestionAlbumPage() {
                 <UserGestionAlbumRoot />
             </main>
             <footer className={style.Footer}>
-                <FooterRoot />
+                <Footer />
             </footer>
         </div>
     );

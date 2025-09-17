@@ -1,7 +1,7 @@
 import style from "../../../stylePage.module.css";
 import NavRoot from "../../../../components/layout/NavRoot/NavRoot";
 import AdminGestionAlbumRoot from "../../../../components/Private/Admin/AdminGestionAlbumRoot/AdminGestionAlbumRoot";
-import FooterRoot from "../../../../components/layout/footer/Footer.layout";
+import Footer from "../../../../components/layout/footer/Footer.layout";
 
 function AdminGestionAlbumPage() {
     return (
@@ -13,7 +13,7 @@ function AdminGestionAlbumPage() {
                 <AdminGestionAlbumRoot />
             </main>
             <footer className={style.Footer}>
-                <FooterRoot />
+                <Footer />
             </footer>
         </section>
     );

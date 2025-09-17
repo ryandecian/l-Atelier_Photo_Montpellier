@@ -1,7 +1,7 @@
 import css from "../../stylePage.module.css"
 import NavTargetHomeRoot from "../../../components/layout/NavTargetHomeRoot/NavTargetHomeRoot";
 import HomeRoot from "../../../components/Public/HomeRoot/HomeRoot";
-import FooterRoot from "../../../components/layout/footer/Footer.layout";
+import Footer from "../../../components/layout/footer/Footer.layout";
 import Helmet_Home_SEO from "../../../seo/HomeSEO/Helmet_Home.helmet.seo";
 
 function HomePage() {
@@ -15,7 +15,7 @@ function HomePage() {
                 <HomeRoot />
             </main>
             <footer className={css.Footer}>
-                <FooterRoot />
+                <Footer />
             </footer>
         </section>
     )

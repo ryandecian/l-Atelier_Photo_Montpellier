@@ -1,7 +1,7 @@
 import style from "../../stylePage.module.css";
 import NavRoot from "../../../components/layout/NavRoot/NavRoot";
 import PortraitGrossesseRoot from "../../../components/Public/PortraitGrossesseRoot/PortraitGrossesseRoot";
-import FooterRoot from "../../../components/layout/footer/Footer.layout";
+import Footer from "../../../components/layout/footer/Footer.layout";
 import Helmet_PortraitGrossesse_SEO from "../../../seo/PortraitGrossesseSEO/Helmet_PortraitGrossesse.helmet.seo";
 import useScrollToHash from "../../../hook/useScrollToHash";
 
@@ -20,7 +20,7 @@ function PortraitNouveauNePage() {
                 <PortraitGrossesseRoot />
             </main>
             <footer className={style.Footer}>
-                <FooterRoot />
+                <Footer />
             </footer>
         </section>
     )

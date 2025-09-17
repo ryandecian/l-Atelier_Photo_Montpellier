@@ -1,7 +1,7 @@
 import style from "../../../stylePage.module.css";
 import NavRoot from "../../../../components/layout/NavRoot/NavRoot";
 import InsertAlbumAdminRoot from "../../../../components/Private/Admin/InsertAlbumAdminRoot/InsertAlbumAdminRoot";
-import FooterRoot from "../../../../components/layout/footer/Footer.layout";
+import Footer from "../../../../components/layout/footer/Footer.layout";
 
 function InsertAlbumAdminPage() {
     return (
@@ -13,7 +13,7 @@ function InsertAlbumAdminPage() {
                 <InsertAlbumAdminRoot />
             </main>
             <footer className={style.Footer}>
-                <FooterRoot />
+                <Footer />
             </footer>
         </div>
     );

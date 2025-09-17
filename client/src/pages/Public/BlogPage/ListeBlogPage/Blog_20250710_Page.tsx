@@ -1,7 +1,7 @@
 import style from "../../../stylePage.module.css";
 import NavRoot from "../../../../components/layout/NavRoot/NavRoot";
 import Blog_20250710_Root from "../../../../components/Public/BlogRoot/ListeBlogRoot/Blog_20250710_Root/Blog_20250710_Root";
-import FooterRoot from "../../../../components/layout/footer/Footer.layout";
+import Footer from "../../../../components/layout/footer/Footer.layout";
 import Helmet_Blog_20250710_SEO from "../../../../seo/blog_SEO/liste-article-blog_SEO/blog-20250710_SEO/Helmet_Blog_20250710.helmet.seo";
 import useScrollToHash from "../../../../hook/useScrollToHash";
 
@@ -18,7 +18,7 @@ function Blog_20250710_Page() {
                 <Blog_20250710_Root />
             </main>
             <footer className={style.Footer}>
-                <FooterRoot />
+                <Footer />
             </footer>
         </section>
     )

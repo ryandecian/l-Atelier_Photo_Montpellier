@@ -1,7 +1,7 @@
 import style from "../../stylePage.module.css";
 import NavRoot from "../../../components/layout/NavRoot/NavRoot";
 import PrestationRoot from "../../../components/Public/PrestationRoot/PrestationRoot";
-import FooterRoot from "../../../components/layout/footer/Footer.layout";
+import Footer from "../../../components/layout/footer/Footer.layout";
 import Helmet_Prestation_SEO from "../../../seo/PrestationSEO/Helmet_Prestation.helmet.seo";
 
 function TarifsPage() {
@@ -15,7 +15,7 @@ function TarifsPage() {
                 <PrestationRoot />
             </main>
             <footer className={style.Footer}>
-                <FooterRoot />
+                <Footer />
             </footer>
         </section>
     )

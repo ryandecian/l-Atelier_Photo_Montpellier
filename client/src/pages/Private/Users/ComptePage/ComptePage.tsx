@@ -1,7 +1,7 @@
 import style from "../../../stylePage.module.css";
 import NavRoot from "../../../../components/layout/NavRoot/NavRoot";
 import CompteRoot from "../../../../components/Private/Users/CompteRoot/CompteRoot";
-import FooterRoot from "../../../../components/layout/footer/Footer.layout";
+import Footer from "../../../../components/layout/footer/Footer.layout";
 
 function ComptePage() {
     return (
@@ -13,7 +13,7 @@ function ComptePage() {
                 <CompteRoot />
             </main>
             <footer className={style.Footer}>
-                <FooterRoot />
+                <Footer />
             </footer>
         </div>
     );

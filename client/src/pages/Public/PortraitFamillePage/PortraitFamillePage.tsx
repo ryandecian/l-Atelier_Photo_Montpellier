@@ -1,7 +1,7 @@
 import style from "../../stylePage.module.css";
 import NavRoot from "../../../components/layout/NavRoot/NavRoot";
 import PortraitFamilleRoot from "../../../components/Public/PortraitFamilleRoot/PortraitFamilleRoot";
-import FooterRoot from "../../../components/layout/footer/Footer.layout";
+import Footer from "../../../components/layout/footer/Footer.layout";
 import Helmet_PortraitFamille_SEO from "../../../seo/PortraitFamilleSEO/Helmet_PortraitFamille.helmet.seo";
 import useScrollToHash from "../../../hook/useScrollToHash";
 
@@ -18,7 +18,7 @@ function PortraitFamillePage() {
                 <PortraitFamilleRoot />
             </main>
             <footer className={style.Footer}>
-                <FooterRoot />
+                <Footer />
             </footer>
         </section>
     )

@@ -1,7 +1,7 @@
 import style from "../../../stylePage.module.css";
 import NavRoot from "../../../../components/layout/NavRoot/NavRoot";
 import AdminRoot from "../../../../components/Private/Admin/AdminRoot/AdminRoot";
-import FooterRoot from "../../../../components/layout/footer/Footer.layout";
+import Footer from "../../../../components/layout/footer/Footer.layout";
 
 function AdminPage() {
     return (
@@ -13,7 +13,7 @@ function AdminPage() {
                 <AdminRoot />
             </main>
             <footer className={style.Footer}>
-                <FooterRoot />
+                <Footer />
             </footer>
         </section>
     );
