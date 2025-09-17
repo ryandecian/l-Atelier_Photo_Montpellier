@@ -1,7 +1,7 @@
 import style from "../../../stylePage.module.css";
-import NavRoot from "../../../../components/Layout/NavRoot/NavRoot";
+import NavRoot from "../../../../components/layout/NavRoot/NavRoot";
 import AllUserSystemeRoot from "../../../../components/Private/Admin/AllUserSystemeRoot/AllUserSystemeRoot";
-import FooterRoot from "../../../../components/Layout/FooterRoot/FooterRoot";
+import Footer from "../../../../components/layout/footer/Footer.layout";
 
 function AllUserSystemePage() {
     return (
@@ -13,7 +13,7 @@ function AllUserSystemePage() {
                 <AllUserSystemeRoot />
             </main>
             <footer className={style.Footer}>
-                <FooterRoot />
+                <Footer />
             </footer>
         </div>
     );

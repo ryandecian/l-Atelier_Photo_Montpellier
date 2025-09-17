@@ -1,20 +1,20 @@
 import { Helmet } from "react-helmet-async";
 import DataSEOHelmetType from "../../types/DataSEOHelmet.type";
 
-import DataSEORoots from "../DataSEORoot.data.seo";
+import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
 import DataSEO_Portfolios from "./DataSEO_Portfolio.data.seo";
 
 import DataSEORootType from "../../types/DataSEORoot.type";
 import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
-import JSON_LD_LocalBusiness_Root_Schema_SEO from "../JSON-LD_LocalBusiness_Root.schema.seo";
+import { JSON_LD_LocalBusiness_Root_schema_SEO } from "../JSON-LD_LocalBusiness_Root.schema.seo";
 import JSON_LD_Collection_Portfolio_Schema_SEO from "./JSON-LD_Collection_Portfolio.schema.seo";
 import JSON_LD_ImageGallery_Portfolio_Schema_SEO from "./JSON-LD_ImageGallery_Portfolio.schema.seo";
 import JSON_LD_Breadcrumb_Portfolio_Schema_SEO from "./JSON-LD_Breadcrumb_Portfolio.schema.seo";
 
 
 function Helmet_Portfolio_SEO() {
-    const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
+    const DataSEORoot: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
     const DataSEO_Portfolio: DataSEOTargetOneType = DataSEO_Portfolios(); /* Récupération des données SEO de la page */
 
     const SEO: DataSEOHelmetType = {
@@ -35,7 +35,7 @@ function Helmet_Portfolio_SEO() {
         <Helmet>
             {/* JSON-LD */}
             <script type="application/ld+json">
-                {JSON_LD_LocalBusiness_Root_Schema_SEO()}
+                {JSON_LD_LocalBusiness_Root_schema_SEO()}
             </script>
             <script type="application/ld+json">
                 {JSON_LD_Collection_Portfolio_Schema_SEO()}
