@@ -1,7 +1,7 @@
 import { dataSEO_Root_data_SEO } from "../../../dataSEO_Root.data.seo";
 import DataSEORootType from "../../../../types/DataSEORoot.type";
 
-import { dataSEO_Blog_20250917_data_SEO } from "./DdataSEO_Blog_20250917.data.seo";
+import { dataSEO_Blog_20250917_data_SEO } from "./dataSEO_Blog_20250917.data.seo";
 import DataSEOTargetOneType from "../../../../types/DataSEOTargetOne.type";
 
 import DataCardBlogRoots from "../../../../components/Public/BlogRoot/DataCardBlogRoot";
