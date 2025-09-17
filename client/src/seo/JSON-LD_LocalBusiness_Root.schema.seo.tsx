@@ -5,7 +5,7 @@ import generateAverageRatingSEO from "../utils/generateAverageRatingSEO.utils";
 import generateReviewArraySEO from "../utils/generateReviewArraySEO.utils";
 import AvisClientGlobalData from "./AvisClientGlobal.data.seo";
 
-function JSON_LD_LocalBusiness_Root_Schema_SEO(): string {
+function JSON_LD_LocalBusiness_Root_schema_SEO(): string {
     const dataSEO_Root: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
 
     const JSON_LD = JSON.stringify({
@@ -43,4 +43,4 @@ function JSON_LD_LocalBusiness_Root_Schema_SEO(): string {
     );
 }
 
-export default JSON_LD_LocalBusiness_Root_Schema_SEO;
+export { JSON_LD_LocalBusiness_Root_schema_SEO };

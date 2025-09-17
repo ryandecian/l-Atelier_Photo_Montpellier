@@ -4,7 +4,7 @@ import DataSEORootType from "../../../../types/DataSEORoot.type";
 import { dataSEO_Blog_20250917_data_SEO } from "./dataSEO_Blog_20250917.data.seo";
 import DataSEOTargetOneType from "../../../../types/DataSEOTargetOne.type";
 
-function JSON_LD_Breadcrumb_Blog_20250917_Schema_SEO() : string {
+function JSON_LD_Breadcrumb_Blog_20250917_schema_SEO() : string {
     const dataSEO_Root: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
     const dataSEO_Blog_20250917: DataSEOTargetOneType = dataSEO_Blog_20250917_data_SEO(); /* Récupération des données SEO de la page */
 
@@ -31,4 +31,4 @@ function JSON_LD_Breadcrumb_Blog_20250917_Schema_SEO() : string {
     )
 }
 
-export { JSON_LD_Breadcrumb_Blog_20250917_Schema_SEO };
+export { JSON_LD_Breadcrumb_Blog_20250917_schema_SEO };
