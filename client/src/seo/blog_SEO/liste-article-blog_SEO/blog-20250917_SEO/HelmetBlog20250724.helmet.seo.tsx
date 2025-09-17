@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import DataSEOHelmetType from "../../../../types/DataSEOHelmet.type";
 
 import DataSEORoots from "../../../DataSEORoot.data.seo";
-import DataSEO_Blog_20250724s from "./dataSEO_Blog_20250917.data.seo";
+import { dataSEO_Blog_20250917_data_SEO } from "./dataSEO_Blog_20250917.data.seo";
 
 import DataSEORootType from "../../../../types/DataSEORoot.type";
 import DataSEOTargetOneType from "../../../../types/DataSEOTargetOne.type";
@@ -12,20 +12,20 @@ import JSON_LD_BlogPosting_Blog_20250724_Schema_SEO from "./JSON-LD_BlogPosting_
 import JSON_LD_Breadcrumb_Blog_20250724_Schema_SEO from "./JSON-LD_Breadcrumb_Blog_20250724.schema.seo";
 
 
-function HelmetBlog20250724_helmet_SEO() {
+function HelmetBlog20250917_helmet_SEO() {
     const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
-    const DataSEO_Blog_20250724: DataSEOTargetOneType = DataSEO_Blog_20250724s(); /* Récupération des données SEO de la page */
+    const DataSEO_Blog_20250917: DataSEOTargetOneType = dataSEO_Blog_20250917_data_SEO(); /* Récupération des données SEO de la page */
 
     const SEO: DataSEOHelmetType = {
-        title: DataSEO_Blog_20250724.title,
-        autor: DataSEO_Blog_20250724.autor,
-        description: DataSEO_Blog_20250724.description,
-        url: DataSEO_Blog_20250724.url,
-        img: DataSEO_Blog_20250724.img_Helmet,
-        twitterUrlImg: DataSEO_Blog_20250724.twitterUrlImg || DataSEO_Blog_20250724.img_Helmet, // fallback
+        title: DataSEO_Blog_20250917.title,
+        autor: DataSEO_Blog_20250917.autor,
+        description: DataSEO_Blog_20250917.description,
+        url: DataSEO_Blog_20250917.url,
+        img: DataSEO_Blog_20250917.img_Helmet,
+        twitterUrlImg: DataSEO_Blog_20250917.twitterUrlImg || DataSEO_Blog_20250917.img_Helmet, // fallback
         twitterCompte: DataSEORoot.twitterCompte,
-        keywords: DataSEO_Blog_20250724.keywords,
-        type: DataSEO_Blog_20250724.type,
+        keywords: DataSEO_Blog_20250917.keywords,
+        type: DataSEO_Blog_20250917.type,
     };
 
     const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
@@ -78,4 +78,4 @@ function HelmetBlog20250724_helmet_SEO() {
     );
 }
 
-export default Helmet_Blog_20250724_SEO;
+export default HelmetBlog20250917_helmet_SEO;

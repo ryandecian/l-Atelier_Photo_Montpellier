@@ -11,7 +11,10 @@ Section SEO a faire :
 - reset-password
 - login
 ------------------------------------------------------------------------------
-
+Pour le blog 20250917
+- Ajouter les images google et helmet, 
+- Vérifier le composant dataSEO pour valider le chemin
+- Faire les deux JSON-LD avec convention de nommage
 ------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------
