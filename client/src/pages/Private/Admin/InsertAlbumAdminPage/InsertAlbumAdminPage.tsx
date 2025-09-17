@@ -1,7 +1,7 @@
 import style from "../../../stylePage.module.css";
 import NavRoot from "../../../../components/Layout/NavRoot/NavRoot";
 import InsertAlbumAdminRoot from "../../../../components/Private/Admin/InsertAlbumAdminRoot/InsertAlbumAdminRoot";
-import FooterRoot from "../../../../components/Layout/FooterRoot/FooterRoot";
+import FooterRoot from "../../../../components/Layout/FooterRoot/Footer.layout";
 
 function InsertAlbumAdminPage() {
     return (

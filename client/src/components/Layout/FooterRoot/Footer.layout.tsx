@@ -1,14 +1,17 @@
-import css from "./FooterRoot.module.css";
+import css from "./Footer.layout.module.css";
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../router/router";
 import externalLinks from "../../../constants/externalLinks";
+import Ghost_signature_Footer_layout from "../../../signature/Ghost.signature";
 
-function FooterRoot() {
+function Footer_layout() {
 
     const dateNow = new Date().getFullYear();
 
     return (
-        <section className={css.FooterRoot}>
+        <section className={`Footer_layout ${css.Footer}`}>
+            {/* @signature: Ryan-DECIAN_LAPM | Home_page */}
+            <Ghost_signature_Footer_layout value="Home_page"/>
 
             {/* Container 1 : Title du Footer */}
             <header className={css.TitleFooter}>
@@ -127,4 +130,4 @@ function FooterRoot() {
     );
 }
 
-export default FooterRoot;
+export default Footer_layout;

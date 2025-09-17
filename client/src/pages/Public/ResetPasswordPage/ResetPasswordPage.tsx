@@ -1,7 +1,7 @@
 import style from "../../stylePage.module.css";
 import NavRoot from "../../../components/Layout/NavRoot/NavRoot";
 import ResetPasswordRoot from "../../../components/Public/ResetPasswordRoot/ResetPasswordRoot";
-import FooterRoot from "../../../components/Layout/FooterRoot/FooterRoot";
+import FooterRoot from "../../../components/Layout/FooterRoot/Footer.layout";
 import Helmet_QuiSuisJe_SEO from "../../../seo/QuiSuisJeSEO/Helmet_QuiSuisJe.helmet.seo";
 import useScrollToHash from "../../../hook/useScrollToHash";
 

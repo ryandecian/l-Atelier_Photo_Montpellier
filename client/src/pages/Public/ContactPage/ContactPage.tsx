@@ -1,7 +1,7 @@
 import style from "../../stylePage.module.css";
 import NavRoot from "../../../components/Layout/NavRoot/NavRoot";
 import ContactRoot from "../../../components/Public/ContactRoot/ContactRoot";
-import FooterRoot from "../../../components/Layout/FooterRoot/FooterRoot";
+import FooterRoot from "../../../components/Layout/FooterRoot/Footer.layout";
 import Helmet_Contact_SEO from "../../../seo/ContactSEO/Helmet_Contact.helmet.seo";
 
 function ContactPage() {
