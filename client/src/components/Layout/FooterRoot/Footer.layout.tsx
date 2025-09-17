@@ -5,7 +5,6 @@ import externalLinks from "../../../constants/externalLinks";
 import Ghost_signature_Footer_layout from "../../../signature/Ghost.signature";
 
 function Footer_layout() {
-
     const dateNow = new Date().getFullYear();
 
     return (
