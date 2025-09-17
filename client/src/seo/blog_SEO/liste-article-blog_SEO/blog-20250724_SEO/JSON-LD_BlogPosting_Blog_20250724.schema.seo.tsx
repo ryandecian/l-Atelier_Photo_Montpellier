@@ -1,4 +1,4 @@
-import DataSEORoots from "../../../dataSEO_Root.data.seo";
+import { dataSEO_Root_data_SEO } from "../../../dataSEO_Root.data.seo";
 import DataSEORootType from "../../../../types/DataSEORoot.type";
 
 import DataSEO_Blog_20250724s from "./DataSEO_Blog_20250724.data.seo";
@@ -12,7 +12,7 @@ import { convertDateFrToISO_String } from "../../../../utils/convertDateFrToISO.
 
 function JSON_LD_BlogPosting_Blog_20250724_Schema_SEO() : string {
     const DataCardBlogRoot: CardBlogType[] = DataCardBlogRoots(); /* Récupération des données de la carte du blog */
-    const DataSEORoot: DataSEORootType = DataSEORoots(); /* Récupération des données SEO */
+    const DataSEORoot: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
     const DataSEO_Blog_20250724: DataSEOTargetOneType = DataSEO_Blog_20250724s(); /* Récupération des données SEO de la page */
 
     const JSON_LD = JSON.stringify({
