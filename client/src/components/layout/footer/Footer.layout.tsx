@@ -1,7 +1,14 @@
-import css from "./footer.layout.module.css";
+/* Import des modules CSS */
+import css from "./footer.module.css";
+
+/* Import des composants React */
 import { Link } from "react-router-dom";
+
+/* Import des composants Router */
 import ListDataRouter from "../../../router/router";
 import externalLinks from "../../../constants/externalLinks";
+
+/* Import des composants de signature */
 import Ghost_signature_Footer_layout from "../../../signature/Ghost.signature";
 
 function Footer_layout() {
