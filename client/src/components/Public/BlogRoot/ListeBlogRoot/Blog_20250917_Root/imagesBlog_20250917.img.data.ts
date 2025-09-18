@@ -8,7 +8,7 @@ import ImagesControllerDataType from "../../../../../types/ImagesControllerData.
  * photographie-professionnelle : 2/2
 */
 
-const ImagesBlog_20250917_RootControllerData: ImagesControllerDataType[] = [
+const imagesBlog_20250917_img_data: ImagesControllerDataType[] = [
     /* {ImagesBlog_20250917_RootControllerData[0].src} */
     {
         src: "/images/image-blog/blog_20250917/lapm-photo-professionnel-conference-l-atelier-photo-montpellier.jpg",
@@ -21,4 +21,4 @@ const ImagesBlog_20250917_RootControllerData: ImagesControllerDataType[] = [
     },
 ];
 
-export default ImagesBlog_20250917_RootControllerData;
+export default imagesBlog_20250917_img_data;
