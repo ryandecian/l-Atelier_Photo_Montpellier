@@ -212,7 +212,9 @@ function Blog_20250917_Root() {
             </p>
 
             <p className={style.TextLiP4}>
-                Un photographe ou un vidéaste expérimenté sait :
+                <span className={style.SpanBold}>
+                    Un photographe ou un vidéaste expérimenté sait :
+                </span>
             </p>
 
             <ul className={style.ContainerUl}>
@@ -240,6 +242,66 @@ function Blog_20250917_Root() {
             <h2 className={style.TitleH2}>
                 {`Et si choisir un photographe/vidéaste devenait votre prochain levier stratégique ?`}
             </h2>
+
+            <p className={style.TextP4}>
+                Vous avez investi dans un lieu, une logistique, des contenus, des invités... <br />
+                N’oubliez pas d’investir dans la trace que cet événement laissera.
+            </p>
+
+            <p className={style.TextP4}>
+                La photographie et la vidéo événementielle ne sont pas une dépense. <br />
+                Ce sont des leviers puissants de visibilité, de valorisation et d’impact.
+            </p>
+
+            <p className={style.TextLiP4}>
+                <span className={style.SpanBold}>
+                    📈 Arguments ROI concrets :
+                </span>
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    Gain de temps : vous disposez de visuels immédiatement exploitables.
+                </li>
+                <li className={style.TextLiP4}>
+                    Économie sur le long terme : une seule production = plusieurs mois de contenus.
+                </li>
+                <li className={style.TextLiP4}>
+                    Cohérence visuelle : une image homogène sur tous vos supports.
+                </li>
+                <li className={style.TextLiP4}>
+                    Crédibilité : une image pro inspire confiance aux clients, partenaires et investisseurs.
+                </li>
+                <li className={style.TextLiP4}>
+                    Différenciation : vous vous démarquez immédiatement de la concurrence.
+                </li>
+            </ul>
+
+            <p className={style.TextLiP4}>
+                <span className={style.SpanBold}>
+                    Pour résumer : Ce qu’une image professionnelle dit de vous :
+                </span>
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    Elle dit que vous prenez votre marque au sérieux.
+                </li>
+                <li className={style.TextLiP4}>
+                    Elle dit que vous respectez vos partenaires.
+                </li>
+                <li className={style.TextLiP4}>
+                    Elle dit que vous incarnez ce que vous proclamez.
+                </li>
+                <li className={style.TextLiP4}>
+                    Et surtout, elle dit tout ce que les mots n’arrivent pas à formuler.
+                </li>
+            </ul>
+
+            <p className={style.TextP4}>
+                👉 À Montpellier ou ailleurs, choisir un photographe corporate ou un vidéaste professionnel, c’est 
+                investir dans l’avenir de votre communication.
+            </p>
         </section>
     )
 }
