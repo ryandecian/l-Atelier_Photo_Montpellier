@@ -1,5 +1,5 @@
 import externalLinks from "../constants/externalLinks";
-import DataSEORootType from "../types/DataSEORoot.type";
+import DataSEORootType from "../types/seo/ddataSEORoot.type";
 import ListDataRouter from "../router/router";
 
 function dataSEO_Root_data_SEO(): DataSEORootType {

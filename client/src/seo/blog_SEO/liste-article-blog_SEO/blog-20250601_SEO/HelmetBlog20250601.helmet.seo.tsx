@@ -1,10 +1,11 @@
+/* Import des composants React */
 import { Helmet } from "react-helmet-async";
-import DataSEOHelmetType from "../../../../types/seo/dataSEOHelmet.type";
+import { dataSEOHelmet_Type } from "../../../../types/seo/dataSEOHelmet.type";
 
 import { dataSEO_Root_data_SEO } from "../../../dataSEO_Root.data.seo";
 import { dataSEO_Blog_20250601_data_SEO } from "./dataSEO_Blog_20250601.data.seo";
 
-import DataSEORootType from "../../../../types/DataSEORoot.type";
+import DataSEORootType from "../../../../types/seo/ddataSEORoot.type";
 import DataSEOTargetOneType from "../../../../types/seo/dataSEOTargetOne.type";
 
 import { JSON_LD_LocalBusiness_Root_schema_SEO } from "../../../JSON-LD_LocalBusiness_Root.schema.seo";
@@ -16,7 +17,7 @@ function Helmet_Blog_20250601_helmet_SEO() {
     const dataSEORoot: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
     const dataSEO_Blog_20250601: DataSEOTargetOneType = dataSEO_Blog_20250601_data_SEO(); /* Récupération des données SEO de la page */
 
-    const SEO: DataSEOHelmetType = {
+    const SEO: dataSEOHelmet_Type = {
         title: dataSEO_Blog_20250601.title,
         autor: dataSEO_Blog_20250601.autor,
         description: dataSEO_Blog_20250601.description,

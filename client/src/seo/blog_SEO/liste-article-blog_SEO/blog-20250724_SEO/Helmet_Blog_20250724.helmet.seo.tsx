@@ -4,7 +4,7 @@ import DataSEOHelmetType from "../../../../types/seo/dataSEOHelmet.type";
 import { dataSEO_Root_data_SEO } from "../../../dataSEO_Root.data.seo";
 import DataSEO_Blog_20250724s from "./DataSEO_Blog_20250724.data.seo";
 
-import DataSEORootType from "../../../../types/DataSEORoot.type";
+import DataSEORootType from "../../../../types/seo/ddataSEORoot.type";
 import DataSEOTargetOneType from "../../../../types/seo/dataSEOTargetOne.type";
 
 import { JSON_LD_LocalBusiness_Root_schema_SEO } from "../../../JSON-LD_LocalBusiness_Root.schema.seo";

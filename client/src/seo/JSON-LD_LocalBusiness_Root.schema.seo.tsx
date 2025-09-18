@@ -1,5 +1,5 @@
 import { dataSEO_Root_data_SEO } from "./dataSEO_Root.data.seo";
-import DataSEORootType from "../types/DataSEORoot.type";
+import DataSEORootType from "../types/seo/ddataSEORoot.type";
 
 import generateAverageRatingSEO from "../utils/generateAverageRatingSEO.utils";
 import generateReviewArraySEO from "../utils/generateReviewArraySEO.utils";
