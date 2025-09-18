@@ -1,5 +1,11 @@
-/* Import des styles */
+/* Import des modules CSS */
 import style from "../../../../StyleRootComponent.module.css";
+
+/* Import des Components */
+import imagesBlog_20250917_img_data from "./imagesBlog_20250917.img.data";
+
+/* Import des composants d'Elements */
+import PremiumCardImgSudoRoot from "../../../../Elements/PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
 
 function Blog_20250917_Root() {
     return (
@@ -41,6 +47,150 @@ function Blog_20250917_Root() {
 
             <p className={style.TextP4}>
                 Mais pour le raconter, le revivre, et le faire rayonner.
+            </p>
+
+            <h2 className={style.TitleH2}>
+                {`L’image, cet outil stratégique en entreprise qu’on sous-estime trop souvent`}
+            </h2>
+
+            <div className={style.ContainerFloat}>
+                <PremiumCardImgSudoRoot
+                    src={imagesBlog_20250917_img_data[0].src}
+                    alt={imagesBlog_20250917_img_data[0].alt}
+                    className={style.FloatLeftImg_Po}
+                />
+
+                <p className={style.TextP4}>
+                    Il y a ceux qui se disent : “On fera quelques photos avec nos téléphones.”
+                </p>
+
+                <p className={style.TextP4}>
+                    Et il y a ceux qui comprennent que la communication visuelle d’entreprise n’est pas une option, mais 
+                    une extension du discours et de l’image de marque.
+                </p>
+
+                <p className={style.TextP4}>
+                    Dans un monde saturé de contenu, ce qui capte l’attention n’est pas l’information brute, mais 
+                    l’émotion visuelle.
+                </p>
+
+                <p className={style.TextP4}>
+                    Ce n’est pas ce que vous dites qui vous rend mémorable. <br />
+                    C’est la manière dont on vous voit.
+                </p>
+
+                <p className={style.TextP4}>
+                    À Montpellier comme ailleurs, faire appel à un photographe corporate ou à un vidéaste professionnel 
+                    devient un investissement stratégique.
+                </p>
+            </div>
+            
+            <h2 className={style.TitleH2}>
+                {`La vidéo à Montpellier ou ailleurs : un puissant levier d’image et de confiance`}
+            </h2>
+
+            <p className={style.TextP4}>
+                Un professionnel de l’image, qu’il soit photographe ou vidéaste, ne se contente pas de documenter.
+            </p>
+
+            <p className={style.TextP4}>
+                Il met en scène sans perturber, capte sans déranger, illumine sans dénaturer. <br />
+                Il anticipe les instants forts. <br />
+                Il repère les angles qui valorisent les intervenants. <br />
+                Il adapte son matériel aux contraintes de lumière, de son, d’espace. <br />
+                Et surtout : il raconte une histoire, à travers chaque image.
+            </p>
+
+            <p className={style.TextP4}>
+                Une posture, un sourire discret, un regard échangé entre deux collaborateurs… autant de détails 
+                invisibles à l’œil nu, mais cruciaux pour restituer l’essence d’un moment.
+            </p>
+
+            <p className={style.TextP4}>
+                👉 Ce regard professionnel crée une différence immédiate dans la perception externe et renforce la 
+                crédibilité de votre marque.
+            </p>
+
+            <h2 className={style.TitleH2}>
+                {`Photo et vidéo : des supports durables pour valoriser votre activité`}
+            </h2>
+
+            <p className={style.TextP4}>
+                L’événement dure quelques heures. <br />
+                Mais les photos et les vidéos, elles, durent des années.
+            </p>
+
+            <p className={style.TextLiP4}>
+                Et elles parlent, parfois mieux que les mots :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    Sur votre site internet, elles affirment votre positionnement haut de gamme.
+                </li>
+                <li className={style.TextLiP4}>
+                    Sur LinkedIn ou Instagram, elles captent l’attention, humanisent la marque, créent de l’engagement.
+                </li>
+                    <li className={style.TextLiP4}>
+                    En interne, elles renforcent la fierté d’appartenance et la cohésion.
+                </li>
+                <li className={style.TextLiP4}>
+                    Dans un pitch ou une présentation client, elles valorisent votre capacité à mobiliser, à inspirer, 
+                    à exécuter.
+                </li>
+            </ul>
+
+            <p className={style.TextLiP4}>
+                Autrement dit : chaque image devient un actif durable de votre communication d’entreprise.
+            </p>
+
+            <h3 className={style.TitleNH3}>
+                {`Amateur vs Corporate : quand l’image reflète vraiment la qualité de l’entreprise`}
+            </h3>
+
+            <p className={style.TextP4}>
+                👉 Une photo floue, mal cadrée, saturée de couleurs artificielles : cela peut ruiner la perception d’un 
+                moment pourtant réussi. <br />
+                👉 À l’inverse, un cliché net, sobre, capté au bon moment, sous la bonne lumière, peut sublimer la 
+                réalité et en renforcer l’impact émotionnel.
+            </p>
+
+            <p className={style.TextP4}>
+                C’est ce décalage, souvent invisible avant coup, qui fait toute la différence après.
+            </p>
+
+            <h3 className={style.TitleNH3}>
+                {`L’image corporate réutilisable : newsletters, rapports, slides et réseaux sociaux`}
+            </h3>
+
+            <p className={style.TextLiP4}>
+                Dans les mois qui suivent un événement, les images :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    illustrent les rapports d’activité,
+                </li>
+                <li className={style.TextLiP4}>
+                    alimentent les newsletters,
+                </li>
+                <li className={style.TextLiP4}>
+                    inspirent les slides de présentation.
+                </li>
+            </ul>
+
+            <p className={style.TextP4}>
+                Mais plus encore : elles créent une trace symbolique.
+            </p>
+
+            <p className={style.TextP4}>
+                Elles disent à ceux qui n’étaient pas là : 'Regardez ce que nous sommes capables de créer.' <br />
+                Et à ceux qui y étaient : 'Vous faisiez partie de quelque chose d’important.'
+            </p>
+
+            <p className={style.TextP4}>
+                👉 C’est aussi cela, le retour sur investissement : une seule production visuelle qui se décline sur 
+                tous vos supports de communication.
             </p>
         </section>
     )
