@@ -1,13 +1,5 @@
 import ImagesControllerDataType from "../../../../../types/ImagesControllerData.type";
 
-/**
- * Compteur mot clés : 
- * 
- * photographe-professionnel : 4/4
- * photo-professionnel : 2/2
- * photographie-professionnelle : 2/2
-*/
-
 const imagesBlog_20250917_img_data: ImagesControllerDataType[] = [
     /* {ImagesBlog_20250917_RootControllerData[0].src} */
     {
