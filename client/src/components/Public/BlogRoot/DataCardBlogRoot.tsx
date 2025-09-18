@@ -39,6 +39,15 @@ function DataCardBlogRoot() {
             date: "24/07/2025",
             image: "/images/image-blog/cartes/blog_20250724.jpg",
         },
+        {
+            reactKey: 5,
+            path: ListDataRouter[4].children?.[5].path,
+            id: "top",
+            title: "Investir dans l’image d’entreprise",
+            description: "Photo & vidéo : un vrai retour sur investissement.",
+            date: "17/09/2025",
+            image: "/images/image-blog/cartes/blog_20250917.jpg",
+        },
     ]
     return tab;
 }
