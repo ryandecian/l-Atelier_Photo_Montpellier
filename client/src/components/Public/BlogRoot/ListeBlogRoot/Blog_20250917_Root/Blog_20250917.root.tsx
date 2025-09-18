@@ -201,6 +201,45 @@ function Blog_20250917_Root() {
                 👉 C’est aussi cela, le retour sur investissement : une seule production visuelle qui se décline sur 
                 tous vos supports de communication.
             </p>
+
+            <h2 className={style.TitleH2}>
+                {`Toujours l’humain, même dans une image corporate`}
+            </h2>
+
+            <p className={style.TextP4}>
+                Une image professionnelle réussie, ce n’est pas une mise en scène figée. <br />
+                C’est un instant vrai, capté avec subtilité.
+            </p>
+
+            <p className={style.TextLiP4}>
+                Un photographe ou un vidéaste expérimenté sait :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    respecter la dynamique d’un groupe,
+                </li>
+                <li className={style.TextLiP4}>
+                    mettre à l’aise les collaborateurs,
+                </li>
+                <li className={style.TextLiP4}>
+                    révéler l’énergie sans l’imposer.
+                </li>
+            </ul>
+
+            <p className={style.TextP4}>
+                Parce qu’au fond, ce n’est pas juste de la technique. <br />
+                C’est une affaire de regard, d’intention, et de compréhension de l’humain.
+            </p>
+
+            <p className={style.TextP4}>
+                👉 Et pour une entreprise, cela se traduit par des images qui inspirent confiance et crédibilité, bien 
+                au-delà de l’événement lui-même.
+            </p>
+
+            <h2 className={style.TitleH2}>
+                {`Et si choisir un photographe/vidéaste devenait votre prochain levier stratégique ?`}
+            </h2>
         </section>
     )
 }
