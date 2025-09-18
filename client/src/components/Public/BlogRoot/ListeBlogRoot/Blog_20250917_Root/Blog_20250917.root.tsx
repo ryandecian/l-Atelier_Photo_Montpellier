@@ -114,35 +114,44 @@ function Blog_20250917_Root() {
             <h2 className={style.TitleH2}>
                 {`Photo et vidéo : des supports durables pour valoriser votre activité`}
             </h2>
+            
+            <div className={style.ContainerFloat}>
+                <PremiumCardImgSudoRoot
+                    src={imagesBlog_20250917_img_data[1].src}
+                    alt={imagesBlog_20250917_img_data[1].alt}
+                    className={style.FloatRightImg_Po}
+                />
 
-            <p className={style.TextP4}>
-                L’événement dure quelques heures. <br />
-                Mais les photos et les vidéos, elles, durent des années.
-            </p>
+                <p className={style.TextP4}>
+                    L’événement dure quelques heures. <br />
+                    Mais les photos et les vidéos, elles, durent des années.
+                </p>
 
-            <p className={style.TextLiP4}>
-                Et elles parlent, parfois mieux que les mots :
-            </p>
+                <p className={style.TextLiP4}>
+                    Et elles parlent, parfois mieux que les mots :
+                </p>
 
-            <ul className={style.ContainerUl}>
-                <li className={style.TextLiP4}>
-                    Sur votre site internet, elles affirment votre positionnement haut de gamme.
-                </li>
-                <li className={style.TextLiP4}>
-                    Sur LinkedIn ou Instagram, elles captent l’attention, humanisent la marque, créent de l’engagement.
-                </li>
+                <ul className={style.ContainerUl}>
                     <li className={style.TextLiP4}>
-                    En interne, elles renforcent la fierté d’appartenance et la cohésion.
-                </li>
-                <li className={style.TextLiP4}>
-                    Dans un pitch ou une présentation client, elles valorisent votre capacité à mobiliser, à inspirer, 
-                    à exécuter.
-                </li>
-            </ul>
+                        Sur votre site internet, elles affirment votre positionnement haut de gamme.
+                    </li>
+                    <li className={style.TextLiP4}>
+                        Sur LinkedIn ou Instagram, elles captent l’attention, humanisent la marque, créent de l’engagement.
+                    </li>
+                        <li className={style.TextLiP4}>
+                        En interne, elles renforcent la fierté d’appartenance et la cohésion.
+                    </li>
+                    <li className={style.TextLiP4}>
+                        Dans un pitch ou une présentation client, elles valorisent votre capacité à mobiliser, à inspirer, 
+                        à exécuter.
+                    </li>
+                </ul>
 
-            <p className={style.TextLiP4}>
-                Autrement dit : chaque image devient un actif durable de votre communication d’entreprise.
-            </p>
+                <p className={style.TextLiP4}>
+                    Autrement dit : chaque image devient un actif durable de votre communication d’entreprise.
+                </p>
+            </div>
+
 
             <h3 className={style.TitleNH3}>
                 {`Amateur vs Corporate : quand l’image reflète vraiment la qualité de l’entreprise`}
