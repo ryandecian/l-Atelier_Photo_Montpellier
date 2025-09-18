@@ -2,7 +2,7 @@ import ListDataRouter from "../../../../router/router";
 import DataSEOTargetOneType from "../../../../types/DataSEOTargetOne.type";
 
 function dataSEO_Blog_20250917_data_SEO(): DataSEOTargetOneType {
-    const DataSEO = {
+    const dataSEO = {
         /* Data Helmet */
         title: "Pourquoi investir dans la vidéo et la photo pour votre entreprise ? – Blog - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
@@ -47,7 +47,7 @@ function dataSEO_Blog_20250917_data_SEO(): DataSEOTargetOneType {
     };
 
     return (
-        DataSEO
+        dataSEO
     )
 }
 
