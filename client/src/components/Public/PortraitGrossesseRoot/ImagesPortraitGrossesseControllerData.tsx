@@ -1,4 +1,4 @@
-import ImagesControllerDataType from "../../../types/ImagesControllerData.type";
+import ImagesControllerDataType from "../../../types/imagesBlog.type";
 
 /**
  * Compteur mot clés : 

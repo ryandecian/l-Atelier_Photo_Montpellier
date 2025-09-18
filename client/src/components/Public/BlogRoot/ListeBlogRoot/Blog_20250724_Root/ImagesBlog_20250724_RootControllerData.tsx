@@ -1,4 +1,4 @@
-import ImagesControllerDataType from "../../../../../types/ImagesControllerData.type";
+import ImagesControllerDataType from "../../../../../types/imagesBlog.type";
 
 const ImagesBlog_20250724_RootControllerData: ImagesControllerDataType[] = [
     /* {ImagesBlog_20250724_RootControllerData[0].src} */
