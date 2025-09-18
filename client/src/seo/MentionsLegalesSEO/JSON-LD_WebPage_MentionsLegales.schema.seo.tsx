@@ -1,5 +1,5 @@
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
-import DataSEORootType from "../../types/seo/ddataSEORoot.type";
+import DataSEORootType from "../../types/seo/dataSEORoot.type";
 
 import DataSEO_MentionsLegales from "./DataSEO_MentionsLegales.data.seo";
 import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";

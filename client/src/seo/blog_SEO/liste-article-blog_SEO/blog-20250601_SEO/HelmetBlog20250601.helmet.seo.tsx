@@ -5,8 +5,8 @@ import { dataSEOHelmet_Type } from "../../../../types/seo/dataSEOHelmet.type";
 import { dataSEO_Root_data_SEO } from "../../../dataSEO_Root.data.seo";
 import { dataSEO_Blog_20250601_data_SEO } from "./dataSEO_Blog_20250601.data.seo";
 
-import DataSEORootType from "../../../../types/seo/ddataSEORoot.type";
-import DataSEOTargetOneType from "../../../../types/seo/dataSEOTargetOne.type";
+import { dataSEORoot_Type } from "../../../../types/seo/dataSEORoot.type";
+import { dataSEOTargetOne_Type } from "../../../../types/seo/dataSEOTargetOne.type";
 
 import { JSON_LD_LocalBusiness_Root_schema_SEO } from "../../../JSON-LD_LocalBusiness_Root.schema.seo";
 import { JSON_LD_BlogPosting_Blog_20250601_schema_SEO } from "./JSON-LD_BlogPosting_Blog_20250601.schema.seo";
@@ -14,8 +14,8 @@ import { JSON_LD_Breadcrumb_Blog_20250601_schema_SEO } from "./JSON-LD_Breadcrum
 
 
 function Helmet_Blog_20250601_helmet_SEO() {
-    const dataSEORoot: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const dataSEO_Blog_20250601: DataSEOTargetOneType = dataSEO_Blog_20250601_data_SEO(); /* Récupération des données SEO de la page */
+    const dataSEORoot: dataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
+    const dataSEO_Blog_20250601: dataSEOTargetOne_Type = dataSEO_Blog_20250601_data_SEO(); /* Récupération des données SEO de la page */
 
     const SEO: dataSEOHelmet_Type = {
         title: dataSEO_Blog_20250601.title,

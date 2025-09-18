@@ -4,7 +4,7 @@ import DataSEOHelmetType from "../../../../types/seo/dataSEOHelmet.type";
 import { dataSEO_Root_data_SEO } from "../../../dataSEO_Root.data.seo";
 import { dataSEO_Blog_20250917_data_SEO } from "./dataSEO_Blog_20250917.data.seo";
 
-import DataSEORootType from "../../../../types/seo/ddataSEORoot.type";
+import DataSEORootType from "../../../../types/seo/dataSEORoot.type";
 import DataSEOTargetOneType from "../../../../types/seo/dataSEOTargetOne.type";
 
 /* Import des JSON_LD */
