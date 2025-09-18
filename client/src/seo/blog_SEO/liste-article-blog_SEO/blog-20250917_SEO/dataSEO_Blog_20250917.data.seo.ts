@@ -7,7 +7,7 @@ function dataSEO_Blog_20250917_data_SEO(): DataSEOTargetOneType {
         title: "Pourquoi investir dans la vidéo et la photo pour votre entreprise ? – Blog - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
         description: "Photo et vidéo corporate à Montpellier : impact, crédibilité et ROI. Événementiel, communication interne, réseaux sociaux, image de marque — pourquoi et comment investir.",
-        url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[4].path}${ListDataRouter[4].children?.[4].path}`, /*URL de la page*/
+        url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[4].path}${ListDataRouter[4].children?.[5].path}`, /*URL de la page*/
         position: 3, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
         name_Breadcrumb: "Investir photo & vidéo", /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Duo */
         name_Service: "Photo & vidéo corporate à Montpellier – Blog - l'Atelier Photo Montpellier", /* Nom du service, utilisé dans le JSON-LD Service */
@@ -40,9 +40,9 @@ function dataSEO_Blog_20250917_data_SEO(): DataSEOTargetOneType {
         },
 
         /* Data Helmet et JSON-LD */
-        img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/liste-blog-root/blog_20250917/google/lapm-photo-video-entreprise-montpellier-blog-20250917-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/liste-blog-root/blog_20250917/helmet/lapm-photo-video-entreprise-montpellier-blog-20250917-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[4].path}${ListDataRouter[4].children?.[4].path}/#blog_20250917`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
+        img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/liste-blog-root/blog-20250917/google/lapm-photo-video-entreprise-montpellier-blog-20250917-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
+        img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/liste-blog-root/blog-20250917/helmet/lapm-photo-video-entreprise-montpellier-blog-20250917-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[4].path}${ListDataRouter[4].children?.[5].path}/#blog_20250917`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
         serviceType: "Article de blog dédié à la photo et à la vidéo corporate : leviers d’impact, de confiance et de ROI pour les entreprises à Montpellier et ailleurs (événementiel, marque, réseaux sociaux).",
     };
 
