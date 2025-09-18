@@ -2,7 +2,7 @@ import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
 import DataSEORootType from "../../types/DataSEORoot.type";
 
 import DataSEO_Blogs from "./DataSEO_Blog.data.seo";
-import DataSEOTargetOneType from "../../types/dataSEOTargetOne.type";
+import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
 
 import ListDataRouter from "../../router/router";
 import extractKeywordsFromDataSEO from "../../utils/extractKeywordsFromDataSEO.utils";

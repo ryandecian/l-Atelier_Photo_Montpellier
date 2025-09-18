@@ -2,7 +2,7 @@
 import ListDataRouter from "../../../../router/router";
 
 /* Import des Types */
-import { dataSEOTargetOne_Type } from "../../../../types/dataSEOTargetOne.type";
+import { dataSEOTargetOne_Type } from "../../../../types/seo/dataSEOTargetOne.type";
 
 function dataSEO_Blog_20250601_data_SEO(): dataSEOTargetOne_Type {
     const dataSEO = {

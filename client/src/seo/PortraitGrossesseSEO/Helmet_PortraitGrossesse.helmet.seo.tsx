@@ -1,11 +1,11 @@
 import { Helmet } from "react-helmet-async";
-import DataSEOHelmetType from "../../types/DataSEOHelmet.type";
+import DataSEOHelmetType from "../../types/seo/ddataSEOHelmet.type";
 
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
 import DataSEO_PortraitGrossesses from "./DataSEO_PortraitGrossesse.data.seo";
 
 import DataSEORootType from "../../types/DataSEORoot.type";
-import DataSEOTargetOneType from "../../types/dataSEOTargetOne.type";
+import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
 
 import { JSON_LD_LocalBusiness_Root_schema_SEO } from "../JSON-LD_LocalBusiness_Root.schema.seo";
 import JSON_LD_Service_PortraitGrossesse_Schema_SEO from "./JSON-LD_Service_PortraitGrossesse.schema.seo";

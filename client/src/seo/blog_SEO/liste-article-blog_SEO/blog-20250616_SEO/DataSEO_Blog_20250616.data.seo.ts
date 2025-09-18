@@ -1,5 +1,5 @@
 import ListDataRouter from "../../../../router/router";
-import DataSEOTargetOneType from "../../../../types/dataSEOTargetOne.type";
+import DataSEOTargetOneType from "../../../../types/seo/dataSEOTargetOne.type";
 
 function DataSEO_Blog_20250616(): DataSEOTargetOneType {
     const DataSEO = {
