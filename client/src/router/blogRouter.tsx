@@ -3,6 +3,7 @@ import Blog_20250601_Page from "../pages/Public/BlogPage/ListeBlogPage/Blog_2025
 import Blog_20250616_Page from "../pages/Public/BlogPage/ListeBlogPage/Blog_20250616_Page";
 import Blog_20250710_Page from "../pages/Public/BlogPage/ListeBlogPage/Blog_20250710_Page";
 import Blog_20250724_Page from "../pages/Public/BlogPage/ListeBlogPage/Blog_20250724_Page";
+import Blog_20250917_Page from "../pages/Public/BlogPage/ListeBlogPage/Blog_20250917.page";
 
 type blogRouterType = {
     path: string;
@@ -35,6 +36,11 @@ const blogRouter: blogRouterType[] = [
     {
         path: "2025-07-24",
         element: <Blog_20250724_Page />,
+    },
+    /* {ListDataRouter[4].children?.[5].path} */
+    {
+        path: "2025-09-17",
+        element: <Blog_20250917_Page />,
     },
 ]
 
