@@ -40,8 +40,8 @@ function dataSEO_Blog_20250917_data_SEO(): DataSEOTargetOneType {
         },
 
         /* Data Helmet et JSON-LD */
-        img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/liste-blog-root/blog-20250917/google/lapm-photo-video-entreprise-montpellier-blog-20250917-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/liste-blog-root/blog-20250917/helmet/lapm-photo-video-entreprise-montpellier-blog-20250917-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
+        img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/liste-blog-root/blog-20250917/google/lapm-photo-professionnel-conference-blog-20250917-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
+        img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/liste-blog-root/blog-20250917/helmet/lapm-photo-pro-conference-blog-20250917-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
         id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[4].path}${ListDataRouter[4].children?.[5].path}/#blog_20250917`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
         serviceType: "Article de blog dédié à la photo et à la vidéo corporate : leviers d’impact, de confiance et de ROI pour les entreprises à Montpellier et ailleurs (événementiel, marque, réseaux sociaux).",
     };
