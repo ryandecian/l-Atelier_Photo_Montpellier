@@ -8,4 +8,4 @@ type CardBlog_Type = {
   image: string;
 };
 
-export default CardBlog_Type;
+export type { CardBlog_Type };

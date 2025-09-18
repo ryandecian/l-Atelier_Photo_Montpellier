@@ -5,7 +5,7 @@ import { dataSEO_Blog_20250601_data_SEO } from "./dataSEO_Blog_20250601.data.seo
 import DataSEOTargetOneType from "../../../../types/DataSEOTargetOne.type";
 
 import DataCardBlogRoots from "../../../../components/Public/BlogRoot/dataCardBlog.img.data";
-import CardBlogType from "../../../../types/CcardBlog.type";
+import CardBlogType from "../../../../types/cardBlog.type";
 
 import extractKeywordsFromDataSEO from "../../../../utils/extractKeywordsFromDataSEO.utils";
 import { convertDateFrToISO_String } from "../../../../utils/convertDateFrToISO.utils";

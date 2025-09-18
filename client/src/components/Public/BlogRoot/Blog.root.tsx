@@ -10,7 +10,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 /* Import des Types */
-import CardBlogType from "../../../types/CcardBlog.type";
+import CardBlogType from "../../../types/cardBlog.type";
 
 /* Import des Utils */
 import { convertDateFrToISO_Date } from "../../../utils/convertDateFrToISO.utils";
