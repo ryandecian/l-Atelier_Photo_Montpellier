@@ -60,7 +60,7 @@ function Blog_20250724_Root() {
                 nombreuses futures mamans.
             </p>
 
-            <h3 className={style.TitleNH3L}>
+            <h3 className={style.TitleNH3R}>
                 {`Pourquoi 28 à 34 semaines offrent le meilleur rendu photo`}
             </h3>
 
