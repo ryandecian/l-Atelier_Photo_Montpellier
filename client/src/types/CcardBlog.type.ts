@@ -1,4 +1,4 @@
-type CardBlogType = {
+type CardBlog_Type = {
   reactKey: number;
   path: string | undefined;
   id: string;
@@ -8,4 +8,4 @@ type CardBlogType = {
   image: string;
 };
 
-export default CardBlogType;
+export default CardBlog_Type;
