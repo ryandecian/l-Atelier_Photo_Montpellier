@@ -1,4 +1,4 @@
-type DataSEOTargetOneType = {
+type dataSEOTargetOne_Type = {
     title: string;
     autor: string;
     description: string;
@@ -40,4 +40,4 @@ type DataSEOTargetOneType = {
     serviceType: string; /* Type de service */
 }
 
-export default DataSEOTargetOneType;
+export type { dataSEOTargetOne_Type };

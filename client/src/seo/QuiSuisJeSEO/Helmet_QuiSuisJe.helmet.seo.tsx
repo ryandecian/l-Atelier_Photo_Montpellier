@@ -5,7 +5,7 @@ import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
 import DataSEO_QuiSuisJes from "./DataSEO_QuiSuisJe.data.seo";
 
 import DataSEORootType from "../../types/DataSEORoot.type";
-import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
+import DataSEOTargetOneType from "../../types/dataSEOTargetOne.type";
 
 import { JSON_LD_LocalBusiness_Root_schema_SEO } from "../JSON-LD_LocalBusiness_Root.schema.seo";
 import JSON_LD_Person_QuiSuisJe_Schema_SEO from "./JSON-LD_Person_QuiSuisJe.schema.seo";

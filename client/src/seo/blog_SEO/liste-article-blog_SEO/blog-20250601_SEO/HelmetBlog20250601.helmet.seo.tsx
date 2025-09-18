@@ -5,7 +5,7 @@ import { dataSEO_Root_data_SEO } from "../../../dataSEO_Root.data.seo";
 import { dataSEO_Blog_20250601_data_SEO } from "./dataSEO_Blog_20250601.data.seo";
 
 import DataSEORootType from "../../../../types/DataSEORoot.type";
-import DataSEOTargetOneType from "../../../../types/DataSEOTargetOne.type";
+import DataSEOTargetOneType from "../../../../types/dataSEOTargetOne.type";
 
 import { JSON_LD_LocalBusiness_Root_schema_SEO } from "../../../JSON-LD_LocalBusiness_Root.schema.seo";
 import { JSON_LD_BlogPosting_Blog_20250601_schema_SEO } from "./JSON-LD_BlogPosting_Blog_20250601.schema.seo";
