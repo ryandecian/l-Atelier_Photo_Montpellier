@@ -1,3 +1,4 @@
+/* Import des styles */
 import style from "../../../../StyleRootComponent.module.css";
 
 function Blog_20250917_Root() {
