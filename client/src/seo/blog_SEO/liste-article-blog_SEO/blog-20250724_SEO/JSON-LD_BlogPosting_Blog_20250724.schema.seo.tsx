@@ -1,14 +1,14 @@
 import { dataSEO_Root_data_SEO } from "../../../dataSEO_Root.data.seo";
 import DataSEORootType from "../../../../types/seo/dataSEORoot.type";
 
-import DataSEO_Blog_20250724s from "./DataSEO_Blog_20250724.data.seo";
+import DataSEO_Blog_20250724s from "./dataSEO_Blog_20250724.data.seo";
 import DataSEOTargetOneType from "../../../../types/seo/dataSEOTargetOne.type";
 
 import DataCardBlogRoots from "../../../../components/Public/BlogRoot/dataCardBlog.img.data";
 import CardBlogType from "../../../../types/components/blogs/cardBlog.type";
 
-import extractKeywordsFromDataSEO from "../../../../utils/extractKeywordsFromDataSEO.utils";
-import { convertDateFrToISO_String } from "../../../../utils/convertDateFrToISO.utils";
+import extractKeywordsFromDataSEO from "../../../../utils/seo/extractKeywordsFromDataSEO.utils";
+import { convertDateFrToISO_String } from "../../../../utils/seo/convertDateFrToISO.utils";
 
 function JSON_LD_BlogPosting_Blog_20250724_Schema_SEO() : string {
     const DataCardBlogRoot: CardBlogType[] = DataCardBlogRoots(); /* Récupération des données de la carte du blog */

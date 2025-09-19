@@ -1,10 +1,13 @@
+/* Import des composants Router */
 import externalLinks from "../constants/externalLinks";
-import DataSEORootType from "../types/seo/dataSEORoot.type";
 import ListDataRouter from "../router/router";
 
-function dataSEO_Root_data_SEO(): DataSEORootType {
+/* Import des Types */
+import { DataSEORoot_Type } from "../types/seo/dataSEORoot.type";
+
+function dataSEO_Root_data_SEO(): DataSEORoot_Type {
     const router = ListDataRouter; /* Récupération des données du routeur */
-    const DataSEORoots = {
+    const dataSEORoots = {
         /* Data Helmet */
         author: {
             "@type": "Person",
@@ -626,7 +629,7 @@ function dataSEO_Root_data_SEO(): DataSEORootType {
         ]
     }
     return (
-        DataSEORoots
+        dataSEORoots
     )
 };
 

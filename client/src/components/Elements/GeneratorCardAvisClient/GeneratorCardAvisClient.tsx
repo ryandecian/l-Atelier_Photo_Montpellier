@@ -1,7 +1,7 @@
 import { useState } from "react";
 import css from "./GeneratorCardAvisClient.module.css";
-import AvisClientControllerDataType from "../../../types/AvisClientControllerData.type";
-import { convertDateFrToISO_String } from "../../../utils/convertDateFrToISO.utils";
+import AvisClientControllerDataType from "../../../types/seo/avisClientSEO.type";
+import { convertDateFrToISO_String } from "../../../utils/seo/convertDateFrToISO.utils";
 
 
 // Ajout d'une interface pour les props
