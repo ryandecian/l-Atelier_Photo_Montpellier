@@ -1,6 +1,6 @@
 /* Import des Components */
 import { dataSEO_Root_data_SEO } from "../../../dataSEO_Root.data.seo";
-import { dataSEO_Blog_20250710_data_SEO } from "./DdataSEO_Blog_20250710.data.seo";
+import { dataSEO_Blog_20250710_data_SEO } from "./dataSEO_Blog_20250710.data.seo";
 import { dataCardBlog_img_data } from "../../../../components/Public/BlogRoot/dataCardBlog.img.data";
 
 /* Import des Types */

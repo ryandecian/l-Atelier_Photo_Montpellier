@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import DataSEOHelmetType from "../../../../types/seo/dataSEOHelmet.type";
 
 import { dataSEO_Root_data_SEO } from "../../../dataSEO_Root.data.seo";
-import DataSEO_Blog_20250710s from "./DdataSEO_Blog_20250710.data.seo";
+import DataSEO_Blog_20250710s from "./dataSEO_Blog_20250710.data.seo";
 
 import DataSEORootType from "../../../../types/seo/dataSEORoot.type";
 import DataSEOTargetOneType from "../../../../types/seo/dataSEOTargetOne.type";
