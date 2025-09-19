@@ -1,24 +1,16 @@
-/* Import des modules CSS */
 import style from "../../StyleRootComponent.module.css";
 import css from "./BlogRoot.module.css";
 
-/* Import des Components */
-import { dataCardBlog_img_data } from "./dataCardBlog.img.data";
-
-/* Import des composants React */
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import DataCardBlogRoot from "./DataCardBlogRoot";
+import CardBlogType from "../../../types/CardBlog.type";
+import { convertDateFrToISO_Date } from "../../../utils/convertDateFrToISO.utils";
 
-/* Import des Types */
-import { CardBlog_Type} from "../../../types/components/blogs/cardBlog.type";
-
-/* Import des Utils */
-import { convertDateFrToISO_Date } from "../../../utils/seo/convertDateFrToISO.utils";
-
-function Blog_Root() {
+function BlogRoot() {
     /* Permet de mettre en mémoire le résultat de la fonction. Donc les datas des card. */
     /* Evite de réexécuter systématiquement la fonction */
-    const dataBlog: CardBlog_Type[] = dataCardBlog_img_data();
+    const dataBlog: CardBlogType[] = DataCardBlogRoot();
 
     const [search, setSearch] = useState("");
 
@@ -74,4 +66,4 @@ function Blog_Root() {
     );
 }
 
-export default Blog_Root;
+export default BlogRoot;

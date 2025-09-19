@@ -2,7 +2,7 @@
 import style from "../../../../StyleRootComponent.module.css";
 
 /* Import des Components */
-import { imagesBlog_20250917_img_data } from "./imagesBlog_20250917.img.data";
+import imagesBlog_20250917_img_data from "./imagesBlog_20250917.img.data";
 
 /* Import des composants d'Elements */
 import PremiumCardImgSudoRoot from "../../../../Elements/PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";

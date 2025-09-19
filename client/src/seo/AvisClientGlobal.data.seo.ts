@@ -1,4 +1,4 @@
-/* Import des composants d'Avis clients */
+/* Import des composants d'avis clients */
 import AvisClientPortraitCorporateControllerData from "../components/Public/PortraitCorporateRoot/AvisClientPortraitCorporateControllerData";
 import AvisClientPortraitDuoControllerData from "../components/Public/PortraitDuoRoot/AvisClientPortraitDuoControllerData";
 import AvisClientPortraitFamilleControllerData from "../components/Public/PortraitFamilleRoot/AvisClientPortraitFamilleControllerData";
@@ -8,12 +8,12 @@ import AvisClientPortraitLifeStyleControllerData from "../components/Public/Port
 import AvisClientPortraitMariageControllerData from "../components/Public/PortraitMariageRoot/AvisClientPortraitMariageControllerData";
 import AvisClientPortraitSoloControllerData from "../components/Public/PortraitSoloRoot/AvisClientPortraitSoloControllerData";
 
-/* Import des Types */
-import { AvisClientSEO_Type } from "../types/seo/avisClientSEO.type";
+/* import des types pour les avis clients */
+import AvisClientControllerDataType from "../types/AvisClientControllerData.type";
 
 
 /* Fusion de tous les avis */
-const allAvis: AvisClientSEO_Type[] = [
+const allAvis: AvisClientControllerDataType[] = [
     ...AvisClientPortraitCorporateControllerData,
     ...AvisClientPortraitDuoControllerData,
     ...AvisClientPortraitFamilleControllerData,
@@ -34,9 +34,9 @@ const sortedAvis = allAvis
     });
 
 // Réassigne les ID de manière incrémentale à partir de 0
-const avisClientGlobal_data_SEO: AvisClientSEO_Type[] = sortedAvis.map((avis, index) => ({
+const AvisClientGlobalData: AvisClientControllerDataType[] = sortedAvis.map((avis, index) => ({
     ...avis,
     id: index,
 }));
 
-export { avisClientGlobal_data_SEO };
+export default AvisClientGlobalData;

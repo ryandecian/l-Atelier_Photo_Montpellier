@@ -1,14 +1,12 @@
-/* Import des Components */
 import { dataSEO_Root_data_SEO } from "../../../dataSEO_Root.data.seo";
-import { dataSEO_Blog_20250601_data_SEO } from "./dataSEO_Blog_20250601.data.seo";
+import DataSEORootType from "../../../../types/DataSEORoot.type";
 
-/* Import des Types */
-import { DataSEORoot_Type } from "../../../../types/seo/dataSEORoot.type";
-import { DataSEOTargetOne_Type } from "../../../../types/seo/dataSEOTargetOne.type";
+import { dataSEO_Blog_20250601_data_SEO } from "./dataSEO_Blog_20250601.data.seo";
+import DataSEOTargetOneType from "../../../../types/DataSEOTargetOne.type";
 
 function JSON_LD_Breadcrumb_Blog_20250601_schema_SEO() : string {
-    const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const dataSEO_Blog_20250601: DataSEOTargetOne_Type = dataSEO_Blog_20250601_data_SEO(); /* Récupération des données SEO de la page */
+    const dataSEORoot: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
+    const dataSEO_Blog_20250601: DataSEOTargetOneType = dataSEO_Blog_20250601_data_SEO(); /* Récupération des données SEO de la page */
 
     const JSON_LD = JSON.stringify({
         "@context": dataSEORoot["@context"],
