@@ -1,12 +1,13 @@
 /* Import des Components */
 import { dataSEO_Root_data_SEO } from "./dataSEO_Root.data.seo";
+import { avisClientGlobal_data_SEO } from "./avisClientGlobal.data.seo";
 
 /* Import des Types */
 import { DataSEORoot_Type } from "../types/seo/dataSEORoot.type";
 
+/* Import des Utils */
 import { generateAverageRatingSEO_Utils } from "../utils/seo/generateAverageRatingSEO.utils";
-import generateReviewArraySEO from "../utils/generateReviewArraySEO.utils";
-import { avisClientGlobal_data_SEO } from "./avisClientGlobal.data.seo";
+import { generateReviewArraySEO_Utils } from "../utils/seo/generateReviewArraySEO.utils";
 
 function JSON_LD_LocalBusiness_Root_schema_SEO(): string {
     const dataSEO_Root: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
@@ -38,7 +39,7 @@ function JSON_LD_LocalBusiness_Root_schema_SEO(): string {
         "openingHours": dataSEO_Root.openingHours, /* Horaires d'ouverture de l'entreprise */
         "sameAs": dataSEO_Root.sameAs, /* Liens vers les réseaux sociaux de l'entreprise */
         "aggregateRating": generateAverageRatingSEO_Utils(avisClientGlobal_data_SEO), /* Note moyenne et nb d'avis clients */
-        "review": generateReviewArraySEO(avisClientGlobal_data_SEO) /* Tableau des avis clients spécifique a google. */
+        "review": generateReviewArraySEO_Utils(avisClientGlobal_data_SEO) /* Tableau des avis clients spécifique a google. */
     });
     
     return (
