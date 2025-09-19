@@ -6,7 +6,7 @@ import { dataSEO_Blog_20250724_data_SEO } from "./dataSEO_Blog_20250724.data.seo
 import { DataSEORoot_Type } from "../../../../types/seo/dataSEORoot.type";
 import { DataSEOTargetOne_Type } from "../../../../types/seo/dataSEOTargetOne.type";
 
-function JSON_LD_Breadcrumb_Blog_20250724_Schema_SEO() : string {
+function JSON_LD_Breadcrumb_Blog_20250724_schema_SEO() : string {
     const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
     const dataSEO_Blog_20250724: DataSEOTargetOne_Type = dataSEO_Blog_20250724_data_SEO(); /* Récupération des données SEO de la page */
 
@@ -33,4 +33,4 @@ function JSON_LD_Breadcrumb_Blog_20250724_Schema_SEO() : string {
     )
 }
 
-export { JSON_LD_Breadcrumb_Blog_20250724_Schema_SEO };
+export { JSON_LD_Breadcrumb_Blog_20250724_schema_SEO };
