@@ -1,7 +1,10 @@
+/* Import des composants Router */
 import ListDataRouter from "../../../../router/router";
-import DataSEOTargetOneType from "../../../../types/seo/dataSEOTargetOne.type";
 
-function DataSEO_Blog_20250710(): DataSEOTargetOneType {
+/* Import des Types */
+import { DataSEOTargetOne_Type } from "../../../../types/seo/dataSEOTargetOne.type";
+
+function dataSEO_Blog_20250710_data_SEO(): DataSEOTargetOne_Type {
     const DataSEO = {
         /* Data Helmet */
         title: "Portrait LifeStyle : révélez votre personnalité en image – Blog - l'Atelier Photo Montpellier",
@@ -51,4 +54,4 @@ function DataSEO_Blog_20250710(): DataSEOTargetOneType {
     )
 }
 
-export default DataSEO_Blog_20250710;
+export { dataSEO_Blog_20250710_data_SEO };
