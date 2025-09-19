@@ -1,6 +1,7 @@
-import ImagesControllerDataType from "../../../../../types/ImagesControllerData.type";
+/* Import des Types */
+import { ImagesBlog_Type } from "../../../../../types/components/blogs/imagesBlog.type";
 
-const imagesBlog_20250917_img_data: ImagesControllerDataType[] = [
+const imagesBlog_20250917_img_data: ImagesBlog_Type[] = [
     /* {ImagesBlog_20250917_RootControllerData[0].src} */
     {
         src: "/images/image-blog/blog_20250917/lapm-photo-professionnel-conference-l-atelier-photo-montpellier.jpg",
@@ -13,4 +14,4 @@ const imagesBlog_20250917_img_data: ImagesControllerDataType[] = [
     },
 ];
 
-export default imagesBlog_20250917_img_data;
+export { imagesBlog_20250917_img_data };

@@ -1,4 +1,4 @@
-type AvisClientControllerDataType = {
+type AvisClientSEO_Type = {
     id: number;
     nom: string;
     note: number;
@@ -6,4 +6,4 @@ type AvisClientControllerDataType = {
     date: string;
 }
 
-export default AvisClientControllerDataType;
+export type { AvisClientSEO_Type };

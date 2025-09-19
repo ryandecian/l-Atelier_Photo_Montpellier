@@ -1,7 +1,10 @@
+/* Import des composants Router */
 import ListDataRouter from "../../../../router/router";
-import DataSEOTargetOneType from "../../../../types/DataSEOTargetOne.type";
 
-function dataSEO_Blog_20250601_data_SEO(): DataSEOTargetOneType {
+/* Import des Types */
+import { DataSEOTargetOne_Type } from "../../../../types/seo/dataSEOTargetOne.type";
+
+function dataSEO_Blog_20250601_data_SEO(): DataSEOTargetOne_Type {
     const dataSEO = {
         /* Data Helmet */
         title: "Photographie de Mariage en Style Reportage – Blog - l'Atelier Photo Montpellier",

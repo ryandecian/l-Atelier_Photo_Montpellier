@@ -1,4 +1,4 @@
-type DataSEOHelmetType = {
+type DataSEOHelmet_Type = {
     title: string;
     autor: string;
     description: string;
@@ -32,4 +32,4 @@ type DataSEOHelmetType = {
     };
 }
 
-export default DataSEOHelmetType;
+export type { DataSEOHelmet_Type };

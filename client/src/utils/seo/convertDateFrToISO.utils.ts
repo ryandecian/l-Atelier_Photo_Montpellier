@@ -1,7 +1,7 @@
 /* Fonction utilitaire pour convertir une date en format FR (DD/MM/YYYY) vers ISO (YYYY-MM-DD) */
 
 /* Sortie en String */
-function convertDateFrToISO_String(dateFr: string): string {
+function convertDateFrToISO_String_Utils(dateFr: string): string {
   const [jour, mois, annee] = dateFr.split("/").map(Number);
 
   /* Format ISO exploitable par JavaScript */
@@ -10,14 +10,14 @@ function convertDateFrToISO_String(dateFr: string): string {
   );
 }
 
-export { convertDateFrToISO_String };
+export { convertDateFrToISO_String_Utils };
 
 /* Sortie en Date */
-function convertDateFrToISO_Date(dateFr: string): Date {
+function convertDateFrToISO_Date_Utils(dateFr: string): Date {
   const [jour, mois, annee] = dateFr.split("/").map(Number);
   return new Date(annee, mois - 1, jour);
 }
-export { convertDateFrToISO_Date };
+export { convertDateFrToISO_Date_Utils };
 /**
  * Documentation : 
  * 

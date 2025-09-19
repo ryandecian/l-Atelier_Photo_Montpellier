@@ -1,11 +1,11 @@
 import { Helmet } from "react-helmet-async";
-import DataSEOHelmetType from "../../../../types/DataSEOHelmet.type";
+import DataSEOHelmetType from "../../../../types/seo/dataSEOHelmet.type";
 
 import { dataSEO_Root_data_SEO } from "../../../dataSEO_Root.data.seo";
-import DataSEO_Blog_20250710s from "./DataSEO_Blog_20250710.data.seo";
+import DataSEO_Blog_20250710s from "./dataSEO_Blog_20250710.data.seo";
 
-import DataSEORootType from "../../../../types/DataSEORoot.type";
-import DataSEOTargetOneType from "../../../../types/DataSEOTargetOne.type";
+import DataSEORootType from "../../../../types/seo/dataSEORoot.type";
+import DataSEOTargetOneType from "../../../../types/seo/dataSEOTargetOne.type";
 
 import { JSON_LD_LocalBusiness_Root_schema_SEO } from "../../../JSON-LD_LocalBusiness_Root.schema.seo";
 import JSON_LD_BlogPosting_Blog_20250710_Schema_SEO from "./JSON-LD_BlogPosting_Blog_20250710.schema.seo";
