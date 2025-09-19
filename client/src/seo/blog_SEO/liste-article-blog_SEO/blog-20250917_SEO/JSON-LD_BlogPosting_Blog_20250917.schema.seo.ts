@@ -1,11 +1,11 @@
 import { dataSEO_Root_data_SEO } from "../../../dataSEO_Root.data.seo";
-import DataSEORootType from "../../../../types/DataSEORoot.type";
+import DataSEORootType from "../../../../types/seo/dataSEORoot.type";
 
 import { dataSEO_Blog_20250917_data_SEO } from "./dataSEO_Blog_20250917.data.seo";
-import DataSEOTargetOneType from "../../../../types/DataSEOTargetOne.type";
+import DataSEOTargetOneType from "../../../../types/seo/dataSEOTargetOne.type";
 
-import DataCardBlogRoots from "../../../../components/Public/BlogRoot/DataCardBlogRoot";
-import CardBlogType from "../../../../types/CardBlog.type";
+import DataCardBlogRoots from "../../../../components/Public/BlogRoot/dataCardBlog.img.data";
+import CardBlogType from "../../../../types/components/blogs/cardBlog.type";
 
 import extractKeywordsFromDataSEO from "../../../../utils/extractKeywordsFromDataSEO.utils";
 import { convertDateFrToISO_String } from "../../../../utils/convertDateFrToISO.utils";
