@@ -1,14 +1,16 @@
+/* Import des Components */
 import { dataSEO_Root_data_SEO } from "../../../dataSEO_Root.data.seo";
-import { DataSEORoot_Type } from "../../../../types/seo/dataSEORoot.type";
-
 import { dataSEO_Blog_20250601_data_SEO } from "./dataSEO_Blog_20250601.data.seo";
+import { dataCardBlog_img_data } from "../../../../components/Public/BlogRoot/dataCardBlog.img.data";
+
+/* Import des Types */
+import { DataSEORoot_Type } from "../../../../types/seo/dataSEORoot.type";
 import { DataSEOTargetOne_Type } from "../../../../types/seo/dataSEOTargetOne.type";
 import { CardBlog_Type } from "../../../../types/components/blogs/cardBlog.type";
 
-import { dataCardBlog_img_data } from "../../../../components/Public/BlogRoot/dataCardBlog.img.data";
-
-import extractKeywordsFromDataSEO from "../../../../utils/extractKeywordsFromDataSEO.utils";
-import { convertDateFrToISO_String } from "../../../../utils/convertDateFrToISO.utils";
+/* Import des Utils */
+import { extractKeywordsFromDataSEO_Utils } from "../../../../utils/extractKeywordsFromDataSEO.utils";
+import { convertDateFrToISO_String_Utils } from "../../../../utils/convertDateFrToISO.utils";
 
 function JSON_LD_BlogPosting_Blog_20250601_schema_SEO() : string {
     const dataCardBlog_Root: CardBlog_Type[] = dataCardBlog_img_data(); /* Récupération des données de la carte du blog */
@@ -30,7 +32,7 @@ function JSON_LD_BlogPosting_Blog_20250601_schema_SEO() : string {
         /* Métadonnées principales */
         "headline": dataSEO_Blog_20250601.name_Service, /* Titre principal affiché par Google */
         "description": dataSEO_Blog_20250601.description, /* Description de l'article de blog */
-        "keywords": extractKeywordsFromDataSEO(dataSEO_Blog_20250601.keywords), /* Extraction des mots clés */
+        "keywords": extractKeywordsFromDataSEO_Utils(dataSEO_Blog_20250601.keywords), /* Extraction des mots clés */
 
         /* Image principale */
         "image": {
@@ -41,7 +43,7 @@ function JSON_LD_BlogPosting_Blog_20250601_schema_SEO() : string {
         },
 
         /* Dates */
-        "datePublished": convertDateFrToISO_String(dataCardBlog_Root[1].date), /* Date de publication au format ISO 8601 */
+        "datePublished": convertDateFrToISO_String_Utils(dataCardBlog_Root[1].date), /* Date de publication au format ISO 8601 */
 
         /* Auteur */
         "author": dataSEO_Root.author, /* Auteur de l'article, défini dans DataSEORoot */
