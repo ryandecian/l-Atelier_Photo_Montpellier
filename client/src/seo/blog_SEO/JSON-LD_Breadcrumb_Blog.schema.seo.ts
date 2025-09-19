@@ -1,7 +1,7 @@
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
 import DataSEORootType from "../../types/seo/dataSEORoot.type";
 
-import DataSEO_Blogs from "./DataSEO_Blog.data.seo";
+import DataSEO_Blogs from "./ddataSEO_Blog.data.seo";
 import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
 
 function JSON_LD_Breadcrumb_Blog_Schema_SEO() : string {
