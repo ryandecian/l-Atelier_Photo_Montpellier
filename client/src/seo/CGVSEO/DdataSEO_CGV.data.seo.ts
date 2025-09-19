@@ -1,8 +1,11 @@
+/* Import des composants Router */
 import ListDataRouter from "../../router/router";
-import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
 
-function DataSEO_CGV(): DataSEOTargetOneType {
-    const DataSEO = {
+/* Import des Types */
+import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
+
+function dataSEO_CGV_data_SEO(): DataSEOTargetOne_Type {
+    const dataSEO = {
         /* Data Helmet */
         title: "Conditions Générales de Vente - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
@@ -45,8 +48,8 @@ function DataSEO_CGV(): DataSEOTargetOneType {
     };
 
     return (
-        DataSEO
+        dataSEO
     )
 }
 
-export default DataSEO_CGV;
+export { dataSEO_CGV_data_SEO };
