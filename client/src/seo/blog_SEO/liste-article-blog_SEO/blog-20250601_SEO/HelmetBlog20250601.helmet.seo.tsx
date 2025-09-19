@@ -15,7 +15,6 @@ import { DataSEOHelmet_Type } from "../../../../types/seo/dataSEOHelmet.type";
 import { DataSEORoot_Type } from "../../../../types/seo/dataSEORoot.type";
 import { DataSEOTargetOne_Type } from "../../../../types/seo/dataSEOTargetOne.type";
 
-
 function Helmet_Blog_20250601_helmet_SEO() {
     const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
     const dataSEO_Blog_20250601: DataSEOTargetOne_Type = dataSEO_Blog_20250601_data_SEO(); /* Récupération des données SEO de la page */
