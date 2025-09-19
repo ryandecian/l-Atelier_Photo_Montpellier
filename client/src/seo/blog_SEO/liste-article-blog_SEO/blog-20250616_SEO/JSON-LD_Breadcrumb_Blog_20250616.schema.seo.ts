@@ -33,4 +33,4 @@ function JSON_LD_Breadcrumb_Blog_20250616_Schema_SEO() : string {
     )
 }
 
-export default JSON_LD_Breadcrumb_Blog_20250616_Schema_SEO;
+export { JSON_LD_Breadcrumb_Blog_20250616_Schema_SEO };
