@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 import { CardBlog_Type} from "../../../types/components/blogs/cardBlog.type";
 
 /* Import des Utils */
-import { convertDateFrToISO_Date } from "../../../utils/convertDateFrToISO.utils";
+import { convertDateFrToISO_Date } from "../../../utils/seo/convertDateFrToISO.utils";
 
 function Blog_Root() {
     /* Permet de mettre en mémoire le résultat de la fonction. Donc les datas des card. */

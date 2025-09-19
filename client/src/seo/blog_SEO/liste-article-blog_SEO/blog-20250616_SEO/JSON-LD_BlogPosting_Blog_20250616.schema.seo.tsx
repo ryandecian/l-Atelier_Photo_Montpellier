@@ -9,8 +9,8 @@ import { DataSEOTargetOne_Type } from "../../../../types/seo/dataSEOTargetOne.ty
 import { CardBlog_Type } from "../../../../types/components/blogs/cardBlog.type";
 
 /* Import des Utils */
-import { extractKeywordsFromDataSEO_Utils } from "../../../../utils/extractKeywordsFromDataSEO.utils";
-import { convertDateFrToISO_String_Utils } from "../../../../utils/convertDateFrToISO.utils";
+import { extractKeywordsFromDataSEO_Utils } from "../../../../utils/seo/extractKeywordsFromDataSEO.utils";
+import { convertDateFrToISO_String_Utils } from "../../../../utils/seo/convertDateFrToISO.utils";
 
 function JSON_LD_BlogPosting_Blog_20250616_schema_SEO() : string {
     const DataCardBlogRoot: CardBlog_Type[] = dataCardBlog_img_data(); /* Récupération des données de la carte du blog */
