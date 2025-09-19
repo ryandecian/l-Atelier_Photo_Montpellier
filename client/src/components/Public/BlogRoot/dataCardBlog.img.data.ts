@@ -1,8 +1,11 @@
+/* Import des composants Router */
 import ListDataRouter from "../../../router/router";
-import CardBlogType from "../../../types/CardBlog.type";
 
-function DataCardBlogRoot() {
-    const tab: CardBlogType[] = [
+/* Import des Types */
+import { CardBlog_Type } from "../../../types/components/blogs/cardBlog.type";
+
+function dataCardBlog_img_data() {
+    const tab: CardBlog_Type[] = [
         {
             reactKey: 1,
             path: ListDataRouter[4].children?.[1].path,
@@ -52,4 +55,4 @@ function DataCardBlogRoot() {
     return tab;
 }
 
-export default DataCardBlogRoot;
+export { dataCardBlog_img_data };
