@@ -1,4 +1,4 @@
-import AvisClientControllerDataType from "../types/AvisClientControllerData.type";
+import AvisClientControllerDataType from "../types/seo/avisClientSEO.type";
 
 function generateAverageRatingSEO(data: AvisClientControllerDataType[]) {
     if (data.length === 0) {
