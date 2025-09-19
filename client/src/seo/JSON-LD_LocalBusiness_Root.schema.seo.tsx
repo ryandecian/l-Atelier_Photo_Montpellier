@@ -1,12 +1,16 @@
+/* Import des Components */
 import { dataSEO_Root_data_SEO } from "./dataSEO_Root.data.seo";
-import DataSEORootType from "../types/DataSEORoot.type";
+import { avisClientGlobal_data_SEO } from "./avisClientGlobal.data.seo";
 
-import generateAverageRatingSEO from "../utils/generateAverageRatingSEO.utils";
-import generateReviewArraySEO from "../utils/generateReviewArraySEO.utils";
-import AvisClientGlobalData from "./AvisClientGlobal.data.seo";
+/* Import des Types */
+import { DataSEORoot_Type } from "../types/seo/dataSEORoot.type";
+
+/* Import des Utils */
+import { generateAverageRatingSEO_Utils } from "../utils/seo/generateAverageRatingSEO.utils";
+import { generateReviewArraySEO_Utils } from "../utils/seo/generateReviewArraySEO.utils";
 
 function JSON_LD_LocalBusiness_Root_schema_SEO(): string {
-    const dataSEO_Root: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
+    const dataSEO_Root: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
 
     const JSON_LD = JSON.stringify({
         "@context": dataSEO_Root["@context"], /* (Obligatoire) Contexte de la donnée */
@@ -34,8 +38,8 @@ function JSON_LD_LocalBusiness_Root_schema_SEO(): string {
         "priceRange": "€€",
         "openingHours": dataSEO_Root.openingHours, /* Horaires d'ouverture de l'entreprise */
         "sameAs": dataSEO_Root.sameAs, /* Liens vers les réseaux sociaux de l'entreprise */
-        "aggregateRating": generateAverageRatingSEO(AvisClientGlobalData), /* Note moyenne et nb d'avis clients */
-        "review": generateReviewArraySEO(AvisClientGlobalData) /* Tableau des avis clients spécifique a google. */
+        "aggregateRating": generateAverageRatingSEO_Utils(avisClientGlobal_data_SEO), /* Note moyenne et nb d'avis clients */
+        "review": generateReviewArraySEO_Utils(avisClientGlobal_data_SEO) /* Tableau des avis clients spécifique a google. */
     });
     
     return (

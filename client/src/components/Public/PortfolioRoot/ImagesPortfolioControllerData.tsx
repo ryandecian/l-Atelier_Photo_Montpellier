@@ -1,4 +1,4 @@
-import ImagesControllerDataType from "../../../types/ImagesControllerData.type";
+import ImagesControllerDataType from "../../../types/components/blogs/imagesBlog.type";
 
 const data_Album_Paysage = [
     "lapm-photographie-professionnelle-depart-ou-arrivee-tage-paysage-l-atelier-photo-montpellier.jpg",

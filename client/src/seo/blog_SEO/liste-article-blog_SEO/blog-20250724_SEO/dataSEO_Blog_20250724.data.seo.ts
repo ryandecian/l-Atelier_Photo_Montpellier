@@ -1,8 +1,11 @@
+/* Import des composants Router */
 import ListDataRouter from "../../../../router/router";
-import DataSEOTargetOneType from "../../../../types/DataSEOTargetOne.type";
 
-function DataSEO_Blog_20250724(): DataSEOTargetOneType {
-    const DataSEO = {
+/* Import des Types */
+import { DataSEOTargetOne_Type } from "../../../../types/seo/dataSEOTargetOne.type";
+
+function dataSEO_Blog_20250724_data_SEO(): DataSEOTargetOne_Type {
+    const dataSEO = {
         /* Data Helmet */
         title: "Photographe grossesse à Montpellier : quand réserver votre séance photo ? – Blog - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
@@ -47,8 +50,8 @@ function DataSEO_Blog_20250724(): DataSEOTargetOneType {
     };
 
     return (
-        DataSEO
+        dataSEO
     )
 }
 
-export default DataSEO_Blog_20250724;
+export { dataSEO_Blog_20250724_data_SEO };

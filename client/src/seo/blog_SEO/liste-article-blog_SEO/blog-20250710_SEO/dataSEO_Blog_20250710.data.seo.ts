@@ -1,8 +1,11 @@
+/* Import des composants Router */
 import ListDataRouter from "../../../../router/router";
-import DataSEOTargetOneType from "../../../../types/DataSEOTargetOne.type";
 
-function DataSEO_Blog_20250710(): DataSEOTargetOneType {
-    const DataSEO = {
+/* Import des Types */
+import { DataSEOTargetOne_Type } from "../../../../types/seo/dataSEOTargetOne.type";
+
+function dataSEO_Blog_20250710_data_SEO(): DataSEOTargetOne_Type {
+    const dataSEO = {
         /* Data Helmet */
         title: "Portrait LifeStyle : révélez votre personnalité en image – Blog - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
@@ -47,8 +50,8 @@ function DataSEO_Blog_20250710(): DataSEOTargetOneType {
     };
 
     return (
-        DataSEO
+        dataSEO
     )
 }
 
-export default DataSEO_Blog_20250710;
+export { dataSEO_Blog_20250710_data_SEO };
