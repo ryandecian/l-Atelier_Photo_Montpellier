@@ -1,6 +1,6 @@
 /* Import des Components */
 import { dataSEO_Root_data_SEO } from "../../../dataSEO_Root.data.seo";
-import { dataSEO_Blog_20250616_data_SEO } from "./dataSEO_Blog_20250616.data.seo";
+import { dataSEO_Blog_20250710_data_SEO } from "./dataSEO_Blog_20250710.data.seo";
 import { dataCardBlog_img_data } from "../../../../components/Public/BlogRoot/dataCardBlog.img.data";
 
 /* Import des Types */
@@ -12,32 +12,32 @@ import { CardBlog_Type } from "../../../../types/components/blogs/cardBlog.type"
 import { extractKeywordsFromDataSEO_Utils } from "../../../../utils/extractKeywordsFromDataSEO.utils";
 import { convertDateFrToISO_String_Utils } from "../../../../utils/convertDateFrToISO.utils";
 
-function JSON_LD_BlogPosting_Blog_20250616_schema_SEO() : string {
+function JSON_LD_BlogPosting_Blog_20250710_schema_SEO() : string {
     const DataCardBlogRoot: CardBlog_Type[] = dataCardBlog_img_data(); /* Récupération des données de la carte du blog */
     const DataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const DataSEO_Blog_20250616: DataSEOTargetOne_Type = dataSEO_Blog_20250616_data_SEO(); /* Récupération des données SEO de la page */
+    const DataSEO_Blog_20250710: DataSEOTargetOne_Type = dataSEO_Blog_20250710_data_SEO(); /* Récupération des données SEO de la page */
 
     const JSON_LD = JSON.stringify({
         "@context": DataSEORoot["@context"],
         "@type": DataSEORoot["@type"].BlogPosting,
 
         /* Identifiants & URL */
-        "@id": DataSEO_Blog_20250616.id_Service, /* @id SEO-friendly, correspond à l'URL de la page + mots clés */
+        "@id": DataSEO_Blog_20250710.id_Service, /* @id SEO-friendly, correspond à l'URL de la page + mots clés */
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": DataSEO_Blog_20250616.url,
+            "@id": DataSEO_Blog_20250710.url,
         },
-        "url": DataSEO_Blog_20250616.url,
+        "url": DataSEO_Blog_20250710.url,
 
         /* Métadonnées principales */
-        "headline": DataSEO_Blog_20250616.name_Service, /* Titre principal affiché par Google */
-        "description": DataSEO_Blog_20250616.description, /* Description de l'article de blog */
-        "keywords": extractKeywordsFromDataSEO_Utils(DataSEO_Blog_20250616.keywords), /* Extraction des mots clés */
+        "headline": DataSEO_Blog_20250710.name_Service, /* Titre principal affiché par Google */
+        "description": DataSEO_Blog_20250710.description, /* Description de l'article de blog */
+        "keywords": extractKeywordsFromDataSEO_Utils(DataSEO_Blog_20250710.keywords), /* Extraction des mots clés */
 
         /* Image principale */
         "image": {
             "@type": "ImageObject",
-            "url": DataSEO_Blog_20250616.img_JSON_LD, /* Lien URL public de l'image */
+            "url": DataSEO_Blog_20250710.img_JSON_LD, /* Lien URL public de l'image */
             "width": 1200,
             "height": 800
         },
@@ -60,4 +60,4 @@ function JSON_LD_BlogPosting_Blog_20250616_schema_SEO() : string {
     )
 }
 
-export { JSON_LD_BlogPosting_Blog_20250616_schema_SEO };
+export { JSON_LD_BlogPosting_Blog_20250710_schema_SEO };
