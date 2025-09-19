@@ -16,19 +16,19 @@ import { DataSEORoot_Type } from "../../../../types/seo/dataSEORoot.type";
 import { DataSEOTargetOne_Type } from "../../../../types/seo/dataSEOTargetOne.type";
 
 function Helmet_Blog_20250724_helmet_SEO() {
-    const DataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const DataSEO_Blog_20250724: DataSEOTargetOne_Type = dataSEO_Blog_20250724_data_SEO(); /* Récupération des données SEO de la page */
+    const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
+    const dataSEO_Blog_20250724: DataSEOTargetOne_Type = dataSEO_Blog_20250724_data_SEO(); /* Récupération des données SEO de la page */
 
     const SEO: DataSEOHelmet_Type = {
-        title: DataSEO_Blog_20250724.title,
-        autor: DataSEO_Blog_20250724.autor,
-        description: DataSEO_Blog_20250724.description,
-        url: DataSEO_Blog_20250724.url,
-        img: DataSEO_Blog_20250724.img_Helmet,
-        twitterUrlImg: DataSEO_Blog_20250724.twitterUrlImg || DataSEO_Blog_20250724.img_Helmet, // fallback
-        twitterCompte: DataSEORoot.twitterCompte,
-        keywords: DataSEO_Blog_20250724.keywords,
-        type: DataSEO_Blog_20250724.type,
+        title: dataSEO_Blog_20250724.title,
+        autor: dataSEO_Blog_20250724.autor,
+        description: dataSEO_Blog_20250724.description,
+        url: dataSEO_Blog_20250724.url,
+        img: dataSEO_Blog_20250724.img_Helmet,
+        twitterUrlImg: dataSEO_Blog_20250724.twitterUrlImg || dataSEO_Blog_20250724.img_Helmet, // fallback
+        twitterCompte: dataSEORoot.twitterCompte,
+        keywords: dataSEO_Blog_20250724.keywords,
+        type: dataSEO_Blog_20250724.type,
     };
 
     const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
