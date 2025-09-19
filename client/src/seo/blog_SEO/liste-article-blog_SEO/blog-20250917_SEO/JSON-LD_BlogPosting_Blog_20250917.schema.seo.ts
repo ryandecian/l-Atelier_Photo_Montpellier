@@ -7,8 +7,8 @@ import DataSEOTargetOneType from "../../../../types/seo/dataSEOTargetOne.type";
 import DataCardBlogRoots from "../../../../components/Public/BlogRoot/dataCardBlog.img.data";
 import CardBlogType from "../../../../types/components/blogs/cardBlog.type";
 
-import extractKeywordsFromDataSEO from "../../../../utils/extractKeywordsFromDataSEO.utils";
-import { convertDateFrToISO_String } from "../../../../utils/convertDateFrToISO.utils";
+import extractKeywordsFromDataSEO from "../../../../utils/seo/extractKeywordsFromDataSEO.utils";
+import { convertDateFrToISO_String } from "../../../../utils/seo/convertDateFrToISO.utils";
 
 function JSON_LD_BlogPosting_Blog_20250917_schema_SEO() : string {
     const dataCardBlogRoot: CardBlogType[] = DataCardBlogRoots(); /* Récupération des données de la carte du blog */

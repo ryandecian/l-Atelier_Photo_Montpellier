@@ -5,7 +5,7 @@ import DataSEO_Blogs from "./DataSEO_Blog.data.seo";
 import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
 
 import ListDataRouter from "../../router/router";
-import extractKeywordsFromDataSEO from "../../utils/extractKeywordsFromDataSEO.utils";
+import extractKeywordsFromDataSEO from "../../utils/seo/extractKeywordsFromDataSEO.utils";
 
 function JSON_LD_Blog_Blog_Schema_SEO() : string {
     const router = ListDataRouter
