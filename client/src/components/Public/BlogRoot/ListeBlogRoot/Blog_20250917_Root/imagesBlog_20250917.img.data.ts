@@ -1,5 +1,5 @@
 /* Import des Types */
-import { ImagesBlog_Type } from "../../../../../types/imagesBlog.type";
+import { ImagesBlog_Type } from "../../../../../types/components/blogs/imagesBlog.type";
 
 const imagesBlog_20250917_img_data: ImagesBlog_Type[] = [
     /* {ImagesBlog_20250917_RootControllerData[0].src} */

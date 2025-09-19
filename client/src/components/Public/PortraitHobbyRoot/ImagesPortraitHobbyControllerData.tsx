@@ -1,4 +1,4 @@
-import ImagesControllerDataType from "../../../types/imagesBlog.type";
+import ImagesControllerDataType from "../../../types/components/blogs/imagesBlog.type";
 
 /**
  * Compteur mot clés : 

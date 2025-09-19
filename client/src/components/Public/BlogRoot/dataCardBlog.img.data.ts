@@ -2,7 +2,7 @@
 import ListDataRouter from "../../../router/router";
 
 /* Import des Types */
-import { CardBlog_Type } from "../../../types/cardBlog.type";
+import { CardBlog_Type } from "../../../types/components/blogs/cardBlog.type";
 
 function dataCardBlog_img_data() {
     const tab: CardBlog_Type[] = [

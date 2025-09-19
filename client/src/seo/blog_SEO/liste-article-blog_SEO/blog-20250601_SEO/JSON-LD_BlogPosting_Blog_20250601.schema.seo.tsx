@@ -1,19 +1,19 @@
 import { dataSEO_Root_data_SEO } from "../../../dataSEO_Root.data.seo";
-import DataSEORootType from "../../../../types/seo/dataSEORoot.type";
+import { DataSEORoot_Type } from "../../../../types/seo/dataSEORoot.type";
 
 import { dataSEO_Blog_20250601_data_SEO } from "./dataSEO_Blog_20250601.data.seo";
-import DataSEOTargetOneType from "../../../../types/seo/dataSEOTargetOne.type";
+import { DataSEOTargetOne_Type } from "../../../../types/seo/dataSEOTargetOne.type";
+import { CardBlog_Type } from "../../../../types/components/blogs/cardBlog.type";
 
-import DataCardBlogRoots from "../../../../components/Public/BlogRoot/dataCardBlog.img.data";
-import CardBlogType from "../../../../types/cardBlog.type";
+import { dataCardBlog_img_data } from "../../../../components/Public/BlogRoot/dataCardBlog.img.data";
 
 import extractKeywordsFromDataSEO from "../../../../utils/extractKeywordsFromDataSEO.utils";
 import { convertDateFrToISO_String } from "../../../../utils/convertDateFrToISO.utils";
 
 function JSON_LD_BlogPosting_Blog_20250601_schema_SEO() : string {
-    const dataCardBlog_Root: CardBlogType[] = DataCardBlogRoots(); /* Récupération des données de la carte du blog */
-    const dataSEO_Root: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const dataSEO_Blog_20250601: DataSEOTargetOneType = dataSEO_Blog_20250601_data_SEO(); /* Récupération des données SEO de la page */
+    const dataCardBlog_Root: CardBlog_Type[] = dataCardBlog_img_data(); /* Récupération des données de la carte du blog */
+    const dataSEO_Root: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
+    const dataSEO_Blog_20250601: DataSEOTargetOne_Type = dataSEO_Blog_20250601_data_SEO(); /* Récupération des données SEO de la page */
 
     const JSON_LD = JSON.stringify({
         "@context": dataSEO_Root["@context"],
