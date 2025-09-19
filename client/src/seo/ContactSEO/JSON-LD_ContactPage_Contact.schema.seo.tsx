@@ -1,8 +1,8 @@
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
-import DataSEORootType from "../../types/seo/dataSEORoot.type";
+import DataSEORootType from "../../types/DataSEORoot.type";
 
 import DataSEO_Contacts from "./DataSEO_Contact.data.seo";
-import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
+import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
 
 function JSON_LD_ContactPage_Contact_Schema_SEO() : string {

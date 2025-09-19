@@ -1,8 +1,8 @@
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
-import DataSEORootType from "../../types/seo/dataSEORoot.type";
+import DataSEORootType from "../../types/DataSEORoot.type";
 
 import DataSEO_CGVs from "./DataSEO_CGV.data.seo";
-import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
+import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
 function JSON_LD_Breadcrumb_CGV_Schema_SEO() : string {
     const DataSEORoot: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */

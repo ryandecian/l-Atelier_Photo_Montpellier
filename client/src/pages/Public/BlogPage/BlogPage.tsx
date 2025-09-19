@@ -1,6 +1,6 @@
 import style from "../../stylePage.module.css";
 import NavRoot from "../../../components/layout/NavRoot/NavRoot";
-import Blog_Root from "../../../components/Public/BlogRoot/Blog.root";
+import BlogRoot from "../../../components/Public/BlogRoot/BlogRoot";
 import Footer from "../../../components/layout/footer/Footer.layout";
 import Helmet_Blog_SEO from "../../../seo/blog_SEO/Helmet_Blog.helmet.seo";
 import useScrollToHash from "../../../hook/useScrollToHash";
@@ -15,7 +15,7 @@ function BlogPage() {
                  <NavRoot />
             </header>
             <main className={style.Main}>
-                <Blog_Root />
+                <BlogRoot />
             </main>
             <footer className={style.Footer}>
                 <Footer />

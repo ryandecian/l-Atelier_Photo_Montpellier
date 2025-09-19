@@ -1,7 +1,6 @@
-/* Import des Types */
-import { AvisClientSEO_Type } from "../../types/seo/avisClientSEO.type";
+import AvisClientControllerDataType from "../types/AvisClientControllerData.type";
 
-function generateReviewArraySEO_Utils(data : AvisClientSEO_Type[]) {
+function generateReviewArraySEO(data : AvisClientControllerDataType[]) {
     if (!data.length) return [];
 
     return data
@@ -22,4 +21,4 @@ function generateReviewArraySEO_Utils(data : AvisClientSEO_Type[]) {
     );
 }
 
-export { generateReviewArraySEO_Utils };
+export default generateReviewArraySEO;

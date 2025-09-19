@@ -1,4 +1,4 @@
-type DataSEORoot_Type = {
+type DataSEORootType = {
     author: {
         "@type": string;
         name: string;
@@ -83,4 +83,4 @@ type DataSEORoot_Type = {
     }[];
 };
   
-export type { DataSEORoot_Type };
+export default DataSEORootType;

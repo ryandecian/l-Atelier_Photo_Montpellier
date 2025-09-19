@@ -1,11 +1,11 @@
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
-import DataSEORootType from "../../types/seo/dataSEORoot.type";
+import DataSEORootType from "../../types/DataSEORoot.type";
 
 import DataSEO_Blogs from "./DataSEO_Blog.data.seo";
-import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
+import DataSEOTargetOneType from "../../types/DataSEOTargetOne.type";
 
 import ListDataRouter from "../../router/router";
-import extractKeywordsFromDataSEO from "../../utils/seo/extractKeywordsFromDataSEO.utils";
+import extractKeywordsFromDataSEO from "../../utils/extractKeywordsFromDataSEO.utils";
 
 function JSON_LD_Blog_Blog_Schema_SEO() : string {
     const router = ListDataRouter
