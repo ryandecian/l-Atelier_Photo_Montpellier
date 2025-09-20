@@ -4,7 +4,7 @@ import ListDataRouter from "../../router/router";
 /* Import des Types */
 import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
-function DataSEO_QuiSuisJe(): DataSEOTargetOne_Type {
+function dataSEO_QuiSuisJe_data_SEO(): DataSEOTargetOne_Type {
     const dataSEO = {
         /* Data Helmet */
         title: "Qui suis-je – Anne SAUNIER, photographe professionnelle - l'Atelier Photo Montpellier",
@@ -48,8 +48,8 @@ function DataSEO_QuiSuisJe(): DataSEOTargetOne_Type {
     };
 
     return (
-        DataSEO
+        dataSEO
     )
 }
 
-export default DataSEO_QuiSuisJe;
+export { dataSEO_QuiSuisJe_data_SEO };
