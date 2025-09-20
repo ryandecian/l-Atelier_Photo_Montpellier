@@ -1,8 +1,11 @@
+/* Import des composants Router */
 import ListDataRouter from "../../router/router";
-import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
 
-function DataSEO_PortraitGrossesse(): DataSEOTargetOneType {
-    const DataSEO = {
+/* Import des Types */
+import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
+
+function dataSEO_PortraitGrossesse_data_SEO(): DataSEOTargetOne_Type {
+    const dataSEO = {
         /* Data Helmet */
         title: "Portrait Grossesse et nouveau né - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
@@ -45,8 +48,8 @@ function DataSEO_PortraitGrossesse(): DataSEOTargetOneType {
     };
 
     return (
-        DataSEO
+        dataSEO
     )
 }
 
-export default DataSEO_PortraitGrossesse;
+export { dataSEO_PortraitGrossesse_data_SEO };
