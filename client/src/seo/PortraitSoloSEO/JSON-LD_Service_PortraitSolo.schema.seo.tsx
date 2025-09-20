@@ -1,7 +1,7 @@
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
 import DataSEORootType from "../../types/seo/dataSEORoot.type";
 
-import DataSEO_PortraitSolos from "./DdataSEO_PortraitSolo.data.seo";
+import DataSEO_PortraitSolos from "./dataSEO_PortraitSolo.data.seo";
 import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
 
 function JSON_LD_Service_PortraitSolo_Schema_SEO() : string {
