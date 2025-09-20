@@ -1,7 +1,7 @@
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
 import DataSEORootType from "../../types/seo/dataSEORoot.type";
 
-import DataSEO_MentionsLegales from "./ddataSEO_MentionsLegales.data.seo";
+import DataSEO_MentionsLegales from "./dataSEO_MentionsLegales.data.seo";
 import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
 
 function JSON_LD_WebPage_MentionsLegales_Schema_SEO() : string {
