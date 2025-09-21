@@ -16,19 +16,19 @@ import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
 import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
 function Helmet_MentionLegale_helmet_SEO() {
-    const DataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const DataSEO_MentionLegale: DataSEOTargetOne_Type = dataSEO_MentionsLegales_data_SEO(); /* Récupération des données SEO de la page */
+    const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
+    const dataSEO_MentionLegale: DataSEOTargetOne_Type = dataSEO_MentionsLegales_data_SEO(); /* Récupération des données SEO de la page */
 
     const SEO: DataSEOHelmet_Type = {
-        title: DataSEO_MentionLegale.title,
-        author: DataSEO_MentionLegale.author,
-        description: DataSEO_MentionLegale.description,
-        url: DataSEO_MentionLegale.url,
-        img: DataSEO_MentionLegale.img_Helmet,
-        twitterUrlImg: DataSEO_MentionLegale.twitterUrlImg || DataSEO_MentionLegale.img_Helmet, // fallback
-        twitterCompte: DataSEORoot.twitterCompte,
-        keywords: DataSEO_MentionLegale.keywords,
-        type: DataSEO_MentionLegale.type,
+        title: dataSEO_MentionLegale.title,
+        author: dataSEO_MentionLegale.author,
+        description: dataSEO_MentionLegale.description,
+        url: dataSEO_MentionLegale.url,
+        img: dataSEO_MentionLegale.img_Helmet,
+        twitterUrlImg: dataSEO_MentionLegale.twitterUrlImg || dataSEO_MentionLegale.img_Helmet, // fallback
+        twitterCompte: dataSEORoot.twitterCompte,
+        keywords: dataSEO_MentionLegale.keywords,
+        type: dataSEO_MentionLegale.type,
     };
 
     const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
