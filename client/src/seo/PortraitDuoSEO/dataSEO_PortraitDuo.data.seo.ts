@@ -52,4 +52,4 @@ function dataSEO_PortraitDuo_data_SEO(): DataSEOTargetOne_Type {
     )
 }
 
-export default dataSEO_PortraitDuo_data_SEO;
+export { dataSEO_PortraitDuo_data_SEO };
