@@ -16,21 +16,20 @@ import { DataSEOHelmet_Type } from "../../types/seo/dataSEOHelmet.type";
 import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
 import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
-
 function Helmet_Portfolio_helmet_SEO() {
-    const DataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const DataSEO_Portfolio: DataSEOTargetOne_Type = dataSEO_Portfolio_data_SEO(); /* Récupération des données SEO de la page */
+    const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
+    const dataSEO_Portfolio: DataSEOTargetOne_Type = dataSEO_Portfolio_data_SEO(); /* Récupération des données SEO de la page */
 
     const SEO: DataSEOHelmet_Type = {
-        title: DataSEO_Portfolio.title,
-        author: DataSEO_Portfolio.author,
-        description: DataSEO_Portfolio.description,
-        url: DataSEO_Portfolio.url,
-        img: DataSEO_Portfolio.img_Helmet,
-        twitterUrlImg: DataSEO_Portfolio.twitterUrlImg || DataSEO_Portfolio.img_Helmet, // fallback
-        twitterCompte: DataSEORoot.twitterCompte,
-        keywords: DataSEO_Portfolio.keywords,
-        type: DataSEO_Portfolio.type,
+        title: dataSEO_Portfolio.title,
+        author: dataSEO_Portfolio.author,
+        description: dataSEO_Portfolio.description,
+        url: dataSEO_Portfolio.url,
+        img: dataSEO_Portfolio.img_Helmet,
+        twitterUrlImg: dataSEO_Portfolio.twitterUrlImg || dataSEO_Portfolio.img_Helmet, // fallback
+        twitterCompte: dataSEORoot.twitterCompte,
+        keywords: dataSEO_Portfolio.keywords,
+        type: dataSEO_Portfolio.type,
     };
 
     const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
