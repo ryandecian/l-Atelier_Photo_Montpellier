@@ -16,19 +16,19 @@ import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
 import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
 function Helmet_PortraitDuo_helmet_SEO() {
-    const DataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const DataSEO_PortraitDuo: DataSEOTargetOne_Type = dataSEO_PortraitDuo_data_SEO(); /* Récupération des données SEO de la page */
+    const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
+    const dataSEO_PortraitDuo: DataSEOTargetOne_Type = dataSEO_PortraitDuo_data_SEO(); /* Récupération des données SEO de la page */
 
     const SEO: DataSEOHelmet_Type = {
-        title: DataSEO_PortraitDuo.title,
-        author: DataSEO_PortraitDuo.author,
-        description: DataSEO_PortraitDuo.description,
-        url: DataSEO_PortraitDuo.url,
-        img: DataSEO_PortraitDuo.img_Helmet,
-        twitterUrlImg: DataSEO_PortraitDuo.twitterUrlImg || DataSEO_PortraitDuo.img_Helmet, // fallback
-        twitterCompte: DataSEORoot.twitterCompte,
-        keywords: DataSEO_PortraitDuo.keywords,
-        type: DataSEO_PortraitDuo.type,
+        title: dataSEO_PortraitDuo.title,
+        author: dataSEO_PortraitDuo.author,
+        description: dataSEO_PortraitDuo.description,
+        url: dataSEO_PortraitDuo.url,
+        img: dataSEO_PortraitDuo.img_Helmet,
+        twitterUrlImg: dataSEO_PortraitDuo.twitterUrlImg || dataSEO_PortraitDuo.img_Helmet, // fallback
+        twitterCompte: dataSEORoot.twitterCompte,
+        keywords: dataSEO_PortraitDuo.keywords,
+        type: dataSEO_PortraitDuo.type,
     };
 
     const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
