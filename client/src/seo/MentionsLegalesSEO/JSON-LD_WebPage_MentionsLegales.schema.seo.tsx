@@ -1,29 +1,31 @@
+/* Import des Components */
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
-import DataSEORootType from "../../types/seo/dataSEORoot.type";
+import { dataSEO_MentionsLegales_data_SEO } from "./dataSEO_MentionsLegales.data.seo";
 
-import DataSEO_MentionsLegales from "./dataSEO_MentionsLegales.data.seo";
-import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
+/* Import des Types */
+import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
+import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
-function JSON_LD_WebPage_MentionsLegales_Schema_SEO() : string {
-    const DataSEORoot: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const DataSEO_MentionLegale: DataSEOTargetOneType = DataSEO_MentionsLegales(); /* Récupération des données SEO de la page */
+function JSON_LD_WebPage_MentionsLegales_schema_SEO() : string {
+    const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
+    const dataSEO_MentionLegale: DataSEOTargetOne_Type = dataSEO_MentionsLegales_data_SEO(); /* Récupération des données SEO de la page */
 
     const JSON_LD = JSON.stringify({
-        "@context": DataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
-        "@type": DataSEORoot["@type"].WebPage, /* (Obligatoire) Type de la donnée */
-        "@id": DataSEO_MentionLegale.id_Service,
-        "name": DataSEO_MentionLegale.name_Service, /* (Obligatoire) Nom de l'entreprise */
-        "url": DataSEO_MentionLegale.url,
-        "description": DataSEO_MentionLegale.description,
+        "@context": dataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
+        "@type": dataSEORoot["@type"].WebPage, /* (Obligatoire) Type de la donnée */
+        "@id": dataSEO_MentionLegale.id_Service,
+        "name": dataSEO_MentionLegale.name_Service, /* (Obligatoire) Nom de l'entreprise */
+        "url": dataSEO_MentionLegale.url,
+        "description": dataSEO_MentionLegale.description,
         "inLanguage": "fr", /* (Obligatoire) Langue de la page */
-        "image": DataSEO_MentionLegale.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
-        "termsOfService": DataSEORoot.termsOfService,
+        "image": dataSEO_MentionLegale.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
+        "termsOfService": dataSEORoot.termsOfService,
         "provider": {
-            "@id": DataSEORoot.id_LocalBusiness /* (Obligatoire) Référence à l'ID de l'Entreprise */
+            "@id": dataSEORoot.id_LocalBusiness /* (Obligatoire) Référence à l'ID de l'Entreprise */
         },
-        "isPartOf": DataSEORoot.isPartOf,
-        "mainEntity": DataSEORoot.mainEntity,
-        "publisher": DataSEORoot.publisher,
+        "isPartOf": dataSEORoot.isPartOf,
+        "mainEntity": dataSEORoot.mainEntity,
+        "publisher": dataSEORoot.publisher,
     });
 
     return (
@@ -31,4 +33,4 @@ function JSON_LD_WebPage_MentionsLegales_Schema_SEO() : string {
     )
 }
 
-export default JSON_LD_WebPage_MentionsLegales_Schema_SEO;
+export { JSON_LD_WebPage_MentionsLegales_schema_SEO };
