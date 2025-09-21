@@ -8,7 +8,7 @@ function dataSEO_PortraitFamille_data_SEO(): DataSEOTargetOne_Type {
     const dataSEO = {
         /* Data Helmet */
         title: "Portrait Famille - l'Atelier Photo Montpellier",
-        autor: "Anne SAUNIER",
+        author: "Anne SAUNIER",
         description: "Portrait famille signé L'Atelier Photo Montpellier : une photo aujourd’hui, un héritage de demain. Offrez-vous un moment à partager en famille.",
         url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[16].path}`, /*URL de la page*/
         position: 3, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
