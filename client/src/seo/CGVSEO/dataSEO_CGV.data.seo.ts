@@ -8,7 +8,7 @@ function dataSEO_CGV_data_SEO(): DataSEOTargetOne_Type {
     const dataSEO = {
         /* Data Helmet */
         title: "Conditions Générales de Vente - l'Atelier Photo Montpellier",
-        autor: "Anne SAUNIER",
+        author: "Anne SAUNIER",
         description: "Consultez les conditions générales de vente de l’Atelier Photo Montpellier. Informations légales sur les prestations photographiques proposées par Anne SAUNIER.",
         url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[9].path}`, /*URL de la page*/
         position: 2, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
