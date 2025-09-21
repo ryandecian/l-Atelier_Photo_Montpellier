@@ -17,19 +17,19 @@ import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
 import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
 function Helmet_CGV_helmet_SEO() {
-    const DataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const DataSEO_CGV: DataSEOTargetOne_Type = dataSEO_CGV_data_SEO(); /* Récupération des données SEO de la page */
+    const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
+    const dataSEO_CGV: DataSEOTargetOne_Type = dataSEO_CGV_data_SEO(); /* Récupération des données SEO de la page */
 
     const SEO: DataSEOHelmet_Type = {
-        title: DataSEO_CGV.title,
-        author: DataSEO_CGV.author,
-        description: DataSEO_CGV.description,
-        url: DataSEO_CGV.url,
-        img: DataSEO_CGV.img_Helmet,
-        twitterUrlImg: DataSEO_CGV.twitterUrlImg || DataSEO_CGV.img_Helmet, // fallback
-        twitterCompte: DataSEORoot.twitterCompte,
-        keywords: DataSEO_CGV.keywords,
-        type: DataSEO_CGV.type,
+        title: dataSEO_CGV.title,
+        author: dataSEO_CGV.author,
+        description: dataSEO_CGV.description,
+        url: dataSEO_CGV.url,
+        img: dataSEO_CGV.img_Helmet,
+        twitterUrlImg: dataSEO_CGV.twitterUrlImg || dataSEO_CGV.img_Helmet, // fallback
+        twitterCompte: dataSEORoot.twitterCompte,
+        keywords: dataSEO_CGV.keywords,
+        type: dataSEO_CGV.type,
     };
 
     const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
