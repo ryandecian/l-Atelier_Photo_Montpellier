@@ -8,7 +8,7 @@ function dataSEO_Blog_20250616_data_SEO(): DataSEOTargetOne_Type {
     const dataSEO = {
         /* Data Helmet */
         title: "Photo professionnelle pour CV : captez l’attention des recruteurs – Blog - l'Atelier Photo Montpellier",
-        autor: "Anne SAUNIER",
+        author: "Anne SAUNIER",
         description: "Découvrez comment un portrait professionnel soigné peut renforcer votre image sur votre CV et faire la différence auprès des recruteurs à Montpellier.",
         url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[4].path}${ListDataRouter[4].children?.[2].path}`, /*URL de la page*/
         position: 3, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */

@@ -21,7 +21,7 @@ function Helmet_Blog_20250710_helmet_SEO() {
 
     const SEO: DataSEOHelmet_Type = {
         title: dataSEO_Blog_20250710.title,
-        autor: dataSEO_Blog_20250710.autor,
+        author: dataSEO_Blog_20250710.author,
         description: dataSEO_Blog_20250710.description,
         url: dataSEO_Blog_20250710.url,
         img: dataSEO_Blog_20250710.img_Helmet,
@@ -54,7 +54,7 @@ function Helmet_Blog_20250710_helmet_SEO() {
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <meta name="description" content={SEO.description} />
-            <meta name="author" content={SEO.autor} />
+            <meta name="author" content={SEO.author} />
             {filterKeywords && <meta name="keywords" content={filterKeywords} />}
 
             {/* SEO pour les moteurs de recherche */}

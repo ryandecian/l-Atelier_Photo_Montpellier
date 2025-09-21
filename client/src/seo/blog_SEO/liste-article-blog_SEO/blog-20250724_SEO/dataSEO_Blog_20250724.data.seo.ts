@@ -8,7 +8,7 @@ function dataSEO_Blog_20250724_data_SEO(): DataSEOTargetOne_Type {
     const dataSEO = {
         /* Data Helmet */
         title: "Photographe grossesse à Montpellier : quand réserver votre séance photo ? – Blog - l'Atelier Photo Montpellier",
-        autor: "Anne SAUNIER",
+        author: "Anne SAUNIER",
         description: "Découvrez le moment idéal pour une séance photo de grossesse à Montpellier, entre émotions, préparation et souvenirs à transmettre.",
         url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[4].path}${ListDataRouter[4].children?.[4].path}`, /*URL de la page*/
         position: 3, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
