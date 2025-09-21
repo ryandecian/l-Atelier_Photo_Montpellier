@@ -1,26 +1,28 @@
+/* Import des Components */
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
-import DataSEORootType from "../../types/seo/dataSEORoot.type";
+import { dataSEO_Contact_data_SEO } from "./dataSEO_Contact.data.seo";
 
-import DataSEO_Contacts from "./dataSEO_Contact.data.seo";
-import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
+/* Import des Types */
+import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
+import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
-function JSON_LD_Breadcrumb_Contact_Schema_SEO() : string {
-    const DataSEORoot: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const DataSEO_Contact: DataSEOTargetOneType = DataSEO_Contacts(); /* Récupération des données SEO de la page */
+function JSON_LD_Breadcrumb_Contact_schema_SEO() : string {
+    const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
+    const dataSEO_Contact: DataSEOTargetOne_Type = dataSEO_Contact_data_SEO(); /* Récupération des données SEO de la page */
 
     const JSON_LD = JSON.stringify({
-        "@context": DataSEORoot["@context"],
-        "@type": DataSEORoot["@type"].BreadcrumbList,
+        "@context": dataSEORoot["@context"],
+        "@type": dataSEORoot["@type"].BreadcrumbList,
         "itemListElement": [
             {
                 "@type": "ListItem",
-                "position": DataSEO_Contact.position,
-                "name": DataSEO_Contact.name_Breadcrumb, /* Le libellé du lien dans le fil d’Ariane. Exemple : Contact */
+                "position": dataSEO_Contact.position,
+                "name": dataSEO_Contact.name_Breadcrumb, /* Le libellé du lien dans le fil d’Ariane. Exemple : Contact */
                 "item": {
-                    "@type": DataSEORoot["@type"].WebPage,
-                    "@id": DataSEO_Contact.id_Service,
-                    "url": DataSEO_Contact.url,
-                    "name": DataSEO_Contact.name_Breadcrumb
+                    "@type": dataSEORoot["@type"].WebPage,
+                    "@id": dataSEO_Contact.id_Service,
+                    "url": dataSEO_Contact.url,
+                    "name": dataSEO_Contact.name_Breadcrumb
                 }
             },
         ],
@@ -31,4 +33,4 @@ function JSON_LD_Breadcrumb_Contact_Schema_SEO() : string {
     )
 }
 
-export default JSON_LD_Breadcrumb_Contact_Schema_SEO;
+export { JSON_LD_Breadcrumb_Contact_schema_SEO };
