@@ -8,7 +8,7 @@ function dataSEO_PortraitHobby_data_SEO(): DataSEOTargetOne_Type {
     const dataSEO = {
         /* Data Helmet */
         title: "Portrait Hobby - l'Atelier Photo Montpellier",
-        autor: "Anne SAUNIER",
+        author: "Anne SAUNIER",
         description: "Portrait Hobby signé L'Atelier Photo Montpellier : une séance pour mettre en lumière votre passion et révéler ce qui vous anime.",
         url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[19].path}`, /*URL de la page*/
         position: 3, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
