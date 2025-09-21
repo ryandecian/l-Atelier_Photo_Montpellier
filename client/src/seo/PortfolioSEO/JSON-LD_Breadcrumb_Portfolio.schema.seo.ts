@@ -1,26 +1,28 @@
+/* Import des Components */
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
-import DataSEORootType from "../../types/seo/dataSEORoot.type";
+import { dataSEO_Portfolio_data_SEO } from "./dataSEO_Portfolio.data.seo";
 
-import DataSEO_Portfolios from "./dataSEO_Portfolio.data.seo";
-import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
+/* Import des Types */
+import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
+import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
-function JSON_LD_Breadcrumb_Portfolio_Schema_SEO() : string {
-    const DataSEORoot: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const DataSEO_Portfolio: DataSEOTargetOneType = DataSEO_Portfolios(); /* Récupération des données SEO de la page */
+function JSON_LD_Breadcrumb_Portfolio_schema_SEO() : string {
+    const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
+    const dataSEO_Portfolio: DataSEOTargetOne_Type = dataSEO_Portfolio_data_SEO(); /* Récupération des données SEO de la page */
 
     const JSON_LD = JSON.stringify({
-        "@context": DataSEORoot["@context"],
-        "@type": DataSEORoot["@type"].BreadcrumbList,
+        "@context": dataSEORoot["@context"],
+        "@type": dataSEORoot["@type"].BreadcrumbList,
         "itemListElement": [
             {
                 "@type": "ListItem",
-                "position": DataSEO_Portfolio.position,
-                "name": DataSEO_Portfolio.title,
+                "position": dataSEO_Portfolio.position,
+                "name": dataSEO_Portfolio.title,
                 "item": {
-                    "@type": DataSEORoot["@type"].WebPage,
-                    "@id": DataSEO_Portfolio.id_Service,
-                    "url": DataSEO_Portfolio.url,
-                    "name": DataSEO_Portfolio.name_Breadcrumb
+                    "@type": dataSEORoot["@type"].WebPage,
+                    "@id": dataSEO_Portfolio.id_Service,
+                    "url": dataSEO_Portfolio.url,
+                    "name": dataSEO_Portfolio.name_Breadcrumb
                 }
             },
         ],
@@ -31,4 +33,4 @@ function JSON_LD_Breadcrumb_Portfolio_Schema_SEO() : string {
     )
 }
 
-export default JSON_LD_Breadcrumb_Portfolio_Schema_SEO;
+export { JSON_LD_Breadcrumb_Portfolio_schema_SEO };
