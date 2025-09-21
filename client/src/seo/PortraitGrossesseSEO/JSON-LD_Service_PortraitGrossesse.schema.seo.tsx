@@ -1,41 +1,43 @@
+/* Import des Components */
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
-import DataSEORootType from "../../types/seo/dataSEORoot.type";
+import { dataSEO_PortraitGrossesse_data_SEO } from "./dataSEO_PortraitGrossesse.data.seo";
 
-import DataSEO_PortraitGrossesses from "./dataSEO_PortraitGrossesse.data.seo";
-import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
+/* Import des Types */
+import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
+import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
-function JSON_LD_Service_PortraitGrossesse_Schema_SEO() : string {
-    const DataSEORoot: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const DataSEO_PortraitGrossesse: DataSEOTargetOneType = DataSEO_PortraitGrossesses(); /* Récupération des données SEO de la page */
+function JSON_LD_Service_PortraitGrossesse_schema_SEO() : string {
+    const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
+    const dataSEO_PortraitGrossesse: DataSEOTargetOne_Type = dataSEO_PortraitGrossesse_data_SEO(); /* Récupération des données SEO de la page */
 
     const JSON_LD = JSON.stringify({
-        "@context": DataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
-        "@type": DataSEORoot["@type"].Service, /* (Obligatoire) Type de la donnée */
-        "@id": DataSEO_PortraitGrossesse.id_Service,
-        "serviceType": DataSEO_PortraitGrossesse.serviceType,
-        "name": DataSEO_PortraitGrossesse.name_Service, /* (Obligatoire) Nom du service */
-        "image": DataSEO_PortraitGrossesse.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
-        "description": DataSEO_PortraitGrossesse.description,
-        "url": DataSEO_PortraitGrossesse.url,
-        "termsOfService": DataSEORoot.termsOfService,
+        "@context": dataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
+        "@type": dataSEORoot["@type"].Service, /* (Obligatoire) Type de la donnée */
+        "@id": dataSEO_PortraitGrossesse.id_Service,
+        "serviceType": dataSEO_PortraitGrossesse.serviceType,
+        "name": dataSEO_PortraitGrossesse.name_Service, /* (Obligatoire) Nom du service */
+        "image": dataSEO_PortraitGrossesse.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
+        "description": dataSEO_PortraitGrossesse.description,
+        "url": dataSEO_PortraitGrossesse.url,
+        "termsOfService": dataSEORoot.termsOfService,
         "provider": {
-            "@id": DataSEORoot.id_LocalBusiness /* (Obligatoire) Référence à l'ID de l'Entreprise */
+            "@id": dataSEORoot.id_LocalBusiness /* (Obligatoire) Référence à l'ID de l'Entreprise */
         },
         "publisher": {
             "@type": "Organization",
-            "name": DataSEORoot.name,
+            "name": dataSEORoot.name,
             "logo": {
             "@type": "ImageObject",
-            "url": DataSEORoot.logo,
+            "url": dataSEORoot.logo,
             "width": 200,
             "height": 200
             },
         },
-        "areaServed": DataSEORoot.areaServed, /* Zone géographique desservie par le service */
+        "areaServed": dataSEORoot.areaServed, /* Zone géographique desservie par le service */
         // ⚠️ A décommenter lors du passage de site vitrine en e-commerce
         // "availableChannel": {
         // "@type": "ServiceChannel",
-        // "serviceUrl": DataSEO_PortraitGrossesse.url
+        // "serviceUrl": dataSEO_PortraitGrossesse.url
         // },
     });
 
@@ -44,4 +46,4 @@ function JSON_LD_Service_PortraitGrossesse_Schema_SEO() : string {
     )
 }
 
-export default JSON_LD_Service_PortraitGrossesse_Schema_SEO;
+export { JSON_LD_Service_PortraitGrossesse_schema_SEO };

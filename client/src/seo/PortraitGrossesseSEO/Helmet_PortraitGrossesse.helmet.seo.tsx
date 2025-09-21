@@ -1,31 +1,34 @@
+/* Import des composants React */
 import { Helmet } from "react-helmet-async";
-import DataSEOHelmetType from "../../types/seo/dataSEOHelmet.type";
 
+/* Import des Components */
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
-import DataSEO_PortraitGrossesses from "./dataSEO_PortraitGrossesse.data.seo";
+import { dataSEO_PortraitGrossesse_data_SEO } from "./dataSEO_PortraitGrossesse.data.seo";
 
-import DataSEORootType from "../../types/seo/dataSEORoot.type";
-import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
-
+/* Import des JSON_LD */
 import { JSON_LD_LocalBusiness_Root_schema_SEO } from "../JSON-LD_LocalBusiness_Root.schema.seo";
-import JSON_LD_Service_PortraitGrossesse_Schema_SEO from "./JSON-LD_Service_PortraitGrossesse.schema.seo";
-import JSON_LD_Breadcrumb_PortraitGrossesse_Schema_SEO from "./JSON-LD_Breadcrumb_PortraitGrossesse.schema.seo";
+import { JSON_LD_Breadcrumb_PortraitGrossesse_schema_SEO } from "./JSON-LD_Breadcrumb_PortraitGrossesse.schema.seo";
+import { JSON_LD_Service_PortraitGrossesse_schema_SEO } from "./JSON-LD_Service_PortraitGrossesse.schema.seo";
 
+/* Import des Types */
+import { DataSEOHelmet_Type } from "../../types/seo/dataSEOHelmet.type";
+import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
+import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
-function Helmet_PortraitGrossesse_SEO() {
-    const DataSEORoot: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const DataSEO_PortraitGrossesse: DataSEOTargetOneType = DataSEO_PortraitGrossesses(); /* Récupération des données SEO de la page */
+function Helmet_PortraitGrossesse_helmet_SEO() {
+    const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
+    const dataSEO_PortraitGrossesse: DataSEOTargetOne_Type = dataSEO_PortraitGrossesse_data_SEO(); /* Récupération des données SEO de la page */
 
-    const SEO: DataSEOHelmetType = {
-        title: DataSEO_PortraitGrossesse.title,
-        autor: DataSEO_PortraitGrossesse.autor,
-        description: DataSEO_PortraitGrossesse.description,
-        url: DataSEO_PortraitGrossesse.url,
-        img: DataSEO_PortraitGrossesse.img_Helmet,
-        twitterUrlImg: DataSEO_PortraitGrossesse.twitterUrlImg || DataSEO_PortraitGrossesse.img_Helmet, // fallback
-        twitterCompte: DataSEORoot.twitterCompte,
-        keywords: DataSEO_PortraitGrossesse.keywords,
-        type: DataSEO_PortraitGrossesse.type,
+    const SEO: DataSEOHelmet_Type = {
+        title: dataSEO_PortraitGrossesse.title,
+        author: dataSEO_PortraitGrossesse.author,
+        description: dataSEO_PortraitGrossesse.description,
+        url: dataSEO_PortraitGrossesse.url,
+        img: dataSEO_PortraitGrossesse.img_Helmet,
+        twitterUrlImg: dataSEO_PortraitGrossesse.twitterUrlImg || dataSEO_PortraitGrossesse.img_Helmet, // fallback
+        twitterCompte: dataSEORoot.twitterCompte,
+        keywords: dataSEO_PortraitGrossesse.keywords,
+        type: dataSEO_PortraitGrossesse.type,
     };
 
     const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
@@ -37,10 +40,10 @@ function Helmet_PortraitGrossesse_SEO() {
                 {JSON_LD_LocalBusiness_Root_schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_Service_PortraitGrossesse_Schema_SEO()}
+                {JSON_LD_Service_PortraitGrossesse_schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_Breadcrumb_PortraitGrossesse_Schema_SEO()}
+                {JSON_LD_Breadcrumb_PortraitGrossesse_schema_SEO()}
             </script>
 
             {/* Langue principale du document */}
@@ -51,7 +54,7 @@ function Helmet_PortraitGrossesse_SEO() {
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <meta name="description" content={SEO.description} />
-            <meta name="author" content={SEO.autor} />
+            <meta name="author" content={SEO.author} />
             {filterKeywords && <meta name="keywords" content={filterKeywords} />}
 
             {/* SEO pour les moteurs de recherche */}
@@ -78,4 +81,4 @@ function Helmet_PortraitGrossesse_SEO() {
     );
 }
 
-export default Helmet_PortraitGrossesse_SEO;
+export { Helmet_PortraitGrossesse_helmet_SEO };
