@@ -1,35 +1,38 @@
+/* Import des Components */
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
-import DataSEORootType from "../../types/seo/dataSEORoot.type";
+import { dataSEO_Portfolio_data_SEO } from "./dataSEO_Portfolio.data.seo";
 
-import DataSEO_Portfolios from "./dataSEO_Portfolio.data.seo";
-import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
+/* Import des Types */
+import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
+import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
-import generatePortfolioHasPartSEO from "./utils/generatePortfolioHashPartSEO.utils";
+/* Import des Utils */
+import { generatePortfolioHasPartSEO_Utils } from "./utils/generatePortfolioHashPartSEO.utils";
 
-function JSON_LD_Collection_Portfolio_Schema_SEO() : string {
-    const DataSEORoot: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const DataSEO_Portfolio: DataSEOTargetOneType = DataSEO_Portfolios(); /* Récupération des données SEO de la page */
+function JSON_LD_Collection_Portfolio_schema_SEO() : string {
+    const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
+    const dataSEO_Portfolio: DataSEOTargetOne_Type = dataSEO_Portfolio_data_SEO(); /* Récupération des données SEO de la page */
 
     const JSON_LD = JSON.stringify({
-        "@context": DataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
-        "@type": DataSEORoot["@type"].CollectionPage, /* (Obligatoire) Type de la donnée */
-        "@id": DataSEO_Portfolio.id_Service,
-        "about": DataSEO_Portfolio.serviceType,
-        "name": DataSEO_Portfolio.name_Collection, /* (Obligatoire) Correspond au H1 ou title de la page */
-        "image": DataSEO_Portfolio.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
-        "description": DataSEO_Portfolio.description,
-        "url": DataSEO_Portfolio.url,
+        "@context": dataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
+        "@type": dataSEORoot["@type"].CollectionPage, /* (Obligatoire) Type de la donnée */
+        "@id": dataSEO_Portfolio.id_Service,
+        "about": dataSEO_Portfolio.serviceType,
+        "name": dataSEO_Portfolio.name_Collection, /* (Obligatoire) Correspond au H1 ou title de la page */
+        "image": dataSEO_Portfolio.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
+        "description": dataSEO_Portfolio.description,
+        "url": dataSEO_Portfolio.url,
         "publisher": {
             "@type": "Organization",
-            "name": DataSEORoot.name,
+            "name": dataSEORoot.name,
             "logo": {
             "@type": "ImageObject",
-            "url": DataSEORoot.logo,
+            "url": dataSEORoot.logo,
             "width": 200,
             "height": 200
             },
         },
-        "hasPart": generatePortfolioHasPartSEO(), /* (Obligatoire) Liste des images du portfolio */
+        "hasPart": generatePortfolioHasPartSEO_Utils(), /* (Obligatoire) Liste des images du portfolio */
     });
 
     return (
@@ -37,4 +40,4 @@ function JSON_LD_Collection_Portfolio_Schema_SEO() : string {
     )
 }
 
-export default JSON_LD_Collection_Portfolio_Schema_SEO;
+export { JSON_LD_Collection_Portfolio_schema_SEO };
