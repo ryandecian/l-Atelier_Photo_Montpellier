@@ -1,16 +1,19 @@
+/* Import des composants React */
 import { Helmet } from "react-helmet-async";
-import DataSEOHelmetType from "../../types/seo/dataSEOHelmet.type";
 
+/* Import des Components */
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
 import DataSEO_Blogs from "./dataSEO_Blog.data.seo";
 
-import DataSEORootType from "../../types/seo/dataSEORoot.type";
-import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
-
+/* Import des JSON_LD */
 import { JSON_LD_LocalBusiness_Root_schema_SEO } from "../JSON-LD_LocalBusiness_Root.schema.seo";
 import JSON_LD_Blog_Blog_Schema_SEO from "./JSON-LD_Blog_Blog.schema.seo";
 import JSON_LD_Breadcrumb_Blog_Schema_SEO from "./JSON-LD_Breadcrumb_Blog.schema.seo";
 
+/* Import des Types */
+import DataSEOHelmetType from "../../types/seo/dataSEOHelmet.type";
+import DataSEORootType from "../../types/seo/dataSEORoot.type";
+import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
 
 function Helmet_Blog_SEO() {
     const DataSEORoot: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
