@@ -1,5 +1,12 @@
 import AlbumPortfolio from "../../../components/Public/PortfolioRoot/AlbumPortfolio";
 
+/**
+ * Génère un tableau d’objets JSON-LD de type "ImageObject" à partir 
+ * d’une sélection d’images du portfolio. 
+ * Sert à enrichir le SEO en décrivant explicitement, via la propriété 
+ * "hasPart", certaines images représentatives du portfolio.
+ */
+
 function generatePortfolioHasPartSEO_Utils() {
   const baseUrl = import.meta.env.VITE_DOMAIN_CLIENT;
 
