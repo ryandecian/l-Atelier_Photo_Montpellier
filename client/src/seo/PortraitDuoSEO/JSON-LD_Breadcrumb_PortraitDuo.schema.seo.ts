@@ -6,7 +6,7 @@ import { dataSEO_PortraitDuo_data_SEO } from "./dataSEO_PortraitDuo.data.seo";
 import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
 import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
-function JSON_LD_Breadcrumb_PortraitDuo_Schema_SEO() : string {
+function JSON_LD_Breadcrumb_PortraitDuo_schema_SEO() : string {
     const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
     const dataSEO_PortraitDuo: DataSEOTargetOne_Type = dataSEO_PortraitDuo_data_SEO(); /* Récupération des données SEO de la page */
 
@@ -33,4 +33,4 @@ function JSON_LD_Breadcrumb_PortraitDuo_Schema_SEO() : string {
     )
 }
 
-export default JSON_LD_Breadcrumb_PortraitDuo_Schema_SEO;
+export { JSON_LD_Breadcrumb_PortraitDuo_schema_SEO };
