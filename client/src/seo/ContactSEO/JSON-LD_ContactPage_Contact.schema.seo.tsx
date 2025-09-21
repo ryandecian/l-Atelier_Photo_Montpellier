@@ -1,35 +1,37 @@
+/* Import des Components */
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
-import DataSEORootType from "../../types/seo/dataSEORoot.type";
+import { dataSEO_Contact_data_SEO } from "./dataSEO_Contact.data.seo";
 
-import DataSEO_Contacts from "./dataSEO_Contact.data.seo";
-import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
+/* Import des Types */
+import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
+import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
 
-function JSON_LD_ContactPage_Contact_Schema_SEO() : string {
-    const DataSEORoot: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const DataSEO_Contact: DataSEOTargetOneType = DataSEO_Contacts(); /* Récupération des données SEO de la page */
+function JSON_LD_ContactPage_Contact_schema_SEO() : string {
+    const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
+    const dataSEO_Contact: DataSEOTargetOne_Type = dataSEO_Contact_data_SEO(); /* Récupération des données SEO de la page */
 
     const JSON_LD = JSON.stringify({
-        "@context": DataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
-        "@type": DataSEORoot["@type"].ContactPage, /* (Obligatoire) Type de la donnée */
-        "@id": DataSEO_Contact.id_Service,
-        "name": DataSEO_Contact.name_ContactPage, /* (Obligatoire) Nom de la page de contact */
-        "url": DataSEO_Contact.url, /* (Obligatoire) URL de la page */
+        "@context": dataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
+        "@type": dataSEORoot["@type"].ContactPage, /* (Obligatoire) Type de la donnée */
+        "@id": dataSEO_Contact.id_Service,
+        "name": dataSEO_Contact.name_ContactPage, /* (Obligatoire) Nom de la page de contact */
+        "url": dataSEO_Contact.url, /* (Obligatoire) URL de la page */
         "about": {
-            "@type": DataSEORoot["@type"].Local,
-            "name": DataSEORoot.name,
+            "@type": dataSEORoot["@type"].Local,
+            "name": dataSEORoot.name,
         },
-        "image": DataSEO_Contact.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
-        "description": DataSEO_Contact.description,
+        "image": dataSEO_Contact.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
+        "description": dataSEO_Contact.description,
         "provider": {
-            "@id": DataSEORoot.id_LocalBusiness /* (Obligatoire) Référence à l'ID de l'Entreprise */
+            "@id": dataSEORoot.id_LocalBusiness /* (Obligatoire) Référence à l'ID de l'Entreprise */
         },
         "publisher": {
             "@type": "Organization",
-            "name": DataSEORoot.name,
+            "name": dataSEORoot.name,
             "logo": {
             "@type": "ImageObject",
-            "url": DataSEORoot.logo,
+            "url": dataSEORoot.logo,
             "width": 200,
             "height": 200
             },
@@ -41,4 +43,4 @@ function JSON_LD_ContactPage_Contact_Schema_SEO() : string {
     )
 }
 
-export default JSON_LD_ContactPage_Contact_Schema_SEO;
+export { JSON_LD_ContactPage_Contact_schema_SEO };
