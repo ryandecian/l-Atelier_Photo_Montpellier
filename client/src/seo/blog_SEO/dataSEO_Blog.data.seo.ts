@@ -1,11 +1,14 @@
+/* Import des composants Router */
 import ListDataRouter from "../../router/router";
-import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
 
-function DataSEO_Blog(): DataSEOTargetOneType {
-    const DataSEO = {
+/* Import des Types */
+import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
+
+function dataSEO_Blog_data_SEO(): DataSEOTargetOne_Type {
+    const dataSEO = {
         /* Data Helmet */
         title: "Blog - l'Atelier Photo Montpellier",
-        autor: "Anne SAUNIER",
+        author: "Anne SAUNIER",
         description: "Explorez nos articles sur la photographie : conseils, coulisses de séances photo et inspirations à Montpellier.",
         url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[4].path}`, /*URL de la page*/
         position: 2, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
@@ -45,8 +48,8 @@ function DataSEO_Blog(): DataSEOTargetOneType {
     };
 
     return (
-        DataSEO
+        dataSEO
     )
 }
 
-export default DataSEO_Blog;
+export { dataSEO_Blog_data_SEO };

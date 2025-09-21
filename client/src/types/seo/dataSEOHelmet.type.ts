@@ -1,6 +1,6 @@
 type DataSEOHelmet_Type = {
     title: string;
-    autor: string;
+    author: string;
     description: string;
     url: string;
     img: string;

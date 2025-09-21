@@ -1,8 +1,11 @@
+/* Import des composants Router */
 import ListDataRouter from "../../router/router";
-import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
 
-function DataSEO_MentionsLegales(): DataSEOTargetOneType {
-    const DataSEO = {
+/* Import des Types */
+import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
+
+function dataSEO_MentionsLegales_data_SEO(): DataSEOTargetOne_Type {
+    const dataSEO = {
         /* Data Helmet */
         title: "Mentions Legales - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
@@ -45,8 +48,8 @@ function DataSEO_MentionsLegales(): DataSEOTargetOneType {
     };
 
     return (
-        DataSEO
+        dataSEO
     )
 }
 
-export default DataSEO_MentionsLegales;
+export { dataSEO_MentionsLegales_data_SEO };

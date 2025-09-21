@@ -1,6 +1,6 @@
 type DataSEOTargetOne_Type = {
     title: string;
-    autor: string;
+    author: string;
     description: string;
     url: string;
     position: number;

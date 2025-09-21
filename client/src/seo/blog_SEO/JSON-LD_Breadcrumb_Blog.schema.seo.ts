@@ -1,26 +1,28 @@
+/* Import des Components */
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
-import DataSEORootType from "../../types/seo/dataSEORoot.type";
+import { dataSEO_Blog_data_SEO } from "./dataSEO_Blog.data.seo";
 
-import DataSEO_Blogs from "./DataSEO_Blog.data.seo";
-import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
+/* Import des Types */
+import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
+import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
-function JSON_LD_Breadcrumb_Blog_Schema_SEO() : string {
-    const DataSEORoot: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const DataSEO_Blog: DataSEOTargetOneType = DataSEO_Blogs(); /* Récupération des données SEO de la page */
+function JSON_LD_Breadcrumb_Blog_schema_SEO() : string {
+    const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
+    const dataSEO_Blog: DataSEOTargetOne_Type = dataSEO_Blog_data_SEO(); /* Récupération des données SEO de la page */
 
     const JSON_LD = JSON.stringify({
-        "@context": DataSEORoot["@context"],
-        "@type": DataSEORoot["@type"].BreadcrumbList,
+        "@context": dataSEORoot["@context"],
+        "@type": dataSEORoot["@type"].BreadcrumbList,
         "itemListElement": [
             {
                 "@type": "ListItem",
-                "position": DataSEO_Blog.position,
-                "name": DataSEO_Blog.name_Breadcrumb, /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Duo */
+                "position": dataSEO_Blog.position,
+                "name": dataSEO_Blog.name_Breadcrumb, /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Duo */
                 "item": {
-                    "@type": DataSEORoot["@type"].WebPage,
-                    "@id": DataSEO_Blog.id_Service,
-                    "url": DataSEO_Blog.url,
-                    "name": DataSEO_Blog.name_Breadcrumb
+                    "@type": dataSEORoot["@type"].WebPage,
+                    "@id": dataSEO_Blog.id_Service,
+                    "url": dataSEO_Blog.url,
+                    "name": dataSEO_Blog.name_Breadcrumb
                 }
             },
         ],
@@ -31,4 +33,4 @@ function JSON_LD_Breadcrumb_Blog_Schema_SEO() : string {
     )
 }
 
-export default JSON_LD_Breadcrumb_Blog_Schema_SEO;
+export { JSON_LD_Breadcrumb_Blog_schema_SEO };

@@ -1,7 +1,7 @@
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
 import DataSEORootType from "../../types/seo/dataSEORoot.type";
 
-import DataSEO_Prestations from "./DataSEO_Prestation.data.seo";
+import DataSEO_Prestations from "./dataSEO_Prestation.data.seo";
 import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
 
 function JSON_LD_Breadcrumb_Prestation_Schema_SEO() : string {
