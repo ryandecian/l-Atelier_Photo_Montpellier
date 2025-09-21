@@ -1,31 +1,34 @@
+/* Import des composants React */
 import { Helmet } from "react-helmet-async";
-import DataSEOHelmetType from "../../../../types/seo/dataSEOHelmet.type";
 
+/* Import des Components */
 import { dataSEO_Root_data_SEO } from "../../../dataSEO_Root.data.seo";
-import DataSEO_Blog_20250724s from "./dataSEO_Blog_20250724.data.seo";
+import { dataSEO_Blog_20250724_data_SEO } from "./dataSEO_Blog_20250724.data.seo";
 
-import DataSEORootType from "../../../../types/seo/dataSEORoot.type";
-import DataSEOTargetOneType from "../../../../types/seo/dataSEOTargetOne.type";
-
+/* Import des JSON_LD */
 import { JSON_LD_LocalBusiness_Root_schema_SEO } from "../../../JSON-LD_LocalBusiness_Root.schema.seo";
-import JSON_LD_BlogPosting_Blog_20250724_Schema_SEO from "./JSON-LD_BlogPosting_Blog_20250724.schema.seo";
-import JSON_LD_Breadcrumb_Blog_20250724_Schema_SEO from "./JSON-LD_Breadcrumb_Blog_20250724.schema.seo";
+import { JSON_LD_BlogPosting_Blog_20250724_schema_SEO } from "./JSON-LD_BlogPosting_Blog_20250724.schema.seo";
+import { JSON_LD_Breadcrumb_Blog_20250724_schema_SEO } from "./JSON-LD_Breadcrumb_Blog_20250724.schema.seo";
 
+/* Import des Types */
+import { DataSEOHelmet_Type } from "../../../../types/seo/dataSEOHelmet.type";
+import { DataSEORoot_Type } from "../../../../types/seo/dataSEORoot.type";
+import { DataSEOTargetOne_Type } from "../../../../types/seo/dataSEOTargetOne.type";
 
-function Helmet_Blog_20250724_SEO() {
-    const DataSEORoot: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const DataSEO_Blog_20250724: DataSEOTargetOneType = DataSEO_Blog_20250724s(); /* Récupération des données SEO de la page */
+function Helmet_Blog_20250724_helmet_SEO() {
+    const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
+    const dataSEO_Blog_20250724: DataSEOTargetOne_Type = dataSEO_Blog_20250724_data_SEO(); /* Récupération des données SEO de la page */
 
-    const SEO: DataSEOHelmetType = {
-        title: DataSEO_Blog_20250724.title,
-        autor: DataSEO_Blog_20250724.autor,
-        description: DataSEO_Blog_20250724.description,
-        url: DataSEO_Blog_20250724.url,
-        img: DataSEO_Blog_20250724.img_Helmet,
-        twitterUrlImg: DataSEO_Blog_20250724.twitterUrlImg || DataSEO_Blog_20250724.img_Helmet, // fallback
-        twitterCompte: DataSEORoot.twitterCompte,
-        keywords: DataSEO_Blog_20250724.keywords,
-        type: DataSEO_Blog_20250724.type,
+    const SEO: DataSEOHelmet_Type = {
+        title: dataSEO_Blog_20250724.title,
+        author: dataSEO_Blog_20250724.author,
+        description: dataSEO_Blog_20250724.description,
+        url: dataSEO_Blog_20250724.url,
+        img: dataSEO_Blog_20250724.img_Helmet,
+        twitterUrlImg: dataSEO_Blog_20250724.twitterUrlImg || dataSEO_Blog_20250724.img_Helmet, // fallback
+        twitterCompte: dataSEORoot.twitterCompte,
+        keywords: dataSEO_Blog_20250724.keywords,
+        type: dataSEO_Blog_20250724.type,
     };
 
     const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
@@ -37,10 +40,10 @@ function Helmet_Blog_20250724_SEO() {
                 {JSON_LD_LocalBusiness_Root_schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_BlogPosting_Blog_20250724_Schema_SEO()}
+                {JSON_LD_BlogPosting_Blog_20250724_schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_Breadcrumb_Blog_20250724_Schema_SEO()}
+                {JSON_LD_Breadcrumb_Blog_20250724_schema_SEO()}
             </script>
 
             {/* Langue principale du document */}
@@ -51,7 +54,7 @@ function Helmet_Blog_20250724_SEO() {
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <meta name="description" content={SEO.description} />
-            <meta name="author" content={SEO.autor} />
+            <meta name="author" content={SEO.author} />
             {filterKeywords && <meta name="keywords" content={filterKeywords} />}
 
             {/* SEO pour les moteurs de recherche */}
@@ -78,4 +81,4 @@ function Helmet_Blog_20250724_SEO() {
     );
 }
 
-export default Helmet_Blog_20250724_SEO;
+export { Helmet_Blog_20250724_helmet_SEO };

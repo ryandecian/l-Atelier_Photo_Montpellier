@@ -1,31 +1,34 @@
+/* Import des composants React */
 import { Helmet } from "react-helmet-async";
-import DataSEOHelmetType from "../../types/seo/dataSEOHelmet.type";
 
+/* Import des Components */
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
-import DataSEO_Blogs from "./DataSEO_Blog.data.seo";
+import { dataSEO_Blog_data_SEO } from "./dataSEO_Blog.data.seo";
 
-import DataSEORootType from "../../types/seo/dataSEORoot.type";
-import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
-
+/* Import des JSON_LD */
 import { JSON_LD_LocalBusiness_Root_schema_SEO } from "../JSON-LD_LocalBusiness_Root.schema.seo";
-import JSON_LD_Blog_Blog_Schema_SEO from "./JSON-LD_Blog_Blog.schema.seo";
-import JSON_LD_Breadcrumb_Blog_Schema_SEO from "./JSON-LD_Breadcrumb_Blog.schema.seo";
+import { JSON_LD_Blog_Blog_schema_SEO } from "./JSON-LD_Blog_Blog.schema.seo";
+import { JSON_LD_Breadcrumb_Blog_schema_SEO } from "./JSON-LD_Breadcrumb_Blog.schema.seo";
 
+/* Import des Types */
+import { DataSEOHelmet_Type } from "../../types/seo/dataSEOHelmet.type";
+import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
+import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
-function Helmet_Blog_SEO() {
-    const DataSEORoot: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const DataSEO_Blog: DataSEOTargetOneType = DataSEO_Blogs(); /* Récupération des données SEO de la page */
+function Helmet_Blog_helmet_SEO() {
+    const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
+    const dataSEO_Blog: DataSEOTargetOne_Type = dataSEO_Blog_data_SEO(); /* Récupération des données SEO de la page */
 
-    const SEO: DataSEOHelmetType = {
-        title: DataSEO_Blog.title,
-        autor: DataSEO_Blog.autor,
-        description: DataSEO_Blog.description,
-        url: DataSEO_Blog.url,
-        img: DataSEO_Blog.img_Helmet,
-        twitterUrlImg: DataSEO_Blog.twitterUrlImg || DataSEO_Blog.img_Helmet, // fallback
-        twitterCompte: DataSEORoot.twitterCompte,
-        keywords: DataSEO_Blog.keywords,
-        type: DataSEO_Blog.type,
+    const SEO: DataSEOHelmet_Type = {
+        title: dataSEO_Blog.title,
+        author: dataSEO_Blog.author,
+        description: dataSEO_Blog.description,
+        url: dataSEO_Blog.url,
+        img: dataSEO_Blog.img_Helmet,
+        twitterUrlImg: dataSEO_Blog.twitterUrlImg || dataSEO_Blog.img_Helmet, // fallback
+        twitterCompte: dataSEORoot.twitterCompte,
+        keywords: dataSEO_Blog.keywords,
+        type: dataSEO_Blog.type,
     };
 
     const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
@@ -37,10 +40,10 @@ function Helmet_Blog_SEO() {
                 {JSON_LD_LocalBusiness_Root_schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_Blog_Blog_Schema_SEO()}
+                {JSON_LD_Blog_Blog_schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_Breadcrumb_Blog_Schema_SEO()}
+                {JSON_LD_Breadcrumb_Blog_schema_SEO()}
             </script>
 
             {/* Langue principale du document */}
@@ -51,7 +54,7 @@ function Helmet_Blog_SEO() {
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <meta name="description" content={SEO.description} />
-            <meta name="author" content={SEO.autor} />
+            <meta name="author" content={SEO.author} />
             {filterKeywords && <meta name="keywords" content={filterKeywords} />}
 
             {/* SEO pour les moteurs de recherche */}
@@ -78,4 +81,4 @@ function Helmet_Blog_SEO() {
     );
 }
 
-export default Helmet_Blog_SEO;
+export { Helmet_Blog_helmet_SEO };

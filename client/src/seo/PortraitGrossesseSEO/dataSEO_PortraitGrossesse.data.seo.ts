@@ -1,13 +1,16 @@
+/* Import des composants Router */
 import ListDataRouter from "../../router/router";
-import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
 
-function DataSEO_PortraitNouveauNe(): DataSEOTargetOneType {
-    const DataSEO = {
+/* Import des Types */
+import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
+
+function dataSEO_PortraitGrossesse_data_SEO(): DataSEOTargetOne_Type {
+    const dataSEO = {
         /* Data Helmet */
         title: "Portrait Grossesse et nouveau né - l'Atelier Photo Montpellier",
         autor: "Anne SAUNIER",
-        description: "Un souffle de vie, un regard naissant. Anne SAUNIER révèle la tendresse des premiers jours à travers des portraits à chérir pour toujours.",
-        url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[17].path}`, /*URL de la page*/
+        description: "Avec l’Atelier Photo Montpellier, Anne SAUNIER capture la magie de la grossesse et les premiers instants de vie à travers des portraits doux et authentiques.",
+        url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[18].path}`, /*URL de la page*/
         position: 3, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
         name_Breadcrumb: "Portrait Grossesse et nouveau né", /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait Duo */
         name_Service: "Portrait Grossesse et nouveau né - l'Atelier Photo Montpellier", /* Nom du service, utilisé dans le JSON-LD Service */
@@ -38,15 +41,15 @@ function DataSEO_PortraitNouveauNe(): DataSEOTargetOneType {
         },
     
         /* Data Helmet et JSON-LD */
-        img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-nouveau-ne/google/lapm-photo-portrait-nouveau-ne-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-nouveau-ne/helmet/lapm-photo-portrait-nouveau-ne-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[17].path}/#service-portrait-nouveau-ne`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
-        serviceType: "Photographie grossesse et nouveau-né.",
+        img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-grossesse/google/lapm-photo-portrait-grossesse-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
+        img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/portrait-grossesse/helmet/lapm-photo-portrait-grossesse-professionnel-montpellier-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[18].path}/#service-portrait-grossesse`, // @id SEO-friendly, correspond à l'URL de la page + mots clés
+        serviceType: "Photographie grossesse et nouveau-né",
     };
 
     return (
-        DataSEO
+        dataSEO
     )
 }
 
-export default DataSEO_PortraitNouveauNe;
+export { dataSEO_PortraitGrossesse_data_SEO };
