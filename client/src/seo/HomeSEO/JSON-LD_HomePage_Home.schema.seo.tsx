@@ -1,29 +1,31 @@
+/* Import des Components */
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
-import DataSEORootType from "../../types/seo/dataSEORoot.type";
+import { dataSEO_Home_data_SEO } from "./dataSEO_Home.data.seo";
 
-import DataSEO_Homes from "./dataSEO_Home.data.seo";
-import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
+/* Import des Types */
+import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
+import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
-function JSON_LD_HomePage_Home_Schema_SEO() : string {
-    const DataSEORoot: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const DataSEO_Home: DataSEOTargetOneType = DataSEO_Homes(); /* Récupération des données SEO */
+function JSON_LD_HomePage_Home_schema_SEO() : string {
+    const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
+    const dataSEO_Home: DataSEOTargetOne_Type = dataSEO_Home_data_SEO(); /* Récupération des données SEO */
 
     const JSON_LD = JSON.stringify({
-        "@context": DataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
-        "@type": DataSEORoot["@type"].HomePage, /* (Obligatoire) Type de la donnée */
-        "@id": DataSEO_Home.id_Service,
-        "name": DataSEORoot.name, /* (Obligatoire) Nom de l'entreprise */
-        "url": DataSEO_Home.url, /* (Obligatoire) URL de la page */
+        "@context": dataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
+        "@type": dataSEORoot["@type"].HomePage, /* (Obligatoire) Type de la donnée */
+        "@id": dataSEO_Home.id_Service,
+        "name": dataSEORoot.name, /* (Obligatoire) Nom de l'entreprise */
+        "url": dataSEO_Home.url, /* (Obligatoire) URL de la page */
         "about": {
-            "@type": DataSEORoot["@type"].Local,
-            "name": DataSEO_Home.name_HomePage, /* (Obligatoire) Nom de la page d'accueil */
+            "@type": dataSEORoot["@type"].Local,
+            "name": dataSEO_Home.name_HomePage, /* (Obligatoire) Nom de la page d'accueil */
         },
-        "image": DataSEO_Home.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
-        "description": DataSEO_Home.description,
+        "image": dataSEO_Home.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
+        "description": dataSEO_Home.description,
         "provider": {
             "@type": "LocalBusiness",
-            "@id": DataSEORoot.id_LocalBusiness,
-            "name": DataSEORoot.name,
+            "@id": dataSEORoot.id_LocalBusiness,
+            "name": dataSEORoot.name,
             "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "13 Allée des Platanes",
@@ -34,10 +36,10 @@ function JSON_LD_HomePage_Home_Schema_SEO() : string {
         },
         "publisher": {
             "@type": "Organization",
-            "name": DataSEORoot.name,
+            "name": dataSEORoot.name,
             "logo": {
             "@type": "ImageObject",
-            "url": DataSEORoot.logo,
+            "url": dataSEORoot.logo,
             "width": 200,
             "height": 200
             },
@@ -49,4 +51,4 @@ function JSON_LD_HomePage_Home_Schema_SEO() : string {
     )
 }
 
-export default JSON_LD_HomePage_Home_Schema_SEO;
+export { JSON_LD_HomePage_Home_schema_SEO };
