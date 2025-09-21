@@ -21,7 +21,7 @@ function HelmetBlog20250917_helmet_SEO() {
 
     const SEO: DataSEOHelmet_Type = {
         title: dataSEO_Blog_20250917.title,
-        autor: dataSEO_Blog_20250917.autor,
+        autor: dataSEO_Blog_20250917.author,
         description: dataSEO_Blog_20250917.description,
         url: dataSEO_Blog_20250917.url,
         img: dataSEO_Blog_20250917.img_Helmet,
