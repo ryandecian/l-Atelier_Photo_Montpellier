@@ -1,6 +1,6 @@
 import AlbumPortfolio from "../../../components/Public/PortfolioRoot/AlbumPortfolio";
 
-export default function generatePortfolioHasPartSEO() {
+function generatePortfolioHasPartSEO_Utils() {
   const baseUrl = import.meta.env.VITE_DOMAIN_CLIENT;
 
   const selectedImages = [
@@ -18,3 +18,5 @@ export default function generatePortfolioHasPartSEO() {
     contentUrl: `${baseUrl}${img.src}`,
   }));
 }
+
+export { generatePortfolioHasPartSEO_Utils };
