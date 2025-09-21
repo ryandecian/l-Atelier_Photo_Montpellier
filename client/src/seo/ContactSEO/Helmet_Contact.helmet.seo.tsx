@@ -16,19 +16,19 @@ import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
 import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
 function Helmet_Contact_helmet_SEO() {
-    const DataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const DataSEO_Contact: DataSEOTargetOne_Type = dataSEO_Contact_data_SEO(); /* Récupération des données SEO de la page */
+    const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
+    const dataSEO_Contact: DataSEOTargetOne_Type = dataSEO_Contact_data_SEO(); /* Récupération des données SEO de la page */
 
     const SEO: DataSEOHelmet_Type = {
-        title: DataSEO_Contact.title,
-        author: DataSEO_Contact.author,
-        description: DataSEO_Contact.description,
-        url: DataSEO_Contact.url,
-        img: DataSEO_Contact.img_Helmet,
-        twitterUrlImg: DataSEO_Contact.twitterUrlImg || DataSEO_Contact.img_Helmet, // fallback
-        twitterCompte: DataSEORoot.twitterCompte,
-        keywords: DataSEO_Contact.keywords,
-        type: DataSEO_Contact.type,
+        title: dataSEO_Contact.title,
+        author: dataSEO_Contact.author,
+        description: dataSEO_Contact.description,
+        url: dataSEO_Contact.url,
+        img: dataSEO_Contact.img_Helmet,
+        twitterUrlImg: dataSEO_Contact.twitterUrlImg || dataSEO_Contact.img_Helmet, // fallback
+        twitterCompte: dataSEORoot.twitterCompte,
+        keywords: dataSEO_Contact.keywords,
+        type: dataSEO_Contact.type,
     };
 
     const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
