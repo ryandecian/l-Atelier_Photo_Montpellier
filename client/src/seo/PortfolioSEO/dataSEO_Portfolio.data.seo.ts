@@ -8,7 +8,7 @@ function dataSEO_Portfolio_data_SEO(): DataSEOTargetOne_Type {
     const dataSEO = {
         /* Data Helmet */
         title: "Portfolio - l'Atelier Photo Montpellier",
-        autor: "Anne SAUNIER",
+        author: "Anne SAUNIER",
         description: "Découvrez mon univers en images : une sélection de portraits et instants capturés avec passion, entre émotion, lumière et authenticité.",
         url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[8].path}`, /*URL de la page*/
         position: 2, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
