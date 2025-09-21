@@ -8,7 +8,7 @@ function dataSEO_PortraitDuo_data_SEO(): DataSEOTargetOne_Type {
     const dataSEO = {
         /* Data Helmet */
         title: "Portrait Duo - l'Atelier Photo Montpellier",
-        autor: "Anne SAUNIER",
+        author: "Anne SAUNIER",
         description: "Un lien unique, deux âmes en harmonie. Laissez parler vos émotions à travers un portrait duo ou couple plein de sincérité.",
         url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[15].path}`, /*URL de la page*/
         position: 3, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
@@ -52,4 +52,4 @@ function dataSEO_PortraitDuo_data_SEO(): DataSEOTargetOne_Type {
     )
 }
 
-export default dataSEO_PortraitDuo_data_SEO;
+export { dataSEO_PortraitDuo_data_SEO };
