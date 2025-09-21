@@ -8,7 +8,7 @@ function dataSEO_Contact_data_SEO(): DataSEOTargetOne_Type {
     const dataSEO = {
         /* Data Helmet */
         title: "Contact - l'Atelier Photo Montpellier",
-        autor: "Anne SAUNIER",
+        author: "Anne SAUNIER",
         description: "Une idée, un projet photo ? Contactez Anne SAUNIER par téléphone ou email. À l’Atelier Photo Montpellier, chaque demande est traitée avec attention et réactivité.",
         url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[3].path}`, /*URL de la page*/
         position: 2, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
