@@ -8,7 +8,7 @@ function dataSEO_Home_data_SEO(): DataSEOTargetOne_Type {
     const dataSEO = {
         /* Data Helmet */
         title: "Accueil - l'Atelier Photo Montpellier",
-        autor: "Anne SAUNIER",
+        author: "Anne SAUNIER",
         description: "Photographe professionnelle à Montpellier, Anne SAUNIER vous accueille à l’Atelier Photo Montpellier pour des portraits vrais, élégants et lumineux.",
         url: `${import.meta.env.VITE_DOMAIN_CLIENT}`, /*URL de la page*/
         position: 1, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
