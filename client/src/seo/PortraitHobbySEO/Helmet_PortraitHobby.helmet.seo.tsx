@@ -1,31 +1,34 @@
+/* Import des composants React */
 import { Helmet } from "react-helmet-async";
-import DataSEOHelmetType from "../../types/seo/dataSEOHelmet.type";
 
+/* Import des Components */
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
-import DataSEO_PortraitHobbys from "./dataSEO_PortraitHobby.data.seo";
+import { dataSEO_PortraitHobby_data_SEO } from "./dataSEO_PortraitHobby.data.seo";
 
-import DataSEORootType from "../../types/seo/dataSEORoot.type";
-import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
-
+/* Import des JSON_LD */
 import { JSON_LD_LocalBusiness_Root_schema_SEO } from "../JSON-LD_LocalBusiness_Root.schema.seo";
-import JSON_LD_Service_PortraitHobby_Schema_SEO from "./JSON-LD_Service_PortraitHobby.schema.seo";
-import JSON_LD_Breadcrumb_PortraitHobby_Schema_SEO from "./JSON-LD_Breadcrumb_PortraitHobby.schema.seo";
+import { JSON_LD_Breadcrumb_PortraitHobby_schema_SEO } from "./JSON-LD_Breadcrumb_PortraitHobby.schema.seo";
+import { JSON_LD_Service_PortraitHobby_schema_SEO } from "./JSON-LD_Service_PortraitHobby.schema.seo";
 
+/* Import des Types */
+import { DataSEOHelmet_Type } from "../../types/seo/dataSEOHelmet.type";
+import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
+import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
-function Helmet_PortraitHobby_SEO() {
-    const DataSEORoot: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const DataSEO_PortraitHobby: DataSEOTargetOneType = DataSEO_PortraitHobbys(); /* Récupération des données SEO de la page */
+function Helmet_PortraitHobby_helmet_SEO() {
+    const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
+    const dataSEO_PortraitHobby: DataSEOTargetOne_Type = dataSEO_PortraitHobby_data_SEO(); /* Récupération des données SEO de la page */
 
-    const SEO: DataSEOHelmetType = {
-        title: DataSEO_PortraitHobby.title,
-        autor: DataSEO_PortraitHobby.autor,
-        description: DataSEO_PortraitHobby.description,
-        url: DataSEO_PortraitHobby.url,
-        img: DataSEO_PortraitHobby.img_Helmet,
-        twitterUrlImg: DataSEO_PortraitHobby.twitterUrlImg || DataSEO_PortraitHobby.img_Helmet, // fallback
-        twitterCompte: DataSEORoot.twitterCompte,
-        keywords: DataSEO_PortraitHobby.keywords,
-        type: DataSEO_PortraitHobby.type,
+    const SEO: DataSEOHelmet_Type = {
+        title: dataSEO_PortraitHobby.title,
+        author: dataSEO_PortraitHobby.author,
+        description: dataSEO_PortraitHobby.description,
+        url: dataSEO_PortraitHobby.url,
+        img: dataSEO_PortraitHobby.img_Helmet,
+        twitterUrlImg: dataSEO_PortraitHobby.twitterUrlImg || dataSEO_PortraitHobby.img_Helmet, // fallback
+        twitterCompte: dataSEORoot.twitterCompte,
+        keywords: dataSEO_PortraitHobby.keywords,
+        type: dataSEO_PortraitHobby.type,
     };
 
     const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
@@ -37,10 +40,10 @@ function Helmet_PortraitHobby_SEO() {
                 {JSON_LD_LocalBusiness_Root_schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_Service_PortraitHobby_Schema_SEO()}
+                {JSON_LD_Service_PortraitHobby_schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_Breadcrumb_PortraitHobby_Schema_SEO()}
+                {JSON_LD_Breadcrumb_PortraitHobby_schema_SEO()}
             </script>
 
             {/* Langue principale du document */}
@@ -51,7 +54,7 @@ function Helmet_PortraitHobby_SEO() {
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <meta name="description" content={SEO.description} />
-            <meta name="author" content={SEO.autor} />
+            <meta name="author" content={SEO.author} />
             {filterKeywords && <meta name="keywords" content={filterKeywords} />}
 
             {/* SEO pour les moteurs de recherche */}
@@ -78,4 +81,4 @@ function Helmet_PortraitHobby_SEO() {
     );
 }
 
-export default Helmet_PortraitHobby_SEO;
+export { Helmet_PortraitHobby_helmet_SEO };
