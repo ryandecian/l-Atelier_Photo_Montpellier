@@ -1,26 +1,28 @@
+/* Import des Components */
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
-import DataSEORootType from "../../types/seo/dataSEORoot.type";
+import { dataSEO_PortraitLifeStyle_data_SEO } from "./dataSEO_PortraitLifeStyle.data.seo";
 
-import DataSEO_PortraitLifeStyles from "./dataSEO_PortraitLifeStyle.data.seo";
-import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
+/* Import des Types */
+import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
+import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
-function JSON_LD_Breadcrumb_PortraitLifeStyle_Schema_SEO() : string {
-    const DataSEORoot: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const DataSEO_PortraitLifeStyle: DataSEOTargetOneType = DataSEO_PortraitLifeStyles(); /* Récupération des données SEO de la page */
+function JSON_LD_Breadcrumb_PortraitLifeStyle_schema_SEO() : string {
+    const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
+    const dataSEO_PortraitLifeStyle: DataSEOTargetOne_Type = dataSEO_PortraitLifeStyle_data_SEO(); /* Récupération des données SEO de la page */
 
     const JSON_LD = JSON.stringify({
-        "@context": DataSEORoot["@context"],
-        "@type": DataSEORoot["@type"].BreadcrumbList,
+        "@context": dataSEORoot["@context"],
+        "@type": dataSEORoot["@type"].BreadcrumbList,
         "itemListElement": [
             {
                 "@type": "ListItem",
-                "position": DataSEO_PortraitLifeStyle.position,
-                "name": DataSEO_PortraitLifeStyle.name_Breadcrumb, /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait LifeStyle */
+                "position": dataSEO_PortraitLifeStyle.position,
+                "name": dataSEO_PortraitLifeStyle.name_Breadcrumb, /* Le libellé du lien dans le fil d’Ariane. Exemple : Portfolio ou Portrait LifeStyle */
                 "item": {
-                    "@type": DataSEORoot["@type"].WebPage,
-                    "@id": DataSEO_PortraitLifeStyle.id_Service,
-                    "url": DataSEO_PortraitLifeStyle.url,
-                    "name": DataSEO_PortraitLifeStyle.name_Breadcrumb
+                    "@type": dataSEORoot["@type"].WebPage,
+                    "@id": dataSEO_PortraitLifeStyle.id_Service,
+                    "url": dataSEO_PortraitLifeStyle.url,
+                    "name": dataSEO_PortraitLifeStyle.name_Breadcrumb
                 }
             },
         ],
@@ -31,4 +33,4 @@ function JSON_LD_Breadcrumb_PortraitLifeStyle_Schema_SEO() : string {
     )
 }
 
-export default JSON_LD_Breadcrumb_PortraitLifeStyle_Schema_SEO;
+export { JSON_LD_Breadcrumb_PortraitLifeStyle_schema_SEO };
