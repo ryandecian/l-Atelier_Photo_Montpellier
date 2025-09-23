@@ -1,31 +1,34 @@
+/* Import des composants React */
 import { Helmet } from "react-helmet-async";
-import DataSEOHelmetType from "../../types/seo/dataSEOHelmet.type";
 
+/* Import des Components */
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
-import DataSEO_PortraitMariages from "./dataSEO_PortraitMariage.data.seo";
+import { dataSEO_PortraitMariage_data_SEO } from "./dataSEO_PortraitMariage.data.seo";
 
-import DataSEORootType from "../../types/seo/dataSEORoot.type";
-import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
-
+/* Import des JSON_LD */
 import { JSON_LD_LocalBusiness_Root_schema_SEO } from "../JSON-LD_LocalBusiness_Root.schema.seo";
-import JSON_LD_Service_PortraitMariage_Schema_SEO from "./JSON-LD_Service_PortraitMariage.schema.seo";
-import JSON_LD_Breadcrumb_PortraitMariage_Schema_SEO from "./JSON-LD_Breadcrumb_PortraitMariage.schema.seo";
+import { JSON_LD_Breadcrumb_PortraitMariage_schema_SEO } from "./JSON-LD_Breadcrumb_PortraitMariage.schema.seo";
+import { JSON_LD_Service_PortraitMariage_schema_SEO } from "./JSON-LD_Service_PortraitMariage.schema.seo";
 
+/* Import des Types */
+import { DataSEOHelmet_Type } from "../../types/seo/dataSEOHelmet.type";
+import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
+import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
-function Helmet_PortraitMariage_SEO() {
-    const DataSEORoot: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const DataSEO_PortraitMariage: DataSEOTargetOneType = DataSEO_PortraitMariages(); /* Récupération des données SEO de la page */
+function Helmet_PortraitMariage_helmet_SEO() {
+    const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
+    const dataSEO_PortraitMariage: DataSEOTargetOne_Type = dataSEO_PortraitMariage_data_SEO(); /* Récupération des données SEO de la page */
 
-    const SEO: DataSEOHelmetType = {
-        title: DataSEO_PortraitMariage.title,
-        autor: DataSEO_PortraitMariage.autor,
-        description: DataSEO_PortraitMariage.description,
-        url: DataSEO_PortraitMariage.url,
-        img: DataSEO_PortraitMariage.img_Helmet,
-        twitterUrlImg: DataSEO_PortraitMariage.twitterUrlImg || DataSEO_PortraitMariage.img_Helmet, // fallback
-        twitterCompte: DataSEORoot.twitterCompte,
-        keywords: DataSEO_PortraitMariage.keywords,
-        type: DataSEO_PortraitMariage.type,
+    const SEO: DataSEOHelmet_Type = {
+        title: dataSEO_PortraitMariage.title,
+        author: dataSEO_PortraitMariage.author,
+        description: dataSEO_PortraitMariage.description,
+        url: dataSEO_PortraitMariage.url,
+        img: dataSEO_PortraitMariage.img_Helmet,
+        twitterUrlImg: dataSEO_PortraitMariage.twitterUrlImg || dataSEO_PortraitMariage.img_Helmet, // fallback
+        twitterCompte: dataSEORoot.twitterCompte,
+        keywords: dataSEO_PortraitMariage.keywords,
+        type: dataSEO_PortraitMariage.type,
     };
 
     const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
@@ -37,10 +40,10 @@ function Helmet_PortraitMariage_SEO() {
                 {JSON_LD_LocalBusiness_Root_schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_Service_PortraitMariage_Schema_SEO()}
+                {JSON_LD_Service_PortraitMariage_schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_Breadcrumb_PortraitMariage_Schema_SEO()}
+                {JSON_LD_Breadcrumb_PortraitMariage_schema_SEO()}
             </script>
 
             {/* Langue principale du document */}
@@ -51,7 +54,7 @@ function Helmet_PortraitMariage_SEO() {
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <meta name="description" content={SEO.description} />
-            <meta name="author" content={SEO.autor} />
+            <meta name="author" content={SEO.author} />
             {filterKeywords && <meta name="keywords" content={filterKeywords} />}
 
             {/* SEO pour les moteurs de recherche */}
@@ -78,4 +81,4 @@ function Helmet_PortraitMariage_SEO() {
     );
 }
 
-export default Helmet_PortraitMariage_SEO;
+export { Helmet_PortraitMariage_helmet_SEO };
