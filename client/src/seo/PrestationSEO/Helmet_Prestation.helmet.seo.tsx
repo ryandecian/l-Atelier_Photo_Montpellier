@@ -1,16 +1,17 @@
+/* Import des composants React */
 import { Helmet } from "react-helmet-async";
-import DataSEOHelmetType from "../../types/seo/dataSEOHelmet.type";
 
+/* Import des Components */
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
-import DataSEO_Prestations from "./dataSEO_Prestation.data.seo";
+import { dataSEO_Prestation_data_SEO } from "./dataSEO_Prestation.data.seo";
 
-import DataSEORootType from "../../types/seo/dataSEORoot.type";
-import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
-
+/* Import des JSON_LD */
 import { JSON_LD_LocalBusiness_Root_schema_SEO } from "../JSON-LD_LocalBusiness_Root.schema.seo";
-import JSON_LD_ItemList_Prestation_Schema_SEO from "./JSON-LD_ItemList_Prestation.schema.seo";
-import JSON_LD_Breadcrumb_Prestation_Schema_SEO from "./JSON-LD_Breadcrumb_Prestation.schema.seo";
 
+/* Import des Types */
+import { DataSEOHelmet_Type } from "../../types/seo/dataSEOHelmet.type";
+import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
+import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
 function Helmet_Prestation_SEO() {
     const DataSEORoot: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
