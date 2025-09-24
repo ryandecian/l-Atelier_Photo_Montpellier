@@ -1,31 +1,34 @@
+/* Import des composants React */
 import { Helmet } from "react-helmet-async";
-import DataSEOHelmetType from "../../types/seo/dataSEOHelmet.type";
 
+/* Import des Components */
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
-import DataSEO_PortraitSolos from "./dataSEO_PortraitSolo.data.seo";
+import { dataSEO_PortraitSolo_data_SEO } from "./dataSEO_PortraitSolo.data.seo";
 
-import DataSEORootType from "../../types/seo/dataSEORoot.type";
-import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
-
+/* Import des JSON_LD */
 import { JSON_LD_LocalBusiness_Root_schema_SEO } from "../JSON-LD_LocalBusiness_Root.schema.seo";
-import JSON_LD_Service_PortraitSolo_Schema_SEO from "./JSON-LD_Service_PortraitSolo.schema.seo";
-import JSON_LD_Breadcrumb_PortraitSolo_Schema_SEO from "./JSON-LD_Breadcrumb_PortraitSolo.schema.seo";
+import { JSON_LD_Breadcrumb_PortraitSolo_schema_SEO } from "./JSON-LD_Breadcrumb_PortraitSolo.schema.seo";
+import { JSON_LD_Service_PortraitSolo_schema_SEO } from "./JSON-LD_Service_PortraitSolo.schema.seo";
 
+/* Import des Types */
+import { DataSEOHelmet_Type } from "../../types/seo/dataSEOHelmet.type";
+import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
+import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
-function Helmet_PortraitSolo_SEO() {
-    const DataSEORoot: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const DataSEO_PortraitSolo: DataSEOTargetOneType = DataSEO_PortraitSolos(); /* Récupération des données SEO de la page */
+function Helmet_PortraitSolo_helmet_SEO() {
+    const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
+    const dataSEO_PortraitSolo: DataSEOTargetOne_Type = dataSEO_PortraitSolo_data_SEO(); /* Récupération des données SEO de la page */
 
-    const SEO: DataSEOHelmetType = {
-        title: DataSEO_PortraitSolo.title,
-        autor: DataSEO_PortraitSolo.autor,
-        description: DataSEO_PortraitSolo.description,
-        url: DataSEO_PortraitSolo.url,
-        img: DataSEO_PortraitSolo.img_Helmet,
-        twitterUrlImg: DataSEO_PortraitSolo.twitterUrlImg || DataSEO_PortraitSolo.img_Helmet, // fallback
-        twitterCompte: DataSEORoot.twitterCompte,
-        keywords: DataSEO_PortraitSolo.keywords,
-        type: DataSEO_PortraitSolo.type,
+    const SEO: DataSEOHelmet_Type = {
+        title: dataSEO_PortraitSolo.title,
+        author: dataSEO_PortraitSolo.author,
+        description: dataSEO_PortraitSolo.description,
+        url: dataSEO_PortraitSolo.url,
+        img: dataSEO_PortraitSolo.img_Helmet,
+        twitterUrlImg: dataSEO_PortraitSolo.twitterUrlImg || dataSEO_PortraitSolo.img_Helmet, // fallback
+        twitterCompte: dataSEORoot.twitterCompte,
+        keywords: dataSEO_PortraitSolo.keywords,
+        type: dataSEO_PortraitSolo.type,
     };
 
     const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
@@ -37,10 +40,10 @@ function Helmet_PortraitSolo_SEO() {
                 {JSON_LD_LocalBusiness_Root_schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_Service_PortraitSolo_Schema_SEO()}
+                {JSON_LD_Service_PortraitSolo_schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_Breadcrumb_PortraitSolo_Schema_SEO()}
+                {JSON_LD_Breadcrumb_PortraitSolo_schema_SEO()}
             </script>
 
             {/* Langue principale du document */}
@@ -51,7 +54,7 @@ function Helmet_PortraitSolo_SEO() {
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <meta name="description" content={SEO.description} />
-            <meta name="author" content={SEO.autor} />
+            <meta name="author" content={SEO.author} />
             {filterKeywords && <meta name="keywords" content={filterKeywords} />}
 
             {/* SEO pour les moteurs de recherche */}
@@ -78,4 +81,4 @@ function Helmet_PortraitSolo_SEO() {
     );
 }
 
-export default Helmet_PortraitSolo_SEO;
+export { Helmet_PortraitSolo_helmet_SEO };
