@@ -8,7 +8,7 @@ function dataSEO_PortraitSolo_data_SEO(): DataSEOTargetOne_Type {
     const dataSEO = {
         /* Data Helmet */
         title: "Service Portrait Solo - l'Atelier Photo Montpellier",
-        autor: "Anne SAUNIER",
+        author: "Anne SAUNIER",
         description: "Portrait Solo à Montpellier – Une séance photo pour se recentrer, se révéler et se faire du bien. Un regard bienveillant par Anne SAUNIER, photographe professionnelle.",
         url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[14].path}`, /*URL de la page*/
         position: 3, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
