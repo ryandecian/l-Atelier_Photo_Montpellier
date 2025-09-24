@@ -1,24 +1,25 @@
+/* Import des Components */
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
-import DataSEORootType from "../../types/seo/dataSEORoot.type";
-
-import DataSEO_Prestations from "./dataSEO_Prestation.data.seo";
-import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
-
+import { dataSEO_Prestation_data_SEO } from "./dataSEO_Prestation.data.seo";
 import DataCardPrestations from "../../components/Public/PrestationRoot/DataCardPrestationRoot";
 
-function JSON_LD_ItemList_Prestation_Schema_SEO() {
-    const DataSEORoot: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const DataSEO_Prestation: DataSEOTargetOneType = DataSEO_Prestations(); /* Récupération des données SEO de la page */
-    const DataCardPrestation = DataCardPrestations(); /* Récupération des données des cartes de prestation */
+/* Import des Types */
+import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
+import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
+
+function JSON_LD_ItemList_Prestation_schema_SEO() {
+    const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
+    const dataSEO_Prestation: DataSEOTargetOne_Type = dataSEO_Prestation_data_SEO(); /* Récupération des données SEO de la page */
+    const dataCardPrestation = DataCardPrestations(); /* Récupération des données des cartes de prestation */
 
     const JSON_LD = JSON.stringify({
-        "@context": DataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
-        "@type": DataSEORoot["@type"].ItemList, /* (Obligatoire) Type de la donnée */
-        "name": DataSEO_Prestation.name_Service, /* (Obligatoire) Nom du service */
-        "description": DataSEO_Prestation.description, /* (Obligatoire) Description du service */
-        "url": DataSEO_Prestation.url, /* (Obligatoire) URL de la page */
-        "numberOfItems": DataCardPrestation.length, /* Nombre total d'éléments dans la liste : max 100, sinon ignoré */
-        "itemListElement": DataCardPrestation.map((prestation, index) => ({
+        "@context": dataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
+        "@type": dataSEORoot["@type"].ItemList, /* (Obligatoire) Type de la donnée */
+        "name": dataSEO_Prestation.name_Service, /* (Obligatoire) Nom du service */
+        "description": dataSEO_Prestation.description, /* (Obligatoire) Description du service */
+        "url": dataSEO_Prestation.url, /* (Obligatoire) URL de la page */
+        "numberOfItems": dataCardPrestation.length, /* Nombre total d'éléments dans la liste : max 100, sinon ignoré */
+        "itemListElement": dataCardPrestation.map((prestation, index) => ({
             "@type": "ListItem",
             "position": index + 1,
             "name": prestation.title,
@@ -33,4 +34,4 @@ function JSON_LD_ItemList_Prestation_Schema_SEO() {
     )
 }
 
-export default JSON_LD_ItemList_Prestation_Schema_SEO;
+export { JSON_LD_ItemList_Prestation_schema_SEO };
