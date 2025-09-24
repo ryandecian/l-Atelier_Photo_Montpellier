@@ -8,7 +8,7 @@ function dataSEO_QuiSuisJe_data_SEO(): DataSEOTargetOne_Type {
     const dataSEO = {
         /* Data Helmet */
         title: "Qui suis-je – Anne SAUNIER, photographe professionnelle - l'Atelier Photo Montpellier",
-        autor: "Anne SAUNIER",
+        author: "Anne SAUNIER",
         description: "Découvrez le parcours d'Anne SAUNIER, photographe passionnée à Montpellier, entre argentique et numérique, portraits et reportages de mariage.",
         url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[7].path}`, /*URL de la page*/
         position: 2, /* Clé pour Breadcrumb : Position UX de la page lors de la navigation dans le site */
