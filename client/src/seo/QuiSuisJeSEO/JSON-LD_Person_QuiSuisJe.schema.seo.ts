@@ -1,27 +1,29 @@
+/* Import des Components */
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
-import DataSEORootType from "../../types/seo/dataSEORoot.type";
+import { dataSEO_QuiSuisJe_data_SEO } from "./dataSEO_QuiSuisJe.data.seo";
 
-import DataSEO_QuiSuisJes from "./dataSEO_QuiSuisJe.data.seo";
-import DataSEOTargetOneType from "../../types/seo/dataSEOTargetOne.type";
+/* Import des Types */
+import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
+import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
-function JSON_LD_Person_QuiSuisJe_Schema_SEO() {
-    const DataSEORoot: DataSEORootType = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const DataSEO_QuiSuisJe: DataSEOTargetOneType = DataSEO_QuiSuisJes(); /* Récupération des données SEO de la page */
-    
+function JSON_LD_Person_QuiSuisJe_schema_SEO() {
+    const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
+    const dataSEO_QuiSuisJe: DataSEOTargetOne_Type = dataSEO_QuiSuisJe_data_SEO(); /* Récupération des données SEO de la page */
+
     const JSON_LD = JSON.stringify({
-        "@context": DataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
-        "@type": DataSEORoot["@type"].Person, /* (Obligatoire) Type de la donnée */
-        "name": DataSEO_QuiSuisJe.autor, /* (Obligatoire) Nom de la personne */
+        "@context": dataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
+        "@type": dataSEORoot["@type"].Person, /* (Obligatoire) Type de la donnée */
+        "name": dataSEO_QuiSuisJe.author, /* (Obligatoire) Nom de la personne */
         "alternateName": "Photographe Anne SAUNIER",
-        "description": DataSEO_QuiSuisJe.description, /* (Obligatoire) Description de la personne */
-        "image": DataSEO_QuiSuisJe.img_JSON_LD, /* (Obligatoire) Lien URL de l'image */
+        "description": dataSEO_QuiSuisJe.description, /* (Obligatoire) Description de la personne */
+        "image": dataSEO_QuiSuisJe.img_JSON_LD, /* (Obligatoire) Lien URL de l'image */
         "jobTitle": "Photographe professionnelle",
         "gender": "Female",
-        "worksFor": DataSEORoot.worksFor, /* Indique de la personne est liée à cette activité */
-        "alumniOf": DataSEORoot.alumniOf, /* Établissement d'enseignement supérieur où l'auteur a étudié */
-        "knowsAbout": DataSEORoot.knowsAbout, /* Liste des domaines de compétence de la personne */
-        "sameAs": DataSEORoot.sameAs, /* Liste des profils sociaux de la personne */
-        "url": DataSEO_QuiSuisJe.url, /* (Obligatoire) Lien URL de la page */
+        "worksFor": dataSEORoot.worksFor, /* Indique de la personne est liée à cette activité */
+        "alumniOf": dataSEORoot.alumniOf, /* Établissement d'enseignement supérieur où l'auteur a étudié */
+        "knowsAbout": dataSEORoot.knowsAbout, /* Liste des domaines de compétence de la personne */
+        "sameAs": dataSEORoot.sameAs, /* Liste des profils sociaux de la personne */
+        "url": dataSEO_QuiSuisJe.url, /* (Obligatoire) Lien URL de la page */
     })
 
     return (
@@ -29,4 +31,4 @@ function JSON_LD_Person_QuiSuisJe_Schema_SEO() {
     )
 }
 
-export default JSON_LD_Person_QuiSuisJe_Schema_SEO;
+export { JSON_LD_Person_QuiSuisJe_schema_SEO };
