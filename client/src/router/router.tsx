@@ -17,7 +17,7 @@ import UserGestionAlbumPage from "../pages/Private/Users/UserGestionAlbumPage/Us
 import blogRouter from "./blogRouter";
 import CGVPage from "../pages/Public/CGVPage/CGV.page";
 import ContactPage from "../pages/Public/ContactPage/Contact.page";
-import Error404 from "../pages/Public/Error404Page/Error404Page";
+import Error404 from "../pages/Public/Error404Page/Error404.page";
 import HomePage from "../pages/Public/HomePage/HomePage";
 import LoginPage from "../pages/Public/LoginPage/LoginPage";
 import MentionsLegalesPage from "../pages/Public/MentionsLegalesPage/MentionsLegalesPage";
