@@ -1,6 +1,6 @@
 /* Import des Components */
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
-import { dataSEO_PortraitFamille_data_SEO } from "./dataSEOPortraitFamille.data.seo";
+import { dataSEO_PortraitFamille_data_SEO } from "./dataSEO_PortraitFamille.data.seo";
 
 /* Import des Types */
 import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
