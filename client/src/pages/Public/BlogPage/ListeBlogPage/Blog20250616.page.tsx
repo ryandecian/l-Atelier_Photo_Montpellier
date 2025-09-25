@@ -12,11 +12,11 @@ import { HelmetBlog20250616_helmet_SEO } from "../../../../seo/blog_SEO/liste-ar
 /* Import des Hooks */
 import useScrollToHash_utils_Hook from "../../../../hook/useScrollToHash";
 
-function Blog_20250616_Page() {
+function Blog20250616_Page() {
     useScrollToHash_utils_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
 
      return (
-        <section className={`Blog_20260616_Page ${style.Page}`}>
+        <section className={`Blog20250616_Page ${style.Page}`}>
             <HelmetBlog20250616_helmet_SEO />
             <header id="top" className={style.Header}>
                  <NavRoot />
@@ -31,4 +31,4 @@ function Blog_20250616_Page() {
     )
 }
 
-export default Blog_20250616_Page;
+export default Blog20250616_Page;
