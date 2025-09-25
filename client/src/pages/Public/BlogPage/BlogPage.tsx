@@ -2,7 +2,7 @@ import style from "../../stylePage.module.css";
 import NavRoot from "../../../components/layout/NavRoot/NavRoot";
 import Blog_Root from "../../../components/Public/BlogRoot/Blog.root";
 import Footer from "../../../components/layout/footer/Footer.layout";
-import Helmet_Blog_SEO from "../../../seo/blog_SEO/Helmet_Blog.helmet.seo";
+import Helmet_Blog_SEO from "../../../seo/blog_SEO/HelmetBlog.helmet.seo";
 import useScrollToHash from "../../../hook/useScrollToHash";
 
 function BlogPage() {
