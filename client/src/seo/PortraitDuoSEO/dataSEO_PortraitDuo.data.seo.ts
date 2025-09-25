@@ -4,7 +4,7 @@ import ListDataRouter from "../../router/router";
 /* Import des Types */
 import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
-function dataSEOPortraitDuo_data_SEO(): DataSEOTargetOne_Type {
+function dataSEO_PortraitDuo_data_SEO(): DataSEOTargetOne_Type {
     const dataSEO = {
         /* Data Helmet */
         title: "Portrait Duo - l'Atelier Photo Montpellier",
@@ -52,4 +52,4 @@ function dataSEOPortraitDuo_data_SEO(): DataSEOTargetOne_Type {
     )
 }
 
-export { dataSEOPortraitDuo_data_SEO };
+export { dataSEO_PortraitDuo_data_SEO };
