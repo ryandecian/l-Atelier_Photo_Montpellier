@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 
 /* Import des Components */
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
-import { dataSEO_PortraitDuo_data_SEO } from "./dataSEO_PortraitDuo.data.seo";
+import { dataSEO_PortraitDuo_data_SEO } from "./dataSEOPortraitDuo.data.seo";
 
 /* Import des JSON_LD */
 import { JSON_LD_LocalBusiness_Root_schema_SEO } from "../JSON-LD_LocalBusiness_Root.schema.seo";
