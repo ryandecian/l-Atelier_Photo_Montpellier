@@ -2,7 +2,7 @@ import style from "../../stylePage.module.css";
 import NavRoot from "../../../components/layout/NavRoot/NavRoot";
 import CGVRoot from "../../../components/Public/CGVRoot/CGVRoot";
 import Footer from "../../../components/layout/footer/Footer.layout";
-import Helmet_CGV_SEO from "../../../seo/CGVSEO/Helmet_CGV.helmet.seo";
+import Helmet_CGV_SEO from "../../../seo/CGVSEO/HelmetCGV.helmet.seo";
 import useScrollToHash from "../../../hook/useScrollToHash";
 
 function CGVPage() {

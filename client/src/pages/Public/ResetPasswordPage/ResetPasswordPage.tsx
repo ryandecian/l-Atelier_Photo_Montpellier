@@ -2,7 +2,7 @@ import style from "../../stylePage.module.css";
 import NavRoot from "../../../components/layout/NavRoot/NavRoot";
 import ResetPasswordRoot from "../../../components/Public/ResetPasswordRoot/ResetPasswordRoot";
 import Footer from "../../../components/layout/footer/Footer.layout";
-import Helmet_QuiSuisJe_SEO from "../../../seo/QuiSuisJeSEO/Helmet_QuiSuisJe.helmet.seo";
+import Helmet_QuiSuisJe_SEO from "../../../seo/QuiSuisJeSEO/HelmetQuiSuisJe.helmet.seo";
 import useScrollToHash from "../../../hook/useScrollToHash";
 
 function ResetPasswordPage() {

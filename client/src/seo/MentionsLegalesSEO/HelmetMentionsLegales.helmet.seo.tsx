@@ -3,33 +3,32 @@ import { Helmet } from "react-helmet-async";
 
 /* Import des Components */
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
-import { dataSEO_Portfolio_data_SEO } from "./dataSEO_Portfolio.data.seo";
+import { dataSEO_MentionsLegales_data_SEO } from "./dataSEO_MentionsLegales.data.seo";
 
 /* Import des JSON_LD */
 import { JSON_LD_LocalBusiness_Root_schema_SEO } from "../JSON-LD_LocalBusiness_Root.schema.seo";
-import { JSON_LD_Breadcrumb_Portfolio_schema_SEO } from "./JSON-LD_Breadcrumb_Portfolio.schema.seo";
-import { JSON_LD_Collection_Portfolio_schema_SEO } from "./JSON-LD_Collection_Portfolio.schema.seo";
-import { JSON_LD_ImageGallery_Portfolio_schema_SEO } from "./JSON-LD_ImageGallery_Portfolio.schema.seo";
+import { JSON_LD_Breadcrumb_MentionsLegales_schema_SEO } from "./JSON-LD_Breadcrumb_MentionsLegales.schema.seo";
+import { JSON_LD_WebPage_MentionsLegales_schema_SEO } from "./JSON-LD_WebPage_MentionsLegales.schema.seo";
 
 /* Import des Types */
 import { DataSEOHelmet_Type } from "../../types/seo/dataSEOHelmet.type";
 import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
 import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
-function Helmet_Portfolio_helmet_SEO() {
+function HelmetMentionLegale_helmet_SEO() {
     const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const dataSEO_Portfolio: DataSEOTargetOne_Type = dataSEO_Portfolio_data_SEO(); /* Récupération des données SEO de la page */
+    const dataSEO_MentionLegale: DataSEOTargetOne_Type = dataSEO_MentionsLegales_data_SEO(); /* Récupération des données SEO de la page */
 
     const SEO: DataSEOHelmet_Type = {
-        title: dataSEO_Portfolio.title,
-        author: dataSEO_Portfolio.author,
-        description: dataSEO_Portfolio.description,
-        url: dataSEO_Portfolio.url,
-        img: dataSEO_Portfolio.img_Helmet,
-        twitterUrlImg: dataSEO_Portfolio.twitterUrlImg || dataSEO_Portfolio.img_Helmet, // fallback
+        title: dataSEO_MentionLegale.title,
+        author: dataSEO_MentionLegale.author,
+        description: dataSEO_MentionLegale.description,
+        url: dataSEO_MentionLegale.url,
+        img: dataSEO_MentionLegale.img_Helmet,
+        twitterUrlImg: dataSEO_MentionLegale.twitterUrlImg || dataSEO_MentionLegale.img_Helmet, // fallback
         twitterCompte: dataSEORoot.twitterCompte,
-        keywords: dataSEO_Portfolio.keywords,
-        type: dataSEO_Portfolio.type,
+        keywords: dataSEO_MentionLegale.keywords,
+        type: dataSEO_MentionLegale.type,
     };
 
     const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
@@ -41,13 +40,10 @@ function Helmet_Portfolio_helmet_SEO() {
                 {JSON_LD_LocalBusiness_Root_schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_Collection_Portfolio_schema_SEO()}
+                {JSON_LD_WebPage_MentionsLegales_schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_ImageGallery_Portfolio_schema_SEO()}
-            </script>
-            <script type="application/ld+json">
-                {JSON_LD_Breadcrumb_Portfolio_schema_SEO()}
+                {JSON_LD_Breadcrumb_MentionsLegales_schema_SEO()}
             </script>
 
             {/* Langue principale du document */}
@@ -85,4 +81,4 @@ function Helmet_Portfolio_helmet_SEO() {
     );
 }
 
-export { Helmet_Portfolio_helmet_SEO };
+export { HelmetMentionLegale_helmet_SEO };

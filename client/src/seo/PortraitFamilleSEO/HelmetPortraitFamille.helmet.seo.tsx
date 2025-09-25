@@ -3,32 +3,32 @@ import { Helmet } from "react-helmet-async";
 
 /* Import des Components */
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
-import { dataSEO_Contact_data_SEO } from "./dataSEO_Contact.data.seo";
+import { dataSEO_PortraitFamille_data_SEO } from "./dataSEO_PortraitFamille.data.seo";
 
 /* Import des JSON_LD */
 import { JSON_LD_LocalBusiness_Root_schema_SEO } from "../JSON-LD_LocalBusiness_Root.schema.seo";
-import { JSON_LD_Breadcrumb_Contact_schema_SEO } from "./JSON-LD_Breadcrumb_Contact.schema.seo";
-import { JSON_LD_ContactPage_Contact_schema_SEO } from "./JSON-LD_ContactPage_Contact.schema.seo";
+import { JSON_LD_Breadcrumb_PortraitFamille_schema_SEO } from "./JSON-LD_Breadcrumb_PortraitFamille.schema.seo";
+import { JSON_LD_Service_PortraitFamille_schema_SEO } from "./JSON-LD_Service_PortraitFamille.schema.seo";
 
 /* Import des Types */
 import { DataSEOHelmet_Type } from "../../types/seo/dataSEOHelmet.type";
 import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
 import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
-function Helmet_Contact_helmet_SEO() {
+function HelmetPortraitFamille_helmet_SEO() {
     const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const dataSEO_Contact: DataSEOTargetOne_Type = dataSEO_Contact_data_SEO(); /* Récupération des données SEO de la page */
+    const dataSEO_PortraitFamille: DataSEOTargetOne_Type = dataSEO_PortraitFamille_data_SEO(); /* Récupération des données SEO de la page */
 
     const SEO: DataSEOHelmet_Type = {
-        title: dataSEO_Contact.title,
-        author: dataSEO_Contact.author,
-        description: dataSEO_Contact.description,
-        url: dataSEO_Contact.url,
-        img: dataSEO_Contact.img_Helmet,
-        twitterUrlImg: dataSEO_Contact.twitterUrlImg || dataSEO_Contact.img_Helmet, // fallback
+        title: dataSEO_PortraitFamille.title,
+        author: dataSEO_PortraitFamille.author,
+        description: dataSEO_PortraitFamille.description,
+        url: dataSEO_PortraitFamille.url,
+        img: dataSEO_PortraitFamille.img_Helmet,
+        twitterUrlImg: dataSEO_PortraitFamille.twitterUrlImg || dataSEO_PortraitFamille.img_Helmet, // fallback
         twitterCompte: dataSEORoot.twitterCompte,
-        keywords: dataSEO_Contact.keywords,
-        type: dataSEO_Contact.type,
+        keywords: dataSEO_PortraitFamille.keywords,
+        type: dataSEO_PortraitFamille.type,
     };
 
     const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
@@ -40,10 +40,10 @@ function Helmet_Contact_helmet_SEO() {
                 {JSON_LD_LocalBusiness_Root_schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_ContactPage_Contact_schema_SEO()}
+                {JSON_LD_Service_PortraitFamille_schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_Breadcrumb_Contact_schema_SEO()}
+                {JSON_LD_Breadcrumb_PortraitFamille_schema_SEO()}
             </script>
 
             {/* Langue principale du document */}
@@ -81,4 +81,4 @@ function Helmet_Contact_helmet_SEO() {
     );
 }
 
-export { Helmet_Contact_helmet_SEO };
+export { HelmetPortraitFamille_helmet_SEO };

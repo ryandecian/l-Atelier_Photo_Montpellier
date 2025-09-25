@@ -3,32 +3,32 @@ import { Helmet } from "react-helmet-async";
 
 /* Import des Components */
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
-import { dataSEO_PortraitNouveauNe_data_SEO } from "./dataSEO_PortraitNouveauNe.data.seo";
+import { dataSEO_PortraitGrossesse_data_SEO } from "./dataSEO_PortraitGrossesse.data.seo";
 
 /* Import des JSON_LD */
 import { JSON_LD_LocalBusiness_Root_schema_SEO } from "../JSON-LD_LocalBusiness_Root.schema.seo";
-import { JSON_LD_Breadcrumb_PortraitNouveauNe_schema_SEO } from "./JSON-LD_Breadcrumb_PortraitGrossesse.schema.seo";
-import { JSON_LD_Service_PortraitNouveauNe_schema_SEO } from "./JSON-LD_Service_PortraitNouveauNe.schema.seo";
+import { JSON_LD_Breadcrumb_PortraitGrossesse_schema_SEO } from "./JSON-LD_Breadcrumb_PortraitGrossesse.schema.seo";
+import { JSON_LD_Service_PortraitGrossesse_schema_SEO } from "./JSON-LD_Service_PortraitGrossesse.schema.seo";
 
 /* Import des Types */
 import { DataSEOHelmet_Type } from "../../types/seo/dataSEOHelmet.type";
 import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
 import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
-function Helmet_PortraitNouveauNe_helmet_SEO() {
+function HelmetPortraitGrossesse_helmet_SEO() {
     const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const dataSEO_PortraitNouveauNe: DataSEOTargetOne_Type = dataSEO_PortraitNouveauNe_data_SEO(); /* Récupération des données SEO de la page */
+    const dataSEO_PortraitGrossesse: DataSEOTargetOne_Type = dataSEO_PortraitGrossesse_data_SEO(); /* Récupération des données SEO de la page */
 
     const SEO: DataSEOHelmet_Type = {
-        title: dataSEO_PortraitNouveauNe.title,
-        author: dataSEO_PortraitNouveauNe.author,
-        description: dataSEO_PortraitNouveauNe.description,
-        url: dataSEO_PortraitNouveauNe.url,
-        img: dataSEO_PortraitNouveauNe.img_Helmet,
-        twitterUrlImg: dataSEO_PortraitNouveauNe.twitterUrlImg || dataSEO_PortraitNouveauNe.img_Helmet, // fallback
+        title: dataSEO_PortraitGrossesse.title,
+        author: dataSEO_PortraitGrossesse.author,
+        description: dataSEO_PortraitGrossesse.description,
+        url: dataSEO_PortraitGrossesse.url,
+        img: dataSEO_PortraitGrossesse.img_Helmet,
+        twitterUrlImg: dataSEO_PortraitGrossesse.twitterUrlImg || dataSEO_PortraitGrossesse.img_Helmet, // fallback
         twitterCompte: dataSEORoot.twitterCompte,
-        keywords: dataSEO_PortraitNouveauNe.keywords,
-        type: dataSEO_PortraitNouveauNe.type,
+        keywords: dataSEO_PortraitGrossesse.keywords,
+        type: dataSEO_PortraitGrossesse.type,
     };
 
     const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
@@ -40,10 +40,10 @@ function Helmet_PortraitNouveauNe_helmet_SEO() {
                 {JSON_LD_LocalBusiness_Root_schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_Service_PortraitNouveauNe_schema_SEO()}
+                {JSON_LD_Service_PortraitGrossesse_schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_Breadcrumb_PortraitNouveauNe_schema_SEO()}
+                {JSON_LD_Breadcrumb_PortraitGrossesse_schema_SEO()}
             </script>
 
             {/* Langue principale du document */}
@@ -81,4 +81,4 @@ function Helmet_PortraitNouveauNe_helmet_SEO() {
     );
 }
 
-export { Helmet_PortraitNouveauNe_helmet_SEO };
+export { HelmetPortraitGrossesse_helmet_SEO };
