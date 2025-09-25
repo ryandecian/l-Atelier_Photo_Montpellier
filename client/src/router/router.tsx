@@ -15,7 +15,7 @@ import UserGestionAlbumPage from "../pages/Private/Users/UserGestionAlbumPage/Us
 
 /* Page Frontend public */
 import blogRouter from "./blogRouter";
-import CGVPage from "../pages/Public/CGVPage/CGVPage";
+import CGVPage from "../pages/Public/CGVPage/CGV.page";
 import ContactPage from "../pages/Public/ContactPage/ContactPage";
 import Error404 from "../pages/Public/Error404Page/Error404Page";
 import HomePage from "../pages/Public/HomePage/HomePage";
