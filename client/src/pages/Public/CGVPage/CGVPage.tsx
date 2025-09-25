@@ -1,16 +1,23 @@
-import style from "../../stylePage.module.css";
-import NavRoot from "../../../components/layout/NavRoot/NavRoot";
-import CGVRoot from "../../../components/Public/CGVRoot/CGVRoot";
-import Footer from "../../../components/layout/footer/Footer.layout";
-import Helmet_CGV_SEO from "../../../seo/CGVSEO/HelmetCGV.helmet.seo";
-import useScrollToHash from "../../../hook/useScrollToHash";
+/* Import des modules CSS */
+import style from "../../../stylePage.module.css";
 
-function CGVPage() {
-    useScrollToHash() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
+/* Import des Components */
+import CGVRoot from "../../../components/Public/CGVRoot/CGVRoot";
+import NavRoot from "../../../components/layout/NavRoot/NavRoot";
+import Footer_layout from "../../../components/layout/footer/Footer.layout";
+
+/* Import des composants SEO */
+import { HelmetCGV_helmet_SEO } from "../../../seo/CGVSEO/HelmetCGV.helmet.seo";
+
+/* Import des Hooks */
+import useScrollToHash_utils_Hook from "../../../hook/useScrollToHash";
+
+function CGV_Page() {
+    useScrollToHash_utils_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
 
     return (
-        <section className={`CGVPage ${style.Page}`}>
-            <Helmet_CGV_SEO />
+        <section className={`CGV_Page ${style.Page}`}>
+            <HelmetCGV_helmet_SEO />
             <header id="top" className={style.Header}>
                  <NavRoot />
             </header>
@@ -18,10 +25,10 @@ function CGVPage() {
                 <CGVRoot />
             </main>
             <footer className={style.Footer}>
-                <Footer />
+                <Footer_layout />
             </footer>
         </section>
     )
 }
 
-export default CGVPage;
+export default CGV_Page;
