@@ -15,7 +15,7 @@ import { DataSEOHelmet_Type } from "../../types/seo/dataSEOHelmet.type";
 import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
 import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
-function Helmet_PortraitGrossesse_helmet_SEO() {
+function HelmetPortraitGrossesse_helmet_SEO() {
     const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
     const dataSEO_PortraitGrossesse: DataSEOTargetOne_Type = dataSEO_PortraitGrossesse_data_SEO(); /* Récupération des données SEO de la page */
 
@@ -81,4 +81,4 @@ function Helmet_PortraitGrossesse_helmet_SEO() {
     );
 }
 
-export { Helmet_PortraitGrossesse_helmet_SEO };
+export { HelmetPortraitGrossesse_helmet_SEO };
