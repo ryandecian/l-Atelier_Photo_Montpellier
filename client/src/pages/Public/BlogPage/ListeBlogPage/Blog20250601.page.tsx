@@ -16,7 +16,7 @@ function Blog20250601_Page() {
     useScrollToHash_utils_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
 
      return (
-        <section className={`Blog_20250601_Page ${style.Page}`}>
+        <section className={`Blog20250601_Page ${style.Page}`}>
             <HelmetBlog20250601_helmet_SEO />
             <header id="top" className={style.Header}>
                  <NavRoot />
