@@ -12,7 +12,7 @@ import { HelmetBlog20250601_helmet_SEO } from "../../../../seo/blog_SEO/liste-ar
 /* Import des Hooks */
 import useScrollToHash_utils_Hook from "../../../../hook/useScrollToHash";
 
-function Blog_20250601_Page() {
+function Blog20250601_Page() {
     useScrollToHash_utils_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
 
      return (
@@ -31,4 +31,4 @@ function Blog_20250601_Page() {
     )
 }
 
-export default Blog_20250601_Page;
+export default Blog20250601_Page;
