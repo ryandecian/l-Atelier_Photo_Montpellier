@@ -16,7 +16,7 @@ function PortraitFamille_Page() {
     useScrollToHash_utils_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
 
     return (
-        <section className={`PortraitFamille ${style.Page}`}>
+        <section className={`PortraitFamille_Page ${style.Page}`}>
             <HelmetPortraitFamille_helmet_SEO />
             <header id="top" className={style.Header}>
                  <NavRoot />

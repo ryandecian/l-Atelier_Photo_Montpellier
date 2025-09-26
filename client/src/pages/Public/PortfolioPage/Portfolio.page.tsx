@@ -16,7 +16,7 @@ function Portfolio_Page() {
     useScrollToHash_utils_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
 
     return (
-        <section className={`Portfolio ${style.Page}`}>
+        <section className={`Portfolio_Page ${style.Page}`}>
             <HelmetPortfolio_helmet_SEO />
             <header id="top" className={style.Header}>
                  <NavRoot />

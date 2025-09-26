@@ -16,7 +16,7 @@ function MentionsLegales_Page() {
      useScrollToHash_utils_Hook(); /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
 
     return (
-        <section className={`MentionsLegales ${style.Page}`}>
+        <section className={`MentionsLegales_Page ${style.Page}`}>
             <HelmetMentionLegale_helmet_SEO />
             <header id="top" className={style.Header}>
                  <NavRoot />

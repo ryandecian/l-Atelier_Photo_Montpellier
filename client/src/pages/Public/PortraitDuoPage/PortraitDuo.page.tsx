@@ -16,7 +16,7 @@ function PortraitDuo_Page() {
     useScrollToHash_utils_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
 
     return (
-        <section className={`PortraitDuo ${style.Page}`}>
+        <section className={`PortraitDuo_Page ${style.Page}`}>
             <HelmetPortraitDuo_helmet_SEO />
             <header id="top" className={style.Header}>
                  <NavRoot />
