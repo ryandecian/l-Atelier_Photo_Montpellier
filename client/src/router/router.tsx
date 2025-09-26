@@ -23,7 +23,7 @@ import LoginPage from "../pages/Public/LoginPage/Login.page";
 import MentionsLegalesPage from "../pages/Public/MentionsLegalesPage/MentionsLegales.page";
 import PortfolioPage from "../pages/Public/PortfolioPage/Portfolio.page";
 import PortraitCorporatePage from "../pages/Public/PortraitCorporatePage/PortraitCorporate.page";
-import PortraitDuoPage from "../pages/Public/PortraitDuoPage/PortraitDuoPage";
+import PortraitDuoPage from "../pages/Public/PortraitDuoPage/PortraitDuo.page";
 import PortraitGrossessePage from "../pages/Public/PortraitGrosssessePage/PortraitGrossessePage";
 import PortraitHobbyPage from "../pages/Public/PortraitHobbyPage/PortraitHobbyPage";
 import PortraitLifeStylePage from "../pages/Public/PortraitLifeStylePage/PortraitLifeStylePage";
