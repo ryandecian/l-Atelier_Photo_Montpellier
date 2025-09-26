@@ -30,7 +30,7 @@ import PortraitLifeStylePage from "../pages/Public/PortraitLifeStylePage/Portrai
 import PortraitMariagePage from "../pages/Public/PortraitMariagePage/PortraitMariagePage";
 import PortraitNouveauNePage from "../pages/Public/PotraitNouveauNePage/PortraitNouveauNePage";
 import PortraitSoloPage from "../pages/Public/PortraitSoloPage/PortraitSoloPage";
-import PortraitFamillePage from "../pages/Public/PortraitFamillePage/PortraitFamillePage";
+import PortraitFamillePage from "../pages/Public/PortraitFamillePage/PortraitFamille.page";
 import PrestationPage from "../pages/Public/PrestationPage/PrestationPage";
 import RegisterPage from "../pages/Public/RegisterPage/RegisterPage";
 import ResetPasswordPage from "../pages/Public/ResetPasswordPage/ResetPasswordPage";
