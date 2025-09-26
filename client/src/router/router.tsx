@@ -20,7 +20,7 @@ import ContactPage from "../pages/Public/ContactPage/Contact.page";
 import Error404 from "../pages/Public/Error404Page/Error404.page";
 import HomePage from "../pages/Public/HomePage/Home.page";
 import LoginPage from "../pages/Public/LoginPage/Login.page";
-import MentionsLegalesPage from "../pages/Public/MentionsLegalesPage/MentionsLegalesPage";
+import MentionsLegalesPage from "../pages/Public/MentionsLegalesPage/MentionsLegales.page";
 import PortfolioPage from "../pages/Public/PortfolioPage/PortfolioPage";
 import PortraitCorporatePage from "../pages/Public/PortraitCorporatePage/PortraitCorporatePage";
 import PortraitDuoPage from "../pages/Public/PortraitDuoPage/PortraitDuoPage";
