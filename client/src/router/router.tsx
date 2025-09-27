@@ -35,7 +35,7 @@ import PrestationPage from "../pages/Public/PrestationPage/Prestation.page";
 import RegisterPage from "../pages/Public/RegisterPage/RegisterPage";
 import ResetPasswordPage from "../pages/Public/ResetPasswordPage/ResetPasswordPage";
 import ResetPasswordConfirmPage from "../pages/Public/ResetPasswordConfirmPage/ResetPasswordConfirmPage";
-import QuiSuisJePage from "../pages/Public/QuiSuisJePage/QuiSuisJePage";
+import QuiSuisJePage from "../pages/Public/QuiSuisJePage/QuiSuisJe.page";
 
 /**
  * Utilisation : 
