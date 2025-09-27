@@ -15,27 +15,27 @@ import UserGestionAlbumPage from "../pages/Private/Users/UserGestionAlbumPage/Us
 
 /* Page Frontend public */
 import blogRouter from "./blogRouter";
-import CGVPage from "../pages/Public/cgv_Page/CGV.page";
-import ContactPage from "../pages/Public/contact_Page/Contact.page";
-import Error404 from "../pages/Public/error404_Page/Error404.page";
-import HomePage from "../pages/Public/home_Page/Home.page";
-import LoginPage from "../pages/Public/login_Page/Login.page";
-import MentionsLegalesPage from "../pages/Public/mentions-legales_Page/MentionsLegales.page";
-import PortfolioPage from "../pages/Public/portfolio_Page/Portfolio.page";
-import PortraitCorporatePage from "../pages/Public/portrait-corporate_Page/PortraitCorporate.page";
-import PortraitDuoPage from "../pages/Public/portrait-duo_Page/PortraitDuo.page";
-import PortraitGrossessePage from "../pages/Public/portrait-grosssesse_Page/PortraitGrossesse.page";
-import PortraitHobbyPage from "../pages/Public/portrait-hobby_Page/PortraitHobby.page";
-import PortraitLifeStylePage from "../pages/Public/portrait-lifestyle_Page/PortraitLifeStyle.page";
-import PortraitMariagePage from "../pages/Public/portrait-mariage_Page/PortraitMariage.page";
-import PortraitNouveauNePage from "../pages/Public/portrait-nouveau-ne_Page/PortraitNouveauNe.page";
-import PortraitSoloPage from "../pages/Public/portrait-solo_Page/PortraitSolo.page";
-import PortraitFamillePage from "../pages/Public/portrait-famille_Page/PortraitFamille.page";
-import PrestationPage from "../pages/Public/prestation_Page/Prestation.page";
-import RegisterPage from "../pages/Public/register_Page/Register.page";
-import ResetPasswordPage from "../pages/Public/reset-password_Page/ResetPassword.page";
-import ResetPasswordConfirmPage from "../pages/Public/reset-password-confirm_Page/ResetPasswordConfirm.page";
-import QuiSuisJePage from "../pages/Public/qui-suis-je_Page/QuiSuisJe.page";
+import CGVPage from "../pages/Ppublic/cgv_Page/CGV.page";
+import ContactPage from "../pages/Ppublic/contact_Page/Contact.page";
+import Error404 from "../pages/Ppublic/error404_Page/Error404.page";
+import HomePage from "../pages/Ppublic/home_Page/Home.page";
+import LoginPage from "../pages/Ppublic/login_Page/Login.page";
+import MentionsLegalesPage from "../pages/Ppublic/mentions-legales_Page/MentionsLegales.page";
+import PortfolioPage from "../pages/Ppublic/portfolio_Page/Portfolio.page";
+import PortraitCorporatePage from "../pages/Ppublic/portrait-corporate_Page/PortraitCorporate.page";
+import PortraitDuoPage from "../pages/Ppublic/portrait-duo_Page/PortraitDuo.page";
+import PortraitGrossessePage from "../pages/Ppublic/portrait-grosssesse_Page/PortraitGrossesse.page";
+import PortraitHobbyPage from "../pages/Ppublic/portrait-hobby_Page/PortraitHobby.page";
+import PortraitLifeStylePage from "../pages/Ppublic/portrait-lifestyle_Page/PortraitLifeStyle.page";
+import PortraitMariagePage from "../pages/Ppublic/portrait-mariage_Page/PortraitMariage.page";
+import PortraitNouveauNePage from "../pages/Ppublic/portrait-nouveau-ne_Page/PortraitNouveauNe.page";
+import PortraitSoloPage from "../pages/Ppublic/portrait-solo_Page/PortraitSolo.page";
+import PortraitFamillePage from "../pages/Ppublic/portrait-famille_Page/PortraitFamille.page";
+import PrestationPage from "../pages/Ppublic/prestation_Page/Prestation.page";
+import RegisterPage from "../pages/Ppublic/register_Page/Register.page";
+import ResetPasswordPage from "../pages/Ppublic/reset-password_Page/ResetPassword.page";
+import ResetPasswordConfirmPage from "../pages/Ppublic/reset-password-confirm_Page/ResetPasswordConfirm.page";
+import QuiSuisJePage from "../pages/Ppublic/qui-suis-je_Page/QuiSuisJe.page";
 
 /**
  * Utilisation : 
