@@ -26,7 +26,7 @@ import PortraitCorporatePage from "../pages/Public/PortraitCorporatePage/Portrai
 import PortraitDuoPage from "../pages/Public/PortraitDuoPage/PortraitDuo.page";
 import PortraitGrossessePage from "../pages/Public/PortraitGrosssessePage/PortraitGrossesse.page";
 import PortraitHobbyPage from "../pages/Public/PortraitHobbyPage/PortraitHobby.page";
-import PortraitLifeStylePage from "../pages/Public/PortraitLifeStylePage/PortraitLifeStylePage";
+import PortraitLifeStylePage from "../pages/Public/PortraitLifeStylePage/PortraitLifeStyle.page";
 import PortraitMariagePage from "../pages/Public/PortraitMariagePage/PortraitMariagePage";
 import PortraitNouveauNePage from "../pages/Public/PotraitNouveauNePage/PortraitNouveauNePage";
 import PortraitSoloPage from "../pages/Public/PortraitSoloPage/PortraitSoloPage";
@@ -39,7 +39,7 @@ import QuiSuisJePage from "../pages/Public/QuiSuisJePage/QuiSuisJePage";
 
 /**
  * Utilisation : 
- * {ListDataRouter[0].path}
+ * {ListDataRouter[0].path}S
  * {LinkExt.instagram}
  */
 
