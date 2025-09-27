@@ -24,7 +24,7 @@ import MentionsLegalesPage from "../pages/Public/MentionsLegalesPage/MentionsLeg
 import PortfolioPage from "../pages/Public/PortfolioPage/Portfolio.page";
 import PortraitCorporatePage from "../pages/Public/PortraitCorporatePage/PortraitCorporate.page";
 import PortraitDuoPage from "../pages/Public/PortraitDuoPage/PortraitDuo.page";
-import PortraitGrossessePage from "../pages/Public/PortraitGrosssessePage/PortraitGrossessePage";
+import PortraitGrossessePage from "../pages/Public/PortraitGrosssessePage/PortraitGrossesse.page";
 import PortraitHobbyPage from "../pages/Public/PortraitHobbyPage/PortraitHobbyPage";
 import PortraitLifeStylePage from "../pages/Public/PortraitLifeStylePage/PortraitLifeStylePage";
 import PortraitMariagePage from "../pages/Public/PortraitMariagePage/PortraitMariagePage";
