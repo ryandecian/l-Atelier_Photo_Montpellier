@@ -1,5 +1,5 @@
 /* Import des modules CSS */
-import style from "../../../stylePage.module.css";
+import style from "../../stylePage.module.css";
 
 /* Import des Components */
 import Error404Root from "../../../components/Public/Error404Root/Error404Root";
