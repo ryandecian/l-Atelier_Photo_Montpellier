@@ -1,5 +1,5 @@
 /* Import des modules CSS */
-import style from "../../../stylePage.module.css";
+import style from "../../stylePage.module.css";
 
 /* Import des Components */
 import LoginRoot from "../../../components/Public/LoginRoot/LoginRoot";
