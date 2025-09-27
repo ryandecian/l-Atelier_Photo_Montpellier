@@ -22,6 +22,7 @@ RDV cliente:
 - Evolution de la DB : ajout de num tel (optionnel)
 - Modifier la date automatique du jour lors de la création d'un album
 ------------------------------------------------------------------------------
+Problème dans la page album admin, le serveur renvois une erreur 404 lorsqu'aucun albumn'existe en base
 
 ------------------------------------------------------------------------------
 Note d'information, dans la navigation du site, 
