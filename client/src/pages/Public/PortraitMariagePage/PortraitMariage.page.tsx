@@ -7,7 +7,7 @@ import NavRoot from "../../../components/layout/NavRoot/NavRoot";
 import Footer_layout from "../../../components/layout/footer/Footer.layout";
 
 /* Import des composants SEO */
-import { Helmet_PortraitMariage_helmet_SEO } from "../../../seo/PortraitMariageSEO/HelmetPortraitMariage.helmet.seo";
+import { HelmetPortraitMariage_helmet_SEO } from "../../../seo/PortraitMariageSEO/HelmetPortraitMariage.helmet.seo";
 
 /* Import des Hooks */
 import useScrollToHash_utils_Hook from "../../../hook/useScrollToHash";
@@ -17,7 +17,7 @@ function PortraitMariage_Page() {
 
     return (
         <div className={`PortraitMariagePage ${style.Page}`}>
-            <Helmet_PortraitMariage_helmet_SEO />
+            <HelmetPortraitMariage_helmet_SEO />
             <header id="top" className={style.Header}>
                  <NavRoot />
             </header>
