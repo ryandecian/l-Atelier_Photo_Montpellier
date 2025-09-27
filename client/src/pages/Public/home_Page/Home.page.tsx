@@ -7,7 +7,7 @@ import NavTargetHomeRoot from "../../../components/layout/NavTargetHomeRoot/NavT
 import Footer_layout from "../../../components/layout/footer/Footer.layout";
 
 /* Import des composants SEO */
-import { HelmetHome_helmet_SEO } from "../../../seo/HomeSEO/HelmetHome.helmet.seo";
+import { HelmetHome_helmet_SEO } from "../../../seo/home_SEO/HelmetHome.helmet.seo";
 
 function Home_Page() {
      return (

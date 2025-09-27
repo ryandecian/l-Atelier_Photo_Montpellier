@@ -7,7 +7,7 @@ import NavRoot from "../../../components/layout/NavRoot/NavRoot";
 import Footer_layout from "../../../components/layout/footer/Footer.layout";
 
 /* Import des composants SEO */
-import { HelmetContact_helmet_SEO } from "../../../seo/ContactSEO/HelmetContact.helmet.seo";
+import { HelmetContact_helmet_SEO } from "../../../seo/contact_SEO/HelmetContact.helmet.seo";
 
 function Contact_Page() {
      return (

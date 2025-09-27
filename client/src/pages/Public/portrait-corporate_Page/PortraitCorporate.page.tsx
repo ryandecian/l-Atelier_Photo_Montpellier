@@ -7,7 +7,7 @@ import NavRoot from "../../../components/layout/NavRoot/NavRoot";
 import Footer_layout from "../../../components/layout/footer/Footer.layout";
 
 /* Import des composants SEO */
-import { Helmet_PortraitCorporate_helmet_SEO } from "../../../seo/PortraitCorporateSEO/HelmetPortraitCorporate.helmet.seo";
+import { Helmet_PortraitCorporate_helmet_SEO } from "../../../seo/portrait-corporate_SEO/HelmetPortraitCorporate.helmet.seo";
 
 /* Import des Hooks */
 import useScrollToHash_utils_Hook from "../../../hook/useScrollToHash";
