@@ -34,7 +34,7 @@ import PortraitFamillePage from "../pages/Public/PortraitFamillePage/PortraitFam
 import PrestationPage from "../pages/Public/PrestationPage/Prestation.page";
 import RegisterPage from "../pages/Public/RegisterPage/Register.page";
 import ResetPasswordPage from "../pages/Public/ResetPasswordPage/ResetPasswordPage";
-import ResetPasswordConfirmPage from "../pages/Public/ResetPasswordConfirmPage/ResetPasswordConfirmPage";
+import ResetPasswordConfirmPage from "../pages/Public/ResetPasswordConfirmPage/ResetPasswordConfirm.page";
 import QuiSuisJePage from "../pages/Public/QuiSuisJePage/QuiSuisJe.page";
 
 /**
