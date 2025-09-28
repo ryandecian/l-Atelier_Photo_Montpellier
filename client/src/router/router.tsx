@@ -2,16 +2,16 @@ import { ReactNode } from "react"
 
 /* Liste des pages en import */
 /* Page Frontend vérrouillée */
-import AdminGestionAlbumPage from "../pages/Private/Admin/AdminGestionAlbumPage/AdminGestionAlbumPage";
-import AdminPage from "../pages/Private/Admin/AdminPage/AdminPage";
-import AllUserSystemePage from "../pages/Private/Admin/AllUserSystemePage/AllUserSystemePage";
-import ComptePage from "../pages/Private/Users/ComptePage/ComptePage";
-import DataUserPage from "../pages/Private/All/DataUser/DataUserPage";
-import EditAlbumAdminPage from "../pages/Private/Admin/EditAlbumAdminPage/EditAlbumAdminPage";
-import EditUserAdminPage from "../pages/Private/Admin/EditUserAdminPage/EditUserAdminPage";
-import EditUserPage from "../pages/Private/All/EditUserPage/EditUserPage";
-import InsertAlbumAdminPage from "../pages/Private/Admin/InsertAlbumAdminPage/InsertAlbumAdminPage";
-import UserGestionAlbumPage from "../pages/Private/Users/UserGestionAlbumPage/UserGestionAlbumPage";
+import AdminGestionAlbumPage from "../pages/private/admin/AdminGestionAlbumPage/AdminGestionAlbumPage";
+import AdminPage from "../pages/private/admin/AdminPage/AdminPage";
+import AllUserSystemePage from "../pages/private/admin/AllUserSystemePage/AllUserSystemePage";
+import ComptePage from "../pages/private/users/ComptePage/ComptePage";
+import DataUserPage from "../pages/private/all/DataUser/DataUserPage";
+import EditAlbumAdminPage from "../pages/private/admin/EditAlbumAdminPage/EditAlbumAdminPage";
+import EditUserAdminPage from "../pages/private/admin/EditUserAdminPage/EditUserAdminPage";
+import EditUserPage from "../pages/private/all/EditUserPage/EditUserPage";
+import InsertAlbumAdminPage from "../pages/private/admin/InsertAlbumAdminPage/InsertAlbumAdminPage";
+import UserGestionAlbumPage from "../pages/private/users/UserGestionAlbumPage/UserGestionAlbumPage";
 
 /* Page Frontend public */
 import blogRouter from "./blogRouter";
