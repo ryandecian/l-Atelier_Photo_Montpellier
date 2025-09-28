@@ -35,14 +35,10 @@ jobs:
             sudo docker volume rm l-atelier_photo_montpellier_client-dist || true
 
             echo "🔀 Checkout de la bonne branche"
-            # (Correctif) Remplace git pull par fetch + reset --hard pour coller exactement au remote
-            git fetch --all --prune
-            git checkout Deploy || git checkout -b Deploy origin/Deploy
-            git reset --hard origin/Deploy
-            git clean -fd
+            git checkout Deploy
 
             echo "🚀 Build + redémarrage"
-            # (Conservé) On redémarre comme dans ta logique
+            git pull origin Deploy
             sudo docker compose up -d --build
             
             echo "🛑 Arrêt des containers, phase 2"
