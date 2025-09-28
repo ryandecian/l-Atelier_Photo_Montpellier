@@ -1,9 +1,9 @@
-import BlogPage from "../pages/Public/BlogPage/Blog.page";
-import Blog_20250601_Page from "../pages/Public/BlogPage/ListeBlogPage/Blog20250601.page";
-import Blog_20250616_Page from "../pages/Public/BlogPage/ListeBlogPage/Blog20250616.page";
-import Blog_20250710_Page from "../pages/Public/BlogPage/ListeBlogPage/Blog20250710.page";
-import Blog_20250724_Page from "../pages/Public/BlogPage/ListeBlogPage/Blog20250724.page";
-import Blog_20250917_Page from "../pages/Public/BlogPage/ListeBlogPage/Blog20250917.page";
+import BlogPage from "../pages/public/blog_Page/Blog.page";
+import Blog_20250601_Page from "../pages/public/blog_Page/liste-blog_Page/Blog20250601.page";
+import Blog_20250616_Page from "../pages/public/blog_Page/liste-blog_Page/Blog20250616.page";
+import Blog_20250710_Page from "../pages/public/blog_Page/liste-blog_Page/Blog20250710.page";
+import Blog_20250724_Page from "../pages/public/blog_Page/liste-blog_Page/Blog20250724.page";
+import Blog_20250917_Page from "../pages/public/blog_Page/liste-blog_Page/Blog20250917.page";
 
 type blogRouterType = {
     path: string;
