@@ -1,6 +1,6 @@
-import ImagesControllerDataType from "../../../../../types/components/blogs/imagesBlog.type";
+import { ImagesBlog_Type } from "../../../../../types/components/blogs/imagesBlog.type";
 
-const ImagesBlog_20250724_RootControllerData: ImagesControllerDataType[] = [
+const ImagesBlog_20250724_RootControllerData: ImagesBlog_Type[] = [
     /* {ImagesBlog_20250724_RootControllerData[0].src} */
     {
         src: "/images/image-blog/blog_20250724/lapm-portrait-grossesse-photographe-photo-grossesse-moment-blog-20250724-l-atelier-photo-montpellier.jpg",
