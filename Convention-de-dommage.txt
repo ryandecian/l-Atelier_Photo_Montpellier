@@ -23,7 +23,11 @@ Fichier tsx :
 
 /* Import des composants Router */
 
+/* Import des composants SEO */
+
 /* Import des composants de signature */
+
+/* Import des Hooks */
 
 /* Import des JSON_LD */
 

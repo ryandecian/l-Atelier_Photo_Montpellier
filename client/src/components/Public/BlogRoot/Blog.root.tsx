@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 import { CardBlog_Type} from "../../../types/components/blogs/cardBlog.type";
 
 /* Import des Utils */
-import { convertDateFrToISO_Date } from "../../../utils/seo/convertDateFrToISO.utils";
+import { convertDateFrToISO_Date_Utils } from "../../../utils/seo/convertDateFrToISO.utils";
 
 function Blog_Root() {
     /* Permet de mettre en mémoire le résultat de la fonction. Donc les datas des card. */
@@ -24,7 +24,7 @@ function Blog_Root() {
 
     // Tri par date du plus récent au plus ancien
     const sortedData = dataBlog.slice().sort((a, b) => {
-        return convertDateFrToISO_Date(b.date).getTime() - convertDateFrToISO_Date(a.date).getTime();
+        return convertDateFrToISO_Date_Utils(b.date).getTime() - convertDateFrToISO_Date_Utils(a.date).getTime();
     });
 
     // Filtrage après tri

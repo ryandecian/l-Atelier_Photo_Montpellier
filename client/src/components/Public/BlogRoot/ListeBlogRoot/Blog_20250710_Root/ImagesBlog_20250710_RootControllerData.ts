@@ -1,4 +1,4 @@
-import ImagesControllerDataType from "../../../../../types/components/blogs/imagesBlog.type";
+import { ImagesBlog_Type } from "../../../../../types/components/blogs/imagesBlog.type";
 
 /**
  * Compteur mot clés : 
@@ -8,7 +8,7 @@ import ImagesControllerDataType from "../../../../../types/components/blogs/imag
  * photographie-professionnelle : 2/2
 */
 
-const ImagesBlog_20250710_RootControllerData: ImagesControllerDataType[] = [
+const ImagesBlog_20250710_RootControllerData: ImagesBlog_Type[] = [
     /* {ImagesBlog_20250710_RootControllerData[0].src} */
     {
         src: "/images/image-blog/blog_20250710/lapm-photo-portrait-feel-good-professionnel-montpellier-l-atelier-photo-montpellier.jpg",
