@@ -1,4 +1,4 @@
-import ImagesControllerDataType from "../../../types/components/blogs/imagesBlog.type";
+import { ImagesBlog_Type } from "../../../types/components/blogs/imagesBlog.type";
 
 const data_Album_Paysage = [
     "lapm-photographie-professionnelle-depart-ou-arrivee-tage-paysage-l-atelier-photo-montpellier.jpg",
@@ -236,10 +236,10 @@ const data_Album_Pro_Perso = [
 ];
 
 type ListeAlbumType = {
-    Album_Paysage: ImagesControllerDataType[];
-    Album_Rue_Street: ImagesControllerDataType[];
-    Album_Urbaine: ImagesControllerDataType[];
-    Album_Pro_Perso: ImagesControllerDataType[];
+    Album_Paysage: ImagesBlog_Type[];
+    Album_Rue_Street: ImagesBlog_Type[];
+    Album_Urbaine: ImagesBlog_Type[];
+    Album_Pro_Perso: ImagesBlog_Type[];
 };
 
 function generateAltFromFilename(filename: string): string {
@@ -252,7 +252,7 @@ function generateAltFromFilename(filename: string): string {
 }
 
 function GenerateTableImg(nbImg: number, basePath: string, allFileNames: string[]
-): ImagesControllerDataType[] {
+): ImagesBlog_Type[] {
   const shuffled = [...allFileNames].sort(() => 0.5 - Math.random());
   const selected = shuffled.slice(0, nbImg);
 

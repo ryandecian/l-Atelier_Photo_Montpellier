@@ -1,4 +1,4 @@
-import ImagesControllerDataType from "../../../types/components/blogs/imagesBlog.type";
+import { ImagesBlog_Type } from "../../../types/components/blogs/imagesBlog.type";
 
 /**
  * Compteur mot clés : 
@@ -8,7 +8,7 @@ import ImagesControllerDataType from "../../../types/components/blogs/imagesBlog
  * photographie-professionnelle : 1
  */
 
-const ImagesPortraitLifeStyleControllerData: ImagesControllerDataType[] = [
+const ImagesPortraitLifeStyleControllerData: ImagesBlog_Type[] = [
     /* Menu en image PortraitLifeStyle : 6 images */
     /* {ImagesPortraitLifeStyleControllerData[0].src} */
     {
