@@ -3,8 +3,8 @@ import style from "../../StyleRootComponent.module.css";
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../router/router";
 
-import Container4ImagesRoot from "../../Elements/ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
-import Container4ImagesPortraitRoot from "../../Elements/ContainerImageRoot/Container4ImagesPortraitRoot/Container4ImagesPortraitRoot";
+import Container4ImagesRoot from "../../Elements/container-image/Container4ImagesRoot/Container4ImagesRoot";
+import Container4ImagesPortraitRoot from "../../Elements/container-image/Container4ImagesPortraitRoot/Container4ImagesPortraitRoot";
 import ImagesPortraitGrossesseControllerData from "./ImagesPortraitGrossesseControllerData";
 
 import GeneratorCardAvisClient from "../../Elements/GeneratorCardAvisClient/GeneratorCardAvisClient";
