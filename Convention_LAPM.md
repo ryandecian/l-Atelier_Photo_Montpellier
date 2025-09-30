@@ -26,23 +26,6 @@
 | Layout (structures globales) | `Navbar.layout.tsx`             | `Navbar_Layout`             | `import Navbar_Layout from "../layouts/Navbar.layout";` |
 | Element (micro-blocs visuels internes) | `Container3Images.element.tsx`   | `Container3Images_Element`  | `import { Container3Images_Element } from "../elements/Container3Images/Container3Images.element";` |
 
-### Exemple minimal
-```tsx
-// src/elements/Container3Images/Container3Images.element.tsx
-import css from "./container3Images.module.css";
-import { Container3Images_Type } from "../../types/elements/container3Images.type";
-
-function Container3Images_Element({ img1, metaNameImg1 }: Container3Images_Type) {
-    return (
-        <div className={css.Container3ImagesRoot}>
-            <img src={img1} alt={metaNameImg1} className={css.Image} />
-        </div>
-    );
-}
-
-export { Container3Images_Element };
-```
-
 ---
 
 ## 2) Types & Interfaces (`.ts`)
@@ -53,19 +36,6 @@ export { Container3Images_Element };
 - **Nom de fichier** : `camelCase.type.ts` (ou `.types.ts` si plusieurs types)
 - **Export** : toujours nommé (jamais `default`)
 - **Optionnalité** : utiliser `?` plutôt que `string | undefined` quand pertinent
-
-### Exemple
-```ts
-// src/types/elements/container3Images.type.ts
-export type Container3Images_Type = {
-    img1: string;
-    img2: string;
-    img3: string;
-    metaNameImg1: string;
-    metaNameImg2: string;
-    metaNameImg3: string;
-};
-```
 
 ---
 
@@ -79,18 +49,6 @@ export type Container3Images_Type = {
   - `.ts` si **pas de JSX**  
   - `.tsx` uniquement si le hook **retourne du JSX**
 
-### Exemple
-```ts
-// src/hooks/useAuthCheck.ts
-import { useEffect } from "react";
-
-export const useAuthCheck = (): void => {
-    useEffect(() => {
-        // logique d'authentification
-    }, []);
-};
-```
-
 ---
 
 ## 4) CSS Modules (`.module.css`)
@@ -101,37 +59,58 @@ export const useAuthCheck = (): void => {
 - **Portée** : chaque fichier `.module.css` ne doit cibler que son composant
 - **Jamais de balises HTML directes** (`button`, `h1`, etc.) — toujours passer par une classe
 
-### Exemple
-```css
-/* src/elements/Container3Images/container3Images.module.css */
-.Container3ImagesRoot {
-    display: flex;
-    gap: 1rem;
-}
+---
 
-.ContainerImg {
-    flex: 1;
-}
+## 5) SEO (Helmet / JSON-LD / DataSEO)
 
-.Image {
-    width: 100%;
-    border-radius: 8px;
-    object-fit: cover;
-}
-```
+### Règles générales
+- **Tous les exports SEO sont nommés** (jamais de `default export`).
+- Convention spécifique selon le type de fichier : **DataSEO**, **JSON-LD**, **Helmet**.
+
+### 🔹 DataSEO
+- **Nom du fichier** : `dataSEO_NomDeLaPage.data.seo.ts`  
+  - Exemple : `dataSEO_Portfolio.data.seo.ts`
+- **Nom de l’export** : `dataSEO_NomDeLaPage_data_SEO`  
+  - Exemple :  
+    ```ts
+    export { dataSEO_Portfolio_data_SEO };
+    ```
+
+### 🔹 JSON-LD
+- **Nom du fichier** : `JSON-LD_TypeDeJSON_NomDeLaPage.schema.seo.ts`  
+  - Exemple : `JSON-LD_Breadcrumb_Portfolio.schema.seo.ts`
+- **Nom de l’export** : `JSON_LD_TypeDeJSON_NomDeLaPage_schema_SEO`  
+  - Exemple :  
+    ```ts
+    export { JSON_LD_Breadcrumb_Portfolio_schema_SEO };
+    ```
+
+### 🔹 Helmet
+- **Nom du fichier** : `HelmetNomDeLaPage.helmet.seo.tsx`  
+  - Exemple : `HelmetPortfolio.helmet.seo.tsx`
+- **Nom du composant exporté** : `HelmetNomDeLaPage_helmet_SEO`  
+  - Exemple :  
+    ```tsx
+    export { HelmetPortfolio_helmet_SEO };
+    ```
 
 ---
 
-## 5) Imports
+## 6) Imports
 
 - **Composants Page / Root / Layout** : `default export`  
-- **Éléments / Types / Hooks / Utils** : **exports nommés**
+- **Éléments / Types / Hooks / SEO / Utils** : **exports nommés**
 
 ```tsx
 // ✅ Pages / Root / Layout
 import Home_Page from "../pages/Home.page";
 import HomeRoot_Root from "../components/HomeRoot.root";
 import Navbar_Layout from "../layouts/Navbar.layout";
+
+// ✅ SEO
+import { dataSEO_Portfolio_data_SEO } from "../seo/dataSEO_Portfolio.data.seo";
+import { JSON_LD_Breadcrumb_Portfolio_schema_SEO } from "../seo/JSON-LD_Breadcrumb_Portfolio.schema.seo";
+import { HelmetPortfolio_helmet_SEO } from "../seo/HelmetPortfolio.helmet.seo";
 
 // ✅ Éléments / Hooks / Types
 import { Container3Images_Element } from "../elements/Container3Images/Container3Images.element";
@@ -141,50 +120,27 @@ import { CardBlog_Type } from "../types/cardBlog.type";
 
 ---
 
-## 6) (Optionnel) Règles ESLint pour verrouiller le style
-
-```json
-{
-  "@typescript-eslint/naming-convention": [
-    "error",
-    { "selector": "typeLike", "format": ["PascalCase"] },
-    { "selector": "variable", "format": ["camelCase", "UPPER_CASE", "PascalCase"] },
-    { "selector": "function", "format": ["camelCase", "PascalCase"] }
-  ],
-  "react/jsx-pascal-case": ["error", { "allowAllCaps": false }],
-  "import/no-default-export": "off",
-  "no-restricted-syntax": [
-    "error",
-    {
-      "selector": "ExportDefaultDeclaration > FunctionDeclaration[id.name=/_.*/]",
-      "message": "Le nom du composant exporté par défaut doit être Nom_Role (PascalCase + underscore)."
-    }
-  ]
-}
-```
-
----
-
 ## 7) Résumé express
 
 - **Composants TSX**  
-  - Fichier : `PascalCase.role.tsx` → `Home.page.tsx`  
-  - Fonction : `Nom_Role` → `Home_Page`  
-  - `default export` pour Page/Root/Layout  
-  - `export nommé` pour Element
+  - Page/Root/Layout → `default export`  
+  - Element → `export nommé`
 
 - **Types**  
-  - Nom : `PascalCase` + `_Type` → `CardBlog_Type`  
-  - Fichier : `camelCase.type.ts` → `cardBlog.type.ts`  
-  - **Export nommé**
+  - Fichier : `camelCase.type.ts`  
+  - Nom : `PascalCase_Type`  
+  - Export nommé
 
 - **Hooks**  
-  - Nom : `useSomething` (camelCase)  
-  - Fichier : `useSomething.ts`  
-  - **Export nommé**  
+  - Nom : `useSomething`  
+  - Export nommé  
   - `.tsx` seulement si JSX retourné
 
 - **CSS Modules**  
-  - Nom du fichier : `camelCase.module.css`  
-  - Nom de classe : `PascalCase`  
-  - Jamais de balises HTML directes
+  - Fichier : `camelCase.module.css`  
+  - Classes : `PascalCase`
+
+- **SEO**  
+  - DataSEO → `dataSEO_NomDeLaPage.data.seo.ts` → `dataSEO_NomDeLaPage_data_SEO`  
+  - JSON-LD → `JSON-LD_Type_NomDeLaPage.schema.seo.ts` → `JSON_LD_Type_NomDeLaPage_schema_SEO`  
+  - Helmet → `HelmetNomDeLaPage.helmet.seo.tsx` → `HelmetNomDeLaPage_helmet_SEO`
