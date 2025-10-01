@@ -5,7 +5,7 @@ import css from "./container3Images.module.css";
 import PremiumCardImgSudoRoot from "../../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
 
 /* Import des Types */
-import { Container3Images_Type } from "../../../../types/elements/Container3Images.type";
+import { Container3Images_Type } from "../../../../types/elements/container3Images.type";
 
 function Container3Images_Element({ img1, img2, img3, metaNameImg1, metaNameImg2, metaNameImg3 }: Container3Images_Type) {
     return (

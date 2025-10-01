@@ -4,7 +4,7 @@ import css from "./PortraitCorporateRoot.module.css";
 import externalLinks from "../../../constants/externalLinks";
 
 import Container4ImagesRoot from "../../Elements/container-image/Container4ImagesRoot/Container4ImagesRoot";
-import Container4ImagesPortraitRoot from "../../Elements/container-image/Container4ImagesPortraitRoot/Container4ImagesPortraitRoot";
+import Container4ImagesPortraitRoot from "../../Elements/container-image/container-4_Images-portrait/Container4ImagesPortraitRoot";
 import ImagesPortraitCorporateControllerData from "./ImagesPortraitCorporateControllerData";
 
 import AvisClientPortraitCorporateControllerData from "./AvisClientPortraitCorporateControllerData";

@@ -2,7 +2,7 @@ import style from "../../../../StyleRootComponent.module.css";
 import ListDataRouter from "../../../../../router/router";
 import { Link } from "react-router-dom";
 
-import Container4ImagesPortraitRoot from "../../../../Elements/container-image/Container4ImagesPortraitRoot/Container4ImagesPortraitRoot";
+import Container4ImagesPortraitRoot from "../../../../Elements/container-image/container-4_Images-portrait/Container4ImagesPortraitRoot";
 import ImagesBlog_20250616_RootControllerData from "./ImagesBlog_20250616_RootControllerData";
 
 function Blog_20250616_Root() {    
