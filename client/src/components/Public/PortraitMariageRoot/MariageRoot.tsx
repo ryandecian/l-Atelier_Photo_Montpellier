@@ -1,6 +1,6 @@
 import style from "../../StyleRootComponent.module.css";
 
-import Container4ImagesRoot from "../../Elements/ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
+import Container4ImagesRoot from "../../Elements/container-image/Container4ImagesRoot/Container4ImagesRoot";
 import ControllerDataImagePortraitMariage from "./ImagesPortraitMariageControllerData";
 
 import GeneratorCardAvisClient from "../../Elements/GeneratorCardAvisClient/GeneratorCardAvisClient";
