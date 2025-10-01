@@ -3,8 +3,8 @@ import style from "../../StyleRootComponent.module.css";
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../router/router";
 
-import Container4ImagesRoot from "../../Elements/ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
-import Container4ImagesPortraitRoot from "../../Elements/ContainerImageRoot/Container4ImagesPortraitRoot/Container4ImagesPortraitRoot";
+import Container4ImagesRoot from "../../Elements/container-image/Container4ImagesRoot/Container4ImagesRoot";
+import { Container4ImagesPortrait_Element } from "../../Elements/container-image/container-4_Images-portrait/Container4ImagesPortrait.element";
 import ImagesPortraitGrossesseControllerData from "./ImagesPortraitGrossesseControllerData";
 
 import GeneratorCardAvisClient from "../../Elements/GeneratorCardAvisClient/GeneratorCardAvisClient";
@@ -209,15 +209,15 @@ function PortraitGrossesseRoot() {
                 Galerie privée, fichiers optimisés pour le tirage papier, l’album photo ou le partage en ligne.
             </p>
 
-            <Container4ImagesPortraitRoot
+            <Container4ImagesPortrait_Element
                 img1={ImagesPortraitGrossesseControllerData[8].src}
-                MetaNameImg1={ImagesPortraitGrossesseControllerData[8].alt}
+                metaNameImg1={ImagesPortraitGrossesseControllerData[8].alt}
                 img2={ImagesPortraitGrossesseControllerData[9].src}
-                MetaNameImg2={ImagesPortraitGrossesseControllerData[9].alt}
+                metaNameImg2={ImagesPortraitGrossesseControllerData[9].alt}
                 img3={ImagesPortraitGrossesseControllerData[10].src}
-                MetaNameImg3={ImagesPortraitGrossesseControllerData[10].alt}
+                metaNameImg3={ImagesPortraitGrossesseControllerData[10].alt}
                 img4={ImagesPortraitGrossesseControllerData[11].src}
-                MetaNameImg4={ImagesPortraitGrossesseControllerData[11].alt}
+                metaNameImg4={ImagesPortraitGrossesseControllerData[11].alt}
             />
 
             <h2 className={style.TitleH2}>
