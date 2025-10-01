@@ -3,8 +3,8 @@ import css from "./PortraitCorporateRoot.module.css";
 
 import externalLinks from "../../../constants/externalLinks";
 
-import Container4ImagesRoot from "../../Elements/ContainerImageRoot/Container4ImagesRoot/Container4ImagesRoot";
-import Container4ImagesPortraitRoot from "../../Elements/ContainerImageRoot/Container4ImagesPortraitRoot/Container4ImagesPortraitRoot";
+import Container4ImagesRoot from "../../Elements/container-image/Container4ImagesRoot/Container4ImagesRoot";
+import { Container4ImagesPortrait_Element } from "../../Elements/container-image/container-4_Images-portrait/Container4ImagesPortrait.element";
 import ImagesPortraitCorporateControllerData from "./ImagesPortraitCorporateControllerData";
 
 import AvisClientPortraitCorporateControllerData from "./AvisClientPortraitCorporateControllerData";
@@ -45,15 +45,15 @@ function PortraitCorporateRoot() {
             </p>
 
             {/* Container 1 : Container image portrait Corporate */}
-            <Container4ImagesPortraitRoot
+            <Container4ImagesPortrait_Element
                 img1={ImagesPortraitCorporateControllerData[0].src}
-                MetaNameImg1={ImagesPortraitCorporateControllerData[0].alt}
+                metaNameImg1={ImagesPortraitCorporateControllerData[0].alt}
                 img2={ImagesPortraitCorporateControllerData[1].src}
-                MetaNameImg2={ImagesPortraitCorporateControllerData[1].alt}
+                metaNameImg2={ImagesPortraitCorporateControllerData[1].alt}
                 img3={ImagesPortraitCorporateControllerData[2].src}
-                MetaNameImg3={ImagesPortraitCorporateControllerData[2].alt}
+                metaNameImg3={ImagesPortraitCorporateControllerData[2].alt}
                 img4={ImagesPortraitCorporateControllerData[3].src}
-                MetaNameImg4={ImagesPortraitCorporateControllerData[3].alt}
+                metaNameImg4={ImagesPortraitCorporateControllerData[3].alt}
             />
 
             <br />

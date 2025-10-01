@@ -40,7 +40,6 @@ Je cible les page admin, et userSystème.
 
 Page portfolio composant E mise en commentaire le code des albums
 
-
 ------------------------------------------------------------------------------
 Projet de création de script pour générer le sitemap
 /client/

@@ -1,41 +1,33 @@
-import css from "./Container3ImagesRoot.module.css";
+/* Import des modules CSS */
+import css from "./container3Images.module.css";
+
+/* Import des composants d'Elements */
 import PremiumCardImgSudoRoot from "../../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
 
-interface Container3ImagesRootType {
-    img1: string;
-    img2: string;
-    img3: string;
+/* Import des Types */
+import { Container3Images_Type } from "../../../../types/elements/container3Images.type";
 
-    MetaNameImg1: string;
-    MetaNameImg2: string;
-    MetaNameImg3: string;
-}
-
-function Container3ImagesRoot(Props: Container3ImagesRootType) {
-    const {img1, img2, img3, 
-        MetaNameImg1, MetaNameImg2, MetaNameImg3, 
-    } = Props;
-
+function Container3Images_Element({ img1, img2, img3, metaNameImg1, metaNameImg2, metaNameImg3 }: Container3Images_Type) {
     return (
         <div className={css.Container3ImagesRoot}>
             <div className={css.ContainerImg}>
                 <PremiumCardImgSudoRoot
                 src={img1}
-                alt={MetaNameImg1}
+                alt={metaNameImg1}
                 className={css.Image}
                 />
             </div>
             <div className={css.ContainerImg}>
                 <PremiumCardImgSudoRoot
                 src={img2}
-                alt={MetaNameImg2}
+                alt={metaNameImg2}
                 className={css.Image}
                 />
             </div>
             <div className={css.ContainerImg}>
                 <PremiumCardImgSudoRoot
                 src={img3}
-                alt={MetaNameImg3}
+                alt={metaNameImg3}
                 className={css.Image}
                 />
             </div>
@@ -43,4 +35,4 @@ function Container3ImagesRoot(Props: Container3ImagesRootType) {
     );
 }
 
-export default Container3ImagesRoot;
+export { Container3Images_Element };
