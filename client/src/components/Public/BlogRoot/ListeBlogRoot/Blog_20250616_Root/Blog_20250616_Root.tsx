@@ -2,7 +2,7 @@ import style from "../../../../StyleRootComponent.module.css";
 import ListDataRouter from "../../../../../router/router";
 import { Link } from "react-router-dom";
 
-import Container4ImagesPortraitRoot from "../../../../Elements/container-image/container-4_Images-portrait/Container4ImagesPortrait.element";
+import { Container4ImagesPortrait_Element } from "../../../../Elements/container-image/container-4_Images-portrait/Container4ImagesPortrait.element";
 import ImagesBlog_20250616_RootControllerData from "./ImagesBlog_20250616_RootControllerData";
 
 function Blog_20250616_Root() {    
@@ -162,15 +162,15 @@ function Blog_20250616_Root() {
                 {`Quel type de portrait professionnel choisir pour son CV ?`}
             </h2>
 
-            <Container4ImagesPortraitRoot
+            <Container4ImagesPortrait_Element
                 img1={ImagesBlog_20250616_RootControllerData[0].src}
-                MetaNameImg1={ImagesBlog_20250616_RootControllerData[0].alt}
+                metaNameImg1={ImagesBlog_20250616_RootControllerData[0].alt}
                 img2={ImagesBlog_20250616_RootControllerData[1].src}
-                MetaNameImg2={ImagesBlog_20250616_RootControllerData[1].alt}
+                metaNameImg2={ImagesBlog_20250616_RootControllerData[1].alt}
                 img3={ImagesBlog_20250616_RootControllerData[2].src}
-                MetaNameImg3={ImagesBlog_20250616_RootControllerData[2].alt}
+                metaNameImg3={ImagesBlog_20250616_RootControllerData[2].alt}
                 img4={ImagesBlog_20250616_RootControllerData[3].src}
-                MetaNameImg4={ImagesBlog_20250616_RootControllerData[3].alt}
+                metaNameImg4={ImagesBlog_20250616_RootControllerData[3].alt}
             />
             
             <h3 className={style.TitleNH3}>
