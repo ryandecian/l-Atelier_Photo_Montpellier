@@ -1,4 +1,7 @@
-import css from "./Container4ImagesPortraitRoot.module.css";
+/* Import des modules CSS */
+import css from "./container4imagesportrait.module.css";
+
+/* Import des composants d'Elements */
 import PremiumCardImgSudoRoot from "../../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
 
 interface Container4ImagesPortraitRootType {
