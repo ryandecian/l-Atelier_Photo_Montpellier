@@ -4,50 +4,43 @@ import css from "./container4imagesportrait.module.css";
 /* Import des composants d'Elements */
 import PremiumCardImgSudoRoot from "../../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
 
-interface Container4ImagesPortraitRootType {
-    img1: string;
-    img2: string;
-    img3: string;
-    img4: string;
+/* Import des Types */
+import { Container4Images_Type } from "../../../../types/elements/container4Images.type";
 
-    MetaNameImg1: string;
-    MetaNameImg2: string;
-    MetaNameImg3: string;
-    MetaNameImg4: string;
-}
+function Container4ImagesPortrait_Element(
+    {
+        img1, img2, img3, img4,
+        metaNameImg1, metaNameImg2, metaNameImg3, metaNameImg4
+    }: Container4Images_Type) {
 
-function Container4ImagesPortraitRoot(Props: Container4ImagesPortraitRootType) {
-    const {img1, img2, img3, img4, 
-        MetaNameImg1, MetaNameImg2, MetaNameImg3, MetaNameImg4
-    } = Props;
 
     return (
         <div className={css.Container4ImagesRoot}>
             <div className={css.ContainerImg}>
                 <PremiumCardImgSudoRoot
                 src={img1}
-                alt={MetaNameImg1}
+                alt={metaNameImg1}
                 className={css.Image}
                 />
             </div>
             <div className={css.ContainerImg}>
                 <PremiumCardImgSudoRoot
                 src={img2}
-                alt={MetaNameImg2}
+                alt={metaNameImg2}
                 className={css.Image}
                 />
             </div>
             <div className={css.ContainerImg}>
                 <PremiumCardImgSudoRoot
                 src={img3}
-                alt={MetaNameImg3}
+                alt={metaNameImg3}
                 className={css.Image}
                 />
             </div>
             <div className={css.ContainerImg}>
                 <PremiumCardImgSudoRoot
                 src={img4}
-                alt={MetaNameImg4}
+                alt={metaNameImg4}
                 className={css.Image}
                 />
             </div>
@@ -55,4 +48,4 @@ function Container4ImagesPortraitRoot(Props: Container4ImagesPortraitRootType) {
     );
 }
 
-export default Container4ImagesPortraitRoot;
+export { Container4ImagesPortrait_Element };
