@@ -1,6 +1,6 @@
 import style from "../../StyleRootComponent.module.css";
 
-import Container4ImagesRoot from "../../Elements/container-image/Container4ImagesRoot/Container4ImagesRoot";
+import Container4ImagesRoot from "../../Elements/container-image/container-4-Images/Container4Images.element";
 import ImagesPortraitFamilleControllerData from "./ImagesPortraitFamilleControllerData";
 
 import { Link } from "react-router-dom";

@@ -3,7 +3,7 @@ import style from "../../StyleRootComponent.module.css";
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../router/router";
 
-import Container4ImagesRoot from "../../Elements/container-image/Container4ImagesRoot/Container4ImagesRoot";
+import Container4ImagesRoot from "../../Elements/container-image/container-4-Images/Container4Images.element";
 import { Container4ImagesPortrait_Element } from "../../Elements/container-image/container-4_Images-portrait/Container4ImagesPortrait.element";
 import ImagesPortraitGrossesseControllerData from "./ImagesPortraitGrossesseControllerData";
 

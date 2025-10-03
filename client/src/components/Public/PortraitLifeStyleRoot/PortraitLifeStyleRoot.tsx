@@ -4,7 +4,7 @@ import externalLinks from "../../../constants/externalLinks";
 import useScrollToHash from "../../../hook/useScrollToHash";
 
 import ImagesPortraitLifeStyleControllerData from "./ImagesPortraitLifeStyleControllerData";
-import Container4ImagesRoot from "../../Elements/container-image/Container4ImagesRoot/Container4ImagesRoot";
+import Container4ImagesRoot from "../../Elements/container-image/container-4-Images/Container4Images.element";
 
 import AvisClientPortraitLifeStyleControllerData from "./AvisClientPortraitLifeStyleControllerData";
 import GeneratorCardAvisClient from "../../Elements/GeneratorCardAvisClient/GeneratorCardAvisClient";

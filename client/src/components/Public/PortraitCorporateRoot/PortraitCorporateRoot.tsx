@@ -3,7 +3,7 @@ import css from "./PortraitCorporateRoot.module.css";
 
 import externalLinks from "../../../constants/externalLinks";
 
-import Container4ImagesRoot from "../../Elements/container-image/Container4ImagesRoot/Container4ImagesRoot";
+import Container4ImagesRoot from "../../Elements/container-image/container-4-Images/Container4Images.element";
 import { Container4ImagesPortrait_Element } from "../../Elements/container-image/container-4_Images-portrait/Container4ImagesPortrait.element";
 import ImagesPortraitCorporateControllerData from "./ImagesPortraitCorporateControllerData";
 

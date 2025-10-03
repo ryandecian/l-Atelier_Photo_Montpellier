@@ -6,7 +6,7 @@ import ListDataRouter from "../../../router/router";
 import GeneratorCardAvisClient from "../../Elements/GeneratorCardAvisClient/GeneratorCardAvisClient";
 import AvisClientHomeControllerData from "./AvisClientHomeControllerData";
 
-import Container4ImagesRoot from "../../Elements/container-image/Container4ImagesRoot/Container4ImagesRoot";
+import Container4ImagesRoot from "../../Elements/container-image/container-4-Images/Container4Images.element";
 import ImagesHomeControllerData from "./ImagesHomeControllerData";
 
 import PremiumCardImgSudoRoot from "../../Elements/PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
