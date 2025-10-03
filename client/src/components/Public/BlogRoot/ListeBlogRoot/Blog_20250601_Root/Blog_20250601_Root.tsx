@@ -4,7 +4,7 @@ import ListDataRouter from "../../../../../router/router";
 import { Link } from "react-router-dom";
 import PremiumCardImgSudoRoot from "../../../../Elements/PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
 
-import Container4ImagesRoot from "../../../../Elements/container-image/Container4ImagesRoot/Container4ImagesRoot";
+import { Container4Images_Element } from "../../../../Elements/container-image/container-4-Images/Container4Images.element";
 import ImagesBlog_20250601_RootControllerData from "./ImagesBlog_20250601_RootControllerData";
 
 function Blog_20250601_Root() {
@@ -35,15 +35,15 @@ function Blog_20250601_Root() {
                 {`Qu'est-ce que la photographie de mariage en style reportage ?`}
             </h2>
 
-            <Container4ImagesRoot
+            <Container4Images_Element
                 img1={ImagesBlog_20250601_RootControllerData[0].src}
-                MetaNameImg1={ImagesBlog_20250601_RootControllerData[0].alt}
+                metaNameImg1={ImagesBlog_20250601_RootControllerData[0].alt}
                 img2={ImagesBlog_20250601_RootControllerData[1].src}
-                MetaNameImg2={ImagesBlog_20250601_RootControllerData[1].alt}
+                metaNameImg2={ImagesBlog_20250601_RootControllerData[1].alt}
                 img3={ImagesBlog_20250601_RootControllerData[2].src}
-                MetaNameImg3={ImagesBlog_20250601_RootControllerData[2].alt}
+                metaNameImg3={ImagesBlog_20250601_RootControllerData[2].alt}
                 img4={ImagesBlog_20250601_RootControllerData[3].src}
-                MetaNameImg4={ImagesBlog_20250601_RootControllerData[3].alt}
+                metaNameImg4={ImagesBlog_20250601_RootControllerData[3].alt}
             />
 
             <p className={style.TextP4}>
@@ -94,15 +94,15 @@ function Blog_20250601_Root() {
                 {`Vivre pleinement l’instant présent`}
             </h3>
 
-            <Container4ImagesRoot
+            <Container4Images_Element
                 img1={ImagesBlog_20250601_RootControllerData[4].src}
-                MetaNameImg1={ImagesBlog_20250601_RootControllerData[4].alt}
+                metaNameImg1={ImagesBlog_20250601_RootControllerData[4].alt}
                 img2={ImagesBlog_20250601_RootControllerData[5].src}
-                MetaNameImg2={ImagesBlog_20250601_RootControllerData[5].alt}
+                metaNameImg2={ImagesBlog_20250601_RootControllerData[5].alt}
                 img3={ImagesBlog_20250601_RootControllerData[6].src}
-                MetaNameImg3={ImagesBlog_20250601_RootControllerData[6].alt}
+                metaNameImg3={ImagesBlog_20250601_RootControllerData[6].alt}
                 img4={ImagesBlog_20250601_RootControllerData[7].src}
-                MetaNameImg4={ImagesBlog_20250601_RootControllerData[7].alt}
+                metaNameImg4={ImagesBlog_20250601_RootControllerData[7].alt}
             />
 
             <p className={style.TextP4}>
