@@ -3,7 +3,7 @@ import style from "../../StyleRootComponent.module.css";
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../router/router";
 
-import Container4ImagesRoot from "../../Elements/container-image/Container4ImagesRoot/Container4ImagesRoot";
+import { Container4Images_Element } from "../../Elements/container-image/container-4-Images/Container4Images.element";
 import ImagesPortraitDuoControllerData from "./ImagesPortraitDuoControllerData";
 
 import GeneratorCardAvisClient from "../../Elements/GeneratorCardAvisClient/GeneratorCardAvisClient";
@@ -48,15 +48,15 @@ function PortraitDuoRoot() {
                 sans filtres, sans caricature, dans une ambiance douce, vraie et sans pression.
             </p>
 
-            <Container4ImagesRoot
+            <Container4Images_Element
                 img1={ImagesPortraitDuoControllerData[0].src}
-                MetaNameImg1={ImagesPortraitDuoControllerData[0].alt}
+                metaNameImg1={ImagesPortraitDuoControllerData[0].alt}
                 img2={ImagesPortraitDuoControllerData[1].src}
-                MetaNameImg2={ImagesPortraitDuoControllerData[1].alt}
+                metaNameImg2={ImagesPortraitDuoControllerData[1].alt}
                 img3={ImagesPortraitDuoControllerData[2].src}
-                MetaNameImg3={ImagesPortraitDuoControllerData[2].alt}
+                metaNameImg3={ImagesPortraitDuoControllerData[2].alt}
                 img4={ImagesPortraitDuoControllerData[3].src}
-                MetaNameImg4={ImagesPortraitDuoControllerData[3].alt}
+                metaNameImg4={ImagesPortraitDuoControllerData[3].alt}
             />
 
             <h3 className={style.TitleNH3}>
@@ -106,15 +106,15 @@ function PortraitDuoRoot() {
                 Puis on crée ce moment rien qu’à vous, loin des clichés, proche de vous.
             </p>
 
-            <Container4ImagesRoot
+            <Container4Images_Element
                 img1={ImagesPortraitDuoControllerData[4].src}
-                MetaNameImg1={ImagesPortraitDuoControllerData[4].alt}
+                metaNameImg1={ImagesPortraitDuoControllerData[4].alt}
                 img2={ImagesPortraitDuoControllerData[5].src}
-                MetaNameImg2={ImagesPortraitDuoControllerData[5].alt}
+                metaNameImg2={ImagesPortraitDuoControllerData[5].alt}
                 img3={ImagesPortraitDuoControllerData[6].src}
-                MetaNameImg3={ImagesPortraitDuoControllerData[6].alt}
+                metaNameImg3={ImagesPortraitDuoControllerData[6].alt}
                 img4={ImagesPortraitDuoControllerData[7].src}
-                MetaNameImg4={ImagesPortraitDuoControllerData[7].alt}
+                metaNameImg4={ImagesPortraitDuoControllerData[7].alt}
             />
 
             <h3 className={style.TitleNH3}>

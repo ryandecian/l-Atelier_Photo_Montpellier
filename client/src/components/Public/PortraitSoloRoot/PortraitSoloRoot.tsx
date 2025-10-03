@@ -1,6 +1,6 @@
 import style from "../../StyleRootComponent.module.css";
 
-import Container4ImagesRoot from "../../Elements/container-image/Container4ImagesRoot/Container4ImagesRoot";
+import { Container4Images_Element } from "../../Elements/container-image/container-4-Images/Container4Images.element";
 import ImagesPortraitSoloControllerData from "./ImagesPortraitSoloControllerData";
 
 import { Link } from "react-router-dom";
@@ -50,15 +50,15 @@ function PortraitSoloRoot() {
                 </span>
             </p>
 
-            <Container4ImagesRoot 
+            <Container4Images_Element
                 img1={ImagesPortraitSoloControllerData[0].src}
-                MetaNameImg1={ImagesPortraitSoloControllerData[0].alt}
+                metaNameImg1={ImagesPortraitSoloControllerData[0].alt}
                 img2={ImagesPortraitSoloControllerData[1].src}
-                MetaNameImg2={ImagesPortraitSoloControllerData[1].alt}
+                metaNameImg2={ImagesPortraitSoloControllerData[1].alt}
                 img3={ImagesPortraitSoloControllerData[2].src}
-                MetaNameImg3={ImagesPortraitSoloControllerData[2].alt}
+                metaNameImg3={ImagesPortraitSoloControllerData[2].alt}
                 img4={ImagesPortraitSoloControllerData[3].src}
-                MetaNameImg4={ImagesPortraitSoloControllerData[3].alt}
+                metaNameImg4={ImagesPortraitSoloControllerData[3].alt}
             />
 
             <h3 className={style.TitleNH3}>
@@ -125,15 +125,15 @@ function PortraitSoloRoot() {
                 pour que vous vous sentiez bien le jour J.
             </p>
 
-            <Container4ImagesRoot
+            <Container4Images_Element
                 img1={ImagesPortraitSoloControllerData[4].src}
-                MetaNameImg1={ImagesPortraitSoloControllerData[4].alt}
+                metaNameImg1={ImagesPortraitSoloControllerData[4].alt}
                 img2={ImagesPortraitSoloControllerData[5].src}
-                MetaNameImg2={ImagesPortraitSoloControllerData[5].alt}
+                metaNameImg2={ImagesPortraitSoloControllerData[5].alt}
                 img3={ImagesPortraitSoloControllerData[6].src}
-                MetaNameImg3={ImagesPortraitSoloControllerData[6].alt}
+                metaNameImg3={ImagesPortraitSoloControllerData[6].alt}
                 img4={ImagesPortraitSoloControllerData[7].src}
-                MetaNameImg4={ImagesPortraitSoloControllerData[7].alt}
+                metaNameImg4={ImagesPortraitSoloControllerData[7].alt}
             />
 
             <div className={style.br}></div>
