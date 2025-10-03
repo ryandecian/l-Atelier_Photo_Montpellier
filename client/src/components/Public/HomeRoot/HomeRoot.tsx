@@ -6,7 +6,7 @@ import ListDataRouter from "../../../router/router";
 import GeneratorCardAvisClient from "../../Elements/GeneratorCardAvisClient/GeneratorCardAvisClient";
 import AvisClientHomeControllerData from "./AvisClientHomeControllerData";
 
-import Container4ImagesRoot from "../../Elements/container-image/container-4-Images/Container4Images.element";
+import { Container4Images_Element } from "../../Elements/container-image/container-4-Images/Container4Images.element";
 import ImagesHomeControllerData from "./ImagesHomeControllerData";
 
 import PremiumCardImgSudoRoot from "../../Elements/PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
@@ -83,15 +83,15 @@ function HomeRoot() {
                     Chaque portrait a son histoire à raconter
                 </h2>
 
-            <Container4ImagesRoot
+            <Container4Images_Element
                 img1={ImagesHomeControllerData[0].src}
-                MetaNameImg1={ImagesHomeControllerData[0].alt}
+                metaNameImg1={ImagesHomeControllerData[0].alt}
                 img2={ImagesHomeControllerData[1].src}
-                MetaNameImg2={ImagesHomeControllerData[1].alt}
+                metaNameImg2={ImagesHomeControllerData[1].alt}
                 img3={ImagesHomeControllerData[2].src}
-                MetaNameImg3={ImagesHomeControllerData[2].alt}
+                metaNameImg3={ImagesHomeControllerData[2].alt}
                 img4={ImagesHomeControllerData[3].src}
-                MetaNameImg4={ImagesHomeControllerData[3].alt}
+                metaNameImg4={ImagesHomeControllerData[3].alt}
             />
 
                 <p className={`${style.TextP4} ${style.TargetText1}`}>
@@ -144,15 +144,15 @@ function HomeRoot() {
                     Votre mariage, ce moment tant attendu !
                 </h2>
 
-            <Container4ImagesRoot
+            <Container4Images_Element
                 img1={ImagesHomeControllerData[4].src}
-                MetaNameImg1={ImagesHomeControllerData[4].alt}
+                metaNameImg1={ImagesHomeControllerData[4].alt}
                 img2={ImagesHomeControllerData[5].src}
-                MetaNameImg2={ImagesHomeControllerData[5].alt}
+                metaNameImg2={ImagesHomeControllerData[5].alt}
                 img3={ImagesHomeControllerData[6].src}
-                MetaNameImg3={ImagesHomeControllerData[6].alt}
+                metaNameImg3={ImagesHomeControllerData[6].alt}
                 img4={ImagesHomeControllerData[7].src}
-                MetaNameImg4={ImagesHomeControllerData[7].alt}
+                metaNameImg4={ImagesHomeControllerData[7].alt}
             />
 
                 <p className={`${style.TextP4} ${style.TargetText1}`}>
