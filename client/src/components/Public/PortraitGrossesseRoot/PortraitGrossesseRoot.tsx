@@ -3,7 +3,7 @@ import style from "../../StyleRootComponent.module.css";
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../router/router";
 
-import Container4ImagesRoot from "../../Elements/container-image/container-4-Images/Container4Images.element";
+import { Container4Images_Element } from "../../Elements/container-image/container-4-Images/Container4Images.element";
 import { Container4ImagesPortrait_Element } from "../../Elements/container-image/container-4_Images-portrait/Container4ImagesPortrait.element";
 import ImagesPortraitGrossesseControllerData from "./ImagesPortraitGrossesseControllerData";
 
@@ -52,15 +52,15 @@ function PortraitGrossesseRoot() {
                 temps, à hauteur de cœur.
             </p>
 
-            <Container4ImagesRoot
+            <Container4Images_Element
                 img1={ImagesPortraitGrossesseControllerData[0].src}
-                MetaNameImg1={ImagesPortraitGrossesseControllerData[0].alt}
+                metaNameImg1={ImagesPortraitGrossesseControllerData[0].alt}
                 img2={ImagesPortraitGrossesseControllerData[1].src}
-                MetaNameImg2={ImagesPortraitGrossesseControllerData[1].alt}
+                metaNameImg2={ImagesPortraitGrossesseControllerData[1].alt}
                 img3={ImagesPortraitGrossesseControllerData[2].src}
-                MetaNameImg3={ImagesPortraitGrossesseControllerData[2].alt}
+                metaNameImg3={ImagesPortraitGrossesseControllerData[2].alt}
                 img4={ImagesPortraitGrossesseControllerData[3].src}
-                MetaNameImg4={ImagesPortraitGrossesseControllerData[3].alt}
+                metaNameImg4={ImagesPortraitGrossesseControllerData[3].alt}
             />
 
             <h3 className={style.TitleNH3}>
@@ -124,15 +124,15 @@ function PortraitGrossesseRoot() {
                 </span> Pas de pression, pas de chrono serré.
             </p>
 
-            <Container4ImagesRoot
+            <Container4Images_Element
                 img1={ImagesPortraitGrossesseControllerData[4].src}
-                MetaNameImg1={ImagesPortraitGrossesseControllerData[4].alt}
+                metaNameImg1={ImagesPortraitGrossesseControllerData[4].alt}
                 img2={ImagesPortraitGrossesseControllerData[5].src}
-                MetaNameImg2={ImagesPortraitGrossesseControllerData[5].alt}
+                metaNameImg2={ImagesPortraitGrossesseControllerData[5].alt}
                 img3={ImagesPortraitGrossesseControllerData[6].src}
-                MetaNameImg3={ImagesPortraitGrossesseControllerData[6].alt}
+                metaNameImg3={ImagesPortraitGrossesseControllerData[6].alt}
                 img4={ImagesPortraitGrossesseControllerData[7].src}
-                MetaNameImg4={ImagesPortraitGrossesseControllerData[7].alt}
+                metaNameImg4={ImagesPortraitGrossesseControllerData[7].alt}
             />
 
             <h3 className={style.TitleNH3R}>
