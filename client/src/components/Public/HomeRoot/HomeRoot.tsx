@@ -197,7 +197,7 @@ function HomeRoot() {
                     Des photos, des expériences, des mots, ils m'ont fait confiance !
                 </h2>
 
-            <GeneratorCardAvisClient_Element avisClients={AvisClientHomeControllerData}/>
+            <GeneratorCardAvisClient_Element tabDataAvisClients={AvisClientHomeControllerData}/>
 
             {/* ---------- ---------- ---------- ---------- ---------- */}
 

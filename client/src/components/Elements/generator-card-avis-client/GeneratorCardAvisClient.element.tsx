@@ -37,7 +37,7 @@ function GeneratorCardAvisClient_Element({ tabDataAvisClients }: DatasAvisClient
     };
 
     return (
-        <section className={css.GeneratorCardAvisClient}>
+        <section className={`GeneratorCardAvisClient_Element ${css.GeneratorCardAvisClient}`}>
             <header className={css.ContainerTitle}>
                 <h3 className={css.title}>
                     Avis Clients
