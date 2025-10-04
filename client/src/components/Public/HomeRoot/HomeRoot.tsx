@@ -3,7 +3,7 @@ import style from "../../StyleRootComponent.module.css";
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../router/router";
 
-import GeneratorCardAvisClient from "../../Elements/generator-card-avis-client/GeneratorCardAvisClient.element";
+import { GeneratorCardAvisClient_Element } from "../../Elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 import AvisClientHomeControllerData from "./AvisClientHomeControllerData";
 
 import { Container4Images_Element } from "../../Elements/container-image/container-4-Images/Container4Images.element";
@@ -197,7 +197,7 @@ function HomeRoot() {
                     Des photos, des expériences, des mots, ils m'ont fait confiance !
                 </h2>
 
-            <GeneratorCardAvisClient avisClients={AvisClientHomeControllerData}/>
+            <GeneratorCardAvisClient_Element avisClients={AvisClientHomeControllerData}/>
 
             {/* ---------- ---------- ---------- ---------- ---------- */}
 

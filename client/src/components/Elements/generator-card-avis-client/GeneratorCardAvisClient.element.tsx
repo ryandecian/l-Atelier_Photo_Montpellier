@@ -10,7 +10,7 @@ import { DatasAvisClient_Type } from "../../../types/seo/avisClientSEO.type";
 /* Import des Utils */
 import { convertDateFrToISO_String_Utils } from "../../../utils/seo/convertDateFrToISO.utils";
 
-function GeneratorCardAvisClient_Element({ avisClients }: DatasAvisClient_Type) {
+function GeneratorCardAvisClient_Element({ tabDataAvisClients }: DatasAvisClient_Type) {
     const [expandedComments, setExpandedComments] = useState<{ [key: number]: boolean }>({});
 
     /* Option de déroulement des commentaires */
@@ -25,7 +25,7 @@ function GeneratorCardAvisClient_Element({ avisClients }: DatasAvisClient_Type) 
     const convertDateFrToISO = convertDateFrToISO_String_Utils;
 
     // Tri des avis du plus récent au plus ancien selon la date
-    const avisTries = [...avisClients].sort((a, b) => {
+    const avisTries = [...tabDataAvisClients].sort((a, b) => {
         return new Date(convertDateFrToISO(b.date)).getTime() - new Date(convertDateFrToISO(a.date)).getTime();
     });
 
