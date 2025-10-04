@@ -6,7 +6,7 @@ import ListDataRouter from "../../../router/router";
 import { Container4Images_Element } from "../../Elements/container-image/container-4-Images/Container4Images.element";
 import ImagesPortraitDuoControllerData from "./ImagesPortraitDuoControllerData";
 
-import GeneratorCardAvisClient from "../../Elements/generator-card-avis-client/GeneratorCardAvisClient.element";
+import { GeneratorCardAvisClient_Element } from "../../Elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 import AvisClientPortraitDuoControllerData from "./AvisClientPortraitDuoControllerData";
 
 import TarifCardRoot from "../../Elements/TarifsCard/TarifsCardRoot";
@@ -206,7 +206,7 @@ function PortraitDuoRoot() {
             <TarifCardRoot id="tarifs-portrait-duo" tarifs={TarifsPortraitDuo} mailtoLink={MailtoLinkPortraitDuo} />
 
             {/* Avis client */}
-            <GeneratorCardAvisClient avisClients={AvisClientPortraitDuoControllerData}/>
+            <GeneratorCardAvisClient_Element tabDataAvisClients={AvisClientPortraitDuoControllerData}/>
         </section>
     )
 }
