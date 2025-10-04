@@ -1,17 +1,16 @@
+/* Import des modules CSS */
+import css from "./generatorCardAvisClient.module.css";
+
+/* Import des composants React */
 import { useState } from "react";
-import css from "./GeneratorCardAvisClient.module.css";
-import { AvisClientSEO_Type } from "../../../types/seo/avisClientSEO.type";
+
+/* Import des Types */
+import { DatasAvisClient_Type } from "../../../types/seo/avisClientSEO.type";
+
+/* Import des Utils */
 import { convertDateFrToISO_String_Utils } from "../../../utils/seo/convertDateFrToISO.utils";
 
-
-// Ajout d'une interface pour les props
-interface DataAvisClientProps {
-    avisClients: AvisClientSEO_Type[];
-}
-
-function GeneratorCardAvisClient(Props: DataAvisClientProps) {
-    const { avisClients } = Props;
-
+function GeneratorCardAvisClient_Element({ tabDataAvisClients }: DatasAvisClient_Type) {
     const [expandedComments, setExpandedComments] = useState<{ [key: number]: boolean }>({});
 
     /* Option de déroulement des commentaires */
@@ -26,7 +25,7 @@ function GeneratorCardAvisClient(Props: DataAvisClientProps) {
     const convertDateFrToISO = convertDateFrToISO_String_Utils;
 
     // Tri des avis du plus récent au plus ancien selon la date
-    const avisTries = [...avisClients].sort((a, b) => {
+    const avisTries = [...tabDataAvisClients].sort((a, b) => {
         return new Date(convertDateFrToISO(b.date)).getTime() - new Date(convertDateFrToISO(a.date)).getTime();
     });
 
@@ -38,7 +37,7 @@ function GeneratorCardAvisClient(Props: DataAvisClientProps) {
     };
 
     return (
-        <section className={css.GeneratorCardAvisClient}>
+        <section className={`GeneratorCardAvisClient_Element ${css.GeneratorCardAvisClient}`}>
             <header className={css.ContainerTitle}>
                 <h3 className={css.title}>
                     Avis Clients
@@ -81,4 +80,4 @@ function GeneratorCardAvisClient(Props: DataAvisClientProps) {
     );
 }
 
-export default GeneratorCardAvisClient;
+export { GeneratorCardAvisClient_Element };

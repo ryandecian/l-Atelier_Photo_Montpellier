@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import ListDataRouter from "../../../router/router";
 
 import AvisClientPortraitSoloControllerData from "./AvisClientPortraitSoloControllerData";
-import GeneratorCardAvisClient from "../../Elements/GeneratorCardAvisClient/GeneratorCardAvisClient";
+import { GeneratorCardAvisClient_Element } from "../../Elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 
 import TarifCardRoot from "../../Elements/TarifsCard/TarifsCardRoot";
 import { TarifsPortraitSolo, MailtoLinkPortraitSolo } from "./TarifsPortraitSolo";
@@ -221,7 +221,7 @@ function PortraitSoloRoot() {
             <TarifCardRoot id="tarifs-portrait-solo" tarifs={TarifsPortraitSolo} mailtoLink={MailtoLinkPortraitSolo} />
 
             {/* Container C : Avis Clients */}
-            <GeneratorCardAvisClient avisClients={AvisClientPortraitSoloControllerData} />
+            <GeneratorCardAvisClient_Element tabDataAvisClients={AvisClientPortraitSoloControllerData} />
         </section>
     )
 }
