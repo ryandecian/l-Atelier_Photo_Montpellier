@@ -1,9 +1,9 @@
 import style from "../../../../StyleRootComponent.module.css";
-import GeneratorAlbumPhoto from "../../../../Elements/GeneratorAlbumPhoto/GeneratorAlbumPhoto";
+import { GeneratorAlbumPhoto_Element } from "../../../../Elements/GeneratorAlbumPhoto/GeneratorAlbumPhoto.element";
 import AlbumPortfolio from "../../AlbumPortfolio";
 
 function PortfolioRootComponentB() {
-    const Album = AlbumPortfolio.Album_Paysage;
+    const dataAlbumPaysage = AlbumPortfolio.Album_Paysage;
     return (
         <section className={`PortfolioRootComponentB ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
@@ -23,7 +23,7 @@ function PortfolioRootComponentB() {
                 horizon, un arbre solitaire ou un ciel chargé.
             </p>
 
-            <GeneratorAlbumPhoto album={Album} />
+            <GeneratorAlbumPhoto_Element album={dataAlbumPaysage} />
         </section>
     )
 }
