@@ -1,9 +1,9 @@
 import style from "../../../../StyleRootComponent.module.css";
-import GeneratorAlbumPhoto from "../../../../Elements/GeneratorAlbumPhoto/GeneratorAlbumPhoto";
+import { GeneratorAlbumPhoto_Element } from "../../../../Elements/GeneratorAlbumPhoto/GeneratorAlbumPhoto.element";
 import AlbumPortfolio from "../../AlbumPortfolio";
 
 function PortfolioRootComponentF() {
-    const Album = AlbumPortfolio.Album_Pro_Perso;
+    const dataAlbumProPerso = AlbumPortfolio.Album_Pro_Perso;
     return (
         <article className={`PortfolioRootComponentF ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
@@ -23,7 +23,7 @@ function PortfolioRootComponentF() {
                 expressives, valorisantes.
             </p>
 
-            <GeneratorAlbumPhoto album={Album} />
+            <GeneratorAlbumPhoto_Element album={dataAlbumProPerso} />
         </article>
     )
 }
