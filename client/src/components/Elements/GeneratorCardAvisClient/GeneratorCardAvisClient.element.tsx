@@ -10,9 +10,7 @@ import { DatasAvisClient_Type } from "../../../types/seo/avisClientSEO.type";
 /* Import des Utils */
 import { convertDateFrToISO_String_Utils } from "../../../utils/seo/convertDateFrToISO.utils";
 
-function GeneratorCardAvisClient(Props: DatasAvisClient_Type) {
-    const { avisClients } = Props;
-
+function GeneratorCardAvisClient_Element({ avisClients }: DatasAvisClient_Type) {
     const [expandedComments, setExpandedComments] = useState<{ [key: number]: boolean }>({});
 
     /* Option de déroulement des commentaires */
@@ -82,4 +80,4 @@ function GeneratorCardAvisClient(Props: DatasAvisClient_Type) {
     );
 }
 
-export default GeneratorCardAvisClient;
+export { GeneratorCardAvisClient_Element };

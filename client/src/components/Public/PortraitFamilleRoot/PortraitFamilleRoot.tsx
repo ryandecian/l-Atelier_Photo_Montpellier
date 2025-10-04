@@ -6,7 +6,7 @@ import ImagesPortraitFamilleControllerData from "./ImagesPortraitFamilleControll
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../router/router";
 
-import GeneratorCardAvisClient from "../../Elements/GeneratorCardAvisClient/GeneratorCardAvisClient";
+import GeneratorCardAvisClient from "../../Elements/GeneratorCardAvisClient/GeneratorCardAvisClient.element";
 import AvisClientPortraitFamilleControllerData from "./AvisClientPortraitFamilleControllerData";
 
 import TarifCardRoot from "../../Elements/TarifsCard/TarifsCardRoot";

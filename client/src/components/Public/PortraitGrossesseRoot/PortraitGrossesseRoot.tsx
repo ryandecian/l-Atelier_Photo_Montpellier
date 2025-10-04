@@ -7,7 +7,7 @@ import { Container4Images_Element } from "../../Elements/container-image/contain
 import { Container4ImagesPortrait_Element } from "../../Elements/container-image/container-4_Images-portrait/Container4ImagesPortrait.element";
 import ImagesPortraitGrossesseControllerData from "./ImagesPortraitGrossesseControllerData";
 
-import GeneratorCardAvisClient from "../../Elements/GeneratorCardAvisClient/GeneratorCardAvisClient";
+import GeneratorCardAvisClient from "../../Elements/GeneratorCardAvisClient/GeneratorCardAvisClient.element";
 import AvisClientPortraitGrossesseControllerData from "./AvisClientPortraitGrossesseControllerData";
 
 import TarifCardRoot from "../../Elements/TarifsCard/TarifsCardRoot";
