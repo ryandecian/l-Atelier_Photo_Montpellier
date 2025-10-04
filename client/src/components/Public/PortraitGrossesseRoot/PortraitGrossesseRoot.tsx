@@ -7,7 +7,7 @@ import { Container4Images_Element } from "../../Elements/container-image/contain
 import { Container4ImagesPortrait_Element } from "../../Elements/container-image/container-4_Images-portrait/Container4ImagesPortrait.element";
 import ImagesPortraitGrossesseControllerData from "./ImagesPortraitGrossesseControllerData";
 
-import GeneratorCardAvisClient from "../../Elements/generator-card-avis-client/GeneratorCardAvisClient.element";
+import { GeneratorCardAvisClient_Element } from "../../Elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 import AvisClientPortraitGrossesseControllerData from "./AvisClientPortraitGrossesseControllerData";
 
 import TarifCardRoot from "../../Elements/TarifsCard/TarifsCardRoot";
@@ -239,7 +239,7 @@ function PortraitGrossesseRoot() {
             <TarifCardRoot id="tarifs-portrait-grossesse" tarifs={TarifsPortraitGrossesse} mailtoLink={MailtoLinkPortraitGrossesse} />
 
             {/* Avis clients */}
-            <GeneratorCardAvisClient avisClients={AvisClientPortraitGrossesseControllerData} />
+            <GeneratorCardAvisClient_Element tabDataAvisClients={AvisClientPortraitGrossesseControllerData} />
         </section>
     )
 }
