@@ -3,7 +3,7 @@ import style from "../../StyleRootComponent.module.css";
 import { Container4Images_Element } from "../../Elements/container-image/container-4-Images/Container4Images.element";
 import ControllerDataImagePortraitMariage from "./ImagesPortraitMariageControllerData";
 
-import GeneratorCardAvisClient from "../../Elements/GeneratorCardAvisClient/GeneratorCardAvisClient";
+import { GeneratorCardAvisClient_Element } from "../../Elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 import AvisClientPortraitMariageControllerData from "./AvisClientPortraitMariageControllerData";
 
 import TarifCardRoot from "../../Elements/TarifsCard/TarifsCardRoot";
@@ -351,7 +351,7 @@ function PortraitMariageRoot() {
             <TarifCardRoot id="tarifs-portrait-mariage" tarifs={TarifsPortraitMariage} mailtoLink={MailtoLinkPortraitMariage} />
 
             {/* Avis Client : */}
-            <GeneratorCardAvisClient avisClients={AvisClientPortraitMariageControllerData} />
+            <GeneratorCardAvisClient_Element tabDataAvisClients={AvisClientPortraitMariageControllerData} />
 
         </section>
     );
