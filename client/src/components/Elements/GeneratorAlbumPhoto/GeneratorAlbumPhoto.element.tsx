@@ -1,6 +1,6 @@
 
 /* Import des modules CSS */
-import css from "./GeneratorAlbumPhoto.module.css";
+import css from "./generatorAlbumPhoto.module.css";
 
 /* Import des composants d'Elements */
 import PremiumCardImgSudoRoot from "../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
