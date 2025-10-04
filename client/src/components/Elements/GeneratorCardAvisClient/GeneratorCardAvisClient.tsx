@@ -1,17 +1,16 @@
 /* Import des modules CSS */
 import css from "./generatorCardAvisClient.module.css";
 
+/* Import des composants React */
 import { useState } from "react";
-import { AvisClientSEO_Type } from "../../../types/seo/avisClientSEO.type";
+
+/* Import des Types */
+import { DatasAvisClient_Type } from "../../../types/seo/avisClientSEO.type";
+
+/* Import des Utils */
 import { convertDateFrToISO_String_Utils } from "../../../utils/seo/convertDateFrToISO.utils";
 
-
-// Ajout d'une interface pour les props
-interface DataAvisClientProps {
-    avisClients: AvisClientSEO_Type[];
-}
-
-function GeneratorCardAvisClient(Props: DataAvisClientProps) {
+function GeneratorCardAvisClient(Props: DatasAvisClient_Type) {
     const { avisClients } = Props;
 
     const [expandedComments, setExpandedComments] = useState<{ [key: number]: boolean }>({});
