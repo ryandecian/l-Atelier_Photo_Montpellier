@@ -1,9 +1,9 @@
 import style from "../../../../StyleRootComponent.module.css";
-import GeneratorAlbumPhoto from "../../../../Elements/GeneratorAlbumPhoto/GeneratorAlbumPhoto";
+import { GeneratorAlbumPhoto_Element } from "../../../../Elements/GeneratorAlbumPhoto/GeneratorAlbumPhoto.element";
 import AlbumPortfolio from "../../AlbumPortfolio";
 
 function PortfolioRootComponentC() {
-    const Album = AlbumPortfolio.Album_Rue_Street;
+    const dataAlbumRueStreet = AlbumPortfolio.Album_Rue_Street;
     return (
         <section className={`PortfolioRootComponentC ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
@@ -22,7 +22,7 @@ function PortfolioRootComponentC() {
                 brut, mais qui nourrit ma créativité.
             </p>
 
-            <GeneratorAlbumPhoto album={Album} />
+            <GeneratorAlbumPhoto_Element album={dataAlbumRueStreet} />
         </section>
     )
 }

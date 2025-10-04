@@ -1,16 +1,14 @@
-import css from "./GeneratorAlbumPhoto.module.css";
+
+/* Import des modules CSS */
+import css from "./generatorAlbumPhoto.module.css";
+
+/* Import des composants d'Elements */
 import PremiumCardImgSudoRoot from "../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
 
-type AlbumPhotoType = {
-    src: string;
-    alt: string;
-};
+/* Import des Types */
+import { DataAlbumPhoto_Type } from "../../../types/elements/albumPhoto.type";
 
-type DataAlbumPhotoType = {
-    album: AlbumPhotoType[];
-};
-
-function GeneratorAlbumPhoto({ album }: DataAlbumPhotoType) {
+function GeneratorAlbumPhoto_Element({ album }: DataAlbumPhoto_Type) {
     return (
         <div className={css.flexWrap}>
             {album.map((img, index) => (
@@ -26,4 +24,4 @@ function GeneratorAlbumPhoto({ album }: DataAlbumPhotoType) {
     );
 }
 
-export default GeneratorAlbumPhoto;
+export { GeneratorAlbumPhoto_Element };
