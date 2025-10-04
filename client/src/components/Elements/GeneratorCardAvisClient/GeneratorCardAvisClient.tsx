@@ -1,5 +1,7 @@
+/* Import des modules CSS */
+import css from "./generatorCardAvisClient.module.css";
+
 import { useState } from "react";
-import css from "./GeneratorCardAvisClient.module.css";
 import { AvisClientSEO_Type } from "../../../types/seo/avisClientSEO.type";
 import { convertDateFrToISO_String_Utils } from "../../../utils/seo/convertDateFrToISO.utils";
 
