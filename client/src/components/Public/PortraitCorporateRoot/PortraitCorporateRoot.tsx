@@ -8,7 +8,7 @@ import { Container4ImagesPortrait_Element } from "../../Elements/container-image
 import ImagesPortraitCorporateControllerData from "./ImagesPortraitCorporateControllerData";
 
 import AvisClientPortraitCorporateControllerData from "./AvisClientPortraitCorporateControllerData";
-import GeneratorCardAvisClient from "../../Elements/GeneratorCardAvisClient/GeneratorCardAvisClient";
+import { GeneratorCardAvisClient_Element } from "../../Elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 
 import TarifCardCorporate from "./ComponentsPortraitCorporateRoot/TarifsComponentsCorporate/TarifsCardCorporate";
 import { TarifsPortraitCorporate, MailtoLinkPortraitCorporate } from "./TarifsPortraitCorporate";
@@ -178,7 +178,7 @@ function PortraitCorporateRoot() {
             />
 
             {/* Container E : Avis clients */}
-            <GeneratorCardAvisClient avisClients={AvisClientPortraitCorporateControllerData} />
+            <GeneratorCardAvisClient_Element tabDataAvisClients={AvisClientPortraitCorporateControllerData} />
         </section>
     );
 }
