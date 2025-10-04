@@ -7,7 +7,7 @@ import ListDataRouter from "../../../router/router";
 import { Container4Images_Element } from "../../Elements/container-image/container-4-Images/Container4Images.element";
 import ImagesPortraitHobbyControllerData from "./ImagesPortraitHobbyControllerData";
 
-import GeneratorCardAvisClient from "../../Elements/GeneratorCardAvisClient/GeneratorCardAvisClient.element";
+import GeneratorCardAvisClient from "../../Elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 import AvisClientPortraitHobbyControllerData from "./AvisClientPortraitHobbyControllerData";
 
 import TarifCardRoot from "../../Elements/TarifsCard/TarifsCardRoot";

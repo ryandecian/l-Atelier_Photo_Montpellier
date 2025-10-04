@@ -3,7 +3,7 @@ import style from "../../StyleRootComponent.module.css";
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../router/router";
 
-import GeneratorCardAvisClient from "../../Elements/GeneratorCardAvisClient/GeneratorCardAvisClient.element";
+import GeneratorCardAvisClient from "../../Elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 import AvisClientHomeControllerData from "./AvisClientHomeControllerData";
 
 import { Container4Images_Element } from "../../Elements/container-image/container-4-Images/Container4Images.element";
