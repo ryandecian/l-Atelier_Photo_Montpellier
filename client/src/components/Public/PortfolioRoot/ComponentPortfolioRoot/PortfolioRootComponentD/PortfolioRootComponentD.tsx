@@ -1,9 +1,9 @@
 import style from "../../../../StyleRootComponent.module.css";
-import GeneratorAlbumPhoto from "../../../../Elements/GeneratorAlbumPhoto/GeneratorAlbumPhoto";
+import { GeneratorAlbumPhoto_Element } from "../../../../Elements/GeneratorAlbumPhoto/GeneratorAlbumPhoto.element";
 import AlbumPortfolio from "../../AlbumPortfolio";
 
 function PortfolioRootComponentD() {
-    const Album = AlbumPortfolio.Album_Urbaine;
+    const dataAlbumUrbaine = AlbumPortfolio.Album_Urbaine;
     return (
         <section className={`PortfolioRootComponentD ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
@@ -23,7 +23,7 @@ function PortfolioRootComponentD() {
                 toujours équilibrées.
             </p>
 
-            <GeneratorAlbumPhoto album={Album} />
+            <GeneratorAlbumPhoto_Element album={dataAlbumUrbaine} />
         </section>
     )
 }
