@@ -3,7 +3,7 @@
 import css from "./generatorAlbumPhoto.module.css";
 
 /* Import des composants d'Elements */
-import PremiumCardImgSudoRoot from "../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
+import PremiumCardImgSudoRoot from "../premium-card-img-modal/PremiumCardImgModal.element";
 
 /* Import des Types */
 import { DataAlbumPhoto_Type } from "../../../types/elements/albumPhoto.type";

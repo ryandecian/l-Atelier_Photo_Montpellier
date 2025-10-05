@@ -9,7 +9,7 @@ import AvisClientHomeControllerData from "./AvisClientHomeControllerData";
 import { Container4Images_Element } from "../../Elements/container-image/container-4-Images/Container4Images.element";
 import ImagesHomeControllerData from "./ImagesHomeControllerData";
 
-import PremiumCardImgSudoRoot from "../../Elements/PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
+import PremiumCardImgSudoRoot from "../../Elements/premium-card-img-modal/PremiumCardImgModal.element";
 
 import HomeRootComponentA from "./ComponentsHomeRoot/HomeRootComponentA/HomeRootComponentA";
 

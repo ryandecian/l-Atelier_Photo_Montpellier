@@ -1,13 +1,13 @@
+/* Import des modules CSS */
+import css from "./premiumCardImgModal.module.css";
+
+/* Import des composants React */
 import { useState } from "react";
-import css from "./PremiumCardImgSudoRoot.module.css";
 
-interface ImageZoomProps {
-  src: string; 
-  alt: string; 
-  className: string;
-}
+/* Import des Types */
+import { PremiumCardImgModal_Type } from "../../../types/elements/premiumCardImgModal.type";
 
-function PremiumCardImgSudoRoot ({src, alt, className}: ImageZoomProps) {
+function PremiumCardImgModal_Element ({src, alt, className}: PremiumCardImgModal_Type) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -38,4 +38,4 @@ function PremiumCardImgSudoRoot ({src, alt, className}: ImageZoomProps) {
   );
 };
 
-export default PremiumCardImgSudoRoot;
+export { PremiumCardImgModal_Element };

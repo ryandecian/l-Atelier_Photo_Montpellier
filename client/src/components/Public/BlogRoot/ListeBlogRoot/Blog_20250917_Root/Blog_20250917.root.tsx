@@ -5,7 +5,7 @@ import style from "../../../../StyleRootComponent.module.css";
 import { imagesBlog_20250917_img_data } from "./imagesBlog_20250917.img.data";
 
 /* Import des composants d'Elements */
-import PremiumCardImgSudoRoot from "../../../../Elements/PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
+import PremiumCardImgSudoRoot from "../../../../Elements/premium-card-img-modal/PremiumCardImgModal.element";
 
 function Blog_20250917_Root() {
     return (

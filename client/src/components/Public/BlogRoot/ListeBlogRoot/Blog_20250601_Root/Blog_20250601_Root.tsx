@@ -2,7 +2,7 @@ import style from "../../../../StyleRootComponent.module.css";
 import css from "./Blog_20250601_Root.module.css";
 import ListDataRouter from "../../../../../router/router";
 import { Link } from "react-router-dom";
-import PremiumCardImgSudoRoot from "../../../../Elements/PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
+import PremiumCardImgSudoRoot from "../../../../Elements/premium-card-img-modal/PremiumCardImgModal.element";
 
 import { Container4Images_Element } from "../../../../Elements/container-image/container-4-Images/Container4Images.element";
 import ImagesBlog_20250601_RootControllerData from "./ImagesBlog_20250601_RootControllerData";

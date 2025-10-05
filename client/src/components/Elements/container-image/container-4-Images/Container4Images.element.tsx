@@ -2,7 +2,7 @@
 import css from "./container4Images.module.css";
 
 /* Import des composants d'Elements */
-import PremiumCardImgSudoRoot from "../../PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
+import PremiumCardImgSudoRoot from "../../premium-card-img-modal/PremiumCardImgModal.element";
 
 /* Import des Types */
 import { Container4Images_Type } from "../../../../types/elements/container4Images.type";
