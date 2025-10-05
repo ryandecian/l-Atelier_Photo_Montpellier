@@ -9,7 +9,7 @@ import AvisClientHomeControllerData from "./AvisClientHomeControllerData";
 import { Container4Images_Element } from "../../Elements/container-image/container-4-Images/Container4Images.element";
 import ImagesHomeControllerData from "./ImagesHomeControllerData";
 
-import PremiumCardImgSudoRoot from "../../Elements/premium-card-img-modal/PremiumCardImgModal.element";
+import { PremiumCardImgModal_Element } from "../../Elements/premium-card-img-modal/PremiumCardImgModal.element";
 
 import HomeRootComponentA from "./ComponentsHomeRoot/HomeRootComponentA/HomeRootComponentA";
 
@@ -207,7 +207,7 @@ function HomeRoot() {
 
         <div className={style.ContainerFloat}>
             <figure className={style.FloatLeftImg_Po}>
-                <PremiumCardImgSudoRoot 
+                <PremiumCardImgModal_Element
                     className={style.ImgOnFigure}
                     src="./images/anne-saunier/lapm-photographe-professionnelle-anne-saunier-grabels-l-atelier-photo-montpellier.jpg" 
                     alt="Portrait de la photographe professionnelle Anne SAUNIER"
