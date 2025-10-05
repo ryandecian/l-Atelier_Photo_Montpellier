@@ -27,7 +27,7 @@ jobs:
             echo "📁 Accès au dossier du projet"
             cd ${{ secrets.PROJECT_PATH }}
 
-            echo "🛑 Stop + remove containers"
+            echo "🛑 Stop + remove containers : Phase 1/2"
             sudo docker stop $(sudo docker ps -q) || true
             sudo docker rm $(sudo docker ps -aq) || true
 
@@ -37,14 +37,14 @@ jobs:
             echo "🔀 Checkout de la bonne branche"
             git checkout Deploy
 
-            echo "🚀 Build + redémarrage"
+            echo "🚀 Build + redémarrage : Phase 1/2"
             git pull origin Deploy
             sudo docker compose up -d --build
-            
-            echo "🛑 Arrêt des containers, phase 2"
+
+            echo "🛑 Arrêt des containers : Phase 2/2"
             sudo docker compose down || true
 
-            echo "🚢 Redémarrage des containers, phase 2"
+            echo "🚢 Redémarrage des containers : Phase 2/2"
             sudo docker compose up -d
 
             echo "✅ Déploiement terminé"
