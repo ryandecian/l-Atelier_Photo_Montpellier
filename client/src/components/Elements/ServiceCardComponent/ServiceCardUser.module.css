@@ -21,7 +21,7 @@
 
     width: 100%;
     max-width: 15.625rem; /* 250px */
-    min-height: 50px; /* 120px */
+    min-height: 3.125rem; /* 50px */
 
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
