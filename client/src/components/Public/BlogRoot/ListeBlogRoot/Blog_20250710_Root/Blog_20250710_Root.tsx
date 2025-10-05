@@ -3,7 +3,7 @@ import ListDataRouter from "../../../../../router/router";
 import { Link } from "react-router-dom";
 
 import ImagesBlog_20250710_RootControllerData from "./ImagesBlog_20250710_RootControllerData";
-import PremiumCardImgSudoRoot from "../../../../Elements/PremiumCardImgSudoRoot/PremiumCardImgSudoRoot";
+import { PremiumCardImgModal_Element } from "../../../../Elements/premium-card-img-modal/PremiumCardImgModal.element";
 import PortraitLifeStyleRootComponentB from "../../../../Public/PortraitLifeStyleRoot/ComponentsPortraitLifeStyleRoot/PortraitLifeStyleRootComponentB/PortraitLifeStyleRootComponentB";
 
 function Blog_20250710_Root() {
@@ -40,7 +40,7 @@ function Blog_20250710_Root() {
             </h2>
 
             <div className={style.ContainerFloat}>
-                <PremiumCardImgSudoRoot
+                <PremiumCardImgModal_Element
                     src={ImagesBlog_20250710_RootControllerData[0].src}
                     alt={ImagesBlog_20250710_RootControllerData[0].alt}
                     className={style.FloatLeftImg_Po}
@@ -79,7 +79,7 @@ function Blog_20250710_Root() {
             </h2>
 
             <div className={style.ContainerFloat}>
-                <PremiumCardImgSudoRoot
+                <PremiumCardImgModal_Element
                     src={ImagesBlog_20250710_RootControllerData[1].src}
                     alt={ImagesBlog_20250710_RootControllerData[1].alt}
                     className={style.FloatRightImg_Pa}
@@ -130,7 +130,7 @@ function Blog_20250710_Root() {
             </h2>
 
             <div className={style.ContainerFloat}>
-                <PremiumCardImgSudoRoot
+                <PremiumCardImgModal_Element
                     src={ImagesBlog_20250710_RootControllerData[2].src}
                     alt={ImagesBlog_20250710_RootControllerData[2].alt}
                     className={style.FloatLeftImg_Pa}
