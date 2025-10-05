@@ -4,7 +4,7 @@ import ListDataRouter from "../../../../../router/router";
 import { Link } from "react-router-dom";
 
 import ImagesBlog_20250724_RootControllerData from "./ImagesBlog_20250724_RootControllerData";
-import PremiumCardImgSudoRoot from "../../../../Elements/premium-card-img-modal/PremiumCardImgModal.element";
+import { PremiumCardImgModal_Element } from "../../../../Elements/premium-card-img-modal/PremiumCardImgModal.element";
 
 function Blog_20250724_Root() {
     return (
@@ -38,13 +38,13 @@ function Blog_20250724_Root() {
             </h2>
 
             <div className={css.ContainerImg}>
-                <PremiumCardImgSudoRoot
+                <PremiumCardImgModal_Element
                     src={ImagesBlog_20250724_RootControllerData[0].src}
                     alt={ImagesBlog_20250724_RootControllerData[0].alt}
                     className={css.Img1}
                 />
 
-                <PremiumCardImgSudoRoot
+                <PremiumCardImgModal_Element
                     src={ImagesBlog_20250724_RootControllerData[1].src}
                     alt={ImagesBlog_20250724_RootControllerData[1].alt}
                     className={css.Img2}
