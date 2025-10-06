@@ -1,5 +1,5 @@
 import externalLinks from "../../../constants/externalLinks";
-import {PrestationType, FormuleType, DataRootEmailType} from "../../../types/Prestations.type";
+import {PrestationType, FormuleType, DataRootEmailType} from "../../../types/pprestations.type";
 
 /* ---------- ----------- ---------- ---------- ---------- */
 /* Bloc logique 1 */
