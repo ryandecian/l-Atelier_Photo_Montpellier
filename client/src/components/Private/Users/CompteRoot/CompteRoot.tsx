@@ -32,10 +32,11 @@ function CompteRoot() {
                     nameService="Mes séances"
                     link={ListDataRouter[32].path}
                 />
-                <ServiceCardUserLink_Element
+                {/* Enlèvement de ce service, à la demande de la cliente */}
+                {/* <ServiceCardUserLink_Element
                     nameService="Mes factures"
                     link="#"
-                />
+                /> */}
                 <ServiceCardUserButton_Element
                     nameService="Déconnexion"
                     onClick={logout}
