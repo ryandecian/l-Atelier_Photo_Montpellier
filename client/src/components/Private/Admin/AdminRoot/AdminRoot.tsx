@@ -1,6 +1,6 @@
 import css from "./AdminRoot.module.css";
 import style from "../../../StyleRootComponent.module.css";
-import { ServiceCardAdminLink, ServiceCardAdminButton } from "../../../Elements/ServiceCardComponent/ServiceCardAdmin";
+import { ServiceCardAdminLink, ServiceCardAdminButton } from "../../../Elements/service-card-private-component/ServiceCardAdmin";
 import useLogout from "../../../../hook/useLogout.hook";
 import ListDataRouter from "../../../../router/router";
 import useLockedPage from "../../../../hook/useLockedPage.security.hook";

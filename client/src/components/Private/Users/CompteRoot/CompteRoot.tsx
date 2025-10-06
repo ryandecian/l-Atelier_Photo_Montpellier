@@ -1,6 +1,6 @@
 import css from "./CompteRoot.module.css";
 import style from "../../../StyleRootComponent.module.css";
-import { ServiceCardUserLink, ServiceCardUserButton } from "../../../Elements/ServiceCardComponent/ServiceCardUser";
+import { ServiceCardUserLink, ServiceCardUserButton } from "../../../Elements/service-card-private-component/ServiceCardUser";
 import useLogout from "../../../../hook/useLogout.hook";
 import ListDataRouter from "../../../../router/router";
 import useLockedPage from "../../../../hook/useLockedPage.security.hook";
