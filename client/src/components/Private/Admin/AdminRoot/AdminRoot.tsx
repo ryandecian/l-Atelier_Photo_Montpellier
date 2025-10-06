@@ -1,6 +1,6 @@
 import css from "./AdminRoot.module.css";
 import style from "../../../StyleRootComponent.module.css";
-import { ServiceCardAdminLink, ServiceCardAdminButton } from "../../../Elements/service-card-private-component/ServiceCardAdmin";
+import { ServiceCardAdminLink_Element, ServiceCardAdminButton_Element } from "../../../Elements/service-card-private-component/ServiceCardAdmin.element";
 import useLogout from "../../../../hook/useLogout.hook";
 import ListDataRouter from "../../../../router/router";
 import useLockedPage from "../../../../hook/useLockedPage.security.hook";
@@ -24,32 +24,32 @@ function AdminRoot() {
             <h1 className={css.Title}>👑 Interface Admin</h1>
 
             <div className={css.ContainerCard}>
-                <ServiceCardAdminLink
+                <ServiceCardAdminLink_Element
                     nameService="Mes informations"
                     etat={true}
                     link={ListDataRouter[26].path}
                 />
-                <ServiceCardAdminLink
+                <ServiceCardAdminLink_Element
                     nameService="Gestion des utilisateurs"
                     etat={true}
                     link={ListDataRouter[23].path}
                 />
-                    <ServiceCardAdminLink
+                    <ServiceCardAdminLink_Element
                         nameService="Gestion des albums"
                         etat={true}
                         link={ListDataRouter[33].path}
                     />
-                <ServiceCardAdminLink
+                <ServiceCardAdminLink_Element
                     nameService="Gestion des factures"
                     etat={false}
                     link="#"
                 />
-                <ServiceCardAdminLink
+                <ServiceCardAdminLink_Element
                     nameService="Gestion des statistiques"
                     etat={false}
                     link="#"
                 />
-                <ServiceCardAdminButton
+                <ServiceCardAdminButton_Element
                     nameService="Déconnexion"
                     etat={true}
                     onClick={logout}
