@@ -1,6 +1,6 @@
 import css from "./CompteRoot.module.css";
 import style from "../../../StyleRootComponent.module.css";
-import { ServiceCardUserLink, ServiceCardUserButton } from "../../../Elements/ServiceCardComponent/ServiceCardUser";
+import { ServiceCardUserLink_Element, ServiceCardUserButton_Element } from "../../../Elements/service-card-private-component/ServiceCardUser.element";
 import useLogout from "../../../../hook/useLogout.hook";
 import ListDataRouter from "../../../../router/router";
 import useLockedPage from "../../../../hook/useLockedPage.security.hook";
@@ -24,19 +24,20 @@ function CompteRoot() {
             <h1 className={css.Title}>Bienvenue sur votre compte</h1>
 
             <div className={css.ContainerCard}>
-                <ServiceCardUserLink
+                <ServiceCardUserLink_Element
                     nameService="Mes informations"
                     link={ListDataRouter[24].path}
                 />
-                <ServiceCardUserLink
+                <ServiceCardUserLink_Element
                     nameService="Mes séances"
                     link={ListDataRouter[32].path}
                 />
-                <ServiceCardUserLink
+                {/* Enlèvement de ce service, à la demande de la cliente */}
+                {/* <ServiceCardUserLink_Element
                     nameService="Mes factures"
                     link="#"
-                />
-                <ServiceCardUserButton
+                /> */}
+                <ServiceCardUserButton_Element
                     nameService="Déconnexion"
                     onClick={logout}
                 />
