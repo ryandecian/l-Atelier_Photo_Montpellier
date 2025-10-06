@@ -1,5 +1,8 @@
+/* Import des modules CSS */
+import css from "./serviceCardAdmin.module.css";
+
+/* Import des composants React */
 import { Link } from "react-router-dom";
-import css from "./ServiceCardAdmin.module.css";
 
 /**
  * Documentation
@@ -14,7 +17,7 @@ type ServiceCardType = {
     onClick?: () => void;
 };
 
-function ServiceCardAdminLink({ nameService, etat, link = "#" }: ServiceCardType) {
+function ServiceCardAdminLink_Element({ nameService, etat, link = "#" }: ServiceCardType) {
     return (
         <Link to={link} className={css.card}>
             <p className={css.title}>{nameService}</p>
@@ -27,9 +30,9 @@ function ServiceCardAdminLink({ nameService, etat, link = "#" }: ServiceCardType
     );
 }
 
-export { ServiceCardAdminLink };
+export { ServiceCardAdminLink_Element };
 
-function ServiceCardAdminButton({ nameService, etat, onClick }: ServiceCardType) {
+function ServiceCardAdminButton_Element({ nameService, etat, onClick }: ServiceCardType) {
     return (
         <button onClick={onClick} className={css.card}>
             <p className={css.title}>{nameService}</p>
@@ -42,4 +45,4 @@ function ServiceCardAdminButton({ nameService, etat, onClick }: ServiceCardType)
     )
 }
 
-export { ServiceCardAdminButton }
+export { ServiceCardAdminButton_Element };
