@@ -1,5 +1,5 @@
 import externalLinks from "../../../constants/externalLinks";
-import {PrestationType} from "../../../types/pprestations.type";
+import {PrestationType} from "../../../types/prestations.type";
 
 type FormuleCorporateType = {
   confiance: string;

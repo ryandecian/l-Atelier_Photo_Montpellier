@@ -2,8 +2,8 @@
 import css from './tarifsCard.module.css';
 
 /* Import des Types */
-import { PrestationType } from '../../../types/pprestations.type';
-import { FormuleType } from '../../../types/pprestations.type';
+import { PrestationType } from '../../../types/prestations.type';
+import { FormuleType } from '../../../types/prestations.type';
 
 type TarifCardRootProps = {
   tarifs: PrestationType;
