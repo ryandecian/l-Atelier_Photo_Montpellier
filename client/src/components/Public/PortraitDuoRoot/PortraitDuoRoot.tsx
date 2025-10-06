@@ -9,7 +9,7 @@ import ImagesPortraitDuoControllerData from "./ImagesPortraitDuoControllerData";
 import { GeneratorCardAvisClient_Element } from "../../Elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 import AvisClientPortraitDuoControllerData from "./AvisClientPortraitDuoControllerData";
 
-import TarifCardRoot from "../../Elements/TarifsCard/TarifsCardRoot";
+import TarifCardRoot from "../../Elements/tarifs-card/TarifsCardRoot";
 import { TarifsPortraitDuo, MailtoLinkPortraitDuo } from "./TarifsPortraitDuo";
 
 
