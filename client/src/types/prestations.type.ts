@@ -32,6 +32,29 @@ type Prestation_Type = {
 export type { Prestation_Type }
 
 /* ---------- ----------- ---------- ---------- ---------- */
+/* Clés de formules possibles, unifiées pour tarifs + mailto */
+type FormuleKey =
+    | "essentiel"
+    | "confort"
+    | "premium"
+    | "confiance"
+    | "flash"
+    | "classique"
+    | "signature";
+
+/* Map mailto unifiée sur toutes les formules (optionnelles) */
+type MailtoMap_Type = Partial<Record<FormuleKey, string>>;
+
+/* Type pour le composant TarifsCard_Element */
+type TarifCard_Type = {
+    id: string;
+    tarifs: Prestation_Type;
+    mailtoLink: MailtoMap_Type
+}
+
+export type { TarifCard_Type };
+
+/* ---------- ----------- ---------- ---------- ---------- */
 /* Liste des groupes de formules */
 
 type FormuleGroupe1_Type = {
@@ -39,8 +62,18 @@ type FormuleGroupe1_Type = {
     confort: string;
     premium: string;
 }
+/* Test */
+type FormuleGroupe2_Type = {
+    essentiel: string;
+    confort: string;
+    premium: string;
+}
 
-export type { FormuleGroupe1_Type };
+export type 
+    { 
+        FormuleGroupe1_Type, 
+        FormuleGroupe2_Type 
+    };
 
 /* ---------- ----------- ---------- ---------- ---------- */
 /* Structure de l'email */
@@ -58,10 +91,7 @@ type DataEmailFormuleGroupe1_Type = {
   premium: DataEmail_Type;
 }
 
-export type { DataEmailFormuleGroupe1_Type };
-
-/* ---------- ----------- ---------- ---------- ---------- */
-
-type TarifCard_Type = {
-  tarifs: Prestation_Type;
-}
+export type 
+    { 
+        DataEmailFormuleGroupe1_Type 
+    };
