@@ -11,7 +11,7 @@ import { GeneratorCardAvisClient_Element } from "../../Elements/generator-card-a
 import AvisClientPortraitHobbyControllerData from "./AvisClientPortraitHobbyControllerData";
 
 import TarifCardRoot from "../../Elements/tarifs-card/TarifsCardRoot";
-import { TarifsPortraitHobby, MailtoLinkPortraitHobby } from "./TarifsPortraitHobby";
+import { TarifsPortraitHobby, MailtoLinkPortraitHobby } from "./tarifsPortraitHobby.data";
 
 function PortraitHobbyRoot() {
     return (

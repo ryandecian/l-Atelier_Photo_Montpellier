@@ -2,13 +2,13 @@
 import css from './tarifsCard.module.css';
 
 /* Import des Types */
-import { PrestationType } from '../../../types/prestations.type';
-import { FormuleType } from '../../../types/prestations.type';
+import { Prestation_Type } from '../../../types/prestations.type';
+import { Formule_Type } from '../../../types/prestations.type';
 
 type TarifCardRootProps = {
-  tarifs: PrestationType;
+  tarifs: Prestation_Type;
   id: string;
-  mailtoLink: FormuleType;
+  mailtoLink: Formule_Type;
 };
 
 function TarifCardRoot({tarifs, mailtoLink, id}: TarifCardRootProps) {
@@ -19,7 +19,7 @@ function TarifCardRoot({tarifs, mailtoLink, id}: TarifCardRootProps) {
       {Object.entries(tarifs).map(([formulaKey, data]) => {
         /* Transforme la première lettre en majuscule : essentiel = Essentiel */
         const formulaName = formulaKey.charAt(0).toUpperCase() + formulaKey.slice(1);
-        const key = formulaKey as keyof FormuleType; // ✅ Cast pour accéder proprement à mailtoLink
+        const key = formulaKey as keyof Formule_Type; // ✅ Cast pour accéder proprement à mailtoLink
 
         return (
           <article
