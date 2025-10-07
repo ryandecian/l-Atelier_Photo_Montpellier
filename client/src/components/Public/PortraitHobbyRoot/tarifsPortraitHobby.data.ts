@@ -8,7 +8,7 @@ import { Prestation_Type, FormuleGroupe1_Type, DataEmailFormuleGroupe1_Type } fr
 /* Bloc logique 1 */
 /* Données visible disponible dans les cartes tarifaires côté front */
 
-const TarifsPortraitHobby: Prestation_Type = {
+const tarifsPortraitHobby_Data: Prestation_Type = {
     essentiel: {
         line1: { value1: 'Durée Séance', value2: '45 min' },
         line2: { value1: 'Extérieur', value2: 'Oui' },
@@ -38,7 +38,7 @@ const TarifsPortraitHobby: Prestation_Type = {
     },
 };
 
-export {TarifsPortraitHobby};
+export { tarifsPortraitHobby_Data };
 
 /* ---------- ----------- ---------- ---------- ---------- */
 /* Bloc logique 2 */
@@ -102,10 +102,10 @@ const dataRootEmail: DataEmailFormuleGroupe1_Type = {
 /* ---------- ----------- ---------- ---------- ---------- */
 /* Bloc logique 4 */
 /* Code à injecter dans le mailto pour que le mail soit pré-rempli dans les logiciels ou applications de messagerie */
-const MailtoLinkPortraitHobby: FormuleGroupe1_Type = {
+const mailtoLinkPortraitHobby_Data: FormuleGroupe1_Type = {
     essentiel: `${dataRootEmail.essentiel.mailto}?subject=${dataRootEmail.essentiel.subject}&body=${dataRootEmail.essentiel.body}`,
     confort: `${dataRootEmail.confort.mailto}?subject=${dataRootEmail.confort.subject}&body=${dataRootEmail.confort.body}`,
     premium: `${dataRootEmail.premium.mailto}?subject=${dataRootEmail.premium.subject}&body=${dataRootEmail.premium.body}`,
 }
 
-export { MailtoLinkPortraitHobby };
+export { mailtoLinkPortraitHobby_Data };
