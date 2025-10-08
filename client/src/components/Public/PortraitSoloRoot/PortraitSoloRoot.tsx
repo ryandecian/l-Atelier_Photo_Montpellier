@@ -9,7 +9,7 @@ import ListDataRouter from "../../../router/router";
 import AvisClientPortraitSoloControllerData from "./AvisClientPortraitSoloControllerData";
 import { GeneratorCardAvisClient_Element } from "../../Elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 
-import TarifCardRoot from "../../Elements/TarifsCard/TarifsCardRoot";
+import { TarifCard_Element} from "../../Elements/tarifs-card/TarifsCard.element";
 import { TarifsPortraitSolo, MailtoLinkPortraitSolo } from "./TarifsPortraitSolo";
 
 function PortraitSoloRoot() {
@@ -218,7 +218,7 @@ function PortraitSoloRoot() {
             </p>
 
             {/* Tarifs test */}
-            <TarifCardRoot id="tarifs-portrait-solo" tarifs={TarifsPortraitSolo} mailtoLink={MailtoLinkPortraitSolo} />
+            <TarifCard_Element id="tarifs-portrait-solo" tarifs={TarifsPortraitSolo} mailtoLink={MailtoLinkPortraitSolo} />
 
             {/* Container C : Avis Clients */}
             <GeneratorCardAvisClient_Element tabDataAvisClients={AvisClientPortraitSoloControllerData} />

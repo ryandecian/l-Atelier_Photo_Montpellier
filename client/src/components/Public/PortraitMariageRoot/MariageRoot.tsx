@@ -6,7 +6,7 @@ import ControllerDataImagePortraitMariage from "./ImagesPortraitMariageControlle
 import { GeneratorCardAvisClient_Element } from "../../Elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 import AvisClientPortraitMariageControllerData from "./AvisClientPortraitMariageControllerData";
 
-import TarifCardRoot from "../../Elements/TarifsCard/TarifsCardRoot";
+import { TarifCard_Element} from "../../Elements/tarifs-card/TarifsCard.element";
 import { TarifsPortraitMariage, MailtoLinkPortraitMariage } from "./TarifsPortraitMariage";
 
 import { Link } from "react-router-dom";
@@ -348,7 +348,7 @@ function PortraitMariageRoot() {
             </p>  
 
             {/* Carte Tarifs */}
-            <TarifCardRoot id="tarifs-portrait-mariage" tarifs={TarifsPortraitMariage} mailtoLink={MailtoLinkPortraitMariage} />
+            <TarifCard_Element id="tarifs-portrait-mariage" tarifs={TarifsPortraitMariage} mailtoLink={MailtoLinkPortraitMariage} />
 
             {/* Avis Client : */}
             <GeneratorCardAvisClient_Element tabDataAvisClients={AvisClientPortraitMariageControllerData} />
