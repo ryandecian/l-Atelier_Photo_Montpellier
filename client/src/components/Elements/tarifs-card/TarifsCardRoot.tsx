@@ -4,7 +4,7 @@ import css from "./tarifsCard.module.css";
 /* Import des Types */
 import { TarifCard_Type, FormuleKey_Type, PricingData_Type, PricingLine_Type } from "../../../types/prestations.type";
 
-function TarifCardRoot({ tarifs, mailtoLink, id }: TarifCard_Type) {
+function TarifCard_Element({ tarifs, mailtoLink, id }: TarifCard_Type) {
     return (
         <section id={id} className={css.container}>
             {/* Convertit les prestations en paires [clé, data] et filtre les undefined */}
@@ -52,4 +52,4 @@ function TarifCardRoot({ tarifs, mailtoLink, id }: TarifCard_Type) {
     );
 }
 
-export default TarifCardRoot;
+export { TarifCard_Element };
