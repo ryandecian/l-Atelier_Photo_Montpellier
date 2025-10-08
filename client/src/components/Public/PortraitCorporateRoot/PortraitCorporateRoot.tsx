@@ -11,7 +11,7 @@ import AvisClientPortraitCorporateControllerData from "./AvisClientPortraitCorpo
 import { GeneratorCardAvisClient_Element } from "../../Elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 
 import TarifCardCorporate from "./ComponentsPortraitCorporateRoot/TarifsComponentsCorporate/TarifsCardCorporate";
-import { TarifsPortraitCorporate, MailtoLinkPortraitCorporate } from "./TarifsPortraitCorporate";
+import { tarifsPortraitCorporate_Data, mailtoLinkPortraitCorporate_Data } from "./tarifsPortraitCorporate.data";
 
 function PortraitCorporateRoot() {
     return (
@@ -173,8 +173,8 @@ function PortraitCorporateRoot() {
             {/* Container D : Carte des tarifs */}
             <TarifCardCorporate
                 id="tarifs-portrait-corporate"
-                tarifs={TarifsPortraitCorporate}
-                mailtoLink={MailtoLinkPortraitCorporate}
+                tarifs={tarifsPortraitCorporate_Data}
+                mailtoLink={mailtoLinkPortraitCorporate_Data}
             />
 
             {/* Container E : Avis clients */}

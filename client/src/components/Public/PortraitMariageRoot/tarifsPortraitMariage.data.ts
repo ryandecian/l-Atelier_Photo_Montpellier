@@ -8,43 +8,61 @@ import { Prestation_Type, FormuleGroupe1_Type, DataEmailFormuleGroupe1_Type } fr
 /* Bloc logique 1 */
 /* Données visible disponible dans les cartes tarifaires côté front */
 
-const tarifsPortraitHobby_Data: Prestation_Type = {
+const tarifsPortraitMariage_Data: Prestation_Type = {
     essentiel: {
-        line1: { value1: "Durée Séance", value2: "45 min" },
-        line2: { value1: "Extérieur", value2: "Oui" },
-        line3: { value1: "Flash", value2: "Non" },
-        line4: { value1: "Post Traitement", value2: "Oui" },
-        line5: { value1: "Galerie en Ligne", value2: "Oui" },
-        line6: { value1: "Nombre de photos", value2: "10" },
-        line7: { value1: "Prix", value2: "159 €" },
+        line1: { value1: "Avant mariage", value2: "Non" },
+        line2: { value1: "Préparatifs", value2: "Oui" },
+        line3: { value1: "Photos de couple", value2: "Oui" },
+        line4: { value1: "Cérémonie", value2: "Oui" },
+        line5: { value1: "Vin d'honneur", value2: "Oui" },
+        line6: { value1: "Repas", value2: "Oui" },
+        line7: { value1: "Soirée jusqu'à 23h", value2: "Oui" },
+        line8: { value1: "Soirée jusqu'à 02h", value2: "Non" },
+        line9: { value1: "Day after", value2: "Non" },
+        line10: { value1: "Post traitement", value2: "Oui" },
+        line11: { value1: "Galerie en ligne", value2: "Oui" },
+        line12: { value1: "Nb de photos", value2: "90" },
+        line13: { value1: "Prix", value2: "899 €" },
     },
     confort: {
-        line1: { value1: "Durée Séance", value2: "1h00" },
-        line2: { value1: "Extérieur", value2: "Oui" },
-        line3: { value1: "Flash", value2: "Oui" },
-        line4: { value1: "Post Traitement", value2: "Oui" },
-        line5: { value1: "Galerie en Ligne", value2: "Non" },
-        line6: { value1: "Nombre de photos", value2: "15" },
-        line7: { value1: "Prix", value2: "199 €" },
+        line1: { value1: "Avant mariage", value2: "Non" },
+        line2: { value1: "Préparatifs", value2: "Oui" },
+        line3: { value1: "Photos de couple", value2: "Oui" },
+        line4: { value1: "Cérémonie", value2: "Oui" },
+        line5: { value1: "Vin d'honneur", value2: "Oui" },
+        line6: { value1: "Repas", value2: "Oui" },
+        line7: { value1: "Soirée jusqu'à 23h", value2: "Oui" },
+        line8: { value1: "Soirée jusqu'à 02h", value2: "Oui" },
+        line9: { value1: "Day after", value2: "Non" },
+        line10: { value1: "Post traitement", value2: "Oui" },
+        line11: { value1: "Galerie en ligne", value2: "Oui" },
+        line12: { value1: "Nb de photos", value2: "400" },
+        line13: { value1: "Prix", value2: "1 399 €" },
     },
     premium: {
-        line1: { value1: "Durée Séance", value2: "2h00" },
-        line2: { value1: "Extérieur", value2: "Oui" },
-        line3: { value1: "Flash", value2: "Oui" },
-        line4: { value1: "Post Traitement", value2: "Oui" },
-        line5: { value1: "Galerie en Ligne", value2: "Oui" },
-        line6: { value1: "Nombre de photos", value2: "20" },
-        line7: { value1: "Prix", value2: "249 €" },
+        line1: { value1: "Avant mariage", value2: "Oui" },
+        line2: { value1: "Préparatifs", value2: "Oui" },
+        line3: { value1: "Photos de couple", value2: "Oui" },
+        line4: { value1: "Cérémonie", value2: "Oui" },
+        line5: { value1: "Vin d'honneur", value2: "Oui" },
+        line6: { value1: "Repas", value2: "Oui" },
+        line7: { value1: "Soirée jusqu'à 23h", value2: "Oui" },
+        line8: { value1: "Soirée jusqu'à 02h", value2: "Oui" },
+        line9: { value1: "Day after", value2: "Oui" },
+        line10: { value1: "Post traitement", value2: "Oui" },
+        line11: { value1: "Galerie en ligne", value2: "Oui" },
+        line12: { value1: "Nb de photos", value2: "600" },
+        line13: { value1: "Prix", value2: "1 899 €" },
     },
 };
 
-export { tarifsPortraitHobby_Data };
+export { tarifsPortraitMariage_Data };
 
 /* ---------- ----------- ---------- ---------- ---------- */
 /* Bloc logique 2 */
 /* Données modifiables pour les emails pré-remplies */
 
-const service: string = "Portrait Hobby";
+const service: string = "Portrait Mariage";
 
 const formule: FormuleGroupe1_Type = {
     essentiel: "Essentiel",
@@ -118,7 +136,7 @@ const dataRootEmail: DataEmailFormuleGroupe1_Type = {
 /* ---------- ----------- ---------- ---------- ---------- */
 /* Bloc logique 4 */
 /* Code à injecter dans le mailto pour que le mail soit pré-rempli */
-const mailtoLinkPortraitHobby_Data: FormuleGroupe1_Type = {
+const mailtoLinkPortraitMariage_Data: FormuleGroupe1_Type = {
     essentiel: buildMailtoLink(
         dataRootEmail.essentiel.mailto,
         dataRootEmail.essentiel.subject,
@@ -136,4 +154,4 @@ const mailtoLinkPortraitHobby_Data: FormuleGroupe1_Type = {
     ),
 };
 
-export { mailtoLinkPortraitHobby_Data };
+export { mailtoLinkPortraitMariage_Data };
