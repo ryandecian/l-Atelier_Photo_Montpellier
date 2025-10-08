@@ -42,54 +42,98 @@ export { tarifsPortraitDuo_Data };
 
 /* ---------- ----------- ---------- ---------- ---------- */
 /* Bloc logique 2 */
+/* Données modifiables pour les emails pré-remplies */
 
-const Service: string = "Portrait Duo"; /* Bloc a modifier si besoin */
-const Reservation: string = `Réservation ${Service}`; /* Bloc a modifier si besoin */
+const Service: string = "Portrait Duo";
 
-/* Nom des formules disponibles */
-const Formule: FormuleType = {
+const formule: FormuleGroupe1_Type = {
     essentiel: "Essentiel",
     confort: "Confort",
     premium: "Premium",
-}
+};
+
+/* ---------- ----------- ---------- ---------- ---------- */
+/* Helpers mailto */
+const CRLF = "\r\n";
+const makeBody = (lines: string[]) => lines.join(CRLF);
+const ensureMailto = (addr: string) => (addr.startsWith("mailto:") ? addr : `mailto:${addr}`);
+const buildMailtoLink = (to: string, subject: string, body: string) =>
+    `${ensureMailto(to)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
 /* ---------- ----------- ---------- ---------- ---------- */
 /* Bloc logique 3 */
+/* Structure et data des mails pré-remplies */
 
-const SegmentTexte = {
-    intro: "Bonjour Anne, %0D%0A %0D%0A Je souhaite réserver la formule",
-    contact: `%0D%0A Pouvez-vous me recontacter ?`,
-    cordialement: `%0D%0A %0D%0A Cordialement`,
-    info: `%0D%0A %0D%0A [Prénom - Téléphone éventuel]`,
-    ps: `%0D%0A P.S : (au besoin) Je vous donne ci-dessous quelques précisions utiles : %0D%0A [disponibilités, souhaits particuliers, objectif du portrait, autres...]`,
-}
-
-const dataRootEmail: DataRootEmailType = {
+const dataRootEmail: DataEmailFormuleGroupe1_Type = {
     essentiel: {
         mailto: externalLinks.emailAnne,
-        subject: `${Service} - Formule ${Formule.essentiel}`,
-        body: `${SegmentTexte.intro} ${Formule.essentiel} pour un ${Service}. ${SegmentTexte.contact} ${SegmentTexte.cordialement} ${SegmentTexte.info} ${SegmentTexte.ps}`
+        subject: `Réservation ${Service} - Formule ${formule.essentiel}`,
+        body: makeBody([
+            "Bonjour Anne,",
+            "",
+            `Je souhaite réserver la formule ${formule.essentiel} pour un ${Service}.`,
+            "Pouvez-vous me recontacter ?",
+            "",
+            "Cordialement",
+            "",
+            "[Prénom - Téléphone éventuel]",
+            "P.S : (au besoin) Je vous donne ci-dessous quelques précisions utiles :",
+            "[disponibilités, souhaits particuliers, objectif du portrait, autres...]",
+        ]),
     },
     confort: {
         mailto: externalLinks.emailAnne,
-        subject: `${Service} - Formule ${Formule.confort}`,
-        body: `${SegmentTexte.intro} ${Formule.confort} pour un ${Service}. ${SegmentTexte.contact} ${SegmentTexte.cordialement} ${SegmentTexte.info} ${SegmentTexte.ps}`
+        subject: `Réservation ${Service} - Formule ${formule.confort}`,
+        body: makeBody([
+            "Bonjour Anne,",
+            "",
+            `Je souhaite réserver la formule ${formule.confort} pour un ${Service}.`,
+            "Pouvez-vous me recontacter ?",
+            "",
+            "Cordialement",
+            "",
+            "[Prénom - Téléphone éventuel]",
+            "P.S : (au besoin) Je vous donne ci-dessous quelques précisions utiles :",
+            "[disponibilités, souhaits particuliers, objectif du portrait, autres...]",
+        ]),
     },
     premium: {
         mailto: externalLinks.emailAnne,
-        subject: `${Reservation} - Formule ${Formule.premium}`,
-        body: `${SegmentTexte.intro} ${Formule.premium} pour un ${Service}. ${SegmentTexte.contact} ${SegmentTexte.cordialement} ${SegmentTexte.info} ${SegmentTexte.ps}`
+        subject: `Réservation ${Service} - Formule ${formule.premium}`,
+        body: makeBody([
+            "Bonjour Anne,",
+            "",
+            `Je souhaite réserver la formule ${formule.premium} pour un ${Service}.`,
+            "Pouvez-vous me recontacter ?",
+            "",
+            "Cordialement",
+            "",
+            "[Prénom - Téléphone éventuel]",
+            "P.S : (au besoin) Je vous donne ci-dessous quelques précisions utiles :",
+            "[disponibilités, souhaits particuliers, objectif du portrait, autres...]",
+        ]),
     },
 };
 
 /* ---------- ----------- ---------- ---------- ---------- */
 /* Bloc logique 4 */
+/* Code à injecter dans le mailto pour que le mail soit pré-rempli */
+const mailtoLinkPortraitDuo_Data: FormuleGroupe1_Type = {
+    essentiel: buildMailtoLink(
+        dataRootEmail.essentiel.mailto,
+        dataRootEmail.essentiel.subject,
+        dataRootEmail.essentiel.body
+    ),
+    confort: buildMailtoLink(
+        dataRootEmail.confort.mailto,
+        dataRootEmail.confort.subject,
+        dataRootEmail.confort.body
+    ),
+    premium: buildMailtoLink(
+        dataRootEmail.premium.mailto,
+        dataRootEmail.premium.subject,
+        dataRootEmail.premium.body
+    ),
+};
 
-/* Mail structuré pour les carte de tarifs */
-const MailtoLinkPortraitDuo: FormuleType = {
-    essentiel: `${dataRootEmail.essentiel.mailto}?subject=${dataRootEmail.essentiel.subject}&body=${dataRootEmail.essentiel.body}`,
-    confort: `${dataRootEmail.confort.mailto}?subject=${dataRootEmail.confort.subject}&body=${dataRootEmail.confort.body}`,
-    premium: `${dataRootEmail.premium.mailto}?subject=${dataRootEmail.premium.subject}&body=${dataRootEmail.premium.body}`,
-}
-
-export {MailtoLinkPortraitDuo};
+export {mailtoLinkPortraitDuo_Data};
