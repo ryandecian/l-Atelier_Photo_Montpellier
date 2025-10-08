@@ -10,7 +10,7 @@ import ImagesPortraitGrossesseControllerData from "./ImagesPortraitGrossesseCont
 import { GeneratorCardAvisClient_Element } from "../../Elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 import AvisClientPortraitGrossesseControllerData from "./AvisClientPortraitGrossesseControllerData";
 
-import { TarifCard_Element} from "../../Elements/tarifs-card/TarifsCardRoot";
+import { TarifCard_Element} from "../../Elements/tarifs-card/TarifsCard.element";
 import { TarifsPortraitGrossesse, MailtoLinkPortraitGrossesse } from "./TarifsPortraitGrossesse";
 
 function PortraitGrossesseRoot() {

@@ -9,7 +9,7 @@ import ListDataRouter from "../../../router/router";
 import { GeneratorCardAvisClient_Element } from "../../Elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 import AvisClientPortraitFamilleControllerData from "./AvisClientPortraitFamilleControllerData";
 
-import { TarifCard_Element} from "../../Elements/tarifs-card/TarifsCardRoot";
+import { TarifCard_Element} from "../../Elements/tarifs-card/TarifsCard.element";
 import { TarifsPortraitFamille, MailtoLinkPortraitFamille } from "./TarifsPortraitFamille";
 
 function PortraitFamilleRoot() {
