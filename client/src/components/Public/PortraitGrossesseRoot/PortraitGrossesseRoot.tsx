@@ -10,7 +10,7 @@ import ImagesPortraitGrossesseControllerData from "./ImagesPortraitGrossesseCont
 import { GeneratorCardAvisClient_Element } from "../../Elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 import AvisClientPortraitGrossesseControllerData from "./AvisClientPortraitGrossesseControllerData";
 
-import TarifCardRoot from "../../Elements/TarifsCard/TarifsCardRoot";
+import { TarifCard_Element} from "../../Elements/tarifs-card/TarifsCard.element";
 import { TarifsPortraitGrossesse, MailtoLinkPortraitGrossesse } from "./TarifsPortraitGrossesse";
 
 function PortraitGrossesseRoot() {
@@ -236,7 +236,7 @@ function PortraitGrossesseRoot() {
             </p>
 
             {/* Cartes des Tarifs pour prestation Grossesse et Nouveaux-Nés */}
-            <TarifCardRoot id="tarifs-portrait-grossesse" tarifs={TarifsPortraitGrossesse} mailtoLink={MailtoLinkPortraitGrossesse} />
+            <TarifCard_Element id="tarifs-portrait-grossesse" tarifs={TarifsPortraitGrossesse} mailtoLink={MailtoLinkPortraitGrossesse} />
 
             {/* Avis clients */}
             <GeneratorCardAvisClient_Element tabDataAvisClients={AvisClientPortraitGrossesseControllerData} />
