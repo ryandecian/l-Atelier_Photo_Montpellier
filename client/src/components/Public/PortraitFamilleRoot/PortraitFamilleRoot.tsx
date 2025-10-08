@@ -9,8 +9,8 @@ import ListDataRouter from "../../../router/router";
 import { GeneratorCardAvisClient_Element } from "../../Elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 import AvisClientPortraitFamilleControllerData from "./AvisClientPortraitFamilleControllerData";
 
-import TarifCardRoot from "../../Elements/TarifsCard/TarifsCardRoot";
-import { TarifsPortraitFamille, MailtoLinkPortraitFamille } from "./TarifsPortraitFamille";
+import { TarifCard_Element} from "../../Elements/tarifs-card/TarifsCard.element";
+import { tarifsPortraitFamille_Data, mailtoLinkPortraitFamille_Data } from "./tarifsPortraitFamille.data";
 
 function PortraitFamilleRoot() {
     return (
@@ -242,7 +242,7 @@ function PortraitFamilleRoot() {
             </p>
 
             {/* Tarifs des prestations : Portrait Famille */}
-            <TarifCardRoot id="tarifs-portrait-famille" tarifs={TarifsPortraitFamille} mailtoLink={MailtoLinkPortraitFamille} />
+            <TarifCard_Element id="tarifs-portrait-famille" tarifs={tarifsPortraitFamille_Data} mailtoLink={mailtoLinkPortraitFamille_Data} />
 
             {/* Container D : Avis client */}
             <GeneratorCardAvisClient_Element tabDataAvisClients={AvisClientPortraitFamilleControllerData} />
