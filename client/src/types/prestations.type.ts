@@ -65,18 +65,15 @@ type FormuleGroupe1_Type = {
     confort: string;
     premium: string;
 }
-/* Test */
-type FormuleGroupe2_Type = {
-    essentiel: string;
-    confort: string;
-    premium: string;
-}
+export type { FormuleGroupe1_Type };
 
-export type 
-    { 
-        FormuleGroupe1_Type, 
-        FormuleGroupe2_Type 
-    };
+type FormuleGroupe2_Type = {
+    confiance: string;
+    classique: string;
+    flash: string;
+    signature: string;
+}
+export type { FormuleGroupe2_Type };
 
 /* ---------- ----------- ---------- ---------- ---------- */
 /* Structure de l'email */
@@ -93,8 +90,12 @@ type DataEmailFormuleGroupe1_Type = {
   confort: DataEmail_Type;
   premium: DataEmail_Type;
 }
+export type { DataEmailFormuleGroupe1_Type };
 
-export type 
-    { 
-        DataEmailFormuleGroupe1_Type 
-    };
+type DataEmailFormuleGroupe2_Type = {
+  confiance: DataEmail_Type;
+  classique: DataEmail_Type;
+  flash: DataEmail_Type;
+  signature: DataEmail_Type;
+}
+export type { DataEmailFormuleGroupe2_Type };
