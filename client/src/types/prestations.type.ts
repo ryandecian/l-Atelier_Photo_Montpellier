@@ -1,22 +1,27 @@
 /* Datas visibles côté front */
+
+type PricingLine_Type = { value1: string; value2: string };
+export type { PricingLine_Type };
+
 /* Nombre de ligne disponible dans les cartes tarifaires */
 type PricingData_Type = {
-    line0?: { value1: string; value2: string };
-    line1?: { value1: string; value2: string };
-    line2?: { value1: string; value2: string };
-    line3?: { value1: string; value2: string };
-    line4?: { value1: string; value2: string };
-    line5?: { value1: string; value2: string };
-    line6?: { value1: string; value2: string };
-    line7?: { value1: string; value2: string };
-    line8?: { value1: string; value2: string };
-    line9?: { value1: string; value2: string };
-    line10?: { value1: string; value2: string };
-    line11?: { value1: string; value2: string };
-    line12?: { value1: string; value2: string };
-    line13?: { value1: string; value2: string };
-    line14?: { value1: string; value2: string };
+    line0?: PricingLine_Type;
+    line1?: PricingLine_Type;
+    line2?: PricingLine_Type;
+    line3?: PricingLine_Type;
+    line4?: PricingLine_Type;
+    line5?: PricingLine_Type;
+    line6?: PricingLine_Type;
+    line7?: PricingLine_Type;
+    line8?: PricingLine_Type;
+    line9?: PricingLine_Type;
+    line10?: PricingLine_Type;
+    line11?: PricingLine_Type;
+    line12?: PricingLine_Type;
+    line13?: PricingLine_Type;
+    line14?: PricingLine_Type;
 };
+export type { PricingData_Type };
 
 /* Liste des prestations existantes à afficher dans les cartes tarifaires du côté front */
 type Prestation_Type = {
@@ -28,12 +33,11 @@ type Prestation_Type = {
     classique?: PricingData_Type;
     signature? : PricingData_Type;
 };
-
 export type { Prestation_Type }
 
 /* ---------- ----------- ---------- ---------- ---------- */
 /* Clés de formules possibles, unifiées pour tarifs + mailto */
-type FormuleKey =
+type FormuleKey_Type =
     | "essentiel"
     | "confort"
     | "premium"
@@ -41,17 +45,16 @@ type FormuleKey =
     | "flash"
     | "classique"
     | "signature";
-
+export type { FormuleKey_Type };
 /* Map mailto unifiée sur toutes les formules (optionnelles) */
-type MailtoMap_Type = Partial<Record<FormuleKey, string>>;
+type MailtoMap_Type = Partial<Record<FormuleKey_Type, string>>;
 
 /* Type pour le composant TarifsCard_Element */
 type TarifCard_Type = {
     id: string;
     tarifs: Prestation_Type;
     mailtoLink: MailtoMap_Type
-}
-
+};
 export type { TarifCard_Type };
 
 /* ---------- ----------- ---------- ---------- ---------- */
