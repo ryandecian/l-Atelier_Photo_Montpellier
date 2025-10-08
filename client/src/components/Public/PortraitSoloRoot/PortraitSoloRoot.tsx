@@ -10,7 +10,7 @@ import AvisClientPortraitSoloControllerData from "./AvisClientPortraitSoloContro
 import { GeneratorCardAvisClient_Element } from "../../Elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 
 import { TarifCard_Element} from "../../Elements/tarifs-card/TarifsCard.element";
-import { TarifsPortraitSolo, MailtoLinkPortraitSolo } from "./TarifsPortraitSolo";
+import { tarifsPortraitSolo_Data, mailtoLinkPortraitSolo_Data } from "./tarifsPortraitSolo.data";
 
 function PortraitSoloRoot() {
     return (
@@ -218,7 +218,7 @@ function PortraitSoloRoot() {
             </p>
 
             {/* Tarifs test */}
-            <TarifCard_Element id="tarifs-portrait-solo" tarifs={TarifsPortraitSolo} mailtoLink={MailtoLinkPortraitSolo} />
+            <TarifCard_Element id="tarifs-portrait-solo" tarifs={tarifsPortraitSolo_Data} mailtoLink={mailtoLinkPortraitSolo_Data} />
 
             {/* Container C : Avis Clients */}
             <GeneratorCardAvisClient_Element tabDataAvisClients={AvisClientPortraitSoloControllerData} />

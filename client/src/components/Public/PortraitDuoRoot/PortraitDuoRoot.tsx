@@ -10,7 +10,7 @@ import { GeneratorCardAvisClient_Element } from "../../Elements/generator-card-a
 import AvisClientPortraitDuoControllerData from "./AvisClientPortraitDuoControllerData";
 
 import { TarifCard_Element} from "../../Elements/tarifs-card/TarifsCard.element";
-import { TarifsPortraitDuo, MailtoLinkPortraitDuo } from "./TarifsPortraitDuo";
+import { tarifsPortraitDuo_Data, mailtoLinkPortraitDuo_Data } from "./tarifsPortraitDuo.data";
 
 
 function PortraitDuoRoot() {
@@ -203,7 +203,7 @@ function PortraitDuoRoot() {
             </p>
 
             {/* Carte des tarifs */}
-            <TarifCard_Element id="tarifs-portrait-duo" tarifs={TarifsPortraitDuo} mailtoLink={MailtoLinkPortraitDuo} />
+            <TarifCard_Element id="tarifs-portrait-duo" tarifs={tarifsPortraitDuo_Data} mailtoLink={mailtoLinkPortraitDuo_Data} />
 
             {/* Avis client */}
             <GeneratorCardAvisClient_Element tabDataAvisClients={AvisClientPortraitDuoControllerData}/>

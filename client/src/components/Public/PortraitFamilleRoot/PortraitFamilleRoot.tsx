@@ -10,7 +10,7 @@ import { GeneratorCardAvisClient_Element } from "../../Elements/generator-card-a
 import AvisClientPortraitFamilleControllerData from "./AvisClientPortraitFamilleControllerData";
 
 import { TarifCard_Element} from "../../Elements/tarifs-card/TarifsCard.element";
-import { TarifsPortraitFamille, MailtoLinkPortraitFamille } from "./TarifsPortraitFamille";
+import { tarifsPortraitFamille_Data, mailtoLinkPortraitFamille_Data } from "./tarifsPortraitFamille.data";
 
 function PortraitFamilleRoot() {
     return (
@@ -242,7 +242,7 @@ function PortraitFamilleRoot() {
             </p>
 
             {/* Tarifs des prestations : Portrait Famille */}
-            <TarifCard_Element id="tarifs-portrait-famille" tarifs={TarifsPortraitFamille} mailtoLink={MailtoLinkPortraitFamille} />
+            <TarifCard_Element id="tarifs-portrait-famille" tarifs={tarifsPortraitFamille_Data} mailtoLink={mailtoLinkPortraitFamille_Data} />
 
             {/* Container D : Avis client */}
             <GeneratorCardAvisClient_Element tabDataAvisClients={AvisClientPortraitFamilleControllerData} />
