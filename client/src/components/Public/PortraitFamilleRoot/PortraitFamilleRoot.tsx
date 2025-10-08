@@ -10,7 +10,7 @@ import { GeneratorCardAvisClient_Element } from "../../Elements/generator-card-a
 import AvisClientPortraitFamilleControllerData from "./AvisClientPortraitFamilleControllerData";
 
 import { TarifCard_Element} from "../../Elements/tarifs-card/TarifsCard.element";
-import { tarifsPortraitFamille_Data, mailtoLinkPortraitFamille_Data } from "./TarifsPortraitFamille";
+import { tarifsPortraitFamille_Data, mailtoLinkPortraitFamille_Data } from "./tarifsPortraitFamille.data";
 
 function PortraitFamilleRoot() {
     return (
