@@ -1,10 +1,14 @@
+/* Import des composants Router */
 import externalLinks from "../../../constants/externalLinks";
-import {PrestationType, FormuleType, DataRootEmailType} from "../../../types/prestations.type";
+
+/* Import des Types */
+import { Prestation_Type, FormuleGroupe1_Type, DataEmailFormuleGroupe1_Type } from "../../../types/prestations.type";
 
 /* ---------- ----------- ---------- ---------- ---------- */
 /* Bloc logique 1 */
+/* Données visible disponible dans les cartes tarifaires côté front */
 
-const TarifsPortraitDuo: PrestationType = {
+const tarifsPortraitDuo_Data: Prestation_Type = {
     essentiel: {
         line1: { value1: 'Durée Séance', value2: '45 min' },
         line2: { value1: 'Extérieur', value2: 'Oui' },
@@ -34,7 +38,7 @@ const TarifsPortraitDuo: PrestationType = {
     },
 };
 
-export {TarifsPortraitDuo};
+export { tarifsPortraitDuo_Data };
 
 /* ---------- ----------- ---------- ---------- ---------- */
 /* Bloc logique 2 */

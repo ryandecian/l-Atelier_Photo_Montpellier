@@ -46,7 +46,7 @@ export { tarifsPortraitHobby_Data };
 
 const Service: string = "Portrait Hobby";
 
-const Formule: FormuleGroupe1_Type = {
+const formule: FormuleGroupe1_Type = {
     essentiel: "Essentiel",
     confort: "Confort",
     premium: "Premium",
@@ -67,11 +67,11 @@ const buildMailtoLink = (to: string, subject: string, body: string) =>
 const dataRootEmail: DataEmailFormuleGroupe1_Type = {
     essentiel: {
         mailto: externalLinks.emailAnne,
-        subject: `Réservation ${Service} - Formule ${Formule.essentiel}`,
+        subject: `Réservation ${Service} - Formule ${formule.essentiel}`,
         body: makeBody([
             "Bonjour Anne,",
             "",
-            `Je souhaite réserver la formule ${Formule.essentiel} pour un ${Service}.`,
+            `Je souhaite réserver la formule ${formule.essentiel} pour un ${Service}.`,
             "Pouvez-vous me recontacter ?",
             "",
             "Cordialement",
@@ -83,11 +83,11 @@ const dataRootEmail: DataEmailFormuleGroupe1_Type = {
     },
     confort: {
         mailto: externalLinks.emailAnne,
-        subject: `Réservation ${Service} - Formule ${Formule.confort}`,
+        subject: `Réservation ${Service} - Formule ${formule.confort}`,
         body: makeBody([
             "Bonjour Anne,",
             "",
-            `Je souhaite réserver la formule ${Formule.confort} pour un ${Service}.`,
+            `Je souhaite réserver la formule ${formule.confort} pour un ${Service}.`,
             "Pouvez-vous me recontacter ?",
             "",
             "Cordialement",
@@ -99,11 +99,11 @@ const dataRootEmail: DataEmailFormuleGroupe1_Type = {
     },
     premium: {
         mailto: externalLinks.emailAnne,
-        subject: `Réservation ${Service} - Formule ${Formule.premium}`,
+        subject: `Réservation ${Service} - Formule ${formule.premium}`,
         body: makeBody([
             "Bonjour Anne,",
             "",
-            `Je souhaite réserver la formule ${Formule.premium} pour un ${Service}.`,
+            `Je souhaite réserver la formule ${formule.premium} pour un ${Service}.`,
             "Pouvez-vous me recontacter ?",
             "",
             "Cordialement",
