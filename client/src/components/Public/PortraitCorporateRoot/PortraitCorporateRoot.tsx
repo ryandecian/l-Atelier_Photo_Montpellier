@@ -10,7 +10,8 @@ import ImagesPortraitCorporateControllerData from "./ImagesPortraitCorporateCont
 import AvisClientPortraitCorporateControllerData from "./AvisClientPortraitCorporateControllerData";
 import { GeneratorCardAvisClient_Element } from "../../Elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 
-import TarifCardCorporate from "./ComponentsPortraitCorporateRoot/TarifsComponentsCorporate/TarifsCardCorporate";
+// import TarifCardCorporate from "./ComponentsPortraitCorporateRoot/TarifsComponentsCorporate/TarifsCardCorporate";
+import { TarifCard_Element} from "../../Elements/tarifs-card/TarifsCard.element";
 import { tarifsPortraitCorporate_Data, mailtoLinkPortraitCorporate_Data } from "./tarifsPortraitCorporate.data";
 
 function PortraitCorporateRoot() {
@@ -171,7 +172,7 @@ function PortraitCorporateRoot() {
             </p>
 
             {/* Container D : Carte des tarifs */}
-            <TarifCardCorporate
+            <TarifCard_Element
                 id="tarifs-portrait-corporate"
                 tarifs={tarifsPortraitCorporate_Data}
                 mailtoLink={mailtoLinkPortraitCorporate_Data}
