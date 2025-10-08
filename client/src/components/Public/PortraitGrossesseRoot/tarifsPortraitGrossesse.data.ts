@@ -8,43 +8,43 @@ import { Prestation_Type, FormuleGroupe1_Type, DataEmailFormuleGroupe1_Type } fr
 /* Bloc logique 1 */
 /* Données visible disponible dans les cartes tarifaires côté front */
 
-const tarifsPortraitHobby_Data: Prestation_Type = {
+const tarifsPortraitGrossesse_Data: Prestation_Type = {
     essentiel: {
         line1: { value1: "Durée Séance", value2: "45 min" },
-        line2: { value1: "Extérieur", value2: "Oui" },
-        line3: { value1: "Flash", value2: "Non" },
+        line2: { value1: "Sur site", value2: "Non" },
+        line3: { value1: "Studio", value2: "Oui" },
         line4: { value1: "Post Traitement", value2: "Oui" },
         line5: { value1: "Galerie en Ligne", value2: "Oui" },
-        line6: { value1: "Nombre de photos", value2: "10" },
+        line6: { value1: "Nombre de photos", value2: "5" },
         line7: { value1: "Prix", value2: "159 €" },
     },
     confort: {
         line1: { value1: "Durée Séance", value2: "1h00" },
-        line2: { value1: "Extérieur", value2: "Oui" },
-        line3: { value1: "Flash", value2: "Oui" },
+        line2: { value1: "Sur site", value2: "Oui" },
+        line3: { value1: "Ou Studio", value2: "Oui" },
         line4: { value1: "Post Traitement", value2: "Oui" },
-        line5: { value1: "Galerie en Ligne", value2: "Non" },
-        line6: { value1: "Nombre de photos", value2: "15" },
+        line5: { value1: "Galerie en Ligne", value2: "Oui" },
+        line6: { value1: "Nombre de photos", value2: "10" },
         line7: { value1: "Prix", value2: "199 €" },
     },
     premium: {
         line1: { value1: "Durée Séance", value2: "2h00" },
-        line2: { value1: "Extérieur", value2: "Oui" },
-        line3: { value1: "Flash", value2: "Oui" },
+        line2: { value1: "Sur site", value2: "Oui" },
+        line3: { value1: "Ou Studio", value2: "Oui" },
         line4: { value1: "Post Traitement", value2: "Oui" },
         line5: { value1: "Galerie en Ligne", value2: "Oui" },
-        line6: { value1: "Nombre de photos", value2: "20" },
+        line6: { value1: "Nombre de photos", value2: "15" },
         line7: { value1: "Prix", value2: "249 €" },
     },
 };
 
-export { tarifsPortraitHobby_Data };
+export { tarifsPortraitGrossesse_Data };
 
 /* ---------- ----------- ---------- ---------- ---------- */
 /* Bloc logique 2 */
 /* Données modifiables pour les emails pré-remplies */
 
-const service: string = "Portrait Hobby";
+const Service: string = "Portrait Grossesse / Nouveau Né";
 
 const formule: FormuleGroupe1_Type = {
     essentiel: "Essentiel",
@@ -67,11 +67,11 @@ const buildMailtoLink = (to: string, subject: string, body: string) =>
 const dataRootEmail: DataEmailFormuleGroupe1_Type = {
     essentiel: {
         mailto: externalLinks.emailAnne,
-        subject: `Réservation ${service} - Formule ${formule.essentiel}`,
+        subject: `Réservation ${Service} - Formule ${formule.essentiel}`,
         body: makeBody([
             "Bonjour Anne,",
             "",
-            `Je souhaite réserver la formule ${formule.essentiel} pour un ${service}.`,
+            `Je souhaite réserver la formule ${formule.essentiel} pour un ${Service}.`,
             "Pouvez-vous me recontacter ?",
             "",
             "Cordialement",
@@ -83,11 +83,11 @@ const dataRootEmail: DataEmailFormuleGroupe1_Type = {
     },
     confort: {
         mailto: externalLinks.emailAnne,
-        subject: `Réservation ${service} - Formule ${formule.confort}`,
+        subject: `Réservation ${Service} - Formule ${formule.confort}`,
         body: makeBody([
             "Bonjour Anne,",
             "",
-            `Je souhaite réserver la formule ${formule.confort} pour un ${service}.`,
+            `Je souhaite réserver la formule ${formule.confort} pour un ${Service}.`,
             "Pouvez-vous me recontacter ?",
             "",
             "Cordialement",
@@ -99,11 +99,11 @@ const dataRootEmail: DataEmailFormuleGroupe1_Type = {
     },
     premium: {
         mailto: externalLinks.emailAnne,
-        subject: `Réservation ${service} - Formule ${formule.premium}`,
+        subject: `Réservation ${Service} - Formule ${formule.premium}`,
         body: makeBody([
             "Bonjour Anne,",
             "",
-            `Je souhaite réserver la formule ${formule.premium} pour un ${service}.`,
+            `Je souhaite réserver la formule ${formule.premium} pour un ${Service}.`,
             "Pouvez-vous me recontacter ?",
             "",
             "Cordialement",
@@ -118,7 +118,7 @@ const dataRootEmail: DataEmailFormuleGroupe1_Type = {
 /* ---------- ----------- ---------- ---------- ---------- */
 /* Bloc logique 4 */
 /* Code à injecter dans le mailto pour que le mail soit pré-rempli */
-const mailtoLinkPortraitHobby_Data: FormuleGroupe1_Type = {
+const mailtoLinkPortraitGrossesse_Data: FormuleGroupe1_Type = {
     essentiel: buildMailtoLink(
         dataRootEmail.essentiel.mailto,
         dataRootEmail.essentiel.subject,
@@ -136,4 +136,4 @@ const mailtoLinkPortraitHobby_Data: FormuleGroupe1_Type = {
     ),
 };
 
-export { mailtoLinkPortraitHobby_Data };
+export { mailtoLinkPortraitGrossesse_Data };
