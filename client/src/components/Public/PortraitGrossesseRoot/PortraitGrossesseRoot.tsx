@@ -3,14 +3,14 @@ import style from "../../StyleRootComponent.module.css";
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../router/router";
 
-import { Container4Images_Element } from "../../eelements/container-image/container-4-Images/Container4Images.element";
-import { Container4ImagesPortrait_Element } from "../../eelements/container-image/container-4_Images-portrait/Container4ImagesPortrait.element";
+import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
+import { Container4ImagesPortrait_Element } from "../../elements/container-image/container-4_Images-portrait/Container4ImagesPortrait.element";
 import ImagesPortraitGrossesseControllerData from "./ImagesPortraitGrossesseControllerData";
 
-import { GeneratorCardAvisClient_Element } from "../../eelements/generator-card-avis-client/GeneratorCardAvisClient.element";
+import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 import AvisClientPortraitGrossesseControllerData from "./AvisClientPortraitGrossesseControllerData";
 
-import { TarifCard_Element} from "../../eelements/tarifs-card/TarifsCard.element";
+import { TarifCard_Element} from "../../elements/tarifs-card/TarifsCard.element";
 import { tarifsPortraitGrossesse_Data, mailtoLinkPortraitGrossesse_Data } from "./tarifsPortraitGrossesse.data";
 
 function PortraitGrossesseRoot() {

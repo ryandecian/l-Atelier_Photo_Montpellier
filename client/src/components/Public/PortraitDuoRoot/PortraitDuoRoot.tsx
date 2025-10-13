@@ -3,13 +3,13 @@ import style from "../../StyleRootComponent.module.css";
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../router/router";
 
-import { Container4Images_Element } from "../../eelements/container-image/container-4-Images/Container4Images.element";
+import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
 import ImagesPortraitDuoControllerData from "./ImagesPortraitDuoControllerData";
 
-import { GeneratorCardAvisClient_Element } from "../../eelements/generator-card-avis-client/GeneratorCardAvisClient.element";
+import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 import AvisClientPortraitDuoControllerData from "./AvisClientPortraitDuoControllerData";
 
-import { TarifCard_Element} from "../../eelements/tarifs-card/TarifsCard.element";
+import { TarifCard_Element} from "../../elements/tarifs-card/TarifsCard.element";
 import { tarifsPortraitDuo_Data, mailtoLinkPortraitDuo_Data } from "./tarifsPortraitDuo.data";
 
 

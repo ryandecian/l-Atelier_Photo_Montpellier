@@ -3,7 +3,7 @@ import ListDataRouter from "../../../../../router/router";
 import { Link } from "react-router-dom";
 
 import ImagesBlog_20250710_RootControllerData from "./ImagesBlog_20250710_RootControllerData";
-import { PremiumCardImgModal_Element } from "../../../../eelements/premium-card-img-modal/PremiumCardImgModal.element";
+import { PremiumCardImgModal_Element } from "../../../../elements/premium-card-img-modal/PremiumCardImgModal.element";
 import PortraitLifeStyleRootComponentB from "../../../../Public/PortraitLifeStyleRoot/ComponentsPortraitLifeStyleRoot/PortraitLifeStyleRootComponentB/PortraitLifeStyleRootComponentB";
 
 function Blog_20250710_Root() {
