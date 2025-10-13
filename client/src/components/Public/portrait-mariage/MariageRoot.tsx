@@ -4,7 +4,7 @@ import { Container4Images_Element } from "../../elements/container-image/contain
 import ControllerDataImagePortraitMariage from "./ImagesPortraitMariageControllerData";
 
 import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
-import AvisClientPortraitMariageControllerData from "./AvisClientPortraitMariageControllerData";
+import AvisClientPortraitMariageControllerData from "./avisClientPortraitMariage.data";
 
 import { TarifCard_Element} from "../../elements/tarifs-card/TarifsCard.element";
 import { tarifsPortraitMariage_Data, mailtoLinkPortraitMariage_Data } from "./tarifsPortraitMariage.data";
