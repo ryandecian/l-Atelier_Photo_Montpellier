@@ -1,6 +1,7 @@
+/* Import des Types */
 import { AvisClientSEO_Type } from "../../../types/seo/avisClientSEO.type";
 
-const AvisClientPortraitDuoControllerData: AvisClientSEO_Type[] = [
+const avisClientPortraitDuo_Data: AvisClientSEO_Type[] = [
     /* Commentaire 1 */
     {
         id: 1,
@@ -25,4 +26,4 @@ const AvisClientPortraitDuoControllerData: AvisClientSEO_Type[] = [
     },
 ];
 
-export default AvisClientPortraitDuoControllerData;
+export { avisClientPortraitDuo_Data };
