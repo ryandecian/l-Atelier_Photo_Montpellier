@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import ListDataRouter from "../../../router/router";
 
 import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
-import AvisClientHomeControllerData from "./AvisClientHomeControllerData";
+import { avisClientHome_Data } from "./avisClientHome.data";
 
 import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
 import ImagesHomeControllerData from "./ImagesHomeControllerData";
@@ -197,7 +197,7 @@ function HomeRoot() {
                     Des photos, des expériences, des mots, ils m'ont fait confiance !
                 </h2>
 
-            <GeneratorCardAvisClient_Element tabDataAvisClients={AvisClientHomeControllerData}/>
+            <GeneratorCardAvisClient_Element tabDataAvisClients={avisClientHome_Data}/>
 
             {/* ---------- ---------- ---------- ---------- ---------- */}
 
