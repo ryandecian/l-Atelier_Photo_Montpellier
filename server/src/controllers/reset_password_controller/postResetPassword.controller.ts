@@ -8,7 +8,7 @@ import { insertTokenResetPassword_repository } from "../../repository/reset_pass
 import { getAllTokenResetPassword_repository } from "../../repository/reset_password_tbl/getAllTokenResetPassword.repository";
 import { deleteVariousTokenReset_repository } from "../../repository/reset_password_tbl/deleteVariousTokenResetPassword.repository";
 
-/* Import des Services : */
+/* Import des Emails : */
 import sendResetPassword_email from "../../mails/sendResetPassword.email";
 
 /* Import des Types : */

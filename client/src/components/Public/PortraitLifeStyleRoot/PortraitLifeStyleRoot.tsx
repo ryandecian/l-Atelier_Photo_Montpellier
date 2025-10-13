@@ -4,10 +4,10 @@ import externalLinks from "../../../constants/externalLinks";
 import useScrollToHash from "../../../hook/useScrollToHash";
 
 import ImagesPortraitLifeStyleControllerData from "./ImagesPortraitLifeStyleControllerData";
-import { Container4Images_Element } from "../../Elements/container-image/container-4-Images/Container4Images.element";
+import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
 
 import AvisClientPortraitLifeStyleControllerData from "./AvisClientPortraitLifeStyleControllerData";
-import { GeneratorCardAvisClient_Element } from "../../Elements/generator-card-avis-client/GeneratorCardAvisClient.element";
+import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 
 import PortraitLifeStyleRootComponentB from "./ComponentsPortraitLifeStyleRoot/PortraitLifeStyleRootComponentB/PortraitLifeStyleRootComponentB";
 

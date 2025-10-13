@@ -1,15 +1,15 @@
 import style from "../../StyleRootComponent.module.css";
 
-import { Container4Images_Element } from "../../Elements/container-image/container-4-Images/Container4Images.element";
+import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
 import ImagesPortraitFamilleControllerData from "./ImagesPortraitFamilleControllerData";
 
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../router/router";
 
-import { GeneratorCardAvisClient_Element } from "../../Elements/generator-card-avis-client/GeneratorCardAvisClient.element";
+import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 import AvisClientPortraitFamilleControllerData from "./AvisClientPortraitFamilleControllerData";
 
-import { TarifCard_Element} from "../../Elements/tarifs-card/TarifsCard.element";
+import { TarifCard_Element} from "../../elements/tarifs-card/TarifsCard.element";
 import { tarifsPortraitFamille_Data, mailtoLinkPortraitFamille_Data } from "./tarifsPortraitFamille.data";
 
 function PortraitFamilleRoot() {

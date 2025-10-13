@@ -4,13 +4,13 @@ import css from "./PortraitHobbyRoot.module.css";
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../router/router";
 
-import { Container4Images_Element } from "../../Elements/container-image/container-4-Images/Container4Images.element";
+import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
 import ImagesPortraitHobbyControllerData from "./ImagesPortraitHobbyControllerData";
 
-import { GeneratorCardAvisClient_Element } from "../../Elements/generator-card-avis-client/GeneratorCardAvisClient.element";
-import AvisClientPortraitHobbyControllerData from "./AvisClientPortraitHobbyControllerData";
+import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
+import { avisClientPortraitHobby_Data } from "./avisClientPortraitHobby.data";
 
-import { TarifCard_Element} from "../../Elements/tarifs-card/TarifsCard.element";
+import { TarifCard_Element} from "../../elements/tarifs-card/TarifsCard.element";
 import { tarifsPortraitHobby_Data, mailtoLinkPortraitHobby_Data } from "./tarifsPortraitHobby.data";
 
 function PortraitHobbyRoot() {
@@ -232,7 +232,7 @@ function PortraitHobbyRoot() {
             <TarifCard_Element id="tarifs-portrait-hobby" tarifs={tarifsPortraitHobby_Data} mailtoLink={mailtoLinkPortraitHobby_Data} />
 
             {/* Container D : Avis client */}
-            <GeneratorCardAvisClient_Element tabDataAvisClients={AvisClientPortraitHobbyControllerData} />
+            <GeneratorCardAvisClient_Element tabDataAvisClients={avisClientPortraitHobby_Data} />
         </section>
     )
 }
