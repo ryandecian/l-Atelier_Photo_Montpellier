@@ -8,7 +8,7 @@ import { Container4ImagesPortrait_Element } from "../../elements/container-image
 import ImagesPortraitGrossesseControllerData from "./ImagesPortraitGrossesseControllerData";
 
 import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
-import AvisClientPortraitGrossesseControllerData from "./AvisClientPortraitGrossesseControllerData";
+import AvisClientPortraitGrossesseControllerData from "./avisClientPortraitGrossesse.data";
 
 import { TarifCard_Element} from "../../elements/tarifs-card/TarifsCard.element";
 import { tarifsPortraitGrossesse_Data, mailtoLinkPortraitGrossesse_Data } from "./tarifsPortraitGrossesse.data";
