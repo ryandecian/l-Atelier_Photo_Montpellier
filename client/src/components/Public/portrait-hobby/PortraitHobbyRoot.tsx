@@ -8,7 +8,7 @@ import { Container4Images_Element } from "../../elements/container-image/contain
 import ImagesPortraitHobbyControllerData from "./ImagesPortraitHobbyControllerData";
 
 import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
-import AvisClientPortraitHobbyControllerData from "./avisClientPortraitHobby.data";
+import { avisClientGlobal_data_SEO } from "./avisClientPortraitHobby.data";
 
 import { TarifCard_Element} from "../../elements/tarifs-card/TarifsCard.element";
 import { tarifsPortraitHobby_Data, mailtoLinkPortraitHobby_Data } from "./tarifsPortraitHobby.data";
@@ -232,7 +232,7 @@ function PortraitHobbyRoot() {
             <TarifCard_Element id="tarifs-portrait-hobby" tarifs={tarifsPortraitHobby_Data} mailtoLink={mailtoLinkPortraitHobby_Data} />
 
             {/* Container D : Avis client */}
-            <GeneratorCardAvisClient_Element tabDataAvisClients={AvisClientPortraitHobbyControllerData} />
+            <GeneratorCardAvisClient_Element tabDataAvisClients={avisClientGlobal_data_SEO} />
         </section>
     )
 }
