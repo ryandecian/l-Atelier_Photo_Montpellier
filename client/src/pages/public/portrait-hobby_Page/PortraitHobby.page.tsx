@@ -2,7 +2,7 @@
 import style from "../../stylePage.module.css";
 
 /* Import des Components */
-import PortraitHobbyRoot from "../../../components/Public/PortraitHobbyRoot/PortraitHobbyRoot";
+import PortraitHobbyRoot from "../../../components/Public/portrait-hobby/PortraitHobbyRoot";
 import NavRoot from "../../../components/layout/NavRoot/NavRoot";
 import Footer_layout from "../../../components/layout/footer/Footer.layout";
 

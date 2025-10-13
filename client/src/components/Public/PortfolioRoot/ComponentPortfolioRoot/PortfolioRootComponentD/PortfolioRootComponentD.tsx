@@ -1,5 +1,5 @@
 import style from "../../../../StyleRootComponent.module.css";
-import { GeneratorAlbumPhoto_Element } from "../../../../Elements/generator-album-photo/GeneratorAlbumPhoto.element";
+import { GeneratorAlbumPhoto_Element } from "../../../../elements/generator-album-photo/GeneratorAlbumPhoto.element";
 import AlbumPortfolio from "../../AlbumPortfolio";
 
 function PortfolioRootComponentD() {
