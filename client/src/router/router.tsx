@@ -39,8 +39,7 @@ import QuiSuisJePage from "../pages/public/qui-suis-je_Page/QuiSuisJe.page";
 
 /**
  * Utilisation : 
- * {ListDataRouter[0].path}S
- * {LinkExt.instagram}
+ * {ListDataRouter[0].path}
  */
 
 interface RouterItemsType {

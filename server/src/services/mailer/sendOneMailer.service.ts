@@ -1,10 +1,10 @@
 /* Import des dépendances : */
 import { SentMessageInfo } from "nodemailer/lib/sendmail-transport";
 
-/* Import de la configuration : */
+/* Import des Config : */
 import { ENV_SAFE } from "../../config/ENV.config";
 
-/* Import des composants de security */
+/* Import des composants de Security */
 import verifyHeaderInjectionMail_security from "../../security/verifyHeaderInjectionMail.security";
 
 /* Import des services */

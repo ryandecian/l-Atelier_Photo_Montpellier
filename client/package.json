@@ -9,8 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "commit": "bash ./npm-run-commit.sh",
-    "pull-force": "bash ./npm-run-pull-force.sh",
-    "build:sitemap": "ts-node --project tsconfig.sitemap.json scripts/generate-sitemap.ts"
+    "pull-force": "bash ./npm-run-pull-force.sh"
   },
   "dependencies": {
     "helmet": "^8.0.0",
