@@ -2,7 +2,7 @@
 import style from "../../stylePage.module.css";
 
 /* Import des Components */
-import PortraitMariageRoot from "../../../components/Public/PortraitMariageRoot/MariageRoot";
+import PortraitMariageRoot from "../../../components/Public/portrait-mariage/MariageRoot";
 import NavRoot from "../../../components/layout/NavRoot/NavRoot";
 import Footer_layout from "../../../components/layout/footer/Footer.layout";
 

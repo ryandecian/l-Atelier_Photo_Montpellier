@@ -6,7 +6,7 @@ import ImagesPortraitSoloControllerData from "./ImagesPortraitSoloControllerData
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../router/router";
 
-import AvisClientPortraitSoloControllerData from "./AvisClientPortraitSoloControllerData";
+import { avisClientPortraitSolo_Data } from "./avisClientPortraitSolo.data";
 import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 
 import { TarifCard_Element} from "../../elements/tarifs-card/TarifsCard.element";
@@ -221,7 +221,7 @@ function PortraitSoloRoot() {
             <TarifCard_Element id="tarifs-portrait-solo" tarifs={tarifsPortraitSolo_Data} mailtoLink={mailtoLinkPortraitSolo_Data} />
 
             {/* Container C : Avis Clients */}
-            <GeneratorCardAvisClient_Element tabDataAvisClients={AvisClientPortraitSoloControllerData} />
+            <GeneratorCardAvisClient_Element tabDataAvisClients={avisClientPortraitSolo_Data} />
         </section>
     )
 }

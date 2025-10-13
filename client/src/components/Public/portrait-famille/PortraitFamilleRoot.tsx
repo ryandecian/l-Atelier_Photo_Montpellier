@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import ListDataRouter from "../../../router/router";
 
 import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
-import AvisClientPortraitFamilleControllerData from "./AvisClientPortraitFamilleControllerData";
+import { avisClientPortraitFamille_Data } from "./avisClientPortraitFamille.data";
 
 import { TarifCard_Element} from "../../elements/tarifs-card/TarifsCard.element";
 import { tarifsPortraitFamille_Data, mailtoLinkPortraitFamille_Data } from "./tarifsPortraitFamille.data";
@@ -245,7 +245,7 @@ function PortraitFamilleRoot() {
             <TarifCard_Element id="tarifs-portrait-famille" tarifs={tarifsPortraitFamille_Data} mailtoLink={mailtoLinkPortraitFamille_Data} />
 
             {/* Container D : Avis client */}
-            <GeneratorCardAvisClient_Element tabDataAvisClients={AvisClientPortraitFamilleControllerData} />
+            <GeneratorCardAvisClient_Element tabDataAvisClients={avisClientPortraitFamille_Data} />
         </section>
     )
 }
