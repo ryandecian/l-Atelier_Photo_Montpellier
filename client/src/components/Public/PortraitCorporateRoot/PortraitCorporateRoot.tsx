@@ -3,15 +3,15 @@ import css from "./PortraitCorporateRoot.module.css";
 
 import externalLinks from "../../../constants/externalLinks";
 
-import { Container4Images_Element } from "../../Elements/container-image/container-4-Images/Container4Images.element";
-import { Container4ImagesPortrait_Element } from "../../Elements/container-image/container-4_Images-portrait/Container4ImagesPortrait.element";
+import { Container4Images_Element } from "../../eelements/container-image/container-4-Images/Container4Images.element";
+import { Container4ImagesPortrait_Element } from "../../eelements/container-image/container-4_Images-portrait/Container4ImagesPortrait.element";
 import ImagesPortraitCorporateControllerData from "./ImagesPortraitCorporateControllerData";
 
 import AvisClientPortraitCorporateControllerData from "./AvisClientPortraitCorporateControllerData";
-import { GeneratorCardAvisClient_Element } from "../../Elements/generator-card-avis-client/GeneratorCardAvisClient.element";
+import { GeneratorCardAvisClient_Element } from "../../eelements/generator-card-avis-client/GeneratorCardAvisClient.element";
 
 // import TarifCardCorporate from "./ComponentsPortraitCorporateRoot/TarifsComponentsCorporate/TarifsCardCorporate";
-import { TarifCard_Element} from "../../Elements/tarifs-card/TarifsCard.element";
+import { TarifCard_Element} from "../../eelements/tarifs-card/TarifsCard.element";
 import { tarifsPortraitCorporate_Data, mailtoLinkPortraitCorporate_Data } from "./tarifsPortraitCorporate.data";
 
 function PortraitCorporateRoot() {

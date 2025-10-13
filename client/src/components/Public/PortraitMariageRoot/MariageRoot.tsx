@@ -1,12 +1,12 @@
 import style from "../../StyleRootComponent.module.css";
 
-import { Container4Images_Element } from "../../Elements/container-image/container-4-Images/Container4Images.element";
+import { Container4Images_Element } from "../../eelements/container-image/container-4-Images/Container4Images.element";
 import ControllerDataImagePortraitMariage from "./ImagesPortraitMariageControllerData";
 
-import { GeneratorCardAvisClient_Element } from "../../Elements/generator-card-avis-client/GeneratorCardAvisClient.element";
+import { GeneratorCardAvisClient_Element } from "../../eelements/generator-card-avis-client/GeneratorCardAvisClient.element";
 import AvisClientPortraitMariageControllerData from "./AvisClientPortraitMariageControllerData";
 
-import { TarifCard_Element} from "../../Elements/tarifs-card/TarifsCard.element";
+import { TarifCard_Element} from "../../eelements/tarifs-card/TarifsCard.element";
 import { tarifsPortraitMariage_Data, mailtoLinkPortraitMariage_Data } from "./tarifsPortraitMariage.data";
 
 import { Link } from "react-router-dom";
