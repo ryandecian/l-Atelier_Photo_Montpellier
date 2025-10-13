@@ -7,6 +7,7 @@ import { avisClientPortraitHobby_Data } from "../components/Public/portrait-hobb
 import AvisClientPortraitLifeStyleControllerData from "../components/Public/PortraitLifeStyleRoot/AvisClientPortraitLifeStyleControllerData";
 import AvisClientPortraitMariageControllerData from "../components/Public/PortraitMariageRoot/AvisClientPortraitMariageControllerData";
 import AvisClientPortraitSoloControllerData from "../components/Public/PortraitSoloRoot/AvisClientPortraitSoloControllerData";
+import { avisClientHome_Data } from "../components/Public/HomeRoot/avisClientHome.data";
 
 /* Import des Types */
 import { AvisClientSEO_Type } from "../types/seo/avisClientSEO.type";
@@ -21,7 +22,8 @@ const allAvis: AvisClientSEO_Type[] = [
     ...avisClientPortraitHobby_Data,
     ...AvisClientPortraitLifeStyleControllerData,
     ...AvisClientPortraitMariageControllerData,
-    ...AvisClientPortraitSoloControllerData
+    ...AvisClientPortraitSoloControllerData,
+    ...avisClientHome_Data
 ]
 
 /* Trie les avis par date décroissante (plus récent en premier) */
