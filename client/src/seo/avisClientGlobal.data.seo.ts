@@ -2,7 +2,7 @@
 import { avisClientPortraitCorporate_Data } from "../components/Public/portrait-corporate/avisClientPortraitCorporate.data";
 import { avisClientPortraitDuo_Data } from "../components/Public/portrait-duo/avisClientPortraitDuo.data";
 import { avisClientPortraitFamille_Data } from "../components/Public/portrait-famille/avisClientPortraitFamille.data";
-import AvisClientPortraitGrossesseControllerData from "../components/Public/PortraitGrossesseRoot/AvisClientPortraitGrossesseControllerData";
+import AvisClientPortraitGrossesseControllerData from "../components/Public/portrait-grossesse/AvisClientPortraitGrossesseControllerData";
 import { avisClientPortraitHobby_Data } from "../components/Public/portrait-hobby/avisClientPortraitHobby.data";
 import AvisClientPortraitLifeStyleControllerData from "../components/Public/PortraitLifeStyleRoot/AvisClientPortraitLifeStyleControllerData";
 import AvisClientPortraitMariageControllerData from "../components/Public/PortraitMariageRoot/AvisClientPortraitMariageControllerData";
