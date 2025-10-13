@@ -1,5 +1,5 @@
 /* Import des composants d'Avis clients */
-import AvisClientPortraitCorporateControllerData from "../components/Public/PortraitCorporateRoot/avisClientPortraitCorporate.data";
+import { avisClientPortraitCorporate_Data } from "../components/Public/PortraitCorporateRoot/avisClientPortraitCorporate.data";
 import AvisClientPortraitDuoControllerData from "../components/Public/PortraitDuoRoot/AvisClientPortraitDuoControllerData";
 import AvisClientPortraitFamilleControllerData from "../components/Public/PortraitFamilleRoot/AvisClientPortraitFamilleControllerData";
 import AvisClientPortraitGrossesseControllerData from "../components/Public/PortraitGrossesseRoot/AvisClientPortraitGrossesseControllerData";
@@ -15,7 +15,7 @@ import { AvisClientSEO_Type } from "../types/seo/avisClientSEO.type";
 
 /* Fusion de tous les avis */
 const allAvis: AvisClientSEO_Type[] = [
-    ...AvisClientPortraitCorporateControllerData,
+    ...avisClientPortraitCorporate_Data,
     ...AvisClientPortraitDuoControllerData,
     ...AvisClientPortraitFamilleControllerData,
     ...AvisClientPortraitGrossesseControllerData,
