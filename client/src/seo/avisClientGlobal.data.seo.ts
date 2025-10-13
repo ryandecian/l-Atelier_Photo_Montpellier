@@ -1,5 +1,5 @@
 /* Import des composants d'Avis clients */
-import { avisClientPortraitCorporate_Data } from "../components/Public/PortraitCorporateRoot/avisClientPortraitCorporate.data";
+import { avisClientPortraitCorporate_Data } from "../components/Public/portrait-corporate/avisClientPortraitCorporate.data";
 import AvisClientPortraitDuoControllerData from "../components/Public/PortraitDuoRoot/AvisClientPortraitDuoControllerData";
 import AvisClientPortraitFamilleControllerData from "../components/Public/PortraitFamilleRoot/AvisClientPortraitFamilleControllerData";
 import AvisClientPortraitGrossesseControllerData from "../components/Public/PortraitGrossesseRoot/AvisClientPortraitGrossesseControllerData";
