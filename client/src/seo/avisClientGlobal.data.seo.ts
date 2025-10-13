@@ -4,7 +4,7 @@ import { avisClientPortraitDuo_Data } from "../components/Public/portrait-duo/av
 import { avisClientPortraitFamille_Data } from "../components/Public/portrait-famille/avisClientPortraitFamille.data";
 import { avisClientPortraitGrossesse_Data } from "../components/Public/portrait-grossesse/avisClientPortraitGrossesse.data";
 import { avisClientPortraitHobby_Data } from "../components/Public/portrait-hobby/avisClientPortraitHobby.data";
-import AvisClientPortraitLifeStyleControllerData from "../components/Public/portrait-lifestyle/avisClientPortraitLifeStyle.data";
+import { avisClientPortraitLifeStyle_Data } from "../components/Public/portrait-lifestyle/avisClientPortraitLifeStyle.data";
 import AvisClientPortraitMariageControllerData from "../components/Public/PortraitMariageRoot/AvisClientPortraitMariageControllerData";
 import AvisClientPortraitSoloControllerData from "../components/Public/PortraitSoloRoot/AvisClientPortraitSoloControllerData";
 import { avisClientHome_Data } from "../components/Public/home/avisClientHome.data";
@@ -20,7 +20,7 @@ const allAvis: AvisClientSEO_Type[] = [
     ...avisClientPortraitFamille_Data,
     ...avisClientPortraitGrossesse_Data,
     ...avisClientPortraitHobby_Data,
-    ...AvisClientPortraitLifeStyleControllerData,
+    ...avisClientPortraitLifeStyle_Data,
     ...AvisClientPortraitMariageControllerData,
     ...AvisClientPortraitSoloControllerData,
     ...avisClientHome_Data
