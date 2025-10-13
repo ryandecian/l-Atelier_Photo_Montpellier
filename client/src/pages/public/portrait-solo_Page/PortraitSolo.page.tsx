@@ -2,7 +2,7 @@
 import style from "../../stylePage.module.css";
 
 /* Import des Components */
-import PortraitSoloRoot from "../../../components/Public/PortraitSoloRoot/PortraitSoloRoot";
+import PortraitSoloRoot from "../../../components/Public/portrait-solo/PortraitSoloRoot";
 import NavRoot from "../../../components/layout/NavRoot/NavRoot";
 import Footer_layout from "../../../components/layout/footer/Footer.layout";
 
