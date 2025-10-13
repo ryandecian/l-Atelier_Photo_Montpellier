@@ -1,13 +1,13 @@
 /* Import des composants d'Avis clients */
-import AvisClientPortraitCorporateControllerData from "../components/Public/PortraitCorporateRoot/AvisClientPortraitCorporateControllerData";
-import AvisClientPortraitDuoControllerData from "../components/Public/PortraitDuoRoot/AvisClientPortraitDuoControllerData";
-import AvisClientPortraitFamilleControllerData from "../components/Public/PortraitFamilleRoot/AvisClientPortraitFamilleControllerData";
-import AvisClientPortraitGrossesseControllerData from "../components/Public/PortraitGrossesseRoot/AvisClientPortraitGrossesseControllerData";
+import { avisClientPortraitCorporate_Data } from "../components/Public/portrait-corporate/avisClientPortraitCorporate.data";
+import { avisClientPortraitDuo_Data } from "../components/Public/portrait-duo/avisClientPortraitDuo.data";
+import { avisClientPortraitFamille_Data } from "../components/Public/portrait-famille/avisClientPortraitFamille.data";
+import { avisClientPortraitGrossesse_Data } from "../components/Public/portrait-grossesse/avisClientPortraitGrossesse.data";
 import { avisClientPortraitHobby_Data } from "../components/Public/portrait-hobby/avisClientPortraitHobby.data";
-import AvisClientPortraitLifeStyleControllerData from "../components/Public/PortraitLifeStyleRoot/AvisClientPortraitLifeStyleControllerData";
-import AvisClientPortraitMariageControllerData from "../components/Public/PortraitMariageRoot/AvisClientPortraitMariageControllerData";
-import AvisClientPortraitSoloControllerData from "../components/Public/PortraitSoloRoot/AvisClientPortraitSoloControllerData";
-import { avisClientHome_Data } from "../components/Public/HomeRoot/avisClientHome.data";
+import { avisClientPortraitLifeStyle_Data } from "../components/Public/portrait-lifestyle/avisClientPortraitLifeStyle.data";
+import { avisClientPortraitMariage_Data} from "../components/Public/portrait-mariage/avisClientPortraitMariage.data";
+import { avisClientPortraitSolo_Data } from "../components/Public/portrait-solo/avisClientPortraitSolo.data";
+import { avisClientHome_Data } from "../components/Public/home/avisClientHome.data";
 
 /* Import des Types */
 import { AvisClientSEO_Type } from "../types/seo/avisClientSEO.type";
@@ -15,14 +15,14 @@ import { AvisClientSEO_Type } from "../types/seo/avisClientSEO.type";
 
 /* Fusion de tous les avis */
 const allAvis: AvisClientSEO_Type[] = [
-    ...AvisClientPortraitCorporateControllerData,
-    ...AvisClientPortraitDuoControllerData,
-    ...AvisClientPortraitFamilleControllerData,
-    ...AvisClientPortraitGrossesseControllerData,
+    ...avisClientPortraitCorporate_Data,
+    ...avisClientPortraitDuo_Data,
+    ...avisClientPortraitFamille_Data,
+    ...avisClientPortraitGrossesse_Data,
     ...avisClientPortraitHobby_Data,
-    ...AvisClientPortraitLifeStyleControllerData,
-    ...AvisClientPortraitMariageControllerData,
-    ...AvisClientPortraitSoloControllerData,
+    ...avisClientPortraitLifeStyle_Data,
+    ...avisClientPortraitMariage_Data,
+    ...avisClientPortraitSolo_Data,
     ...avisClientHome_Data
 ]
 
