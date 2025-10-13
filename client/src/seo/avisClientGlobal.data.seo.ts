@@ -6,7 +6,7 @@ import { avisClientPortraitGrossesse_Data } from "../components/Public/portrait-
 import { avisClientPortraitHobby_Data } from "../components/Public/portrait-hobby/avisClientPortraitHobby.data";
 import { avisClientPortraitLifeStyle_Data } from "../components/Public/portrait-lifestyle/avisClientPortraitLifeStyle.data";
 import { avisClientPortraitMariage_Data} from "../components/Public/portrait-mariage/avisClientPortraitMariage.data";
-import AvisClientPortraitSoloControllerData from "../components/Public/PortraitSoloRoot/AvisClientPortraitSoloControllerData";
+import AvisClientPortraitSoloControllerData from "../components/Public/PortraitSoloRoot/avisClientPortraitSolo.data";
 import { avisClientHome_Data } from "../components/Public/home/avisClientHome.data";
 
 /* Import des Types */
