@@ -5,7 +5,7 @@ import externalLinks from "../../../constants/externalLinks";
 
 import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
 import { Container4ImagesPortrait_Element } from "../../elements/container-image/container-4_Images-portrait/Container4ImagesPortrait.element";
-import ImagesPortraitCorporateControllerData from "./ImagesPortraitCorporateControllerData";
+import { imagesPortraitCorporate_Data } from "./imagesPortraitCorporate.data";
 
 import { avisClientPortraitCorporate_Data } from "./avisClientPortraitCorporate.data";
 import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
@@ -47,14 +47,14 @@ function PortraitCorporateRoot() {
 
             {/* Container 1 : Container image portrait Corporate */}
             <Container4ImagesPortrait_Element
-                img1={ImagesPortraitCorporateControllerData[0].src}
-                metaNameImg1={ImagesPortraitCorporateControllerData[0].alt}
-                img2={ImagesPortraitCorporateControllerData[1].src}
-                metaNameImg2={ImagesPortraitCorporateControllerData[1].alt}
-                img3={ImagesPortraitCorporateControllerData[2].src}
-                metaNameImg3={ImagesPortraitCorporateControllerData[2].alt}
-                img4={ImagesPortraitCorporateControllerData[3].src}
-                metaNameImg4={ImagesPortraitCorporateControllerData[3].alt}
+                img1={imagesPortraitCorporate_Data[0].src}
+                metaNameImg1={imagesPortraitCorporate_Data[0].alt}
+                img2={imagesPortraitCorporate_Data[1].src}
+                metaNameImg2={imagesPortraitCorporate_Data[1].alt}
+                img3={imagesPortraitCorporate_Data[2].src}
+                metaNameImg3={imagesPortraitCorporate_Data[2].alt}
+                img4={imagesPortraitCorporate_Data[3].src}
+                metaNameImg4={imagesPortraitCorporate_Data[3].alt}
             />
 
             <br />
@@ -102,14 +102,14 @@ function PortraitCorporateRoot() {
 
             {/* Container 2 : Container image portrait Corporate */}
             <Container4Images_Element
-                img1={ImagesPortraitCorporateControllerData[4].src}
-                metaNameImg1={ImagesPortraitCorporateControllerData[4].alt}
-                img2={ImagesPortraitCorporateControllerData[5].src}
-                metaNameImg2={ImagesPortraitCorporateControllerData[5].alt}
-                img3={ImagesPortraitCorporateControllerData[6].src}
-                metaNameImg3={ImagesPortraitCorporateControllerData[6].alt}
-                img4={ImagesPortraitCorporateControllerData[7].src}
-                metaNameImg4={ImagesPortraitCorporateControllerData[7].alt}
+                img1={imagesPortraitCorporate_Data[4].src}
+                metaNameImg1={imagesPortraitCorporate_Data[4].alt}
+                img2={imagesPortraitCorporate_Data[5].src}
+                metaNameImg2={imagesPortraitCorporate_Data[5].alt}
+                img3={imagesPortraitCorporate_Data[6].src}
+                metaNameImg3={imagesPortraitCorporate_Data[6].alt}
+                img4={imagesPortraitCorporate_Data[7].src}
+                metaNameImg4={imagesPortraitCorporate_Data[7].alt}
             />
 
             {/* ---------- ---------- ---------- ---------- ---------- */}
