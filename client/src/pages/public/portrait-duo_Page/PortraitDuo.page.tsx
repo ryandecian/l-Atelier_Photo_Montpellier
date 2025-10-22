@@ -2,7 +2,7 @@
 import style from "../../stylePage.module.css";
 
 /* Import des Components */
-import PortraitDuoRoot from "../../../components/Public/portrait-duo/PortraitDuoRoot";
+import PortraitDuo_Root from "../../../components/Public/portrait-duo/PortraitDuo.root";
 import NavRoot from "../../../components/layout/NavRoot/NavRoot";
 import Footer_layout from "../../../components/layout/footer/Footer.layout";
 
@@ -22,7 +22,7 @@ function PortraitDuo_Page() {
                  <NavRoot />
             </header>
             <main className={style.Main}>
-                <PortraitDuoRoot />
+                <PortraitDuo_Root />
             </main>
             <footer className={style.Footer}>
                 <Footer_layout />
