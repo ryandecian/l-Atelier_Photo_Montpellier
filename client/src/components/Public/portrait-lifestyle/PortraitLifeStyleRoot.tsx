@@ -3,7 +3,7 @@ import style from "../../StyleRootComponent.module.css";
 import externalLinks from "../../../constants/externalLinks";
 import useScrollToHash from "../../../hook/useScrollToHash";
 
-import ImagesPortraitLifeStyleControllerData from "./ImagesPortraitLifeStyleControllerData";
+import ImagesPortraitLifeStyleControllerData from "./imagesPortraitLifeStyle.data";
 import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
 
 import { avisClientPortraitLifeStyle_Data } from "./avisClientPortraitLifeStyle.data";
