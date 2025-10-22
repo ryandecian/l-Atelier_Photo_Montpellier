@@ -9,8 +9,8 @@ import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-a
 import { TarifCard_Element} from "../../elements/tarifs-card/TarifsCard.element";
 
 /* Import des Components de Data */
-import { imagesPortraitCorporate_Data } from "./imagesPortraitCorporate.data";
 import { avisClientPortraitCorporate_Data } from "./avisClientPortraitCorporate.data";
+import { imagesPortraitCorporate_Data } from "./imagesPortraitCorporate.data";
 import { tarifsPortraitCorporate_Data, mailtoLinkPortraitCorporate_Data } from "./tarifsPortraitCorporate.data";
 
 /* Import des composants Router */
