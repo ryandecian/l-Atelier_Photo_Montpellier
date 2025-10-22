@@ -1,3 +1,4 @@
+/* Import des Types */
 import { ImagesBlog_Type } from "../../../types/components/blogs/imagesBlog.type";
 
 const imagesPortraitDuo_Data: ImagesBlog_Type[] = [
