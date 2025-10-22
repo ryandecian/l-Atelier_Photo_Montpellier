@@ -3,7 +3,7 @@ import style from "../../StyleRootComponent.module.css";
 import externalLinks from "../../../constants/externalLinks";
 import useScrollToHash from "../../../hook/useScrollToHash";
 
-import ImagesPortraitLifeStyleControllerData from "./imagesPortraitLifeStyle.data";
+import { imagesPortraitLifeStyle_Data } from "./imagesPortraitLifeStyle.data";
 import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
 
 import { avisClientPortraitLifeStyle_Data } from "./avisClientPortraitLifeStyle.data";
@@ -125,14 +125,14 @@ function PortraitLifeStyleRoot() {
 
             {/* Container 1 : Container image portrait solo */}
             <Container4Images_Element
-                img1={ImagesPortraitLifeStyleControllerData[6].src}
-                metaNameImg1={ImagesPortraitLifeStyleControllerData[6].alt}
-                img2={ImagesPortraitLifeStyleControllerData[7].src}
-                metaNameImg2={ImagesPortraitLifeStyleControllerData[7].alt}
-                img3={ImagesPortraitLifeStyleControllerData[8].src}
-                metaNameImg3={ImagesPortraitLifeStyleControllerData[8].alt}
-                img4={ImagesPortraitLifeStyleControllerData[9].src}
-                metaNameImg4={ImagesPortraitLifeStyleControllerData[9].alt}
+                img1={imagesPortraitLifeStyle_Data[6].src}
+                metaNameImg1={imagesPortraitLifeStyle_Data[6].alt}
+                img2={imagesPortraitLifeStyle_Data[7].src}
+                metaNameImg2={imagesPortraitLifeStyle_Data[7].alt}
+                img3={imagesPortraitLifeStyle_Data[8].src}
+                metaNameImg3={imagesPortraitLifeStyle_Data[8].alt}
+                img4={imagesPortraitLifeStyle_Data[9].src}
+                metaNameImg4={imagesPortraitLifeStyle_Data[9].alt}
             />
             
                             <h2 className={style.TitleH2px2}>
@@ -208,14 +208,14 @@ function PortraitLifeStyleRoot() {
 
             {/* Container 2 : Container image portrait couple */}
             <Container4Images_Element
-                img1={ImagesPortraitLifeStyleControllerData[10].src}
-                metaNameImg1={ImagesPortraitLifeStyleControllerData[10].alt}
-                img2={ImagesPortraitLifeStyleControllerData[11].src}
-                metaNameImg2={ImagesPortraitLifeStyleControllerData[11].alt}
-                img3={ImagesPortraitLifeStyleControllerData[12].src}
-                metaNameImg3={ImagesPortraitLifeStyleControllerData[12].alt}
-                img4={ImagesPortraitLifeStyleControllerData[13].src}
-                metaNameImg4={ImagesPortraitLifeStyleControllerData[13].alt}
+                img1={imagesPortraitLifeStyle_Data[10].src}
+                metaNameImg1={imagesPortraitLifeStyle_Data[10].alt}
+                img2={imagesPortraitLifeStyle_Data[11].src}
+                metaNameImg2={imagesPortraitLifeStyle_Data[11].alt}
+                img3={imagesPortraitLifeStyle_Data[12].src}
+                metaNameImg3={imagesPortraitLifeStyle_Data[12].alt}
+                img4={imagesPortraitLifeStyle_Data[13].src}
+                metaNameImg4={imagesPortraitLifeStyle_Data[13].alt}
             />
             
             <h2 className={style.TitleH2px2}>
@@ -282,14 +282,14 @@ function PortraitLifeStyleRoot() {
 
             {/* Container 3 : Container image portrait famille */}
             <Container4Images_Element
-                img1={ImagesPortraitLifeStyleControllerData[14].src}
-                metaNameImg1={ImagesPortraitLifeStyleControllerData[14].alt}
-                img2={ImagesPortraitLifeStyleControllerData[15].src}
-                metaNameImg2={ImagesPortraitLifeStyleControllerData[15].alt}
-                img3={ImagesPortraitLifeStyleControllerData[16].src}
-                metaNameImg3={ImagesPortraitLifeStyleControllerData[16].alt}
-                img4={ImagesPortraitLifeStyleControllerData[17].src}
-                metaNameImg4={ImagesPortraitLifeStyleControllerData[17].alt}
+                img1={imagesPortraitLifeStyle_Data[14].src}
+                metaNameImg1={imagesPortraitLifeStyle_Data[14].alt}
+                img2={imagesPortraitLifeStyle_Data[15].src}
+                metaNameImg2={imagesPortraitLifeStyle_Data[15].alt}
+                img3={imagesPortraitLifeStyle_Data[16].src}
+                metaNameImg3={imagesPortraitLifeStyle_Data[16].alt}
+                img4={imagesPortraitLifeStyle_Data[17].src}
+                metaNameImg4={imagesPortraitLifeStyle_Data[17].alt}
             />
             
             <h2 className={style.TitleH2px2}>
@@ -512,14 +512,14 @@ function PortraitLifeStyleRoot() {
 
             {/* Container 4 : Container image passions */}
             <Container4Images_Element
-                img1={ImagesPortraitLifeStyleControllerData[26].src}
-                metaNameImg1={ImagesPortraitLifeStyleControllerData[26].alt}
-                img2={ImagesPortraitLifeStyleControllerData[27].src}
-                metaNameImg2={ImagesPortraitLifeStyleControllerData[27].alt}
-                img3={ImagesPortraitLifeStyleControllerData[28].src}
-                metaNameImg3={ImagesPortraitLifeStyleControllerData[28].alt}
-                img4={ImagesPortraitLifeStyleControllerData[29].src}
-                metaNameImg4={ImagesPortraitLifeStyleControllerData[29].alt}
+                img1={imagesPortraitLifeStyle_Data[26].src}
+                metaNameImg1={imagesPortraitLifeStyle_Data[26].alt}
+                img2={imagesPortraitLifeStyle_Data[27].src}
+                metaNameImg2={imagesPortraitLifeStyle_Data[27].alt}
+                img3={imagesPortraitLifeStyle_Data[28].src}
+                metaNameImg3={imagesPortraitLifeStyle_Data[28].alt}
+                img4={imagesPortraitLifeStyle_Data[29].src}
+                metaNameImg4={imagesPortraitLifeStyle_Data[29].alt}
             />
 
             {/* Container 5 : Avis clients */}
