@@ -1,18 +1,20 @@
+/* Import des modules CSS */
 import style from "../../StyleRootComponent.module.css";
 import css from "./PortraitCorporateRoot.module.css";
 
-import externalLinks from "../../../constants/externalLinks";
-
+/* Import des composants d'Elements */
 import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
 import { Container4ImagesPortrait_Element } from "../../elements/container-image/container-4_Images-portrait/Container4ImagesPortrait.element";
-import { imagesPortraitCorporate_Data } from "./imagesPortraitCorporate.data";
-
-import { avisClientPortraitCorporate_Data } from "./avisClientPortraitCorporate.data";
 import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
-
-// import TarifCardCorporate from "./ComponentsPortraitCorporateRoot/TarifsComponentsCorporate/TarifsCardCorporate";
 import { TarifCard_Element} from "../../elements/tarifs-card/TarifsCard.element";
+
+/* Import des Components de Data */
+import { imagesPortraitCorporate_Data } from "./imagesPortraitCorporate.data";
+import { avisClientPortraitCorporate_Data } from "./avisClientPortraitCorporate.data";
 import { tarifsPortraitCorporate_Data, mailtoLinkPortraitCorporate_Data } from "./tarifsPortraitCorporate.data";
+
+/* Import des composants Router */
+import externalLinks from "../../../constants/externalLinks";
 
 function PortraitCorporateRoot() {
     return (
