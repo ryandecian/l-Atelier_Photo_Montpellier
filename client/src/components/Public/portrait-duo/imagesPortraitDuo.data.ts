@@ -1,13 +1,5 @@
 import { ImagesBlog_Type } from "../../../types/components/blogs/imagesBlog.type";
 
-/**
- * Compteur mot clés : 
- * 
- * photographe-professionnel : 3/4
- * photo-professionnel : 3/2
- * photographie-professionnelle : 2/2
- */
-
 const imagesPortraitDuo_Data: ImagesBlog_Type[] = [
     /* Tableau 1 : PortraitDuoComponentA */
     /* {imagesPortraitDuo_Data[0].src} */
