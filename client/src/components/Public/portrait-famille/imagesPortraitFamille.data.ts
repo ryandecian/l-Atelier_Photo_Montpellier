@@ -1,12 +1,5 @@
+/* Import des Types */
 import { ImagesBlog_Type } from "../../../types/components/blogs/imagesBlog.type";
-
-/**
- * Compteur mot clés : 
- * 
- * photographe-professionnelle : 4/4
- * photo-professionnel : 2/2
- * photographie-professionnelle : 2/2
- */
 
 const imagesPortraitFamille_Data: ImagesBlog_Type[] = [
     /* Tableau 1 : PortraitFamilleComponentA */
