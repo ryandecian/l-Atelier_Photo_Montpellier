@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import ListDataRouter from "../../../router/router";
 
 import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
-import ImagesPortraitHobbyControllerData from "./ImagesPortraitHobbyControllerData";
+import { imagesPortraitHobby_Data } from "./imagesPortraitHobby.data";
 
 import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 import { avisClientPortraitHobby_Data } from "./avisClientPortraitHobby.data";
@@ -46,14 +46,14 @@ function PortraitHobbyRoot() {
             </p>
 
             <Container4Images_Element
-                img1={ImagesPortraitHobbyControllerData[0].src}
-                metaNameImg1={ImagesPortraitHobbyControllerData[0].alt}
-                img2={ImagesPortraitHobbyControllerData[1].src}
-                metaNameImg2={ImagesPortraitHobbyControllerData[1].alt}
-                img3={ImagesPortraitHobbyControllerData[2].src}
-                metaNameImg3={ImagesPortraitHobbyControllerData[2].alt}
-                img4={ImagesPortraitHobbyControllerData[3].src}
-                metaNameImg4={ImagesPortraitHobbyControllerData[3].alt}
+                img1={imagesPortraitHobby_Data[0].src}
+                metaNameImg1={imagesPortraitHobby_Data[0].alt}
+                img2={imagesPortraitHobby_Data[1].src}
+                metaNameImg2={imagesPortraitHobby_Data[1].alt}
+                img3={imagesPortraitHobby_Data[2].src}
+                metaNameImg3={imagesPortraitHobby_Data[2].alt}
+                img4={imagesPortraitHobby_Data[3].src}
+                metaNameImg4={imagesPortraitHobby_Data[3].alt}
             />
 
             <h2 className={css.TitleH2}>
@@ -143,14 +143,14 @@ function PortraitHobbyRoot() {
             </ul>
 
             <Container4Images_Element
-                img1={ImagesPortraitHobbyControllerData[4].src}
-                metaNameImg1={ImagesPortraitHobbyControllerData[4].alt}
-                img2={ImagesPortraitHobbyControllerData[5].src}
-                metaNameImg2={ImagesPortraitHobbyControllerData[5].alt}
-                img3={ImagesPortraitHobbyControllerData[6].src}
-                metaNameImg3={ImagesPortraitHobbyControllerData[6].alt}
-                img4={ImagesPortraitHobbyControllerData[7].src}
-                metaNameImg4={ImagesPortraitHobbyControllerData[7].alt}
+                img1={imagesPortraitHobby_Data[4].src}
+                metaNameImg1={imagesPortraitHobby_Data[4].alt}
+                img2={imagesPortraitHobby_Data[5].src}
+                metaNameImg2={imagesPortraitHobby_Data[5].alt}
+                img3={imagesPortraitHobby_Data[6].src}
+                metaNameImg3={imagesPortraitHobby_Data[6].alt}
+                img4={imagesPortraitHobby_Data[7].src}
+                metaNameImg4={imagesPortraitHobby_Data[7].alt}
             />
 
             <h3 className={style.TitleH2}>

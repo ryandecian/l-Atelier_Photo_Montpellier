@@ -1,7 +1,7 @@
 import style from "../../StyleRootComponent.module.css";
 
 import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
-import ImagesPortraitFamilleControllerData from "./ImagesPortraitFamilleControllerData";
+import { imagesPortraitFamille_Data } from "./imagesPortraitFamille.data";
 
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../router/router";
@@ -54,14 +54,14 @@ function PortraitFamilleRoot() {
             </p>
 
             <Container4Images_Element
-                img1={ImagesPortraitFamilleControllerData[0].src}
-                metaNameImg1={ImagesPortraitFamilleControllerData[0].alt}
-                img2={ImagesPortraitFamilleControllerData[1].src}
-                metaNameImg2={ImagesPortraitFamilleControllerData[1].alt}
-                img3={ImagesPortraitFamilleControllerData[2].src}
-                metaNameImg3={ImagesPortraitFamilleControllerData[2].alt}
-                img4={ImagesPortraitFamilleControllerData[3].src}
-                metaNameImg4={ImagesPortraitFamilleControllerData[3].alt}
+                img1={imagesPortraitFamille_Data[0].src}
+                metaNameImg1={imagesPortraitFamille_Data[0].alt}
+                img2={imagesPortraitFamille_Data[1].src}
+                metaNameImg2={imagesPortraitFamille_Data[1].alt}
+                img3={imagesPortraitFamille_Data[2].src}
+                metaNameImg3={imagesPortraitFamille_Data[2].alt}
+                img4={imagesPortraitFamille_Data[3].src}
+                metaNameImg4={imagesPortraitFamille_Data[3].alt}
             />
 
             <h3 className={style.TitleNH3}>
@@ -136,14 +136,14 @@ function PortraitFamilleRoot() {
             </p>
 
             <Container4Images_Element
-                img1={ImagesPortraitFamilleControllerData[4].src}
-                metaNameImg1={ImagesPortraitFamilleControllerData[4].alt}
-                img2={ImagesPortraitFamilleControllerData[5].src}
-                metaNameImg2={ImagesPortraitFamilleControllerData[5].alt}
-                img3={ImagesPortraitFamilleControllerData[6].src}
-                metaNameImg3={ImagesPortraitFamilleControllerData[6].alt}
-                img4={ImagesPortraitFamilleControllerData[7].src}
-                metaNameImg4={ImagesPortraitFamilleControllerData[7].alt}
+                img1={imagesPortraitFamille_Data[4].src}
+                metaNameImg1={imagesPortraitFamille_Data[4].alt}
+                img2={imagesPortraitFamille_Data[5].src}
+                metaNameImg2={imagesPortraitFamille_Data[5].alt}
+                img3={imagesPortraitFamille_Data[6].src}
+                metaNameImg3={imagesPortraitFamille_Data[6].alt}
+                img4={imagesPortraitFamille_Data[7].src}
+                metaNameImg4={imagesPortraitFamille_Data[7].alt}
             />
 
             <h3 className={style.TitleH2}>
