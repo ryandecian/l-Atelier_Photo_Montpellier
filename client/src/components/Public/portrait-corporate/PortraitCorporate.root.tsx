@@ -16,7 +16,7 @@ import { tarifsPortraitCorporate_Data, mailtoLinkPortraitCorporate_Data } from "
 /* Import des composants Router */
 import externalLinks from "../../../constants/externalLinks";
 
-function PortraitCorporateRoot() {
+function PortraitCorporate_Root() {
     return (
         <section id="PortraitCorporateRoot" className={`PortraitCorporateRoot ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
@@ -186,4 +186,4 @@ function PortraitCorporateRoot() {
     );
 }
 
-export default PortraitCorporateRoot;
+export default PortraitCorporate_Root;
