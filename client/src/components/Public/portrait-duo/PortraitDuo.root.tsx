@@ -1,19 +1,23 @@
+/* Import des modules CSS */
 import style from "../../StyleRootComponent.module.css";
 
-import { Link } from "react-router-dom";
-import ListDataRouter from "../../../router/router";
-
+/* Import des composants d'Elements */
 import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
-import ImagesPortraitDuoControllerData from "./ImagesPortraitDuoControllerData";
-
 import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
-import { avisClientPortraitDuo_Data } from "./avisClientPortraitDuo.data";
-
 import { TarifCard_Element} from "../../elements/tarifs-card/TarifsCard.element";
+
+/* Import des Components de Data */
+import { avisClientPortraitDuo_Data } from "./avisClientPortraitDuo.data";
+import { imagesPortraitDuo_Data } from "./imagesPortraitDuo.data";
 import { tarifsPortraitDuo_Data, mailtoLinkPortraitDuo_Data } from "./tarifsPortraitDuo.data";
 
+/* Import des composants React */
+import { Link } from "react-router-dom";
 
-function PortraitDuoRoot() {
+/* Import des composants Router */
+import ListDataRouter from "../../../router/router";
+
+function PortraitDuo_Root() {
     return (
         <section className={`PortraitDuoRoot ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
@@ -49,14 +53,14 @@ function PortraitDuoRoot() {
             </p>
 
             <Container4Images_Element
-                img1={ImagesPortraitDuoControllerData[0].src}
-                metaNameImg1={ImagesPortraitDuoControllerData[0].alt}
-                img2={ImagesPortraitDuoControllerData[1].src}
-                metaNameImg2={ImagesPortraitDuoControllerData[1].alt}
-                img3={ImagesPortraitDuoControllerData[2].src}
-                metaNameImg3={ImagesPortraitDuoControllerData[2].alt}
-                img4={ImagesPortraitDuoControllerData[3].src}
-                metaNameImg4={ImagesPortraitDuoControllerData[3].alt}
+                img1={imagesPortraitDuo_Data[0].src}
+                metaNameImg1={imagesPortraitDuo_Data[0].alt}
+                img2={imagesPortraitDuo_Data[1].src}
+                metaNameImg2={imagesPortraitDuo_Data[1].alt}
+                img3={imagesPortraitDuo_Data[2].src}
+                metaNameImg3={imagesPortraitDuo_Data[2].alt}
+                img4={imagesPortraitDuo_Data[3].src}
+                metaNameImg4={imagesPortraitDuo_Data[3].alt}
             />
 
             <h3 className={style.TitleNH3}>
@@ -107,14 +111,14 @@ function PortraitDuoRoot() {
             </p>
 
             <Container4Images_Element
-                img1={ImagesPortraitDuoControllerData[4].src}
-                metaNameImg1={ImagesPortraitDuoControllerData[4].alt}
-                img2={ImagesPortraitDuoControllerData[5].src}
-                metaNameImg2={ImagesPortraitDuoControllerData[5].alt}
-                img3={ImagesPortraitDuoControllerData[6].src}
-                metaNameImg3={ImagesPortraitDuoControllerData[6].alt}
-                img4={ImagesPortraitDuoControllerData[7].src}
-                metaNameImg4={ImagesPortraitDuoControllerData[7].alt}
+                img1={imagesPortraitDuo_Data[4].src}
+                metaNameImg1={imagesPortraitDuo_Data[4].alt}
+                img2={imagesPortraitDuo_Data[5].src}
+                metaNameImg2={imagesPortraitDuo_Data[5].alt}
+                img3={imagesPortraitDuo_Data[6].src}
+                metaNameImg3={imagesPortraitDuo_Data[6].alt}
+                img4={imagesPortraitDuo_Data[7].src}
+                metaNameImg4={imagesPortraitDuo_Data[7].alt}
             />
 
             <h3 className={style.TitleNH3}>
@@ -211,4 +215,4 @@ function PortraitDuoRoot() {
     )
 }
 
-export default PortraitDuoRoot;
+export default PortraitDuo_Root;

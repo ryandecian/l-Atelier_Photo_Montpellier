@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import css from "./PortraitLifeStyleRootComponentB.module.css";
 import ListDataRouter from "../../../../../router/router";
-import ImagesPortraitLifeStyleControllerData from "../../ImagesPortraitLifeStyleControllerData";
+import ImagesPortraitLifeStyleControllerData from "../../imagesPortraitLifeStyle.data";
 
 function PortraitLifeStyleRootComponentB() {
     const services = [
