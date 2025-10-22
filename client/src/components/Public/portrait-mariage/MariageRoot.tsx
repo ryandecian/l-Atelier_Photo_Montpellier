@@ -1,7 +1,7 @@
 import style from "../../StyleRootComponent.module.css";
 
 import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
-import ControllerDataImagePortraitMariage from "./ImagesPortraitMariageControllerData";
+import { imagesPortraitMariage_Data } from "./imagesPortraitMariage.data";
 
 import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 import { avisClientPortraitMariage_Data } from "./avisClientPortraitMariage.data";
@@ -87,14 +87,14 @@ function PortraitMariageRoot() {
 
             {/* Container Images 1 */}
             <Container4Images_Element
-            img1={ControllerDataImagePortraitMariage[0].src}
-            metaNameImg1={ControllerDataImagePortraitMariage[0].alt}
-            img2={ControllerDataImagePortraitMariage[1].src}
-            metaNameImg2={ControllerDataImagePortraitMariage[1].alt}
-            img3={ControllerDataImagePortraitMariage[2].src}
-            metaNameImg3={ControllerDataImagePortraitMariage[2].alt}
-            img4={ControllerDataImagePortraitMariage[3].src}
-            metaNameImg4={ControllerDataImagePortraitMariage[3].alt}
+            img1={imagesPortraitMariage_Data[0].src}
+            metaNameImg1={imagesPortraitMariage_Data[0].alt}
+            img2={imagesPortraitMariage_Data[1].src}
+            metaNameImg2={imagesPortraitMariage_Data[1].alt}
+            img3={imagesPortraitMariage_Data[2].src}
+            metaNameImg3={imagesPortraitMariage_Data[2].alt}
+            img4={imagesPortraitMariage_Data[3].src}
+            metaNameImg4={imagesPortraitMariage_Data[3].alt}
             />
 
             {/* ---------- ---------- ---------- ---------- ---------- */}
@@ -133,14 +133,14 @@ function PortraitMariageRoot() {
 
             {/* Container Images 2 */}
             <Container4Images_Element
-            img1={ControllerDataImagePortraitMariage[4].src}
-            metaNameImg1={ControllerDataImagePortraitMariage[4].alt}
-            img2={ControllerDataImagePortraitMariage[5].src}
-            metaNameImg2={ControllerDataImagePortraitMariage[5].alt}
-            img3={ControllerDataImagePortraitMariage[6].src}
-            metaNameImg3={ControllerDataImagePortraitMariage[6].alt}
-            img4={ControllerDataImagePortraitMariage[7].src}
-            metaNameImg4={ControllerDataImagePortraitMariage[7].alt}
+            img1={imagesPortraitMariage_Data[4].src}
+            metaNameImg1={imagesPortraitMariage_Data[4].alt}
+            img2={imagesPortraitMariage_Data[5].src}
+            metaNameImg2={imagesPortraitMariage_Data[5].alt}
+            img3={imagesPortraitMariage_Data[6].src}
+            metaNameImg3={imagesPortraitMariage_Data[6].alt}
+            img4={imagesPortraitMariage_Data[7].src}
+            metaNameImg4={imagesPortraitMariage_Data[7].alt}
             />
 
             {/* ---------- ---------- ---------- ---------- ---------- */}
@@ -169,14 +169,14 @@ function PortraitMariageRoot() {
             
             {/* Container Images 3 */}
             <Container4Images_Element
-            img1={ControllerDataImagePortraitMariage[8].src}
-            metaNameImg1={ControllerDataImagePortraitMariage[8].alt}
-            img2={ControllerDataImagePortraitMariage[9].src}
-            metaNameImg2={ControllerDataImagePortraitMariage[9].alt}
-            img3={ControllerDataImagePortraitMariage[10].src}
-            metaNameImg3={ControllerDataImagePortraitMariage[10].alt}
-            img4={ControllerDataImagePortraitMariage[11].src}
-            metaNameImg4={ControllerDataImagePortraitMariage[11].alt}
+            img1={imagesPortraitMariage_Data[8].src}
+            metaNameImg1={imagesPortraitMariage_Data[8].alt}
+            img2={imagesPortraitMariage_Data[9].src}
+            metaNameImg2={imagesPortraitMariage_Data[9].alt}
+            img3={imagesPortraitMariage_Data[10].src}
+            metaNameImg3={imagesPortraitMariage_Data[10].alt}
+            img4={imagesPortraitMariage_Data[11].src}
+            metaNameImg4={imagesPortraitMariage_Data[11].alt}
             />
 
             {/* ---------- ---------- ---------- ---------- ---------- */}
@@ -225,14 +225,14 @@ function PortraitMariageRoot() {
             
             {/* Container Images 4 */}
             <Container4Images_Element
-            img1={ControllerDataImagePortraitMariage[12].src}
-            metaNameImg1={ControllerDataImagePortraitMariage[12].alt}
-            img2={ControllerDataImagePortraitMariage[13].src}
-            metaNameImg2={ControllerDataImagePortraitMariage[13].alt}
-            img3={ControllerDataImagePortraitMariage[14].src}
-            metaNameImg3={ControllerDataImagePortraitMariage[14].alt}
-            img4={ControllerDataImagePortraitMariage[15].src}
-            metaNameImg4={ControllerDataImagePortraitMariage[15].alt}
+            img1={imagesPortraitMariage_Data[12].src}
+            metaNameImg1={imagesPortraitMariage_Data[12].alt}
+            img2={imagesPortraitMariage_Data[13].src}
+            metaNameImg2={imagesPortraitMariage_Data[13].alt}
+            img3={imagesPortraitMariage_Data[14].src}
+            metaNameImg3={imagesPortraitMariage_Data[14].alt}
+            img4={imagesPortraitMariage_Data[15].src}
+            metaNameImg4={imagesPortraitMariage_Data[15].alt}
             />
 
             {/* ---------- ---------- ---------- ---------- ---------- */}
@@ -276,14 +276,14 @@ function PortraitMariageRoot() {
             
             {/* Container Images 5 */}
             <Container4Images_Element
-            img1={ControllerDataImagePortraitMariage[16].src}
-            metaNameImg1={ControllerDataImagePortraitMariage[16].alt}
-            img2={ControllerDataImagePortraitMariage[17].src}
-            metaNameImg2={ControllerDataImagePortraitMariage[17].alt}
-            img3={ControllerDataImagePortraitMariage[18].src}
-            metaNameImg3={ControllerDataImagePortraitMariage[18].alt}
-            img4={ControllerDataImagePortraitMariage[19].src}
-            metaNameImg4={ControllerDataImagePortraitMariage[19].alt}
+            img1={imagesPortraitMariage_Data[16].src}
+            metaNameImg1={imagesPortraitMariage_Data[16].alt}
+            img2={imagesPortraitMariage_Data[17].src}
+            metaNameImg2={imagesPortraitMariage_Data[17].alt}
+            img3={imagesPortraitMariage_Data[18].src}
+            metaNameImg3={imagesPortraitMariage_Data[18].alt}
+            img4={imagesPortraitMariage_Data[19].src}
+            metaNameImg4={imagesPortraitMariage_Data[19].alt}
             />
 
             {/* ---------- ---------- ---------- ---------- ---------- */}

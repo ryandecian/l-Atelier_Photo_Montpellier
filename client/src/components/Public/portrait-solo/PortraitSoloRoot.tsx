@@ -1,7 +1,7 @@
 import style from "../../StyleRootComponent.module.css";
 
 import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
-import ImagesPortraitSoloControllerData from "./ImagesPortraitSoloControllerData";
+import { imagesPortraitSolo_Data } from "./imagesPortraitSolo.data";
 
 import { Link } from "react-router-dom";
 import ListDataRouter from "../../../router/router";
@@ -51,14 +51,14 @@ function PortraitSoloRoot() {
             </p>
 
             <Container4Images_Element
-                img1={ImagesPortraitSoloControllerData[0].src}
-                metaNameImg1={ImagesPortraitSoloControllerData[0].alt}
-                img2={ImagesPortraitSoloControllerData[1].src}
-                metaNameImg2={ImagesPortraitSoloControllerData[1].alt}
-                img3={ImagesPortraitSoloControllerData[2].src}
-                metaNameImg3={ImagesPortraitSoloControllerData[2].alt}
-                img4={ImagesPortraitSoloControllerData[3].src}
-                metaNameImg4={ImagesPortraitSoloControllerData[3].alt}
+                img1={imagesPortraitSolo_Data[0].src}
+                metaNameImg1={imagesPortraitSolo_Data[0].alt}
+                img2={imagesPortraitSolo_Data[1].src}
+                metaNameImg2={imagesPortraitSolo_Data[1].alt}
+                img3={imagesPortraitSolo_Data[2].src}
+                metaNameImg3={imagesPortraitSolo_Data[2].alt}
+                img4={imagesPortraitSolo_Data[3].src}
+                metaNameImg4={imagesPortraitSolo_Data[3].alt}
             />
 
             <h3 className={style.TitleNH3}>
@@ -126,14 +126,14 @@ function PortraitSoloRoot() {
             </p>
 
             <Container4Images_Element
-                img1={ImagesPortraitSoloControllerData[4].src}
-                metaNameImg1={ImagesPortraitSoloControllerData[4].alt}
-                img2={ImagesPortraitSoloControllerData[5].src}
-                metaNameImg2={ImagesPortraitSoloControllerData[5].alt}
-                img3={ImagesPortraitSoloControllerData[6].src}
-                metaNameImg3={ImagesPortraitSoloControllerData[6].alt}
-                img4={ImagesPortraitSoloControllerData[7].src}
-                metaNameImg4={ImagesPortraitSoloControllerData[7].alt}
+                img1={imagesPortraitSolo_Data[4].src}
+                metaNameImg1={imagesPortraitSolo_Data[4].alt}
+                img2={imagesPortraitSolo_Data[5].src}
+                metaNameImg2={imagesPortraitSolo_Data[5].alt}
+                img3={imagesPortraitSolo_Data[6].src}
+                metaNameImg3={imagesPortraitSolo_Data[6].alt}
+                img4={imagesPortraitSolo_Data[7].src}
+                metaNameImg4={imagesPortraitSolo_Data[7].alt}
             />
 
             <div className={style.br}></div>

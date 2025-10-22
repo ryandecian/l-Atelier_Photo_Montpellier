@@ -17,6 +17,8 @@ Fichier tsx :
 
 /* Import des Components */
 
+/* Import des Components de Data */
+
 /* Import des composants d'Elements */
 
 /* Import des composants React */
@@ -26,6 +28,8 @@ Fichier tsx :
 /* Import des composants SEO */
 
 /* Import des composants de signature */
+
+/* Import des Dépendance */
 
 /* Import des Hooks */
 
