@@ -7,7 +7,7 @@ function Video_Root() {
     return (
         <section className={style.ContainerRootRacine}>
             <header className={style.ContainerTitle}>
-                <h1 className={css.Title_Video}>Vidéo</h1>
+                <h1 className={css.TitleH1}>Vidéo</h1>
             </header>
         </section>
     );
