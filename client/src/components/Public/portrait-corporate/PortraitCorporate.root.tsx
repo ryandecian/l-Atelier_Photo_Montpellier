@@ -72,6 +72,18 @@ function PortraitCorporate_Root() {
                 (renseignements à demander directement) pour vous démarquer.
             </p>
 
+            {/* Container 2 : Container image portrait Corporate */}
+            <Container4ImagesPortrait_Element
+                img1={imagesPortraitCorporate_Data[4].src}
+                metaNameImg1={imagesPortraitCorporate_Data[4].alt}
+                img2={imagesPortraitCorporate_Data[5].src}
+                metaNameImg2={imagesPortraitCorporate_Data[5].alt}
+                img3={imagesPortraitCorporate_Data[6].src}
+                metaNameImg3={imagesPortraitCorporate_Data[6].alt}
+                img4={imagesPortraitCorporate_Data[7].src}
+                metaNameImg4={imagesPortraitCorporate_Data[7].alt}
+            />
+
             {/* ---------- ---------- ---------- ---------- ---------- */}
 
             <h2 className={style.TitleH2}>
@@ -102,16 +114,16 @@ function PortraitCorporate_Root() {
                 </span>
             </p>
 
-            {/* Container 2 : Container image portrait Corporate */}
+            {/* Container 3 : Container image portrait Corporate */}
             <Container4Images_Element
-                img1={imagesPortraitCorporate_Data[4].src}
-                metaNameImg1={imagesPortraitCorporate_Data[4].alt}
-                img2={imagesPortraitCorporate_Data[5].src}
-                metaNameImg2={imagesPortraitCorporate_Data[5].alt}
-                img3={imagesPortraitCorporate_Data[6].src}
-                metaNameImg3={imagesPortraitCorporate_Data[6].alt}
-                img4={imagesPortraitCorporate_Data[7].src}
-                metaNameImg4={imagesPortraitCorporate_Data[7].alt}
+                img1={imagesPortraitCorporate_Data[8].src}
+                metaNameImg1={imagesPortraitCorporate_Data[8].alt}
+                img2={imagesPortraitCorporate_Data[9].src}
+                metaNameImg2={imagesPortraitCorporate_Data[9].alt}
+                img3={imagesPortraitCorporate_Data[10].src}
+                metaNameImg3={imagesPortraitCorporate_Data[10].alt}
+                img4={imagesPortraitCorporate_Data[11].src}
+                metaNameImg4={imagesPortraitCorporate_Data[11].alt}
             />
 
             {/* ---------- ---------- ---------- ---------- ---------- */}
