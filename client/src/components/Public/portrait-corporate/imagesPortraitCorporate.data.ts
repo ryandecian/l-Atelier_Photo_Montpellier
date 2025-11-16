@@ -28,23 +28,23 @@ const imagesPortraitCorporate_Data: ImagesBlog_Type[] = [
     /* Tableau 2 : PortraitCorporateComponentB */
     /* {imagesPortraitCorporate_Data[4].src} */
     {
-        src: "/images/image-portrait-corporate/lapm-photographie-professionnelle-portrait-corporate-agence-immo-l-atelier-photo-montpellier.jpg",
-        alt: "LAPM - photographie professionnelle - portrait corporate - agence immobilière - L'Atelier Photo Montpellier",
+        src: "/images/image-portrait-corporate/lapm-photographe-corporate-studio-mobile-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe corporate - studio mobile - L'Atelier Photo Montpellier",
     },
     /* {imagesPortraitCorporate_Data[5].src} */
     {
-        src: "/images/image-portrait-corporate/lapm-photo-professionnel-portrait-corporate-commerciale-immo-l-atelier-photo-montpellier.jpg",
-        alt: "LAPM - photo professionnel - portrait corporate - commerciale immobilière - L'Atelier Photo Montpellier",
+        src: "/images/image-portrait-corporate/lapm-photographe-pro-cv-linkdin-studio-flash-portrait-qui-revele-votre-image-authentique-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe pro - cv linkdin - studio flash - portrait qui révèle votre image authentique - L'Atelier Photo Montpellier",
     },
     /* {imagesPortraitCorporate_Data[6].src} */
     {
-        src: "/images/image-portrait-corporate/lapm-photographie-professionnelle-portrait-corporate-assistante-direction-l-atelier-photo-montpellier.jpg",
-        alt: "LAPM - photographie professionnelle - portrait corporate - assistante de direction - L'Atelier Photo Montpellier",
+        src: "/images/image-portrait-corporate/lapm-photographe-pro-cv-linkin-studio-flash-portrait-pro-linkedin-entreprise-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe pro - cv linkin - studio flash - portrait pro linkedin entreprise - L'Atelier Photo Montpellier",
     },
     /* {imagesPortraitCorporate_Data[7].src} */
     {
-        src: "/images/image-portrait-corporate/lapm-photographe-professionnel-portrait-corporate-chercheuse-l-atelier-photo-montpellier.jpg",
-        alt: "LAPM - photographe professionnel - portrait corporate - chercheuse - L'Atelier Photo Montpellier",
+        src: "/images/image-portrait-corporate/lapm-photographe-pro-cv-linkdin-studio-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe pro - cv linkdin - studio - L'Atelier Photo Montpellier",
     },
 
 
