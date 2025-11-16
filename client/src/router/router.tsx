@@ -36,6 +36,7 @@ import RegisterPage from "../pages/public/register_Page/Register.page";
 import ResetPasswordPage from "../pages/public/reset-password_Page/ResetPassword.page";
 import ResetPasswordConfirmPage from "../pages/public/reset-password-confirm_Page/ResetPasswordConfirm.page";
 import QuiSuisJePage from "../pages/public/qui-suis-je_Page/QuiSuisJe.page";
+import Video_Page from "../pages/public/video_Page/Video.page";
 
 /**
  * Utilisation : 
@@ -228,6 +229,11 @@ const ListDataRouter: RouterItemsType[] = [
     {
         path: "/admin/album/create-album",
         element: <InsertAlbumAdminPage />,
+    },
+    /* {ListDataRouter[36].path} */
+    {
+        path: "/video",
+        element: <Video_Page />,
     },
 ]
 
