@@ -2,7 +2,7 @@
 import style from "../../stylePage.module.css";
 
 /* Import des Components */
-import PortraitMariageRoot from "../../../components/Public/portrait-mariage/MariageRoot";
+import Video_Root from "../../../components/Public/video/video.root";
 import NavRoot from "../../../components/layout/NavRoot/NavRoot";
 import Footer_layout from "../../../components/layout/footer/Footer.layout";
 
@@ -22,7 +22,7 @@ function Video_Page() {
                  <NavRoot />
             </header>
             <main className={style.Main}>
-                <PortraitMariageRoot />
+                <Video_Root />
             </main>
             <footer className={style.Footer}>
                 <Footer_layout />

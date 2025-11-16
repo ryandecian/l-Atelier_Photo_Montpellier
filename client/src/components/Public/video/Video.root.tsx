@@ -3,7 +3,7 @@ import css from "./video.module.css";
 import style from "../../StyleRootComponent.module.css";
 
 
-function Video_Page() {
+function Video_Root() {
     return (
         <section className={style.ContainerRootRacine}>
             <header className={style.ContainerTitle}>
@@ -13,4 +13,4 @@ function Video_Page() {
     );
 }
 
-export default Video_Page;
+export default Video_Root;
