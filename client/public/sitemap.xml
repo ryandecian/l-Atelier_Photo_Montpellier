@@ -153,6 +153,12 @@
     </url>
 
     <url>
+        <loc>https://atelier-photo-montpellier.fr/video</loc>
+        <lastmod>2025-11-17</lastmod>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
         <loc>https://atelier-photo-montpellier.fr/logo-LAPM-l-atelier-photo-montpellier.ico</loc>
         <lastmod>2025-07-19</lastmod>
         <priority>0.1</priority>

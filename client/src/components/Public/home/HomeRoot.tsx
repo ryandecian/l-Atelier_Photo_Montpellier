@@ -12,6 +12,7 @@ import ImagesHomeControllerData from "./ImagesHomeControllerData";
 import { PremiumCardImgModal_Element } from "../../elements/premium-card-img-modal/PremiumCardImgModal.element";
 
 import HomeRootComponentA from "./ComponentsHomeRoot/HomeRootComponentA/HomeRootComponentA";
+import { pauseOtherVideos_Utils } from "../../../utils/pauseOtherVideos.utils";
 
 function HomeRoot() {
     return (
@@ -129,17 +130,22 @@ function HomeRoot() {
                 </h2>
 
                 <section className={style.ContainerVideo}>
-                    <video
-                        className={style.VideoPlayer}
-                        src="/video/video-trek-desert-maroc.mp4"
-                        controls
-                        preload="none"
-                        controlsList="nodownload"
-                        onContextMenu={(e) => e.preventDefault()} /* Désactive le clic droit */
-                        poster="/video/video-trek-desert-maroc.jpg"
-                        playsInline
-                    />
-                </section>
+                <h3 className={style.VideoTitle}>Aventure saharienne - Immersion dans le désert avec Mélodie du Désert</h3>
+                <video
+                    className={style.VideoPlayer}
+                    src="/video/video-trek-desert-maroc/video-trek-desert-maroc.mp4"
+                    controls
+                    preload="none"
+                    controlsList="nodownload"
+                    onPlay={(e) => pauseOtherVideos_Utils(e.currentTarget)}
+                    onContextMenu={(e) => e.preventDefault()} /* Désactive le clic droit */
+                    poster="/video/video-trek-desert-maroc/video-trek-desert-maroc.jpg"
+                    playsInline
+                />
+                <p className={style.VideoDescription}>
+                    Une courte vidéo présentant l’ambiance du trek dans les dunes marocaines.
+                </p>
+            </section>
 
                 <p className={style.TextP4}>
                     <span className={style.SpanLink}>
