@@ -50,7 +50,7 @@ function HomeRootComponentA() {
                             </p>
                         </article>
                         <header className={css.ContainerTitle}>
-                            <h1>PHOTOGRAPHE DE PORTRAITS ET DE MARIAGE A MONTPELLIER</h1>
+                            <h1>VIDEASTE ET PHOTOGRAPHE PROFESSIONNELLE POUR VOS PROJETS A MONTPELLIER</h1>
                         </header>
                     </>
                 )}
