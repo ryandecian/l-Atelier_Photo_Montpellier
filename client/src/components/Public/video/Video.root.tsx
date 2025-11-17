@@ -1,23 +1,15 @@
 /* Import des modules CSS */
-import css from "./video.module.css";
 import style from "../../StyleRootComponent.module.css";
 
+/* Import des Utils */
+import { pauseOtherVideos_Utils } from "../../../utils/pauseOtherVideos.utils";
+
 function Video_Root() {
-    const currentVideo = e.currentTarget;
-
-    // Pause toutes les autres vidéos
-    const videos = document.querySelectorAll("video");
-
-    videos.forEach((video) => {
-        if (video !== currentVideo) {
-            video.pause();
-        }
-    });
     return (
         <section className={style.ContainerRootRacine}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
-                    Vidéos d’Entreprise & de Mariage à Montpellier - Atelier Photo Montpellier
+                    Vidéos Professionnelles pour Entreprises, Loisirs, Événements et Mariage
                 </h1>
             </header>
 
@@ -35,7 +27,7 @@ function Video_Root() {
 
             <p className={style.TextP4}>
                 Chaque vidéo est conçue pour
-                <strong> mettre en scène une entreprise, un métier, un parcours et des valeurs, un moment de vie</strong>
+                <strong> mettre en scène une entreprise, un métier, un parcours et des valeurs, un moment de vie </strong>
                 en créant une narration visuelle qui donne envie de vous suivre.
             </p>
 
@@ -79,68 +71,76 @@ function Video_Root() {
                     controls
                     preload="none"
                     controlsList="nodownload"
-                    onPlay={handleVideoPlay}
+                    onPlay={(e) => pauseOtherVideos_Utils(e.currentTarget)}
                     onContextMenu={(e) => e.preventDefault()} /* Désactive le clic droit */
                     poster="/video/les-crocodiles-jaunes/les-crocodiles-jaunes.jpg"
                     playsInline
                 />
                 <p className={style.VideoDescription}>
-                    Un cadre unique : découverte du centre de jeûne Les Crocodiles Jaunes à Albi.
+                    Un cadre unique : découverte du centre de jeûne <br />
+                    Les Crocodiles Jaunes à Albi.
                 </p>
             </section>
 
-            <h3 className={style.TitleLNH3}>
+            <h3 className={style.TitleNH3}>
                 2. Humaniser votre entreprise en valorisant les personnes qui la portent
             </h3>
 
+            <p className={style.TextP4}>
+                Une vidéo corporate révèle l’essence de votre activité : vos visages, vos gestes, votre façon de travailler. <br />
+                Elle humanise votre communication et crée un lien naturel. <br />
+                Effets : <strong>une relation plus chaleureuse, des collaborateurs valorisés</strong>, une image plus 
+                authentique, une attractivité renforcée
+            </p>
 
+            <h3 className={style.TitleNH3}>
+                3. Augmenter votre visibilité en ligne en utilisant la vidéo
+            </h3>
 
+            <p className={style.TextP4}>
+                <strong>La vidéo augmente la durée de visite</strong>, améliore le référencement naturel et multiplie les 
+                partages.
+            </p>
 
+            <p className={style.TextP4}>
+                <strong>Résultats :</strong> une visibilité locale boostée, un engagement plus fort, une augmentation du 
+                trafic site, <strong>une meilleure position Google, un référencement naturel en hausse.</strong>
+            </p>
 
+            <h3 className={style.TitleNH3}>
+                4. Valoriser votre expertise et renforcer l’engagement de votre audience
+            </h3>
 
+            <p className={style.TextP4}>
+                Une vidéo soignée donne immédiatement une impression de maîtrise, de stabilité et de professionnalisme.
+            </p>
 
+            <p className={style.TextP4}>
+                <strong>Effets immédiats :</strong> une confiance accrue, <strong>une différenciation nette</strong>, 
+                une image premium.
+            </p>
 
-
-
-
-
-
-
-
+            <p className={style.TextP4}>
+                L’émotion étant le moteur de mémorisation une bonne vidéo corporate crée une atmosphère forte grâce à : 
+                un musique ciblée, une narration visuelle, un rythme maîtrisé, une lumière naturelle, une mise en scène 
+                authentique
+            </p>
 
             <p className={style.TextLiP4}>
-                Nous accompagnons aussi bien :
+                <strong>Le spectateur va ressentir :</strong>
             </p>
 
             <ul className={style.ContainerUl}>
                 <li className={style.TextLiP4}>
-                    Les entreprises de services (experts-comptables, agences, cabinets, centres de bien-être…).
+                    Ils ont l’air pros et humains.
                 </li>
                 <li className={style.TextLiP4}>
-                    Les artisans et PME du BTP (poseurs de fenêtres, électriciens, entreprises de rénovation…).
+                    J’ai envie d’y aller.
                 </li>
                 <li className={style.TextLiP4}>
-                    Les organismes touristiques (treks, séjours bien-être, activités outdoor).
-                </li>
-                <li className={style.TextLiP4}>
-                    Les entreprises industrielles et acteurs du secteur secondaire.
-                </li>
-                <li className={style.TextLiP4}>
-                    Les dirigeants souhaitant raconter leur histoire de création.
-                </li>
-                <li className={style.TextLiP4}>
-                    Les explorateurs, aventuriers et passionnés qui réalisent des exploits personnels ou sportifs.
+                    Je peux leur faire confiance.
                 </li>
             </ul>
-
-            <p className={style.TextP4}>
-                Chaque vidéo est conçue pour mettre en scène votre métier, votre parcours et vos valeurs, en créant une 
-                narration visuelle qui donne envie de vous suivre.
-            </p>
-
-            <h3 className={style.TitleLNH3}>
-                Exemple — Vidéo “Mélodie du Désert”
-            </h3>
 
             <section className={style.ContainerVideo}>
                 <h3 className={style.VideoTitle}>Trek dans le désert du Maroc – Extrait vidéo</h3>
@@ -150,6 +150,7 @@ function Video_Root() {
                     controls
                     preload="none"
                     controlsList="nodownload"
+                    onPlay={(e) => pauseOtherVideos_Utils(e.currentTarget)}
                     onContextMenu={(e) => e.preventDefault()} /* Désactive le clic droit */
                     poster="/video/video-trek-desert-maroc/video-trek-desert-maroc.jpg"
                     playsInline
@@ -159,14 +160,112 @@ function Video_Root() {
                 </p>
             </section>
 
-            <h3 className={style.TitleNH3R}>
-                2. Humaniser votre entreprise
+            <h2 className={style.TitleH2}>
+                Des vidéos de mariage, de naissance ou de loisirs pour révéler vos moments forts
+            </h2>
+
+            <h3 className={style.TitleLNH3}>
+                1. Préserver des souvenirs qui traversent le temps
             </h3>
 
             <p className={style.TextP4}>
-                Une vidéo corporate révèle l’essence de votre activité : vos visages, vos gestes, votre façon de travailler. <br />
-                Elle humanise votre communication et crée un lien naturel.
+                Une vidéo bien réalisée permet de conserver un moment important avec une intensité que la photo seule 
+                ne peut pas restituer.
             </p>
+
+            <p className={style.TextLiP4}>
+                Elle fige non seulement les images, mais aussi :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    les voix,
+                </li>
+                <li className={style.TextLiP4}>
+                    les regards,
+                </li>
+                <li className={style.TextLiP4}>
+                    les rires,
+                </li>
+                <li className={style.TextLiP4}>
+                    les instants spontanés.
+                </li>
+            </ul>
+
+            <p className={style.TextLiP4}>
+                Ce format répond à trois besoins essentiels :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    <strong>Revivre un moment</strong> tel qu’il a été réellement vécu.
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>Le transmettre à ses proches</strong>, aujourd’hui ou plus tard.
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>Disposer d’un souvenir fidèle</strong>, propre et agréable à regarder.
+                </li>
+            </ul>
+
+            <p className={style.TextLiP4}>
+                <strong>Effets observés chez les familles et couples accompagnés :</strong>
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    Meilleure réappropriation des souvenirs (évite l’oubli des détails)
+                </li>
+                <li className={style.TextLiP4}>
+                    Forte émotion lors du visionnage
+                </li>
+                <li className={style.TextLiP4}>
+                    Souvenir intergénérationnel durable
+                </li>
+            </ul>
+
+            <h3 className={style.TitleLNH3}>
+                2. Raconter vos instants forts : aventures, mariage ou naissance
+            </h3>
+
+            <p className={style.TextP4}>
+                Chaque événement a sa dynamique et sa sensibilité. Une vidéo bien construite permet d’en capter l’essence.
+            </p>
+
+            <p className={style.TextP4}>
+                Je réalise pour vous des <strong>vidéos lifestyle</strong>, des
+                <strong>portraits vidéo personnels</strong>, sportifs et artistiques, conçus pour valoriser vos activités, 
+                vos passions et vos aventures. Que vous cherchiez un <strong>vidéaste équitation</strong>, une 
+                <strong>vidéo de votre moto</strong>, une <strong>vidéo cheval</strong>, un 
+                <strong>portrait vidéo sportif</strong>, une <strong>vidéo mise en scène</strong>, un
+                <strong>portrait vidéo professionnel</strong>, ou encore une vidéo pour mettre en valeur votre 
+                côté <strong>explorateur</strong>, je vous accompagne avec une approche créative et authentique.
+            </p>
+
+            <p className={style.TextP4}>
+                Ces prestations s’adressent aux <strong>particuliers</strong>, aux <strong>passionnés</strong>, aux 
+                <strong> artistes</strong>, aux <strong>sportifs</strong> et aux <strong>explorateurs</strong> souhaitant une
+                <strong>vidéo de présentation personnelle</strong> ou une <strong>vidéo de présentation d’activité.</strong> <br />
+                Votre <strong>vidéaste créatif à Montpellier</strong> met en valeur votre univers avec un rendu dynamique, 
+                esthétique et facile à partager.
+            </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </section>
     );
 }
