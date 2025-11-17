@@ -76,6 +76,9 @@ function MenuNavTargetHomeRoot(Props: MenuNavTargetHomeRootProps) {
                             <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget3}`}>
                                 <Link to={ListDataRouter[13].path} className={moduleSubMenuLink}>Mariage</Link>
                             </li>
+                            <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget3}`}>
+                                <Link to={ListDataRouter[36].path} className={moduleSubMenuLink}>Vidéo</Link>
+                            </li>
                         </ul>
                     </>
                 )}
