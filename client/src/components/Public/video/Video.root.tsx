@@ -64,7 +64,7 @@ function Video_Root() {
             </p>
 
             <section className={style.ContainerVideo}>
-                <h3 className={style.VideoTitle}>Vidéo : Les crocodiles jaunes</h3>
+                <h3 className={style.VideoTitle}>Votre prochaine parenthèse bien-être : Les Crocodiles Jaunes</h3>
                 <video
                     className={style.VideoPlayer}
                     src="/video/les-crocodiles-jaunes/les-crocodiles-jaunes.mp4"
@@ -143,7 +143,7 @@ function Video_Root() {
             </ul>
 
             <section className={style.ContainerVideo}>
-                <h3 className={style.VideoTitle}>Trek dans le désert du Maroc – Extrait vidéo</h3>
+                <h3 className={style.VideoTitle}>Aventure saharienne - Immersion dans le désert avec Mélodie du Désert</h3>
                 <video
                     className={style.VideoPlayer}
                     src="/video/video-trek-desert-maroc/video-trek-desert-maroc.mp4"
@@ -248,6 +248,36 @@ function Video_Root() {
                 <strong>vidéo de présentation personnelle</strong> ou une <strong>vidéo de présentation d’activité.</strong> <br />
                 Votre <strong>vidéaste créatif à Montpellier</strong> met en valeur votre univers avec un rendu dynamique, 
                 esthétique et facile à partager.
+            </p>
+
+            <section className={style.ContainerVideo}>
+                <h3 className={style.VideoTitle}>80 ans, première moto, 16 000 km en Afrique - Doris inspire le monde !</h3>
+                <video
+                    className={style.VideoPlayer}
+                    src="/video/a-80-ans-elle-traverse-l-afrique-a-moto/a-80-ans-elle-traverse-l-afrique-a-moto.mp4"
+                    controls
+                    preload="none"
+                    controlsList="nodownload"
+                    onPlay={(e) => pauseOtherVideos_Utils(e.currentTarget)}
+                    onContextMenu={(e) => e.preventDefault()} /* Désactive le clic droit */
+                    poster="/video/a-80-ans-elle-traverse-l-afrique-a-moto/a-80-ans-elle-traverse-l-afrique-a-moto.jpg"
+                    playsInline
+                />
+                <p className={style.VideoDescription}>
+                    À 82 ans, Doris traverse l’Afrique à moto pour poursuivre son rêve de découverte.
+                </p>
+            </section>
+
+            <p className={style.TextP4}>
+                Je réalise pour vous un <strong>film de mariage naturel et authentique</strong>, pensé pour retranscrire 
+                votre journée telle qu’elle a été vécue, sans mise en scène forcée. Mon objectif : capturer vos regards, 
+                vos échanges, l’ambiance réelle et tous les moments spontanés qui créent la magie du jour J.
+            </p>
+
+            <p className={style.TextP4}>
+                Le résultat : <br />
+                Un <strong>film vivant, sincère et fidèle</strong>, dans lequel vous retrouverez l’émotion, le rythme et 
+                l’atmosphère de votre mariage. Une vidéo que l’on regarde et que l’on partage avec plaisir, année après année.
             </p>
 
 
