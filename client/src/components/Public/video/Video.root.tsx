@@ -1,6 +1,12 @@
 /* Import des modules CSS */
 import style from "../../StyleRootComponent.module.css";
 
+/* Import des composants React */
+import { Link } from "react-router-dom";
+
+/* Import des composants Router */
+import ListDataRouter from "../../../router/router";
+
 /* Import des Utils */
 import { pauseOtherVideos_Utils } from "../../../utils/pauseOtherVideos.utils";
 
@@ -278,6 +284,121 @@ function Video_Root() {
                 Le résultat : <br />
                 Un <strong>film vivant, sincère et fidèle</strong>, dans lequel vous retrouverez l’émotion, le rythme et 
                 l’atmosphère de votre mariage. Une vidéo que l’on regarde et que l’on partage avec plaisir, année après année.
+            </p>
+
+            <section className={style.ContainerVideo}>
+                <h3 className={style.VideoTitle}>Vidéo de mariage Laure & Charles au Château Bas d’Aumelas</h3>
+                <video
+                    className={style.VideoPlayer}
+                    src="/video/video-de-mariage-laure-et-charles-au-chateau-bas-d-aumelas/video-de-mariage-laure-et-charles-au-chateau-bas-d-aumelas.mp4"
+                    controls
+                    preload="none"
+                    controlsList="nodownload"
+                    onPlay={(e) => pauseOtherVideos_Utils(e.currentTarget)}
+                    onContextMenu={(e) => e.preventDefault()} /* Désactive le clic droit */
+                    poster="/video/video-de-mariage-laure-et-charles-au-chateau-bas-d-aumelas/video-de-mariage-laure-et-charles-au-chateau-bas-d-aumelas.jpg"
+                    playsInline
+                />
+                <p className={style.VideoDescription}>
+                    Ce film de mariage capture l’essence d’une journée sincère, joyeuse et profondément humaine.
+                </p>
+            </section>
+
+            <p className={style.TextP4}>
+                Je vous accompagne pour créer une <strong>vidéo de naissance douce et authentique</strong>, dédiée aux 
+                tout premiers instants de votre enfant. J’y capture les gestes délicats, les premières interactions, 
+                la complicité naturelle entre parents et nouveau-né, ainsi que l’atmosphère calme et chaleureuse de ces 
+                moments uniques.
+            </p>
+
+            <p className={style.TextP4}>
+                Le résultat : <br />
+                Un <strong>souvenir tendre et intemporel</strong>, filmé avec respect et discrétion, qui vous permettra 
+                de revivre ces premiers instants avec émotion et de les transmettre à votre enfant plus tard.
+            </p>
+
+            {/* <section className={style.ContainerVideo}>
+                <h3 className={style.VideoTitle}>La naissance, c’est l’instant où tout commence vraiment</h3>
+                <video
+                    className={style.VideoPlayer}
+                    src="/video/la-naissance-c-est-ou-tout-commence-vraiment/la-naissance-c-est-ou-tout-commence-vraiment.mp4"
+                    controls
+                    preload="none"
+                    controlsList="nodownload"
+                    onPlay={(e) => pauseOtherVideos_Utils(e.currentTarget)}
+                    onContextMenu={(e) => e.preventDefault()}
+                    poster="/video/la-naissance-c-est-ou-tout-commence-vraiment/la-naissance-c-est-ou-tout-commence-vraiment.jpg"
+                    playsInline
+                />
+                <p className={style.VideoDescription}>
+                    La naissance capture un début, un geste, une respiration, et redessine la façon dont une famille avance.
+                </p>
+            </section> */}
+
+            <h3 className={style.TitleNH3}>
+                3. Une vidéo pensée pour être partagée et revue
+            </h3>
+
+            <p className={style.TextLiP4}>
+                Votre vidéo est fournie dans un format adapté :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    à vos réseaux sociaux
+                </li>
+                <li className={style.TextLiP4}>
+                    à votre télévision
+                </li>
+                <li className={style.TextLiP4}>
+                    à votre téléphone
+                </li>
+                <li className={style.TextLiP4}>
+                    à votre site ou espace privé
+                </li>
+            </ul>
+            <p className={style.TextLiP4}>
+                <strong>Effets immédiats :</strong>
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    partage facilité
+                </li>
+                <li className={style.TextLiP4}>
+                    vidéo agréable à revoir sans s’en lasser
+                </li>
+                <li className={style.TextLiP4}>
+                    souvenir sécurisé et durable
+                </li>
+            </ul>
+
+            <h2 className={style.TitleH2}>
+                Donnez vie à votre projet grâce à une vidéo sur mesure
+            </h2>
+
+            <p className={style.TextP4}>
+                Prêt·e à donner vie à votre image ?
+            </p>
+
+            <p className={style.TextP4}>
+                Contactez-nous aujourd’hui pour une {` `}
+                <span className={style.SpanLink}>
+                    <Link to={ListDataRouter[12].path}>
+                        {"vidéo corporate sur-mesure"}
+                    </Link>
+                </span>
+                {` `} et bénéficierez d’un accompagnement complet, de la définition du concept à la diffusion sur vos 
+                réseaux.
+            </p>
+
+            <p className={style.TextP4}>
+                <span className={style.SpanLink}>
+                    <Link to={ListDataRouter[12].path}>
+                        {"Demandez un devis gratuit ou une rencontre-visio avec l’Atelier Photo Montpellier"}
+                    </Link>
+                </span>
+                {` `} : la lumière, le cadre et le récit n’attendent plus que vous.
             </p>
 
 
