@@ -73,8 +73,11 @@ function MenuNavRoot(Props: MenuNavRootProps) {
                             <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget2}`}>
                                 <Link to={ListDataRouter[12].path} className={moduleSubMenuLink}>LifeStyle</Link>
                             </li>
-                            <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget3}`}>
+                            <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget2}`}>
                                 <Link to={ListDataRouter[13].path} className={moduleSubMenuLink}>Mariage</Link>
+                            </li>
+                            <li className={`${moduleSubMenuLi} ${moduleSubMenuLiTarget3}`}>
+                                <Link to={ListDataRouter[36].path} className={moduleSubMenuLink}>Vidéo</Link>
                             </li>
                         </ul>
                     </>
