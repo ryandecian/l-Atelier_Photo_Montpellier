@@ -22,59 +22,27 @@ function HomeRoot() {
             {/* ---------- ---------- ---------- ---------- ---------- */}
 
                 <h2 className={style.TitleH2}>
-                    J'observe, je vous mets à l'aise, je fige l'instant avec justesse.
+                    Créez vos portraits et vidéos sur-mesure avec une qualité professionnelle
                 </h2>
 
                 <p className={style.TextP4}>
-                    En tant que {" "}
-                    <span className={style.SpanBold}>
-                        {"photographe professionnelle"}
-                    </span> 
-                    {""} installée à Montpellier et {" "}
-                    <span className={style.SpanBold}>
-                        {"spécialisée en portraits"}
-                    </span>
-                    {" "} – qu’ils soient {" "} 
-                    <span className={style.SpanLink}>
-                        <Link to={ListDataRouter[11].path}>
-                            {"corporate"}
-                        </Link>
-                    </span>
-                    , {" "}
-                    <span className={style.SpanLink}>
-                        <Link to={ListDataRouter[12].path}>
-                            {"lifestyle"}
-                        </Link>
-                    </span>
-                    , {" "} 
-                    réalisés en lumière naturelle ou au flash – je mets tout en œuvre pour 
-                    saisir la
-                    <span className={style.SpanBold}>
-                        {" personnalité unique de chacun. "}
-                    </span>  
-                    La photographie de portrait professionnel 
-                    n’est pas seulement une technique, c’est une véritable passion que je 
-                    développe afin que chacun et chacune puisse 
-                    <span className={style.SpanBold}>
-                        {" porter un regard sur lui (elle) positif et valorisant."}
-                    </span> 
+                    J’observe, je vous mets à l’aise, je capture l’instant avec justesse.
                 </p>
+
                 <p className={style.TextP4}>
-                    <span className={style.SpanBold}>
-                        {"Ma vision du mariage"}
-                    </span>
-                    {" "} se décline sous la forme d’un 
-                    <span className={style.SpanBold}>
-                        {" reportage photographique."}
-                    </span>
-                    Plutôt que de créer de simples poses figées, je privilégie l’instantanéité 
-                    et la spontanéité des émotions vécues durant la cérémonie. Je cherche à 
-                    être au plus près de tous ces instants afin qu’ils restent gravés, et cette 
-                    approche me permet de {" "}
-                    <span className={style.SpanBold}>
-                        {"raconter une histoire visuelle complète"}
-                    </span>
-                    , où chaque image capte la complicité, la tendresse et l’authenticité du grand jour.
+                    <strong>Photographe </strong> à Montpellier, je réalise des
+                    <strong> portraits naturels et professionnels</strong>, en lumière naturelle ou en studio, toujours 
+                    avec l’envie de révéler la personnalité de chacun.
+                </p>
+
+                <p className={style.TextP4}>
+                    <strong>En vidéo</strong>, je procède de la même manière : je <strong>définis clairement votre besoin </strong>
+                    pour créer un film court, authentique et utile, qui transmet le message juste.
+                </p>
+
+                <p className={style.TextP4}>
+                    Pour les <strong>mariages, j’adopte une approche reportage :</strong> des instants vrais, des émotions 
+                    spontanées, une histoire sincère qui reflète votre journée.
                 </p>
 
             {/* ---------- ---------- ---------- ---------- ---------- */}
