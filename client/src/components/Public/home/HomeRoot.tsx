@@ -43,7 +43,7 @@ function HomeRoot() {
 
                 <p className={style.TextP4}>
                     <span className={style.SpanLink}>
-                        <Link to="#">
+                        <Link to={`${ListDataRouter[36].path}#top`}>
                             {"En vidéo"}
                         </Link>
                     </span>
@@ -149,7 +149,7 @@ function HomeRoot() {
 
                 <p className={style.TextP4}>
                     <span className={style.SpanLink}>
-                        <Link to="#">
+                        <Link to={`${ListDataRouter[36].path}#top`}>
                             {"En vidéo"}
                         </Link>
                     </span>
