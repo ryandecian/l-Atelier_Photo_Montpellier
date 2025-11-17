@@ -22,15 +22,15 @@ const ImagesHomeControllerData: ImagesBlog_Type[] = [
     },
     /* {ImagesHomeControllerData[2].src} */
     {
-        src: "/images/image-home/lapm-photo-professionnelle-linkdin-corporate-l-atelier-photo-montpellier.jpg",
-        alt: "LAPM - photo professionnelle - linkdin corporate - L'Atelier Photo Montpellier",
-    },
-    /* {ImagesHomeControllerData[3].src} */
-    {
         src: "/images/image-home/lapm-photographe-professionnelle-portrait-studio-couple-couleur-l-atelier-photo-montpellier.jpg",
         alt: "LAPM - photographe professionnelle - portrait studio - couple - couleur - L'Atelier Photo Montpellier",
     },
-
+    /* {ImagesHomeControllerData[3].src} */
+    {
+        src: "/images/image-home/lapm-photo-professionnelle-linkdin-corporate-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo professionnelle - linkdin corporate - L'Atelier Photo Montpellier",
+    },
+    
 
 
     /* Tableau 2 d'images : 4 images */
