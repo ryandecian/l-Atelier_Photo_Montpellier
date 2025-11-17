@@ -319,6 +319,23 @@
     padding: 1.25rem 0rem 0rem 0rem; /* 20px 0px 0px 0px */
 }
 
+/*-------------------------------------*/
+/* Style video*/
+.ContainerVideo {
+    width: calc(100% - 2.5rem);
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem; /* 20px */
+}
+
+.VideoPlayer {
+    width: 100%;
+    max-width: 1280px; /* limite propre FHD */
+    border-radius: 12px;
+    background-color: #000; /* évite un flash blanc avant affichage du poster */
+}
+
+/*-------------------------------------*/
 .Button {
     /* Il faudra mettre par défaut margin et padding à 0 */
     background: none;   /* Supprime l’arrière-plan du bouton (souvent gris par défaut) */

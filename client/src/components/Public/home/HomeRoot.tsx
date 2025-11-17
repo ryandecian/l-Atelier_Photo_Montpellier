@@ -30,25 +30,41 @@ function HomeRoot() {
                 </p>
 
                 <p className={style.TextP4}>
-                    <strong>Photographe </strong> à Montpellier, je réalise des
-                    <strong> portraits naturels et professionnels</strong>, en lumière naturelle ou en studio, toujours 
+                    <strong>Photographe </strong> à Montpellier, je réalise des {` `}
+                    <span className={style.SpanLink}>
+                        <Link to={`${ListDataRouter[12].path}#top`}>
+                            {"portraits"}
+                        </Link>
+                    </span>
+                    <strong> naturels et professionnels</strong>, en lumière naturelle ou en studio, toujours 
                     avec l’envie de révéler la personnalité de chacun.
                 </p>
 
                 <p className={style.TextP4}>
-                    <strong>En vidéo</strong>, je procède de la même manière : je <strong>définis clairement votre besoin </strong>
+                    <span className={style.SpanLink}>
+                        <Link to="#">
+                            {"En vidéo"}
+                        </Link>
+                    </span>
+                    , je procède de la même manière : je <strong>définis clairement votre besoin </strong>
                     pour créer un film court, authentique et utile, qui transmet le message juste.
                 </p>
 
                 <p className={style.TextP4}>
-                    Pour les <strong>mariages, j’adopte une approche reportage :</strong> des instants vrais, des émotions 
+                    Pour les {` `}
+                    <span className={style.SpanLink}>
+                        <Link to={`${ListDataRouter[13].path}#top`}>
+                            {"mariages"}
+                        </Link>
+                    </span>
+                    <strong>, j’adopte une approche reportage :</strong> des instants vrais, des émotions 
                     spontanées, une histoire sincère qui reflète votre journée.
                 </p>
 
             {/* ---------- ---------- ---------- ---------- ---------- */}
 
                 <h2 className={style.TitleH2}>
-                    Chaque portrait a son histoire à raconter
+                    Des portraits professionnels et naturels adaptés à chaque personnalité et chaque besoin
                 </h2>
 
             <Container4Images_Element
@@ -104,6 +120,43 @@ function HomeRoot() {
                         </Link>
                     </span>
                     {" !"}
+                </p>
+
+            {/* ---------- ---------- ---------- ---------- ---------- */}
+
+                <h2 className={style.TitleH2}>
+                    Des vidéos claires et professionnelles pensées pour l’entreprise comme pour le mariage
+                </h2>
+
+                <section className={style.ContainerVideo}>
+                    <video
+                        className={style.VideoPlayer}
+                        src="/video/video-trek-desert-maroc.mp4"
+                        controls
+                        preload="none"
+                        controlsList="nodownload"
+                        onContextMenu={(e) => e.preventDefault()} /* Désactive le clic droit */
+                        poster="/video/video-trek-desert-maroc.jpg"
+                        playsInline
+                    />
+                </section>
+
+                <p className={style.TextP4}>
+                    <span className={style.SpanLink}>
+                        <Link to="#">
+                            {"En vidéo"}
+                        </Link>
+                    </span>
+                    {` `} je privilégie une approche méthodique : analyse de votre message, choix des angles,
+                    <strong> construction d’un fil clair</strong>, puis création de formats courts adaptés à vos besoins - 
+                    présentation d’activité, portrait d’entreprise, valorisation de services ou reportage terrain. <br />
+                    L’objectif : un <strong>rendu propre, professionnel</strong> et cohérent avec votre identité.
+                    Un rendu clair, cohérent et facilement exploitable sur vos supports de communication. <br />
+                </p>
+
+                <p className={style.TextP4}>
+                    Et lorsque la <strong>demande est plus émotionnelle</strong>, comme pour un mariage, j’adapte 
+                    simplement le ton sans changer la méthode.
                 </p>
 
             {/* ---------- ---------- ---------- ---------- ---------- */}
