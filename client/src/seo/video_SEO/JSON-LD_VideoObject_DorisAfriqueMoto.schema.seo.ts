@@ -15,7 +15,7 @@ function JSON_LD_VideoObject_DorisAfriqueMoto_schema_SEO(): string {
         "@type": dataSEORoot["@type"].VideoObject,
         "name": "80 ans, première moto, 16 000 km en Afrique – Doris inspire le monde",
         "description":
-            "À 82 ans, Doris traverse l’Afrique à moto pour accomplir son rêve d’aventure et de découverte.",
+            "À 80 ans, Doris traverse l’Afrique à moto pour accomplir son rêve d’aventure et de découverte.",
         "thumbnailUrl":
             `${import.meta.env.VITE_DOMAIN_CLIENT}/video/a-80-ans-elle-traverse-l-afrique-a-moto/a-80-ans-elle-traverse-l-afrique-a-moto.jpg`,
         "contentUrl":

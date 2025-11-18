@@ -270,7 +270,7 @@ function Video_Root() {
                     playsInline
                 />
                 <p className={style.VideoDescription}>
-                    À 82 ans, Doris traverse l’Afrique à moto pour poursuivre son rêve de découverte.
+                    À 80 ans, Doris traverse l’Afrique à moto pour poursuivre son rêve de découverte.
                 </p>
             </section>
 
