@@ -24,6 +24,7 @@ type DataSEORoot_Type = {
         BlogPosting: string;
         WebPage: string;
         TermsOfService: string;
+        VideoObject: string;
     };
     id_LocalBusiness: string;
     description: string;
