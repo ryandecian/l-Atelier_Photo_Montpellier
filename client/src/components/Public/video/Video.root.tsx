@@ -400,23 +400,6 @@ function Video_Root() {
                 </span>
                 {` `} : la lumière, le cadre et le récit n’attendent plus que vous.
             </p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </section>
     );
 }
