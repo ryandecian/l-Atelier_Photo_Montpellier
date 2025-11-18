@@ -240,18 +240,18 @@ function Video_Root() {
 
             <p className={style.TextP4}>
                 Je réalise pour vous des <strong>vidéos lifestyle</strong>, des
-                <strong>portraits vidéo personnels</strong>, sportifs et artistiques, conçus pour valoriser vos activités, 
+                <strong> portraits vidéo personnels</strong>, sportifs et artistiques, conçus pour valoriser vos activités, 
                 vos passions et vos aventures. Que vous cherchiez un <strong>vidéaste équitation</strong>, une 
-                <strong>vidéo de votre moto</strong>, une <strong>vidéo cheval</strong>, un 
-                <strong>portrait vidéo sportif</strong>, une <strong>vidéo mise en scène</strong>, un
-                <strong>portrait vidéo professionnel</strong>, ou encore une vidéo pour mettre en valeur votre 
+                <strong> vidéo de votre moto</strong>, une <strong>vidéo cheval</strong>, un 
+                <strong> portrait vidéo sportif</strong>, une <strong>vidéo mise en scène</strong>, un
+                <strong> portrait vidéo professionnel</strong>, ou encore une vidéo pour mettre en valeur votre 
                 côté <strong>explorateur</strong>, je vous accompagne avec une approche créative et authentique.
             </p>
 
             <p className={style.TextP4}>
                 Ces prestations s’adressent aux <strong>particuliers</strong>, aux <strong>passionnés</strong>, aux 
                 <strong> artistes</strong>, aux <strong>sportifs</strong> et aux <strong>explorateurs</strong> souhaitant une
-                <strong>vidéo de présentation personnelle</strong> ou une <strong>vidéo de présentation d’activité.</strong> <br />
+                <strong> vidéo de présentation personnelle</strong> ou une <strong>vidéo de présentation d’activité.</strong> <br />
                 Votre <strong>vidéaste créatif à Montpellier</strong> met en valeur votre univers avec un rendu dynamique, 
                 esthétique et facile à partager.
             </p>
