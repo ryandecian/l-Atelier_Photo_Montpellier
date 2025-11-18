@@ -1,6 +1,6 @@
 /* Import des Components */
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
-import { dataSEO_PortraitHobby_data_SEO } from "./dataSEO_Video.data.seo";
+import { dataSEO_Video_data_SEO } from "./dataSEO_Video.data.seo";
 
 /* Import des Types */
 import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
@@ -8,17 +8,17 @@ import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
 function JSON_LD_Service_Video_schema_SEO() : string {
     const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const dataSEO_PortraitHobby: DataSEOTargetOne_Type = dataSEO_PortraitHobby_data_SEO(); /* Récupération des données SEO de la page */
+    const dataSEO_Video: DataSEOTargetOne_Type = dataSEO_Video_data_SEO(); /* Récupération des données SEO de la page */
 
     const JSON_LD = JSON.stringify({
         "@context": dataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
         "@type": dataSEORoot["@type"].Service, /* (Obligatoire) Type de la donnée */
-        "@id": dataSEO_PortraitHobby.id_Service,
-        "serviceType": dataSEO_PortraitHobby.serviceType,
-        "name": dataSEO_PortraitHobby.name_Service, /* (Obligatoire) Nom du service */
-        "image": dataSEO_PortraitHobby.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
-        "description": dataSEO_PortraitHobby.description,
-        "url": dataSEO_PortraitHobby.url,
+        "@id": dataSEO_Video.id_Service,
+        "serviceType": dataSEO_Video.serviceType,
+        "name": dataSEO_Video.name_Service, /* (Obligatoire) Nom du service */
+        "image": dataSEO_Video.img_JSON_LD, /* (Obligatoire) URL de l'image de l'entreprise */
+        "description": dataSEO_Video.description,
+        "url": dataSEO_Video.url,
         "termsOfService": dataSEORoot.termsOfService,
         "provider": {
             "@id": dataSEORoot.id_LocalBusiness /* (Obligatoire) Référence à l'ID de l'Entreprise */
