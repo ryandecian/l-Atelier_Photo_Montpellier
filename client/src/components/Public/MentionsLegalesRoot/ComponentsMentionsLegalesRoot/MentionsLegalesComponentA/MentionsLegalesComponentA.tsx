@@ -20,7 +20,7 @@ function MentionsLegalesComponentA() {
                 <span className={style.SpanBold}>
                     {"https://atelier-photo-montpellier.fr"}
                 </span>
-                {" "} l’identité des différents intervenants dans le cadre de sa réalisation et de son suivi:
+                {" "} l’identité des différents intervenants dans le cadre de sa réalisation et de son suivi :
             </p>
 
             {/* Text 2 */}
