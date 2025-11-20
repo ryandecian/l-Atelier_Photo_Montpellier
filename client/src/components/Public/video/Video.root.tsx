@@ -4,6 +4,12 @@ import style from "../../StyleRootComponent.module.css";
 /* Import des composants React */
 import { Link } from "react-router-dom";
 
+/* Import des Components de Data */
+import { avisClientVideo_Data } from "./avisClientVideo.data";
+
+/* Import des composants d'Elements */
+import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
+
 /* Import des composants Router */
 import ListDataRouter from "../../../router/router";
 
@@ -382,6 +388,8 @@ function Video_Root() {
                 </span>
                 {` `} : la lumière, le cadre et le récit n’attendent plus que vous.
             </p>
+
+            {/* <GeneratorCardAvisClient_Element tabDataAvisClients={avisClientVideo_Data} /> */}
         </section>
     );
 }
