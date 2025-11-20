@@ -5,10 +5,10 @@ import style from "../../StyleRootComponent.module.css";
 import { Link } from "react-router-dom";
 
 /* Import des Components de Data */
-// import { avisClientVideo_Data } from "./avisClientVideo.data";
+import { avisClientVideo_Data } from "./avisClientVideo.data";
 
 /* Import des composants d'Elements */
-// import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
+import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 
 /* Import des composants Router */
 import ListDataRouter from "../../../router/router";
@@ -389,7 +389,7 @@ function Video_Root() {
                 {` `} : la lumière, le cadre et le récit n’attendent plus que vous.
             </p>
 
-            {/* <GeneratorCardAvisClient_Element tabDataAvisClients={avisClientVideo_Data} /> */}
+            <GeneratorCardAvisClient_Element tabDataAvisClients={avisClientVideo_Data} />
         </section>
     );
 }
