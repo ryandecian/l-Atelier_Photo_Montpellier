@@ -28,7 +28,7 @@ const avisClientVideo_Data: AvisClientSEO_Type[] = [
         nom: "Mélodie du DESERT",
         note: 5,
         commentaire: "Suite à un voyage dans le désert marocain, nous avons demandé à Anne de créer pour notre site et nos réseaux, 2  vidéos, l'une courte et rythmé, l'autre, plus longue pour retranscrire l'esprit de nos voyages. Le résultat est extraordinaire, nous adorons ! Grand merci Anne pour votre professionnaliste et la qualité de vos retours.",
-        date: "15 juillet 2025",
+        date: "20 Novembre 2025",
     },
 ];
 
