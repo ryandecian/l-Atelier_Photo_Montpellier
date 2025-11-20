@@ -19,26 +19,8 @@ function Video_Root() {
                 </h1>
             </header>
 
-            <p className={style.TextP4}>
-                A l’Atelier Photo Montpellier, nous créons des <strong>vidéos autant pour les entreprises</strong> afin 
-                de servir leurs objectifs : attirer plus de clients, présenter les équipes, renforcer la crédibilité, 
-                clarifier les services et améliorer la visibilité, que pour les moments de vie tels que votre mariage 
-                afin d’immortaliser toutes les sensations de ce jour exceptionnel.
-            </p>
-
-            <p className={style.TextP4}>
-                Nous accompagnons tout public de la <strong>PME</strong> à la <strong>TPE</strong>, du dirigeant à 
-                l’explorateur désirant partager son aventure, des jeunes parents aux jeunes (ou moins jeunes) mariés !
-            </p>
-
-            <p className={style.TextP4}>
-                Chaque vidéo est conçue pour
-                <strong> mettre en scène une entreprise, un métier, un parcours et des valeurs, un moment de vie </strong>
-                en créant une narration visuelle qui donne envie de vous suivre.
-            </p>
-
             <h2 className={style.TitleH2}>
-                Pourquoi faire appel à une vidéaste professionnelle pour votre société ?
+                Pourquoi faire appel à une vidéaste professionnelle pour votre entreprise ?
             </h2>
 
             <h3 className={style.TitleLNH3}>
