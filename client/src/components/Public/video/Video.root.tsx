@@ -5,10 +5,10 @@ import style from "../../StyleRootComponent.module.css";
 import { Link } from "react-router-dom";
 
 /* Import des Components de Data */
-import { avisClientVideo_Data } from "./avisClientVideo.data";
+// import { avisClientVideo_Data } from "./avisClientVideo.data";
 
 /* Import des composants d'Elements */
-import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
+// import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 
 /* Import des composants Router */
 import ListDataRouter from "../../../router/router";
