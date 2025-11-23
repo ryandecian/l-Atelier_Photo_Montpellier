@@ -1,4 +1,5 @@
 /* Import des modules CSS */
+import css from "./video.module.css";
 import style from "../../StyleRootComponent.module.css";
 
 /* Import des composants React */
@@ -18,7 +19,7 @@ import { pauseOtherVideos_Utils } from "../../../utils/pauseOtherVideos.utils";
 
 function Video_Root() {
     return (
-        <section className={style.ContainerRootRacine}>
+        <section className={` Video_Root ${style.ContainerRootRacine} ${css.Video_Root}`}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
                     Vidéos Professionnelles pour Entreprises, Loisirs, Événements et Mariage

@@ -5,8 +5,8 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    margin: 0rem 0rem 1rem 0rem; /* 16px 0px 16px 0px */
-    padding: 0rem;
+    margin: 0rem;
+    padding: 0rem 0rem 1rem 0rem; /* 16px 0px 16px 0px */
     border: 0rem;
 }
 /* .ContainerRootRacine {
