@@ -22,7 +22,7 @@ function Video_Root() {
         <section className={` Video_Root ${style.ContainerRootRacine} ${css.Video_Root}`}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
-                    Vidéos Professionnelles pour Entreprises, Loisirs, Événements et Mariage
+                    Vidéos Professionnelles pour Entreprises, Événements et Mariage
                 </h1>
             </header>
 
