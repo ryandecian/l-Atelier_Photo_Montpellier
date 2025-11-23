@@ -1,3 +1,15 @@
 .Video_Root {
     background-color: rgba(250, 194, 146, 0.280);
 }
+
+/* Pour éventuellement un changement de couleur des textes */
+/* .Video_Root > header > h1,
+.Video_Root > h2,
+.Video_Root > h3,
+.Video_Root > p,
+.Video_Root > ul,
+.Video_Root > ul > li,
+.Video_Root > section > h3, 
+.Video_Root > section > p {
+    color: white;
+} */
