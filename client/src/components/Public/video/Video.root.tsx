@@ -1,4 +1,5 @@
 /* Import des modules CSS */
+import css from "./video.module.css";
 import style from "../../StyleRootComponent.module.css";
 
 /* Import des composants React */
@@ -18,10 +19,10 @@ import { pauseOtherVideos_Utils } from "../../../utils/pauseOtherVideos.utils";
 
 function Video_Root() {
     return (
-        <section className={style.ContainerRootRacine}>
+        <section className={` Video_Root ${style.ContainerRootRacine} ${css.Video_Root}`}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
-                    Vidéos Professionnelles pour Entreprises, Loisirs, Événements et Mariage
+                    Vidéos Professionnelles pour Entreprises, Événements et Mariage
                 </h1>
             </header>
 
@@ -58,21 +59,20 @@ function Video_Root() {
             </p>
 
             <section className={style.ContainerVideo}>
-                <h3 className={style.VideoTitle}>Votre prochaine parenthèse bien-être : Les Crocodiles Jaunes</h3>
+                <h3 className={style.VideoTitle}>Aventure saharienne - Immersion dans le désert avec Mélodie du Désert</h3>
                 <video
                     className={style.VideoPlayer}
-                    src="/video/les-crocodiles-jaunes/les-crocodiles-jaunes.mp4"
+                    src="/video/video-trek-desert-maroc/video-trek-desert-maroc.mp4"
                     controls
                     preload="none"
                     controlsList="nodownload"
                     onPlay={(e) => pauseOtherVideos_Utils(e.currentTarget)}
                     onContextMenu={(e) => e.preventDefault()} /* Désactive le clic droit */
-                    poster="/video/les-crocodiles-jaunes/les-crocodiles-jaunes.jpg"
+                    poster="/video/video-trek-desert-maroc/video-trek-desert-maroc.jpg"
                     playsInline
                 />
                 <p className={style.VideoDescription}>
-                    Un cadre unique : découverte du centre de jeûne <br />
-                    Les Crocodiles Jaunes à Albi.
+                    Une courte vidéo présentant l’ambiance du trek dans les dunes marocaines.
                 </p>
             </section>
 
@@ -137,20 +137,21 @@ function Video_Root() {
             </ul>
 
             <section className={style.ContainerVideo}>
-                <h3 className={style.VideoTitle}>Aventure saharienne - Immersion dans le désert avec Mélodie du Désert</h3>
+                <h3 className={style.VideoTitle}>Votre prochaine parenthèse bien-être : Les Crocodiles Jaunes</h3>
                 <video
                     className={style.VideoPlayer}
-                    src="/video/video-trek-desert-maroc/video-trek-desert-maroc.mp4"
+                    src="/video/les-crocodiles-jaunes/les-crocodiles-jaunes.mp4"
                     controls
                     preload="none"
                     controlsList="nodownload"
                     onPlay={(e) => pauseOtherVideos_Utils(e.currentTarget)}
                     onContextMenu={(e) => e.preventDefault()} /* Désactive le clic droit */
-                    poster="/video/video-trek-desert-maroc/video-trek-desert-maroc.jpg"
+                    poster="/video/les-crocodiles-jaunes/les-crocodiles-jaunes.jpg"
                     playsInline
                 />
                 <p className={style.VideoDescription}>
-                    Une courte vidéo présentant l’ambiance du trek dans les dunes marocaines.
+                    Un cadre unique : découverte du centre de jeûne <br />
+                    Les Crocodiles Jaunes à Albi.
                 </p>
             </section>
 
