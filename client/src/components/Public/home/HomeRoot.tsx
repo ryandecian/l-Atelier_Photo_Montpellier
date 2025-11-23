@@ -62,6 +62,14 @@ function HomeRoot() {
                     spontanées, une histoire sincère qui reflète votre journée.
                 </p>
 
+                <p className={style.TextP4}>
+                    <span className={style.SpanLink}>
+                        <Link to={`${ListDataRouter[7].path}#top`}>
+                            {"Découvrez mon parcours, de mes débuts à l'Atelier Photo Montpellier."}
+                        </Link>
+                    </span>
+                </p>
+
             {/* ---------- ---------- ---------- ---------- ---------- */}
 
                 <h2 className={style.TitleH2}>
