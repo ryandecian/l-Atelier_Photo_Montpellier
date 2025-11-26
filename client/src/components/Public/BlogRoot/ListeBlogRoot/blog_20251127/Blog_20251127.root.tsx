@@ -165,6 +165,34 @@ function Blog_20251127_Root() {
                 de façon sincère. Ces vidéos permettent au candidat potentiel de se projeter, renforcent la 
                 <strong> crédibilité</strong> et réduisent les incertitudes qui mènent aux <strong>candidatures non qualifiées</strong>.
             </p>
+
+            <h3 className={style.TitleLNH3}>
+                Format 2 : Le Film Corporate & Manifeste (Vision Globale)
+            </h3>
+
+            <p className={style.TextP4}>
+                L'époque où le <strong>Film Corporate</strong> se résumait à un défilé de chiffres est révolue. 
+                Aujourd'hui, il doit être un véritable <strong>Manifeste</strong> qui reflète l'âme de l'entreprise. 
+                Ce format est essentiel pour les candidats qui cherchent un <strong>sens à leur travail</strong> et qui 
+                veulent comprendre la <strong>Vision Globale</strong>. Il doit être <strong>créatif</strong> et raconte 
+                l'histoire, les valeurs sociétales et la mission, servant de socle à votre <strong>image de marque employeur</strong>.
+            </p>
+
+            <h3 className={style.TitleLNH3}>
+                Format 3 : La Vidéo E-learning et de Formation Interne
+            </h3>
+
+            <p className={style.TextP4}>
+                La <strong>vidéo marque employeur</strong> s'adapte aussi à la formation et à la fidélisation interne. 
+                Les <strong>vidéos tutoriels</strong> ou les modules d'<strong>E-learning</strong> sont cruciaux 
+                pour l'<strong>adaptation au poste de travail</strong> et le maintien de l'employabilité des salariés. 
+                C'est un investissement à long terme qui réduit significativement les <strong>coûts de formation récurrents </strong> 
+                et améliore la <strong>productivité</strong> des équipes.
+            </p>
+
+            <h2 className={style.TitleH2}>
+                Feuille de Route : Passer de l'Intention à la Production (CTA)
+            </h2>
         </section>
     )
 }
