@@ -12,11 +12,11 @@ import Footer_layout from "../../../../components/layout/footer/Footer.layout";
 /* Import des Hooks */
 import useScrollToHash_utils_Hook from "../../../../hook/useScrollToHash";
 
-function Blog20251127_Page() {
+function Blog_20251127_Page() {
     useScrollToHash_utils_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
 
      return (
-        <section className={`Blog20251127_Page ${style.Page}`}>
+        <section className={`Blog_20251127_Page ${style.Page}`}>
             {/* <HelmetBlog20251127_helmet_SEO /> */}
             <header id="top" className={style.Header}>
                  <NavRoot />
@@ -31,4 +31,4 @@ function Blog20251127_Page() {
     )
 }
 
-export default Blog20251127_Page;
+export default Blog_20251127_Page;
