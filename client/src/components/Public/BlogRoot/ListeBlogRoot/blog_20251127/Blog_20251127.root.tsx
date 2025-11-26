@@ -42,11 +42,11 @@ function Blog_20251127_Root() {
             </p>
 
             <p className={style.TextP4}>
-               Ce déficit de communication représente une opportunité exceptionnelle pour votre entreprise de se démarquer. 
-               En fournissant une immersion authentique dans votre culture d'entreprise, la vidéo filtre naturellement 
-               les candidats, augmentant ainsi l'adéquation culturelle et, in fine, réduisant vos coûts de recrutement 
-               directs et indirects (jusqu'à 50 %). Il est temps d’arrêter de chasser les CV pour donner aux talents 
-               l'envie de vous choisir.
+                Ce déficit de communication représente une opportunité exceptionnelle pour votre entreprise de se démarquer. 
+                En fournissant une immersion authentique dans votre culture d'entreprise, la vidéo filtre naturellement 
+                les candidats, augmentant ainsi l'adéquation culturelle et, in fine, réduisant vos coûts de recrutement 
+                directs et indirects (jusqu'à 50 %). Il est temps d’arrêter de chasser les CV pour donner aux talents 
+                l'envie de vous choisir.
             </p>
 
             <h3 className={style.TitleLNH3}>
@@ -54,15 +54,15 @@ function Blog_20251127_Root() {
             </h3>
 
             <p className={style.TextP4}>
-               Si les fiches de poste restent classiques elles ne donnent qu'une description textuelle qui reste statique : 
-               elle ne parvient pas à montrer le quotidien de vos équipes, ni à transmettre la <strong>culture d'entreprise </strong> 
-               qui fait votre singularité.
+                Si les fiches de poste restent classiques elles ne donnent qu'une description textuelle qui reste statique : 
+                elle ne parvient pas à montrer le quotidien de vos équipes, ni à transmettre la <strong>culture d'entreprise </strong> 
+                qui fait votre singularité.
             </p>
 
             <p className={style.TextLiP4}>
-               Le résultat direct de cette approche est l'attraction d'un trafic hétérogène de candidats, dont 
-               l'adéquation avec le poste et l'environnement de travail est incertaine. Cette inefficacité initiale 
-               génère une cascade de <strong>coûts cachés lourds</strong> pour vos ressources humaines (RH) :
+                Le résultat direct de cette approche est l'attraction d'un trafic hétérogène de candidats, dont 
+                l'adéquation avec le poste et l'environnement de travail est incertaine. Cette inefficacité initiale 
+                génère une cascade de <strong>coûts cachés lourds</strong> pour vos ressources humaines (RH) :
             </p>
 
             <ul className={style.ContainerUl}>
@@ -88,6 +88,83 @@ function Blog_20251127_Root() {
             <h3 className={style.TitleLNH3}>
                 L'Authenticité comme Moteur d'Engagement Supérieur
             </h3>
+
+            <p className={style.TextP4}>
+                L'époque des communications institutionnelles guindées et impersonnelles est révolue. Dans la quête des 
+                talents, <strong>l'authenticité</strong> n'est plus une simple tendance, mais un impératif pour réussir 
+                votre <strong>recrutement B2B.</strong> Les candidats hyper-connectés attendent une transparence totale 
+                pour pouvoir faire un choix éclairé, ce que le texte seul ne peut pas offrir.
+            </p>
+
+            <p className={style.TextP4}>
+                La <strong>vidéo Marque Employeur</strong> excelle précisément parce qu'elle ouvre la voie à une 
+                communication plus humaine, plus sincère et nettement plus impactante. Elle permet de mettre en lumière 
+                l'humain derrière l'organigramme, en valorisant l'engagement des salariés dans leur métier.
+            </p>
+
+            <p className={style.TextP4}>
+                Cette approche sincère produit des résultats concrets : des analyses menées par des plateformes 
+                professionnelles comme <strong>LinkedIn</strong> et <strong>Wistia</strong> démontrent que l'intégration 
+                stratégique de la vidéo augmente l'engagement de façon spectaculaire. Par exemple, sur le site web 
+                (la vitrine de l'entreprise), les utilisateurs passent en moyenne <strong>2,6 fois plus de temps</strong> sur 
+                une page contenant une vidéo, selon les Rapports Wistia. Sur les réseaux sociaux professionnels, la vidéo 
+                est le format le plus engageant, pouvant générer jusqu'à <strong>trois fois plus de portée</strong> que 
+                le contenu textuel seul (source : LinkedIn). Cet engagement accru est vital, car il transforme un simple 
+                visiteur en un candidat motivé.
+            </p>
+
+            <h3 className={style.TitleLNH3}>
+                Filtrer les Candidats : L'Alignement Culturel avant les Compétences
+            </h3>
+
+            <p className={style.TextP4}>
+                Dans un marché du travail compétitif, l'enjeu n'est plus seulement d'attirer des CV, mais de trouver 
+                les <strong>bons profils</strong> : ceux qui s'épanouiront durablement dans votre organisation.
+            </p>
+
+            <p className={style.TextP4}>
+                La <strong>vidéo Marque Employeur</strong> est l'outil le plus puissant pour opérer ce pré-filtrage 
+                essentiel. Elle permet de réaffirmer clairement les <strong>engagements de l'entreprise</strong>, qu'il 
+                s'agisse de vos valeurs sociétales, de votre engagement RSE, ou de la priorité donnée au 
+                <strong> bien-être au travail</strong> de vos collaborateurs.
+            </p>
+
+            <p className={style.TextLiP4}>
+                En confiant la création de ces contenus à un <strong>vidéaste professionnel</strong> (comme votre studio 
+                photo à Montpellier), vous mettez ces valeurs sincères en lumière de manière <strong>authentique</strong>. 
+                C'est cette <strong>transparence</strong> qui est le véritable filtre.
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    <strong>Attraction Ciblée :</strong> Vous attirez naturellement les candidats qui se reconnaissent 
+                    dans cette <strong>culture d'entreprise</strong>.
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>Adhésion à Long Terme :</strong> Ce processus augmente considérablement les chances d'une 
+                    <strong> adhésion à long terme</strong> de la nouvelle recrue.
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>Réduction des Coûts :</strong> Investir dans la <strong>vidéo RH</strong> réduit le risque 
+                    d'un <strong>désalignement coûteux</strong> (turnover prématuré) et optimise vos investissements.
+                </li>
+            </ul>
+
+            <h2 className={style.TitleH2}>
+                Les 3 Formats Vidéo qui Transforment vos RH et vos Coûts
+            </h2>
+
+            <h3 className={style.TitleLNH3}>
+                Format 1 : La Vidéo Témoignage d'Employés (Recruitment Videos)
+            </h3>
+
+            <p className={style.TextP4}>
+                Pour un recrutement réussi, rien n'est plus efficace que la transparence incarnée. Le format du 
+                <strong> Témoignage d'Employés</strong> est le levier le plus puissant. En mettant en avant vos 
+                <strong> salariés</strong>, vous valorisez leur <strong>engagement</strong> et la réalité de leur métier 
+                de façon sincère. Ces vidéos permettent au candidat potentiel de se projeter, renforcent la 
+                <strong> crédibilité</strong> et réduisent les incertitudes qui mènent aux <strong>candidatures non qualifiées</strong>.
+            </p>
         </section>
     )
 }
