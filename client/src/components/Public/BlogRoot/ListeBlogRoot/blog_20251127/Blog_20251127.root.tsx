@@ -52,6 +52,42 @@ function Blog_20251127_Root() {
             <h3 className={style.TitleLNH3}>
                 Pourquoi les Offres d'Emploi Textuelles Coûtent Cher
             </h3>
+
+            <p className={style.TextP4}>
+               Si les fiches de poste restent classiques elles ne donnent qu'une description textuelle qui reste statique : 
+               elle ne parvient pas à montrer le quotidien de vos équipes, ni à transmettre la <strong>culture d'entreprise </strong> 
+               qui fait votre singularité.
+            </p>
+
+            <p className={style.TextLiP4}>
+               Le résultat direct de cette approche est l'attraction d'un trafic hétérogène de candidats, dont 
+               l'adéquation avec le poste et l'environnement de travail est incertaine. Cette inefficacité initiale 
+               génère une cascade de <strong>coûts cachés lourds</strong> pour vos ressources humaines (RH) :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    <strong>Temps de tri excessif :</strong> Le service RH doit passer un temps conséquent à trier 
+                    un grand volume de candidatures non pertinentes, ralentissant tout le processus.
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>Risque d'erreur d'embauche :</strong> Le manque de transparence sur la culture et les attentes 
+                    réelles augmente le risque de recruter un profil techniquement compétent, mais <strong>culturellement désaligné.</strong>
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>Coût du Turnover</strong> Lorsque l'erreur d'embauche se produit, le <strong>coût du turnover </strong>
+                    (dû au départ rapide du nouvel employé) explose, incluant la perte de productivité et la nécessité 
+                    de relancer immédiatement un nouveau cycle de <strong>recrutement B2B.</strong>
+                </li>
+            </ul>
+
+            <h2 className={style.TitleH2}>
+                Marque Employeur : le Levier de l'Authenticité et de la Confiance
+            </h2>
+
+            <h3 className={style.TitleLNH3}>
+                L'Authenticité comme Moteur d'Engagement Supérieur
+            </h3>
         </section>
     )
 }
