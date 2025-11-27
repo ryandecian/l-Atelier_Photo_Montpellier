@@ -193,6 +193,7 @@ function Blog_20251127_Root() {
             <h2 className={style.TitleH2}>
                 Feuille de Route : Passer de l'Intention à la Production (CTA)
             </h2>
+            
         </section>
     )
 }
