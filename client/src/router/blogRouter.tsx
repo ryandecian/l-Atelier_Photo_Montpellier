@@ -43,6 +43,7 @@ const blogRouter: blogRouterType[] = [
         path: "2025-09-17",
         element: <Blog_20250917_Page />,
     },
+    /* {ListDataRouter[4].children?.[6].path} */
     {
         path: "2025-11-27",
         element: <Blog_20251127_Page />,
