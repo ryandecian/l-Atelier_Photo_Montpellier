@@ -51,6 +51,15 @@ function dataCardBlog_img_data() {
             date: "17/09/2025",
             image: "/images/image-blog/cartes/blog_20250917.jpg",
         },
+        {
+            reactKey: 6,
+            path: ListDataRouter[4].children?.[6].path,
+            id: "top",
+            title: "Trouvez les Bons Profils",
+            description: "Comment la Vidéo vous fait Économiser sur vos Coûts de Recrutement",
+            date: "27/11/2025",
+            image: "/images/image-blog/cartes/blog_20251127.jpg",
+        },
     ]
     return tab;
 }
