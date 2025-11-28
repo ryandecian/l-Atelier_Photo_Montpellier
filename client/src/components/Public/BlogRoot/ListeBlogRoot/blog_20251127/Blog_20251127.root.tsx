@@ -1,6 +1,12 @@
 /* Import des modules CSS */
 import style from "../../../../StyleRootComponent.module.css";
 
+/* Import des composants React */
+import { Link } from "react-router-dom";
+
+/* Import des composants Router */
+import ListDataRouter from "../../../../../router/router";
+
 function Blog_20251127_Root() {
     return (
         <section className={`Blog_20251127_Root ${style.ContainerRootRacine}`}>
@@ -193,6 +199,91 @@ function Blog_20251127_Root() {
             <h2 className={style.TitleH2}>
                 Feuille de Route : Passer de l'Intention à la Production (CTA)
             </h2>
+
+            <h3 className={style.TitleLNH3}>
+                Ne pas se Limiter au Service RH : Impliquer Tous les Collaborateurs
+            </h3>
+
+            <p className={style.TextP4}>
+                La construction d'une Marque <strong>Employeur crédible</strong> n'est pas l'affaire d'un seul service. 
+                C'est un véritable <strong>projet d'entreprise</strong> qui doit associer l'ensemble des collaborateurs. 
+                Le succès de votre stratégie de <strong>vidéo RH</strong> dépend crucialement de leur adhésion et de 
+                leur participation à l'aspect humain et authentique que la vidéo cherche à capturer.
+            </p>
+
+            <h3 className={style.TitleLNH3}>
+                Les Clés d'une Production Vidéo RH Réussie
+            </h3>
+
+            <p className={style.TextP4}>
+                Passer à la production exige un <strong>savoir-faire professionnel</strong> spécifique. Une production 
+                réussie apporte les <strong>compétences spécifiques</strong> (storytelling, mise en lumière des valeurs), 
+                le <strong>matériel de pointe</strong> (ex: 4K, drone) et un <strong>accompagnement personnalisé </strong> 
+                pour transformer des idées complexes en <strong>récits captivants</strong> et mémorables pour vos futurs talents.
+            </p>
+
+            <h3 className={style.TitleLNH3}>
+                Passez à l'Action : Obtenez une Stratégie Vidéo Sur-Mesure
+            </h3>
+
+            <p className={style.TextP4}>
+                Vous l'avez compris : la <strong>vidéo Marque Employeur</strong> est l'investissement le plus efficace 
+                pour l'avenir de votre <strong>recrutement B2B</strong>. C'est le moyen le plus sûr de garantir la 
+                qualité des candidatures, d'atteindre un meilleur <strong>alignement culturel</strong>, et de réaliser 
+                une <strong>réduction des coûts</strong> de recrutement qui peut atteindre jusqu'à 50 %.
+            </p>
+
+            <p className={style.TextP4}>
+                <strong>Il est temps d’arrêter de subir le turnover et de commencer à choisir vos talents.</strong>
+            </p>
+
+            <p className={style.TextP4}>
+                Pour évaluer votre potentiel d'économies et transformer votre communication RH, contactez dès aujourd'hui 
+                <strong> L'Atelier Photo Montpellier.</strong>
+            </p>
+
+            <p className={style.TextP4}>
+                <span className={style.SpanLink}>
+                    <Link 
+                        to={`${ListDataRouter[3].path}#top`} 
+                        title="Demander un audit stratégique de Marque Employeur et un devis personnalisé"
+                    >
+                        {`Cliquez ici pour obtenir un audit stratégique de votre Marque Employeur et un devis personnalisé pour votre première production vidéo.`}
+                    </Link>
+                </span>
+            </p>
+
+            <h3 className={style.TitleLNH3}>
+                Passez à l'Action : Obtenez une Stratégie Vidéo Sur-Mesure
+            </h3>
+
+            <p className={style.TextP4}>
+                L'époque où le <strong>Film Corporate</strong> se résumait à un défilé de chiffres et de bureaux vides 
+                est révolue. Aujourd'hui, il doit être un véritable <strong>Manifeste</strong> qui reflète l'âme de l'entreprise.
+            </p>
+
+            <p className={style.TextLiP4}>
+                Ce format est essentiel pour les candidats qui cherchent un <strong>sens à leur travail</strong> et qui 
+                veulent comprendre la <strong>Vision Globale</strong> et l'<strong>histoire d'origine</strong> de 
+                l'organisation. Pour capter leur attention face à la concurrence, ce film doit être <strong>créatif </strong> 
+                et dépasser les standards classiques.
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    <strong>Raconter la Culture :</strong> Le Film Manifeste raconte l'histoire, les valeurs sociétales 
+                    et la mission de l'entreprise, bien au-delà des fiches de poste.
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>Capitale Marque Employeur :</strong> Il est le socle de votre <strong>image de marque employeur</strong>, 
+                    essentiel pour attirer des profils hautement qualifiés qui se soucient de l'impact de leur travail.
+                </li>
+            </ul>
+
+            <p className={style.TextP4}>
+                Nous vous aidons à <strong>créer ce contenu impactant</strong> qui transmettra l'énergie et l'ambition 
+                de votre organisation.
+            </p>    
         </section>
     )
 }
