@@ -7,8 +7,8 @@ import { dataSEO_Blog_20251127_data_SEO } from "./dataSEO_Blog_20251127.data.seo
 
 /* Import des JSON_LD */
 import { JSON_LD_LocalBusiness_Root_schema_SEO } from "../../../JSON-LD_LocalBusiness_Root.schema.seo";
-import { JSON_LD_BlogPosting_Blog_20250917_schema_SEO } from "./JSON-LD_BlogPosting_Blog_20250917.schema.seo";
-import { JSON_LD_Breadcrumb_Blog_20250917_schema_SEO } from "./JSON-LD_Breadcrumb_Blog_20250917.schema.seo";
+import { JSON_LD_BlogPosting_Blog_20251127_schema_SEO } from "./JSON-LD_BlogPosting_Blog_20251127.schema.seo";
+import { JSON_LD_Breadcrumb_Blog_20251127_schema_SEO } from "./JSON-LD_Breadcrumb_Blog_20251127.schema.seo";
 
 /* Import des Types */
 import { DataSEOHelmet_Type } from "../../../../types/seo/dataSEOHelmet.type";
@@ -40,10 +40,10 @@ function HelmetBlog20251127_helmet_SEO() {
                 {JSON_LD_LocalBusiness_Root_schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_BlogPosting_Blog_20250917_schema_SEO()}
+                {JSON_LD_BlogPosting_Blog_20251127_schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_Breadcrumb_Blog_20250917_schema_SEO()}
+                {JSON_LD_Breadcrumb_Blog_20251127_schema_SEO()}
             </script>
 
             {/* Langue principale du document */}
