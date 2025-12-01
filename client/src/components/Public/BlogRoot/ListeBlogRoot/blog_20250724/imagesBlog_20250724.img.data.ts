@@ -1,6 +1,7 @@
+/* Import des Types */
 import { ImagesBlog_Type } from "../../../../../types/components/blogs/imagesBlog.type";
 
-const ImagesBlog_20250724_RootControllerData: ImagesBlog_Type[] = [
+const imagesBlog_20250724_img_data: ImagesBlog_Type[] = [
     /* {ImagesBlog_20250724_RootControllerData[0].src} */
     {
         src: "/images/image-blog/blog_20250724/lapm-portrait-grossesse-photographe-photo-grossesse-moment-blog-20250724-l-atelier-photo-montpellier.jpg",
@@ -13,4 +14,4 @@ const ImagesBlog_20250724_RootControllerData: ImagesBlog_Type[] = [
     },
 ];
 
-export default ImagesBlog_20250724_RootControllerData;
+export { imagesBlog_20250724_img_data};
