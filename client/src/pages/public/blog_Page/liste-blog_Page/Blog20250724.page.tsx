@@ -2,7 +2,7 @@
 import style from "../../../stylePage.module.css";
 
 /* Import des Components */
-import Blog_20250724_Root from "../../../../components/Public/BlogRoot/ListeBlogRoot/Blog_20250724_Root/Blog_20250724_Root";
+import Blog_20250724_Root from "../../../../components/Public/BlogRoot/ListeBlogRoot/blog_20250724/Blog_20250724.root";
 import NavRoot from "../../../../components/layout/NavRoot/NavRoot";
 import Footer_layout from "../../../../components/layout/footer/Footer.layout";
 

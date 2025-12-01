@@ -1,7 +1,7 @@
 /* Import des modules CSS */
 import style from "../../../../StyleRootComponent.module.css";
 
-/* Import des Components */
+/* Import des Components de Data */
 import { imagesBlog_20250917_img_data } from "./imagesBlog_20250917.img.data";
 
 /* Import des composants d'Elements */

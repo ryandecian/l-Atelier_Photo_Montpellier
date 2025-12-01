@@ -1,3 +1,4 @@
+/* Import des modules CSS */
 import style from "../../../../StyleRootComponent.module.css";
 import css from "./Blog_20250724_Root.module.css";
 import ListDataRouter from "../../../../../router/router";
