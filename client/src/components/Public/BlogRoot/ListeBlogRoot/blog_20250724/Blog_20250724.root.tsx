@@ -3,7 +3,7 @@ import css from "./Blog_20250724_Root.module.css";
 import style from "../../../../StyleRootComponent.module.css";
 
 /* Import des Components de Data */
-import ImagesBlog_20250724_RootControllerData from "./ImagesBlog_20250724_RootControllerData";
+import ImagesBlog_20250724_RootControllerData from "./imagesBlog_20250724.img.data";
 
 /* Import des composants d'Elements */
 import { PremiumCardImgModal_Element } from "../../../../elements/premium-card-img-modal/PremiumCardImgModal.element";
