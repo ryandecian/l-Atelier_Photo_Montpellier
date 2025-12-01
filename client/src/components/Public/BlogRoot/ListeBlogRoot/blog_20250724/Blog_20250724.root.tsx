@@ -1,11 +1,18 @@
 /* Import des modules CSS */
-import style from "../../../../StyleRootComponent.module.css";
 import css from "./Blog_20250724_Root.module.css";
-import ListDataRouter from "../../../../../router/router";
+import style from "../../../../StyleRootComponent.module.css";
+
+/* Import des Components de Data */
+import ImagesBlog_20250724_RootControllerData from "./ImagesBlog_20250724_RootControllerData";
+
+/* Import des composants d'Elements */
+import { PremiumCardImgModal_Element } from "../../../../elements/premium-card-img-modal/PremiumCardImgModal.element";
+
+/* Import des composants React */
 import { Link } from "react-router-dom";
 
-import ImagesBlog_20250724_RootControllerData from "./ImagesBlog_20250724_RootControllerData";
-import { PremiumCardImgModal_Element } from "../../../../elements/premium-card-img-modal/PremiumCardImgModal.element";
+/* Import des composants Router */
+import ListDataRouter from "../../../../../router/router";
 
 function Blog_20250724_Root() {
     return (
