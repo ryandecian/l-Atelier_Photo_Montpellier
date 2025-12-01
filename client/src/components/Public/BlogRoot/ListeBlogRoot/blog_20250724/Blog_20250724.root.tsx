@@ -1,10 +1,18 @@
+/* Import des modules CSS */
+import css from "./Blog_20250724.module.css";
 import style from "../../../../StyleRootComponent.module.css";
-import css from "./Blog_20250724_Root.module.css";
-import ListDataRouter from "../../../../../router/router";
+
+/* Import des Components de Data */
+import { imagesBlog_20250724_img_data } from "./imagesBlog_20250724.img.data";
+
+/* Import des composants d'Elements */
+import { PremiumCardImgModal_Element } from "../../../../elements/premium-card-img-modal/PremiumCardImgModal.element";
+
+/* Import des composants React */
 import { Link } from "react-router-dom";
 
-import ImagesBlog_20250724_RootControllerData from "./ImagesBlog_20250724_RootControllerData";
-import { PremiumCardImgModal_Element } from "../../../../elements/premium-card-img-modal/PremiumCardImgModal.element";
+/* Import des composants Router */
+import ListDataRouter from "../../../../../router/router";
 
 function Blog_20250724_Root() {
     return (
@@ -39,14 +47,14 @@ function Blog_20250724_Root() {
 
             <div className={css.ContainerImg}>
                 <PremiumCardImgModal_Element
-                    src={ImagesBlog_20250724_RootControllerData[0].src}
-                    alt={ImagesBlog_20250724_RootControllerData[0].alt}
+                    src={imagesBlog_20250724_img_data[0].src}
+                    alt={imagesBlog_20250724_img_data[0].alt}
                     className={css.Img1}
                 />
 
                 <PremiumCardImgModal_Element
-                    src={ImagesBlog_20250724_RootControllerData[1].src}
-                    alt={ImagesBlog_20250724_RootControllerData[1].alt}
+                    src={imagesBlog_20250724_img_data[1].src}
+                    alt={imagesBlog_20250724_img_data[1].alt}
                     className={css.Img2}
                 />
             </div>
