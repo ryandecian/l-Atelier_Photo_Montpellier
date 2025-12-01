@@ -3,7 +3,7 @@ import css from "./Blog_20250724_Root.module.css";
 import style from "../../../../StyleRootComponent.module.css";
 
 /* Import des Components de Data */
-import ImagesBlog_20250724_RootControllerData from "./imagesBlog_20250724.img.data";
+import { imagesBlog_20250724_img_data } from "./imagesBlog_20250724.img.data";
 
 /* Import des composants d'Elements */
 import { PremiumCardImgModal_Element } from "../../../../elements/premium-card-img-modal/PremiumCardImgModal.element";
@@ -47,14 +47,14 @@ function Blog_20250724_Root() {
 
             <div className={css.ContainerImg}>
                 <PremiumCardImgModal_Element
-                    src={ImagesBlog_20250724_RootControllerData[0].src}
-                    alt={ImagesBlog_20250724_RootControllerData[0].alt}
+                    src={imagesBlog_20250724_img_data[0].src}
+                    alt={imagesBlog_20250724_img_data[0].alt}
                     className={css.Img1}
                 />
 
                 <PremiumCardImgModal_Element
-                    src={ImagesBlog_20250724_RootControllerData[1].src}
-                    alt={ImagesBlog_20250724_RootControllerData[1].alt}
+                    src={imagesBlog_20250724_img_data[1].src}
+                    alt={imagesBlog_20250724_img_data[1].alt}
                     className={css.Img2}
                 />
             </div>
