@@ -1,24 +1,32 @@
+/* Import des modules CSS */
 import style from "../../StyleRootComponent.module.css";
 
-import { Link } from "react-router-dom";
-import ListDataRouter from "../../../router/router";
+/* Import des Components */
+import { Home_A_Component } from "./components/Home_A.component";
 
-import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
+/* Import des Components de Data */
 import { avisClientHome_Data } from "./avisClientHome.data";
+import { imagesHome_img_data } from "./imagesHome.img.data";
 
+/* Import des composants d'Elements */
 import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
-import ImagesHomeControllerData from "./ImagesHomeControllerData";
-
+import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 import { PremiumCardImgModal_Element } from "../../elements/premium-card-img-modal/PremiumCardImgModal.element";
 
-import HomeRootComponentA from "./ComponentsHomeRoot/HomeRootComponentA/HomeRootComponentA";
+/* Import des composants React */
+import { Link } from "react-router-dom";
+
+/* Import des composants Router */
+import ListDataRouter from "../../../router/router";
+
+/* Import des Utils */
 import { pauseOtherVideos_Utils } from "../../../utils/pauseOtherVideos.utils";
 
-function HomeRoot() {
+function Home_Root() {
     return (
-        <section className={`HomeRoot ${style.ContainerRootRacine}`}>
+        <section className={`Home_Root ${style.ContainerRootRacine}`}>
             {/* Container A : Accueil avec H1 */}
-            <HomeRootComponentA />
+            <Home_A_Component />
 
             {/* ---------- ---------- ---------- ---------- ---------- */}
 
@@ -77,14 +85,14 @@ function HomeRoot() {
                 </h2>
 
             <Container4Images_Element
-                img1={ImagesHomeControllerData[0].src}
-                metaNameImg1={ImagesHomeControllerData[0].alt}
-                img2={ImagesHomeControllerData[1].src}
-                metaNameImg2={ImagesHomeControllerData[1].alt}
-                img3={ImagesHomeControllerData[2].src}
-                metaNameImg3={ImagesHomeControllerData[2].alt}
-                img4={ImagesHomeControllerData[3].src}
-                metaNameImg4={ImagesHomeControllerData[3].alt}
+                img1={imagesHome_img_data[0].src}
+                metaNameImg1={imagesHome_img_data[0].alt}
+                img2={imagesHome_img_data[1].src}
+                metaNameImg2={imagesHome_img_data[1].alt}
+                img3={imagesHome_img_data[2].src}
+                metaNameImg3={imagesHome_img_data[2].alt}
+                img4={imagesHome_img_data[3].src}
+                metaNameImg4={imagesHome_img_data[3].alt}
             />
 
                 <p className={`${style.TextP4} ${style.TargetText1}`}>
@@ -180,14 +188,14 @@ function HomeRoot() {
                 </h2>
 
             <Container4Images_Element
-                img1={ImagesHomeControllerData[4].src}
-                metaNameImg1={ImagesHomeControllerData[4].alt}
-                img2={ImagesHomeControllerData[5].src}
-                metaNameImg2={ImagesHomeControllerData[5].alt}
-                img3={ImagesHomeControllerData[6].src}
-                metaNameImg3={ImagesHomeControllerData[6].alt}
-                img4={ImagesHomeControllerData[7].src}
-                metaNameImg4={ImagesHomeControllerData[7].alt}
+                img1={imagesHome_img_data[4].src}
+                metaNameImg1={imagesHome_img_data[4].alt}
+                img2={imagesHome_img_data[5].src}
+                metaNameImg2={imagesHome_img_data[5].alt}
+                img3={imagesHome_img_data[6].src}
+                metaNameImg3={imagesHome_img_data[6].alt}
+                img4={imagesHome_img_data[7].src}
+                metaNameImg4={imagesHome_img_data[7].alt}
             />
 
                 <p className={`${style.TextP4} ${style.TargetText1}`}>
@@ -286,4 +294,4 @@ function HomeRoot() {
     );
 }
 
-export default HomeRoot;
+export default Home_Root;
