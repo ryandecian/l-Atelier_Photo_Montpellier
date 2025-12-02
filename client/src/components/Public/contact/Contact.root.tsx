@@ -1,11 +1,16 @@
+/* Import des modules CSS */
+import css from "./contact.module.css";
 import style from "../../StyleRootComponent.module.css";
-import css from "./ContactRoot.module.css";
+
+/* Import des composants React */
 import { Mail, Phone } from "lucide-react";
+
+/* Import des composants Router */
 import externalLinks from "../../../constants/externalLinks";
 
-function ContactRoot() {
+function Contact_Root() {
     return (
-        <section className={`ContactRoot ${css.ContactRoot} ${style.ContainerRootRacine}`}>
+        <section className={`Contact_Root ${css.ContactRoot} ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
                     {`Besoin d’un renseignement ? Contactez l’Atelier Photo Montpellier`}
@@ -29,4 +34,4 @@ function ContactRoot() {
     );
 }
 
-export default ContactRoot;
+export default Contact_Root;
