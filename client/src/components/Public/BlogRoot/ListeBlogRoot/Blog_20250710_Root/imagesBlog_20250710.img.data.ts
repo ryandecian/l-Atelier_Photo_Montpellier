@@ -8,7 +8,7 @@ import { ImagesBlog_Type } from "../../../../../types/components/blogs/imagesBlo
  * photographie-professionnelle : 2/2
 */
 
-const ImagesBlog_20250710_RootControllerData: ImagesBlog_Type[] = [
+const imagesBlog_20250710_img_data: ImagesBlog_Type[] = [
     /* {ImagesBlog_20250710_RootControllerData[0].src} */
     {
         src: "/images/image-blog/blog_20250710/lapm-photo-portrait-feel-good-professionnel-montpellier-l-atelier-photo-montpellier.jpg",
@@ -26,4 +26,4 @@ const ImagesBlog_20250710_RootControllerData: ImagesBlog_Type[] = [
     },
 ];
 
-export default ImagesBlog_20250710_RootControllerData;
+export { imagesBlog_20250710_img_data };
