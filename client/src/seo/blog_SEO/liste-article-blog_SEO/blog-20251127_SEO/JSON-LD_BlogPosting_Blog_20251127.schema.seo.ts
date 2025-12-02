@@ -1,7 +1,7 @@
 /* Import des Components */
 import { dataSEO_Root_data_SEO } from "../../../dataSEO_Root.data.seo";
 import { dataSEO_Blog_20251127_data_SEO } from "./dataSEO_Blog_20251127.data.seo";
-import { dataCardBlog_img_data } from "../../../../components/Public/BlogRoot/dataCardBlog.img.data";
+import { dataCardBlog_img_data } from "../../../../components/Public/blog-root/dataCardBlog.img.data";
 
 /* Import des Types */
 import { DataSEORoot_Type } from "../../../../types/seo/dataSEORoot.type";

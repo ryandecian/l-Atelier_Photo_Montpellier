@@ -1,10 +1,20 @@
+/* Import des modules CSS */
 import style from "../../../../StyleRootComponent.module.css";
-import ListDataRouter from "../../../../../router/router";
+
+/* Import des Components */
+import PortraitLifeStyleRootComponentB from "../../../portrait-lifestyle/ComponentsPortraitLifeStyleRoot/PortraitLifeStyleRootComponentB/PortraitLifeStyleRootComponentB";
+
+/* Import des Components de Data */
+import { imagesBlog_20250710_img_data } from "./imagesBlog_20250710.img.data";
+
+/* Import des composants d'Elements */
+import { PremiumCardImgModal_Element } from "../../../../elements/premium-card-img-modal/PremiumCardImgModal.element";
+
+/* Import des composants React */
 import { Link } from "react-router-dom";
 
-import ImagesBlog_20250710_RootControllerData from "./ImagesBlog_20250710_RootControllerData";
-import { PremiumCardImgModal_Element } from "../../../../elements/premium-card-img-modal/PremiumCardImgModal.element";
-import PortraitLifeStyleRootComponentB from "../../../portrait-lifestyle/ComponentsPortraitLifeStyleRoot/PortraitLifeStyleRootComponentB/PortraitLifeStyleRootComponentB";
+/* Import des composants Router */
+import ListDataRouter from "../../../../../router/router";
 
 function Blog_20250710_Root() {
     return (
@@ -41,8 +51,8 @@ function Blog_20250710_Root() {
 
             <div className={style.ContainerFloat}>
                 <PremiumCardImgModal_Element
-                    src={ImagesBlog_20250710_RootControllerData[0].src}
-                    alt={ImagesBlog_20250710_RootControllerData[0].alt}
+                    src={imagesBlog_20250710_img_data[0].src}
+                    alt={imagesBlog_20250710_img_data[0].alt}
                     className={style.FloatLeftImg_Po}
                 />
 
@@ -80,8 +90,8 @@ function Blog_20250710_Root() {
 
             <div className={style.ContainerFloat}>
                 <PremiumCardImgModal_Element
-                    src={ImagesBlog_20250710_RootControllerData[1].src}
-                    alt={ImagesBlog_20250710_RootControllerData[1].alt}
+                    src={imagesBlog_20250710_img_data[1].src}
+                    alt={imagesBlog_20250710_img_data[1].alt}
                     className={style.FloatRightImg_Pa}
                 />
 
@@ -131,8 +141,8 @@ function Blog_20250710_Root() {
 
             <div className={style.ContainerFloat}>
                 <PremiumCardImgModal_Element
-                    src={ImagesBlog_20250710_RootControllerData[2].src}
-                    alt={ImagesBlog_20250710_RootControllerData[2].alt}
+                    src={imagesBlog_20250710_img_data[2].src}
+                    alt={imagesBlog_20250710_img_data[2].alt}
                     className={style.FloatLeftImg_Pa}
                 />
             
