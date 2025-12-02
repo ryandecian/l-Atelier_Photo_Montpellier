@@ -27,9 +27,15 @@ jobs:
             echo "📁 Accès au dossier du projet"
             cd ${{ secrets.PROJECT_PATH }}
 
-            # ✅ PRUNE AVANT L'ARRÊT → protège le volume DB (encore 'utilisé')
-            sudo docker builder prune -af || true # Nettoie uniquement les caches BuildKit.
-            sudo docker system prune -af --volumes || true # Supprime conteneurs arrêtés, images non utilisées, réseaux inutilisés et volumes orphelins.
+            # ✅ PRUNE AVANT L'ARRÊT — conditionnel pour protéger la DB si tout est déjà down
+            sudo docker builder prune -af || true  # Nettoie uniquement les caches BuildKit
+            if [ -z "$(sudo docker ps -q)" ]; then
+              echo "ℹ️ Aucun conteneur actif -> prune SANS --volumes (protection DB)"
+              sudo docker system prune -af || true
+            else
+              echo "ℹ️ Conteneurs actifs -> prune AVEC --volumes (les volumes utilisés sont protégés)"
+              sudo docker system prune -af --volumes || true
+            fi
 
             echo "🛑 Stop + remove containers : Phase 1/2"
             sudo docker stop $(sudo docker ps -q) || true
