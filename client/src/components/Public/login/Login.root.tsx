@@ -1,9 +1,16 @@
+/* Import des modules CSS */
+import css from "./login.module.css";
+
+/* Import des composants React */
+import { jwtDecode } from "jwt-decode";
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import { jwtDecode } from "jwt-decode";
-import css from "./LoginRoot.module.css";
-import DataUserType from "../../../types/dataUser.type";
+
+/* Import des composants Router */
 import ListDataRouter from "../../../router/router";
+
+/* Import des Types */
+import DataUserType from "../../../types/dataUser.type";
 
 function LoginRoot() {
     const [email, setEmail] = useState("");
