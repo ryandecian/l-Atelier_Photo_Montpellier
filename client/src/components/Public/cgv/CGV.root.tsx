@@ -1,7 +1,7 @@
 import style from "../../StyleRootComponent.module.css";
-import CGVComposantA from "./ComponentsCGVRoot/CGVComponentA/CGVComponentA";
-import CGVComposantB from "./ComponentsCGVRoot/CGVComponentB/CGVComponentB";
-import CGVComposantC from "./ComponentsCGVRoot/CGVComponentC/CGVComponentC";
+import CGVComposantA from "./components/CGV_A.component";
+import CGVComposantB from "./components/CGV_B.component";
+import CGVComposantC from "./components/CGV_C.component";
 
 function CGV_Root() {
     return (
