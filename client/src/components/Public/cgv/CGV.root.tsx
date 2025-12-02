@@ -3,9 +3,9 @@ import CGVComposantA from "./ComponentsCGVRoot/CGVComponentA/CGVComponentA";
 import CGVComposantB from "./ComponentsCGVRoot/CGVComponentB/CGVComponentB";
 import CGVComposantC from "./ComponentsCGVRoot/CGVComponentC/CGVComponentC";
 
-function CGVRoot() {
+function CGV_Root() {
     return (
-        <section className={`CGVRoot ${style.ContainerRootRacine}`}>
+        <section className={`CGV_Root ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
                     Conditions Générales de vente
@@ -24,4 +24,4 @@ function CGVRoot() {
     );
 }
 
-export default CGVRoot;
+export default CGV_Root;
