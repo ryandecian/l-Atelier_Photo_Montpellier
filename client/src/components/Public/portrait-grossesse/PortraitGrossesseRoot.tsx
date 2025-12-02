@@ -175,12 +175,12 @@ function PortraitGrossesseRoot() {
             </ul>
 
             <Container3Images_Element
-                img1={imagesPortraitGrossesse_Data[0].src}
-                metaNameImg1={imagesPortraitGrossesse_Data[0].alt}
-                img2={imagesPortraitGrossesse_Data[1].src}
-                metaNameImg2={imagesPortraitGrossesse_Data[1].alt}
-                img3={imagesPortraitGrossesse_Data[2].src}
-                metaNameImg3={imagesPortraitGrossesse_Data[2].alt}
+                img1={imagesPortraitGrossesse_Data[12].src}
+                metaNameImg1={imagesPortraitGrossesse_Data[12].alt}
+                img2={imagesPortraitGrossesse_Data[13].src}
+                metaNameImg2={imagesPortraitGrossesse_Data[13].alt}
+                img3={imagesPortraitGrossesse_Data[14].src}
+                metaNameImg3={imagesPortraitGrossesse_Data[14].alt}
             />
 
             <h2 className={style.TitleH2}>
