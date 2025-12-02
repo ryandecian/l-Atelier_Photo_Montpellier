@@ -71,6 +71,25 @@ const imagesPortraitGrossesse_Data: ImagesBlog_Type[] = [
         src: "/images/image-portrait-grossesse/lapm-photographie-professionnelle-portrait-grossesse-bain-de-lait-l-atelier-photo-montpellier.jpg",
         alt: "LAPM - photographie professionnelle - portrait grossesse - bain de lait - L'Atelier Photo Montpellier",
     },
+
+
+
+    /* Tableau 4 : */
+    /* {imagesPortraitGrossesse_Data[12].src} */
+    {
+        src: "/images/image-portrait-grossesse/lapm-photo-professionnel-portrait-domicile-nouveau-bebe-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe professionnel - portrait nouveau né - domicile - L'Atelier Photo Montpellier",
+    },
+    /* {imagesPortraitGrossesse_Data[13].src} */
+    {
+        src: "/images/image-portrait-grossesse/lapm-photo-naissance-nouveau-ne-bebe-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo naissance - nouveau né bébé - L'Atelier Photo Montpellier",
+    },
+    /* {imagesPortraitGrossesse_Data[14].src} */
+    {
+        src: "/images/image-portrait-grossesse/lapm-photo-naissance-bebe-nouveau-ne-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photo naissance - bébé nouveau né - L'Atelier Photo Montpellier",
+    },
 ];
 
 export { imagesPortraitGrossesse_Data };

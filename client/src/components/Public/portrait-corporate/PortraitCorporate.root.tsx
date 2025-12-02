@@ -5,6 +5,7 @@ import css from "./PortraitCorporateRoot.module.css";
 /* Import des composants d'Elements */
 import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
 import { Container4ImagesPortrait_Element } from "../../elements/container-image/container-4_Images-portrait/Container4ImagesPortrait.element";
+import { Container4ImagesPaysage_Element } from "../../elements/container-image/container-4-Images-paysage/Container4ImagesPaysage.element";
 import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 import { TarifCard_Element} from "../../elements/tarifs-card/TarifsCard.element";
 
@@ -150,6 +151,17 @@ function PortraitCorporate_Root() {
                 qui met en avant votre personnalité. L’idéal pour un rendu intemporel, élégant et homogène, parfait pour une équipe entière ou
                 une mise en valeur individuelle.
             </p>
+            
+            <Container4ImagesPaysage_Element
+                img1={imagesPortraitCorporate_Data[12].src}
+                metaNameImg1={imagesPortraitCorporate_Data[12].alt}
+                img2={imagesPortraitCorporate_Data[13].src}
+                metaNameImg2={imagesPortraitCorporate_Data[13].alt}
+                img3={imagesPortraitCorporate_Data[14].src}
+                metaNameImg3={imagesPortraitCorporate_Data[14].alt}
+                img4={imagesPortraitCorporate_Data[15].src}
+                metaNameImg4={imagesPortraitCorporate_Data[15].alt}
+            />
 
             <h3 className={css.TitleH3}>Organisation optimisée :</h3>
             <p className={style.TextP4}>
