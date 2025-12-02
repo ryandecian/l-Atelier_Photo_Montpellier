@@ -5,6 +5,7 @@ import ListDataRouter from "../../../router/router";
 
 import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
 import { Container4ImagesPortrait_Element } from "../../elements/container-image/container-4_Images-portrait/Container4ImagesPortrait.element";
+import { Container3Images_Element } from "../../elements/container-image/container-3-images/Container3Images.element";
 import { imagesPortraitGrossesse_Data } from "./imagesPortraitGrossesse.data";
 
 import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
@@ -61,6 +62,14 @@ function PortraitGrossesseRoot() {
                 metaNameImg3={imagesPortraitGrossesse_Data[2].alt}
                 img4={imagesPortraitGrossesse_Data[3].src}
                 metaNameImg4={imagesPortraitGrossesse_Data[3].alt}
+            />
+            <Container3Images_Element
+                img1={imagesPortraitGrossesse_Data[0].src}
+                metaNameImg1={imagesPortraitGrossesse_Data[0].alt}
+                img2={imagesPortraitGrossesse_Data[1].src}
+                metaNameImg2={imagesPortraitGrossesse_Data[1].alt}
+                img3={imagesPortraitGrossesse_Data[2].src}
+                metaNameImg3={imagesPortraitGrossesse_Data[2].alt}
             />
 
             <h3 className={style.TitleNH3}>

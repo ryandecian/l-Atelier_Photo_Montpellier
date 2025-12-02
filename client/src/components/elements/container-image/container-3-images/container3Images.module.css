@@ -2,12 +2,12 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.625rem; /* 10px */
-    width: calc(100vw - 2.5rem); /* 100% - 40px */
+    width: calc(100% - 2.5rem); /* 100% - 40px */
     max-width: 87.5rem; /* 1400px */
     margin: auto;
 }
 @media (min-width: 50rem) { /* 800px */
-    .ContainerImgLifeStyleRoot {
+    .Container3ImagesRoot {
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -15,6 +15,7 @@
 .ContainerImg {
     overflow: hidden;
     width: 100%;
+    aspect-ratio: 1 / 1; /* Permet de garder le ratio 1:1 */
 }
 
 .Image {
