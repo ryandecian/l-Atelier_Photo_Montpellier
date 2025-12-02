@@ -1,5 +1,5 @@
 /* Import des modules CSS */
-import css from "../../CGVRoot.module.css";
+import css from "../cgv.module.css";
 
 function CGV_C_Component() {
     return (

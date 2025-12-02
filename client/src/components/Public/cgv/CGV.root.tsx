@@ -1,7 +1,7 @@
 import style from "../../StyleRootComponent.module.css";
-import CGVComposantA from "./components/CGV_A.component";
-import CGVComposantB from "./components/CGV_B.component";
-import CGVComposantC from "./components/CGV_C.component";
+import { CGV_A_Component } from "./components/CGV_A.component";
+import { CGV_B_Component } from "./components/CGV_B.component";
+import { CGV_C_Component } from "./components/CGV_C.component";
 
 function CGV_Root() {
     return (
@@ -13,13 +13,13 @@ function CGV_Root() {
             </header>
 
             {/* Container A : Dispositions communes aux particuliers et entreprises */}
-            <CGVComposantA />
+            <CGV_A_Component />
 
             {/* Container B : Dispositions spécifiques aux particuliers */}
-            <CGVComposantB />
+            <CGV_B_Component />
 
             {/* Container C : Dispositions spécifiques aux entreprises */}
-            <CGVComposantC />
+            <CGV_C_Component />
         </section>
     );
 }
