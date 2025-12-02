@@ -64,4 +64,4 @@ const imagesBlog_20250601_img_data: ImagesBlog_Type[] = [
     },
 ];
 
-export default imagesBlog_20250601_img_data;
+export { imagesBlog_20250601_img_data };
