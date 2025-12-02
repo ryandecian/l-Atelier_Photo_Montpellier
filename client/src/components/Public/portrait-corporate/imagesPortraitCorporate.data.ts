@@ -70,6 +70,30 @@ const imagesPortraitCorporate_Data: ImagesBlog_Type[] = [
         src: "/images/image-portrait-corporate/lapm-photo-professionnel-portrait-corporate-negociatrice-immo-l-atelier-photo-montpellier.jpg",
         alt: "LAPM - photo professionnel - portrait corporate - négociatrice immobilière - L'Atelier Photo Montpellier",
     },
+
+
+
+    /* Tableau 4 : */
+    /* {imagesPortraitCorporate_Data[12].src} */
+    {
+        src: "/images/image-portrait-corporate/lapm-video-entreprise-temoignage-candidats-atelier-photo-montpellier.jpg",
+        alt: "LAPM - vidéo entreprise - témoignage candidats - L'Atelier Photo Montpellier",
+    },
+    /* {imagesPortraitCorporate_Data[13].src} */
+    {
+        src: "/images/image-portrait-corporate/lapm-video-entreprise-culture-dirigeant-temoignage-atelier-photo-montpellier.jpg",
+        alt: "LAPM - vidéo entreprise - culture dirigeant - témoignage - L'Atelier Photo Montpellier",
+    },
+    /* {imagesPortraitCorporate_Data[14].src} */
+    {
+        src: "/images/image-portrait-corporate/lapm-video-entreprise-culture-candidats-recherche-atelier-photo-montpellier.jpg",
+        alt: "LAPM - vidéo entreprise - culture candidats - recherche - L'Atelier Photo Montpellier",
+    },
+    /* {imagesPortraitCorporate_Data[15].src} */
+    {
+        src: "/images/image-portrait-corporate/lapm-video-entreprise-culture-valeur-transmission-atelier-photo-montpellier.jpg",
+        alt: "LAPM - vidéo entreprise - culture valeur transmission - L'Atelier Photo Montpellier",
+    },
 ];
 
 export { imagesPortraitCorporate_Data };

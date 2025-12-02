@@ -5,6 +5,7 @@ import css from "./PortraitCorporateRoot.module.css";
 /* Import des composants d'Elements */
 import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
 import { Container4ImagesPortrait_Element } from "../../elements/container-image/container-4_Images-portrait/Container4ImagesPortrait.element";
+import { Container4ImagesPaysage_Element } from "../../elements/container-image/container-4-Images-paysage/Container4ImagesPaysage.element";
 import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 import { TarifCard_Element} from "../../elements/tarifs-card/TarifsCard.element";
 
@@ -184,6 +185,17 @@ function PortraitCorporate_Root() {
                     <a href={externalLinks.emailAnne}>{" Discutons de votre projet ! "}</a>
                 </span>
             </p>
+
+            <Container4ImagesPaysage_Element
+                img1={imagesPortraitCorporate_Data[8].src}
+                metaNameImg1={imagesPortraitCorporate_Data[8].alt}
+                img2={imagesPortraitCorporate_Data[9].src}
+                metaNameImg2={imagesPortraitCorporate_Data[9].alt}
+                img3={imagesPortraitCorporate_Data[10].src}
+                metaNameImg3={imagesPortraitCorporate_Data[10].alt}
+                img4={imagesPortraitCorporate_Data[11].src}
+                metaNameImg4={imagesPortraitCorporate_Data[11].alt}
+            />
 
             {/* Container D : Carte des tarifs */}
             <TarifCard_Element
