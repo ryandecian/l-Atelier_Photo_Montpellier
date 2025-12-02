@@ -24,7 +24,7 @@ import { pauseOtherVideos_Utils } from "../../../utils/pauseOtherVideos.utils";
 
 function Home_Root() {
     return (
-        <section className={`HomeRoot ${style.ContainerRootRacine}`}>
+        <section className={`Home_Root ${style.ContainerRootRacine}`}>
             {/* Container A : Accueil avec H1 */}
             <HomeRootComponentA />
 
