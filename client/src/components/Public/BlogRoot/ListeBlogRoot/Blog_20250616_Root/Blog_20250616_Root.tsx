@@ -3,7 +3,7 @@ import ListDataRouter from "../../../../../router/router";
 import { Link } from "react-router-dom";
 
 import { Container4ImagesPortrait_Element } from "../../../../elements/container-image/container-4_Images-portrait/Container4ImagesPortrait.element";
-import ImagesBlog_20250616_RootControllerData from "./ImagesBlog_20250616_RootControllerData";
+import ImagesBlog_20250616_RootControllerData from "./imagesBlog_20250616.img.data";
 
 function Blog_20250616_Root() {    
     return (

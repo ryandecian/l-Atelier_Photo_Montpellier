@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { PremiumCardImgModal_Element } from "../../../../elements/premium-card-img-modal/PremiumCardImgModal.element";
 
 import { Container4Images_Element } from "../../../../elements/container-image/container-4-Images/Container4Images.element";
-import ImagesBlog_20250601_RootControllerData from "./ImagesBlog_20250601_RootControllerData";
+import ImagesBlog_20250601_RootControllerData from "./imagesBlog_20250601.img.data";
 
 function Blog_20250601_Root() {
     return (
