@@ -1,6 +1,6 @@
 /* Import des modules CSS */
 import style from "../../StyleRootComponent.module.css";
-import css from "./BlogRoot.module.css";
+import css from "./blog.module.css";
 
 /* Import des Components */
 import { dataCardBlog_img_data } from "./dataCardBlog.img.data";

@@ -2,7 +2,7 @@
 import style from "../../stylePage.module.css";
 
 /* Import des Components */
-import Blog_Root from "../../../components/Public/BlogRoot/Blog.root";
+import Blog_Root from "../../../components/Public/blog-root/Blog.root";
 import NavRoot from "../../../components/layout/NavRoot/NavRoot";
 import Footer_layout from "../../../components/layout/footer/Footer.layout";
 
