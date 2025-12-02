@@ -12,7 +12,7 @@ import ListDataRouter from "../../../router/router";
 /* Import des Types */
 import DataUserType from "../../../types/dataUser.type";
 
-function LoginRoot() {
+function Login_Root() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
@@ -100,4 +100,4 @@ function LoginRoot() {
     );
 }
 
-export default LoginRoot;
+export default Login_Root;
