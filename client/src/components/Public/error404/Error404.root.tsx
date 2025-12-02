@@ -1,11 +1,18 @@
-import { Link } from "react-router-dom";
-import css from "./Error404Root.module.css";
+/* Import des modules CSS */
+import css from "./error404.module.css";
+
+/* Import des Components de Data */
 import Image404 from "../../../assets/Images/Error404Image/Error404Image.png";
+
+/* Import des composants React */
+import { Link } from "react-router-dom";
+
+/* Import des composants Router */
 import ListDataRouter from "../../../router/router";
 
-const Error404Root = () => {
+function Error404_Root() {
     return (
-        <section className={css.Error404Root}>
+        <section className={`Error404_Root ${css.Error404Root}`}>
             <header className={css.ContainerTitle}>
                 <h1 className={css.Title}>OUPSS!! Il n'y a rien à voir ici !</h1>
             </header>
@@ -30,4 +37,4 @@ const Error404Root = () => {
     );
 };
 
-export default Error404Root;
+export default Error404_Root;
