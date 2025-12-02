@@ -1,5 +1,5 @@
 /* Import des modules CSS */
-import css from "./Blog_20250601_Root.module.css";
+import css from "./blog_20250601.module.css";
 import style from "../../../../StyleRootComponent.module.css";
 
 /* Import des Components de Data */
