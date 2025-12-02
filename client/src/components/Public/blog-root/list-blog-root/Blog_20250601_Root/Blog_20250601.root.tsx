@@ -1,11 +1,19 @@
-import style from "../../../../StyleRootComponent.module.css";
+/* Import des modules CSS */
 import css from "./Blog_20250601_Root.module.css";
-import ListDataRouter from "../../../../../router/router";
-import { Link } from "react-router-dom";
+import style from "../../../../StyleRootComponent.module.css";
+
+/* Import des Components de Data */
+import ImagesBlog_20250601_RootControllerData from "./imagesBlog_20250601.img.data";
+
+/* Import des composants d'Elements */
+import { Container4Images_Element } from "../../../../elements/container-image/container-4-Images/Container4Images.element";
 import { PremiumCardImgModal_Element } from "../../../../elements/premium-card-img-modal/PremiumCardImgModal.element";
 
-import { Container4Images_Element } from "../../../../elements/container-image/container-4-Images/Container4Images.element";
-import ImagesBlog_20250601_RootControllerData from "./imagesBlog_20250601.img.data";
+/* Import des composants React */
+import { Link } from "react-router-dom";
+
+/* Import des composants Router */
+import ListDataRouter from "../../../../../router/router";
 
 function Blog_20250601_Root() {
     return (
