@@ -1,4 +1,7 @@
+/* Import des modules CSS */
 import style from "../../StyleRootComponent.module.css";
+
+/* Import des Components */
 import { CGV_A_Component } from "./components/CGV_A.component";
 import { CGV_B_Component } from "./components/CGV_B.component";
 import { CGV_C_Component } from "./components/CGV_C.component";
