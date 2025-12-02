@@ -2,7 +2,7 @@
 import style from "../../stylePage.module.css";
 
 /* Import des Components */
-import Error404Root from "../../../components/Public/Error404Root/Error404Root";
+import Error404Root from "../../../components/Public/error404/Error404.root";
 import NavRoot from "../../../components/layout/NavRoot/NavRoot";
 import Footer_layout from "../../../components/layout/footer/Footer.layout";
 
