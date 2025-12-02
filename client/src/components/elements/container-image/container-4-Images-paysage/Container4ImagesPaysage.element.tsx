@@ -1,5 +1,5 @@
 /* Import des modules CSS */
-import css from "./container4Imagesportrait.module.css";
+import css from "./container4ImagesPaysage.module.css";
 
 /* Import des composants d'Elements */
 import { PremiumCardImgModal_Element } from "../../premium-card-img-modal/PremiumCardImgModal.element";
