@@ -1,8 +1,9 @@
-import css from "../../CGVRoot.module.css";
+/* Import des modules CSS */
+import css from "../cgv.module.css";
 
-function CGVComponentC() {
+function CGV_C_Component() {
     return (
-        <section className={`CGVRootComponentC ${css.ContainerRoot}`}>
+        <section className={`CGV_C_Component ${css.ContainerRoot}`}>
             <div className={css.Separator30}/>
             <h2 className={css.TitleH2}>
                 Partie 3 - Dispositions spécifiques aux entreprises
@@ -248,4 +249,4 @@ function CGVComponentC() {
     );
 }
 
-export default CGVComponentC;
+export { CGV_C_Component };
