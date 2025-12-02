@@ -1,9 +1,17 @@
+/* Import des modules CSS */
 import style from "../../../../StyleRootComponent.module.css";
-import ListDataRouter from "../../../../../router/router";
+
+/* Import des Components de Data */
+import { imagesBlog_20250616_img_data } from "./imagesBlog_20250616.img.data";
+
+/* Import des composants d'Elements */
+import { Container4ImagesPortrait_Element } from "../../../../elements/container-image/container-4_Images-portrait/Container4ImagesPortrait.element";
+
+/* Import des composants React */
 import { Link } from "react-router-dom";
 
-import { Container4ImagesPortrait_Element } from "../../../../elements/container-image/container-4_Images-portrait/Container4ImagesPortrait.element";
-import { imagesBlog_20250616_img_data } from "./imagesBlog_20250616.img.data";
+/* Import des composants Router */
+import ListDataRouter from "../../../../../router/router";
 
 function Blog_20250616_Root() {    
     return (
