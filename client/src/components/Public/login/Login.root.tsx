@@ -62,7 +62,7 @@ function Login_Root() {
     }
 
     return (
-        <section className={css.LoginRoot}>
+        <section className={`Login_Root ${css.LoginRoot}`}>
             <h1>Connexion 🔐</h1>
             <form onSubmit={formulaireLogin} className={css.form}>
                 <label htmlFor="email">Email</label>
