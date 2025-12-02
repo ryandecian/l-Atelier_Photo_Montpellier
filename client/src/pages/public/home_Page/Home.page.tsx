@@ -2,7 +2,7 @@
 import style from "../../stylePage.module.css";
 
 /* Import des Components */
-import HomeRoot from "../../../components/Public/home/HomeRoot";
+import HomeRoot from "../../../components/Public/home/Home.root";
 import NavTargetHomeRoot from "../../../components/layout/NavTargetHomeRoot/NavTargetHomeRoot";
 import Footer_layout from "../../../components/layout/footer/Footer.layout";
 
