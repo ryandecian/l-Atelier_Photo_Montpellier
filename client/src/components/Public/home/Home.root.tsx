@@ -2,7 +2,7 @@
 import style from "../../StyleRootComponent.module.css";
 
 /* Import des Components */
-import HomeRootComponentA from "./ComponentsHomeRoot/HomeRootComponentA/HomeRootComponentA";
+import { Home_A_Component } from "./components/Home_A.component";
 
 /* Import des Components de Data */
 import { avisClientHome_Data } from "./avisClientHome.data";
@@ -26,7 +26,7 @@ function Home_Root() {
     return (
         <section className={`Home_Root ${style.ContainerRootRacine}`}>
             {/* Container A : Accueil avec H1 */}
-            <HomeRootComponentA />
+            <Home_A_Component />
 
             {/* ---------- ---------- ---------- ---------- ---------- */}
 
