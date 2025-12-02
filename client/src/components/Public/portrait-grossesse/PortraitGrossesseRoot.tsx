@@ -63,14 +63,6 @@ function PortraitGrossesseRoot() {
                 img4={imagesPortraitGrossesse_Data[3].src}
                 metaNameImg4={imagesPortraitGrossesse_Data[3].alt}
             />
-            <Container3Images_Element
-                img1={imagesPortraitGrossesse_Data[0].src}
-                metaNameImg1={imagesPortraitGrossesse_Data[0].alt}
-                img2={imagesPortraitGrossesse_Data[1].src}
-                metaNameImg2={imagesPortraitGrossesse_Data[1].alt}
-                img3={imagesPortraitGrossesse_Data[2].src}
-                metaNameImg3={imagesPortraitGrossesse_Data[2].alt}
-            />
 
             <h3 className={style.TitleNH3}>
                 {"Pourquoi choisir l’Atelier Photo Montpellier ?"}
@@ -182,9 +174,18 @@ function PortraitGrossesseRoot() {
                 </li>
             </ul>
 
-                <h2 className={style.TitleH2}>
-                    {"Un service clé en main : douceur, organisation et qualité"}
-                </h2>
+            <Container3Images_Element
+                img1={imagesPortraitGrossesse_Data[0].src}
+                metaNameImg1={imagesPortraitGrossesse_Data[0].alt}
+                img2={imagesPortraitGrossesse_Data[1].src}
+                metaNameImg2={imagesPortraitGrossesse_Data[1].alt}
+                img3={imagesPortraitGrossesse_Data[2].src}
+                metaNameImg3={imagesPortraitGrossesse_Data[2].alt}
+            />
+
+            <h2 className={style.TitleH2}>
+                {"Un service clé en main : douceur, organisation et qualité"}
+            </h2>
 
             <h3 className={style.TitleNH4}>
                 {"Séance pensée pour vous mettre à l’aise"}
