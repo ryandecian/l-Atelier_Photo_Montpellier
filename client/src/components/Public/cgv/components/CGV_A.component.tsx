@@ -1,8 +1,9 @@
-import css from "../../CGVRoot.module.css";
+/* Import des modules CSS */
+import css from "../cgv.module.css";
 
-function CGVComponentA() {
+function CGV_A_Component() {
     return (
-        <section className={`CGVRootComponentA ${css.ContainerRoot}`}>
+        <section className={`CGV_A_Component ${css.ContainerRoot}`}>
                 <h2 className={css.TitleH2}>
                     Partie 1 - Dispositions communes aux particuliers et entreprises
                 </h2>
@@ -153,4 +154,4 @@ function CGVComponentA() {
     );
 }
 
-export default CGVComponentA;
+export { CGV_A_Component };
