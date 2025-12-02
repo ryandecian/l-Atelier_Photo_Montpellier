@@ -1,11 +1,18 @@
+/* Import des modules CSS */
+import css from "./login.module.css";
+
+/* Import des composants React */
+import { jwtDecode } from "jwt-decode";
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import { jwtDecode } from "jwt-decode";
-import css from "./LoginRoot.module.css";
-import DataUserType from "../../../types/dataUser.type";
+
+/* Import des composants Router */
 import ListDataRouter from "../../../router/router";
 
-function LoginRoot() {
+/* Import des Types */
+import DataUserType from "../../../types/dataUser.type";
+
+function Login_Root() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
@@ -55,7 +62,7 @@ function LoginRoot() {
     }
 
     return (
-        <section className={css.LoginRoot}>
+        <section className={`Login_Root ${css.LoginRoot}`}>
             <h1>Connexion 🔐</h1>
             <form onSubmit={formulaireLogin} className={css.form}>
                 <label htmlFor="email">Email</label>
@@ -93,4 +100,4 @@ function LoginRoot() {
     );
 }
 
-export default LoginRoot;
+export default Login_Root;

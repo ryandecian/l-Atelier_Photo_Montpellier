@@ -1,11 +1,14 @@
-import css from "./HomeRootComponentA.module.css";
-import useMediaQueriesHeight_rem from "../../../../../hook/useMediaQueriesHeight_rem.utils.hook";
+/* Import des modules CSS */
+import css from "./home_A.module.css";
 
-function HomeRootComponentA() {
+/* Import des Hooks */
+import useMediaQueriesHeight_rem from "../../../../hook/useMediaQueriesHeight_rem.utils.hook";
+
+function Home_A_Component() {
     const viewportHeight: number = useMediaQueriesHeight_rem();
 
     return (
-        <section className={`HomeRootComponentA ${css.ContainerAccueil}`}>
+        <section className={`Home_A_Component ${css.ContainerAccueil}`}>
             <div className={css.ContainerSubAccueil}>
 
                 {/* MediaQuery maison 450px */}
@@ -59,4 +62,4 @@ function HomeRootComponentA() {
     );
 }
 
-export default HomeRootComponentA;
+export { Home_A_Component };
