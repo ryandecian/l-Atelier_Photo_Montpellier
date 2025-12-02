@@ -151,6 +151,17 @@ function PortraitCorporate_Root() {
                 qui met en avant votre personnalité. L’idéal pour un rendu intemporel, élégant et homogène, parfait pour une équipe entière ou
                 une mise en valeur individuelle.
             </p>
+            
+            <Container4ImagesPaysage_Element
+                img1={imagesPortraitCorporate_Data[12].src}
+                metaNameImg1={imagesPortraitCorporate_Data[12].alt}
+                img2={imagesPortraitCorporate_Data[13].src}
+                metaNameImg2={imagesPortraitCorporate_Data[13].alt}
+                img3={imagesPortraitCorporate_Data[14].src}
+                metaNameImg3={imagesPortraitCorporate_Data[14].alt}
+                img4={imagesPortraitCorporate_Data[15].src}
+                metaNameImg4={imagesPortraitCorporate_Data[15].alt}
+            />
 
             <h3 className={css.TitleH3}>Organisation optimisée :</h3>
             <p className={style.TextP4}>
@@ -185,17 +196,6 @@ function PortraitCorporate_Root() {
                     <a href={externalLinks.emailAnne}>{" Discutons de votre projet ! "}</a>
                 </span>
             </p>
-
-            <Container4ImagesPaysage_Element
-                img1={imagesPortraitCorporate_Data[8].src}
-                metaNameImg1={imagesPortraitCorporate_Data[8].alt}
-                img2={imagesPortraitCorporate_Data[9].src}
-                metaNameImg2={imagesPortraitCorporate_Data[9].alt}
-                img3={imagesPortraitCorporate_Data[10].src}
-                metaNameImg3={imagesPortraitCorporate_Data[10].alt}
-                img4={imagesPortraitCorporate_Data[11].src}
-                metaNameImg4={imagesPortraitCorporate_Data[11].alt}
-            />
 
             {/* Container D : Carte des tarifs */}
             <TarifCard_Element
