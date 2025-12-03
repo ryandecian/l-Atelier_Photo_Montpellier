@@ -27,7 +27,7 @@ function Contact_Root() {
                 </a>
                 <a href={externalLinks.phoneAnne} className={css.ContactItem}>
                     <Phone className={style.IconLucide} />
-                    <span>+33 6 52 67 73 33</span>
+                    <span>+33 6 48 55 99 22</span>
                 </a>
             </div>
         </section>
