@@ -37,7 +37,7 @@ function MentionsLegalesComponentA() {
                 {" "} ou {" "}
                 <span className={style.SpanLink}>
                     <a href={externalLinks.phoneAnne} target="_blank" rel="noopener noreferrer">
-                        {"06 52 67 73 33"}
+                        {"06 48 55 99 22"}
                     </a>
                 </span>
                 {" "} – Adresse : 13 Allée des Platanes 34790 Grabels.
@@ -60,7 +60,7 @@ function MentionsLegalesComponentA() {
                  {" "} ANNE SAUNIER – Contact : {" "}
                  <span className={style.SpanLink}>
                     <a href={externalLinks.phoneAnne} target="_blank" rel="noopener noreferrer">
-                        {"06 52 67 73 33."}
+                        {"06 48 55 99 22."}
                     </a>
                 </span>
             </p>

@@ -19,7 +19,7 @@ const externalLinks: LinkExtType = {
     facebook: "https://www.facebook.com/profile.php?id=61577509208546",
     youtube: "https://youtube.com/@l-atelier-photo-montpellier?si=yZgwa2oZn4LzZQlD",
     emailAnne: "mailto:photo34000@gmail.com",
-    phoneAnne: "tel:+33652677333",
+    phoneAnne: "tel:+33648559922",
     loi1: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000801164#LEGIARTI000042038977",
     loi2: "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032655082",
     loi3: "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000886460",
