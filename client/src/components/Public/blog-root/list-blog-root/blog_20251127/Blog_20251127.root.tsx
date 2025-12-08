@@ -1,6 +1,9 @@
 /* Import des modules CSS */
 import style from "../../../../StyleRootComponent.module.css";
 
+/* Import des composants d'Elements */
+import { PremiumCardImgModal_Element } from "../../../../elements/premium-card-img-modal/PremiumCardImgModal.element";
+
 /* Import des composants React */
 import { Link } from "react-router-dom";
 
