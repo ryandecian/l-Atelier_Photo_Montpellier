@@ -1,6 +1,9 @@
 /* Import des modules CSS */
 import style from "../../../../StyleRootComponent.module.css";
 
+/* Import des Components de Data */
+import { imagesBlog_20251127_img_data } from "./imageBlog_20251127.img.data";
+
 /* Import des composants d'Elements */
 import { PremiumCardImgModal_Element } from "../../../../elements/premium-card-img-modal/PremiumCardImgModal.element";
 
