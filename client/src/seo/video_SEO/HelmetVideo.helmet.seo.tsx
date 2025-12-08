@@ -13,7 +13,7 @@ import { JSON_LD_VideoObject_CrocodilesJaunes_schema_SEO } from "./JSON-LD_Video
 import { JSON_LD_VideoObject_TrekDesertMaroc_schema_SEO } from "./JSON-LD_VideoObject_TrekDesertMaroc.schema.seo";
 import { JSON_LD_VideoObject_DorisAfriqueMoto_schema_SEO } from "./JSON-LD_VideoObject_DorisAfriqueMoto.schema.seo";
 import { JSON_LD_VideoObject_MariageLaureCharles_schema_SEO } from "./JSON-LD_VideoObject_MariageLaureCharles.schema.seo";
-// import { JSON_LD_VideoObject_NaissanceInstantCommence_schema_SEO } from "./JSON-LD_VideoObject_NaissanceInstantCommence.schema.seo";
+import { JSON_LD_VideoObject_NaissanceInstantCommence_schema_SEO } from "./JSON-LD_VideoObject_NaissanceInstantCommence.schema.seo";
 
 /* Import des Types */
 import { DataSEOHelmet_Type } from "../../types/seo/dataSEOHelmet.type";
@@ -62,9 +62,9 @@ function HelmetVideo_helmet_SEO() {
             <script type="application/ld+json">
                 {JSON_LD_VideoObject_MariageLaureCharles_schema_SEO()}
             </script>
-            {/* <script type="application/ld+json">
+            <script type="application/ld+json">
                 {JSON_LD_VideoObject_NaissanceInstantCommence_schema_SEO()}
-            </script> */}
+            </script>
 
             {/* Langue principale du document */}
             <html lang="fr" />
