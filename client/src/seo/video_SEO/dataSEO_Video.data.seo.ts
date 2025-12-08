@@ -11,7 +11,7 @@ function dataSEO_Video_data_SEO(): DataSEOTargetOne_Type {
         author: "Anne SAUNIER",
         description:
             "Création de vidéos professionnelles pour entreprises, mariages, naissances et portraits personnels. Vidéaste à Montpellier : vidéos corporate, films de mariage, portraits vidéo et reportages authentiques.",
-        url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[20].path}`, /* URL de la page Vidéo */
+        url: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[36].path}`, /* URL de la page Vidéo */
         position: 2, /* Position dans le fil d'Ariane */
         name_Breadcrumb: "Vidéos", /* Libellé du breadcrumb */
         name_Service: "Création de vidéos professionnelles – l'Atelier Photo Montpellier", /* Nom du service principal pour le JSON-LD */
@@ -48,7 +48,7 @@ function dataSEO_Video_data_SEO(): DataSEOTargetOne_Type {
         img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/video/helmet/lapm-video-professionnelle-montpellier-atelier-photo-montpellier.jpg`,
 
         /* @id pour JSON-LD Service */
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[20].path}/#service-video`,
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[36].path}/#service-video`,
 
         /* Description du service pour le JSON-LD Service */
         serviceType:
