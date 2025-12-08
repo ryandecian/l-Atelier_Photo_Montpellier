@@ -1,6 +1,12 @@
 /* Import des modules CSS */
 import style from "../../../../StyleRootComponent.module.css";
 
+/* Import des Components de Data */
+import { imagesBlog_20251127_img_data } from "./imageBlog_20251127.img.data";
+
+/* Import des composants d'Elements */
+import { PremiumCardImgModal_Element } from "../../../../elements/premium-card-img-modal/PremiumCardImgModal.element";
+
 /* Import des composants React */
 import { Link } from "react-router-dom";
 
@@ -32,28 +38,36 @@ function Blog_20251127_Root() {
                 et au <strong>risque accru de turnover.</strong>
             </p>
 
-            <p className={style.TextP4}>
-                Or, les méthodes traditionnelles de communication RH, souvent basées sur le texte, peinent à refléter 
-                l'âme et le quotidien de votre entreprise, engendrant un trafic important mais <strong>souvent peu qualifié.</strong>
-            </p>
+            <div className={style.ContainerFloat}>
+                <PremiumCardImgModal_Element
+                    src={imagesBlog_20251127_img_data[0].src}
+                    alt={imagesBlog_20251127_img_data[0].alt}
+                    className={style.FloatLeftImg_Po}
+                />
 
-            <p className={style.TextP4}>
-                C'est là que la <strong>vidéo Marque Employeur</strong> s'impose comme un levier de différenciation et 
-                d'efficacité redoutable. L'écart entre l'attente des talents et l'offre des entreprises est criant :
-            </p>
+                <p className={style.TextP4}>
+                    Or, les méthodes traditionnelles de communication RH, souvent basées sur le texte, peinent à refléter 
+                    l'âme et le quotidien de votre entreprise, engendrant un trafic important mais <strong>souvent peu qualifié.</strong>
+                </p>
 
-            <p className={style.TextP4}>
-                <strong>Alors que 92 % des talents sont sensibles aux vidéos intégrées dans une annonce d'emploi, 
-                seules 4 % des entreprises exploitent actuellement ce format visuel.</strong>
-            </p>
+                <p className={style.TextP4}>
+                    C'est là que la <strong>vidéo Marque Employeur</strong> s'impose comme un levier de différenciation et 
+                    d'efficacité redoutable. L'écart entre l'attente des talents et l'offre des entreprises est criant :
+                </p>
 
-            <p className={style.TextP4}>
-                Ce déficit de communication représente une opportunité exceptionnelle pour votre entreprise de se démarquer. 
-                En fournissant une immersion authentique dans votre culture d'entreprise, la vidéo filtre naturellement 
-                les candidats, augmentant ainsi l'adéquation culturelle et, in fine, réduisant vos coûts de recrutement 
-                directs et indirects (jusqu'à 50 %). Il est temps d’arrêter de chasser les CV pour donner aux talents 
-                l'envie de vous choisir.
-            </p>
+                <p className={style.TextP4}>
+                    <strong>Alors que 92 % des talents sont sensibles aux vidéos intégrées dans une annonce d'emploi, 
+                    seules 4 % des entreprises exploitent actuellement ce format visuel.</strong>
+                </p>
+
+                <p className={style.TextP4}>
+                    Ce déficit de communication représente une opportunité exceptionnelle pour votre entreprise de se démarquer. 
+                    En fournissant une immersion authentique dans votre culture d'entreprise, la vidéo filtre naturellement 
+                    les candidats, augmentant ainsi l'adéquation culturelle et, in fine, réduisant vos coûts de recrutement 
+                    directs et indirects (jusqu'à 50 %). Il est temps d’arrêter de chasser les CV pour donner aux talents 
+                    l'envie de vous choisir.
+                </p>
+            </div>
 
             <h3 className={style.TitleLNH3}>
                 Pourquoi les Offres d'Emploi Textuelles Coûtent Cher
@@ -102,31 +116,39 @@ function Blog_20251127_Root() {
                 pour pouvoir faire un choix éclairé, ce que le texte seul ne peut pas offrir.
             </p>
 
-            <p className={style.TextP4}>
-                La <strong>vidéo Marque Employeur</strong> excelle précisément parce qu'elle ouvre la voie à une 
-                communication plus humaine, plus sincère et nettement plus impactante. Elle permet de mettre en lumière 
-                l'humain derrière l'organigramme, en valorisant l'engagement des salariés dans leur métier.
-            </p>
+            <div className={style.ContainerFloat}>
+                <PremiumCardImgModal_Element
+                    src={imagesBlog_20251127_img_data[1].src}
+                    alt={imagesBlog_20251127_img_data[1].alt}
+                    className={style.FloatRightImg_Po}
+                />
 
-            <p className={style.TextP4}>
-                Cette approche sincère produit des résultats concrets : des analyses menées par des plateformes 
-                professionnelles comme <strong>LinkedIn</strong> et <strong>Wistia</strong> démontrent que l'intégration 
-                stratégique de la vidéo augmente l'engagement de façon spectaculaire. Par exemple, sur le site web 
-                (la vitrine de l'entreprise), les utilisateurs passent en moyenne <strong>2,6 fois plus de temps</strong> sur 
-                une page contenant une vidéo, selon les Rapports Wistia. Sur les réseaux sociaux professionnels, la vidéo 
-                est le format le plus engageant, pouvant générer jusqu'à <strong>trois fois plus de portée</strong> que 
-                le contenu textuel seul (source : LinkedIn). Cet engagement accru est vital, car il transforme un simple 
-                visiteur en un candidat motivé.
-            </p>
+                <p className={style.TextP4}>
+                    La <strong>vidéo Marque Employeur</strong> excelle précisément parce qu'elle ouvre la voie à une 
+                    communication plus humaine, plus sincère et nettement plus impactante. Elle permet de mettre en lumière 
+                    l'humain derrière l'organigramme, en valorisant l'engagement des salariés dans leur métier.
+                </p>
 
-            <h3 className={style.TitleLNH3}>
-                Filtrer les Candidats : L'Alignement Culturel avant les Compétences
-            </h3>
+                <p className={style.TextP4}>
+                    Cette approche sincère produit des résultats concrets : des analyses menées par des plateformes 
+                    professionnelles comme <strong>LinkedIn</strong> et <strong>Wistia</strong> démontrent que l'intégration 
+                    stratégique de la vidéo augmente l'engagement de façon spectaculaire. Par exemple, sur le site web 
+                    (la vitrine de l'entreprise), les utilisateurs passent en moyenne <strong>2,6 fois plus de temps</strong> sur 
+                    une page contenant une vidéo, selon les Rapports Wistia. Sur les réseaux sociaux professionnels, la vidéo 
+                    est le format le plus engageant, pouvant générer jusqu'à <strong>trois fois plus de portée</strong> que 
+                    le contenu textuel seul (source : LinkedIn). Cet engagement accru est vital, car il transforme un simple 
+                    visiteur en un candidat motivé.
+                </p>
 
-            <p className={style.TextP4}>
-                Dans un marché du travail compétitif, l'enjeu n'est plus seulement d'attirer des CV, mais de trouver 
-                les <strong>bons profils</strong> : ceux qui s'épanouiront durablement dans votre organisation.
-            </p>
+                <h3 className={style.TitleLNH3}>
+                    Filtrer les Candidats : L'Alignement Culturel avant les Compétences
+                </h3>
+
+                <p className={style.TextP4}>
+                    Dans un marché du travail compétitif, l'enjeu n'est plus seulement d'attirer des CV, mais de trouver 
+                    les <strong>bons profils</strong> : ceux qui s'épanouiront durablement dans votre organisation.
+                </p>
+            </div>
 
             <p className={style.TextP4}>
                 La <strong>vidéo Marque Employeur</strong> est l'outil le plus puissant pour opérer ce pré-filtrage 
@@ -160,41 +182,49 @@ function Blog_20251127_Root() {
                 Les 3 Formats Vidéo qui Transforment vos RH et vos Coûts
             </h2>
 
-            <h3 className={style.TitleLNH3}>
-                Format 1 : La Vidéo Témoignage d'Employés (Recruitment Videos)
-            </h3>
+            <div className={style.ContainerFloat}>
+                <PremiumCardImgModal_Element
+                    src={imagesBlog_20251127_img_data[2].src}
+                    alt={imagesBlog_20251127_img_data[2].alt}
+                    className={style.FloatLeftImg_Po}
+                />
 
-            <p className={style.TextP4}>
-                Pour un recrutement réussi, rien n'est plus efficace que la transparence incarnée. Le format du 
-                <strong> Témoignage d'Employés</strong> est le levier le plus puissant. En mettant en avant vos 
-                <strong> salariés</strong>, vous valorisez leur <strong>engagement</strong> et la réalité de leur métier 
-                de façon sincère. Ces vidéos permettent au candidat potentiel de se projeter, renforcent la 
-                <strong> crédibilité</strong> et réduisent les incertitudes qui mènent aux <strong>candidatures non qualifiées</strong>.
-            </p>
+                <h3 className={style.TitleLNH3}>
+                    Format 1 : La Vidéo Témoignage d'Employés (Recruitment Videos)
+                </h3>
 
-            <h3 className={style.TitleLNH3}>
-                Format 2 : Le Film Corporate & Manifeste (Vision Globale)
-            </h3>
+                <p className={style.TextP4}>
+                    Pour un recrutement réussi, rien n'est plus efficace que la transparence incarnée. Le format du 
+                    <strong> Témoignage d'Employés</strong> est le levier le plus puissant. En mettant en avant vos 
+                    <strong> salariés</strong>, vous valorisez leur <strong>engagement</strong> et la réalité de leur métier 
+                    de façon sincère. Ces vidéos permettent au candidat potentiel de se projeter, renforcent la 
+                    <strong> crédibilité</strong> et réduisent les incertitudes qui mènent aux <strong>candidatures non qualifiées</strong>.
+                </p>
 
-            <p className={style.TextP4}>
-                L'époque où le <strong>Film Corporate</strong> se résumait à un défilé de chiffres est révolue. 
-                Aujourd'hui, il doit être un véritable <strong>Manifeste</strong> qui reflète l'âme de l'entreprise. 
-                Ce format est essentiel pour les candidats qui cherchent un <strong>sens à leur travail</strong> et qui 
-                veulent comprendre la <strong>Vision Globale</strong>. Il doit être <strong>créatif</strong> et raconte 
-                l'histoire, les valeurs sociétales et la mission, servant de socle à votre <strong>image de marque employeur</strong>.
-            </p>
+                <h3 className={style.TitleLNH3}>
+                    Format 2 : Le Film Corporate & Manifeste (Vision Globale)
+                </h3>
 
-            <h3 className={style.TitleLNH3}>
-                Format 3 : La Vidéo E-learning et de Formation Interne
-            </h3>
+                <p className={style.TextP4}>
+                    L'époque où le <strong>Film Corporate</strong> se résumait à un défilé de chiffres est révolue. 
+                    Aujourd'hui, il doit être un véritable <strong>Manifeste</strong> qui reflète l'âme de l'entreprise. 
+                    Ce format est essentiel pour les candidats qui cherchent un <strong>sens à leur travail</strong> et qui 
+                    veulent comprendre la <strong>Vision Globale</strong>. Il doit être <strong>créatif</strong> et raconte 
+                    l'histoire, les valeurs sociétales et la mission, servant de socle à votre <strong>image de marque employeur</strong>.
+                </p>
 
-            <p className={style.TextP4}>
-                La <strong>vidéo marque employeur</strong> s'adapte aussi à la formation et à la fidélisation interne. 
-                Les <strong>vidéos tutoriels</strong> ou les modules d'<strong>E-learning</strong> sont cruciaux 
-                pour l'<strong>adaptation au poste de travail</strong> et le maintien de l'employabilité des salariés. 
-                C'est un investissement à long terme qui réduit significativement les <strong>coûts de formation récurrents </strong> 
-                et améliore la <strong>productivité</strong> des équipes.
-            </p>
+                <h3 className={style.TitleLNH3}>
+                    Format 3 : La Vidéo E-learning et de Formation Interne
+                </h3>
+
+                <p className={style.TextP4}>
+                    La <strong>vidéo marque employeur</strong> s'adapte aussi à la formation et à la fidélisation interne. 
+                    Les <strong>vidéos tutoriels</strong> ou les modules d'<strong>E-learning</strong> sont cruciaux 
+                    pour l'<strong>adaptation au poste de travail</strong> et le maintien de l'employabilité des salariés. 
+                    C'est un investissement à long terme qui réduit significativement les <strong>coûts de formation récurrents </strong> 
+                    et améliore la <strong>productivité</strong> des équipes.
+                </p>
+            </div>
 
             <h2 className={style.TitleH2}>
                 Feuille de Route : Passer de l'Intention à la Production (CTA)
@@ -211,36 +241,44 @@ function Blog_20251127_Root() {
                 leur participation à l'aspect humain et authentique que la vidéo cherche à capturer.
             </p>
 
-            <h3 className={style.TitleLNH3}>
-                Les Clés d'une Production Vidéo RH Réussie
-            </h3>
+            <div className={style.ContainerFloat}>
+                <PremiumCardImgModal_Element
+                    src={imagesBlog_20251127_img_data[3].src}
+                    alt={imagesBlog_20251127_img_data[3].alt}
+                    className={style.FloatRightImg_Po}
+                />
 
-            <p className={style.TextP4}>
-                Passer à la production exige un <strong>savoir-faire professionnel</strong> spécifique. Une production 
-                réussie apporte les <strong>compétences spécifiques</strong> (storytelling, mise en lumière des valeurs), 
-                le <strong>matériel de pointe</strong> (ex: 4K, drone) et un <strong>accompagnement personnalisé </strong> 
-                pour transformer des idées complexes en <strong>récits captivants</strong> et mémorables pour vos futurs talents.
-            </p>
+                <h3 className={style.TitleLNH3}>
+                    Les Clés d'une Production Vidéo RH Réussie
+                </h3>
 
-            <h3 className={style.TitleLNH3}>
-                Passez à l'Action : Obtenez une Stratégie Vidéo Sur-Mesure
-            </h3>
+                <p className={style.TextP4}>
+                    Passer à la production exige un <strong>savoir-faire professionnel</strong> spécifique. Une production 
+                    réussie apporte les <strong>compétences spécifiques</strong> (storytelling, mise en lumière des valeurs), 
+                    le <strong>matériel de pointe</strong> (ex: 4K, drone) et un <strong>accompagnement personnalisé </strong> 
+                    pour transformer des idées complexes en <strong>récits captivants</strong> et mémorables pour vos futurs talents.
+                </p>
 
-            <p className={style.TextP4}>
-                Vous l'avez compris : la <strong>vidéo Marque Employeur</strong> est l'investissement le plus efficace 
-                pour l'avenir de votre <strong>recrutement B2B</strong>. C'est le moyen le plus sûr de garantir la 
-                qualité des candidatures, d'atteindre un meilleur <strong>alignement culturel</strong>, et de réaliser 
-                une <strong>réduction des coûts</strong> de recrutement qui peut atteindre jusqu'à 50 %.
-            </p>
+                <h3 className={style.TitleLNH3}>
+                    Passez à l'Action : Obtenez une Stratégie Vidéo Sur-Mesure
+                </h3>
 
-            <p className={style.TextP4}>
-                <strong>Il est temps d’arrêter de subir le turnover et de commencer à choisir vos talents.</strong>
-            </p>
+                <p className={style.TextP4}>
+                    Vous l'avez compris : la <strong>vidéo Marque Employeur</strong> est l'investissement le plus efficace 
+                    pour l'avenir de votre <strong>recrutement B2B</strong>. C'est le moyen le plus sûr de garantir la 
+                    qualité des candidatures, d'atteindre un meilleur <strong>alignement culturel</strong>, et de réaliser 
+                    une <strong>réduction des coûts</strong> de recrutement qui peut atteindre jusqu'à 50 %.
+                </p>
 
-            <p className={style.TextP4}>
-                Pour évaluer votre potentiel d'économies et transformer votre communication RH, contactez dès aujourd'hui 
-                <strong> L'Atelier Photo Montpellier.</strong>
-            </p>
+                <p className={style.TextP4}>
+                    <strong>Il est temps d’arrêter de subir le turnover et de commencer à choisir vos talents.</strong>
+                </p>
+
+                <p className={style.TextP4}>
+                    Pour évaluer votre potentiel d'économies et transformer votre communication RH, contactez dès aujourd'hui 
+                    <strong> L'Atelier Photo Montpellier.</strong>
+                </p>
+            </div>
 
             <p className={style.TextP4}>
                 <span className={style.SpanLink}>
