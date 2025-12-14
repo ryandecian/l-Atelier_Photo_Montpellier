@@ -2,7 +2,7 @@
 import style from "../../stylePage.module.css";
 
 /* Import des Components */
-// import HomeRoot from "../../../components/Public/home/Home.root";
+import Home_Root from "../../../components/public/home/home.root";
 
 function Home_Page() {
      return (
@@ -11,7 +11,7 @@ function Home_Page() {
                  {/* <NavTargetHomeRoot /> */}
             </header>
             <main className={style.Main}>
-                {/* <HomeRoot /> */}
+                <Home_Root />
             </main>
             <footer className={style.Footer}>
                 {/* <Footer_layout /> */}

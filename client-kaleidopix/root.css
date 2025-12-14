@@ -1,0 +1,72 @@
+/* Import des typographies */
+@import "./assets/Fonts/Farsan/stylesheet.css";
+@import "./assets/Fonts/SairaCondensed/stylesheet.css";
+@import "./assets/Fonts/Quicksand/stylesheet.css";
+
+:root {
+    /* ✨ Couleur des textes */
+        /* Couleur des textes général Restructuration */
+            --ColorTextBlack: rgb(0, 0, 0);
+            --ColorTextGrey: rgb(70, 70, 70);
+            --ColorTextWhite: rgb(255, 255, 255);
+            --ColorTextRed: rgb(255, 0, 0);
+            --ColorTextPink: #ff0080;
+
+    /* ✨ Couleur des textes */
+        /* Couleur des backgrounds général */
+            --ColorBackgourndBlack: rgb(0, 0, 0);
+            --ColorBackgroundWhite: rgb(255, 255, 255);
+            --ColorBackgroundRed: rgb(255, 0, 0);
+            --ColorBackgroundYellow: rgb(255, 255, 0);
+            --ColorBackgroundGrey: rgb(240, 240, 240);
+            --ColorBackgroundGray_Option1: rgba(218, 216, 216, 0.882);
+
+    /* ✨ Logique taille police d'écriture site*/
+        --font-size-root: 1rem; /* 16 px : Ref size, dimensionne tout le site*/
+        --p: var(--font-size-root); /*16px*/
+        --h1: calc(var(--font-size-root) * 2); /*32px*/
+        --h2: calc(var(--font-size-root) * 1.5); /*24px*/
+        --h3: calc(var(--font-size-root) + 0.125rem); /*18px*/
+        --h4: var(--font-size-root); /*16px*/
+        --h5: calc(var(--font-size-root) - 0.125rem); /*14px*/
+        --h6: calc(var(--font-size-root) - 0.3125rem); /*11px*/
+        --h7: calc(var(--font-size-root) - 0.4375rem); /*9px*/
+        --h8: calc(var(--font-size-root) - 0.5rem); /*8px*/
+    
+    /* ✨ Attention, les 3 déclarations sont obligatoire pour les titres */
+        /*Logique des Titres*/
+            --font-family-normal: "Quicksand", sans-serif;
+            --font-family-titles: "Saira Condensed", sans-serif;
+
+            --font-weight-normal: none;
+            --font-weight-titles: 600;
+         
+            --font-style-normal: normal;
+            --font-style-titles: normal;
+
+
+            --font-family-title: var(--font-family-titles);
+            --font-weight-title: var(--font-weight-titles);
+            --font-style-title: var(--font-style-titles);
+}
+
+/* Reset universel pour tout le front */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: quicksand, Arial, sans-serif;
+}
+
+body {
+    /* font-family: "Quicksand", Arial, sans-serif; */
+    padding: 0;
+    border: 0;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: SairaCondensed, Arial, sans-serif;
+}
