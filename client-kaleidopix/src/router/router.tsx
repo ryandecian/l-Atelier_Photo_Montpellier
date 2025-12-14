@@ -5,6 +5,7 @@ import type { Router_Type } from "../types/router/router.type";
 /* Page Frontend verrouillée */
 
 /* Page Frontend public */
+import Home_Page from "../pages/public/home_Page/Home.page";
 
 const router: Router_Type = [
     /* {router[0].path} */
