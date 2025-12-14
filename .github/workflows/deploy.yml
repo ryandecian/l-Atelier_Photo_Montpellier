@@ -27,7 +27,7 @@ jobs:
             echo "📁 Accès au dossier du projet"
             cd ${{ secrets.PROJECT_PATH }}
 
-            # ✅ PRUNE AVANT L'ARRÊT — conditionnel pour protéger la DB si tout est déjà down
+            # ✅ Etape 1/8 : PRUNE AVANT L'ARRÊT — conditionnel pour protéger la DB si tout est déjà down
             sudo docker builder prune -af || true  # Nettoie uniquement les caches BuildKit
             if [ -z "$(sudo docker ps -q)" ]; then
               echo "ℹ️ Aucun conteneur actif -> prune SANS --volumes (protection DB)"
@@ -37,24 +37,27 @@ jobs:
               sudo docker system prune -af --volumes || true
             fi
 
-            echo "🛑 Stop + remove containers : Phase 1/2"
+            echo "🛑 Etape 2/8 : Stop + remove containers : Phase 1/2"
             sudo docker stop $(sudo docker ps -q) || true
             sudo docker rm $(sudo docker ps -aq) || true
 
-            echo "🧹 Suppression du volume client-dist"
+            echo "🧹 Etape 3/8 : Suppression du volume client-dist"
             sudo docker volume rm l-atelier_photo_montpellier_client-dist || true
 
-            echo "🔀 Checkout de la bonne branche"
+            echo "🧹 Etape 4/8 : Suppression du volume client-kaleidopix-dist"
+            sudo docker volume rm l-atelier_photo_montpellier_client-kaleidopix-dist || true
+
+            echo "🔀 Etape 5/8 : Checkout de la bonne branche"
             git checkout Deploy
 
-            echo "🚀 Build + redémarrage : Phase 1/2"
+            echo "🚀 Etape 6/8 : Build + redémarrage : Phase 1/2"
             git pull origin Deploy
             sudo docker compose up -d --build
 
-            echo "🛑 Arrêt des containers : Phase 2/2"
+            echo "🛑 Etape 7/8 : Arrêt des containers : Phase 2/2"
             sudo docker compose down || true
 
-            echo "🚢 Redémarrage des containers : Phase 2/2"
+            echo "🚢 Etape 8/8 : Redémarrage des containers : Phase 2/2"
             sudo docker compose up -d
 
             echo "✅ Déploiement terminé"

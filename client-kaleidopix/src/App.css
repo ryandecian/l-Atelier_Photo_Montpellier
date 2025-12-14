@@ -1,0 +1,14 @@
+@import "./root.css";
+
+.AppContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0rem;
+    border: 0rem;
+    padding: 0rem;
+    background: linear-gradient(135deg, var(--ColorBackgroundLeft), var(--ColorBackgroundRight));
+}
