@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Variables d'environnement de build
 ARG VITE_NODE_ENV
-ARG VITE_DOMAIN_CLIENT
+ARG VITE_DOMAIN_CLIENT_KALEIDOPIX
 ARG VITE_DOMAIN_API_SERVER
 
 # Copie uniquement les fichiers nécessaires à l'installation
@@ -19,7 +19,7 @@ RUN npm install
 COPY . .
 
 # Injecte les variables dans l'environnement du build Vite
-ENV VITE_DOMAIN_CLIENT=$VITE_DOMAIN_CLIENT
+ENV VITE_DOMAIN_CLIENT_KALEIDOPIX=$VITE_DOMAIN_CLIENT_KALEIDOPIX
 ENV VITE_DOMAIN_API_SERVER=$VITE_DOMAIN_API_SERVER
 ENV VITE_NODE_ENV=$VITE_NODE_ENV
 
