@@ -1,7 +1,7 @@
 /* Import des typographies */
-@import "./assets/Fonts/Farsan/stylesheet.css";
-@import "./assets/Fonts/SairaCondensed/stylesheet.css";
 @import "./assets/Fonts/Quicksand/stylesheet.css";
+@import "./assets/Fonts/AnneSignature/stylesheet.css";
+@import "./assets/Fonts/SairaCondensed/stylesheet.css";
 
 :root {
     /* ✨ Couleur des textes */
