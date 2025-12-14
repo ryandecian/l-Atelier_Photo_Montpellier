@@ -2,7 +2,7 @@
 import externalLinks from "../../../constants/externalLinks";
 
 /* Import des Types */
-import { Prestation_Type, FormuleGroupe2_Type, DataEmailFormuleGroupe2_Type } from "../../../types/prestations.type";
+import { Prestation_Type, FormuleGroupe2_Type, DataEmailFormuleGroupe2_Type } from "../../../types/pprestations.type";
 
 /* ---------- ----------- ---------- ---------- ---------- */
 /* Bloc logique 1 */
