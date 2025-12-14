@@ -8,12 +8,12 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro               # Fichier de configuration Nginx personnalisé
-      - ./nginx/certs:/etc/nginx/certs                            # Certificats TLS (Let's Encrypt)
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro                  # Fichier de configuration Nginx personnalisé
+      - ./nginx/certs:/etc/nginx/certs                               # Certificats TLS (Let's Encrypt)
       - /etc/letsencrypt:/etc/letsencrypt:ro
-      - ./nginx/html:/usr/share/nginx/html                        # Page HTML statique (optionnel, ex: page maintenance)
-      - client-dist:/usr/share/nginx/html/lapm                   # Volume monté contenant les fichiers buildés du frontend
-      - client-kaleidopix-dist:/var/www/kaleidopix                 # Volume monté contenant les fichiers buildés du frontend kaleidopix
+      - ./nginx/html:/usr/share/nginx/html                           # Page HTML statique (optionnel, ex: page maintenance)
+      - client-dist:/usr/share/nginx/html/lapm                       # Volume monté contenant les fichiers buildés du frontend
+      - client-kaleidopix-dist:/usr/share/nginx/html/kaleidopix      # Volume monté contenant les fichiers buildés du frontend kaleidopix
     depends_on:
       - client
       - client-kaleidopix
