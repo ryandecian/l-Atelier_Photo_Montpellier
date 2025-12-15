@@ -1,6 +1,6 @@
 /* Import des Components */
 import { NavMobile_Layout } from "./nav-mobile/NavMobile.layout";
-import { NavPC_Layout} from "./nav-pc/NavPC.layout";
+import { NavPC_Layout } from "./nav-pc/NavPC.layout";
 
 /* Import des Hooks */
 import useMediaQueriesWidth_rem from "../../../hook/useMediaQueriesWidth_rem.utils.hook";
