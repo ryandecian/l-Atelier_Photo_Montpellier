@@ -1,9 +1,14 @@
+/* Import des modules CSS */
+import css from "./nnavPC.module.css";
 import style from "../ComponentsNavRoot/MenuNavRoot.module.css";
-import css from "./NavPC.module.css";
-import { Link } from "react-router-dom";
+
+/* Import des Components */
 import MenuNavRoot from "../ComponentsNavRoot/MenuNavRoot";
 
-function NavPC() {
+/* Import des composants React */
+import { Link } from "react-router-dom";
+
+function NavPC_Layout() {
     return (
         <nav className={css.NavPC}>
             <div className={css.ContainerLogoNavPC}>
@@ -35,4 +40,4 @@ function NavPC() {
     )
 }
 
-export default NavPC;
+export { NavPC_Layout };
