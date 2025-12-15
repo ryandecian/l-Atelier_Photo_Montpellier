@@ -1,6 +1,6 @@
 /* Import des modules CSS */
 import css from "./subMenuMobile.module.css";
-import style from "../../../../../styleRootComponent.module.css";
+import style from "../../../../../StyleRootComponent.module.css";
 
 /* Import des composants React */
 import { useState } from "react";
