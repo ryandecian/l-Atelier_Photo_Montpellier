@@ -16,17 +16,20 @@
     justify-content: center;
     align-items: center;
     width: 19.375rem; /* 310px */
+    min-width: 19.375rem; /* 310px */
 }
 @media (min-width: 52.8125rem) { /* 845px */
     .ContainerLogoNavPC {
         font-size: calc(var(--h1) + 0.3125rem); /* 5px */
         width: 20.625rem; /* 330px */
+        min-width: 20.625rem; /* 330px */
     }
 }
 @media (min-width: 62.5rem) { /* 1000px */
     .ContainerLogoNavPC {
         font-size: calc(var(--h1) + 0.3125rem); /* 5px */
         width: 23.4375rem; /* 375px */
+        min-width: 23.4375rem; /* 375px */
     }
 }
 
@@ -34,7 +37,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin: 1.5625rem 0rem 0.125rem 1.5rem; 25px 0px 2px 24px */
     margin: 1.5625rem 0.625rem 0.125rem 0rem; /* 25px 0px 2px 24px */
 }
 @media (min-width: 52.8125rem) { /* 845px */
