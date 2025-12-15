@@ -1,5 +1,5 @@
 import style from "../../../stylePage.module.css";
-import NavRoot from "../../../../components/layout/NavRoot/Nav.root.layout";
+import NavRoot from "../../../../components/layout/nav_Layout/Nav.root.layout";
 import EditUserAdminRoot from "../../../../components/Private/Admin/EditUserAdminRoot/EditUserAdminRoot";
 import Footer from "../../../../components/layout/footer/Footer.layout";
 

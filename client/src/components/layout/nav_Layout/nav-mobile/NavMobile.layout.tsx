@@ -1,5 +1,10 @@
-import css from "./NavMobile.module.css";
-import { Link } from "react-router-dom"
+/* Import des modules CSS */
+import css from "./navMobile.module.css";
+
+/* Import des composants React */
+import { Link } from "react-router-dom";
+
+/* Import des Components */
 import MenuBurger from "./MenuBurger/MenuBurger";
 
 function NavMobile() {
