@@ -58,17 +58,17 @@
 
 .SubMenuLiPC {
     padding: 0.25rem 1rem; /* 4px 16px 4px 16px */
-    background-color: var(--ColorBackgroundGray_Option1);
+    background-color: var(--ColorBackgroundNavRootGrey);
 }
 
 .SubMenuLiTopPC {
-    border-top: 0.09375rem solid var(--ColorBackgroundWhite); /* 1.5px */
-    border-left: 0.09375rem solid var(--ColorBackgroundWhite); /* 1.5px */
-    border-right: 0.09375rem solid var(--ColorBackgroundWhite); /* 1.5px */
+    border-top: 0.09375rem solid var(--ColorBackgroundNavRootWhite); /* 1.5px */
+    border-left: 0.09375rem solid var(--ColorBackgroundNavRootWhite); /* 1.5px */
+    border-right: 0.09375rem solid var(--ColorBackgroundNavRootWhite); /* 1.5px */
 }
 
 .SubMenuLiBottomPC {
-    border: 0.09375rem solid var(--ColorBackgroundWhite); /* 1.5px */
+    border: 0.09375rem solid var(--ColorBackgroundNavRootWhite); /* 1.5px */
 }
 
 .SubMenuLinkPC {
@@ -81,5 +81,5 @@
 }
 .SubMenuLinkPC:hover {
     transform: scale(1.2); /* Augmente légèrement la taille */
-    color: var(--ColorTextPink);
+    color: var(--ColorTextNavRootLink);
 }
