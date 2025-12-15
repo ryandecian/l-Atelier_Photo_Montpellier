@@ -5,9 +5,9 @@ import css from "./navMobile.module.css";
 import { Link } from "react-router-dom";
 
 /* Import des Components */
-import MenuBurger from "./MenuBurger/MenuBurger";
+import { MenuBurger_Layout } from "./components/MenuBurger.layout";
 
-function NavMobile() {
+function NavMobile_Layout() {
 
     return (
         <nav className={css.NavMobile}>
@@ -17,8 +17,8 @@ function NavMobile() {
                 </Link>
             </div>
 
-            <MenuBurger />
+            <MenuBurger_Layout />
         </nav>
     )
 }
-export default NavMobile;
+export { NavMobile_Layout };

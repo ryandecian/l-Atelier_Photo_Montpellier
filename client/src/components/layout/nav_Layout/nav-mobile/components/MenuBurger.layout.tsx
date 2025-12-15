@@ -13,7 +13,7 @@ import { SubMenuMobile_Element } from "./elements/SubMenuMobile.element";
 import { navMenu_Data } from "../../navMenu.data";
 
 /* Import des Types */
-import type { NavMenu_data_Type } from "../../../../../types/layout/nav/navMenu.data.type";
+import type { NavMenu_data_Type } from "../../../../../types/layout/navMenu.data.type";
 
 function MenuBurger_Layout() {
     const [active, setActive] = useState<boolean>(false)
