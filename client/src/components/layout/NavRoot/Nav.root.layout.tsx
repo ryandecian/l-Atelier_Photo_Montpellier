@@ -1,5 +1,5 @@
 /* Import des Components */
-import NavMobile from "./nav-mobile/NavMobile";
+import NavMobile from "./nav-mobile/NavMobile.layout";
 import { NavPC_Layout} from "./nav-pc/NavPC.layout";
 
 /* Import des Hooks */
