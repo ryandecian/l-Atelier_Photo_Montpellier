@@ -1,5 +1,5 @@
 /* Import des modules CSS */
-import css from "./nnavPC.module.css";
+import css from "./navPC.module.css";
 import style from "../ComponentsNavRoot/MenuNavRoot.module.css";
 
 /* Import des Components */
