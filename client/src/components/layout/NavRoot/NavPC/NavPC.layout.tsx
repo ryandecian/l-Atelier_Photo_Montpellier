@@ -4,6 +4,7 @@ import style from "../ComponentsNavRoot/MenuNavRoot.module.css";
 
 /* Import des Components */
 import MenuNavRoot from "../ComponentsNavRoot/MenuNavRoot";
+import { MenuNavPC_Layout } from "./components/MenuNavPC.layout";
 
 /* Import des composants React */
 import { Link } from "react-router-dom";
@@ -18,7 +19,8 @@ function NavPC_Layout() {
                     </Link>
                 </p>
             </div>
-            <div className={css.ContainerNavigationNavPC}>
+            <MenuNavPC_Layout />
+            {/* <div className={css.ContainerNavigationNavPC}>
                 <MenuNavRoot
                     moduleMenuUl={style.MenuUlPC}
                     moduleMenuLi={style.MenuLiPC}
@@ -35,7 +37,7 @@ function NavPC_Layout() {
                     moduleSubMenuLiTarget2={style.SubMenuLiTarget2PC}
                     moduleSubMenuLiTarget3={style.SubMenuLiTarget3PC}
                 />
-            </div>
+            </div> */}
         </nav>
     )
 }

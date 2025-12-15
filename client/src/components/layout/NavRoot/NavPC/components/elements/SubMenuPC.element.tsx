@@ -7,7 +7,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 /* Import des Types */
-import type { SubMenuNav_Type } from "../../../../../../types/layout/nav/subMenuNav.type";
+import type { SubMenuNav_Type } from "../../../../../../types/layout/subMenuNav.type";
 
 function SubMenuPC_Element({ dataMenu }: { dataMenu: SubMenuNav_Type }) {
     const [subMenuOpen, setSubMenuOpen] = useState(false);
