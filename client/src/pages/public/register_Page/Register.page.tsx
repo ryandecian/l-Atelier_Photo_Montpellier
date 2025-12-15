@@ -3,7 +3,7 @@ import style from "../../stylePage.module.css";
 
 /* Import des Components */
 import RegisterRoot from "../../../components/Public/RegisterRoot/RegisterRoot";
-import NavRoot from "../../../components/layout/NavRoot/NavRoot";
+import NavRoot from "../../../components/layout/NavRoot/Nav.root.layout";
 import Footer_layout from "../../../components/layout/footer/Footer.layout";
 
 /* Import des Hooks */

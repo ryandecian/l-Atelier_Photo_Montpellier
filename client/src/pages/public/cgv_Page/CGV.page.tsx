@@ -3,7 +3,7 @@ import style from "../../stylePage.module.css";
 
 /* Import des Components */
 import CGV_Root from "../../../components/Public/cgv/CGV.root";
-import NavRoot from "../../../components/layout/NavRoot/NavRoot";
+import NavRoot from "../../../components/layout/NavRoot/Nav.root.layout";
 import Footer_layout from "../../../components/layout/footer/Footer.layout";
 
 /* Import des composants SEO */

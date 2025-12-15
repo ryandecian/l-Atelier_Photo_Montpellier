@@ -1,8 +1,11 @@
+/* Import des Components */
 import NavMobile from "./NavMobile/NavMobile";
-import NavPC from "./NavPC/NavPC";
+import { NavPC_Layout} from "./NavPC/NavPC.layout";
+
+/* Import des Hooks */
 import useMediaQueriesWidth_rem from "../../../hook/useMediaQueriesWidth_rem.utils.hook";
 
-function NavRoot() {
+function Nav_root_Layout() {
     const viewportWidth: number = useMediaQueriesWidth_rem();
 
     return (
@@ -13,10 +16,10 @@ function NavRoot() {
             )}
             {/* MediaQuery maison 800px */}
             {viewportWidth >= 50 && (
-                <NavPC />
+                <NavPC_Layout />
             )}
         </>
     )
 }
 
-export default NavRoot;
+export default Nav_root_Layout;

@@ -1,5 +1,5 @@
 import style from "../../../stylePage.module.css";
-import NavRoot from "../../../../components/layout/NavRoot/NavRoot";
+import NavRoot from "../../../../components/layout/NavRoot/Nav.root.layout";
 import AdminGestionAlbumRoot from "../../../../components/Private/Admin/AdminGestionAlbumRoot/AdminGestionAlbumRoot";
 import Footer from "../../../../components/layout/footer/Footer.layout";
 
