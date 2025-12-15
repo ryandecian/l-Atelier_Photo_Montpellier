@@ -1,8 +1,11 @@
+/* Import des Components */
 import NavMobile from "./NavMobile/NavMobile";
 import NavPC from "./NavPC/NavPC";
+
+/* Import des Hooks */
 import useMediaQueriesWidth_rem from "../../../hook/useMediaQueriesWidth_rem.utils.hook";
 
-function NavRoot() {
+function Nav_root_Layout() {
     const viewportWidth: number = useMediaQueriesWidth_rem();
 
     return (
@@ -19,4 +22,4 @@ function NavRoot() {
     )
 }
 
-export default NavRoot;
+export default Nav_root_Layout;
