@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 function NavPC_Layout() {
     return (
-        <nav className={css.NavPC}>
+        <nav className={`NavPC_Layout ${css.NavPC}`}>
             <div className={css.ContainerLogoNavPC}>
                 <p className={css.TitleNavPC}>
                     <Link to="/" >

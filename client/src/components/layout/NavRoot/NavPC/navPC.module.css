@@ -34,7 +34,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin: 1.5625rem 0rem 0.125rem 1.5rem; 25px 0px 2px 24px */
     margin: 1.5625rem 0.625rem 0.125rem 0rem; /* 25px 0px 2px 24px */
 }
 @media (min-width: 52.8125rem) { /* 845px */
