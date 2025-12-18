@@ -27,7 +27,7 @@ const getAllUser_controller = async (req: Request, res: Response) => {
             return;
     } 
     catch (error) {
-        res.status(500).json({ message: "Erreur interne serveur inconnue." });
+        res.status(500).json({ error: "Erreur interne serveur inconnue." });
         return;
     }
 };
