@@ -61,9 +61,9 @@
     z-index: 10;
     top: 0;
     right: -15.625rem; /* -250px */
-    background-color: var(--ColorBackgroundGray_Option1); 
+    background-color: var(--ColorBackgroundNavRootGrey); 
     transition: right 0.5s ease;
-    border-left: 0.0625rem solid var(--ColorBackgroundWhite); /* 1px */
+    border-left: 0.0625rem solid var(--ColorBackgroundNavRootWhite); /* 1px */
 }
 
 .sideNav.active {
@@ -107,13 +107,8 @@
     cursor: pointer;
 }
 
-.MenuLiTopMobile {
-    border-top: 0.0625rem solid var(--ColorBackgroundWhite); /* 1px */
-}
-
 .MenuLiBottomMobile {
-    border-top: 0.0625rem solid var(--ColorBackgroundWhite); /* 1px */
-    border-bottom: 0.0625rem solid var(--ColorBackgroundWhite); /* 1px */
+    border-bottom: 0.0625rem solid var(--ColorBackgroundNavRootWhite); /* 1px */
 }
 
 .MenuLinkMobile {
