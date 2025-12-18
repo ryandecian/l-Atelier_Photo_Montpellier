@@ -29,7 +29,57 @@ function Home_Root() {
             <Home_A_Component />
 
             {/* ---------- ---------- ---------- ---------- ---------- */}
+ <h2 className={style.TitleH2}>
+                    Votre mariage, ce moment tant attendu !
+                </h2>
 
+            <Container4Images_Element
+                img1={imagesHome_img_data[4].src}
+                metaNameImg1={imagesHome_img_data[4].alt}
+                img2={imagesHome_img_data[5].src}
+                metaNameImg2={imagesHome_img_data[5].alt}
+                img3={imagesHome_img_data[6].src}
+                metaNameImg3={imagesHome_img_data[6].alt}
+                img4={imagesHome_img_data[7].src}
+                metaNameImg4={imagesHome_img_data[7].alt}
+            />
+
+                <p className={`${style.TextP4} ${style.TargetText1}`}>
+                    Il y a des jours où le temps semble suspendu, où chaque battement de cœur résonne fort et où chaque 
+                    minute passe à la vitesse d’une seconde. {" "}
+                    <span className={style.SpanBold}>
+                        {"Votre mariage est bien plus qu’un événement."}
+                    </span>
+                   {" "} C’est une promesse murmurée entre vous deux et une acclamation partagée avec ceux que vous aimez. 
+                   En tant que photographe de mariage à Montpellier, je ne me contente pas de prendre des photos. {" "}
+                   <span className={style.SpanBold}>
+                        {"Je capture l’essence même de votre union."}
+                    </span>
+                </p>
+                <p className={style.TextP4}>
+                    Discrète mais toujours présente, je me fonds parmi vos invités pour saisir les éclats de rire, les 
+                    étreintes sincères, les petites attentions qui font toute la différence. Je travaille comme un témoin 
+                    invisible, 
+                    <span className={style.SpanBold}>
+                        {" figeant l’instant sans jamais le forcer. "}
+                    </span>
+                    Et après la fête, lorsque tout semble redevenu silencieux, il restera ces images, ce déroulé de 
+                    cette journée, ces clichés que vous 
+                    <span className={style.SpanBold}>
+                        {" redécouvrirez au fil des années, "}
+                    </span>
+                    que vous partagerez avec 
+                    vos proches et que vous transmettrez peut-être un jour.  
+                </p>
+                    <p className={style.TextP4}>
+                        Découvrez plus en détail {" "}
+                        <span className={style.SpanLink}>
+                            <Link to={ListDataRouter[13].path}>
+                                {"mes prestations de mariage !"}
+                            </Link>
+                        </span>
+                    </p>
+                    
                 <h2 className={style.TitleH2}>
                     Créez vos portraits et vidéos sur-mesure avec une qualité professionnelle
                 </h2>
@@ -183,58 +233,7 @@ function Home_Root() {
 
             {/* ---------- ---------- ---------- ---------- ---------- */}
             
-                <h2 className={style.TitleH2}>
-                    Votre mariage, ce moment tant attendu !
-                </h2>
-
-            <Container4Images_Element
-                img1={imagesHome_img_data[4].src}
-                metaNameImg1={imagesHome_img_data[4].alt}
-                img2={imagesHome_img_data[5].src}
-                metaNameImg2={imagesHome_img_data[5].alt}
-                img3={imagesHome_img_data[6].src}
-                metaNameImg3={imagesHome_img_data[6].alt}
-                img4={imagesHome_img_data[7].src}
-                metaNameImg4={imagesHome_img_data[7].alt}
-            />
-
-                <p className={`${style.TextP4} ${style.TargetText1}`}>
-                    Il y a des jours où le temps semble suspendu, où chaque battement de cœur résonne fort et où chaque 
-                    minute passe à la vitesse d’une seconde. {" "}
-                    <span className={style.SpanBold}>
-                        {"Votre mariage est bien plus qu’un événement."}
-                    </span>
-                   {" "} C’est une promesse murmurée entre vous deux et une acclamation partagée avec ceux que vous aimez. 
-                   En tant que photographe de mariage à Montpellier, je ne me contente pas de prendre des photos. {" "}
-                   <span className={style.SpanBold}>
-                        {"Je capture l’essence même de votre union."}
-                    </span>
-                </p>
-                <p className={style.TextP4}>
-                    Discrète mais toujours présente, je me fonds parmi vos invités pour saisir les éclats de rire, les 
-                    étreintes sincères, les petites attentions qui font toute la différence. Je travaille comme un témoin 
-                    invisible, 
-                    <span className={style.SpanBold}>
-                        {" figeant l’instant sans jamais le forcer. "}
-                    </span>
-                    Et après la fête, lorsque tout semble redevenu silencieux, il restera ces images, ce déroulé de 
-                    cette journée, ces clichés que vous 
-                    <span className={style.SpanBold}>
-                        {" redécouvrirez au fil des années, "}
-                    </span>
-                    que vous partagerez avec 
-                    vos proches et que vous transmettrez peut-être un jour.  
-                </p>
-                    <p className={style.TextP4}>
-                        Découvrez plus en détail {" "}
-                        <span className={style.SpanLink}>
-                            <Link to={ListDataRouter[13].path}>
-                                {"mes prestations de mariage !"}
-                            </Link>
-                        </span>
-                    </p>
-
-            {/* ---------- ---------- ---------- ---------- ---------- */}
+                            {/* ---------- ---------- ---------- ---------- ---------- */}
 
                 <h2 className={style.TitleH2}>
                     Des photos, des expériences, des mots, ils m'ont fait confiance !
