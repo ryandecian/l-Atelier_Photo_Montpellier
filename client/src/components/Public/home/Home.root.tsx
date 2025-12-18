@@ -48,7 +48,7 @@ function Home_Root() {
                     Il y a des jours où le temps semble suspendu, où chaque battement de cœur résonne fort et où chaque 
                     minute passe à la vitesse d’une seconde. {" "}
                     <span className={style.SpanBold}>
-                        {"Votre mariage est bien plus qu’un événement."}
+                        {"Votre mariage est bien plus qu’un événement !."}
                     </span>
                    {" "} C’est une promesse murmurée entre vous deux et une acclamation partagée avec ceux que vous aimez. 
                    En tant que photographe de mariage à Montpellier, je ne me contente pas de prendre des photos. {" "}
