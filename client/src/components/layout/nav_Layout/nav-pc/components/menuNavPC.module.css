@@ -1,0 +1,42 @@
+.MenuUlPC {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: 0rem 0.625rem 0rem 0rem; /* 0px 32px 0px 48px */
+    border: 0rem;
+    padding: 0rem;
+    gap: 1.1rem; /* 17.6px */
+}
+@media (min-width: 51.875rem) { /* 830px */
+    .MenuUlPC {
+        gap: 1.5rem; /* 24px */
+    }
+    
+}
+@media (min-width: 62.5rem) { /* 1000px */
+    .MenuUlPC {
+        gap: 2rem; /* 32px */
+        margin: 0rem 2rem 0rem 3rem; /* 0px 32px 0px 48px */
+    }
+    
+}
+
+.MenuLiPC {
+    list-style: none;
+    margin: 0rem;
+}
+
+.MenuLinkPC {
+    display: inline-block;
+    font-size: var(--h4);
+    text-decoration: none;
+    color: var(--ColorTextNavRootBlack);
+    transition: transform 0.3s ease, color 0.2s ease;
+    white-space: nowrap;
+}
+.MenuLinkPC:hover {
+    transform: scale(1.2); /* Augmente légèrement la taille */
+    color: var(--ColorTextPink);
+}

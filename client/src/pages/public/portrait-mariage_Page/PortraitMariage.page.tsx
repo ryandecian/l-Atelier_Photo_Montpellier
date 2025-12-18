@@ -3,7 +3,7 @@ import style from "../../stylePage.module.css";
 
 /* Import des Components */
 import PortraitMariageRoot from "../../../components/Public/portrait-mariage/MariageRoot";
-import NavRoot from "../../../components/layout/NavRoot/NavRoot";
+import NavRoot from "../../../components/layout/nav_Layout/Nav.root.layout";
 import Footer_layout from "../../../components/layout/footer/Footer.layout";
 
 /* Import des composants SEO */
