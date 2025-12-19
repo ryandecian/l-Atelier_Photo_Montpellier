@@ -210,11 +210,11 @@ function Home_Root() {
                     preload="none"
                     controlsList="nodownload"
                     onPlay={(e) => pauseOtherVideos_Utils(e.currentTarget)}
-                    onContextMenu={(e) => e.preventDefault()} /* Désactive le clic droit */
+                    onContextMenu={(e) => e.preventDefault()}
                     poster="/video/video-mariage-laure-et-charles/video-mariage-laure-et-charles.jpg"
                     playsInline
                 />
-                
+
                 <p className={style.VideoDescription}>
                     Une courte vidéo présentant l’ambiance du mariage de Laure et Charles.
                 </p>
