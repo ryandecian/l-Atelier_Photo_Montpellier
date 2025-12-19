@@ -17,37 +17,32 @@ function PortraitMariageRoot() {
         <section className={`PortraitMariageRoot ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
-                    Portrait Mariage : Un reportage Authentique et Personnalisé.
+                    Photo & Vidéo de mariage : Un récit complet, une émotion intacte.
                 </h1>
             </header>
 
             <p className={style.TextP4}>
                 <span className={style.SpanBold}>
-                    {"Le mariage est l’un des moments les plus significatifs de votre vie, "}
+                    {"Votre mariage ne se résume pas à une suite de belles images."}
                 </span>
-                un instant unique où les émotions, les rires, et parfois même les larmes, se mêlent pour
-                créer des souvenirs impérissables. En tant que
+                C’est une histoire qui se vit, qui se ressent, qui s’entend parfois… et qui mérite d’être racontée 
+                avec justesse. En tant que
                 <span className={style.SpanBold}>
-                    {" photographe de mariage professionnelle, "}
+                    {" photographe de mariage et vidéaste professionnelle, "}
                 </span>
-                mon objectif est de capturer ces moments d’émotion de manière authentique, sans poser ni artifice, 
-                dans le respect de votre vision et de vos attentes.
+                je vous propose une approche globale: un regard unique, une cohérence visuelle, et deux langages 
+                complémentaires — la photo pour figer l’instant, la vidéo pour en restituer le mouvement et l’émotion.
             </p>
+
             <p className={style.TextP4}>
-                Ma démarche repose sur un 
+                Mon travail repose sur un  
                 <span className={style.SpanBold}>
-                    {" style de reportage "}
+                    {" reportage "}
                 </span>
-                qui permet de figer l’essence même de votre journée, de l’intimité des préparatifs à 
-                l’effervescence de la fête. Chaque image que je capture raconte une histoire, la vôtre, celle d’une 
-                journée où l’amour et les émotions se vivent en toute spontanéité. Mais au-delà de la simple prise 
-                de vue, mon approche se distingue par une
+                sincère, élégant et humain. Pas de mise en scène forcée, pas de poses figées à rallonge. Je documente
+                votre journée telle qu’elle se déroule, en restant attentive à ce qui compte vraiment : 
                 <span className={style.SpanBold}>
-                    {" implication active "}
-                </span>
-                et une
-                <span className={style.SpanBold}>
-                    {" préparation minutieuse "}
+                    {" les liens "}
                 </span>
                 qui garantissent des souvenirs à la hauteur de vos attentes.
             </p>
@@ -55,80 +50,60 @@ function PortraitMariageRoot() {
             {/* ---------- ---------- ---------- ---------- ---------- */}
 
             <h2 className={style.TitleH2}>
-                Le Style "Reportage" : Capturer l'Authenticité de Votre Mariage
+                Le reportage photo et vidéo : raconter votre mariage de l’intérieur
             </h2>
 
             <p className={style.TextP4}>
-                Loin des photos posées et figées, je privilégie un style de
+                Je travaille dans un esprit documentaire : observer, anticiper, capter sans interrompre, tout en 
+                restant attentive au cadrage, 
                 <span className={style.SpanBold}>
-                    {" reportage photographique "}
+                    {" à la lumière, à la beauté et à la force des images. "}
                 </span> 
-                qui met l'accent sur
+                En photo comme en vidéo, mon rôle est le même : être présente sans être envahissante, saisir les instants
+                vrais et laisser la place à la spontanéité.
                 <span className={style.SpanBold}>
-                    {" l'instantanéité "}
+                    {" La photo fige l’instant. La vidéo prolonge l’émotion."}
                 </span>
-                et
+                Les deux se répondent, sans se répéter, pour raconter votre histoire avec cohérence et sensibilité — 
                 <span className={style.SpanBold}>
-                    {" l'authenticité. "}
-                </span> 
-                Mon rôle est de vous accompagner tout au long de votre journée sans perturber le fil naturel 
-                des événements. J’agis en toute discrétion, en capturant les moments tels qu’ils se produisent : 
-                un regard échangé, une main tendue, un éclat de rire ou une larme discrète.
-            </p>
-            <p className={style.TextP4}>
-                L’idée n’est pas seulement de réaliser des clichés, mais de 
-                <span className={style.SpanBold}>
-                    {" raconter votre histoire. "}
-                </span> 
-                Celle de votre journée exceptionnelle, remplie de moments fugaces mais d’une immense signification. 
-                Vous pourrez revivre ces instants chaque fois que vous regarderez les photos, avec la même émotion que 
-                lors du mariage.
-            </p>
+                    {" des images que vous serez fiers de regarder et de partager avec vos proches. "}
+                </span>    
+             </p>
 
             {/* Container Images 1 */}
             <Container4Images_Element
-            img1={imagesPortraitMariage_Data[0].src}
-            metaNameImg1={imagesPortraitMariage_Data[0].alt}
-            img2={imagesPortraitMariage_Data[1].src}
-            metaNameImg2={imagesPortraitMariage_Data[1].alt}
-            img3={imagesPortraitMariage_Data[2].src}
-            metaNameImg3={imagesPortraitMariage_Data[2].alt}
-            img4={imagesPortraitMariage_Data[3].src}
-            metaNameImg4={imagesPortraitMariage_Data[3].alt}
+                img1={imagesPortraitMariage_Data[0].src}
+                metaNameImg1={imagesPortraitMariage_Data[0].alt}
+                img2={imagesPortraitMariage_Data[1].src}
+                metaNameImg2={imagesPortraitMariage_Data[1].alt}
+                img3={imagesPortraitMariage_Data[2].src}
+                metaNameImg3={imagesPortraitMariage_Data[2].alt}
+                img4={imagesPortraitMariage_Data[3].src}
+                metaNameImg4={imagesPortraitMariage_Data[3].alt}
             />
 
             {/* ---------- ---------- ---------- ---------- ---------- */}
 
             <h2 className={style.TitleH2}>
-                Une Implication Préalable : Comprendre Votre Vision
+                Un échange continu pour obtenir des photos et vidéos qui vous corresponde
             </h2>
 
             <p className={style.TextP4}>
-                Un mariage est un moment qui vous est cher, et c’est pourquoi je m’investis pleinement avant le 
-                grand jour. Chaque couple a ses propres attentes, ses propres envies, et ses propres goûts.
+                Un mariage réussi, visuellement, ne s’improvise pas.
+                Avant le jour J, nous prenons le temps d’échanger. Vraiment.
+                Je cherche à comprendre :
+
                 <span className={style.SpanBold}>
-                    {" Une discussion approfondie, "}
+                    {" qui vous êtes, ce qui est important pour vous, ce que vous attendez de vos souvenirs."}
                 </span> 
-                en amont de la journée est donc essentielle. Je prends le temps d’apprendre à vous connaître, 
-                de comprendre vos préférences et ce que vous attendez des photos de votre mariage.
+                 Certains couples veulent un rendu très naturel, presque brut.
+                D’autres aiment une esthétique plus travaillée, plus éditoriale.
+                D’autres encore sont sensibles aux codes actuels (images modernes, dynamiques, inspiration réseaux sociaux).
             </p>
+
             <p className={style.TextP4}>
-                Nous discuterons ensemble de vos envies concernant le style de photos que vous souhaitez. 
-                    Voulez-vous un
-                <span className={style.SpanBold}>
-                    {" style simple et naturel, "}
-                </span> 
-                proche du documentaire ? Ou un
-                <span className={style.SpanBold}>
-                    {" style plus sophistiqué "}
-                </span> 
-                et travaillé, avec des photos plus posées et scénarisées ? Peut-être êtes-vous un couple 
-                influencé par les
-                <span className={style.SpanBold}>
-                    {" tendances Instagram "}
-                </span> 
-                et préférez-vous des images plus modernes et stylisées ? Quelle que soit votre vision, 
-                je serai à l’écoute de vos attentes pour réaliser des photos qui vous ressemblent.
+                Il n’y a pas de bonne ou de mauvaise approche. <strong>Il y a la vôtre </strong>
+                et mon rôle est de m’y adapter, pas de vous faire rentrer dans un moule.
             </p>
 
             {/* Container Images 2 */}
@@ -146,49 +121,49 @@ function PortraitMariageRoot() {
             {/* ---------- ---------- ---------- ---------- ---------- */}
 
             <h2 className={style.TitleH2}>
-                Le Repérage des Lieux : Une Préparation Essentielle
+                Repérage des lieux et gestion de la lumière en reportage de mariage
             </h2>
 
             <p className={style.TextP4}>
-                Un autre aspect fondamental de mon approche est le
+                Lorsque c’est nécessaire, je repère les 
                 <span className={style.SpanBold}>
-                    {" repérage préalable des lieux. "}
+                    {" lieux en amont. . "}
                 </span> 
-                Si nécessaire, je me rends sur les lieux de votre mariage avant le jour J afin de repérer les 
-                meilleures zones pour les photos, observer la lumière naturelle et évaluer les angles les plus favorables. 
-                Ce repérage me permet également de mieux comprendre l’agencement des lieux et de
+                Pourquoi ? Parce que la lumière, les espaces et les circulations jouent un rôle clé, en photo comme en vidéo.        
                 <span className={style.SpanBold}>
-                    {" prévoir les meilleurs moments "}
+                    {" Ce travail préparatoire me permet de : "}
                 </span> 
-                pour capturer des images naturelles, tout en respectant vos envies. Vous pourrez ainsi 
+                •	d’anticiper les meilleurs moments pour les images,
+                •	de choisir des zones adaptées sans vous faire perdre de temps,
+                •	de garantir une cohérence visuelle tout au long de la journée.
+
                 <span className={style.SpanBold}>
-                    {" vous concentrer sur l’essentiel : vivre pleinement votre journée, "}
-                </span> 
-                pendant que je m’assure de capturer chaque instant clé dans le respect de l’ambiance.
+                    {" Le jour J, vous n’avez rien à gérer. Vous vivez. Je m’adapte. "}
+                </span>
             </p>
             
             {/* Container Images 3 */}
             <Container4Images_Element
-            img1={imagesPortraitMariage_Data[8].src}
-            metaNameImg1={imagesPortraitMariage_Data[8].alt}
-            img2={imagesPortraitMariage_Data[9].src}
-            metaNameImg2={imagesPortraitMariage_Data[9].alt}
-            img3={imagesPortraitMariage_Data[10].src}
-            metaNameImg3={imagesPortraitMariage_Data[10].alt}
-            img4={imagesPortraitMariage_Data[11].src}
-            metaNameImg4={imagesPortraitMariage_Data[11].alt}
+                img1={imagesPortraitMariage_Data[8].src}
+                metaNameImg1={imagesPortraitMariage_Data[8].alt}
+                img2={imagesPortraitMariage_Data[9].src}
+                metaNameImg2={imagesPortraitMariage_Data[9].alt}
+                img3={imagesPortraitMariage_Data[10].src}
+                metaNameImg3={imagesPortraitMariage_Data[10].alt}
+                img4={imagesPortraitMariage_Data[11].src}
+                metaNameImg4={imagesPortraitMariage_Data[11].alt}
             />
 
             {/* ---------- ---------- ---------- ---------- ---------- */}
 
             <h2 className={style.TitleH2}>
-                Respect des Attentes : Un Mariage Qui Vous Ressemble
+                Photo, vidéo… et respect de votre personnalité
             </h2>
 
             <p className={style.TextP4}>
                 Votre mariage est un
                 <span className={style.SpanBold}>
-                    {" réflexe de votre personnalité "}
+                    {" reflet de votre personnalité "}
                 </span>
                 et de vos goûts. Vous souhaitez des photos qui traduisent l’esprit de votre union, mais aussi de 
                 vos valeurs et de vos envies esthétiques. C’est pourquoi je m’engage à respecter votre
@@ -208,6 +183,7 @@ function PortraitMariageRoot() {
                     {" tendances Instagram."}
                 </span>
             </p>
+
             <p className={style.TextP4}>
                 Certains couples préfèrent des clichés
                 <span className={style.SpanBold}>
@@ -218,52 +194,54 @@ function PortraitMariageRoot() {
                 choix du style qui vous correspond le mieux, tout en veillant à ce que chaque photo conserve son 
                 authenticité. Mon objectif est d’être votre
                 <span className={style.SpanBold}>
-                    {" partenaire photographique, "}
+                    {" partenaire en photos ou en vidéos, "}
                 </span>
                 celui qui capte chaque sourire, chaque regard, chaque moment avec fidélité.
             </p>
             
             {/* Container Images 4 */}
             <Container4Images_Element
-            img1={imagesPortraitMariage_Data[12].src}
-            metaNameImg1={imagesPortraitMariage_Data[12].alt}
-            img2={imagesPortraitMariage_Data[13].src}
-            metaNameImg2={imagesPortraitMariage_Data[13].alt}
-            img3={imagesPortraitMariage_Data[14].src}
-            metaNameImg3={imagesPortraitMariage_Data[14].alt}
-            img4={imagesPortraitMariage_Data[15].src}
-            metaNameImg4={imagesPortraitMariage_Data[15].alt}
+                img1={imagesPortraitMariage_Data[12].src}
+                metaNameImg1={imagesPortraitMariage_Data[12].alt}
+                img2={imagesPortraitMariage_Data[13].src}
+                metaNameImg2={imagesPortraitMariage_Data[13].alt}
+                img3={imagesPortraitMariage_Data[14].src}
+                metaNameImg3={imagesPortraitMariage_Data[14].alt}
+                img4={imagesPortraitMariage_Data[15].src}
+                metaNameImg4={imagesPortraitMariage_Data[15].alt}
             />
 
             {/* ---------- ---------- ---------- ---------- ---------- */}
 
             <h2 className={style.TitleH2}>
-                Une Expérience Sereine et Détendue
+                Mon rôle : vous assurer un mariage fluide, serein et en confiance
             </h2>
 
             <p className={style.TextP4}>
-                Le mariage est souvent une journée pleine de {" "}
+                Le mariage est une journée intense.Beaucoup d’émotions, parfois du  {" "}
                 <span className={style.SpanBold}>
-                    {"stress"}
+                    {"stress, souvent peu de temps."}
                 </span>
-                {" "} et d’émotions. C’est pourquoi, pendant toute la séance photo, je vous aide à rester {" "}
+                {" "} Mon rôle va au-delà de la prise de vue :
+                je suis aussi là pour créer un climat calme, fluide, rassurant. Quelques indications simples quand il le faut,
+                beaucoup d’observation le reste du temps.
+                L’objectif : que vous soyez 
+                {" "}
                 <span className={style.SpanBold}>
-                    {"détendus"}
+                    {"détendus, disponibles à ce que vous vivez"}
                 </span>
-                {" "} et à vous sentir {" "}
+                {" "} pas focalisés sur l’objectif ou la caméra. {" "}
                 <span className={style.SpanBold}>
-                    {"à l’aise"}
+                    {" "}
                 </span>
-                {" "} devant l’objectif. Que vous soyez nerveux à l’idée d’être sous les projecteurs ou que vous 
-                ne sachiez pas comment vous comporter devant un appareil photo, je serai là pour vous guider avec 
-                des conseils simples sur la posture, l’expression et les moments à capturer.
             </p>
+
             <p className={style.TextP4}>
                 L'idée n'est pas de vous imposer des poses mais plutôt de vous aider à {" "}
                 <span className={style.SpanBold}>
                     {"être vous-même."}
                 </span>
-                {" "} Une bonne photo de mariage réside souvent dans la {" "}
+                {" "} Une vidéo de mariage tout comme une bonne photo de mariage réside souvent dans la {" "}
                 <span className={style.SpanBold}>
                     {"sincérité du moment"}
                 </span>
@@ -276,35 +254,37 @@ function PortraitMariageRoot() {
             
             {/* Container Images 5 */}
             <Container4Images_Element
-            img1={imagesPortraitMariage_Data[16].src}
-            metaNameImg1={imagesPortraitMariage_Data[16].alt}
-            img2={imagesPortraitMariage_Data[17].src}
-            metaNameImg2={imagesPortraitMariage_Data[17].alt}
-            img3={imagesPortraitMariage_Data[18].src}
-            metaNameImg3={imagesPortraitMariage_Data[18].alt}
-            img4={imagesPortraitMariage_Data[19].src}
-            metaNameImg4={imagesPortraitMariage_Data[19].alt}
+                img1={imagesPortraitMariage_Data[16].src}
+                metaNameImg1={imagesPortraitMariage_Data[16].alt}
+                img2={imagesPortraitMariage_Data[17].src}
+                metaNameImg2={imagesPortraitMariage_Data[17].alt}
+                img3={imagesPortraitMariage_Data[18].src}
+                metaNameImg3={imagesPortraitMariage_Data[18].alt}
+                img4={imagesPortraitMariage_Data[19].src}
+                metaNameImg4={imagesPortraitMariage_Data[19].alt}
             />
 
             {/* ---------- ---------- ---------- ---------- ---------- */}
 
             <h2 className={style.TitleH2}>
-                Conclusion : Des Photos Qui Vous Rappellent un Moment Unique
+                Mon objectif : créer des souvenirs durables en photo comme en vidéo pour votre mariage
             </h2>
 
             <p className={style.TextP4}>
-                Mon engagement en tant que photographe de mariage est de vous offrir bien plus que des photos : 
-                je souhaite vous offrir une {" "}
+                En tant que photographe et vidéaste professionnel installée à Montpellier mon engagement est simple : {" "}
                 <span className={style.SpanBold}>
-                    {"expérience complète,"}
+                    {"vous livrer des images qui traversent le temps."}
                 </span>
-                {" "} où chaque image devient un {" "}
+                {" "} Des photos que vous aurez plaisir à imprimer, encadrer, transmettre.
+                Des vidéos que vous aurez envie de revoir, pas seulement de stocker.
+                Un reportage  
+                {" "}
                 <span className={style.SpanBold}>
-                    {"souvenir vivant"}
+                    {"fidèle à votre journée"}
                 </span>
-                {" "} de votre journée. Grâce à une {" "}
+                {" "} sans artifice inutile, sans effets de mode excessifs. {" "}
                 <span className={style.SpanBold}>
-                    {"expérience complète,"}
+                    {"Grâce à une expérience complète,"}
                 </span>
                 {" "} une {" "}
                 <span className={style.SpanBold}>
@@ -317,17 +297,7 @@ function PortraitMariageRoot() {
                 </span>
                 {" "} que vous chérirez toute votre vie.
             </p>
-            <p className={style.TextP4}>
-                Que vous soyez en quête de photos naturelles et spontanées ou de portraits plus posés et sophistiqués, 
-                je suis là pour faire en sorte que votre {" "}
-                <span className={style.SpanBold}>
-                    {"vision du mariage"}
-                </span>
-                {" "} se reflète dans chaque image. Votre journée, votre style, vos moments, capturés avec 
-                <span className={style.SpanBold}>
-                    {" authenticité et passion."}
-                </span>
-            </p>          
+                    
             <p className={style.TextP4}>
                 Si vous êtes prêts à faire de votre mariage un événement inoubliable, {" "}
                 <span className={style.SpanLink}>
@@ -337,7 +307,7 @@ function PortraitMariageRoot() {
                 </span>
                 {" "} pour commencer à discuter de ce que vous attendez de vos 
                 <span className={style.SpanBold}>
-                    {" souvenirs photographiques."}
+                    {" photos de mariage ou de votre vidéo de mariage."}
                 </span>
                 {" "} Pour connaître mes prestations tarifaires, rendez-vous sur ma {" "}
                 <span className={style.SpanLink}>
