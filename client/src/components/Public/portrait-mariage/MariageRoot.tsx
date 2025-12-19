@@ -33,6 +33,7 @@ function PortraitMariageRoot() {
                 je vous propose une approche globale: un regard unique, une cohérence visuelle, et deux langages 
                 complémentaires — la photo pour figer l’instant, la vidéo pour en restituer le mouvement et l’émotion.
             </p>
+
             <p className={style.TextP4}>
                 Mon travail repose sur un  
                 <span className={style.SpanBold}>
@@ -66,20 +67,19 @@ function PortraitMariageRoot() {
                 Les deux se répondent, sans se répéter, pour raconter votre histoire avec cohérence et sensibilité — 
                 <span className={style.SpanBold}>
                     {" des images que vous serez fiers de regarder et de partager avec vos proches. "}
-                </span> 
-                
+                </span>    
              </p>
 
             {/* Container Images 1 */}
             <Container4Images_Element
-            img1={imagesPortraitMariage_Data[0].src}
-            metaNameImg1={imagesPortraitMariage_Data[0].alt}
-            img2={imagesPortraitMariage_Data[1].src}
-            metaNameImg2={imagesPortraitMariage_Data[1].alt}
-            img3={imagesPortraitMariage_Data[2].src}
-            metaNameImg3={imagesPortraitMariage_Data[2].alt}
-            img4={imagesPortraitMariage_Data[3].src}
-            metaNameImg4={imagesPortraitMariage_Data[3].alt}
+                img1={imagesPortraitMariage_Data[0].src}
+                metaNameImg1={imagesPortraitMariage_Data[0].alt}
+                img2={imagesPortraitMariage_Data[1].src}
+                metaNameImg2={imagesPortraitMariage_Data[1].alt}
+                img3={imagesPortraitMariage_Data[2].src}
+                metaNameImg3={imagesPortraitMariage_Data[2].alt}
+                img4={imagesPortraitMariage_Data[3].src}
+                metaNameImg4={imagesPortraitMariage_Data[3].alt}
             />
 
             {/* ---------- ---------- ---------- ---------- ---------- */}
@@ -99,18 +99,11 @@ function PortraitMariageRoot() {
                  Certains couples veulent un rendu très naturel, presque brut.
                 D’autres aiment une esthétique plus travaillée, plus éditoriale.
                 D’autres encore sont sensibles aux codes actuels (images modernes, dynamiques, inspiration réseaux sociaux).
-
             </p>
+
             <p className={style.TextP4}>
-                Il n’y a pas de bonne ou de mauvaise approche.
-                <span className={style.SpanBold}>
-                    {" il y a la vôtre  "}
-                </span> 
+                Il n’y a pas de bonne ou de mauvaise approche. <strong>Il y a la vôtre </strong>
                 et mon rôle est de m’y adapter, pas de vous faire rentrer dans un moule.
-                <span className={style.SpanBold}>
-                    
-                </span> 
-               
             </p>
 
             {/* Container Images 2 */}
@@ -136,8 +129,7 @@ function PortraitMariageRoot() {
                 <span className={style.SpanBold}>
                     {" lieux en amont. . "}
                 </span> 
-                Pourquoi ? Parce que la lumière, les espaces et les circulations jouent un rôle clé, en photo comme en vidéo.
-                
+                Pourquoi ? Parce que la lumière, les espaces et les circulations jouent un rôle clé, en photo comme en vidéo.        
                 <span className={style.SpanBold}>
                     {" Ce travail préparatoire me permet de : "}
                 </span> 
@@ -147,20 +139,19 @@ function PortraitMariageRoot() {
 
                 <span className={style.SpanBold}>
                     {" Le jour J, vous n’avez rien à gérer. Vous vivez. Je m’adapte. "}
-                </span> 
-                
+                </span>
             </p>
             
             {/* Container Images 3 */}
             <Container4Images_Element
-            img1={imagesPortraitMariage_Data[8].src}
-            metaNameImg1={imagesPortraitMariage_Data[8].alt}
-            img2={imagesPortraitMariage_Data[9].src}
-            metaNameImg2={imagesPortraitMariage_Data[9].alt}
-            img3={imagesPortraitMariage_Data[10].src}
-            metaNameImg3={imagesPortraitMariage_Data[10].alt}
-            img4={imagesPortraitMariage_Data[11].src}
-            metaNameImg4={imagesPortraitMariage_Data[11].alt}
+                img1={imagesPortraitMariage_Data[8].src}
+                metaNameImg1={imagesPortraitMariage_Data[8].alt}
+                img2={imagesPortraitMariage_Data[9].src}
+                metaNameImg2={imagesPortraitMariage_Data[9].alt}
+                img3={imagesPortraitMariage_Data[10].src}
+                metaNameImg3={imagesPortraitMariage_Data[10].alt}
+                img4={imagesPortraitMariage_Data[11].src}
+                metaNameImg4={imagesPortraitMariage_Data[11].alt}
             />
 
             {/* ---------- ---------- ---------- ---------- ---------- */}
@@ -192,6 +183,7 @@ function PortraitMariageRoot() {
                     {" tendances Instagram."}
                 </span>
             </p>
+
             <p className={style.TextP4}>
                 Certains couples préfèrent des clichés
                 <span className={style.SpanBold}>
@@ -209,14 +201,14 @@ function PortraitMariageRoot() {
             
             {/* Container Images 4 */}
             <Container4Images_Element
-            img1={imagesPortraitMariage_Data[12].src}
-            metaNameImg1={imagesPortraitMariage_Data[12].alt}
-            img2={imagesPortraitMariage_Data[13].src}
-            metaNameImg2={imagesPortraitMariage_Data[13].alt}
-            img3={imagesPortraitMariage_Data[14].src}
-            metaNameImg3={imagesPortraitMariage_Data[14].alt}
-            img4={imagesPortraitMariage_Data[15].src}
-            metaNameImg4={imagesPortraitMariage_Data[15].alt}
+                img1={imagesPortraitMariage_Data[12].src}
+                metaNameImg1={imagesPortraitMariage_Data[12].alt}
+                img2={imagesPortraitMariage_Data[13].src}
+                metaNameImg2={imagesPortraitMariage_Data[13].alt}
+                img3={imagesPortraitMariage_Data[14].src}
+                metaNameImg3={imagesPortraitMariage_Data[14].alt}
+                img4={imagesPortraitMariage_Data[15].src}
+                metaNameImg4={imagesPortraitMariage_Data[15].alt}
             />
 
             {/* ---------- ---------- ---------- ---------- ---------- */}
@@ -242,8 +234,8 @@ function PortraitMariageRoot() {
                 <span className={style.SpanBold}>
                     {" "}
                 </span>
-                
             </p>
+
             <p className={style.TextP4}>
                 L'idée n'est pas de vous imposer des poses mais plutôt de vous aider à {" "}
                 <span className={style.SpanBold}>
@@ -262,20 +254,21 @@ function PortraitMariageRoot() {
             
             {/* Container Images 5 */}
             <Container4Images_Element
-            img1={imagesPortraitMariage_Data[16].src}
-            metaNameImg1={imagesPortraitMariage_Data[16].alt}
-            img2={imagesPortraitMariage_Data[17].src}
-            metaNameImg2={imagesPortraitMariage_Data[17].alt}
-            img3={imagesPortraitMariage_Data[18].src}
-            metaNameImg3={imagesPortraitMariage_Data[18].alt}
-            img4={imagesPortraitMariage_Data[19].src}
-            metaNameImg4={imagesPortraitMariage_Data[19].alt}
+                img1={imagesPortraitMariage_Data[16].src}
+                metaNameImg1={imagesPortraitMariage_Data[16].alt}
+                img2={imagesPortraitMariage_Data[17].src}
+                metaNameImg2={imagesPortraitMariage_Data[17].alt}
+                img3={imagesPortraitMariage_Data[18].src}
+                metaNameImg3={imagesPortraitMariage_Data[18].alt}
+                img4={imagesPortraitMariage_Data[19].src}
+                metaNameImg4={imagesPortraitMariage_Data[19].alt}
             />
 
             {/* ---------- ---------- ---------- ---------- ---------- */}
 
             <h2 className={style.TitleH2}>
-            Mon objectif : créer des souvenirs durables en photo comme en vidéo pour votre mariage            </h2>
+                Mon objectif : créer des souvenirs durables en photo comme en vidéo pour votre mariage
+            </h2>
 
             <p className={style.TextP4}>
                 En tant que photographe et vidéaste professionnel installée à Montpellier mon engagement est simple : {" "}
