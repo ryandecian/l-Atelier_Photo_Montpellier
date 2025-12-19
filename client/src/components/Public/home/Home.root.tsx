@@ -146,20 +146,20 @@ function Home_Root() {
                 </h2>
 
                 <section className={style.ContainerVideo}>
-                <h3 className={style.VideoTitle}>Aventure saharienne - Immersion dans le désert avec Mélodie du Désert</h3>
+                <h3 className={style.VideoTitle}>Mariage de Laure et Charles - Immersion dans leur journée spéciale</h3>
                 <video
                     className={style.VideoPlayer}
-                    src="/video/video-trek-desert-maroc/video-trek-desert-maroc.mp4"
+                    src="/video/video-mariage-laure-et-charles/video-mariage-laure-et-charles.mp4"
                     controls
                     preload="none"
                     controlsList="nodownload"
                     onPlay={(e) => pauseOtherVideos_Utils(e.currentTarget)}
                     onContextMenu={(e) => e.preventDefault()} /* Désactive le clic droit */
-                    poster="/video/video-trek-desert-maroc/video-trek-desert-maroc.jpg"
+                    poster="/video/video-mariage-laure-et-charles/video-mariage-laure-et-charles.jpg"
                     playsInline
                 />
                 <p className={style.VideoDescription}>
-                    Une courte vidéo présentant l’ambiance du trek dans les dunes marocaines.
+                    Une courte vidéo présentant l’ambiance du mariage de Laure et Charles.
                 </p>
             </section>
 
