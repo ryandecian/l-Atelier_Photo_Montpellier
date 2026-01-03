@@ -3,7 +3,7 @@ import style from "../../StyleRootComponent.module.css";
 /* Import des composants */
 import Separator from "./ComponentsMentionsLegalesRoot/Separator/Separator";
 import MentionsLegalesComponentA from "./components/MentionsLegalesComponentA.component";
-import MentionsLegalesComponentB from "./ComponentsMentionsLegalesRoot/MentionsLegalesComponentB/MentionsLegalesComponentB";
+import MentionsLegalesComponentB from "./components/MentionsLegalesB.component";
 import MentionsLegalesComponentC from "./ComponentsMentionsLegalesRoot/MentionsLegalesComponentC/MentionsLegalesComponentC";
 import MentionsLegalesComponentD from "./ComponentsMentionsLegalesRoot/MentionsLegalesComponentD/MentionsLegalesComponentD";
 import MentionsLegalesComponentE from "./ComponentsMentionsLegalesRoot/MentionsLegalesComponentE/MentionsLegalesComponentE";

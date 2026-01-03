@@ -1,5 +1,5 @@
 import style from "../../../../StyleRootComponent.module.css";
-import externalLinks from "../../../../../constants/externalLinks";
+import externalLinks from "../../../../constants/externalLinks";
 
 function MentionsLegalesComponentB() {
     return (
