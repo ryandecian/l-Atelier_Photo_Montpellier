@@ -1,3 +1,4 @@
+/* Import des modules CSS */
 import style from "../../StyleRootComponent.module.css";
 
 /* Import des composants */
@@ -31,7 +32,7 @@ function MentionsLegales_Root() {
             {/* Section C ou 3 : Limitations de responsabilité */}
             <MentionsLegalesC_Component />
             <Separator_Component />
-            
+
             {/* Section D ou 4 : CNIL et gestion des données personnelles */}
             <MentionsLegalesD_Component />
             <Separator_Component />
