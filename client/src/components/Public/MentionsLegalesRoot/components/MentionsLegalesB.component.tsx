@@ -1,9 +1,9 @@
 import style from "../../../../StyleRootComponent.module.css";
 import externalLinks from "../../../../constants/externalLinks";
 
-function MentionsLegalesComponentB() {
+function MentionsLegalesB_Component() {
     return (
-        <article className={`MentionsLegalesComponentB ${style.MentionsLegalesComponentB}`}>
+        <article className={`MentionsLegalesB_Component ${style.MentionsLegalesComponentB}`}>
             <h2 className={style.TitleH2px2}>
                 2 – Propriété intellectuelle et contrefaçons
             </h2>
@@ -37,4 +37,4 @@ function MentionsLegalesComponentB() {
     );
 }
 
-export default MentionsLegalesComponentB;
+export default MentionsLegalesB_Component;

@@ -3,7 +3,7 @@ import externalLinks from "../../../../constants/externalLinks";
 
 function MentionsLegalesA_Component() {
     return (
-        <article className={`MentionsLegalesComponentA ${style.MentionsLegalesComponentA}`}>
+        <article className={`MentionsLegalesA_Component`}>
             <h2 className={style.TitleH2px2}>
                 1 – Édition du site
             </h2>
@@ -87,4 +87,4 @@ function MentionsLegalesA_Component() {
     );
 }
 
-export default MentionsLegalesA_Component;
+export { MentionsLegalesA_Component };
