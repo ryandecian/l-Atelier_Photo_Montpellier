@@ -10,8 +10,8 @@ import { Link } from "react-router-dom";
 function NavHomePC_Layout() {
     return (
         <nav className={`NavHomePC_Layout ${css.NavHomePC}`}>
-            <div className={css.ContainerLogoNavHomePC}>
-                <p className={css.TitleNavHomePC}>
+            <div className={css.ContainerLogoNavPC}>
+                <p className={css.TitleNavPC}>
                     <Link to="/" >
                         l'Atelier Photo Montpellier
                     </Link>

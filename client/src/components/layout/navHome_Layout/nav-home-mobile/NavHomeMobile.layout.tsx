@@ -10,7 +10,7 @@ import { MenuBurgerHome_Layout } from "./components/MenuBurgerHome.layout";
 function NavHomeMobile_Layout() {
 
     return (
-        <nav className={css.NavMobile}>
+        <nav className={css.NavHomeMobile}>
             <div className={css.ContainerLogoNavMobile}>
                 <Link to="/">
                         l'Atelier Photo Montpellier

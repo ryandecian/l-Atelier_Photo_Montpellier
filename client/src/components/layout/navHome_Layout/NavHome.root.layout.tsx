@@ -5,7 +5,7 @@ import { NavHomePC_Layout } from "./nav-home-pc/NavHomePC.layout";
 /* Import des Hooks */
 import useMediaQueriesWidth_rem from "../../../hook/useMediaQueriesWidth_rem.utils.hook";
 
-function Nav_root_Layout() {
+function NavHome_root_Layout() {
     const viewportWidth: number = useMediaQueriesWidth_rem();
 
     return (
@@ -22,4 +22,4 @@ function Nav_root_Layout() {
     )
 }
 
-export default Nav_root_Layout;
+export default NavHome_root_Layout;
