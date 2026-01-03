@@ -1,5 +1,5 @@
 /* Import des composants Router */
-import router from "../../../router/router";
+// import router from "../../../router/router";
 
 /* Import des Types */
 import type { NavMenu_data_Type } from "../../../types/layout/navMenu.data.type";
