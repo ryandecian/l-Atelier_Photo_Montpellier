@@ -1,9 +1,12 @@
-import style from "../../../../StyleRootComponent.module.css";
-import externalLinks from "../../../../../constants/externalLinks";
+/* Import des modules CSS */
+import style from "../../../StyleRootComponent.module.css";
 
-function MentionsLegalesComponentE() {
+/* Import des composants Router */
+import externalLinks from "../../../../constants/externalLinks";
+
+function MentionsLegalesE_Component() {
     return (
-        <article className={`MentionsLegalesComponentE ${style.MentionsLegalesComponentE}`}>
+        <article className={`MentionsLegalesE_Component`}>
             <h2 className={style.TitleH2px2}>
                 5 – Liens hypertextes et cookies
             </h2>
@@ -16,13 +19,10 @@ function MentionsLegalesComponentE() {
                 </span>
                 {" "} contient des liens hypertextes vers d’autres sites et dégage toute responsabilité à propos de ces 
                 liens externes ou des liens créés par d’autres sites vers {" "}
-                <span className={style.SpanBold}>
-                    {"https://atelier-photo-montpellier.fr"}
-                </span>
+                <strong>https://atelier-photo-montpellier.fr.</strong>
+                {" "}
                 {" "} La navigation sur le site {" "}
-                <span className={style.SpanBold}>
-                    {"https://atelier-photo-montpellier.fr"}
-                </span>
+                <strong>https://atelier-photo-montpellier.fr</strong>
                 {" "} est susceptible de provoquer l’installation de cookie(s) sur l’ordinateur de l’utilisateur.
             </p>
 
@@ -36,13 +36,9 @@ function MentionsLegalesComponentE() {
             {/* Text 3 */}
             <p className={style.TextP4}>
                 Ce site utilise uniquement des {" "}
-                <span className={style.SpanBold}>
-                    {"cookies strictement nécessaires"}
-                </span>
+                <strong>cookies strictement nécessaires</strong>
                 {" "} à son bon fonctionnement, notamment pour la gestion des sessions utilisateur et des paiements en ligne. {" "}
-                <span className={style.SpanBold}>
-                    {"Aucun cookie publicitaire ou de suivi n’est installé."}
-                </span>
+                <strong>Aucun cookie publicitaire ou de suivi n’est installé.</strong>
             </p>
 
             {/* Text 4 */}
@@ -71,4 +67,4 @@ function MentionsLegalesComponentE() {
     );
 }
 
-export default MentionsLegalesComponentE;
+export { MentionsLegalesE_Component };
