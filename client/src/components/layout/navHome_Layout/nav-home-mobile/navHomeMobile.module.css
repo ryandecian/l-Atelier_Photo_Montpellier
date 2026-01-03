@@ -1,11 +1,10 @@
 /* Le code qui va suivre jusqu'au double séparateur servira à coder les balises hors MenuBurger */
-.NavMobile {
+.NavHomeMobile {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     background-color: inherit;
-    box-shadow: var(--box-shadow-bottom);
 }
 
 .ContainerLogoNavMobile {
@@ -20,6 +19,6 @@
     font-family: AnneSignature;
     font-weight: normal;
     text-decoration: none;
-    color: var(--ColorTextNavRootBlack);
+    color: var(--ColorTextWhite);
     margin: 2rem 0rem; /* 32px 0px 32px 0px */
 }

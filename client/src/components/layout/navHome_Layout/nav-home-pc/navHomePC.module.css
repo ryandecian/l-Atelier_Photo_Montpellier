@@ -1,10 +1,8 @@
 /* Container Principale */
-.NavPC {
+.NavHomePC {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--ColorBackgroundNavRootWhite);
-    box-shadow: var(--box-shadow-bottom);
     width: 100%;
     margin: 0rem;
     padding: 0rem;
@@ -54,7 +52,7 @@
 
 .TitleNavPC > a {
     font-size: var(--h1);
-    color: var(--ColorTextNavRootBlack);
+    color: var(--ColorTextWhite);
     font-family: AnneSignature;
     font-weight: 300;
     font-style: normal;

@@ -6,8 +6,10 @@
 .OpenBtn {
     display: inline-block; /* */
     font-size: var(--h4);
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: 300;
     text-decoration: none;
-    color: var(--ColorTextNavRootBlack);
+    color: var(--ColorTextWhite);
     transition: transform 0.3s ease, color 0.2s ease;
     white-space: nowrap;
 }
