@@ -1,8 +1,9 @@
-import style from "../../../../StyleRootComponent.module.css";
+/* Import des modules CSS */
+import style from "../../../StyleRootComponent.module.css";
 
-function MentionsLegalesComponentC() {
+function MentionsLegalesC_Component() {
     return (
-        <article className={`MentionsLegalesComponentC ${style.MentionsLegalesComponentC}`}>
+        <article className={`MentionsLegalesC_Component`}>
             <h2 className={style.TitleH2px2}>
                 3 – Limitations de responsabilité
             </h2>
@@ -11,23 +12,17 @@ function MentionsLegalesComponentC() {
             <p className={style.TextP4}>
                 L’ATELIER PHOTO MONTPELLIER ne pourra être tenu pour responsable des dommages directs et indirects 
                 causés au matériel de l’utilisateur, lors de l’accès au site {" "}
-                <span className={style.SpanBold}>
-                    {"https://atelier-photo-montpellier.fr"}
-                </span>
+                <strong>https://atelier-photo-montpellier.fr</strong>
                 {" "}. L’ATELIER PHOTO MONTPELLIER  décline toute responsabilité quant à l’utilisation qui pourrait 
                 être faite des informations et contenus présents sur {" "}
-                <span className={style.SpanBold}>
-                    {"https://atelier-photo-montpellier.fr"}
-                </span>
+                <strong>https://atelier-photo-montpellier.fr</strong>
                 {"."}
             </p>
 
             {/* Text 2 */}
             <p className={style.TextP4}>
                 L’ATELIER PHOTO MONTPELLIER s’engage à sécuriser au mieux le site {" "}
-                <span className={style.SpanBold}>
-                    {"https://atelier-photo-montpellier.fr"}
-                </span>
+                <strong>https://atelier-photo-montpellier.fr</strong>
                 {" "} cependant sa responsabilité ne pourra être mise en cause si des données indésirables sont 
                 importées et installées sur son site à son insu.
             </p>
@@ -50,4 +45,4 @@ function MentionsLegalesComponentC() {
     );
 }
 
-export default MentionsLegalesComponentC;
+export { MentionsLegalesC_Component };

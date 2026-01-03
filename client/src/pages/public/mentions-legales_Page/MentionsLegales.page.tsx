@@ -2,7 +2,7 @@
 import style from "../../stylePage.module.css";
 
 /* Import des Components */
-import MentionsLegalesRoot from "../../../components/Public/MentionsLegalesRoot/MentionsLegalesRoot";
+import MentionsLegales_Root from "../../../components/Public/MentionsLegalesRoot/MentionsLegales.root";
 import NavRoot from "../../../components/layout/nav_Layout/Nav.root.layout";
 import Footer_layout from "../../../components/layout/footer/Footer.layout";
 
@@ -22,7 +22,7 @@ function MentionsLegales_Page() {
                  <NavRoot />
             </header>
             <main className={style.Main}>
-                <MentionsLegalesRoot />
+                <MentionsLegales_Root />
             </main>
             <footer className={style.Footer}>
                 <Footer_layout />
