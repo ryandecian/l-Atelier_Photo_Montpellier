@@ -1,6 +1,6 @@
 /* Import des modules CSS */
 import css from "./menuBurger.module.css";
-import style from "../../../../StyleRootComponent.module.css";
+import style from "../../../../style.root.module.css";
 
 /* Import des composants React */
 import { useState } from "react";
