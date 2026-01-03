@@ -2,7 +2,7 @@ import style from "../../StyleRootComponent.module.css";
 
 /* Import des composants */
 import Separator from "./ComponentsMentionsLegalesRoot/Separator/Separator";
-import MentionsLegalesComponentA from "./ComponentsMentionsLegalesRoot/MentionsLegalesComponentA/MentionsLegalesComponentA";
+import MentionsLegalesComponentA from "./components/MentionsLegalesComponentA.component";
 import MentionsLegalesComponentB from "./ComponentsMentionsLegalesRoot/MentionsLegalesComponentB/MentionsLegalesComponentB";
 import MentionsLegalesComponentC from "./ComponentsMentionsLegalesRoot/MentionsLegalesComponentC/MentionsLegalesComponentC";
 import MentionsLegalesComponentD from "./ComponentsMentionsLegalesRoot/MentionsLegalesComponentD/MentionsLegalesComponentD";

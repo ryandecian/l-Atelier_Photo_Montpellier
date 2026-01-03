@@ -1,7 +1,7 @@
 import style from "../../../../StyleRootComponent.module.css";
-import externalLinks from "../../../../../constants/externalLinks";
+import externalLinks from "../../../../constants/externalLinks";
 
-function MentionsLegalesComponentA() {
+function MentionsLegalesA_Component() {
     return (
         <article className={`MentionsLegalesComponentA ${style.MentionsLegalesComponentA}`}>
             <h2 className={style.TitleH2px2}>
@@ -17,17 +17,13 @@ function MentionsLegalesComponentA() {
                     </a>
                 </span>
                 {" "} pour la confiance dans l’économie numérique, il est précisé aux utilisateurs du site internet {" "} 
-                <span className={style.SpanBold}>
-                    {"https://atelier-photo-montpellier.fr"}
-                </span>
+                <strong>https://atelier-photo-montpellier.fr</strong>
                 {" "} l’identité des différents intervenants dans le cadre de sa réalisation et de son suivi :
             </p>
 
             {/* Text 2 */}
             <p className={style.TextP4}>
-                <span className={style.SpanBold}>
-                    {"Propriétaire du site :"}
-                </span>
+                <strong>Propriétaire du site :</strong>
                 {" "} L’ATELIER PHOTO MONTPELLIER – Contact : {" "}
                 <span className={style.SpanLink}>
                     <a href={externalLinks.emailAnne} target="_blank" rel="noopener noreferrer">
@@ -45,18 +41,14 @@ function MentionsLegalesComponentA() {
 
             {/* Text 3 */}
             <p className={style.TextP4}>
-                <span className={style.SpanBold}>
-                    {"Identification de l’entreprise :"}
-                </span>
+                <strong>Identification de l’entreprise :</strong>
                  {" "} L’ATELIER PHOTO MONTPELLIER  au capital social de 2000 € – SIREN : 802558825 – RCS ou RM : 
                  Montpellier – Adresse postale : 13 Allée des Platanes 34790 Grabels.
             </p>
             
             {/* Text 4 */}
             <p className={style.TextP4}>
-                <span className={style.SpanBold}>
-                    {"Directrice de la publication :"}
-                </span>
+                <strong>Directrice de la publication :</strong>
                  {" "} ANNE SAUNIER – Contact : {" "}
                  <span className={style.SpanLink}>
                     <a href={externalLinks.phoneAnne} target="_blank" rel="noopener noreferrer">
@@ -67,9 +59,7 @@ function MentionsLegalesComponentA() {
 
             {/* Text 5 */}
             <p className={style.TextP4}>
-                <span className={style.SpanBold}>
-                    {"Hébergeur :"}
-                </span>
+                <strong>Hébergeur :</strong>
                  {" "} O2Switch – 222 Boulevard Gustave Flaubert, 63000 Clermont-Ferrand – Téléphone : {" "}
                  <span className={style.SpanLink}>
                     <a href={externalLinks.phoneHebergeur} target="_blank" rel="noopener noreferrer">
@@ -80,9 +70,7 @@ function MentionsLegalesComponentA() {
 
             {/* Text 6 */}
             <p className={style.TextP4}>
-                <span className={style.SpanBold}>
-                    {"Délégué à la protection des données :"}
-                </span>
+                <strong>Délégué à la protection des données :</strong>
                  {" "} ANNE SAUNIER – {" "}
                  <span className={style.SpanLink}>
                     <a href={externalLinks.emailAnne} target="_blank" rel="noopener noreferrer">
@@ -93,12 +81,10 @@ function MentionsLegalesComponentA() {
 
             {/* Text 7 */}
             <p className={style.TextP4}>
-                <span className={style.SpanBold}>
-                    {" Autres contributeurs :"}
-                </span>
+                <strong> Autres contributeurs :</strong>
             </p>
         </article>
     );
 }
 
-export default MentionsLegalesComponentA;
+export default MentionsLegalesA_Component;
