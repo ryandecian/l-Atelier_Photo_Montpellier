@@ -1,6 +1,7 @@
-import css from './Separator.module.css';
+/* Import des modules CSS */
+import css from './separator.module.css';
 
-function Separator() {
+function Separator_Component() {
     return (
         <div className={css.ContainerSeparator}>
             <hr className={css.Separator}/>
@@ -8,4 +9,4 @@ function Separator() {
     );
 }
 
-export default Separator;
+export { Separator_Component };

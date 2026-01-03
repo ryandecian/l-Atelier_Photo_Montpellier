@@ -1,9 +1,12 @@
-import style from "../../../../StyleRootComponent.module.css";
-import externalLinks from "../../../../../constants/externalLinks";
+/* Import des modules CSS */
+import style from "../../../StyleRootComponent.module.css";
 
-function MentionsLegalesComponentB() {
+/* Import des composants Router */
+import externalLinks from "../../../../constants/externalLinks";
+
+function MentionsLegalesB_Component() {
     return (
-        <article className={`MentionsLegalesComponentB ${style.MentionsLegalesComponentB}`}>
+        <article className={`MentionsLegalesB_Component`}>
             <h2 className={style.TitleH2px2}>
                 2 – Propriété intellectuelle et contrefaçons
             </h2>
@@ -37,4 +40,4 @@ function MentionsLegalesComponentB() {
     );
 }
 
-export default MentionsLegalesComponentB;
+export { MentionsLegalesB_Component };

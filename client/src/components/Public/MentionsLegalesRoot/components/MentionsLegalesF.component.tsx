@@ -1,8 +1,9 @@
-import style from "../../../../StyleRootComponent.module.css";
+/* Import des modules CSS */
+import style from "../../../StyleRootComponent.module.css";
 
-function MentionsLegalesComponentF() {
+function MentionsLegalesF_Component() {
     return (
-        <article className={`MentionsLegalesComponentF ${style.MentionsLegalesComponentF}`}>
+        <article className={`MentionsLegalesF_Component`}>
             <h2 className={style.TitleH2px2}>
                 6 – Droit applicable et attribution de juridiction
             </h2>
@@ -10,17 +11,13 @@ function MentionsLegalesComponentF() {
             {/* Text 1 */}
             <p className={style.TextP4}>
             Tout litige en relation avec l’utilisation du site {" "}
-            <span className={style.SpanBold}>
-                    {"https://atelier-photo-montpellier.fr"}
-                </span>
+            <strong>https://atelier-photo-montpellier.fr</strong>
             {" "} est soumis au droit français. En dehors des cas où la loi ne le permet pas, il est fait attribution 
             exclusive de juridiction aux tribunaux compétents de {" "}
-            <span className={style.SpanBold}>
-                    {"MONTPELLIER."}
-                </span>
+            <strong>MONTPELLIER.</strong>
             </p>
         </article>
     );
 }
 
-export default MentionsLegalesComponentF;
+export { MentionsLegalesF_Component };
