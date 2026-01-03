@@ -5,6 +5,7 @@ import style from "../../stylePage.module.css";
 import HomeRoot from "../../../components/Public/home/Home.root";
 // import NavTargetHomeRoot from "../../../components/layout/NavTargetHomeRoot/NavTargetHomeRoot";
 import NavHome_root_Layout from "../../../components/layout/navHome_Layout/NavHome.root.layout";
+// import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
 import Footer_layout from "../../../components/layout/footer/Footer.layout";
 
 /* Import des composants SEO */
