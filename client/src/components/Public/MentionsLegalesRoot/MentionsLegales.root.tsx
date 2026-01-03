@@ -6,7 +6,7 @@ import { MentionsLegalesA_Component } from "./components/MentionsLegalesA.compon
 import { MentionsLegalesB_Component } from "./components/MentionsLegalesB.component";
 import { MentionsLegalesC_Component } from "./components/MentionsLegalesC.component";
 import { MentionsLegalesD_Component } from "./components/MentionsLegalesD.component";
-import MentionsLegalesComponentE from "./ComponentsMentionsLegalesRoot/MentionsLegalesComponentE/MentionsLegalesComponentE";
+import { MentionsLegalesE_Component } from "./components/MentionsLegalesE.component";
 import MentionsLegalesComponentF from "./ComponentsMentionsLegalesRoot/MentionsLegalesComponentF/MentionsLegalesComponentF";
 
 function MentionsLegales_Root() {
@@ -37,7 +37,7 @@ function MentionsLegales_Root() {
             <Separator />
 
             {/* Section E ou 5 : Liens hypertextes et cookies */}
-            <MentionsLegalesComponentE />
+            <MentionsLegalesE_Component />
             <Separator />
 
             {/* Section F ou 6 : Droit applicable et attribution de juridiction */}
