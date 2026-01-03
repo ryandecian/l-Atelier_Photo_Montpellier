@@ -1,0 +1,85 @@
+/* Container Principale */
+.NavPC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--ColorBackgroundNavRootWhite);
+    box-shadow: var(--box-shadow-bottom);
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+/* Container Logo */
+.ContainerLogoNavPC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19.375rem; /* 310px */
+    min-width: 19.375rem; /* 310px */
+}
+@media (min-width: 52.8125rem) { /* 845px */
+    .ContainerLogoNavPC {
+        font-size: calc(var(--h1) + 0.3125rem); /* 5px */
+        width: 20.625rem; /* 330px */
+        min-width: 20.625rem; /* 330px */
+    }
+}
+@media (min-width: 62.5rem) { /* 1000px */
+    .ContainerLogoNavPC {
+        font-size: calc(var(--h1) + 0.3125rem); /* 5px */
+        width: 23.4375rem; /* 375px */
+        min-width: 23.4375rem; /* 375px */
+    }
+}
+
+.TitleNavPC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5625rem 0.625rem 0.125rem 0rem; /* 25px 0px 2px 24px */
+}
+@media (min-width: 52.8125rem) { /* 845px */
+    .TitleNavPC {
+        width: calc(100% - 2rem); /* 100% - 32px */
+        margin: 1.5625rem 0rem 0.125rem 2rem; /* 25px 0px 2px 48px */
+    }
+}
+@media (min-width: 62.5rem) { /* 1000px */
+    .TitleNavPC {
+        width: calc(100% - 3rem); /* 100% - 48px */
+        margin: 1.5625rem 0rem 0.125rem 3rem; /* 25px 0px 2px 48px */
+    }
+}
+
+.TitleNavPC > a {
+    font-size: var(--h1);
+    color: var(--ColorTextNavRootBlack);
+    font-family: AnneSignature;
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    text-decoration: none;
+    width: 100%;
+}
+
+/* ---------- ---------- ---------- ----------- ----------- */
+
+/* Container Navigation */
+.ContainerNavigationNavPC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 29.875rem; /* 479px */
+}
+@media (min-width: 52.8125rem) { /* 845px */
+    .ContainerNavigationNavPC {
+        width: calc(100% - 20.625rem); /* 100% - 330px */
+    }
+    
+}
+@media (min-width: 62.5rem) { /* 1000px */
+    .ContainerNavigationNavPC {
+        width: calc(100% - 23.4375rem); /* 100% - 375px */
+    }
+}
