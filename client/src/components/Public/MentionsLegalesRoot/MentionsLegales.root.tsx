@@ -7,7 +7,7 @@ import { MentionsLegalesB_Component } from "./components/MentionsLegalesB.compon
 import { MentionsLegalesC_Component } from "./components/MentionsLegalesC.component";
 import { MentionsLegalesD_Component } from "./components/MentionsLegalesD.component";
 import { MentionsLegalesE_Component } from "./components/MentionsLegalesE.component";
-import MentionsLegalesComponentF from "./ComponentsMentionsLegalesRoot/MentionsLegalesComponentF/MentionsLegalesComponentF";
+import { MentionsLegalesF_Component } from "./components/MentionsLegalesF.component";
 
 function MentionsLegales_Root() {
     return (
@@ -41,7 +41,7 @@ function MentionsLegales_Root() {
             <Separator />
 
             {/* Section F ou 6 : Droit applicable et attribution de juridiction */}
-            <MentionsLegalesComponentF />
+            <MentionsLegalesF_Component />
         </section>
     );
 }
