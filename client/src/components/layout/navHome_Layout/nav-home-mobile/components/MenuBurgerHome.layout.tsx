@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import { SubMenuHomeMobile_Element } from "./elements/SubMenuHomeMobile.element";
 
 /* Import des Datas */
-import { navMenu_Data } from "../../navHomeMenu.data";
+import { navHomeMenu_Data } from "../../navHomeMenu.data";
 
 /* Import des Types */
 import type { NavMenu_data_Type } from "../../../../../types/layout/navMenu.data.type";
@@ -20,7 +20,7 @@ function MenuBurgerHome_Layout() {
     const funcActive = () => {
         setActive(!active)
     }
-    const dataMenu: NavMenu_data_Type = navMenu_Data();
+    const dataMenu: NavMenu_data_Type = navHomeMenu_Data();
 
     return (
         <>
