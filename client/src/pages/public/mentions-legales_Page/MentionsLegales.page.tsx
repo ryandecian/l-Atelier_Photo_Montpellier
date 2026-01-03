@@ -2,7 +2,7 @@
 import style from "../../stylePage.module.css";
 
 /* Import des Components */
-import MentionsLegales_Root from "../../../components/Public/MentionsLegalesRoot/MentionsLegales.root";
+import MentionsLegales_Root from "../../../components/Public/mention-legale/MentionsLegales.root";
 import NavRoot from "../../../components/layout/nav_Layout/Nav.root.layout";
 import Footer_layout from "../../../components/layout/footer/Footer.layout";
 
