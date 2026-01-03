@@ -9,9 +9,9 @@ import MentionsLegalesComponentD from "./ComponentsMentionsLegalesRoot/MentionsL
 import MentionsLegalesComponentE from "./ComponentsMentionsLegalesRoot/MentionsLegalesComponentE/MentionsLegalesComponentE";
 import MentionsLegalesComponentF from "./ComponentsMentionsLegalesRoot/MentionsLegalesComponentF/MentionsLegalesComponentF";
 
-function MentionsLegalesRoot() {
+function MentionsLegales_Root() {
     return (
-        <section className={`MentionsLegalesRoot ${style.ContainerRootRacine}`}>
+        <section className={`MentionsLegales_Root ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitleH1}>
                 <h1 className={style.TitleH1}>
                     Mentions Légales
@@ -46,4 +46,4 @@ function MentionsLegalesRoot() {
     );
 }
 
-export default MentionsLegalesRoot;
+export default MentionsLegales_Root;
