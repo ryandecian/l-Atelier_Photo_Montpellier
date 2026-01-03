@@ -1,3 +1,4 @@
+/* Import des modules CSS */
 import style from "../../../StyleRootComponent.module.css";
 
 function MentionsLegalesF_Component() {
