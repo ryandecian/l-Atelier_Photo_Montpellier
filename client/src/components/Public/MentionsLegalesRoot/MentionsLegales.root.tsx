@@ -1,7 +1,7 @@
 import style from "../../StyleRootComponent.module.css";
 
 /* Import des composants */
-import Separator from "./ComponentsMentionsLegalesRoot/Separator/Separator";
+import { Separator_Component } from "./components/separator/Separator.component";
 import { MentionsLegalesA_Component } from "./components/MentionsLegalesA.component";
 import { MentionsLegalesB_Component } from "./components/MentionsLegalesB.component";
 import { MentionsLegalesC_Component } from "./components/MentionsLegalesC.component";
@@ -18,27 +18,27 @@ function MentionsLegales_Root() {
                 </h1>
             </header>
 
-            <Separator />
+            <Separator_Component />
 
             {/* Section A ou 1 : Edition du site */}
             <MentionsLegalesA_Component />
-            <Separator />
+            <Separator_Component />
 
             {/* Section B ou 2 : Propriété intellectuelle et contrefaçons */}
             <MentionsLegalesB_Component />
-            <Separator />
+            <Separator_Component />
             
             {/* Section C ou 3 : Limitations de responsabilité */}
             <MentionsLegalesC_Component />
-            <Separator />
-
+            <Separator_Component />
+            
             {/* Section D ou 4 : CNIL et gestion des données personnelles */}
             <MentionsLegalesD_Component />
-            <Separator />
+            <Separator_Component />
 
             {/* Section E ou 5 : Liens hypertextes et cookies */}
             <MentionsLegalesE_Component />
-            <Separator />
+            <Separator_Component />
 
             {/* Section F ou 6 : Droit applicable et attribution de juridiction */}
             <MentionsLegalesF_Component />
