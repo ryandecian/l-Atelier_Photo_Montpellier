@@ -1,4 +1,7 @@
+/* Import des modules CSS */
 import style from "../../../StyleRootComponent.module.css";
+
+/* Import des composants Router */
 import externalLinks from "../../../../constants/externalLinks";
 
 function MentionsLegalesD_Component() {
