@@ -13,7 +13,7 @@ function NavPC_Layout() {
             <div className={css.ContainerLogoNavPC}>
                 <p className={css.TitleNavPC}>
                     <Link to="/" >
-                        l'Atelier Photo Montpellier
+                        Kaleidopix
                     </Link>
                 </p>
             </div>

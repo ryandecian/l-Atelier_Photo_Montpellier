@@ -13,7 +13,7 @@ function NavMobile_Layout() {
         <nav className={css.NavMobile}>
             <div className={css.ContainerLogoNavMobile}>
                 <Link to="/">
-                        l'Atelier Photo Montpellier
+                        Kaleidopix
                 </Link>
             </div>
 
