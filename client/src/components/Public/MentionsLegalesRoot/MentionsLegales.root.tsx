@@ -3,7 +3,7 @@ import style from "../../StyleRootComponent.module.css";
 /* Import des composants */
 import Separator from "./ComponentsMentionsLegalesRoot/Separator/Separator";
 import { MentionsLegalesA_Component } from "./components/MentionsLegalesA.component";
-import MentionsLegalesComponentB from "./components/MentionsLegalesB.component";
+import { MentionsLegalesB_Component } from "./components/MentionsLegalesB.component";
 import MentionsLegalesComponentC from "./ComponentsMentionsLegalesRoot/MentionsLegalesComponentC/MentionsLegalesComponentC";
 import MentionsLegalesComponentD from "./ComponentsMentionsLegalesRoot/MentionsLegalesComponentD/MentionsLegalesComponentD";
 import MentionsLegalesComponentE from "./ComponentsMentionsLegalesRoot/MentionsLegalesComponentE/MentionsLegalesComponentE";
@@ -25,7 +25,7 @@ function MentionsLegales_Root() {
             <Separator />
 
             {/* Section B ou 2 : Propriété intellectuelle et contrefaçons */}
-            <MentionsLegalesComponentB />
+            <MentionsLegalesB_Component />
             <Separator />
             
             {/* Section C ou 3 : Limitations de responsabilité */}
