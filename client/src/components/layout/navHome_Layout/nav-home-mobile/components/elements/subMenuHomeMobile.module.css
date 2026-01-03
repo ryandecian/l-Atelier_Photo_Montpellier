@@ -1,0 +1,77 @@
+.MenuLiMobile {
+    list-style: none;
+    margin: 0rem;
+    padding: 0.625rem 1.5rem; /* 10px 24px 10px 24px */
+    border-bottom: 0.0625rem solid var(--ColorBackgroundNavRootWhite); /* 1px */
+    border-top: 0.0625rem solid var(--ColorBackgroundNavRootWhite); /* 1px */
+}
+
+.OpenBtn {
+    display: inline-block; /* */
+    font-size: var(--h5);
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--ColorTextBlack);
+    white-space: nowrap;
+    padding: 0rem;
+}
+@media (min-width: 18.75rem) { /* 300px */
+    .OpenBtn {
+        font-size: var(--h4);
+    }
+}
+@media (min-width: 25rem) { /* 400px */
+    .OpenBtn {
+        font-size: var(--h3);
+    }
+}
+
+.IconOpenBtn {
+    position: relative;
+    font-size: var(--h6);
+    z-index: 5; /* Met le bouton d'ouverture 5 Niv au dessus du menu burger */
+    cursor: pointer;
+    padding: 0rem;
+}
+
+.ButtonSubMenuMobile {
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    z-index: -4; /* Place le boutton de fermeture juste en dessous du sous menu */
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    background: none;
+    padding: 0rem;
+    margin: 0rem;
+    border: 0rem;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+
+    /* Masquer le texte de manière propre et accessible */
+    text-indent: -625rem; /* 10000px */
+    white-space: nowrap;
+    overflow: hidden;
+    color: transparent;
+}
+
+.SubMenuUlMobile {
+    list-style: none;
+    margin: 0.5rem 0rem; /* 8px 0px 8px 0px */
+    padding: 0rem;
+}
+
+.SubMenuLiMobile {
+    padding: 0.375rem 0rem; /* 4px 16px 4px 16px */
+}
+
+.SubMenuLinkMobile {
+    display: inline-block;
+    font-size: var(--h4);
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--ColorTextBlack);
+    white-space: nowrap;
+}

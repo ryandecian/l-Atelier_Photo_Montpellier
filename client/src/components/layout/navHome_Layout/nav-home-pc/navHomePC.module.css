@@ -1,7 +1,7 @@
 /* Container Principale */
-.NavTargetHomePC {
+.NavHomePC {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
     margin: 0rem;
@@ -9,48 +9,50 @@
 }
 
 /* Container Logo */
-.ContainerLogoNavTargetHomePC {
+.ContainerLogoNavPC {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20rem; /* 320px */
+    width: 19.375rem; /* 310px */
+    min-width: 19.375rem; /* 310px */
 }
-@media (min-width: 52.8125rem) { /* 845px*/
-    .ContainerLogoNavTargetHomePC {
-        font-size: calc(var(--h1) + 0.3125rem); /* h1 + 5px*/
+@media (min-width: 52.8125rem) { /* 845px */
+    .ContainerLogoNavPC {
+        font-size: calc(var(--h1) + 0.3125rem); /* 5px */
         width: 20.625rem; /* 330px */
+        min-width: 20.625rem; /* 330px */
     }
 }
 @media (min-width: 62.5rem) { /* 1000px */
-    .ContainerLogoNavTargetHomePC {
-        font-size: calc(var(--h1) + 5px);
+    .ContainerLogoNavPC {
+        font-size: calc(var(--h1) + 0.3125rem); /* 5px */
         width: 23.4375rem; /* 375px */
+        min-width: 23.4375rem; /* 375px */
     }
 }
 
-.TitleNavTargetHomePC {
+.TitleNavPC {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(100% - 1.5rem); /* 100% - 24px */
-    margin: 1.5625rem 0rem 0.125rem 1.5rem; /* 25px 0px 2px 24px */
+    margin: 1.5625rem 0.625rem 0.125rem 0rem; /* 25px 0px 2px 24px */
 }
-@media (min-width: 52.8125rem) { /* 845px*/
-    .TitleNavTargetHomePC {
+@media (min-width: 52.8125rem) { /* 845px */
+    .TitleNavPC {
         width: calc(100% - 2rem); /* 100% - 32px */
         margin: 1.5625rem 0rem 0.125rem 2rem; /* 25px 0px 2px 48px */
     }
 }
 @media (min-width: 62.5rem) { /* 1000px */
-    .TitleNavTargetHomePC {
+    .TitleNavPC {
         width: calc(100% - 3rem); /* 100% - 48px */
         margin: 1.5625rem 0rem 0.125rem 3rem; /* 25px 0px 2px 48px */
     }
 }
 
-.TitleNavTargetHomePC > a {
+.TitleNavPC > a {
     font-size: var(--h1);
-    color: var(--ColorTextNavHomeWhite);
+    color: var(--ColorTextWhite);
     font-family: AnneSignature;
     font-weight: 300;
     font-style: normal;
@@ -62,20 +64,20 @@
 /* ---------- ---------- ---------- ----------- ----------- */
 
 /* Container Navigation */
-.ContainerNavigationNavTargetHomePC {
+.ContainerNavigationNavPC {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(100% - 20rem); /* 100% - 320px */
+    min-width: 29.875rem; /* 479px */
 }
-@media (min-width: 52.8125rem) { /* 845px*/
-    .ContainerNavigationNavTargetHomePC {
+@media (min-width: 52.8125rem) { /* 845px */
+    .ContainerNavigationNavPC {
         width: calc(100% - 20.625rem); /* 100% - 330px */
     }
     
 }
 @media (min-width: 62.5rem) { /* 1000px */
-    .ContainerNavigationNavTargetHomePC {
+    .ContainerNavigationNavPC {
         width: calc(100% - 23.4375rem); /* 100% - 375px */
-    }  
+    }
 }

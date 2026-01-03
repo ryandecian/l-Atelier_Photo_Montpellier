@@ -1,5 +1,5 @@
 /* Le code qui va suivre jusqu'au double séparateur servira à coder les balises hors MenuBurger */
-.NavTargetHomeMobile {
+.NavHomeMobile {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,18 +7,18 @@
     background-color: inherit;
 }
 
-.ContainerLogoNavTargetHomeMobile {
+.ContainerLogoNavMobile {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 
-.ContainerLogoNavTargetHomeMobile > a {
+.ContainerLogoNavMobile > a {
     font-size: var(--h1);
     font-family: AnneSignature;
     font-weight: normal;
     text-decoration: none;
-    color: var(--ColorTextNavHomeWhite);
+    color: var(--ColorTextWhite);
     margin: 2rem 0rem; /* 32px 0px 32px 0px */
 }
