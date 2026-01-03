@@ -4,7 +4,7 @@ import style from "../../StyleRootComponent.module.css";
 import Separator from "./ComponentsMentionsLegalesRoot/Separator/Separator";
 import { MentionsLegalesA_Component } from "./components/MentionsLegalesA.component";
 import { MentionsLegalesB_Component } from "./components/MentionsLegalesB.component";
-import MentionsLegalesComponentC from "./ComponentsMentionsLegalesRoot/MentionsLegalesComponentC/MentionsLegalesComponentC";
+import { MentionsLegalesC_Component } from "./components/MentionsLegalesC.component";
 import MentionsLegalesComponentD from "./ComponentsMentionsLegalesRoot/MentionsLegalesComponentD/MentionsLegalesComponentD";
 import MentionsLegalesComponentE from "./ComponentsMentionsLegalesRoot/MentionsLegalesComponentE/MentionsLegalesComponentE";
 import MentionsLegalesComponentF from "./ComponentsMentionsLegalesRoot/MentionsLegalesComponentF/MentionsLegalesComponentF";
@@ -29,7 +29,7 @@ function MentionsLegales_Root() {
             <Separator />
             
             {/* Section C ou 3 : Limitations de responsabilité */}
-            <MentionsLegalesComponentC />
+            <MentionsLegalesC_Component />
             <Separator />
 
             {/* Section D ou 4 : CNIL et gestion des données personnelles */}
