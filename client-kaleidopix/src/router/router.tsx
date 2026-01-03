@@ -13,6 +13,22 @@ const router: Router_Type = [
         path: "/",
         element: <Home_Page />,
     },
+    /* {router[1].path} : page parent = children[0] */
+    {
+        path: "#",
+        children: [
+            /* {router[1]!.children![0]!.path} : page parent */
+            {
+                path: "parent",
+                element: <h1>parent</h1>,
+            },
+            /* {router[1]!.children![1]!.path} */
+            {
+                path: "#",
+                element: <h1>test</h1>,
+            },
+        ],
+    },
 ]
 
 export default router;
