@@ -1,4 +1,190 @@
+.ContainerRootRacine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem;
+    border: 0rem;
+}
+/*-------------------------------------*/
+/* Style des container de texte ou titre */
+.ContainerTitle,
+.ContainerText {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem;
+    border: 0rem;
+}
 
+/*-------------------------------------*/
+/* Style des Title dans un parent Column */
+.TitleH1, 
+.TitleH2,
+.TitleH2_00N0,
+.TitleH3,
+.TitleH4, 
+.TitleH5,
+.TitleH6 {
+    color : var(--ColorTextBlack);
+    font-weight: var(--font-weight-title);
+    font-style: var(--font-style-title);
+    font-display: swap;
+    text-align: start;
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem; /* 20px 20px 20px 20px */
+    border: 0rem;
+}
+
+.TitleH1 {
+    font-size: var(--h3); /* 18px */
+    text-align: center;
+    padding: 0rem 0rem 1.25rem 0rem; /* 0px 0px 20px 0px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .TitleH1 {
+        font-size: var(--h2); /* 24px */
+    }
+}
+@media (min-width: 31.25rem) { /* 500px */
+    .TitleH1 {
+        font-size: var(--h1); /* 32px */
+    }
+}
+.TitleH2,
+.TitleH2_00N0 {
+    font-size: var(--h4); /* 16px */
+    font-weight: bold;
+    text-align: start;
+}
+@media (min-width: 25rem) { /* 400px */
+    .TitleH2,
+    .TitleH2_00N0 {
+        font-size: var(--h3); /* 18px */
+    }
+}
+@media (min-width: 31.25rem) { /* 500px */
+    .TitleH2,
+    .TitleH2_00N0 {
+        font-size: var(--h2); /* 24px */
+    }
+}
+.TitleH2 {
+    padding: 1.25rem 0rem; /* 20px 0px 20px 0px */
+}
+.TitleH2_00N0 {
+    padding: 0.625rem 0rem 1.25rem 0rem; /* 0px 0px 20px 0px */
+}
+
+.TitleH3 {
+    font-size: var(--h5); /* 14px */
+    text-align: start;
+    padding: 0rem 0rem 0.5rem 0rem; /* 0px 0px 8px 0px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .TitleH3 {
+        font-size: var(--h4); /* 16px */
+    }
+}
+@media (min-width: 31.25rem) { /* 500px */
+    .TitleH3 {
+        font-size: var(--h3); /* 18px */
+    }
+}
+.TitleH4 {
+    font-size: var(--h4); /* 18px */
+    text-align: start;
+}
+.TitleH5 {
+    font-size: var(--h5); /* 14px */
+    text-align: start;
+}
+.TitleH6 {
+    font-size: var(--h6); /* 11px */
+    text-align: start;
+}
+
+/*--------------------------------------------------*/
+
+/* Style des Textes généraux */
+.TextP1,
+.TextP2,
+.TextP3,
+.TextP4,
+.TextLiP4,
+.TextP5,
+.TextP6,
+.TextLiP4 {
+    width: 100%;
+    margin: 0rem;
+    border: 0rem;
+    padding-bottom: 1.25rem; /* 0px 0px 20px 0px */
+    line-height: 1.6; /* Hauteur des lignes de texte */
+    text-align: start;
+}
+.TextP1 {
+    font-size: var(--h2); /* 24px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .TextP1 {
+        font-size: var(--h1); /* 32px */
+    }
+}
+.TextP2 {
+    font-size: var(--h3); /* 18px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .TextP2 {
+        font-size: var(--h2); /* 24px */
+    }
+}
+.TextP3 {
+    font-size: var(--h4); /* 16px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .TextP3 {
+        font-size: var(--h3); /* 18px */
+    }
+}
+.TextP4,
+.TextLiP4 {
+    font-size: var(--h5); /* 14px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .TextP4,
+    .TextLiP4 {
+        font-size: var(--h4); /* 16px */
+    }
+}
+.TextLiP4 {
+    padding-bottom: 0rem;
+}
+.TextP5 {
+    font-size: var(--h6); /* 11px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .TextP5 {
+        font-size: var(--h5); /* 14px */
+    }
+}
+.TextP6 {
+    font-size: var(--h7); /* 11px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .TextP6 {
+        font-size: var(--h6); /* 11px */
+    }
+}
+.TextLiP4 {
+    font-size: var(--h4); /* 18px */
+    padding-bottom: 0; /* 0px 0px 0px 0px */
+}
 /*-------------------------------------*/
 .Button {
     /* Il faudra mettre par défaut margin et padding à 0 */
