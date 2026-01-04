@@ -20,7 +20,6 @@ function navHomeMenu_Data(): NavMenu_data_Type {
             { nameMenu: "CONTACT", link: "#" },
             { nameMenu: "PORTFOLIO", link: "#" },
             { nameMenu: "A PROPOS", link: "#" },
-            // { nameMenu: "COMPTE", link: "#" },
         ],
     };
 }

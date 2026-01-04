@@ -31,10 +31,6 @@ function MenuNavPC_Layout() {
             <li className={css.MenuLiPC}>
                 <Link to={dataMenu.dataMenu[2].link} className={css.MenuLinkPC}>{dataMenu.dataMenu[2].nameMenu}</Link>
             </li>
-
-            {/* <li className={css.MenuLiPC}>
-                <Link to={dataMenu.dataMenu[3].link} className={css.MenuLinkPC}>{dataMenu.dataMenu[3].nameMenu}</Link>
-            </li> */}
         </ul>
     )
 }
