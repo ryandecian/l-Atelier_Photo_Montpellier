@@ -2,6 +2,7 @@
 @import "./assets/Fonts/Quicksand/stylesheet.css";
 @import "./assets/Fonts/AnneSignature/stylesheet.css";
 @import "./assets/Fonts/SairaCondensed/stylesheet.css";
+@import "./assets/Fonts/MinervaModerne/stylesheet.css";
 
 :root {
     /* ✨ Couleur des textes */
@@ -35,19 +36,16 @@
     
     /* ✨ Attention, les 3 déclarations sont obligatoire pour les titres */
         /*Logique des Titres*/
-            --font-family-normal: "Quicksand", sans-serif;
-            --font-family-titles: "Saira Condensed", sans-serif;
+            --font-family-Quicksand: "Quicksand", sans-serif;
+            --font-family-SairaCondensed: "Saira Condensed", Arial, sans-serif;
+            --font-family-MinervaModerne: "Minerva Moderne", sans-serif;
+            --font-family-AnneSignature: "AnneSignature", cursive;
 
             --font-weight-normal: none;
-            --font-weight-titles: 600;
+            --font-weight-title: 600;
          
             --font-style-normal: normal;
-            --font-style-titles: normal;
-
-
-            --font-family-title: var(--font-family-titles);
-            --font-weight-title: var(--font-weight-titles);
-            --font-style-title: var(--font-style-titles);
+            --font-style-title: normal;
 }
 
 /* Reset universel pour tout le front */
@@ -55,7 +53,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    font-family: quicksand, Arial, sans-serif;
+    font-family: var(--font-family-MinervaModerne);
 }
 
 body {
@@ -68,5 +66,5 @@ body {
 }
 
 h1 {
-    font-family: SairaCondensed, Arial, sans-serif;
+    font-family: var(--font-family-MinervaModerne);
 }

@@ -73,10 +73,6 @@ function MenuBurgerHome_Layout() {
                     <li className={`${css.MenuLiMobile} ${css.MenuLiBottomMobile}`}>
                         <Link to={dataMenu.dataMenu[2].link} className={css.MenuLinkMobile}>{dataMenu.dataMenu[2].nameMenu}</Link>
                     </li>
-
-                    <li className={`${css.MenuLiMobile} ${css.MenuLiBottomMobile}`}>
-                        <Link to={dataMenu.dataMenu[3].link} className={css.MenuLinkMobile}>{dataMenu.dataMenu[3].nameMenu}</Link>
-                    </li>
                 </ul>
             </div>
         </>
