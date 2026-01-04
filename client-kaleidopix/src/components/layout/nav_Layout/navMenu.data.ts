@@ -11,18 +11,15 @@ function navMenu_Data(): NavMenu_data_Type {
                 nameMenu: "PRESTATIONS",
                 nameSubMenu: [
                     // { title: "Corporate", link: router[11].path },
-                    { title: "Corporate", link: "#" },
-                    { title: "LifeStyle", link: "#" },
-                    { title: "Mariage", link: "#" },
-                    { title: "Vidéo", link: "#" },
+                    { title: "Vidéos Corporate", link: "#" },
+                    { title: "Photos Corporate", link: "#" },
                 ],
             },
         ],
         dataMenu: [
-            { nameMenu: "TARIFS", link: "#" },
             { nameMenu: "CONTACT", link: "#" },
             { nameMenu: "PORTFOLIO", link: "#" },
-            { nameMenu: "COMPTE", link: "#" },
+            { nameMenu: "A PROPOS", link: "#" },
         ],
     };
 }
