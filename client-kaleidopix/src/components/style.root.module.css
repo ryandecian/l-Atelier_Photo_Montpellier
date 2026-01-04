@@ -38,14 +38,14 @@
     text-align: start;
     width: 100%;
     margin: 0rem;
-    padding: 0rem; /* 20px 20px 20px 20px */
+    padding: 0rem 1.25rem; /* 0px 20px 0px 20px */
     border: 0rem;
 }
 
 .TitleH1 {
     font-size: var(--h3); /* 18px */
     text-align: center;
-    padding: 0rem 0rem 1.25rem 0rem; /* 0px 0px 20px 0px */
+    padding: 0rem 1.25rem 1.25rem 1.25rem; /* 0px 20px 20px 20px */
 }
 @media (min-width: 25rem) { /* 400px */
     .TitleH1 {
@@ -76,16 +76,16 @@
     }
 }
 .TitleH2 {
-    padding: 1.25rem 0rem; /* 20px 0px 20px 0px */
+    padding: 1.25rem; /* 20px 20px 20px 20px */
 }
 .TitleH2_00N0 {
-    padding: 0.625rem 0rem 1.25rem 0rem; /* 0px 0px 20px 0px */
+    padding: 0.625rem 1.25rem 1.25rem 1.25rem; /* 10px 20px 20px 20px */
 }
 
 .TitleH3 {
     font-size: var(--h5); /* 14px */
     text-align: start;
-    padding: 0rem 0rem 0.5rem 0rem; /* 0px 0px 8px 0px */
+    padding: 0rem 1.25rem 0.5rem 1.25rem; /* 0px 20px 8px 20px */
 }
 @media (min-width: 25rem) { /* 400px */
     .TitleH3 {
@@ -124,7 +124,7 @@
     width: 100%;
     margin: 0rem;
     border: 0rem;
-    padding-bottom: 1.25rem; /* 0px 0px 20px 0px */
+    padding: 0rem 1.25rem 1.25rem 1.25rem; /* 0px 20px 20px 20px */
     line-height: 1.6; /* Hauteur des lignes de texte */
     text-align: start;
 }
@@ -185,6 +185,7 @@
     font-size: var(--h4); /* 18px */
     padding-bottom: 0; /* 0px 0px 0px 0px */
 }
+
 /*-------------------------------------*/
 .Button {
     /* Il faudra mettre par défaut margin et padding à 0 */
