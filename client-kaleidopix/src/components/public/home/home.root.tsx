@@ -39,6 +39,25 @@ function Home_Root() {
                 Cette approche me permet également de créer un portrait professionnel à Montpellier {` `}
                 <strong> cohérent avec votre identité d’entreprise.</strong>
             </p>
+
+            <h3 className={style.TitleH3}>
+                Prestations photo
+            </h3>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    <strong>Portraits Corporate : dirigeants, équipes, trombinoscope.</strong> 
+                </li>
+                <li className={style.TextLiP4}>
+                    Reportage d’Activité : équipes en action, gestes métier, <strong>reportage photo entreprise Montpellier.</strong>
+                </li>
+                <li className={style.TextLiP4}>
+                    Photos de Locaux : bureaux, ateliers, espaces clients.
+                </li>
+                <li className={style.TextLiP4}>
+                    Reportage Événementiel : séminaires, inaugurations, événements internes, team building, soirées d’entreprise.
+                </li>
+            </ul>
         </section>
     )
 }
