@@ -22,6 +22,14 @@
     border: 0rem;
 }
 
+.ContainerUl {
+    display: block;
+    width: 100%;
+    padding: 0rem 0rem 0rem 2.5rem; /* 0px 0px 0px 40px */
+    list-style-position: inside; /* Position des points de la liste */
+    list-style-type: disc; /* Type de point pour les liste. Ici c'est un point rond noir */
+}
+
 /*-------------------------------------*/
 /* Style des Title dans un parent Column */
 .TitleH1, 
