@@ -58,6 +58,82 @@ function Home_Root() {
                     Reportage Événementiel : séminaires, inaugurations, événements internes, team building, soirées d’entreprise.
                 </li>
             </ul>
+
+            {/* Image */}
+
+            <h2 className={style.TitleH2_00N0}>
+                Production Vidéo Corporate : Valorisez votre Entreprise
+            </h2>
+
+            <p className={style.TextP4}>
+                La vidéo est un <strong>véritable accélérateur de crédibilité</strong> et d’engagement, que ce soit pour 
+                vos clients ou pour vos futurs collaborateurs.
+            </p>
+
+            <p className={style.TextP4}>
+                <strong>Je réalise des films sur site</strong> qui dévoilent la culture de votre entreprise, l’expertise 
+                de vos équipes et la qualité de vos locaux. Chaque vidéo est conçue <strong>comme un actif durable,</strong>
+                {` `}performant sur votre site internet comme sur vos réseaux sociaux.
+            </p>
+
+            <h3 className={style.TitleH3}>
+                Prestations vidéo
+            </h3>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    <strong>Vidéo Marque Employeur :</strong> témoignages salariés, interviews dirigeants, ambiance de travail.
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>Film Institutionnel :</strong> présentation globale, valeurs, positionnement.
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>Vidéo Métier & Technique :</strong> démonstration de procédés, savoir-faire, produits.
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>Contenu Réseaux Sociaux :</strong> formats courts et dynamiques optimisés pour l’engagement.
+                </li>
+            </ul>
+
+            {/* Image */}
+
+            <h2 className={style.TitleH2_00N0}>
+                Votre Partenaire pour une Image corporate cohérente
+            </h2>
+
+            <p className={style.TextP4}>
+                Mon rôle ne se limite pas à produire des images : j'accompagne votre entreprise dans la construction d’une 
+                ligne visuelle forte et cohérente.
+            </p>
+
+            <p className={style.TextLiP4}>
+                Je vous aide à :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    <strong>définir une identité visuelle</strong> percutante, de la photo au film,
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>harmoniser portraits,</strong> reportages et vidéos institutionnelles,
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>Vidéo Métier & Technique :</strong> démonstration de procédés, savoir-faire, produits.
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>Contenu Réseaux Sociaux :</strong> formats courts et dynamiques optimisés pour l’engagement.
+                </li>
+            </ul>
+
+            <p className={style.TextP4}>
+                Grâce à ma <strong>double compétence photo + vidéo</strong>, je pilote l’ensemble du projet : cadrage 
+                stratégique, production sur site, post-production, export et optimisation pour le web et les réseaux.
+            </p>
+
+            <p className={style.TextP4}>
+                Mon studio à Montpellier constitue également un cadre idéal pour des portraits corporate premium, 
+                complémentaires aux reportages réalisés dans vos locaux.
+            </p>
         </section>
     )
 }
