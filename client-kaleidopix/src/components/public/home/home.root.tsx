@@ -1,6 +1,12 @@
 /* Import des modules CSS */
 import style from "../../style.root.module.css";
 
+/* Import des composants d'Elements */
+import { Video_Element } from "../../elements/video/Video.element";
+
+/* Import des composants Router */
+import routerExt from "../../../router/routerExt.router";
+
 function Home_Root() {
     return (
         <section className={`Home_Root ${style.ContainerRootRacine}`}>
@@ -95,7 +101,12 @@ function Home_Root() {
                 </li>
             </ul>
 
-            {/* Image */}
+            <Video_Element
+                title="Aventure saharienne - Immersion dans le désert avec Mélodie du Désert"
+                src="/video/video-trek-desert-maroc/video-trek-desert-maroc.mp4"
+                poster="/video/video-trek-desert-maroc/video-trek-desert-maroc.jpg"
+                description="Une courte vidéo présentant l’ambiance du trek dans les dunes marocaines."
+            />
 
             <h2 className={style.TitleH2_00N0}>
                 Votre Partenaire pour une Image corporate cohérente
@@ -133,6 +144,80 @@ function Home_Root() {
             <p className={style.TextP4}>
                 Mon studio à Montpellier constitue également un cadre idéal pour des portraits corporate premium, 
                 complémentaires aux reportages réalisés dans vos locaux.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                La qualité de mes réalisations Corporate
+            </h2>
+
+            <p className={style.TextP4}>
+                J’apporte un soin particulier à chaque entreprise, quelle que soit sa taille ou son secteur.
+            </p>
+
+            <p className={style.TextP4}>
+                Chaque projet est conduit avec l’exigence d’une réalisation de référence : précision des cadrages, 
+                cohérence de la ligne visuelle, attention portée au message et échanges réguliers pour comprendre au 
+                mieux votre réalité professionnelle.
+            </p>
+
+            <p className={style.TextP4}>
+                Découvrez mes premières réalisations en photo corporate et vidéo corporate, qui témoignent de ma 
+                capacité à transformer vos idées en contenus professionnels percutants, pensés pour renforcer votre 
+                communication interne et externe.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Mon Processus en 4 Étapes pour Vos Projets Visuels
+            </h2>
+
+            <p className={style.TextP4}>
+                De l’idée initiale à la livraison des fichiers optimisés, je vous guide à chaque étape.
+            </p>
+
+            <p className={style.TextP4}>
+                Mon processus est conçu pour minimiser le temps mobilisé dans vos équipes tout en garantissant un 
+                résultat final parfaitement aligné avec vos objectifs stratégiques.
+            </p>
+
+            <h3 className={style.TitleH3}>
+                Étape 1 : Cadrage Stratégique
+            </h3>
+
+            <p className={style.TextP4}>
+                Analyse de vos objectifs (recrutement, notoriété, vente), définition du public cible et du ton. 
+                Élaboration du scénario ou du plan de reportage.
+            </p>
+
+            <h3 className={style.TitleH3}>
+                Étape 2 : Production & Réalisation
+            </h3>
+
+            <p className={style.TextP4}>
+                Tournage vidéo sur site ou en studio, reportages photo de vos équipes et locaux. Organisation fluide 
+                pour limiter les interruptions d’activité.
+            </p>
+
+            <h3 className={style.TitleH3}>
+                Étape 3 : Post-Production & Livraison
+            </h3>
+
+            <p className={style.TextP4}>
+                Montage vidéo, étalonnage, retouches photo professionnelles. <br />
+                Livraison de fichiers prêts à l’emploi, optimisés pour le web, LinkedIn et vos supports internes.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Prêt à positionner votre entreprise comme Référence à Montpellier ?
+            </h2>
+
+            <p className={style.TextP4}>
+                Gagnez en impact et en crédibilité grâce à des contenus photo et vidéo conçus spécifiquement pour les 
+                entreprises de Montpellier.
+            </p>
+
+            <p className={style.TextP4}>
+                Contactez-moi pour un premier échange stratégique : je vous réponds sous 24 heures. <br />
+                <strong>Demander un Devis Personnalisé :</strong> <a className={style.Link} href={routerExt.emailKaleidopix}>kaleidopix@gmail.com</a>
             </p>
         </section>
     )
