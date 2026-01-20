@@ -195,6 +195,21 @@
 }
 
 /*-------------------------------------*/
+.Link {
+    font-weight: bold;
+    color: var(--ColorTextBlue);
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.2s ease, text-decoration 0.2s ease;
+}
+.Link:hover,
+.Link:focus-visible {
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+/*-------------------------------------*/
 .Button {
     /* Il faudra mettre par défaut margin et padding à 0 */
     background: none;   /* Supprime l’arrière-plan du bouton (souvent gris par défaut) */

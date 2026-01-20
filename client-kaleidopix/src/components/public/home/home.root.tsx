@@ -1,6 +1,9 @@
 /* Import des modules CSS */
 import style from "../../style.root.module.css";
 
+/* Import des composants Router */
+import routerExt from "../../../router/routerExt.router";
+
 function Home_Root() {
     return (
         <section className={`Home_Root ${style.ContainerRootRacine}`}>
@@ -206,7 +209,7 @@ function Home_Root() {
 
             <p className={style.TextP4}>
                 Contactez-moi pour un premier échange stratégique : je vous réponds sous 24 heures. <br />
-                <strong>Demander un Devis Personnalisé :</strong>
+                <strong>Demander un Devis Personnalisé :</strong> <a className={style.Link} href={routerExt.emailKaleidopix}>kaleidopix@gmail.com</a>
             </p>
         </section>
     )
