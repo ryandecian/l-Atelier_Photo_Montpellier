@@ -1,6 +1,9 @@
 /* Import des modules CSS */
 import style from "../../style.root.module.css";
 
+/* Import des composants d'Elements */
+import { Video_Element } from "../../elements/video/Video.element";
+
 /* Import des composants Router */
 import routerExt from "../../../router/routerExt.router";
 
@@ -98,7 +101,12 @@ function Home_Root() {
                 </li>
             </ul>
 
-            {/* Image */}
+            <Video_Element
+                title="Aventure saharienne - Immersion dans le désert avec Mélodie du Désert"
+                src="/video/video-trek-desert-maroc/video-trek-desert-maroc.mp4"
+                poster="/video/video-trek-desert-maroc/video-trek-desert-maroc.jpg"
+                description="Une courte vidéo présentant l’ambiance du trek dans les dunes marocaines."
+            />
 
             <h2 className={style.TitleH2_00N0}>
                 Votre Partenaire pour une Image corporate cohérente
