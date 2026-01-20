@@ -210,6 +210,46 @@
 }
 
 /*-------------------------------------*/
+.ContainerVideo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.25rem; /* 20px */
+}
+
+.VideoTitle {
+    font-size: var(--h4); /* 16px */
+    font-weight: bold;
+    text-align: center;
+    margin: 0rem 0rem 1.125rem 0rem; /* 0px 0px 18px 0px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .VideoTitle {
+        font-size: var(--h3); /* 18px */
+    }
+}
+
+.VideoPlayer {
+    width: 100%;
+    max-width: 1280px; /* limite propre FHD */
+    border-radius: 12px;
+    background-color: #000; /* évite un flash blanc avant affichage du poster */
+}
+
+.VideoDescription {
+    text-align: center;
+    margin: 0.5rem 0rem 0rem 0rem; /* 8px 0px 16px 0px */
+    font-size: var(--h5); /* 14px */
+    color: var(--ColorTextGray);
+}
+@media (min-width: 25rem) { /* 400px */
+    .VideoDescription {
+        font-size: var(--h4); /* 16px */
+    }
+}
+/*-------------------------------------*/
 .Button {
     /* Il faudra mettre par défaut margin et padding à 0 */
     background: none;   /* Supprime l’arrière-plan du bouton (souvent gris par défaut) */
