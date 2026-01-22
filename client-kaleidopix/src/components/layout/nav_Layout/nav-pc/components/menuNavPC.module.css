@@ -32,7 +32,7 @@
     display: inline-block;
     font-size: var(--h4);
     text-decoration: none;
-    color: var(--ColorTextNavRootBlack);
+    color: var(--ColorTextBlack);
     transition: transform 0.3s ease, color 0.2s ease;
     white-space: nowrap;
 }
