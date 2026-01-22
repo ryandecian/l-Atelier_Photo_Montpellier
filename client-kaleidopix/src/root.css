@@ -21,7 +21,7 @@
             --ColorBackgroundRed: rgb(255, 0, 0);
             --ColorBackgroundYellow: rgb(255, 255, 0);
             --ColorBackgroundGrey: rgb(240, 240, 240);
-            --ColorBackgroundGray_Option1: rgba(218, 216, 216, 0.882);
+            --ColorBackgroundGrey_Option1: rgba(218, 216, 216, 0.882);
 
     /* ✨ Logique taille police d'écriture site*/
         --font-size-root: 1rem; /* 16 px : Ref size, dimensionne tout le site*/
