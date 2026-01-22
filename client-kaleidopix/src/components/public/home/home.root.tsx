@@ -1,6 +1,9 @@
 /* Import des modules CSS */
 import style from "../../style.root.module.css";
 
+/* Import des Components de Data */
+import { imagesHome_img_data } from "./imagesHome.img.data";
+
 /* Import des composants d'Elements */
 import { Container4ImagesPortrait_Element } from "../../elements/container-image/container-4_Images-portrait/Container4ImagesPortrait.element";
 import { Video_Element } from "../../elements/video/Video.element";
@@ -66,7 +69,16 @@ function Home_Root() {
                 </li>
             </ul>
 
-            <Container4ImagesPortrait_Element />
+            <Container4ImagesPortrait_Element 
+                img1={imagesHome_img_data[0].src}
+                img2={imagesHome_img_data[1].src}
+                img3={imagesHome_img_data[2].src}
+                img4={imagesHome_img_data[3].src}
+                metaNameImg1={imagesHome_img_data[0].alt}
+                metaNameImg2={imagesHome_img_data[1].alt}
+                metaNameImg3={imagesHome_img_data[2].alt}
+                metaNameImg4={imagesHome_img_data[3].alt}
+            />
 
             <h2 className={style.TitleH2_00N0}>
                 Production Vidéo Corporate : Valorisez votre Entreprise
