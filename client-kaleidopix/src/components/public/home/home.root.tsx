@@ -80,7 +80,7 @@ function Home_Root() {
                 metaNameImg4={imagesHome_img_data[3].alt}
             />
 
-            <h2 className={style.TitleH2_00N0}>
+            <h2 className={style.TitleH2}>
                 Production Vidéo Corporate : Valorisez votre Entreprise
             </h2>
 
