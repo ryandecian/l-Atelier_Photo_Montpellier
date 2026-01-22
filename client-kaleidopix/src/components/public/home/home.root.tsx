@@ -2,6 +2,7 @@
 import style from "../../style.root.module.css";
 
 /* Import des composants d'Elements */
+import { Container4ImagesPortrait_Element } from "../../elements/container-image/container-4_Images-portrait/Container4ImagesPortrait.element";
 import { Video_Element } from "../../elements/video/Video.element";
 
 /* Import des composants Router */
@@ -65,7 +66,7 @@ function Home_Root() {
                 </li>
             </ul>
 
-            {/* Image */}
+            <Container4ImagesPortrait_Element />
 
             <h2 className={style.TitleH2_00N0}>
                 Production Vidéo Corporate : Valorisez votre Entreprise
