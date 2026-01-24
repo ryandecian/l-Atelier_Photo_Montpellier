@@ -1,0 +1,125 @@
+/* Conteneur principal */
+.GeneratorCardAvisClient {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem;
+    border: 0rem;
+}
+  
+/* Titre principal */
+.ContainerTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0rem;
+    border: 0rem;
+    margin-bottom: 1.25rem; /* 20px */
+}
+  
+.title {
+    font-size: calc(var(--h2) + 0.125rem); /* 26px */
+    font-weight: bold;
+    color: var(--ColorTextDark_333);
+}
+  
+/* Liste des avis */
+.ContainerAvis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.3125rem; /* 5px */
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem;
+    border: 0rem;
+}
+
+/* Carte d'un avis */
+.CardAvisContainer {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: calc(100% - 80px);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 10px;
+    border-radius: 12px;
+    background: var(--ColorTextWhite);
+    margin: 1.25rem; /* 20px 20px 20px 20px */
+    padding: 1.25rem; /* 20px 20px 20px 20px */
+    transition: transform 0.3s ease-in-out;
+}
+.CardAvisContainer:hover {
+    transform: translateY(-5px);
+}
+  
+/* Nom du client */
+.nom {
+    font-weight: bold;
+    font-size: var(--h4);
+    color: var(--ColorTextDark_222);
+    margin: 0rem 0rem 0.5rem 0rem; /* 0px 0px 8px 0px */
+}
+  
+/* Conteneur de la note et de la date */
+.starsContainer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.625rem; /* 10px : Espacement entre les étoiles et la date */
+    margin: 0.625rem 0rem 0rem 0rem; /* 10px 0px 0px 0px */
+    padding: 0rem;
+    border: 0rem;
+}
+  
+/* Note étoilée */
+.stars {
+    display: flex;
+    font-size: var(--h3);
+}
+  
+/* Étoile pleine */
+.starFilled {
+    color: var(--ColorTextGold);
+}
+  
+/* Étoile vide */
+.starEmpty {
+    color: var(--ColorTextWhiteGrey);
+}
+  
+/* Date de l'avis */
+.date {
+    font-size: var(--h5);
+    color: var(--ColorTextBlack);
+    white-space: nowrap;
+}
+  
+/* Commentaire */
+.comment {
+    width: 100%;
+    font-size: var(--p);
+    font-style: italic;
+    color: var(--ColorTextDark_333);
+    margin: 0.625rem 0rem 0rem 0rem; /* 10px 0px 0px 0px */
+    padding: 0rem;
+    transition: max-height 0.3s ease-in-out;
+}
+  
+/* Bouton "Voir plus..." */
+.toggle {
+    color: var(--ColorButtonAvis);
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0rem 0rem 0rem 0.3125rem; /* 0px 0px 0px 5px */
+    display: inline-block;
+}
+  
+.toggle:hover {
+    text-decoration: underline;
+}
