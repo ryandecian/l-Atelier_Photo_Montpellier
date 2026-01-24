@@ -17,8 +17,8 @@
     align-items: start;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
-    background-image: url("../../../../assets/Background-img/studio-montpellier-robes-rouges.jpg");
+    height: calc(100vh - 91.5px);
+    background-image: url("../../../../assets/background-image/accueil-kaleidopix.jpg");
     background-size: cover;
     background-position: top center;
     margin: 0rem;
@@ -78,7 +78,7 @@
 
 .ContainerTitleMobile > h1 {
     font-size: var(--h3); /* 18px */
-    color: var(--ColorTextBlack);
+    color: var(--ColorTextWhite);
     font-family: 'Saira Condensed', sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -165,7 +165,7 @@
 
 .ContainerTitle > h1 {
     font-size: var(--h3); /* 18px */
-    color: var(--ColorTextBlack);
+    color: var(--ColorTextWhite);
     font-family: 'Saira Condensed', sans-serif;
     font-weight: 500;
     font-style: normal;
