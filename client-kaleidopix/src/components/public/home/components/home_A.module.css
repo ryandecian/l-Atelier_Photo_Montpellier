@@ -17,13 +17,18 @@
     align-items: start;
     flex-direction: column;
     width: 100%;
-    height: calc(100vh - 91.5px);
+    height: calc(100vh - 8rem);
     background-image: url("../../../../assets/background-image/accueil-kaleidopix.jpg");
     background-size: cover;
     background-position: top center;
     margin: 0rem;
     border: 0rem;
     padding: 0rem;
+}
+@media (min-width: 50rem) { /* 800px */
+    .ContainerSubAccueil {
+        height: calc(100vh - 91.5px);
+    }
 }
 
 /*----------------------------------------------------------------------------------*/
