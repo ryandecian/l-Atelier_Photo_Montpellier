@@ -19,13 +19,8 @@ function Home_Root() {
         <section className={`Home_Root ${style.ContainerRootRacine}`}>
             <Home_A_Component />
             
-            <header className={style.ContainerTitle}>
-                <h1 className={style.TitleH1}>
-                    Images Photo & Vidéo pour Entreprises à Montpellier
-                </h1>
-            </header>
-            
             <p className={style.TextP4}>
+                <br />
                 Positionnez votre entreprise comme référence grâce à des <strong> contenus visuels professionnels.</strong> <br />
             </p>
             
