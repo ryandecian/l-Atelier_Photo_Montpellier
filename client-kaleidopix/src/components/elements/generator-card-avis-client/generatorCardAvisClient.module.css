@@ -62,7 +62,7 @@
 .nom {
     font-weight: bold;
     font-size: var(--h4);
-    color: var(--ColorTextDark_222);
+    color: #222;
     margin: 0rem 0rem 0.5rem 0rem; /* 0px 0px 8px 0px */
 }
   
@@ -85,7 +85,7 @@
   
 /* Étoile pleine */
 .starFilled {
-    color: var(--ColorTextGold);
+    color: var(--ColorTextYellow);
 }
   
 /* Étoile vide */
@@ -105,7 +105,7 @@
     width: 100%;
     font-size: var(--p);
     font-style: italic;
-    color: var(--ColorTextDark_333);
+    color: #333;
     margin: 0.625rem 0rem 0rem 0rem; /* 10px 0px 0px 0px */
     padding: 0rem;
     transition: max-height 0.3s ease-in-out;
@@ -113,7 +113,7 @@
   
 /* Bouton "Voir plus..." */
 .toggle {
-    color: var(--ColorButtonAvis);
+    color: var(--ColorTextBlue);
     cursor: pointer;
     font-weight: bold;
     margin: 0rem 0rem 0rem 0.3125rem; /* 0px 0px 0px 5px */
