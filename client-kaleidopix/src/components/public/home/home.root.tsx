@@ -1,6 +1,9 @@
 /* Import des modules CSS */
 import style from "../../style.root.module.css";
 
+/* Import des Components */
+import { Home_A_Component } from "./components/Home_A.component";
+
 /* Import des Components de Data */
 import { imagesHome_img_data } from "./imagesHome.img.data";
 
@@ -14,13 +17,10 @@ import routerExt from "../../../router/routerExt.router";
 function Home_Root() {
     return (
         <section className={`Home_Root ${style.ContainerRootRacine}`}>
-            <header className={style.ContainerTitle}>
-                <h1 className={style.TitleH1}>
-                    Images Photo & Vidéo pour Entreprises à Montpellier
-                </h1>
-            </header>
+            <Home_A_Component />
             
             <p className={style.TextP4}>
+                <br />
                 Positionnez votre entreprise comme référence grâce à des <strong> contenus visuels professionnels.</strong> <br />
             </p>
             
