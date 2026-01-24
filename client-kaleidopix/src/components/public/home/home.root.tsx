@@ -6,6 +6,7 @@ import { Home_A_Component } from "./components/Home_A.component";
 
 /* Import des Components de Data */
 import { imagesHome_img_data } from "./imagesHome.img.data";
+import { avisClientHome_Data } from "./avisClientHome.data";
 
 /* Import des composants d'Elements */
 import { Container4ImagesPortrait_Element } from "../../elements/container-image/container-4_Images-portrait/Container4ImagesPortrait.element";
@@ -13,6 +14,9 @@ import { Video_Element } from "../../elements/video/Video.element";
 
 /* Import des composants Router */
 import routerExt from "../../../router/routerExt.router";
+
+/* Import des Utils */
+import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 
 function Home_Root() {
     return (
@@ -232,6 +236,8 @@ function Home_Root() {
                 Contactez-moi pour un premier échange stratégique : je vous réponds sous 24 heures. <br />
                 <strong>Demander un Devis Personnalisé :</strong> <a className={style.Link} href={routerExt.emailKaleidopix}>kaleidopix@gmail.com</a>
             </p>
+
+            <GeneratorCardAvisClient_Element tabDataAvisClients={avisClientHome_Data} />
         </section>
     )
 }
