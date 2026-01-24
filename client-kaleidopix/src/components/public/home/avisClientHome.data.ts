@@ -2,34 +2,26 @@
 import type { AvisClientSEO_Type } from "../../../types/seo/avisClientSEO.type";
 
 const avisClientHome_Data: AvisClientSEO_Type[] = [
-    /* Commentaire 1 */
     {
         id: 1,
-        nom: "Isabelle CARCASONNE",
+        nom: "Mélodie du Désert",
         note: 5,
-        commentaire: "Comme beaucoup j'ai horreur d'être prise en photo et souvent horreir du résultat, surtout sur des prises de vue prévues mais Anne a un talent fou pour faire oublier l'appareil. On a juste l'impression d'un papotage entre amies - curieux cette impression qu'on a de la connaître depuis toujours ;-) - et hop le résultat est totalement bluffant. Vraiment chouette !",
-        date: "09/06/2025",
+        commentaire: `Suite à un voyage dans le désert marocain, nous avons demandé à Anne de créer pour notre site et nos réseaux, 2 vidéos, l'une courte et rythmé, l'autre, plus longue pour retranscrire l'esprit de nos voyages. Le résultat est extraordinaire, nous adorons ! Grand merci Anne pour votre professionnaliste et la qualité de vos retours.`,
+        date: "26/11/2025",
     },
     {
         id: 2,
-        nom: "Florian RAY",
+        nom: "Christine Kerr",
         note: 5,
-        commentaire: "Nous avons eu la chance de faire appel à Anne pour immortaliser notre PACS, et nous sommes absolument ravis ! Les photos sont tout simplement magnifiques, pleines d’émotion et de spontanéité.Elle a su nous mettre à l’aise et capturer des moments précieux qui reflètent parfaitement notre histoire. Merci infiniment pour ce merveilleux travail !",
-        date: "07/06/2025",
+        commentaire: `Merci pour votre travail photographique et votre approche relationnelle qui ont permis la réalisation de ces photos à visée institutionnelle... un bon compromis entre sérieux et détente.`,
+        date: "17/09/2025",
     },
     {
         id: 3,
-        nom: "Shermine G",
+        nom: "François Miton",
         note: 5,
-        commentaire: "J'ai fait appel à LAPM car j'avais besoin de photos pros (les selfies c'est pas toujours génial) mais aussi persos. Je ne suis pas photogénique et je suis souvent déçue mais pas avec Anne. J'ai été agréablement surprise du résultat. Anne m'a tout de suite mise à l'aise et m'a bien conseillée sur les différentes tenues, poses, expressions etc. J'ai obtenu des portraits adaptés à mes besoins. Une belle expérience ! je recommande vivement.",
-        date: "28/05/2025",
-    },
-    {
-        id: 4,
-        nom: "Marc PICART",
-        note: 5,
-        commentaire: "Un immense merci à Anne pour son talent et son professionnalisme ! Les photos sont magnifiques, pleine d’émotion et de naturel. En plus de son talent, Anne est d’une grande réactivité : en un temps record, nous avons reçu un grand nombre de clichés sublimement retravaillés. Grâce à elle, nous avons des souvenirs inoubliables à partager avec nos proches",
-        date: "16/04/2025",
+        commentaire: `J'avais besoin de photos "au naturel", ce qui implique paradoxalement un oeil professionnel. Anne non seulement a su me mettre à l'aise (poser n'est vraiment pas ma tasse de thé!), mais elle a été jusqu'à trouver des accessoires variés (vestes, écharpes, casquette !) qui donnent effectivement une allure différente à chaque photo. Absolument satisfait du résultat, qui est au-delà de mes espérances ! Je recommande l'Atelier Photo Montpellier sans réserve !`,
+        date: "29/08/2025",
     },
 ];
 
