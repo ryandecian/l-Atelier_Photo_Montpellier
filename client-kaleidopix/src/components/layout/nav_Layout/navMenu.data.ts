@@ -1,5 +1,5 @@
 /* Import des composants Router */
-// import router from "../../../router/router";
+import router from "../../../router/router";
 
 /* Import des Types */
 import type { NavMenu_data_Type } from "../../../types/layout/navMenu.data.type";
@@ -11,7 +11,7 @@ function navMenu_Data(): NavMenu_data_Type {
                 nameMenu: "PRESTATIONS",
                 nameSubMenu: [
                     // { title: "Corporate", link: router[11].path },
-                    { title: "Vidéos Corporate", link: "#" },
+                    { title: "Vidéos Corporate", link: router[1].path },
                     { title: "Photos Corporate", link: "#" },
                 ],
             },
