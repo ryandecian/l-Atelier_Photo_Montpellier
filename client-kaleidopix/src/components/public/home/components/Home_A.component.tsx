@@ -16,7 +16,7 @@ function Home_A_Component() {
                     <>
                         <article className={css.ContainerSloganMobile}>
                             <p className={css.SloganMobile}>
-                                {"PHOTOGRAPHIE CORPORATE"}
+                                {"PHOTOS ET VIDÉOS"}
                             </p>
                             <p className={css.SloganMobile}>
                                 {"POUR"}
@@ -40,20 +40,20 @@ function Home_A_Component() {
                     <>
                         <article className={css.ContainerSlogan}>
                             <p className={css.Slogan}>
-                                {"PHOTOGRAPHIE"}
-                            </p>
-                            <p className={css.Slogan}>
-                                {"CORPORATE"}
+                                {"PHOTOS ET VIDÉOS"}
                             </p>
                             <p className={css.Slogan}>
                                 {"POUR"}
+                            </p>
+                            <p className={css.Slogan}>
+                                {"LES"}
                             </p>
                             <p className={css.Slogan}>
                                 {"ENTREPRISES"}
                             </p>
                         </article>
                         <header className={css.ContainerTitle}>
-                            <h1>Photographe et Vidéaste professionnelle pour contenus visuels à Montpellier</h1>
+                            <h1>Photographe et Vidéaste professionnelle à Montpellier</h1>
                         </header>
                     </>
                 )}

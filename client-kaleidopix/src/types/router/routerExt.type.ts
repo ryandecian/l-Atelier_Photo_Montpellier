@@ -2,7 +2,7 @@ type RouterExt_Type = {
     // emailRyan: string;
     
     emailKaleidopix: string;
-    // phonePowerWatt34: string;
+    phoneKaleidopix: string;
     // linkPowerWatt34: string;
     // adressPowerWatt34: string;
 
