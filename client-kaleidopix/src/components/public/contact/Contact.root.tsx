@@ -1,6 +1,6 @@
 /* Import des modules CSS */
 import css from "./contact.module.css";
-import style from "../../StyleRootComponent.module.css";
+import style from "../../style.root.module.css";
 
 /* Import des composants React */
 import { Mail, Phone } from "lucide-react";
@@ -17,10 +17,10 @@ function Contact_Root() {
                 </h1>
             </header>
             <p className={`${style.TextP3} ${css.Subtitle}`}>
-                Une question ou un projet photo en tête ? Je suis à votre écoute pour échanger ou fixer un rendez-vous. <br />
-                Chaque projet photo commence par une rencontre. Parlons de vos envies, sans engagement.
+                Une question, un projet photo ou vidéo pour votre entreprise ? Je suis à votre écoute pour échanger ou fixer un rendez-vous. <br />
+                Chaque projet commence par une rencontre et la définition de vos besoins.
             </p>
-            <div className={`${style.ContainerRoot} ${css.ContactContainer}`}>
+            <div className={`${style.ContainerRootRacine} ${css.ContactContainer}`}>
                 <a href={routerExt.emailKaleidopix} className={css.ContactItem}>
                     <Mail className={style.IconLucide} />
                     <span>as@kaleidopix.fr</span>
