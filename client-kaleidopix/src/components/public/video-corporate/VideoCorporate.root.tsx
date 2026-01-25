@@ -1,6 +1,9 @@
 /* Import des modules CSS */
 import style from "../../style.root.module.css";
 
+/* Import des composants React */
+import { Link } from "react-router-dom";
+
 /* Import des composants d'Elements */
 import { Video_Element } from "../../elements/video/Video.element";
 
@@ -194,13 +197,10 @@ function VideoCorporate_Root() {
             </p>
             
             <h2 className={style.TitleH2_00N0}>
-                Exemples de Réalisations Vidéos & Reportages
+                Envie de créer une vidéo corporate qui renforce votre image ?
             </h2>
 
-            <p className={style.TextP4}>
-                Même si mon portfolio vidéo est en cours de développement, vous pouvez découvrir ici mes premières vidéos 
-                corporate de reportages réalisés sur site ainsi qu’une interview destinée à une communauté.
-            </p>
+            <a href=""></a>
 
         </section>
     )
