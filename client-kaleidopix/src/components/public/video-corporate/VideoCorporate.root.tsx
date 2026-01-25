@@ -103,6 +103,34 @@ function VideoCorporate_Root() {
                     <strong>Film Institutionnel :</strong> portrait global de votre entreprise.
                 </li>
             </ul>
+
+            <p className={style.TextP4}>
+                Chaque vidéo est conçue pour être un <strong>actif durable</strong>, réutilisable sur différents supports.
+            </p>
+
+            <p className={style.TextP4}>
+                Vidéo Corporate : Valoriser votre savoir-faire et <strong>inspirer confiance</strong> à vos Clients. <br />
+                Une vidéo efficace ne se limite pas à filmer vos locaux ou vos activités : elle révèle ce qui rassure 
+                réellement vos clients.
+            </p>
+
+            <p className={style.TextP4}>
+                En montrant vos équipes en action, vos méthodes de travail et vos environnements professionnels, vous 
+                offrez un aperçu concret de votre sérieux, de votre transparence et de votre cohérence d’entreprise.
+            </p>
+
+            <p className={style.TextP4}>
+                Grâce à une compréhension précise des enjeux de communication : image, culture, marque employeur, chaque 
+                vidéo est pensée pour <strong>mettre en valeur les éléments qui renforcent la confiance :</strong> {` `}
+                expertise, humanité, rigueur, engagement.
+            </p>
+
+            <p className={style.TextP4}>
+                La vidéo corporate est également un <strong>levier très puissant pour le recrutement :</strong> elle attire 
+                des candidats plus alignés, réduit le turnover et permet un recrutement plus ciblé. <br />
+                Les talents veulent voir où ils postulent et avec qui ils vont travailler, la vidéo répond à cette 
+                attente de manière immédiate.
+            </p>
         </section>
     )
 }
