@@ -200,8 +200,6 @@ function VideoCorporate_Root() {
                 Envie de créer une vidéo corporate qui renforce votre image ?
             </h2>
 
-            <a href=""></a>
-
         </section>
     )
 }
