@@ -13,7 +13,7 @@ function Contact_Root() {
         <section className={`Contact_Root ${css.ContactRoot} ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
-                    {`Besoin d’un renseignement ? Contactez l’Atelier Photo Montpellier`}
+                    {`Besoin d’un renseignement ? Contactez Kaleidopix`}
                 </h1>
             </header>
             <p className={`${style.TextP3} ${css.Subtitle}`}>
@@ -21,13 +21,13 @@ function Contact_Root() {
                 Chaque projet photo commence par une rencontre. Parlons de vos envies, sans engagement.
             </p>
             <div className={`${style.ContainerRoot} ${css.ContactContainer}`}>
-                <a href={externalLinks.emailAnne} className={css.ContactItem}>
+                <a href={routerExt.emailKaleidopix} className={css.ContactItem}>
                     <Mail className={style.IconLucide} />
-                    <span>photo34000@gmail.com</span>
+                    <span>as@kaleidopix.fr</span>
                 </a>
-                <a href={externalLinks.phoneAnne} className={css.ContactItem}>
+                <a href={routerExt.phoneKaleidopix} className={css.ContactItem}>
                     <Phone className={style.IconLucide} />
-                    <span>+33 6 48 55 99 22</span>
+                    <span>+33 6 52 67 73 33</span>
                 </a>
             </div>
         </section>
