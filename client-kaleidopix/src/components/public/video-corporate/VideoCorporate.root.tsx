@@ -1,6 +1,9 @@
 /* Import des modules CSS */
 import style from "../../style.root.module.css";
 
+/* Import des composants d'Elements */
+import { Video_Element } from "../../elements/video/Video.element";
+
 function VideoCorporate_Root() {
     return (
         <section className={`VideoCorporate_Root ${style.ContainerRootRacine}`}>
@@ -26,6 +29,80 @@ function VideoCorporate_Root() {
                 Mon approche : <strong>produire des contenus clairs</strong>, humains et alignés avec vos objectifs - marque 
                 employeur, <strong>recrutement</strong>, prise de parole, présentation entreprise ou communication digitale.
             </p>
+            
+            <Video_Element
+                title="Aventure saharienne - Immersion dans le désert avec Mélodie du Désert"
+                src="/video/video-trek-desert-maroc/video-trek-desert-maroc.mp4"
+                poster="/video/video-trek-desert-maroc/video-trek-desert-maroc.jpg"
+                description="Une courte vidéo présentant l’ambiance du trek dans les dunes marocaines."
+            />
+
+            <h2 className={style.TitleH2_00N0}>
+                Le retour sur investissement (ROI) d’une vidéo corporate ?
+            </h2>
+
+            <p className={style.TextLiP4}>
+                Une vidéo professionnelle donne à votre entreprise une visibilité forte et crédible. <br />
+                Elle permet de :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    présenter votre structure de manière claire et engageante,
+                </li>
+                <li className={style.TextLiP4}>
+                    mettre en avant votre marque employeur,
+                </li>
+                <li className={style.TextLiP4}>
+                    valoriser vos équipes, vos métiers et votre environnement,
+                </li>
+                <li className={style.TextLiP4}>
+                    expliquer un process technique ou un savoir-faire,
+                </li>
+                <li className={style.TextLiP4}>
+                    renforcer votre présence digitale (site web, LinkedIn, réseaux pro),
+                </li>
+                <li className={style.TextLiP4}>
+                    faciliter le recrutement en donnant à voir la réalité de votre culture d’entreprise.
+                </li>
+            </ul>
+            
+            <p className={style.TextP4}>
+                Que vous disposiez d’une petite équipe ou d’une structure plus importante, une vidéo corporate 
+                professionnelle devient un véritable outil pour <strong>générer de la demande client et qualifier vos recrutements.</strong>
+                {` `}<strong>C’est un actif durable</strong>, réutilisable sur le site web, LinkedIn, vos offres 
+                d’emploi, vos présentations et vos supports internes.
+            </p>
+            
+            <Video_Element
+                title="Votre prochaine parenthèse bien-être : Les Crocodiles Jaunes"
+                src="/video/les-crocodiles-jaunes/les-crocodiles-jaunes.mp4"
+                poster="/video/les-crocodiles-jaunes/les-crocodiles-jaunes.jpg"
+                description="Un cadre unique : découverte du centre de jeûne : Les Crocodiles Jaunes à Albi."
+            />
+
+            <h2 className={style.TitleH2_00N0}>
+                Vidéos Corporate : une identité visuelle indispensable actuellement
+            </h2>
+
+            <p className={style.TextLiP4}>
+                Je réalise différents formats vidéo adaptés à vos besoins et à la maturité de votre communication :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    <strong>Vidéo Marque Employeur :</strong> ambiance de travail, témoignages, culture d’entreprise.
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>Interview Dirigeant ou Manager :</strong> vision, valeurs, message stratégique.
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>Vidéo Métier :</strong> démonstration de gestes professionnels, présentation d’un service.
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>Film Institutionnel :</strong> portrait global de votre entreprise.
+                </li>
+            </ul>
         </section>
     )
 }
