@@ -7,6 +7,9 @@ import { Link } from "react-router-dom";
 /* Import des composants d'Elements */
 import { Video_Element } from "../../elements/video/Video.element";
 
+/* Import des composants Router */
+import router from "../../../router/router";
+
 function VideoCorporate_Root() {
     return (
         <section className={`VideoCorporate_Root ${style.ContainerRootRacine}`}>
@@ -200,6 +203,11 @@ function VideoCorporate_Root() {
                 Envie de créer une vidéo corporate qui renforce votre image ?
             </h2>
 
+            <p className={style.TextP4}>
+                <Link to={router[3].path} className={style.Link}>
+                    📩 Contactez-moi - Réponse garantie sous 24h
+                </Link>
+            </p>
         </section>
     )
 }
