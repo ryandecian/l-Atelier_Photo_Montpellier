@@ -131,6 +131,12 @@ function VideoCorporate_Root() {
                 Les talents veulent voir où ils postulent et avec qui ils vont travailler, la vidéo répond à cette 
                 attente de manière immédiate.
             </p>
+
+            <p className={style.TextP4}>
+                J’explique d’ailleurs ce phénomène dans ma page blog. <br />
+                Une vidéo bien pensée aide clients et candidats à se projeter et à choisir votre entreprise en toute 
+                confiance.
+            </p>
         </section>
     )
 }
