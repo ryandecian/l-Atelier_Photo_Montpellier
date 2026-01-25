@@ -1,7 +1,8 @@
 Il faudra ajouter une ombre sur la nav
 
 ------------------------------------------------------------------------------
-
+Sur la page video corporte, le texte mentionne a la ligne 136 "dans ma page blog"
+C'est un lien possible mais vers quel page, quel site, quel intéré ? Objectif ? 
 ------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------
