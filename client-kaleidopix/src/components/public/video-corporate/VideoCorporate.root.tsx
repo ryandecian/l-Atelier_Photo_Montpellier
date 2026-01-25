@@ -137,6 +137,71 @@ function VideoCorporate_Root() {
                 Une vidéo bien pensée aide clients et candidats à se projeter et à choisir votre entreprise en toute 
                 confiance.
             </p>
+
+            
+            <h2 className={style.TitleH2_00N0}>
+                Mon Approche : Des contenus visuels alignés avec votre stratégie
+            </h2>
+
+            
+            <p className={style.TextLiP4}>
+                Avant chaque projet, nous définissons ensemble :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    <strong>l’objectif</strong> (recrutement, notoriété, communication interne, présentation métier),
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>le message</strong> à transmettre,
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>les éléments visuels</strong> à mettre en valeur,
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>le format vidéo</strong> le plus adapté.
+                </li>
+            </ul>
+            
+            <p className={style.TextP4}>
+                Cette étape garantit une vidéo ou un reportage pleinement aligné avec votre identité d’entreprise. <br />
+                Je vous accompagne ensuite sur l’ensemble du processus : préparation, repérage, tournage, organisation, 
+                montage et livraison optimisée pour le web et les réseaux professionnels.
+            </p>
+            
+            <h2 className={style.TitleH2_00N0}>
+                Un Processus vidéo simple et professionnel
+            </h2>
+
+            <p className={style.TextP4}>
+                <strong>Étape 1 - Cadrage & Préparation</strong> <br />
+                Repérage, choix des lieux, définition du message, création d’un fil narratif.
+            </p>
+
+            <p className={style.TextP4}>
+                <strong>Étape 2 - Tournage sur Site</strong> <br />
+                Captation en conditions réelles : interviews, plans de coupe, séquences métier, ambiance.
+            </p>
+
+            <p className={style.TextP4}>
+                <strong>Étape 3 - Montage & Post-production</strong> <br />
+                Montage rythmé, étalonnage, titrages, sous-titres (indispensables pour LinkedIn).
+            </p>
+
+            <p className={style.TextP4}>
+                <strong>Étape 4 - Livraison Optimisée</strong> <br />
+                Exports adaptés à votre site, réseaux sociaux, écrans internes ou supports RH.
+            </p>
+            
+            <h2 className={style.TitleH2_00N0}>
+                Exemples de Réalisations Vidéos & Reportages
+            </h2>
+
+            <p className={style.TextP4}>
+                Même si mon portfolio vidéo est en cours de développement, vous pouvez découvrir ici mes premières vidéos 
+                corporate de reportages réalisés sur site ainsi qu’une interview destinée à une communauté.
+            </p>
+
         </section>
     )
 }
