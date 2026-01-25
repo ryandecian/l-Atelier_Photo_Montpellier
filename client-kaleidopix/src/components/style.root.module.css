@@ -195,6 +195,7 @@
 }
 
 /*-------------------------------------*/
+/* Link pour contenue de texte */
 .Link {
     font-weight: bold;
     color: var(--ColorTextBlue);

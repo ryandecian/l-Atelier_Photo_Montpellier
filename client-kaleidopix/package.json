@@ -12,6 +12,7 @@
     "pull-force": "bash ../npm-run-pull-force.sh"
   },
   "dependencies": {
+    "lucide-react": "^0.563.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.10.1"

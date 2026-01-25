@@ -2,8 +2,8 @@
 import type { RouterExt_Type } from "../types/router/routerExt.type";
 
 const routerExt: RouterExt_Type = {
-    emailKaleidopix: "mailto:contact%2Bapp@photosvideos.fr",
-    // phonePowerWatt34: "tel:+33756838181",
+    emailKaleidopix: "mailto:as@kaleidopix.fr",
+    phoneKaleidopix: "tel:+33652677333",
 };
 
 export default routerExt;

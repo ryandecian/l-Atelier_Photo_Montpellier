@@ -17,7 +17,7 @@ function navMenu_Data(): NavMenu_data_Type {
             },
         ],
         dataMenu: [
-            { nameMenu: "CONTACT", link: "#" },
+            { nameMenu: "CONTACT", link: router[3].path },
             { nameMenu: "PORTFOLIO", link: "#" },
             { nameMenu: "A PROPOS", link: "#" },
         ],
