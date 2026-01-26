@@ -10,9 +10,9 @@ function footer_Data(): Footer_data_Type {
         {
             nameMenu: "A PROPOS",
             nameSubMenu: [
-                { title: "Nos services", link: "#" },
-                { title: "Nos valeurs", link: "#" },
-                { title: "Notre atelier", link: "#" },
+                { title: "Qui suis-je", link: "#" },
+                { title: "Portfolio", link: "#" },
+                { title: "Blog", link: "#" },
             ],
         },
         {
@@ -20,14 +20,14 @@ function footer_Data(): Footer_data_Type {
             nameSubMenu: [
                 { title: "Instagram", link: routerExt.instagram },
                 { title: "Facebook", link: routerExt.facebook },
-                { title: "Google Maps", link: routerExt.adressPowerWatt34 },
+                { title: "YouTube", link: routerExt.youtube },
             ],
         },
         {
             nameMenu: "POLITIQUE & TERMES",
             nameSubMenu: [
-                { title: "Contact", link: router[1].path + "#top" },
-                { title: "Mentions légales", link: router[5].path + "#top" },
+                { title: "Contact", link: router[3].path + "#top" },
+                { title: "Mentions légales", link: "#" },
                 { title: "CGV", link: router[6].path + "#top" },
             ],
         },
