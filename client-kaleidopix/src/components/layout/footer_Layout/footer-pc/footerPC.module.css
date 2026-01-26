@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: url("../../../../assets/background-image/footer-kaleidopix.jpg");
     width: 100%;
     margin: 0rem;
     padding: 1.25rem; /* 20px 20px 20px 20px */

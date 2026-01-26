@@ -1,6 +1,6 @@
 /* Import des modules CSS */
 import css from "./footerPC.module.css";
-import style from "../../../styleRootComponent.module.css";
+import style from "../../../style.root.module.css";
 
 /* Import des composants React */
 import { Link } from "react-router-dom";
@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import { footer_Data } from "../footer.data";
 
 /* Import des Types */
-import type { Footer_data_Type } from "../../../../types/layout/footer/footer.data.type";
+import type { Footer_data_Type } from "../../../../types/layout/footer.data.type";
 
 function FooterPC_Layout() {
     const dataFooter: Footer_data_Type = footer_Data();
