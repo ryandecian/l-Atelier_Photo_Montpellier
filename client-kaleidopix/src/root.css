@@ -24,6 +24,17 @@
             --ColorBackgroundGrey: rgb(240, 240, 240);
             --ColorBackgroundGrey_Option1: rgba(218, 216, 216, 0.882);
 
+    /* ✨ Ombre du site */
+        /** Documentation
+        * rgba( AA, BB, CC, DD) EE FF GG
+        * AA, BB, CC : Couleur de l'ombre
+        * DD : Opacité avec 0 transparence total et 1 opaque
+        * EE : Décalage horizontal ←→ : négatif vers gauche et positif vers droite. Valeur en px
+        * FF : Décalage vertical ↑↓ : négatif vers le haut et positif vers le bas. Valeur en px
+        * GG : Flou de l'ombre. Valeur en px
+        */
+            --box-shadow-bottom: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+
     /* ✨ Logique taille police d'écriture site*/
         --font-size-root: 1rem; /* 16 px : Ref size, dimensionne tout le site*/
         --p: var(--font-size-root); /*16px*/
