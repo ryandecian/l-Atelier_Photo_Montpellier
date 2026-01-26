@@ -3,7 +3,7 @@ import router from "../../../router/router";
 import routerExt from "../../../router/routerExt.router";
 
 /* Import des Types */
-import type { Footer_data_Type } from "../../../types/layout/footer/footer.data.type";
+import type { Footer_data_Type } from "../../../types/layout/footer.data.type";
 
 function footer_Data(): Footer_data_Type {
     return [
