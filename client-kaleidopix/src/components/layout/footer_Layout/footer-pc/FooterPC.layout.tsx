@@ -18,9 +18,7 @@ function FooterPC_Layout() {
         <section className={`FooterPC_Layout ${css.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={css.TitleH2}>
-                    <span className={css.PowerSpan}>POWER</span>
-                    <span className={css.WattSpan}>WATT</span>
-                    <span className={css.NumberSpan}>34</span>
+                    Kaleidopix
                 </h2>
             </header>
 
