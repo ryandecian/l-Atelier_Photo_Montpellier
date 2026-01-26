@@ -19,7 +19,7 @@
     font-size: var(--h5);
     font-weight: bold;
     text-decoration: none;
-    color: var(--ColorTextBlack);
+    color: var(--ColorTextWhite);
     white-space: nowrap;
     padding: 0rem 0rem 0.125rem 0rem; /* 0px 0px 2px 0px */
 }
@@ -39,7 +39,7 @@
     font-size: var(--h5);
     font-weight: bold;
     text-decoration: none;
-    color: var(--ColorTextBlack);
+    color: var(--ColorTextWhite);
     white-space: nowrap;
     padding: 0rem;
 }
@@ -101,6 +101,6 @@
     font-size: var(--h4);
     font-weight: bold;
     text-decoration: none;
-    color: var(--ColorTextGrey);
+    color: var(--ColorTextWhite);
     white-space: nowrap;
 }
