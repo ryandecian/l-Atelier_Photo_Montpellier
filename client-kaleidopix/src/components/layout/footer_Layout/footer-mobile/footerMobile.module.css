@@ -1,0 +1,35 @@
+.ContainerRootRacine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../../../../assets/background-image/footer-kaleidopix.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin: 0rem;
+    padding: 1.25rem; /* 20px 20px 20px 20px */
+    margin: 1.25rem 0rem 0rem 0rem; /* 20px 0px 0px 0px */
+}
+
+
+/*--------------------------------------------------*/
+.TitleH2 {
+    font-size: var(--h2);
+    font-weight: bold;
+    color: var(--ColorTextWhite);
+    text-align: center;
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem 0rem 1.5rem 0rem; /* 0px 0px 24px 0px */
+}
+
+/*--------------------------------------------------*/
+.ContainerNavFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0rem;
+    width: 100%;
+}
