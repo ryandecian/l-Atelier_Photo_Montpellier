@@ -14,7 +14,7 @@ function VideoCorporate_Root() {
     return (
         <section className={`VideoCorporate_Root ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitleRoot}>
-                <h1 className={style.TitleH1}>
+                <h1 className={style.TitleH1_NNNN}>
                     Vidéos Corporate et Reportages d’Entreprise à Montpellier
                 </h1>
             </header>
