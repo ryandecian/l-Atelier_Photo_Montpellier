@@ -11,11 +11,11 @@ import Footer_root_layout from "../../../../components/layout/footer_Layout/Foot
 /* Import des Hooks */
 import { useScrollToHash_Hook } from "../../../../hook/useScrollToHash.hook";
 
-function Blog20250917_Page() {
+function Blog_20250917_Page() {
     useScrollToHash_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
 
      return (
-        <section className={`Blog20250917_Page ${style.Page}`}>
+        <section className={`Blog_20250917_Page ${style.Page}`}>
             <header id="top" className={style.Header}>
                  <Nav_root_Layout />
             </header>
@@ -29,4 +29,4 @@ function Blog20250917_Page() {
     )
 }
 
-export default Blog20250917_Page;
+export default Blog_20250917_Page;
