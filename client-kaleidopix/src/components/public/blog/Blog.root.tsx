@@ -35,12 +35,12 @@ function Blog_Root() {
     return (
         <section className={`BlogRoot ${css.container}`}>
             <header className={style.ContainerTitle}>
-                <h1 className={style.TitleH1}>
+                <h1 className={style.TitleH1_NNNN}>
                     {`Blog photo professionnel : conseils, astuces et inspiration à Montpellier`}
                 </h1>
             </header>
 
-            <h2 className={style.TitleLNH3}>
+            <h2 className={style.TitleH2_00N0}>
                 {`Retrouvez nos conseils photo et reportages inspirants à Montpellier`}
             </h2>
 

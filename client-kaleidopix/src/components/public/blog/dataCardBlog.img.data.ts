@@ -1,5 +1,5 @@
 /* Import des composants Router */
-import ListDataRouter from "../../../router/router";
+import router from "../../../router/router";
 
 /* Import des Types */
 import type { CardBlog_Type } from "../../../types/components/blogs/cardBlog.type";
@@ -8,7 +8,7 @@ function dataCardBlog_img_data() {
     const tab: CardBlog_Type[] = [
         {
             reactKey: 1,
-            path: ListDataRouter[4].children?.[5].path,
+            path: router[4].children?.[1].path,
             id: "top",
             title: "Investir dans l’image d’entreprise",
             description: "Photo & vidéo : un vrai retour sur investissement.",
@@ -17,7 +17,7 @@ function dataCardBlog_img_data() {
         },
         {
             reactKey: 2,
-            path: ListDataRouter[4].children?.[6].path,
+            path: router[4].children?.[2].path,
             id: "top",
             title: "Trouvez les Bons Profils",
             description: "Comment la Vidéo vous fait Économiser sur vos Coûts de Recrutement",
