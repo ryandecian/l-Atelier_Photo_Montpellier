@@ -6,12 +6,11 @@ import type { Router_Type } from "../types/router/router.type";
 
 /* Page Frontend public */
 import Blog_Page from "../pages/public/blog_Page/Blog.page";
-import Blog20250917_Page from "../pages/public/blog_Page/liste-blog_Page/Blog20250917.page";
-import Blog_20251127_Page from "../pages/public/blog_Page/liste-blog_Page/Blog20251127.page";
+import Blog_20250917_Page from "../pages/public/blog_Page/liste-blog_Page/Blog_20250917.page";
+import Blog_20251127_Page from "../pages/public/blog_Page/liste-blog_Page/Blog_20251127.page";
 import Contact_Page from "../pages/public/contact_Page/Contact.page";
 import Home_Page from "../pages/public/home_Page/Home.page";
 import VideoCorporate_Page from "../pages/public/videoCorporate_Page/VideoCorporate.page";
-import Blog_Root from "../components/public/blog/Blog.root";
 
 const router: Router_Type = [
     /* {router[0].path} */
@@ -41,12 +40,17 @@ const router: Router_Type = [
             /* {router[4]!.children![0]!.path} : page parent */
             {
                 path: "/blog",
-                element: <Blog_Root />,
+                element: <Blog_Page />,
             },
-            /* {router[4].children?.[1].path} : page parent = children[0] */
+            /* {router[4].children?.[1].path} */
             {
                 path: "/blog/2025-09-17",
-                element: <h1>test</h1>,
+                element: <Blog_20250917_Page />,
+            },
+            /* {router[4].children?.[2].path} */
+            {
+                path: "/blog/2025-11-27",
+                element: <Blog_20251127_Page />,
             },
         ],
     },
