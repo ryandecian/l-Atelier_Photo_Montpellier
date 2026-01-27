@@ -1,5 +1,5 @@
 /* Import des modules CSS */
-import style from "../../StyleRootComponent.module.css";
+import style from "../../style.root.module.css";
 import css from "./blog.module.css";
 
 /* Import des Components */
