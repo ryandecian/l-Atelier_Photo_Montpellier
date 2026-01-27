@@ -1,5 +1,5 @@
 /* Import des modules CSS */
-import style from "../../../../StyleRootComponent.module.css";
+import style from "../../../../style.root.module.css";
 
 /* Import des Components de Data */
 import { imagesBlog_20251127_img_data } from "./imageBlog_20251127.img.data";
