@@ -2,30 +2,28 @@
 import style from "../../../stylePage.module.css";
 
 /* Import des Components */
-import Blog_20250917_Root from "../../../../components/Public/blog-root/list-blog-root/blog_20250917/Blog_20250917.root";
-import NavRoot from "../../../../components/layout/nav_Layout/Nav.root.layout";
-import Footer_layout from "../../../../components/layout/footer/Footer.layout";
+import Nav_root_Layout from "../../../../components/layout/nav_Layout/Nav.root.layout";
+import Blog_20250917_Root from "../../../../components/public/blog/list-blog/blog_20250917/Blog_20250917.root";
+import Footer_root_layout from "../../../../components/layout/footer_Layout/Footer.root.layout";
 
 /* Import des composants SEO */
-import { HelmetBlog20250917_helmet_SEO } from "../../../../seo/blog_SEO/liste-article-blog_SEO/blog-20250917_SEO/HelmetBlog20250724.helmet.seo";
 
 /* Import des Hooks */
-import useScrollToHash_utils_Hook from "../../../../hook/useScrollToHash.hook";
+import { useScrollToHash_Hook } from "../../../../hook/useScrollToHash.hook";
 
 function Blog20250917_Page() {
-    useScrollToHash_utils_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
+    useScrollToHash_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
 
      return (
         <section className={`Blog20250917_Page ${style.Page}`}>
-            <HelmetBlog20250917_helmet_SEO />
             <header id="top" className={style.Header}>
-                 <NavRoot />
+                 <Nav_root_Layout />
             </header>
             <main className={style.Main}>
                 <Blog_20250917_Root />
             </main>
             <footer className={style.Footer}>
-                <Footer_layout />
+                <Footer_root_layout />
             </footer>
         </section>
     )
