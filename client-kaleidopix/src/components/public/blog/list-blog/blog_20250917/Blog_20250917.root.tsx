@@ -11,7 +11,7 @@ function Blog_20250917_Root() {
     return (
         <section className={`Blog_20250917_Root ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
-                <h1 className={style.TitleH1}>
+                <h1 className={style.TitleH1_NNNN}>
                     {`Pourquoi investir dans la vidéo et la photo pour votre entreprise ?`}
                 </h1>
             </header>
