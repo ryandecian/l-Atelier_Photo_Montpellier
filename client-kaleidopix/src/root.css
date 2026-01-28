@@ -24,6 +24,11 @@
             --ColorBackgroundGrey: rgb(240, 240, 240);
             --ColorBackgroundGrey_Option1: rgba(218, 216, 216, 0.882);
 
+        /* Couleur des cards */
+            --ColorBackgroundBlack_40: rgba(0, 0, 0, 0.4);
+            --ColorBackgroundBlack_50: rgba(0, 0, 0, 0.5);
+            --ColorBackgroundBlack_80: rgba(0, 0, 0, 0.8); 
+
     /* ✨ Ombre du site */
         /** Documentation
         * rgba( AA, BB, CC, DD) EE FF GG
@@ -34,6 +39,9 @@
         * GG : Flou de l'ombre. Valeur en px
         */
             --box-shadow-bottom: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+        
+    /* ✨ Border du site */
+        --ColorBorderCreme: #ccc;
 
     /* ✨ Logique taille police d'écriture site*/
         --font-size-root: 1rem; /* 16 px : Ref size, dimensionne tout le site*/

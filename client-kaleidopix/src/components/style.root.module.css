@@ -276,3 +276,70 @@
     color: inherit;     /* Utilise la même couleur de texte que son parent */
     cursor: pointer;    /* Affiche un curseur en forme de main pour indiquer qu’il est cliquable */
 }
+
+/*-------------------------------------*/
+/* Positionnement texte avec Float*/
+.ContainerFloat {
+  width: 100%;
+  font-size: var(--p);
+  position: relative;
+}
+
+/* Positionnement cible unique */
+.FloatLeft {
+    float: left;
+    margin: 0rem 1.25rem; /* 0px 20px 0px 20px */
+}
+.FloatRight {
+    float: right;
+    margin: 0rem 1.25rem; /* 0px 20px 0px 20px */
+}
+
+/* Positionnement et dimension image avec float */
+/* Po = Portrait */
+.FloatLeftImg_Po {
+    float: left;
+    width: calc(100% - 2.5rem); /* 100% - 40px */
+    padding: 0rem 1.25rem; /* 0px 20px 0px 20px */
+    margin: 0rem;
+    @media (min-width: 450px) {
+        width: 280px; /* 280px */
+        max-width: 40%; /* 40% de la largeur du parent */
+        margin: 0rem; /* 0px 0px 0px 0px */
+    }
+}
+
+.FloatRightImg_Po {
+    float: right;
+    width: calc(100% - 2.5rem); /* 100% - 40px */
+    margin: 0rem 1.25rem 1.25rem 1.25rem; /* 0px 20px 0px 20px */
+    @media (min-width: 28.125rem) { /* 450px */
+        width: 340px; /* 280px */
+        max-width: 40%; /* 40% de la largeur du parent */
+        margin: 0rem 1.25rem; /* 0px 20px 0px 20px */
+    }
+}
+
+/* Pa = Paysage */
+.FloatLeftImg_Pa {
+    float: left;
+    width: calc(100% - 2.5rem); /* 100% - 40px */
+    padding: 0rem 1.25rem; /* 0px 20px 0px 20px */
+    margin: 0rem;
+    @media (min-width: 28.125rem) { /* 450px */
+        width: 370px; /* 280px */
+        max-width: 50%; /* 40% de la largeur du parent */
+        margin: 0rem; /* 0px 0px 0px 0px */
+    }
+}
+
+.FloatRightImg_Pa {
+    float: right;
+    width: calc(100% - 2.5rem); /* 100% - 40px */
+    margin: 0rem 1.25rem 1.25rem 1.25rem; /* 0px 20px 0px 20px */
+    @media (min-width: 400px) {
+        width: 370px; /* 280px */
+        max-width: 50%; /* 40% de la largeur du parent */
+        margin: 0rem 1.25rem; /* 0px 20px 0px 20px */
+    }
+}
