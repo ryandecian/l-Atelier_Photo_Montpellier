@@ -11,12 +11,12 @@ function Blog_20250917_Root() {
     return (
         <section className={`Blog_20250917_Root ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
-                <h1 className={style.TitleH1}>
+                <h1 className={style.TitleH1_NNNN}>
                     {`Pourquoi investir dans la vidéo et la photo pour votre entreprise ?`}
                 </h1>
             </header>
 
-            <h2 className={style.TitleH2}>
+            <h2 className={style.TitleH2_00N0}>
                 {`La photo et la vidéo événementielle : bien plus qu’un souvenir, un levier d’impact`}
             </h2>
 
@@ -49,7 +49,7 @@ function Blog_20250917_Root() {
                 Mais pour le raconter, le revivre, et le faire rayonner.
             </p>
 
-            <h2 className={style.TitleH2}>
+            <h2 className={style.TitleH2_00N0}>
                 {`L’image, cet outil stratégique en entreprise qu’on sous-estime trop souvent`}
             </h2>
 
@@ -85,7 +85,7 @@ function Blog_20250917_Root() {
                 </p>
             </div>
             
-            <h2 className={style.TitleH2}>
+            <h2 className={style.TitleH2_00N0}>
                 {`La vidéo à Montpellier ou ailleurs : un puissant levier d’image et de confiance`}
             </h2>
 
@@ -111,7 +111,7 @@ function Blog_20250917_Root() {
                 crédibilité de votre marque.
             </p>
 
-            <h2 className={style.TitleH2}>
+            <h2 className={style.TitleH2_00N0}>
                 {`Photo et vidéo : des supports durables pour valoriser votre activité`}
             </h2>
             
@@ -153,7 +153,7 @@ function Blog_20250917_Root() {
             </div>
 
 
-            <h3 className={style.TitleNH3}>
+            <h3 className={style.TitleH3}>
                 {`Amateur vs Corporate : quand l’image reflète vraiment la qualité de l’entreprise`}
             </h3>
 
@@ -168,7 +168,7 @@ function Blog_20250917_Root() {
                 C’est ce décalage, souvent invisible avant coup, qui fait toute la différence après.
             </p>
 
-            <h3 className={style.TitleNH3}>
+            <h3 className={style.TitleH3}>
                 {`L’image corporate réutilisable : newsletters, rapports, slides et réseaux sociaux`}
             </h3>
 
@@ -202,7 +202,7 @@ function Blog_20250917_Root() {
                 tous vos supports de communication.
             </p>
 
-            <h2 className={style.TitleH2}>
+            <h2 className={style.TitleH2_00N0}>
                 {`Toujours l’humain, même dans une image corporate`}
             </h2>
 
@@ -239,7 +239,7 @@ function Blog_20250917_Root() {
                 au-delà de l’événement lui-même.
             </p>
 
-            <h2 className={style.TitleH2}>
+            <h2 className={style.TitleH2_00N0}>
                 {`Et si choisir un photographe/vidéaste devenait votre prochain levier stratégique ?`}
             </h2>
 

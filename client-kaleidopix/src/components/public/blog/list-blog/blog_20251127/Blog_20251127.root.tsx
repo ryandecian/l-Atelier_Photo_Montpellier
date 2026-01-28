@@ -11,22 +11,22 @@ import { PremiumCardImgModal_Element } from "../../../../elements/premium-card-i
 import { Link } from "react-router-dom";
 
 /* Import des composants Router */
-import ListDataRouter from "../../../../../router/router";
+import router from "../../../../../router/router";
 
 function Blog_20251127_Root() {
     return (
         <section className={`Blog_20251127_Root ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
-                <h1 className={style.TitleH1}>
+                <h1 className={style.TitleH1_NNNN}>
                     {`Trouvez les Bons Profils : Comment la Vidéo vous fait Économiser sur vos Coûts de Recrutement`}
                 </h1>
             </header>
 
-            <h2 className={style.TitleH2}>
+            <h2 className={style.TitleH2_00N0}>
                 Le Coût Caché d'un Mauvais Recrutement
             </h2>
 
-            <h3 className={style.TitleLNH3}>
+            <h3 className={style.TitleH3}>
                 La Véritable Pénurie de Talent : Volume vs. Qualification
             </h3>
 
@@ -69,7 +69,7 @@ function Blog_20251127_Root() {
                 </p>
             </div>
 
-            <h3 className={style.TitleLNH3}>
+            <h3 className={style.TitleH3}>
                 Pourquoi les Offres d'Emploi Textuelles Coûtent Cher
             </h3>
 
@@ -101,11 +101,11 @@ function Blog_20251127_Root() {
                 </li>
             </ul>
 
-            <h2 className={style.TitleH2}>
+            <h2 className={style.TitleH2_00N0}>
                 Marque Employeur : le Levier de l'Authenticité et de la Confiance
             </h2>
 
-            <h3 className={style.TitleLNH3}>
+            <h3 className={style.TitleH3}>
                 L'Authenticité comme Moteur d'Engagement Supérieur
             </h3>
 
@@ -140,7 +140,7 @@ function Blog_20251127_Root() {
                     visiteur en un candidat motivé.
                 </p>
 
-                <h3 className={style.TitleLNH3}>
+                <h3 className={style.TitleH3}>
                     Filtrer les Candidats : L'Alignement Culturel avant les Compétences
                 </h3>
 
@@ -178,7 +178,7 @@ function Blog_20251127_Root() {
                 </li>
             </ul>
 
-            <h2 className={style.TitleH2}>
+            <h2 className={style.TitleH2_00N0}>
                 Les 3 Formats Vidéo qui Transforment vos RH et vos Coûts
             </h2>
 
@@ -189,7 +189,7 @@ function Blog_20251127_Root() {
                     className={style.FloatLeftImg_Po}
                 />
 
-                <h3 className={style.TitleLNH3}>
+                <h3 className={style.TitleH3}>
                     Format 1 : La Vidéo Témoignage d'Employés (Recruitment Videos)
                 </h3>
 
@@ -201,7 +201,7 @@ function Blog_20251127_Root() {
                     <strong> crédibilité</strong> et réduisent les incertitudes qui mènent aux <strong>candidatures non qualifiées</strong>.
                 </p>
 
-                <h3 className={style.TitleLNH3}>
+                <h3 className={style.TitleH3}>
                     Format 2 : Le Film Corporate & Manifeste (Vision Globale)
                 </h3>
 
@@ -213,7 +213,7 @@ function Blog_20251127_Root() {
                     l'histoire, les valeurs sociétales et la mission, servant de socle à votre <strong>image de marque employeur</strong>.
                 </p>
 
-                <h3 className={style.TitleLNH3}>
+                <h3 className={style.TitleH3}>
                     Format 3 : La Vidéo E-learning et de Formation Interne
                 </h3>
 
@@ -226,11 +226,11 @@ function Blog_20251127_Root() {
                 </p>
             </div>
 
-            <h2 className={style.TitleH2}>
+            <h2 className={style.TitleH2_00N0}>
                 Feuille de Route : Passer de l'Intention à la Production (CTA)
             </h2>
 
-            <h3 className={style.TitleLNH3}>
+            <h3 className={style.TitleH3}>
                 Ne pas se Limiter au Service RH : Impliquer Tous les Collaborateurs
             </h3>
 
@@ -248,7 +248,7 @@ function Blog_20251127_Root() {
                     className={style.FloatRightImg_Po}
                 />
 
-                <h3 className={style.TitleLNH3}>
+                <h3 className={style.TitleH3}>
                     Les Clés d'une Production Vidéo RH Réussie
                 </h3>
 
@@ -259,7 +259,7 @@ function Blog_20251127_Root() {
                     pour transformer des idées complexes en <strong>récits captivants</strong> et mémorables pour vos futurs talents.
                 </p>
 
-                <h3 className={style.TitleLNH3}>
+                <h3 className={style.TitleH3}>
                     Passez à l'Action : Obtenez une Stratégie Vidéo Sur-Mesure
                 </h3>
 
@@ -281,17 +281,16 @@ function Blog_20251127_Root() {
             </div>
 
             <p className={style.TextP4}>
-                <span className={style.SpanLink}>
                     <Link 
-                        to={`${ListDataRouter[3].path}#top`} 
+                        className={style.Link}
+                        to={`${router[3].path}#top`} 
                         title="Demander un audit stratégique de Marque Employeur et un devis personnalisé"
                     >
                         {`Cliquez ici pour obtenir un audit stratégique de votre Marque Employeur et un devis personnalisé pour votre première production vidéo.`}
                     </Link>
-                </span>
             </p>
 
-            <h3 className={style.TitleLNH3}>
+            <h3 className={style.TitleH3}>
                 Passez à l'Action : Obtenez une Stratégie Vidéo Sur-Mesure
             </h3>
 
