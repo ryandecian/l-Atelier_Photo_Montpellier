@@ -11,6 +11,7 @@ import Blog_20251127_Page from "../pages/public/blog_Page/liste-blog_Page/Blog_2
 import Contact_Page from "../pages/public/contact_Page/Contact.page";
 import Home_Page from "../pages/public/home_Page/Home.page";
 import VideoCorporate_Page from "../pages/public/videoCorporate_Page/VideoCorporate.page";
+import PhotoCorporate_Page from "../pages/public/photoCorporate_Page/PhotoCorporate.page";
 
 const router: Router_Type = [
     /* {router[0].path} */
@@ -26,7 +27,7 @@ const router: Router_Type = [
     /* {router[2].path} */
     {
         path: "/photo-corporate",
-        // element: <PhotoCorporate_Page />,
+        element: <PhotoCorporate_Page />,
     },
     /* {router[3].path} */
     {
