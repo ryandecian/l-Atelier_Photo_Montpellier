@@ -13,7 +13,7 @@ import router from "../../../router/router";
 function VideoCorporate_Root() {
     return (
         <section className={`VideoCorporate_Root ${style.ContainerRootRacine}`}>
-            <header className={style.ContainerTitleRoot}>
+            <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1_NNNN}>
                     Vidéos Corporate et Reportages d’Entreprise à Montpellier
                 </h1>

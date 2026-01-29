@@ -12,7 +12,7 @@ function navMenu_Data(): NavMenu_data_Type {
                 nameSubMenu: [
                     // { title: "Corporate", link: router[11].path },
                     { title: "Vidéos Corporate", link: router[1].path },
-                    { title: "Photos Corporate", link: "#" },
+                    { title: "Photos Corporate", link: router[2].path },
                 ],
             },
         ],
