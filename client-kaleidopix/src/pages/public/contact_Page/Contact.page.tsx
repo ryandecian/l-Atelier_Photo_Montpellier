@@ -4,6 +4,7 @@ import style from "../../stylePage.module.css";
 /* Import des Components */
 import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
 import Contact_Root from "../../../components/public/contact/Contact.root";
+import Footer_root_layout from "../../../components/layout/footer_Layout/Footer.root.layout";
 
 function Contact_Page() {
      return (
@@ -15,7 +16,7 @@ function Contact_Page() {
                 <Contact_Root />
             </main>
             <footer className={style.Footer}>
-                {/* <Footer_layout /> */}
+                <Footer_root_layout />
             </footer>
         </section>
     )
