@@ -9,6 +9,11 @@ function PhotoCorporate_Root() {
                     {`Portraits Corporate à Montpellier - Valorisez Votre Image Professionnelle`}
                 </h1>
             </header>
+
+            <p className={style.TextP4}>
+                Votre portrait professionnel est souvent la <strong>première impression</strong> que vous laissez à vos 
+                clients, partenaires ou recruteurs. Il reflète votre posture, votre sérieux et votre expertise.
+            </p>
         </section>
     );
 }
