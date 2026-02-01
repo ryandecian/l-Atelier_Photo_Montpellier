@@ -19,9 +19,9 @@ RUN npm install
 COPY . .
 
 # Injecte les variables dans l'environnement du build Vite
+ENV VITE_NODE_ENV=$VITE_NODE_ENV
 ENV VITE_DOMAIN_CLIENT=$VITE_DOMAIN_CLIENT
 ENV VITE_DOMAIN_API_SERVER=$VITE_DOMAIN_API_SERVER
-ENV VITE_NODE_ENV=$VITE_NODE_ENV
 
 # Lance le build Vite (génère le dossier dist/)
 RUN npm run build
