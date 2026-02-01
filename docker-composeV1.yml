@@ -9,15 +9,18 @@ services:
       - "443:443"
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro                  # Fichier de configuration Nginx personnalisé
-      - ./nginx/certs:/etc/nginx/certs                               # Certificats TLS (Let's Encrypt)
       - /etc/letsencrypt:/etc/letsencrypt:ro
       - ./nginx/html:/usr/share/nginx/html                           # Page HTML statique (optionnel, ex: page maintenance)
-      - client-dist:/usr/share/nginx/html/lapm                       # Volume monté contenant les fichiers buildés du frontend
+
+      - client-lapm-dist:/usr/share/nginx/html/lapm                       # Volume monté contenant les fichiers buildés du frontend
       - client-kaleidopix-dist:/usr/share/nginx/html/kaleidopix      # Volume monté contenant les fichiers buildés du frontend kaleidopix
     depends_on:
-      - client
-      - client-kaleidopix
-      - server
+      client-lapm:
+        condition: service_completed_successfully
+      client-kaleidopix:
+        condition: service_completed_successfully
+      server:
+        condition: service_started
 
   db:
     image: mariadb:11
@@ -38,8 +41,8 @@ services:
     ports:
       - "3306:3306"  # DB accessible depuis l'extérieur le temps du dev
 
-  client:
-    container_name: client
+  client-lapm:
+    container_name: client-lapm
     build:
       context: ./client
       dockerfile: Dockerfile
@@ -48,10 +51,16 @@ services:
         - VITE_DOMAIN_CLIENT=${VITE_DOMAIN_CLIENT}
         - VITE_DOMAIN_API_SERVER=${VITE_DOMAIN_API_SERVER}
     env_file: .env
-    restart: always
     volumes:
-      - client-dist:/app/dist  # Rend disponible le build Vite pour Nginx
-    command: [ "sleep", "infinity" ]
+      - client-lapm-dist:/dist  # Rend disponible le build Vite pour Nginx
+    # Commande temporaire pour copier les fichiers buildés dans le volume
+    # sh : Lance un shell
+    # -c : Exécute la commande suivante dans le shell
+    # rm -rf /dist/* : (rm : supprime) (-r : tout le contenu si c'est un dossier) (-f : force la suppression sans demander de confirmation) -> supprime tout le contenu actuel du volume /dist
+    # && : exécute la commande de droite uniquement si celle de gauche a réussi (exit code 0)
+    # cp -r /app/dist/* /dist/ : (cp : copie) (-r : copie récursive pour les dossiers) -> copie tout le contenu du dossier buildé /app/dist/ vers le volume /dist/
+    command: ["sh", "-c", "rm -rf /dist/* && cp -r /app/dist/* /dist/"]
+    restart: "no"
 
   client-kaleidopix:
     container_name: client-kaleidopix
@@ -63,10 +72,16 @@ services:
         - VITE_DOMAIN_CLIENT_KALEIDOPIX=${VITE_DOMAIN_CLIENT_KALEIDOPIX}
         - VITE_DOMAIN_API_SERVER=${VITE_DOMAIN_API_SERVER}
     env_file: .env
-    restart: always
     volumes:
-      - client-kaleidopix-dist:/app/dist  # Rend disponible le build Vite pour Nginx
-    command: [ "sleep", "infinity" ]
+      - client-kaleidopix-dist:/dist  # Rend disponible le build Vite pour Nginx
+    # Commande temporaire pour copier les fichiers buildés dans le volume
+    # sh : Lance un shell
+    # -c : Exécute la commande suivante dans le shell
+    # rm -rf /dist/* : (rm : supprime) (-r : tout le contenu si c'est un dossier) (-f : force la suppression sans demander de confirmation) -> supprime tout le contenu actuel du volume /dist
+    # && : exécute la commande de droite uniquement si celle de gauche a réussi (exit code 0)
+    # cp -r /app/dist/* /dist/ : (cp : copie) (-r : copie récursive pour les dossiers) -> copie tout le contenu du dossier buildé /app/dist/ vers le volume /dist/
+    command: ["sh", "-c", "rm -rf /dist/* && cp -r /app/dist/* /dist/"]
+    restart: "no"
 
   server:
     container_name: server
@@ -102,5 +117,5 @@ services:
 
 volumes:
   db_data:
-  client-dist:
+  client-lapm-dist:
   client-kaleidopix-dist:
