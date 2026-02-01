@@ -3,7 +3,7 @@ name: Déploiement en Production
 on:
   push:
     branches:
-      - Deploy
+      - deploy
 
 jobs:
   deploy:
@@ -11,54 +11,114 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      #--------------------------------------------------------------------------------------------------------
+      # 📥 Récupération du code (utile surtout pour logs / cohérence du workflow)
+      #--------------------------------------------------------------------------------------------------------
       - name: 📥 Checkout du code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
+      #--------------------------------------------------------------------------------------------------------
+      # 🔐 Chargement de la clé SSH privée (connexion GitHub Actions → VPS)
+      #--------------------------------------------------------------------------------------------------------
       - name: 🔐 Connexion SSH via clé privée
-        uses: webfactory/ssh-agent@v0.7.0
+        uses: webfactory/ssh-agent@v0.9.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      - name: 🚀 Déployer sur le VPS
+      #--------------------------------------------------------------------------------------------------------
+      # 🔒 Sécurisation SSH : ajout de la clé du VPS dans known_hosts
+      # Évite StrictHostKeyChecking=no (bonne pratique sécurité)
+      #--------------------------------------------------------------------------------------------------------
+      - name: 🔒 Enregistrement du VPS dans known_hosts
         run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
-            set -e  # Stoppe à la moindre erreur
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          ssh-keyscan -H "${{ secrets.VPS_HOST }}" >> ~/.ssh/known_hosts
+
+      #--------------------------------------------------------------------------------------------------------
+      # 🚀 Déploiement sur le VPS
+      #--------------------------------------------------------------------------------------------------------
+      - name: 🚀 Déployer sur le VPS
+        env:
+          VPS_USER: ${{ secrets.VPS_USER }}
+          VPS_HOST: ${{ secrets.VPS_HOST }}
+          PROJECT_PATH: ${{ secrets.PROJECT_PATH }}
+        run: |
+          ssh "$VPS_USER@$VPS_HOST" "export PROJECT_PATH='$PROJECT_PATH'; bash -s" << 'EOF'
+            set -e  # Stoppe immédiatement à la moindre erreur
+
+            echo "🚀 Début du déploiement sur le VPS"
+
+            #--------------------------------------------------------------------------------------------------------
 
             echo "📁 Accès au dossier du projet"
-            cd ${{ secrets.PROJECT_PATH }}
+            cd "$PROJECT_PATH"
+            echo "✅ Accès au dossier du projet : OK"
 
-            # ✅ Etape 1/8 : PRUNE AVANT L'ARRÊT — conditionnel pour protéger la DB si tout est déjà down
-            sudo docker builder prune -af || true  # Nettoie uniquement les caches BuildKit
-            if [ -z "$(sudo docker ps -q)" ]; then
-              echo "ℹ️ Aucun conteneur actif -> prune SANS --volumes (protection DB)"
-              sudo docker system prune -af || true
-            else
-              echo "ℹ️ Conteneurs actifs -> prune AVEC --volumes (les volumes utilisés sont protégés)"
-              sudo docker system prune -af --volumes || true
-            fi
+            #--------------------------------------------------------------------------------------------------------
 
-            echo "🛑 Etape 2/8 : Stop + remove containers : Phase 1/2"
-            sudo docker stop $(sudo docker ps -q) || true
-            sudo docker rm $(sudo docker ps -aq) || true
+            echo "⏳ Etape 1/6 : Synchronisation du dépôt Git"
 
-            echo "🧹 Etape 3/8 : Suppression du volume client-dist"
-            sudo docker volume rm l-atelier_photo_montpellier_client-dist || true
+            # Télécharge toutes les mises à jour du dépôt distant
+            git fetch --all
 
-            echo "🧹 Etape 4/8 : Suppression du volume client-kaleidopix-dist"
-            sudo docker volume rm l-atelier_photo_montpellier_client-kaleidopix-dist || true
+            # Se positionne sur la branche deploy
+            # Si elle n'existe pas localement, elle est recréée depuis origin/deploy
+            git checkout deploy || git checkout -b deploy origin/deploy
 
-            echo "🔀 Etape 5/8 : Checkout de la bonne branche"
-            git checkout Deploy
+            # Force l'état local à être strictement identique au distant
+            git reset --hard origin/deploy
 
-            echo "🚀 Etape 6/8 : Build + redémarrage : Phase 1/2"
-            git pull origin Deploy
-            sudo docker compose up -d --build
+            echo "✅ Etape 1/6 : Synchronisation Git - OK"
 
-            echo "🛑 Etape 7/8 : Arrêt des containers : Phase 2/2"
-            sudo docker compose down || true
+            #--------------------------------------------------------------------------------------------------------
 
-            echo "🚢 Etape 8/8 : Redémarrage des containers : Phase 2/2"
-            sudo docker compose up -d
+            echo "⏳ Etape 2/6 : Build + redémarrage des containers Docker"
 
-            echo "✅ Déploiement terminé"
+            # Reconstruit les images Docker
+            # Redémarre les services
+            # Supprime les conteneurs orphelins
+            sudo docker compose up -d --build --remove-orphans
+
+            echo "✅ Etape 2/6 : Build + redémarrage Docker - OK"
+
+            #--------------------------------------------------------------------------------------------------------
+
+            echo "⏳ Etape 3/6 : Nettoyage des conteneurs arrêtés"
+            sudo docker container prune -f || true
+            echo "✅ Etape 3/6 : Nettoyage conteneurs - OK"
+
+            #--------------------------------------------------------------------------------------------------------
+
+            echo "⏳ Etape 4/6 : Suppression des images Docker non utilisées"
+
+            echo "Affichage des dangling images (sans tag) avant nettoyage :"
+            sudo docker images --filter "dangling=true" || true
+
+            echo "Supprime les dangling images (sans tag) de plus de 24h."
+            sudo docker image prune -f --filter "dangling=true" --filter "until=24h" || true
+
+            echo "Affichage des dangling images (sans tag) après nettoyage :"
+            sudo docker images --filter "dangling=true" || true
+
+            echo "✅ Etape 4/6 : Nettoyage images - OK"
+
+            #--------------------------------------------------------------------------------------------------------
+
+            echo "⏳ Etape 5/6 : Nettoyage du cache BuildKit"
+
+            # Nettoyage du cache BuildKit (> 24h)"
+            sudo docker builder prune -f --filter "until=24h" || true
+
+            echo "✅ Etape 5/6 : Nettoyage BuildKit - OK"
+
+            #--------------------------------------------------------------------------------------------------------
+
+            echo "⏳ Etape 6/6 : Nettoyage des réseaux Docker inutilisés"
+            sudo docker network prune -f || true
+            echo "✅ Etape 6/6 : Nettoyage réseaux - OK"
+
+            #--------------------------------------------------------------------------------------------------------
+
+            echo "✅ Déploiement terminé avec succès"
           EOF
