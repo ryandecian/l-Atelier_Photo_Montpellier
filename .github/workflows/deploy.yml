@@ -6,7 +6,7 @@ on:
       - Deploy
 
 jobs:
-  deploy:
+  Deploy:
     name: Déploiement VPS
     runs-on: ubuntu-latest
 
@@ -65,12 +65,12 @@ jobs:
             # Télécharge toutes les mises à jour du dépôt distant
             git fetch --all
 
-            # Se positionne sur la branche deploy
-            # Si elle n'existe pas localement, elle est recréée depuis origin/deploy
-            git checkout deploy || git checkout -b deploy origin/deploy
+            # Se positionne sur la branche Deploy
+            # Si elle n'existe pas localement, elle est recréée depuis origin/Deploy
+            git checkout Deploy || git checkout -b Deploy origin/Deploy
 
             # Force l'état local à être strictement identique au distant
-            git reset --hard origin/deploy
+            git reset --hard origin/Deploy
 
             echo "✅ Etape 1/7 : Synchronisation Git - OK"
 
