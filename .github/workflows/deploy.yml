@@ -43,8 +43,11 @@ jobs:
           VPS_USER: ${{ secrets.VPS_USER }}
           VPS_HOST: ${{ secrets.VPS_HOST }}
           PROJECT_PATH: ${{ secrets.PROJECT_PATH }}
+          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+          DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
         run: |
-          ssh "$VPS_USER@$VPS_HOST" "export PROJECT_PATH='$PROJECT_PATH'; bash -s" << 'EOF'
+          ssh "$VPS_USER@$VPS_HOST" "export PROJECT_PATH='$PROJECT_PATH'; export DOCKERHUB_USERNAME='$DOCKERHUB_USERNAME'; export DOCKERHUB_TOKEN='$DOCKERHUB_TOKEN'; bash -s;" << 'EOF'
+
             set -e  # Stoppe immédiatement à la moindre erreur
 
             echo "🚀 Début du déploiement sur le VPS"
@@ -57,7 +60,7 @@ jobs:
 
             #--------------------------------------------------------------------------------------------------------
 
-            echo "⏳ Etape 1/6 : Synchronisation du dépôt Git"
+            echo "⏳ Etape 1/7 : Synchronisation du dépôt Git"
 
             # Télécharge toutes les mises à jour du dépôt distant
             git fetch --all
@@ -69,28 +72,37 @@ jobs:
             # Force l'état local à être strictement identique au distant
             git reset --hard origin/deploy
 
-            echo "✅ Etape 1/6 : Synchronisation Git - OK"
+            echo "✅ Etape 1/7 : Synchronisation Git - OK"
 
             #--------------------------------------------------------------------------------------------------------
 
-            echo "⏳ Etape 2/6 : Build + redémarrage des containers Docker"
+            echo "⏳ Etape 2/7 : Authentification Docker Hub (anti rate-limit)"
+
+            # Login Docker Hub (token) - ne log rien de sensible
+            echo "$DOCKERHUB_TOKEN" | sudo docker login -u "$DOCKERHUB_USERNAME" --password-stdin >/dev/null 2>&1 || true
+
+            echo "✅ Etape 2/7 : Docker login - OK"
+
+            #--------------------------------------------------------------------------------------------------------
+
+            echo "⏳ Etape 3/7 : Build + redémarrage des containers Docker"
 
             # Reconstruit les images Docker
             # Redémarre les services
             # Supprime les conteneurs orphelins
             sudo docker compose up -d --build --remove-orphans
 
-            echo "✅ Etape 2/6 : Build + redémarrage Docker - OK"
+            echo "✅ Etape 3/7 : Build + redémarrage Docker - OK"
 
             #--------------------------------------------------------------------------------------------------------
 
-            echo "⏳ Etape 3/6 : Nettoyage des conteneurs arrêtés"
+            echo "⏳ Etape 4/7 : Nettoyage des conteneurs arrêtés"
             sudo docker container prune -f || true
-            echo "✅ Etape 3/6 : Nettoyage conteneurs - OK"
+            echo "✅ Etape 4/7 : Nettoyage conteneurs - OK"
 
             #--------------------------------------------------------------------------------------------------------
 
-            echo "⏳ Etape 4/6 : Suppression des images Docker non utilisées"
+            echo "⏳ Etape 5/7 : Suppression des images Docker non utilisées"
 
             echo "Affichage des dangling images (sans tag) avant nettoyage :"
             sudo docker images --filter "dangling=true" || true
@@ -101,22 +113,21 @@ jobs:
             echo "Affichage des dangling images (sans tag) après nettoyage :"
             sudo docker images --filter "dangling=true" || true
 
-            echo "✅ Etape 4/6 : Nettoyage images - OK"
+            echo "✅ Etape 5/7 : Nettoyage images - OK"
 
             #--------------------------------------------------------------------------------------------------------
 
-            echo "⏳ Etape 5/6 : Nettoyage du cache BuildKit"
-
+            echo "⏳ Etape 6/7 : Nettoyage du cache BuildKit"
             # Nettoyage du cache BuildKit (> 24h)"
             sudo docker builder prune -f --filter "until=24h" || true
 
-            echo "✅ Etape 5/6 : Nettoyage BuildKit - OK"
+            echo "✅ Etape 6/7 : Nettoyage BuildKit - OK"
 
             #--------------------------------------------------------------------------------------------------------
 
-            echo "⏳ Etape 6/6 : Nettoyage des réseaux Docker inutilisés"
+            echo "⏳ Etape 7/7 : Nettoyage des réseaux Docker inutilisés"
             sudo docker network prune -f || true
-            echo "✅ Etape 6/6 : Nettoyage réseaux - OK"
+            echo "✅ Etape 7/7 : Nettoyage réseaux - OK"
 
             #--------------------------------------------------------------------------------------------------------
 
