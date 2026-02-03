@@ -101,6 +101,66 @@ function PhotoCorporate_Root() {
             <p className={style.TextLiP4}>
                 Cela permet de :
             </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    limiter le temps mobilisé dans vos équipes,
+                </li>
+                <li className={style.TextLiP4}>
+                    offrir un fond et une lumière contrôlés,
+                </li>
+                <li className={style.TextLiP4}>
+                    produire une série homogène pour tout votre personnel,
+                </li>
+                <li className={style.TextLiP4}>
+                    intégrer éventuellement votre environnement professionnel.
+                </li>
+            </ul>
+
+            <h3 className={style.TitleH3}>
+                📌 En studio : lumière maîtrisée & rendu premium
+            </h3>
+
+            <p className={style.TextP4}>
+                Dans mon studio, j’ajuste éclairages, ambiance et arrière-plan pour un portrait sobre, élégant et intemporel. <br />
+                Parfait pour créer une identité visuelle cohérente pour vos dirigeants et collaborateurs.
+            </p>
+
+            {/* Video */}
+                        
+            <h2 className={style.TitleH2_00N0}>
+                Un Processus de Production Clair et Adapté aux Entreprises
+            </h2>
+
+            <p className={style.TextP4}>
+                Je mets en place un <strong>processus fluide et structuré</strong>, idéal pour les équipes :
+            </p>
+
+            <p className={style.TextP4}>
+                <strong>Étape 1 — Préparation & repérage</strong> <br />
+                Analyse de vos besoins, définition du rendu souhaité, choix du style visuel.
+            </p>
+
+            <p className={style.TextP4}>
+                <strong>Étape 2 — Organisation & planning</strong> <br />
+                Création d’un planning précis pour éviter les temps d’attente. <br />
+                Chaque collaborateur dispose d’un créneau dédié.
+            </p>
+
+            <p className={style.TextP4}>
+                <strong>Étape 3 — Shooting & direction</strong> <br />
+                Je guide chaque personne avec bienveillance : posture, regard, attitude. <br />
+                Même les plus réticents à l’objectif se sentent rapidement en confiance.
+            </p>
+
+            <p className={style.TextP4}>
+                <strong>Étape 4 — Retouches & livraison</strong> <br />
+                Retouches professionnelles, export optimisé pour LinkedIn, site web, presse et communication interne.
+            </p>
+                        
+            <h2 className={style.TitleH2_00N0}>
+                Une Signature Visuelle Forte : Le Premier Regard sur Votre Organisation
+            </h2>
         </section>
     );
 }
