@@ -1,4 +1,4 @@
-Il faudra ajouter une ombre sur la nav
+Il faudra préparer les versions nginx http et https
 
 ------------------------------------------------------------------------------
 
