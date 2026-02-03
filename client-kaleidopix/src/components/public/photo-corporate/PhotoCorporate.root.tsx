@@ -88,6 +88,19 @@ function PhotoCorporate_Root() {
             <h2 className={style.TitleH2_00N0}>
                 Réaliser Votre Portrait Corporate sur site ou dans un studio professionnel ?
             </h2>
+
+            <h3 className={style.TitleH3}>
+                📌 Sur site : pratique et cohérent
+            </h3>
+
+            <p className={style.TextP4}>
+                Je me déplace dans votre entreprise y compris dans l’Ecusson avec un <strong>studio mobile</strong> pour réaliser 
+                les portraits directement dans vos locaux.
+            </p>
+
+            <p className={style.TextLiP4}>
+                Cela permet de :
+            </p>
         </section>
     );
 }
