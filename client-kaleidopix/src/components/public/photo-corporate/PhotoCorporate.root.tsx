@@ -1,11 +1,18 @@
 /* Import des modules CSS */
 import style from "../../style.root.module.css";
 
+/* Import des Components de Data */
+import { avisClientPhotoCorporate_Data } from "./avisClientPhotoCorporate.data";
+
 /* Import des composants React */
 import { Link } from "react-router-dom";
 
 /* Import des composants Router */
 import router from "../../../router/router";
+
+/* Import des Utils */
+import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
+
 
 function PhotoCorporate_Root() {
     return (
@@ -223,6 +230,8 @@ function PhotoCorporate_Root() {
                     📩 Contactez-moi et discutons de votre besoin : je vous accompagne de A à Z
                 </Link>
             </p>
+
+            <GeneratorCardAvisClient_Element tabDataAvisClients={avisClientPhotoCorporate_Data} />
         </section>
     );
 }
