@@ -1,6 +1,12 @@
 /* Import des modules CSS */
 import style from "../../style.root.module.css";
 
+/* Import des composants React */
+import { Link } from "react-router-dom";
+
+/* Import des composants Router */
+import router from "../../../router/router";
+
 function PhotoCorporate_Root() {
     return (
         <section className={`PhotoCorporate_Root ${style.ContainerRootRacine}`}>
@@ -161,6 +167,62 @@ function PhotoCorporate_Root() {
             <h2 className={style.TitleH2_00N0}>
                 Une Signature Visuelle Forte : Le Premier Regard sur Votre Organisation
             </h2>
+
+            <p className={style.TextP4}>
+                Dans la communication d’entreprise, <strong>tout commence par un premier regard.</strong> Qu’il apparaisse 
+                dans une <strong>signature mail,</strong> sur <strong>LinkedIn</strong> ou votre <strong>site web,</strong>
+                {` `} votre <strong>organigramme</strong>, ou encore dans une <strong>présentation interne</strong>, le portrait 
+                corporate est souvent le <strong>premier point de contact visuel</strong> entre votre organisation et vos 
+                interlocuteurs.
+            </p>
+
+            <p className={style.TextLiP4}>
+                Un portrait professionnel transmet instantanément :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    le sérieux,
+                </li>
+                <li className={style.TextLiP4}>
+                    la fiabilité,
+                </li>
+                <li className={style.TextLiP4}>
+                    l’expertise,
+                </li>
+                <li className={style.TextLiP4}>
+                    et la cohérence visuelle de votre marque.
+                </li>
+            </ul>
+
+            <p className={style.TextP4}>
+                Une image soignée, homogène et adaptée à vos valeurs renforce votre <strong>crédibilité</strong>, valorise 
+                vos collaborateurs et donne une impression de <strong>professionnalisme maîtrisé</strong>, avant même que 
+                le dialogue ne commence.
+            </p>
+
+            <p className={style.TextP4}>
+                C’est pourquoi je conçois chaque portrait comme un <strong>véritable outil de communication</strong>, pensé 
+                pour servir vos enjeux de marque employeur, d’identification interne, et de visibilité digitale.
+            </p>
+
+            {/* Images */}
+                        
+            <h2 className={style.TitleH2_00N0}>
+                Votre Portrait Professionnel : un Investissement Visuel pour Votre Entreprise
+            </h2>
+
+            <p className={style.TextP4}>
+                Vous souhaitez moderniser votre image ou harmoniser les portraits de votre équipe ? <br />
+                Je vous accompagne pour créer un visuel professionnel qui <strong>servira durablement votre communication</strong> 
+                {` `} interne et externe.
+            </p>
+
+            <p className={style.TextP4}>
+                <Link to={router[3].path} className={style.Link}>
+                    📩 Contactez-moi et discutons de votre besoin : je vous accompagne de A à Z
+                </Link>
+            </p>
         </section>
     );
 }
