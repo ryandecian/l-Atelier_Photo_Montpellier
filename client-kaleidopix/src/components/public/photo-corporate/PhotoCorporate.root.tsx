@@ -3,6 +3,10 @@ import style from "../../style.root.module.css";
 
 /* Import des Components de Data */
 import { avisClientPhotoCorporate_Data } from "./avisClientPhotoCorporate.data";
+import { imagesPhotoCorporate_img_data } from "./imagesPhotoCorporate.img.data";
+
+/* Import des composants d'Elements */
+import { Container4ImagesPortrait_Element } from "../../elements/container-image/container-4_Images-portrait/Container4ImagesPortrait.element";
 
 /* Import des composants React */
 import { Link } from "react-router-dom";
@@ -36,7 +40,16 @@ function PhotoCorporate_Root() {
                 et externe.
             </p>
 
-            {/* PhotoCorporate_Photo */}
+            <Container4ImagesPortrait_Element 
+                img1={imagesPhotoCorporate_img_data[0].src}
+                img2={imagesPhotoCorporate_img_data[1].src}
+                img3={imagesPhotoCorporate_img_data[2].src}
+                img4={imagesPhotoCorporate_img_data[3].src}
+                metaNameImg1={imagesPhotoCorporate_img_data[0].alt}
+                metaNameImg2={imagesPhotoCorporate_img_data[1].alt}
+                metaNameImg3={imagesPhotoCorporate_img_data[2].alt}
+                metaNameImg4={imagesPhotoCorporate_img_data[3].alt}
+            />
 
             <h2 className={style.TitleH2_00N0}>
                 Pourquoi choisir un Portrait Corporate Professionnel ?
