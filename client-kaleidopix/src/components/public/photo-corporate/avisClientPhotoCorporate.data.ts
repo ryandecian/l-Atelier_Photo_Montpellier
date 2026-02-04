@@ -4,24 +4,24 @@ import type { AvisClientSEO_Type } from "../../../types/seo/avisClientSEO.type";
 const avisClientPhotoCorporate_Data: AvisClientSEO_Type[] = [
     {
         id: 1,
-        nom: "Mélodie du Désert",
+        nom: "Béa BOUTBOUL",
         note: 5,
-        commentaire: `Suite à un voyage dans le désert marocain, nous avons demandé à Anne de créer pour notre site et nos réseaux, 2 vidéos, l'une courte et rythmé, l'autre, plus longue pour retranscrire l'esprit de nos voyages. Le résultat est extraordinaire, nous adorons ! Grand merci Anne pour votre professionnaliste et la qualité de vos retours.`,
-        date: "26/11/2025",
+        commentaire: `Je recommande pour avoir des photos de collaborateurs qui soient homogènes. Bonne organisation, mini studio monté en un temps records, tout le monde a été comptant de cette séance.`,
+        date: "11/09/2025",
     },
     {
         id: 2,
-        nom: "Christine Kerr",
+        nom: "Hugo MANIAN",
         note: 5,
-        commentaire: `Merci pour votre travail photographique et votre approche relationnelle qui ont permis la réalisation de ces photos à visée institutionnelle... un bon compromis entre sérieux et détente.`,
-        date: "17/09/2025",
+        commentaire: `Kaleidopix est venue me présenter son travail et du coup j'en ai profité pour lancer un premier shooting avec une photo d'équipe. Effectivement ça change des smartphones. Je referai appel à elle pour les photos des collaborateurs`,
+        date: "06/08/2025",
     },
     {
         id: 3,
-        nom: "François Miton",
+        nom: "Caroline LEJARS",
         note: 5,
-        commentaire: `J'avais besoin de photos "au naturel", ce qui implique paradoxalement un oeil professionnel. Anne non seulement a su me mettre à l'aise (poser n'est vraiment pas ma tasse de thé!), mais elle a été jusqu'à trouver des accessoires variés (vestes, écharpes, casquette !) qui donnent effectivement une allure différente à chaque photo. Absolument satisfait du résultat, qui est au-delà de mes espérances ! Je recommande l'Atelier Photo Montpellier sans réserve !`,
-        date: "29/08/2025",
+        commentaire: `L atelier photo de Grabels, c est bien plus qu un simple atelier photo! C est aussi un moment convivial, chaleureux, parfois très drôle, où l on se sent en confiance. Ma séance a permis de faire des photos professionnelles et quelques photos personnelles. Le résultat a fait l unanimité autant dans la famille, sur les réseaux, qu’au travail. Un immense merci à la photographe pour les photos et le moment partagé !`,
+        date: "19/07/2025",
     },
 ];
 
