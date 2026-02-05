@@ -13,23 +13,89 @@ const imagesPhotoCorporate_img_data: Images_data_Type[] = [
     /* Tableau 1 d'images : 4 images */
     /* {imagesPhotoCorporate_img_data[0].src} */
     {
-        src: "/images/image-photo-corporate/portrait-corporate-professionnelle-fond-gris-kaleidopix.jpg",
-        alt: "Portrait corporate professionnelle fond gris - Kaleidopix",
+        src: "/images/image-photo-corporate/portrait-linkdin-chef-entreprise-developpement-web-montpellier-kaleidopix.jpg",
+        alt: "Portrait Linkdin chef entreprise développement web Montpellier - Kaleidopix",
     },
     /* {imagesPhotoCorporate_img_data[1].src} */
     {
-        src: "/images/image-photo-corporate/portrait-corporate-professionnelle-style-moderne-kaleidopix.jpg",
-        alt: "Portrait corporate professionnelle style moderne - Kaleidopix",
+        src: "/images/image-photo-corporate/portrait-chef-entreprise-developpement-web-montpellier-kaleidopix.jpg",
+        alt: "Portrait chef entreprise développement web Montpellier - Kaleidopix",
     },
     /* {imagesPhotoCorporate_img_data[2].src} */
     {
-        src: "/images/image-photo-corporate/portrait-corporate-professionnelle-environnement-travail-kaleidopix.jpg",
-        alt: "Portrait corporate professionnelle en environnement de travail - Kaleidopix",
+        src: "/images/image-photo-corporate/photo-collaborateur-service-qualité-montpellier-kaleidopix.jpg",
+        alt: "Photo collaborateur service qualité Montpellier - Kaleidopix",
     },
     /* {imagesPhotoCorporate_img_data[3].src} */
     {
-        src: "/images/image-photo-corporate/portrait-corporate-professionnelle-fond-sombre-kaleidopix.jpg",
-        alt: "Portrait corporate professionnelle fond sombre - Kaleidopix",
+        src: "/images/image-photo-corporate/portrait-cv-entreprise-communication-web-montpellier-kaleidopix.jpg",
+        alt: "Portrait CV entreprise communication web Montpellier - Kaleidopix",
+    },
+
+    /* Tableau 2 d'images : 4 images */
+    /* {imagesPhotoCorporate_img_data[4].src} */
+    {
+        src: "/images/image-photo-corporate/photo-chercheuse-flash-montpellier-kaleidopix.jpg",
+        alt: "Photo chercheuse flash Montpellier - Kaleidopix",
+    },
+    /* {imagesPhotoCorporate_img_data[5].src} */
+    {
+        src: "/images/image-photo-corporate/portrait-chercheuse-montpellier-kaleidopix.jpg",
+        alt: "Portrait chercheuse Montpellier - Kaleidopix",
+    },
+    /* {imagesPhotoCorporate_img_data[6].src} */
+    {
+        src: "/images/image-photo-corporate/photo-commerciale-immobilier-transaction-montpellier-kaleidopix.jpg",
+        alt: "Photo commerciale immobilier transaction Montpellier - Kaleidopix",
+    },
+    /* {imagesPhotoCorporate_img_data[7].src} */
+    {
+        src: "/images/image-photo-corporate/shooting-commerciale-immobilier-entreprise-montpellier-kaleidopix.jpg",
+        alt: "Shooting commerciale immobilier entreprise Montpellier - Kaleidopix",
+    },
+
+    /* Tableau 3 d'images : 4 images */
+    /* {imagesPhotoCorporate_img_data[8].src} */
+    {
+        src: "/images/image-photo-corporate/portrait-commercial-domaine- securite-montpellier-kaleidopix.jpg",
+        alt: "Portrait commercial domaine sécurité Montpellier - Kaleidopix",
+    },
+    /* {imagesPhotoCorporate_img_data[9].src} */
+    {
+        src: "/images/image-photo-corporate/portrait-commercial-linkdin-securite-montpellier-kaleidopix.jpg",
+        alt: "Portrait commercial LinkedIn sécurité Montpellier - Kaleidopix",
+    },
+    /* {imagesPhotoCorporate_img_data[10].src} */
+    {
+        src: "/images/image-photo-corporate/portrait-collaborateur-fonction-territorial-montpellier-kaleidopix.jpg",
+        alt: "Portrait collaborateur fonction territoriale Montpellier - Kaleidopix",
+    },
+    /* {imagesPhotoCorporate_img_data[11].src} */
+    {
+        src: "/images/image-photo-corporate/photo-linkdin-montpellier-kaleidopix.jpg",
+        alt: "Portrait LinkedIn Montpellier - Kaleidopix",
+    },
+
+    /* Tableau 4 d'images : 4 images */
+    /* {imagesPhotoCorporate_img_data[12].src} */
+    {
+        src: "/images/image-photo-corporate/portrait-photographe-communication-linkdin-montpellier-kaleidopix.jpg",
+        alt: "Portrait photographe communication LinkedIn Montpellier - Kaleidopix",
+    },
+    /* {imagesPhotoCorporate_img_data[13].src} */
+    {
+        src: "/images/image-photo-corporate/portrait-jeune-photographe-communication-montpellier-kaleidopix.jpg",
+        alt: "Portrait jeune photographe communication Montpellier - Kaleidopix",
+    },
+    /* {imagesPhotoCorporate_img_data[14].src} */
+    {
+        src: "/images/image-photo-corporate/portrait-chef-projet-informatique-montpellier-kaleidopix.jpg",
+        alt: "Portrait chef projet informatique Montpellier - Kaleidopix",
+    },
+    /* {imagesPhotoCorporate_img_data[15].src} */
+    {
+        src: "/images/image-photo-corporate/photo-chef-projet-informatique-montpellier-kaleidopix.jpg",
+        alt: "Photo chef projet informatique Montpellier - Kaleidopix",
     },
 ];
 
