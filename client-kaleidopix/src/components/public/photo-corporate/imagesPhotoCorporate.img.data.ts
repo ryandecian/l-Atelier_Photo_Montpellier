@@ -31,6 +31,28 @@ const imagesPhotoCorporate_img_data: Images_data_Type[] = [
         src: "/images/image-photo-corporate/portrait-cv-entreprise-communication-web-montpellier-kaleidopix.jpg",
         alt: "Portrait CV entreprise communication web Montpellier - Kaleidopix",
     },
+
+    /* Tableau 2 d'images : 4 images */
+    /* {imagesPhotoCorporate_img_data[4].src} */
+    {
+        src: "/images/image-photo-corporate/photo-chercheuse-flash-montpellier-kaleidopix.jpg",
+        alt: "Photo chercheuse flash Montpellier - Kaleidopix",
+    },
+    /* {imagesPhotoCorporate_img_data[5].src} */
+    {
+        src: "/images/image-photo-corporate/portrait-chercheuse-montpellier-kaleidopix.jpg",
+        alt: "Portrait chercheuse Montpellier - Kaleidopix",
+    },
+    /* {imagesPhotoCorporate_img_data[6].src} */
+    {
+        src: "/images/image-photo-corporate/photo-commerciale-immobilier-transaction-montpellier-kaleidopix.jpg",
+        alt: "Photo commerciale immobilier transaction Montpellier - Kaleidopix",
+    },
+    /* {imagesPhotoCorporate_img_data[7].src} */
+    {
+        src: "/images/image-photo-corporate/shooting-commerciale-immobilier-entreprise-montpellier-kaleidopix.jpg",
+        alt: "Shooting commerciale immobilier entreprise Montpellier - Kaleidopix",
+    },
 ];
 
 export { imagesPhotoCorporate_img_data };
