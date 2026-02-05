@@ -82,7 +82,16 @@ function PhotoCorporate_Root() {
                 démarquer et à asseoir votre positionnement professionnel.</strong>
             </p>
             
-            {/* PhotoCorporate_Photo */}
+            <Container4ImagesPortrait_Element 
+                img1={imagesPhotoCorporate_img_data[4].src}
+                img2={imagesPhotoCorporate_img_data[5].src}
+                img3={imagesPhotoCorporate_img_data[6].src}
+                img4={imagesPhotoCorporate_img_data[7].src}
+                metaNameImg1={imagesPhotoCorporate_img_data[4].alt}
+                metaNameImg2={imagesPhotoCorporate_img_data[5].alt}
+                metaNameImg3={imagesPhotoCorporate_img_data[6].alt}
+                metaNameImg4={imagesPhotoCorporate_img_data[7].alt}
+            />
 
             <h2 className={style.TitleH2_00N0}>
                 Mon Approche : Une Image Qui Sert Votre Identité d’Entreprise
