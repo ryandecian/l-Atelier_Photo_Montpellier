@@ -82,7 +82,16 @@ function PhotoCorporate_Root() {
                 démarquer et à asseoir votre positionnement professionnel.</strong>
             </p>
             
-            {/* PhotoCorporate_Photo */}
+            <Container4ImagesPortrait_Element 
+                img1={imagesPhotoCorporate_img_data[4].src}
+                img2={imagesPhotoCorporate_img_data[5].src}
+                img3={imagesPhotoCorporate_img_data[6].src}
+                img4={imagesPhotoCorporate_img_data[7].src}
+                metaNameImg1={imagesPhotoCorporate_img_data[4].alt}
+                metaNameImg2={imagesPhotoCorporate_img_data[5].alt}
+                metaNameImg3={imagesPhotoCorporate_img_data[6].alt}
+                metaNameImg4={imagesPhotoCorporate_img_data[7].alt}
+            />
 
             <h2 className={style.TitleH2_00N0}>
                 Mon Approche : Une Image Qui Sert Votre Identité d’Entreprise
@@ -110,6 +119,17 @@ function PhotoCorporate_Root() {
             <p className={style.TextP4}>
                 Cette phase de cadrage garantit un portrait réellement aligné avec votre positionnement.
             </p>
+
+            <Container4ImagesPortrait_Element 
+                img1={imagesPhotoCorporate_img_data[8].src}
+                img2={imagesPhotoCorporate_img_data[9].src}
+                img3={imagesPhotoCorporate_img_data[10].src}
+                img4={imagesPhotoCorporate_img_data[11].src}
+                metaNameImg1={imagesPhotoCorporate_img_data[8].alt}
+                metaNameImg2={imagesPhotoCorporate_img_data[9].alt}
+                metaNameImg3={imagesPhotoCorporate_img_data[10].alt}
+                metaNameImg4={imagesPhotoCorporate_img_data[11].alt}
+            />
             
             <h2 className={style.TitleH2_00N0}>
                 Réaliser Votre Portrait Corporate sur site ou dans un studio professionnel ?
@@ -152,7 +172,16 @@ function PhotoCorporate_Root() {
                 Parfait pour créer une identité visuelle cohérente pour vos dirigeants et collaborateurs.
             </p>
 
-            {/* Video */}
+            <Container4ImagesPortrait_Element 
+                img1={imagesPhotoCorporate_img_data[12].src}
+                img2={imagesPhotoCorporate_img_data[13].src}
+                img3={imagesPhotoCorporate_img_data[14].src}
+                img4={imagesPhotoCorporate_img_data[15].src}
+                metaNameImg1={imagesPhotoCorporate_img_data[12].alt}
+                metaNameImg2={imagesPhotoCorporate_img_data[13].alt}
+                metaNameImg3={imagesPhotoCorporate_img_data[14].alt}
+                metaNameImg4={imagesPhotoCorporate_img_data[15].alt}
+            />
                         
             <h2 className={style.TitleH2_00N0}>
                 Un Processus de Production Clair et Adapté aux Entreprises
