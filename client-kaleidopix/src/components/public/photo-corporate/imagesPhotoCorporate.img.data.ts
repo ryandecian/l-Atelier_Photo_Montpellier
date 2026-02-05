@@ -53,6 +53,28 @@ const imagesPhotoCorporate_img_data: Images_data_Type[] = [
         src: "/images/image-photo-corporate/shooting-commerciale-immobilier-entreprise-montpellier-kaleidopix.jpg",
         alt: "Shooting commerciale immobilier entreprise Montpellier - Kaleidopix",
     },
+
+    /* Tableau 3 d'images : 4 images */
+    /* {imagesPhotoCorporate_img_data[8].src} */
+    {
+        src: "/images/image-photo-corporate/portrait-commercial-domaine- securite-montpellier-kaleidopix.jpg",
+        alt: "Portrait commercial domaine sécurité Montpellier - Kaleidopix",
+    },
+    /* {imagesPhotoCorporate_img_data[9].src} */
+    {
+        src: "/images/image-photo-corporate/portrait-commercial-linkdin-securite-montpellier-kaleidopix.jpg",
+        alt: "Portrait commercial LinkedIn sécurité Montpellier - Kaleidopix",
+    },
+    /* {imagesPhotoCorporate_img_data[10].src} */
+    {
+        src: "/images/image-photo-corporate/portrait-collaborateur-fonction-territorial-montpellier-kaleidopix.jpg",
+        alt: "Portrait collaborateur fonction territoriale Montpellier - Kaleidopix",
+    },
+    /* {imagesPhotoCorporate_img_data[11].src} */
+    {
+        src: "/images/image-photo-corporate/photo-linkdin-montpellier-kaleidopix.jpg",
+        alt: "Portrait LinkedIn Montpellier - Kaleidopix",
+    },
 ];
 
 export { imagesPhotoCorporate_img_data };

@@ -119,6 +119,17 @@ function PhotoCorporate_Root() {
             <p className={style.TextP4}>
                 Cette phase de cadrage garantit un portrait réellement aligné avec votre positionnement.
             </p>
+
+            <Container4ImagesPortrait_Element 
+                img1={imagesPhotoCorporate_img_data[8].src}
+                img2={imagesPhotoCorporate_img_data[9].src}
+                img3={imagesPhotoCorporate_img_data[10].src}
+                img4={imagesPhotoCorporate_img_data[11].src}
+                metaNameImg1={imagesPhotoCorporate_img_data[8].alt}
+                metaNameImg2={imagesPhotoCorporate_img_data[9].alt}
+                metaNameImg3={imagesPhotoCorporate_img_data[10].alt}
+                metaNameImg4={imagesPhotoCorporate_img_data[11].alt}
+            />
             
             <h2 className={style.TitleH2_00N0}>
                 Réaliser Votre Portrait Corporate sur site ou dans un studio professionnel ?
