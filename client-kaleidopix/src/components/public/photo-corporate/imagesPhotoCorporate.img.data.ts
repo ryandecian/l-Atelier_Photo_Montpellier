@@ -75,6 +75,28 @@ const imagesPhotoCorporate_img_data: Images_data_Type[] = [
         src: "/images/image-photo-corporate/photo-linkdin-montpellier-kaleidopix.jpg",
         alt: "Portrait LinkedIn Montpellier - Kaleidopix",
     },
+
+    /* Tableau 4 d'images : 4 images */
+    /* {imagesPhotoCorporate_img_data[12].src} */
+    {
+        src: "/images/image-photo-corporate/portrait-photographe-communication-linkdin-montpellier-kaleidopix.jpg",
+        alt: "Portrait photographe communication LinkedIn Montpellier - Kaleidopix",
+    },
+    /* {imagesPhotoCorporate_img_data[13].src} */
+    {
+        src: "/images/image-photo-corporate/portrait-jeune-photographe-communication-montpellier-kaleidopix.jpg",
+        alt: "Portrait jeune photographe communication Montpellier - Kaleidopix",
+    },
+    /* {imagesPhotoCorporate_img_data[14].src} */
+    {
+        src: "/images/image-photo-corporate/portrait-chef-projet-informatique-montpellier-kaleidopix.jpg",
+        alt: "Portrait chef projet informatique Montpellier - Kaleidopix",
+    },
+    /* {imagesPhotoCorporate_img_data[15].src} */
+    {
+        src: "/images/image-photo-corporate/photo-chef-projet-informatique-montpellier-kaleidopix.jpg",
+        alt: "Photo chef projet informatique Montpellier - Kaleidopix",
+    },
 ];
 
 export { imagesPhotoCorporate_img_data };
