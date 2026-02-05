@@ -172,7 +172,16 @@ function PhotoCorporate_Root() {
                 Parfait pour créer une identité visuelle cohérente pour vos dirigeants et collaborateurs.
             </p>
 
-            {/* Video */}
+            <Container4ImagesPortrait_Element 
+                img1={imagesPhotoCorporate_img_data[12].src}
+                img2={imagesPhotoCorporate_img_data[13].src}
+                img3={imagesPhotoCorporate_img_data[14].src}
+                img4={imagesPhotoCorporate_img_data[15].src}
+                metaNameImg1={imagesPhotoCorporate_img_data[12].alt}
+                metaNameImg2={imagesPhotoCorporate_img_data[13].alt}
+                metaNameImg3={imagesPhotoCorporate_img_data[14].alt}
+                metaNameImg4={imagesPhotoCorporate_img_data[15].alt}
+            />
                         
             <h2 className={style.TitleH2_00N0}>
                 Un Processus de Production Clair et Adapté aux Entreprises
