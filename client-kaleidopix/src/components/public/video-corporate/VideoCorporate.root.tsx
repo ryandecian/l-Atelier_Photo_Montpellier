@@ -144,6 +144,13 @@ function VideoCorporate_Root() {
                 confiance.
             </p>
 
+            <Video_Element
+                title="80 ans, première moto, 16 000 km en Afrique - Doris inspire le monde !"
+                src="/video/a-80-ans-elle-traverse-l-afrique-a-moto/a-80-ans-elle-traverse-l-afrique-a-moto.mp4"
+                poster="/video/a-80-ans-elle-traverse-l-afrique-a-moto/a-80-ans-elle-traverse-l-afrique-a-moto.jpg"
+                description="Doris traverse l’Afrique à moto pour poursuivre son rêve de découverte."
+            />
+
             
             <h2 className={style.TitleH2_00N0}>
                 Mon Approche : Des contenus visuels alignés avec votre stratégie
