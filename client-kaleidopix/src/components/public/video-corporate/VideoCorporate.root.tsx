@@ -71,7 +71,7 @@ function VideoCorporate_Root() {
             </p>
             
             <Video_Element
-                title="Aventure saharienne - Immersion dans le désert avec Mélodie du Désert"
+                title="Vidéo d’activité immersive : expérience et parcours client"
                 src="/video/video-trek-desert-maroc/video-trek-desert-maroc.mp4"
                 poster="/video/video-trek-desert-maroc/video-trek-desert-maroc-kaleidopix.jpg"
                 description="Une courte vidéo présentant l’ambiance du trek dans les dunes marocaines."
