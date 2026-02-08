@@ -290,6 +290,7 @@ function VideoCorporate_Root() {
             </p>
 
             <p className={style.TextP4}>
+                <strong>Envie de créer une vidéo qui valorise réellement votre activité à Montpellier ?</strong>
                 <Link to={router[3].path} className={style.Link}>
                     📩 Contactez-moi - Réponse garantie sous 24h
                 </Link>
