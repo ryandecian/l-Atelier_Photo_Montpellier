@@ -293,15 +293,6 @@ function VideoCorporate_Root() {
                 Questions fréquentes sur la vidéo corporate à Montpellier ?
             </h2>
 
-            <details>
-                <summary className={style.TextP4}>
-                    Voir plus d’informations
-                </summary>
-                <p className={style.TextP4}>
-                    Ceci est le contenu qui se déroule au clic.
-                </p>
-            </details>
-
         </section>
     )
 }
