@@ -290,7 +290,7 @@ function VideoCorporate_Root() {
             </p>
 
             <h2 className={style.TitleH2_00N0}>
-                Questions fréquentes sur la vidéo corporate à Montpellier
+                Questions fréquentes sur la vidéo corporate à Montpellier ?
             </h2>
 
             <details>
