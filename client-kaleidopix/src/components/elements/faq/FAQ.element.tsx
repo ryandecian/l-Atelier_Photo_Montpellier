@@ -1,13 +1,11 @@
 /* Import des modules CSS */
 import css from "./faq.module.css";
 
-type FAQItem = {
-    question: string;
-    reponse: React.ReactNode;
-};
+/* Import des Types */
+import type { FAQ_data_Type } from "../../../types/data/faq.data.type";
 
 type FAQProps = {
-    items: FAQItem[];
+    items: FAQ_data_Type;
 };
 
 function FAQ_Element({ items }: FAQProps) {
@@ -19,9 +17,10 @@ function FAQ_Element({ items }: FAQProps) {
                         {item.question}
                         <span className={css.icon} />
                     </summary>
-                    <div className={css.faqAnswer}>
+
+                    <p className={css.faqAnswer}>
                         {item.reponse}
-                    </div>
+                    </p>
                 </details>
             ))}
         </section>
