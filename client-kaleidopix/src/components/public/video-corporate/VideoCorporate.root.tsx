@@ -143,7 +143,72 @@ function VideoCorporate_Root() {
                 Une vidéo bien pensée aide clients et candidats à se projeter et à choisir votre entreprise en toute 
                 confiance.
             </p>
+            
+            <h2 className={style.TitleH2_00N0}>
+                Vidéo métier & activité à Montpellier : valorisez votre savoir-faire
+            </h2>
 
+            <p className={style.TextLiP4}>
+                Toutes les entreprises n’ont pas besoin d’un film institutionnel complet. <br />
+                Parfois, une <strong>vidéo ciblée sur une activité précise</strong> est bien plus efficace. <br />
+                Il peut s’agir :
+            </p>
+            
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    d’un service spécifique
+                </li>
+                <li className={style.TextLiP4}>
+                    d’un métier clé dans votre organisation
+                </li>
+                <li className={style.TextLiP4}>
+                    d’un process technique
+                </li>
+                <li className={style.TextLiP4}>
+                    d’un savoir-faire artisanal ou professionnel
+                </li>
+            </ul>
+
+            <p className={style.TextP4}>
+                Ce format est particulièrement adapté aux entreprises locales, artisans, cabinets, centres de formation 
+                ou PME souhaitant valoriser concrètement leur travail.
+            </p>
+
+            <p className={style.TextP4}>
+                À Montpellier et dans la région, je réalise des vidéos métier qui montrent vos équipes en action, vos 
+                gestes professionnels, vos environnements réels — sans mise en scène artificielle. <br />
+                L’objectif est simple : permettre à vos futurs clients (et candidats) de comprendre immédiatement ce 
+                que vous faites, comment vous le faites, et avec quel niveau d’exigence.
+            </p>
+
+            <p className={style.TextP4}>
+                Ces vidéos peuvent rester strictement professionnelles, ou intégrer une dimension plus personnelle 
+                lorsque votre activité s’y prête (atelier à domicile, studio, passion entrepreneuriale, parcours individuel…).
+            </p>
+
+            <p className={style.TextLiP4}>
+                Toujours avec la même ligne directrice : authenticité, clarté, crédibilité.
+            </p>
+                        
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    un montage dynamique, optimisé web
+                </li>
+                <li className={style.TextLiP4}>
+                    sous-titres inclus pour une diffusion efficace sur LinkedIn
+                </li>
+            </ul>
+
+            <p className={style.TextLiP4}>
+                Ce sont des contenus conçus pour vivre longtemps : site internet, pages services, recrutement, présentations commerciales.
+            </p>
+
+            <Video_Element
+                title="80 ans, première moto, 16 000 km en Afrique - Doris inspire le monde !"
+                src="/video/a-80-ans-elle-traverse-l-afrique-a-moto/a-80-ans-elle-traverse-l-afrique-a-moto.mp4"
+                poster="/video/a-80-ans-elle-traverse-l-afrique-a-moto/a-80-ans-elle-traverse-l-afrique-a-moto.jpg"
+                description="Doris traverse l’Afrique à moto pour poursuivre son rêve de découverte."
+            />
             
             <h2 className={style.TitleH2_00N0}>
                 Mon Approche : Des contenus visuels alignés avec votre stratégie
