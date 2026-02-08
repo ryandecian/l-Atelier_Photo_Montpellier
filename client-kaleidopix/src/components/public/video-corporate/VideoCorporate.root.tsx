@@ -193,25 +193,36 @@ function VideoCorporate_Root() {
                 Interview et parcours humain : structurer une prise de parole professionnelle
             </h2>
 
-
-
-
-
-
-
-
+            <p className={style.TextLiP4}>
+                Certaines prises de parole nécessitent plus qu’un simple tournage.
+                Elles demandent une vraie écoute, un cadre rassurant et une structuration du discours.
+            </p>
 
             <Video_Element
-                title="80 ans, première moto, 16 000 km en Afrique - Doris inspire le monde !"
+                title="Interview et récit de parcours professionnel"
                 src="/video/a-80-ans-elle-traverse-l-afrique-a-moto/a-80-ans-elle-traverse-l-afrique-a-moto.mp4"
                 poster="/video/a-80-ans-elle-traverse-l-afrique-a-moto/a-80-ans-elle-traverse-l-afrique-a-moto.jpg"
                 description="Doris traverse l’Afrique à moto pour poursuivre son rêve de découverte."
             />
 
-            
-            <p className={style.TextLiP4}>
-                Avant chaque projet, nous définissons ensemble :
+            <p className={style.TextP4}>
+                Ce format repose sur un travail approfondi d’interview et de mise en récit. <br />
+                L’objectif n’est pas de raconter une success story, mais de donner de la cohérence à un parcours et de 
+                faire émerger le sens de l’engagement professionnel.
             </p>
+
+            <p className={style.TextLiP4}>
+                Il est particulièrement adapté aux :
+            </p>
+
+
+
+
+
+
+
+
+
 
             <ul className={style.ContainerUl}>
                 <li className={style.TextLiP4}>
