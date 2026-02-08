@@ -24,6 +24,8 @@ function MenuNavPC_Layout() {
                 <Link to={dataMenu.dataMenu[0].link} className={css.MenuLinkPC}>{dataMenu.dataMenu[0].nameMenu}</Link>
             </li>
 
+            <SubMenuPC_Element dataMenu={dataMenu.dataSubMenu[1]} />
+
             <li className={css.MenuLiPC}>
                 <Link to={dataMenu.dataMenu[1].link} className={css.MenuLinkPC}>{dataMenu.dataMenu[1].nameMenu}</Link>
             </li>
