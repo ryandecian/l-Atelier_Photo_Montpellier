@@ -80,7 +80,7 @@ function VideoCorporate_Root() {
                 title="Vidéo d’activité immersive : expérience et parcours client"
                 src="/video/video-trek-desert-maroc/video-trek-desert-maroc.mp4"
                 poster="/video/video-trek-desert-maroc/video-trek-desert-maroc-kaleidopix.jpg"
-                description="Une courte vidéo présentant l’ambiance du trek dans les dunes marocaines."
+                description="Faire vivre une activité avant même le premier contact."
             />
 
             <p className={style.TextP4}>
@@ -115,7 +115,7 @@ function VideoCorporate_Root() {
                 title="Vidéo d’activité et mise en valeur d’un lieu"
                 src="/video/les-crocodiles-jaunes/les-crocodiles-jaunes.mp4"
                 poster="/video/les-crocodiles-jaunes/les-crocodiles-jaunes-kaleidopix.jpg"
-                description="Un cadre unique : découverte du centre de jeûne : Les Crocodiles Jaunes à Albi."
+                description="Un lieu pensé pour l’expérience client."
             />
 
             <p className={style.TextP4}>
@@ -208,7 +208,7 @@ function VideoCorporate_Root() {
                 title="Interview et récit de parcours professionnel"
                 src="/video/a-80-ans-elle-traverse-l-afrique-a-moto/a-80-ans-elle-traverse-l-afrique-a-moto.mp4"
                 poster="/video/a-80-ans-elle-traverse-l-afrique-a-moto/a-80-ans-elle-traverse-l-afrique-a-moto.jpg"
-                description="Doris traverse l’Afrique à moto pour poursuivre son rêve de découverte."
+                description="Donner de la cohérence à une prise de parole."
             />
 
             <p className={style.TextP4}>
