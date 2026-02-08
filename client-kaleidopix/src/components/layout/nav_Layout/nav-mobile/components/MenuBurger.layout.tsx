@@ -62,19 +62,29 @@ function MenuBurger_Layout() {
                 <ul className={css.MenuUlMobile}>
                     <SubMenuMobile_Element dataMenu={dataMenu.dataSubMenu[0]} />
 
-                    <li className={`${css.MenuLiMobile} ${css.MenuLiBottomMobile}`}>
+                    <div className={css.Separator} />
+
+                    <li className={`${css.MenuLiMobile}`}>
                         <Link to={dataMenu.dataMenu[0].link} className={css.MenuLinkMobile}>{dataMenu.dataMenu[0].nameMenu}</Link>
                     </li>
 
+                    <div className={css.Separator} />
+
                     <SubMenuMobile_Element dataMenu={dataMenu.dataSubMenu[1]} />
 
-                    <li className={`${css.MenuLiMobile} ${css.MenuLiBottomMobile}`}>
+                    <div className={css.Separator} />
+
+                    <li className={`${css.MenuLiMobile}`}>
                         <Link to={dataMenu.dataMenu[1].link} className={css.MenuLinkMobile}>{dataMenu.dataMenu[1].nameMenu}</Link>
                     </li>
 
-                    <li className={`${css.MenuLiMobile} ${css.MenuLiBottomMobile}`}>
+                    <div className={css.Separator} />
+
+                    <li className={`${css.MenuLiMobile}`}>
                         <Link to={dataMenu.dataMenu[2].link} className={css.MenuLinkMobile}>{dataMenu.dataMenu[2].nameMenu}</Link>
                     </li>
+
+                    <div className={css.Separator} />
                 </ul>
             </div>
         </>
