@@ -1,6 +1,12 @@
 /* Import des modules CSS */
 import style from "../../style.root.module.css";
 
+/* Import des Components de Data */
+import { faqVideoCorporate_Data } from "./faq.data";
+
+/* Import des composants d'Elements */
+import { FAQ_Element } from "../../elements/faq/FAQ.element";
+
 /* Import des composants React */
 import { Link } from "react-router-dom";
 
@@ -293,6 +299,7 @@ function VideoCorporate_Root() {
                 Questions fréquentes sur la vidéo corporate à Montpellier ?
             </h2>
 
+            <FAQ_Element items={faqVideoCorporate_Data} />
         </section>
     )
 }
