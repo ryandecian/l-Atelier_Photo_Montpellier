@@ -10,7 +10,7 @@ type FAQProps = {
 
 function FAQ_Element({ items }: FAQProps) {
     return (
-        <section className={css.faqRoot}>
+        <section className={`FAQ_Element ${css.faqRoot}`}>
             {items.map((item, index) => (
                 <details key={index} className={css.faqItem}>
                     <summary className={css.faqQuestion}>
@@ -18,7 +18,7 @@ function FAQ_Element({ items }: FAQProps) {
                         <span className={css.icon} />
                     </summary>
 
-                    <p className={css.faqAnswer}>
+                    <p className={css.faqReponse}>
                         {item.reponse}
                     </p>
                 </details>
