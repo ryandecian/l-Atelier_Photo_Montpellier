@@ -77,59 +77,72 @@ function VideoCorporate_Root() {
                 description="Une courte vidéo présentant l’ambiance du trek dans les dunes marocaines."
             />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
             <p className={style.TextP4}>
-                Que vous disposiez d’une petite équipe ou d’une structure plus importante, une vidéo corporate 
-                professionnelle devient un véritable outil pour <strong>générer de la demande client et qualifier vos recrutements.</strong>
-                {` `}<strong>C’est un actif durable</strong>, réutilisable sur le site web, LinkedIn, vos offres 
-                d’emploi, vos présentations et vos supports internes.
+                Ce format met l’accent sur l’expérience vécue. <br />
+                Le tournage valorise l’environnement, les échanges, le rythme et l’atmosphère afin de permettre aux 
+                futurs clients de se projeter avant même le premier contact.
             </p>
-            
-            <Video_Element
-                title="Votre prochaine parenthèse bien-être : Les Crocodiles Jaunes"
-                src="/video/les-crocodiles-jaunes/les-crocodiles-jaunes.mp4"
-                poster="/video/les-crocodiles-jaunes/les-crocodiles-jaunes.jpg"
-                description="Un cadre unique : découverte du centre de jeûne : Les Crocodiles Jaunes à Albi."
-            />
-
-            <h2 className={style.TitleH2_00N0}>
-                Vidéos Corporate : une identité visuelle indispensable actuellement
-            </h2>
 
             <p className={style.TextLiP4}>
-                Je réalise différents formats vidéo adaptés à vos besoins et à la maturité de votre communication :
+                La <strong>vidéo d’activité immersive</strong> est particulièrement adaptée aux :
             </p>
 
             <ul className={style.ContainerUl}>
                 <li className={style.TextLiP4}>
-                    <strong>Vidéo Marque Employeur :</strong> ambiance de travail, témoignages, culture d’entreprise.
+                    métiers terrain (BTP, industrie, services techniques),
                 </li>
                 <li className={style.TextLiP4}>
-                    <strong>Interview Dirigeant ou Manager :</strong> vision, valeurs, message stratégique.
+                    centres de formation,
                 </li>
                 <li className={style.TextLiP4}>
-                    <strong>Vidéo Métier :</strong> démonstration de gestes professionnels, présentation d’un service.
+                    structures d’accompagnement,
                 </li>
                 <li className={style.TextLiP4}>
-                    <strong>Film Institutionnel :</strong> portrait global de votre entreprise.
+                    activités touristiques ou événementielles,
+                </li>
+                <li className={style.TextLiP4}>
+                    concepts expérientiels.
                 </li>
             </ul>
+
+            <Video_Element
+                title="Vidéo d’activité et mise en valeur d’un lieu"
+                src="/video/les-crocodiles-jaunes/les-crocodiles-jaunes.mp4"
+                poster="/video/les-crocodiles-jaunes/les-crocodiles-jaunes-kaleidopix.jpg"
+                description="Un cadre unique : découverte du centre de jeûne : Les Crocodiles Jaunes à Albi."
+            />
+
+            <p className={style.TextP4}>
+                Cette approche permet de valoriser un <strong>lieu</strong>, un <strong>concept</strong> et une {` `}
+                <strong>philosophie d’accueil</strong> sans discours commercial forcé. <br />
+                Elle est pertinente pour les entreprises recevant du public ou souhaitant humaniser leur communication 
+                professionnelle. Elle propose l’expérience client qui sera vécu.
+            </p>
+
+            <p className={style.TextP4}>
+                Objectif : montrer la cohérence du lieu, la qualité de l’accueil et l’expérience proposée, de manière 
+                fluide et sincère.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Pourquoi investir dans une vidéo corporate professionnelle ?
+            </h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             <p className={style.TextP4}>
                 Chaque vidéo est conçue pour être un <strong>actif durable</strong>, réutilisable sur différents supports.
