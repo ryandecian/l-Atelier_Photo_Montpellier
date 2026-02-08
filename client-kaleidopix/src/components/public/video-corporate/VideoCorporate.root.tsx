@@ -15,264 +15,284 @@ function VideoCorporate_Root() {
         <section className={`VideoCorporate_Root ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1_NNNN}>
-                    Vidéos Corporate et Reportages d’Entreprise à Montpellier
+                    Vidéo corporate à Montpellier : valorisez votre activité et vos métiers
                 </h1>
             </header>
 
             <p className={style.TextP4}>
-                La vidéo est aujourd’hui l’un des <strong>outils les plus puissants </strong> pour valoriser votre entreprise. <br />
-                Elle permet de dévoiler votre culture, votre expertise, vos valeurs et le travail de vos équipes avec 
-                un impact immédiat.
+                La <strong>vidéo corporate à Montpellier</strong> est aujourd’hui l’un des outils les plus efficaces 
+                pour présenter une entreprise, un métier ou une activité professionnelle de manière claire et crédible. <br />
+                Bien pensée, elle permet de rendre visible un savoir-faire réel, une manière de travailler et une culture 
+                d’entreprise, sans discours artificiel.
             </p>
 
             <p className={style.TextP4}>
-                À Montpellier et dans la région, j’accompagne les organisations qui souhaitent renforcer leur 
-                communication, attirer des talents, présenter leurs métiers ou structurer leur identité visuelle grâce 
-                à des contenus audiovisuels professionnels.
+                J’accompagne les entreprises, PME, structures professionnelles et organisations basées à {` `}
+                <strong>Montpellier, en France et à l’étranger </strong> dans la création de <strong>vidéos d’entreprise utiles</strong>
+                {` `}, conçues pour répondre à des objectifs concrets : visibilité, communication digitale, recrutement, 
+                marque employeur ou prise de parole dirigeante.
             </p>
 
             <p className={style.TextP4}>
-                Mon approche : <strong>produire des contenus clairs</strong>, humains et alignés avec vos objectifs - marque 
-                employeur, <strong>recrutement</strong>, prise de parole, présentation entreprise ou communication digitale.
+                Mon approche repose sur une conviction simple : <br />
+                Une <strong>bonne vidéo d’entreprise doit servir votre stratégie</strong>, pas seulement votre image.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Vidéo métier et vidéo d’activité à Montpellier : montrer ce que vous faites vraiment
+            </h2>
+
+            <p className={style.TextP4}>
+                Toutes les entreprises ne se reconnaissent pas dans une vidéo corporate classique tournée derrière un 
+                bureau. <br />
+                De nombreuses activités se vivent <strong>sur le terrain</strong>, dans un environnement précis, avec 
+                des gestes, des interactions et un rythme propre.
+            </p>
+
+            <p className={style.TextLiP4}>
+                La <strong>vidéo métier</strong> ou <strong>vidéo d’activité d’entreprise</strong> permet de montrer concrètement :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    ce que vous faites,
+                </li>
+                <li className={style.TextLiP4}>
+                    comment vous le faites,
+                </li>
+                <li className={style.TextLiP4}>
+                    et dans quel esprit.
+                </li>
+            </ul>
+
+            <p className={style.TextLiP4}>
+                Elle s’adresse particulièrement aux entreprises de services, aux métiers techniques, aux structures de 
+                formation, aux activités terrain ou aux organisations souhaitant une communication plus incarnée.
             </p>
             
             <Video_Element
-                title="Aventure saharienne - Immersion dans le désert avec Mélodie du Désert"
+                title="Vidéo d’activité immersive : expérience et parcours client"
                 src="/video/video-trek-desert-maroc/video-trek-desert-maroc.mp4"
-                poster="/video/video-trek-desert-maroc/video-trek-desert-maroc.jpg"
+                poster="/video/video-trek-desert-maroc/video-trek-desert-maroc-kaleidopix.jpg"
                 description="Une courte vidéo présentant l’ambiance du trek dans les dunes marocaines."
             />
 
-            <h2 className={style.TitleH2_00N0}>
-                Le retour sur investissement (ROI) d’une vidéo corporate ?
-            </h2>
+            <p className={style.TextP4}>
+                Ce format met l’accent sur l’expérience vécue. <br />
+                Le tournage valorise l’environnement, les échanges, le rythme et l’atmosphère afin de permettre aux 
+                futurs clients de se projeter avant même le premier contact.
+            </p>
 
             <p className={style.TextLiP4}>
-                Une vidéo professionnelle donne à votre entreprise une visibilité forte et crédible. <br />
-                Elle permet de :
+                La <strong>vidéo d’activité immersive</strong> est particulièrement adaptée aux :
             </p>
 
             <ul className={style.ContainerUl}>
                 <li className={style.TextLiP4}>
-                    présenter votre structure de manière claire et engageante,
+                    métiers terrain (BTP, industrie, services techniques),
                 </li>
                 <li className={style.TextLiP4}>
-                    mettre en avant votre marque employeur,
+                    centres de formation,
                 </li>
                 <li className={style.TextLiP4}>
-                    valoriser vos équipes, vos métiers et votre environnement,
+                    structures d’accompagnement,
                 </li>
                 <li className={style.TextLiP4}>
-                    expliquer un process technique ou un savoir-faire,
+                    activités touristiques ou événementielles,
                 </li>
                 <li className={style.TextLiP4}>
-                    renforcer votre présence digitale (site web, LinkedIn, réseaux pro),
-                </li>
-                <li className={style.TextLiP4}>
-                    faciliter le recrutement en donnant à voir la réalité de votre culture d’entreprise.
+                    concepts expérientiels.
                 </li>
             </ul>
-            
-            <p className={style.TextP4}>
-                Que vous disposiez d’une petite équipe ou d’une structure plus importante, une vidéo corporate 
-                professionnelle devient un véritable outil pour <strong>générer de la demande client et qualifier vos recrutements.</strong>
-                {` `}<strong>C’est un actif durable</strong>, réutilisable sur le site web, LinkedIn, vos offres 
-                d’emploi, vos présentations et vos supports internes.
-            </p>
-            
+
             <Video_Element
-                title="Votre prochaine parenthèse bien-être : Les Crocodiles Jaunes"
+                title="Vidéo d’activité et mise en valeur d’un lieu"
                 src="/video/les-crocodiles-jaunes/les-crocodiles-jaunes.mp4"
-                poster="/video/les-crocodiles-jaunes/les-crocodiles-jaunes.jpg"
+                poster="/video/les-crocodiles-jaunes/les-crocodiles-jaunes-kaleidopix.jpg"
                 description="Un cadre unique : découverte du centre de jeûne : Les Crocodiles Jaunes à Albi."
             />
 
+            <p className={style.TextP4}>
+                Cette approche permet de valoriser un <strong>lieu</strong>, un <strong>concept</strong> et une {` `}
+                <strong>philosophie d’accueil</strong> sans discours commercial forcé. <br />
+                Elle est pertinente pour les entreprises recevant du public ou souhaitant humaniser leur communication 
+                professionnelle. Elle propose l’expérience client qui sera vécu.
+            </p>
+
+            <p className={style.TextP4}>
+                Objectif : montrer la cohérence du lieu, la qualité de l’accueil et l’expérience proposée, de manière 
+                fluide et sincère.
+            </p>
+
             <h2 className={style.TitleH2_00N0}>
-                Vidéos Corporate : une identité visuelle indispensable actuellement
+                Pourquoi investir dans une vidéo corporate professionnelle ?
             </h2>
 
             <p className={style.TextLiP4}>
-                Je réalise différents formats vidéo adaptés à vos besoins et à la maturité de votre communication :
+                Une <strong>vidéo d’entreprise bien construite</strong> devient un véritable actif de communication. <br />
+                Elle permet notamment de :
             </p>
 
             <ul className={style.ContainerUl}>
                 <li className={style.TextLiP4}>
-                    <strong>Vidéo Marque Employeur :</strong> ambiance de travail, témoignages, culture d’entreprise.
+                    présenter votre activité de manière claire et engageante
                 </li>
                 <li className={style.TextLiP4}>
-                    <strong>Interview Dirigeant ou Manager :</strong> vision, valeurs, message stratégique.
+                    valoriser vos équipes, vos métiers et vos conditions de travail
                 </li>
                 <li className={style.TextLiP4}>
-                    <strong>Vidéo Métier :</strong> démonstration de gestes professionnels, présentation d’un service.
+                    expliquer un process ou un savoir-faire spécifique
                 </li>
                 <li className={style.TextLiP4}>
-                    <strong>Film Institutionnel :</strong> portrait global de votre entreprise.
+                    renforcer votre présence digitale (site internet, LinkedIn, supports professionnels)
+                </li>
+                <li className={style.TextLiP4}>
+                    faciliter le recrutement en montrant la réalité de votre culture d’entreprise
                 </li>
             </ul>
 
             <p className={style.TextP4}>
-                Chaque vidéo est conçue pour être un <strong>actif durable</strong>, réutilisable sur différents supports.
+                Que vous soyez une PME, une structure locale ou une organisation plus établie, la vidéo contribue à {` `}
+                <strong>qualifier les contacts</strong> et à <strong>créer de la confiance</strong> dès les premiers échanges.
             </p>
 
-            <p className={style.TextP4}>
-                Vidéo Corporate : Valoriser votre savoir-faire et <strong>inspirer confiance</strong> à vos Clients. <br />
-                Une vidéo efficace ne se limite pas à filmer vos locaux ou vos activités : elle révèle ce qui rassure 
-                réellement vos clients.
-            </p>
-
-            <p className={style.TextP4}>
-                En montrant vos équipes en action, vos méthodes de travail et vos environnements professionnels, vous 
-                offrez un aperçu concret de votre sérieux, de votre transparence et de votre cohérence d’entreprise.
-            </p>
-
-            <p className={style.TextP4}>
-                Grâce à une compréhension précise des enjeux de communication : image, culture, marque employeur, chaque 
-                vidéo est pensée pour <strong>mettre en valeur les éléments qui renforcent la confiance :</strong> {` `}
-                expertise, humanité, rigueur, engagement.
-            </p>
-
-            <p className={style.TextP4}>
-                La vidéo corporate est également un <strong>levier très puissant pour le recrutement :</strong> elle attire 
-                des candidats plus alignés, réduit le turnover et permet un recrutement plus ciblé. <br />
-                Les talents veulent voir où ils postulent et avec qui ils vont travailler, la vidéo répond à cette 
-                attente de manière immédiate.
-            </p>
-
-            <p className={style.TextP4}>
-                J’explique d’ailleurs ce phénomène dans ma page blog. <br />
-                Une vidéo bien pensée aide clients et candidats à se projeter et à choisir votre entreprise en toute 
-                confiance.
-            </p>
-            
             <h2 className={style.TitleH2_00N0}>
-                Vidéo métier & activité à Montpellier : valorisez votre savoir-faire
+                Vidéos corporate à Montpellier : des formats adaptés à votre réalité
             </h2>
 
             <p className={style.TextLiP4}>
-                Toutes les entreprises n’ont pas besoin d’un film institutionnel complet. <br />
-                Parfois, une <strong>vidéo ciblée sur une activité précise</strong> est bien plus efficace. <br />
-                Il peut s’agir :
+                Chaque entreprise n’a pas les mêmes besoins ni le même niveau de maturité en communication. <br />
+                Je propose plusieurs formats de <strong>vidéos corporate</strong>, choisis en fonction de votre activité et de vos objectifs.
             </p>
-            
+
             <ul className={style.ContainerUl}>
                 <li className={style.TextLiP4}>
-                    d’un service spécifique
+                    <strong>Vidéo marque employeur</strong> <br />
+                    Ambiance de travail, valeurs, témoignages collaborateurs.
                 </li>
                 <li className={style.TextLiP4}>
-                    d’un métier clé dans votre organisation
+                    <strong>Interview dirigeant ou manager</strong> <br />
+                    Vision, posture, message stratégique.
                 </li>
                 <li className={style.TextLiP4}>
-                    d’un process technique
+                    <strong>Vidéo métier ou vidéo d’activité</strong> <br />
+                    Gestes professionnels, terrain, savoir-faire réel.
                 </li>
                 <li className={style.TextLiP4}>
-                    d’un savoir-faire artisanal ou professionnel
+                    <strong>Film institutionnel</strong> <br />
+                    Présentation globale de votre entreprise ou organisation.
                 </li>
             </ul>
 
             <p className={style.TextP4}>
-                Ce format est particulièrement adapté aux entreprises locales, artisans, cabinets, centres de formation 
-                ou PME souhaitant valoriser concrètement leur travail.
+                Chaque vidéo est conçue pour être réutilisable sur plusieurs supports : site internet, LinkedIn, 
+                recrutement, présentations commerciales ou communication interne.
             </p>
 
-            <p className={style.TextP4}>
-                À Montpellier et dans la région, je réalise des vidéos métier qui montrent vos équipes en action, vos 
-                gestes professionnels, vos environnements réels — sans mise en scène artificielle. <br />
-                L’objectif est simple : permettre à vos futurs clients (et candidats) de comprendre immédiatement ce 
-                que vous faites, comment vous le faites, et avec quel niveau d’exigence.
-            </p>
-
-            <p className={style.TextP4}>
-                Ces vidéos peuvent rester strictement professionnelles, ou intégrer une dimension plus personnelle 
-                lorsque votre activité s’y prête (atelier à domicile, studio, passion entrepreneuriale, parcours individuel…).
-            </p>
+            <h2 className={style.TitleH2_00N0}>
+                Interview et parcours humain : structurer une prise de parole professionnelle
+            </h2>
 
             <p className={style.TextLiP4}>
-                Toujours avec la même ligne directrice : authenticité, clarté, crédibilité.
-            </p>
-                        
-            <ul className={style.ContainerUl}>
-                <li className={style.TextLiP4}>
-                    un montage dynamique, optimisé web
-                </li>
-                <li className={style.TextLiP4}>
-                    sous-titres inclus pour une diffusion efficace sur LinkedIn
-                </li>
-            </ul>
-
-            <p className={style.TextLiP4}>
-                Ce sont des contenus conçus pour vivre longtemps : site internet, pages services, recrutement, présentations commerciales.
+                Certaines prises de parole nécessitent plus qu’un simple tournage.
+                Elles demandent une vraie écoute, un cadre rassurant et une structuration du discours.
             </p>
 
             <Video_Element
-                title="80 ans, première moto, 16 000 km en Afrique - Doris inspire le monde !"
+                title="Interview et récit de parcours professionnel"
                 src="/video/a-80-ans-elle-traverse-l-afrique-a-moto/a-80-ans-elle-traverse-l-afrique-a-moto.mp4"
                 poster="/video/a-80-ans-elle-traverse-l-afrique-a-moto/a-80-ans-elle-traverse-l-afrique-a-moto.jpg"
                 description="Doris traverse l’Afrique à moto pour poursuivre son rêve de découverte."
             />
-            
-            <h2 className={style.TitleH2_00N0}>
-                Mon Approche : Des contenus visuels alignés avec votre stratégie
-            </h2>
 
-            
+            <p className={style.TextP4}>
+                Ce format repose sur un travail approfondi d’interview et de mise en récit. <br />
+                L’objectif n’est pas de raconter une success story, mais de donner de la cohérence à un parcours et de 
+                faire émerger le sens de l’engagement professionnel.
+            </p>
+
             <p className={style.TextLiP4}>
-                Avant chaque projet, nous définissons ensemble :
+                Il est particulièrement adapté aux :
             </p>
 
             <ul className={style.ContainerUl}>
                 <li className={style.TextLiP4}>
-                    <strong>l’objectif</strong> (recrutement, notoriété, communication interne, présentation métier),
+                    dirigeants,
                 </li>
                 <li className={style.TextLiP4}>
-                    <strong>le message</strong> à transmettre,
+                    managers,
                 </li>
                 <li className={style.TextLiP4}>
-                    <strong>les éléments visuels</strong> à mettre en valeur,
+                    experts,
                 </li>
                 <li className={style.TextLiP4}>
-                    <strong>le format vidéo</strong> le plus adapté.
+                    porteurs de projet souhaitant incarner leur activité avec justesse.
                 </li>
             </ul>
-            
+
+            <h2 className={style.TitleH2_00N0}>
+                Une approche alignée avec votre stratégie d’entreprise
+            </h2>
+
+            <p className={style.TextLiP4}>
+                Avant chaque projet de <strong>vidéo corporate à Montpellier</strong>, nous définissons ensemble :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    l’objectif de la vidéo
+                </li>
+                <li className={style.TextLiP4}>
+                    le message à transmettre
+                </li>
+                <li className={style.TextLiP4}>
+                    les éléments visuels à valoriser
+                </li>
+                <li className={style.TextLiP4}>
+                    le format le plus pertinent
+                </li>
+            </ul>
+
             <p className={style.TextP4}>
-                Cette étape garantit une vidéo ou un reportage pleinement aligné avec votre identité d’entreprise. <br />
+                Cette phase de cadrage garantit un contenu cohérent, lisible et réellement utile pour votre communication. <br />
                 Je vous accompagne ensuite sur l’ensemble du processus : préparation, repérage, tournage, organisation, 
                 montage et livraison optimisée pour le web et les réseaux professionnels.
             </p>
-            
+
             <h2 className={style.TitleH2_00N0}>
-                Un Processus vidéo simple et professionnel
+                Un processus vidéo simple, clair et professionnel
             </h2>
 
             <p className={style.TextP4}>
-                <strong>Étape 1 - Cadrage & Préparation</strong> <br />
-                Repérage, choix des lieux, définition du message, création d’un fil narratif.
+                <strong>Étape 1 — Cadrage et préparation</strong> <br />
+                Définition du message, choix des lieux, construction d’un fil narratif.
             </p>
 
             <p className={style.TextP4}>
-                <strong>Étape 2 - Tournage sur Site</strong> <br />
+                <strong>Étape 2 — Tournage sur site</strong> <br />
                 Captation en conditions réelles : interviews, plans de coupe, séquences métier, ambiance.
             </p>
 
             <p className={style.TextP4}>
                 <strong>Étape 3 - Montage & Post-production</strong> <br />
-                Montage rythmé, étalonnage, titrages, sous-titres (indispensables pour LinkedIn).
+                Montage fluide, étalonnage, titrages et sous-titres (essentiels pour LinkedIn).
             </p>
 
             <p className={style.TextP4}>
                 <strong>Étape 4 - Livraison Optimisée</strong> <br />
                 Exports adaptés à votre site, réseaux sociaux, écrans internes ou supports RH.
             </p>
-            
-            <h2 className={style.TitleH2_00N0}>
-                Envie de créer une vidéo corporate qui renforce votre image ?
-            </h2>
 
             <p className={style.TextP4}>
                 <Link to={router[3].path} className={style.Link}>
                     📩 Contactez-moi - Réponse garantie sous 24h
                 </Link>
             </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Questions fréquentes sur la vidéo corporate à Montpellier ?
+            </h2>
+
         </section>
     )
 }
