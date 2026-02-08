@@ -15,11 +15,18 @@ function navMenu_Data(): NavMenu_data_Type {
                     { title: "Photos Corporate", link: router[2].path },
                 ],
             },
+            {
+                nameMenu: "A PROPOS",
+                nameSubMenu: [
+                    { title: "Approche Video Corporate", link: "#" },
+                    { title: "ApprochePhotos Corporate", link: "#" },
+                ],
+            },
         ],
         dataMenu: [
-            { nameMenu: "CONTACT", link: router[3].path },
+            { nameMenu: "TARIFS", link: "#" },
             { nameMenu: "PORTFOLIO", link: "#" },
-            { nameMenu: "A PROPOS", link: "#" },
+            { nameMenu: "CONTACT", link: router[3].path },
         ],
     };
 }

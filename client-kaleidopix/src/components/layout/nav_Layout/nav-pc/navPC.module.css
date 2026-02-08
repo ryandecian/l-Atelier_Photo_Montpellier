@@ -15,8 +15,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 19.375rem; /* 310px */
-    min-width: 19.375rem; /* 310px */
+    width: 18.125rem; /* 290px */
+    min-width: 18.125rem; /* 290px */
 }
 @media (min-width: 52.8125rem) { /* 845px */
     .ContainerLogoNavPC {
