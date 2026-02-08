@@ -215,69 +215,93 @@ function VideoCorporate_Root() {
                 Il est particulièrement adapté aux :
             </p>
 
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    dirigeants,
+                </li>
+                <li className={style.TextLiP4}>
+                    managers,
+                </li>
+                <li className={style.TextLiP4}>
+                    experts,
+                </li>
+                <li className={style.TextLiP4}>
+                    porteurs de projet souhaitant incarner leur activité avec justesse.
+                </li>
+            </ul>
 
+            <h2 className={style.TitleH2_00N0}>
+                Une approche alignée avec votre stratégie d’entreprise
+            </h2>
 
-
-
-
-
-
-
+            <p className={style.TextLiP4}>
+                Avant chaque projet de <strong>vidéo corporate à Montpellier</strong>, nous définissons ensemble :
+            </p>
 
             <ul className={style.ContainerUl}>
                 <li className={style.TextLiP4}>
-                    <strong>l’objectif</strong> (recrutement, notoriété, communication interne, présentation métier),
+                    l’objectif de la vidéo
                 </li>
                 <li className={style.TextLiP4}>
-                    <strong>le message</strong> à transmettre,
+                    le message à transmettre
                 </li>
                 <li className={style.TextLiP4}>
-                    <strong>les éléments visuels</strong> à mettre en valeur,
+                    les éléments visuels à valoriser
                 </li>
                 <li className={style.TextLiP4}>
-                    <strong>le format vidéo</strong> le plus adapté.
+                    le format le plus pertinent
                 </li>
             </ul>
-            
+
             <p className={style.TextP4}>
-                Cette étape garantit une vidéo ou un reportage pleinement aligné avec votre identité d’entreprise. <br />
+                Cette phase de cadrage garantit un contenu cohérent, lisible et réellement utile pour votre communication. <br />
                 Je vous accompagne ensuite sur l’ensemble du processus : préparation, repérage, tournage, organisation, 
                 montage et livraison optimisée pour le web et les réseaux professionnels.
             </p>
-            
+
             <h2 className={style.TitleH2_00N0}>
-                Un Processus vidéo simple et professionnel
+                Un processus vidéo simple, clair et professionnel
             </h2>
 
             <p className={style.TextP4}>
-                <strong>Étape 1 - Cadrage & Préparation</strong> <br />
-                Repérage, choix des lieux, définition du message, création d’un fil narratif.
+                <strong>Étape 1 — Cadrage et préparation</strong> <br />
+                Définition du message, choix des lieux, construction d’un fil narratif.
             </p>
 
             <p className={style.TextP4}>
-                <strong>Étape 2 - Tournage sur Site</strong> <br />
+                <strong>Étape 2 — Tournage sur site</strong> <br />
                 Captation en conditions réelles : interviews, plans de coupe, séquences métier, ambiance.
             </p>
 
             <p className={style.TextP4}>
                 <strong>Étape 3 - Montage & Post-production</strong> <br />
-                Montage rythmé, étalonnage, titrages, sous-titres (indispensables pour LinkedIn).
+                Montage fluide, étalonnage, titrages et sous-titres (essentiels pour LinkedIn).
             </p>
 
             <p className={style.TextP4}>
                 <strong>Étape 4 - Livraison Optimisée</strong> <br />
                 Exports adaptés à votre site, réseaux sociaux, écrans internes ou supports RH.
             </p>
-            
-            <h2 className={style.TitleH2_00N0}>
-                Envie de créer une vidéo corporate qui renforce votre image ?
-            </h2>
 
             <p className={style.TextP4}>
                 <Link to={router[3].path} className={style.Link}>
                     📩 Contactez-moi - Réponse garantie sous 24h
                 </Link>
             </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Questions fréquentes sur la vidéo corporate à Montpellier
+            </h2>
+
+            <details>
+                <summary className={style.TextP4}>
+                    Voir plus d’informations
+                </summary>
+                <p className={style.TextP4}>
+                    Ceci est le contenu qui se déroule au clic.
+                </p>
+            </details>
+
         </section>
     )
 }
