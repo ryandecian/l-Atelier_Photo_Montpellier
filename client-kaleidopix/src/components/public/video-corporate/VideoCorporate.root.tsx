@@ -69,18 +69,30 @@ function VideoCorporate_Root() {
                 Elle s’adresse particulièrement aux entreprises de services, aux métiers techniques, aux structures de 
                 formation, aux activités terrain ou aux organisations souhaitant une communication plus incarnée.
             </p>
-
-
-
-
-
             
             <Video_Element
                 title="Aventure saharienne - Immersion dans le désert avec Mélodie du Désert"
                 src="/video/video-trek-desert-maroc/video-trek-desert-maroc.mp4"
-                poster="/video/video-trek-desert-maroc/video-trek-desert-maroc.jpg"
+                poster="/video/video-trek-desert-maroc/video-trek-desert-maroc-kaleidopix.jpg"
                 description="Une courte vidéo présentant l’ambiance du trek dans les dunes marocaines."
             />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             
             <p className={style.TextP4}>
                 Que vous disposiez d’une petite équipe ou d’une structure plus importante, une vidéo corporate 
