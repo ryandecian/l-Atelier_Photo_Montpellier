@@ -9,6 +9,11 @@ function CGV_Root() {
                     {`CONDITIONS GÉNÉRALES DE VENTE (CGV) - Kaleidopix`}
                 </h1>
             </header>
+
+            
+            <h2 className={style.TitleH2_00N0}>
+                Article 1 – Identification du prestataire
+            </h2>
         </section>
     )
 }
