@@ -28,7 +28,7 @@ function footer_Data(): Footer_data_Type {
             nameSubMenu: [
                 { title: "Contact", link: router[3].path + "#top" },
                 { title: "Mentions légales", link: "#" },
-                { title: "CGV", link: "#" },
+                { title: "CGV", link: router[6].path + "#top" },
             ],
         },
     ];
