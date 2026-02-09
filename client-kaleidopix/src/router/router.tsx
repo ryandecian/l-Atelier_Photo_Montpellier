@@ -8,6 +8,7 @@ import type { Router_Type } from "../types/router/router.type";
 import Blog_Page from "../pages/public/blog_Page/Blog.page";
 import Blog_20250917_Page from "../pages/public/blog_Page/liste-blog_Page/Blog_20250917.page";
 import Blog_20251127_Page from "../pages/public/blog_Page/liste-blog_Page/Blog_20251127.page";
+import CGV_Page from "../pages/public/cgv_Page/CGV.page";
 import Contact_Page from "../pages/public/contact_Page/Contact.page";
 import Home_Page from "../pages/public/home_Page/Home.page";
 import VideoCorporate_Page from "../pages/public/videoCorporate_Page/VideoCorporate.page";
@@ -60,6 +61,11 @@ const router: Router_Type = [
     {
         path: "/qui-suis-je",
         element: <QuiSuisJe_Page />,
+    },
+    /* {router[6].path} */
+    {
+        path: "/cgv",
+        element: <CGV_Page />,
     },
 ]
 
