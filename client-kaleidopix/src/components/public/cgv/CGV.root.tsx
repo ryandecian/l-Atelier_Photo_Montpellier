@@ -111,6 +111,51 @@ function CGV_Root() {
                 Article 5 – Modalités de paiement
             </h2>
 
+            <p className={style.TextP4}>
+                Un acompte de 30 % est exigé à la commande. <br />
+                Le solde est payable à 30 jours maximum à réception de facture. <br />
+                Tout retard de paiement entraîne l’application des pénalités légales ainsi qu’une indemnité forfaitaire 
+                de recouvrement de 40 €.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Toute annulation après validation du devis entraîne la conservation de l’acompte.
+            </h2>
+
+            <p className={style.TextP4}>
+                Toute annulation après validation du devis entraîne la conservation de l’acompte. <br />
+                Toute annulation à moins de 48 heures avant la prestation entraîne la facturation de 100 % du montant 
+                prévu. <br />
+                Tout report est soumis à acceptation du Prestataire et à ses disponibilités.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Article 7 – Déroulement des prestations
+            </h2>
+
+            <p className={style.TextLiP4}>
+                Le client s’engage à :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    garantir l’accès aux lieux
+                </li>
+                <li className={style.TextLiP4}>
+                    fournir les autorisations nécessaires
+                </li>
+                <li className={style.TextLiP4}>
+                    assurer la disponibilité des personnes concernées
+                </li>
+                <li className={style.TextLiP4}>
+                    fournir les éléments préparatoires demandés (brief, messages clés, charte graphique, etc.)
+                </li>
+            </ul>
+
+            <p className={style.TextP4}>
+                Tout retard ou empêchement imputable au client ne pourra donner lieu à remboursement. <br />
+                Les conditions météorologiques ne peuvent être garanties pour les tournages extérieurs.
+            </p>
         </section>
     )
 }
