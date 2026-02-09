@@ -12,6 +12,7 @@ import Contact_Page from "../pages/public/contact_Page/Contact.page";
 import Home_Page from "../pages/public/home_Page/Home.page";
 import VideoCorporate_Page from "../pages/public/videoCorporate_Page/VideoCorporate.page";
 import PhotoCorporate_Page from "../pages/public/photoCorporate_Page/PhotoCorporate.page";
+import QuiSuisJe_Page from "../pages/public/quiSuisJe_Page/QuiSuisJe.page";
 
 const router: Router_Type = [
     /* {router[0].path} */
@@ -54,6 +55,11 @@ const router: Router_Type = [
                 element: <Blog_20251127_Page />,
             },
         ],
+    },
+    /* {router[5].path} */
+    {
+        path: "/qui-suis-je",
+        element: <QuiSuisJe_Page />,
     },
 ]
 
