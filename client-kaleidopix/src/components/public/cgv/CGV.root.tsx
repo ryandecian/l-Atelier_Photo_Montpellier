@@ -192,6 +192,17 @@ function CGV_Root() {
                 Les fichiers sont archivés pendant une durée maximale de 6 mois après livraison. Passé ce délai, le 
                 Prestataire ne garantit plus leur conservation.
             </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Article 10 – Retouches et validations
+            </h2>
+
+            <p className={style.TextP4}>
+                Les retouches incluses sont précisées au devis. <br />
+                Le client dispose de 7 jours après livraison pour signaler d’éventuelles corrections mineures. <br />
+                Passé ce délai, les livrables sont réputés acceptés. <br />
+                Toute modification supplémentaire fera l’objet d’une facturation complémentaire.
+            </p>
         </section>
     )
 }
