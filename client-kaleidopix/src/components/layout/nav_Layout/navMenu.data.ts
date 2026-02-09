@@ -18,8 +18,8 @@ function navMenu_Data(): NavMenu_data_Type {
             {
                 nameMenu: "A PROPOS",
                 nameSubMenu: [
-                    { title: "Approche Video Corporate", link: "#" },
-                    { title: "ApprochePhotos Corporate", link: "#" },
+                    { title: "Expertise Video", link: "#" },
+                    { title: "Expertise Photos", link: "#" },
                 ],
             },
         ],

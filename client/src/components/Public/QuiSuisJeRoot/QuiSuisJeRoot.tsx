@@ -36,7 +36,7 @@ function QuiSuisJeRoot() {
                     <p className={style.VideoDescription}>
                         <strong>Se révéler devant l'objectif : un voyage intime à travers le portrait.</strong>
                     </p>
-            </section>
+                </section>
 
                 <h2 className={style.TitleH2}>
                     De mes débuts argentiques à la création d’images professionnelles
