@@ -10,7 +10,7 @@ function footer_Data(): Footer_data_Type {
         {
             nameMenu: "A PROPOS",
             nameSubMenu: [
-                { title: "Qui suis-je", link: "#" },
+                { title: "Qui suis-je", link: router[5].path },
                 { title: "Portfolio", link: "#" },
                 { title: "Blog", link: router[4].path },
             ],

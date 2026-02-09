@@ -107,10 +107,6 @@
     cursor: pointer;
 }
 
-.MenuLiBottomMobile {
-    border-bottom: 0.0625rem solid var(--ColorBackgroundWhite); /* 1px */
-}
-
 .MenuLinkMobile {
     text-decoration: none;
     color: var(--ColorTextBlack);
@@ -129,4 +125,12 @@
     .MenuLinkMobile {
         font-size: var(--h3);
     }
+}
+
+.Separator {
+    width: 100%;
+    height: 0rem;
+    margin: 0rem;
+    padding: 0rem;
+    border-bottom: 0.0625rem solid var(--ColorBackgroundWhite); /* 1px */
 }
