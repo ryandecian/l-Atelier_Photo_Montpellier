@@ -156,6 +156,17 @@ function CGV_Root() {
                 Tout retard ou empêchement imputable au client ne pourra donner lieu à remboursement. <br />
                 Les conditions météorologiques ne peuvent être garanties pour les tournages extérieurs.
             </p>
+            
+            <h2 className={style.TitleH2_00N0}>
+                Article 8 – Obligation de moyens – Direction artistique
+            </h2>
+
+            <p className={style.TextP4}>
+                Le Prestataire est tenu à une obligation de moyens. <br />
+                Le client reconnaît le style artistique propre du Prestataire et accepte que les choix esthétiques 
+                (cadrage, lumière, colorimétrie, montage, rythme vidéo) relèvent de sa sensibilité professionnelle. <br />
+                Aucune obligation de résultat artistique ne saurait être exigée.
+            </p>
         </section>
     )
 }
