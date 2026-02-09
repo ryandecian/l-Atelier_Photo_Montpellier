@@ -156,7 +156,7 @@ function CGV_Root() {
                 Tout retard ou empêchement imputable au client ne pourra donner lieu à remboursement. <br />
                 Les conditions météorologiques ne peuvent être garanties pour les tournages extérieurs.
             </p>
-            
+
             <h2 className={style.TitleH2_00N0}>
                 Article 8 – Obligation de moyens – Direction artistique
             </h2>
@@ -166,6 +166,31 @@ function CGV_Root() {
                 Le client reconnaît le style artistique propre du Prestataire et accepte que les choix esthétiques 
                 (cadrage, lumière, colorimétrie, montage, rythme vidéo) relèvent de sa sensibilité professionnelle. <br />
                 Aucune obligation de résultat artistique ne saurait être exigée.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Article 9 – Livraison – Archivage
+            </h2>
+
+            <p className={style.TextLiP4}>
+                Livraison numérique selon les modalités définies au devis. <br />
+                Délais indicatifs :
+            </p>
+            
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    photos : 2 à 4 semaines
+                </li>
+                <li className={style.TextLiP4}>
+                    vidéos : 3 à 6 semaines
+                </li>
+            </ul>
+
+            <p className={style.TextLiP4}>
+                Ces délais sont indicatifs. <br />
+                Les fichiers bruts (RAW, rushes vidéo, projets de montage) ne sont jamais livrés. <br />
+                Les fichiers sont archivés pendant une durée maximale de 6 mois après livraison. Passé ce délai, le 
+                Prestataire ne garantit plus leur conservation.
             </p>
         </section>
     )
