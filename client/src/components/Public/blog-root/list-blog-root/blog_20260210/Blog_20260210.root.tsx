@@ -75,6 +75,7 @@ function Blog_20260210_Root() {
                 metaNameImg3={imagesBlog_20260210_img_data[7].alt}
                 metaNameImg4={imagesBlog_20260210_img_data[8].alt}
             />
+            <br />
 
             <h3 className={style.TitleLNH3}>
                 Les regards avant le grand basculement
