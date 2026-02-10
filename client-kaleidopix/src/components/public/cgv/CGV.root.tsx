@@ -284,6 +284,23 @@ function CGV_Root() {
                     recadrage ou altération des couleurs
                 </li>
             </ul>
+
+            <p className={style.TextP4}>
+                Les rushes, timelines, projets de montage et éléments sources ne sont pas livrés. <br />
+                Toute diffusion publicitaire payante est exclue sauf accord écrit et facturation complémentaire.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Article 13 – Droit à l’image
+            </h2>
+
+            <p className={style.TextP4}>
+                Le client professionnel garantit avoir obtenu toutes autorisations nécessaires des personnes 
+                photographiées ou filmées. <br />
+                Toute responsabilité liée au droit à l’image est transférée au client. <br />
+                Le client autorise le Prestataire à utiliser certaines images à des fins de promotion professionnelle 
+                (site, réseaux sociaux, portfolio), sauf refus écrit préalable.
+            </p>
         </section>
     )
 }
