@@ -264,6 +264,26 @@ function CGV_Root() {
             <p className={style.TextP4}>
                 Toute extension fera l’objet d’un accord contractuel et d’une facturation complémentaire.
             </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Article 12 – Dispositions spécifiques aux prestations vidéo
+            </h2>
+
+            <p className={style.TextLiP4}>
+                Pour les prestations vidéo, sont interdits sans accord écrit :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    modification du montage final
+                </li>
+                <li className={style.TextLiP4}>
+                    ajout de texte ou d’éléments graphiques
+                </li>
+                <li className={style.TextLiP4}>
+                    recadrage ou altération des couleurs
+                </li>
+            </ul>
         </section>
     )
 }
