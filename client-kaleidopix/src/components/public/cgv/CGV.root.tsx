@@ -313,6 +313,32 @@ function CGV_Root() {
                 En cas d’impossibilité totale de prestation (maladie, accident, force majeure), une reprogrammation ou 
                 un remboursement sera proposé sans autre indemnité.
             </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Article 15 – Force majeure
+            </h2>
+
+            <p className={style.TextP4}>
+                Conformément à l’article 1218 du Code civil.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Article 16 – Données personnelles
+            </h2>
+
+            <p className={style.TextP4}>
+                Les données sont traitées conformément au RGPD. <br />
+                Le client dispose d’un droit d’accès, de rectification et de suppression.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Article 17 – Loi applicable et litiges
+            </h2>
+
+            <p className={style.TextP4}>
+                Les présentes CGV sont soumises au droit français. <br />
+                Tout litige relève de la compétence exclusive du tribunal du siège du Prestataire.
+            </p>
         </section>
     )
 }
