@@ -96,7 +96,7 @@ function Blog_20260210_Root() {
                 Il n’est pas nécessaire d’y consacrer des heures. Dans la majorité des mariages que je photographie à 
                 Montpellier, dans l’Hérault et ailleurs  le temps à compter est d’environ :
             </p>
-            
+
             <ul className={style.ContainerUl}>
                 <li className={style.TextLiP4}>
                     <strong>30 à 45 minutes</strong> pour capter l’essentiel.
@@ -139,6 +139,77 @@ function Blog_20260210_Root() {
                 alt={imagesBlog_20260210_img_data[0].alt}
                 className={css.img}
             />
+
+            <p className={style.TextP4}>
+                À l’ère du tout-numérique, la finalité d’un <strong>reportage de mariage</strong> est de vivre entre vos 
+                mains. Les photos des préparatifs prennent une tout autre dimension lorsqu'elles sont.
+            </p>
+
+            <p className={style.TextP4}>
+                <strong>Construire votre patrimoine familial.</strong>
+            </p>
+
+            <p className={style.TextP4}>
+                Imaginez-vous, dans dix ou vingt ans, ouvrant votre <strong>album de mariage</strong> avec vos enfants 
+                ou vos proches. En tournant les premières pages, vous ne tombez pas directement sur la cérémonie. 
+                Vous découvrez d'abord ces moments de calme, les mains de votre maman qui ferment votre robe, l'émotion 
+                de votre père dans le salon familial à <strong>Montpellier</strong>... Ces images posent le contexte. 
+                Elles sont le "Il était une fois" de votre livre, le patrimoine que vous transmettrez.
+            </p>
+
+            <h3 className={style.TitleLNH3}>
+                Un objet à votre image, en toute liberté
+            </h3>
+
+            <p className={style.TextP4}>
+                Parce que ma démarche à l'Atelier Photo Montpellier est de vous accompagner avec justesse, je crois que 
+                le souvenir doit être un plaisir accessible. Pour ceux qui souhaitent maîtriser leur budget, des 
+                solutions éthiques existent.
+            </p>
+
+            <p className={style.TextP4}>
+                J'aime recommander <strong>Flexi Livre</strong>, car leur philosophie rejoint la mienne : le respect des 
+                circuits courts. Choisir un <strong>album fabriqué en France</strong>, c'est s'assurer que vos souvenirs 
+                seront portés par des <strong>papiers et des encres de haute qualité</strong>, garantissant que l'éclat 
+                de vos photos ne s'altérera pas. Vous pouvez être acteurs de votre histoire : une fois vos {` `}
+                <strong>fichiers haute définition</strong> livrés, cette liberté vous permet de <strong>comprimer les coûts</strong> 
+                {` `} en composant vous-même votre mise en page sur leur interface. Que vous choisissiez un {` `}
+                <strong>livre d'art</strong> réalisé auprès d’un acteur reconnu dans le monde des albums premiums pour 
+                les mariage ou un album conçu par vos soins, l'essentiel est de transformer ces instants en un {` `}
+                <strong>objet tangible</strong>.
+            </p>
+
+            <p className={style.TextP4}>
+                <strong>EN DÉFINITIVE</strong>
+            </p>
+
+            <p className={style.TextP4}>
+                Un reportage de mariage se lit comme une histoire. Les préparatifs ne sont pas un bonus, ils sont un 
+                temps fondateur. Ils permettent de passer de l’intime au collectif, du calme à l’effervescence, sans 
+                rupture.
+            </p>
+
+            <p className={style.TextP4}>
+                <strong>Prêts à immortaliser chaque émotion de votre grand jour ?</strong>
+            </p>
+
+            <p className={style.TextP4}>
+                Les dates de la <strong>saison des mariages dans l'Hérault</strong> se remplissent vite. Pour un 
+                reportage qui capture l'essence de votre union avec naturel, je vous propose un premier contact selon 
+                ce qui est le plus confortable pour vous :
+            </p>
+            
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    À mon studio de photographie à Montpellier, pour découvrir mon univers.
+                </li>
+                <li className={style.TextLiP4}>
+                    En appel vidéo (WhatsApp, Meet), où que vous soyez en France.
+                </li>
+                <li className={style.TextLiP4}>
+                    Dans le lieu de votre choix autour de Montpellier.
+                </li>
+            </ul>
         </section>
     )
 }
