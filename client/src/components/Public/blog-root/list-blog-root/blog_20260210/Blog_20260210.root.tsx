@@ -205,20 +205,16 @@ function Blog_20260210_Root() {
             <ul className={style.ContainerUl}>
                 <li className={style.TextLiP4}>
                     À mon {` `}
-                    <span className={style.SpanLink}>
-                        <a href={externalLinks.whatsappAnne} target="_blank" rel="noopener noreferrer" className={style.Link}>
-                            studio de photographie à Montpellier
+                        <a className={style.Link} href={externalLinks.mapLAPM} target="_blank" rel="noopener noreferrer">
+                            studio de photographie
                         </a>
-                    </span>
-                    , pour découvrir mon univers.
+                    {` `} à Montpellier, pour découvrir mon univers.
                 </li>
                 <li className={style.TextLiP4}>
                     En appel vidéo {` `}
-                    <span className={style.SpanLink}>
-                        <a href={externalLinks.whatsappAnne} target="_blank" rel="noopener noreferrer" className={style.Link}>
+                        <a className={style.Link} href={externalLinks.whatsappAnne} target="_blank" rel="noopener noreferrer">
                             (WhatsApp, Meet)
                         </a>
-                    </span>
                     , où que vous soyez en France.
                 </li>
                 <li className={style.TextLiP4}>
