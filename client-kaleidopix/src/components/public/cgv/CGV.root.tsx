@@ -176,7 +176,7 @@ function CGV_Root() {
                 Livraison numérique selon les modalités définies au devis. <br />
                 Délais indicatifs :
             </p>
-            
+
             <ul className={style.ContainerUl}>
                 <li className={style.TextLiP4}>
                     photos : 2 à 4 semaines
@@ -202,6 +202,67 @@ function CGV_Root() {
                 Le client dispose de 7 jours après livraison pour signaler d’éventuelles corrections mineures. <br />
                 Passé ce délai, les livrables sont réputés acceptés. <br />
                 Toute modification supplémentaire fera l’objet d’une facturation complémentaire.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Article 11 – Propriété intellectuelle – Licence d’exploitation
+            </h2>
+
+            <p className={style.TextLiP4}>
+                Le Prestataire demeure titulaire exclusif des droits d’auteur. <br />
+                Sauf mention contraire au devis, le Prestataire concède au client une licence d’exploitation non 
+                exclusive des contenus livrés, strictement limitée aux conditions suivantes :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    <strong>Durée</strong> : 3 ans à compter de la livraison
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>Territoire</strong> : France métropolitaine
+                </li>
+            </ul>
+
+            <p className={style.TextLiP4}>
+                <strong>Usages autorisés :</strong>
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    site internet de l’entreprise
+                </li>
+                <li className={style.TextLiP4}>
+                    réseaux sociaux de l’entreprise
+                </li>
+                <li className={style.TextLiP4}>
+                    supports de communication institutionnelle (plaquettes, brochures, présentations internes, signatures email)
+                </li>
+            </ul>
+
+            <p className={style.TextLiP4}>
+                Sont expressément exclus sans accord écrit préalable :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    toute campagne publicitaire payante
+                </li>
+                <li className={style.TextLiP4}>
+                    toute diffusion télévisée ou cinéma
+                </li>
+                <li className={style.TextLiP4}>
+                    toute utilisation par un tiers ou une filiale non mentionnée au devis
+                </li>
+                <li className={style.TextLiP4}>
+                    toute revente, cession ou sous-licence
+                </li>
+                <li className={style.TextLiP4}>
+                    toute utilisation promotionnelle non prévue initialement
+                </li>
+            </ul>
+
+            <p className={style.TextP4}>
+                Toute extension fera l’objet d’un accord contractuel et d’une facturation complémentaire.
             </p>
         </section>
     )
