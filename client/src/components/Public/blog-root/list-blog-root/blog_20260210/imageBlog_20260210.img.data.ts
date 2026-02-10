@@ -34,8 +34,8 @@ const imagesBlog_20260210_img_data: ImagesBlog_Type[] = [
     },
     /* {ImagesBlog_20260210_RootControllerData[6].src} */
     {
-        src: "/images/image-blog/blog_20260210/.jpg",
-        alt: "",
+        src: "/images/image-blog/blog_20260210/photo-professionnel-mariage-préparatifs-decoration-marie-l-atelier-photo-montpellier.jpg",
+        alt: "Photo professionnel de mariage - Préparatifs décoration marié - L'Atelier Photo Montpellier",
     },
     /* {ImagesBlog_20260210_RootControllerData[7].src} */
     {

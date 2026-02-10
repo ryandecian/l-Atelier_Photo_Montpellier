@@ -7,6 +7,8 @@ import { imagesBlog_20260210_img_data } from "./imageBlog_20260210.img.data";
 
 /* Import des composants d'Elements */
 import { PremiumCardImgModal_Element } from "../../../../elements/premium-card-img-modal/PremiumCardImgModal.element";
+import { Container4Images_Element } from "../../../../elements/container-image/container-4-Images/Container4Images.element";
+import { Container4ImagesPaysage_Element } from "../../../../elements/container-image/container-4-Images-paysage/Container4ImagesPaysage.element";
 
 /* Import des composants Router */
 import externalLinks from "../../../../../constants/externalLinks";
@@ -28,7 +30,16 @@ function Blog_20260210_Root() {
                 d’attente active. Et cette attente est profondément <strong>photographique</strong>.
             </p>
 
-            {/* Images x 4 */}
+            <Container4ImagesPaysage_Element 
+                img1={imagesBlog_20260210_img_data[1].src}
+                img2={imagesBlog_20260210_img_data[2].src}
+                img3={imagesBlog_20260210_img_data[3].src}
+                img4={imagesBlog_20260210_img_data[4].src}
+                metaNameImg1={imagesBlog_20260210_img_data[1].alt}
+                metaNameImg2={imagesBlog_20260210_img_data[2].alt}
+                metaNameImg3={imagesBlog_20260210_img_data[3].alt}
+                metaNameImg4={imagesBlog_20260210_img_data[4].alt}
+            />
 
             <h2 className={style.TitleH2}>
                 Pourquoi immortaliser les préparatifs de votre union ?
@@ -54,7 +65,16 @@ function Blog_20260210_Root() {
                 sous-tendue des futurs mariés est un moteur de réussite invisible de la <strong>photographie de mariage</strong>.
             </p>
 
-            {/* Images x 4 */}
+            <Container4Images_Element 
+                img1={imagesBlog_20260210_img_data[5].src}
+                img2={imagesBlog_20260210_img_data[6].src}
+                img3={imagesBlog_20260210_img_data[7].src}
+                img4={imagesBlog_20260210_img_data[8].src}
+                metaNameImg1={imagesBlog_20260210_img_data[5].alt}
+                metaNameImg2={imagesBlog_20260210_img_data[6].alt}
+                metaNameImg3={imagesBlog_20260210_img_data[7].alt}
+                metaNameImg4={imagesBlog_20260210_img_data[8].alt}
+            />
 
             <h3 className={style.TitleLNH3}>
                 Les regards avant le grand basculement
