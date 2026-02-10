@@ -211,6 +211,21 @@
     transform: scale(1.05); /* Grossissement de 10% */
 }
 
+.Link {
+    display: inline-block;
+    font-size: var(--p); /* 16px */
+    color: var(--ColorTextLink);
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 0rem;
+    border: 0rem;
+    padding: 0rem;
+    transition: transform 0.2s ease-in-out; /* Effet fluide */
+}
+.Link:hover {
+    transform: scale(1.05); /* Grossissement de 10% */
+}
+
 /* Text gras */
 .SpanBold {
     color: var(--ColorTextBlack);
