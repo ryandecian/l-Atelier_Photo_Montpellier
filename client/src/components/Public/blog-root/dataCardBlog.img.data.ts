@@ -60,6 +60,15 @@ function dataCardBlog_img_data() {
             date: "27/11/2025",
             image: "/images/image-blog/cartes/blog_20251127.jpg",
         },
+        {
+            reactKey: 7,
+            path: ListDataRouter[4].children?.[7].path,
+            id: "top",
+            title: "Préparatifs de mariage",
+            description: "Pourquoi les préparatifs sont une étape essentielle du reportage photo de mariage.",
+            date: "10/02/2026",
+            image: "/images/image-blog/cartes/blog_20260210.jpg",
+        },
     ]
     return tab;
 }
