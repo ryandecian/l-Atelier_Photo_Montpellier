@@ -8,6 +8,9 @@ import { imagesBlog_20260210_img_data } from "./imageBlog_20260210.img.data";
 /* Import des composants d'Elements */
 import { PremiumCardImgModal_Element } from "../../../../elements/premium-card-img-modal/PremiumCardImgModal.element";
 
+/* Import des composants Router */
+import externalLinks from "../../../../../constants/externalLinks";
+
 function Blog_20260210_Root() {
     return (
         <section className={`Blog_20260210_Root ${style.ContainerRootRacine}`}>
@@ -201,10 +204,22 @@ function Blog_20260210_Root() {
             
             <ul className={style.ContainerUl}>
                 <li className={style.TextLiP4}>
-                    À mon studio de photographie à Montpellier, pour découvrir mon univers.
+                    À mon {` `}
+                    <span className={style.SpanLink}>
+                        <a href={externalLinks.whatsappAnne} target="_blank" rel="noopener noreferrer" className={style.Link}>
+                            studio de photographie à Montpellier
+                        </a>
+                    </span>
+                    , pour découvrir mon univers.
                 </li>
                 <li className={style.TextLiP4}>
-                    En appel vidéo (WhatsApp, Meet), où que vous soyez en France.
+                    En appel vidéo {` `}
+                    <span className={style.SpanLink}>
+                        <a href={externalLinks.whatsappAnne} target="_blank" rel="noopener noreferrer" className={style.Link}>
+                            (WhatsApp, Meet)
+                        </a>
+                    </span>
+                    , où que vous soyez en France.
                 </li>
                 <li className={style.TextLiP4}>
                     Dans le lieu de votre choix autour de Montpellier.
