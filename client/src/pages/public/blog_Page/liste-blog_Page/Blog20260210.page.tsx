@@ -7,7 +7,7 @@ import Blog_20260210_Root from "../../../../components/Public/blog-root/list-blo
 import Footer_layout from "../../../../components/layout/footer/Footer.layout";
 
 /* Import des composants SEO */
-// import { HelmetBlog20251127_helmet_SEO } from "../../../../seo/blog_SEO/liste-article-blog_SEO/blog-20251127_SEO/HelmetBlog20251127.helmet.seo";
+import { HelmetBlog20260210_helmet_SEO } from "../../../../seo/blog_SEO/liste-article-blog_SEO/blog-20260210_SEO/HelmetBlog20260210.helmet.seo";
 
 /* Import des Hooks */
 import useScrollToHash_utils_Hook from "../../../../hook/useScrollToHash";
@@ -17,7 +17,7 @@ function Blog_20260210_Page() {
 
      return (
         <section className={`Blog_20260210_Page ${style.Page}`}>
-            {/* <HelmetBlog20251127_helmet_SEO /> */}
+            <HelmetBlog20260210_helmet_SEO />
             <header id="top" className={style.Header}>
                  <NavRoot />
             </header>
