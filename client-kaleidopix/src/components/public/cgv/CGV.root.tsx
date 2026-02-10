@@ -111,6 +111,234 @@ function CGV_Root() {
                 Article 5 – Modalités de paiement
             </h2>
 
+            <p className={style.TextP4}>
+                Un acompte de 30 % est exigé à la commande. <br />
+                Le solde est payable à 30 jours maximum à réception de facture. <br />
+                Tout retard de paiement entraîne l’application des pénalités légales ainsi qu’une indemnité forfaitaire 
+                de recouvrement de 40 €.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Toute annulation après validation du devis entraîne la conservation de l’acompte.
+            </h2>
+
+            <p className={style.TextP4}>
+                Toute annulation après validation du devis entraîne la conservation de l’acompte. <br />
+                Toute annulation à moins de 48 heures avant la prestation entraîne la facturation de 100 % du montant 
+                prévu. <br />
+                Tout report est soumis à acceptation du Prestataire et à ses disponibilités.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Article 7 – Déroulement des prestations
+            </h2>
+
+            <p className={style.TextLiP4}>
+                Le client s’engage à :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    garantir l’accès aux lieux
+                </li>
+                <li className={style.TextLiP4}>
+                    fournir les autorisations nécessaires
+                </li>
+                <li className={style.TextLiP4}>
+                    assurer la disponibilité des personnes concernées
+                </li>
+                <li className={style.TextLiP4}>
+                    fournir les éléments préparatoires demandés (brief, messages clés, charte graphique, etc.)
+                </li>
+            </ul>
+
+            <p className={style.TextP4}>
+                Tout retard ou empêchement imputable au client ne pourra donner lieu à remboursement. <br />
+                Les conditions météorologiques ne peuvent être garanties pour les tournages extérieurs.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Article 8 – Obligation de moyens – Direction artistique
+            </h2>
+
+            <p className={style.TextP4}>
+                Le Prestataire est tenu à une obligation de moyens. <br />
+                Le client reconnaît le style artistique propre du Prestataire et accepte que les choix esthétiques 
+                (cadrage, lumière, colorimétrie, montage, rythme vidéo) relèvent de sa sensibilité professionnelle. <br />
+                Aucune obligation de résultat artistique ne saurait être exigée.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Article 9 – Livraison – Archivage
+            </h2>
+
+            <p className={style.TextLiP4}>
+                Livraison numérique selon les modalités définies au devis. <br />
+                Délais indicatifs :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    photos : 2 à 4 semaines
+                </li>
+                <li className={style.TextLiP4}>
+                    vidéos : 3 à 6 semaines
+                </li>
+            </ul>
+
+            <p className={style.TextLiP4}>
+                Ces délais sont indicatifs. <br />
+                Les fichiers bruts (RAW, rushes vidéo, projets de montage) ne sont jamais livrés. <br />
+                Les fichiers sont archivés pendant une durée maximale de 6 mois après livraison. Passé ce délai, le 
+                Prestataire ne garantit plus leur conservation.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Article 10 – Retouches et validations
+            </h2>
+
+            <p className={style.TextP4}>
+                Les retouches incluses sont précisées au devis. <br />
+                Le client dispose de 7 jours après livraison pour signaler d’éventuelles corrections mineures. <br />
+                Passé ce délai, les livrables sont réputés acceptés. <br />
+                Toute modification supplémentaire fera l’objet d’une facturation complémentaire.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Article 11 – Propriété intellectuelle – Licence d’exploitation
+            </h2>
+
+            <p className={style.TextLiP4}>
+                Le Prestataire demeure titulaire exclusif des droits d’auteur. <br />
+                Sauf mention contraire au devis, le Prestataire concède au client une licence d’exploitation non 
+                exclusive des contenus livrés, strictement limitée aux conditions suivantes :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    <strong>Durée</strong> : 3 ans à compter de la livraison
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>Territoire</strong> : France métropolitaine
+                </li>
+            </ul>
+
+            <p className={style.TextLiP4}>
+                <strong>Usages autorisés :</strong>
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    site internet de l’entreprise
+                </li>
+                <li className={style.TextLiP4}>
+                    réseaux sociaux de l’entreprise
+                </li>
+                <li className={style.TextLiP4}>
+                    supports de communication institutionnelle (plaquettes, brochures, présentations internes, signatures email)
+                </li>
+            </ul>
+
+            <p className={style.TextLiP4}>
+                Sont expressément exclus sans accord écrit préalable :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    toute campagne publicitaire payante
+                </li>
+                <li className={style.TextLiP4}>
+                    toute diffusion télévisée ou cinéma
+                </li>
+                <li className={style.TextLiP4}>
+                    toute utilisation par un tiers ou une filiale non mentionnée au devis
+                </li>
+                <li className={style.TextLiP4}>
+                    toute revente, cession ou sous-licence
+                </li>
+                <li className={style.TextLiP4}>
+                    toute utilisation promotionnelle non prévue initialement
+                </li>
+            </ul>
+
+            <p className={style.TextP4}>
+                Toute extension fera l’objet d’un accord contractuel et d’une facturation complémentaire.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Article 12 – Dispositions spécifiques aux prestations vidéo
+            </h2>
+
+            <p className={style.TextLiP4}>
+                Pour les prestations vidéo, sont interdits sans accord écrit :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    modification du montage final
+                </li>
+                <li className={style.TextLiP4}>
+                    ajout de texte ou d’éléments graphiques
+                </li>
+                <li className={style.TextLiP4}>
+                    recadrage ou altération des couleurs
+                </li>
+            </ul>
+
+            <p className={style.TextP4}>
+                Les rushes, timelines, projets de montage et éléments sources ne sont pas livrés. <br />
+                Toute diffusion publicitaire payante est exclue sauf accord écrit et facturation complémentaire.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Article 13 – Droit à l’image
+            </h2>
+
+            <p className={style.TextP4}>
+                Le client professionnel garantit avoir obtenu toutes autorisations nécessaires des personnes 
+                photographiées ou filmées. <br />
+                Toute responsabilité liée au droit à l’image est transférée au client. <br />
+                Le client autorise le Prestataire à utiliser certaines images à des fins de promotion professionnelle 
+                (site, réseaux sociaux, portfolio), sauf refus écrit préalable.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Article 14 – Responsabilité
+            </h2>
+
+            <p className={style.TextP4}>
+                La responsabilité du Prestataire est strictement limitée au montant de la prestation. <br />
+                Aucune indemnisation indirecte (perte d’exploitation, perte de chiffre d’affaires, préjudice commercial ou moral) 
+                ne pourra être réclamée. <br />
+                En cas d’impossibilité totale de prestation (maladie, accident, force majeure), une reprogrammation ou 
+                un remboursement sera proposé sans autre indemnité.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Article 15 – Force majeure
+            </h2>
+
+            <p className={style.TextP4}>
+                Conformément à l’article 1218 du Code civil.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Article 16 – Données personnelles
+            </h2>
+
+            <p className={style.TextP4}>
+                Les données sont traitées conformément au RGPD. <br />
+                Le client dispose d’un droit d’accès, de rectification et de suppression.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Article 17 – Loi applicable et litiges
+            </h2>
+
+            <p className={style.TextP4}>
+                Les présentes CGV sont soumises au droit français. <br />
+                Tout litige relève de la compétence exclusive du tribunal du siège du Prestataire.
+            </p>
         </section>
     )
 }
