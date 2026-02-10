@@ -3,32 +3,32 @@ import { Helmet } from "react-helmet-async";
 
 /* Import des Components */
 import { dataSEO_Root_data_SEO } from "../../../dataSEO_Root.data.seo";
-import { dataSEO_Blog_20251127_data_SEO } from "./dataSEO_Blog_20260210.data.seo";
+import { dataSEO_Blog_20260210_data_SEO } from "./dataSEO_Blog_20260210.data.seo";
 
 /* Import des JSON_LD */
 import { JSON_LD_LocalBusiness_Root_schema_SEO } from "../../../JSON-LD_LocalBusiness_Root.schema.seo";
-import { JSON_LD_BlogPosting_Blog_20251127_schema_SEO } from "./JSON-LD_BlogPosting_Blog_20251127.schema.seo";
-import { JSON_LD_Breadcrumb_Blog_20251127_schema_SEO } from "./JSON-LD_Breadcrumb_Blog_20251127.schema.seo";
+import { JSON_LD_BlogPosting_Blog_20260210_schema_SEO } from "./JSON-LD_BlogPosting_Blog_20260210.schema.seo";
+import { JSON_LD_Breadcrumb_Blog_20260210_schema_SEO } from "./JSON-LD_Breadcrumb_Blog_20260210.schema.seo";
 
 /* Import des Types */
 import { DataSEOHelmet_Type } from "../../../../types/seo/dataSEOHelmet.type";
 import { DataSEORoot_Type } from "../../../../types/seo/dataSEORoot.type";
 import { DataSEOTargetOne_Type } from "../../../../types/seo/dataSEOTargetOne.type";
 
-function HelmetBlog20251127_helmet_SEO() {
+function HelmetBlog20260210_helmet_SEO() {
     const dataSEO_Root: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
-    const dataSEO_Blog_20251127: DataSEOTargetOne_Type = dataSEO_Blog_20251127_data_SEO(); /* Récupération des données SEO de la page */
+    const dataSEO_Blog_20260210: DataSEOTargetOne_Type = dataSEO_Blog_20260210_data_SEO(); /* Récupération des données SEO de la page */
 
     const SEO: DataSEOHelmet_Type = {
-        title: dataSEO_Blog_20251127.title,
-        author: dataSEO_Blog_20251127.author,
-        description: dataSEO_Blog_20251127.description,
-        url: dataSEO_Blog_20251127.url,
-        img: dataSEO_Blog_20251127.img_Helmet,
-        twitterUrlImg: dataSEO_Blog_20251127.twitterUrlImg || dataSEO_Blog_20251127.img_Helmet, // fallback
+        title: dataSEO_Blog_20260210.title,
+        author: dataSEO_Blog_20260210.author,
+        description: dataSEO_Blog_20260210.description,
+        url: dataSEO_Blog_20260210.url,
+        img: dataSEO_Blog_20260210.img_Helmet,
+        twitterUrlImg: dataSEO_Blog_20260210.twitterUrlImg || dataSEO_Blog_20260210.img_Helmet, // fallback
         twitterCompte: dataSEO_Root.twitterCompte,
-        keywords: dataSEO_Blog_20251127.keywords,
-        type: dataSEO_Blog_20251127.type,
+        keywords: dataSEO_Blog_20260210.keywords,
+        type: dataSEO_Blog_20260210.type,
     };
 
     const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
@@ -40,10 +40,10 @@ function HelmetBlog20251127_helmet_SEO() {
                 {JSON_LD_LocalBusiness_Root_schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_BlogPosting_Blog_20251127_schema_SEO()}
+                {JSON_LD_BlogPosting_Blog_20260210_schema_SEO()}
             </script>
             <script type="application/ld+json">
-                {JSON_LD_Breadcrumb_Blog_20251127_schema_SEO()}
+                {JSON_LD_Breadcrumb_Blog_20260210_schema_SEO()}
             </script>
 
             {/* Langue principale du document */}
@@ -81,4 +81,4 @@ function HelmetBlog20251127_helmet_SEO() {
     );
 }
 
-export { HelmetBlog20251127_helmet_SEO };
+export { HelmetBlog20260210_helmet_SEO };
