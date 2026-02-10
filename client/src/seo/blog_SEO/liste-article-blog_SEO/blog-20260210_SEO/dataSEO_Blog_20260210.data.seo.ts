@@ -4,7 +4,7 @@ import ListDataRouter from "../../../../router/router";
 /* Import des Types */
 import { DataSEOTargetOne_Type } from "../../../../types/seo/dataSEOTargetOne.type";
 
-function dataSEO_Blog_20251127_data_SEO(): DataSEOTargetOne_Type {
+function dataSEO_Blog_20260210_data_SEO(): DataSEOTargetOne_Type {
 
     const dataSEO = {
         /* Data Helmet */
@@ -17,24 +17,24 @@ function dataSEO_Blog_20251127_data_SEO(): DataSEOTargetOne_Type {
         name_Service:
             "Préparatifs de mariage : Pourquoi les préparatifs sont une étape essentielle du reportage photo de mariage – Blog - l'Atelier Photo Montpellier", /* Nom du service, utilisé dans le JSON-LD Service */
         twitterUrlImg:
-            `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/liste-blog-root/blog-20251127/helmet/lapm-video-marque-employeur-recrutement-blog-20251127.jpg`, /* Lien URL de l'image */
+            `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/liste-blog-root/blog-20260210/helmet/lapm-photo-professionnel-portrait-mariage-blog-20260210-l-atelier-photo-montpellier.jpg`, /* Lien URL de l'image */
 
         keywords: {
-            1: "vidéo marque employeur", /* 1 mot clé */
-            2: "recrutement B2B vidéo", /* 2 mots clés */
-            3: "réduction coûts recrutement", /* 3 mots clés */
-            4: "baisse turnover RH", /* 4 mots clés */
-            5: "témoignages employés vidéo", /* 5 mots clés */
-            6: "film corporate manifeste", /* 6 mots clés */
-            7: "vidéo e-learning entreprise", /* 7 mots clés */
-            8: "vidéaste entreprise Montpellier", /* 8 mots clés */
-            9: "marque employeur Montpellier", /* 9 mots clés */
-            10: "candidatures qualifiées RH", /* 10 mots clés */
-            11: "culture d’entreprise en vidéo", /* 11 mots clés */
-            12: "communication RH authentique", /* 12 mots clés */
-            13: "production vidéo corporate", /* 13 mots clés */
-            14: "stratégie recrutement vidéo", /* 14 mots clés */
-            15: "ROI vidéo RH", /* 15 mots clés */
+            1: "", /* 1 mot clé */
+            2: "", /* 2 mots clés */
+            3: "", /* 3 mots clés */
+            4: "", /* 4 mots clés */
+            5: "", /* 5 mots clés */
+            6: "", /* 6 mots clés */
+            7: "", /* 7 mots clés */
+            8: "", /* 8 mots clés */
+            9: "", /* 9 mots clés */
+            10: "", /* 10 mots clés */
+            11: "", /* 11 mots clés */
+            12: "", /* 12 mots clés */
+            13: "", /* 13 mots clés */
+            14: "", /* 14 mots clés */
+            15: "", /* 15 mots clés */
         }, /* 10 a 15 mots max */
 
         type: {
@@ -46,13 +46,13 @@ function dataSEO_Blog_20251127_data_SEO(): DataSEOTargetOne_Type {
         },
 
         /* Data Helmet et JSON-LD */
-        img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/liste-blog-root/blog-20251127/google/lapm-video-recrutement-entreprise-culture-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/liste-blog-root/blog-20251127/helmet/lapm-video-entreprise-culture-candidats-temoignage-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
-        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[4].path}${ListDataRouter[4].children?.[6].path}/#blog_20251127`, /* @id SEO-friendly, correspond à l'URL de la page + mots clés */
-        serviceType: "Article de blog dédié à la Vidéo Marque Employeur : attirer des candidatures qualifiées, réduire le turnover et les coûts de recrutement via 3 formats clés (témoignages employés, film corporate/manifeste, e-learning), avec exemples d’usages et focus ROI.",
+        img_JSON_LD: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/liste-blog-root/blog-20260210/google/lapm-photo-professionnel-portrait-mariage-blog-20260210-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
+        img_Helmet: `${import.meta.env.VITE_DOMAIN_CLIENT}/images-seo/blog/liste-blog-root/blog-20260210/helmet/lapm-photo-professionnel-portrait-mariage-blog-20260210-l-atelier-photo-montpellier.jpg`, /*Lien URL public de l'image*/
+        id_Service: `${import.meta.env.VITE_DOMAIN_CLIENT}${ListDataRouter[4].path}${ListDataRouter[4].children?.[7].path}/#blog_20260210`, /* @id SEO-friendly, correspond à l'URL de la page + mots clés */
+        serviceType: "Préparatifs de mariage : Pourquoi les préparatifs sont une étape essentielle du reportage photo de mariage – Blog - l'Atelier Photo Montpellier",
     };
 
     return dataSEO;
 }
 
-export { dataSEO_Blog_20251127_data_SEO };
+export { dataSEO_Blog_20260210_data_SEO };
