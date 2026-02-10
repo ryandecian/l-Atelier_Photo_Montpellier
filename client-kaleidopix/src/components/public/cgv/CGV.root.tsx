@@ -301,6 +301,18 @@ function CGV_Root() {
                 Le client autorise le Prestataire à utiliser certaines images à des fins de promotion professionnelle 
                 (site, réseaux sociaux, portfolio), sauf refus écrit préalable.
             </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Article 14 – Responsabilité
+            </h2>
+
+            <p className={style.TextP4}>
+                La responsabilité du Prestataire est strictement limitée au montant de la prestation. <br />
+                Aucune indemnisation indirecte (perte d’exploitation, perte de chiffre d’affaires, préjudice commercial ou moral) 
+                ne pourra être réclamée. <br />
+                En cas d’impossibilité totale de prestation (maladie, accident, force majeure), une reprogrammation ou 
+                un remboursement sera proposé sans autre indemnité.
+            </p>
         </section>
     )
 }
