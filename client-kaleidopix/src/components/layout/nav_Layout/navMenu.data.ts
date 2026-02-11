@@ -18,7 +18,7 @@ function navMenu_Data(): NavMenu_data_Type {
             {
                 nameMenu: "A PROPOS",
                 nameSubMenu: [
-                    { title: "Expertise Video", link: "#" },
+                    { title: "Expertise Video", link: router[7].path },
                     { title: "Expertise Photos", link: "#" },
                 ],
             },
