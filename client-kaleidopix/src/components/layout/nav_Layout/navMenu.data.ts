@@ -23,7 +23,7 @@ function navMenu_Data(): NavMenu_data_Type {
             },
         ],
         dataMenu: [
-            { nameMenu: "TARIFS", link: "#" },
+            { nameMenu: "TARIFS", link: router[9].path },
             { nameMenu: "PORTFOLIO", link: "#" },
             { nameMenu: "CONTACT", link: router[3].path },
         ],
