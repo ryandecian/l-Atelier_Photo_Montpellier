@@ -163,6 +163,174 @@ function ExpertiseVideo_Root() {
             <p className={style.TextP4}>
                 Le délai dépend surtout de la complexité du projet et des validations souhaitées.
             </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Faut-il être à l’aise devant la caméra pour une vidéo corporate ?
+            </h2>
+
+            {/* Image 3, à définir, voir responsive */}
+
+            <p className={style.TextP4}>
+                Non. <br />
+                La majorité des dirigeants et collaborateurs filmés ne sont pas habitués à la caméra.
+            </p>
+
+            <p className={style.TextLiP4}>
+                Le travail du vidéaste consiste à :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    <strong>mettre en confiance</strong>,
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>guider la prise de parole</strong>,
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>structurer le discours</strong>,
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>adapter le tournage</strong> au niveau de confort de chacun.
+                </li>
+            </ul>
+
+            <p className={style.TextP4}>
+                Une vidéo corporate efficace repose sur la <strong>sincérité</strong>, pas sur la performance.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Une vidéo corporate est-elle utile pour le recrutement ?
+            </h2>
+
+            {/* Image 4, à définir, voir responsive */}
+
+            <p className={style.TextP4}>
+                Oui, lorsqu’elle montre la <strong>réalité du travail</strong> et de l’environnement professionnel.
+            </p>
+
+            <p className={style.TextLiP4}>
+                Les candidats cherchent à comprendre :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    <strong>l’ambiance de travail</strong>,
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>le management</strong>,
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>les valeurs vécues</strong>,
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>les conditions réelles d’exercice</strong>.
+                </li>
+            </ul>
+
+            <p className={style.TextP4}>
+                Une vidéo permet d’attirer des profils plus <strong>alignés</strong> et de limiter les recrutements 
+                inadaptés.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Où diffuser une vidéo corporate une fois réalisée ?
+            </h2>
+
+            <p className={style.TextLiP4}>
+                Une vidéo d’entreprise peut être utilisée sur :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    <strong>le site internet</strong> de l’entreprise,
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>LinkedIn</strong> et réseaux professionnels,
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>les pages recrutement</strong> ou offres d’emploi,
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>les présentations commerciales</strong>,
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>la communication interne</strong>.
+                </li>
+            </ul>
+
+            <p className={style.TextP4}>
+                Une seule vidéo peut être <strong>déclinée en plusieurs formats courts</strong>.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Faut-il prévoir un script pour une vidéo corporate ?
+            </h2>
+
+            <p className={style.TextLiP4}>
+                Pas nécessairement un script figé, mais un <strong>cadre clair</strong>. <br />
+                La préparation permet de :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    <strong>définir les messages clés</strong>,
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>éviter les discours vagues</strong>,
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>gagner du temps</strong> le jour du tournage,
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>assurer un rendu cohérent</strong>.
+                </li>
+            </ul>
+
+            <p className={style.TextP4}>
+                L’objectif est de parler avec <strong>clarté</strong>, pas de réciter.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Une vidéo corporate est-elle rentable sur le long terme ?
+            </h2>
+
+            <p className={style.TextP4}>
+                Oui, lorsqu’elle est pensée comme un <strong>outil stratégique</strong>. <br />
+                Une vidéo bien conçue peut être utilisée pendant <strong>plusieurs années</strong>, mise à jour si 
+                nécessaire, et accompagner l’évolution de l’entreprise.
+            </p>
+
+            <p className={style.TextP4}>
+                Elle devient alors un <strong>actif de communication durable</strong>.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Pourquoi faire appel à un vidéaste corporate local à Montpellier ?
+            </h2>
+
+            <p className={style.TextLiP4}>
+                Travailler avec un vidéaste local permet :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    une <strong>meilleure connaissance du tissu économique</strong>,
+                </li>
+                <li className={style.TextLiP4}>
+                    une <strong>compréhension des contraintes terrain</strong>,
+                </li>
+                <li className={style.TextLiP4}>
+                    une <strong>relation plus fluide</strong>,
+                </li>
+                <li className={style.TextLiP4}>
+                    une <strong>meilleure réactivité</strong>.
+                </li>
+            </ul>
+
+            <p className={style.TextP4}>
+                La proximité facilite le <strong>repérage</strong>, le <strong>tournage</strong> et le <strong>suivi du projet</strong>.
+            </p>
+
         </section>
     )
 }
