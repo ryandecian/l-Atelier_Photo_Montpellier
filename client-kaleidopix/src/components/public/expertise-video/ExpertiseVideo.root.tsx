@@ -1,6 +1,12 @@
 /* Import des modules CSS */
 import style from "../../style.root.module.css";
 
+/* Import des composants React */
+import { Link } from "react-router-dom";
+
+/* Import des composants Router */
+import router from "../../../router/router";
+
 function ExpertiseVideo_Root() {
     return (
         <section className={`ExpertiseVideo_Root ${style.ContainerRootRacine}`}>
@@ -331,6 +337,93 @@ function ExpertiseVideo_Root() {
                 La proximité facilite le <strong>repérage</strong>, le <strong>tournage</strong> et le <strong>suivi du projet</strong>.
             </p>
 
+            <h2 className={style.TitleH2_00N0}>
+                Une vidéo corporate est-elle rentable sur le long terme ?
+            </h2>
+
+            <p className={style.TextP4}>
+                Oui, lorsqu’elle est pensée comme un <strong>outil stratégique de communication</strong>. <br />
+                Une vidéo bien conçue peut être utilisée pendant <strong>plusieurs années</strong>, mise à jour si nécessaire,
+                et accompagner l’évolution de l’entreprise.
+            </p>
+
+            <p className={style.TextP4}>
+                Elle devient alors un <strong>actif durable</strong> qui renforce la notoriété, la crédibilité
+                et la visibilité en ligne.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Pourquoi faire appel à un vidéaste corporate local à Montpellier ?
+            </h2>
+
+            <p className={style.TextLiP4}>
+                Travailler avec un vidéaste local permet :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    une <strong>meilleure connaissance du tissu économique montpelliérain</strong>,
+                </li>
+                <li className={style.TextLiP4}>
+                    une <strong>compréhension concrète des réalités terrain</strong>,
+                </li>
+                <li className={style.TextLiP4}>
+                    une <strong>relation plus fluide et humaine</strong>,
+                </li>
+                <li className={style.TextLiP4}>
+                    une <strong>réactivité accrue</strong> en cas d’ajustement.
+                </li>
+            </ul>
+
+            <p className={style.TextP4}>
+                La proximité facilite le <strong>repérage des lieux</strong>, le <strong>tournage</strong>
+                et le <strong>suivi du projet</strong> dans la durée.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Comment se déroule un projet de vidéo corporate ?
+            </h2>
+
+            <p className={style.TextLiP4}>
+                Un projet se déroule généralement en quatre étapes :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    <strong>définition des objectifs</strong> et du message stratégique,
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>préparation et repérage</strong> des lieux et intervenants,
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>tournage sur site</strong> en conditions réelles,
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>montage, post-production et livraison optimisée</strong>.
+                </li>
+            </ul>
+
+            <p className={style.TextP4}>
+                Chaque étape vise à produire une <strong>vidéo claire, cohérente et réellement utile</strong>
+                pour l’entreprise.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Besoin d’une vidéo corporate adaptée à votre activité à Montpellier ?
+            </h2>
+
+            <p className={style.TextP4}>
+                Une vidéo d’entreprise bien pensée permet de <strong>valoriser votre savoir-faire</strong>,
+                <strong>clarifier votre positionnement</strong> et <strong>renforcer la confiance</strong>
+                de vos prospects et partenaires.
+            </p>
+
+            <p className={style.TextP4}>
+                📩 <strong>Contactez-moi</strong> pour échanger sur votre projet. <br />
+                <Link to={router[3].path} className={style.Link}>
+                    Réponse garantie sous <strong>24 heures</strong>.
+                </Link>
+            </p>
         </section>
     )
 }
