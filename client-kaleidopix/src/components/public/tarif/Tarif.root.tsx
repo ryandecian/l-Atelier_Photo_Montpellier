@@ -1,6 +1,9 @@
 /* Import des modules CSS */
 import style from "../../style.root.module.css";
 
+/* Import des composants d'Elements */
+import { TarifCard_Element } from "../../elements/tarif-card/TarifCard.element";
+
 function Tarif_Root() {
     return (
         <section className={`Tarif_Root ${style.ContainerRootRacine}`}>
@@ -9,6 +12,7 @@ function Tarif_Root() {
                     Tarif_Root
                 </h1>
             </header>
+            <TarifCard_Element />
         </section>
     )
 }
