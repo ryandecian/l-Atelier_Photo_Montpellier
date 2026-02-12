@@ -10,6 +10,7 @@ import Blog_20250917_Page from "../pages/public/blog_Page/liste-blog_Page/Blog_2
 import Blog_20251127_Page from "../pages/public/blog_Page/liste-blog_Page/Blog_20251127.page";
 import CGV_Page from "../pages/public/cgv_Page/CGV.page";
 import Contact_Page from "../pages/public/contact_Page/Contact.page";
+import ExpertisePhoto_Page from "../pages/public/expertisePhoto_Page/ExpertisePhoto.page";
 import ExpertiseVideo_Page from "../pages/public/expertiseVideo_Page/ExpertiseVideo.page";
 import Home_Page from "../pages/public/home_Page/Home.page";
 import VideoCorporate_Page from "../pages/public/videoCorporate_Page/VideoCorporate.page";
@@ -72,6 +73,11 @@ const router: Router_Type = [
     {
         path: "/expertise-video",
         element: <ExpertiseVideo_Page />,
+    },
+    /* {router[8].path} */
+    {
+        path: "/expertise-photo",
+        element: <ExpertisePhoto_Page />,
     },
 ]
 
