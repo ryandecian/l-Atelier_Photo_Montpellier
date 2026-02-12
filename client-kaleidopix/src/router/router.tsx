@@ -13,6 +13,7 @@ import Contact_Page from "../pages/public/contact_Page/Contact.page";
 import ExpertisePhoto_Page from "../pages/public/expertisePhoto_Page/ExpertisePhoto.page";
 import ExpertiseVideo_Page from "../pages/public/expertiseVideo_Page/ExpertiseVideo.page";
 import Home_Page from "../pages/public/home_Page/Home.page";
+import Tarif_Page from "../pages/public/tarif_Page/Tarif.page";
 import VideoCorporate_Page from "../pages/public/videoCorporate_Page/VideoCorporate.page";
 import PhotoCorporate_Page from "../pages/public/photoCorporate_Page/PhotoCorporate.page";
 import QuiSuisJe_Page from "../pages/public/quiSuisJe_Page/QuiSuisJe.page";
@@ -78,6 +79,11 @@ const router: Router_Type = [
     {
         path: "/expertise-photo",
         element: <ExpertisePhoto_Page />,
+    },
+    /* {router[9].path} */
+    {
+        path: "/tarif",
+        element: <Tarif_Page />,
     },
 ]
 
