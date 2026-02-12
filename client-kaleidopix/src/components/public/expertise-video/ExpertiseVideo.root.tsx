@@ -3,7 +3,7 @@ import style from "../../style.root.module.css";
 
 function ExpertiseVideo_Root() {
     return (
-        <section className={`PhotoCorporate_Root ${style.ContainerRootRacine}`}>
+        <section className={`ExpertiseVideo_Root ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1_NNNN}>
                     FAQ : tout savoir sur la vidéo corporate à Montpellier
@@ -68,7 +68,7 @@ function ExpertiseVideo_Root() {
                 Oui : <br />
                 Les petites entreprises et PME ont souvent tout intérêt à utiliser la vidéo pour :
             </p>
-            
+
             <ul className={style.ContainerUl}>
                 <li className={style.TextLiP4}>
                     se différencier localement,
@@ -83,6 +83,85 @@ function ExpertiseVideo_Root() {
 
             <p className={style.TextP4}>
                 Une vidéo bien ciblée permet de créer de la confiance, même sans gros budget de communication.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Quel type de vidéo choisir pour présenter son entreprise ?
+            </h2>
+
+            <p className={style.TextLiP4}>
+                Le choix dépend de l’objectif principal :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    <strong>Visibilité et image</strong> : vidéo d’activité ou film institutionnel léger
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>Recrutement</strong> : vidéo marque employeur ou témoignages collaborateurs
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>Crédibilité</strong> : interview dirigeant ou expert
+                </li>
+                <li className={style.TextLiP4}>
+                    <strong>Pédagogie</strong> : vidéo explicative ou process métier
+                </li>
+            </ul>
+
+            <p className={style.TextP4}>
+                Il n’existe pas un format unique, mais un format adapté à chaque stratégie.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Combien coûte une vidéo corporate à Montpellier ?
+            </h2>
+
+            <p className={style.TextLiP4}>
+                Le prix d’une vidéo corporate dépend de plusieurs critères :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    durée et complexité du tournage,
+                </li>
+                <li className={style.TextLiP4}>
+                    nombre de lieux et d’intervenants,
+                </li>
+                <li className={style.TextLiP4}>
+                    niveau de montage et de post-production,
+                </li>
+                <li className={style.TextLiP4}>
+                    formats livrés (site, réseaux, recrutement).
+                </li>
+            </ul>
+
+            <p className={style.TextP4}>
+                Une vidéo professionnelle est conçue comme un outil de communication durable, réutilisable sur plusieurs 
+                supports.
+            </p>
+
+            <h2 className={style.TitleH2_00N0}>
+                Combien de temps faut-il pour réaliser une vidéo d’entreprise ?
+            </h2>
+
+            <p className={style.TextLiP4}>
+                En moyenne :
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    préparation et cadrage : quelques jours à une semaine,
+                </li>
+                <li className={style.TextLiP4}>
+                    tournage : une demi-journée à une journée,
+                </li>
+                <li className={style.TextLiP4}>
+                    montage et livraison : une à deux semaines.
+                </li>
+            </ul>
+
+            <p className={style.TextP4}>
+                Le délai dépend surtout de la complexité du projet et des validations souhaitées.
             </p>
         </section>
     )
