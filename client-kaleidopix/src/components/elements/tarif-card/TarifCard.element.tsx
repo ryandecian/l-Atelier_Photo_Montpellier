@@ -5,9 +5,14 @@ function TarifCard_Element() {
         return (
             <section className={css.container}>
                 <article className={css.card}>
-                    <h2 className={css.header}>
+                    <h2 className={css.TitleH2}>
                         Essentiel
                     </h2>
+
+                    <p className={css.TextP4}>
+                        <strong>À partir de 1 200 € HT</strong>
+                    </p>
+
                     <ul className={css.list}>
                         <li className={css.item}>
                             Durée Séance: 45 min
