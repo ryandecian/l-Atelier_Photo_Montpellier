@@ -18,7 +18,7 @@ function TarifCard_Element({ items }: TarifCard_props_Type) {
                         </p>
 
                         <p className={css.TextP4}>
-                            <strong>Objectif</strong> : {data.description}
+                            {data.description}
                         </p>
 
                         <p className={css.TextLiP4}>
@@ -32,6 +32,10 @@ function TarifCard_Element({ items }: TarifCard_props_Type) {
                                 </li>
                             ))}
                         </ul>
+
+                        <p className={css.TextLiP4}>
+                            <strong>Objectif</strong> : {data.objectif}
+                        </p>
                     </article>
                 ))}
             </section>

@@ -56,6 +56,19 @@ const tarif_Data: TarifCard_element_Type = [
         ],
     },
     {
+        title: "Pack Marque Employeur & Recrutement",
+        price:"À partir de 2 400 € HT",
+        description: "",
+        avantage: [
+            {
+                item: "",
+            },
+            {
+                item: "",
+            },
+        ],
+    },
+    {
         title: "",
         price:"",
         description: "",
