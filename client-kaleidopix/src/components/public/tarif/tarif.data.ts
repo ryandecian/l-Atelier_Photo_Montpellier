@@ -1,6 +1,7 @@
+/* Import des Types */
+import type { TarifCard_element_Type } from "../../elements/tarif-card/tarifCard.element.type";
 
-
-const tarif_Data = [
+const tarif_Data: TarifCard_element_Type = [
     {
         title: "",
         price:"",
@@ -14,3 +15,5 @@ const tarif_Data = [
         ],
     }
 ]
+
+export { tarif_Data };
