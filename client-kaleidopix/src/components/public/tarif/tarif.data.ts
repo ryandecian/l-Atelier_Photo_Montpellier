@@ -28,6 +28,34 @@ const tarif_Data: TarifCard_element_Type = [
         ],
     },
     {
+        title: "Pack Activité & Métier ",
+        price:"À partir de 1 800 € HT",
+        description: "montrer concrètement ce que vous faites et comment vous le faites.",
+        avantage: [
+            {
+                item: "Phase de cadrage approfondie (message, angle, narration)",
+            },
+            {
+                item: "1 journée de tournage sur site",
+            },
+            {
+                item: "Captation des gestes professionnels et de l’environnement réel",
+            },
+            {
+                item: "1 vidéo principale (1 min 30 à 3 minutes)",
+            },
+            {
+                item: "2 formats courts pour LinkedIn",
+            },
+            {
+                item: "Sous-titres inclus",
+            },
+            {
+                item: "Livraison web et réseaux professionnels",
+            },
+        ],
+    },
+    {
         title: "",
         price:"",
         description: "",
