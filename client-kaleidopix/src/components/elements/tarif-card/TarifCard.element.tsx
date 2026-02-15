@@ -18,7 +18,7 @@ function TarifCard_Element({ items }: TarifCard_props_Type) {
                         </p>
 
                         <p className={css.TextP4}>
-                            <strong>Objectif</strong> : présenter votre entreprise de manière claire, humaine et crédible. <br />
+                            <strong>Objectif</strong> : {data.description}
                         </p>
 
                         <p className={css.TextLiP4}>
@@ -26,9 +26,9 @@ function TarifCard_Element({ items }: TarifCard_props_Type) {
                         </p>
 
                         <ul className={css.list}>
-                            {data.description.map((desc, descIndex) => (
+                            {data.avantage.map((avantage, descIndex) => (
                                 <li key={descIndex} className={css.item}>
-                                    {desc.item}
+                                    {avantage.item}
                                 </li>
                             ))}
                         </ul>

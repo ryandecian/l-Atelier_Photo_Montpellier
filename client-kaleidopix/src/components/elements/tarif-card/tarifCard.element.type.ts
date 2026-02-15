@@ -2,7 +2,8 @@
 type TarifCard_element_Type = {
     title: string;
     price: string;
-    description: {
+    description: string;
+    avantage: {
         item: string;
     }[];
 }[]
