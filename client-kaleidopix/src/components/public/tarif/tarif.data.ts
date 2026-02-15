@@ -5,7 +5,8 @@ const tarif_Data: TarifCard_element_Type = [
     {
         title: "Pack Essentiel",
         price:"À partir de 1 200 € HT",
-        description: [
+        description: "présenter votre entreprise de manière claire, humaine et crédible.",
+        avantage: [
             {
                 item: "Échange de cadrage et définition de l’objectif",
             },
@@ -29,7 +30,8 @@ const tarif_Data: TarifCard_element_Type = [
     {
         title: "",
         price:"",
-        description: [
+        description: "",
+        avantage: [
             {
                 item: "",
             },
