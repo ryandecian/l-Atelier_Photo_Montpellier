@@ -2,10 +2,11 @@
 type TarifCard_element_Type = {
     title: string;
     price: string;
-    description: string;
+    objectif: string;
     avantage: {
         item: string;
     }[];
+    description: string;
 }[]
 
 export type { TarifCard_element_Type };
