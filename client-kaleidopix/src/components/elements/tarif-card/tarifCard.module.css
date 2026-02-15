@@ -104,12 +104,32 @@
     width: 100%;
     margin: 0rem;
     border: 0rem;
-    padding: 0rem 0rem 1rem 2.3rem; /* 0px 0px 16px 0px */
+    padding: 0rem 0rem 1rem 1.25rem; /* 0px 0px 16px 20px */
 }
 @media (min-width: 25rem) { /* 400px */
     .TextP4 {
         font-size: var(--h4); /* 16px */
     }
+}
+@media (min-width: 50rem) { /* 800px */
+    .TextP4 {
+         padding: 0rem 0rem 1rem 2.5rem; /* 0px 0px 16px 40px */
+    }
+}
+@media (min-width: 56.25rem) { /* 900px */
+    .TextP4 {
+         padding: 0rem 0rem 1rem 2rem; /* 0px 0px 16px 32px */
+    }
+}
+@media (min-width: 62.5rem) { /* 1000px */
+    .TextP4 {
+         padding: 0rem 0rem 1rem 2.3rem; /* 0px 0px 16px 36.8px */
+     }
+}
+@media (min-width: 68.75rem) { /* 1100px */
+    .TextP4 {
+         padding: 0rem 0rem 1rem 2.5rem; /* 0px 0px 16px 40px */
+     }
 }
 
 .list {

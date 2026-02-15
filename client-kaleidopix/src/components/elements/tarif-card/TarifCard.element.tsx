@@ -15,13 +15,13 @@ function TarifCard_Element() {
 
                     <ul className={css.list}>
                         <li className={css.item}>
-                            Durée Séance: 45 min
+                            Échange de cadrage et définition de l’objectif
                         </li>
                         <li className={css.item}>
-                            Extérieur: Oui
+                            Une demi-journée de tournage sur site à Montpellier ou alentours
                         </li>
                         <li className={css.item}>
-                            Studio: Non
+                            Interview et images d’activité
                         </li>
                     </ul>
                 </article>
