@@ -132,6 +132,39 @@
      }
 }
 
+.TextLiP4 {
+    font-size: var(--h5); /* 14px */
+    width: 100%;
+    margin: 0rem;
+    border: 0rem;
+    padding: 0rem 0rem 0rem 1.25rem; /* 0px 0px 0px 20px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .TextLiP4 {
+        font-size: var(--h4); /* 16px */
+    }
+}
+@media (min-width: 50rem) { /* 800px */
+    .TextLiP4 {
+         padding: 0rem 0rem 0rem 2.5rem; /* 0px 0px 0px 40px */
+    }
+}
+@media (min-width: 56.25rem) { /* 900px */
+    .TextLiP4 {
+         padding: 0rem 0rem 0rem 2rem; /* 0px 0px 0px 32px */
+    }
+}
+@media (min-width: 62.5rem) { /* 1000px */
+    .TextLiP4 {
+         padding: 0rem 0rem 0rem 2.3rem; /* 0px 0px 0px 36.8px */
+     }
+}
+@media (min-width: 68.75rem) { /* 1100px */
+    .TextLiP4 {
+         padding: 0rem 0rem 0rem 2.5rem; /* 0px 0px 0px 40px */
+     }
+}
+
 .list {
   display: flex;
   flex-direction: column;
