@@ -1,12 +1,12 @@
 /* Type utilisée dans les composants data */
 type TarifCard_element_Type = {
     title: string;
-    price: string;
+    price?: string;
     objectif: string;
     avantage: {
         item: string;
     }[];
-    description: string;
+    description?: string;
 }[]
 
 export type { TarifCard_element_Type };
