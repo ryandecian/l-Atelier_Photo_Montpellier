@@ -1,6 +1,9 @@
 /* Import des modules CSS */
 import style from "../../style.root.module.css";
 
+/* Import des Components de Data */
+import { tarif_Data } from "./tarif.data";
+
 /* Import des composants d'Elements */
 import { TarifCard_Element } from "../../elements/tarif-card/TarifCard.element";
 
@@ -12,7 +15,7 @@ function Tarif_Root() {
                     Tarif_Root
                 </h1>
             </header>
-            <TarifCard_Element />
+            <TarifCard_Element items={tarif_Data} />
         </section>
     )
 }
