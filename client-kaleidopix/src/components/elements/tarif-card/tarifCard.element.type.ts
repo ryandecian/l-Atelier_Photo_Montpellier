@@ -11,8 +11,8 @@ export type { TarifCard_element_Type };
 
 
 /* Type utilisée dans le composant élément TarifCard.element.tsx */
-type TarifCard_Props = {
+type TarifCard_props_Type = {
     items: TarifCard_element_Type;
 };
 
-export type { TarifCard_Props };
+export type { TarifCard_props_Type };
