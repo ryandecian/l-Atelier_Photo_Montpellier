@@ -147,6 +147,18 @@ const tarif_Data: TarifCard_element_Type = [
             {
                 item: "",
             },
+            {
+                item: "",
+            },
+            {
+                item: "",
+            },
+            {
+                item: "",
+            },
+            {
+                item: "",
+            },
         ],
     },
 ]
