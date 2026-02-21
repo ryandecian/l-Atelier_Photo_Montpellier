@@ -8,7 +8,9 @@ a fourni. La page a été édité avec les logique frontend et style ok mais la 
 Les composants datas de tarif video ok mais composant tarif photo non utilisé, c'est ce point que la cliente
 doit revoir. 
 ------------------------------------------------------------------------------
-
+Liste des pages qui reste a éditer : 
+- Portfolio
+- Tarifs
 ------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------
