@@ -1,7 +1,7 @@
 /* Import des Types */
 import type { TarifCard_element_Type } from "../../elements/tarif-card/tarifCard.element.type";
 
-const tarif_Data: TarifCard_element_Type = [
+const tarifVideo_Data: TarifCard_element_Type = [
     {
         title: "Pack Essentiel",
         price:"À partir de 1 200 € HT",
@@ -163,4 +163,4 @@ const tarif_Data: TarifCard_element_Type = [
     },
 ]
 
-export { tarif_Data };
+export { tarifVideo_Data };
