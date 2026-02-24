@@ -12,7 +12,7 @@ function dataSEO_Root_data_SEO(): DataSEORoot_Type {
         author: {
             "@type": "Person",
             "name": "Anne SAUNIER",
-            "url": `${import.meta.env.VITE_DOMAIN_CLIENT}${router[7].path}` // Page "Qui suis-je"
+            "url": `${import.meta.env.VITE_DOMAIN_CLIENT}${router[7].path}` /* Page "Qui suis-je" */
         },
         creator: {
             "@type": "Person",
