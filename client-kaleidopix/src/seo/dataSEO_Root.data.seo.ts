@@ -39,6 +39,10 @@ function dataSEO_Root_data_SEO(): DataSEORoot_Type {
             TermsOfService: "TermsOfService",      /* = Page des conditions générales / mentions légales / CGU */
             VideoObject: "VideoObject"             /* = Décrit une vidéo (URL, miniature, durée, auteur…) */
         },
+        id_LocalBusiness: `${import.meta.env.VITE_DOMAIN_CLIENT}#kaleidopix`, /* @id SEO-friendly, correspond id unique de l'entreprise */
+        description: "Kaleidopix, propose des prestations de vidéo et photographiques professionnelles à Montpellier et ses environs", // Description de l'entreprise
+        name: "PowerWatt34", /* Nom de l'entreprise */
+        telephone: "+33652677333", /* Numéro de téléphone de l'entreprise (Manuel) */
     };
 
     return dataSEORoots;
