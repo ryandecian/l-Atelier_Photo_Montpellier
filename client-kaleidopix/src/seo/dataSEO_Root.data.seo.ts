@@ -1,5 +1,5 @@
 /* Import des composants Router */
-import routerExt from "../router/routerExt.router";
+// import routerExt from "../router/routerExt.router";
 import router from "../router/router";
 
 
