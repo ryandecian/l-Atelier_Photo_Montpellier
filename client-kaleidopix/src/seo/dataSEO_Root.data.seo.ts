@@ -44,6 +44,49 @@ function dataSEO_Root_data_SEO(): DataSEORoot_Type {
         name: "Kaleidopix", /* Nom de l'entreprise */
         telephone: "+33652677333", /* Numéro de téléphone de l'entreprise (Manuel) */
         email: "as@kaleidopix.fr", /* Adresse email de l'entreprise (Dynamique) */
+        url: `${import.meta.env.VITE_DOMAIN_CLIENT}`, /* URL de la page d'accueil de l'entreprise (Dynamique) */
+        img: `${import.meta.env.VITE_DOMAIN_CLIENT}/apple-touch-icon.png`, /* ⚠️ Lien URL public de l'image de l'entreprise (Dynamique) */
+        isPartOf: {
+            "@type": "WebSite",
+            "name": "Kaleidopix",
+            "url": `${import.meta.env.VITE_DOMAIN_CLIENT}` /* URL de la page d'accueil de l'entreprise (Dynamique) */
+        },
+        mainEntity: {
+            "@type": "Organization", 
+            "name": "Kaleidopix",
+            "url": `${import.meta.env.VITE_DOMAIN_CLIENT}`,
+        }, /* Entité principale de l'entreprise */
+        publisher: {
+            "@type": "Organization",
+            "name": "Kaleidopix",
+            "logo": {
+                "@type": "ImageObject",
+                "url": `${import.meta.env.VITE_DOMAIN_CLIENT}/apple-touch-icon.png`, /* ⚠️ Logo au format carré si possible */
+                "width": 200,
+                "height": 200
+            },
+        },
+        logo: {
+            "@type": "ImageObject",
+            "url": `${import.meta.env.VITE_DOMAIN_CLIENT}/apple-touch-icon.png`, /* ⚠️ Logo au format carré si possible */
+            "width": 200,
+            "height": 200
+        },
+        openingHours: [
+            "Tu-Sa 10:00-12:30",
+            "Tu-Sa 14:00-18:00"
+        ], /* ⚠️ Horaires d'ouverture du mardi au samedi de 10h à 12h30 et de 14h à 18h */
+        sameAs: [
+            routerExt.instagram, /* Compte Instagram */
+            routerExt.facebook, /* A modifier car ce n'est pas le bon compte */
+        ],
+        termsOfService: `${import.meta.env.VITE_DOMAIN_CLIENT}/${router[6].path}`, /* Conditions d'utilisation de l'entreprise (Dynamique) */
+        "worksFor": {
+            /* Indique de la personne est liée à cette activité */
+            "@type": "Organization",
+            "name": "Kaleidopix",
+            "url": `${import.meta.env.VITE_DOMAIN_CLIENT}`
+        },
     };
 
     return dataSEORoots;
