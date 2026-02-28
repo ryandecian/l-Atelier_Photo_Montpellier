@@ -1,5 +1,5 @@
 /* Import des composants Router */
-import routerExt from "../router/routerExt.router";
+// import routerExt from "../router/routerExt.router";
 import router from "../router/router";
 
 
@@ -38,6 +38,54 @@ function dataSEO_Root_data_SEO(): DataSEORoot_Type {
             WebPage: "WebPage",                    /* = Type générique pour toute page web */
             TermsOfService: "TermsOfService",      /* = Page des conditions générales / mentions légales / CGU */
             VideoObject: "VideoObject"             /* = Décrit une vidéo (URL, miniature, durée, auteur…) */
+        },
+        id_LocalBusiness: `${import.meta.env.VITE_DOMAIN_CLIENT}#kaleidopix`, /* @id SEO-friendly, correspond id unique de l'entreprise */
+        description: "Kaleidopix, propose des prestations de vidéo et photographiques professionnelles à Montpellier et ses environs", // Description de l'entreprise
+        name: "Kaleidopix", /* Nom de l'entreprise */
+        telephone: "+33652677333", /* Numéro de téléphone de l'entreprise (Manuel) */
+        email: "as@kaleidopix.fr", /* Adresse email de l'entreprise (Dynamique) */
+        url: `${import.meta.env.VITE_DOMAIN_CLIENT}`, /* URL de la page d'accueil de l'entreprise (Dynamique) */
+        img: `${import.meta.env.VITE_DOMAIN_CLIENT}/apple-touch-icon.png`, /* ⚠️ Lien URL public de l'image de l'entreprise (Dynamique) */
+        isPartOf: {
+            "@type": "WebSite",
+            "name": "Kaleidopix",
+            "url": `${import.meta.env.VITE_DOMAIN_CLIENT}` /* URL de la page d'accueil de l'entreprise (Dynamique) */
+        },
+        mainEntity: {
+            "@type": "Organization", 
+            "name": "Kaleidopix",
+            "url": `${import.meta.env.VITE_DOMAIN_CLIENT}`,
+        }, /* Entité principale de l'entreprise */
+        publisher: {
+            "@type": "Organization",
+            "name": "Kaleidopix",
+            "logo": {
+                "@type": "ImageObject",
+                "url": `${import.meta.env.VITE_DOMAIN_CLIENT}/apple-touch-icon.png`, /* ⚠️ Logo au format carré si possible */
+                "width": 200,
+                "height": 200
+            },
+        },
+        logo: {
+            "@type": "ImageObject",
+            "url": `${import.meta.env.VITE_DOMAIN_CLIENT}/apple-touch-icon.png`, /* ⚠️ Logo au format carré si possible */
+            "width": 200,
+            "height": 200
+        },
+        openingHours: [
+            "Tu-Sa 10:00-12:30",
+            "Tu-Sa 14:00-18:00"
+        ], /* ⚠️ Horaires d'ouverture du mardi au samedi de 10h à 12h30 et de 14h à 18h */
+        sameAs: [
+            routerExt.instagram, /* Compte Instagram */
+            routerExt.facebook, /* A modifier car ce n'est pas le bon compte */
+        ],
+        termsOfService: `${import.meta.env.VITE_DOMAIN_CLIENT}/${router[6].path}`, /* Conditions d'utilisation de l'entreprise (Dynamique) */
+        "worksFor": {
+            /* Indique de la personne est liée à cette activité */
+            "@type": "Organization",
+            "name": "Kaleidopix",
+            "url": `${import.meta.env.VITE_DOMAIN_CLIENT}`
         },
     };
 
