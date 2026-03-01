@@ -87,6 +87,7 @@ function dataSEO_Root_data_SEO(): DataSEORoot_Type {
             "name": "Kaleidopix",
             "url": `${import.meta.env.VITE_DOMAIN_CLIENT}`
         },
+        "knowsAbout": []
     };
 
     return dataSEORoots;
