@@ -1,5 +1,5 @@
 /* Import des composants Router */
-// import routerExt from "../router/routerExt.router";
+import routerExt from "../router/routerExt.router";
 import router from "../router/router";
 
 
@@ -87,9 +87,27 @@ function dataSEO_Root_data_SEO(): DataSEORoot_Type {
             "name": "Kaleidopix",
             "url": `${import.meta.env.VITE_DOMAIN_CLIENT}`
         },
+        "knowsAbout": [
+            "Photographie corporate",
+            "Portrait professionnel en entreprise",
+            "Vidéo corporate",
+            "Film institutionnel",
+            "Communication visuelle d’entreprise",
+            "Image de marque",
+            "Personal branding",
+            "Reportage métier",
+            "Contenu visuel pour LinkedIn",
+            "Stratégie visuelle B2B"
+        ],
+        "areaServed": [
+            { "@type": "City", "name": "Montpellier" },
+            { "@type": "AdministrativeArea", "name": "Hérault", "addressCountry": "FR" }
+        ],
     };
 
-    return dataSEORoots;
+    return (
+        dataSEORoots
+    );
 }
 
 export { dataSEO_Root_data_SEO };
