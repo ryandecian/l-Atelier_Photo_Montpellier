@@ -1,5 +1,9 @@
 Il faudra préparer les versions nginx http et https
 
+Voir un logo image carré en 1000 x 1000 px max et entre 150 et 200 ko
+Il manquera également le logo au format 200x200px en carré
+Revoir la formulation des horaires dans le composant dataSEORoot
+Revoir les lien facebook et instagram dans dataSEORoot
 ------------------------------------------------------------------------------
 Faire la correction de la page contact
 ------------------------------------------------------------------------------
@@ -8,8 +12,16 @@ a fourni. La page a été édité avec les logique frontend et style ok mais la 
 Les composants datas de tarif video ok mais composant tarif photo non utilisé, c'est ce point que la cliente
 doit revoir. 
 ------------------------------------------------------------------------------
-
+Liste des pages qui reste a éditer : 
+- Portfolio
+- Tarifs
 ------------------------------------------------------------------------------
+Pour le SEO
+- sitemap
+- Robot txt
+
+Page a traiter pour les JSON_LD
+- Toutes les pages...
 
 ------------------------------------------------------------------------------
 
