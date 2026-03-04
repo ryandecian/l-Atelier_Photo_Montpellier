@@ -24,21 +24,11 @@ function Blog_20260305_Root() {
             </p>
 
             <ul className={style.ContainerUl}>
-                <li className={style.TextLiP4}>
-                    La lumière naturelle
-                </li>
-                <li className={style.TextLiP4}>
-                    Les contre-jours
-                </li>
-                <li className={style.TextLiP4}>
-                    Les cérémonies en extérieur
-                </li>
-                <li className={style.TextLiP4}>
-                    Les salles sombres
-                </li>
-                <li className={style.TextLiP4}>
-                    La retouche professionnelle
-                </li>
+                <li className={style.TextLiP4}>La lumière naturelle</li>
+                <li className={style.TextLiP4}>Les contre-jours</li>
+                <li className={style.TextLiP4}>Les cérémonies en extérieur</li>
+                <li className={style.TextLiP4}>Les salles sombres</li>
+                <li className={style.TextLiP4}>La retouche professionnelle</li>
             </ul>
 
             <p className={style.TextP4}>
@@ -50,21 +40,11 @@ function Blog_20260305_Root() {
             </p>
 
             <ul className={style.ContainerUl}>
-                <li className={style.TextLiP4}>
-                    La posture
-                </li>
-                <li className={style.TextLiP4}>
-                    L’anticipation
-                </li>
-                <li className={style.TextLiP4}>
-                    L’organisation
-                </li>
-                <li className={style.TextLiP4}>
-                    Le relationnel
-                </li>
-                <li className={style.TextLiP4}>
-                    La capacité à vous décharger mentalement
-                </li>
+                <li className={style.TextLiP4}>La posture</li>
+                <li className={style.TextLiP4}>L’anticipation</li>
+                <li className={style.TextLiP4}>L’organisation</li>
+                <li className={style.TextLiP4}>Le relationnel</li>
+                <li className={style.TextLiP4}>La capacité à vous décharger mentalement</li>
             </ul>
 
             <p className={style.TextP4}>
@@ -311,7 +291,8 @@ function Blog_20260305_Root() {
             </ul>
 
             <p className={style.TextP4}>
-                👉 J’ai détaillé ces points dans mon article : “Les points à vérifier avant de signer le contrat avec votre photographe”.
+                👉 J’ai détaillé ces points dans mon article : “Les points à vérifier avant de signer le contrat avec 
+                votre photographe”.
             </p>
 
             <p className={style.TextP4}>
@@ -323,7 +304,8 @@ function Blog_20260305_Root() {
             </h2>
 
             <p className={style.TextP4}>
-                À Montpellier, un photographe mariage professionnel se situe généralement entre 1 200 € et 2 800 € selon durée et prestations.
+                À Montpellier, un photographe mariage professionnel se situe généralement entre 1 200 € et 2 800 € selon 
+                durée et prestations.
             </p>
 
             <p className={style.TextP4}>
@@ -411,7 +393,8 @@ function Blog_20260305_Root() {
             </ul>
 
             <p className={style.TextP4}>
-                Choisir son photographe mariage à Montpellier n’est pas choisir un appareil photo. C’est choisir une présence stable dans une journée intense.
+                Choisir son photographe mariage à Montpellier n’est pas choisir un appareil photo. C’est choisir une 
+                présence stable dans une journée intense.
             </p>
 
             <h2 className={style.TitleH2_00N0}>
