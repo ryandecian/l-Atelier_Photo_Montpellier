@@ -5,7 +5,7 @@ function Blog_20260305_Root() {
     return (
         <section className={`Blog_20260305_Root ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
-                <h1 className={style.TitleH1_NNNN}>
+                <h1 className={style.TitleH1}>
                     Mariage à Montpellier : 10 critères essentiels
                 </h1>
             </header>
@@ -51,7 +51,7 @@ function Blog_20260305_Root() {
                 Voici les 10 critères qui ne trompent pas.
             </p>
 
-            <h2 className={style.TitleH2_00N0}>
+            <h2 className={style.TitleH2}>
                 1. Le style : reportage, posé ou hybride ?
             </h2>
 
@@ -98,7 +98,7 @@ function Blog_20260305_Root() {
                 Un beau portfolio ne garantit pas une journée fluide.
             </p>
 
-            <h2 className={style.TitleH2_00N0}>
+            <h2 className={style.TitleH2}>
                 2. Oui, ils sont techniquement bons. Mais sont-ils humains ?
             </h2>
 
@@ -122,11 +122,11 @@ function Blog_20260305_Root() {
                 Le feeling n’est pas un détail. C’est un indicateur majeur.
             </p>
 
-            <h2 className={style.TitleH2_00N0}>
+            <h2 className={style.TitleH2}>
                 3. Discret… mais rassurant
             </h2>
 
-            <p className={style.TextP4}>
+            <p className={style.TextLiP4}>
                 Un bon photographe mariage dans l’Hérault doit être :
             </p>
 
@@ -145,7 +145,7 @@ function Blog_20260305_Root() {
                 </li>
             </ul>
 
-            <p className={style.TextP4}>
+            <p className={style.TextLiP4}>
                 Mais en même temps :
             </p>
 
@@ -175,7 +175,7 @@ function Blog_20260305_Root() {
                 S’il fait bien son travail, vous vivez votre journée. Et tout est couvert.
             </p>
 
-            <h2 className={style.TitleH2_00N0}>
+            <h2 className={style.TitleH2}>
                 4. La force de proposition (le vrai critère expert)
             </h2>
 
@@ -202,7 +202,7 @@ function Blog_20260305_Root() {
                 Il vous conseille avant même que vous y pensiez.
             </p>
 
-            <h2 className={style.TitleH2_00N0}>
+            <h2 className={style.TitleH2}>
                 5. Les photos de groupe : le test décisif
             </h2>
 
@@ -210,7 +210,7 @@ function Blog_20260305_Root() {
                 C’est ici que beaucoup de professionnels montrent leur niveau réel.
             </p>
 
-            <p className={style.TextP4}>
+            <p className={style.TextLiP4}>
                 Un photographe expérimenté :
             </p>
 
@@ -226,7 +226,7 @@ function Blog_20260305_Root() {
                 Vous ne devez pas courir après les invités. C’est lui qui gère.
             </p>
 
-            <h2 className={style.TitleH2_00N0}>
+            <h2 className={style.TitleH2}>
                 6. La capacité à vous décharger de l’organisation
             </h2>
 
@@ -234,7 +234,7 @@ function Blog_20260305_Root() {
                 Le jour J, votre charge mentale doit être proche de zéro.
             </p>
 
-            <p className={style.TextP4}>
+            <p className={style.TextLiP4}>
                 Un bon photographe :
             </p>
 
@@ -249,7 +249,7 @@ function Blog_20260305_Root() {
                 Il devient un repère stable. Vous ne devez pas gérer votre photographe.
             </p>
 
-            <h2 className={style.TitleH2_00N0}>
+            <h2 className={style.TitleH2}>
                 7. Les bonnes questions à poser lors du premier contact
             </h2>
 
@@ -257,7 +257,7 @@ function Blog_20260305_Root() {
                 Oubliez : “Quel appareil utilisez-vous ?”
             </p>
 
-            <p className={style.TextP4}>
+            <p className={style.TextLiP4}>
                 Demandez plutôt :
             </p>
 
@@ -273,11 +273,11 @@ function Blog_20260305_Root() {
                 Les réponses révèlent le niveau d’anticipation.
             </p>
 
-            <h2 className={style.TitleH2_00N0}>
+            <h2 className={style.TitleH2}>
                 8. Le contrat : la base non négociable
             </h2>
 
-            <p className={style.TextP4}>
+            <p className={style.TextLiP4}>
                 Un contrat doit préciser :
             </p>
 
@@ -299,7 +299,7 @@ function Blog_20260305_Root() {
                 Un cadre clair = une sérénité partagée.
             </p>
 
-            <h2 className={style.TitleH2_00N0}>
+            <h2 className={style.TitleH2}>
                 9. Le budget : ce qu’il révèle réellement
             </h2>
 
@@ -308,7 +308,7 @@ function Blog_20260305_Root() {
                 durée et prestations.
             </p>
 
-            <p className={style.TextP4}>
+            <p className={style.TextLiP4}>
                 Un prix très bas peut indiquer :
             </p>
 
@@ -318,7 +318,7 @@ function Blog_20260305_Root() {
                 <li className={style.TextLiP4}>Peu d’expérience</li>
             </ul>
 
-            <p className={style.TextP4}>
+            <p className={style.TextLiP4}>
                 Un prix cohérent inclut :
             </p>
 
@@ -334,11 +334,11 @@ function Blog_20260305_Root() {
                 Vous n’achetez pas uniquement des images. Vous investissez dans votre tranquillité.
             </p>
 
-            <h2 className={style.TitleH2_00N0}>
+            <h2 className={style.TitleH2}>
                 10. La question finale à vous poser
             </h2>
 
-            <p className={style.TextP4}>
+            <p className={style.TextLiP4}>
                 Le jour de votre mariage, voulez-vous :
             </p>
 
@@ -372,7 +372,7 @@ function Blog_20260305_Root() {
                 </li>
             </ul>
 
-            <h2 className={style.TitleH2_00N0}>
+            <h2 className={style.TitleH2}>
                 Conclusion — Choisir un photographe, c’est choisir une présence
             </h2>
 
@@ -397,11 +397,11 @@ function Blog_20260305_Root() {
                 présence stable dans une journée intense.
             </p>
 
-            <h2 className={style.TitleH2_00N0}>
+            <h2 className={style.TitleH2}>
                 CTA — Voici comment je travaille
             </h2>
 
-            <p className={style.TextP4}>
+            <p className={style.TextLiP4}>
                 Si vous souhaitez comprendre concrètement :
             </p>
 
