@@ -69,6 +69,15 @@ function dataCardBlog_img_data() {
             date: "10/02/2026",
             image: "/images/image-blog/cartes/blog_20260210.jpg",
         },
+        {
+            reactKey: 8,
+            path: ListDataRouter[4].children?.[8].path,
+            id: "top",
+            title: "Mariage à Montpellier : 10 critères essentiels",
+            description: "Les vrais critères pour choisir un photographe mariage sans stress ni mauvaises surprises.",
+            date: "05/03/2026",
+            image: "/images/image-blog/cartes/blog_20260305.jpg",
+        },
     ]
     return tab;
 }
