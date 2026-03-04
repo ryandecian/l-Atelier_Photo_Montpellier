@@ -1,6 +1,12 @@
 /* Import des modules CSS */
 import style from "../../../../StyleRootComponent.module.css";
 
+/* Import des composants React */
+import { Link } from "react-router-dom";
+
+/* Import des composants Router */
+import ListDataRouter from "../../../../../router/router";
+
 function Blog_20260305_Root() {
     return (
         <section className={`Blog_20260305_Root ${style.ContainerRootRacine}`}>
@@ -412,7 +418,14 @@ function Blog_20260305_Root() {
                 <li className={style.TextLiP4}>Ce qui est inclus dans mes prestations</li>
             </ul>
 
-            {/* CTA - Formulaire de contact (à ajouter ici) */}
+            <p className={style.TextP4}>
+                <span className={style.SpanLink}>
+                    <Link to={ListDataRouter[3].path}>
+                        {`Cliquez ici pour me contacter et recevoir la brochure `}
+                    </Link>
+                </span>
+                {" "} 📩
+            </p>
         </section>
     );
 }
