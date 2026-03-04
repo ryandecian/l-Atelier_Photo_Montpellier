@@ -421,10 +421,9 @@ function Blog_20260305_Root() {
             <p className={style.TextP4}>
                 <span className={style.SpanLink}>
                     <Link to={ListDataRouter[3].path}>
-                        {`Cliquez ici pour me contacter et recevoir la brochure `}
+                        {`Cliquez ici pour me contacter`}
                     </Link>
                 </span>
-                {" "} 📩
             </p>
         </section>
     );
