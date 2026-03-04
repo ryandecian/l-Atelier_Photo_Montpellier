@@ -5,12 +5,10 @@ Il manquera également le logo au format 200x200px en carré
 Revoir la formulation des horaires dans le composant dataSEORoot
 Revoir les lien facebook et instagram dans dataSEORoot
 ------------------------------------------------------------------------------
-Faire la correction de la page contact
+La page blog 20260305 ne possède pas les bonnes images helmet et google, il faudra
+demander à la cliente d'en fournir
 ------------------------------------------------------------------------------
-La page tarif n'est pas terminé, il existe plusieurs incohérences dans les textes que la cliente
-a fourni. La page a été édité avec les logique frontend et style ok mais la cliente devras revoir sa copie.
-Les composants datas de tarif video ok mais composant tarif photo non utilisé, c'est ce point que la cliente
-doit revoir. 
+
 ------------------------------------------------------------------------------
 Liste des pages qui reste a éditer : 
 - Portfolio
