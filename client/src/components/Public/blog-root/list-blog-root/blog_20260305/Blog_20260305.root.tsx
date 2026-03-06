@@ -1,6 +1,12 @@
 /* Import des modules CSS */
 import style from "../../../../StyleRootComponent.module.css";
 
+/* Import des Components de Data */
+import { imagesBlog_20260305_img_data } from "./imageBlog_20260305.img.data";
+
+/* Import des composants d'Elements */
+import { PremiumCardImgModal_Element } from "../../../../elements/premium-card-img-modal/PremiumCardImgModal.element";
+
 /* Import des composants React */
 import { Link } from "react-router-dom";
 
@@ -15,6 +21,13 @@ function Blog_20260305_Root() {
                     Mariage à Montpellier : 10 critères essentiels
                 </h1>
             </header>
+
+            <div className={style.ContainerFloat}>
+                <PremiumCardImgModal_Element
+                    src={imagesBlog_20260305_img_data[0].src}
+                    alt={imagesBlog_20260305_img_data[0].alt}
+                    className={style.FloatRightImg_Po}
+                />
 
             <p className={style.TextP4}>
                 Choisir son photographe mariage à Montpellier ou dans l’Hérault comme le Gard n’est plus une question de 
@@ -52,6 +65,7 @@ function Blog_20260305_Root() {
                 <li className={style.TextLiP4}>Le relationnel</li>
                 <li className={style.TextLiP4}>La capacité à vous décharger mentalement</li>
             </ul>
+            </div>
 
             <p className={style.TextP4}>
                 Voici les 10 critères qui ne trompent pas.
