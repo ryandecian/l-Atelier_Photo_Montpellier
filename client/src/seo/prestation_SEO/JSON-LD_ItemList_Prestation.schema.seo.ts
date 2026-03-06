@@ -1,7 +1,7 @@
 /* Import des Components */
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
 import { dataSEO_Prestation_data_SEO } from "./dataSEO_Prestation.data.seo";
-import DataCardPrestations from "../../components/Public/prestation/cardPrestation.data";
+import { cardPrestation_Data } from "../../components/Public/prestation/cardPrestation.data";
 
 /* Import des Types */
 import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";
@@ -10,7 +10,7 @@ import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 function JSON_LD_ItemList_Prestation_schema_SEO() {
     const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
     const dataSEO_Prestation: DataSEOTargetOne_Type = dataSEO_Prestation_data_SEO(); /* Récupération des données SEO de la page */
-    const dataCardPrestation = DataCardPrestations(); /* Récupération des données des cartes de prestation */
+    const dataCardPrestation = cardPrestation_Data(); /* Récupération des données des cartes de prestation */
 
     const JSON_LD = JSON.stringify({
         "@context": dataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */

@@ -2,7 +2,7 @@
 import ListDataRouter from "../../../router/router";
 
 /* Import des Types */
-import type { CardPrestation_Type } from "../../../types/cardPrestation.type";
+import { CardPrestation_Type } from "../../../types/cardPrestation.type";
 
 function cardPrestation_Data() {
     const tab: CardPrestation_Type[] = [
