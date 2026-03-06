@@ -2,7 +2,7 @@
 import style from "../../stylePage.module.css";
 
 /* Import des Components */
-import QuiSuisJeRoot from "../../../components/Public/QuiSuisJeRoot/QuiSuisJeRoot";
+import QuiSuisJe_Root from "../../../components/Public/qui-suis-je/QuiSuisJe.root";
 import NavRoot from "../../../components/layout/nav_Layout/Nav.root.layout";
 import Footer_layout from "../../../components/layout/footer/Footer.layout";
 
@@ -22,7 +22,7 @@ function QuiSuisJe_Page() {
                  <NavRoot />
             </header>
             <main className={style.Main}>
-                <QuiSuisJeRoot />
+                <QuiSuisJe_Root />
             </main>
             <footer className={style.Footer}>
                 <Footer_layout />
