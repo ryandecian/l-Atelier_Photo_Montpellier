@@ -1,6 +1,6 @@
 /* Import des modules CSS */
 import style from "../../StyleRootComponent.module.css";
-import css from "./PrestationRoot.module.css";
+import css from "./prestation.module.css";
 
 /* Import des Components de Data */
 import { cardPrestation_Data } from "./cardPrestation.data";
