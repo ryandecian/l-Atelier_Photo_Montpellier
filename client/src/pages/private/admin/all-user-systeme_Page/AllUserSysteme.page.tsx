@@ -1,16 +1,19 @@
+/* Import des modules CSS */
 import style from "../../../stylePage.module.css";
+
+/* Import des Components */
 import NavRoot from "../../../../components/layout/nav_Layout/Nav.root.layout";
-import AllUserSystemeRoot from "../../../../components/Private/Admin/AllUserSystemeRoot/AllUserSystemeRoot";
+import AllUserSysteme_Root from "../../../../components/Private/Admin/all-user-systeme/AllUserSysteme.root";
 import Footer from "../../../../components/layout/footer/Footer.layout";
 
-function AllUserSystemePage() {
+function AllUserSysteme_Page() {
     return (
-        <div className={`UserSystemePage ${style.Page}`}>
+        <div className={`UserSysteme_Page ${style.Page}`}>
             <header className={style.Header}>
                 <NavRoot />
             </header>
             <main className={style.Main}>
-                <AllUserSystemeRoot />
+                <AllUserSysteme_Root />
             </main>
             <footer className={style.Footer}>
                 <Footer />
@@ -19,4 +22,4 @@ function AllUserSystemePage() {
     );
 }
 
-export default AllUserSystemePage;
+export default AllUserSysteme_Page;
