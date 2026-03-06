@@ -8,7 +8,7 @@ import DataUserPage from "../pages/private/all/DataUser/DataUserPage";
 import EditAlbumAdmin_Page from "../pages/private/admin/edit-album-admin_Page/EditAlbumAdmin.page";
 import EditUserAdmin_Page from "../pages/private/admin/edit-user-admin_Page/EditUserAdmin.page";
 import EditUserPage from "../pages/private/all/EditUserPage/EditUserPage";
-import InsertAlbumAdminPage from "../pages/private/admin/InsertAlbumAdminPage/InsertAlbumAdminPage";
+import InsertAlbumAdmin_Page from "../pages/private/admin/insert-album-admin_Page/InsertAlbumAdmin.page";
 import UserGestionAlbumPage from "../pages/private/users/UserGestionAlbumPage/UserGestionAlbumPage";
 
 /* Page Frontend public */
@@ -227,7 +227,7 @@ const router: Router_Type[] = [
     /* {router[35].path} */
     {
         path: "/admin/album/create-album",
-        element: <InsertAlbumAdminPage />,
+        element: <InsertAlbumAdmin_Page />,
     },
     /* {router[36].path} */
     {
