@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 import { useLockedPage_Hook } from "../../../../hook/useLockedPage.security.hook";
 
 /* Import des Types */
-import type { InsertAlbum_Type } from "../../../../types/InsertAlbum.type";
+import type { InsertAlbum_Type } from "../../../../types/insertAlbum.type";
 
 /* Import des Utils */
 import { fetchAPI_Utils } from "../../../../utils/fetchAPI.utils";
