@@ -1,6 +1,6 @@
 import style from "../../../stylePage.module.css";
 import NavRoot from "../../../../components/layout/nav_Layout/Nav.root.layout";
-import InsertAlbumAdminRoot from "../../../../components/Private/admina/insert-album-admin/InsertAlbumAdmin.root";
+import InsertAlbumAdminRoot from "../../../../components/Private/admin/insert-album-admin/InsertAlbumAdmin.root";
 import Footer from "../../../../components/layout/footer/Footer.layout";
 
 function InsertAlbumAdminPage() {
