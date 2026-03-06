@@ -7,7 +7,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import DataCardPrestation from "./DataCardPrestationRoot";
-import CardPrestationType from "../../../types/CardPrestation.type";
+import CardPrestationType from "../../../types/ccardPrestation.type";
 
 function Prestation_Root() {
     const prestations: CardPrestationType[] = DataCardPrestation();
