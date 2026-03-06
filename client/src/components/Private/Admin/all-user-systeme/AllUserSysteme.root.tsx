@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 import { useLockedPage_Hook } from "../../../../hook/useLockedPage.security.hook";
 
 /* Import des Types */
-import DataUserType from "../../../../types/dataUser.type";
+import type { DataUser_Type } from "../../../../types/dataUser.type";
 
 /* Import des Utils */
 import { fetchAPI_Utils } from "../../../../utils/fetchAPI.utils";
@@ -21,7 +21,7 @@ function AllUserSysteme_Root() {
     const navigate = useNavigate();
 
     /** Liste des utilisateurs récupérés depuis l’API */
-    const [users, setUsers] = useState<DataUserType[]>([]);
+    const [users, setUsers] = useState<DataUser_Type[]>([]);
     /** Gestion du chargement */
     const [loading, setLoading] = useState(true);
     /** Gestion des erreurs éventuelles */
@@ -43,7 +43,7 @@ function AllUserSysteme_Root() {
 
             /** L’API renvoie les données dans `data.data` */
             if (Array.isArray(data?.data)) {
-                setUsers(data.data as DataUserType[]);
+                setUsers(data.data as DataUser_Type[]);
             }
 
             setLoading(false);
