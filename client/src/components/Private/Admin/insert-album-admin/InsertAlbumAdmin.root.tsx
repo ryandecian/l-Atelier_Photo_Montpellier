@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 import { useLockedPage_Hook } from "../../../../hook/useLockedPage.security.hook";
 
 /* Import des Types */
-import InsertAlbum_type from "../../../../types/InsertAlbum.type";
+import type { InsertAlbum_Type } from "../../../../types/InsertAlbum.type";
 
 /* Import des Utils */
 import { fetchAPI_Utils } from "../../../../utils/fetchAPI.utils";
@@ -22,7 +22,7 @@ type FetchApiRes = {
 };
 
 /* Aliasing pour rester cohérent avec ton usage */
-type EditForm = InsertAlbum_type;
+type EditForm = InsertAlbum_Type;
 
 function InsertAlbumAdmin_Root() {
     /* Sécurisation : accès réservé aux administrateurs */
