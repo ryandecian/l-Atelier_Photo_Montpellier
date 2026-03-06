@@ -2,7 +2,7 @@
 /* Page Frontend vérrouillée */
 import AdminGestionAlbum_Page from "../pages/private/admin/admin-gestion-album_Page/AdminGestionAlbum.page";
 import Admin_Page from "../pages/private/admin/admin_Page/Admin.page";
-import AllUserSystemePage from "../pages/private/admin/AllUserSystemePage/AllUserSystemePage";
+import AllUserSysteme_Page from "../pages/private/admin/all-user-systeme_Page/AllUserSysteme.page";
 import ComptePage from "../pages/private/users/ComptePage/ComptePage";
 import DataUserPage from "../pages/private/all/DataUser/DataUserPage";
 import EditAlbumAdminPage from "../pages/private/admin/EditAlbumAdminPage/EditAlbumAdminPage";
@@ -167,7 +167,7 @@ const router: Router_Type[] = [
     /* {router[23].path} */
     {
         path: "/admin/all-user-systeme",
-        element: <AllUserSystemePage />,
+        element: <AllUserSysteme_Page />,
     },
     /* {router[24].path} */
     {
