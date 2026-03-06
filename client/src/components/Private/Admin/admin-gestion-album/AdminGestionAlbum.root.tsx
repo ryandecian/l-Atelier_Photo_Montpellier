@@ -10,17 +10,17 @@ import { useNavigate, Link } from "react-router-dom";
 import router from "../../../../router/router";
 
 /* Import des Hooks */
-import useLockedPage from "../../../../hook/useLockedPage.security.hook";
+import { useLockedPage_Hook } from "../../../../hook/useLockedPage.security.hook";
 
 /* Import des Types */
 import type { AlbumAdmin_data_Type } from "../../../../types/albumAdmin.data.type";
 
 /* Import des Utils */
-import fetchAPI from "../../../../utils/fetchAPI.utils";
+import { fetchAPI_Utils } from "../../../../utils/fetchAPI.utils";
 
 function AdminGestionAlbum_Root() {
     /** Vérrouillage de la page accessible uniquement aux utilisateurs */
-    useLockedPage("admin");
+    useLockedPage_Hook("admin");
 
     const navigate = useNavigate();
 
@@ -37,7 +37,7 @@ function AdminGestionAlbum_Root() {
     /** Récupération de tous les utilisateurs à l’affichage de la page */
     useEffect(() => {
         async function fetchUsers() {
-            const { error, data } = await fetchAPI("GET", "/album");
+            const { error, data } = await fetchAPI_Utils("GET", "/album");
 
             if (error) {
                 setError(error);
