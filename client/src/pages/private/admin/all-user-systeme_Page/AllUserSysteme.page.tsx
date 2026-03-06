@@ -3,7 +3,7 @@ import style from "../../../stylePage.module.css";
 
 /* Import des Components */
 import NavRoot from "../../../../components/layout/nav_Layout/Nav.root.layout";
-import AllUserSysteme_Root from "../../../../components/Private/Admin/all-user-systeme/AllUserSysteme.root";
+import AllUserSysteme_Root from "../../../../components/Private/admina/all-user-systeme/AllUserSysteme.root";
 import Footer from "../../../../components/layout/footer/Footer.layout";
 
 function AllUserSysteme_Page() {

@@ -3,7 +3,7 @@ import style from "../../../stylePage.module.css";
 
 /* Import des Components */
 import NavRoot from "../../../../components/layout/nav_Layout/Nav.root.layout";
-import AdminGestionAlbum_Root from "../../../../components/Private/Admin/admin-gestion-album/AdminGestionAlbum.root";
+import AdminGestionAlbum_Root from "../../../../components/Private/admina/admin-gestion-album/AdminGestionAlbum.root";
 import Footer from "../../../../components/layout/footer/Footer.layout";
 
 function AdminGestionAlbum_Page() {
