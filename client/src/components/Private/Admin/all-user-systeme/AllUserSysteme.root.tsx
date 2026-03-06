@@ -2,15 +2,20 @@
 import style from "../../../StyleRootComponent.module.css";
 import css from "./allUserSysteme.module.css";
 
+/* Import des composants React */
 import { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import useLockedPage from "../../../../hook/useLockedPage.security.hook";
+
+/* Import des Hooks */
+import { useLockedPage_Hook } from "../../../../hook/useLockedPage.security.hook";
+
+
 import DataUserType from "../../../../types/dataUser.type";
 import fetchAPI from "../../../../utils/fetchAPI.utils";
 
 function AllUserSystemeRoot() {
     /** Vérrouillage de la page accessible uniquement aux administrateurs */
-    useLockedPage("admin");
+    useLockedPage_Hook("admin");
     const navigate = useNavigate();
 
     /** Liste des utilisateurs récupérés depuis l’API */
