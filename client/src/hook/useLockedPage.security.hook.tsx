@@ -1,7 +1,12 @@
-import useAuthCheck from "./useAuthCheck.utils.hook";
+/* Import des composants React */
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import ListDataRouter from "../router/router";
+
+/* Import des composants Router */
+import router from "../router/router";
+
+/* Import des Hooks */
+import useAuthCheck from "./useAuthCheck.utils.hook";
 
 /**
  * Documentation : 
@@ -20,14 +25,14 @@ import ListDataRouter from "../router/router";
 type UserType = "admin" | "user" | "all";
 
 /* Cette fonction prend en parametre une string qui indique quel utilisateur est autorisé sur la page */
-function useLockedPage(userTarget: UserType) {
+function useLockedPage_Hook(userTarget: UserType) {
     const { isLoggedIn, userInfo, isChecking } = useAuthCheck();
     const navigate = useNavigate();
 
     /* Détermination des routes de redirection */
-    const loginRoute: string = ListDataRouter[22].path;
-    const adminRedirect: string = ListDataRouter[6].path;  /* Redirection si rôle admin requis mais non autorisé */
-    const userRedirect: string = ListDataRouter[21].path;  /* Redirection si rôle user requis mais non autorisé */
+    const loginRoute: string = router[22].path;
+    const adminRedirect: string = router[6].path;  /* Redirection si rôle admin requis mais non autorisé */
+    const userRedirect: string = router[21].path;  /* Redirection si rôle user requis mais non autorisé */
 
     /* Vérification du Role et de la connexion */
     useEffect(() => {
@@ -62,17 +67,17 @@ function useLockedPage(userTarget: UserType) {
     return userInfo;
 }
 
-export default useLockedPage;
+export { useLockedPage_Hook };
 
 /**
   Exemple d’utilisation :
 
   - Page admin seulement :
-    const userInfo = useLockedPage("admin");
+    const userInfo = useLockedPage_Hook("admin");
 
   - Page user seulement :
-    const userInfo = useLockedPage("user");
+    const userInfo = useLockedPage_Hook("user");
 
   - Page accessible à tout utilisateur connecté (admin ou user) :
-    const userInfo = useLockedPage("all");
+    const userInfo = useLockedPage_Hook("all");
  */
