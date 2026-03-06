@@ -9,11 +9,13 @@ import { useNavigate } from "react-router-dom";
 /* Import des Hooks */
 import { useLockedPage_Hook } from "../../../../hook/useLockedPage.security.hook";
 
-
+/* Import des Types */
 import DataUserType from "../../../../types/dataUser.type";
-import fetchAPI from "../../../../utils/fetchAPI.utils";
 
-function AllUserSystemeRoot() {
+/* Import des Utils */
+import { fetchAPI_Utils } from "../../../../utils/fetchAPI.utils";
+
+function AllUserSysteme_Root() {
     /** Vérrouillage de la page accessible uniquement aux administrateurs */
     useLockedPage_Hook("admin");
     const navigate = useNavigate();
@@ -31,7 +33,7 @@ function AllUserSystemeRoot() {
     /** Récupération de tous les utilisateurs à l’affichage de la page */
     useEffect(() => {
         async function fetchUsers() {
-            const { error, data } = await fetchAPI("GET", "/user");
+            const { error, data } = await fetchAPI_Utils("GET", "/user");
 
             if (error) {
                 setError(error);
@@ -161,4 +163,4 @@ function AllUserSystemeRoot() {
     );
 }
 
-export default AllUserSystemeRoot;
+export default AllUserSysteme_Root;
