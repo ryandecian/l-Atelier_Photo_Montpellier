@@ -1,6 +1,6 @@
 /* Import des modules CSS */
 import style from "../../../StyleRootComponent.module.css";
-import css from "./AdminGestionAlbumRoot.module.css";
+import css from "./adminGestionAlbum.module.css";
 
 /* Import des composants React */
 import { useEffect, useMemo, useState } from "react";
