@@ -1,16 +1,19 @@
+/* Import des modules CSS */
 import style from "../../../stylePage.module.css";
+
+/* Import des Components */
 import NavRoot from "../../../../components/layout/nav_Layout/Nav.root.layout";
-import EditUserAdminRoot from "../../../../components/Private/Admin/EditUserAdminRoot/EditUserAdminRoot";
+import EditUserAdmin_Root from "../../../../components/Private/Admin/edit-user-admin/EditUserAdmin.root";
 import Footer from "../../../../components/layout/footer/Footer.layout";
 
-function EditUserAdminPage() {
+function EditUserAdmin_Page() {
     return (
-        <div className={`DataUserPage ${style.Page}`}>
+        <div className={`EditUserAdmin_Page ${style.Page}`}>
             <header className={style.Header}>
                 <NavRoot />
             </header>
             <main className={style.Main}>
-                <EditUserAdminRoot />
+                <EditUserAdmin_Root />
             </main>
             <footer className={style.Footer}>
                 <Footer />
@@ -19,4 +22,4 @@ function EditUserAdminPage() {
     );
 }
 
-export default EditUserAdminPage;
+export default EditUserAdmin_Page;
