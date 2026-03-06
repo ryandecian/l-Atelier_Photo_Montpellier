@@ -1,8 +1,11 @@
+/* Import des composants Router */
 import ListDataRouter from "../../../router/router";
-import CardPrestationType from "../../../types/cardPrestation.type";
 
-function DataCardPrestation() {
-    const tab: CardPrestationType[] = [
+/* Import des Types */
+import type { CardPrestation_Type } from "../../../types/cardPrestation.type";
+
+function cardPrestation_Data() {
+    const tab: CardPrestation_Type[] = [
         {
             reactKey: 1,
             path: ListDataRouter[13].path,
@@ -512,4 +515,4 @@ function DataCardPrestation() {
 }
 
 
-export default DataCardPrestation;
+export { cardPrestation_Data };

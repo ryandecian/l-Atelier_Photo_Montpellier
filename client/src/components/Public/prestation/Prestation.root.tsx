@@ -3,7 +3,7 @@ import style from "../../StyleRootComponent.module.css";
 import css from "./PrestationRoot.module.css";
 
 /* Import des Components de Data */
-import DataCardPrestation from "./DataCardPrestationRoot";
+import DataCardPrestation from "./cardPrestation.data";
 
 /* Import des composants React */
 import { useState } from "react";
