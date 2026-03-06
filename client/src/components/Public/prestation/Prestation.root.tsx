@@ -1,7 +1,11 @@
+/* Import des modules CSS */
 import style from "../../StyleRootComponent.module.css";
 import css from "./PrestationRoot.module.css";
+
+/* Import des composants React */
 import { useState } from "react";
 import { Link } from "react-router-dom";
+
 import DataCardPrestation from "./DataCardPrestationRoot";
 import CardPrestationType from "../../../types/CardPrestation.type";
 

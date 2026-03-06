@@ -1,4 +1,4 @@
-type CardPrestationType = {
+type CardPrestation_Type = {
   reactKey: number;
   path: string;
   id: string;
@@ -7,4 +7,4 @@ type CardPrestationType = {
   image: string;
 };
 
-export default CardPrestationType;
+export type { CardPrestation_Type };
