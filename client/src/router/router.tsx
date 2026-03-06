@@ -1,6 +1,6 @@
 /* Liste des pages en import */
 /* Page Frontend vérrouillée */
-import AdminGestionAlbumPage from "../pages/private/admin/AdminGestionAlbumPage/AdminGestionAlbumPage";
+import AdminGestionAlbum_Page from "../pages/private/admin/admin-gestion-album_Page/AdminGestionAlbum.page";
 import AdminPage from "../pages/private/admin/AdminPage/AdminPage";
 import AllUserSystemePage from "../pages/private/admin/AllUserSystemePage/AllUserSystemePage";
 import ComptePage from "../pages/private/users/ComptePage/ComptePage";
@@ -217,7 +217,7 @@ const router: Router_Type[] = [
     /* {router[33].path} */
     {
         path: "/admin/album",
-        element: <AdminGestionAlbumPage />,
+        element: <AdminGestionAlbum_Page />,
     },
     /* {router[34].path} */
     {
