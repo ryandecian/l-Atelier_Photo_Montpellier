@@ -10,10 +10,10 @@ import router from "../../../../router/router";
 
 /* Import des Hooks */
 import useLogout from "../../../../hook/useLogout.hook";
-import useLockedPage from "../../../../hook/useLockedPage.security.hook";
+import { useLockedPage_Hook } from "../../../../hook/useLockedPage.security.hook";
 
 function Admin_Root() {
-    const userInfo = useLockedPage("admin");
+    const userInfo = useLockedPage_Hook("admin");
     const logout = useLogout();
 
     if (!userInfo) {
