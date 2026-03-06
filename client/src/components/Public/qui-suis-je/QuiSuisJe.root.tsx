@@ -10,7 +10,7 @@ import ListDataRouter from "../../../router/router";
 /* Import des Utils */
 import { pauseOtherVideos_Utils } from "../../../utils/pauseOtherVideos.utils";
 
-function QuiSuisJeRoot() {
+function QuiSuisJe_Root() {
     return (
         <section className={style.ContainerRootRacine}>
             <header className={style.ContainerTitle}>
@@ -148,4 +148,4 @@ function QuiSuisJeRoot() {
     );
 }
 
-export default QuiSuisJeRoot;
+export default QuiSuisJe_Root;
