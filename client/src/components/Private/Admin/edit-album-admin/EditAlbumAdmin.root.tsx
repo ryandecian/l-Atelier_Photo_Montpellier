@@ -1,10 +1,19 @@
+/* Import des modules CSS */
+import style from "../../../StyleRootComponent.module.css";
+import css from "./editAlbumAdmin.module.css";
+
+/* Import des composants React */
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import style from "../../../StyleRootComponent.module.css";
-import css from "./EditAlbumAdminRoot.module.css";
-import useLockedPage from "../../../../hook/useLockedPage.security.hook";
+
+/* Import des Hooks */
+import { useLockedPage_Hook } from "../../../../hook/useLockedPage.security.hook";
+
+/* Import des Types */
 import DataOneAlbumAdminType from "../../../../types/DataOneAlbumAdmin.type";
-import fetchAPI from "../../../../utils/fetchAPI.utils";
+
+/* Import des Utils */
+import { fetchAPI_Utils } from "../../../../utils/fetchAPI.utils";
 
 /** Structure du formulaire de modification */
 type EditForm = {
@@ -18,9 +27,9 @@ type EditForm = {
     date: string;
 };
 
-function EditAlbumAdminRoot() {
+function EditAlbumAdmin_Root() {
     /** Sécurise l'accès à la page aux administrateurs uniquement */
-    useLockedPage("admin");
+    useLockedPage_Hook("admin");
 
     const navigate = useNavigate();
     const { id } = useParams<{ id: string }>();
@@ -54,7 +63,7 @@ function EditAlbumAdminRoot() {
                 return;
             }
 
-            const { error, data } = await fetchAPI("GET", `/album/${id}`);
+            const { error, data } = await fetchAPI_Utils("GET", `/album/${id}`);
             if (error) {
                 setErrorMsg(error);
                 setLoading(false);
@@ -129,7 +138,7 @@ function EditAlbumAdminRoot() {
             date: form.date.trim(), /* Le backend gère et convertit la date si besoin */
         };
 
-        const { error } = await fetchAPI("PUT", "/album", body);
+        const { error } = await fetchAPI_Utils("PUT", "/album", body);
 
         if (error) {
             setErrorMsg(error);
@@ -152,7 +161,7 @@ function EditAlbumAdminRoot() {
         setSaving(true);
         setErrorMsg(null);
 
-        const { error } = await fetchAPI("DELETE", "/album", { id_album: parseInt(id, 10) });
+        const { error } = await fetchAPI_Utils("DELETE", "/album", { id_album: parseInt(id, 10) });
 
         if (error) {
             setErrorMsg(error);
@@ -331,4 +340,4 @@ function EditAlbumAdminRoot() {
     );
 }
 
-export default EditAlbumAdminRoot;
+export default EditAlbumAdmin_Root;
