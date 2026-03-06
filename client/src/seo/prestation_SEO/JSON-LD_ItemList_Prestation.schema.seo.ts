@@ -1,7 +1,7 @@
 /* Import des Components */
 import { dataSEO_Root_data_SEO } from "../dataSEO_Root.data.seo";
 import { dataSEO_Prestation_data_SEO } from "./dataSEO_Prestation.data.seo";
-import DataCardPrestations from "../../components/Public/PrestationRoot/DataCardPrestationRoot";
+import DataCardPrestations from "../../components/Public/prestation/DataCardPrestationRoot";
 
 /* Import des Types */
 import { DataSEORoot_Type } from "../../types/seo/dataSEORoot.type";

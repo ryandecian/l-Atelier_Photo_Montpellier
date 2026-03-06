@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import DataCardPrestation from "./DataCardPrestationRoot";
 import CardPrestationType from "../../../types/CardPrestation.type";
 
-function PrestationRoot() {
+function Prestation_Root() {
     const prestations: CardPrestationType[] = DataCardPrestation();
 
     const [search, setSearch] = useState("");
@@ -53,4 +53,4 @@ function PrestationRoot() {
     );
 }
 
-export default PrestationRoot;
+export default Prestation_Root;
