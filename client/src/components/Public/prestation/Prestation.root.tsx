@@ -1,12 +1,19 @@
+/* Import des modules CSS */
 import style from "../../StyleRootComponent.module.css";
-import css from "./PrestationRoot.module.css";
+import css from "./prestation.module.css";
+
+/* Import des Components de Data */
+import { cardPrestation_Data } from "./cardPrestation.data";
+
+/* Import des composants React */
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import DataCardPrestation from "./DataCardPrestationRoot";
-import CardPrestationType from "../../../types/CardPrestation.type";
 
-function PrestationRoot() {
-    const prestations: CardPrestationType[] = DataCardPrestation();
+/* Import des Types */
+import { CardPrestation_Type } from "../../../types/cardPrestation.type";
+
+function Prestation_Root() {
+    const prestations: CardPrestation_Type[] = cardPrestation_Data();
 
     const [search, setSearch] = useState("");
 
@@ -53,4 +60,4 @@ function PrestationRoot() {
     );
 }
 
-export default PrestationRoot;
+export default Prestation_Root;
