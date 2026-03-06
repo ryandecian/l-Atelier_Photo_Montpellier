@@ -1,10 +1,19 @@
+/* Import des modules CSS */
+import style from "../../../StyleRootComponent.module.css";
+import css from "./insertAlbumAdmin.module.css";
+
+/* Import des composants React */
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import style from "../../../StyleRootComponent.module.css";
-import css from "./InsertAlbumAdminRoot.module.css";
-import useLockedPage from "../../../../hook/useLockedPage.security.hook";
+
+/* Import des Hooks */
+import { useLockedPage_Hook } from "../../../../hook/useLockedPage.security.hook";
+
+/* Import des Types */
 import InsertAlbum_type from "../../../../types/InsertAlbum.type";
-import fetchAPI from "../../../../utils/fetchAPI.utils";
+
+/* Import des Utils */
+import { fetchAPI_Utils } from "../../../../utils/fetchAPI.utils";
 
 /* Typage minimal local de la réponse utile pour l’affichage des erreurs */
 type FetchApiRes = {
@@ -15,9 +24,9 @@ type FetchApiRes = {
 /* Aliasing pour rester cohérent avec ton usage */
 type EditForm = InsertAlbum_type;
 
-function InsertAlbumAdminRoot() {
+function InsertAlbumAdmin_Root() {
     /* Sécurisation : accès réservé aux administrateurs */
-    useLockedPage("admin");
+    useLockedPage_Hook("admin");
 
     const navigate = useNavigate();
 
@@ -75,7 +84,7 @@ function InsertAlbumAdminRoot() {
             user_id: form.user_id,         /* number */
         };
 
-        const res = (await fetchAPI("POST", "/album", body)) as FetchApiRes;
+        const res = (await fetchAPI_Utils("POST", "/album", body)) as FetchApiRes;
 
         /* 1) Erreur métier renvoyée par le serveur (affichage prioritaire) */
         const serverError = res?.data?.error;
@@ -188,4 +197,4 @@ function InsertAlbumAdminRoot() {
     );
 }
 
-export default InsertAlbumAdminRoot;
+export default InsertAlbumAdmin_Root;
