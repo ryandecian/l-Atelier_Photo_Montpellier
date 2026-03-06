@@ -1,16 +1,19 @@
+/* Import des modules CSS */
 import style from "../../../stylePage.module.css";
+
+/* Import des Components */
 import NavRoot from "../../../../components/layout/nav_Layout/Nav.root.layout";
-import AdminRoot from "../../../../components/Private/Admin/AdminRoot/AdminRoot";
+import Admin_Root from "../../../../components/Private/Admin/admin/Admin.root";
 import Footer from "../../../../components/layout/footer/Footer.layout";
 
-function AdminPage() {
+function Admin_Page() {
     return (
-        <section className={`AdminPage ${style.Page}`}>
+        <section className={`Admin_Page ${style.Page}`}>
             <header className={style.Header}>
                 <NavRoot />
             </header>
             <main className={style.Main}>
-                <AdminRoot />
+                <Admin_Root />
             </main>
             <footer className={style.Footer}>
                 <Footer />
@@ -19,4 +22,4 @@ function AdminPage() {
     );
 }
 
-export default AdminPage;
+export default Admin_Page;
