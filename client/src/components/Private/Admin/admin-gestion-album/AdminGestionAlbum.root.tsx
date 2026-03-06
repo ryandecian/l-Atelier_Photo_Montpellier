@@ -1,20 +1,31 @@
-import css from "./AdminGestionAlbumRoot.module.css";
+/* Import des modules CSS */
 import style from "../../../StyleRootComponent.module.css";
+import css from "./AdminGestionAlbumRoot.module.css";
+
+/* Import des composants React */
 import { useEffect, useMemo, useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import ListDataRouter from "../../../../router/router";
+
+/* Import des composants Router */
+import router from "../../../../router/router";
+
+/* Import des Hooks */
 import useLockedPage from "../../../../hook/useLockedPage.security.hook";
-import DataAlbumAdminType from "../../../../types/DataAlbumAdmin.type";
+
+/* Import des Types */
+import type { AlbumAdmin_data_Type } from "../../../../types/albumAdmin.data.type";
+
+/* Import des Utils */
 import fetchAPI from "../../../../utils/fetchAPI.utils";
 
-function AdminGestionAlbumRoot() {
+function AdminGestionAlbum_Root() {
     /** Vérrouillage de la page accessible uniquement aux utilisateurs */
     useLockedPage("admin");
 
     const navigate = useNavigate();
 
     /** Liste des albums récupérés depuis l’API */
-    const [albums, setAlbums] = useState<DataAlbumAdminType[]>([]);
+    const [albums, setAlbums] = useState<AlbumAdmin_data_Type[]>([]);
     /** Gestion du chargement */
     const [loading, setLoading] = useState(true);
     /** Gestion des erreurs éventuelles */
@@ -36,7 +47,7 @@ function AdminGestionAlbumRoot() {
 
             /** L’API renvoie les données dans `data.data` */
             if (Array.isArray(data?.data)) {
-                setAlbums(data.data as DataAlbumAdminType[]);
+                setAlbums(data.data as AlbumAdmin_data_Type[]);
             }
 
             setLoading(false);
@@ -115,7 +126,7 @@ function AdminGestionAlbumRoot() {
 
             {/* Bonton création d'un utilisateur */}
             <div className={css.ContainerInsertAlbum}>
-                <Link to={ListDataRouter[35].path} className={css.ButtonInsertAlbum}>
+                <Link to={router[35].path} className={css.ButtonInsertAlbum}>
                     Créer un album ?
                 </Link>
             </div>
@@ -163,4 +174,4 @@ function AdminGestionAlbumRoot() {
     );
 }
 
-export default AdminGestionAlbumRoot;
+export default AdminGestionAlbum_Root;
