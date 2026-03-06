@@ -3,7 +3,7 @@ import style from "../../StyleRootComponent.module.css";
 import css from "./PrestationRoot.module.css";
 
 /* Import des Components de Data */
-import DataCardPrestation from "./cardPrestation.data";
+import { cardPrestation_Data } from "./cardPrestation.data";
 
 /* Import des composants React */
 import { useState } from "react";
@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 import { CardPrestation_Type } from "../../../types/cardPrestation.type";
 
 function Prestation_Root() {
-    const prestations: CardPrestation_Type[] = DataCardPrestation();
+    const prestations: CardPrestation_Type[] = cardPrestation_Data();
 
     const [search, setSearch] = useState("");
 
