@@ -1,12 +1,19 @@
-import css from "./AdminRoot.module.css";
+/* Import des modules CSS */
 import style from "../../../StyleRootComponent.module.css";
-import { ServiceCardAdminLink_Element, ServiceCardAdminButton_Element } from "../../../elements/service-card-private-component/ServiceCardAdmin.element";
-import useLogout from "../../../../hook/useLogout.hook";
-import ListDataRouter from "../../../../router/router";
-import useLockedPage from "../../../../hook/useLockedPage.security.hook";
+import css from "./admin.module.css";
 
-function AdminRoot() {
-    const userInfo = useLockedPage("admin");
+/* Import des composants d'Elements */
+import { ServiceCardAdminLink_Element, ServiceCardAdminButton_Element } from "../../../elements/service-card-private-component/ServiceCardAdmin.element";
+
+/* Import des composants Router */
+import router from "../../../../router/router";
+
+/* Import des Hooks */
+import useLogout from "../../../../hook/useLogout.hook";
+import { useLockedPage_Hook } from "../../../../hook/useLockedPage.security.hook";
+
+function Admin_Root() {
+    const userInfo = useLockedPage_Hook("admin");
     const logout = useLogout();
 
     if (!userInfo) {
@@ -27,17 +34,17 @@ function AdminRoot() {
                 <ServiceCardAdminLink_Element
                     nameService="Mes informations"
                     etat={true}
-                    link={ListDataRouter[26].path}
+                    link={router[26].path}
                 />
                 <ServiceCardAdminLink_Element
                     nameService="Gestion des utilisateurs"
                     etat={true}
-                    link={ListDataRouter[23].path}
+                    link={router[23].path}
                 />
                     <ServiceCardAdminLink_Element
                         nameService="Gestion des albums"
                         etat={true}
-                        link={ListDataRouter[33].path}
+                        link={router[33].path}
                     />
                 <ServiceCardAdminLink_Element
                     nameService="Gestion des factures"
@@ -59,4 +66,4 @@ function AdminRoot() {
     );
 }
 
-export default AdminRoot;
+export default Admin_Root;

@@ -1,6 +1,6 @@
 import style from "../../../stylePage.module.css";
 import NavRoot from "../../../../components/layout/nav_Layout/Nav.root.layout";
-import UserGestionAlbumRoot from "../../../../components/Private/Users/UserGestionAlbumRoot/UserGestionAlbumRoot";
+import UserGestionAlbumRoot from "../../../../components/private/Users/UserGestionAlbumRoot/UserGestionAlbumRoot";
 import Footer from "../../../../components/layout/footer/Footer.layout";
 
 function UserGestionAlbumPage() {

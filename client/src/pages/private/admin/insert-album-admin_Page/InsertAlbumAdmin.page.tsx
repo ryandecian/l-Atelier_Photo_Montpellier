@@ -1,16 +1,19 @@
+/* Import des modules CSS */
 import style from "../../../stylePage.module.css";
+
+/* Import des Components */
 import NavRoot from "../../../../components/layout/nav_Layout/Nav.root.layout";
-import InsertAlbumAdminRoot from "../../../../components/Private/Admin/InsertAlbumAdminRoot/InsertAlbumAdminRoot";
+import InsertAlbumAdmin_Root from "../../../../components/private/admin/insert-album-admin/InsertAlbumAdmin.root";
 import Footer from "../../../../components/layout/footer/Footer.layout";
 
-function InsertAlbumAdminPage() {
+function InsertAlbumAdmin_Page() {
     return (
-        <div className={`InsertAlbumAdminPage ${style.Page}`}>
+        <div className={`InsertAlbumAdmin_Page ${style.Page}`}>
             <header className={style.Header}>
                 <NavRoot />
             </header>
             <main className={style.Main}>
-                <InsertAlbumAdminRoot />
+                <InsertAlbumAdmin_Root />
             </main>
             <footer className={style.Footer}>
                 <Footer />
@@ -19,4 +22,4 @@ function InsertAlbumAdminPage() {
     );
 }
 
-export default InsertAlbumAdminPage;
+export default InsertAlbumAdmin_Page;

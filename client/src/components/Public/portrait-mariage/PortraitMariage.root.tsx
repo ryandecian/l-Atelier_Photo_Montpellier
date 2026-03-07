@@ -1,18 +1,23 @@
+/* Import des modules CSS */
 import style from "../../StyleRootComponent.module.css";
 
-import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
+/* Import des Components de Data */
 import { imagesPortraitMariage_Data } from "./imagesPortraitMariage.data";
-
-import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 import { avisClientPortraitMariage_Data } from "./avisClientPortraitMariage.data";
-
-import { TarifCard_Element} from "../../elements/tarifs-card/TarifsCard.element";
 import { tarifsPortraitMariage_Data, mailtoLinkPortraitMariage_Data } from "./tarifsPortraitMariage.data";
 
-import { Link } from "react-router-dom";
-import ListDataRouter from "../../../router/router";
+/* Import des composants d'Elements */
+import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
+import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
+import { TarifCard_Element} from "../../elements/tarifs-card/TarifsCard.element";
 
-function PortraitMariageRoot() {
+/* Import des composants React */
+import { Link } from "react-router-dom";
+
+/* Import des composants Router */
+import router from "../../../router/router";
+
+function PortraitMariage_Root() {
     return (
         <section className={`PortraitMariageRoot ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
@@ -301,7 +306,7 @@ function PortraitMariageRoot() {
             <p className={style.TextP4}>
                 Si vous êtes prêts à faire de votre mariage un événement inoubliable, {" "}
                 <span className={style.SpanLink}>
-                    <Link to={ListDataRouter[3].path}>
+                    <Link to={router[3].path}>
                         {" contactez-moi "}
                     </Link>
                 </span>
@@ -311,7 +316,7 @@ function PortraitMariageRoot() {
                 </span>
                 {" "} Pour connaître mes prestations tarifaires, rendez-vous sur ma {" "}
                 <span className={style.SpanLink}>
-                    <Link to={ListDataRouter[2].path}>
+                    <Link to={router[2].path}>
                         {" page tarif."}
                     </Link>
                 </span>
@@ -327,4 +332,4 @@ function PortraitMariageRoot() {
     );
 }
 
-export default PortraitMariageRoot;
+export default PortraitMariage_Root;

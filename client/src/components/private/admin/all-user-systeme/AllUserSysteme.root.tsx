@@ -1,20 +1,27 @@
-import css from "./AdminGestionAlbumRoot.module.css";
+/* Import des modules CSS */
 import style from "../../../StyleRootComponent.module.css";
+import css from "./allUserSysteme.module.css";
+
+/* Import des composants React */
 import { useEffect, useMemo, useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
-import ListDataRouter from "../../../../router/router";
-import useLockedPage from "../../../../hook/useLockedPage.security.hook";
-import DataAlbumAdminType from "../../../../types/DataAlbumAdmin.type";
-import fetchAPI from "../../../../utils/fetchAPI.utils";
+import { useNavigate } from "react-router-dom";
 
-function AdminGestionAlbumRoot() {
-    /** Vérrouillage de la page accessible uniquement aux utilisateurs */
-    useLockedPage("admin");
+/* Import des Hooks */
+import { useLockedPage_Hook } from "../../../../hook/useLockedPage.security.hook";
 
+/* Import des Types */
+import type { DataUser_Type } from "../../../../types/dataUser.type";
+
+/* Import des Utils */
+import { fetchAPI_Utils } from "../../../../utils/fetchAPI.utils";
+
+function AllUserSysteme_Root() {
+    /** Vérrouillage de la page accessible uniquement aux administrateurs */
+    useLockedPage_Hook("admin");
     const navigate = useNavigate();
 
-    /** Liste des albums récupérés depuis l’API */
-    const [albums, setAlbums] = useState<DataAlbumAdminType[]>([]);
+    /** Liste des utilisateurs récupérés depuis l’API */
+    const [users, setUsers] = useState<DataUser_Type[]>([]);
     /** Gestion du chargement */
     const [loading, setLoading] = useState(true);
     /** Gestion des erreurs éventuelles */
@@ -26,7 +33,7 @@ function AdminGestionAlbumRoot() {
     /** Récupération de tous les utilisateurs à l’affichage de la page */
     useEffect(() => {
         async function fetchUsers() {
-            const { error, data } = await fetchAPI("GET", "/album");
+            const { error, data } = await fetchAPI_Utils("GET", "/user");
 
             if (error) {
                 setError(error);
@@ -36,7 +43,7 @@ function AdminGestionAlbumRoot() {
 
             /** L’API renvoie les données dans `data.data` */
             if (Array.isArray(data?.data)) {
-                setAlbums(data.data as DataAlbumAdminType[]);
+                setUsers(data.data as DataUser_Type[]);
             }
 
             setLoading(false);
@@ -57,29 +64,29 @@ function AdminGestionAlbumRoot() {
             .replace(/\p{Diacritic}/gu, "");
 
     /** Filtrage des utilisateurs en fonction de la recherche */
-    const filteredAlbums = useMemo(() => {
+    const filteredUsers = useMemo(() => {
         const q = query.trim();
-        if (!q) return albums;
+        if (!q) return users;
 
         const qNorm = normalize(q);
         const qNum = Number(q);
         const isNumeric = !Number.isNaN(qNum);
 
-        return albums.filter((u) => {
+        return users.filter((u) => {
             /** Si la recherche est un nombre, on compare avec l’ID exact */
-            if (isNumeric && u.id_album === qNum) return true;
+            if (isNumeric && u.id === qNum) return true;
 
-            /** Comparaison sur prénom, nom et date */
+            /** Comparaison sur prénom, nom et email */
             const first = normalize(u.firstname || "");
             const last = normalize(u.lastname || "");
-            const date = normalize(u.date || "");
+            const mail = normalize(u.email || "");
 
-            return first.includes(qNorm) || last.includes(qNorm) || date.includes(qNorm);
+            return first.includes(qNorm) || last.includes(qNorm) || mail.includes(qNorm);
         });
-    }, [albums, query]);
+    }, [users, query]);
 
     /** État de chargement */
-    if (loading) return <p>Chargement des albums...</p>;
+    if (loading) return <p>Chargement des utilisateurs...</p>;
     /** Erreur lors de la récupération */
     if (error) return <p>Erreur : {error}</p>;
 
@@ -87,7 +94,7 @@ function AdminGestionAlbumRoot() {
         <div className={style.ContainerRootRacine}>
             {/* Titre principal */}
             <header className={style.ContainerTitle}>
-                <h1 className={style.TitleH1}>Gestion des Albums</h1>
+                <h1 className={style.TitleH1}>Gestion des utilisateurs</h1>
             </header>
 
             {/* Barre de recherche */}
@@ -95,7 +102,7 @@ function AdminGestionAlbumRoot() {
                 <input
                     type="text"
                     className={css.SearchInput}
-                    placeholder="Rechercher par ID, prénom, nom ou date…"
+                    placeholder="Rechercher par ID, prénom, nom ou email…"
                     aria-label="Rechercher un utilisateur"
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
@@ -113,44 +120,37 @@ function AdminGestionAlbumRoot() {
                 )}
             </div>
 
-            {/* Bonton création d'un utilisateur */}
-            <div className={css.ContainerInsertAlbum}>
-                <Link to={ListDataRouter[35].path} className={css.ButtonInsertAlbum}>
-                    Créer un album ?
-                </Link>
-            </div>
-
-            {/* Liste des albums sous forme de cards */}
+            {/* Liste des utilisateurs sous forme de cards */}
             <div className={css.cardsContainer}>
-                {filteredAlbums.length === 0 ? (
-                    /** Aucun album ne correspond à la recherche */
-                    <p className={css.EmptyState}>Aucun album ne correspond à “{query}”.</p>
+                {filteredUsers.length === 0 ? (
+                    /** Aucun utilisateur ne correspond à la recherche */
+                    <p className={css.EmptyState}>Aucun utilisateur ne correspond à “{query}”.</p>
                 ) : (
-                    filteredAlbums.map((album) => (
-                        <div key={album.id_album} className={css.card}>
-                            {/* Données principales album */}
+                    filteredUsers.map((user) => (
+                        <div key={user.id} className={css.card}>
+                            {/* Données principales utilisateur */}
                             <div className={css.ContainerDataUser}>
                                 <p className={css.label}>
-                                    <span className={style.SpanBold}>ID Album :</span> {album.id_album}
+                                    <span className={style.SpanBold}>ID :</span> {user.id}
                                 </p>
                                 <p className={css.label}>
-                                    <span className={style.SpanBold}>Prénom :</span> {album.firstname}
+                                    <span className={style.SpanBold}>Prénom :</span> {user.firstname}
                                 </p>
                                 <p className={css.label}>
-                                    <span className={style.SpanBold}>Nom :</span> {album.lastname}
+                                    <span className={style.SpanBold}>Nom :</span> {user.lastname}
                                 </p>
                                 <p className={css.label} style={{ fontSize: "0.875rem" }}>
-                                    {album.email}
+                                    {user.email}
                                 </p>
                             </div>
 
                             {/* Rôle + action */}
                             <div className={css.ContainerRoleAction}>
-                                <p className={css.label}>{album.date}</p>
+                                <p className={css.label}>{user.role}</p>
                                 <button
                                     className={css.ButtonEdit}
-                                    aria-label={`Modifier l'album ${album.id_album}`}
-                                    onClick={() => navigate(`/admin/album/edit-album/${album.id_album}`)}
+                                    aria-label={`Modifier l'utilisateur ${user.firstname} ${user.lastname}`}
+                                    onClick={() => navigate(`/admin/all-user-systeme/edit-user/${user.id}`)}
                                 >
                                     Modifier
                                 </button>
@@ -163,4 +163,4 @@ function AdminGestionAlbumRoot() {
     );
 }
 
-export default AdminGestionAlbumRoot;
+export default AllUserSysteme_Root;

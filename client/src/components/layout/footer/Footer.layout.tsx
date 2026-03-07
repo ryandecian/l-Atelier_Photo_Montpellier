@@ -5,13 +5,13 @@ import css from "./footer.module.css";
 import { Link } from "react-router-dom";
 
 /* Import des composants Router */
-import ListDataRouter from "../../../router/router";
+import router from "../../../router/router";
 import externalLinks from "../../../constants/externalLinks";
 
 /* Import des composants de signature */
 import Ghost_signature_Footer_layout from "../../../signature/Ghost.signature";
 
-function Footer_layout() {
+function Footer_Layout() {
     const dateNow = new Date().getFullYear();
 
     return (
@@ -39,21 +39,21 @@ function Footer_layout() {
 
                     <ul className={css.UlText}>
                         <li className={css.LiTextLink}>
-                            <Link to={`${ListDataRouter[7].path}#top`}>
+                            <Link to={`${router[7].path}#top`}>
                                 Qui suis-je ?
                             </Link>
                         </li>
                     </ul>
                     <ul className={css.UlText}>
                         <li className={css.LiTextLink}>
-                            <Link to={`${ListDataRouter[8].path}#top`}>
+                            <Link to={`${router[8].path}#top`}>
                                 Portfolio
                             </Link>
                         </li>
                     </ul>
                     <ul className={css.UlText}>
                         <li className={css.LiTextLink}>
-                            <Link to={`${ListDataRouter[4].path}#top`}>
+                            <Link to={`${router[4].path}#top`}>
                                 Blog
                             </Link>
                         </li>
@@ -101,21 +101,21 @@ function Footer_layout() {
 
                     <ul className={css.UlText}>
                         <li className={css.LiTextLink}>
-                            <Link to={`${ListDataRouter[3].path}#top`}>
+                            <Link to={`${router[3].path}#top`}>
                                 Me contacter
                             </Link>
                         </li>
                     </ul>
                     <ul className={css.UlText}>
                         <li className={css.LiTextLink}>
-                            <Link to={`${ListDataRouter[1].path}#top`}>
+                            <Link to={`${router[1].path}#top`}>
                                 Mentions légales
                             </Link>
                         </li>
                     </ul>
                     <ul className={css.UlText}>
                         <li className={css.LiTextLink}>
-                            <Link to={`${ListDataRouter[9].path}#top`}>
+                            <Link to={`${router[9].path}#top`}>
                                 CGV
                             </Link>
                         </li>
@@ -136,4 +136,4 @@ function Footer_layout() {
     );
 }
 
-export default Footer_layout;
+export default Footer_Layout;

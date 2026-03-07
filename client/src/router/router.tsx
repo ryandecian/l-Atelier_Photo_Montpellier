@@ -1,16 +1,14 @@
-import { ReactNode } from "react"
-
 /* Liste des pages en import */
 /* Page Frontend vérrouillée */
-import AdminGestionAlbumPage from "../pages/private/admin/AdminGestionAlbumPage/AdminGestionAlbumPage";
-import AdminPage from "../pages/private/admin/AdminPage/AdminPage";
-import AllUserSystemePage from "../pages/private/admin/AllUserSystemePage/AllUserSystemePage";
+import AdminGestionAlbum_Page from "../pages/private/admin/admin-gestion-album_Page/AdminGestionAlbum.page";
+import Admin_Page from "../pages/private/admin/admin_Page/Admin.page";
+import AllUserSysteme_Page from "../pages/private/admin/all-user-systeme_Page/AllUserSysteme.page";
 import ComptePage from "../pages/private/users/ComptePage/ComptePage";
 import DataUserPage from "../pages/private/all/DataUser/DataUserPage";
-import EditAlbumAdminPage from "../pages/private/admin/EditAlbumAdminPage/EditAlbumAdminPage";
-import EditUserAdminPage from "../pages/private/admin/EditUserAdminPage/EditUserAdminPage";
+import EditAlbumAdmin_Page from "../pages/private/admin/edit-album-admin_Page/EditAlbumAdmin.page";
+import EditUserAdmin_Page from "../pages/private/admin/edit-user-admin_Page/EditUserAdmin.page";
 import EditUserPage from "../pages/private/all/EditUserPage/EditUserPage";
-import InsertAlbumAdminPage from "../pages/private/admin/InsertAlbumAdminPage/InsertAlbumAdminPage";
+import InsertAlbumAdmin_Page from "../pages/private/admin/insert-album-admin_Page/InsertAlbumAdmin.page";
 import UserGestionAlbumPage from "../pages/private/users/UserGestionAlbumPage/UserGestionAlbumPage";
 
 /* Page Frontend public */
@@ -40,202 +38,202 @@ import Video_Page from "../pages/public/video_Page/Video.page";
 
 /**
  * Utilisation : 
- * {ListDataRouter[0].path}
+ * {router[0].path}
  */
 
-interface RouterItemsType {
+type Router_Type = {
     path: string
-    element?: ReactNode
-    children?: RouterItemsType[]
+    element?: React.ReactNode
+    children?: Router_Type[]
 }
 
-const ListDataRouter: RouterItemsType[] = [
-    /* {ListDataRouter[0].path} */
+const router: Router_Type[] = [
+    /* {router[0].path} */
     {
         path: "/",
         element: <HomePage />,
     },
-    /* {ListDataRouter[1].path} */
+    /* {router[1].path} */
     {
         path: "/mentions-legales",
         element: <MentionsLegalesPage />,
     },
-    /* {ListDataRouter[2].path} */
+    /* {router[2].path} */
     {
         path: "/tarifs",
         element: <PrestationPage />,
     },
-    /* {ListDataRouter[3].path} */
+    /* {router[3].path} */
     {
         path: "/contacts",
         element: <ContactPage />,
     },
-    /* {ListDataRouter[4].path} */
+    /* {router[4].path} */
     {
         path: "/blog",
         children: blogRouter,
     },
-    /* {ListDataRouter[5].path} */
+    /* {router[5].path} */
     {
         path: "/panier",
         element: <h1>Route : Page Panier</h1>,
     },
-    /* {ListDataRouter[6].path} */
+    /* {router[6].path} */
     {
         path: "/compte",
         element: <ComptePage />,
     },
-    /* {ListDataRouter[7].path} */
+    /* {router[7].path} */
     {
         path: "/qui-suis-je",
         element: <QuiSuisJePage />
     },
-    /* {ListDataRouter[8].path} */
+    /* {router[8].path} */
     {
         path: "/portfolio",
         element: <PortfolioPage />,
     },
-    /* {ListDataRouter[9].path} */
+    /* {router[9].path} */
     {
         path: "/conditions-generales-de-vente",
         element: <CGVPage />,
     },
-    /* {ListDataRouter[10].path} */
+    /* {router[10].path} */
     {
         path: "/faq",
         element: <h1>Route : Page faq</h1>,
     },
     /* Route des SubMenu */
-    /* {ListDataRouter[11].path} */
+    /* {router[11].path} */
     {
         path: "/portrait-corporate",
         element: <PortraitCorporatePage />,
     },
-    /* {ListDataRouter[12].path} */
+    /* {router[12].path} */
     {
         path: "/portrait-lifestyle",
         element: <PortraitLifeStylePage />,
     },
-    /* {ListDataRouter[13].path} */
+    /* {router[13].path} */
     {
         path: "/portrait-mariage",
         element: <PortraitMariagePage />,
     },
-    /* {ListDataRouter[14].path} */
+    /* {router[14].path} */
     {
         path: "/portrait-solo",
         element: <PortraitSoloPage />,
     },
-    /* {ListDataRouter[15].path} */
+    /* {router[15].path} */
     {
         path: "/portrait-duo",
         element: <PortraitDuoPage />,
     },
-    /* {ListDataRouter[16].path} */
+    /* {router[16].path} */
     {
         path: "/portrait-famille-ami",
         element: <PortraitFamillePage />,
     },
-    /* {ListDataRouter[17].path} */
+    /* {router[17].path} */
     {
         path: "/portrait-nouveau-ne",
         element: <PortraitNouveauNePage />,
     },
-    /* {ListDataRouter[18].path} */
+    /* {router[18].path} */
     {
         path: "/portrait-grossesse",
         element: <PortraitGrossessePage />,
     },
-    /* {ListDataRouter[19].path} */
+    /* {router[19].path} */
     {
         path: "/portrait-hobby",
         element: <PortraitHobbyPage />,
     },
-    /* {ListDataRouter[20].path} */
+    /* {router[20].path} */
     {
         path: "*",
         element: <Error404 />,
     },
-    /* {ListDataRouter[21].path} */
+    /* {router[21].path} */
     {
         path: "/admin",
-        element: <AdminPage />,
+        element: <Admin_Page />,
     },
-    /* {ListDataRouter[22].path} */
+    /* {router[22].path} */
     {
         path: "/login",
         element: <LoginPage />,
     },
-    /* {ListDataRouter[23].path} */
+    /* {router[23].path} */
     {
         path: "/admin/all-user-systeme",
-        element: <AllUserSystemePage />,
+        element: <AllUserSysteme_Page />,
     },
-    /* {ListDataRouter[24].path} */
+    /* {router[24].path} */
     {
         path: "/compte/user",
         element: <DataUserPage />,
     },
-    /* {ListDataRouter[25].path} */
+    /* {router[25].path} */
     {
         path: "/compte/user/edit-user",
         element: <EditUserPage />,
     },
-    /* {ListDataRouter[26].path} */
+    /* {router[26].path} */
     {
         path: "/admin/user",
         element: <DataUserPage />,
     },
-    /* {ListDataRouter[27].path} */
+    /* {router[27].path} */
     {
         path: "/admin/user/edit-user",
         element: <EditUserPage />,
     },
-    /* {ListDataRouter[28].path} */
+    /* {router[28].path} */
     {
         path: "/admin/all-user-systeme/edit-user/:id",
-        element: <EditUserAdminPage />,
+        element: <EditUserAdmin_Page />,
     },
-    /* {ListDataRouter[29].path} */
+    /* {router[29].path} */
     {
         path: "/reset-password",
         element: <ResetPasswordPage />,
     },
-    /* {ListDataRouter[30].path} */
+    /* {router[30].path} */
     {
         path: "/reset-password/confirm",
         element: <ResetPasswordConfirmPage />,
     },
-    /* {ListDataRouter[31].path} */
+    /* {router[31].path} */
     {
         path: "/register",
         element: <RegisterPage />,
     },
-    /* {ListDataRouter[32].path} */
+    /* {router[32].path} */
     {
         path: "/compte/album",
         element: <UserGestionAlbumPage />,
     },
-    /* {ListDataRouter[33].path} */
+    /* {router[33].path} */
     {
         path: "/admin/album",
-        element: <AdminGestionAlbumPage />,
+        element: <AdminGestionAlbum_Page />,
     },
-    /* {ListDataRouter[34].path} */
+    /* {router[34].path} */
     {
         path: "/admin/album/edit-album/:id",
-        element: <EditAlbumAdminPage />,
+        element: <EditAlbumAdmin_Page />,
     },
-    /* {ListDataRouter[35].path} */
+    /* {router[35].path} */
     {
         path: "/admin/album/create-album",
-        element: <InsertAlbumAdminPage />,
+        element: <InsertAlbumAdmin_Page />,
     },
-    /* {ListDataRouter[36].path} */
+    /* {router[36].path} */
     {
         path: "/video",
         element: <Video_Page />,
     },
 ]
 
-export default ListDataRouter;
+export default router;

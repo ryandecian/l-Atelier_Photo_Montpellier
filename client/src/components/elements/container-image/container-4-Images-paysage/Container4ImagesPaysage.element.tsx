@@ -5,7 +5,7 @@ import css from "./container4ImagesPaysage.module.css";
 import { PremiumCardImgModal_Element } from "../../premium-card-img-modal/PremiumCardImgModal.element";
 
 /* Import des Types */
-import { Container4Images_Type } from "../../../../types/elements/container4Images.type";
+import type { Container4Images_Type } from "../../../../types/elements/container4Images.type";
 
 function Container4ImagesPaysage_Element(
     {

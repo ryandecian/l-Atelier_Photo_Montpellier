@@ -2,9 +2,9 @@
 import style from "../../stylePage.module.css";
 
 /* Import des Components */
+import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
 import PortraitCorporate_Root from "../../../components/Public/portrait-corporate/PortraitCorporate.root";
-import NavRoot from "../../../components/layout/nav_Layout/Nav.root.layout";
-import Footer_layout from "../../../components/layout/footer/Footer.layout";
+import Footer_Layout from "../../../components/layout/footer/Footer.layout";
 
 /* Import des composants SEO */
 import { Helmet_PortraitCorporate_helmet_SEO } from "../../../seo/portrait-corporate_SEO/HelmetPortraitCorporate.helmet.seo";
@@ -19,13 +19,13 @@ function PortraitCorporate_Page() {
         <section className={`PortraitCorporate_Page ${style.Page}`}>
             <Helmet_PortraitCorporate_helmet_SEO />
             <header id="top" className={style.Header}>
-                 <NavRoot />
+                 <Nav_root_Layout />
             </header>
             <main className={style.Main}>
                 <PortraitCorporate_Root />
             </main>
             <footer className={style.Footer}>
-                <Footer_layout />
+                <Footer_Layout />
             </footer>
         </section>
     )

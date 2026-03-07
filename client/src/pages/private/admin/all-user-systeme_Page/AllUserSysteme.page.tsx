@@ -1,22 +1,25 @@
+/* Import des modules CSS */
 import style from "../../../stylePage.module.css";
+
+/* Import des Components */
 import NavRoot from "../../../../components/layout/nav_Layout/Nav.root.layout";
-import EditAlbumAdminRoot from "../../../../components/Private/Admin/EditAlbumAdminRoot/EditAlbumAdminRoot";
+import AllUserSysteme_Root from "../../../../components/private/admin/all-user-systeme/AllUserSysteme.root";
 import Footer from "../../../../components/layout/footer/Footer.layout";
 
-function EditAlbumAdminPage() {
+function AllUserSysteme_Page() {
     return (
-        <section className={`EditAlbumAdminPage ${style.Page}`}>
+        <div className={`UserSysteme_Page ${style.Page}`}>
             <header className={style.Header}>
                 <NavRoot />
             </header>
             <main className={style.Main}>
-                <EditAlbumAdminRoot />
+                <AllUserSysteme_Root />
             </main>
             <footer className={style.Footer}>
                 <Footer />
             </footer>
-        </section>
+        </div>
     );
 }
 
-export default EditAlbumAdminPage;
+export default AllUserSysteme_Page;

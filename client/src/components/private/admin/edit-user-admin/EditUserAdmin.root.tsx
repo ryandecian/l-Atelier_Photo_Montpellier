@@ -1,10 +1,19 @@
+/* Import des modules CSS */
+import style from "../../../StyleRootComponent.module.css";
+import css from "./editUserAdmin.module.css";
+
+/* Import des composants React */
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import style from "../../../StyleRootComponent.module.css";
-import css from "./EditUserAdminRoot.module.css";
-import useLockedPage from "../../../../hook/useLockedPage.security.hook";
-import DataUserType from "../../../../types/dataUser.type";
-import fetchAPI from "../../../../utils/fetchAPI.utils";
+
+/* Import des Hooks */
+import { useLockedPage_Hook } from "../../../../hook/useLockedPage.security.hook";
+
+/* Import des Types */
+import { DataUser_Type } from "../../../../types/dataUser.type";
+
+/* Import des Utils */
+import { fetchAPI_Utils } from "../../../../utils/fetchAPI.utils";
 
 /** Structure du formulaire de modification */
 type EditForm = {
@@ -14,9 +23,9 @@ type EditForm = {
     email: string;
 };
 
-function EditUserAdminRoot() {
+function EditUserAdmin_Root() {
     /** Sécurise l'accès à la page aux administrateurs uniquement */
-    useLockedPage("admin");
+    useLockedPage_Hook("admin");
 
     const navigate = useNavigate();
     const { id } = useParams<{ id: string }>();
@@ -30,7 +39,7 @@ function EditUserAdminRoot() {
     });
 
     /** Données d'origine de l'utilisateur à comparer */
-    const [originalUser, setOriginalUser] = useState<DataUserType | null>(null);
+    const [originalUser, setOriginalUser] = useState<DataUser_Type | null>(null);
 
     /** Gestion des états de chargement, soumission et erreurs */
     const [loading, setLoading] = useState(true);
@@ -46,7 +55,7 @@ function EditUserAdminRoot() {
                 return;
             }
 
-            const { error, data } = await fetchAPI("GET", `/user/${id}`);
+            const { error, data } = await fetchAPI_Utils("GET", `/user/${id}`);
             if (error) {
                 setErrorMsg(error);
                 setLoading(false);
@@ -54,7 +63,7 @@ function EditUserAdminRoot() {
             }
 
             if (data?.data) {
-                const user = data.data as DataUserType;
+                const user = data.data as DataUser_Type;
 
                 setOriginalUser(user);
                 setForm({
@@ -108,7 +117,7 @@ function EditUserAdminRoot() {
             id: parseInt(id, 10),
         };
 
-        const { error } = await fetchAPI("PUT", "/user", body);
+        const { error } = await fetchAPI_Utils("PUT", "/user", body);
 
         if (error) {
             setErrorMsg(error);
@@ -130,7 +139,7 @@ function EditUserAdminRoot() {
         setSaving(true);
         setErrorMsg(null);
 
-        const { error } = await fetchAPI("DELETE", "/user", { id: parseInt(id, 10) });
+        const { error } = await fetchAPI_Utils("DELETE", "/user", { id: parseInt(id, 10) });
 
         if (error) {
             setErrorMsg(error);
@@ -249,4 +258,4 @@ function EditUserAdminRoot() {
     );
 }
 
-export default EditUserAdminRoot;
+export default EditUserAdmin_Root;
