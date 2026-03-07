@@ -3,7 +3,7 @@ import style from "../../stylePage.module.css";
 
 /* Import des Components */
 import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
-import PortraitLifeStyleRoot from "../../../components/ppublic/portrait-lifestyle/PortraitLifeStyleRoot";
+import PortraitLifeStyleRoot from "../../../components/public/portrait-lifestyle/PortraitLifeStyleRoot";
 import Footer_Layout from "../../../components/layout/footer/Footer.layout";
 
 /* Import des composants SEO */

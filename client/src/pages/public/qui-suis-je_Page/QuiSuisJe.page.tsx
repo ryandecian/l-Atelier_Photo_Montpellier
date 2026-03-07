@@ -3,7 +3,7 @@ import style from "../../stylePage.module.css";
 
 /* Import des Components */
 import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
-import QuiSuisJe_Root from "../../../components/ppublic/qui-suis-je/QuiSuisJe.root";
+import QuiSuisJe_Root from "../../../components/public/qui-suis-je/QuiSuisJe.root";
 import Footer_Layout from "../../../components/layout/footer/Footer.layout";
 
 /* Import des composants SEO */

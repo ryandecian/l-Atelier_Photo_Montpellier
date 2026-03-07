@@ -3,7 +3,7 @@ import style from "../../stylePage.module.css";
 
 /* Import des Components */
 import NavHome_root_Layout from "../../../components/layout/navHome_Layout/NavHome.root.layout";
-import HomeRoot from "../../../components/ppublic/home/Home.root";
+import HomeRoot from "../../../components/public/home/Home.root";
 import Footer_Layout from "../../../components/layout/footer/Footer.layout";
 
 /* Import des composants SEO */

@@ -3,7 +3,7 @@ import style from "../../stylePage.module.css";
 
 /* Import des Components */
 import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
-import PortraitDuo_Root from "../../../components/ppublic/portrait-duo/PortraitDuo.root";
+import PortraitDuo_Root from "../../../components/public/portrait-duo/PortraitDuo.root";
 import Footer_Layout from "../../../components/layout/footer/Footer.layout";
 
 /* Import des composants SEO */

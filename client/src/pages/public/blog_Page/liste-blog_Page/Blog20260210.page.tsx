@@ -3,7 +3,7 @@ import style from "../../../stylePage.module.css";
 
 /* Import des Components */
 import Nav_root_Layout from "../../../../components/layout/nav_Layout/Nav.root.layout";
-import Blog_20260210_Root from "../../../../components/ppublic/blog-root/list-blog-root/blog_20260210/Blog_20260210.root";
+import Blog_20260210_Root from "../../../../components/public/blog-root/list-blog-root/blog_20260210/Blog_20260210.root";
 import Footer_Layout from "../../../../components/layout/footer/Footer.layout";
 
 /* Import des composants SEO */
