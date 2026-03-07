@@ -1,6 +1,6 @@
 import style from "../../../stylePage.module.css";
 import NavRoot from "../../../../components/layout/nav_Layout/Nav.root.layout";
-import EditUserRoot from "../../../../components/privates/All/EditUserRoot/EditUserRoot";
+import EditUserRoot from "../../../../components/private/All/EditUserRoot/EditUserRoot";
 import Footer from "../../../../components/layout/footer/Footer.layout";
 
 function EditUserPage() {

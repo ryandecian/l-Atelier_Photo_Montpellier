@@ -1,6 +1,6 @@
 import style from "../../../stylePage.module.css";
 import NavRoot from "../../../../components/layout/nav_Layout/Nav.root.layout";
-import CompteRoot from "../../../../components/privates/Users/CompteRoot/CompteRoot";
+import CompteRoot from "../../../../components/private/Users/CompteRoot/CompteRoot";
 import Footer from "../../../../components/layout/footer/Footer.layout";
 
 function ComptePage() {

@@ -3,7 +3,7 @@ import style from "../../../stylePage.module.css";
 
 /* Import des Components */
 import NavRoot from "../../../../components/layout/nav_Layout/Nav.root.layout";
-import Admin_Root from "../../../../components/privates/admin/admin/Admin.root";
+import Admin_Root from "../../../../components/private/admin/admin/Admin.root";
 import Footer from "../../../../components/layout/footer/Footer.layout";
 
 function Admin_Page() {

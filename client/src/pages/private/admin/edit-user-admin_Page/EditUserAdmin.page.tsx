@@ -3,7 +3,7 @@ import style from "../../../stylePage.module.css";
 
 /* Import des Components */
 import NavRoot from "../../../../components/layout/nav_Layout/Nav.root.layout";
-import EditUserAdmin_Root from "../../../../components/privates/admin/edit-user-admin/EditUserAdmin.root";
+import EditUserAdmin_Root from "../../../../components/private/admin/edit-user-admin/EditUserAdmin.root";
 import Footer from "../../../../components/layout/footer/Footer.layout";
 
 function EditUserAdmin_Page() {
