@@ -3,7 +3,7 @@ import style from "../../stylePage.module.css";
 
 /* Import des Components */
 import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
-import Error404Root from "../../../components/Public/error404/Error404.root";
+import Error404Root from "../../../components/ppublic/error404/Error404.root";
 import Footer_Layout from "../../../components/layout/footer/Footer.layout";
 
 function Error404_Page() {

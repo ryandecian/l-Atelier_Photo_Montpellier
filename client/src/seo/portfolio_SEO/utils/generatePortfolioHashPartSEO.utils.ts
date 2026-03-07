@@ -1,4 +1,4 @@
-import AlbumPortfolio from "../../../components/Public/PortfolioRoot/AlbumPortfolio";
+import AlbumPortfolio from "../../../components/ppublic/PortfolioRoot/AlbumPortfolio";
 
 /**
  * Génère un tableau d’objets JSON-LD de type "ImageObject" à partir 

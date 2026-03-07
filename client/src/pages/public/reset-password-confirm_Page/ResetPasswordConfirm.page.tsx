@@ -3,7 +3,7 @@ import style from "../../stylePage.module.css";
 
 /* Import des Components */
 import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
-import ResetPasswordConfirmRoot from "../../../components/Public/ResetPasswordConfirmRoot/ResetPasswordConfirm";
+import ResetPasswordConfirmRoot from "../../../components/ppublic/ResetPasswordConfirmRoot/ResetPasswordConfirm";
 import Footer_Layout from "../../../components/layout/footer/Footer.layout";
 
 /* Import des Hooks */
