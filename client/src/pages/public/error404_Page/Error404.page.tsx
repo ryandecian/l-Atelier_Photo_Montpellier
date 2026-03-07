@@ -4,7 +4,7 @@ import style from "../../stylePage.module.css";
 /* Import des Components */
 import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
 import Error404Root from "../../../components/Public/error404/Error404.root";
-import Footer_layout from "../../../components/layout/footer/Footer.layout";
+import Footer_Layout from "../../../components/layout/footer/Footer.layout";
 
 function Error404_Page() {
      return (
@@ -16,7 +16,7 @@ function Error404_Page() {
                 <Error404Root />
             </main>
             <footer className={style.Footer}>
-                <Footer_layout />
+                <Footer_Layout />
             </footer>
         </section>
     )

@@ -4,7 +4,7 @@ import style from "../../stylePage.module.css";
 /* Import des Components */
 import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
 import ResetPasswordConfirmRoot from "../../../components/Public/ResetPasswordConfirmRoot/ResetPasswordConfirm";
-import Footer_layout from "../../../components/layout/footer/Footer.layout";
+import Footer_Layout from "../../../components/layout/footer/Footer.layout";
 
 /* Import des Hooks */
 import useScrollToHash_utils_Hook from "../../../hook/useScrollToHash";
@@ -21,7 +21,7 @@ function ResetPasswordConfirm_Page() {
                 <ResetPasswordConfirmRoot />
             </main>
             <footer className={style.Footer}>
-                <Footer_layout />
+                <Footer_Layout />
             </footer>
         </section>
     )

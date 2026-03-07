@@ -4,7 +4,7 @@ import style from "../../../stylePage.module.css";
 /* Import des Components */
 import Nav_root_Layout from "../../../../components/layout/nav_Layout/Nav.root.layout";
 import Blog_20260305_Root from "../../../../components/Public/blog-root/list-blog-root/blog_20260305/Blog_20260305.root";
-import Footer_layout from "../../../../components/layout/footer/Footer.layout";
+import Footer_Layout from "../../../../components/layout/footer/Footer.layout";
 
 /* Import des composants SEO */
     import { HelmetBlog20260305_helmet_SEO } from "../../../../seo/blog_SEO/liste-article-blog_SEO/blog-20260305_SEO/HelmetBlog20260305.helmet.seo";
@@ -25,7 +25,7 @@ function Blog_20260305_Page() {
                 <Blog_20260305_Root />
             </main>
             <footer className={style.Footer}>
-                <Footer_layout />
+                <Footer_Layout />
             </footer>
         </section>
     )

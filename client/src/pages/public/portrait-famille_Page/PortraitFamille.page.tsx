@@ -4,7 +4,7 @@ import style from "../../stylePage.module.css";
 /* Import des Components */
 import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
 import PortraitFamilleRoot from "../../../components/Public/portrait-famille/PortraitFamilleRoot";
-import Footer_layout from "../../../components/layout/footer/Footer.layout";
+import Footer_Layout from "../../../components/layout/footer/Footer.layout";
 
 /* Import des composants SEO */
 import { HelmetPortraitFamille_helmet_SEO } from "../../../seo/portrait-famille_SEO/HelmetPortraitFamille.helmet.seo";
@@ -25,7 +25,7 @@ function PortraitFamille_Page() {
                 <PortraitFamilleRoot />
             </main>
             <footer className={style.Footer}>
-                <Footer_layout />
+                <Footer_Layout />
             </footer>
         </section>
     )
