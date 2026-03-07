@@ -2,7 +2,7 @@
 import style from "../../../stylePage.module.css";
 
 /* Import des Components */
-import NavRoot from "../../../../components/layout/nav_Layout/Nav.root.layout";
+import Nav_root_Layout from "../../../../components/layout/nav_Layout/Nav.root.layout";
 import Blog_20260305_Root from "../../../../components/Public/blog-root/list-blog-root/blog_20260305/Blog_20260305.root";
 import Footer_layout from "../../../../components/layout/footer/Footer.layout";
 
@@ -19,7 +19,7 @@ function Blog_20260305_Page() {
         <section className={`Blog_20260305_Page ${style.Page}`}>
             <HelmetBlog20260305_helmet_SEO />
             <header id="top" className={style.Header}>
-                 <NavRoot />
+                 <Nav_root_Layout />
             </header>
             <main className={style.Main}>
                 <Blog_20260305_Root />

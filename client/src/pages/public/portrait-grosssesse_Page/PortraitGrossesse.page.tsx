@@ -2,8 +2,8 @@
 import style from "../../stylePage.module.css";
 
 /* Import des Components */
+import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
 import PortraitGrossesseRoot from "../../../components/Public/portrait-grossesse/PortraitGrossesseRoot";
-import NavRoot from "../../../components/layout/nav_Layout/Nav.root.layout";
 import Footer_layout from "../../../components/layout/footer/Footer.layout";
 
 /* Import des composants SEO */
@@ -19,7 +19,7 @@ function PortraitGrossesse_Page() {
         <section className={`PortraitGrossessePage ${style.Page}`}>
             <HelmetPortraitGrossesse_helmet_SEO />
             <header id="top" className={style.Header}>
-                 <NavRoot />
+                 <Nav_root_Layout />
             </header>
             <main className={style.Main}>
                 <PortraitGrossesseRoot />

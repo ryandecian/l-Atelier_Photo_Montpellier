@@ -2,7 +2,7 @@
 import style from "../../stylePage.module.css";
 
 /* Import des Components */
-import Nav_Root from "../../../components/layout/nav_Layout/Nav.root.layout";
+import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
 import Prestation_Root from "../../../components/Public/prestation/Prestation.root";
 import Footer_layout from "../../../components/layout/footer/Footer.layout";
 
@@ -14,7 +14,7 @@ function Prestation_Page() {
         <section className={`Prestation_Page ${style.Page}`}>
             <HelmetPrestation_helmet_SEO />
             <header id="top" className={style.Header}>
-                 <Nav_Root />
+                 <Nav_root_Layout />
             </header>
             <main className={style.Main}>
                 <Prestation_Root />
