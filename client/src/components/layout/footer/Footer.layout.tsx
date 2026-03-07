@@ -11,7 +11,7 @@ import externalLinks from "../../../constants/externalLinks";
 /* Import des composants de signature */
 import Ghost_signature_Footer_layout from "../../../signature/Ghost.signature";
 
-function Footer_layout() {
+function Footer_Layout() {
     const dateNow = new Date().getFullYear();
 
     return (
@@ -136,4 +136,4 @@ function Footer_layout() {
     );
 }
 
-export default Footer_layout;
+export default Footer_Layout;
