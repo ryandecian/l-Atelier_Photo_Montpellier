@@ -3,7 +3,7 @@ import style from "../../../stylePage.module.css";
 
 /* Import des Components */
 import NavRoot from "../../../../components/layout/nav_Layout/Nav.root.layout";
-import EditAlbumAdmin_Root from "../../../../components/Private/admin/edit-album-admin/EditAlbumAdmin.root";
+import EditAlbumAdmin_Root from "../../../../components/privates/admin/edit-album-admin/EditAlbumAdmin.root";
 import Footer from "../../../../components/layout/footer/Footer.layout";
 
 function EditAlbumAdmin_Page() {
