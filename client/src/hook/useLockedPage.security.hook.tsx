@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import router from "../router/router";
 
 /* Import des Hooks */
-import useAuthCheck from "./useAuthCheck.utils.hook";
+import { useAuthCheck_Hook } from "./useAuthCheck.utils.hook";
 
 /**
  * Documentation : 
@@ -26,7 +26,7 @@ type UserType = "admin" | "user" | "all";
 
 /* Cette fonction prend en parametre une string qui indique quel utilisateur est autorisé sur la page */
 function useLockedPage_Hook(userTarget: UserType) {
-    const { isLoggedIn, userInfo, isChecking } = useAuthCheck();
+    const { isLoggedIn, userInfo, isChecking } = useAuthCheck_Hook();
     const navigate = useNavigate();
 
     /* Détermination des routes de redirection */
