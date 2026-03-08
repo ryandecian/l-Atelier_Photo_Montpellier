@@ -5,7 +5,7 @@ function getRemBase(): number {
     return parseFloat(getComputedStyle(document.documentElement).fontSize);
 }
 
-function useMediaQueriesHeight_rem(): number {
+function useMediaQueriesHeight_rem_Hook(): number {
     const [viewportHeightRem, setViewportHeightRem] = useState<number>(() => {
         const rem = getRemBase();
         return window.innerHeight / rem;
@@ -24,18 +24,18 @@ function useMediaQueriesHeight_rem(): number {
     return viewportHeightRem;
 }
 
-export default useMediaQueriesHeight_rem;
+export { useMediaQueriesHeight_rem_Hook };
 
 /**
  * Documentation : 
  * 
- * useMediaQueriesHeight_rem est un hook personnalisé qui permet de récupérer la largeur actuelle de la fenêtre du navigateur.
- * Il utilise l'état local pour stocker la largeur et met à jour cette valeur chaque fois que la fenêtre est redimensionnée.
+ * useMediaQueriesHeight_rem_Hook est un hook personnalisé qui permet de récupérer la hauteur actuelle de la fenêtre du navigateur en rem.
+ * Il utilise l'état local pour stocker la hauteur et met à jour cette valeur chaque fois que la fenêtre est redimensionnée.
  * 
  * Utilisation : 
  * 
  * 1) Déclarer la const : 
- * const viewportHeight: number = useMediaQueriesHeight_rem();
+ * const viewportHeight: number = useMediaQueriesHeight_rem_Hook();
  * 
  * 2) Utiliser la variable viewportHeight. Le nombre de px est ajustable
  * 
