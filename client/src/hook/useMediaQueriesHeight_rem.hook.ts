@@ -1,3 +1,4 @@
+/* Import des composants React */
 import { useEffect, useState } from "react";
 
 /* Récupère la valeur d'un rem sur le navigateur de l'utilisateur */
