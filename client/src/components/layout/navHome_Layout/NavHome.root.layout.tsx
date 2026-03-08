@@ -3,7 +3,7 @@ import { NavHomeMobile_Layout } from "./nav-home-mobile/NavHomeMobile.layout";
 import { NavHomePC_Layout } from "./nav-home-pc/NavHomePC.layout";
 
 /* Import des Hooks */
-import useMediaQueriesWidth_rem from "../../../hook/useMediaQueriesWidth_rem.utils.hook";
+import useMediaQueriesWidth_rem from "../../../hook/useMediaQueriesWidth_rem.hook";
 
 function NavHome_root_Layout() {
     const viewportWidth: number = useMediaQueriesWidth_rem();

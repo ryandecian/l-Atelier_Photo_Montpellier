@@ -5,7 +5,7 @@ function getRemBase(): number {
     return parseFloat(getComputedStyle(document.documentElement).fontSize);
 }
 
-function useMediaQueriesWidth_rem(): number {
+function useMediaQueriesWidth_rem_Hook(): number {
     const [viewportWidthRem, setViewportWidthRem] = useState<number>(() => {
         const rem = getRemBase();
         return window.innerWidth / rem;
@@ -24,20 +24,20 @@ function useMediaQueriesWidth_rem(): number {
     return viewportWidthRem;
 }
 
-export default useMediaQueriesWidth_rem;
+export { useMediaQueriesWidth_rem_Hook };
 
 /**
  * Documentation : 
  * 
- * useMediaQueriesWidth_rem est un hook personnalisé qui permet de récupérer la largeur actuelle de la fenêtre du navigateur.
+ * useMediaQueriesWidth_rem_Hook est un hook personnalisé qui permet de récupérer la largeur actuelle de la fenêtre du navigateur en rem.
  * Il utilise l'état local pour stocker la largeur et met à jour cette valeur chaque fois que la fenêtre est redimensionnée.
  * 
  * Utilisation : 
  * 
  * 1) Déclarer la const : 
- * const viewportWidth: number = useMediaQueriesWidth_rem();
+ * const viewportWidth: number = useMediaQueriesWidth_rem_Hook();
  * 
- * 2) Utiliser la variable viewportWidth. Le nombre de px est ajustable
+ * 2) Utiliser la variable viewportWidth. Le nombre de rem est ajustable
  * {viewportWidth <= 20 && ()}
  * 
  */ 
