@@ -10,10 +10,10 @@ import Footer_Layout from "../../../components/layout/footer/Footer.layout";
 import { HelmetCGV_helmet_SEO } from "../../../seo/cgv_SEO/HelmetCGV.helmet.seo";
 
 /* Import des Hooks */
-import useScrollToHash_utils_Hook from "../../../hook/useScrollToHash.hook";
+import { useScrollToHash_Hook } from "../../../hook/useScrollToHash.hook";
 
 function CGV_Page() {
-    useScrollToHash_utils_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
+    useScrollToHash_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
 
     return (
         <section className={`CGV_Page ${style.Page}`}>

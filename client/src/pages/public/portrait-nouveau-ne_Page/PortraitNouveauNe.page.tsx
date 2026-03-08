@@ -10,12 +10,12 @@ import Footer_Layout from "../../../components/layout/footer/Footer.layout";
 import { HelmetPortraitGrossesse_helmet_SEO } from "../../../seo/portrait-grossesse_SEO/HelmetPortraitGrossesse.helmet.seo";
 
 /* Import des Hooks */
-import useScrollToHash_utils_Hook from "../../../hook/useScrollToHash.hook";
+import { useScrollToHash_Hook } from "../../../hook/useScrollToHash.hook";
 
 /* Cette page reprend la quasi totalité des éléments éléments et composant de la page Portrait Grossesse */
 
 function PortraitNouveauNe_Page() {
-    useScrollToHash_utils_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
+    useScrollToHash_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
 
     return (
         <section className={`PortraitNouveauNePage ${style.Page}`}>

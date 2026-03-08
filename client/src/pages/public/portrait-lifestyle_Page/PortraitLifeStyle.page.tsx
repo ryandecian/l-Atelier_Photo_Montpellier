@@ -10,13 +10,13 @@ import Footer_Layout from "../../../components/layout/footer/Footer.layout";
 import { HelmetPortraitLifeStyle_helmet_SEO } from "../../../seo/portrait-lifestyle_SEO/HelmetPortraitLifeStyle.helmet.seo";
 
 /* Import des Hooks */
-import useScrollToHash_utils_Hook from "../../../hook/useScrollToHash.hook";
+import { useScrollToHash_Hook } from "../../../hook/useScrollToHash.hook";
 
-function PortraitLifeStyl_Page() {
-    useScrollToHash_utils_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
+function PortraitLifeStyle_Page() {
+    useScrollToHash_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
 
      return (
-        <div className={`PortraitLifeStylePage ${style.Page}`}>
+        <div className={`PortraitLifeStyle_Page ${style.Page}`}>
             <HelmetPortraitLifeStyle_helmet_SEO />
             <header id="top" className={style.Header}>
                  <Nav_root_Layout />
@@ -31,4 +31,4 @@ function PortraitLifeStyl_Page() {
     )
 }
 
-export default PortraitLifeStyl_Page;
+export default PortraitLifeStyle_Page;

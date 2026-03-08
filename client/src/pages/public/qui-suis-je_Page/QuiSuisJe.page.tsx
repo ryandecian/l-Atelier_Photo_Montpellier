@@ -10,10 +10,10 @@ import Footer_Layout from "../../../components/layout/footer/Footer.layout";
 import { HelmetQuiSuisJe_helmet_SEO } from "../../../seo/qui-suis-je_SEO/HelmetQuiSuisJe.helmet.seo";
 
 /* Import des Hooks */
-import useScrollToHash_utils_Hook from "../../../hook/useScrollToHash.hook";
+import { useScrollToHash_Hook } from "../../../hook/useScrollToHash.hook";
 
 function QuiSuisJe_Page() {
-    useScrollToHash_utils_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
+    useScrollToHash_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
 
     return (
         <section className={`QuiSuisJe_Page ${style.Page}`}>

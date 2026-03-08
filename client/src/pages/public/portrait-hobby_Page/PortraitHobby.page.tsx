@@ -10,10 +10,10 @@ import Footer_Layout from "../../../components/layout/footer/Footer.layout";
 import { HelmetPortraitHobby_helmet_SEO } from "../../../seo/portrait-hobby_SEO/HelmetPortraitHobby.helmet.seo";
 
 /* Import des Hooks */
-import useScrollToHash_utils_Hook from "../../../hook/useScrollToHash.hook";
+import { useScrollToHash_Hook } from "../../../hook/useScrollToHash.hook";
 
 function PortraitHobby_Page() {
-    useScrollToHash_utils_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
+    useScrollToHash_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
 
     return (
         <section className={`PortraitHobby ${style.Page}`}>

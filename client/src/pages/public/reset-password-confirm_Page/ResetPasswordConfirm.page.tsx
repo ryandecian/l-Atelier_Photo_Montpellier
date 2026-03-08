@@ -7,10 +7,10 @@ import ResetPasswordConfirmRoot from "../../../components/public/ResetPasswordCo
 import Footer_Layout from "../../../components/layout/footer/Footer.layout";
 
 /* Import des Hooks */
-import useScrollToHash_utils_Hook from "../../../hook/useScrollToHash.hook";
+import { useScrollToHash_Hook } from "../../../hook/useScrollToHash.hook";
 
 function ResetPasswordConfirm_Page() {
-    useScrollToHash_utils_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
+    useScrollToHash_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
 
     return (
         <section className={`ResetPasswordConfirm_Page ${style.Page}`}>

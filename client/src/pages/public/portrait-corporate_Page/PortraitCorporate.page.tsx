@@ -10,10 +10,10 @@ import Footer_Layout from "../../../components/layout/footer/Footer.layout";
 import { Helmet_PortraitCorporate_helmet_SEO } from "../../../seo/portrait-corporate_SEO/HelmetPortraitCorporate.helmet.seo";
 
 /* Import des Hooks */
-import useScrollToHash_utils_Hook from "../../../hook/useScrollToHash.hook";
+import { useScrollToHash_Hook } from "../../../hook/useScrollToHash.hook";
 
 function PortraitCorporate_Page() {
-    useScrollToHash_utils_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
+    useScrollToHash_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
     
     return (
         <section className={`PortraitCorporate_Page ${style.Page}`}>
