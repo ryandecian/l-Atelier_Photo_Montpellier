@@ -2,10 +2,10 @@
 import css from "./home_A.module.css";
 
 /* Import des Hooks */
-import useMediaQueriesHeight_rem from "../../../../hook/useMediaQueriesHeight_rem.utils.hook";
+import { useMediaQueriesHeight_rem_Hook } from "../../../../hook/useMediaQueriesHeight_rem.hook";
 
 function Home_A_Component() {
-    const viewportHeight: number = useMediaQueriesHeight_rem();
+    const viewportHeight: number = useMediaQueriesHeight_rem_Hook();
 
     return (
         <section className={`Home_A_Component ${css.ContainerAccueil}`}>
