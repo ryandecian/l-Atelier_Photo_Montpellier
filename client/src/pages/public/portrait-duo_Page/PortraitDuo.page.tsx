@@ -10,7 +10,7 @@ import Footer_Layout from "../../../components/layout/footer/Footer.layout";
 import { HelmetPortraitDuo_helmet_SEO } from "../../../seo/portrait-duo_SEO/HelmetPortraitDuo.helmet.seo";
 
 /* Import des Hooks */
-import useScrollToHash_utils_Hook from "../../../hook/useScrollToHash";
+import useScrollToHash_utils_Hook from "../../../hook/useScrollToHash.hook";
 
 function PortraitDuo_Page() {
     useScrollToHash_utils_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */

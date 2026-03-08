@@ -7,7 +7,7 @@ import ResetPasswordRoot from "../../../components/public/ResetPasswordRoot/Rese
 import Footer_Layout from "../../../components/layout/footer/Footer.layout";
 
 /* Import des Hooks */
-import useScrollToHash_utils_Hook from "../../../hook/useScrollToHash";
+import useScrollToHash_utils_Hook from "../../../hook/useScrollToHash.hook";
 
 function ResetPassword_Page() {
     useScrollToHash_utils_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */

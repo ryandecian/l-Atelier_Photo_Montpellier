@@ -10,7 +10,7 @@ import Footer_Layout from "../../../components/layout/footer/Footer.layout";
 import { HelmetBlog_helmet_SEO } from "../../../seo/blog_SEO/HelmetBlog.helmet.seo";
 
 /* Import des Hooks */
-import useScrollToHash_utils_Hook from "../../../hook/useScrollToHash";
+import useScrollToHash_utils_Hook from "../../../hook/useScrollToHash.hook";
 
 function Blog_Page() {
     useScrollToHash_utils_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */

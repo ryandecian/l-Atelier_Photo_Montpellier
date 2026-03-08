@@ -10,7 +10,7 @@ import Footer_Layout from "../../../components/layout/footer/Footer.layout";
 import { HelmetPortraitGrossesse_helmet_SEO } from "../../../seo/portrait-grossesse_SEO/HelmetPortraitGrossesse.helmet.seo";
 
 /* Import des Hooks */
-import useScrollToHash_utils_Hook from "../../../hook/useScrollToHash";
+import useScrollToHash_utils_Hook from "../../../hook/useScrollToHash.hook";
 
 /* Cette page reprend la quasi totalité des éléments éléments et composant de la page Portrait Grossesse */
 

@@ -7,7 +7,7 @@ import RegisterRoot from "../../../components/public/RegisterRoot/RegisterRoot";
 import Footer_Layout from "../../../components/layout/footer/Footer.layout";
 
 /* Import des Hooks */
-import useScrollToHash_utils_Hook from "../../../hook/useScrollToHash";
+import useScrollToHash_utils_Hook from "../../../hook/useScrollToHash.hook";
 
 function Register_Page() {
     useScrollToHash_utils_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */

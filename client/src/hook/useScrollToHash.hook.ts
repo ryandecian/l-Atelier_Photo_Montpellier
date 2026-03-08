@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 /* A faire en export nommé */
-export default function useScrollToHash(delay = 100) {
+function useScrollToHash_Hook(delay = 100) {
   const location = useLocation();
 
   useEffect(() => {
@@ -19,10 +19,12 @@ export default function useScrollToHash(delay = 100) {
   }, [location, delay]);
 }
 
+export { useScrollToHash_Hook };
+
 /**
- * Documentation for useScrollToHash hook
+ * Documentation for useScrollToHash_Hook
  * 
- * Ce hook personaliser permet de déclacher un scroll vers un élément spécifique de la page.
+ * Ce hook personaliser permet de déclencher un scroll vers un élément spécifique de la page.
  * 
  * Pour cela il faut utiliser un id sur la balise HTML cible, et ajouter un hash dans l'URL.
  * 

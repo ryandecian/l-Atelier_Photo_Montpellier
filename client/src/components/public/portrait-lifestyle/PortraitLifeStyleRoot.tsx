@@ -1,7 +1,7 @@
 import style from "../../StyleRootComponent.module.css";
 
 import externalLinks from "../../../constants/externalLinks";
-import useScrollToHash from "../../../hook/useScrollToHash";
+import useScrollToHash from "../../../hook/useScrollToHash.hook";
 
 import { imagesPortraitLifeStyle_Data } from "./imagesPortraitLifeStyle.data";
 import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
