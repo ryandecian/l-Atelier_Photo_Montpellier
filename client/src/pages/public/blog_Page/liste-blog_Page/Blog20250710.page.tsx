@@ -4,7 +4,7 @@ import style from "../../../stylePage.module.css";
 /* Import des Components */
 import Nav_root_Layout from "../../../../components/layout/nav_Layout/Nav.root.layout";
 import Blog_20250710_Root from "../../../../components/public/blog-root/list-blog-root/blog_20250710/Blog_20250710.root";
-import Footer_Layout from "../../../../components/layout/footer/Footer.layout";
+import Footer_Layout from "../../../../components/layout/footer_Layout/Footer.layout";
 
 /* Import des composants SEO */
 import { HelmetBlog20250710_helmet_SEO } from "../../../../seo/blog_SEO/liste-article-blog_SEO/blog-20250710_SEO/HelmetBlog20250710.helmet.seo";

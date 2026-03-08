@@ -4,7 +4,7 @@ import style from "../../stylePage.module.css";
 /* Import des Components */
 import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
 import CGV_Root from "../../../components/public/cgv/CGV.root";
-import Footer_Layout from "../../../components/layout/footer/Footer.layout";
+import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
 
 /* Import des composants SEO */
 import { HelmetCGV_helmet_SEO } from "../../../seo/cgv_SEO/HelmetCGV.helmet.seo";

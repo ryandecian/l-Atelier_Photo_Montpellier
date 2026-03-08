@@ -4,7 +4,7 @@ import style from "../../stylePage.module.css";
 /* Import des Components */
 import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
 import ContactRoot from "../../../components/public/contact/Contact.root";
-import Footer_Layout from "../../../components/layout/footer/Footer.layout";
+import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
 
 /* Import des composants SEO */
 import { HelmetContact_helmet_SEO } from "../../../seo/contact_SEO/HelmetContact.helmet.seo";

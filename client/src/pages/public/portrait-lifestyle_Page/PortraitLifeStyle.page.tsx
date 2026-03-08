@@ -4,7 +4,7 @@ import style from "../../stylePage.module.css";
 /* Import des Components */
 import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
 import PortraitLifeStyleRoot from "../../../components/public/portrait-lifestyle/PortraitLifeStyleRoot";
-import Footer_Layout from "../../../components/layout/footer/Footer.layout";
+import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
 
 /* Import des composants SEO */
 import { HelmetPortraitLifeStyle_helmet_SEO } from "../../../seo/portrait-lifestyle_SEO/HelmetPortraitLifeStyle.helmet.seo";

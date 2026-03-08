@@ -4,7 +4,7 @@ import style from "../../stylePage.module.css";
 /* Import des Components */
 import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
 import QuiSuisJe_Root from "../../../components/public/qui-suis-je/QuiSuisJe.root";
-import Footer_Layout from "../../../components/layout/footer/Footer.layout";
+import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
 
 /* Import des composants SEO */
 import { HelmetQuiSuisJe_helmet_SEO } from "../../../seo/qui-suis-je_SEO/HelmetQuiSuisJe.helmet.seo";
