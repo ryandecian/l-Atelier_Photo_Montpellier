@@ -1,10 +1,15 @@
+/* Import des modules CSS */
 import style from "../../../StyleRootComponent.module.css";
 import css from "./DataUserRoot.module.css";
-import { useNavigate } from "react-router-dom";
-import useLockedPage from "../../../../hook/useLockedPage.security.hook";
 
-function DataUserRoot() {
-    const userInfo = useLockedPage("all");
+/* Import des composants React */
+import { useNavigate } from "react-router-dom";
+
+/* Import des Hooks */
+import { useLockedPage_Hook } from "../../../../hook/useLockedPage.security.hook";
+
+function DataUser_Root() {
+    const userInfo = useLockedPage_Hook("all");
     const navigate = useNavigate();
 
     return (
@@ -66,4 +71,4 @@ function DataUserRoot() {
     );
 }
 
-export default DataUserRoot;
+export default DataUser_Root;
