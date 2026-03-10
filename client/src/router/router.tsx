@@ -4,7 +4,7 @@ import AdminGestionAlbum_Page from "../pages/private/admin/admin-gestion-album_P
 import Admin_Page from "../pages/private/admin/admin_Page/Admin.page";
 import AllUserSysteme_Page from "../pages/private/admin/all-user-systeme_Page/AllUserSysteme.page";
 import ComptePage from "../pages/private/users/ComptePage/ComptePage";
-import DataUserPage from "../pages/private/all/DataUser/DataUserPage";
+import DataUser_Page from "../pages/private/all/data-user_Page/DataUser.page";
 import EditAlbumAdmin_Page from "../pages/private/admin/edit-album-admin_Page/EditAlbumAdmin.page";
 import EditUserAdmin_Page from "../pages/private/admin/edit-user-admin_Page/EditUserAdmin.page";
 import EditUserPage from "../pages/private/all/EditUserPage/EditUserPage";
@@ -172,7 +172,7 @@ const router: Router_Type[] = [
     /* {router[24].path} */
     {
         path: "/compte/user",
-        element: <DataUserPage />,
+        element: <DataUser_Page />,
     },
     /* {router[25].path} */
     {
@@ -182,7 +182,7 @@ const router: Router_Type[] = [
     /* {router[26].path} */
     {
         path: "/admin/user",
-        element: <DataUserPage />,
+        element: <DataUser_Page />,
     },
     /* {router[27].path} */
     {
