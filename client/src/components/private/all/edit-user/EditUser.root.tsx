@@ -1,7 +1,8 @@
+/* Import des modules CSS */
+import style from "../../../StyleRootComponent.module.css";
+import css from "./editUser.module.css";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import style from "../../../StyleRootComponent.module.css";
-import css from "./EditUserRoot.module.css";
 import useLockedPage from "../../../../hook/useLockedPage.security.hook";
 import DataUserType from "../../../../types/dataUser.type";
 import fetchAPI from "../../../../utils/fetchAPI.utils";
