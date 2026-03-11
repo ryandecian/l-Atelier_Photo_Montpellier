@@ -7,7 +7,7 @@ import ComptePage from "../pages/private/users/ComptePage/ComptePage";
 import DataUser_Page from "../pages/private/all/data-user_Page/DataUser.page";
 import EditAlbumAdmin_Page from "../pages/private/admin/edit-album-admin_Page/EditAlbumAdmin.page";
 import EditUserAdmin_Page from "../pages/private/admin/edit-user-admin_Page/EditUserAdmin.page";
-import EditUserPage from "../pages/private/all/edit-user_Page/EditUserPage";
+import EditUser_Page from "../pages/private/all/edit-user_Page/EditUser.page";
 import InsertAlbumAdmin_Page from "../pages/private/admin/insert-album-admin_Page/InsertAlbumAdmin.page";
 import UserGestionAlbumPage from "../pages/private/users/UserGestionAlbumPage/UserGestionAlbumPage";
 
@@ -177,7 +177,7 @@ const router: Router_Type[] = [
     /* {router[25].path} */
     {
         path: "/compte/user/edit-user",
-        element: <EditUserPage />,
+        element: <EditUser_Page />,
     },
     /* {router[26].path} */
     {
@@ -187,7 +187,7 @@ const router: Router_Type[] = [
     /* {router[27].path} */
     {
         path: "/admin/user/edit-user",
-        element: <EditUserPage />,
+        element: <EditUser_Page />,
     },
     /* {router[28].path} */
     {
