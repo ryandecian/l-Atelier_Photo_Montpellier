@@ -1,11 +1,19 @@
 /* Import des modules CSS */
 import style from "../../../StyleRootComponent.module.css";
 import css from "./editUser.module.css";
+
+/* Import des composants React */
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import useLockedPage from "../../../../hook/useLockedPage.security.hook";
-import DataUserType from "../../../../types/dataUser.type";
-import fetchAPI from "../../../../utils/fetchAPI.utils";
+
+/* Import des Hooks */
+import { useLockedPage_Hook } from "../../../../hook/useLockedPage.security.hook";
+
+/* Import des Types */
+import { DataUser_Type } from "../../../../types/dataUser.type";
+
+/* Import des Utils */
+import { fetchAPI_Utils } from "../../../../utils/fetchAPI.utils";
 
 type EditForm = {
     firstname: string;
@@ -15,14 +23,14 @@ type EditForm = {
     password: string; // stocké uniquement côté client, jamais renvoyé par l'API
 };
 
-function EditUserRoot() {
+function EditUser_Root() {
     const navigate = useNavigate();
 
     /**
      * Récupération des données de l’utilisateur connecté via le token (hook sécurisé).
      * ⚠️ Le serveur ne renvoie jamais le champ password → il reste donc vide.
      */
-    const userInfo: DataUserType | null = useLockedPage("all");
+    const userInfo: DataUser_Type | null = useLockedPage_Hook("all");
 
     /**
      * State du formulaire contrôlé.
@@ -115,7 +123,7 @@ function EditUserRoot() {
         };
 
         // Requête API
-        const { error } = await fetchAPI("PUT", "/user/me", body);
+        const { error } = await fetchAPI_Utils("PUT", "/user/me", body);
 
         if (error) {
             setErrorMsg(error); // affiche l'erreur si problème serveur/API
@@ -239,4 +247,4 @@ function EditUserRoot() {
     );
 }
 
-export default EditUserRoot;
+export default EditUser_Root;
