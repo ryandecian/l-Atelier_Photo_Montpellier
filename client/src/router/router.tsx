@@ -7,7 +7,7 @@ import ComptePage from "../pages/private/users/ComptePage/ComptePage";
 import DataUser_Page from "../pages/private/all/data-user_Page/DataUser.page";
 import EditAlbumAdmin_Page from "../pages/private/admin/edit-album-admin_Page/EditAlbumAdmin.page";
 import EditUserAdmin_Page from "../pages/private/admin/edit-user-admin_Page/EditUserAdmin.page";
-import EditUserPage from "../pages/private/all/EditUserPage/EditUserPage";
+import EditUserPage from "../pages/private/all/edit-user_Page/EditUserPage";
 import InsertAlbumAdmin_Page from "../pages/private/admin/insert-album-admin_Page/InsertAlbumAdmin.page";
 import UserGestionAlbumPage from "../pages/private/users/UserGestionAlbumPage/UserGestionAlbumPage";
 

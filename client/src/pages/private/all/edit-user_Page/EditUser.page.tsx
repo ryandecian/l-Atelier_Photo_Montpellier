@@ -3,9 +3,9 @@ import NavRoot from "../../../../components/layout/nav_Layout/Nav.root.layout";
 import EditUserRoot from "../../../../components/private/all/EditUserRoot/EditUserRoot";
 import Footer from "../../../../components/layout/footer_Layout/Footer.layout";
 
-function EditUserPage() {
+function EditUser_Page() {
     return (
-        <div className={`DataUserPage ${style.Page}`}>
+        <div className={`EditUser_Page ${style.Page}`}>
             <header className={style.Header}>
                 <NavRoot />
             </header>
@@ -19,4 +19,4 @@ function EditUserPage() {
     );
 }
 
-export default EditUserPage;
+export default EditUser_Page;
