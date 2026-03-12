@@ -1,20 +1,25 @@
+/* Import des modules CSS */
 import style from "../../StyleRootComponent.module.css";
 
-import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
-import { imagesPortraitFamille_Data } from "./imagesPortraitFamille.data";
-
-import { Link } from "react-router-dom";
-import ListDataRouter from "../../../router/router";
-
-import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
+/* Import des Components de Data */
 import { avisClientPortraitFamille_Data } from "./avisClientPortraitFamille.data";
-
-import { TarifCard_Element} from "../../elements/tarifs-card/TarifsCard.element";
+import { imagesPortraitFamille_Data } from "./imagesPortraitFamille.data";
 import { tarifsPortraitFamille_Data, mailtoLinkPortraitFamille_Data } from "./tarifsPortraitFamille.data";
 
-function PortraitFamilleRoot() {
+/* Import des composants d'Elements */
+import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
+import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
+import { TarifCard_Element} from "../../elements/tarifs-card/TarifsCard.element";
+
+/* Import des composants React */
+import { Link } from "react-router-dom";
+
+/* Import des composants Router */
+import router from "../../../router/router";
+
+function PortraitFamille_Root() {
     return (
-        <section className={`PortraitFamilleRoot ${style.ContainerRootRacine}`}>
+        <section className={`PortraitFamille_Root ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
                     {"Portrait Famille - Amis : Créez des souvenirs précieux avec ceux que vous aimez."}
@@ -235,7 +240,7 @@ function PortraitFamilleRoot() {
                 Que ce soit pour marquer un cap, célébrer une étape ou simplement se faire plaisir… <br />
                 <br />
                 <span className={style.SpanLink}>
-                    <Link to={ListDataRouter[3].path}>
+                    <Link to={router[3].path}>
                         Parlons de ce que vous aimeriez capturer pour que votre lumière vous ressemble.
                     </Link>
                 </span>
@@ -250,4 +255,4 @@ function PortraitFamilleRoot() {
     )
 }
 
-export default PortraitFamilleRoot;
+export default PortraitFamille_Root;
