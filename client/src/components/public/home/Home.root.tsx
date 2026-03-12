@@ -17,7 +17,7 @@ import { PremiumCardImgModal_Element } from "../../elements/premium-card-img-mod
 import { Link } from "react-router-dom";
 
 /* Import des composants Router */
-import ListDataRouter from "../../../router/router";
+import router from "../../../router/router";
 
 /* Import des Utils */
 import { pauseOtherVideos_Utils } from "../../../utils/pauseOtherVideos.utils";
@@ -75,7 +75,7 @@ function Home_Root() {
             <p className={style.TextP4}>
                 Découvrez plus en détail{" "}
                 <span className={style.SpanLink}>
-                    <Link to={ListDataRouter[13].path}>
+                    <Link to={router[13].path}>
                         {"mes prestations de mariage !"}
                     </Link>
                 </span>
@@ -92,7 +92,7 @@ function Home_Root() {
             <p className={style.TextP4}>
                 <strong>Photographe </strong> à Montpellier, je réalise des{" "}
                 <span className={style.SpanLink}>
-                    <Link to={`${ListDataRouter[12].path}#top`}>
+                    <Link to={`${router[12].path}#top`}>
                         {"portraits"}
                     </Link>
                 </span>
@@ -102,7 +102,7 @@ function Home_Root() {
 
             <p className={style.TextP4}>
                 <span className={style.SpanLink}>
-                    <Link to={`${ListDataRouter[36].path}#top`}>
+                    <Link to={`${router[36].path}#top`}>
                         {"En vidéo"}
                     </Link>
                 </span>
@@ -113,7 +113,7 @@ function Home_Root() {
             <p className={style.TextP4}>
                 Pour les{" "}
                 <span className={style.SpanLink}>
-                    <Link to={`${ListDataRouter[13].path}#top`}>
+                    <Link to={`${router[13].path}#top`}>
                         {"mariages"}
                     </Link>
                 </span>
@@ -123,7 +123,7 @@ function Home_Root() {
 
             <p className={style.TextP4}>
                 <span className={style.SpanLink}>
-                    <Link to={`${ListDataRouter[7].path}#top`}>
+                    <Link to={`${router[7].path}#top`}>
                         {"Découvrez mon parcours, de mes débuts à l'Atelier Photo Montpellier."}
                     </Link>
                 </span>
@@ -185,7 +185,7 @@ function Home_Root() {
                 </span>
                 Commencez à planifier dès maintenant{" "}
                 <span className={style.SpanLink}>
-                    <Link to={ListDataRouter[12].path}>
+                    <Link to={router[12].path}>
                         {"votre séance"}
                     </Link>
                 </span>
@@ -259,7 +259,7 @@ function Home_Root() {
                     Mon rôle ? Vous guider avec bienveillance pour que ce moment devienne fluide, naturel et agréable.
                     Pour en savoir encore un peu plus sur moi rendez-vous sur ma page{" "}
                     <span className={style.SpanLink}>
-                        <Link to={`${ListDataRouter[7].path}#top`}>
+                        <Link to={`${router[7].path}#top`}>
                             {`QUI SUIS-JE`}
                         </Link>
                     </span>
@@ -268,7 +268,7 @@ function Home_Root() {
                 <p className={style.TextP4}>
                     {`📸 Laissez-vous guider, repartez avec des images que vous aimez. `}
                     <span className={style.SpanLink}>
-                        <Link to={`${ListDataRouter[8].path}#top`}>
+                        <Link to={`${router[8].path}#top`}>
                             {`Découvrez mon Portfolio !`}
                         </Link>
                     </span>
