@@ -2,12 +2,12 @@
 import style from "../../StyleRootComponent.module.css";
 
 /* Import des Components */
-import { PortfolioA_Component } from "./ComponentPortfolioRoot/PortfolioA.component";
-import { PortfolioB_Component } from "./ComponentPortfolioRoot/PortfolioB.component";
-import { PortfolioC_Component } from "./ComponentPortfolioRoot/PortfolioC.component";
-import { PortfolioD_Component } from "./ComponentPortfolioRoot/PortfolioD.component";
-import { PortfolioE_Component } from "./ComponentPortfolioRoot/PortfolioE.component";
-import { PortfolioF_Component } from "./ComponentPortfolioRoot/PortfolioF.component";
+import { PortfolioA_Component } from "./components/PortfolioA.component";
+import { PortfolioB_Component } from "./components/PortfolioB.component";
+import { PortfolioC_Component } from "./components/PortfolioC.component";
+import { PortfolioD_Component } from "./components/PortfolioD.component";
+import { PortfolioE_Component } from "./components/PortfolioE.component";
+import { PortfolioF_Component } from "./components/PortfolioF.component";
 
 function Portfolio_Root() {
     return (
