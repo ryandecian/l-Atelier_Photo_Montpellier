@@ -1,13 +1,20 @@
-import css from "./CompteRoot.module.css";
+/* Import des modules CSS */
 import style from "../../../StyleRootComponent.module.css";
-import { ServiceCardUserLink_Element, ServiceCardUserButton_Element } from "../../../elements/service-card-private-component/ServiceCardUser.element";
-import useLogout from "../../../../hook/useLogout.hook";
-import ListDataRouter from "../../../../router/router";
-import useLockedPage from "../../../../hook/useLockedPage.security.hook";
+import css from "./compte.module.css";
 
-function CompteRoot() {
-    const userInfo = useLockedPage("user");
-    const logout = useLogout();
+/* Import des composants d'Elements */
+import { ServiceCardUserLink_Element, ServiceCardUserButton_Element } from "../../../elements/service-card-private-component/ServiceCardUser.element";
+
+/* Import des composants Router */
+import router from "../../../../router/router";
+
+/* Import des Hooks */
+import { useLockedPage_Hook } from "../../../../hook/useLockedPage.security.hook";
+import { useLogout_Hook } from "../../../../hook/useLogout.hook";
+
+function Compte_Root() {
+    const userInfo = useLockedPage_Hook("user");
+    const logout = useLogout_Hook();
 
     if (!userInfo) {
         return <p>Chargement...</p>;
@@ -26,11 +33,11 @@ function CompteRoot() {
             <div className={css.ContainerCard}>
                 <ServiceCardUserLink_Element
                     nameService="Mes informations"
-                    link={ListDataRouter[24].path}
+                    link={router[24].path}
                 />
                 <ServiceCardUserLink_Element
                     nameService="Mes séances"
-                    link={ListDataRouter[32].path}
+                    link={router[32].path}
                 />
                 {/* Enlèvement de ce service, à la demande de la cliente */}
                 {/* <ServiceCardUserLink_Element
@@ -46,4 +53,4 @@ function CompteRoot() {
     );
 }
 
-export default CompteRoot;
+export default Compte_Root;
