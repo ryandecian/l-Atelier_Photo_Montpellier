@@ -8,15 +8,18 @@ import { useEffect, useMemo, useState } from "react";
 /* Import des Hooks */
 import { useLockedPage_Hook } from "../../../../hook/useLockedPage.security.hook";
 
-import DataAlbumType from "../../../../types/dataAlbum.type";
-import fetchAPI from "../../../../utils/fetchAPI.utils";
+/* Import des Types */
+import { DataAlbum_Type } from "../../../../types/dataAlbum.type";
 
-function UserGestionAlbumRoot() {
+/* Import des Utils */
+import { fetchAPI_Utils } from "../../../../utils/fetchAPI.utils";
+
+function UserGestionAlbum_Root() {
     /** Vérrouillage de la page accessible uniquement aux utilisateurs */
-    useLockedPage("user");
+    useLockedPage_Hook("user");
 
     /** Liste des albums récupérés depuis l’API */
-    const [albums, setAlbums] = useState<DataAlbumType[]>([]);
+    const [albums, setAlbums] = useState<DataAlbum_Type[]>([]);
     /** Gestion du chargement */
     const [loading, setLoading] = useState(true);
     /** Gestion des erreurs éventuelles */
@@ -28,7 +31,7 @@ function UserGestionAlbumRoot() {
     /** Récupération de tous les utilisateurs à l’affichage de la page */
     useEffect(() => {
         async function fetchUsers() {
-            const { error, data } = await fetchAPI("GET", "/album/my");
+            const { error, data } = await fetchAPI_Utils("GET", "/album/my");
 
             if (error) {
                 setError(error);
@@ -38,7 +41,7 @@ function UserGestionAlbumRoot() {
 
             /** L’API renvoie les données dans `data.data` */
             if (Array.isArray(data?.data)) {
-                setAlbums(data.data as DataAlbumType[]);
+                setAlbums(data.data as DataAlbum_Type[]);
             }
 
             setLoading(false);
@@ -160,4 +163,4 @@ function UserGestionAlbumRoot() {
     );
 }
 
-export default UserGestionAlbumRoot;
+export default UserGestionAlbum_Root;
