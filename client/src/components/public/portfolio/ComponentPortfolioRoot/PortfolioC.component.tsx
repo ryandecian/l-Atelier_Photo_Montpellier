@@ -1,11 +1,16 @@
+/* Import des modules CSS */
 import style from "../../../../StyleRootComponent.module.css";
-import { GeneratorAlbumPhoto_Element } from "../../../../elements/generator-album-photo/GeneratorAlbumPhoto.element";
-import AlbumPortfolio from "../../AlbumPortfolio";
 
-function PortfolioRootComponentC() {
-    const dataAlbumRueStreet = AlbumPortfolio.Album_Rue_Street;
+/* Import des Components de Data */
+import { imagesPortfolio_Data } from "../imagesPortfolio.data";
+
+/* Import des composants d'Elements */
+import { GeneratorAlbumPhoto_Element } from "../../../elements/generator-album-photo/GeneratorAlbumPhoto.element";
+
+function PortfolioC_Component() {
+    const dataAlbumRueStreet = imagesPortfolio_Data.Album_Rue_Street;
     return (
-        <section className={`PortfolioRootComponentC ${style.ContainerRoot}`}>
+        <section className={`PortfolioC_Component ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2}>
                     {"Photographie de rue – Street Photography"}
@@ -27,4 +32,4 @@ function PortfolioRootComponentC() {
     )
 }
 
-export default PortfolioRootComponentC;
+export { PortfolioC_Component };
