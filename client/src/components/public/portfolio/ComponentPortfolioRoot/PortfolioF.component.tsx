@@ -1,11 +1,16 @@
+/* Import des modules CSS */
 import style from "../../../../StyleRootComponent.module.css";
-import { GeneratorAlbumPhoto_Element } from "../../../../elements/generator-album-photo/GeneratorAlbumPhoto.element";
-import AlbumPortfolio from "../../AlbumPortfolio";
 
-function PortfolioRootComponentF() {
-    const dataAlbumProPerso = AlbumPortfolio.Album_Pro_Perso;
+/* Import des Components de Data */
+import { imagesPortfolio_Data } from "../imagesPortfolio.data";
+
+/* Import des composants d'Elements */
+import { GeneratorAlbumPhoto_Element } from "../../../elements/generator-album-photo/GeneratorAlbumPhoto.element";
+
+function PortfolioF_Component() {
+    const dataAlbumProPerso = imagesPortfolio_Data.Album_Pro_Perso;
     return (
-        <article className={`PortfolioRootComponentF ${style.ContainerRoot}`}>
+        <article className={`PortfolioF_Component ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2}>
                     {"Portraits de particuliers et professionnels"}
@@ -28,4 +33,4 @@ function PortfolioRootComponentF() {
     )
 }
 
-export default PortfolioRootComponentF;
+export { PortfolioF_Component };
