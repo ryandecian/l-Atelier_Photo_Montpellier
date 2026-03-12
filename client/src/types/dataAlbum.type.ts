@@ -1,4 +1,4 @@
-type DataAlbumType = {
+type DataAlbum_Type = {
     id_album: number;
     firstname: string;
     lastname: string;
@@ -7,4 +7,4 @@ type DataAlbumType = {
     date: string;
 }
 
-export default DataAlbumType;
+export type { DataAlbum_Type };

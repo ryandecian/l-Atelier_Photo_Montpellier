@@ -8,7 +8,7 @@ import { useEffect, useMemo, useState } from "react";
 /* Import des Hooks */
 import { useLockedPage_Hook } from "../../../../hook/useLockedPage.security.hook";
 
-import DataAlbumType from "../../../../types/ddataAlbum.type";
+import DataAlbumType from "../../../../types/dataAlbum.type";
 import fetchAPI from "../../../../utils/fetchAPI.utils";
 
 function UserGestionAlbumRoot() {

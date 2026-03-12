@@ -2,7 +2,7 @@ import css from "./UserGestionAlbumRoot.module.css";
 import style from "../../../StyleRootComponent.module.css";
 import { useEffect, useMemo, useState } from "react";
 import useLockedPage from "../../../../hook/useLockedPage.security.hook";
-import DataAlbumType from "../../../../types/ddataAlbum.type";
+import DataAlbumType from "../../../../types/dataAlbum.type";
 import fetchAPI from "../../../../utils/fetchAPI.utils";
 
 function UserGestionAlbumRoot() {
