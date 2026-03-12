@@ -8,7 +8,7 @@ import Image404 from "../../../assets/Images/Error404Image/Error404Image.png";
 import { Link } from "react-router-dom";
 
 /* Import des composants Router */
-import ListDataRouter from "../../../router/router";
+import router from "../../../router/router";
 
 function Error404_Root() {
     return (
@@ -28,7 +28,7 @@ function Error404_Root() {
                     <p className={css.TextTarget3}>
                         La page que tu cherches semble introuvable.
                     </p>
-                    <Link to={ListDataRouter[0].path} className={css.Button}>
+                    <Link to={router[0].path} className={css.Button}>
                         Revenir à l'accueil
                     </Link>
                 </div>
