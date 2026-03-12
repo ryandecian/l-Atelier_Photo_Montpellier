@@ -15,7 +15,7 @@ import { tarifsPortraitDuo_Data, mailtoLinkPortraitDuo_Data } from "./tarifsPort
 import { Link } from "react-router-dom";
 
 /* Import des composants Router */
-import ListDataRouter from "../../../router/router";
+import router from "../../../router/router";
 
 function PortraitDuo_Root() {
     return (
@@ -200,7 +200,7 @@ function PortraitDuo_Root() {
                 Que ce soit pour marquer un cap, célébrer une étape ou simplement se faire plaisir… <br />
                 <br />
                 <span className={style.SpanLink}>
-                    <Link to={ListDataRouter[3].path}>
+                    <Link to={router[3].path}>
                         Parlons de ce que vous aimeriez capturer pour que votre lumière vous ressemble.
                     </Link>
                 </span>
