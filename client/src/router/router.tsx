@@ -9,7 +9,7 @@ import EditAlbumAdmin_Page from "../pages/private/admin/edit-album-admin_Page/Ed
 import EditUserAdmin_Page from "../pages/private/admin/edit-user-admin_Page/EditUserAdmin.page";
 import EditUser_Page from "../pages/private/all/edit-user_Page/EditUser.page";
 import InsertAlbumAdmin_Page from "../pages/private/admin/insert-album-admin_Page/InsertAlbumAdmin.page";
-import UserGestionAlbumPage from "../pages/private/users/UserGestionAlbumPage/UserGestionAlbumPage";
+import UserGestionAlbum_Page from "../pages/private/users/user-gestion-album_Page/UserGestionAlbum.page";
 
 /* Page Frontend public */
 import blogRouter from "./blogRouter";
@@ -212,7 +212,7 @@ const router: Router_Type[] = [
     /* {router[32].path} */
     {
         path: "/compte/album",
-        element: <UserGestionAlbumPage />,
+        element: <UserGestionAlbum_Page />,
     },
     /* {router[33].path} */
     {
