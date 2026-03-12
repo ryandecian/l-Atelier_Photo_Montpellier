@@ -3,7 +3,7 @@ import style from "../../stylePage.module.css";
 
 /* Import des Components */
 import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
-import PortfolioRoot from "../../../components/public/PortfolioRoot/PortfolioRoot";
+import PortfolioRoot from "../../../components/public/portfolio/PortfolioRoot";
 import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
 
 /* Import des composants SEO */

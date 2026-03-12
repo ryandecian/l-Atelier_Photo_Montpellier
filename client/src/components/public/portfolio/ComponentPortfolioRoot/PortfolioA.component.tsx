@@ -1,8 +1,9 @@
+/* Import des modules CSS */
 import style from "../../../../StyleRootComponent.module.css";
 
-function PortfolioRootComponentA() {
+function PortfolioA_Component() {
     return (
-        <div className={`PortfolioRootComponentA ${style.ContainerRoot}`}>
+        <div className={`PortfolioA_Component ${style.ContainerRoot}`}>
             <p className={style.TextP4}>
                 Bienvenue dans mon portfolio. Je suis photographe professionnelle à Montpellier, et ce que vous allez découvrir ici est un aperçu de 
                 mon univers visuel. Je photographie aussi bien les gens que les lieux, les instants posés comme ceux saisis sur le vif. Ce portfolio 
@@ -25,4 +26,4 @@ function PortfolioRootComponentA() {
     )
 }
 
-export default PortfolioRootComponentA;
+export { PortfolioA_Component };
