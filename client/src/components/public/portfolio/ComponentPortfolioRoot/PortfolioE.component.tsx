@@ -1,11 +1,9 @@
+/* Import des modules CSS */
 import style from "../../../../StyleRootComponent.module.css";
-// import GeneratorAlbumPhoto from "../../../GeneratorAlbumPhoto/GeneratorAlbumPhoto";
-// import AlbumPortfolio from "../../AlbumPortfolio";
 
-function PortfolioRootComponentE() {
-    // const Album = AlbumPortfolio.Album_Test;
+function PortfolioE_Component() {
     return (
-        <section className={`PortfolioRootComponentE ${style.ContainerRoot}`}>
+        <section className={`PortfolioE_Component ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2}>
                     {"Un regard artistique multiple"}
@@ -47,4 +45,4 @@ function PortfolioRootComponentE() {
     )
 }
 
-export default PortfolioRootComponentE;
+export { PortfolioE_Component };
