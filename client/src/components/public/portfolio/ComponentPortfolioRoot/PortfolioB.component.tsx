@@ -1,10 +1,14 @@
 /* Import des modules CSS */
 import style from "../../../../StyleRootComponent.module.css";
-import { GeneratorAlbumPhoto_Element } from "../../../../elements/generator-album-photo/GeneratorAlbumPhoto.element";
-import AlbumPortfolio from "../../AlbumPortfolio";
+
+/* Import des Components de Data */
+import { imagesPortfolio_Data } from "../imagesPortfolio.data";
+
+/* Import des composants d'Elements */
+import { GeneratorAlbumPhoto_Element } from "../../../elements/generator-album-photo/GeneratorAlbumPhoto.element";
 
 function PortfolioB_Component() {
-    const dataAlbumPaysage = AlbumPortfolio.Album_Paysage;
+    const dataAlbumPaysage = imagesPortfolio_Data.Album_Paysage;
     return (
         <section className={`PortfolioB_Component ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
