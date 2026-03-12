@@ -1,13 +1,7 @@
-/* Import des modules CSS */
-import css from "./userGestionAlbum.module.css";
+import css from "./UserGestionAlbumRoot.module.css";
 import style from "../../../StyleRootComponent.module.css";
-
-/* Import des composants React */
 import { useEffect, useMemo, useState } from "react";
-
-/* Import des Hooks */
-import { useLockedPage_Hook } from "../../../../hook/useLockedPage.security.hook";
-
+import useLockedPage from "../../../../hook/useLockedPage.security.hook";
 import DataAlbumType from "../../../../types/ddataAlbum.type";
 import fetchAPI from "../../../../utils/fetchAPI.utils";
 
