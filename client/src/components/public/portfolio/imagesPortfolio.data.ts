@@ -1,3 +1,4 @@
+/* Import des Types */
 import { ImagesBlog_Type } from "../../../types/components/blogs/imagesBlog.type";
 
 const data_Album_Paysage = [
@@ -235,7 +236,7 @@ const data_Album_Pro_Perso = [
     "lapm-photographe-professionnel-portrait-duo-mere-fils-l-atelier-photo-montpellier.jpg",
 ];
 
-type ListeAlbumType = {
+type ListeAlbum_Type = {
     Album_Paysage: ImagesBlog_Type[];
     Album_Rue_Street: ImagesBlog_Type[];
     Album_Urbaine: ImagesBlog_Type[];
@@ -267,7 +268,7 @@ const Album_Rue_Street = GenerateTableImg(10, "/images/image-portfolio/album-rue
 const Album_Urbaine = GenerateTableImg(15, "/images/image-portfolio/album-urbaine/", data_Album_Urbaine);
 const Album_Pro_Perso = GenerateTableImg(25, "/images/image-portfolio/album-pro-perso/", data_Album_Pro_Perso);
 
-const ImagesPortraitPortfolioControllerData: ListeAlbumType = {
+const imagesPortfolio_Data: ListeAlbum_Type = {
     /* Portrait de particuliers et professionnels */
     Album_Paysage,
     Album_Rue_Street,
@@ -275,4 +276,4 @@ const ImagesPortraitPortfolioControllerData: ListeAlbumType = {
     Album_Pro_Perso,
 };
 
-export default ImagesPortraitPortfolioControllerData;
+export { imagesPortfolio_Data };

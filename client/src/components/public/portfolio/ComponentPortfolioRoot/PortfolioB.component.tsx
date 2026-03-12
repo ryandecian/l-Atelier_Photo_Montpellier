@@ -1,11 +1,12 @@
+/* Import des modules CSS */
 import style from "../../../../StyleRootComponent.module.css";
 import { GeneratorAlbumPhoto_Element } from "../../../../elements/generator-album-photo/GeneratorAlbumPhoto.element";
 import AlbumPortfolio from "../../AlbumPortfolio";
 
-function PortfolioRootComponentB() {
+function PortfolioB_Component() {
     const dataAlbumPaysage = AlbumPortfolio.Album_Paysage;
     return (
-        <section className={`PortfolioRootComponentB ${style.ContainerRoot}`}>
+        <section className={`PortfolioB_Component ${style.ContainerRoot}`}>
             <header className={style.ContainerTitle}>
                 <h2 className={style.TitleH2}>
                     {"Photographies de paysages naturels"}
@@ -28,4 +29,4 @@ function PortfolioRootComponentB() {
     )
 }
 
-export default PortfolioRootComponentB;
+export { PortfolioB_Component };
