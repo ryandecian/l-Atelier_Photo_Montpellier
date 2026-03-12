@@ -7,10 +7,10 @@ import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 
 /* Import des composants Router */
-import ListDataRouter from "../../../router/router";
+import router from "../../../router/router";
 
 /* Import des Types */
-import DataUserType from "../../../types/dataUser.type";
+import { DataUser_Type } from "../../../types/dataUser.type";
 
 function Login_Root() {
     const [email, setEmail] = useState("");
@@ -42,7 +42,7 @@ function Login_Root() {
             localStorage.setItem("jwtTokenClientLAPM", data.jwtTokenClientLAPM);
 
             /* Décodage uniquement pour redirection */
-            const payload = jwtDecode<DataUserType>(data.jwtTokenClientLAPM);
+            const payload = jwtDecode<DataUser_Type>(data.jwtTokenClientLAPM);
 
             /* Redirection selon le rôle */
             if (payload.role === "admin") {
@@ -88,11 +88,11 @@ function Login_Root() {
                 <button type="submit" className={css.Button}>Se connecter</button>
                 {error && <p className={css.error}>{error}</p>}
 
-                <Link to={ListDataRouter[31].path} className={css.linkReset}>
+                <Link to={router[31].path} className={css.linkReset}>
                     Créer un compte ?
                 </Link>
                 
-                <Link to={ListDataRouter[29].path} className={css.linkReset}>
+                <Link to={router[29].path} className={css.linkReset}>
                     Mot de passe oublié ?
                 </Link>
             </form>
