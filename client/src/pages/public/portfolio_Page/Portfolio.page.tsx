@@ -3,7 +3,7 @@ import style from "../../stylePage.module.css";
 
 /* Import des Components */
 import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
-import PortfolioRoot from "../../../components/public/portfolio/PortfolioRoot";
+import Portfolio_Root from "../../../components/public/portfolio/Portfolio.root";
 import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
 
 /* Import des composants SEO */
@@ -22,7 +22,7 @@ function Portfolio_Page() {
                  <Nav_root_Layout />
             </header>
             <main className={style.Main}>
-                <PortfolioRoot />
+                <Portfolio_Root />
             </main>
             <footer className={style.Footer}>
                 <Footer_Layout />
