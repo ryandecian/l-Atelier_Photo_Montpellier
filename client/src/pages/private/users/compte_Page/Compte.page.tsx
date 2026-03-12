@@ -1,16 +1,19 @@
+/* Import des modules CSS */
 import style from "../../../stylePage.module.css";
+
+/* Import des Components */
 import NavRoot from "../../../../components/layout/nav_Layout/Nav.root.layout";
-import CompteRoot from "../../../../components/private/users/CompteRoot/CompteRoot";
+import Compte_Root from "../../../../components/private/users/compte/Compte.root";
 import Footer from "../../../../components/layout/footer_Layout/Footer.layout";
 
-function ComptePage() {
+function Compte_Page() {
     return (
-        <div className={`ComptePage ${style.Page}`}>
+        <div className={`Compte_Page ${style.Page}`}>
             <header className={style.Header}>
                 <NavRoot />
             </header>
             <main className={style.Main}>
-                <CompteRoot />
+                <Compte_Root />
             </main>
             <footer className={style.Footer}>
                 <Footer />
@@ -19,4 +22,4 @@ function ComptePage() {
     );
 }
 
-export default ComptePage;
+export default Compte_Page;
