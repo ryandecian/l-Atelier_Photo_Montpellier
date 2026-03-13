@@ -20,7 +20,7 @@ import router from "../../../router/router";
 
 function PortraitHobby_Root() {
     return (
-        <section className={`PortraitHobbyRoot ${style.ContainerRootRacine}`}>
+        <section className={`PortraitHobby_Root ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
                     {"Portrait Hobby : Mettez en lumière ce qui vous anime !"}

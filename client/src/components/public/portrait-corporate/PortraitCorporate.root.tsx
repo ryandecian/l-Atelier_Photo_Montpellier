@@ -1,6 +1,6 @@
 /* Import des modules CSS */
 import style from "../../StyleRootComponent.module.css";
-import css from "./PortraitCorporateRoot.module.css";
+import css from "./portraitCorporate.module.css";
 
 /* Import des composants d'Elements */
 import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
@@ -18,7 +18,7 @@ import externalLinks from "../../../constants/externalLinks";
 
 function PortraitCorporate_Root() {
     return (
-        <section id="PortraitCorporateRoot" className={`PortraitCorporateRoot ${style.ContainerRootRacine}`}>
+        <section id="PortraitCorporateRoot" className={`PortraitCorporate_Root ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
                     {"Portrait Corporate : Valorisez votre image professionnelle !"}
