@@ -2,32 +2,32 @@
 import style from "../../stylePage.module.css";
 
 /* Import des Components */
-import PortraitGrossesseRoot from "../../../components/Public/portrait-grossesse/PortraitGrossesseRoot";
-import NavRoot from "../../../components/layout/nav_Layout/Nav.root.layout";
-import Footer_layout from "../../../components/layout/footer/Footer.layout";
+import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
+import PortraitGrossesseRoot from "../../../components/public/portrait-grossesse/PortraitGrossesse.root";
+import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
 
 /* Import des composants SEO */
 import { HelmetPortraitGrossesse_helmet_SEO } from "../../../seo/portrait-grossesse_SEO/HelmetPortraitGrossesse.helmet.seo";
 
 /* Import des Hooks */
-import useScrollToHash_utils_Hook from "../../../hook/useScrollToHash";
+import { useScrollToHash_Hook } from "../../../hook/useScrollToHash.hook";
 
 /* Cette page reprend la quasi totalité des éléments éléments et composant de la page Portrait Grossesse */
 
 function PortraitNouveauNe_Page() {
-    useScrollToHash_utils_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
+    useScrollToHash_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
 
     return (
         <section className={`PortraitNouveauNePage ${style.Page}`}>
             <HelmetPortraitGrossesse_helmet_SEO />
             <header id="top" className={style.Header}>
-                 <NavRoot />
+                 <Nav_root_Layout />
             </header>
             <main className={style.Main}>
                 <PortraitGrossesseRoot />
             </main>
             <footer className={style.Footer}>
-                <Footer_layout />
+                <Footer_Layout />
             </footer>
         </section>
     )

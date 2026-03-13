@@ -2,21 +2,21 @@
 import style from "../../stylePage.module.css";
 
 /* Import des Components */
-import Error404Root from "../../../components/Public/error404/Error404.root";
-import NavRoot from "../../../components/layout/nav_Layout/Nav.root.layout";
-import Footer_layout from "../../../components/layout/footer/Footer.layout";
+import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
+import Error404Root from "../../../components/public/error404/Error404.root";
+import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
 
 function Error404_Page() {
      return (
         <section className={`Error404_Page ${style.Page}`}>
             <header className={style.Header}>
-                 <NavRoot />
+                 <Nav_root_Layout />
             </header>
             <main className={style.Main}>
                 <Error404Root />
             </main>
             <footer className={style.Footer}>
-                <Footer_layout />
+                <Footer_Layout />
             </footer>
         </section>
     )

@@ -2,30 +2,30 @@
 import style from "../../stylePage.module.css";
 
 /* Import des Components */
-import PortraitDuo_Root from "../../../components/Public/portrait-duo/PortraitDuo.root";
-import NavRoot from "../../../components/layout/nav_Layout/Nav.root.layout";
-import Footer_layout from "../../../components/layout/footer/Footer.layout";
+import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
+import PortraitDuo_Root from "../../../components/public/portrait-duo/PortraitDuo.root";
+import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
 
 /* Import des composants SEO */
 import { HelmetPortraitDuo_helmet_SEO } from "../../../seo/portrait-duo_SEO/HelmetPortraitDuo.helmet.seo";
 
 /* Import des Hooks */
-import useScrollToHash_utils_Hook from "../../../hook/useScrollToHash";
+import { useScrollToHash_Hook } from "../../../hook/useScrollToHash.hook";
 
 function PortraitDuo_Page() {
-    useScrollToHash_utils_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
+    useScrollToHash_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
 
     return (
         <section className={`PortraitDuo_Page ${style.Page}`}>
             <HelmetPortraitDuo_helmet_SEO />
             <header id="top" className={style.Header}>
-                 <NavRoot />
+                 <Nav_root_Layout />
             </header>
             <main className={style.Main}>
                 <PortraitDuo_Root />
             </main>
             <footer className={style.Footer}>
-                <Footer_layout />
+                <Footer_Layout />
             </footer>
         </section>
     )

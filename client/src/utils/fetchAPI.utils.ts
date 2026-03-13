@@ -1,6 +1,6 @@
 type MethodeType = "GET" | "POST" | "PUT" | "DELETE";
 
-async function fetchAPI(methode: MethodeType, uri: string, body?: Record<string, unknown>) {
+async function fetchAPI_Utils(methode: MethodeType, uri: string, body?: Record<string, unknown>) {
     let error: string | null = null;
     let data: Record<string, unknown> | null = null;
 
@@ -73,7 +73,7 @@ async function fetchAPI(methode: MethodeType, uri: string, body?: Record<string,
     );
 }
 
-export default fetchAPI;
+export { fetchAPI_Utils };
 
 /**
  * Documentation : 
@@ -84,7 +84,7 @@ export default fetchAPI;
  * - Appeler la fonction avec les paramètres nécessaires et un await !
  *
  * Exemple :
- * const res = await fetchAPI("GET", "/api/user", body)
+ * const res = await fetchAPI_Utils("GET", "/api/user", body)
  *
  * Conseil, créer une const body = {var1, var2, var3 etc...}
  * Sachant que chaque var est en général une useState pour les formulaire
