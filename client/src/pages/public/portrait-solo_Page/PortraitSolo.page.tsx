@@ -3,7 +3,7 @@ import style from "../../stylePage.module.css";
 
 /* Import des Components */
 import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
-import PortraitSoloRoot from "../../../components/public/portrait-solo/PortraitSoloRoot";
+import PortraitSolo_Root from "../../../components/public/portrait-solo/PortraitSolo.root";
 import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
 
 /* Import des composants SEO */
@@ -22,7 +22,7 @@ function PortraitSolo_Page() {
                  <Nav_root_Layout />
             </header>
             <main className={style.Main}>
-                <PortraitSoloRoot />
+                <PortraitSolo_Root />
             </main>
             <footer className={style.Footer}>
                 <Footer_Layout />

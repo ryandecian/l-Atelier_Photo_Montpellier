@@ -19,7 +19,7 @@ import router from "../../../router/router";
 
 function PortraitSolo_Root() {
     return (
-        <section className={`PortraitSoloRoot ${style.ContainerRootRacine}`}>
+        <section className={`PortraitSolo_Root ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
                     Portrait Solo : Une séance photos pour renouer avec votre image !
