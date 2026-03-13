@@ -1,20 +1,25 @@
+/* Import des modules CSS */
 import style from "../../StyleRootComponent.module.css";
 
-import { Link } from "react-router-dom";
-import ListDataRouter from "../../../router/router";
-
-import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
-import { Container4ImagesPortrait_Element } from "../../elements/container-image/container-4_Images-portrait/Container4ImagesPortrait.element";
-import { Container3Images_Element } from "../../elements/container-image/container-3-images/Container3Images.element";
-import { imagesPortraitGrossesse_Data } from "./imagesPortraitGrossesse.data";
-
-import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
+/* Import des Components de Data */
 import { avisClientPortraitGrossesse_Data } from "./avisClientPortraitGrossesse.data";
-
-import { TarifCard_Element} from "../../elements/tarifs-card/TarifsCard.element";
+import { imagesPortraitGrossesse_Data } from "./imagesPortraitGrossesse.data";
 import { tarifsPortraitGrossesse_Data, mailtoLinkPortraitGrossesse_Data } from "./tarifsPortraitGrossesse.data";
 
-function PortraitGrossesseRoot() {
+/* Import des composants d'Elements */
+import { Container3Images_Element } from "../../elements/container-image/container-3-images/Container3Images.element";
+import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
+import { Container4ImagesPortrait_Element } from "../../elements/container-image/container-4_Images-portrait/Container4ImagesPortrait.element";
+import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
+import { TarifCard_Element} from "../../elements/tarifs-card/TarifsCard.element";
+
+/* Import des composants React */
+import { Link } from "react-router-dom";
+
+/* Import des composants Router */
+import router from "../../../router/router";
+
+function PortraitGrossesse_Root() {
     return (
         <section className={`PortraitGrossesseRoot ${style.ContainerRootRacine}`}>
 
@@ -239,7 +244,7 @@ function PortraitGrossesseRoot() {
                 Confiez-moi le soin de les rendre éternels. <br />
                 <br />
                 <span className={style.SpanLink}>
-                    <Link to={ListDataRouter[3].path}>
+                    <Link to={router[3].path}>
                         Avant qu’ils ne deviennent de simples souvenirs parlons-en ensemble !
                     </Link>
                 </span>
@@ -254,4 +259,4 @@ function PortraitGrossesseRoot() {
     )
 }
 
-export default PortraitGrossesseRoot;
+export default PortraitGrossesse_Root;

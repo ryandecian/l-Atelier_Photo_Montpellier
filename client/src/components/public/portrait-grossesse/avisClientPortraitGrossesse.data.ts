@@ -2,7 +2,6 @@
 import { AvisClientSEO_Type } from "../../../types/seo/avisClientSEO.type";
 
 const avisClientPortraitGrossesse_Data: AvisClientSEO_Type[] = [
-    /* Commentaire 1 */
     {
         id: 1,
         nom: "Lucie CABELLO",
