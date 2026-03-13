@@ -1,19 +1,24 @@
+/* Import des modules CSS */
 import style from "../../StyleRootComponent.module.css";
-import css from "./PortraitHobbyRoot.module.css";
+import css from "./portraitHobby.module.css";
 
-import { Link } from "react-router-dom";
-import ListDataRouter from "../../../router/router";
-
-import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
-import { imagesPortraitHobby_Data } from "./imagesPortraitHobby.data";
-
-import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
+/* Import des Components de Data */
 import { avisClientPortraitHobby_Data } from "./avisClientPortraitHobby.data";
-
-import { TarifCard_Element} from "../../elements/tarifs-card/TarifsCard.element";
+import { imagesPortraitHobby_Data } from "./imagesPortraitHobby.data";
 import { tarifsPortraitHobby_Data, mailtoLinkPortraitHobby_Data } from "./tarifsPortraitHobby.data";
 
-function PortraitHobbyRoot() {
+/* Import des composants d'Elements */
+import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
+import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
+import { TarifCard_Element} from "../../elements/tarifs-card/TarifsCard.element";
+
+/* Import des composants React */
+import { Link } from "react-router-dom";
+
+/* Import des composants Router */
+import router from "../../../router/router";
+
+function PortraitHobby_Root() {
     return (
         <section className={`PortraitHobbyRoot ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
@@ -222,7 +227,7 @@ function PortraitHobbyRoot() {
                 Que ce soit pour marquer un cap, célébrer une étape ou simplement se faire plaisir… <br />
                 <br />
                 <span className={style.SpanLink}>
-                    <Link to={ListDataRouter[3].path}>
+                    <Link to={router[3].path}>
                         Parlons de ce que vous aimeriez capturer pour que votre lumière vous ressemble.
                     </Link>
                 </span>
@@ -237,4 +242,4 @@ function PortraitHobbyRoot() {
     )
 }
 
-export default PortraitHobbyRoot;
+export default PortraitHobby_Root;
