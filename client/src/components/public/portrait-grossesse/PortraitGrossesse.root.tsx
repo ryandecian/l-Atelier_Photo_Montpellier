@@ -21,7 +21,7 @@ import router from "../../../router/router";
 
 function PortraitGrossesse_Root() {
     return (
-        <section className={`PortraitGrossesseRoot ${style.ContainerRootRacine}`}>
+        <section className={`PortraitGrossesse_Root ${style.ContainerRootRacine}`}>
 
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
