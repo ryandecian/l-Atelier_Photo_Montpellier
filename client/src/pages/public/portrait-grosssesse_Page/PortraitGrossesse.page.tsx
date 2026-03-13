@@ -3,7 +3,7 @@ import style from "../../stylePage.module.css";
 
 /* Import des Components */
 import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
-import PortraitGrossesseRoot from "../../../components/public/portrait-grossesse/PortraitGrossesse.root";
+import PortraitGrossesse_Root from "../../../components/public/portrait-grossesse/PortraitGrossesse.root";
 import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
 
 /* Import des composants SEO */
@@ -22,7 +22,7 @@ function PortraitGrossesse_Page() {
                  <Nav_root_Layout />
             </header>
             <main className={style.Main}>
-                <PortraitGrossesseRoot />
+                <PortraitGrossesse_Root />
             </main>
             <footer className={style.Footer}>
                 <Footer_Layout />
