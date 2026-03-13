@@ -1,18 +1,23 @@
+/* Import des modules CSS */
 import style from "../../StyleRootComponent.module.css";
 
-import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
-import { imagesPortraitSolo_Data } from "./imagesPortraitSolo.data";
-
-import { Link } from "react-router-dom";
-import ListDataRouter from "../../../router/router";
-
+/* Import des Components de Data */
 import { avisClientPortraitSolo_Data } from "./avisClientPortraitSolo.data";
-import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
-
-import { TarifCard_Element} from "../../elements/tarifs-card/TarifsCard.element";
+import { imagesPortraitSolo_Data } from "./imagesPortraitSolo.data";
 import { tarifsPortraitSolo_Data, mailtoLinkPortraitSolo_Data } from "./tarifsPortraitSolo.data";
 
-function PortraitSoloRoot() {
+/* Import des composants d'Elements */
+import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
+import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
+import { TarifCard_Element} from "../../elements/tarifs-card/TarifsCard.element";
+
+/* Import des composants React */
+import { Link } from "react-router-dom";
+
+/* Import des composants Router */
+import router from "../../../router/router";
+
+function PortraitSolo_Root() {
     return (
         <section className={`PortraitSoloRoot ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
@@ -211,7 +216,7 @@ function PortraitSoloRoot() {
 
            <p className={style.TextP4}>
                 <span className={style.SpanLink}>
-                    <Link to={ListDataRouter[3].path}>
+                    <Link to={router[3].path}>
                         Parlons de ce que vous aimeriez capturer pour que votre lumière vous ressemble.
                     </Link>
                 </span>
@@ -226,4 +231,4 @@ function PortraitSoloRoot() {
     )
 }
 
-export default PortraitSoloRoot;
+export default PortraitSolo_Root;
