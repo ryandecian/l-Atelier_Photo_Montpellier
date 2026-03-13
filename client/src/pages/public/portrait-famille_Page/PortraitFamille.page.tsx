@@ -2,30 +2,30 @@
 import style from "../../stylePage.module.css";
 
 /* Import des Components */
-import PortraitFamilleRoot from "../../../components/Public/portrait-famille/PortraitFamilleRoot";
-import NavRoot from "../../../components/layout/nav_Layout/Nav.root.layout";
-import Footer_layout from "../../../components/layout/footer/Footer.layout";
+import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
+import PortraitFamille_Root from "../../../components/public/portrait-famille/PortraitFamille.root";
+import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
 
 /* Import des composants SEO */
 import { HelmetPortraitFamille_helmet_SEO } from "../../../seo/portrait-famille_SEO/HelmetPortraitFamille.helmet.seo";
 
 /* Import des Hooks */
-import useScrollToHash_utils_Hook from "../../../hook/useScrollToHash";
+import { useScrollToHash_Hook } from "../../../hook/useScrollToHash.hook";
 
 function PortraitFamille_Page() {
-    useScrollToHash_utils_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
+    useScrollToHash_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
 
     return (
         <section className={`PortraitFamille_Page ${style.Page}`}>
             <HelmetPortraitFamille_helmet_SEO />
             <header id="top" className={style.Header}>
-                 <NavRoot />
+                 <Nav_root_Layout />
             </header>
             <main className={style.Main}>
-                <PortraitFamilleRoot />
+                <PortraitFamille_Root />
             </main>
             <footer className={style.Footer}>
-                <Footer_layout />
+                <Footer_Layout />
             </footer>
         </section>
     )

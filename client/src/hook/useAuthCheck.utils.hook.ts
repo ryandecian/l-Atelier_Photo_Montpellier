@@ -1,11 +1,16 @@
+/* Import des composants React */
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { jwtDecode } from "jwt-decode";
-import DataUserType from "../types/dataUser.type";
 
-const useAuthCheck = () => {
+/* Import des Dépendance */
+import { jwtDecode } from "jwt-decode";
+
+/* Import des Types */
+import { DataUser_Type } from "../types/dataUser.type";
+
+const useAuthCheck_Hook = () => {
     const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false); // False = non connecté
-    const [userInfo, setUserInfo] = useState<DataUserType | null>(null); // DataUser
+    const [userInfo, setUserInfo] = useState<DataUser_Type | null>(null); // DataUser
     const [isChecking, setIsChecking] = useState<boolean>(true); // True = en cours de vérification
     const navigate = useNavigate();
     
@@ -21,7 +26,7 @@ const useAuthCheck = () => {
         }
 
         try {
-            const payload: DataUserType = jwtDecode<DataUserType>(token); 
+            const payload: DataUser_Type = jwtDecode<DataUser_Type>(token); 
 
             const now: number = Math.floor(Date.now() / 1000);
 
@@ -46,7 +51,7 @@ const useAuthCheck = () => {
     return { isLoggedIn, userInfo, isChecking };
 };
 
-export default useAuthCheck;
+export { useAuthCheck_Hook };
 
 /*
 Utilisation :
