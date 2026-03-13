@@ -19,7 +19,7 @@ import router from "../../../router/router";
 
 function PortraitMariage_Root() {
     return (
-        <section className={`PortraitMariageRoot ${style.ContainerRootRacine}`}>
+        <section className={`PortraitMariage_Root ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
                     Photo & Vidéo de mariage : Un récit complet, une émotion intacte.

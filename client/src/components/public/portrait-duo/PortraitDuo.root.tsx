@@ -19,7 +19,7 @@ import router from "../../../router/router";
 
 function PortraitDuo_Root() {
     return (
-        <section className={`PortraitDuoRoot ${style.ContainerRootRacine}`}>
+        <section className={`PortraitDuo_Root ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
                     {"Portrait Duo et Couple : Immortalisez votre complicité avec authenticité"}
