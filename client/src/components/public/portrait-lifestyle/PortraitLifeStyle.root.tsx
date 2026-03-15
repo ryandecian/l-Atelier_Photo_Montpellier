@@ -1,21 +1,28 @@
+/* Import des modules CSS */
 import style from "../../StyleRootComponent.module.css";
 
-import externalLinks from "../../../constants/externalLinks";
-import useScrollToHash from "../../../hook/useScrollToHash.hook";
+/* Import des Components */
+import { PortraitLifeStyleA_Component } from "./components/PortraitLifeStyleA.component";
 
-import { imagesPortraitLifeStyle_Data } from "./imagesPortraitLifeStyle.data";
-import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
-
+/* Import des Components de Data */
 import { avisClientPortraitLifeStyle_Data } from "./avisClientPortraitLifeStyle.data";
+import { imagesPortraitLifeStyle_Data } from "./imagesPortraitLifeStyle.data";
+
+/* Import des composants d'Elements */
+import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
 import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 
-import PortraitLifeStyleRootComponentB from "./ComponentsPortraitLifeStyleRoot/PortraitLifeStyleRootComponentB/PortraitLifeStyleRootComponentB";
+/* Import des composants Router */
+import externalLinks from "../../../constants/externalLinks";
 
-function PortraitLifeStyleRoot() {
-    useScrollToHash(); /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
+/* Import des Hooks */
+import { useScrollToHash_Hook } from "../../../hook/useScrollToHash.hook";
+
+function PortraitLifeStyle_Root() {
+    useScrollToHash_Hook(); /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
 
     return (
-        <section className={`PortraitLifeStyleRoot ${style.ContainerRootRacine}`}>
+        <section className={`PortraitLifeStyle_Root ${style.ContainerRootRacine}`}>
 
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
@@ -68,8 +75,8 @@ function PortraitLifeStyleRoot() {
                 </span> 
             </p>
 
-            {/* Container B : Cards */}
-            <PortraitLifeStyleRootComponentB />
+            {/* Container Cards */}
+            <PortraitLifeStyleA_Component />
             
             <h2 className={style.TitleH2px2}>
                 Portrait Solo : Se voir autrement
@@ -528,4 +535,4 @@ function PortraitLifeStyleRoot() {
     );
 }
 
-export default PortraitLifeStyleRoot;
+export default PortraitLifeStyle_Root;
