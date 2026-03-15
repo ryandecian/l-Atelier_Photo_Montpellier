@@ -9,7 +9,7 @@ import { Container4Images_Element } from "../../elements/container-image/contain
 import { avisClientPortraitLifeStyle_Data } from "./avisClientPortraitLifeStyle.data";
 import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 
-import PortraitLifeStyleRootComponentB from "./ComponentsPortraitLifeStyleRoot/PortraitLifeStyleRootComponentB/PortraitLifeStyleRootComponentB";
+import PortraitLifeStyleRootComponentB from "./components/PortraitLifeStyleA.component";
 
 function PortraitLifeStyleRoot() {
     useScrollToHash(); /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
