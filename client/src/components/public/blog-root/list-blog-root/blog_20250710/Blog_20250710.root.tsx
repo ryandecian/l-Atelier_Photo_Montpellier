@@ -2,7 +2,7 @@
 import style from "../../../../StyleRootComponent.module.css";
 
 /* Import des Components */
-import PortraitLifeStyleRootComponentB from "../../../portrait-lifestyle/components/PortraitLifeStyleA.component";
+import { PortraitLifeStyleA_Component } from "../../../portrait-lifestyle/components/PortraitLifeStyleA.component";
 
 /* Import des Components de Data */
 import { imagesBlog_20250710_img_data } from "./imagesBlog_20250710.img.data";
@@ -238,7 +238,7 @@ function Blog_20250710_Root() {
                 </span>
             </p>
 
-            <PortraitLifeStyleRootComponentB />
+            <PortraitLifeStyleA_Component />
         </section>
     )
 }
