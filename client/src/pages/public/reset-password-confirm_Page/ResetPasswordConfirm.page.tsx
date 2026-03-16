@@ -3,7 +3,7 @@ import style from "../../stylePage.module.css";
 
 /* Import des Components */
 import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
-import ResetPasswordConfirmRoot from "../../../components/public/ResetPasswordConfirmRoot/ResetPasswordConfirm";
+import ResetPasswordConfirm_Root from "../../../components/public/reset-password-confirm/ResetPasswordConfirm.root";
 import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
 
 /* Import des Hooks */
@@ -18,7 +18,7 @@ function ResetPasswordConfirm_Page() {
                  <Nav_root_Layout />
             </header>
             <main className={style.Main}>
-                <ResetPasswordConfirmRoot />
+                <ResetPasswordConfirm_Root />
             </main>
             <footer className={style.Footer}>
                 <Footer_Layout />
