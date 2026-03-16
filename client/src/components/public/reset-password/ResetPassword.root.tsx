@@ -8,7 +8,7 @@ import { useState } from "react";
 /* Import des Utils */
 import { fetchAPI_Utils } from "../../../utils/fetchAPI.utils";
 
-function ResetPasswordRoot() {
+function ResetPassword_Root() {
     /* States locaux */
     const [email, setEmail] = useState<string>("");
     const [loading, setLoading] = useState<boolean>(false);
@@ -110,4 +110,4 @@ function ResetPasswordRoot() {
     );
 }
 
-export default ResetPasswordRoot;
+export default ResetPassword_Root;
