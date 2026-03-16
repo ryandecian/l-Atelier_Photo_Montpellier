@@ -8,9 +8,12 @@ Revoir les lien facebook et instagram dans dataSEORoot
 La page blog 20260305 ne possède pas les bonnes images helmet et google, il faudra
 demander à la cliente d'en fournir
 ------------------------------------------------------------------------------
-A vérifier, le composant B de la page Portfolio avait un intermédiaire pour éviter de rappeler 
-plusieurs fois les datas, maintenant le composant data est passé de tsx a ts. Si cela fonctionne, 
-il faudra supprimer AlbumPortfolio.ts
+Mise a jour des dépendances de LAPM, voici les cibles : 
+"react": "^19.2.4",
+"react-dom": "^19.2.4",
+"react-router-dom": "^7.13.1"
+
+Il manquera aussi une refactorisation du composant externalLink en routerExt
 ------------------------------------------------------------------------------
 Liste des pages qui reste a éditer : 
 - Portfolio
