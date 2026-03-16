@@ -2,30 +2,30 @@
 import style from "../../stylePage.module.css";
 
 /* Import des Components */
-import PortfolioRoot from "../../../components/Public/PortfolioRoot/PortfolioRoot";
-import NavRoot from "../../../components/layout/nav_Layout/Nav.root.layout";
-import Footer_layout from "../../../components/layout/footer/Footer.layout";
+import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
+import Portfolio_Root from "../../../components/public/portfolio/Portfolio.root";
+import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
 
 /* Import des composants SEO */
 import { HelmetPortfolio_helmet_SEO } from "../../../seo/portfolio_SEO/HelmetPortfolio.helmet.seo";
 
 /* Import des Hooks */
-import useScrollToHash_utils_Hook from "../../../hook/useScrollToHash";
+import { useScrollToHash_Hook } from "../../../hook/useScrollToHash.hook";
 
 function Portfolio_Page() {
-    useScrollToHash_utils_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
+    useScrollToHash_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
 
     return (
         <section className={`Portfolio_Page ${style.Page}`}>
             <HelmetPortfolio_helmet_SEO />
             <header id="top" className={style.Header}>
-                 <NavRoot />
+                 <Nav_root_Layout />
             </header>
             <main className={style.Main}>
-                <PortfolioRoot />
+                <Portfolio_Root />
             </main>
             <footer className={style.Footer}>
-                <Footer_layout />
+                <Footer_Layout />
             </footer>
         </section>
     )

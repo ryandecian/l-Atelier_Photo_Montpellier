@@ -2,30 +2,30 @@
 import style from "../../stylePage.module.css";
 
 /* Import des Components */
-import Video_Root from "../../../components/Public/video/Video.root";
-import NavRoot from "../../../components/layout/nav_Layout/Nav.root.layout";
-import Footer_layout from "../../../components/layout/footer/Footer.layout";
+import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
+import Video_Root from "../../../components/public/video/Video.root";
+import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
 
 /* Import des composants SEO */
 import { HelmetPortraitMariage_helmet_SEO } from "../../../seo/portrait-mariage_SEO/HelmetPortraitMariage.helmet.seo";
 
 /* Import des Hooks */
-import useScrollToHash_utils_Hook from "../../../hook/useScrollToHash";
+import { useScrollToHash_Hook } from "../../../hook/useScrollToHash.hook";
 
 function Video_Page() {
-    useScrollToHash_utils_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
+    useScrollToHash_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
 
     return (
         <div className={`Video_Page ${style.Page}`}>
             <HelmetPortraitMariage_helmet_SEO />
             <header id="top" className={style.Header}>
-                 <NavRoot />
+                 <Nav_root_Layout />
             </header>
             <main className={style.Main}>
                 <Video_Root />
             </main>
             <footer className={style.Footer}>
-                <Footer_layout />
+                <Footer_Layout />
             </footer>
         </div>
     )

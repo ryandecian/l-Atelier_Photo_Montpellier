@@ -5,7 +5,7 @@ import css from "./premiumCardImgModal.module.css";
 import { useState } from "react";
 
 /* Import des Types */
-import { PremiumCardImgModal_Type } from "../../../types/elements/premiumCardImgModal.type";
+import type { PremiumCardImgModal_Type } from "../../../types/elements/premiumCardImgModal.type";
 
 function PremiumCardImgModal_Element({ src, alt, className }: PremiumCardImgModal_Type) {
     const [isOpen, setIsOpen] = useState(false);

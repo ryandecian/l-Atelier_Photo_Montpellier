@@ -2,7 +2,7 @@
 import css from "./tarifsCard.module.css";
 
 /* Import des Types */
-import { TarifCard_Type, FormuleKey_Type, PricingData_Type, PricingLine_Type } from "../../../types/prestations.type";
+import type { TarifCard_Type, FormuleKey_Type, PricingData_Type, PricingLine_Type } from "../../../types/prestations.type";
 
 function TarifCard_Element({ tarifs, mailtoLink, id }: TarifCard_Type) {
     return (
