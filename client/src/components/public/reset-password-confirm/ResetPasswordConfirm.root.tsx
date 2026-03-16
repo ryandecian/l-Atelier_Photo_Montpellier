@@ -1,10 +1,15 @@
-import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import fetchAPI from "../../../utils/fetchAPI.utils";
-import css from "./ResetPasswordConfirm.module.css";
+/* Import des modules CSS */
 import style from "../../StyleRootComponent.module.css";
+import css from "./resetPasswordConfirm.module.css";
 
-function ResetPasswordConfirmRoot() {
+/* Import des composants React */
+import { Link, useLocation } from "react-router-dom";
+import { useState } from "react";
+
+/* Import des Utils */
+import { fetchAPI_Utils } from "../../../utils/fetchAPI.utils";
+
+function ResetPasswordConfirm_Root() {
     /* States locaux */
     const [password, setPassword] = useState<string>("");
     const [confirmPassword, setConfirmPassword] = useState<string>("");
@@ -59,7 +64,7 @@ function ResetPasswordConfirmRoot() {
         setLoading(true);
 
         try {
-            const res = await fetchAPI("POST", "/reset-password/confirm", { token, password });
+            const res = await fetchAPI_Utils("POST", "/reset-password/confirm", { token, password });
 
             /* 1) Erreur “métier” renvoyée par le backend */
             if (res.data && typeof (res.data as Record<string, unknown>).error === "string") {
@@ -169,4 +174,4 @@ function ResetPasswordConfirmRoot() {
     );
 }
 
-export default ResetPasswordConfirmRoot;
+export default ResetPasswordConfirm_Root;
