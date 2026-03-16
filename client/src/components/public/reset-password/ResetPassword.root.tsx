@@ -1,7 +1,12 @@
-import { useState } from "react";
+/* Import des modules CSS */
+import css from "./resetPassword.module.css";
+
+/* Import des composants React */
 import { Link } from "react-router-dom";
-import fetchAPI from "../../../utils/fetchAPI.utils";
-import css from "./ResetPasswordRoot.module.css";
+import { useState } from "react";
+
+/* Import des Utils */
+import { fetchAPI_Utils } from "../../../utils/fetchAPI.utils";
 
 function ResetPasswordRoot() {
     /* States locaux */
@@ -33,7 +38,7 @@ function ResetPasswordRoot() {
         setLoading(true);
 
         /* Appel API */
-        const res = await fetchAPI("POST", "/reset-password", { email });
+        const res = await fetchAPI_Utils("POST", "/reset-password", { email });
 
         /* 1) Priorité aux erreurs métier renvoyées par le backend (toujours dans res.data.error) */
         if (res.data && typeof (res.data as Record<string, unknown>).error === "string") {
