@@ -9,12 +9,12 @@ import { ServiceCardAdminLink_Element, ServiceCardAdminButton_Element } from "..
 import router from "../../../../router/router";
 
 /* Import des Hooks */
-import useLogout from "../../../../hook/useLogout.hook";
+import { useLogout_Hook } from "../../../../hook/useLogout.hook";
 import { useLockedPage_Hook } from "../../../../hook/useLockedPage.security.hook";
 
 function Admin_Root() {
     const userInfo = useLockedPage_Hook("admin");
-    const logout = useLogout();
+    const logout = useLogout_Hook();
 
     if (!userInfo) {
         return <p>Chargement...</p>;
