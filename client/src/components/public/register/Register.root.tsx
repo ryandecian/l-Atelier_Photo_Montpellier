@@ -3,8 +3,8 @@ import style from "../../StyleRootComponent.module.css";
 import css from "./register.module.css";
 
 /* Import des composants React */
-import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 /* Import des composants Router */
 import router from "../../../router/router";
