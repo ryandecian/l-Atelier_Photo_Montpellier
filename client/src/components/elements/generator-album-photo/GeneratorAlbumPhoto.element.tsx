@@ -6,7 +6,7 @@ import css from "./generatorAlbumPhoto.module.css";
 import { PremiumCardImgModal_Element } from "../premium-card-img-modal/PremiumCardImgModal.element";
 
 /* Import des Types */
-import { DataAlbumPhoto_Type } from "../../../types/elements/albumPhoto.type";
+import type { DataAlbumPhoto_Type } from "../../../types/elements/albumPhoto.type";
 
 function GeneratorAlbumPhoto_Element({ album }: DataAlbumPhoto_Type) {
     return (
