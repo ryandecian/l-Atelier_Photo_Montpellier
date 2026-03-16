@@ -1,12 +1,18 @@
-/* RegisterRoot.tsx */
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import fetchAPI from "../../../utils/fetchAPI.utils";
-import css from "./RegisterRoot.module.css";
+/* Import des modules CSS */
 import style from "../../StyleRootComponent.module.css";
-import ListDataRouter from "../../../router/router";
+import css from "./register.module.css";
 
-function RegisterRoot() {
+/* Import des composants React */
+import { Link } from "react-router-dom";
+import { useState } from "react";
+
+/* Import des composants Router */
+import router from "../../../router/router";
+
+/* Import des Utils */
+import { fetchAPI_Utils } from "../../../utils/fetchAPI.utils";
+
+function Register_Root() {
     /* States locaux */
     const [firstname, setFirstname] = useState<string>("");
     const [lastname, setLastname] = useState<string>("");
@@ -88,7 +94,7 @@ function RegisterRoot() {
                 ? { ...base, adress: adress.trim() }
                 : base;
 
-            const res = await fetchAPI("POST", "/user/register", body);
+            const res = await fetchAPI_Utils("POST", "/user/register", body);
 
             /* 1) Erreur métier renvoyée par le backend */
             if (res.data && typeof (res.data as Record<string, unknown>).error === "string") {
@@ -275,7 +281,7 @@ function RegisterRoot() {
                         />
                         <label htmlFor="consentCGV" className={css.ConsentLabel}>
                             J’ai lu et j’accepte les{" "}
-                            <Link to={ListDataRouter[9].path} className={css.link} target="_blank" rel="noopener noreferrer">
+                            <Link to={router[9].path} className={css.link} target="_blank" rel="noopener noreferrer">
                                 Conditions Générales de Vente
                             </Link>{" "}
                             et j’autorise le traitement de mes données personnelles pour la gestion de mon compte.
@@ -307,4 +313,4 @@ function RegisterRoot() {
     );
 }
 
-export default RegisterRoot;
+export default Register_Root;
