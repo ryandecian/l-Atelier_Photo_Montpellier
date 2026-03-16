@@ -1,13 +1,13 @@
 /* Import des composants d'Avis clients */
-import { avisClientPortraitCorporate_Data } from "../components/Public/portrait-corporate/avisClientPortraitCorporate.data";
-import { avisClientPortraitDuo_Data } from "../components/Public/portrait-duo/avisClientPortraitDuo.data";
-import { avisClientPortraitFamille_Data } from "../components/Public/portrait-famille/avisClientPortraitFamille.data";
-import { avisClientPortraitGrossesse_Data } from "../components/Public/portrait-grossesse/avisClientPortraitGrossesse.data";
-import { avisClientPortraitHobby_Data } from "../components/Public/portrait-hobby/avisClientPortraitHobby.data";
-import { avisClientPortraitLifeStyle_Data } from "../components/Public/portrait-lifestyle/avisClientPortraitLifeStyle.data";
-import { avisClientPortraitMariage_Data} from "../components/Public/portrait-mariage/avisClientPortraitMariage.data";
-import { avisClientPortraitSolo_Data } from "../components/Public/portrait-solo/avisClientPortraitSolo.data";
-import { avisClientHome_Data } from "../components/Public/home/avisClientHome.data";
+import { avisClientPortraitCorporate_Data } from "../components/public/portrait-corporate/avisClientPortraitCorporate.data";
+import { avisClientPortraitDuo_Data } from "../components/public/portrait-duo/avisClientPortraitDuo.data";
+import { avisClientPortraitFamille_Data } from "../components/public/portrait-famille/avisClientPortraitFamille.data";
+import { avisClientPortraitGrossesse_Data } from "../components/public/portrait-grossesse/avisClientPortraitGrossesse.data";
+import { avisClientPortraitHobby_Data } from "../components/public/portrait-hobby/avisClientPortraitHobby.data";
+import { avisClientPortraitLifeStyle_Data } from "../components/public/portrait-lifestyle/avisClientPortraitLifeStyle.data";
+import { avisClientPortraitMariage_Data} from "../components/public/portrait-mariage/avisClientPortraitMariage.data";
+import { avisClientPortraitSolo_Data } from "../components/public/portrait-solo/avisClientPortraitSolo.data";
+import { avisClientHome_Data } from "../components/public/home/avisClientHome.data";
 
 /* Import des Types */
 import { AvisClientSEO_Type } from "../types/seo/avisClientSEO.type";

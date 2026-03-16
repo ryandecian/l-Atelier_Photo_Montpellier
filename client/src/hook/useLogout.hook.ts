@@ -1,12 +1,15 @@
+/* Import des composants React */
 import { useNavigate } from "react-router-dom";
-import fetchAPI from "../utils/fetchAPI.utils";
 
-function useLogout() {
+/* Import des Utils */
+import { fetchAPI_Utils } from "../utils/fetchAPI.utils";
+
+function useLogout_Hook() {
     const navigate = useNavigate();
 
     const logout = async () => {
         localStorage.removeItem("jwtTokenClientLAPM");
-        await fetchAPI("POST", "/logout");
+        await fetchAPI_Utils("POST", "/logout");
         navigate("/login");
     };
 
@@ -15,4 +18,4 @@ function useLogout() {
     );
 }
 
-export default useLogout;
+export { useLogout_Hook };

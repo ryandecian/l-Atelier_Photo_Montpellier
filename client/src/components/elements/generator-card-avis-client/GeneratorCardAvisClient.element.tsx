@@ -5,7 +5,7 @@ import css from "./generatorCardAvisClient.module.css";
 import { useState } from "react";
 
 /* Import des Types */
-import { DatasAvisClient_Type } from "../../../types/seo/avisClientSEO.type";
+import type { DatasAvisClient_Type } from "../../../types/seo/avisClientSEO.type";
 
 /* Import des Utils */
 import { convertDateFrToISO_String_Utils } from "../../../utils/seo/convertDateFrToISO.utils";

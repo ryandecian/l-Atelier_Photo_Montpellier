@@ -1,4 +1,4 @@
-type DataUserType = {
+type DataUser_Type = {
     id: number;
     firstname: string;
     lastname: string;
@@ -10,4 +10,4 @@ type DataUserType = {
     exp: number; // Date d'expiration du token
 }
 
-export default DataUserType;
+export type { DataUser_Type };
