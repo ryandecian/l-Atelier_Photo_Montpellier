@@ -14,7 +14,6 @@ Mise a jour des dépendances de LAPM, voici les cibles :
 "react-router-dom": "^7.13.1"
 
 Il manquera aussi une refactorisation du composant externalLink en routerExt
-
 ------------------------------------------------------------------------------
 Liste des pages qui reste a éditer : 
 - Portfolio
