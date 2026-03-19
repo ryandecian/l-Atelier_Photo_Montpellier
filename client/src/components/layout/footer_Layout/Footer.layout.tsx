@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 /* Import des composants Router */
 import router from "../../../router/router";
-import externalLinks from "../../../constants/externalLinks";
+import externalLinks from "../../../router/routerExt.router";
 
 /* Import des composants de signature */
 import Ghost_signature_Footer_layout from "../../../signature/Ghost.signature";

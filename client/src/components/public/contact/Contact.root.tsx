@@ -6,7 +6,7 @@ import style from "../../StyleRootComponent.module.css";
 import { Mail, Phone } from "lucide-react";
 
 /* Import des composants Router */
-import externalLinks from "../../../constants/externalLinks";
+import externalLinks from "../../../router/routerExt.router";
 
 function Contact_Root() {
     return (

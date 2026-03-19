@@ -1,5 +1,5 @@
 /* Import des composants Router */
-import externalLinks from "../../../constants/externalLinks";
+import externalLinks from "../../../router/routerExt.router";
 
 /* Import des Types */
 import { Prestation_Type, FormuleGroupe1_Type, DataEmailFormuleGroupe1_Type } from "../../../types/prestations.type";

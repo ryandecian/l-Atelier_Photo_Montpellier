@@ -16,7 +16,7 @@ interface LinkExtType {
     loi3: string
 }
 
-const externalLinks: LinkExtType = {
+const routerExt: LinkExtType = {
     instagram: "https://www.instagram.com/atelier_photo_montpellier",
     facebook: "https://www.facebook.com/profile.php?id=61577509208546",
     youtube: "https://youtube.com/@l-atelier-photo-montpellier?si=yZgwa2oZn4LzZQlD",
@@ -32,4 +32,4 @@ const externalLinks: LinkExtType = {
     phoneHebergeur: "tel:+33444446040"
 }
 
-export default externalLinks;
+export default routerExt;

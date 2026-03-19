@@ -14,7 +14,7 @@ import { imagesPortraitCorporate_Data } from "./imagesPortraitCorporate.data";
 import { tarifsPortraitCorporate_Data, mailtoLinkPortraitCorporate_Data } from "./tarifsPortraitCorporate.data";
 
 /* Import des composants Router */
-import externalLinks from "../../../constants/externalLinks";
+import externalLinks from "../../../router/routerExt.router";
 
 function PortraitCorporate_Root() {
     return (

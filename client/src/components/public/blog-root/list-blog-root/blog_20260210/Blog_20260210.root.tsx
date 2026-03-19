@@ -11,7 +11,7 @@ import { Container4Images_Element } from "../../../../elements/container-image/c
 import { Container4ImagesPaysage_Element } from "../../../../elements/container-image/container-4-Images-paysage/Container4ImagesPaysage.element";
 
 /* Import des composants Router */
-import externalLinks from "../../../../../constants/externalLinks";
+import externalLinks from "../../../../../router/routerExt.router";
 
 function Blog_20260210_Root() {
     return (

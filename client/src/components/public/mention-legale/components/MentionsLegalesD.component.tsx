@@ -2,7 +2,7 @@
 import style from "../../../StyleRootComponent.module.css";
 
 /* Import des composants Router */
-import externalLinks from "../../../../constants/externalLinks";
+import externalLinks from "../../../../router/routerExt.router";
 
 function MentionsLegalesD_Component() {
     return (
