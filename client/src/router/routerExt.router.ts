@@ -32,4 +32,4 @@ const routerExt: LinkExtType = {
     phoneHebergeur: "tel:+33444446040"
 }
 
-export default routerExt;
+export { routerExt };
