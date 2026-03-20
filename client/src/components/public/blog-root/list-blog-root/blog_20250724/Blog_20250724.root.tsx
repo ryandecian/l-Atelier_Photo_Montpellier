@@ -12,7 +12,7 @@ import { PremiumCardImgModal_Element } from "../../../../elements/premium-card-i
 import { Link } from "react-router-dom";
 
 /* Import des composants Router */
-import ListDataRouter from "../../../../../router/router";
+import router from "../../../../../router/router";
 
 function Blog_20250724_Root() {
     return (
@@ -241,7 +241,7 @@ function Blog_20250724_Root() {
             <p className={style.TextP4}>
                 <span className={style.SpanLink}>
                     <Link 
-                        to={`${ListDataRouter[18].path}#top`} 
+                        to={`${router[18].path}#top`} 
                         title="Voir les prestations grossesse proposées par l'Atelier Photo Montpellier"
                     >
                         {`Envie de créer vos propres souvenirs ? Découvrez mes prestations dédiées à la photo de grossesse.`}

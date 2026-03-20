@@ -2,7 +2,7 @@
 import style from "../../../StyleRootComponent.module.css";
 
 /* Import des composants Router */
-import externalLinks from "../../../../constants/externalLinks";
+import { routerExt } from "../../../../router/routerExt.router";
 
 function MentionsLegalesD_Component() {
     return (
@@ -15,7 +15,7 @@ function MentionsLegalesD_Component() {
             <p className={style.TextP4}>
                 Conformément aux dispositions de la {" "}
                 <span className={style.SpanLink}>
-                    <a href={externalLinks.loi3} target="_blank" rel="noopener noreferrer">
+                    <a href={routerExt.loi3} target="_blank" rel="noopener noreferrer">
                         {"loi 78-17 du 6 janvier 1978 modifiée"}
                     </a>
                 </span>
@@ -26,7 +26,7 @@ function MentionsLegalesD_Component() {
                 <strong>ANNE SAUNIER</strong>
                 {" "} – {" "}
                 <span className={style.SpanLink}>
-                    <a href={externalLinks.emailAnne} target="_blank" rel="noopener noreferrer">
+                    <a href={routerExt.emailAnne} target="_blank" rel="noopener noreferrer">
                         {"photo34000@gmail.com"}
                     </a>
                 </span>

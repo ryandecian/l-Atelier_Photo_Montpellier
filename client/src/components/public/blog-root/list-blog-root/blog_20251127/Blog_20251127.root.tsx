@@ -11,7 +11,7 @@ import { PremiumCardImgModal_Element } from "../../../../elements/premium-card-i
 import { Link } from "react-router-dom";
 
 /* Import des composants Router */
-import ListDataRouter from "../../../../../router/router";
+import router from "../../../../../router/router";
 
 function Blog_20251127_Root() {
     return (
@@ -283,7 +283,7 @@ function Blog_20251127_Root() {
             <p className={style.TextP4}>
                 <span className={style.SpanLink}>
                     <Link 
-                        to={`${ListDataRouter[3].path}#top`} 
+                        to={`${router[3].path}#top`} 
                         title="Demander un audit stratégique de Marque Employeur et un devis personnalisé"
                     >
                         {`Cliquez ici pour obtenir un audit stratégique de votre Marque Employeur et un devis personnalisé pour votre première production vidéo.`}

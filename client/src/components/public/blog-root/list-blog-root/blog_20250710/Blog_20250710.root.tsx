@@ -14,7 +14,7 @@ import { PremiumCardImgModal_Element } from "../../../../elements/premium-card-i
 import { Link } from "react-router-dom";
 
 /* Import des composants Router */
-import ListDataRouter from "../../../../../router/router";
+import router from "../../../../../router/router";
 
 function Blog_20250710_Root() {
     return (
@@ -223,7 +223,7 @@ function Blog_20250710_Root() {
             <p className={style.TextP4}>
                 👉 {` `}
                 <span className={style.SpanLink}>
-                    <Link to={`${ListDataRouter[3].path}`}>
+                    <Link to={`${router[3].path}`}>
                         {` Contactez-moi dès aujourd’hui pour réserver votre séance Portrait Lifestyle à Montpellier !`}
                     </Link>
                 </span>
@@ -232,7 +232,7 @@ function Blog_20250710_Root() {
             <p id="tarif" className={style.TextP4}>
                 👉 {` `}
                 <span className={style.SpanLink}>
-                    <Link to={`${ListDataRouter[4].path}/${ListDataRouter[4].children?.[3].path}#tarif`}>
+                    <Link to={`${router[4].path}/${router[4].children?.[3].path}#tarif`}>
                         {` Découvrez mes offres Portrait Lifestyle et Portrait Feel Good.`}
                     </Link>
                 </span>

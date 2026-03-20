@@ -1,5 +1,5 @@
 /* Import des composants Router */
-import externalLinks from "../constants/externalLinks";
+import externalLinks from "../router/routerExt.router";
 import ListDataRouter from "../router/router";
 
 /* Import des Types */
