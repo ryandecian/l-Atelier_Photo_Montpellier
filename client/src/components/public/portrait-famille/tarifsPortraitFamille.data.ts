@@ -1,5 +1,5 @@
 /* Import des composants Router */
-import externalLinks from "../../../router/routerExt.router";
+import { routerExt } from "../../../router/routerExt.router";
 
 /* Import des Types */
 import { Prestation_Type, FormuleGroupe1_Type, DataEmailFormuleGroupe1_Type } from "../../../types/prestations.type";
@@ -66,7 +66,7 @@ const buildMailtoLink = (to: string, subject: string, body: string) =>
 
 const dataRootEmail: DataEmailFormuleGroupe1_Type = {
     essentiel: {
-        mailto: externalLinks.emailAnne,
+        mailto: routerExt.emailAnne,
         subject: `Réservation ${Service} - Formule ${formule.essentiel}`,
         body: makeBody([
             "Bonjour Anne,",
@@ -82,7 +82,7 @@ const dataRootEmail: DataEmailFormuleGroupe1_Type = {
         ]),
     },
     confort: {
-        mailto: externalLinks.emailAnne,
+        mailto: routerExt.emailAnne,
         subject: `Réservation ${Service} - Formule ${formule.confort}`,
         body: makeBody([
             "Bonjour Anne,",
@@ -98,7 +98,7 @@ const dataRootEmail: DataEmailFormuleGroupe1_Type = {
         ]),
     },
     premium: {
-        mailto: externalLinks.emailAnne,
+        mailto: routerExt.emailAnne,
         subject: `Réservation ${Service} - Formule ${formule.premium}`,
         body: makeBody([
             "Bonjour Anne,",
