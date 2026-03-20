@@ -6,7 +6,7 @@ import style from "../../StyleRootComponent.module.css";
 import { Mail, Phone } from "lucide-react";
 
 /* Import des composants Router */
-import externalLinks from "../../../router/routerExt.router";
+import { routerExt } from "../../../router/routerExt.router";
 
 function Contact_Root() {
     return (
@@ -21,11 +21,11 @@ function Contact_Root() {
                 Chaque projet photo commence par une rencontre. Parlons de vos envies, sans engagement.
             </p>
             <div className={`${style.ContainerRoot} ${css.ContactContainer}`}>
-                <a href={externalLinks.emailAnne} className={css.ContactItem}>
+                <a href={routerExt.emailAnne} className={css.ContactItem}>
                     <Mail className={style.IconLucide} />
                     <span>photo34000@gmail.com</span>
                 </a>
-                <a href={externalLinks.phoneAnne} className={css.ContactItem}>
+                <a href={routerExt.phoneAnne} className={css.ContactItem}>
                     <Phone className={style.IconLucide} />
                     <span>+33 6 48 55 99 22</span>
                 </a>
