@@ -2,7 +2,7 @@
 import style from "../../../StyleRootComponent.module.css";
 
 /* Import des composants Router */
-import externalLinks from "../../../../router/routerExt.router";
+import { routerExt } from "../../../../router/routerExt.router";
 
 function MentionsLegalesB_Component() {
     return (
@@ -30,7 +30,7 @@ function MentionsLegalesB_Component() {
                 Toute exploitation non autorisée du site ou de l’un quelconque des éléments qu’il contient sera considérée 
                 comme constitutive d’une contrefaçon et poursuivie conformément aux dispositions des articles {" "}
                 <span className={style.SpanLink}>
-                    <a href={externalLinks.loi2} target="_blank" rel="noopener noreferrer">
+                    <a href={routerExt.loi2} target="_blank" rel="noopener noreferrer">
                         {"L.335-2 et suivants du Code de Propriété Intellectuelle"}
                     </a>
                 </span>
