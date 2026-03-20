@@ -11,7 +11,7 @@ import { Container4Images_Element } from "../../../../elements/container-image/c
 import { Container4ImagesPaysage_Element } from "../../../../elements/container-image/container-4-Images-paysage/Container4ImagesPaysage.element";
 
 /* Import des composants Router */
-import externalLinks from "../../../../../router/routerExt.router";
+import { routerExt } from "../../../../../router/routerExt.router";
 
 function Blog_20260210_Root() {
     return (
@@ -226,14 +226,14 @@ function Blog_20260210_Root() {
             <ul className={style.ContainerUl}>
                 <li className={style.TextLiP4}>
                     À mon {` `}
-                        <a className={style.Link} href={externalLinks.mapLAPM} target="_blank" rel="noopener noreferrer">
+                        <a className={style.Link} href={routerExt.mapLAPM} target="_blank" rel="noopener noreferrer">
                             studio de photographie
                         </a>
                     {` `} à Montpellier, pour découvrir mon univers.
                 </li>
                 <li className={style.TextLiP4}>
                     En appel vidéo {` `}
-                        <a className={style.Link} href={externalLinks.whatsappAnne} target="_blank" rel="noopener noreferrer">
+                        <a className={style.Link} href={routerExt.whatsappAnne} target="_blank" rel="noopener noreferrer">
                             (WhatsApp, Meet)
                         </a>
                     , où que vous soyez en France.
