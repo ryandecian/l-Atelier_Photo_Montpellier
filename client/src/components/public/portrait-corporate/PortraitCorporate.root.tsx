@@ -14,7 +14,7 @@ import { imagesPortraitCorporate_Data } from "./imagesPortraitCorporate.data";
 import { tarifsPortraitCorporate_Data, mailtoLinkPortraitCorporate_Data } from "./tarifsPortraitCorporate.data";
 
 /* Import des composants Router */
-import externalLinks from "../../../router/routerExt.router";
+import { routerExt } from "../../../router/routerExt.router";
 
 function PortraitCorporate_Root() {
     return (
@@ -110,7 +110,7 @@ function PortraitCorporate_Root() {
             <p className={style.TextP4}>
                 Votre image mérite le meilleur –{" "}
                 <span className={style.SpanLink}>
-                    <a href={externalLinks.emailAnne}>{"Prêt(e) à     passer devant l’objectif ?"}</a>
+                    <a href={routerExt.emailAnne}>{"Prêt(e) à     passer devant l’objectif ?"}</a>
                 </span>
             </p>
 
@@ -181,7 +181,7 @@ function PortraitCorporate_Root() {
             <p className={style.TextP4}>
                 Besoin d’un conseil ?{" "}
                 <span className={style.SpanLink}>
-                    <a href={externalLinks.emailAnne}>{" Discutons de votre projet ! "}</a>
+                    <a href={routerExt.emailAnne}>{" Discutons de votre projet ! "}</a>
                 </span>
             </p>
 
