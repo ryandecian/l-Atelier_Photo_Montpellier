@@ -13,7 +13,7 @@ import { Container4Images_Element } from "../../elements/container-image/contain
 import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 
 /* Import des composants Router */
-import externalLinks from "../../../constants/externalLinks";
+import externalLinks from "../../../router/routerExt.router";
 
 /* Import des Hooks */
 import { useScrollToHash_Hook } from "../../../hook/useScrollToHash.hook";

@@ -11,7 +11,7 @@ import { Container4ImagesPortrait_Element } from "../../../../elements/container
 import { Link } from "react-router-dom";
 
 /* Import des composants Router */
-import ListDataRouter from "../../../../../router/router";
+import router from "../../../../../router/router";
 
 function Blog_20250616_Root() {    
     return (
@@ -270,7 +270,7 @@ function Blog_20250616_Root() {
 
             <p className={style.TextP4}>
                 <span className={style.SpanLink}>
-                    <Link to={ListDataRouter[3].path}>
+                    <Link to={router[3].path}>
                         {`Contactez-moi dès aujourd’hui pour réserver votre séance Portrait CV à Montpellier !`}
                     </Link>
                 </span>
@@ -278,7 +278,7 @@ function Blog_20250616_Root() {
 
             <p className={style.TextP4}>
                 <span className={style.SpanLink}>
-                    <Link to={`${ListDataRouter[11].path}#PortraitCorporateRoot`}>
+                    <Link to={`${router[11].path}#PortraitCorporateRoot`}>
                         {`Découvrez mes offres Portrait Professionnel et Portrait Corporate.`}
                     </Link>
                 </span>

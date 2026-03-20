@@ -13,7 +13,7 @@ import { PremiumCardImgModal_Element } from "../../../../elements/premium-card-i
 import { Link } from "react-router-dom";
 
 /* Import des composants Router */
-import ListDataRouter from "../../../../../router/router";
+import router from "../../../../../router/router";
 
 function Blog_20250601_Root() {
     return (
@@ -284,7 +284,7 @@ function Blog_20250601_Root() {
 
             <p className={style.TextP4}>
                 <span className={style.SpanLink}>
-                    <Link to={ListDataRouter[3].path}>
+                    <Link to={router[3].path}>
                         {`Cliquez ici pour me contacter et recevoir la brochure `}
                     </Link>
                 </span>

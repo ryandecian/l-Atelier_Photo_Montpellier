@@ -62,4 +62,4 @@ const blogRouter: blogRouterType[] = [
     },
 ]
 
-export default blogRouter;
+export { blogRouter };

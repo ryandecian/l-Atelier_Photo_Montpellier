@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 /* Import des composants Router */
 import router from "../../../router/router";
-import externalLinks from "../../../constants/externalLinks";
+import { routerExt } from "../../../router/routerExt.router";
 
 /* Import des composants de signature */
 import Ghost_signature_Footer_layout from "../../../signature/Ghost.signature";
@@ -70,21 +70,21 @@ function Footer_Layout() {
 
                     <ul className={css.UlText}>
                         <li className={css.LiTextLink}>
-                            <a href={externalLinks.instagram} target="_blank" rel="noopener noreferrer">
+                            <a href={routerExt.instagram} target="_blank" rel="noopener noreferrer">
                                 Instagram
                             </a>
                         </li>
                     </ul>
                     <ul className={css.UlText}>
                         <li className={css.LiTextLink}>
-                            <a href={externalLinks.facebook} target="_blank" rel="noopener noreferrer">
+                            <a href={routerExt.facebook} target="_blank" rel="noopener noreferrer">
                                 Facebook
                             </a>
                         </li>
                     </ul>
                     <ul className={css.UlText}>
                         <li className={css.LiTextLink}>
-                            <a href={externalLinks.youtube} target="_blank" rel="noopener noreferrer">
+                            <a href={routerExt.youtube} target="_blank" rel="noopener noreferrer">
                                 Youtube
                             </a>
                         </li>
