@@ -2,7 +2,7 @@
 import style from "../../../StyleRootComponent.module.css";
 
 /* Import des composants Router */
-import externalLinks from "../../../../router/routerExt.router";
+import { routerExt } from "../../../../router/routerExt.router";
 
 function MentionsLegalesE_Component() {
     return (
@@ -57,7 +57,7 @@ function MentionsLegalesE_Component() {
                 Pour plus d’informations sur la façon dont nous faisons usage des cookies, nous vous invitons à nous 
                 contacter : {" "}
                 <span className={style.SpanLink}>
-                    <a href={externalLinks.emailAnne} target="_blank" rel="noopener noreferrer">
+                    <a href={routerExt.emailAnne} target="_blank" rel="noopener noreferrer">
                         {"photo34000@gmail.com"}
                     </a>
                 </span>
