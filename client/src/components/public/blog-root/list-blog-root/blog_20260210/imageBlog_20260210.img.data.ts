@@ -1,7 +1,7 @@
 /* Import des Types */
 import { ImagesBlog_Type } from "../../../../../types/components/blogs/imagesBlog.type";
 
-const imagesBlog_20260210_img_data: ImagesBlog_Type[] = [
+const imagesBlog_20260210_img_Data: ImagesBlog_Type[] = [
     /* {ImagesBlog_20260210_RootControllerData[0].src} */
     {
         src: "/images/image-blog/blog_20260210/lapm-album-photo-mariage-l-atelier-photo-montpellier.jpg",
@@ -49,4 +49,4 @@ const imagesBlog_20260210_img_data: ImagesBlog_Type[] = [
     },
 ];
 
-export { imagesBlog_20260210_img_data };
+export { imagesBlog_20260210_img_Data };
