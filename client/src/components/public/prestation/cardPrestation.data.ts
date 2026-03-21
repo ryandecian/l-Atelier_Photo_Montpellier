@@ -1,5 +1,5 @@
 /* Import des composants Router */
-import ListDataRouter from "../../../router/router";
+import router from "../../../router/router";
 
 /* Import des Types */
 import { CardPrestation_Type } from "../../../types/cardPrestation.type";
@@ -8,7 +8,7 @@ function cardPrestation_Data() {
     const tab: CardPrestation_Type[] = [
         {
             reactKey: 1,
-            path: ListDataRouter[13].path,
+            path: router[13].path,
             id: "tarifs-portrait-mariage",
             title: "After day / trash the dress",
             description: "Prolongez la magie après le mariage.",
@@ -16,7 +16,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 2,
-            path: ListDataRouter[13].path,
+            path: router[13].path,
             id: "tarifs-portrait-mariage",
             title: "Cérémonie laïque / religieuse",
             description: "Les moments forts de votre cérémonie.",
@@ -24,7 +24,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 3,
-            path: ListDataRouter[16].path,
+            path: router[16].path,
             id: "tarifs-portrait-famille",
             title: "Enterrement de vie jeune fille",
             description: "Immortalisez ce moment unique entre proches.",
@@ -32,7 +32,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 4,
-            path: ListDataRouter[16].path,
+            path: router[16].path,
             id: "tarifs-portrait-famille",
             title: "Enterrement de vie garçon",
             description: "Spéciale gueule de bois !",
@@ -40,7 +40,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 5,
-            path: ListDataRouter[16].path,
+            path: router[16].path,
             id: "tarifs-portrait-famille",
             title: "EVJF / EVG",
             description: "Enterrez votre vie de célibataire.",
@@ -48,7 +48,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 6,
-            path: ListDataRouter[18].path,
+            path: router[18].path,
             id: "tarifs-portrait-grossesse",
             title: "Maternité en images",
             description: "Des souvenirs tendres de cette étape.",
@@ -56,7 +56,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 7,
-            path: ListDataRouter[11].path,
+            path: router[11].path,
             id: "tarifs-portrait-corporate",
             title: "Photo CV",
             description: "Donnez une première impression percutante.",
@@ -64,7 +64,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 8,
-            path: ListDataRouter[14].path,
+            path: router[14].path,
             id: "tarifs-portrait-solo",
             title: "Photo de profil",
             description: "Affirmez votre image avec un portrait qui vous ressemble.",
@@ -72,7 +72,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 9,
-            path: ListDataRouter[14].path,
+            path: router[14].path,
             id: "tarifs-portrait-solo",
             title: "Photo Facebook",
             description: "Une photo naturelle et expressive pour votre profil.",
@@ -80,7 +80,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 10,
-            path: ListDataRouter[14].path,
+            path: router[14].path,
             id: "tarifs-portrait-solo",
             title: "Photo Instagram",
             description: "Un portrait stylisé pour embellir votre feed.",
@@ -88,7 +88,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 11,
-            path: ListDataRouter[11].path,
+            path: router[11].path,
             id: "tarifs-portrait-corporate",
             title: "Photo Linkedin",
             description: "Un portrait qui inspire confiance.",
@@ -96,7 +96,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 12,
-            path: ListDataRouter[14].path,
+            path: router[14].path,
             id: "tarifs-portrait-solo",
             title: "Photo réseaux sociaux",
             description: "Un cliché soigné pour vous démarquer en ligne.",
@@ -104,7 +104,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 13,
-            path: ListDataRouter[11].path,
+            path: router[11].path,
             id: "tarifs-portrait-corporate",
             title: "Photo site internet",
             description: "Une image cohérente pour votre communication digitale.",
@@ -112,7 +112,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 14,
-            path: ListDataRouter[15].path,
+            path: router[15].path,
             id: "tarifs-portrait-duo",
             title: "Portrait amis",
             description: "Des souvenirs complices à partager.",
@@ -120,7 +120,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 15,
-            path: ListDataRouter[19].path,
+            path: router[19].path,
             id: "tarifs-portrait-hobby",
             title: "Portrait animaux",
             description: "Mettez en lumière votre lien unique avec votre compagnon.",
@@ -128,7 +128,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 16,
-            path: ListDataRouter[16].path,
+            path: router[16].path,
             id: "tarifs-portrait-famille",
             title: "Portrait anniversaire",
             description: "Une séance fun pour marquer le moment.",
@@ -136,7 +136,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 17,
-            path: ListDataRouter[19].path,
+            path: router[19].path,
             id: "tarifs-portrait-hobby",
             title: "Portrait artisan/créateur",
             description: "Valorisez votre savoir-faire en images.",
@@ -144,7 +144,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 18,
-            path: ListDataRouter[19].path,
+            path: router[19].path,
             id: "tarifs-portrait-hobby",
             title: "Portrait artistique",
             description: "Créez un portrait unique, à votre image.",
@@ -152,7 +152,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 19,
-            path: ListDataRouter[18].path,
+            path: router[18].path,
             id: "tarifs-portrait-grossesse",
             title: "Portrait bébé",
             description: "Immortalisez les premiers jours de bébé.",
@@ -160,7 +160,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 20,
-            path: ListDataRouter[19].path,
+            path: router[19].path,
             id: "tarifs-portrait-hobby",
             title: "Portrait chat",
             description: "Des clichés doux et expressifs de votre félin adoré.",
@@ -168,7 +168,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 21,
-            path: ListDataRouter[19].path,
+            path: router[19].path,
             id: "tarifs-portrait-hobby",
             title: "Portrait cheval",
             description: "Célébrez la beauté et la force de votre monture.",
@@ -176,7 +176,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 22,
-            path: ListDataRouter[19].path,
+            path: router[19].path,
             id: "tarifs-portrait-hobby",
             title: "Portrait chiens",
             description: "Un shooting complice pour votre fidèle ami.",
@@ -184,7 +184,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 23,
-            path: ListDataRouter[11].path,
+            path: router[11].path,
             id: "tarifs-portrait-corporate",
             title: "Portrait corporate",
             description: "Mettez en avant votre image professionnelle.",
@@ -192,7 +192,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 24,
-            path: ListDataRouter[19].path,
+            path: router[19].path,
             id: "tarifs-portrait-hobby",
             title: "Portrait cosplay",
             description: "Mettez en lumière vos personnages préférés.",
@@ -200,7 +200,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 25,
-            path: ListDataRouter[15].path,
+            path: router[15].path,
             id: "tarifs-portrait-duo",
             title: "Portrait couple lifestyle",
             description: "Un moment tendre dans un lieu qui vous ressemble.",
@@ -208,7 +208,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 26,
-            path: ListDataRouter[19].path,
+            path: router[19].path,
             id: "tarifs-portrait-hobby",
             title: "Portrait hobby",
             description: "Un shooting sur-mesure pour votre univers.",
@@ -216,7 +216,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 27,
-            path: ListDataRouter[19].path,
+            path: router[19].path,
             id: "tarifs-portrait-hobby",
             title: "Portrait cyclisme / VTT",
             description: "Une séance pleine d’énergie et de liberté.",
@@ -224,7 +224,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 28,
-            path: ListDataRouter[11].path,
+            path: router[11].path,
             id: "tarifs-portrait-corporate",
             title: "Portrait d’équipe",
             description: "Montrez l’esprit de votre entreprise.",
@@ -232,7 +232,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 29,
-            path: ListDataRouter[19].path,
+            path: router[19].path,
             id: "tarifs-portrait-hobby",
             title: "Portrait danseur/danseuse",
             description: "Sublimez le mouvement et l’émotion.",
@@ -240,7 +240,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 30,
-            path: ListDataRouter[16].path,
+            path: router[16].path,
             id: "tarifs-portrait-famille",
             title: "Portrait de famille",
             description: "Des souvenirs à transmettre.",
@@ -248,7 +248,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 31,
-            path: ListDataRouter[16].path,
+            path: router[16].path,
             id: "tarifs-portrait-famille",
             title: "Portrait de groupe",
             description: "Un shooting complice entre amis.",
@@ -256,7 +256,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 32,
-            path: ListDataRouter[15].path,
+            path: router[15].path,
             id: "tarifs-portrait-duo",
             title: "Portrait duo créatif",
             description: "Un shooting original pour raconter votre histoire à deux.",
@@ -264,7 +264,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 33,
-            path: ListDataRouter[15].path,
+            path: router[15].path,
             id: "tarifs-portrait-duo",
             title: "Portrait en duo",
             description: "Célébrez votre complicité en images.",
@@ -272,7 +272,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 34,
-            path: ListDataRouter[16].path,
+            path: router[16].path,
             id: "tarifs-portrait-famille",
             title: "Portrait enfants",
             description: "Des instants précieux en famille.",
@@ -280,7 +280,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 35,
-            path: ListDataRouter[11].path,
+            path: router[11].path,
             id: "tarifs-portrait-corporate",
             title: "Portrait entrepreneur",
             description: "Valorisez votre marque personnelle.",
@@ -288,7 +288,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 36,
-            path: ListDataRouter[19].path,
+            path: router[19].path,
             id: "tarifs-portrait-hobby",
             title: "Portrait équin",
             description: "Immortalisez votre passion pour l’univers équestre.",
@@ -296,7 +296,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 37,
-            path: ListDataRouter[19].path,
+            path: router[19].path,
             id: "tarifs-portrait-hobby",
             title: "Portrait équitation",
             description: "Sublimez votre complicité avec le cheval.",
@@ -304,7 +304,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 38,
-            path: ListDataRouter[14].path,
+            path: router[14].path,
             id: "tarifs-portrait-solo",
             title: "Portrait feel good",
             description: "Une séance pour se reconnecter à soi.",
@@ -312,7 +312,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 39,
-            path: ListDataRouter[18].path,
+            path: router[18].path,
             id: "tarifs-portrait-grossesse",
             title: "Portrait femme enceinte",
             description: "Une séance en douceur et en lumière.",
@@ -320,7 +320,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 40,
-            path: ListDataRouter[16].path,
+            path: router[16].path,
             id: "tarifs-portrait-famille",
             title: "Portrait générationnel",
             description: "Célébrez les liens entre les générations.",
@@ -328,7 +328,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 41,
-            path: ListDataRouter[18].path,
+            path: router[18].path,
             id: "tarifs-portrait-grossesse",
             title: "Portrait grossesse",
             description: "Sublimez ce moment unique de votre vie.",
@@ -336,7 +336,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 43,
-            path: ListDataRouter[14].path,
+            path: router[14].path,
             id: "tarifs-portrait-solo",
             title: "Portrait individuel",
             description: "Un moment pour vous, en toute authenticité.",
@@ -344,7 +344,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 44,
-            path: ListDataRouter[16].path,
+            path: router[16].path,
             id: "tarifs-portrait-famille",
             title: "Portrait intergénérationnel",
             description: "Célébrez les liens entre les générations.",
@@ -352,7 +352,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 45,
-            path: ListDataRouter[13].path,
+            path: router[13].path,
             id: "tarifs-portrait-mariage",
             title: "Portrait invités",
             description: "Des souvenirs authentiques de votre mariage.",
@@ -360,7 +360,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 46,
-            path: ListDataRouter[19].path,
+            path: router[19].path,
             id: "tarifs-portrait-hobby",
             title: "Portrait moto",
             description: "Associez style et puissance dans une séance sur-mesure.",
@@ -368,7 +368,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 47,
-            path: ListDataRouter[18].path,
+            path: router[18].path,
             id: "tarifs-portrait-grossesse",
             title: "Portrait nouveau-né",
             description: "Capturez les tout premiers instants de bébé.",
@@ -376,7 +376,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 48,
-            path: ListDataRouter[19].path,
+            path: router[19].path,
             id: "tarifs-portrait-hobby",
             title: "Portrait passion",
             description: "Mettez en scène votre passion.",
@@ -384,7 +384,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 49,
-            path: ListDataRouter[14].path,
+            path: router[14].path,
             id: "tarifs-portrait-solo",
             title: "Portrait pour soi",
             description: "Un regard neuf sur vous-même.",
@@ -392,7 +392,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 51,
-            path: ListDataRouter[19].path,
+            path: router[19].path,
             id: "tarifs-portrait-hobby",
             title: "Portrait sport",
             description: "Capturez l’intensité de votre pratique.",
@@ -400,7 +400,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 52,
-            path: ListDataRouter[19].path,
+            path: router[19].path,
             id: "tarifs-portrait-hobby",
             title: "Portrait sportif",
             description: "Célébrez votre discipline en image.",
@@ -408,7 +408,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 54,
-            path: ListDataRouter[19].path,
+            path: router[19].path,
             id: "tarifs-portrait-hobby",
             title: "Portrait voiture",
             description: "Sublimez votre passion mécanique à travers des images fortes.",
@@ -416,7 +416,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 55,
-            path: ListDataRouter[13].path,
+            path: router[13].path,
             id: "tarifs-portrait-mariage",
             title: "Préparatifs mariage",
             description: "Immortalisez les instants avant le \"oui\".",
@@ -424,7 +424,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 56,
-            path: ListDataRouter[11].path,
+            path: router[11].path,
             id: "tarifs-portrait-corporate",
             title: "Reportage en entreprise",
             description: "Mettez en valeur votre univers professionnel.",
@@ -432,7 +432,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 57,
-            path: ListDataRouter[13].path,
+            path: router[13].path,
             id: "tarifs-portrait-mariage",
             title: "Reportage mariage",
             description: "Racontez en images l’histoire de votre grand jour.",
@@ -440,7 +440,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 58,
-            path: ListDataRouter[13].path,
+            path: router[13].path,
             id: "tarifs-portrait-mariage",
             title: "Séance engagement",
             description: "Une séance avant le jour J pour se découvrir en photo.",
@@ -448,7 +448,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 59,
-            path: ListDataRouter[18].path,
+            path: router[18].path,
             id: "tarifs-portrait-grossesse",
             title: "Séance naissance",
             description: "Des souvenirs précieux à chérir.",
@@ -456,7 +456,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 61,
-            path: ListDataRouter[15].path,
+            path: router[15].path,
             id: "tarifs-portrait-duo",
             title: "Shooting couple",
             description: "Immortalisez votre histoire d’amour.",
@@ -464,7 +464,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 62,
-            path: ListDataRouter[13].path,
+            path: router[13].path,
             id: "tarifs-portrait-mariage",
             title: "Shooting couple mariage",
             description: "Capturez l’émotion et la complicité des mariés.",
@@ -472,7 +472,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 64,
-            path: ListDataRouter[18].path,
+            path: router[18].path,
             id: "tarifs-portrait-grossesse",
             title: "Shooting future maman",
             description: "Célébrez la magie de l’attente.",
@@ -480,7 +480,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 66,
-            path: ListDataRouter[19].path,
+            path: router[19].path,
             id: "tarifs-portrait-hobby",
             title: "Shooting musicien/musicienne",
             description: "Des images qui vibrent au rythme de votre art.",
@@ -488,7 +488,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 67,
-            path: ListDataRouter[14].path,
+            path: router[14].path,
             id: "tarifs-portrait-solo",
             title: "Shooting solo",
             description: "Exprimez votre personnalité en images.",
@@ -496,7 +496,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 68,
-            path: ListDataRouter[16].path,
+            path: router[16].path,
             id: "tarifs-portrait-famille",
             title: "Shooting tribu",
             description: "Une séance fun et décontractée.",
@@ -504,7 +504,7 @@ function cardPrestation_Data() {
         },
         {
             reactKey: 69,
-            path: ListDataRouter[13].path,
+            path: router[13].path,
             id: "tarifs-portrait-mariage",
             title: "Mariage Pride",
             description: "Célébrez l'amour en arc-en-ciel.",
