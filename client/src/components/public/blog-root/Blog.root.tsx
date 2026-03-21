@@ -3,7 +3,7 @@ import style from "../../StyleRootComponent.module.css";
 import css from "./blog.module.css";
 
 /* Import des Components */
-import { dataCardBlog_img_data } from "./dataCardBlog.img.data";
+import { dataCardBlog_img_Data } from "./dataCardBlog.img.data";
 
 /* Import des composants React */
 import { useState } from "react";
@@ -18,7 +18,7 @@ import { convertDateFrToISO_Date_Utils } from "../../../utils/seo/convertDateFrT
 function Blog_Root() {
     /* Permet de mettre en mémoire le résultat de la fonction. Donc les datas des card. */
     /* Evite de réexécuter systématiquement la fonction */
-    const dataBlog: CardBlog_Type[] = dataCardBlog_img_data();
+    const dataBlog: CardBlog_Type[] = dataCardBlog_img_Data();
 
     const [search, setSearch] = useState("");
 

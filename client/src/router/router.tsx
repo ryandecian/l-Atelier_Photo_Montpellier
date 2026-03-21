@@ -1,5 +1,5 @@
 /* Import des composants Router */
-import blog_Router from "./blog.router";
+import { blog_Router } from "./blog.router";
 
 /* Liste des pages en import */
 /* Page Frontend vérrouillée */
