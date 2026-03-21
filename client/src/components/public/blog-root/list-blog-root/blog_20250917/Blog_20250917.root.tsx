@@ -2,7 +2,7 @@
 import style from "../../../../StyleRootComponent.module.css";
 
 /* Import des Components de Data */
-import { imagesBlog_20250917_img_data } from "./imagesBlog_20250917.img.data";
+import { imagesBlog_20250917_img_Data } from "./imagesBlog_20250917.img.data";
 
 /* Import des composants d'Elements */
 import { PremiumCardImgModal_Element } from "../../../../elements/premium-card-img-modal/PremiumCardImgModal.element";
@@ -55,8 +55,8 @@ function Blog_20250917_Root() {
 
             <div className={style.ContainerFloat}>
                 <PremiumCardImgModal_Element
-                    src={imagesBlog_20250917_img_data[0].src}
-                    alt={imagesBlog_20250917_img_data[0].alt}
+                    src={imagesBlog_20250917_img_Data[0].src}
+                    alt={imagesBlog_20250917_img_Data[0].alt}
                     className={style.FloatLeftImg_Po}
                 />
 
@@ -117,8 +117,8 @@ function Blog_20250917_Root() {
             
             <div className={style.ContainerFloat}>
                 <PremiumCardImgModal_Element
-                    src={imagesBlog_20250917_img_data[1].src}
-                    alt={imagesBlog_20250917_img_data[1].alt}
+                    src={imagesBlog_20250917_img_Data[1].src}
+                    alt={imagesBlog_20250917_img_Data[1].alt}
                     className={style.FloatRightImg_Po}
                 />
 
