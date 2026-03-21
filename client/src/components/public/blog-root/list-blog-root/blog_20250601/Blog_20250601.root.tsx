@@ -3,7 +3,7 @@ import css from "./blog_20250601.module.css";
 import style from "../../../../StyleRootComponent.module.css";
 
 /* Import des Components de Data */
-import { imagesBlog_20250601_img_data } from "./imagesBlog_20250601.img.data";
+import { imagesBlog_20250601_img_Data } from "./imagesBlog_20250601.img.data";
 
 /* Import des composants d'Elements */
 import { Container4Images_Element } from "../../../../elements/container-image/container-4-Images/Container4Images.element";
@@ -44,14 +44,14 @@ function Blog_20250601_Root() {
             </h2>
 
             <Container4Images_Element
-                img1={imagesBlog_20250601_img_data[0].src}
-                metaNameImg1={imagesBlog_20250601_img_data[0].alt}
-                img2={imagesBlog_20250601_img_data[1].src}
-                metaNameImg2={imagesBlog_20250601_img_data[1].alt}
-                img3={imagesBlog_20250601_img_data[2].src}
-                metaNameImg3={imagesBlog_20250601_img_data[2].alt}
-                img4={imagesBlog_20250601_img_data[3].src}
-                metaNameImg4={imagesBlog_20250601_img_data[3].alt}
+                img1={imagesBlog_20250601_img_Data[0].src}
+                metaNameImg1={imagesBlog_20250601_img_Data[0].alt}
+                img2={imagesBlog_20250601_img_Data[1].src}
+                metaNameImg2={imagesBlog_20250601_img_Data[1].alt}
+                img3={imagesBlog_20250601_img_Data[2].src}
+                metaNameImg3={imagesBlog_20250601_img_Data[2].alt}
+                img4={imagesBlog_20250601_img_Data[3].src}
+                metaNameImg4={imagesBlog_20250601_img_Data[3].alt}
             />
 
             <p className={style.TextP4}>
@@ -103,14 +103,14 @@ function Blog_20250601_Root() {
             </h3>
 
             <Container4Images_Element
-                img1={imagesBlog_20250601_img_data[4].src}
-                metaNameImg1={imagesBlog_20250601_img_data[4].alt}
-                img2={imagesBlog_20250601_img_data[5].src}
-                metaNameImg2={imagesBlog_20250601_img_data[5].alt}
-                img3={imagesBlog_20250601_img_data[6].src}
-                metaNameImg3={imagesBlog_20250601_img_data[6].alt}
-                img4={imagesBlog_20250601_img_data[7].src}
-                metaNameImg4={imagesBlog_20250601_img_data[7].alt}
+                img1={imagesBlog_20250601_img_Data[4].src}
+                metaNameImg1={imagesBlog_20250601_img_Data[4].alt}
+                img2={imagesBlog_20250601_img_Data[5].src}
+                metaNameImg2={imagesBlog_20250601_img_Data[5].alt}
+                img3={imagesBlog_20250601_img_Data[6].src}
+                metaNameImg3={imagesBlog_20250601_img_Data[6].alt}
+                img4={imagesBlog_20250601_img_Data[7].src}
+                metaNameImg4={imagesBlog_20250601_img_Data[7].alt}
             />
 
             <p className={style.TextP4}>
@@ -204,8 +204,8 @@ function Blog_20250601_Root() {
 
             <div className={css.ContainerImg}>
                 <PremiumCardImgModal_Element
-                    src={imagesBlog_20250601_img_data[8].src}
-                    alt={imagesBlog_20250601_img_data[8].alt}
+                    src={imagesBlog_20250601_img_Data[8].src}
+                    alt={imagesBlog_20250601_img_Data[8].alt}
                     className={css.ImgPremiumCardSudo}
                 />
             </div>

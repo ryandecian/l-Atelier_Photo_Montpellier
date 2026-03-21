@@ -13,7 +13,7 @@ type blogRouterType = {
     element: React.ReactNode;
 }
 
-const blogRouter: blogRouterType[] = [
+const blog_Router: blogRouterType[] = [
     /* Element principale, page racine ! */
     {
         path: "",
@@ -62,4 +62,4 @@ const blogRouter: blogRouterType[] = [
     },
 ]
 
-export { blogRouter };
+export { blog_Router };
