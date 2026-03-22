@@ -1,4 +1,5 @@
-import AlbumPortfolio from "../../../components/public/portfolio/AlbumPortfolio";
+/* Import des Components de Data */
+import { imagesPortfolio_Data } from "../../../components/public/portfolio/imagesPortfolio.data";
 
 /**
  * Génère un tableau d’objets JSON-LD de type "ImageObject" à partir 
@@ -11,12 +12,12 @@ function generatePortfolioHasPartSEO_Utils() {
   const baseUrl = import.meta.env.VITE_DOMAIN_CLIENT;
 
   const selectedImages = [
-    AlbumPortfolio.Album_Paysage[0],
-    AlbumPortfolio.Album_Paysage[1],
-    AlbumPortfolio.Album_Rue_Street[0],
-    AlbumPortfolio.Album_Rue_Street[1],
-    AlbumPortfolio.Album_Urbaine[0],
-    AlbumPortfolio.Album_Pro_Perso[0],
+    imagesPortfolio_Data.Album_Paysage[0],
+    imagesPortfolio_Data.Album_Paysage[1],
+    imagesPortfolio_Data.Album_Rue_Street[0],
+    imagesPortfolio_Data.Album_Rue_Street[1],
+    imagesPortfolio_Data.Album_Urbaine[0],
+    imagesPortfolio_Data.Album_Pro_Perso[0],
   ];
 
   return selectedImages.map((img) => ({
