@@ -1,7 +1,7 @@
 /* Import des Components */
 import { dataSEO_Root_data_SEO } from "../../../dataSEO_Root.data.seo";
 import { dataSEO_Blog_20251127_data_SEO } from "./dataSEO_Blog_20251127.data.seo";
-import { dataCardBlog_img_data } from "../../../../components/public/blog-root/dataCardBlog.img.data";
+import { dataCardBlog_img_Data } from "../../../../components/public/blog-root/dataCardBlog.img.data";
 
 /* Import des Types */
 import { DataSEORoot_Type } from "../../../../types/seo/dataSEORoot.type";
@@ -13,7 +13,7 @@ import { extractKeywordsFromDataSEO_Utils } from "../../../../utils/seo/extractK
 import { convertDateFrToISO_String_Utils } from "../../../../utils/seo/convertDateFrToISO.utils";
 
 function JSON_LD_BlogPosting_Blog_20251127_schema_SEO() : string {
-    const dataCardBlogRoot: CardBlog_Type[] = dataCardBlog_img_data(); /* Récupération des données de la carte du blog */
+    const dataCardBlogRoot: CardBlog_Type[] = dataCardBlog_img_Data(); /* Récupération des données de la carte du blog */
     const dataSEO_Root: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
     const dataSEO_Blog_20251127: DataSEOTargetOne_Type = dataSEO_Blog_20251127_data_SEO(); /* Récupération des données SEO de la page */
 
