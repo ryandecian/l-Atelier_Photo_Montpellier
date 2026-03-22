@@ -2,7 +2,7 @@
 import style from "../../../../StyleRootComponent.module.css";
 
 /* Import des Components de Data */
-import { imagesBlog_20251127_img_data } from "./imageBlog_20251127.img.data";
+import { imagesBlog_20251127_img_Data } from "./imageBlog_20251127.img.data";
 
 /* Import des composants d'Elements */
 import { PremiumCardImgModal_Element } from "../../../../elements/premium-card-img-modal/PremiumCardImgModal.element";
@@ -11,7 +11,7 @@ import { PremiumCardImgModal_Element } from "../../../../elements/premium-card-i
 import { Link } from "react-router-dom";
 
 /* Import des composants Router */
-import ListDataRouter from "../../../../../router/router";
+import router from "../../../../../router/router";
 
 function Blog_20251127_Root() {
     return (
@@ -40,8 +40,8 @@ function Blog_20251127_Root() {
 
             <div className={style.ContainerFloat}>
                 <PremiumCardImgModal_Element
-                    src={imagesBlog_20251127_img_data[0].src}
-                    alt={imagesBlog_20251127_img_data[0].alt}
+                    src={imagesBlog_20251127_img_Data[0].src}
+                    alt={imagesBlog_20251127_img_Data[0].alt}
                     className={style.FloatLeftImg_Po}
                 />
 
@@ -118,8 +118,8 @@ function Blog_20251127_Root() {
 
             <div className={style.ContainerFloat}>
                 <PremiumCardImgModal_Element
-                    src={imagesBlog_20251127_img_data[1].src}
-                    alt={imagesBlog_20251127_img_data[1].alt}
+                    src={imagesBlog_20251127_img_Data[1].src}
+                    alt={imagesBlog_20251127_img_Data[1].alt}
                     className={style.FloatRightImg_Po}
                 />
 
@@ -184,8 +184,8 @@ function Blog_20251127_Root() {
 
             <div className={style.ContainerFloat}>
                 <PremiumCardImgModal_Element
-                    src={imagesBlog_20251127_img_data[2].src}
-                    alt={imagesBlog_20251127_img_data[2].alt}
+                    src={imagesBlog_20251127_img_Data[2].src}
+                    alt={imagesBlog_20251127_img_Data[2].alt}
                     className={style.FloatLeftImg_Po}
                 />
 
@@ -243,8 +243,8 @@ function Blog_20251127_Root() {
 
             <div className={style.ContainerFloat}>
                 <PremiumCardImgModal_Element
-                    src={imagesBlog_20251127_img_data[3].src}
-                    alt={imagesBlog_20251127_img_data[3].alt}
+                    src={imagesBlog_20251127_img_Data[3].src}
+                    alt={imagesBlog_20251127_img_Data[3].alt}
                     className={style.FloatRightImg_Po}
                 />
 
@@ -283,7 +283,7 @@ function Blog_20251127_Root() {
             <p className={style.TextP4}>
                 <span className={style.SpanLink}>
                     <Link 
-                        to={`${ListDataRouter[3].path}#top`} 
+                        to={`${router[3].path}#top`} 
                         title="Demander un audit stratégique de Marque Employeur et un devis personnalisé"
                     >
                         {`Cliquez ici pour obtenir un audit stratégique de votre Marque Employeur et un devis personnalisé pour votre première production vidéo.`}

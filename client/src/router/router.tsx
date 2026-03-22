@@ -1,3 +1,6 @@
+/* Import des composants Router */
+import { blog_Router } from "./blog.router";
+
 /* Liste des pages en import */
 /* Page Frontend vérrouillée */
 import AdminGestionAlbum_Page from "../pages/private/admin/admin-gestion-album_Page/AdminGestionAlbum.page";
@@ -12,7 +15,6 @@ import InsertAlbumAdmin_Page from "../pages/private/admin/insert-album-admin_Pag
 import UserGestionAlbum_Page from "../pages/private/users/user-gestion-album_Page/UserGestionAlbum.page";
 
 /* Page Frontend public */
-import blogRouter from "./blogRouter";
 import CGVPage from "../pages/public/cgv_Page/CGV.page";
 import ContactPage from "../pages/public/contact_Page/Contact.page";
 import Error404 from "../pages/public/error404_Page/Error404.page";
@@ -71,7 +73,7 @@ const router: Router_Type[] = [
     /* {router[4].path} */
     {
         path: "/blog",
-        children: blogRouter,
+        children: blog_Router,
     },
     /* {router[5].path} */
     {

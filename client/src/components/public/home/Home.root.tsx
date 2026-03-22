@@ -6,7 +6,7 @@ import { Home_A_Component } from "./components/Home_A.component";
 
 /* Import des Components de Data */
 import { avisClientHome_Data } from "./avisClientHome.data";
-import { imagesHome_img_data } from "./imagesHome.img.data";
+import { imagesHome_img_Data } from "./imagesHome.img.data";
 
 /* Import des composants d'Elements */
 import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
@@ -34,14 +34,14 @@ function Home_Root() {
             </h2>
 
             <Container4Images_Element
-                img1={imagesHome_img_data[4].src}
-                metaNameImg1={imagesHome_img_data[4].alt}
-                img2={imagesHome_img_data[5].src}
-                metaNameImg2={imagesHome_img_data[5].alt}
-                img3={imagesHome_img_data[6].src}
-                metaNameImg3={imagesHome_img_data[6].alt}
-                img4={imagesHome_img_data[7].src}
-                metaNameImg4={imagesHome_img_data[7].alt}
+                img1={imagesHome_img_Data[4].src}
+                metaNameImg1={imagesHome_img_Data[4].alt}
+                img2={imagesHome_img_Data[5].src}
+                metaNameImg2={imagesHome_img_Data[5].alt}
+                img3={imagesHome_img_Data[6].src}
+                metaNameImg3={imagesHome_img_Data[6].alt}
+                img4={imagesHome_img_Data[7].src}
+                metaNameImg4={imagesHome_img_Data[7].alt}
             />
 
             <p className={`${style.TextP4} ${style.TargetText1}`}>
@@ -136,14 +136,14 @@ function Home_Root() {
             </h2>
 
             <Container4Images_Element
-                img1={imagesHome_img_data[0].src}
-                metaNameImg1={imagesHome_img_data[0].alt}
-                img2={imagesHome_img_data[1].src}
-                metaNameImg2={imagesHome_img_data[1].alt}
-                img3={imagesHome_img_data[2].src}
-                metaNameImg3={imagesHome_img_data[2].alt}
-                img4={imagesHome_img_data[3].src}
-                metaNameImg4={imagesHome_img_data[3].alt}
+                img1={imagesHome_img_Data[0].src}
+                metaNameImg1={imagesHome_img_Data[0].alt}
+                img2={imagesHome_img_Data[1].src}
+                metaNameImg2={imagesHome_img_Data[1].alt}
+                img3={imagesHome_img_Data[2].src}
+                metaNameImg3={imagesHome_img_Data[2].alt}
+                img4={imagesHome_img_Data[3].src}
+                metaNameImg4={imagesHome_img_Data[3].alt}
             />
 
             <p className={`${style.TextP4} ${style.TargetText1}`}>

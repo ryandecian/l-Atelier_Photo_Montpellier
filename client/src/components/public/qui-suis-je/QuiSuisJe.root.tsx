@@ -5,7 +5,7 @@ import style from "../../StyleRootComponent.module.css";
 import { Link } from "react-router-dom";
 
 /* Import des composants Router */
-import ListDataRouter from "../../../router/router";
+import router from "../../../router/router";
 
 /* Import des Utils */
 import { pauseOtherVideos_Utils } from "../../../utils/pauseOtherVideos.utils";
@@ -138,7 +138,7 @@ function QuiSuisJe_Root() {
     
                 <p className={style.TextP4}>
                     <span className={style.SpanLink}>
-                        <Link to={ListDataRouter[2].path}>
+                        <Link to={router[2].path}>
                             Découvrez mes prestations et trouvez celle qui vous correspond le mieux !
                         </Link>
                     </span>

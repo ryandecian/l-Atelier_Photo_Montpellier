@@ -12,7 +12,7 @@ import { avisClientVideo_Data } from "./avisClientVideo.data";
 import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 
 /* Import des composants Router */
-import ListDataRouter from "../../../router/router";
+import router from "../../../router/router";
 
 /* Import des Utils */
 import { pauseOtherVideos_Utils } from "../../../utils/pauseOtherVideos.utils";
@@ -373,7 +373,7 @@ function Video_Root() {
             <p className={style.TextP4}>
                 Contactez-nous aujourd’hui pour une {` `}
                 <span className={style.SpanLink}>
-                    <Link to={ListDataRouter[3].path}>
+                    <Link to={router[3].path}>
                         {"vidéo corporate sur-mesure"}
                     </Link>
                 </span>
@@ -383,7 +383,7 @@ function Video_Root() {
 
             <p className={style.TextP4}>
                 <span className={style.SpanLink}>
-                    <Link to={ListDataRouter[3].path}>
+                    <Link to={router[3].path}>
                         {"Demandez un devis gratuit ou une rencontre-visio avec l’Atelier Photo Montpellier"}
                     </Link>
                 </span>

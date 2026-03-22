@@ -1,4 +1,4 @@
-type DataOneAlbumAdminType = {
+type DataOneAlbumAdmin_Type = {
     id_album: number;
     id_user: number;
     firstname: string;
@@ -9,4 +9,4 @@ type DataOneAlbumAdminType = {
     date: string;
 }
 
-export default DataOneAlbumAdminType;
+export type { DataOneAlbumAdmin_Type };

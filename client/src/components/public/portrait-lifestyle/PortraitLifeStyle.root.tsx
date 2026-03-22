@@ -13,7 +13,7 @@ import { Container4Images_Element } from "../../elements/container-image/contain
 import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 
 /* Import des composants Router */
-import externalLinks from "../../../constants/externalLinks";
+import { routerExt } from "../../../router/routerExt.router";
 
 /* Import des Hooks */
 import { useScrollToHash_Hook } from "../../../hook/useScrollToHash.hook";
@@ -281,7 +281,7 @@ function PortraitLifeStyle_Root() {
                 </span> 
                 {" "}
                 <span className={style.SpanLink}>
-                    <a href={externalLinks.emailAnne} target="_blank" rel="noopener noreferrer">
+                    <a href={routerExt.emailAnne} target="_blank" rel="noopener noreferrer">
                         {"Contactez-moi."}
                     </a>
                 </span>
@@ -435,7 +435,7 @@ function PortraitLifeStyle_Root() {
                 </span> 
                 {" "}
                 <span className={style.SpanLink}>
-                    <a href={externalLinks.emailAnne} target="_blank" rel="noopener noreferrer">
+                    <a href={routerExt.emailAnne} target="_blank" rel="noopener noreferrer">
                         {"Contactez-moi pour réserver votre séance."}
                     </a>
                 </span>
@@ -511,7 +511,7 @@ function PortraitLifeStyle_Root() {
                 </span> 
                 {" "}
                 <span className={style.SpanLink}>
-                    <a href={externalLinks.emailAnne} target="_blank" rel="noopener noreferrer">
+                    <a href={routerExt.emailAnne} target="_blank" rel="noopener noreferrer">
                         {"Contactez-moi pour une séance sur-mesure."}
                     </a>
                 </span>
