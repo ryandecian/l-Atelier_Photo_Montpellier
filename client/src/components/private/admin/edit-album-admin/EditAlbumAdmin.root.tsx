@@ -10,7 +10,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useLockedPage_Hook } from "../../../../hook/useLockedPage.security.hook";
 
 /* Import des Types */
-import DataOneAlbumAdminType from "../../../../types/DataOneAlbumAdmin.type";
+import { DataOneAlbumAdmin_Type } from "../../../../types/dataOneAlbumAdmin.type";
 
 /* Import des Utils */
 import { fetchAPI_Utils } from "../../../../utils/fetchAPI.utils";
@@ -47,7 +47,7 @@ function EditAlbumAdmin_Root() {
     });
 
     /** Données d'origine de l'album à comparer */
-    const [originalAlbum, setOriginalAlbum] = useState<DataOneAlbumAdminType | null>(null);
+    const [originalAlbum, setOriginalAlbum] = useState<DataOneAlbumAdmin_Type | null>(null);
 
     /** Gestion des états de chargement, soumission et erreurs */
     const [loading, setLoading] = useState(true);
@@ -71,7 +71,7 @@ function EditAlbumAdmin_Root() {
             }
 
             if (data?.data) {
-                const album = data.data as DataOneAlbumAdminType;
+                const album = data.data as DataOneAlbumAdmin_Type;
 
                 setOriginalAlbum(album);
                 setForm({

@@ -2,7 +2,7 @@
 import style from "../../../StyleRootComponent.module.css";
 
 /* Import des composants Router */
-import externalLinks from "../../../../constants/externalLinks";
+import { routerExt } from "../../../../router/routerExt.router";
 
 function MentionsLegalesA_Component() {
     return (
@@ -15,7 +15,7 @@ function MentionsLegalesA_Component() {
             <p className={style.TextP4}>
                 En vertu de {" "} 
                 <span className={style.SpanLink}>
-                    <a href={externalLinks.loi1} target="_blank" rel="noopener noreferrer">
+                    <a href={routerExt.loi1} target="_blank" rel="noopener noreferrer">
                         {"l’article 6 de la loi n° 2004-575 du 21 juin 2004"}
                     </a>
                 </span>
@@ -29,13 +29,13 @@ function MentionsLegalesA_Component() {
                 <strong>Propriétaire du site :</strong>
                 {" "} L’ATELIER PHOTO MONTPELLIER – Contact : {" "}
                 <span className={style.SpanLink}>
-                    <a href={externalLinks.emailAnne} target="_blank" rel="noopener noreferrer">
+                    <a href={routerExt.emailAnne} target="_blank" rel="noopener noreferrer">
                         {"photo34000@gmail.com"}
                     </a>
                 </span>
                 {" "} ou {" "}
                 <span className={style.SpanLink}>
-                    <a href={externalLinks.phoneAnne} target="_blank" rel="noopener noreferrer">
+                    <a href={routerExt.phoneAnne} target="_blank" rel="noopener noreferrer">
                         {"06 48 55 99 22"}
                     </a>
                 </span>
@@ -54,7 +54,7 @@ function MentionsLegalesA_Component() {
                 <strong>Directrice de la publication :</strong>
                  {" "} ANNE SAUNIER – Contact : {" "}
                  <span className={style.SpanLink}>
-                    <a href={externalLinks.phoneAnne} target="_blank" rel="noopener noreferrer">
+                    <a href={routerExt.phoneAnne} target="_blank" rel="noopener noreferrer">
                         {"06 48 55 99 22."}
                     </a>
                 </span>
@@ -65,7 +65,7 @@ function MentionsLegalesA_Component() {
                 <strong>Hébergeur :</strong>
                  {" "} O2Switch – 222 Boulevard Gustave Flaubert, 63000 Clermont-Ferrand – Téléphone : {" "}
                  <span className={style.SpanLink}>
-                    <a href={externalLinks.phoneHebergeur} target="_blank" rel="noopener noreferrer">
+                    <a href={routerExt.phoneHebergeur} target="_blank" rel="noopener noreferrer">
                         {"04 44 44 60 40."}
                     </a>
                 </span>
@@ -76,7 +76,7 @@ function MentionsLegalesA_Component() {
                 <strong>Délégué à la protection des données :</strong>
                  {" "} ANNE SAUNIER – {" "}
                  <span className={style.SpanLink}>
-                    <a href={externalLinks.emailAnne} target="_blank" rel="noopener noreferrer">
+                    <a href={routerExt.emailAnne} target="_blank" rel="noopener noreferrer">
                         {"photo34000@gmail.com"}
                     </a>
                 </span>

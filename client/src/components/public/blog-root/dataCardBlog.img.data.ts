@@ -1,14 +1,14 @@
 /* Import des composants Router */
-import ListDataRouter from "../../../router/router";
+import router from "../../../router/router";
 
 /* Import des Types */
 import { CardBlog_Type } from "../../../types/components/blogs/cardBlog.type";
 
-function dataCardBlog_img_data() {
+function dataCardBlog_img_Data() {
     const tab: CardBlog_Type[] = [
         {
             reactKey: 1,
-            path: ListDataRouter[4].children?.[1].path,
+            path: router[4].children?.[1].path,
             id: "top",
             title: "Photographie de Mariage en Style Reportage",
             description: "L'Art de Capturer l’Authentique",
@@ -17,7 +17,7 @@ function dataCardBlog_img_data() {
         },
         {
             reactKey: 2,
-            path: ListDataRouter[4].children?.[2].path,
+            path: router[4].children?.[2].path,
             id: "top",
             title: "Photo professionnelle pour CV",
             description: "Comment capter l'attention des recruteurs à Montpellier",
@@ -26,7 +26,7 @@ function dataCardBlog_img_data() {
         },
         {
             reactKey: 3,
-            path: ListDataRouter[4].children?.[3].path,
+            path: router[4].children?.[3].path,
             id: "top",
             title: "Photographie de Portrait LifeStyle",
             description: "Découvrez une version valorisante de vous-même",
@@ -35,7 +35,7 @@ function dataCardBlog_img_data() {
         },
         {
             reactKey: 4,
-            path: ListDataRouter[4].children?.[4].path,
+            path: router[4].children?.[4].path,
             id: "top",
             title: "Calendrier idéal pour les photos de grossesse",
             description: "Quand programmer votre shooting grossesse ?",
@@ -44,7 +44,7 @@ function dataCardBlog_img_data() {
         },
         {
             reactKey: 5,
-            path: ListDataRouter[4].children?.[5].path,
+            path: router[4].children?.[5].path,
             id: "top",
             title: "Investir dans l’image d’entreprise",
             description: "Photo & vidéo : un vrai retour sur investissement.",
@@ -53,7 +53,7 @@ function dataCardBlog_img_data() {
         },
         {
             reactKey: 6,
-            path: ListDataRouter[4].children?.[6].path,
+            path: router[4].children?.[6].path,
             id: "top",
             title: "Trouvez les Bons Profils",
             description: "Comment la Vidéo vous fait Économiser sur vos Coûts de Recrutement",
@@ -62,7 +62,7 @@ function dataCardBlog_img_data() {
         },
         {
             reactKey: 7,
-            path: ListDataRouter[4].children?.[7].path,
+            path: router[4].children?.[7].path,
             id: "top",
             title: "Préparatifs de mariage",
             description: "Pourquoi les préparatifs sont une étape essentielle du reportage photo de mariage.",
@@ -71,7 +71,7 @@ function dataCardBlog_img_data() {
         },
         {
             reactKey: 8,
-            path: ListDataRouter[4].children?.[8].path,
+            path: router[4].children?.[8].path,
             id: "top",
             title: "Mariage à Montpellier : 10 critères essentiels",
             description: "Les vrais critères pour choisir un photographe mariage sans stress ni mauvaises surprises.",
@@ -82,4 +82,4 @@ function dataCardBlog_img_data() {
     return tab;
 }
 
-export { dataCardBlog_img_data };
+export { dataCardBlog_img_Data };

@@ -2,7 +2,7 @@
 import style from "../../../../StyleRootComponent.module.css";
 
 /* Import des Components de Data */
-import { imagesBlog_20250616_img_data } from "./imagesBlog_20250616.img.data";
+import { imagesBlog_20250616_img_Data } from "./imagesBlog_20250616.img.data";
 
 /* Import des composants d'Elements */
 import { Container4ImagesPortrait_Element } from "../../../../elements/container-image/container-4_Images-portrait/Container4ImagesPortrait.element";
@@ -11,7 +11,7 @@ import { Container4ImagesPortrait_Element } from "../../../../elements/container
 import { Link } from "react-router-dom";
 
 /* Import des composants Router */
-import ListDataRouter from "../../../../../router/router";
+import router from "../../../../../router/router";
 
 function Blog_20250616_Root() {    
     return (
@@ -171,14 +171,14 @@ function Blog_20250616_Root() {
             </h2>
 
             <Container4ImagesPortrait_Element
-                img1={imagesBlog_20250616_img_data[0].src}
-                metaNameImg1={imagesBlog_20250616_img_data[0].alt}
-                img2={imagesBlog_20250616_img_data[1].src}
-                metaNameImg2={imagesBlog_20250616_img_data[1].alt}
-                img3={imagesBlog_20250616_img_data[2].src}
-                metaNameImg3={imagesBlog_20250616_img_data[2].alt}
-                img4={imagesBlog_20250616_img_data[3].src}
-                metaNameImg4={imagesBlog_20250616_img_data[3].alt}
+                img1={imagesBlog_20250616_img_Data[0].src}
+                metaNameImg1={imagesBlog_20250616_img_Data[0].alt}
+                img2={imagesBlog_20250616_img_Data[1].src}
+                metaNameImg2={imagesBlog_20250616_img_Data[1].alt}
+                img3={imagesBlog_20250616_img_Data[2].src}
+                metaNameImg3={imagesBlog_20250616_img_Data[2].alt}
+                img4={imagesBlog_20250616_img_Data[3].src}
+                metaNameImg4={imagesBlog_20250616_img_Data[3].alt}
             />
             
             <h3 className={style.TitleNH3}>
@@ -270,7 +270,7 @@ function Blog_20250616_Root() {
 
             <p className={style.TextP4}>
                 <span className={style.SpanLink}>
-                    <Link to={ListDataRouter[3].path}>
+                    <Link to={router[3].path}>
                         {`Contactez-moi dès aujourd’hui pour réserver votre séance Portrait CV à Montpellier !`}
                     </Link>
                 </span>
@@ -278,7 +278,7 @@ function Blog_20250616_Root() {
 
             <p className={style.TextP4}>
                 <span className={style.SpanLink}>
-                    <Link to={`${ListDataRouter[11].path}#PortraitCorporateRoot`}>
+                    <Link to={`${router[11].path}#PortraitCorporateRoot`}>
                         {`Découvrez mes offres Portrait Professionnel et Portrait Corporate.`}
                     </Link>
                 </span>

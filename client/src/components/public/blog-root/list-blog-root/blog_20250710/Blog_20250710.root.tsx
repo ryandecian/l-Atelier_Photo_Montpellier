@@ -5,7 +5,7 @@ import style from "../../../../StyleRootComponent.module.css";
 import { PortraitLifeStyleA_Component } from "../../../portrait-lifestyle/components/PortraitLifeStyleA.component";
 
 /* Import des Components de Data */
-import { imagesBlog_20250710_img_data } from "./imagesBlog_20250710.img.data";
+import { imagesBlog_20250710_img_Data } from "./imagesBlog_20250710.img.data";
 
 /* Import des composants d'Elements */
 import { PremiumCardImgModal_Element } from "../../../../elements/premium-card-img-modal/PremiumCardImgModal.element";
@@ -14,7 +14,7 @@ import { PremiumCardImgModal_Element } from "../../../../elements/premium-card-i
 import { Link } from "react-router-dom";
 
 /* Import des composants Router */
-import ListDataRouter from "../../../../../router/router";
+import router from "../../../../../router/router";
 
 function Blog_20250710_Root() {
     return (
@@ -51,8 +51,8 @@ function Blog_20250710_Root() {
 
             <div className={style.ContainerFloat}>
                 <PremiumCardImgModal_Element
-                    src={imagesBlog_20250710_img_data[0].src}
-                    alt={imagesBlog_20250710_img_data[0].alt}
+                    src={imagesBlog_20250710_img_Data[0].src}
+                    alt={imagesBlog_20250710_img_Data[0].alt}
                     className={style.FloatLeftImg_Po}
                 />
 
@@ -90,8 +90,8 @@ function Blog_20250710_Root() {
 
             <div className={style.ContainerFloat}>
                 <PremiumCardImgModal_Element
-                    src={imagesBlog_20250710_img_data[1].src}
-                    alt={imagesBlog_20250710_img_data[1].alt}
+                    src={imagesBlog_20250710_img_Data[1].src}
+                    alt={imagesBlog_20250710_img_Data[1].alt}
                     className={style.FloatRightImg_Pa}
                 />
 
@@ -141,8 +141,8 @@ function Blog_20250710_Root() {
 
             <div className={style.ContainerFloat}>
                 <PremiumCardImgModal_Element
-                    src={imagesBlog_20250710_img_data[2].src}
-                    alt={imagesBlog_20250710_img_data[2].alt}
+                    src={imagesBlog_20250710_img_Data[2].src}
+                    alt={imagesBlog_20250710_img_Data[2].alt}
                     className={style.FloatLeftImg_Pa}
                 />
             
@@ -223,7 +223,7 @@ function Blog_20250710_Root() {
             <p className={style.TextP4}>
                 👉 {` `}
                 <span className={style.SpanLink}>
-                    <Link to={`${ListDataRouter[3].path}`}>
+                    <Link to={`${router[3].path}`}>
                         {` Contactez-moi dès aujourd’hui pour réserver votre séance Portrait Lifestyle à Montpellier !`}
                     </Link>
                 </span>
@@ -232,7 +232,7 @@ function Blog_20250710_Root() {
             <p id="tarif" className={style.TextP4}>
                 👉 {` `}
                 <span className={style.SpanLink}>
-                    <Link to={`${ListDataRouter[4].path}/${ListDataRouter[4].children?.[3].path}#tarif`}>
+                    <Link to={`${router[4].path}/${router[4].children?.[3].path}#tarif`}>
                         {` Découvrez mes offres Portrait Lifestyle et Portrait Feel Good.`}
                     </Link>
                 </span>

@@ -3,7 +3,7 @@ import css from "./blog_20250724.module.css";
 import style from "../../../../StyleRootComponent.module.css";
 
 /* Import des Components de Data */
-import { imagesBlog_20250724_img_data } from "./imagesBlog_20250724.img.data";
+import { imagesBlog_20250724_img_Data } from "./imagesBlog_20250724.img.data";
 
 /* Import des composants d'Elements */
 import { PremiumCardImgModal_Element } from "../../../../elements/premium-card-img-modal/PremiumCardImgModal.element";
@@ -12,7 +12,7 @@ import { PremiumCardImgModal_Element } from "../../../../elements/premium-card-i
 import { Link } from "react-router-dom";
 
 /* Import des composants Router */
-import ListDataRouter from "../../../../../router/router";
+import router from "../../../../../router/router";
 
 function Blog_20250724_Root() {
     return (
@@ -47,14 +47,14 @@ function Blog_20250724_Root() {
 
             <div className={css.ContainerImg}>
                 <PremiumCardImgModal_Element
-                    src={imagesBlog_20250724_img_data[0].src}
-                    alt={imagesBlog_20250724_img_data[0].alt}
+                    src={imagesBlog_20250724_img_Data[0].src}
+                    alt={imagesBlog_20250724_img_Data[0].alt}
                     className={css.Img1}
                 />
 
                 <PremiumCardImgModal_Element
-                    src={imagesBlog_20250724_img_data[1].src}
-                    alt={imagesBlog_20250724_img_data[1].alt}
+                    src={imagesBlog_20250724_img_Data[1].src}
+                    alt={imagesBlog_20250724_img_Data[1].alt}
                     className={css.Img2}
                 />
             </div>
@@ -241,7 +241,7 @@ function Blog_20250724_Root() {
             <p className={style.TextP4}>
                 <span className={style.SpanLink}>
                     <Link 
-                        to={`${ListDataRouter[18].path}#top`} 
+                        to={`${router[18].path}#top`} 
                         title="Voir les prestations grossesse proposées par l'Atelier Photo Montpellier"
                     >
                         {`Envie de créer vos propres souvenirs ? Découvrez mes prestations dédiées à la photo de grossesse.`}

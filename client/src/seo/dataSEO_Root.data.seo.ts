@@ -1,5 +1,5 @@
 /* Import des composants Router */
-import externalLinks from "../constants/externalLinks";
+import { routerExt } from "../router/routerExt.router";
 import ListDataRouter from "../router/router";
 
 /* Import des Types */
@@ -42,7 +42,7 @@ function dataSEO_Root_data_SEO(): DataSEORoot_Type {
         description: "L'Atelier Photo Montpellier, dirigé par Anne SAUNIER, propose des prestations photographiques professionnelles à Montpellier et ses environs : grossesse, mariage, portraits corporate, lifestyle...", // Description de l'entreprise
         name: "L'Atelier Photo Montpellier", /* Nom de l'entreprise */
         telephone: "+33 6 52 67 73 33", /* Numéro de téléphone de l'entreprise (Manuel) */
-        email: externalLinks.emailAnne, /* Adresse email de l'entreprise (Dynamique) */
+        email: routerExt.emailAnne, /* Adresse email de l'entreprise (Dynamique) */
         url: `${import.meta.env.VITE_DOMAIN_CLIENT}`, /* URL de la page d'accueil de l'entreprise (Dynamique) */
         img: `${import.meta.env.VITE_DOMAIN_CLIENT}/dans-les-yeux-de-sacha.jpg`, // Lien URL public de l'image de l'entreprise (Dynamique) */
         isPartOf: {
@@ -76,8 +76,8 @@ function dataSEO_Root_data_SEO(): DataSEORoot_Type {
             "Mo-Su 14:00-19:00"
         ], /* Horaires d'ouverture du lundi au dimanche de 10h à 13het de 14h à 19h */
         sameAs: [
-            externalLinks.instagram, /* Compte Instagram */
-            externalLinks.facebook, /* A modifier car ce n'est pas le bon compte */
+            routerExt.instagram, /* Compte Instagram */
+            routerExt.facebook, /* A modifier car ce n'est pas le bon compte */
         ],
         termsOfService: `${import.meta.env.VITE_DOMAIN_CLIENT}/${router[9].path}`, /* Conditions d'utilisation de l'entreprise (Dynamique) */
         "worksFor": {
