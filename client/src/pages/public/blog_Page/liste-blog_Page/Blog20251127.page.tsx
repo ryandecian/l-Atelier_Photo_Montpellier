@@ -7,7 +7,7 @@ import Blog_20251127_Root from "../../../../components/public/blog-root/list-blo
 import Footer_Layout from "../../../../components/layout/footer_Layout/Footer.layout";
 
 /* Import des composants SEO */
-import { HelmetBlog20251127_helmet_SEO } from "../../../../seo/blog_SEO/liste-article-blog_SEO/blog-20251127_SEO/HelmetBlog20251127.helmet.seo";
+import { HelmetBlog20251127_helmet_SEO } from "../../../../seoS/blog_SEO/liste-article-blog_SEO/blog-20251127_SEO/HelmetBlog20251127.helmet.seo";
 
 /* Import des Hooks */
 import { useScrollToHash_Hook } from "../../../../hook/useScrollToHash.hook";

@@ -7,7 +7,7 @@ import PortraitLifeStyle_Root from "../../../components/public/portrait-lifestyl
 import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
 
 /* Import des composants SEO */
-import { HelmetPortraitLifeStyle_helmet_SEO } from "../../../seo/portrait-lifestyle_SEO/HelmetPortraitLifeStyle.helmet.seo";
+import { HelmetPortraitLifeStyle_helmet_SEO } from "../../../seoS/portrait-lifestyle_SEO/HelmetPortraitLifeStyle.helmet.seo";
 
 /* Import des Hooks */
 import { useScrollToHash_Hook } from "../../../hook/useScrollToHash.hook";

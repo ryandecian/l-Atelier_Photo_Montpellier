@@ -7,7 +7,7 @@ import PortraitDuo_Root from "../../../components/public/portrait-duo/PortraitDu
 import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
 
 /* Import des composants SEO */
-import { HelmetPortraitDuo_helmet_SEO } from "../../../seo/portrait-duo_SEO/HelmetPortraitDuo.helmet.seo";
+import { HelmetPortraitDuo_helmet_SEO } from "../../../seoS/portrait-duo_SEO/HelmetPortraitDuo.helmet.seo";
 
 /* Import des Hooks */
 import { useScrollToHash_Hook } from "../../../hook/useScrollToHash.hook";

@@ -7,7 +7,7 @@ import MentionsLegales_Root from "../../../components/public/mention-legale/Ment
 import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
 
 /* Import des composants SEO */
-import { HelmetMentionLegale_helmet_SEO } from "../../../seo/mentions-legales_SEO/HelmetMentionsLegales.helmet.seo";
+import { HelmetMentionLegale_helmet_SEO } from "../../../seoS/mentions-legales_SEO/HelmetMentionsLegales.helmet.seo";
 
 /* Import des Hooks */
 import { useScrollToHash_Hook } from "../../../hook/useScrollToHash.hook";

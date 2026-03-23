@@ -7,7 +7,7 @@ import ContactRoot from "../../../components/public/contact/Contact.root";
 import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
 
 /* Import des composants SEO */
-import { HelmetContact_helmet_SEO } from "../../../seo/contact_SEO/HelmetContact.helmet.seo";
+import { HelmetContact_helmet_SEO } from "../../../seoS/contact_SEO/HelmetContact.helmet.seo";
 
 function Contact_Page() {
      return (
