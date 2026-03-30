@@ -15,6 +15,7 @@ Mise a jour des dépendances de LAPM, voici les cibles :
 
 Refacto des composants principaux faits, il faut maintenant s'attaquer au SEO
 
+
 ------------------------------------------------------------------------------
 Liste des pages qui reste a éditer : 
 - Portfolio
