@@ -18,6 +18,7 @@ Refacto des composants principaux faits, il faut maintenant s'attaquer au SEO
 Liste des pages qui reste a éditer : 
 - Portfolio
 - Tarifs
+
 ------------------------------------------------------------------------------
 Pour le SEO
 - sitemap
