@@ -19,6 +19,7 @@ Liste des pages qui reste a éditer :
 - Portfolio
 - Tarifs
 
+
 ------------------------------------------------------------------------------
 Pour le SEO
 - sitemap
