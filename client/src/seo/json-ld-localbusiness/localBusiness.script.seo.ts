@@ -14,6 +14,7 @@ function localBusiness_script_SEO(): string {
     const json_ld = JSON.stringify({
         "@context": dataMasterSEO["@context"],
         "@type": dataMasterSEO["@type"].LocalBusiness,
+        "@id": dataMasterSEO.id_LocalBusiness,
     });
 
     return (

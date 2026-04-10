@@ -27,10 +27,10 @@ function JSON_LD_Service_PortraitSolo_schema_SEO() : string {
             "@type": "Organization",
             "name": dataSEORoot.name,
             "logo": {
-            "@type": "ImageObject",
-            "url": dataSEORoot.logo,
-            "width": 200,
-            "height": 200
+                "@type": "ImageObject",
+                "url": dataSEORoot.logo,
+                "width": 200,
+                "height": 200
             },
         },
         "areaServed": dataSEORoot.areaServed, /* Zone géographique desservie par le service */

@@ -1,6 +1,9 @@
 /* Import des composants Router */
 import router from "../../router/router";
 
+/* Import des Configs */
+import { ENV } from "../../config/ENV.config";
+
 /* Import des Types */
 import { dataMasterSEO_Type } from "./dataMasterSEO.type";
 
@@ -22,6 +25,12 @@ function dataMasterSEO_data_SEO(): dataMasterSEO_Type {
             WebPage: "WebPage",
             TermsOfService: "TermsOfService",
             VideoObject: "VideoObject"
+        },
+        "id_LocalBusiness": `${ENV("VITE_DOMAIN_CLIENT")}#lapm`,
+        "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "SIRET",
+            "value": "80255882500021"
         },
     };
 
