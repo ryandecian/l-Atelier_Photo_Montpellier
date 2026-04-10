@@ -12,9 +12,10 @@ function localBusiness_script_SEO(): string {
     const dataMasterSEO: dataMasterSEO_Type = dataMasterSEO_data_SEO(); /* Récupération des données SEO */
 
     const json_ld = JSON.stringify({
-        "@context": dataMasterSEO["@context"],
-        "@type": dataMasterSEO["@type"].LocalBusiness,
-        "@id": dataMasterSEO.id_LocalBusiness,
+        "@context": dataMasterSEO["@context"], /* (Obligatoire) URL de Google schéma */
+        "@type": dataMasterSEO["@type"].LocalBusiness, /* (Obligatoire) Type de JSON-LD */
+        "@id": dataMasterSEO.id_LocalBusiness, /* (Obligatoire) URL du front avec un ID unique pour le LocalBusiness */
+        "identifier": dataMasterSEO.identifier, /* (Obligatoire) Identifiant de l'entreprise, ici le SIRET */
     });
 
     return (
