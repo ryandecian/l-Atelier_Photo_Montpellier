@@ -16,6 +16,7 @@ type dataMasterSEO_Type = {
         TermsOfService: "TermsOfService",
         VideoObject: "VideoObject"
     },
+    id_LocalBusiness: string;
 }
 
 export type { dataMasterSEO_Type };
