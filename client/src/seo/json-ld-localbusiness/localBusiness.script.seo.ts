@@ -16,6 +16,8 @@ function localBusiness_script_SEO(): string {
         "@type": dataMasterSEO["@type"].LocalBusiness, /* (Obligatoire) Type de JSON-LD */
         "@id": dataMasterSEO.id_LocalBusiness, /* (Obligatoire) URL du front avec un ID unique pour le LocalBusiness */
         "identifier": dataMasterSEO.identifier, /* (Obligatoire) Identifiant de l'entreprise, ici le SIRET */
+        "logo": dataMasterSEO.logo, /* (Obligatoire) URL du logo de l'entreprise */
+        "name": dataMasterSEO.name, /* (Obligatoire) Nom de l'entreprise */
     });
 
     return (
