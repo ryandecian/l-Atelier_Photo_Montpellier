@@ -14,12 +14,14 @@ function localBusiness_script_SEO(): string {
     const json_ld = JSON.stringify({
         "@context": dataMasterSEO["@context"], /* (Obligatoire) URL de Google schéma */
         "@type": dataMasterSEO["@type"].LocalBusiness, /* (Obligatoire) Type de JSON-LD */
-        "@id": dataMasterSEO.id_LocalBusiness, /* (Obligatoire) URL du front avec un ID unique pour le LocalBusiness */
+        "@id": dataMasterSEO.id_LocalBusiness,  /* (Obligatoire) URL du front avec un ID unique pour le LocalBusiness */
         "identifier": dataMasterSEO.identifier, /* (Obligatoire) Identifiant de l'entreprise, ici le SIRET */
-        "logo": dataMasterSEO.logo, /* (Obligatoire) URL du logo de l'entreprise */
-        "name": dataMasterSEO.name, /* (Obligatoire) Nom de l'entreprise */
+        "logo": dataMasterSEO.logo,    /* (Obligatoire) URL du logo de l'entreprise */
+        "name": dataMasterSEO.name,    /* (Obligatoire) Nom de l'entreprise */
         "image": dataMasterSEO.image,  /* (Recommandé) URL de l'image de l'entreprise */
-        "url": dataSEO_Root.url, /* (Obligatoire) URL de la page */
+        "url": dataMasterSEO.url,      /* (Obligatoire) URL de la page */
+        "telephone": dataMasterSEO.telephone, /* (Obligatoire) Numéro de téléphone de l'entreprise */
+        "email": dataMasterSEO.email,  /* (Obligatoire) Adresse email de l'entreprise */
     });
 
     return (

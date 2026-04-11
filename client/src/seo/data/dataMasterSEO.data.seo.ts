@@ -1,5 +1,6 @@
 /* Import des composants Router */
 // import router from "../../router/router";
+import { routerExt } from "../../router/routerExt.router";
 
 /* Import des Configs */
 import { ENV } from "../../config/ENV.config";
@@ -41,6 +42,8 @@ function dataMasterSEO_data_SEO(): dataMasterSEO_Type {
         "name": "L'Atelier Photo Montpellier", /* Nom de l'entreprise */
         "image": `${ENV("VITE_DOMAIN_CLIENT")}/dans-les-yeux-de-sacha.jpg`, /* Lien URL public de l'image de l'entreprise (Dynamique) */
         "url": `${ENV("VITE_DOMAIN_CLIENT")}`, /* URL de la page d'accueil de l'entreprise (Dynamique) */
+        "telephone": "+33 6 52 67 73 33", /* Numéro de téléphone de l'entreprise (Manuel) */
+        "email": routerExt.emailAnne, /* Adresse email de l'entreprise (Dynamique) */
     };
 
     return (
