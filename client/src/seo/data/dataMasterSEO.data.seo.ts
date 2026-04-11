@@ -44,6 +44,22 @@ function dataMasterSEO_data_SEO(): dataMasterSEO_Type {
         "url": `${ENV("VITE_DOMAIN_CLIENT")}`, /* URL de la page d'accueil de l'entreprise (Dynamique) */
         "telephone": "+33 6 52 67 73 33", /* Numéro de téléphone de l'entreprise (Manuel) */
         "email": routerExt.emailAnne, /* Adresse email de l'entreprise (Dynamique) */
+        "address": { /* (Obligatoire) Adresse de l'entreprise */
+            "@type": "PostalAddress",
+            "streetAddress": "13 Allée des Platanes",
+            "addressLocality": "Grabels",
+            "postalCode": "34790",
+            "addressCountry": "FR"
+        },
+        "priceRange": "€€", /* (Recommandé) Gamme de prix de l'entreprise */
+        "openingHours": [
+            "Mo-Su 10:00-13:00",
+            "Mo-Su 14:00-19:00"
+        ], /* Horaires d'ouverture du lundi au dimanche de 10h à 13h et de 14h à 19h */
+        sameAs: [
+            routerExt.instagram, /* Compte Instagram */
+            routerExt.facebook,  /* Compte Facebook */
+        ],
     };
 
     return (

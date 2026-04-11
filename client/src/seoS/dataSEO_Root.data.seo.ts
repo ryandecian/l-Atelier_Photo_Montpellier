@@ -74,7 +74,7 @@ function dataSEO_Root_data_SEO(): DataSEORoot_Type {
         openingHours: [
             "Mo-Su 10:00-13:00",
             "Mo-Su 14:00-19:00"
-        ], /* Horaires d'ouverture du lundi au dimanche de 10h à 13het de 14h à 19h */
+        ], /* Horaires d'ouverture du lundi au dimanche de 10h à 13h et de 14h à 19h */
         sameAs: [
             routerExt.instagram, /* Compte Instagram */
             routerExt.facebook, /* A modifier car ce n'est pas le bon compte */

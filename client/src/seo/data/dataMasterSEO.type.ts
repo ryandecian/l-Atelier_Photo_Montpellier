@@ -17,22 +17,32 @@ type dataMasterSEO_Type = {
         "VideoObject": "VideoObject"
     },
     "id_LocalBusiness": string; /* URL du front avec un ID unique pour le LocalBusiness */
-    "identifier": {
+    "identifier": {             /* Identifiant de l'entreprise, ici le SIRET */
         "@type": "PropertyValue",
         "propertyID": string,
         "value": string
     },
-    "logo": {
+    "logo": {                   /* URL du logo de l'entreprise */
         "@type": "ImageObject",
         "url": string,
         "width": number,
         "height": number
     };
-    "name": string;
-    "image"?: string;
-    "url": string;
-    "telephone": string;
-    "email": string;
+    "name": string;      /* Nom de l'entreprise */
+    "image"?: string;    /* Lien URL public de l'image de l'entreprise (Dynamique) */
+    "url": string;       /* URL de la page d'accueil de l'entreprise (Dynamique) */
+    "telephone": string; /* Numéro de téléphone de l'entreprise (Manuel) */
+    "email": string;     /* Adresse email de l'entreprise (Dynamique) */
+    "address": {         /* (Obligatoire) Adresse de l'entreprise */
+        "@type": "PostalAddress",
+        "streetAddress": string,
+        "addressLocality": string,
+        "postalCode": string,
+        "addressCountry": string
+    };
+    "priceRange"?: string;    /* (Recommandé) Gamme de prix de l'entreprise */
+    "openingHours": string[]; /* Horaires d'ouverture de l'entreprise */
+    "sameAs": string[];       /* Liste et liens vers les réseaux sociaux de l'entreprise */
 }
 
 export type { dataMasterSEO_Type };
