@@ -29,6 +29,8 @@ type dataMasterSEO_Type = {
         "height": number
     };
     "name": string;
+    "image": string;
+    "url": string;
 }
 
 export type { dataMasterSEO_Type };

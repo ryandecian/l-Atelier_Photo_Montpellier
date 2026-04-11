@@ -18,6 +18,8 @@ function localBusiness_script_SEO(): string {
         "identifier": dataMasterSEO.identifier, /* (Obligatoire) Identifiant de l'entreprise, ici le SIRET */
         "logo": dataMasterSEO.logo, /* (Obligatoire) URL du logo de l'entreprise */
         "name": dataMasterSEO.name, /* (Obligatoire) Nom de l'entreprise */
+        "image": dataMasterSEO.image,  /* (Recommandé) URL de l'image de l'entreprise */
+        "url": dataSEO_Root.url, /* (Obligatoire) URL de la page */
     });
 
     return (

@@ -1,5 +1,5 @@
 /* Import des composants Router */
-import router from "../../router/router";
+// import router from "../../router/router";
 
 /* Import des Configs */
 import { ENV } from "../../config/ENV.config";
@@ -27,18 +27,20 @@ function dataMasterSEO_data_SEO(): dataMasterSEO_Type {
             VideoObject: "VideoObject"
         },
         "id_LocalBusiness": `${ENV("VITE_DOMAIN_CLIENT")}#lapm`, /* URL du front avec un ID unique pour le LocalBusiness */
-        "identifier": {
+        "identifier": {                                          /* Identifiant de l'entreprise, ici le SIRET */
             "@type": "PropertyValue",
             "propertyID": "SIRET",
             "value": "80255882500021"
         },
-        "logo": {
+        "logo": {                      /* (Obligatoire) URL du logo de l'entreprise */
             "@type": "ImageObject",
             "url": `${ENV("VITE_DOMAIN_CLIENT")}/logo-LAPM-l-atelier-photo-montpellier.png`, /* Logo au format carré si possible, poids max 75 ko */
             "width": 200,
             "height": 200
         },
         "name": "L'Atelier Photo Montpellier", /* Nom de l'entreprise */
+        "image": `${ENV("VITE_DOMAIN_CLIENT")}/dans-les-yeux-de-sacha.jpg`, /* Lien URL public de l'image de l'entreprise (Dynamique) */
+        "url": `${ENV("VITE_DOMAIN_CLIENT")}`, /* URL de la page d'accueil de l'entreprise (Dynamique) */
     };
 
     return (
