@@ -10,7 +10,7 @@ import { avisClientPortraitSolo_Data } from "../../components/public/portrait-so
 import { avisClientHome_Data } from "../../components/public/home/avisClientHome.data";
 
 /* Import des Types */
-import { AvisClientSEO_Type } from "./avisClientSEO.type";
+import { AvisClientSEO_Type } from "../../types/seo/avisClientSEO.type";
 
 
 /* Fusion de tous les avis */

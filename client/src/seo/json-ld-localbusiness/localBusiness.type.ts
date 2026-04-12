@@ -1,1 +1,0 @@
-type LocalBusiness_Type = {}

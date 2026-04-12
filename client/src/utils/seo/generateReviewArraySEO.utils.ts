@@ -12,7 +12,7 @@ function generateReviewArraySEO_Utils(data : AvisClientSEO_Type[]) {
                 "@type": "Person",
                 "name": avis.nom /* Nom de l'auteur de l'avis */
             },
-            "datePublished": avis.date, /* Date de publication de l'avis */
+            "datePublished": avis.date, /* Date de publication de l'avis de type string au format "DD/MM/YYYY" */
             "reviewBody": avis.commentaire, /* Contenu de l'avis */
             "reviewRating": {
                 "@type": "Rating",
