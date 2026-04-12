@@ -43,6 +43,24 @@ type dataMasterSEO_Type = {
     "priceRange"?: string;    /* (Recommandé) Gamme de prix de l'entreprise */
     "openingHours": string[]; /* Horaires d'ouverture de l'entreprise */
     "sameAs": string[];       /* Liste et liens vers les réseaux sociaux de l'entreprise */
+    "aggregateRating": {      /* Note moyenne et nombre d'avis clients */
+        "@type": string;
+        "ratingValue": string;
+        "reviewCount": string;
+    } | null;
+    "review": { /* Tableau des avis clients spécifique à Google (Max 5) */
+        "@type": string;
+        "author": {
+            "@type": string;
+            "name": string; /* Nom de l'auteur de l'avis */
+        };
+        "datePublished": string; /* Date de publication de l'avis de type string au format "DD/MM/YYYY" */
+        "reviewBody": string; /* Contenu de l'avis */
+        "reviewRating": {
+            "@type": string;
+            "ratingValue": string; /* Note de l'avis */
+        };
+    }[]
 }
 
 export type { dataMasterSEO_Type };

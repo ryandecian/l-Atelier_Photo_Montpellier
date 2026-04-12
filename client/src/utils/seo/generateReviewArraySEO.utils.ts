@@ -1,5 +1,5 @@
 /* Import des Types */
-import { AvisClientSEO_Type } from "../../types/seo/avisClientSEO.type";
+import { AvisClientSEO_Type } from "../../seo/data/avisClientSEO.type";
 
 function generateReviewArraySEO_Utils(data : AvisClientSEO_Type[]) {
     if (!data.length) return [];
@@ -8,15 +8,15 @@ function generateReviewArraySEO_Utils(data : AvisClientSEO_Type[]) {
         .slice(0, 5) // Limite à 5 avis maximum
         .map((avis) => ({
             "@type": "Review",
-            author: {
+            "author": {
                 "@type": "Person",
-                "name": avis.nom
+                "name": avis.nom /* Nom de l'auteur de l'avis */
             },
-            datePublished: avis.date,
-            reviewBody: avis.commentaire,
-            reviewRating: {
+            "datePublished": avis.date, /* Date de publication de l'avis */
+            "reviewBody": avis.commentaire, /* Contenu de l'avis */
+            "reviewRating": {
                 "@type": "Rating",
-                ratingValue: avis.note.toString()
+                "ratingValue": avis.note.toString() /* Note de l'avis */
             }
         })
     );

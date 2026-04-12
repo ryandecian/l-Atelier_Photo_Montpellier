@@ -24,8 +24,10 @@ function localBusiness_script_SEO(): string {
         "email": dataMasterSEO.email,  /* (Obligatoire) Adresse email de l'entreprise */
         "address": dataMasterSEO.address,       /* (Obligatoire) Adresse de l'entreprise */
         "priceRange": dataMasterSEO.priceRange, /* (Recommandé) Gamme de prix de l'entreprise */
-        "openingHours": dataMasterSEO.openingHours, /* Horaires d'ouverture de l'entreprise */
-        "sameAs": dataMasterSEO.sameAs,         /* Liste et liens vers les réseaux sociaux de l'entreprise */
+        "openingHours": dataMasterSEO.openingHours,      /* Horaires d'ouverture de l'entreprise */
+        "sameAs": dataMasterSEO.sameAs,                  /* Liste et liens vers les réseaux sociaux de l'entreprise */
+        "aggregateRating": dataMasterSEO.aggregateRating, /* Note moyenne et nombre d'avis clients */
+        "review": dataMasterSEO.review /* Tableau des avis clients spécifique à Google (Max 5) */
     });
 
     return (

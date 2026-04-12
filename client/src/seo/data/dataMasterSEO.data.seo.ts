@@ -4,9 +4,14 @@ import { routerExt } from "../../router/routerExt.router";
 
 /* Import des Configs */
 import { ENV } from "../../config/ENV.config";
+import { avisClientGlobal_data_SEO } from "./avisClientGlobal.data.seo";
 
 /* Import des Types */
 import { dataMasterSEO_Type } from "./dataMasterSEO.type";
+
+/* Import des Utils */
+import { generateAverageRatingSEO_Utils } from "../../utils/seo/generateAverageRatingSEO.utils";
+import { generateReviewArraySEO_Utils } from "../../utils/seo/generateReviewArraySEO.utils";
 
 function dataMasterSEO_data_SEO(): dataMasterSEO_Type {
     const dataMasterSEO: dataMasterSEO_Type = {
@@ -60,6 +65,8 @@ function dataMasterSEO_data_SEO(): dataMasterSEO_Type {
             routerExt.instagram, /* Compte Instagram */
             routerExt.facebook,  /* Compte Facebook */
         ],
+        "aggregateRating": generateAverageRatingSEO_Utils(avisClientGlobal_data_SEO), /* Note moyenne et nb d'avis clients */
+        "review": generateReviewArraySEO_Utils(avisClientGlobal_data_SEO) /* Tableau des avis clients spécifique a google. (Max 5) */
     };
 
     return (
