@@ -19,7 +19,6 @@ Liste des pages qui reste a éditer :
 - Portfolio
 - Tarifs
 
-
 ------------------------------------------------------------------------------
 Pour le SEO
 - sitemap
@@ -29,6 +28,10 @@ Page a traiter pour les JSON_LD
 - Toutes les pages...
 
 ------------------------------------------------------------------------------
+Composants JSON_LD : 
+
+Ce qui est fait et prêt à être utilisé : 
+- JSON_LocalBusiness
 
 ------------------------------------------------------------------------------
 
