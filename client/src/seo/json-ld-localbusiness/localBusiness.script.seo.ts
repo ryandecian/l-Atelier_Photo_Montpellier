@@ -1,5 +1,3 @@
-/* Import des Components */
-
 /* Import des Components de Data */
 import { dataMasterSEO_data_SEO } from "../data/dataMasterSEO.data.seo";
 
