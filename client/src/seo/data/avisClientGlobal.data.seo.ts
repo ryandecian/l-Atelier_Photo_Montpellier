@@ -1,4 +1,5 @@
 /* Import des composants d'Avis clients */
+import { avisClientHome_Data } from "../../components/public/home/avisClientHome.data";
 import { avisClientPortraitCorporate_Data } from "../../components/public/portrait-corporate/avisClientPortraitCorporate.data";
 import { avisClientPortraitDuo_Data } from "../../components/public/portrait-duo/avisClientPortraitDuo.data";
 import { avisClientPortraitFamille_Data } from "../../components/public/portrait-famille/avisClientPortraitFamille.data";
@@ -7,7 +8,7 @@ import { avisClientPortraitHobby_Data } from "../../components/public/portrait-h
 import { avisClientPortraitLifeStyle_Data } from "../../components/public/portrait-lifestyle/avisClientPortraitLifeStyle.data";
 import { avisClientPortraitMariage_Data} from "../../components/public/portrait-mariage/avisClientPortraitMariage.data";
 import { avisClientPortraitSolo_Data } from "../../components/public/portrait-solo/avisClientPortraitSolo.data";
-import { avisClientHome_Data } from "../../components/public/home/avisClientHome.data";
+import { avisClientVideo_Data } from "../../components/public/video/avisClientVideo.data";
 
 /* Import des Types */
 import { AvisClientSEO_Type } from "../../types/seo/avisClientSEO.type";
@@ -15,6 +16,7 @@ import { AvisClientSEO_Type } from "../../types/seo/avisClientSEO.type";
 
 /* Fusion de tous les avis */
 const allAvis: AvisClientSEO_Type[] = [
+    ...avisClientHome_Data,
     ...avisClientPortraitCorporate_Data,
     ...avisClientPortraitDuo_Data,
     ...avisClientPortraitFamille_Data,
@@ -23,7 +25,7 @@ const allAvis: AvisClientSEO_Type[] = [
     ...avisClientPortraitLifeStyle_Data,
     ...avisClientPortraitMariage_Data,
     ...avisClientPortraitSolo_Data,
-    ...avisClientHome_Data
+    ...avisClientVideo_Data
 ]
 
 /* Trie les avis par date décroissante (plus récent en premier) */
