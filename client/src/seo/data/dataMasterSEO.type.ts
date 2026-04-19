@@ -1,4 +1,4 @@
-type dataMasterSEO_Type = {
+type DataMasterSEO_Type = {
     "@context": string; /* URL de Google schéma */
     "@type": {          /* (Obligatoire) Type de JSON-LD */
         "LocalBusiness": "LocalBusiness",
@@ -63,4 +63,4 @@ type dataMasterSEO_Type = {
     }[]
 }
 
-export type { dataMasterSEO_Type };
+export type { DataMasterSEO_Type };

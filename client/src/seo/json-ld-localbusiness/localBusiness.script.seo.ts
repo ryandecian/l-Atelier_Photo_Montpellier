@@ -2,10 +2,11 @@
 import { dataMasterSEO_data_SEO } from "../data/dataMasterSEO.data.seo";
 
 /* Import des Types */
-import { dataMasterSEO_Type } from "../data/dataMasterSEO.type";
+import { DataMasterSEO_Type } from "../data/dataMasterSEO.type";
 
 function localBusiness_script_SEO(): string {
-    const dataMasterSEO: dataMasterSEO_Type = dataMasterSEO_data_SEO(); /* Récupération des données SEO */
+    /* Récupération des datas et stock des données dans une const afin de ne pas recalculer à chaques appel de la fonction data */
+    const dataMasterSEO: DataMasterSEO_Type = dataMasterSEO_data_SEO();
 
     const json_ld = JSON.stringify({
         "@context": dataMasterSEO["@context"], /* (Obligatoire) URL de Google schéma */
