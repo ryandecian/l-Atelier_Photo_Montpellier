@@ -4,8 +4,6 @@ import { dataMasterSEO_data_SEO } from "../data/dataMasterSEO.data.seo";
 /* Import des Types */
 import { dataMasterSEO_Type } from "../data/dataMasterSEO.type";
 
-/* Import des Utils */
-
 function localBusiness_script_SEO(): string {
     const dataMasterSEO: dataMasterSEO_Type = dataMasterSEO_data_SEO(); /* Récupération des données SEO */
 
