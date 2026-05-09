@@ -5,7 +5,7 @@ import { dataMasterSEO_data_SEO } from "../data/dataMasterSEO.data.seo";
 import { DataMasterSEO_Type } from "../data/dataMasterSEO.type";
 
 /* Import des Utils */
-import { generateURLSlug_Utils } from "./generateURLSlug.utils";
+import { generateURLSlug_Utils } from "../utils/generateURLSlug.utils";
 
 type Data = {
     "position": number, /* Position de la page dans le fil Ariane (juste un nombre) */
