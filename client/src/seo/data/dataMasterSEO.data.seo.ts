@@ -7,14 +7,14 @@ import { ENV } from "../../config/ENV.config";
 import { avisClientGlobal_data_SEO } from "./avisClientGlobal.data.seo";
 
 /* Import des Types */
-import { dataMasterSEO_Type } from "./dataMasterSEO.type";
+import { DataMasterSEO_Type } from "./dataMasterSEO.type";
 
 /* Import des Utils */
 import { generateAverageRatingSEO_Utils } from "../../utils/seo/generateAverageRatingSEO.utils";
 import { generateReviewArraySEO_Utils } from "../../utils/seo/generateReviewArraySEO.utils";
 
-function dataMasterSEO_data_SEO(): dataMasterSEO_Type {
-    const dataMasterSEO: dataMasterSEO_Type = {
+function dataMasterSEO_data_SEO(): DataMasterSEO_Type {
+    const dataMasterSEO: DataMasterSEO_Type = {
         "@context": "https://schema.org", /* URL de Google schéma */
         "@type": {                        /* (Obligatoire) Type de JSON-LD */
             LocalBusiness: "LocalBusiness",
