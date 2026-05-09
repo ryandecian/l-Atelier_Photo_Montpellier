@@ -4,16 +4,20 @@ import { dataMasterSEO_data_SEO } from "../data/dataMasterSEO.data.seo";
 /* Import des Types */
 import { DataMasterSEO_Type } from "../data/dataMasterSEO.type";
 
+/* Import des Utils */
+import { generateURLSlug_Utils } from "./generateURLSlug.utils";
+
 type Data = {
-    "position": number,
-    "name_Breadcrumb": string,
-    "url": string,
+    "position": number, /* Position de la page dans le fil Ariane (juste un nombre) */
+    "name_Breadcrumb": string, /* Nom de la page */
+    "uri": string, /* URI de la page sans le nom de domaine */
     "id": string,
 }
 
 function breadcrumb_script_SEO(data: Data): string {
     /* Récupération des datas et stock des données dans une const afin de ne pas recalculer à chaques appel de la fonction data */
     const dataMasterSEO: DataMasterSEO_Type = dataMasterSEO_data_SEO();
+    const url: string = import.meta.env.VITE_DOMAIN_CLIENT /* Nom de domaine */
 
     const JSON_LD = JSON.stringify({
         "@context": dataMasterSEO["@context"], /* (Obligatoire) URL de Google schéma */
@@ -25,7 +29,9 @@ function breadcrumb_script_SEO(data: Data): string {
                 "name": data.name_Breadcrumb, /* Libellé ou nom de la page dans le fil Ariane (ex: Portfolio ou Portrait Duo) */
                 "item": {
                     "@type": dataMasterSEO["@type"].WebPage,
-                    "@id": data.id, /* @id SEO-friendly, correspond à l'URL de la page + mots clés (ex : domain/uri/#motClé ) */
+                    "@id": `${url}${data.uri}/#${generateURLSlug_Utils(data.name_Breadcrumb)}`, /* @id SEO-friendly, correspond à l'URL de la page + mots clés (ex : domain/uri/#mot-clé ) */
+                    "url": `${url}${data.uri}`, /* URL de la page + ancre SEO-friendly (ex : domain/uri) */
+                    "name": data.name_Breadcrumb, /* Libellé ou nom de la page dans le fil Ariane (ex: Portfolio ou Portrait Duo) */
                 }
             }
         ],
