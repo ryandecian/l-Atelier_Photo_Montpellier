@@ -34,7 +34,9 @@ Ce qui est fait et prêt à être utilisé :
 - JSON_LocalBusiness
 
 ------------------------------------------------------------------------------
-
+Découverte de la documentation avancé, il faudra l'intégrer a chaque composant.
+Pour le JSON-LD Service, il faudra ajouter une logique de présentation des services
+avec nom, prix, devise et description. 
 ------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------
