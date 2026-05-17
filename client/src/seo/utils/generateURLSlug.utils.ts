@@ -17,8 +17,14 @@
  * 7. Remplace plusieurs tirets consécutifs par un seul tiret.
  * 
  * ---
+ * @pure
  * @param {string} text - Le texte à transformer en slug SEO-friendly.
  * @returns {string} Retourne une string transformée en slug SEO-friendly, prête à être utilisée dans les URL ou les ID de page.
+ * 
+ * @example
+ * ```typescript
+ * const slug = generateURLSlug_Utils("  Portrait Photo Zoom !  ");
+ * // Résultat : "portrait-photo-zoom"
  */
 
 function generateURLSlug_Utils(text: string): string {
