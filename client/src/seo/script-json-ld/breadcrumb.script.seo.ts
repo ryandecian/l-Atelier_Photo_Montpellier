@@ -25,13 +25,13 @@ function breadcrumb_script_SEO(data: Data): string {
         "itemListElement": [ /* Tableau des éléments du fil d’Ariane, ici un seul élément par page */
             {
                 "@type": "ListItem",
-                "position": data.position, /* Position de la page dans le fil Ariane */
-                "name": data.name_page, /* Libellé ou nom de la page dans le fil Ariane (ex: Portfolio ou Portrait Duo) */
+                "position": data.position, /*(Obligatoire) Position de la page dans le fil Ariane */
+                "name": data.name_page, /*(Obligatoire) Libellé ou nom de la page dans le fil Ariane (ex: Portfolio ou Portrait Duo) */
                 "item": {
                     "@type": dataMasterSEO["@type"].WebPage,
-                    "@id": `${url}${data.uri}/#${generateURLSlug_Utils(data.id)}`, /* @id SEO-friendly, correspond à l'URL de la page + mots clés (ex : domain/uri/#mot-clé ) */
-                    "url": `${url}${data.uri}`, /* URL de la page + ancre SEO-friendly (ex : domain/uri) */
-                    "name": data.name_page, /* Libellé ou nom de la page dans le fil Ariane (ex: Portfolio ou Portrait Duo) */
+                    "@id": `${url}${data.uri}/#${generateURLSlug_Utils(data.id)}`, /*(Obligatoire) @id SEO-friendly, correspond à l'URL de la page + mots clés (ex : domain/uri/#mot-clé ) */
+                    "url": `${url}${data.uri}`, /*(Obligatoire) URL de la page + ancre SEO-friendly (ex : domain/uri) */
+                    "name": data.name_page, /*(Obligatoire) Libellé ou nom de la page dans le fil Ariane (ex: Portfolio ou Portrait Duo) */
                 }
             }
         ],

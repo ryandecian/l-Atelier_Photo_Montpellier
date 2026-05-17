@@ -28,6 +28,8 @@ function service_script_SEO(data: Data): string {
         "name": data.name_service, /* (Obligatoire) Nom du service */
         "serviceType": data.name_service, /* (Obligatoire) Catégorie du service présenté, comme une description mais simple et court (ex : Photographie corporate pour CV, LinkedIn et site web) */
         "description": data.description_service, /* (Obligatoire) Description du service */
+        "url": `${url}${data.uri}`, /*(Obligatoire) URL de la page + ancre SEO-friendly (ex : domain/uri) */
+        "termsOfService":
     })
 
     return (

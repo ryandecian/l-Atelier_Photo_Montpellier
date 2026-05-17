@@ -1,5 +1,5 @@
 /* Import des composants Router */
-// import router from "../../router/router";
+import router from "../../router/router";
 import { routerExt } from "../../router/routerExt.router";
 
 /* Import des Configs */
@@ -32,23 +32,6 @@ function dataMasterSEO_data_SEO(): DataMasterSEO_Type {
             TermsOfService: "TermsOfService",
             VideoObject: "VideoObject"
         },
-        "id_LocalBusiness": `${ENV("VITE_DOMAIN_CLIENT")}#lapm`, /* URL du front avec un ID unique pour le LocalBusiness */
-        "identifier": {                                          /* Identifiant de l'entreprise, ici le SIRET */
-            "@type": "PropertyValue",
-            "propertyID": "SIRET",
-            "value": "80255882500021"
-        },
-        "logo": {                      /* (Obligatoire) URL du logo de l'entreprise */
-            "@type": "ImageObject",
-            "url": `${ENV("VITE_DOMAIN_CLIENT")}/logo-LAPM-l-atelier-photo-montpellier.png`, /* Logo au format carré si possible, poids max 75 ko */
-            "width": 200,
-            "height": 200
-        },
-        "name": "L'Atelier Photo Montpellier", /* Nom de l'entreprise */
-        "image": `${ENV("VITE_DOMAIN_CLIENT")}/dans-les-yeux-de-sacha.jpg`, /* Lien URL public de l'image de l'entreprise (Dynamique) */
-        "url": `${ENV("VITE_DOMAIN_CLIENT")}`, /* URL de la page d'accueil de l'entreprise (Dynamique) */
-        "telephone": "+33 6 52 67 73 33", /* Numéro de téléphone de l'entreprise (Manuel) */
-        "email": routerExt.emailAnne, /* Adresse email de l'entreprise (Dynamique) */
         "address": { /* (Obligatoire) Adresse de l'entreprise */
             "@type": "PostalAddress",
             "streetAddress": "13 Allée des Platanes",
@@ -56,17 +39,35 @@ function dataMasterSEO_data_SEO(): DataMasterSEO_Type {
             "postalCode": "34790",
             "addressCountry": "FR"
         },
-        "priceRange": "€€", /* (Recommandé) Gamme de prix de l'entreprise */
+        "aggregateRating": generateAverageRatingSEO_Utils(avisClientGlobal_data_SEO), /* Note moyenne et nb d'avis clients */
+        "email": routerExt.emailAnne, /* Adresse email de l'entreprise (Dynamique) */
+        "id_LocalBusiness": `${ENV("VITE_DOMAIN_CLIENT")}#lapm`, /* URL du front avec un ID unique pour le LocalBusiness */
+        "identifier": {                                          /* Identifiant de l'entreprise, ici le SIRET */
+            "@type": "PropertyValue",
+            "propertyID": "SIRET",
+            "value": "80255882500021"
+        },
+        "image": `${ENV("VITE_DOMAIN_CLIENT")}/dans-les-yeux-de-sacha.jpg`, /* Lien URL public de l'image de l'entreprise (Dynamique) */
+        "logo": {                      /* (Obligatoire) URL du logo de l'entreprise */
+            "@type": "ImageObject",
+            "url": `${ENV("VITE_DOMAIN_CLIENT")}/logo-LAPM-l-atelier-photo-montpellier.png`, /* Logo au format carré si possible, poids max 75 ko */
+            "width": 200,
+            "height": 200
+        },
+        "name": "L'Atelier Photo Montpellier", /* Nom de l'entreprise */
         "openingHours": [
             "Mo-Su 10:00-13:00",
             "Mo-Su 14:00-19:00"
         ], /* Horaires d'ouverture du lundi au dimanche de 10h à 13h et de 14h à 19h */
-        sameAs: [
+        "priceRange": "€€", /* (Recommandé) Gamme de prix de l'entreprise */
+        "review": generateReviewArraySEO_Utils(avisClientGlobal_data_SEO), /* Tableau des avis clients spécifique a google. (Max 5) */
+        "sameAs": [
             routerExt.instagram, /* Compte Instagram */
             routerExt.facebook,  /* Compte Facebook */
         ],
-        "aggregateRating": generateAverageRatingSEO_Utils(avisClientGlobal_data_SEO), /* Note moyenne et nb d'avis clients */
-        "review": generateReviewArraySEO_Utils(avisClientGlobal_data_SEO) /* Tableau des avis clients spécifique a google. (Max 5) */
+        "telephone": "+33 6 52 67 73 33", /* Numéro de téléphone de l'entreprise (Manuel) */
+        "termsOfService": `${import.meta.env.VITE_DOMAIN_CLIENT}/${router[9].path}`, /* CGV : URL de la page des conditions générales de vente ou d'utilisation de l'entreprise (Dynamique) */
+        "url": `${ENV("VITE_DOMAIN_CLIENT")}`, /* URL de la page d'accueil de l'entreprise (Dynamique) */
     };
 
     return (
