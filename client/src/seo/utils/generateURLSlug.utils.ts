@@ -1,12 +1,13 @@
 /**
  * Documentation :
  * 
- * Cette fonction utilitaire a pour objectif de générer un slug SEO-friendly à partir d'un texte donné.
+ * ### Cette fonction utilitaire a pour objectif de générer un slug SEO-friendly à partir d'un texte donné.
  * 
- * Objectif : Sécuriser la string passée en paramètre aux fonctions script JSON-LD. 
+ * **Objectif** : Sécuriser la string passée en paramètre aux fonctions script JSON-LD. 
  * Il est actuellement utilisé comme dépendance utilitaire pour l'ID unique d'une page dans les scripts JSON-LD.
  * 
- * Elle effectue les étapes suivantes :
+ * ---
+ * ### Étapes de transformation :
  * 1. Décompose les lettres accentuées en lettre + accent séparé.
  * 2. Supprime les accents séparés générés par la décomposition.
  * 3. Transforme tout le texte en minuscules.
@@ -14,6 +15,10 @@
  * 5. Supprime les caractères spéciaux non autorisés dans le slug, en ne gardant que les lettres, chiffres, espaces et tirets.
  * 6. Remplace un ou plusieurs espaces par un seul tiret.
  * 7. Remplace plusieurs tirets consécutifs par un seul tiret.
+ * 
+ * ---
+ * @param {string} text - Le texte à transformer en slug SEO-friendly.
+ * @returns {string} Retourne une string transformée en slug SEO-friendly, prête à être utilisée dans les URL ou les ID de page.
  */
 
 function generateURLSlug_Utils(text: string): string {
