@@ -76,12 +76,17 @@ function generateDataMasterSEO_data_SEO(): DataMasterSEO_Type {
 }
 
 /**
+ * ### Documentation : dataMasterSEO_data_SEO
  * Données SEO globales de l'entreprise, utilisées dans les différents scripts JSON-LD de chaque page.
- * Elles sont stockées dans une const afin de ne pas être recalculées à chaque appel.
+ * Elles sont stockées dans une **const** afin de ne pas être recalculées à chaque appel.
  * 
+ * ---
+ * @returns {DataMasterSEO_Type} Retourne un objet de type DataMasterSEO_Type.
+ * 
+ * ---
  * Renommage de la variable à l'import possible avec la syntaxe suivante :
  * - import { dataMasterSEO_data_SEO as nom_choisi } from "..."
- * - Exemple : import { dataMasterSEO_data_SEO as dataMasterSEO } from "..."
+ * @example import { dataMasterSEO_data_SEO as dataMasterSEO } from "..."
  */
 
 export const dataMasterSEO_data_SEO: DataMasterSEO_Type = generateDataMasterSEO_data_SEO();

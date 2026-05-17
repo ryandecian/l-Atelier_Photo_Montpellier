@@ -1,8 +1,5 @@
 /* Import des Components de Data */
-import { dataMasterSEO_data_SEO } from "../data/dataMasterSEO.data.seo";
-
-/* Import des Types */
-import { DataMasterSEO_Type } from "../data/dataMasterSEO.type";
+import { dataMasterSEO_data_SEO as dataMasterSEO } from "../data/dataMasterSEO.data.seo";
 
 /* Import des Utils */
 import { generateURLSlug_Utils } from "../utils/generateURLSlug.utils";
@@ -14,21 +11,36 @@ type Data = {
     "id": string, /* Identifiant unique de la page (simple string avec des - et sans le #). En cas d'erreur de syntaxe une fonction le corrigera */
 }
 
+/**
+ * ### Documentation : Script JSON-LD pour le Breadcrumb de Google.
+ * Ce composant réutilisable à pour objectif de générer un script JSON-LD pour le fil d’Ariane (BreadcrumbList) de Google.
+ * 
+ * ---
+ * ### Les clés attendues en paramètre de la fonction sont :
+ * 
+ * @param {Object} data - L'objet contenant les informations du service.
+ * @param {number} data.position - **[position]** - Position de la page dans le fil Ariane (juste un nombre)
+ * @param {string} data.name_page - **[name_page]** - Nom de la page (espace autorisé)
+ * @param {string} data.uri - **[uri]** - URI de la page sans le nom de domaine (router)
+ * @param {string} data.id - **[id]** - Identifiant unique de la page (string simple, même règle que les URL).
+ * 
+ * ---
+ * @returns {string} Retourne une string grâce à la fonction JSON.stringify, necessaire pour l'injection dans une page.
+ */
+
 function breadcrumb_script_SEO(data: Data): string {
-    /* Récupération des datas et stock des données dans une const afin de ne pas recalculer à chaques appel de la fonction data */
-    const dataMasterSEO: DataMasterSEO_Type = dataMasterSEO_data_SEO();
     const url: string = import.meta.env.VITE_DOMAIN_CLIENT /* Nom de domaine */
 
     const JSON_LD = JSON.stringify({
         "@context": dataMasterSEO["@context"], /* (Obligatoire) URL de Google schéma */
-        "@type": dataMasterSEO["@type"].BreadcrumbList, /* (Obligatoire) Type de JSON-LD */
+        "@type": "BreadcrumbList", /* (Obligatoire) Type de JSON-LD */
         "itemListElement": [ /* Tableau des éléments du fil d’Ariane, ici un seul élément par page */
             {
                 "@type": "ListItem",
                 "position": data.position, /*(Obligatoire) Position de la page dans le fil Ariane */
                 "name": data.name_page, /*(Obligatoire) Libellé ou nom de la page dans le fil Ariane (ex: Portfolio ou Portrait Duo) */
                 "item": {
-                    "@type": dataMasterSEO["@type"].WebPage,
+                    "@type": "WebPage",
                     "@id": `${url}${data.uri}/#${generateURLSlug_Utils(data.id)}`, /*(Obligatoire) @id SEO-friendly, correspond à l'URL de la page + mots clés (ex : domain/uri/#mot-clé ) */
                     "url": `${url}${data.uri}`, /*(Obligatoire) URL de la page + ancre SEO-friendly (ex : domain/uri) */
                     "name": data.name_page, /*(Obligatoire) Libellé ou nom de la page dans le fil Ariane (ex: Portfolio ou Portrait Duo) */
@@ -43,11 +55,3 @@ function breadcrumb_script_SEO(data: Data): string {
 }
 
 export { breadcrumb_script_SEO };
-
-/**
- * Documentation :
- * 
- * Ce composant réutilisable à pour objectif de générer un script JSON-LD pour le fil d’Ariane (BreadcrumbList) de Google. 
- * Il retourne actuellement une string grace à la fonction JSON.stringify, car lors de son injection dans une page, les 
- * datas SEO de la page sont utilisées pour construire le JSON-LD doivent être une string. 
- */

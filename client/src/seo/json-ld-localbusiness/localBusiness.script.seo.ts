@@ -27,9 +27,12 @@ function generateLocalBusiness_script_SEO(): string {
 }
 
 /**
- * Script JSON-LD pour le LocalBusiness de Google, injecté sur toutes les pages du site.
- * - Retourne une string grâce à la fonction JSON.stringify, necessaire pour l'injection dans une page.
- * - Est stocké dans une const afin de ne pas être recalculé à chaque appel.
+ * ### Documentation : Script JSON-LD pour le LocalBusiness de Google. 
+ * - Doit être injecté sur toutes les pages du site.
+ * - Est stocké dans une **const** afin de ne pas être recalculé à chaque appel.
+ * 
+ * ---
+ * @returns {string} Retourne une string grâce à la fonction JSON.stringify, necessaire pour l'injection dans une page.
  */
 
 export const localBusiness_script_SEO = generateLocalBusiness_script_SEO();
