@@ -9,9 +9,9 @@ import { generateURLSlug_Utils } from "../utils/generateURLSlug.utils";
 
 type Data = {
     "position": number, /* Position de la page dans le fil Ariane (juste un nombre) */
-    "name_Breadcrumb": string, /* Nom de la page */
-    "uri": string, /* URI de la page sans le nom de domaine */
-    "id": string,
+    "name_page": string, /* Nom de la page (espace autorisé) */
+    "uri": string, /* URI de la page sans le nom de domaine (router) */
+    "id": string, /* Identifiant unique de la page (simple string avec des - et sans le #). En cas d'erreur de syntaxe une fonction le corrigera */
 }
 
 function breadcrumb_script_SEO(data: Data): string {
@@ -26,12 +26,12 @@ function breadcrumb_script_SEO(data: Data): string {
             {
                 "@type": "ListItem",
                 "position": data.position, /* Position de la page dans le fil Ariane */
-                "name": data.name_Breadcrumb, /* Libellé ou nom de la page dans le fil Ariane (ex: Portfolio ou Portrait Duo) */
+                "name": data.name_page, /* Libellé ou nom de la page dans le fil Ariane (ex: Portfolio ou Portrait Duo) */
                 "item": {
                     "@type": dataMasterSEO["@type"].WebPage,
-                    "@id": `${url}${data.uri}/#${generateURLSlug_Utils(data.name_Breadcrumb)}`, /* @id SEO-friendly, correspond à l'URL de la page + mots clés (ex : domain/uri/#mot-clé ) */
+                    "@id": `${url}${data.uri}/#${generateURLSlug_Utils(data.id)}`, /* @id SEO-friendly, correspond à l'URL de la page + mots clés (ex : domain/uri/#mot-clé ) */
                     "url": `${url}${data.uri}`, /* URL de la page + ancre SEO-friendly (ex : domain/uri) */
-                    "name": data.name_Breadcrumb, /* Libellé ou nom de la page dans le fil Ariane (ex: Portfolio ou Portrait Duo) */
+                    "name": data.name_page, /* Libellé ou nom de la page dans le fil Ariane (ex: Portfolio ou Portrait Duo) */
                 }
             }
         ],
