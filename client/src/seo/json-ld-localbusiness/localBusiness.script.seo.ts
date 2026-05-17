@@ -1,13 +1,7 @@
 /* Import des Components de Data */
-import { dataMasterSEO_data_SEO } from "../data/dataMasterSEO.data.seo";
+import { dataMasterSEO_data_SEO as dataMasterSEO } from "../data/dataMasterSEO.data.seo";
 
-/* Import des Types */
-import { DataMasterSEO_Type } from "../data/dataMasterSEO.type";
-
-function localBusiness_script_SEO(): string {
-    /* Récupération des datas et stock des données dans une const afin de ne pas recalculer à chaques appel de la fonction data */
-    const dataMasterSEO: DataMasterSEO_Type = dataMasterSEO_data_SEO();
-
+function generateLocalBusiness_script_SEO(): string {
     const json_ld = JSON.stringify({
         "@context": dataMasterSEO["@context"], /* (Obligatoire) URL de Google schéma */
         "@type": dataMasterSEO["@type"].LocalBusiness, /* (Obligatoire) Type de JSON-LD */
@@ -32,4 +26,11 @@ function localBusiness_script_SEO(): string {
     );
 }
 
-export { localBusiness_script_SEO };
+/**
+ * Script JSON-LD pour le LocalBusiness de Google, injecté sur toutes les pages du site.
+ * - Retourne une string grâce à la fonction JSON.stringify, necessaire pour l'injection dans une page.
+ * - Est stocké dans une const afin de ne pas être recalculé à chaque appel.
+ */
+
+export const localBusiness_script_SEO = generateLocalBusiness_script_SEO();
+

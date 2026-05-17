@@ -22,14 +22,22 @@ function service_script_SEO(data: Data): string {
     const url: string = import.meta.env.VITE_DOMAIN_CLIENT /* Nom de domaine */
 
     const JSON_LD = JSON.stringify({
-        "@context": dataMasterSEO["@context"], /* (Obligatoire) URL de Google schéma */
+        "@context": dataMasterSEO["@context"],   /* (Obligatoire) URL de Google schéma */
         "@type": dataMasterSEO["@type"].Service, /* (Obligatoire) Type de JSON-LD */
         "@id": `${url}${data.uri}/#${generateURLSlug_Utils(data.id)}`, /* @id SEO-friendly, correspond à l'URL de la page + mots clés (ex : domain/uri/#mot-clé ) */
-        "name": data.name_service, /* (Obligatoire) Nom du service */
+        "name": data.name_service,        /* (Obligatoire) Nom du service */
         "serviceType": data.name_service, /* (Obligatoire) Catégorie du service présenté, comme une description mais simple et court (ex : Photographie corporate pour CV, LinkedIn et site web) */
-        "description": data.description_service, /* (Obligatoire) Description du service */
-        "url": `${url}${data.uri}`, /*(Obligatoire) URL de la page + ancre SEO-friendly (ex : domain/uri) */
-        "termsOfService":
+        "description": data.description_service,        /* (Obligatoire) Description du service */
+        "url": `${url}${data.uri}`,                     /*(Obligatoire) URL de la page + ancre SEO-friendly (ex : domain/uri) */
+        "termsOfService": dataMasterSEO.termsOfService, /* (Obligatoire) CGV : URL de la page des conditions générales de vente ou d'utilisation de l'entreprise (Dynamique) */
+        "provider": {
+            "@id": dataMasterSEO.id_LocalBusiness       /* (Obligatoire) Référence à l'ID de l'Entreprise */
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": dataMasterSEO.name,
+            "logo": dataMasterSEO.logo, /* (Obligatoire) URL du logo de l'entreprise (Image format carré 200 x 200 px en jpg ou png max 75 ko) */
+        },
     })
 
     return (

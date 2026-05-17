@@ -1,3 +1,21 @@
+/**
+ * Documentation :
+ * 
+ * Cette fonction utilitaire a pour objectif de générer un slug SEO-friendly à partir d'un texte donné.
+ * 
+ * Objectif : Sécuriser la string passée en paramètre aux fonctions script JSON-LD. 
+ * Il est actuellement utilisé comme dépendance utilitaire pour l'ID unique d'une page dans les scripts JSON-LD.
+ * 
+ * Elle effectue les étapes suivantes :
+ * 1. Décompose les lettres accentuées en lettre + accent séparé.
+ * 2. Supprime les accents séparés générés par la décomposition.
+ * 3. Transforme tout le texte en minuscules.
+ * 4. Supprime les espaces inutiles au début et à la fin du texte.
+ * 5. Supprime les caractères spéciaux non autorisés dans le slug, en ne gardant que les lettres, chiffres, espaces et tirets.
+ * 6. Remplace un ou plusieurs espaces par un seul tiret.
+ * 7. Remplace plusieurs tirets consécutifs par un seul tiret.
+ */
+
 function generateURLSlug_Utils(text: string): string {
     return text
         /* Décompose les lettres accentuées en lettre + accent séparé. */
@@ -30,21 +48,3 @@ function generateURLSlug_Utils(text: string): string {
 }
 
 export { generateURLSlug_Utils };
-
-/**
- * Documentation :
- * 
- * Cette fonction utilitaire a pour objectif de générer un slug SEO-friendly à partir d'un texte donné.
- * 
- * Objectif : Sécuriser la string passée en paramètre aux fonctions script JSON-LD. 
- * Il est actuellement utilisé comme dépendance utilitaire pour l'ID unique d'une page dans les scripts JSON-LD.
- * 
- * Elle effectue les étapes suivantes :
- * 1. Décompose les lettres accentuées en lettre + accent séparé.
- * 2. Supprime les accents séparés générés par la décomposition.
- * 3. Transforme tout le texte en minuscules.
- * 4. Supprime les espaces inutiles au début et à la fin du texte.
- * 5. Supprime les caractères spéciaux non autorisés dans le slug, en ne gardant que les lettres, chiffres, espaces et tirets.
- * 6. Remplace un ou plusieurs espaces par un seul tiret.
- * 7. Remplace plusieurs tirets consécutifs par un seul tiret.
- */

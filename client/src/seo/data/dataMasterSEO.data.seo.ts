@@ -13,7 +13,7 @@ import { DataMasterSEO_Type } from "./dataMasterSEO.type";
 import { generateAverageRatingSEO_Utils } from "../../utils/seo/generateAverageRatingSEO.utils";
 import { generateReviewArraySEO_Utils } from "../../utils/seo/generateReviewArraySEO.utils";
 
-function dataMasterSEO_data_SEO(): DataMasterSEO_Type {
+function generateDataMasterSEO_data_SEO(): DataMasterSEO_Type {
     const dataMasterSEO: DataMasterSEO_Type = {
         "@context": "https://schema.org", /* URL de Google schéma */
         "@type": {                        /* (Obligatoire) Type de JSON-LD */
@@ -42,13 +42,13 @@ function dataMasterSEO_data_SEO(): DataMasterSEO_Type {
         "aggregateRating": generateAverageRatingSEO_Utils(avisClientGlobal_data_SEO), /* Note moyenne et nb d'avis clients */
         "email": routerExt.emailAnne, /* Adresse email de l'entreprise (Dynamique) */
         "id_LocalBusiness": `${ENV("VITE_DOMAIN_CLIENT")}#lapm`, /* URL du front avec un ID unique pour le LocalBusiness */
-        "identifier": {                                          /* Identifiant de l'entreprise, ici le SIRET */
+        "identifier": { /* Identifiant de l'entreprise, ici le SIRET */
             "@type": "PropertyValue",
             "propertyID": "SIRET",
             "value": "80255882500021"
         },
         "image": `${ENV("VITE_DOMAIN_CLIENT")}/dans-les-yeux-de-sacha.jpg`, /* Lien URL public de l'image de l'entreprise (Dynamique) */
-        "logo": {                      /* (Obligatoire) URL du logo de l'entreprise */
+        "logo": {                      /* (Obligatoire) URL du logo de l'entreprise (Image format carré 200 x 200 px en jpg ou png max 75 ko) */
             "@type": "ImageObject",
             "url": `${ENV("VITE_DOMAIN_CLIENT")}/logo-LAPM-l-atelier-photo-montpellier.png`, /* Logo au format carré si possible, poids max 75 ko */
             "width": 200,
@@ -66,7 +66,7 @@ function dataMasterSEO_data_SEO(): DataMasterSEO_Type {
             routerExt.facebook,  /* Compte Facebook */
         ],
         "telephone": "+33 6 52 67 73 33", /* Numéro de téléphone de l'entreprise (Manuel) */
-        "termsOfService": `${import.meta.env.VITE_DOMAIN_CLIENT}/${router[9].path}`, /* CGV : URL de la page des conditions générales de vente ou d'utilisation de l'entreprise (Dynamique) */
+        "termsOfService": `${ENV("VITE_DOMAIN_CLIENT")}/${router[9].path}`, /* CGV : URL de la page des conditions générales de vente ou d'utilisation de l'entreprise (Dynamique) */
         "url": `${ENV("VITE_DOMAIN_CLIENT")}`, /* URL de la page d'accueil de l'entreprise (Dynamique) */
     };
 
@@ -75,4 +75,13 @@ function dataMasterSEO_data_SEO(): DataMasterSEO_Type {
     );
 }
 
-export { dataMasterSEO_data_SEO };
+/**
+ * Données SEO globales de l'entreprise, utilisées dans les différents scripts JSON-LD de chaque page.
+ * Elles sont stockées dans une const afin de ne pas être recalculées à chaque appel.
+ * 
+ * Renommage de la variable à l'import possible avec la syntaxe suivante :
+ * - import { dataMasterSEO_data_SEO as nom_choisi } from "..."
+ * - Exemple : import { dataMasterSEO_data_SEO as dataMasterSEO } from "..."
+ */
+
+export const dataMasterSEO_data_SEO: DataMasterSEO_Type = generateDataMasterSEO_data_SEO();
