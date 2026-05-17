@@ -4,7 +4,7 @@ import { dataMasterSEO_data_SEO as dataMasterSEO } from "../data/dataMasterSEO.d
 function generateLocalBusiness_script_SEO(): string {
     const json_ld = JSON.stringify({
         "@context": dataMasterSEO["@context"], /* (Obligatoire) URL de Google schéma */
-        "@type": dataMasterSEO["@type"].LocalBusiness, /* (Obligatoire) Type de JSON-LD */
+        "@type": "LocalBusiness", /* (Obligatoire) Type de JSON-LD */
         "@id": dataMasterSEO.id_LocalBusiness,  /* (Obligatoire) URL du front avec un ID unique pour le LocalBusiness */
         "identifier": dataMasterSEO.identifier, /* (Obligatoire) Identifiant de l'entreprise, ici le SIRET */
         "logo": dataMasterSEO.logo,    /* (Obligatoire) URL du logo de l'entreprise */
@@ -33,4 +33,3 @@ function generateLocalBusiness_script_SEO(): string {
  */
 
 export const localBusiness_script_SEO = generateLocalBusiness_script_SEO();
-
