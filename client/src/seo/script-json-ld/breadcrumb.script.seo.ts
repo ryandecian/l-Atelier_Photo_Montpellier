@@ -18,7 +18,7 @@ type Data = {
  * ---
  * ### Les clés attendues en paramètre de la fonction sont :
  * 
- * @param {Object} data - L'objet contenant les informations du service.
+ * @param {Object} data - L'objet contenant les informations spécifiques au fil d’Ariane.
  * @param {number} data.position - **[position]** - Position de la page dans le fil Ariane (juste un nombre)
  * @param {string} data.name_page - **[name_page]** - Nom de la page (espace autorisé)
  * @param {string} data.uri - **[uri]** - URI de la page sans le nom de domaine (router)
