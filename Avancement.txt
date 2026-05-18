@@ -37,6 +37,7 @@ Ce qui est fait et prêt à être utilisé :
 Découverte de la documentation avancé, il faudra l'intégrer a chaque composant.
 Pour le JSON-LD Service, il faudra ajouter une logique de présentation des services
 avec nom, prix, devise et description. 
+Il faudra ajouter en description quand utiliser un json-ld
 ------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------
