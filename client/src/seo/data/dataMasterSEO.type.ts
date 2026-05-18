@@ -28,6 +28,7 @@ type DataMasterSEO_Type = {
         "ratingValue": string;
         "reviewCount": string;
     } | null;
+    "description": string;      /* (Obligatoire) Description de la page pour les Mentions Légales */
     "email": string;            /* Adresse email de l'entreprise (Dynamique) */
     "id_LocalBusiness": string; /* URL du front avec un ID unique pour le LocalBusiness */
     "identifier": {             /* Identifiant de l'entreprise, ici le SIRET */
