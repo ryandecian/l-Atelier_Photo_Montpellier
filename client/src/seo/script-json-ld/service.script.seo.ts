@@ -5,10 +5,10 @@ import { dataMasterSEO_data_SEO as dataMasterSEO } from "../data/dataMasterSEO.d
 import { generateURLSlug_Utils } from "../utils/generateURLSlug.utils";
 
 type Data = {
-    "name_service": string /* Catégorie du service (espace autorisé) */
-    "description_service": string /* Description du service (espace autorisé) */
-    "uri": string, /* URI de la page sans le nom de domaine (router) */
-    "id": string, /* Identifiant unique de la page (simple string avec des - et sans le #). En cas d'erreur de syntaxe une fonction le corrigera */
+    "name_service": string; /* Catégorie du service (espace autorisé) */
+    "description_service": string; /* Description du service (espace autorisé) */
+    "uri": string; /* URI de la page sans le nom de domaine (router) */
+    "id": string; /* Identifiant unique de la page (string simple, même règle que les URL). */
 }
 
 /**
