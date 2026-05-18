@@ -14,6 +14,17 @@ type Data = {
     "uri_page": string, /* URI de la page sans le nom de domaine (router) */
 }
 
+/**
+ * ### Documentation : Script JSON-LD Service de Google.
+ * Ce composant réutilisable à pour objectif de générer un script JSON-LD pour présenter une page web spécifique.
+ * Il est généralement utilisé pour : 
+ * - La page Mentions Légales, qui a des exigences spécifiques en matière de SEO et de conformité juridique.
+ * 
+ * ---
+ * @param data 
+ * @returns 
+ */
+
 function webPage_script_SEO(data: Data): string {
     const JSON_LD = JSON.stringify({
         "@context": dataMasterSEO["@context"], /* (Obligatoire) URL de Google schéma */

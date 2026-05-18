@@ -20,7 +20,7 @@ type Data = {
  * ---
  * ### Les clés attendues en paramètre de la fonction sont :
  * 
- * @param {Object} data - L'objet contenant les informations du service.
+ * @param {Object} data - L'objet contenant les information necessaire au script JSON-LD.
  * @param {string} data.name_service - **[name_service]** - Nom du service (espace autorisé)
  * @param {string} data.description_service - **[description_service]** - Description du service (espace autorisé)
  * @param {string} data.uri - **[uri]** - URI de la page sans le nom de domaine (router)
