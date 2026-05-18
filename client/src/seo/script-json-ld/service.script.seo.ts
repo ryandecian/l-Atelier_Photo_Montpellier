@@ -14,6 +14,8 @@ type Data = {
 /**
  * ### Documentation : Script JSON-LD Service de Google.
  * Ce composant réutilisable à pour objectif de générer un script JSON-LD pour présenter un service présent dans une page. 
+ * Il est généralement utilisé pour : 
+ * - Les pages de services (ex : Service de photographie corporate pour CV, LinkedIn et site web)
  * 
  * ---
  * ### Les clés attendues en paramètre de la fonction sont :

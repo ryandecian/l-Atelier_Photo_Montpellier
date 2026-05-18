@@ -5,6 +5,7 @@ import { dataMasterSEO_data_SEO as dataMasterSEO } from "../data/dataMasterSEO.d
 import { generateURLSlug_Utils } from "../utils/generateURLSlug.utils";
 
 type Data = {
+    /*"description": "Mentions légales de l’Atelier Photo Montpellier. Retrouvez toutes les informations juridiques concernant le site, l’éditeur, l’hébergement et la propriété intellectuelle." */
     "description": string, /* Description de la page pour les Mentions Légales */
     "id": string, /* Identifiant unique de la page (simple string avec des - et sans le #). En cas d'erreur de syntaxe une fonction le corrigera */
     "image"?: string, /* Image représentative de la page */
