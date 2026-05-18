@@ -27,6 +27,7 @@ type Data = {
  * @param {string} data.id - **[id]** - Identifiant unique de la page (string simple, même règle que les URL).
  * 
  * ---
+ * @pure Indique que la fonction est pure : elle ne produit aucun effet secondaire et retourne un résultat prédictible basé uniquement sur les arguments fournis.
  * @returns {string} Retourne une string grâce à la fonction JSON.stringify, necessaire pour l'injection dans une page.
  */
 

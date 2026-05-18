@@ -17,7 +17,7 @@
  * 7. Remplace plusieurs tirets consécutifs par un seul tiret.
  * 
  * ---
- * @pure
+ * @pure Indique que la fonction est pure : elle ne produit aucun effet secondaire et retourne un résultat prédictible basé uniquement sur les arguments fournis.
  * @param {string} text - Le texte à transformer en slug SEO-friendly.
  * @returns {string} Retourne une string transformée en slug SEO-friendly, prête à être utilisée dans les URL ou les ID de page.
  * 
