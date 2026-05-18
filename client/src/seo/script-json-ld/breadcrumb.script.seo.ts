@@ -14,6 +14,8 @@ type Data = {
 /**
  * ### Documentation : Script JSON-LD pour le Breadcrumb de Google.
  * Ce composant réutilisable à pour objectif de générer un script JSON-LD pour le fil d’Ariane (BreadcrumbList) de Google.
+ * Il est généralement utilisé pour : 
+ * - Toutes les pages du site, afin d'indiquer clairement la position de chaque page dans la hiérarchie du site.
  * 
  * ---
  * ### Les clés attendues en paramètre de la fonction sont :
