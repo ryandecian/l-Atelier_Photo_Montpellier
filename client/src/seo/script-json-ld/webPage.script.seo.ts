@@ -6,12 +6,12 @@ import { generateURLSlug_Utils } from "../utils/generateURLSlug.utils";
 
 type Data = {
     /*"description": "Mentions légales de l’Atelier Photo Montpellier. Retrouvez toutes les informations juridiques concernant le site, l’éditeur, l’hébergement et la propriété intellectuelle." */
-    "description": string, /* Description de la page pour les Mentions Légales */
-    "id": string, /* Identifiant unique de la page (simple string avec des - et sans le #). En cas d'erreur de syntaxe une fonction le corrigera */
-    "image"?: string, /* Image représentative de la page */
-    "name_page": string, /* Nom de la page (espace autorisé) */
-    "uri_cgv": string, /* URI de la page des CGV sans le nom de domaine (router) */
-    "uri_page": string, /* URI de la page sans le nom de domaine (router) */
+    "description": string; /* Description de la page pour les Mentions Légales */
+    "id": string; /* Identifiant unique de la page (string simple, même règle que les URL). */
+    "image"?: string; /* Image représentative de la page */
+    "name_page": string; /* Nom de la page (espace autorisé) */
+    "uri_cgv": string; /* URI de la page des CGV sans le nom de domaine (router) */
+    "uri_page": string; /* URI de la page sans le nom de domaine (router) */
 }
 
 /**
@@ -21,8 +21,18 @@ type Data = {
  * - La page Mentions Légales, qui a des exigences spécifiques en matière de SEO et de conformité juridique.
  * 
  * ---
- * @param data 
- * @returns 
+ * ### Les clés attendues en paramètre de la fonction sont :
+ * 
+ * @param {Object} data - L'objet contenant les information necessaire au script JSON-LD.
+ * @param {string} data.description - **[description]** - Description de la page pour les Mentions Légales
+ * @param {string} data.id - **[id]** - Identifiant unique de la page (string simple, même règle que les URL).
+ * @param {string} [data.image] - **[image]** - Image représentative de la page (Facultatif)
+ * @param {string} data.name_page - **[name_page]** - Nom de la page (espace autorisé)
+ * @param {string} data.uri_cgv - **[uri_cgv]** - URI de la page des CGV sans le nom de domaine (router)
+ * @param {string} data.uri_page - **[uri_page]** - URI de la page sans le nom de domaine (router)
+ * 
+ *  ---
+ * @returns {string} Retourne une string grâce à la fonction JSON.stringify, necessaire pour l'injection dans une page.
  */
 
 function webPage_script_SEO(data: Data): string {
