@@ -9,7 +9,7 @@ type Data = {
     "description": string; /* Description de la page pour les Mentions Légales */
     "id": string; /* Identifiant unique de la page (string simple, même règle que les URL). */
     "image"?: string; /* Image représentative de la page */
-    "name_page": string; /* Nom de la page (espace autorisé) */
+    "name_page": string; /* Nom de la page (espace autorisé, 10 à 60 caractères max), (Généralement = au H1 HTML) */
     "uri_cgv": string; /* URI de la page des CGV sans le nom de domaine (router) */
     "uri_page": string; /* URI de la page sans le nom de domaine (router) */
 }
@@ -27,7 +27,7 @@ type Data = {
  * @param {string} data.description - **[description]** - Description de la page pour les Mentions Légales
  * @param {string} data.id - **[id]** - Identifiant unique de la page (string simple, même règle que les URL).
  * @param {string} [data.image] - **[image]** - Image représentative de la page (Facultatif)
- * @param {string} data.name_page - **[name_page]** - Nom de la page (espace autorisé)
+ * @param {string} data.name_page - **[name_page]** - Nom de la page (espace autorisé, 10 à 60 caractères max), (Généralement = au H1 HTML)
  * @param {string} data.uri_cgv - **[uri_cgv]** - URI de la page des CGV sans le nom de domaine (router)
  * @param {string} data.uri_page - **[uri_page]** - URI de la page sans le nom de domaine (router)
  * 
@@ -77,6 +77,6 @@ function webPage_script_SEO(data: Data): string {
     });
 
     return JSON_LD;
-}
+};
 
 export { webPage_script_SEO };
