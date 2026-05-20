@@ -6,7 +6,7 @@ import { generateURLSlug_Utils } from "../utils/generateURLSlug.utils";
 
 type Data = {
     "position": number, /* Position de la page dans le fil Ariane (juste un nombre) */
-    "name_page": string, /* Nom de la page (espace autorisé) */
+    "name_page": string, /* Nom de la page (espace autorisé, 10 à 60 caractères max), (Généralement = au H1 HTML) */
     "uri": string, /* URI de la page sans le nom de domaine (router) */
     "id": string, /* Identifiant unique de la page (simple string avec des - et sans le #). En cas d'erreur de syntaxe une fonction le corrigera */
 }
@@ -22,7 +22,7 @@ type Data = {
  * 
  * @param {Object} data - L'objet contenant les informations spécifiques au fil d’Ariane.
  * @param {number} data.position - **[position]** - Position de la page dans le fil Ariane (juste un nombre)
- * @param {string} data.name_page - **[name_page]** - Nom de la page (espace autorisé)
+ * @param {string} data.name_page - **[name_page]** - Nom de la page (espace autorisé, 10 à 60 caractères max), (Généralement = au H1 HTML)
  * @param {string} data.uri - **[uri]** - URI de la page sans le nom de domaine (router)
  * @param {string} data.id - **[id]** - Identifiant unique de la page (string simple, même règle que les URL).
  * 
