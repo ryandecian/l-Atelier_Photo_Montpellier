@@ -4,6 +4,7 @@ import { dataMasterSEO_data_SEO as dataMasterSEO } from "../../data/dataMasterSE
 /* Import des Utils */
 import { generateURLSlug_Utils } from "../../utils/generateURLSlug.utils";
 
+/* Import des Types */
 import { WebPage_script_Type } from "./webPage.script.type";
 
 
