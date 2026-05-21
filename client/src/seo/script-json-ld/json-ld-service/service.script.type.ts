@@ -18,23 +18,23 @@ type Service_script_Type = {
      */
     "id": string;
     
-        /** 
-         * ⚠️ **DESCRIPTION** : Représente la description du service.
-         * 
-         * Doit faire entre 80 et 160 caractères.
-         * _Une string hors de ces limites pénalisera le score GEO/SEO._
-         * 
-         * ---
-         * ⚠️ **CONTRAINTE SEO** :
-         * - Doit être orienté recherche Google.
-         * - Doit faire entre 80 et 160 caractères.
-         * - Pas de terme ou mot court générique.
-         * 
-         * ---
-         * @example "Reportage photo complet de votre mariage à Montpellier et sa région. Captures spontanées, émotions naturelles et album haute définition inclus." (138 caractères)
-         * @example "Session portrait photo professionnel en studio à Grabels. Idéal pour valoriser votre image sur LinkedIn ou vos CV. Coaching de pose inclus." (136 caractères)
-         */
-        "description_service": string;
+    /** 
+     * ⚠️ **DESCRIPTION** : Représente la description du service.
+     * 
+     * Doit faire entre 80 et 160 caractères.
+     * _Une string hors de ces limites pénalisera le score GEO/SEO._
+     * 
+     * ---
+     * ⚠️ **CONTRAINTE SEO** :
+     * - Doit être orienté recherche Google.
+     * - Doit faire entre 80 et 160 caractères.
+     * - Pas de terme ou mot court générique.
+     * 
+     * ---
+     * @example "Reportage photo complet de votre mariage à Montpellier et sa région. Captures spontanées, émotions naturelles et album haute définition inclus." (138 caractères)
+     * @example "Session portrait photo professionnel en studio à Grabels. Idéal pour valoriser votre image sur LinkedIn ou vos CV. Coaching de pose inclus." (136 caractères)
+     */
+    "description_service": string;
 
     /** 
      * ⚠️ **DESCRIPTION** : Représente le nom du service.
