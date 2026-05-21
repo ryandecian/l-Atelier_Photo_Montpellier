@@ -11,7 +11,7 @@ type WebPage_script_Type = {
      * - Doit faire entre 50 et 300 caractères.
      * _Une string hors de ces limites pénalisera le score GEO/SEO._
      */
-    "description": string; /* Description de la page pour les Mentions Légales */
+    "description": string;
 
     /**
      * ⚠️ **NOTE ET CONTRAINTE** : Doit être une string simple, même règle que les URL, et correspondre à l'ID utilisée dans les autres scripts JSON-LD de la page (ex : BreadcrumbList).
@@ -24,7 +24,7 @@ type WebPage_script_Type = {
      * @example "mentions-legales" (correspondra à domain/uri/#mentions-legales)
      * @example "Mentions légales " (correspondra à domain/uri/#mentions-legales)
      */
-    "id": string; /* Identifiant unique de la page (string simple, même règle que les URL). */
+    "id": string;
 
     /**
      * ⚠️ **DESCRIPTION** : Image optionnel représentative de la page, qui peut être utilisée par les moteurs de recherche et les réseaux sociaux pour illustrer la page dans les résultats de recherche ou les partages.
@@ -36,7 +36,7 @@ type WebPage_script_Type = {
      * ---
      * @example "/images/photo-article.jpg"
      */
-    "uri_image"?: string; /* Image représentative de la page */
+    "uri_image"?: string;
 
     /** 
      * ⚠️ **DESCRIPTION** : Représente le nom de la page.
@@ -45,7 +45,7 @@ type WebPage_script_Type = {
      * ⚠️ **CONTRAINTE SEO** : Doit faire entre 10 et 60 caractères.
      * _Une string hors de ces limites pénalisera le score GEO/SEO._
      */
-    "name_page": string; /* Nom de la page (espace autorisé, 10 à 60 caractères max), (Généralement = au H1 HTML) */
+    "name_page": string;
 
     /**
      * ⚠️ **NOTE ET CONTRAINTE** : Doit être une URI valide, sans le nom de domaine, et correspondre à l'URI utilisée dans les autres scripts JSON-LD de la page (ex : BreadcrumbList).
@@ -59,7 +59,7 @@ type WebPage_script_Type = {
      * - Doit être récupérer depuis le router.
      * - Ne doit pas contenir le nom de domaine.
      */
-    "uri_page": string; /* URI de la page sans le nom de domaine (router) */
+    "uri_page": string;
 }
 
 export type { WebPage_script_Type };

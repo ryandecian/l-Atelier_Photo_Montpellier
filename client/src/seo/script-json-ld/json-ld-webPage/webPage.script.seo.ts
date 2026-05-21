@@ -17,7 +17,7 @@ import { WebPage_script_Type } from "./webPage.script.type";
  * ---
  * ### Les clés attendues en paramètre de la fonction sont :
  * 
- * @param {Object} data - L'objet contenant les information necessaire au script JSON-LD.
+ * @param {WebPage_script_Type} data - L'objet contenant les information necessaire au script JSON-LD.
  * @param {string} data.description - **[description]** - Description de la page pour les Mentions Légales
  * @param {string} data.id - **[id]** - Identifiant unique de la page (string simple, même règle que les URL).
  * @param {string} [data.uri_image] - **[image]** - Image représentative de la page (Facultatif)
