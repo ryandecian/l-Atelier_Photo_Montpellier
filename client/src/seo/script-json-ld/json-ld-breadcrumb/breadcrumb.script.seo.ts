@@ -1,8 +1,8 @@
 /* Import des Components de Data */
-import { dataMasterSEO_data_SEO as dataMasterSEO } from "../data/dataMasterSEO.data.seo";
+import { dataMasterSEO_data_SEO as dataMasterSEO } from "../../data/dataMasterSEO.data.seo";
 
 /* Import des Utils */
-import { generateURLSlug_Utils } from "../utils/generateURLSlug.utils";
+import { generateURLSlug_Utils } from "../../utils/generateURLSlug.utils";
 
 type Data = {
     "position": number, /* Position de la page dans le fil Ariane (juste un nombre) */

@@ -17,6 +17,24 @@ type Service_script_Type = {
      * @example "Mentions légales " (correspondra à domain/uri/#mentions-legales)
      */
     "id": string;
+    
+        /** 
+         * ⚠️ **DESCRIPTION** : Représente la description du service.
+         * 
+         * Doit faire entre 80 et 160 caractères.
+         * _Une string hors de ces limites pénalisera le score GEO/SEO._
+         * 
+         * ---
+         * ⚠️ **CONTRAINTE SEO** :
+         * - Doit être orienté recherche Google.
+         * - Doit faire entre 80 et 160 caractères.
+         * - Pas de terme ou mot court générique.
+         * 
+         * ---
+         * @example "Reportage photo complet de votre mariage à Montpellier et sa région. Captures spontanées, émotions naturelles et album haute définition inclus." (138 caractères)
+         * @example "Session portrait photo professionnel en studio à Grabels. Idéal pour valoriser votre image sur LinkedIn ou vos CV. Coaching de pose inclus." (136 caractères)
+         */
+        "description_service": string;
 
     /** 
      * ⚠️ **DESCRIPTION** : Représente le nom du service.
@@ -36,24 +54,6 @@ type Service_script_Type = {
      * @example "Session Portrait Professionnel en Studio" (~40 caractères)
      */
     "name_service": string; /* Nom du service (espace autorisé) */
-
-    /** 
-     * ⚠️ **DESCRIPTION** : Représente la description du service.
-     * 
-     * Doit faire entre 80 et 160 caractères.
-     * _Une string hors de ces limites pénalisera le score GEO/SEO._
-     * 
-     * ---
-     * ⚠️ **CONTRAINTE SEO** :
-     * - Doit être orienté recherche Google.
-     * - Doit faire entre 80 et 160 caractères.
-     * - Pas de terme ou mot court générique.
-     * 
-     * ---
-     * @example "Reportage photo complet de votre mariage à Montpellier et sa région. Captures spontanées, émotions naturelles et album haute définition inclus." (138 caractères)
-     * @example "Session portrait photo professionnel en studio à Grabels. Idéal pour valoriser votre image sur LinkedIn ou vos CV. Coaching de pose inclus." (136 caractères)
-     */
-    "description_service": string; /* Description du service (espace autorisé) */
 
     /**
      * ⚠️ **NOTE ET CONTRAINTE** : Doit être une URI valide, sans le nom de domaine, et correspondre à l'URI utilisée dans les autres scripts JSON-LD de la page (ex : BreadcrumbList).
