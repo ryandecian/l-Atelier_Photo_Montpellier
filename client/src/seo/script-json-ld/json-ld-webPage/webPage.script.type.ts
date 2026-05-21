@@ -5,6 +5,7 @@
  * 
  * ⚠️ **NOTE IMPORTANTE** : Ce type définit les clés attendues en paramètre de la fonction `webPage_script_SEO`. Il est crucial de respecter les types et les contraintes définis pour chaque clé afin d'assurer la validité du JSON-LD généré et d'optimiser le score GEO/SEO de la page.
  */
+
 type WebPage_script_Type = {
     /**
      * ⚠️ **NOTE ET CONTRAINTE SEO** : Description de la page, utilisée pour les Mentions Légales et pour fournir un résumé clair du contenu de la page aux moteurs de recherche et aux utilisateurs.
