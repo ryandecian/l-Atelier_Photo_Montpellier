@@ -17,9 +17,9 @@ import { Breadcrumb_script_Type } from "./breadcrumb.script.type";
  * ### Les clés attendues en paramètre de la fonction sont :
  * 
  * @param {Breadcrumb_script_Type} data - L'objet contenant les informations spécifiques au fil d’Ariane.
- * @param {number} data.position - **[position]** - Position de la page dans le fil Ariane (juste un nombre)
- * @param {string} data.name_page - **[name_page]** - Nom de la page (espace autorisé, 10 à 60 caractères max), (Généralement = au H1 HTML)
- * @param {string} data.uri_page - **[uri_page]** - URI de la page sans le nom de domaine (router)
+ * @param {number} data.position - **[position]** - Position de la page dans le fil Ariane (juste un nombre).
+ * @param {string} data.name_page - **[name_page]** - Nom de la page (espace autorisé, 10 à 60 caractères max), (Généralement = au H1 HTML).
+ * @param {string} data.uri_page - **[uri_page]** - URI de la page sans le nom de domaine (router).
  * @param {string} data.id - **[id]** - Identifiant unique de la page (string simple, même règle que les URL).
  * 
  * ---

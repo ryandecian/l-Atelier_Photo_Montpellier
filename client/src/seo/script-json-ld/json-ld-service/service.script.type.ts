@@ -29,6 +29,7 @@ type Service_script_Type = {
      * - Doit être orienté recherche Google.
      * - Doit faire entre 80 et 160 caractères.
      * - Pas de terme ou mot court générique.
+     * - Une description trop longue ou contenant du bourrage de mots-clés sera ignorée par Google.
      * 
      * ---
      * @example "Reportage photo complet de votre mariage à Montpellier et sa région. Captures spontanées, émotions naturelles et album haute définition inclus." (138 caractères)

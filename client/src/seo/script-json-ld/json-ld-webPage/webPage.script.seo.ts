@@ -18,14 +18,14 @@ import { WebPage_script_Type } from "./webPage.script.type";
  * ### Les clés attendues en paramètre de la fonction sont :
  * 
  * @param {WebPage_script_Type} data - L'objet contenant les information necessaire au script JSON-LD.
- * @param {string} data.description - **[description]** - Description de la page pour les Mentions Légales
+ * @param {string} data.description - **[description]** - Description de la page pour les Mentions Légales.
  * @param {string} data.id - **[id]** - Identifiant unique de la page (string simple, même règle que les URL).
- * @param {string} [data.uri_image] - **[image]** - Image représentative de la page (Facultatif)
- * @param {string} data.name_page - **[name_page]** - Nom de la page (espace autorisé, 10 à 60 caractères max), (Généralement = au H1 HTML)
- * @param {string} data.uri_cgv - **[uri_cgv]** - URI de la page des CGV sans le nom de domaine (router)
- * @param {string} data.uri_page - **[uri_page]** - URI de la page sans le nom de domaine (router)
+ * @param {string} [data.uri_image] - **[image]** - Image représentative de la page (Facultatif).
+ * @param {string} data.name_page - **[name_page]** - Nom de la page (espace autorisé, 10 à 60 caractères max), (Généralement = au H1 HTML).
+ * @param {string} data.uri_cgv - **[uri_cgv]** - URI de la page des CGV sans le nom de domaine (router).
+ * @param {string} data.uri_page - **[uri_page]** - URI de la page sans le nom de domaine (router).
  * 
- *  ---
+ * ---
  * @pure Indique que la fonction est pure : elle ne produit aucun effet secondaire et retourne un résultat prédictible basé uniquement sur les arguments fournis.
  * @returns {string} Retourne une string grâce à la fonction JSON.stringify, necessaire pour l'injection dans une page.
  */
@@ -53,7 +53,7 @@ function webPage_script_SEO(data: WebPage_script_Type): string {
             "url": dataMasterSEO.url    /* URL de la page d'accueil de l'entreprise (Dynamique) */
         },
 
-        "name": data.name_page,         /* (Obligatoire) Nom de la page */
+        "name": data.name_page,         /*(Obligatoire) Libellé ou nom de la page dans le fil Ariane (ex: Portfolio ou Portrait Duo) */
         "provider": {
             "@id": dataMasterSEO.id_LocalBusiness, /* (Obligatoire) Référence à l'ID de l'Entreprise */
         },

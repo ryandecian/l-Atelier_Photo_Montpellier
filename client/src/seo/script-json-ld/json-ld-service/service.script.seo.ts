@@ -18,9 +18,9 @@ import { Service_script_Type } from "./service.script.type";
  * ### Les clés attendues en paramètre de la fonction sont :
  * 
  * @param {Service_script_Type} data - L'objet contenant les information necessaire au script JSON-LD.
- * @param {string} data.name_service - **[name_service]** - Nom du service (espace autorisé)
- * @param {string} data.description_service - **[description_service]** - Description du service (espace autorisé)
- * @param {string} data.uri_page - **[uri_page]** - URI de la page sans le nom de domaine (router)
+ * @param {string} data.name_service - **[name_service]** - Nom du service (espace autorisé).
+ * @param {string} data.description_service - **[description_service]** - Description du service (espace autorisé).
+ * @param {string} data.uri_page - **[uri_page]** - URI de la page sans le nom de domaine (router).
  * @param {string} data.id - **[id]** - Identifiant unique de la page (string simple, même règle que les URL).
  * 
  * ---
