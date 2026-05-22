@@ -1,5 +1,5 @@
 /* Import des Types */
-import { AvisClientSEO_Type } from "../../types/seo/avisClientSEO.type";
+import { AvisClientSEO_Type } from "../../seo/data/avisClientSEO.type";
 
 function generateAverageRatingSEO_Utils(data: AvisClientSEO_Type[]) {
     if (data.length === 0) {

@@ -7,7 +7,7 @@ import PortraitSolo_Root from "../../../components/public/portrait-solo/Portrait
 import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
 
 /* Import des composants SEO */
-import { HelmetPortraitSolo_helmet_SEO } from "../../../seo/portrait-solo_SEO/HelmetPortraitSolo.helmet.seo";
+import { HelmetPortraitSolo_helmet_SEO } from "../../../seoS/portrait-solo_SEO/HelmetPortraitSolo.helmet.seo";
 
 /* Import des Hooks */
 import { useScrollToHash_Hook } from "../../../hook/useScrollToHash.hook";

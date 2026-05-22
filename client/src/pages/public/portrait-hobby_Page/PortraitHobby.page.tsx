@@ -7,7 +7,7 @@ import PortraitHobby_Root from "../../../components/public/portrait-hobby/Portra
 import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
 
 /* Import des composants SEO */
-import { HelmetPortraitHobby_helmet_SEO } from "../../../seo/portrait-hobby_SEO/HelmetPortraitHobby.helmet.seo";
+import { HelmetPortraitHobby_helmet_SEO } from "../../../seoS/portrait-hobby_SEO/HelmetPortraitHobby.helmet.seo";
 
 /* Import des Hooks */
 import { useScrollToHash_Hook } from "../../../hook/useScrollToHash.hook";

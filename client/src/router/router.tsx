@@ -233,7 +233,7 @@ const router: Router_Type[] = [
     },
     /* {router[36].path} */
     {
-        path: "/video",
+        path: "/videos",
         element: <Video_Page />,
     },
 ]

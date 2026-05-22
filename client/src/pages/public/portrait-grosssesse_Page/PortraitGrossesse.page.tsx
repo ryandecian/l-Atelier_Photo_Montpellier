@@ -7,7 +7,7 @@ import PortraitGrossesse_Root from "../../../components/public/portrait-grossess
 import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
 
 /* Import des composants SEO */
-import { HelmetPortraitGrossesse_helmet_SEO } from "../../../seo/portrait-grossesse_SEO/HelmetPortraitGrossesse.helmet.seo";
+import { HelmetPortraitGrossesse_helmet_SEO } from "../../../seoS/portrait-grossesse_SEO/HelmetPortraitGrossesse.helmet.seo";
 
 /* Import des Hooks */
 import { useScrollToHash_Hook } from "../../../hook/useScrollToHash.hook";
