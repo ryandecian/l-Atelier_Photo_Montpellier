@@ -7,7 +7,7 @@ import QuiSuisJe_Root from "../../../components/public/qui-suis-je/QuiSuisJe.roo
 import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
 
 /* Import des composants SEO */
-import { HelmetQuiSuisJe_helmet_SEO } from "../../../seo/qui-suis-je_SEO/HelmetQuiSuisJe.helmet.seo";
+import { HelmetQuiSuisJe_helmet_SEO } from "../../../seoS/qui-suis-je_SEO/HelmetQuiSuisJe.helmet.seo";
 
 /* Import des Hooks */
 import { useScrollToHash_Hook } from "../../../hook/useScrollToHash.hook";

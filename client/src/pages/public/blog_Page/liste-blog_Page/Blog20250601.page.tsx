@@ -7,7 +7,7 @@ import Nav_root_Layout from "../../../../components/layout/nav_Layout/Nav.root.l
 import Footer_Layout from "../../../../components/layout/footer_Layout/Footer.layout";
 
 /* Import des composants SEO */
-import { HelmetBlog20250601_helmet_SEO } from "../../../../seo/blog_SEO/liste-article-blog_SEO/blog-20250601_SEO/HelmetBlog20250601.helmet.seo";
+import { HelmetBlog20250601_helmet_SEO } from "../../../../seoS/blog_SEO/liste-article-blog_SEO/blog-20250601_SEO/HelmetBlog20250601.helmet.seo";
 
 /* Import des Hooks */
 import { useScrollToHash_Hook } from "../../../../hook/useScrollToHash.hook";
