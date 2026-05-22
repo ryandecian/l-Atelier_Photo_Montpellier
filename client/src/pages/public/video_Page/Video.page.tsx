@@ -7,7 +7,7 @@ import Video_Root from "../../../components/public/video/Video.root";
 import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
 
 /* Import des composants SEO */
-import { HelmetPortraitMariage_helmet_SEO } from "../../../seo/portrait-mariage_SEO/HelmetPortraitMariage.helmet.seo";
+import { HelmetPortraitMariage_helmet_SEO } from "../../../seoS/portrait-mariage_SEO/HelmetPortraitMariage.helmet.seo";
 
 /* Import des Hooks */
 import { useScrollToHash_Hook } from "../../../hook/useScrollToHash.hook";

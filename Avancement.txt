@@ -18,6 +18,7 @@ Refacto des composants principaux faits, il faut maintenant s'attaquer au SEO
 Liste des pages qui reste a éditer : 
 - Portfolio
 - Tarifs
+
 ------------------------------------------------------------------------------
 Pour le SEO
 - sitemap
@@ -27,9 +28,16 @@ Page a traiter pour les JSON_LD
 - Toutes les pages...
 
 ------------------------------------------------------------------------------
+Composants JSON_LD : 
+
+Ce qui est fait et prêt à être utilisé : 
+- JSON_LocalBusiness
 
 ------------------------------------------------------------------------------
-
+Découverte de la documentation avancé, il faudra l'intégrer a chaque composant.
+Pour le JSON-LD Service, il faudra ajouter une logique de présentation des services
+avec nom, prix, devise et description. 
+Il faudra ajouter en description quand utiliser un json-ld
 ------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------

@@ -7,7 +7,7 @@ import CGV_Root from "../../../components/public/cgv/CGV.root";
 import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
 
 /* Import des composants SEO */
-import { HelmetCGV_helmet_SEO } from "../../../seo/cgv_SEO/HelmetCGV.helmet.seo";
+import { HelmetCGV_helmet_SEO } from "../../../seoS/cgv_SEO/HelmetCGV.helmet.seo";
 
 /* Import des Hooks */
 import { useScrollToHash_Hook } from "../../../hook/useScrollToHash.hook";

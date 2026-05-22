@@ -7,7 +7,7 @@ import HomeRoot from "../../../components/public/home/Home.root";
 import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
 
 /* Import des composants SEO */
-import { HelmetHome_helmet_SEO } from "../../../seo/home_SEO/HelmetHome.helmet.seo";
+import { HelmetHome_helmet_SEO } from "../../../seoS/home_SEO/HelmetHome.helmet.seo";
 
 function Home_Page() {
      return (
