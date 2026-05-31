@@ -1,12 +1,12 @@
 /**
- * TypeScript type pour les données d'entrée du script JSON-LD spécifique à homePage.
+ * TypeScript type pour les données d'entrée du script JSON-LD spécifique à contactPage.
  * 
- * ⚠️ **NOTE IMPORTANTE** : Ce type définit les clés attendues en paramètre de la fonction `homePage_script_SEO`. Il est crucial de respecter les types et les contraintes définis pour chaque clé afin d'assurer la validité du JSON-LD généré et d'optimiser le score GEO/SEO de la page.
+ * ⚠️ **NOTE IMPORTANTE** : Ce type définit les clés attendues en paramètre de la fonction `contactPage_script_SEO`. Il est crucial de respecter les types et les contraintes définis pour chaque clé afin d'assurer la validité du JSON-LD généré et d'optimiser le score GEO/SEO de la page.
  */
 
-type HomePage_script_Type = {
+type ContactPage_script_Type = {
     /**
-     * ⚠️ **NOTE ET CONTRAINTE SEO** : Résumé dense de la page d'accueil pour les moteurs de recherche.
+     * ⚠️ **NOTE ET CONTRAINTE SEO** : Résumé dense de la page contact pour les moteurs de recherche.
      * 
      * Doit faire entre 80 et 160 caractères.
      * _Une string hors de ces limites pénalisera le score GEO/SEO._
@@ -36,7 +36,7 @@ type HomePage_script_Type = {
      * @example "Mentions légales " (correspondra à domain/uri/#mentions-legales)
      */
     "id": string;
-    
+
     /** 
      * ⚠️ **DESCRIPTION** : Représente le nom de la page.
      * 
@@ -54,4 +54,4 @@ type HomePage_script_Type = {
     "uri_page": string;
 }
 
-export type { HomePage_script_Type };
+export type { ContactPage_script_Type };

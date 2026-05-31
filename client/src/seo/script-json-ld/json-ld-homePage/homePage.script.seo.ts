@@ -26,6 +26,7 @@ import { HomePage_script_Type } from "./homePage.script.type";
  * @pure Indique que la fonction est pure : elle ne produit aucun effet secondaire et retourne un résultat prédictible basé uniquement sur les arguments fournis.
  * @returns {string} Retourne une string grâce à la fonction JSON.stringify, necessaire pour l'injection dans une page.
  */
+
 function homePage_script_SEO(data: HomePage_script_Type) : string {
     const JSON_LD = JSON.stringify({
         "@context": dataMasterSEO["@context"], /* (Obligatoire) URL de Google schéma */
