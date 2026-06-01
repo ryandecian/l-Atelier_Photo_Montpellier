@@ -50,6 +50,7 @@ type HomePage_script_Type = {
      * ⚠️ **NOTE ET CONTRAINTE** : Doit être une URI valide, sans le nom de domaine, et correspondre à l'URI utilisée dans les autres scripts JSON-LD de la page (ex : BreadcrumbList).
      * - Doit être récupérer depuis le router.
      * - Ne doit pas contenir le nom de domaine.
+     * - Ne commence pas par un slash (/).
      */
     "uri_page": string;
 }

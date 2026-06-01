@@ -30,7 +30,7 @@ import { ContactPage_script_Type } from "./contactPage.script.type";
 function contactPage_script_SEO(data: ContactPage_script_Type) : string {
     const JSON_LD = JSON.stringify({
         "@context": dataMasterSEO["@context"], /* (Obligatoire) URL de Google schéma */
-        "@type": "ContactPage",                   /* (Obligatoire) Type de JSON-LD */
+        "@type": "ContactPage",                /* (Obligatoire) Type de JSON-LD */
         "@id": `${dataMasterSEO.url}${data.uri_page}/#${generateURLSlug_Utils(data.id)}`, /* @id SEO-friendly, identifiant unique de la page, correspond à l'URL de la page + mots clés (ex : domain/uri/#mot-clé ) */
 
         "about": {
