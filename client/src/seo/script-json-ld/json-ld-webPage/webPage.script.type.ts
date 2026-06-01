@@ -28,7 +28,6 @@ type WebPage_script_Type = {
 
     /**
      * ⚠️ **NOTE ET CONTRAINTE** : Doit être une string simple, même règle que les URL, et correspondre à l'ID utilisée dans les autres scripts JSON-LD de la page (ex : BreadcrumbList).
-     * - URI uniquement
      * - Ne pas passer le # au début de l'ID, le script s'en chargera automatiquement.
      * - Ne pas commencer par un slash (/), le script s'en chargera automatiquement.
      * - Doit être au format URL. Si le format est incorrect, une fonction de correction tentera de le corriger automatiquement.
