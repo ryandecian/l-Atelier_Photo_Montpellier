@@ -56,7 +56,8 @@ type Service_script_Type = {
     "name_service": string; /* Nom du service (espace autorisé) */
 
     /**
-     * ⚠️ **NOTE ET CONTRAINTE** : Doit être une URI valide, sans le nom de domaine, et correspondre à l'URI utilisée dans les autres scripts JSON-LD de la page (ex : BreadcrumbList).
+     * ⚠️ **NOTE ET CONTRAINTE** : Représente l'URL directe de la page. Ici on a uniquement besoin de l'URI de la page sans le nom de domaine.
+     * - Doit être une URI valide.
      * - Doit être récupérer depuis le router.
      * - Ne doit pas contenir le nom de domaine.
      * - Ne commence pas par un slash (/).
