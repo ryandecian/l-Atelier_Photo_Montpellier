@@ -2,7 +2,14 @@ Attention, pour les script JSON-LD VideoObject il faudra modifier l'architecture
 Chaque video devra contenir son propre sous dossier avec : 
 - la video,
 - la miniature, 
+
+Le fichier ts lui doit être à la racine du src avec les même chemin que le dossier public
 - un fichier data en ts. 
+
+Exemple de l'idée d'architecture : 
+- public/video/demo/video.mp4
+- public/video/demo/video.jpg
+- src/video/data.ts
 
 Cela sera utile a la fois pour les pages mais également pour le seo. 
 Il faudra penser a ajouter un exemple de composant data de video dans le fichier
