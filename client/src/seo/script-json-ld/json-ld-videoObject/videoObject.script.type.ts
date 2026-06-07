@@ -17,7 +17,7 @@ type VideoObject_script_Type = {
     /**
      * ⚠️ **NOTE ET CONTRAINTE SEO** : Résumé dense de la page contact pour les moteurs de recherche.
      * 
-     * Doit faire entre 80 et 160 caractères.
+     * Doit faire entre 60 et 160 caractères.
      * _Une string hors de ces limites pénalisera le score GEO/SEO._
      * 
      * ---
