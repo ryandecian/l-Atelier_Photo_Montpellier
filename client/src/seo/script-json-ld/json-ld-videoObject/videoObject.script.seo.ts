@@ -3,6 +3,7 @@ import { dataMasterSEO_data_SEO as dataMasterSEO } from "../../data/dataMasterSE
 
 /* Import des Utils */
 import { generateURLSlug_Utils } from "../../utils/generateURLSlug.utils";
+import { timeISO8601_Utils } from "./timeISO8601.utils";
 
 /* Import des Types */
 import { VideoObject_script_Type } from "./videoObject.script.type";
@@ -20,7 +21,7 @@ function videoObject_script_SEO(data: VideoObject_script_Type) : string {
         "uploadDate": data.date_upload,         /* (Obligatoire) Date de mise en ligne (YYYY-MM-DD) */
         "contentUrl": `${dataMasterSEO.url}${data.uri_video}`, /* (Obligatoire) URL directe du fichier vidéo */
 
-        ...(data.duration_video && { "duration": data.duration_video.h ? {``} : }),
+        ...(data.duration_video && { "duration": timeISO8601_Utils(data.duration_video) }), /* (Optionnel) mais recommandé. Durée de la video au format ISO 8601. 3 clés sont attendus : h, m et s, tous de type number */
     });
 
     return (

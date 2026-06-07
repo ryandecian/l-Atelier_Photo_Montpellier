@@ -38,7 +38,7 @@ type VideoObject_script_Type = {
      * - Doit être une string.
      * - Doit être au format ISO 8601 (ex : "PT1H2M30S" pour 1 heure, 2 minutes et 30 secondes).
      */
-    "duration_video": {
+    "duration_video"?: {
         "h"?: number;
         "m"?: number;
         "s"?: number;
