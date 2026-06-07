@@ -18,11 +18,9 @@ function videoObject_script_SEO(data: VideoObject_script_Type) : string {
         "name": data.name_video,                     /* (Obligatoire) Titre de la vidéo */
         "thumbnailUrl": `${dataMasterSEO.url}${data.uri_miniature}`,     /* (Obligatoire) URL de l'image miniature */
         "uploadDate": data.date_upload,         /* (Obligatoire) Date de mise en ligne (YYYY-MM-DD) */
-        "contentUrl": `${dataMasterSEO.url}${data.uri_video}`, /* (Obligatoire) URL directe du fichier vidéo (Optionnel, ex: .mp4) */
+        "contentUrl": `${dataMasterSEO.url}${data.uri_video}`, /* (Obligatoire) URL directe du fichier vidéo */
 
-        ...(data.contentUrl && { "contentUrl": data.contentUrl }),
-        ...(data.duration && { "duration": data.duration }),
-        ...(data.embedUrl && { "embedUrl": data.embedUrl }),
+        ...(data.duration_video && { "duration": data.duration_video.h ? {``} : }),
     });
 
     return (
