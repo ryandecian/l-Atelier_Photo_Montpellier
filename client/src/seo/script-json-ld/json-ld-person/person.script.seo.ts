@@ -6,6 +6,7 @@ import { generateURLSlug_Utils } from "../../utils/generateURLSlug.utils";
 
 /* Import des Types */
 
+
 function person_script_SEO(): string {
     const JSON_LD = JSON.stringify({
         "@context": dataMasterSEO["@context"], /* (Obligatoire) URL de Google schéma */
