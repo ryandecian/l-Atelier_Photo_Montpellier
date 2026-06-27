@@ -7,6 +7,29 @@ import { generateURLSlug_Utils } from "../../utils/generateURLSlug.utils";
 /* Import des Types */
 import { Person_script_Type } from "./person.script.type";
 
+/**
+ * ### Documentation : Script JSON-LD Person de Google.
+ * Ce composant réutilisable à pour objectif de générer un script JSON-LD pour présenter une personne sur le site.
+ * Il est généralement utilisé pour : 
+ * - Les pages contenant des informations sur une personne, qui ont des exigences spécifiques en matière de SEO et de structuration des données.
+ * 
+ * ---
+ * ### Les clés attendues en paramètre de la fonction sont :
+ * @param {Person_script_Type} data - L'objet contenant les information necessaire au script JSON-LD.
+ * @param {string} data.description - **[description]** - Résumé biographique pour les moteurs de recherche pour le SEO/GEO (60 à 160 caractères max).
+ * @param {string} data.first_name - **[first_name]** - Prénom de la personne.
+ * @param {string} data.id_person - **[id_person]** - Identifiant unique de la personne (string simple, même règle que les URL).
+ * @param {string} data.job_title - **[job_title]** - Titre du poste ou profession de la personne (professionnel).
+ * @param {string} data.last_name - **[last_name]** - Nom de famille de la personne.
+ * @param {string[]} data.skills - **[skills]** - Liste des compétences et technologies de la personne.
+ * @param {string[]} data.social_networks - **[social_networks]** - Liste des réseaux sociaux et profils professionnels de la personne.
+ * @param {string} data.uri_page - **[uri_page]** - URI de la page sans le nom de domaine (router).
+ * 
+ * ---
+ * @pure Indique que la fonction est pure : elle ne produit aucun effet secondaire et retourne un résultat prédictible basé uniquement sur les arguments fournis.
+ * @returns {string} Retourne une string grâce à la fonction JSON.stringify, necessaire pour l'injection dans une page.
+ */
+
 
 function person_script_SEO(data: Person_script_Type): string {
     const JSON_LD = JSON.stringify({

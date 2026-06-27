@@ -101,7 +101,7 @@ type Person_script_Type = {
     "social_networks": string[];
 
     /**
-     * ⚠️ **NOTE ET CONTRAINTE** : Represente l'URL directe de la page dans lequel se trouve la vidéo. Ici on a uniquement besoin de l'URI de la page sans le nom de domaine.
+     * ⚠️ **NOTE ET CONTRAINTE** : Represente l'URL directe de la page dans lequel se trouve la personne. Ici on a uniquement besoin de l'URI de la page sans le nom de domaine.
      * - Doit être une URI valide.
      * - Doit être récupérer depuis le router.
      * - Ne doit pas contenir le nom de domaine.
