@@ -67,7 +67,7 @@ function generateDataMasterSEO_data_SEO(): DataMasterSEO_Type {
         ],
         "telephone": "+33 6 52 67 73 33", /* Numéro de téléphone de l'entreprise (Manuel) */
         "termsOfService": `${ENV("VITE_DOMAIN_CLIENT")}${router[9].path}`, /* CGV : URL de la page des conditions générales de vente ou d'utilisation de l'entreprise (Dynamique) */
-        "url": `${ENV("VITE_DOMAIN_CLIENT")}`, /* URL de la page d'accueil de l'entreprise (Dynamique) */
+        "url": `${ENV("VITE_DOMAIN_CLIENT")}`, /* URL de la page d'accueil de l'entreprise (Dynamique), Attention, l'URL ne se termine pas par (/) */
     };
 
     return (
