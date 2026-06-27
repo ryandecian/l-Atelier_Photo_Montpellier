@@ -1,3 +1,9 @@
+Je dois vérifier la bonne cohérence des (/) dans les data de script json-ld
+
+
+
+
+
 Attention, pour les script JSON-LD VideoObject il faudra modifier l'architecture du dossier video.
 Chaque video devra contenir son propre sous dossier avec : 
 - la video,
