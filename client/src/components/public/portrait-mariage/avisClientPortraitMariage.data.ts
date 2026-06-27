@@ -23,6 +23,20 @@ const avisClientPortraitMariage_Data: AvisClientSEO_Type[] = [
         commentaire: "Merci pour ces magnifiques photos ! Anne a su capturer l’ambiance du moment avec grande justesse, mettant en valeur chacun de nos invités. Son travail est de grande qualité, et nous avons de superbes souvenirs grâce à elle. En plus d’être une photographe talentueuse, elle est une personne adorable qui met en confiance. Je la recommande mille fois !",
         date: "21/05/2025",
     },
+    {
+        id: 4,
+        nom: "Romain LAVAL",
+        note: 5,
+        commentaire: "Nous avons fait appel à Anne pour notre mariage ainsi que pour le baptême de notre fils. Elle a été très à l’écoute de nos attentes et a fait preuve d’un professionnalisme remarquable tout au long de ces événements. Elle a même pris l’initiative de proposer des jeux à nos invités, ce qui a contribué à créer une ambiance conviviale et chaleureuse. Nous la recommandons vivement.",
+        date: "20/06/2026",
+    },
+    {
+        id: 5,
+        nom: "Natalia K",
+        note: 5,
+        commentaire: "Photographe très professionnelle, elle est à l’écoute et elle prend des photos in probables ! On garde d’excellents souvenirs de notre mariage grâce a elle ! Merci encore !",
+        date: "22/06/2026",
+    },
 ];
 
 export { avisClientPortraitMariage_Data };
