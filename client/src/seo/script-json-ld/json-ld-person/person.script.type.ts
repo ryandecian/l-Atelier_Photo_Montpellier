@@ -37,6 +37,13 @@ type Person_script_Type = {
     "first_name": string;
 
     /**
+     * ⚠️ **NOTE ET CONTRAINTE** : Doit être une string simple.
+     * - Correspond au Genre de la personne décrite dans et par la page.
+     * - Doit être soit "Female" ou "Male"
+     */
+    "gender": "Female" | "Male",
+
+    /**
      * ⚠️ **NOTE ET CONTRAINTE** : Doit être une string simple, même règle que les URL.
      * - Correspond à la personne décrite dans et par la page.
      * - Doit être unique pour chaque personne du site.
@@ -76,6 +83,17 @@ type Person_script_Type = {
     "last_name": string;
 
     /**
+     * ⚠️ **NOTE ET CONTRAINTE** : Indique si la personne est salariée ou non.
+     * - Si true, le script inclura les informations de l'organisation pour laquelle la personne travaille.
+     * - Si false ou non précisé, ce bloc ne sera pas inclus.
+     * 
+     * ---
+     * @example true
+     * @example false
+     */
+    "salaried"?: boolean;
+
+    /**
      * ⚠️ **NOTE ET CONTRAINTE** : Liste des compétences et technologies de la personne décrite dans et par la page.
      * - Doit être un tableau de strings.
      * - Chaque élément du tableau doit représenter une compétence ou une technologie.
@@ -99,6 +117,17 @@ type Person_script_Type = {
      * @example ["https://www.linkedin.com/in/anne-saunier", "https://www.instagram.com/anne_saunier"]
      */
     "social_networks": string[];
+
+    /**
+     * ⚠️ **NOTE ET CONTRAINTE** : Doit être une URI valide.
+     * - L'image doit être dans le dossier public du projet.
+     * - Ne doit pas contenir le nom de domaine.
+     * - Doit commencer par un slash (/).
+     * 
+     * ---
+     * @example "/person/anne-saunier/avatar.jpg"
+     */
+    "uri_image_avatar"?: string;
 
     /**
      * ⚠️ **NOTE ET CONTRAINTE** : Represente l'URL directe de la page dans lequel se trouve la personne. Ici on a uniquement besoin de l'URI de la page sans le nom de domaine.
