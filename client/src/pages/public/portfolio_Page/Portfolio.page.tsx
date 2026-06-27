@@ -7,7 +7,7 @@ import Portfolio_Root from "../../../components/public/portfolio/Portfolio.root"
 import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
 
 /* Import des composants SEO */
-import { HelmetPortfolio_helmet_SEO } from "../../../seo/portfolio_SEO/HelmetPortfolio.helmet.seo";
+import { HelmetPortfolio_helmet_SEO } from "../../../seoS/portfolio_SEO/HelmetPortfolio.helmet.seo";
 
 /* Import des Hooks */
 import { useScrollToHash_Hook } from "../../../hook/useScrollToHash.hook";
