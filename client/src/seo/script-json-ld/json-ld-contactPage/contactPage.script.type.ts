@@ -1,14 +1,12 @@
-/*"description": "Mentions légales de l’Atelier Photo Montpellier. Retrouvez toutes les informations juridiques concernant le site, l’éditeur, l’hébergement et la propriété intellectuelle." */
-
 /**
- * TypeScript type pour les données d'entrée du script JSON-LD spécifique à WebPage.
+ * TypeScript type pour les données d'entrée du script JSON-LD spécifique à contactPage.
  * 
- * ⚠️ **NOTE IMPORTANTE** : Ce type définit les clés attendues en paramètre de la fonction `webPage_script_SEO`. Il est crucial de respecter les types et les contraintes définis pour chaque clé afin d'assurer la validité du JSON-LD généré et d'optimiser le score GEO/SEO de la page.
+ * ⚠️ **NOTE IMPORTANTE** : Ce type définit les clés attendues en paramètre de la fonction `contactPage_script_SEO`. Il est crucial de respecter les types et les contraintes définis pour chaque clé afin d'assurer la validité du JSON-LD généré et d'optimiser le score GEO/SEO de la page.
  */
 
-type WebPage_script_Type = {
+type ContactPage_script_Type = {
     /**
-     * ⚠️ **NOTE ET CONTRAINTE SEO** : Description de la page, utilisée pour les Mentions Légales et pour fournir un résumé clair du contenu de la page aux moteurs de recherche et aux utilisateurs.
+     * ⚠️ **NOTE ET CONTRAINTE SEO** : Résumé dense de la page contact pour les moteurs de recherche.
      * 
      * Doit faire entre 80 et 160 caractères.
      * _Une string hors de ces limites pénalisera le score GEO/SEO._
@@ -38,18 +36,6 @@ type WebPage_script_Type = {
      */
     "id": string;
 
-    /**
-     * ⚠️ **DESCRIPTION** : Image optionnel représentative de la page, qui peut être utilisée par les moteurs de recherche et les réseaux sociaux pour illustrer la page dans les résultats de recherche ou les partages.
-     * - Doit être une URI valide, sans le nom de domaine et commençant par un slash (ex : /images/photo-article.jpg).
-     * - Ratio : 16:9 - 1200 x 675 px minimum, 1920 x 1080 px maximum recommandé.
-     * - 50 à 150 Ko maximum, 100 Ko recommandé.
-     * - JPG
-     * 
-     * ---
-     * @example "/images/photo-article.jpg"
-     */
-    "uri_image"?: string;
-
     /** 
      * ⚠️ **DESCRIPTION** : Représente le nom de la page.
      * 
@@ -58,15 +44,6 @@ type WebPage_script_Type = {
      * _Une string hors de ces limites pénalisera le score GEO/SEO._
      */
     "name_page": string;
-
-    /**
-     * ⚠️ **NOTE ET CONTRAINTE** : Représente l'URL directe de la page CGV. Ici on a uniquement besoin de l'URI de la page sans le nom de domaine.
-     * - Doit être une URI valide.
-     * - Doit être récupérer depuis le router.
-     * - Ne doit pas contenir le nom de domaine.
-     * - Ne commence pas par un slash (/).
-     */
-    "uri_cgv": string;
 
     /**
      * ⚠️ **NOTE ET CONTRAINTE** : Représente l'URL directe de la page. Ici on a uniquement besoin de l'URI de la page sans le nom de domaine.
@@ -78,4 +55,4 @@ type WebPage_script_Type = {
     "uri_page": string;
 }
 
-export type { WebPage_script_Type };
+export type { ContactPage_script_Type };
