@@ -8,11 +8,8 @@ import { DataSEOTargetOne_Type } from "../../types/seo/dataSEOTargetOne.type";
 
 /* Import des Utils */
 import { generatePortfolioHasPartSEO_Utils } from "./utils/generatePortfolioHashPartSEO.utils";
-import { ENV } from "../../config/ENV.config";
 
 function JSON_LD_ImageGallery_Portfolio_schema_SEO(): string {
-  const test = "src/test";
-  console.log(`${ENV('VITE_DOMAIN_CLIENT')}${test}`);
   const dataSEORoot: DataSEORoot_Type = dataSEO_Root_data_SEO(); /* Récupération des données SEO */
   const dataSEO_Portfolio: DataSEOTargetOne_Type = dataSEO_Portfolio_data_SEO(); /* Récupération des données SEO de la page */
 
