@@ -40,7 +40,7 @@ function generateDataMasterSEO_data_SEO(): DataMasterSEO_Type {
             "addressCountry": "FR"
         },
         "aggregateRating": generateAverageRatingSEO_Utils(avisClientGlobal_data_SEO), /* Note moyenne et nb d'avis clients */
-        "email": routerExt.emailAnne, /* Adresse email de l'entreprise (Dynamique) */
+        "email": "photo34000@gmail.com", /* Adresse email de l'entreprise (Dynamique) */
         "id_LocalBusiness": `${ENV("VITE_DOMAIN_CLIENT")}#lapm`, /* URL du front avec un ID unique pour le LocalBusiness */
         "identifier": { /* Identifiant de l'entreprise, ici le SIRET */
             "@type": "PropertyValue",

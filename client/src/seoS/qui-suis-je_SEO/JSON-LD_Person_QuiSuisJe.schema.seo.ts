@@ -13,17 +13,17 @@ function JSON_LD_Person_QuiSuisJe_schema_SEO() {
     const JSON_LD = JSON.stringify({
         "@context": dataSEORoot["@context"], /* (Obligatoire) Contexte de la donnée */
         "@type": dataSEORoot["@type"].Person, /* (Obligatoire) Type de la donnée */
-        "name": dataSEO_QuiSuisJe.author, /* (Obligatoire) Nom de la personne */
+         "name": dataSEO_QuiSuisJe.author, /* (Obligatoire) Nom de la personne */
         "alternateName": "Photographe Anne SAUNIER",
         "description": dataSEO_QuiSuisJe.description, /* (Obligatoire) Description de la personne */
         "image": dataSEO_QuiSuisJe.img_JSON_LD, /* (Obligatoire) Lien URL de l'image */
-        "jobTitle": "Photographe professionnelle",
+         "jobTitle": "Photographe professionnelle",
         "gender": "Female",
         "worksFor": dataSEORoot.worksFor, /* Indique de la personne est liée à cette activité */
         "alumniOf": dataSEORoot.alumniOf, /* Établissement d'enseignement supérieur où l'auteur a étudié */
-        "knowsAbout": dataSEORoot.knowsAbout, /* Liste des domaines de compétence de la personne */
+         "knowsAbout": dataSEORoot.knowsAbout, /* Liste des domaines de compétence de la personne */
         "sameAs": dataSEORoot.sameAs, /* Liste des profils sociaux de la personne */
-        "url": dataSEO_QuiSuisJe.url, /* (Obligatoire) Lien URL de la page */
+         "url": dataSEO_QuiSuisJe.url, /* (Obligatoire) Lien URL de la page */
     })
 
     return (
