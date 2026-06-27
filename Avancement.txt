@@ -1,9 +1,19 @@
-Il faudra préparer les versions nginx http et https
+Attention, pour les script JSON-LD VideoObject il faudra modifier l'architecture du dossier video.
+Chaque video devra contenir son propre sous dossier avec : 
+- la video,
+- la miniature, 
 
-Voir un logo image carré en 1000 x 1000 px max et entre 150 et 200 ko
-Il manquera également le logo au format 200x200px en carré
-Revoir la formulation des horaires dans le composant dataSEORoot
-Revoir les lien facebook et instagram dans dataSEORoot
+Le fichier ts lui doit être à la racine du src avec les même chemin que le dossier public
+- un fichier data en ts. 
+
+Exemple de l'idée d'architecture : 
+- public/video/demo/video.mp4
+- public/video/demo/video.jpg
+- src/video/data.ts
+
+Cela sera utile a la fois pour les pages mais également pour le seo. 
+Il faudra penser a ajouter un exemple de composant data de video dans le fichier
+du script JSON-LD VideoObject
 ------------------------------------------------------------------------------
 La page blog 20260305 ne possède pas les bonnes images helmet et google, il faudra
 demander à la cliente d'en fournir

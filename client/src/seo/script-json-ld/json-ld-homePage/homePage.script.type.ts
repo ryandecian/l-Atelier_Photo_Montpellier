@@ -1,7 +1,7 @@
 /**
- * TypeScript type pour les données d'entrée du script JSON-LD spécifique à WebPage.
+ * TypeScript type pour les données d'entrée du script JSON-LD spécifique à homePage.
  * 
- * ⚠️ **NOTE IMPORTANTE** : Ce type définit les clés attendues en paramètre de la fonction `webPage_script_SEO`. Il est crucial de respecter les types et les contraintes définis pour chaque clé afin d'assurer la validité du JSON-LD généré et d'optimiser le score GEO/SEO de la page.
+ * ⚠️ **NOTE IMPORTANTE** : Ce type définit les clés attendues en paramètre de la fonction `homePage_script_SEO`. Il est crucial de respecter les types et les contraintes définis pour chaque clé afin d'assurer la validité du JSON-LD généré et d'optimiser le score GEO/SEO de la page.
  */
 
 type HomePage_script_Type = {
@@ -26,7 +26,6 @@ type HomePage_script_Type = {
 
     /**
      * ⚠️ **NOTE ET CONTRAINTE** : Doit être une string simple, même règle que les URL, et correspondre à l'ID utilisée dans les autres scripts JSON-LD de la page (ex : BreadcrumbList).
-     * - URI uniquement
      * - Ne pas passer le # au début de l'ID, le script s'en chargera automatiquement.
      * - Ne pas commencer par un slash (/), le script s'en chargera automatiquement.
      * - Doit être au format URL. Si le format est incorrect, une fonction de correction tentera de le corriger automatiquement.
@@ -47,9 +46,11 @@ type HomePage_script_Type = {
     "name_page": string;
 
     /**
-     * ⚠️ **NOTE ET CONTRAINTE** : Doit être une URI valide, sans le nom de domaine, et correspondre à l'URI utilisée dans les autres scripts JSON-LD de la page (ex : BreadcrumbList).
+     * ⚠️ **NOTE ET CONTRAINTE** : Représente l'URL directe de la page. Ici on a uniquement besoin de l'URI de la page sans le nom de domaine.
+     * - Doit être une URI valide.
      * - Doit être récupérer depuis le router.
      * - Ne doit pas contenir le nom de domaine.
+     * - Ne commence pas par un slash (/).
      */
     "uri_page": string;
 }
