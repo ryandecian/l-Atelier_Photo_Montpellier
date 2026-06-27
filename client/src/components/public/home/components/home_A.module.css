@@ -165,7 +165,7 @@
 
 .ContainerTitle > h1 {
     font-size: var(--h3); /* 18px */
-    color: var(--ColorTextBlack);
+    color: var(--ColorTextWhite);
     font-family: 'Saira Condensed', sans-serif;
     font-weight: 500;
     font-style: normal;
