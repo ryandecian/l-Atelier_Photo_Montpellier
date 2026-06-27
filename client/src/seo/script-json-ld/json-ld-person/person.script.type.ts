@@ -36,6 +36,8 @@ type Person_script_Type = {
      */
     "first_name": string;
 
+    "gender": "Female" | "Male",
+
     /**
      * ⚠️ **NOTE ET CONTRAINTE** : Doit être une string simple, même règle que les URL.
      * - Correspond à la personne décrite dans et par la page.
@@ -74,6 +76,17 @@ type Person_script_Type = {
      * @example "O'CONNOR"
      */
     "last_name": string;
+
+    /**
+     * ⚠️ **NOTE ET CONTRAINTE** : Indique si la personne est salariée ou non.
+     * - Si true, le script inclura les informations de l'organisation pour laquelle la personne travaille.
+     * - Si false ou non précisé, ce bloc ne sera pas inclus.
+     * 
+     * ---
+     * @example true
+     * @example false
+     */
+    "salaried"?: boolean;
 
     /**
      * ⚠️ **NOTE ET CONTRAINTE** : Liste des compétences et technologies de la personne décrite dans et par la page.

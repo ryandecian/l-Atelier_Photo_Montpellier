@@ -18,9 +18,11 @@ import { Person_script_Type } from "./person.script.type";
  * @param {Person_script_Type} data - L'objet contenant les information necessaire au script JSON-LD.
  * @param {string} data.description - **[description]** - Résumé biographique pour les moteurs de recherche pour le SEO/GEO (60 à 160 caractères max).
  * @param {string} data.first_name - **[first_name]** - Prénom de la personne.
+ * @param {string} data.gender - **[gender]** - Genre de la personne ("Female" ou "Male").
  * @param {string} data.id_person - **[id_person]** - Identifiant unique de la personne (string simple, même règle que les URL).
  * @param {string} data.job_title - **[job_title]** - Titre du poste ou profession de la personne (professionnel).
  * @param {string} data.last_name - **[last_name]** - Nom de famille de la personne.
+ * @param {boolean} [data.salaried] - **[salaried]** - Indique si la personne est salariée ou non.
  * @param {string[]} data.skills - **[skills]** - Liste des compétences et technologies de la personne.
  * @param {string[]} data.social_networks - **[social_networks]** - Liste des réseaux sociaux et profils professionnels de la personne.
  * @param {string} data.uri_page - **[uri_page]** - URI de la page sans le nom de domaine (router).
@@ -40,14 +42,26 @@ function person_script_SEO(data: Person_script_Type): string {
         "name": `${data.first_name} ${data.last_name}`, /* Nom prénom complet combiné */
         "givenName": data.first_name,                   /* Prénom */
         "familyName": data.last_name,                   /* Nom de famille */
+        "gender": data.gender,                          /* Genre de la personne */
         "jobTitle": data.job_title,                     /* Titre du poste ou profession (professionnel) */
         "description": data.description,                /* Résumé biographique pour les moteurs de recherche (entre 60 et 160 caractères) */
+        "image": data.image, /* Lien URL de l'image de la personne (photo portrait) */
 
         "url": dataMasterSEO.url,               /* URL racine du site (portfolio) de la personne. Si pas de site portfolio, utiliser l'URL de la page d'accueil. (mainEntityOfPage décrira alors quel page du site parle de la personne) */
         "mainEntityOfPage": `${dataMasterSEO.url}${data.uri_page}`, /* Dis explicitement à Google quelle page web décrit cette personne (URL + URI de la page) */
 
         "knowsAbout": data.skills,             /* Liste des compétences et technologies */
-        "sameAs": data.social_networks         /* Liens externes de certification d'identité (réseaux sociaux, profils professionnels, etc.) */
+        "sameAs": data.social_networks,        /* Liens externes de certification d'identité (réseaux sociaux, profils professionnels, etc.) */
+
+        /* Regarde dans data si la personne est salariée */
+        /* Si ce n'est pas précisé ou false alors ce bloc de code ne sera pas inclus */
+        ...(data.salaried && {
+            "worksFor": {
+                "@type": "Organization",
+                "name": dataMasterSEO.name, /* Nom de l'organisation ou de l'entreprise pour laquelle la personne travaille */
+                "url": dataMasterSEO.url    /* URL de l'organisation ou de l'entreprise */
+            },
+        })
     })
 
     return (
