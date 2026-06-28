@@ -24,9 +24,9 @@ function Home_A_Component() {
                             <p className={css.SloganMobile}>
                                 {"INSTANT"}
                             </p>
-                            {/* <p className={css.SloganMobile}>
-                                {"VOUS"}
-                            </p> */}
+                            <p className={css.SloganMobile}>
+                                {"TEST"}
+                            </p>
                         </article>
                         <header className={css.ContainerTitleMobile}>
                             <h1>
