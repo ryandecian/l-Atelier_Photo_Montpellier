@@ -38,6 +38,9 @@ import ResetPasswordConfirmPage from "../pages/public/reset-password-confirm_Pag
 import QuiSuisJePage from "../pages/public/qui-suis-je_Page/QuiSuisJe.page";
 import Video_Page from "../pages/public/video_Page/Video.page";
 
+/* Pages test */
+import { Home_Page_Test } from "../pages/public/home_Test/Home.page";
+
 /**
  * Utilisation : 
  * {router[0].path}
@@ -235,6 +238,11 @@ const router: Router_Type[] = [
     {
         path: "/videos",
         element: <Video_Page />,
+    },
+    /* {router[37].path} -------------------------------------------------------------- */
+    {
+        path: "/home-test",
+        element: <Home_Page_Test />,
     },
 ]
 
