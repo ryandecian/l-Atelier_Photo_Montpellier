@@ -16,20 +16,23 @@ function Home_A_Component() {
                     <>
                         <article className={css.ContainerSloganMobile}>
                             <p className={css.SloganMobile}>
-                                {"DES PORTRAITS"}
+                                {"RETENIR"}
                             </p>
                             <p className={css.SloganMobile}>
-                                {"QUI"}
+                                {"CET"}
                             </p>
                             <p className={css.SloganMobile}>
-                                {"PARLENT DE"}
+                                {"INSTANT"}
                             </p>
-                            <p className={css.SloganMobile}>
+                            {/* <p className={css.SloganMobile}>
                                 {"VOUS"}
-                            </p>
+                            </p> */}
                         </article>
                         <header className={css.ContainerTitleMobile}>
-                            <h1>PHOTOGRAPHE DE PORTRAITS ET DE MARIAGE A MONTPELLIER</h1>
+                            <h1>
+                                Photographe de Mariage à Montpellier <br />
+                                - Professionnel - Tarifs -
+                            </h1>
                         </header>
                     </>
                 )}
@@ -40,20 +43,23 @@ function Home_A_Component() {
                     <>
                         <article className={css.ContainerSlogan}>
                             <p className={css.Slogan}>
-                                {"DES PORTRAITS"}
+                                {"RETENIR"}
                             </p>
                             <p className={css.Slogan}>
-                                {"QUI"}
+                                {"CET"}
                             </p>
                             <p className={css.Slogan}>
-                                {"PARLENT DE"}
+                                {"INSTANT"}
                             </p>
-                            <p className={css.Slogan}>
+                            {/* <p className={css.Slogan}>
                                 {"VOUS"}
-                            </p>
+                            </p> */}
                         </article>
                         <header className={css.ContainerTitle}>
-                            <h1>Photographe et Vidéaste professionnelle pour contenus visuels à Montpellier</h1>
+                            <h1>
+                                Photographe de Mariage à Montpellier <br />
+                                - Professionnel - Tarifs -
+                            </h1>
                         </header>
                     </>
                 )}
