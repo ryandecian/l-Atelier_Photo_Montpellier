@@ -1,12 +1,51 @@
-@import "./assets/Fonts/Quicksand/stylesheet.css";
 @import "./assets/Fonts/AnneSignature/stylesheet.css";
+@import "./assets/Fonts/MinervaModerne/stylesheet.css";
+@import "./assets/Fonts/Quicksand/stylesheet.css";
 @import "./assets/Fonts/SairaCondensed/stylesheet.css";
 
 :root {
+    /* ✨ Attention, les 3 déclarations sont obligatoire pour les titres */
+        /*Logique des Titres*/
+            --font-family-Quicksand: "Quicksand", sans-serif;
+            --font-family-SairaCondensed: "Saira Condensed", Arial, sans-serif;
+            --font-family-MinervaModerne: "Minerva Moderne", sans-serif;
+            --font-family-AnneSignature: "AnneSignature", cursive;
+
+            --font-weight-normal: none;
+            --font-weight-title: 600;
+         
+            --font-style-normal: normal;
+            --font-style-title: normal;
+
     /* ✨ Couleur des textes */
         /* Couleur des textes général Restructuration */
-            --ColorTextWhite: rgb(255, 255, 255); /* Vérifier pour refacto ok */
-            --ColorTextBlack: rgb(0, 0, 0); /* Vérifier pour refacto ok */
+            --ColorTextBlack: rgb(0, 0, 0);
+            --ColorTextGrey: rgb(70, 70, 70);
+            --ColorTextWhite: rgb(255, 255, 255);
+            --ColorTextYellow: #ffd700;
+            --ColorTextRed: rgb(255, 0, 0);
+            --ColorTextPink: #ff0080;
+            --ColorTextBlue: rgb(14, 83, 193);
+
+    /* ✨ Couleur des textes */
+        /* Couleur des backgrounds général */
+            --ColorBackgourndBlack: rgb(0, 0, 0);
+            --ColorBackgroundWhite: rgb(255, 255, 255);
+            --ColorBackgroundRed: rgb(255, 0, 0);
+            --ColorBackgroundYellow: rgb(255, 255, 0);
+            --ColorBackgroundGrey: rgb(240, 240, 240);
+            --ColorBackgroundGrey_Option1: rgba(218, 216, 216, 0.882);
+
+        /* Couleur des cards */
+            --ColorBackgroundBlack_40: rgba(0, 0, 0, 0.4);
+            --ColorBackgroundBlack_50: rgba(0, 0, 0, 0.5);
+            --ColorBackgroundBlack_80: rgba(0, 0, 0, 0.8); 
+
+
+
+            
+    /* ✨ Couleur des textes */
+        /* Couleur des textes général */
             --ColorTextWhiteGrey: #ccc; /* Vérifier pour refacto ok */
             --ColorTextDark_666: #666; /* Vérifier pour refacto ok */
             --ColorTextDark_555: #555; /* Vérifier pour refacto ok */
@@ -14,7 +53,6 @@
             --ColorTextDark_333: #333; /* Vérifier pour refacto ok */
             --ColorTextDark_222: #222; /* Vérifier pour refacto ok */
             --ColorTextGold: #ffd700; /* Vérifier pour refacto ok */
-            --ColorTextPink: #ff0080; /* Vérifier pour refacto ok */
             --ColorTextPurple: rgb(138, 43, 226); /* Vérifier pour refacto ok */
             --ColorTextLink: rgb(14, 83, 193); /* Vérifier pour refacto ok */
             --ColorButtonAvis: #0056b3; /* Vérifier pour refacto ok */
@@ -184,6 +222,14 @@
             /* Hauteur du menu burger Nav Root */
 }
 
+/* Reset universel pour tout le front */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: var(--font-family-Quicksand);
+}
+
 body {
     font-family: "Quicksand", Arial, sans-serif;
     padding: 0;
@@ -193,7 +239,7 @@ body {
     box-sizing: border-box;
 }
 h1, h2 {
-    font-family: "Saira Condensed", "Arial Narrow", sans-serif;
+    font-family: var(--font-family-MinervaModerne);
 }
 p {
     line-height: 1.6; /* Hauteur des lignes de texte */

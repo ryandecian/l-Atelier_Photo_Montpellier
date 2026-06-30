@@ -1,0 +1,351 @@
+.ContainerRootRacine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem;
+    border: 0rem;
+}
+/*-------------------------------------*/
+/* Style des container de texte ou titre */
+.ContainerTitle,
+.ContainerText {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem;
+    border: 0rem;
+}
+
+.ContainerUl {
+    display: block;
+    width: 100%;
+    padding: 0rem 0rem 0rem 2.5rem; /* 0px 0px 0px 40px */
+    list-style-position: inside; /* Position des points de la liste */
+    list-style-type: disc; /* Type de point pour les liste. Ici c'est un point rond noir */
+}
+
+/*-------------------------------------*/
+/* Style des Title dans un parent Column */
+.TitleH1, 
+.TitleH1_NNNN,
+.TitleH2,
+.TitleH2_00N0,
+.TitleH3,
+.TitleH4, 
+.TitleH5,
+.TitleH6 {
+    color : var(--ColorTextBlack);
+    font-weight: var(--font-weight-title);
+    font-style: var(--font-style-title);
+    font-display: swap;
+    text-align: start;
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem 1.25rem; /* 0px 20px 0px 20px */
+    border: 0rem;
+}
+
+.TitleH1 {
+    font-size: var(--h3); /* 18px */
+    text-align: center;
+    padding: 0rem 1.25rem 1.25rem 1.25rem; /* 0px 20px 20px 20px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .TitleH1 {
+        font-size: var(--h2); /* 24px */
+    }
+}
+@media (min-width: 31.25rem) { /* 500px */
+    .TitleH1 {
+        font-size: var(--h1); /* 32px */
+    }
+}
+.TitleH1_NNNN {
+    font-size: var(--h3); /* 18px */
+    text-align: center;
+    padding: 0.5rem 1.25rem 1.25rem 1.25rem; /* 8px 20px 20px 20px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .TitleH1_NNNN {
+        font-size: var(--h2); /* 24px */
+    }
+}
+@media (min-width: 31.25rem) { /* 500px */
+    .TitleH1_NNNN {
+        font-size: var(--h1); /* 32px */
+    }
+}
+.TitleH2,
+.TitleH2_00N0 {
+    font-size: var(--h4); /* 16px */
+    font-weight: bold;
+    text-align: start;
+}
+@media (min-width: 25rem) { /* 400px */
+    .TitleH2,
+    .TitleH2_00N0 {
+        font-size: var(--h3); /* 18px */
+    }
+}
+@media (min-width: 31.25rem) { /* 500px */
+    .TitleH2,
+    .TitleH2_00N0 {
+        font-size: var(--h2); /* 24px */
+    }
+}
+.TitleH2 {
+    padding: 1.25rem; /* 20px 20px 20px 20px */
+}
+.TitleH2_00N0 {
+    padding: 0.625rem 1.25rem 1.25rem 1.25rem; /* 10px 20px 20px 20px */
+}
+
+.TitleH3 {
+    font-size: var(--h5); /* 14px */
+    text-align: start;
+    padding: 0rem 1.25rem 0.5rem 1.25rem; /* 0px 20px 8px 20px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .TitleH3 {
+        font-size: var(--h4); /* 16px */
+    }
+}
+@media (min-width: 31.25rem) { /* 500px */
+    .TitleH3 {
+        font-size: var(--h3); /* 18px */
+    }
+}
+.TitleH4 {
+    font-size: var(--h4); /* 18px */
+    text-align: start;
+}
+.TitleH5 {
+    font-size: var(--h5); /* 14px */
+    text-align: start;
+}
+.TitleH6 {
+    font-size: var(--h6); /* 11px */
+    text-align: start;
+}
+
+/*--------------------------------------------------*/
+
+/* Style des Textes généraux */
+.TextP1,
+.TextP2,
+.TextP3,
+.TextP4,
+.TextP4Bottom,
+.TextLiP4,
+.TextP5,
+.TextP6,
+.TextLiP4 {
+    width: 100%;
+    margin: 0rem;
+    border: 0rem;
+    padding: 0rem 1.25rem 1.25rem 1.25rem; /* 0px 20px 20px 20px */
+    line-height: 1.6; /* Hauteur des lignes de texte */
+    text-align: start;
+}
+.TextP1 {
+    font-size: var(--h2); /* 24px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .TextP1 {
+        font-size: var(--h1); /* 32px */
+    }
+}
+.TextP2 {
+    font-size: var(--h3); /* 18px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .TextP2 {
+        font-size: var(--h2); /* 24px */
+    }
+}
+.TextP3 {
+    font-size: var(--h4); /* 16px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .TextP3 {
+        font-size: var(--h3); /* 18px */
+    }
+}
+.TextP4,
+.TextP4Bottom,
+.TextLiP4 {
+    font-size: var(--h5); /* 14px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .TextP4,
+    .TextP4Bottom,
+    .TextLiP4 {
+        font-size: var(--h4); /* 16px */
+    }
+}
+.TextP4Bottom {
+    padding: 1rem 1.25rem 1.25rem 1.25rem; /* 16px 20px 20px 20px */
+}
+.TextLiP4 {
+    padding-bottom: 0rem;
+}
+.TextP5 {
+    font-size: var(--h6); /* 11px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .TextP5 {
+        font-size: var(--h5); /* 14px */
+    }
+}
+.TextP6 {
+    font-size: var(--h7); /* 11px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .TextP6 {
+        font-size: var(--h6); /* 11px */
+    }
+}
+.TextLiP4 {
+    font-size: var(--h4); /* 18px */
+    padding-bottom: 0; /* 0px 0px 0px 0px */
+}
+
+/*-------------------------------------*/
+/* Link pour contenue de texte */
+.Link {
+    font-weight: bold;
+    color: var(--ColorTextBlue);
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.2s ease, text-decoration 0.2s ease;
+}
+.Link:hover,
+.Link:focus-visible {
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+/*-------------------------------------*/
+.ContainerVideo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.25rem; /* 20px */
+}
+
+.VideoTitle {
+    font-size: var(--h4); /* 16px */
+    font-weight: bold;
+    text-align: center;
+    margin: 0rem 0rem 1.125rem 0rem; /* 0px 0px 18px 0px */
+}
+@media (min-width: 25rem) { /* 400px */
+    .VideoTitle {
+        font-size: var(--h3); /* 18px */
+    }
+}
+
+.VideoPlayer {
+    width: 100%;
+    max-width: 1280px; /* limite propre FHD */
+    border-radius: 12px;
+    background-color: #000; /* évite un flash blanc avant affichage du poster */
+}
+
+.VideoDescription {
+    text-align: center;
+    margin: 0.5rem 0rem 0rem 0rem; /* 8px 0px 16px 0px */
+    font-size: var(--h5); /* 14px */
+    color: var(--ColorTextGray);
+}
+@media (min-width: 25rem) { /* 400px */
+    .VideoDescription {
+        font-size: var(--h4); /* 16px */
+    }
+}
+/*-------------------------------------*/
+.Button {
+    /* Il faudra mettre par défaut margin et padding à 0 */
+    background: none;   /* Supprime l’arrière-plan du bouton (souvent gris par défaut) */
+    border: none;       /* Supprime les bordures (souvent visibles sur les boutons natifs) */
+    outline: none;      /* Supprime le contour par défaut du bouton */
+    font: inherit;      /* Utilise la même police que son parent (au lieu de la police par défaut du navigateur) */
+    color: inherit;     /* Utilise la même couleur de texte que son parent */
+    cursor: pointer;    /* Affiche un curseur en forme de main pour indiquer qu’il est cliquable */
+}
+
+/*-------------------------------------*/
+/* Positionnement texte avec Float*/
+.ContainerFloat {
+  width: 100%;
+  font-size: var(--p);
+  position: relative;
+}
+
+/* Positionnement cible unique */
+.FloatLeft {
+    float: left;
+    margin: 0rem 1.25rem; /* 0px 20px 0px 20px */
+}
+.FloatRight {
+    float: right;
+    margin: 0rem 1.25rem; /* 0px 20px 0px 20px */
+}
+
+/* Positionnement et dimension image avec float */
+/* Po = Portrait */
+.FloatLeftImg_Po {
+    float: left;
+    width: calc(100% - 2.5rem); /* 100% - 40px */
+    padding: 0rem 1.25rem; /* 0px 20px 0px 20px */
+    margin: 0rem;
+    @media (min-width: 450px) {
+        width: 280px; /* 280px */
+        max-width: 40%; /* 40% de la largeur du parent */
+        margin: 0rem; /* 0px 0px 0px 0px */
+    }
+}
+
+.FloatRightImg_Po {
+    float: right;
+    width: calc(100% - 2.5rem); /* 100% - 40px */
+    margin: 0rem 1.25rem 1.25rem 1.25rem; /* 0px 20px 0px 20px */
+    @media (min-width: 28.125rem) { /* 450px */
+        width: 340px; /* 280px */
+        max-width: 40%; /* 40% de la largeur du parent */
+        margin: 0rem 1.25rem; /* 0px 20px 0px 20px */
+    }
+}
+
+/* Pa = Paysage */
+.FloatLeftImg_Pa {
+    float: left;
+    width: calc(100% - 2.5rem); /* 100% - 40px */
+    padding: 0rem 1.25rem; /* 0px 20px 0px 20px */
+    margin: 0rem;
+    @media (min-width: 28.125rem) { /* 450px */
+        width: 370px; /* 280px */
+        max-width: 50%; /* 40% de la largeur du parent */
+        margin: 0rem; /* 0px 0px 0px 0px */
+    }
+}
+
+.FloatRightImg_Pa {
+    float: right;
+    width: calc(100% - 2.5rem); /* 100% - 40px */
+    margin: 0rem 1.25rem 1.25rem 1.25rem; /* 0px 20px 0px 20px */
+    @media (min-width: 400px) {
+        width: 370px; /* 280px */
+        max-width: 50%; /* 40% de la largeur du parent */
+        margin: 0rem 1.25rem; /* 0px 20px 0px 20px */
+    }
+}

@@ -4,7 +4,7 @@ import css from "./home_A.module.css";
 /* Import des Hooks */
 import { useMediaQueriesHeight_rem_Hook } from "../../../../hook/useMediaQueriesHeight_rem.hook";
 
-function Home_A_Component() {
+function Home_A_Component_Test() {
     const viewportHeight: number = useMediaQueriesHeight_rem_Hook();
 
     return (
@@ -51,9 +51,9 @@ function Home_A_Component() {
                             <p className={css.Slogan}>
                                 {"INSTANT"}
                             </p>
-                            {/* <p className={css.Slogan}>
-                                {"VOUS"}
-                            </p> */}
+                            <p className={css.Slogan}>
+                                {"TEST"}
+                            </p>
                         </article>
                         <header className={css.ContainerTitle}>
                             <h1>
@@ -68,4 +68,4 @@ function Home_A_Component() {
     );
 }
 
-export { Home_A_Component };
+export { Home_A_Component_Test };

@@ -1,5 +1,6 @@
 /* Import des modules CSS */
-import style from "../../StyleRootComponent.module.css";
+// import style from "../../StyleRootComponent.module.css";
+import style from "../../style.root.module.css";
 
 /* Import des Components */
 import { Home_A_Component } from "./components/Home_A.component";
@@ -12,6 +13,7 @@ import { imagesHome_img_Data } from "./imagesHome.img.data";
 import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
 import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 import { PremiumCardImgModal_Element } from "../../elements/premium-card-img-modal/PremiumCardImgModal.element";
+import { Video_Element } from "../../elements/video/Video.element";
 
 /* Import des composants React */
 import { Link } from "react-router-dom";
@@ -20,7 +22,7 @@ import { Link } from "react-router-dom";
 import router from "../../../router/router";
 
 /* Import des Utils */
-import { pauseOtherVideos_Utils } from "../../../utils/pauseOtherVideos.utils";
+// import { pauseOtherVideos_Utils } from "../../../utils/pauseOtherVideos.utils";
 
 function Home_Root() {
     return (
@@ -44,41 +46,28 @@ function Home_Root() {
                 metaNameImg4={imagesHome_img_Data[7].alt}
             />
 
-            <p className={`${style.TextP4} ${style.TargetText1}`}>
+            <p className={style.TextP4Bottom}>
                 Il y a des jours où le temps semble suspendu, où chaque battement de cœur résonne fort et où chaque
-                minute passe à la vitesse d’une seconde.{" "}
-                <span className={style.SpanBold}>
-                    {"Votre mariage est bien plus qu’un événement !."}
-                </span>{" "}
+                minute passe à la vitesse d’une seconde. <strong>Votre mariage est bien plus qu’un événement ! </strong>
                 C’est une promesse murmurée entre vous deux et une acclamation partagée avec ceux que vous aimez.
-                En tant que photographe de mariage à Montpellier, je ne me contente pas de prendre des photos.{" "}
-                <span className={style.SpanBold}>
-                    {"Je capture l’essence même de votre union."}
-                </span>
+                En tant que photographe de mariage à Montpellier, je ne me contente pas de prendre des photos. 
+                <strong> Je capture l’essence même de votre union.</strong>
             </p>
 
             <p className={style.TextP4}>
                 Discrète mais toujours présente, je me fonds parmi vos invités pour saisir les éclats de rire, les
                 étreintes sincères, les petites attentions qui font toute la différence. Je travaille comme un témoin
-                invisible,
-                <span className={style.SpanBold}>
-                    {" figeant l’instant sans jamais le forcer. "}
-                </span>
+                invisible, <strong>figeant l’instant sans jamais le forcer. </strong>
                 Et après la fête, lorsque tout semble redevenu silencieux, il restera ces images, ce déroulé de
-                cette journée, ces clichés que vous
-                <span className={style.SpanBold}>
-                    {" redécouvrirez au fil des années, "}
-                </span>
-                que vous partagerez avec vos proches et que vous transmettrez peut-être un jour.
+                cette journée, ces clichés que vous <strong>redécouvrirez au fil des années,</strong> que vous partagerez 
+                avec vos proches et que vous transmettrez peut-être un jour.
             </p>
 
             <p className={style.TextP4}>
                 Découvrez plus en détail{" "}
-                <span className={style.SpanLink}>
-                    <Link to={router[13].path}>
-                        {"mes prestations de mariage !"}
-                    </Link>
-                </span>
+                <Link to={router[13].path} className={style.Link}>
+                    {"mes prestations de mariage !"}
+                </Link>
             </p>
 
             <h2 className={style.TitleH2}>
@@ -91,42 +80,34 @@ function Home_Root() {
 
             <p className={style.TextP4}>
                 <strong>Photographe </strong> à Montpellier, je réalise des{" "}
-                <span className={style.SpanLink}>
-                    <Link to={`${router[12].path}#top`}>
-                        {"portraits"}
-                    </Link>
-                </span>
+                <Link to={`${router[12].path}#top`} className={style.Link}>
+                    {"portraits"}
+                </Link>
                 <strong> naturels et professionnels</strong>, en lumière naturelle ou en studio, toujours
                 avec l’envie de révéler la personnalité de chacun.
             </p>
 
             <p className={style.TextP4}>
-                <span className={style.SpanLink}>
-                    <Link to={`${router[36].path}#top`}>
-                        {"En vidéo"}
-                    </Link>
-                </span>
+                <Link to={`${router[36].path}#top`} className={style.Link}>
+                    {"En vidéo"}
+                </Link>
                 , je procède de la même manière : je <strong>définis clairement votre besoin </strong>
                 pour créer un film court, authentique et utile, qui transmet le message juste.
             </p>
 
             <p className={style.TextP4}>
                 Pour les{" "}
-                <span className={style.SpanLink}>
-                    <Link to={`${router[13].path}#top`}>
-                        {"mariages"}
-                    </Link>
-                </span>
+                <Link to={`${router[13].path}#top`} className={style.Link}>
+                    {"mariages"}
+                </Link>
                 <strong>, j’adopte une approche reportage :</strong> des instants vrais, des émotions
                 spontanées, une histoire sincère qui reflète votre journée.
             </p>
 
             <p className={style.TextP4}>
-                <span className={style.SpanLink}>
-                    <Link to={`${router[7].path}#top`}>
-                        {"Découvrez mon parcours, de mes débuts à l'Atelier Photo Montpellier."}
-                    </Link>
-                </span>
+                <Link to={`${router[7].path}#top`} className={style.Link}>
+                    {"Découvrez mon parcours, de mes débuts à l'Atelier Photo Montpellier."}
+                </Link>
             </p>
 
             {/* ---------- ---------- ---------- ---------- ---------- */}
@@ -149,46 +130,27 @@ function Home_Root() {
             <p className={`${style.TextP4} ${style.TargetText1}`}>
                 Et je cherche à capturer ces histoires. Pour votre entreprise, pour vos réseaux
                 sociaux, pour une connivence… je cherche à trouver la photo de portrait qui fait
-                votre force, votre énergie,{" "}
-                <span className={style.SpanBold}>
-                    {"votre rayonnement."}
-                </span>
+                votre force, votre énergie, <strong>votre rayonnement.</strong>
             </p>
 
             <p className={style.TextP4}>
-                Que vous cherchiez un{" "}
-                <span className={style.SpanBold}>
-                    {"portrait corporate"}
-                </span>{" "}
-                pour affirmer votre crédibilité, un{" "}
-                <span className={style.SpanBold}>
-                    {"portrait lifestyle"}
-                </span>{" "}
+                Que vous cherchiez un <strong>portrait corporate</strong>
+                pour affirmer votre crédibilité, un <strong>portrait lifestyle</strong>
                 qui capte l’ambiance d’un moment, ou encore un moment familial empreint
                 de complicité, chaque séance est conçue pour vous mettre en lumière dans toute
-                votre singularité. En tant que photographe professionnelle{" "}
-                <span className={style.SpanBold}>
-                    {"je peux travailler en studio ou en extérieur"}
-                </span>
-                , selon vos envies, dans une atmosphère calme et chaleureuse.
+                votre singularité. En tant que photographe 
+                professionnelle <strong>je peux travailler en studio ou en extérieur</strong>, selon vos envies, dans une 
+                atmosphère calme et chaleureuse.
             </p>
 
             <p className={style.TextP4}>
                 Et pour moi la réussite d’un shooting tient à ce que vous repartiez non seulement
-                après avoir passé un bon moment, mais surtout avec
-                <span className={style.SpanBold}>
-                    {" des photos qui vous plaisent, "}
-                </span>
-                que vous avez envie de partager sur vos réseaux, et que vous puissiez vous dire{" "}
-                <span className={style.SpanLine}>
-                    {`"ah oui je m’aime bien dessus ! "`}
-                </span>
-                Commencez à planifier dès maintenant{" "}
-                <span className={style.SpanLink}>
-                    <Link to={router[12].path}>
-                        {"votre séance"}
-                    </Link>
-                </span>
+                après avoir passé un bon moment, mais surtout avec <strong>des photos qui vous plaisent, </strong> que 
+                vous avez envie de partager sur vos réseaux, et que vous puissiez vous 
+                dire <strong>ah oui je m’aime bien dessus !</strong> Commencez à planifier dès maintenant{" "}
+                <Link to={router[12].path} className={style.Link}>
+                    {"votre séance"}
+                </Link>
                 {" !"}
             </p>
 
@@ -198,27 +160,12 @@ function Home_Root() {
                 Des vidéos claires et professionnelles pensées pour l’entreprise comme pour le mariage
             </h2>
 
-            <section className={style.ContainerVideo}>
-                <h3 className={style.VideoTitle}>
-                    Mariage de Laure et Charles - Immersion dans leur journée spéciale
-                </h3>
-
-                <video
-                    className={style.VideoPlayer}
-                    src="/video/video-mariage-laure-et-charles/video-mariage-laure-et-charles.mp4"
-                    controls
-                    preload="none"
-                    controlsList="nodownload"
-                    onPlay={(e) => pauseOtherVideos_Utils(e.currentTarget)}
-                    onContextMenu={(e) => e.preventDefault()}
-                    poster="/video/video-mariage-laure-et-charles/video-mariage-laure-et-charles.jpg"
-                    playsInline
-                />
-
-                <p className={style.VideoDescription}>
-                    Une courte vidéo présentant l’ambiance du mariage de Laure et Charles.
-                </p>
-            </section>
+            <Video_Element
+                title="Mariage de Laure et Charles - Immersion dans leur journée spéciale"
+                src="/video/video-mariage-laure-et-charles/video-mariage-laure-et-charles.mp4"
+                poster="/video/video-mariage-laure-et-charles/video-mariage-laure-et-charles.jpg"
+                description="Une courte vidéo présentant l’ambiance du mariage de Laure et Charles."
+            />
 
             {/* ---------- ---------- ---------- ---------- ---------- */}
 
