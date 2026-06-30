@@ -1,6 +1,9 @@
 /* Import des modules CSS */
 import style from "../../StyleRootComponent.module.css";
 
+/* Import des composants d'Elements */
+import { Video_Element } from "../../elements/video/Video.element";
+
 /* Import des composants React */
 import { Link } from "react-router-dom";
 
@@ -8,7 +11,7 @@ import { Link } from "react-router-dom";
 import router from "../../../router/router";
 
 /* Import des Utils */
-import { pauseOtherVideos_Utils } from "../../../utils/pauseOtherVideos.utils";
+// import { pauseOtherVideos_Utils } from "../../../utils/pauseOtherVideos.utils";
 
 function QuiSuisJe_Root() {
     return (
@@ -20,7 +23,14 @@ function QuiSuisJe_Root() {
             </header>
 
             <div className={style.ContainerFloat}>
-                <section className={style.FloatLeftImg_Po}>
+                <Video_Element
+                    title="Se révéler devant l'objectif"
+                    src="/video/auto-portrait/auto-portrait.mp4"
+                    poster="/video/auto-portrait/auto-portrait.jpg"
+                    description="Se révéler devant l'objectif : un voyage intime à travers le portrait."
+                />
+
+                {/* <section className={style.FloatLeftImg_Po}>
                     <h3 className={style.VideoTitle}>Se révéler devant l'objectif</h3>
                     <video
                         className={style.VideoPlayer}
@@ -29,14 +39,14 @@ function QuiSuisJe_Root() {
                         preload="none"
                         controlsList="nodownload"
                         onPlay={(e) => pauseOtherVideos_Utils(e.currentTarget)}
-                        onContextMenu={(e) => e.preventDefault()} /* Désactive le clic droit */
+                        onContextMenu={(e) => e.preventDefault()}
                         poster="/video/auto-portrait/auto-portrait.jpg"
                         playsInline
                     />
                     <p className={style.VideoDescription}>
                         <strong>Se révéler devant l'objectif : un voyage intime à travers le portrait.</strong>
                     </p>
-                </section>
+                </section> */}
 
                 <h2 className={style.TitleH2}>
                     De mes débuts argentiques à la création d’images professionnelles
