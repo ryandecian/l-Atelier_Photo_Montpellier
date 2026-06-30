@@ -21,9 +21,6 @@ import { Link } from "react-router-dom";
 /* Import des composants Router */
 import router from "../../../router/router";
 
-/* Import des Utils */
-// import { pauseOtherVideos_Utils } from "../../../utils/pauseOtherVideos.utils";
-
 function Home_Root() {
     return (
         <section className={`Home_Root ${style.ContainerRootRacine}`}>

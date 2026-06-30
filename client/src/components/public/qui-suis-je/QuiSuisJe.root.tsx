@@ -10,9 +10,6 @@ import { Link } from "react-router-dom";
 /* Import des composants Router */
 import router from "../../../router/router";
 
-/* Import des Utils */
-// import { pauseOtherVideos_Utils } from "../../../utils/pauseOtherVideos.utils";
-
 function QuiSuisJe_Root() {
     return (
         <section className={style.ContainerRootRacine}>
@@ -29,24 +26,6 @@ function QuiSuisJe_Root() {
                     poster="/video/auto-portrait/auto-portrait.jpg"
                     description="Se révéler devant l'objectif : un voyage intime à travers le portrait."
                 />
-
-                {/* <section className={style.FloatLeftImg_Po}>
-                    <h3 className={style.VideoTitle}>Se révéler devant l'objectif</h3>
-                    <video
-                        className={style.VideoPlayer}
-                        src="/video/auto-portrait/auto-portrait.mp4"
-                        controls
-                        preload="none"
-                        controlsList="nodownload"
-                        onPlay={(e) => pauseOtherVideos_Utils(e.currentTarget)}
-                        onContextMenu={(e) => e.preventDefault()}
-                        poster="/video/auto-portrait/auto-portrait.jpg"
-                        playsInline
-                    />
-                    <p className={style.VideoDescription}>
-                        <strong>Se révéler devant l'objectif : un voyage intime à travers le portrait.</strong>
-                    </p>
-                </section> */}
 
                 <h2 className={style.TitleH2}>
                     De mes débuts argentiques à la création d’images professionnelles
