@@ -2,33 +2,33 @@
 import style from "../../../stylePage.module.css";
 
 /* Import des Components */
-import Blog_20250601_Root from "../../../../components/public/blog-root/list-blog-root/blog_20250601/Blog_20250601.root";
 import Nav_root_Layout from "../../../../components/layout/nav_Layout/Nav.root.layout";
-import Footer_Layout from "../../../../components/layout/footer_Layout/Footer.layout";
+import Blog_20250616_Root from "../../../../components/public/blog-root/list-blog-root/blog_20250616/Blog_20250616.root";
+import Footer_root_layout from "../../../../components/layout/footer_Layout/Footer.root.layout";
 
 /* Import des composants SEO */
-import { HelmetBlog20250601_helmet_SEO } from "../../../../seoS/blog_SEO/liste-article-blog_SEO/blog-20250601_SEO/HelmetBlog20250601.helmet.seo";
+import { HelmetBlog20250616_helmet_SEO } from "../../../../seoS/blog_SEO/liste-article-blog_SEO/blog-20250616_SEO/HelmetBlog20250616.helmet.seo";
 
 /* Import des Hooks */
 import { useScrollToHash_Hook } from "../../../../hook/useScrollToHash.hook";
 
-function Blog20250601_Page() {
+function Blog_20250616_Page() {
     useScrollToHash_Hook() /* Utilisation du hook pour gérer le scroll vers les sections avec des IDs */
 
      return (
-        <section className={`Blog20250601_Page ${style.Page}`}>
-            <HelmetBlog20250601_helmet_SEO />
+        <section className={`Blog_20250616_Page ${style.Page}`}>
+            <HelmetBlog20250616_helmet_SEO />
             <header id="top" className={style.Header}>
                  <Nav_root_Layout />
             </header>
             <main className={style.Main}>
-                <Blog_20250601_Root />
+                <Blog_20250616_Root />
             </main>
             <footer className={style.Footer}>
-                <Footer_Layout />
+                <Footer_root_layout />
             </footer>
         </section>
     )
 }
 
-export default Blog20250601_Page;
+export default Blog_20250616_Page;

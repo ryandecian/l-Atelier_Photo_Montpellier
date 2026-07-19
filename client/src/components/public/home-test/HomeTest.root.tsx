@@ -90,20 +90,16 @@ function Home_Root_Test() {
                     Comme une séance de massage, un shooting photo commence souvent avec un peu d’appréhension.
                     Mon rôle ? Vous guider avec bienveillance pour que ce moment devienne fluide, naturel et agréable.
                     Pour en savoir encore un peu plus sur moi rendez-vous sur ma page{" "}
-                    <span className={style.SpanLink}>
-                        <Link to={`${router[7].path}#top`}>
-                            {`QUI SUIS-JE`}
-                        </Link>
-                    </span>
+                    <Link to={`${router[7].path}#top`} className={style.Link}>
+                        {`QUI SUIS-JE`}
+                    </Link>
                 </p>
 
                 <p className={style.TextP4}>
                     {`📸 Laissez-vous guider, repartez avec des images que vous aimez. `}
-                    <span className={style.SpanLink}>
-                        <Link to={`${router[8].path}#top`}>
-                            {`Découvrez mon Portfolio !`}
-                        </Link>
-                    </span>
+                    <Link to={`${router[8].path}#top`} className={style.Link}>
+                        {`Découvrez mon Portfolio !`}
+                    </Link>
                 </p>
             </div>
         </section>
