@@ -42,14 +42,14 @@ function Home_Root() {
             </p>
 
             <Container4Images_Element
-                img1={imagesHome_img_Data[4].src}
-                metaNameImg1={imagesHome_img_Data[4].alt}
-                img2={imagesHome_img_Data[5].src}
-                metaNameImg2={imagesHome_img_Data[5].alt}
-                img3={imagesHome_img_Data[6].src}
-                metaNameImg3={imagesHome_img_Data[6].alt}
-                img4={imagesHome_img_Data[7].src}
-                metaNameImg4={imagesHome_img_Data[7].alt}
+                img1={imagesHome_img_Data[0].src}
+                metaNameImg1={imagesHome_img_Data[0].alt}
+                img2={imagesHome_img_Data[1].src}
+                metaNameImg2={imagesHome_img_Data[1].alt}
+                img3={imagesHome_img_Data[2].src}
+                metaNameImg3={imagesHome_img_Data[2].alt}
+                img4={imagesHome_img_Data[3].src}
+                metaNameImg4={imagesHome_img_Data[3].alt}
             />
 
             {/* ---------- ---------- ---------- ---------- ---------- */}

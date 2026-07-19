@@ -5,23 +5,23 @@ const imagesHome_img_Data: ImagesBlog_Type[] = [
     /* Tableau 1 d'images : 4 images */
     /* {imagesHome_img_Data[0].src} */
     {
-        src: "/images/image-home/lapm-photo-professionnelle-portrait-corporate-flash-l-atelier-photo-montpellier.jpg",
-        alt: "LAPM - photo professionnelle - portrait corporate - flash - L'Atelier Photo Montpellier",
+        src: "/images/image-home/lapm-photographe-mariage-montpellier-couple-maries-portrait-parc-bouquet-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe mariage Montpellier - couple mariés - portrait dans le parc - bouquet de fleurs - L'Atelier Photo Montpellier",
     },
     /* {imagesHome_img_Data[1].src} */
     {
-        src: "/images/image-home/lapm-photo-professionnelle-portrait-duo-pere-fils-lifestyle-l-atelier-photo-montpellier.jpg",
-        alt: "LAPM - photo professionnelle - portrait duo - père et fils - lifestyle - L'Atelier Photo Montpellier",
+        src: "/images/image-home/lapm-photographe-mariage-professionnel-herault-sortie-mairie-maries-bulles-celebration-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe mariage professionnel - Hérault - sortie de la mairie - mariés - bulles - célébration - L'Atelier Photo Montpellier",
     },
     /* {imagesHome_img_Data[2].src} */
     {
-        src: "/images/image-home/lapm-photographe-professionnelle-portrait-studio-couple-couleur-l-atelier-photo-montpellier.jpg",
-        alt: "LAPM - photographe professionnelle - portrait studio - couple - couleur - L'Atelier Photo Montpellier",
+        src: "/images/image-home/lapm-photographe-mariage-montpellier-occitanie-couple-maries-naturel-bord-etang-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe mariage Montpellier - Occitanie - couple mariés - naturel - bord de l'étang - L'Atelier Photo Montpellier",
     },
     /* {imagesHome_img_Data[3].src} */
     {
-        src: "/images/image-home/lapm-photo-professionnelle-linkdin-corporate-l-atelier-photo-montpellier.jpg",
-        alt: "LAPM - photo professionnelle - linkdin corporate - L'Atelier Photo Montpellier",
+        src: "/images/image-home/lapm-photographe-de-mariage-montpellier-couple-amoureux-engagement-portrait-naturel-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe de mariage Montpellier - couple amoureux - engagement - portrait naturel - L'Atelier Photo Montpellier",
     },
     
 
