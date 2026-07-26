@@ -12,6 +12,7 @@
     "pull-force": "bash ./npm-run-pull-force.sh"
   },
   "dependencies": {
+    "@xyflow/react": "^12.11.2",
     "helmet": "^8.0.0",
     "jwt-decode": "^4.0.0",
     "lucide-react": "^0.511.0",

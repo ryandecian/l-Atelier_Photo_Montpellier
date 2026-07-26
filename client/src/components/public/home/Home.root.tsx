@@ -1,8 +1,9 @@
 /* Import des modules CSS */
-import style from "../../StyleRootComponent.module.css";
+import style from "../../style.root.module.css";
 
 /* Import des Components */
 import { Home_A_Component } from "./components/Home_A.component";
+import { CarteMentale_Component } from "./components/CarteMentale.component";
 
 /* Import des Components de Data */
 import { avisClientHome_Data } from "./avisClientHome.data";
@@ -51,6 +52,8 @@ function Home_Root() {
                 img4={imagesHome_img_Data[3].src}
                 metaNameImg4={imagesHome_img_Data[3].alt}
             />
+
+            <CarteMentale_Component />
 
             {/* ---------- ---------- ---------- ---------- ---------- */}
 
