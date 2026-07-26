@@ -42,6 +42,12 @@ function Home_Root() {
                 danser jusqu'au bout de la nuit. Votre seule crainte ? Vous retrouver avec des photos figées qui ne vous ressemblent pas.
             </p>
 
+            <p className={`${style.TextP4} ${style.TargetText1}`}>
+                C’est là que j’interviens. À l'Atelier Photo Montpellier, je ne vous demande pas de poser (enfin quelque fois si…). <br />
+                Je capture le vrai, ces <strong>instants éphémères</strong> qui se déroulent tout au long de la journée : 
+                les éclats de rire volés, les regards complices, et cette folle énergie <strong>qui fera de votre mariage un moment unique.</strong>
+            </p>
+
             <Container4Images_Element
                 img1={imagesHome_img_Data[0].src}
                 metaNameImg1={imagesHome_img_Data[0].alt}
@@ -53,8 +59,80 @@ function Home_Root() {
                 metaNameImg4={imagesHome_img_Data[3].alt}
             />
 
-            <CarteMentale_Component />
+            {/* <CarteMentale_Component /> */}
 
+            {/* ---------- ---------- ---------- ---------- ---------- */}
+
+            <h2 className={style.TitleH2}>
+                Préparatifs : Le moteur chauffe
+            </h2>
+
+            <p className={`${style.TextP4} ${style.TargetText1}`}>
+                Les préparatifs sont le véritable début  de votre journée de mariage, ce n'est pas juste l'avant-match, 
+                c'est le moment crucial où la journée prend racine. Vous n'êtes pas encore mariés, mais l'effervescence, 
+                elle, est bien là. <strong>Ce sont ces heures que vous voudrez revivre </strong> une fois le tumulte 
+                passé, parce que c'est là que l'appréhension et l'excitation sont à leur comble.
+            </p>
+
+            <p className={`${style.TextP4} ${style.TargetText1}`}>
+                Autour de vous, ça bouillonne. Les témoins qui virent le stress en proposant à boire, à manger, la famille 
+                aux petits soins, et cette énergie électrique qui monte crescendo. Je suis là pour capturer d’infimes gestes : 
+                le pinceau qui trace le maquillage de la mariée, un endroit qui met en lumière les alliances, le nœud 
+                papillon qui se boucle, la veste qu'on ajuste ou ce coup d'œil dans le miroir quand vous réalisez que, 
+                dans quelques minutes, vous serez attendu(e).
+            </p>
+
+            <p className={`${style.TextP4} ${style.TargetText1}`}>
+                <strong>Je ne fige rien. Je documente le mouvement, les détails, le chaos organisé.</strong>
+            </p>
+
+            <Container4Images_Element
+                img1={imagesHome_img_Data[4].src}
+                metaNameImg1={imagesHome_img_Data[4].alt}
+                img2={imagesHome_img_Data[5].src}
+                metaNameImg2={imagesHome_img_Data[5].alt}
+                img3={imagesHome_img_Data[6].src}
+                metaNameImg3={imagesHome_img_Data[6].alt}
+                img4={imagesHome_img_Data[7].src}
+                metaNameImg4={imagesHome_img_Data[7].alt}
+            />
+            
+            {/* ---------- ---------- ---------- ---------- ---------- */}
+
+            <h2 className={style.TitleH2}>
+                Photos de couple : Une parenthèse rien qu'à vous
+            </h2>
+
+            <p className={`${style.TextP4} ${style.TargetText1}`}>
+                Je ne vous demande pas de poser. Je vous invite simplement à marcher, à vous rapprocher, à échanger 
+                quelques mots, à profiter de ce premier instant en tant que mari et femme. Les plus belles images naissent 
+                de ces gestes spontanés : une main qui cherche l'autre, un éclat de rire, un regard qui en dit plus que 
+                de longs discours.
+            </p>
+
+            <p className={`${style.TextP4} ${style.TargetText1}`}>
+                Cette séance dure généralement entre vingt et quarante-cinq minutes, sans jamais vous couper de vos 
+                invités plus longtemps que nécessaire. C'est une respiration au cœur de votre journée, un moment précieux 
+                qui vous appartient vraiment... et qui laissera souvent les images les plus fortes de votre mariage. 
+                Autour de Montpellier, ou sur le site en lui-même, je sélectionne avec vous les lieux qui vont matcher 
+                afin de réaliser des photos de couple naturelles et lumineuses, spontanées comme posées pour quelques une.
+            </p>
+
+            <p className={`${style.TextP4} ${style.TargetText1}`}>
+                <strong>Je ne photographie pas deux personnes. Je raconte le lien qui les unit.</strong>
+            </p>
+            
+            <Container4Images_Element
+                img1={imagesHome_img_Data[8].src}
+                metaNameImg1={imagesHome_img_Data[8].alt}
+                img2={imagesHome_img_Data[9].src}
+                metaNameImg2={imagesHome_img_Data[9].alt}
+                img3={imagesHome_img_Data[10].src}
+                metaNameImg3={imagesHome_img_Data[10].alt}
+                img4={imagesHome_img_Data[11].src}
+                metaNameImg4={imagesHome_img_Data[11].alt}
+            />
+            
             {/* ---------- ---------- ---------- ---------- ---------- */}
 
             <h2 className={style.TitleH2}>

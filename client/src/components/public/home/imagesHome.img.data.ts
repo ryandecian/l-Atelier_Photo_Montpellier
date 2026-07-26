@@ -29,23 +29,47 @@ const imagesHome_img_Data: ImagesBlog_Type[] = [
     /* Tableau 2 d'images : 4 images */
     /* {imagesHome_img_Data[4].src} */
     {
-        src: "/images/image-home/lapm-photographe-professionnel-portrait-mariage-vers-la-mairie-l-atelier-photo-montpellier.jpg",
-        alt: "LAPM - photographe professionnel - portrait mariage - vers la mairie - L'Atelier Photo Montpellier",
+        src: "/images/image-home/lapm-photographie-mariage-professionnel-montpellier-herault-preparatifs-bijoux-mariée-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographie mariage professionnel Montpellier - Hérault - préparatifs - bijoux de la mariée - L'Atelier Photo Montpellier",
     },
     /* {imagesHome_img_Data[5].src} */
     {
-        src: "/images/image-home/lapm-photographie-professionnelle-portrait-mariage-tour-magne-l-atelier-photo-montpellier.jpg",
-        alt: "LAPM - photographie professionnelle - portrait mariage - Tour Magne - L'Atelier Photo Montpellier",
+        src: "/images/image-home/lapm-photographie-mariage-professionnel-montpellier-preparatifs-marié-naturel-spontanné-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographie mariage professionnel Montpellier - préparatifs - marié - naturel - spontanné - L'Atelier Photo Montpellier",
     },
     /* {imagesHome_img_Data[6].src} */
     {
-        src: "/images/image-home/lapm-photographe-professionnel-portrait-mariage-sun-glass-l-atelier-photo-montpellier.jpg",
-        alt: "LAPM - photographe professionnel - portrait mariage - lunettes de soleil - L'Atelier Photo Montpellier",
+        src: "/images/image-home/lapm-photographe-mariage-montpellier-preparatifs-noeud-papillon-marié-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe mariage Montpellier - préparatifs - nœud papillon marié - L'Atelier Photo Montpellier",
     },
     /* {imagesHome_img_Data[7].src} */
     {
-        src: "/images/image-home/lapm-photographe-professionnel-portrait-mariage-sortie-mairie-l-atelier-photo-montpellier.jpg",
-        alt: "LAPM - photographe professionnel - portrait mariage - sortie de la mairie - L'Atelier Photo Montpellier",
+        src: "/images/image-home/lapm-photographe-mariage-professionnel-montpellier-preparatifs-maquillage-mariée-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe mariage professionnel Montpellier - préparatifs - maquillage de la mariée - L'Atelier Photo Montpellier",
+    },
+    
+
+
+    /* Tableau 3 d'images : 4 images */
+    /* {imagesHome_img_Data[8].src} */
+    {
+        src: "/images/image-home/lapm-photographe-mariage-professionnel-montpellier-couple-romantique-gramont-herault-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe mariage professionnel Montpellier - couple romantique - Gramont - Hérault - L'Atelier Photo Montpellier",
+    },
+    /* {imagesHome_img_Data[9].src} */
+    {
+        src: "/images/image-home/test2.jpg",
+        alt: "LAPM - test2 - L'Atelier Photo Montpellier",
+    },
+    /* {imagesHome_img_Data[10].src} */
+    {
+        src: "/images/image-home/test1.jpg",
+        alt: "LAPM - test1 - L'Atelier Photo Montpellier",
+    },
+    /* {imagesHome_img_Data[11].src} */
+    {
+        src: "/images/image-home/lapm-photographe-mariage-professionnel-montpellier-couple-nuit-americaine-bouquet-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe mariage professionnel Montpellier - couple - nuit américaine - bouquet - L'Atelier Photo Montpellier",
     },
 ];
 
