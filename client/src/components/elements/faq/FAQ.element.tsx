@@ -21,6 +21,24 @@ function FAQ_Element({ items }: FAQProps) {
                     <p className={css.faqReponse}>
                         {item.reponse}
                     </p>
+
+                    {item.reponseBonus1 && (
+                        <p className={css.faqReponse}>
+                            {item.reponseBonus1}
+                        </p>
+                    )}
+
+                    {item.reponseBonus2 && (
+                        <p className={css.faqReponse}>
+                            {item.reponseBonus2}
+                        </p>
+                    )}
+
+                    {item.reponseBonus3 && (
+                        <p className={css.faqReponse}>
+                            {item.reponseBonus3}
+                        </p>
+                    )}
                 </details>
             ))}
         </section>

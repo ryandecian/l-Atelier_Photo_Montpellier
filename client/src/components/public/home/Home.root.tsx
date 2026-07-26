@@ -3,16 +3,18 @@ import style from "../../style.root.module.css";
 
 /* Import des Components */
 import { Home_A_Component } from "./components/Home_A.component";
-import { CarteMentale_Component } from "./components/CarteMentale.component";
+// import { CarteMentale_Component } from "./components/CarteMentale.component";
 
 /* Import des Components de Data */
 import { avisClientHome_Data } from "./avisClientHome.data";
+import { faqHome_Data } from "./faq.data";
 import { imagesHome_img_Data } from "./imagesHome.img.data";
 
 /* Import des composants d'Elements */
 import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
 import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 import { PremiumCardImgModal_Element } from "../../elements/premium-card-img-modal/PremiumCardImgModal.element";
+import { FAQ_Element } from "../../elements/faq/FAQ.element";
 
 /* Import des composants React */
 import { Link } from "react-router-dom";
@@ -132,6 +134,121 @@ function Home_Root() {
                 img4={imagesHome_img_Data[11].src}
                 metaNameImg4={imagesHome_img_Data[11].alt}
             />
+            
+            {/* ---------- ---------- ---------- ---------- ---------- */}
+
+            <h2 className={style.TitleH2}>
+                Cérémonies : Le cœur de votre engagement
+            </h2>
+
+            <p className={`${style.TextP4} ${style.TargetText1}`}>
+                Chaque mariage est unique. Certains couples choisissent une cérémonie à la mairie, d'autres une cérémonie 
+                laïque ou religieuse, et beaucoup vivent plusieurs temps forts au cours de la même journée. Quel que soit 
+                votre choix, chacun de ces instants mérite d'être raconté avec la même attention.
+            </p>
+
+            <p className={`${style.TextP4} ${style.TargetText1}`}>
+                À la mairie, tout s'accélère. L'entrée dans la salle, les regards échangés avec vos proches, les mains 
+                qui se cherchent, les sourires parfois mêlés de quelques larmes, puis ce fameux « oui » qui marque 
+                officiellement le début de votre nouvelle histoire. Des instants simples, authentiques et chargés d'émotion.
+            </p>
+
+            <p className={`${style.TextP4} ${style.TargetText1}`}>
+                Lors d'une cérémonie d'engagement, chaque détail raconte votre personnalité. Les discours de vos proches, 
+                les rituels symboliques, les promesses que vous vous adressez, les applaudissements, les éclats de rire 
+                ou les silences remplis d'émotion créent une atmosphère unique que j'aime capturer avec discrétion.
+            </p>
+
+            <p className={`${style.TextP4} ${style.TargetText1}`}>
+                <strong>Je ne photographie pas un "oui". Je raconte tout ce qui l'entoure</strong>
+            </p>
+                        
+            <Container4Images_Element
+                img1={imagesHome_img_Data[12].src}
+                metaNameImg1={imagesHome_img_Data[12].alt}
+                img2={imagesHome_img_Data[13].src}
+                metaNameImg2={imagesHome_img_Data[13].alt}
+                img3={imagesHome_img_Data[14].src}
+                metaNameImg3={imagesHome_img_Data[14].alt}
+                img4={imagesHome_img_Data[15].src}
+                metaNameImg4={imagesHome_img_Data[15].alt}
+            />
+            
+            {/* ---------- ---------- ---------- ---------- ---------- */}
+
+            <h2 className={style.TitleH2}>
+                Réception - Soirée: L'histoire continue
+            </h2>
+            
+            <p className={`${style.TextP4} ${style.TargetText1}`}>
+                Pendant que vous partagez ces instants avec vos proches, je continue à raconter votre histoire. Je 
+                photographie les échanges spontanés, les accolades, les regards complices, les discours qui font rire ou 
+                qui émeuvent, les verres qui s'entrechoquent et toutes ces petites scènes qui, mises bout à bout, feront 
+                revivre l'ambiance de votre réception.
+            </p>
+            
+            <p className={`${style.TextP4} ${style.TargetText1}`}>
+                J'accorde aussi une attention particulière à tout ce que vous avez préparé avec soin. La décoration de 
+                votre salle, les centres de table, le plan de table, le bouquet, les compositions florales, les alliances, 
+                la papeterie, la pièce montée ou encore les lumières qui transforment l'atmosphère au fil de la soirée. 
+                Tous ces détails racontent votre personnalité et méritent d'avoir leur place dans votre reportage.
+            </p>
+            
+            <p className={`${style.TextP4} ${style.TargetText1}`}>
+                <strong>Je ne photographie pas seulement ce qui se voit. Je capture aussi tout ce qui se ressent.</strong>
+            </p>
+                                    
+            <Container4Images_Element
+                img1={imagesHome_img_Data[16].src}
+                metaNameImg1={imagesHome_img_Data[16].alt}
+                img2={imagesHome_img_Data[17].src}
+                metaNameImg2={imagesHome_img_Data[17].alt}
+                img3={imagesHome_img_Data[18].src}
+                metaNameImg3={imagesHome_img_Data[18].alt}
+                img4={imagesHome_img_Data[19].src}
+                metaNameImg4={imagesHome_img_Data[19].alt}
+            />
+            
+            {/* ---------- ---------- ---------- ---------- ---------- */}
+
+            <h2 className={style.TitleH2}>
+                Des photos de mariage qui racontent aussi tout ce que vous n’avez pas vu
+            </h2>
+                    
+            <p className={`${style.TextP4} ${style.TargetText1}`}>
+                Bien sûr, vous aurez de magnifiques photos de vous, celles que vous aurez envie d'encadrer, de partager 
+                et de regarder encore dans vingt ans.
+            </p>
+                    
+            <p className={`${style.TextP4} ${style.TargetText1}`}>
+                Mais votre mariage ne se résume pas à ces quelques images.
+            </p>
+                    
+            <p className={`${style.TextP4} ${style.TargetText1}`}>
+                Le jour de votre mariage, vous allez manquer une partie de ce qui se passe. Pendant que vous vivez 
+                pleinement chaque instant, des dizaines d'autres s'écrivent autour de vous. Mon travail, c'est de vous 
+                les faire découvrir.
+            </p>
+                    
+            <p className={`${style.TextP4} ${style.TargetText1}`}>
+                Je ne vous fais pas poser toute la journée. Je photographie autant les émotions que tout ce qui les fait 
+                naître : les gestes spontanés, les regards, les détails que vous avez imaginés pendant des mois et toute 
+                cette vie qui se déroule autour de vous sans que vous puissiez la voir.
+            </p>
+                    
+            <p className={`${style.TextP4} ${style.TargetText1}`}>
+                Au final, vous ne recevez pas seulement une galerie de belles photos. Vous retrouvez l'histoire complète 
+                de votre mariage, avec ses instants forts, ses émotions et tous ces petits fragments qui, une fois réunis, 
+                feront revivre cette journée exactement comme vous l'avez ressentie.
+            </p>
+
+            {/* ---------- ---------- ---------- ---------- ---------- */}
+
+            <h2 className={style.TitleH2}>
+                FAQ : Questions fréquentes sur la photographie de mariage à Montpellier ?
+            </h2>
+
+            <FAQ_Element items={faqHome_Data} />
             
             {/* ---------- ---------- ---------- ---------- ---------- */}
 

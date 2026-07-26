@@ -71,6 +71,54 @@ const imagesHome_img_Data: ImagesBlog_Type[] = [
         src: "/images/image-home/lapm-photographe-mariage-professionnel-montpellier-couple-nuit-americaine-bouquet-l-atelier-photo-montpellier.jpg",
         alt: "LAPM - photographe mariage professionnel Montpellier - couple - nuit américaine - bouquet - L'Atelier Photo Montpellier",
     },
+    
+
+
+    /* Tableau 4 d'images : 4 images */
+    /* {imagesHome_img_Data[12].src} */
+    {
+        src: "/images/image-home/lapm-photographie-professionnel-mariage-montpellier-mairie-petales-joie-herault-elegant-fleurs-rire-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe mariage professionnel Montpellier - mairie - pétales - joie - Hérault - élégant - fleurs - rire - L'Atelier Photo Montpellier",
+    },
+    /* {imagesHome_img_Data[13].src} */
+    {
+        src: "/images/image-home/lapm-photographie-professionnel-mariage-montpellier-tarifs-alliance--herault-elegant-petit-comité-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe mariage professionnel Montpellier - tarifs - alliance - Hérault - élégant - petit comité - L'Atelier Photo Montpellier",
+    },
+    /* {imagesHome_img_Data[14].src} */
+    {
+        src: "/images/image-home/lapm-photographe-professionnel-mariage-montpellier-mairie-bulles-joie-herault-emotion-rire-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe mariage professionnel Montpellier - mairie - bulles - joie - Hérault - émotion - rire - L'Atelier Photo Montpellier",
+    },
+    /* {imagesHome_img_Data[15].src} */
+    {
+        src: "/images/image-home/lapm-photographe-professionnel-mariage-montpellier-mairie-alliance-emotion-rire-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe mariage professionnel Montpellier - mairie - alliance - émotion - rire - L'Atelier Photo Montpellier",
+    },
+    
+
+
+    /* Tableau 5 d'images : 4 images */
+    /* {imagesHome_img_Data[16].src} */
+    {
+        src: "/images/image-home/.jpg",
+        alt: "LAPM - - L'Atelier Photo Montpellier",
+    },
+    /* {imagesHome_img_Data[17].src} */
+    {
+        src: "/images/image-home/.jpg",
+        alt: "LAPM - - L'Atelier Photo Montpellier",
+    },
+    /* {imagesHome_img_Data[18].src} */
+    {
+        src: "/images/image-home/.jpg",
+        alt: "LAPM - - L'Atelier Photo Montpellier",
+    },
+    /* {imagesHome_img_Data[19].src} */
+    {
+        src: "/images/image-home/.jpg",
+        alt: "LAPM - - L'Atelier Photo Montpellier",
+    },
 ];
 
 export { imagesHome_img_Data };
