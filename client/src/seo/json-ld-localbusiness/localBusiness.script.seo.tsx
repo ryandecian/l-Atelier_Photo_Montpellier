@@ -1,7 +1,7 @@
 /* Import des Components de Data */
 import { dataMasterSEO_data_SEO as dataMasterSEO } from "../data/dataMasterSEO.data.seo";
 
-function generateLocalBusiness_script_SEO(): string {
+function LocalBusiness_script_SEO(): JSX.Element {
     const json_ld = JSON.stringify({
         "@context": dataMasterSEO["@context"], /* (Obligatoire) URL de Google schéma */
         "@type": "LocalBusiness", /* (Obligatoire) Type de JSON-LD */
@@ -22,18 +22,21 @@ function generateLocalBusiness_script_SEO(): string {
     });
 
     return (
-        json_ld
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: json_ld }}
+        />
     );
 }
 
 /**
  * ### Documentation : Script JSON-LD pour le LocalBusiness de Google. 
  * - Doit être injecté sur toutes les pages du site.
- * - Est stocké dans une **const** afin de ne pas être recalculé à chaque appel.
+ * - Est défini comme une fonction afin de pouvoir être réutilisé à chaque appel.
  * 
  * ---
  * @pure Indique que la fonction est pure : elle ne produit aucun effet secondaire et retourne un résultat prédictible basé uniquement sur les arguments fournis.
- * @returns {string} Retourne une string grâce à la fonction JSON.stringify, necessaire pour l'injection dans une page.
+ * @returns {JSX.Element} Retourne un élément JSX contenant le script JSON-LD.
  */
 
-export const localBusiness_script_SEO = generateLocalBusiness_script_SEO();
+export { LocalBusiness_script_SEO };
