@@ -58,13 +58,13 @@ const imagesHome_img_Data: ImagesBlog_Type[] = [
     },
     /* {imagesHome_img_Data[9].src} */
     {
-        src: "/images/image-home/test2.jpg",
-        alt: "LAPM - test2 - L'Atelier Photo Montpellier",
+        src: "/images/image-home/lapm-photographe-mariage-professionnel-montpellier-villeneuve-etang-sable-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe mariage professionnel Montpellier - Villeneuve - étang - sable - L'Atelier Photo Montpellier",
     },
     /* {imagesHome_img_Data[10].src} */
     {
-        src: "/images/image-home/test1.jpg",
-        alt: "LAPM - test1 - L'Atelier Photo Montpellier",
+        src: "/images/image-home/lapm-photographe-mariage-professionnel-montpellier-nimes-couple-naturel-parc-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe mariage professionnel Montpellier - Nîmes - couple naturel - parc - L'Atelier Photo Montpellier",
     },
     /* {imagesHome_img_Data[11].src} */
     {

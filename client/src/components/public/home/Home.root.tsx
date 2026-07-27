@@ -198,7 +198,7 @@ function Home_Root() {
                 <strong>Je ne photographie pas seulement ce qui se voit. Je capture aussi tout ce qui se ressent.</strong>
             </p>
                                     
-            <Container4Images_Element
+            {/* <Container4Images_Element
                 img1={imagesHome_img_Data[16].src}
                 metaNameImg1={imagesHome_img_Data[16].alt}
                 img2={imagesHome_img_Data[17].src}
@@ -207,7 +207,7 @@ function Home_Root() {
                 metaNameImg3={imagesHome_img_Data[18].alt}
                 img4={imagesHome_img_Data[19].src}
                 metaNameImg4={imagesHome_img_Data[19].alt}
-            />
+            /> */}
             
             {/* ---------- ---------- ---------- ---------- ---------- */}
 
