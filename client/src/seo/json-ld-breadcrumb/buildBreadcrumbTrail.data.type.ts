@@ -6,7 +6,7 @@
  * ⚠️ **NOTE IMPORTANTE** : Ce type sera également utilisé dans les fichiers de données spécifiques au SEO de chaque page, afin de garantir la cohérence des données entre les différents scripts JSON-LD.
  */
 
-type RegistreBreadcrumb_data_Type = {
+type BuildBreadcrumbTrail_data_Type = {
     /**
      * ⚠️ **NOTE ET CONTRAINTE** : Doit être une string simple, même règle que les URL, et correspondre à l'ID utilisée dans les autres scripts JSON-LD de la page (ex : BreadcrumbList).
      * - Ne pas passer le # au début de l'ID, le script s'en chargera automatiquement.
@@ -39,6 +39,15 @@ type RegistreBreadcrumb_data_Type = {
     "parent_id"?: string;
 
     /**
+    * ⚠️ **DESCRIPTION** : Représente la position de la page dans le fil d’Ariane.
+    * 
+    * ---
+    * ⚠️ **CONTRAINTE SEO** : Doit être un nombre entier positif.
+    * _Une valeur hors de ces limites pénalisera le score GEO/SEO._
+    */
+    "position": number;
+
+    /**
      * ⚠️ **NOTE ET CONTRAINTE** : Représente l'URL directe de la page. Ici on a uniquement besoin de l'URI de la page sans le nom de domaine.
      * - Doit être une URI valide.
      * - Doit être récupérer depuis le router.
@@ -48,4 +57,4 @@ type RegistreBreadcrumb_data_Type = {
     "uri_page": string;
 }[]
 
-export type { RegistreBreadcrumb_data_Type };
+export type { BuildBreadcrumbTrail_data_Type };
