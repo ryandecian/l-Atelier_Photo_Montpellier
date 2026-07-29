@@ -1,7 +1,9 @@
 /* Import des Components de Data */
-import { dataMasterSEO_data_SEO as dataMasterSEO } from "../data/dataMasterSEO.data.seo";
+import { dataMasterSEO_data_SEO } from "../data/dataMasterSEO.data.seo";
 
 function LocalBusiness_script_SEO(): JSX.Element {
+    const dataMasterSEO = dataMasterSEO_data_SEO();
+    
     const json_ld = JSON.stringify({
         "@context": dataMasterSEO["@context"], /* (Obligatoire) URL de Google schéma */
         "@type": "LocalBusiness", /* (Obligatoire) Type de JSON-LD */

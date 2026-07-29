@@ -19,13 +19,18 @@ import type { DataBreadcrumb_data_Type } from './dataBreadcrumb.data.type';
  * - name_page : Nom de la page (espace autorisé, 10 à 60 caractères max), (Généralement = au H1 HTML).
  * - uri_page : URI de la page. Attention, ne doit pas contenir le nom de domaine et ne commence pas par un slash (/) car le router contient les routes avec (/).
  */
-const dataRegistreBreadcrumb_data_SEO: DataBreadcrumb_data_Type = [
-    {
-        "id": "home",
-        "name_page": "Accueil - l'Atelier Photo Montpellier",
-        "uri_page": router[0].path,
-    },
-];
+
+function dataRegistreBreadcrumb_data_SEO() {
+    const data: DataBreadcrumb_data_Type = [
+        {
+            "id": "home",
+            "name_page": "Accueil - l'Atelier Photo Montpellier",
+            "uri_page": router[0].path,
+        },
+    ];
+    return data;
+}
+
 
 /**
  * ### Documentation : registreBreadcrumb_data_SEO
@@ -44,11 +49,12 @@ const dataRegistreBreadcrumb_data_SEO: DataBreadcrumb_data_Type = [
  * 
  */
 
-function generateBreadcrumbTrail_data_SEO(currentPageId: string): RegistreBreadcrumb_data_Type {
+function registreBreadcrumb_data_SEO(currentPageId: string): RegistreBreadcrumb_data_Type {
+    const data: DataBreadcrumb_data_Type = dataRegistreBreadcrumb_data_SEO();
     const trail: DataBreadcrumb_data_Type = [];
     
     /* 1. On trouve la page courante */
-    let current = dataRegistreBreadcrumb_data_SEO.find(
+    let current = data.find(
         (node) => node.id === currentPageId
     );
 
@@ -56,7 +62,7 @@ function generateBreadcrumbTrail_data_SEO(currentPageId: string): RegistreBreadc
     while (current) {
         trail.unshift(current);
         current = current.parent_id
-            ? dataRegistreBreadcrumb_data_SEO.find((node) => node.id === current?.parent_id)
+            ? data.find((node) => node.id === current?.parent_id)
             : undefined;
     }
 
@@ -77,4 +83,4 @@ function generateBreadcrumbTrail_data_SEO(currentPageId: string): RegistreBreadc
     };
 }
 
-export const registreBreadcrumb_data_SEO = generateBreadcrumbTrail_data_SEO;
+export { registreBreadcrumb_data_SEO };

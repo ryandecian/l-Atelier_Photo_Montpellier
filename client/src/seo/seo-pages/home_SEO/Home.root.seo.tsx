@@ -7,11 +7,12 @@ import { HomePage_script_SEO } from "../../script-json-ld/json-ld-homePage/homeP
 import { LocalBusiness_script_SEO } from "../../json-ld-localbusiness/localBusiness.script.seo";
 
 function Home_root_SEO() {
+    const dataSEO = home_data_SEO();
     return (
         <>
             <LocalBusiness_script_SEO />
-            <HomePage_script_SEO data={home_data_SEO.homePage_data_SEO} />
-            <Breadcrumb_script_SEO data={home_data_SEO.breadcrumb_data_SEO} />
+            <HomePage_script_SEO data={dataSEO.homePage_data_SEO} />
+            <Breadcrumb_script_SEO data={dataSEO.breadcrumb_data_SEO} />
         </>
     )
 }

@@ -7,7 +7,7 @@ import type { HomePage_script_Type } from "../../script-json-ld/json-ld-homePage
 
 
 /* Attention, chaque données à exploiter ne doit être déclarée qu'une seul fois ! */
-function generateHome_data_SEO() {
+function home_data_SEO() {
     const breadcrumb_data_SEO = registreBreadcrumb_data_SEO("home").dataBreadcrumb;
 
     const homePage_data_SEO: HomePage_script_Type = {
@@ -28,4 +28,4 @@ function generateHome_data_SEO() {
     )
 }
 
-export const home_data_SEO = generateHome_data_SEO();
+export { home_data_SEO };

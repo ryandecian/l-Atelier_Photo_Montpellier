@@ -1,5 +1,5 @@
 /* Import des Components de Data */
-import { dataMasterSEO_data_SEO as dataMasterSEO } from "../../data/dataMasterSEO.data.seo";
+import { dataMasterSEO_data_SEO } from "../../data/dataMasterSEO.data.seo";
 
 /* Import des Utils */
 import { generateURLSlug_Utils } from "../../utils/generateURLSlug.utils";
@@ -32,6 +32,8 @@ type HomePage_script_SEO_Props = {
  */
 
 function HomePage_script_SEO({ data }: HomePage_script_SEO_Props) : JSX.Element {
+    const dataMasterSEO = dataMasterSEO_data_SEO();
+
     const JSON_LD = JSON.stringify({
         "@context": dataMasterSEO["@context"], /* (Obligatoire) URL de Google schéma */
         "@type": "HomePage",                   /* (Obligatoire) Type de JSON-LD */

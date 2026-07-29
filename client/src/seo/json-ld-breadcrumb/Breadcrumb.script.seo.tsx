@@ -1,5 +1,5 @@
 /* Import des Components de Data */
-import { dataMasterSEO_data_SEO as dataMasterSEO } from "../data/dataMasterSEO.data.seo";
+import { dataMasterSEO_data_SEO } from "../data/dataMasterSEO.data.seo";
 
 /* Import des Utils */
 import { generateURLSlug_Utils } from "../utils/generateURLSlug.utils";
@@ -28,6 +28,8 @@ type Breadcrumb_script_SEO_Props = {
  * @returns {JSX.Element} Élément JSX contenant le script JSON-LD injectable.
  */
 function Breadcrumb_script_SEO({ data }: Breadcrumb_script_SEO_Props): JSX.Element {
+    const dataMasterSEO = dataMasterSEO_data_SEO();
+
     const JSON_LD = JSON.stringify({
         "@context": dataMasterSEO["@context"], /* (Obligatoire) URL de Google schéma */
         "@type": "BreadcrumbList",             /* (Obligatoire) Type de JSON-LD */

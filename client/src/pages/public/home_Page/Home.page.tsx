@@ -7,12 +7,13 @@ import HomeRoot from "../../../components/public/home/Home.root";
 import Footer_root_layout from "../../../components/layout/footer_Layout/Footer.root.layout";
 
 /* Import des composants SEO */
-import { HelmetHome_helmet_SEO } from "../../../seoS/home_SEO/HelmetHome.helmet.seo";
+// import { HelmetHome_helmet_SEO } from "../../../seoS/home_SEO/HelmetHome.helmet.seo";
+import Home_root_SEO from "../../../seo/seo-pages/home_SEO/home.root.seo";
 
 function Home_Page() {
      return (
         <section className={`Home_Page ${style.Page}`}>
-            <HelmetHome_helmet_SEO />
+            <Home_root_SEO />
             <header id="top" className={style.HeaderHomePage}>
                  <NavHome_root_Layout />
             </header>
