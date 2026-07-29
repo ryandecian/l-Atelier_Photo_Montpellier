@@ -27,7 +27,7 @@ import { HomePage_script_Type } from "./homePage.script.type";
  * @returns {string} Retourne une string grâce à la fonction JSON.stringify, necessaire pour l'injection dans une page.
  */
 
-function homePage_script_SEO(data: HomePage_script_Type) : string {
+function HomePage_script_SEO(data: HomePage_script_Type) : JSX.Element {
     const JSON_LD = JSON.stringify({
         "@context": dataMasterSEO["@context"], /* (Obligatoire) URL de Google schéma */
         "@type": "HomePage",                   /* (Obligatoire) Type de JSON-LD */
@@ -60,7 +60,12 @@ function homePage_script_SEO(data: HomePage_script_Type) : string {
         "url": `${dataMasterSEO.url}${data.uri_page}`, /*(Obligatoire) URL de la page + ancre SEO-friendly (ex : domain/uri) */
     });
 
-    return JSON_LD;
+    return (
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON_LD }}
+        />
+    );
 };
 
-export { homePage_script_SEO };
+export { HomePage_script_SEO };
