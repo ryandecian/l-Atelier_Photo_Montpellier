@@ -8,6 +8,10 @@ import { generateURLSlug_Utils } from "../../utils/generateURLSlug.utils";
 import { HomePage_script_Type } from "./homePage.script.type";
 
 
+type HomePage_script_SEO_Props = {
+    data: HomePage_script_Type;
+};
+
 /**
  * ### Documentation : Script JSON-LD HomePage de Google.
  * Ce composant réutilisable à pour objectif de générer un script JSON-LD pour présenter la page d'accueil du site.
@@ -24,10 +28,10 @@ import { HomePage_script_Type } from "./homePage.script.type";
  * 
  * ---
  * @pure Indique que la fonction est pure : elle ne produit aucun effet secondaire et retourne un résultat prédictible basé uniquement sur les arguments fournis.
- * @returns {string} Retourne une string grâce à la fonction JSON.stringify, necessaire pour l'injection dans une page.
+ * @returns {JSX.Element} Retourne un élément JSX contenant le script JSON-LD.
  */
 
-function HomePage_script_SEO(data: HomePage_script_Type) : JSX.Element {
+function HomePage_script_SEO({ data }: HomePage_script_SEO_Props) : JSX.Element {
     const JSON_LD = JSON.stringify({
         "@context": dataMasterSEO["@context"], /* (Obligatoire) URL de Google schéma */
         "@type": "HomePage",                   /* (Obligatoire) Type de JSON-LD */

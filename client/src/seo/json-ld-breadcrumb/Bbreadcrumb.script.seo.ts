@@ -27,7 +27,7 @@ import { Breadcrumb_script_Type } from "./breadcrumb.script.type";
  * @returns {string} Retourne une string grâce à la fonction JSON.stringify, necessaire pour l'injection dans une page.
  */
 
-function breadcrumb_script_SEO(data: Breadcrumb_script_Type): string {
+function Breadcrumb_script_SEO(data: Breadcrumb_script_Type): string {
     const url: string = import.meta.env.VITE_DOMAIN_CLIENT /* Nom de domaine */
 
     const JSON_LD = JSON.stringify({
@@ -53,4 +53,4 @@ function breadcrumb_script_SEO(data: Breadcrumb_script_Type): string {
     )
 }
 
-export { breadcrumb_script_SEO };
+export { Breadcrumb_script_SEO };
