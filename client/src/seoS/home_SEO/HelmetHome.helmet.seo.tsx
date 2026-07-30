@@ -28,7 +28,6 @@ function HelmetHome_helmet_SEO() {
         type: dataSEO_Home.type,
     };
 
-    const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
 
     return (
         <>
@@ -43,16 +42,10 @@ function HelmetHome_helmet_SEO() {
                 {JSON_LD_Breadcrumb_Home_schema_SEO()}
             </script>
 
-            {/* Langue principale du document */}
-            <html lang="fr" />
-
             {/* Métadonnées générales */}
             <title>{SEO.title}</title>
-            <meta charSet="UTF-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <meta name="description" content={SEO.description} />
             <meta name="author" content={SEO.author} />
-            {filterKeywords && <meta name="keywords" content={filterKeywords} />}
 
             {/* SEO pour les moteurs de recherche */}
             <meta name="robots" content="index, follow" />

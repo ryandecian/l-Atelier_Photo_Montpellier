@@ -8,19 +8,32 @@ import type { HomePage_script_Type } from "../../script-json-ld/json-ld-homePage
 
 /* Attention, chaque données à exploiter ne doit être déclarée qu'une seul fois ! */
 function home_data_SEO() {
-    const breadcrumb_data_SEO = registreBreadcrumb_data_SEO("home").dataBreadcrumb;
-
-    const homePage_data_SEO: HomePage_script_Type = {
+    const dataGlobalSEO = {
+        title: registreBreadcrumb_data_SEO("home").dataItems.name_page, /* Titre de la page - injection dans index.html et dans la barre de navigation du navigateur */
         description: "Anne Saunier, photographe professionnelle de mariage et portrait à Montpellier, vous accueille à L'Atelier Photo Montpellier (LAPM).",
-        id: "lapm",
-        name_page: registreBreadcrumb_data_SEO("home").dataItems.name_page,
         uri_page: registreBreadcrumb_data_SEO("home").dataItems.uri_page,
     }
 
+    const breadcrumb_data_SEO = registreBreadcrumb_data_SEO("home").dataBreadcrumb;
+
+    const homePage_data_SEO: HomePage_script_Type = {
+        description: dataGlobalSEO.description,
+        id: "lapm",
+        name_page: dataGlobalSEO.title,
+        uri_page: dataGlobalSEO.uri_page,
+    }
+
+    const metaName_data_SEO = {
+        title: dataGlobalSEO.title,
+        description: dataGlobalSEO.description,
+        author: "Anne SAUNIER",
+        url: dataGlobalSEO.uri_page,
+    };
 
     const dataSEO = {
-        homePage_data_SEO: homePage_data_SEO,
         breadcrumb_data_SEO: breadcrumb_data_SEO,
+        homePage_data_SEO: homePage_data_SEO,
+        metaName_data_SEO: metaName_data_SEO,
     }
 
     return (

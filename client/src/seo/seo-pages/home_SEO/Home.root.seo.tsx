@@ -5,6 +5,7 @@ import { home_data_SEO } from "./home.data.seo";
 import { Breadcrumb_script_SEO } from "../../script-json-ld/json-ld-breadcrumb/Breadcrumb.script.seo";
 import { HomePage_script_SEO } from "../../script-json-ld/json-ld-homePage/HomePage.script.seo";
 import { LocalBusiness_script_SEO } from "../../json-ld-localbusiness/LocalBusiness.script.seo";
+import { MetaName_script_SEO } from "../../script-meta-name/metaName.script.seo";
 
 
 function Home_root_SEO() {
@@ -14,6 +15,7 @@ function Home_root_SEO() {
             <LocalBusiness_script_SEO />
             <HomePage_script_SEO data={dataSEO.homePage_data_SEO} />
             <Breadcrumb_script_SEO data={dataSEO.breadcrumb_data_SEO} />
+            <MetaName_script_SEO data={dataSEO.metaName_data_SEO} />
         </>
     )
 }
