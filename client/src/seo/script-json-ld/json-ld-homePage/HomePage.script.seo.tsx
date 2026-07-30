@@ -28,10 +28,10 @@ type HomePage_script_SEO_Props = {
  * 
  * ---
  * @pure Indique que la fonction est pure : elle ne produit aucun effet secondaire et retourne un résultat prédictible basé uniquement sur les arguments fournis.
- * @returns {JSX.Element} Retourne un élément JSX contenant le script JSON-LD.
+ * @returns {React.ReactNode} Retourne un élément JSX contenant le script JSON-LD.
  */
 
-function HomePage_script_SEO({ data }: HomePage_script_SEO_Props) : JSX.Element {
+function HomePage_script_SEO({ data }: HomePage_script_SEO_Props) : React.ReactNode {
     const dataMasterSEO = dataMasterSEO_data_SEO();
 
     const JSON_LD = JSON.stringify({
