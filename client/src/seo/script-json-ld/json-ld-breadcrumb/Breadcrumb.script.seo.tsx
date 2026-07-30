@@ -1,8 +1,8 @@
 /* Import des Components de Data */
-import { dataMasterSEO_data_SEO } from "../data/dataMasterSEO.data.seo";
+import { dataMasterSEO_data_SEO } from "../../data/dataMasterSEO.data.seo";
 
 /* Import des Utils */
-import { generateURLSlug_Utils } from "../utils/generateURLSlug.utils";
+import { generateURLSlug_Utils } from "../../utils/generateURLSlug.utils";
 
 /* Import des Types */
 import { Breadcrumb_script_Type } from "./breadcrumb.script.type";

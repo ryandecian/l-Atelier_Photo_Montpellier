@@ -1,5 +1,5 @@
 /* Import des composants Datas */
-import { registreBreadcrumb_data_SEO } from "../../json-ld-breadcrumb/registreBreadcrumb.data.seo";
+import { registreBreadcrumb_data_SEO } from "../../data/registreBreadcrumb.data.seo";
 /* Import des composants Router */
 
 /* Import des Types */
