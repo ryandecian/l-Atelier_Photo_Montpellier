@@ -27,7 +27,7 @@ type Breadcrumb_script_SEO_Props = {
  * @pure Indique que la fonction est pure : elle ne produit aucun effet secondaire.
  * @returns {JSX.Element} Élément JSX contenant le script JSON-LD injectable.
  */
-function Breadcrumb_script_SEO({ data }: Breadcrumb_script_SEO_Props): JSX.Element {
+function Breadcrumb_script_SEO({ data }: Breadcrumb_script_SEO_Props): React.ReactNode {
     const dataMasterSEO = dataMasterSEO_data_SEO();
 
     const JSON_LD = JSON.stringify({
