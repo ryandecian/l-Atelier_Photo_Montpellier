@@ -1,0 +1,68 @@
+/* carteMentale.module.css */
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #faf8f5;
+}
+
+/* Le Nœud Central formaté en jolie carte avec image */
+.weddingCenterCard {
+  background: #ffffff;
+  color: #4a3f35;
+  border-radius: 16px;
+  font-family: 'Playfair Display', 'Georgia', serif;
+  box-shadow: 0 15px 35px -5px rgba(188, 163, 139, 0.4);
+  border: 1px solid #e6ded4;
+  text-align: center;
+  width: 220px;
+  overflow: hidden; /* Garde l'image dans les angles arrondis */
+}
+
+.centerImageWrapper {
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  border-bottom: 1px solid #e6ded4;
+}
+
+.centerImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.centerContent {
+  padding: 14px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+/* Les Bulles Satellites (Catégories autour) */
+.weddingCategory {
+  background: #ffffff;
+  color: #5c534c;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-family: 'Montserrat', 'Segoe UI', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  border: 1px solid #eae5df;
+  text-align: center;
+  min-width: 160px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.weddingCategory:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(188, 163, 139, 0.2);
+}
+
+/* Dissimulation des ancres techniques de connexion */
+.weddingHandle {
+  background: transparent !important;
+  border: none !important;
+  width: 8px !important;
+  height: 8px !important;
+}

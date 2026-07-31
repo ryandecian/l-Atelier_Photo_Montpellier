@@ -4,7 +4,7 @@ import style from "../../stylePage.module.css";
 /* Import des Components */
 import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
 import PortraitGrossesse_Root from "../../../components/public/portrait-grossesse/PortraitGrossesse.root";
-import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
+import Footer_root_layout from "../../../components/layout/footer_Layout/Footer.root.layout";
 
 /* Import des composants SEO */
 import { HelmetPortraitGrossesse_helmet_SEO } from "../../../seoS/portrait-grossesse_SEO/HelmetPortraitGrossesse.helmet.seo";
@@ -25,7 +25,7 @@ function PortraitGrossesse_Page() {
                 <PortraitGrossesse_Root />
             </main>
             <footer className={style.Footer}>
-                <Footer_Layout />
+                <Footer_root_layout />
             </footer>
         </section>
     )

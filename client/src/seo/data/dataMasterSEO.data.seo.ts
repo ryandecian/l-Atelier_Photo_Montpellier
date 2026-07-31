@@ -13,7 +13,7 @@ import { DataMasterSEO_Type } from "./dataMasterSEO.type";
 import { generateAverageRatingSEO_Utils } from "../../utils/seo/generateAverageRatingSEO.utils";
 import { generateReviewArraySEO_Utils } from "../../utils/seo/generateReviewArraySEO.utils";
 
-function generateDataMasterSEO_data_SEO(): DataMasterSEO_Type {
+function dataMasterSEO_data_SEO(): DataMasterSEO_Type {
     const dataMasterSEO: DataMasterSEO_Type = {
         "@context": "https://schema.org", /* URL de Google schéma */
         "@type": {                        /* (Obligatoire) Type de JSON-LD */
@@ -89,4 +89,4 @@ function generateDataMasterSEO_data_SEO(): DataMasterSEO_Type {
  * @example import { dataMasterSEO_data_SEO as dataMasterSEO } from "..."
  */
 
-export const dataMasterSEO_data_SEO: DataMasterSEO_Type = generateDataMasterSEO_data_SEO();
+export { dataMasterSEO_data_SEO };
