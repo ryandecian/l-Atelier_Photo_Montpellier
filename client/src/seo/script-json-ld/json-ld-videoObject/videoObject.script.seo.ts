@@ -1,5 +1,5 @@
 /* Import des Components de Data */
-import { dataMasterSEO_data_SEO as dataMasterSEO } from "../../data/dataMasterSEO.data.seo";
+import { dataMasterSEO_data_SEO } from "../../data/dataMasterSEO.data.seo";
 
 /* Import des Utils */
 import { generateURLSlug_Utils } from "../../utils/generateURLSlug.utils";
@@ -36,6 +36,8 @@ import { VideoObject_script_Type } from "./videoObject.script.type";
  */
 
 function videoObject_script_SEO(data: VideoObject_script_Type) : string {
+    const dataMasterSEO = dataMasterSEO_data_SEO();
+    
     const JSON_LD = JSON.stringify({
         "@context": dataMasterSEO["@context"], /* (Obligatoire) URL de Google schéma */
         "@type": "VideoObject",                /* (Obligatoire) Type de JSON-LD */
