@@ -1,7 +1,7 @@
 /* Import des modules CSS */
 import css from "./carteMentale.module.css";
 
-import React, { memo } from "react";
+import { memo } from "react";
 import {
     ReactFlow,
     Background,
