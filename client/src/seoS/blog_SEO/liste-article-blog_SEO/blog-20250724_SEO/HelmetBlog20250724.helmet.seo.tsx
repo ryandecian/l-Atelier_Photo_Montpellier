@@ -1,6 +1,3 @@
-/* Import des composants React */
-import { Helmet } from "react-helmet-async";
-
 /* Import des Components */
 import { dataSEO_Root_data_SEO } from "../../../dataSEO_Root.data.seo";
 import { dataSEO_Blog_20250724_data_SEO } from "./dataSEO_Blog_20250724.data.seo";
@@ -34,7 +31,7 @@ function HelmetBlog20250724_helmet_SEO() {
     const filterKeywords = Object.values(SEO.keywords).filter(keyword => keyword.trim() !== "").join(", ");
 
     return (
-        <Helmet>
+        <>
             {/* JSON-LD */}
             <script type="application/ld+json">
                 {JSON_LD_LocalBusiness_Root_schema_SEO()}
@@ -77,7 +74,7 @@ function HelmetBlog20250724_helmet_SEO() {
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:image" content={SEO.twitterUrlImg} />
             <meta name="twitter:site" content={SEO.twitterCompte} />
-        </Helmet>
+        </>
     );
 }
 

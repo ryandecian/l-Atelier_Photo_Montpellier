@@ -1,7 +1,7 @@
 /* Import des Components de Data */
 import { dataMasterSEO_data_SEO } from "../data/dataMasterSEO.data.seo";
 
-function LocalBusiness_script_SEO(): JSX.Element {
+function LocalBusiness_script_SEO(): React.ReactNode {
     const dataMasterSEO = dataMasterSEO_data_SEO();
     
     const json_ld = JSON.stringify({
@@ -38,7 +38,7 @@ function LocalBusiness_script_SEO(): JSX.Element {
  * 
  * ---
  * @pure Indique que la fonction est pure : elle ne produit aucun effet secondaire et retourne un résultat prédictible basé uniquement sur les arguments fournis.
- * @returns {JSX.Element} Retourne un élément JSX contenant le script JSON-LD.
+ * @returns {React.ReactNode} Retourne un élément JSX contenant le script JSON-LD.
  */
 
 export { LocalBusiness_script_SEO };
