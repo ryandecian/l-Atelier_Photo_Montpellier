@@ -1,7 +1,6 @@
 import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { HelmetProvider } from "react-helmet-async";
 
 /* Import des données des routes */
 import ListDataRouter from "./router/router.tsx";
@@ -19,7 +18,5 @@ if (rootElement == null) {
 }
 
 createRoot(rootElement).render(
-    <HelmetProvider>
-        <RouterProvider router={router} />
-    </HelmetProvider>
+    <RouterProvider router={router} />
 );
