@@ -4,7 +4,7 @@ import style from "../../../stylePage.module.css";
 /* Import des Components */
 import NavRoot from "../../../../components/layout/nav_Layout/Nav.root.layout";
 import UserGestionAlbum_Root from "../../../../components/private/users/user-gestion-album/UserGestionAlbum.root";
-import Footer from "../../../../components/layout/footer_Layout/Footer.layout";
+import Footer_root_layout from "../../../../components/layout/footer_Layout/Footer.root.layout";
 
 function UserGestionAlbum_Page() {
     return (
@@ -16,7 +16,7 @@ function UserGestionAlbum_Page() {
                 <UserGestionAlbum_Root />
             </main>
             <footer className={style.Footer}>
-                <Footer />
+                <Footer_root_layout />
             </footer>
         </div>
     );

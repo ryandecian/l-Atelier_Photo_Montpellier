@@ -10,12 +10,10 @@ import { avisClientVideo_Data } from "./avisClientVideo.data";
 
 /* Import des composants d'Elements */
 import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
+import { Video_Element } from "../../elements/video/Video.element";
 
 /* Import des composants Router */
 import router from "../../../router/router";
-
-/* Import des Utils */
-import { pauseOtherVideos_Utils } from "../../../utils/pauseOtherVideos.utils";
 
 function Video_Root() {
     return (
@@ -58,23 +56,12 @@ function Video_Root() {
                 Quand ces trois leviers sont activés, la conversion grimpe naturellement.
             </p>
 
-            <section className={style.ContainerVideo}>
-                <h3 className={style.VideoTitle}>Aventure saharienne - Immersion dans le désert avec Mélodie du Désert</h3>
-                <video
-                    className={style.VideoPlayer}
-                    src="/video/video-trek-desert-maroc/video-trek-desert-maroc.mp4"
-                    controls
-                    preload="none"
-                    controlsList="nodownload"
-                    onPlay={(e) => pauseOtherVideos_Utils(e.currentTarget)}
-                    onContextMenu={(e) => e.preventDefault()} /* Désactive le clic droit */
-                    poster="/video/video-trek-desert-maroc/video-trek-desert-maroc.jpg"
-                    playsInline
-                />
-                <p className={style.VideoDescription}>
-                    Une courte vidéo présentant l’ambiance du trek dans les dunes marocaines.
-                </p>
-            </section>
+            <Video_Element
+                title="Aventure saharienne - Immersion dans le désert avec Mélodie du Désert"
+                src="/video/video-trek-desert-maroc/video-trek-desert-maroc.mp4"
+                poster="/video/video-trek-desert-maroc/video-trek-desert-maroc.jpg"
+                description="Une courte vidéo présentant l’ambiance du trek dans les dunes marocaines."
+            />
 
             <h3 className={style.TitleNH3}>
                 2. Humaniser votre entreprise en valorisant les personnes qui la portent
@@ -136,24 +123,12 @@ function Video_Root() {
                 </li>
             </ul>
 
-            <section className={style.ContainerVideo}>
-                <h3 className={style.VideoTitle}>Votre prochaine parenthèse bien-être : Les Crocodiles Jaunes</h3>
-                <video
-                    className={style.VideoPlayer}
-                    src="/video/les-crocodiles-jaunes/les-crocodiles-jaunes.mp4"
-                    controls
-                    preload="none"
-                    controlsList="nodownload"
-                    onPlay={(e) => pauseOtherVideos_Utils(e.currentTarget)}
-                    onContextMenu={(e) => e.preventDefault()} /* Désactive le clic droit */
-                    poster="/video/les-crocodiles-jaunes/les-crocodiles-jaunes.jpg"
-                    playsInline
-                />
-                <p className={style.VideoDescription}>
-                    Un cadre unique : découverte du centre de jeûne <br />
-                    Les Crocodiles Jaunes à Albi.
-                </p>
-            </section>
+            <Video_Element
+                title="Votre prochaine parenthèse bien-être : Les Crocodiles Jaunes"
+                src="/video/les-crocodiles-jaunes/les-crocodiles-jaunes.mp4"
+                poster="/video/les-crocodiles-jaunes/les-crocodiles-jaunes.jpg"
+                description="Un cadre unique : découverte du centre de jeûne - Les Crocodiles Jaunes à Albi."
+            />
 
             <h2 className={style.TitleH2}>
                 Des vidéos de mariage, de naissance ou de loisirs pour révéler vos moments forts
@@ -245,23 +220,12 @@ function Video_Root() {
                 esthétique et facile à partager.
             </p>
 
-            <section className={style.ContainerVideo}>
-                <h3 className={style.VideoTitle}>80 ans, première moto, 16 000 km en Afrique - Doris inspire le monde !</h3>
-                <video
-                    className={style.VideoPlayer}
-                    src="/video/a-80-ans-elle-traverse-l-afrique-a-moto/a-80-ans-elle-traverse-l-afrique-a-moto.mp4"
-                    controls
-                    preload="none"
-                    controlsList="nodownload"
-                    onPlay={(e) => pauseOtherVideos_Utils(e.currentTarget)}
-                    onContextMenu={(e) => e.preventDefault()} /* Désactive le clic droit */
-                    poster="/video/a-80-ans-elle-traverse-l-afrique-a-moto/a-80-ans-elle-traverse-l-afrique-a-moto.jpg"
-                    playsInline
-                />
-                <p className={style.VideoDescription}>
-                    À 80 ans, Doris traverse l’Afrique à moto pour poursuivre son rêve de découverte.
-                </p>
-            </section>
+            <Video_Element
+                title="80 ans, première moto, 16 000 km en Afrique - Doris inspire le monde !"
+                src="/video/a-80-ans-elle-traverse-l-afrique-a-moto/a-80-ans-elle-traverse-l-afrique-a-moto.mp4"
+                poster="/video/a-80-ans-elle-traverse-l-afrique-a-moto/a-80-ans-elle-traverse-l-afrique-a-moto.jpg"
+                description="À 80 ans, Doris traverse l’Afrique à moto pour poursuivre son rêve de découverte."
+            />
 
             <p className={style.TextP4}>
                 Je réalise pour vous un <strong>film de mariage naturel et authentique</strong>, pensé pour retranscrire 
@@ -275,23 +239,12 @@ function Video_Root() {
                 l’atmosphère de votre mariage. Une vidéo que l’on regarde et que l’on partage avec plaisir, année après année.
             </p>
 
-            <section className={style.ContainerVideo}>
-                <h3 className={style.VideoTitle}>Vidéo de mariage Laure & Charles au Château Bas d’Aumelas</h3>
-                <video
-                    className={style.VideoPlayer}
-                    src="/video/video-de-mariage-laure-et-charles-au-chateau-bas-d-aumelas/video-de-mariage-laure-et-charles-au-chateau-bas-d-aumelas.mp4"
-                    controls
-                    preload="none"
-                    controlsList="nodownload"
-                    onPlay={(e) => pauseOtherVideos_Utils(e.currentTarget)}
-                    onContextMenu={(e) => e.preventDefault()} /* Désactive le clic droit */
-                    poster="/video/video-de-mariage-laure-et-charles-au-chateau-bas-d-aumelas/video-de-mariage-laure-et-charles-au-chateau-bas-d-aumelas.jpg"
-                    playsInline
-                />
-                <p className={style.VideoDescription}>
-                    Ce film de mariage capture l’essence d’une journée sincère, joyeuse et profondément humaine.
-                </p>
-            </section>
+            <Video_Element
+                title="Vidéo de mariage Laure & Charles au Château Bas d’Aumelas"
+                src="/video/video-de-mariage-laure-et-charles-au-chateau-bas-d-aumelas/video-de-mariage-laure-et-charles-au-chateau-bas-d-aumelas.mp4"
+                poster="/video/video-de-mariage-laure-et-charles-au-chateau-bas-d-aumelas/video-de-mariage-laure-et-charles-au-chateau-bas-d-aumelas.jpg"
+                description="Ce film de mariage capture l’essence d’une journée sincère, joyeuse et profondément humaine."
+            />
 
             <p className={style.TextP4}>
                 Je vous accompagne pour créer une <strong>vidéo de naissance douce et authentique</strong>, dédiée aux 
@@ -305,24 +258,6 @@ function Video_Root() {
                 Un <strong>souvenir tendre et intemporel</strong>, filmé avec respect et discrétion, qui vous permettra 
                 de revivre ces premiers instants avec émotion et de les transmettre à votre enfant plus tard.
             </p>
-
-            {/* <section className={style.ContainerVideo}>
-                <h3 className={style.VideoTitle}>La naissance, c’est l’instant où tout commence vraiment</h3>
-                <video
-                    className={style.VideoPlayer}
-                    src="/video/la-naissance-c-est-ou-tout-commence-vraiment/la-naissance-c-est-ou-tout-commence-vraiment.mp4"
-                    controls
-                    preload="none"
-                    controlsList="nodownload"
-                    onPlay={(e) => pauseOtherVideos_Utils(e.currentTarget)}
-                    onContextMenu={(e) => e.preventDefault()}
-                    poster="/video/la-naissance-c-est-ou-tout-commence-vraiment/la-naissance-c-est-ou-tout-commence-vraiment.jpg"
-                    playsInline
-                />
-                <p className={style.VideoDescription}>
-                    La naissance capture un début, un geste, une respiration, et redessine la façon dont une famille avance.
-                </p>
-            </section> */}
 
             <h3 className={style.TitleNH3}>
                 3. Une vidéo pensée pour être partagée et revue

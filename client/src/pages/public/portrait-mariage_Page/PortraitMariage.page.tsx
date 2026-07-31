@@ -3,8 +3,8 @@ import style from "../../stylePage.module.css";
 
 /* Import des Components */
 import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
-import PortraitMariageRoot from "../../../components/public/portrait-mariage/PortraitMariage.root";
-import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
+import PortraitMariage_Root from "../../../components/public/portrait-mariage/PortraitMariage.root";
+import Footer_root_layout from "../../../components/layout/footer_Layout/Footer.root.layout";
 
 /* Import des composants SEO */
 import { HelmetPortraitMariage_helmet_SEO } from "../../../seoS/portrait-mariage_SEO/HelmetPortraitMariage.helmet.seo";
@@ -22,10 +22,10 @@ function PortraitMariage_Page() {
                  <Nav_root_Layout />
             </header>
             <main className={style.Main}>
-                <PortraitMariageRoot />
+                <PortraitMariage_Root />
             </main>
             <footer className={style.Footer}>
-                <Footer_Layout />
+                <Footer_root_layout />
             </footer>
         </div>
     )
