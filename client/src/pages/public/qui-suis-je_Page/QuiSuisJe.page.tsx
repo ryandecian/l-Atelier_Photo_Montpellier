@@ -4,10 +4,10 @@ import style from "../../stylePage.module.css";
 /* Import des Components */
 import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
 import QuiSuisJe_Root from "../../../components/public/qui-suis-je/QuiSuisJe.root";
-import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
+import Footer_root_layout from "../../../components/layout/footer_Layout/Footer.root.layout";
 
 /* Import des composants SEO */
-import { HelmetQuiSuisJe_helmet_SEO } from "../../../seo/qui-suis-je_SEO/HelmetQuiSuisJe.helmet.seo";
+import { HelmetQuiSuisJe_helmet_SEO } from "../../../seoS/qui-suis-je_SEO/HelmetQuiSuisJe.helmet.seo";
 
 /* Import des Hooks */
 import { useScrollToHash_Hook } from "../../../hook/useScrollToHash.hook";
@@ -25,7 +25,7 @@ function QuiSuisJe_Page() {
                 <QuiSuisJe_Root />
             </main>
             <footer className={style.Footer}>
-                <Footer_Layout />
+                <Footer_root_layout />
             </footer>
         </section>
     )

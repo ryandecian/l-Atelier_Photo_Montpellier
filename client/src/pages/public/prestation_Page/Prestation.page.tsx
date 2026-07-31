@@ -4,10 +4,10 @@ import style from "../../stylePage.module.css";
 /* Import des Components */
 import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
 import Prestation_Root from "../../../components/public/prestation/Prestation.root";
-import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
+import Footer_root_layout from "../../../components/layout/footer_Layout/Footer.root.layout";
 
 /* Import des composants SEO */
-import { HelmetPrestation_helmet_SEO } from "../../../seo/prestation_SEO/HelmetPrestation.helmet.seo";
+import { HelmetPrestation_helmet_SEO } from "../../../seoS/prestation_SEO/HelmetPrestation.helmet.seo";
 
 function Prestation_Page() {
      return (
@@ -20,7 +20,7 @@ function Prestation_Page() {
                 <Prestation_Root />
             </main>
             <footer className={style.Footer}>
-                <Footer_Layout />
+                <Footer_root_layout />
             </footer>
         </section>
     )

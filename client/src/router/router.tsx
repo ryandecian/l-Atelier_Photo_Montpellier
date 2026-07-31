@@ -38,6 +38,7 @@ import ResetPasswordConfirmPage from "../pages/public/reset-password-confirm_Pag
 import QuiSuisJePage from "../pages/public/qui-suis-je_Page/QuiSuisJe.page";
 import Video_Page from "../pages/public/video_Page/Video.page";
 
+
 /**
  * Utilisation : 
  * {router[0].path}
@@ -233,7 +234,7 @@ const router: Router_Type[] = [
     },
     /* {router[36].path} */
     {
-        path: "/video",
+        path: "/videos",
         element: <Video_Page />,
     },
 ]

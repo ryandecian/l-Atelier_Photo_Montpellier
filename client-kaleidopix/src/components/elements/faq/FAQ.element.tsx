@@ -2,7 +2,7 @@
 import css from "./faq.module.css";
 
 /* Import des Types */
-import type { FAQ_data_Type } from "../../../types/data/faq.data.type";
+import type { FAQ_data_Type } from "./faq.data.type";
 
 type FAQProps = {
     items: FAQ_data_Type;

@@ -4,10 +4,10 @@ import style from "../../stylePage.module.css";
 /* Import des Components */
 import Nav_root_Layout from "../../../components/layout/nav_Layout/Nav.root.layout";
 import MentionsLegales_Root from "../../../components/public/mention-legale/MentionsLegales.root";
-import Footer_Layout from "../../../components/layout/footer_Layout/Footer.layout";
+import Footer_root_layout from "../../../components/layout/footer_Layout/Footer.root.layout";
 
 /* Import des composants SEO */
-import { HelmetMentionLegale_helmet_SEO } from "../../../seo/mentions-legales_SEO/HelmetMentionsLegales.helmet.seo";
+import { HelmetMentionLegale_helmet_SEO } from "../../../seoS/mentions-legales_SEO/HelmetMentionsLegales.helmet.seo";
 
 /* Import des Hooks */
 import { useScrollToHash_Hook } from "../../../hook/useScrollToHash.hook";
@@ -25,7 +25,7 @@ function MentionsLegales_Page() {
                 <MentionsLegales_Root />
             </main>
             <footer className={style.Footer}>
-                <Footer_Layout />
+                <Footer_root_layout />
             </footer>
         </section>
     )
