@@ -1,5 +1,5 @@
 /* Import des Components de Data */
-import { dataMasterSEO_data_SEO as dataMasterSEO } from "../../data/dataMasterSEO.data.seo";
+import { dataMasterSEO_data_SEO } from "../../data/dataMasterSEO.data.seo";
 
 /* Import des Utils */
 import { generateURLSlug_Utils } from "../../utils/generateURLSlug.utils";
@@ -29,6 +29,8 @@ import { Service_script_Type } from "./service.script.type";
  */
 
 function service_script_SEO(data: Service_script_Type): string {
+    const dataMasterSEO = dataMasterSEO_data_SEO();
+    
     const url: string = import.meta.env.VITE_DOMAIN_CLIENT /* Nom de domaine */
 
     const JSON_LD = JSON.stringify({
