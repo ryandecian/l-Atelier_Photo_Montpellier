@@ -31,7 +31,7 @@ type MetaName_script_Type_Props = {
  * @pure Indique que la fonction est pure : elle ne produit aucun effet secondaire et retourne un résultat prédictible basé uniquement sur les arguments fournis.
  * @returns {React.ReactNode} Retourne un élément JSX contenant les balises MetaName SEO.
  */
-function MetaName_script_SEO({ data }: MetaName_script_Type_Props): React.JSX.Element {
+function MetaName_script_SEO({ data }: MetaName_script_Type_Props): React.ReactNode {
     const domain = ENV("VITE_DOMAIN_CLIENT");
     const fullPageUrl = data.uri_page ? `${domain}/${data.uri_page}` : domain;
     const fullImageUrl = `${domain}${data.img_seo.uri_image}`;
