@@ -21,34 +21,10 @@ import type { DataBreadcrumb_data_Type } from './dataBreadcrumb.data.type';
  */
 
 function dataRegistreBreadcrumb_data_SEO() {
-    /**
-     * * ### Documentation : Titre de page (name_page)
-     * Exemple de structure pour le titre de la page (name_page) :
-     * - [Service Principal / Titre de la Page] - [Ville / Zone] | [Nom de Marque] (Sigle)
-     * - Doit faire entre 50 et 60 caractères.
-     * 
-     * ---
-     * ⚠️ **NOTE ET CONTRAINTE**
-     * - Si ton titre fait moins de 50 caractères : Tu perdes une opportunité de placer des mots-clés importants.
-     * - S'il fait plus de 60-65 caractères : Google va le couper brutalement dans les résultats de recherche en ajoutant des points de suspension (...), ce qui dégrade le taux de clic (CTR).
-     * 
-     * ---
-     * Page d'Accueil (Home) :
-     * @example Photographe Mariage & Portrait - Montpellier | L'Atelier Photo Montpellier (LAPM)
-     * 
-     * Page Prestation Mariage :
-     * @example Photographe de Mariage Professionnel à Montpellier | L'Atelier Photo Montpellier (LAPM)
-     * 
-     * Page Prestation Portrait / Studio :
-     * @example Shooting Photo Portrait & Studio à Montpellier | L'Atelier Photo Montpellier (LAPM)
-     * 
-     * Page À Propos / Tarifs / Contact :
-     * @example Tarifs & Prestations Photographie - Montpellier | L'Atelier Photo Montpellier (LAPM)
-     */
     const data: DataBreadcrumb_data_Type = [
         {
             "id": "home",
-            "name_page": "Photographe de Mariage à Montpellier | L'Atelier Photo Montpellier (LAPM)",
+            "name_page": "Accueil - l'Atelier Photo Montpellier",
             "uri_page": router[0].path,
         },
     ];

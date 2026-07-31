@@ -27,7 +27,12 @@ function home_data_SEO() {
         title: dataGlobalSEO.title,
         description: dataGlobalSEO.description,
         author: "Anne SAUNIER",
-        url: dataGlobalSEO.uri_page,
+        uri_page: dataGlobalSEO.uri_page,
+        type_website: "website", /* Voir doc og:type */
+        img_seo: {
+            uri_image: "/images-seo/home/photographe-mariage-l-atelier-photo-montpellier.jpg",
+            alt_image: "Photographe de mariage professionnel à Montpellier : portrait de mariés par L'Atelier Photo Montpellier (LAPM).", /* JPG - moins de 300 ko - 1200 x 630 px exactement */
+        }
     };
 
     const dataSEO = {
@@ -42,3 +47,17 @@ function home_data_SEO() {
 }
 
 export { home_data_SEO };
+
+/**
+ * ### Documentation : og:type
+ * 
+ * Définit la nature du contenu pour les réseaux sociaux (balise og:type).
+ * 
+ * type : {
+ *     website: "website" - (Valeur par défaut) Indique qu'il s'agit d'un site web classique.
+ *     article: "article" - Pour des articles de blog ou du contenu éditorial.
+ *     video: "video.movie" - Pour les pages contenant des vidéos de films.
+ *     music: "music.song" - Pour les pages dédiées à la musique.
+ *     profile: "profile" - Pour une page personnelle (profil d'une personne).
+ * }
+ */
