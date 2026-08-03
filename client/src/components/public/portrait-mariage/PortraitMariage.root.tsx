@@ -3,12 +3,12 @@ import style from "../../StyleRootComponent.module.css";
 
 /* Import des Components de Data */
 import { imagesPortraitMariage_Data } from "./imagesPortraitMariage.data";
-import { avisClientPortraitMariage_Data } from "./avisClientPortraitMariage.data";
+// import { avisClientPortraitMariage_Data } from "./avisClientPortraitMariage.data";
 import { tarifsPortraitMariage_Data, mailtoLinkPortraitMariage_Data } from "./tarifsPortraitMariage.data";
 
 /* Import des composants d'Elements */
 import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
-import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
+// import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 import { TarifCard_Element} from "../../elements/tarifs-card/TarifsCard.element";
 
 /* Import des composants React */
@@ -326,7 +326,7 @@ function PortraitMariage_Root() {
             <TarifCard_Element id="tarifs-portrait-mariage" tarifs={tarifsPortraitMariage_Data} mailtoLink={mailtoLinkPortraitMariage_Data} />
 
             {/* Avis Client : */}
-            <GeneratorCardAvisClient_Element tabDataAvisClients={avisClientPortraitMariage_Data} />
+            {/* <GeneratorCardAvisClient_Element tabDataAvisClients={avisClientPortraitMariage_Data} /> */}
 
         </section>
     );
