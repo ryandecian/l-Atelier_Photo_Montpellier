@@ -2,34 +2,54 @@
 import { AvisClientSEO_Type } from "../../../types/seo/avisClientSEO.type";
 
 const avisClientHome_Data: AvisClientSEO_Type[] = [
-    /* Commentaire 1 */
     {
         id: 1,
-        nom: "Isabelle CARCASONNE",
+        nom: "Marie Pierre L",
         note: 5,
-        commentaire: "Comme beaucoup j'ai horreur d'être prise en photo et souvent horreir du résultat, surtout sur des prises de vue prévues mais Anne a un talent fou pour faire oublier l'appareil. On a juste l'impression d'un papotage entre amies - curieux cette impression qu'on a de la connaître depuis toujours ;-) - et hop le résultat est totalement bluffant. Vraiment chouette !",
-        date: "09/06/2025",
+        commentaire: "Un immense merci à Anne pour son talent et son professionnalisme ! Les photos sont magnifiques, pleine d’émotion et de naturel. En plus de son talent, Anne est d’une grande réactivité : en un temps record, nous avons reçu un grand nombre de clichés sublimement retravaillés. Grâce à elle, nous avons des souvenirs inoubliables à partager avec nos proches ",
+        date: "14/12/2024",
     },
     {
         id: 2,
+        nom: "Karine HEBERT",
+        note: 5,
+        commentaire: "Un immense merci à Anne pour son talent et son regard unique. Elle a su capturer chaque instant de notre mariage avec une sensibilité et une élégance incroyable. Chaque photo raconte une histoire, reflète l’émotion du moment et nous permet de revivre cette journée magique encore et encore. Grâce à elle, nous avons de magnifiques souvenirs à partager avec nos proches. Si vous cherchez une photographe passionnée et douée, n’hésitez pas une seconde !",
+        date: "30/01/2025",
+    },
+    {
+        id: 3,
+        nom: "Emma HILSCHER",
+        note: 5,
+        commentaire: "Merci pour ces magnifiques photos ! Anne a su capturer l’ambiance du moment avec grande justesse, mettant en valeur chacun de nos invités. Son travail est de grande qualité, et nous avons de superbes souvenirs grâce à elle. En plus d’être une photographe talentueuse, elle est une personne adorable qui met en confiance. Je la recommande mille fois !",
+        date: "21/05/2025",
+    },
+    {
+        id: 4,
+        nom: "Romain LAVAL",
+        note: 5,
+        commentaire: "Nous avons fait appel à Anne pour notre mariage ainsi que pour le baptême de notre fils. Elle a été très à l’écoute de nos attentes et a fait preuve d’un professionnalisme remarquable tout au long de ces événements. Elle a même pris l’initiative de proposer des jeux à nos invités, ce qui a contribué à créer une ambiance conviviale et chaleureuse. Nous la recommandons vivement.",
+        date: "20/06/2026",
+    },
+    {
+        id: 5,
         nom: "Florian RAY",
         note: 5,
         commentaire: "Nous avons eu la chance de faire appel à Anne pour immortaliser notre PACS, et nous sommes absolument ravis ! Les photos sont tout simplement magnifiques, pleines d’émotion et de spontanéité.Elle a su nous mettre à l’aise et capturer des moments précieux qui reflètent parfaitement notre histoire. Merci infiniment pour ce merveilleux travail !",
         date: "07/06/2025",
     },
     {
-        id: 3,
-        nom: "Shermine G",
-        note: 5,
-        commentaire: "J'ai fait appel à LAPM car j'avais besoin de photos pros (les selfies c'est pas toujours génial) mais aussi persos. Je ne suis pas photogénique et je suis souvent déçue mais pas avec Anne. J'ai été agréablement surprise du résultat. Anne m'a tout de suite mise à l'aise et m'a bien conseillée sur les différentes tenues, poses, expressions etc. J'ai obtenu des portraits adaptés à mes besoins. Une belle expérience ! je recommande vivement.",
-        date: "28/05/2025",
-    },
-    {
-        id: 4,
+        id: 6,
         nom: "Marc PICART",
         note: 5,
         commentaire: "Un immense merci à Anne pour son talent et son professionnalisme ! Les photos sont magnifiques, pleine d’émotion et de naturel. En plus de son talent, Anne est d’une grande réactivité : en un temps record, nous avons reçu un grand nombre de clichés sublimement retravaillés. Grâce à elle, nous avons des souvenirs inoubliables à partager avec nos proches",
         date: "16/04/2025",
+    },
+    {
+        id: 7,
+        nom: "Natalia K",
+        note: 5,
+        commentaire: "Photographe très professionnelle, elle est à l’écoute et elle prend des photos in probables ! On garde d’excellents souvenirs de notre mariage grâce a elle ! Merci encore !",
+        date: "22/06/2026",
     },
 ];
 
