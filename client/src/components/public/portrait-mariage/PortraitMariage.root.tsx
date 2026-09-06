@@ -5,11 +5,13 @@ import style from "../../StyleRootComponent.module.css";
 import { imagesPortraitMariage_Data } from "./imagesPortraitMariage.data";
 // import { avisClientPortraitMariage_Data } from "./avisClientPortraitMariage.data";
 import { tarifsPortraitMariage_Data, mailtoLinkPortraitMariage_Data } from "./tarifsPortraitMariage.data";
+import { carrouselPortraitMariage_Data } from "./carrouselPortraitMariage.data";
 
 /* Import des composants d'Elements */
 import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
 // import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 import { TarifCard_Element} from "../../elements/tarifs-card/TarifsCard.element";
+import { Carrousel3D_Element } from "../../elements/carrousels/carrousel3d/Carrousel3D.element";
 
 /* Import des composants React */
 import { Link } from "react-router-dom";
@@ -25,6 +27,8 @@ function PortraitMariage_Root() {
                     Photo & Vidéo de mariage : Un récit complet, une émotion intacte.
                 </h1>
             </header>
+
+            <Carrousel3D_Element slides={carrouselPortraitMariage_Data} />
 
             <p className={style.TextP4}>
                 <span className={style.SpanBold}>
