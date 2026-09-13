@@ -1,5 +1,6 @@
 /* Import des modules CSS */
-import style from "../../StyleRootComponent.module.css";
+import style from "../../style.root.module.css";
+import CSS from "./portraitMariage.module.css";
 
 /* Import des Components de Data */
 import { imagesPortraitMariage_Data } from "./imagesPortraitMariage.data";
@@ -19,43 +20,61 @@ import { Link } from "react-router-dom";
 /* Import des composants Router */
 import router from "../../../router/router";
 
-function PortraitMariage_RootCopy() {
+function PortraitMariageTest_Root() {
     return (
-        <section className={`PortraitMariage_Root ${style.ContainerRootRacine}`}>
-            <header className={style.ContainerTitle}>
-                <h1 className={style.TitleH1}>
-                    Photo & Vidéo de mariage : Un récit complet, une émotion intacte.
+        <section className={`PortraitMariageTest_Root ${style.ContainerRootRacine}`}>
+            <header className={CSS.ContainerTitle}>
+                <h1 className={CSS.TitleH1}>
+                    Tarifs et prestations de photographe mariage à Montpellier
                 </h1>
             </header>
 
             <Carrousel3D_Element slides={carrouselPortraitMariage_Data} />
 
             <p className={style.TextP4}>
-                <span className={style.SpanBold}>
-                    {"Votre mariage ne se résume pas à une suite de belles images."}
-                </span>
-                C’est une histoire qui se vit, qui se ressent, qui s’entend parfois… et qui mérite d’être racontée 
-                avec justesse. En tant que
-                <span className={style.SpanBold}>
-                    {" photographe de mariage et vidéaste professionnelle, "}
-                </span>
-                je vous propose une approche globale: un regard unique, une cohérence visuelle, et deux langages 
-                complémentaires — la photo pour figer l’instant, la vidéo pour en restituer le mouvement et l’émotion.
+                Découvrez les prestations de photographie de mariage proposées par L’Atelier Photo Montpellier, avec 
+                plusieurs formules adaptées à la durée et au déroulement de votre journée. Reportage photo à Montpellier, 
+                dans l’Hérault et au-delà, avec options complémentaires selon vos besoins.
             </p>
+
+            {/* ---------- ---------- ---------- ---------- ---------- */}
+
+            <nav className={CSS.menuAncrage} aria-label="Navigation rapide dans la page mariage">
+                <a href="#tarifs-portrait-mariage" className={CSS.link}>
+                    Tarifs
+                </a>
+
+                <a href="#options" className={CSS.link}>
+                    Options
+                </a>
+
+                <a href="#deroulement" className={CSS.link}>
+                    Déroulement
+                </a>
+
+                <a href="#faq" className={CSS.link}>
+                    FAQ
+                </a>
+
+                <a href="#avis" className={CSS.link}>
+                    Avis clients
+                </a>
+            </nav>
+
+            {/* ---------- ---------- ---------- ---------- ---------- */}
+
+            <h2 className={style.TitleH2}>
+                Quel tarif pour votre reportage de mariage ?
+            </h2>
 
             <p className={style.TextP4}>
-                Mon travail repose sur un  
-                <span className={style.SpanBold}>
-                    {" reportage "}
-                </span>
-                sincère, élégant et humain. Pas de mise en scène forcée, pas de poses figées à rallonge. Je documente
-                votre journée telle qu’elle se déroule, en restant attentive à ce qui compte vraiment : 
-                <span className={style.SpanBold}>
-                    {" les liens "}
-                </span>
-                qui garantissent des souvenirs à la hauteur de vos attentes.
+                Choisissez la formule la plus adaptée à votre journée selon la durée de présence souhaitée et les moments 
+                à couvrir. Toutes les prestations incluent la sélection et la retouche des photos, une galerie privée et 
+                la livraison des images en haute définition.
             </p>
 
+            <TarifCard_Element id="tarifs-portrait-mariage" tarifs={tarifsPortraitMariage_Data} mailtoLink={mailtoLinkPortraitMariage_Data} />
+            
             {/* ---------- ---------- ---------- ---------- ---------- */}
 
             <h2 className={style.TitleH2}>
@@ -326,8 +345,6 @@ function PortraitMariage_RootCopy() {
                 </span>
             </p>  
 
-            {/* Carte Tarifs */}
-            <TarifCard_Element id="tarifs-portrait-mariage" tarifs={tarifsPortraitMariage_Data} mailtoLink={mailtoLinkPortraitMariage_Data} />
 
             {/* Avis Client : */}
             {/* <GeneratorCardAvisClient_Element tabDataAvisClients={avisClientPortraitMariage_Data} /> */}
@@ -336,4 +353,4 @@ function PortraitMariage_RootCopy() {
     );
 }
 
-export default PortraitMariage_RootCopy;
+export default PortraitMariageTest_Root;
