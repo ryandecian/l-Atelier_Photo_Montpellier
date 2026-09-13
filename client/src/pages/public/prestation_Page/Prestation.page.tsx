@@ -7,12 +7,12 @@ import Prestation_Root from "../../../components/public/prestation/Prestation.ro
 import Footer_root_layout from "../../../components/layout/footer_Layout/Footer.root.layout";
 
 /* Import des composants SEO */
-import { HelmetPrestation_helmet_SEO } from "../../../seoS/prestation_SEO/HelmetPrestation.helmet.seo";
+// import { HelmetPrestation_helmet_SEO } from "../../../seoS/prestation_SEO/HelmetPrestation.helmet.seo";
 
 function Prestation_Page() {
      return (
         <section className={`Prestation_Page ${style.Page}`}>
-            <HelmetPrestation_helmet_SEO />
+            {/* <HelmetPrestation_helmet_SEO /> */}
             <header id="top" className={style.Header}>
                  <Nav_root_Layout />
             </header>
