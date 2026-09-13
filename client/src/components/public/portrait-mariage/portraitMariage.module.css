@@ -1,0 +1,116 @@
+.ContainerTitle {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem;
+    border: 0rem;
+}
+
+.TitleH1 {
+    color : var(--ColorTextBlack);
+    font-weight: var(--font-weight-title);
+    font-style: var(--font-style-title);
+    font-size: var(--h2); /* 18px */
+    font-display: swap;
+    text-align: center;
+    width: 100%;
+    margin: 0rem;
+    padding: 1.25rem 1.25rem 0rem 1.25rem; /* 20px 20px 0px 20px */
+    border: 0rem;
+}
+@media (min-width: 25rem) { /* 400px */
+    .TitleH1 {
+        font-size: var(--h1); /* 24px */
+    }
+}
+@media (min-width: 31.25rem) { /* 500px */
+    .TitleH1 {
+        font-size: var(--h1); /* 32px */
+    }
+}
+
+
+.menuAncrage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+
+  margin: 1rem auto;
+}
+
+.link {
+  position: relative;
+  overflow: hidden;
+
+  padding: 0.9rem 1.5rem;
+
+  color: #111;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 173, 214, 0.85),
+      rgba(173, 216, 255, 0.85),
+      rgba(190, 255, 220, 0.85),
+      rgba(225, 190, 255, 0.85)
+    );
+
+  background-size: 250% 250%;
+
+  box-shadow:
+    0 8px 22px rgba(0, 0, 0, 0.08),
+    inset 0 0 14px rgba(255, 255, 255, 0.18);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    background-position 0.7s ease;
+}
+
+.link::after {
+  content: "";
+
+  position: absolute;
+  top: -60%;
+  left: -120%;
+
+  width: 45%;
+  height: 220%;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.65),
+    transparent
+  );
+
+  transform: rotate(22deg);
+
+  transition: left 0.55s ease;
+}
+
+.link:hover {
+  color: #111;
+
+  transform: translateY(-4px) scale(1.025);
+
+  background-position: 100% 50%;
+
+  box-shadow:
+    0 12px 30px rgba(170, 140, 220, 0.2),
+    inset 0 0 20px rgba(255, 255, 255, 0.25);
+}
+
+.link:hover::after {
+  left: 140%;
+}

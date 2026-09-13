@@ -53,8 +53,8 @@ const imagesHome_img_Data: ImagesBlog_Type[] = [
     /* Tableau 3 d'images : 4 images */
     /* {imagesHome_img_Data[8].src} */
     {
-        src: "/images/image-home/lapm-photographe-mariage-professionnel-montpellier-couple-romantique-gramont-herault-l-atelier-photo-montpellier.jpg",
-        alt: "LAPM - photographe mariage professionnel Montpellier - couple romantique - Gramont - Hérault - L'Atelier Photo Montpellier",
+        src: "/images/image-home/lapm-photographe-specialiste-mariage-couple-miroir-montpellier-l-atelier-photo-montpellier.jpg",
+        alt: "LAPM - photographe spécialiste mariage - couple - miroir - Montpellier - L'Atelier Photo Montpellier",
     },
     /* {imagesHome_img_Data[9].src} */
     {
