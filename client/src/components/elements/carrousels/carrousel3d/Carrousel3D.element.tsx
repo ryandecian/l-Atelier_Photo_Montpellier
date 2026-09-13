@@ -31,6 +31,17 @@ import { Carrousel3D_Props } from "./carrousel3D.type";
  * - D'ajouter une classe CSS personnalisée au conteneur principal du carrousel.
  * 
  * ---
+ * ### Contraintes recommandées pour les images :
+ * Les images utilisées dans les slides doivent respecter les recommandations suivantes afin de garantir un affichage optimal et de limiter le poids des ressources chargées :
+ * 
+ * - Formats acceptés : `JPG` ou `WebP`.
+ * - Poids maximal recommandé : `150 Ko` par image.
+ * - Ratio attendu : `3:4`.
+ * - Dimensions recommandées : `1200 x 1600 px`.
+ * 
+ * Le respect de ces dimensions et de ce ratio permet de conserver un rendu homogène entre les différentes slides et d'éviter les déformations ou les différences de cadrage dans le carrousel.
+ * 
+ * ---
  * ### Les clés attendues en paramètre du composant sont :
  * @param {Carrousel3D_Props} props - L'objet contenant les propriétés nécessaires au fonctionnement du carrousel.
  * @param {Carrousel3D_Type[]} props.slides - **[slides]** - Tableau contenant l'ensemble des slides à afficher dans le carrousel.
