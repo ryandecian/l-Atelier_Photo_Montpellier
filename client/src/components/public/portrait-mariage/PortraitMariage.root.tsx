@@ -25,37 +25,41 @@ function PortraitMariage_Root() {
         <section className={`PortraitMariage_Root ${style.ContainerRootRacine}`}>
             <header className={CSS.ContainerTitle}>
                 <h1 className={CSS.TitleH1}>
-                    Page Mariage
+                    Tarifs et prestations de photographe mariage à Montpellier
                 </h1>
             </header>
 
             <Carrousel3D_Element slides={carrouselPortraitMariage_Data} />
 
             <p className={style.TextP4}>
-                <span className={style.SpanBold}>
-                    {"Votre mariage ne se résume pas à une suite de belles images."}
-                </span>
-                C’est une histoire qui se vit, qui se ressent, qui s’entend parfois… et qui mérite d’être racontée 
-                avec justesse. En tant que
-                <span className={style.SpanBold}>
-                    {" photographe de mariage et vidéaste professionnelle, "}
-                </span>
-                je vous propose une approche globale: un regard unique, une cohérence visuelle, et deux langages 
-                complémentaires — la photo pour figer l’instant, la vidéo pour en restituer le mouvement et l’émotion.
+                Découvrez les prestations de photographie de mariage proposées par L’Atelier Photo Montpellier, avec 
+                plusieurs formules adaptées à la durée et au déroulement de votre journée. Reportage photo à Montpellier, 
+                dans l’Hérault et au-delà, avec options complémentaires selon vos besoins.
             </p>
 
-            <p className={style.TextP4}>
-                Mon travail repose sur un  
-                <span className={style.SpanBold}>
-                    {" reportage "}
-                </span>
-                sincère, élégant et humain. Pas de mise en scène forcée, pas de poses figées à rallonge. Je documente
-                votre journée telle qu’elle se déroule, en restant attentive à ce qui compte vraiment : 
-                <span className={style.SpanBold}>
-                    {" les liens "}
-                </span>
-                qui garantissent des souvenirs à la hauteur de vos attentes.
-            </p>
+            {/* ---------- ---------- ---------- ---------- ---------- */}
+
+            <nav className={CSS.menuAncrage} aria-label="Navigation rapide dans la page mariage">
+                <a href="#tarifs-portrait-mariage" className={CSS.link}>
+                    Tarifs
+                </a>
+
+                <a href="#options" className={CSS.link}>
+                    Options
+                </a>
+
+                <a href="#deroulement" className={CSS.link}>
+                    Déroulement
+                </a>
+
+                <a href="#faq" className={CSS.link}>
+                    FAQ
+                </a>
+
+                <a href="#avis" className={CSS.link}>
+                    Avis clients
+                </a>
+            </nav>
 
             {/* ---------- ---------- ---------- ---------- ---------- */}
 
