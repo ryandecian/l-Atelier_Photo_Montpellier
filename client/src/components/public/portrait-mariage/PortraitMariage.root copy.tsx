@@ -1,6 +1,5 @@
 /* Import des modules CSS */
-import style from "../../style.root.module.css";
-import CSS from "./portraitMariage.module.css";
+import style from "../../StyleRootComponent.module.css";
 
 /* Import des Components de Data */
 import { imagesPortraitMariage_Data } from "./imagesPortraitMariage.data";
@@ -20,12 +19,12 @@ import { Link } from "react-router-dom";
 /* Import des composants Router */
 import router from "../../../router/router";
 
-function PortraitMariage_Root() {
+function PortraitMariage_RootCopy() {
     return (
         <section className={`PortraitMariage_Root ${style.ContainerRootRacine}`}>
-            <header className={CSS.ContainerTitle}>
-                <h1 className={CSS.TitleH1}>
-                    Page Mariage
+            <header className={style.ContainerTitle}>
+                <h1 className={style.TitleH1}>
+                    Photo & Vidéo de mariage : Un récit complet, une émotion intacte.
                 </h1>
             </header>
 
@@ -337,4 +336,4 @@ function PortraitMariage_Root() {
     );
 }
 
-export default PortraitMariage_Root;
+export default PortraitMariage_RootCopy;
