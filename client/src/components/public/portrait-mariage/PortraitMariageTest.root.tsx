@@ -22,6 +22,7 @@ import { CadreModel1_Element } from "../../elements/cadres/cadre-model-1/CadreMo
 import { CadreModel2_Element } from "../../elements/cadres/cadre-model-2/CadreModel2.element";
 import { CadreModel3_Element } from "../../elements/cadres/cadre-model-3/CadreModel3.element";
 import { CadreModel4_Element } from "../../elements/cadres/cadre-model-4/CadreModel4.element";
+import { CadreModel5_Element } from "../../elements/cadres/cadre-model-5/CadreModel5.element";
 
 /* Import des composants Router */
 // import router from "../../../router/router";
@@ -56,6 +57,10 @@ function PortraitMariageTest_Root() {
                 alt={imagesPortraitMariage_Data[20].alt}
             />
             <CadreModel1_Element
+                image={imagesPortraitMariage_Data[20].src}
+                alt={imagesPortraitMariage_Data[20].alt}
+            />
+            <CadreModel5_Element
                 image={imagesPortraitMariage_Data[20].src}
                 alt={imagesPortraitMariage_Data[20].alt}
             />
