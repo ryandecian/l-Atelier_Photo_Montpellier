@@ -18,7 +18,10 @@ import { FAQ_Element } from "../../elements/faq/FAQ.element";
 
 /* Import des composants React */
 // import { Link } from "react-router-dom";
+import { CadreModel1_Element } from "../../elements/cadres/cadre-model-1/CadreModel1.element";
 import { CadreModel2_Element } from "../../elements/cadres/cadre-model-2/CadreModel2.element";
+import { CadreModel3_Element } from "../../elements/cadres/cadre-model-3/CadreModel3.element";
+import { CadreModel4_Element } from "../../elements/cadres/cadre-model-4/CadreModel4.element";
 
 /* Import des composants Router */
 // import router from "../../../router/router";
@@ -40,8 +43,19 @@ function PortraitMariageTest_Root() {
                 dans l’Hérault et au-delà, avec options complémentaires selon vos besoins.
             </p>
             
-            {/* Cadre Model 1 */}
+            <CadreModel4_Element
+                image={imagesPortraitMariage_Data[20].src}
+                alt={imagesPortraitMariage_Data[20].alt}
+            />
+            <CadreModel3_Element
+                image={imagesPortraitMariage_Data[20].src}
+                alt={imagesPortraitMariage_Data[20].alt}
+            />
             <CadreModel2_Element
+                image={imagesPortraitMariage_Data[20].src}
+                alt={imagesPortraitMariage_Data[20].alt}
+            />
+            <CadreModel1_Element
                 image={imagesPortraitMariage_Data[20].src}
                 alt={imagesPortraitMariage_Data[20].alt}
             />
