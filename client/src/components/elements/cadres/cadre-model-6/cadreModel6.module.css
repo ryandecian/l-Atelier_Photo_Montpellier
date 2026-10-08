@@ -1,0 +1,267 @@
+.frame {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+    height: fit-content;
+
+    max-width: calc(100% - 2.5rem);
+    max-height: calc(100vh - 1.25rem);
+
+    margin: 0 auto 1.25rem auto;
+
+    box-sizing: border-box;
+}
+
+
+/* ========================================================= */
+/* STRUCTURE GLOBALE */
+/* ========================================================= */
+
+.frameShell {
+    --rail-size: clamp(1.15rem, 2.5vw, 2.2rem);
+
+    --frame-height:
+        calc(
+            var(--rail-size) * 2
+        );
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+    height: fit-content;
+
+    max-width: 100%;
+    max-height: calc(100vh - 1.25rem);
+
+    padding: var(--rail-size);
+
+    box-sizing: border-box;
+
+    filter:
+        drop-shadow(0 0.45rem 0.85rem rgb(0 0 0 / 18%));
+}
+
+
+/* ========================================================= */
+/* BASE COMMUNE */
+/* ========================================================= */
+
+.rail {
+    position: absolute;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    border: 0.04rem solid #77797c;
+
+    background-color: #b9bbbd;
+
+    box-shadow:
+        inset 0.14rem 0.14rem 0.18rem rgb(255 255 255 / 40%),
+        inset -0.18rem -0.18rem 0.22rem rgb(70 72 75 / 22%);
+}
+
+
+/* ========================================================= */
+/* HAUT / BAS */
+/* ========================================================= */
+
+.railTop,
+.railBottom {
+    left: 0;
+
+    width: 100%;
+    height: var(--rail-size);
+
+    z-index: 4;
+
+    background:
+        linear-gradient(
+            180deg,
+            #8d8f92 0%,
+            #b0b2b4 14%,
+            #d5d6d8 32%,
+            #eeeeef 48%,
+            #c6c8ca 64%,
+            #a6a8aa 82%,
+            #85878a 100%
+        );
+}
+
+.railTop {
+    top: 0;
+
+    clip-path:
+        polygon(
+            0 0,
+            100% 0,
+            calc(100% - var(--rail-size)) 100%,
+            var(--rail-size) 100%
+        );
+}
+
+.railBottom {
+    bottom: 0;
+
+    clip-path:
+        polygon(
+            var(--rail-size) 0,
+            calc(100% - var(--rail-size)) 0,
+            100% 100%,
+            0 100%
+        );
+}
+
+
+/* ========================================================= */
+/* GAUCHE / DROITE */
+/* ========================================================= */
+
+.railLeft,
+.railRight {
+    top: 0;
+
+    width: var(--rail-size);
+    height: 100%;
+
+    z-index: 3;
+
+    background:
+        linear-gradient(
+            90deg,
+            #8d8f92 0%,
+            #b0b2b4 14%,
+            #d5d6d8 32%,
+            #eeeeef 48%,
+            #c6c8ca 64%,
+            #a6a8aa 82%,
+            #85878a 100%
+        );
+}
+
+.railLeft {
+    left: 0;
+
+    clip-path:
+        polygon(
+            0 0,
+            100% var(--rail-size),
+            100% calc(100% - var(--rail-size)),
+            0 100%
+        );
+}
+
+.railRight {
+    right: 0;
+
+    clip-path:
+        polygon(
+            0 var(--rail-size),
+            100% 0,
+            100% 100%,
+            0 calc(100% - var(--rail-size))
+        );
+}
+
+
+/* ========================================================= */
+/* REFLET LÉGER */
+/* ========================================================= */
+
+.rail::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            115deg,
+            transparent 0%,
+            transparent 18%,
+            rgb(255 255 255 / 16%) 30%,
+            transparent 42%,
+            transparent 62%,
+            rgb(255 255 255 / 9%) 72%,
+            transparent 84%
+        );
+}
+
+
+/* ========================================================= */
+/* PHOTO */
+/* ========================================================= */
+
+.pictureContainer {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 0;
+    min-height: 0;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    background: #111;
+
+    border: 0.05rem solid #696b6e;
+
+    box-shadow:
+        inset 0.1rem 0.1rem 0.15rem rgb(0 0 0 / 18%);
+}
+
+.pictureContainer::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    z-index: 2;
+
+    pointer-events: none;
+
+    box-shadow:
+        inset 0.12rem 0.12rem 0.18rem rgb(0 0 0 / 15%);
+}
+
+
+/* ========================================================= */
+/* IMAGE */
+/* ========================================================= */
+
+.picture {
+    display: block;
+
+    width: auto;
+    height: auto;
+
+    max-width: 100%;
+
+    max-height:
+        calc(
+            100vh
+            - 1.25rem
+            - var(--frame-height)
+        );
+
+    object-fit: contain;
+}

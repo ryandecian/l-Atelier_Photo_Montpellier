@@ -1,0 +1,433 @@
+.frame {
+    /*
+     * Espace obligatoire autour du composant.
+     *
+     * 1.25rem à gauche
+     * 1.25rem à droite
+     * 1.25rem en dessous
+     */
+
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: center;
+
+    width: calc(100% - 2.5rem);
+
+    max-width: calc(100% - 2.5rem);
+    max-height: calc(100vh - 1.25rem);
+
+    margin: 0 auto 1.25rem auto;
+
+    box-sizing: border-box;
+}
+
+
+/* ========================================================= */
+/* CONTENEUR GLOBAL DU CADRE */
+/* ========================================================= */
+
+.frameShell {
+    /*
+     * Épaisseurs utilisées pour calculer automatiquement
+     * la place restante pour la photographie.
+     */
+
+    --outer-size: clamp(0.18rem, 0.4vw, 0.3rem);
+    --wood-size: clamp(0.8rem, 2vw, 1.6rem);
+    --dark-size: clamp(0.35rem, 0.8vw, 0.6rem);
+    --gold-size: clamp(0.16rem, 0.4vw, 0.28rem);
+    --inner-size: clamp(0.22rem, 0.5vw, 0.4rem);
+
+    /*
+     * Passe-partout volontairement assez important,
+     * comme sur la photographie de référence.
+     */
+
+    --mat-horizontal: clamp(1rem, 3.5vw, 3.5rem);
+    --mat-vertical: clamp(1rem, 3.5vw, 3.5rem);
+
+    /*
+     * Espace total occupé verticalement autour de la photo.
+     * Cette valeur permet d'empêcher le cadre de dépasser 100vh.
+     */
+
+    --frame-height:
+        calc(
+            (
+                var(--outer-size)
+                + var(--wood-size)
+                + var(--dark-size)
+                + var(--gold-size)
+                + var(--inner-size)
+                + var(--mat-vertical)
+            ) * 2
+            + 1rem
+        );
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+    height: fit-content;
+
+    max-width: 100%;
+    max-height: calc(100vh - 1.25rem);
+
+    box-sizing: border-box;
+}
+
+
+/* ========================================================= */
+/* FINE BORDURE EXTÉRIEURE */
+/* ========================================================= */
+
+.outerMoulding {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    padding: var(--outer-size);
+
+    box-sizing: border-box;
+
+    background:
+        linear-gradient(
+            135deg,
+            #080604 0%,
+            #2c2118 25%,
+            #0a0705 50%,
+            #3a2a1c 75%,
+            #080604 100%
+        );
+
+    box-shadow:
+        0 0.5rem 1rem rgb(0 0 0 / 30%),
+        inset 0 0 0 0.05rem rgb(255 255 255 / 10%);
+}
+
+
+/* ========================================================= */
+/* MOULURE PRINCIPALE EN BOIS */
+/* ========================================================= */
+
+.woodMoulding {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    padding: var(--wood-size);
+
+    box-sizing: border-box;
+
+    background:
+        repeating-linear-gradient(
+            7deg,
+            transparent 0,
+            transparent 0.2rem,
+            rgb(30 15 7 / 12%) 0.24rem,
+            transparent 0.3rem,
+            transparent 0.55rem
+        ),
+        repeating-linear-gradient(
+            97deg,
+            transparent 0,
+            transparent 0.45rem,
+            rgb(255 205 135 / 4%) 0.5rem,
+            transparent 0.65rem
+        ),
+        linear-gradient(
+            135deg,
+            #29170d 0%,
+            #6d4023 8%,
+            #9b6439 18%,
+            #59331d 30%,
+            #321a0e 43%,
+            #79502e 58%,
+            #a0693c 68%,
+            #482918 82%,
+            #24130b 100%
+        );
+
+    border: 0.06rem solid #21130b;
+
+    box-shadow:
+        inset 0.18rem 0.18rem 0.3rem rgb(255 216 165 / 22%),
+        inset -0.28rem -0.28rem 0.4rem rgb(20 9 3 / 75%);
+}
+
+
+/*
+ * Premier reflet du bois.
+ */
+
+.woodMoulding::before {
+    content: "";
+
+    position: absolute;
+    inset: 0.18rem;
+
+    pointer-events: none;
+
+    border: 0.07rem solid rgb(255 220 170 / 12%);
+
+    box-shadow:
+        inset 0.08rem 0.08rem 0.12rem rgb(255 255 255 / 8%),
+        inset -0.08rem -0.08rem 0.12rem rgb(0 0 0 / 40%);
+}
+
+
+/*
+ * Fine bordure sombre qui accentue la profondeur.
+ */
+
+.woodMoulding::after {
+    content: "";
+
+    position: absolute;
+    inset: 0.42rem;
+
+    pointer-events: none;
+
+    border: 0.05rem solid rgb(20 10 5 / 45%);
+}
+
+
+/* ========================================================= */
+/* MOULURE NOIRE / BRUN TRÈS FONCÉ */
+/* ========================================================= */
+
+.darkMoulding {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    padding: var(--dark-size);
+
+    box-sizing: border-box;
+
+    border: 0.06rem solid #090705;
+
+    background:
+        linear-gradient(
+            135deg,
+            #070605 0%,
+            #2b2620 14%,
+            #0d0b09 30%,
+            #3b352d 48%,
+            #0b0908 65%,
+            #29231e 82%,
+            #070605 100%
+        );
+
+    box-shadow:
+        inset 0.12rem 0.12rem 0.18rem rgb(255 255 255 / 12%),
+        inset -0.15rem -0.15rem 0.22rem rgb(0 0 0 / 80%);
+}
+
+
+/* ========================================================= */
+/* FILET DORÉ */
+/* ========================================================= */
+
+.goldMoulding {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    padding: var(--gold-size);
+
+    box-sizing: border-box;
+
+    background:
+        linear-gradient(
+            135deg,
+            #6a4c13 0%,
+            #c7a84a 15%,
+            #f1db82 28%,
+            #81651d 43%,
+            #d7bb58 60%,
+            #f0d878 75%,
+            #765617 100%
+        );
+
+    box-shadow:
+        inset 0.05rem 0.05rem 0.08rem rgb(255 246 185 / 60%),
+        inset -0.05rem -0.05rem 0.08rem rgb(65 42 5 / 80%);
+}
+
+
+/* ========================================================= */
+/* PETITE MOULURE INTÉRIEURE SOMBRE */
+/* ========================================================= */
+
+.innerMoulding {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    padding: var(--inner-size);
+
+    box-sizing: border-box;
+
+    background:
+        linear-gradient(
+            180deg,
+            #15120e 0%,
+            #484036 22%,
+            #0c0a08 48%,
+            #353027 72%,
+            #090705 100%
+        );
+
+    box-shadow:
+        inset 0.08rem 0.08rem 0.12rem rgb(255 255 255 / 18%),
+        inset -0.1rem -0.1rem 0.15rem rgb(0 0 0 / 75%);
+}
+
+
+/* ========================================================= */
+/* PASSE-PARTOUT */
+/* ========================================================= */
+
+.passePartout {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    padding:
+        var(--mat-vertical)
+        var(--mat-horizontal);
+
+    box-sizing: border-box;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eee9d9 0%,
+            #faf8ee 25%,
+            #e8e3d2 50%,
+            #f8f5e9 75%,
+            #e6e0cf 100%
+        );
+
+    border: 0.06rem solid #c5bfae;
+
+    box-shadow:
+        inset 0.15rem 0.15rem 0.3rem rgb(0 0 0 / 10%),
+        inset -0.1rem -0.1rem 0.2rem rgb(255 255 255 / 60%);
+}
+
+
+/* ========================================================= */
+/* CONTENEUR PHOTO */
+/* ========================================================= */
+
+.pictureContainer {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 0;
+    min-height: 0;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    background: #111;
+
+    border: 0.05rem solid #b9b2a1;
+
+    box-shadow:
+        0 0 0 0.04rem rgb(80 70 55 / 20%),
+        0.12rem 0.12rem 0.25rem rgb(0 0 0 / 18%);
+}
+
+
+/*
+ * Petite ombre intérieure.
+ * Elle simule l'épaisseur du passe-partout
+ * devant la photographie.
+ */
+
+.pictureContainer::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: 2;
+
+    box-shadow:
+        inset 0.16rem 0.16rem 0.22rem rgb(0 0 0 / 22%),
+        inset -0.06rem -0.06rem 0.12rem rgb(255 255 255 / 8%);
+}
+
+
+/* ========================================================= */
+/* PHOTO */
+/* ========================================================= */
+
+.picture {
+    display: block;
+
+    width: auto;
+    height: auto;
+
+    max-width: 100%;
+
+    /*
+     * Toute l'épaisseur du cadre + passe-partout
+     * est retirée de la hauteur disponible.
+     *
+     * Le cadre complet reste donc dans :
+     *
+     * 100vh - 1.25rem
+     */
+
+    max-height:
+        calc(
+            100vh
+            - 1.25rem
+            - var(--frame-height)
+        );
+
+    object-fit: contain;
+}
