@@ -17,11 +17,11 @@ import { Carrousel3D_Element } from "../../elements/carrousels/carrousel3d/Carro
 import { FAQ_Element } from "../../elements/faq/FAQ.element";
 
 /* Import des composants React */
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { CadreModel4_Element } from "../../elements/cadres/cadre-model-4/CadreModel4.element";
 
 /* Import des composants Router */
-// import router from "../../../router/router";
+import router from "../../../router/router";
 
 function PortraitMariageTest_Root() {
     return (
@@ -293,12 +293,26 @@ function PortraitMariageTest_Root() {
             {/* ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- */}
 
             <h2 className={style.TitleH2}>
-                FAQ : Questions fréquentes sur la photographie de mariage à Montpellier ?
+                FAQ sur les prestations d’un photographe professionnel de mariage 
             </h2>
 
             <FAQ_Element items={faqPortraitMariage_Data} />
             
-            {/* ---------- ---------- ---------- ---------- ---------- */}
+            {/* ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- */}
+
+            <h2 className={style.TitleH2}>
+                Vérifier ma disponibilité pour votre date
+            </h2>
+
+            <p className={style.TextP4}>
+                Vous avez une date en tête ? <br />
+                <br />
+                <Link to={router[3].path} className={style.Link}>
+                        👉 Contactez-moi pour vérifier mes disponibilités et échanger sur votre projet.
+                </Link>
+            </p>
+            
+            {/* ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- */}
 
             <h2 className={style.TitleH2}>
                 Des photos, des expériences, des mots, ils m'ont fait confiance !
