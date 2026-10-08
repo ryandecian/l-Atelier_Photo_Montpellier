@@ -1,217 +1,294 @@
 .slidesWrapper {
-  min-height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  touch-action: pan-y;
-  width: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    touch-action: pan-y;
+    width: 100%;
 }
 
 .slidesWrapper *,
 .slidesWrapper *::before,
 .slidesWrapper *::after {
-  position: relative;
-  box-sizing: border-box;
+    position: relative;
+    box-sizing: border-box;
 }
 
 @media (min-width: 768px) {
-  .slidesWrapper {
-    width: 750px;
-  }
+    .slidesWrapper {
+        width: 750px;
+    }
 }
 
 @media (min-width: 992px) {
-  .slidesWrapper {
-    width: 970px;
-  }
+    .slidesWrapper {
+        width: 970px;
+    }
 }
 
 @media (min-width: 1200px) {
-  .slidesWrapper {
-    width: 1170px;
-  }
+    .slidesWrapper {
+        width: 1170px;
+    }
 }
 
 .slides {
-  display: grid;
+    display: grid;
 }
 
 .slides > .slide {
-  grid-area: 1 / -1;
+    grid-area: 1 / -1;
 }
 
 .slide {
-  --px: 0.5;
-  --py: 0.5;
+    --px: 0.5;
+    --py: 0.5;
 }
 
+
+/*
+ * Conteneur principal de l'image.
+ *
+ * Les anciennes propriétés background-* ne sont plus nécessaires
+ * puisque l'image est maintenant affichée avec une balise <img>.
+ */
 .slideContent {
-  width: 250px;
-  aspect-ratio: 3 / 4;
+    width: 250px;
+    aspect-ratio: 3 / 4;
 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    transition: transform 0.5s ease-in-out;
 
-  transition: transform 0.5s ease-in-out;
+    opacity: 0.7;
 
-  opacity: 0.7;
+    display: grid;
+    align-content: center;
 
-  display: grid;
-  align-content: center;
+    transform-style: preserve-3d;
 
-  transform-style: preserve-3d;
+    transform:
+        perspective(1000px)
+        translateX(calc(100% * var(--offset)))
+        rotateY(calc(-45deg * var(--dir)));
 
-  transform:
-    perspective(1000px)
-    translateX(calc(100% * var(--offset)))
-    rotateY(calc(-45deg * var(--dir)));
-
-  border-radius: 15px;
+    border-radius: 15px;
 }
 
+
+/*
+ * Image principale de la slide.
+ *
+ * `position: absolute !important` est nécessaire ici car la règle :
+ *
+ * .slidesWrapper * {
+ *     position: relative;
+ * }
+ *
+ * forcerait sinon la balise <img> à rester dans le flux.
+ *
+ * object-fit: cover reproduit background-size: cover.
+ * object-position: center reproduit background-position: center.
+ */
+.slideImage {
+    position: absolute !important;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: inherit;
+
+    pointer-events: none;
+}
+
+
+/*
+ * Le contenu textuel reste exactement au même endroit.
+ *
+ * Le translateZ existant suffit également à le maintenir
+ * visuellement devant l'image dans l'espace 3D.
+ */
 .slideContentInner {
-  transform-style: preserve-3d;
-  transform: translateZ(2rem);
+    transform-style: preserve-3d;
+    transform: translateZ(2rem);
 
-  transition: opacity 0.3s linear;
+    transition: opacity 0.3s linear;
 
-  color: white;
+    color: white;
 
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 
-  opacity: 0;
+    opacity: 0;
 }
 
 .slideTitle,
 .slideSubtitle {
-  font-size: 2rem;
-  font-weight: normal;
+    font-size: 2rem;
+    font-weight: normal;
 
-  letter-spacing: 0.2ch;
-  text-transform: uppercase;
+    letter-spacing: 0.2ch;
+    text-transform: uppercase;
 
-  margin: 0;
+    margin: 0;
 }
 
 .slideSubtitle::before {
-  content: "— ";
+    content: "— ";
 }
 
 .slideDescription {
-  margin: 0;
+    margin: 0;
 
-  font-size: 0.8rem;
-  letter-spacing: 0.2ch;
+    font-size: 0.8rem;
+    letter-spacing: 0.2ch;
 }
 
+
+/*
+ * Conteneur de l'image décorative affichée
+ * derrière le carrousel.
+ */
 .slideBackground {
-  position: fixed !important;
+    position: fixed !important;
 
-  top: 0;
-  left: -10%;
-  right: -10%;
-  bottom: 0;
+    top: 0;
+    left: -10%;
+    right: -10%;
+    bottom: 0;
 
-  background-size: cover;
-  background-position: center center;
+    z-index: -1;
 
-  z-index: -1;
+    opacity: 0;
 
-  opacity: 0;
+    transition:
+        opacity 0.3s linear,
+        transform 0.3s ease-in-out;
 
-  transition:
-    opacity 0.3s linear,
-    transform 0.3s ease-in-out;
+    pointer-events: none;
 
-  pointer-events: none;
-
-  transform: translateX(calc(10% * var(--dir)));
+    transform: translateX(calc(10% * var(--dir)));
 }
+
+
+/*
+ * Image décorative de fond.
+ *
+ * Même principe que pour l'image principale :
+ *
+ * object-fit: cover
+ * =
+ * background-size: cover
+ *
+ * object-position: center center
+ * =
+ * background-position: center center
+ */
+.slideBackgroundImage {
+    position: absolute !important;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center center;
+
+    pointer-events: none;
+}
+
 
 .slide[data-active="true"] {
-  z-index: 2;
-  pointer-events: auto;
+    z-index: 2;
+    pointer-events: auto;
 }
 
 .slide[data-active="true"] .slideBackground {
-  opacity: 0.1;
-  transform: none;
+    opacity: 0.1;
+    transform: none;
 }
 
 .slide[data-active="true"] .slideContentInner {
-  opacity: 1;
+    opacity: 1;
 }
 
 .slide[data-active="true"] .slideContent {
-  --x: calc(var(--px) - 0.5);
-  --y: calc(var(--py) - 0.5);
+    --x: calc(var(--px) - 0.5);
+    --y: calc(var(--py) - 0.5);
 
-  opacity: 1;
+    opacity: 1;
 
-  transform-style: preserve-3d;
+    transform-style: preserve-3d;
 
-  transform:
-    perspective(1000px)
-    translateX(calc(100% * var(--offset)));
+    transform:
+        perspective(1000px)
+        translateX(calc(100% * var(--offset)));
 
-  transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 .slide[data-active="true"] .slideContent:hover {
-  transition: none;
+    transition: none;
 
-  transform:
-    perspective(1000px)
-    rotateY(calc(var(--x) * 45deg))
-    rotateX(calc(var(--y) * -45deg));
+    transform:
+        perspective(1000px)
+        rotateY(calc(var(--x) * 45deg))
+        rotateX(calc(var(--y) * -45deg));
 }
+
 
 .prevSlideBtn,
 .nextSlideBtn {
-  appearance: none;
+    appearance: none;
 
-  background: transparent;
-  border: none;
+    background: transparent;
+    border: none;
 
-  color: white;
+    color: white;
 
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 
-  position: absolute;
+    position: absolute;
 
-  font-size: 4rem;
+    font-size: 4rem;
 
-  width: 5rem;
-  height: 5rem;
+    width: 5rem;
+    height: 5rem;
 
-  top: 30%;
+    top: 30%;
 
-  cursor: pointer;
+    cursor: pointer;
 
-  transition: opacity 0.3s;
+    transition: opacity 0.3s;
 
-  opacity: 0.7;
+    opacity: 0.7;
 
-  z-index: 5;
+    z-index: 5;
 }
 
 .prevSlideBtn:hover,
 .nextSlideBtn:hover {
-  opacity: 1;
+    opacity: 1;
 }
 
 .prevSlideBtn:focus-visible,
 .nextSlideBtn:focus-visible {
-  outline: 2px solid currentColor;
-  outline-offset: 2px;
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
 }
 
 .prevSlideBtn {
-  left: -25%;
+    left: -25%;
 }
 
 .nextSlideBtn {
-  right: -25%;
+    right: -25%;
 }

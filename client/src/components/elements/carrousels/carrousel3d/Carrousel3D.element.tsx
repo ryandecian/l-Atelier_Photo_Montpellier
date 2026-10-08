@@ -5,11 +5,7 @@ import styles from "./carrousel3D.module.css";
 import { Slide_Component } from "./components/Slide.component";
 
 /* Import des composants React */
-import {
-    useRef,
-    useState,
-    type TouchEvent,
-} from "react";
+import { useRef, useState, type TouchEvent } from "react";
 
 /* Import des Types */
 import { Carrousel3D_Props } from "./carrousel3D.type";

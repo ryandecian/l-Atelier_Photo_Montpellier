@@ -1,0 +1,317 @@
+.frame {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+    height: fit-content;
+
+    max-width: calc(100% - 2.5rem);
+
+    /*
+     * Le cadre complet ne peut jamais dépasser
+     * la hauteur de l'écran moins 1.25rem.
+     */
+    max-height: calc(100vh - 1.25rem);
+
+    margin: 0 auto 1.25rem auto;
+
+    box-sizing: border-box;
+}
+
+
+/* ========================================================= */
+/* MOULURE EXTÉRIEURE */
+/* ========================================================= */
+
+.outerMoulding {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    padding: clamp(0.7rem, 1.6vw, 1.4rem);
+
+    box-sizing: border-box;
+
+    border: 0.12rem solid #050507;
+
+    background:
+        linear-gradient(
+            135deg,
+            #050507 0%,
+            #28282e 8%,
+            #0a0a0d 18%,
+            #3b3b43 27%,
+            #101014 38%,
+            #050507 50%,
+            #222228 62%,
+            #08080b 75%,
+            #323239 88%,
+            #050507 100%
+        );
+
+    box-shadow:
+        0 0.6rem 1.5rem rgb(0 0 0 / 35%),
+        inset 0 0 0 0.08rem #515159,
+        inset 0 0 0 0.16rem #08080a,
+        inset 0.25rem 0.25rem 0.35rem rgb(255 255 255 / 10%),
+        inset -0.3rem -0.3rem 0.45rem rgb(0 0 0 / 80%);
+}
+
+
+/*
+ * Fine bordure décorative.
+ *
+ * IMPORTANT :
+ * elle reste uniquement dans l'épaisseur de la moulure.
+ * Elle ne vient jamais recouvrir la photo.
+ */
+
+.outerMoulding::before {
+    content: "";
+
+    position: absolute;
+    inset: 0.25rem;
+
+    pointer-events: none;
+
+    border: 0.1rem solid rgb(100 100 110 / 45%);
+
+    box-shadow:
+        inset 0 0 0 0.06rem #050507,
+        0 0 0 0.04rem rgb(255 255 255 / 10%);
+}
+
+
+/*
+ * Deuxième ligne extérieure donnant un aspect
+ * légèrement gravé au cadre.
+ */
+
+.outerMoulding::after {
+    content: "";
+
+    position: absolute;
+    inset: 0.42rem;
+
+    pointer-events: none;
+
+    border: 0.07rem solid rgb(0 0 0 / 80%);
+
+    box-shadow:
+        0.04rem 0.04rem 0 rgb(255 255 255 / 8%);
+}
+
+
+/* ========================================================= */
+/* MOULURE PRINCIPALE */
+/* ========================================================= */
+
+.middleMoulding {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    padding: clamp(0.8rem, 2vw, 1.5rem);
+
+    box-sizing: border-box;
+
+    border: 0.08rem solid #050507;
+
+    background:
+        linear-gradient(
+            90deg,
+            #050507 0%,
+            #121216 7%,
+            #37373f 14%,
+            #18181d 22%,
+            #07070a 35%,
+            #111116 50%,
+            #07070a 65%,
+            #202026 79%,
+            #404048 88%,
+            #08080a 100%
+        );
+
+    box-shadow:
+        inset 0.18rem 0.18rem 0.25rem rgb(255 255 255 / 14%),
+        inset -0.28rem -0.28rem 0.4rem rgb(0 0 0 / 90%),
+        inset 0 0 0 0.1rem #484850,
+        inset 0 0 0 0.22rem #070709;
+}
+
+
+/*
+ * Reflet interne très léger pour donner
+ * l'impression d'une moulure bombée.
+ */
+
+.middleMoulding::before {
+    content: "";
+
+    position: absolute;
+    inset: 0.32rem;
+
+    pointer-events: none;
+
+    border: 0.07rem solid rgb(255 255 255 / 5%);
+
+    box-shadow:
+        inset 0.12rem 0.12rem 0.2rem rgb(255 255 255 / 10%),
+        inset -0.15rem -0.15rem 0.25rem rgb(0 0 0 / 60%);
+}
+
+
+/* ========================================================= */
+/* MOULURE INTÉRIEURE */
+/* ========================================================= */
+
+.innerMoulding {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    padding: 0.5rem;
+
+    box-sizing: border-box;
+
+    border: 0.1rem solid #050507;
+
+    background:
+        linear-gradient(
+            180deg,
+            #070709 0%,
+            #3b3b43 13%,
+            #151519 28%,
+            #08080b 48%,
+            #27272d 68%,
+            #111115 82%,
+            #050507 100%
+        );
+
+    box-shadow:
+        inset 0.1rem 0.1rem 0.14rem rgb(255 255 255 / 15%),
+        inset -0.14rem -0.14rem 0.2rem rgb(0 0 0 / 85%);
+}
+
+
+/*
+ * Baguette perlée intérieure.
+ *
+ * Le motif reste uniquement autour de la photo.
+ */
+
+.innerMoulding::before {
+    content: "";
+
+    position: absolute;
+    inset: 0.15rem;
+
+    pointer-events: none;
+
+    border: 0.12rem dotted #55555e;
+
+    box-shadow:
+        0 0 0 0.06rem #050507,
+        inset 0 0 0 0.04rem rgb(255 255 255 / 10%);
+}
+
+
+/* ========================================================= */
+/* CONTENEUR PHOTO */
+/* ========================================================= */
+
+.pictureContainer {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    min-width: 0;
+    min-height: 0;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    border: 0.12rem solid #050507;
+
+    background: #050507;
+
+    box-shadow:
+        0 0 0 0.08rem #3a3a42,
+        0 0 0 0.15rem #050507,
+        inset 0 0 0.5rem rgb(0 0 0 / 70%);
+}
+
+
+/*
+ * Ombre uniquement sur quelques pixels autour
+ * de la photo.
+ *
+ * Elle donne l'impression que l'image est
+ * légèrement encastrée dans le cadre.
+ */
+
+.pictureContainer::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    z-index: 2;
+
+    pointer-events: none;
+
+    box-shadow:
+        inset 0.18rem 0.18rem 0.3rem rgb(0 0 0 / 50%),
+        inset -0.1rem -0.1rem 0.18rem rgb(255 255 255 / 7%);
+}
+
+
+/* ========================================================= */
+/* IMAGE */
+/* ========================================================= */
+
+.picture {
+    display: block;
+
+    width: auto;
+    height: auto;
+
+    max-width: 100%;
+
+    /*
+     * On retire :
+     * - l'épaisseur cumulée des moulures
+     * - les bordures
+     * - 1.25rem d'espace sous le cadre
+     */
+    max-height: calc(100vh - 8.5rem);
+
+    object-fit: contain;
+}
