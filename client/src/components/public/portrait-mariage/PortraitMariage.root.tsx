@@ -22,7 +22,7 @@ function PortraitMariage_Root() {
         <section className={`PortraitMariage_Root ${style.ContainerRootRacine}`}>
             <header className={style.ContainerTitle}>
                 <h1 className={style.TitleH1}>
-                    Photo & Vidéo de mariage : Un récit complet, une émotion intacte.
+                    Tarifs et prestations de photographe mariage à Montpellier.
                 </h1>
             </header>
 
