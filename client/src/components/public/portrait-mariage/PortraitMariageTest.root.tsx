@@ -11,14 +11,17 @@ import { faqPortraitMariage_Data } from "./faqPortraitMariage.data";
 
 /* Import des composants d'Elements */
 import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
+import { Container4ImagesPaysage_Element } from "../../elements/container-image/container-4-Images-paysage/Container4ImagesPaysage.element";
 import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 import { TarifCard_Element} from "../../elements/tarifs-card/TarifsCard.element";
 import { Carrousel3D_Element } from "../../elements/carrousels/carrousel3d/Carrousel3D.element";
 import { FAQ_Element } from "../../elements/faq/FAQ.element";
+import { CadreModel4_Element } from "../../elements/cadres/cadre-model-4/CadreModel4.element";
+import { CadreModel2_Element } from "../../elements/cadres/cadre-model-2/CadreModel2.element";
+import { CadreModel1_Element } from "../../elements/cadres/cadre-model-1/CadreModel1.element";
 
 /* Import des composants React */
 import { Link } from "react-router-dom";
-import { CadreModel4_Element } from "../../elements/cadres/cadre-model-4/CadreModel4.element";
 
 /* Import des composants Router */
 import router from "../../../router/router";
@@ -32,7 +35,12 @@ function PortraitMariageTest_Root() {
                 </h1>
             </header>
 
-            <Carrousel3D_Element slides={carrouselPortraitMariage_Data} />
+            <br />
+            
+            <CadreModel4_Element
+                image={imagesPortraitMariage_Data[24].src}
+                alt={imagesPortraitMariage_Data[24].alt}
+            />
 
             <p className={style.TextP4}>
                 Photographe de mariage à Montpellier et dans l'Hérault, j’incarne 
@@ -40,10 +48,8 @@ function PortraitMariageTest_Root() {
                 pour raconter votre journée au-delà des moments que vous avez vécus.
             </p>
 
-            <CadreModel4_Element
-                image={imagesPortraitMariage_Data[20].src}
-                alt={imagesPortraitMariage_Data[20].alt}
-            />
+            <Carrousel3D_Element slides={carrouselPortraitMariage_Data} />
+            
             <p className={style.TextP4}>
                 Un mariage passe vite. <br />
                 Pendant que vous vivez un moment, d’autres se déroulent ailleurs.
@@ -60,7 +66,7 @@ function PortraitMariageTest_Root() {
             
 
             {/* Container Images 1 */}
-            <Container4Images_Element
+            <Container4ImagesPaysage_Element
                 img1={imagesPortraitMariage_Data[0].src}
                 metaNameImg1={imagesPortraitMariage_Data[0].alt}
                 img2={imagesPortraitMariage_Data[1].src}
@@ -109,20 +115,20 @@ function PortraitMariageTest_Root() {
 
             <TarifCard_Element id="tarifs-portrait-mariage" tarifs={tarifsPortraitMariage_Data} mailtoLink={mailtoLinkPortraitMariage_Data} />
 
-            <p className={style.TextP4}>
+            {/* <p className={style.TextP4}>
                 Test texte a mettre en place pour la section des tarifs.
-            </p>
+            </p> */}
 
-            {/* Container Images 1 */}
-            <Container4Images_Element
-                img1={imagesPortraitMariage_Data[0].src}
-                metaNameImg1={imagesPortraitMariage_Data[0].alt}
-                img2={imagesPortraitMariage_Data[1].src}
-                metaNameImg2={imagesPortraitMariage_Data[1].alt}
-                img3={imagesPortraitMariage_Data[2].src}
-                metaNameImg3={imagesPortraitMariage_Data[2].alt}
-                img4={imagesPortraitMariage_Data[3].src}
-                metaNameImg4={imagesPortraitMariage_Data[3].alt}
+            {/* Container Images 2 */}
+            <Container4ImagesPaysage_Element
+                img1={imagesPortraitMariage_Data[4].src}
+                metaNameImg1={imagesPortraitMariage_Data[4].alt}
+                img2={imagesPortraitMariage_Data[5].src}
+                metaNameImg2={imagesPortraitMariage_Data[5].alt}
+                img3={imagesPortraitMariage_Data[6].src}
+                metaNameImg3={imagesPortraitMariage_Data[6].alt}
+                img4={imagesPortraitMariage_Data[7].src}
+                metaNameImg4={imagesPortraitMariage_Data[7].alt}
             />
             
             {/* ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- */}
@@ -153,16 +159,9 @@ function PortraitMariageTest_Root() {
                 </li>
             </ul>
 
-            {/* Container Images 1 */}
-            <Container4Images_Element
-                img1={imagesPortraitMariage_Data[0].src}
-                metaNameImg1={imagesPortraitMariage_Data[0].alt}
-                img2={imagesPortraitMariage_Data[1].src}
-                metaNameImg2={imagesPortraitMariage_Data[1].alt}
-                img3={imagesPortraitMariage_Data[2].src}
-                metaNameImg3={imagesPortraitMariage_Data[2].alt}
-                img4={imagesPortraitMariage_Data[3].src}
-                metaNameImg4={imagesPortraitMariage_Data[3].alt}
+            <CadreModel2_Element
+                image={imagesPortraitMariage_Data[25].src}
+                alt={imagesPortraitMariage_Data[25].alt}
             />
 
             {/* ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- */}
@@ -191,6 +190,20 @@ function PortraitMariageTest_Root() {
                 envisagé de votre journée.
             </p>
 
+            {/* Container Images 3 */}
+            <Container4Images_Element
+                img1={imagesPortraitMariage_Data[8].src}
+                metaNameImg1={imagesPortraitMariage_Data[8].alt}
+                img2={imagesPortraitMariage_Data[9].src}
+                metaNameImg2={imagesPortraitMariage_Data[9].alt}
+                img3={imagesPortraitMariage_Data[10].src}
+                metaNameImg3={imagesPortraitMariage_Data[10].alt}
+                img4={imagesPortraitMariage_Data[11].src}
+                metaNameImg4={imagesPortraitMariage_Data[11].alt}
+            />
+
+            <br />
+
             <h3 className={style.TitleH3}>
                 2 - Une préparation personnalisée pour un reportage qui vous ressemble.
             </h3>
@@ -215,17 +228,19 @@ function PortraitMariageTest_Root() {
                 selon vos priorités.
             </p>
 
-            {/* Container Images 1 */}
-            <Container4Images_Element
-                img1={imagesPortraitMariage_Data[0].src}
-                metaNameImg1={imagesPortraitMariage_Data[0].alt}
-                img2={imagesPortraitMariage_Data[1].src}
-                metaNameImg2={imagesPortraitMariage_Data[1].alt}
-                img3={imagesPortraitMariage_Data[2].src}
-                metaNameImg3={imagesPortraitMariage_Data[2].alt}
-                img4={imagesPortraitMariage_Data[3].src}
-                metaNameImg4={imagesPortraitMariage_Data[3].alt}
+            {/* Container Images 4 */}
+            <Container4ImagesPaysage_Element
+                img1={imagesPortraitMariage_Data[12].src}
+                metaNameImg1={imagesPortraitMariage_Data[12].alt}
+                img2={imagesPortraitMariage_Data[13].src}
+                metaNameImg2={imagesPortraitMariage_Data[13].alt}
+                img3={imagesPortraitMariage_Data[14].src}
+                metaNameImg3={imagesPortraitMariage_Data[14].alt}
+                img4={imagesPortraitMariage_Data[15].src}
+                metaNameImg4={imagesPortraitMariage_Data[15].alt}
             />
+
+            <br />
             
             <h3 className={style.TitleH3}>
                 3 - Le jour du mariage : réactivité, adaptation et sens du bon moment
@@ -247,6 +262,20 @@ function PortraitMariageTest_Root() {
                 Mon objectif en tant que photographe professionnel : respecter le rythme de votre journée tout en restant 
                 attentive aux occasions qui feront la différence dans votre reportage.
             </p>
+
+            {/* Container Images 5 */}
+            <Container4Images_Element
+                img1={imagesPortraitMariage_Data[16].src}
+                metaNameImg1={imagesPortraitMariage_Data[16].alt}
+                img2={imagesPortraitMariage_Data[17].src}
+                metaNameImg2={imagesPortraitMariage_Data[17].alt}
+                img3={imagesPortraitMariage_Data[18].src}
+                metaNameImg3={imagesPortraitMariage_Data[18].alt}
+                img4={imagesPortraitMariage_Data[19].src}
+                metaNameImg4={imagesPortraitMariage_Data[19].alt}
+            />
+
+            <br />
             
             <h3 className={style.TitleH3}>
                 4 - La sélection et la livraison de vos photos
@@ -264,30 +293,21 @@ function PortraitMariageTest_Root() {
                 Un aperçu de mes reportages de mariage
             </h2>
 
-            {/* Container Images 1 */}
-            <Container4Images_Element
-                img1={imagesPortraitMariage_Data[0].src}
-                metaNameImg1={imagesPortraitMariage_Data[0].alt}
-                img2={imagesPortraitMariage_Data[1].src}
-                metaNameImg2={imagesPortraitMariage_Data[1].alt}
-                img3={imagesPortraitMariage_Data[2].src}
-                metaNameImg3={imagesPortraitMariage_Data[2].alt}
-                img4={imagesPortraitMariage_Data[3].src}
-                metaNameImg4={imagesPortraitMariage_Data[3].alt}
+            <CadreModel1_Element
+                image={imagesPortraitMariage_Data[26].src}
+                alt={imagesPortraitMariage_Data[26].alt}
             />
 
-            <br />
-
-            {/* Container Images 1 */}
-            <Container4Images_Element
-                img1={imagesPortraitMariage_Data[0].src}
-                metaNameImg1={imagesPortraitMariage_Data[0].alt}
-                img2={imagesPortraitMariage_Data[1].src}
-                metaNameImg2={imagesPortraitMariage_Data[1].alt}
-                img3={imagesPortraitMariage_Data[2].src}
-                metaNameImg3={imagesPortraitMariage_Data[2].alt}
-                img4={imagesPortraitMariage_Data[3].src}
-                metaNameImg4={imagesPortraitMariage_Data[3].alt}
+            {/* Container Images 6 */}
+            <Container4ImagesPaysage_Element
+                img1={imagesPortraitMariage_Data[20].src}
+                metaNameImg1={imagesPortraitMariage_Data[20].alt}
+                img2={imagesPortraitMariage_Data[21].src}
+                metaNameImg2={imagesPortraitMariage_Data[21].alt}
+                img3={imagesPortraitMariage_Data[22].src}
+                metaNameImg3={imagesPortraitMariage_Data[22].alt}
+                img4={imagesPortraitMariage_Data[23].src}
+                metaNameImg4={imagesPortraitMariage_Data[23].alt}
             />
 
             {/* ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- */}
