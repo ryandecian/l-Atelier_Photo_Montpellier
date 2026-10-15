@@ -14,7 +14,7 @@ const avisClientPortraitMariage_Data: AvisClientSEO_Type[] = [
         nom: "Virginie P",
         note: 5,
         commentaire: "Nous avons été bluffés par la qualité des photos chaque cliché capture une émotion, une lumière, un instant qu'on n'aurait jamais pensé pouvoir revivre comme ça. Les idées de mise en scène étaient originales et nous ressemblaient vraiment, loin des poses figées habituelles. Et surtout, une adaptabilité incroyable face aux imprévus de la journée rien ne semblait perturber le rythme des prises de vue. Un vrai talent, merci pour ces souvenirs inestimables. Prix raisonnable.",
-        date: "14/12/2024",
+        date: "01/08/2026",
     },
     {
         id: 3,
