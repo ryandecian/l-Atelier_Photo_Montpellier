@@ -226,6 +226,8 @@ function PortraitMariageTest_Root() {
                 img4={imagesPortraitMariage_Data[3].src}
                 metaNameImg4={imagesPortraitMariage_Data[3].alt}
             />
+
+            <br />
             
             <h3 className={style.TitleH3}>
                 3 - Le jour du mariage : réactivité, adaptation et sens du bon moment
