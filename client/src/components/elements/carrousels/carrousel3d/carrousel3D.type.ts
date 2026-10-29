@@ -38,6 +38,24 @@ type Carrousel3D_Type = {
    */
   image: string;
 
+    /**
+   * ⚠️ **NOTE ET CONTRAINTE** : Texte alternatif associé à l'image principale de la slide.
+   * 
+   * - Doit être une string décrivant le contenu visuel ou le sujet principal de l'image.
+   * - Est utilisé dans l'attribut HTML `alt` de la balise `<img>`.
+   * - Permet d'améliorer l'accessibilité pour les utilisateurs utilisant un lecteur d'écran.
+   * - Permet également aux moteurs de recherche de mieux comprendre le contenu de l'image.
+   * - Il est recommandé de décrire précisément l'image sans surcharger inutilement le texte avec des mots-clés.
+   * - Si l'image est purement décorative, une string vide peut être utilisée.
+   * 
+   * ---
+   * @example "Mariés marchant dans les rues de Montpellier après leur cérémonie."
+   * @example "Portrait naturel d'une mariée dans un domaine de l'Hérault."
+   * @example "Couple de mariés photographié au coucher du soleil."
+   * @example ""
+   */
+  imageAlt: string;
+
   /**
    * ⚠️ **NOTE ET CONTRAINTE** : Titre principal optionnel de la slide.
    * 

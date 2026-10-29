@@ -1,3 +1,4 @@
+
 /* Import des modules CSS */
 import css from "./generatorCardAvisClient.module.css";
 
@@ -47,8 +48,35 @@ function GeneratorCardAvisClient_Element({ tabDataAvisClients }: DatasAvisClient
             <div className={css.ContainerAvis}>
                 {/* Parcours des avis triés du plus récent au plus ancien */}
                 {avisTries.map((data) => {
-                    const isLongComment = data.commentaire.length > 100;
+
+                    /* Récupération des différents paragraphes */
+                    const commentaires = [
+                        data.commentaire,
+                        data.commentaire2,
+                        data.commentaire3,
+                        data.commentaire4,
+                        data.commentaire5,
+                        data.commentaire6,
+                        data.commentaire7,
+                        data.commentaire8,
+                        data.commentaire9
+                    ].filter((commentaire): commentaire is string =>
+                        typeof commentaire === "string" && commentaire.trim().length > 0
+                    );
+
+                    /* Calcul de la longueur totale du commentaire */
+                    const commentaireComplet = [
+                        data.titre,
+                        ...commentaires
+                    ].filter(Boolean).join("\n");
+
+                    const isLongComment = commentaireComplet.length > 100;
                     const isExpanded = expandedComments[data.id] || false;
+
+                    /* Affichage du commentaire complet ou tronqué */
+                    const texteAffiche = isExpanded || !isLongComment
+                        ? commentaireComplet
+                        : commentaireComplet.substring(0, 100) + "...";
 
                     return (
                         <article key={data.id} className={css.CardAvisContainer}>
@@ -60,16 +88,56 @@ function GeneratorCardAvisClient_Element({ tabDataAvisClients }: DatasAvisClient
                             </div>
 
                             <p className={css.comment}>
-                                {/* Affichage du commentaire tronqué ou complet selon état */}
-                                {isExpanded || !isLongComment
-                                    ? data.commentaire
-                                    : `${data.commentaire.substring(0, 100)}... `}
-                                
-                                {/* Ajout d’un bouton "Voir plus / Voir moins" si le commentaire est long */}
+                                {/* Affichage du titre et des paragraphes */}
+                                {isExpanded || !isLongComment ? (
+                                    <>
+                                        {data.titre && (
+                                            <>
+                                                <strong>{data.titre}</strong>
+                                                <br />
+                                                <br />
+                                            </>
+                                        )}
+
+                                        {commentaires.map((commentaire, index) => (
+                                            <span key={index}>
+                                                {index > 0 && (
+                                                    <>
+                                                        <br />
+                                                        <br />
+                                                    </>
+                                                )}
+                                                {commentaire}
+                                            </span>
+                                        ))}
+                                    </>
+                                ) : (
+                                    texteAffiche.split("\n").map((ligne, index) => (
+                                        <span key={index}>
+                                            {index > 0 && (
+                                                <>
+                                                    <br />
+                                                    <br />
+                                                </>
+                                            )}
+                                            {data.titre && index === 0
+                                                ? <strong>{ligne}</strong>
+                                                : ligne}
+                                        </span>
+                                    ))
+                                )}
+
+                                {/* Bouton Voir plus / Voir moins */}
                                 {isLongComment && (
-                                    <span className={css.toggle} onClick={() => toggleComment(data.id)}>
-                                        {isExpanded ? " Voir moins..." : "Voir plus..."}
-                                    </span>
+                                    <>
+                                        <br />
+                                        <span
+                                            className={css.toggle}
+                                            onClick={() => toggleComment(data.id)}
+                                        >
+                                            {isExpanded ? "Voir moins..." : "Voir plus..."}
+                                        </span>
+                                    </>
                                 )}
                             </p>
                         </article>

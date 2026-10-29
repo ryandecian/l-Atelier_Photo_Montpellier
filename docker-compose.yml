@@ -1,19 +1,31 @@
-version: '3.8'
 
 services:
+  # ==========================================
+  # NGINX - REVERSE PROXY
+  # ==========================================
   nginx:
     image: nginx:latest
     container_name: nginx-reverse
+    restart: unless-stopped
     ports:
       - "80:80"
       - "443:443"
     volumes:
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro                  # Fichier de configuration Nginx personnalisé
-      - /etc/letsencrypt:/etc/letsencrypt:ro
-      - ./nginx/html:/usr/share/nginx/html                           # Page HTML statique (optionnel, ex: page maintenance)
+      # Configuration Nginx
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
 
-      - client-lapm-dist:/usr/share/nginx/html/lapm                       # Volume monté contenant les fichiers buildés du frontend
-      - client-kaleidopix-dist:/usr/share/nginx/html/kaleidopix      # Volume monté contenant les fichiers buildés du frontend kaleidopix
+      # Certificats SSL Let's Encrypt
+      - /etc/letsencrypt:/etc/letsencrypt:ro
+
+      # Page HTML statique (maintenance)
+      - ./nginx/html:/usr/share/nginx/html
+
+      # Frontend LAPM
+      - client-lapm-dist:/usr/share/nginx/html/lapm
+
+      # Frontend Kaleidopix
+      - client-kaleidopix-dist:/usr/share/nginx/html/kaleidopix
+
     depends_on:
       client-lapm:
         condition: service_completed_successfully
@@ -22,100 +34,144 @@ services:
       server:
         condition: service_started
 
+  # ==========================================
+  # MARIADB - BASE DE DONNÉES
+  # ==========================================
   db:
     image: mariadb:11
     container_name: db
-    restart: always
+    restart: unless-stopped
+
     env_file: .env
+
     environment:
       - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
       - MYSQL_DATABASE=${DB_NAME}
       - MYSQL_USER=${DB_USER}
       - MYSQL_PASSWORD=${DB_PASSWORD}
+
     volumes:
       - db_data:/var/lib/mysql
-    # Exposition du port vers les services internes de docker
-    expose:
-      - "3306"  # seulement accessible entre services Docker (sécurité)
-    # Exposition de la DB vers l'extérieur en dehors de Docker
-    ports:
-      - "3306:3306"  # DB accessible depuis l'extérieur le temps du dev
 
+    # Accessible entre les services Docker
+    expose:
+      - "3306"
+
+    # Accès extérieur temporaire pour le développement
+    ports:
+      - "3306:3306"
+
+  # ==========================================
+  # CLIENT REACT - LAPM
+  # ==========================================
   client-lapm:
     container_name: client-lapm
+
     build:
       context: ./client
       dockerfile: Dockerfile
-      args: # Arguments pour le build qui remplace "environment". Necessaire pour vite ! A configurer également dans le Dockerfile
+      args:
         - VITE_NODE_ENV=production
         - VITE_DOMAIN_CLIENT=${VITE_DOMAIN_CLIENT}
         - VITE_DOMAIN_API_SERVER=${VITE_DOMAIN_API_SERVER}
+
     env_file: .env
+
     volumes:
-      - client-lapm-dist:/dist  # Rend disponible le build Vite pour Nginx
-    # Commande temporaire pour copier les fichiers buildés dans le volume
-    # sh : Lance un shell
-    # -c : Exécute la commande suivante dans le shell
-    # rm -rf /dist/* : (rm : supprime) (-r : tout le contenu si c'est un dossier) (-f : force la suppression sans demander de confirmation) -> supprime tout le contenu actuel du volume /dist
-    # && : exécute la commande de droite uniquement si celle de gauche a réussi (exit code 0)
-    # cp -r /app/dist/* /dist/ : (cp : copie) (-r : copie récursive pour les dossiers) -> copie tout le contenu du dossier buildé /app/dist/ vers le volume /dist/
-    command: ["sh", "-c", "rm -rf /dist/* && cp -r /app/dist/* /dist/"]
+      - client-lapm-dist:/dist
+
+    # Copie le build Vite dans le volume partagé avec Nginx
+    command:
+      - sh
+      - -c
+      - rm -rf /dist/* && cp -r /app/dist/* /dist/
+
+    # Conteneur temporaire : ne doit pas redémarrer
     restart: "no"
 
+  # ==========================================
+  # CLIENT REACT - KALEIDOPIX
+  # ==========================================
   client-kaleidopix:
     container_name: client-kaleidopix
+
     build:
       context: ./client-kaleidopix
       dockerfile: Dockerfile
-      args: # Arguments pour le build qui remplace "environment". Necessaire pour vite ! A configurer également dans le Dockerfile
+      args:
         - VITE_NODE_ENV=production
         - VITE_DOMAIN_CLIENT_KALEIDOPIX=${VITE_DOMAIN_CLIENT_KALEIDOPIX}
         - VITE_DOMAIN_API_SERVER=${VITE_DOMAIN_API_SERVER}
+
     env_file: .env
+
     volumes:
-      - client-kaleidopix-dist:/dist  # Rend disponible le build Vite pour Nginx
-    # Commande temporaire pour copier les fichiers buildés dans le volume
-    # sh : Lance un shell
-    # -c : Exécute la commande suivante dans le shell
-    # rm -rf /dist/* : (rm : supprime) (-r : tout le contenu si c'est un dossier) (-f : force la suppression sans demander de confirmation) -> supprime tout le contenu actuel du volume /dist
-    # && : exécute la commande de droite uniquement si celle de gauche a réussi (exit code 0)
-    # cp -r /app/dist/* /dist/ : (cp : copie) (-r : copie récursive pour les dossiers) -> copie tout le contenu du dossier buildé /app/dist/ vers le volume /dist/
-    command: ["sh", "-c", "rm -rf /dist/* && cp -r /app/dist/* /dist/"]
+      - client-kaleidopix-dist:/dist
+
+    # Copie le build Vite dans le volume partagé avec Nginx
+    command:
+      - sh
+      - -c
+      - rm -rf /dist/* && cp -r /app/dist/* /dist/
+
+    # Conteneur temporaire : ne doit pas redémarrer
     restart: "no"
 
+  # ==========================================
+  # SERVER - API EXPRESS
+  # ==========================================
   server:
     container_name: server
+
     build:
       context: ./server
       dockerfile: Dockerfile
+
     env_file: .env
-    restart: always
+    restart: unless-stopped
+
     expose:
       - "8080"
+
     environment:
       - NODE_ENV=production
+
+      # Domaines
       - VITE_DOMAIN_CLIENT=${VITE_DOMAIN_CLIENT}
       - VITE_DOMAIN_API_SERVER=${VITE_DOMAIN_API_SERVER}
-
       - VITE_PORT_API_SERVER=${VITE_PORT_API_SERVER}
 
+      # Base de données
       - DB_HOST=${DB_HOST}
       - DB_PORT=${DB_PORT}
       - DB_USER=${DB_USER}
       - DB_PASSWORD=${DB_PASSWORD}
       - DB_NAME=${DB_NAME}
 
+      # Messagerie
       - MAIL_SERVER_ADMIN=${MAIL_SERVER_ADMIN}
       - MAIL_PASSWORD=${MAIL_PASSWORD}
 
+      # Sécurité
       - SECRET_KEY_TOKEN_CLIENT=${SECRET_KEY_TOKEN_CLIENT}
       - SECRET_KEY_TOKEN_API_SERVER=${SECRET_KEY_TOKEN_API_SERVER}
+
     depends_on:
       - db
-    volumes:
-      - ./server/uploads:/app/uploads # Dossier pour les fichiers uploadés
 
+    volumes:
+      # Conservation des fichiers uploadés
+      - ./server/uploads:/app/uploads
+
+# ==========================================
+# VOLUMES PERSISTANTS
+# ==========================================
 volumes:
+  # Base de données MariaDB
   db_data:
+
+  # Build React LAPM
   client-lapm-dist:
+
+  # Build React Kaleidopix
   client-kaleidopix-dist:

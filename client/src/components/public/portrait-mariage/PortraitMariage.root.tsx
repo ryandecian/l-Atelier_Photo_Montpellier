@@ -1,15 +1,24 @@
 /* Import des modules CSS */
-import style from "../../StyleRootComponent.module.css";
+import style from "../../style.root.module.css";
+import CSS from "./portraitMariage.module.css";
 
 /* Import des Components de Data */
 import { imagesPortraitMariage_Data } from "./imagesPortraitMariage.data";
-// import { avisClientPortraitMariage_Data } from "./avisClientPortraitMariage.data";
+import { avisClientPortraitMariage_Data } from "./avisClientPortraitMariage.data";
 import { tarifsPortraitMariage_Data, mailtoLinkPortraitMariage_Data } from "./tarifsPortraitMariage.data";
+import { carrouselPortraitMariage_Data } from "./carrouselPortraitMariage.data";
+import { faqPortraitMariage_Data } from "./faqPortraitMariage.data";
 
 /* Import des composants d'Elements */
 import { Container4Images_Element } from "../../elements/container-image/container-4-Images/Container4Images.element";
-// import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
+import { Container4ImagesPaysage_Element } from "../../elements/container-image/container-4-Images-paysage/Container4ImagesPaysage.element";
+import { GeneratorCardAvisClient_Element } from "../../elements/generator-card-avis-client/GeneratorCardAvisClient.element";
 import { TarifCard_Element} from "../../elements/tarifs-card/TarifsCard.element";
+import { Carrousel3D_Element } from "../../elements/carrousels/carrousel3d/Carrousel3D.element";
+import { FAQ_Element } from "../../elements/faq/FAQ.element";
+import { CadreModel1_Element } from "../../elements/cadres/cadre-model-1/CadreModel1.element";
+import { CadreModel2_Element } from "../../elements/cadres/cadre-model-2/CadreModel2.element";
+import { CadreModel4_Element } from "../../elements/cadres/cadre-model-4/CadreModel4.element";
 
 /* Import des composants React */
 import { Link } from "react-router-dom";
@@ -20,63 +29,44 @@ import router from "../../../router/router";
 function PortraitMariage_Root() {
     return (
         <section className={`PortraitMariage_Root ${style.ContainerRootRacine}`}>
-            <header className={style.ContainerTitle}>
-                <h1 className={style.TitleH1}>
-                    Photo & Vidéo de mariage : Un récit complet, une émotion intacte.
+            <header className={CSS.ContainerTitle}>
+                <h1 className={CSS.TitleH1}>
+                    Tarifs et prestations de photographe mariage à Montpellier
                 </h1>
             </header>
 
+            <br />
+            
+            <CadreModel4_Element
+                image={imagesPortraitMariage_Data[24].src}
+                alt={imagesPortraitMariage_Data[24].alt}
+            />
+
             <p className={style.TextP4}>
-                <span className={style.SpanBold}>
-                    {"Votre mariage ne se résume pas à une suite de belles images."}
-                </span>
-                C’est une histoire qui se vit, qui se ressent, qui s’entend parfois… et qui mérite d’être racontée 
-                avec justesse. En tant que
-                <span className={style.SpanBold}>
-                    {" photographe de mariage et vidéaste professionnelle, "}
-                </span>
-                je vous propose une approche globale: un regard unique, une cohérence visuelle, et deux langages 
-                complémentaires — la photo pour figer l’instant, la vidéo pour en restituer le mouvement et l’émotion.
+                Photographe de mariage à Montpellier et dans l'Hérault, j’incarne 
+                <strong> L'Atelier Photo Montpellier (LAPM)</strong> et je réalise des reportages naturels et dynamiques 
+                pour raconter votre journée au-delà des moments que vous avez vécus.
+            </p>
+
+            <Carrousel3D_Element slides={carrouselPortraitMariage_Data} />
+            
+            <p className={style.TextP4}>
+                Un mariage passe vite. <br />
+                Pendant que vous vivez un moment, d’autres se déroulent ailleurs.
             </p>
 
             <p className={style.TextP4}>
-                Mon travail repose sur un  
-                <span className={style.SpanBold}>
-                    {" reportage "}
-                </span>
-                sincère, élégant et humain. Pas de mise en scène forcée, pas de poses figées à rallonge. Je documente
-                votre journée telle qu’elle se déroule, en restant attentive à ce qui compte vraiment : 
-                <span className={style.SpanBold}>
-                    {" les liens "}
-                </span>
-                qui garantissent des souvenirs à la hauteur de vos attentes.
+                Des regards, des gestes, des émotions que vous ne voyez pas sur l’instant.
             </p>
 
-            {/* ---------- ---------- ---------- ---------- ---------- */}
-
-            <h2 className={style.TitleH2}>
-                Le reportage photo et vidéo : raconter votre mariage de l’intérieur
-            </h2>
-
             <p className={style.TextP4}>
-                Je travaille dans un esprit documentaire : observer, anticiper, capter sans interrompre, tout en 
-                restant attentive au cadrage, 
-                <span className={style.SpanBold}>
-                    {" à la lumière, à la beauté et à la force des images. "}
-                </span> 
-                En photo comme en vidéo, mon rôle est le même : être présente sans être envahissante, saisir les instants
-                vrais et laisser la place à la spontanéité.
-                <span className={style.SpanBold}>
-                    {" La photo fige l’instant. La vidéo prolonge l’émotion."}
-                </span>
-                Les deux se répondent, sans se répéter, pour raconter votre histoire avec cohérence et sensibilité — 
-                <span className={style.SpanBold}>
-                    {" des images que vous serez fiers de regarder et de partager avec vos proches. "}
-                </span>    
-             </p>
+                C’est toute la force du reportage : capter aussi ce qui vous échappe, pour vous permettre de revivre 
+                votre journée dans son intégralité.
+            </p>
+            
 
             {/* Container Images 1 */}
-            <Container4Images_Element
+            <Container4ImagesPaysage_Element
                 img1={imagesPortraitMariage_Data[0].src}
                 metaNameImg1={imagesPortraitMariage_Data[0].alt}
                 img2={imagesPortraitMariage_Data[1].src}
@@ -87,66 +77,95 @@ function PortraitMariage_Root() {
                 metaNameImg4={imagesPortraitMariage_Data[3].alt}
             />
 
-            {/* ---------- ---------- ---------- ---------- ---------- */}
+            {/* ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- */}
 
             <h2 className={style.TitleH2}>
-                Un échange continu pour obtenir des photos et vidéos qui vous corresponde
+                Quel tarif pour votre reportage de mariage ?
             </h2>
 
             <p className={style.TextP4}>
-                Un mariage réussi, visuellement, ne s’improvise pas.
-                Avant le jour J, nous prenons le temps d’échanger. Vraiment.
-                Je cherche à comprendre :
-
-                <span className={style.SpanBold}>
-                    {" qui vous êtes, ce qui est important pour vous, ce que vous attendez de vos souvenirs."}
-                </span> 
-                 Certains couples veulent un rendu très naturel, presque brut.
-                D’autres aiment une esthétique plus travaillée, plus éditoriale.
-                D’autres encore sont sensibles aux codes actuels (images modernes, dynamiques, inspiration réseaux sociaux).
+                Choisissez la formule la plus adaptée à votre journée selon la durée de présence souhaitée et les moments 
+                à couvrir. Toutes les prestations incluent la sélection et la retouche des photos, une galerie privée et 
+                la livraison des images en haute définition.
             </p>
 
-            <p className={style.TextP4}>
-                Il n’y a pas de bonne ou de mauvaise approche. <strong>Il y a la vôtre </strong>
-                et mon rôle est de m’y adapter, pas de vous faire rentrer dans un moule.
-            </p>
+            <TarifCard_Element id="tarifs-portrait-mariage" tarifs={tarifsPortraitMariage_Data} mailtoLink={mailtoLinkPortraitMariage_Data} />
+
+            {/* <p className={style.TextP4}>
+                Test texte a mettre en place pour la section des tarifs.
+            </p> */}
 
             {/* Container Images 2 */}
-            <Container4Images_Element
-            img1={imagesPortraitMariage_Data[4].src}
-            metaNameImg1={imagesPortraitMariage_Data[4].alt}
-            img2={imagesPortraitMariage_Data[5].src}
-            metaNameImg2={imagesPortraitMariage_Data[5].alt}
-            img3={imagesPortraitMariage_Data[6].src}
-            metaNameImg3={imagesPortraitMariage_Data[6].alt}
-            img4={imagesPortraitMariage_Data[7].src}
-            metaNameImg4={imagesPortraitMariage_Data[7].alt}
+            <Container4ImagesPaysage_Element
+                img1={imagesPortraitMariage_Data[4].src}
+                metaNameImg1={imagesPortraitMariage_Data[4].alt}
+                img2={imagesPortraitMariage_Data[5].src}
+                metaNameImg2={imagesPortraitMariage_Data[5].alt}
+                img3={imagesPortraitMariage_Data[6].src}
+                metaNameImg3={imagesPortraitMariage_Data[6].alt}
+                img4={imagesPortraitMariage_Data[7].src}
+                metaNameImg4={imagesPortraitMariage_Data[7].alt}
             />
-
-            {/* ---------- ---------- ---------- ---------- ---------- */}
+            
+            {/* ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- */}
 
             <h2 className={style.TitleH2}>
-                Repérage des lieux et gestion de la lumière en reportage de mariage
+                Quelles sont les options supplémentaires pour votre reportage de mariage ?
+            </h2>
+
+            <p className={style.TextLiP4}>
+                Découvrez les options supplémentaires disponibles pour enrichir votre reportage de mariage.
+            </p>
+
+            <ul className={style.ContainerUl}>
+                <li className={style.TextLiP4}>
+                    Séance “day after” à partir de <strong> 349 €</strong>
+                </li>
+                <li className={style.TextLiP4}>
+                    Album photo à partir de <strong> 290 €</strong>
+                </li>
+                <li className={style.TextLiP4}>
+                    Photos 40 x 50 tirage premium à partir de <strong> 80 €</strong>
+                </li>
+                <li className={style.TextLiP4}>
+                    Photos Carton à partir de <strong> 250 €</strong>
+                </li>
+                <li className={style.TextLiP4}>
+                    Prises de vue drone à partir de <strong> 250 €</strong>
+                </li>
+            </ul>
+
+            <CadreModel2_Element
+                image={imagesPortraitMariage_Data[25].src}
+                alt={imagesPortraitMariage_Data[25].alt}
+            />
+
+            {/* ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- */}
+
+            <h2 className={style.TitleH2}>
+                Comment se déroule votre reportage de mariage ?
             </h2>
 
             <p className={style.TextP4}>
-                Lorsque c’est nécessaire, je repère les 
-                <span className={style.SpanBold}>
-                    {" lieux en amont. . "}
-                </span> 
-                Pourquoi ? Parce que la lumière, les espaces et les circulations jouent un rôle clé, en photo comme en vidéo.        
-                <span className={style.SpanBold}>
-                    {" Ce travail préparatoire me permet de : "}
-                </span> 
-                •	d’anticiper les meilleurs moments pour les images,
-                •	de choisir des zones adaptées sans vous faire perdre de temps,
-                •	de garantir une cohérence visuelle tout au long de la journée.
-
-                <span className={style.SpanBold}>
-                    {" Le jour J, vous n’avez rien à gérer. Vous vivez. Je m’adapte. "}
-                </span>
+                Découvrez le déroulement typique d'un reportage de mariage, de la préparation des mariés à la réception, 
+                en passant par la cérémonie et les moments clés de la journée.
             </p>
-            
+
+            <h3 className={style.TitleH3}>
+                1 - Un premier échange pour comprendre votre mariage et vos envies.
+            </h3>
+
+            <p className={style.TextP4}>
+                Nous échangeons sur votre projet, votre organisation et surtout sur ce que vous attendez de vos photos 
+                de mariage : style d’images que vous aimez, ambiance recherchée, moments importants pour vous, personnes 
+                à photographier et niveau de présence que vous souhaitez de la part du photographe.
+            </p>
+
+            <p className={style.TextP4}>
+                Nous faisons également le point sur la date, les différents lieux, le nombre d’invités et le déroulement 
+                envisagé de votre journée.
+            </p>
+
             {/* Container Images 3 */}
             <Container4Images_Element
                 img1={imagesPortraitMariage_Data[8].src}
@@ -159,53 +178,34 @@ function PortraitMariage_Root() {
                 metaNameImg4={imagesPortraitMariage_Data[11].alt}
             />
 
-            {/* ---------- ---------- ---------- ---------- ---------- */}
+            <br />
 
-            <h2 className={style.TitleH2}>
-                Photo, vidéo… et respect de votre personnalité
-            </h2>
+            <h3 className={style.TitleH3}>
+                2 - Une préparation personnalisée pour un reportage qui vous ressemble.
+            </h3>
 
             <p className={style.TextP4}>
-                Votre mariage est un
-                <span className={style.SpanBold}>
-                    {" reflet de votre personnalité "}
-                </span>
-                et de vos goûts. Vous souhaitez des photos qui traduisent l’esprit de votre union, mais aussi de 
-                vos valeurs et de vos envies esthétiques. C’est pourquoi je m’engage à respecter votre
-                <span className={style.SpanBold}>
-                    {" vision de l’image, "}
-                </span>
-                qu’elle soit simple et épurée, 
-                <span className={style.SpanBold}>
-                    {" sophistiquée et raffinée, "}
-                </span>
-                ou
-                <span className={style.SpanBold}>
-                    {" très moderne et dynamique, "}
-                </span>
-                inspirée des dernières
-                <span className={style.SpanBold}>
-                    {" tendances Instagram."}
-                </span>
+                En amont du mariage, nous construisons ensemble le rétroplanning de votre reportage photo. Je vous 
+                conseille notamment sur le temps à prévoir pour les photos de groupe, les photos de couple et les 
+                différents moments de la journée.
             </p>
 
             <p className={style.TextP4}>
-                Certains couples préfèrent des clichés
-                <span className={style.SpanBold}>
-                    {" très naturels "}
-                </span>
-                avec un minimum d’intervention, tandis que d’autres souhaitent des photos plus 
-                avec des mises en scène plus soignées. Je m’adapte à votre demande et vous accompagne dans le 
-                choix du style qui vous correspond le mieux, tout en veillant à ce que chaque photo conserve son 
-                authenticité. Mon objectif est d’être votre
-                <span className={style.SpanBold}>
-                    {" partenaire en photos ou en vidéos, "}
-                </span>
-                celui qui capte chaque sourire, chaque regard, chaque moment avec fidélité.
+                J'ai eu la chance de photographier des mariages dans des lieux qui me tiennent particulièrement à cœur 
+                : le <strong>Château Bas d'Aumelas</strong>, le <strong>Mas Valéro</strong> à Lattes/Maurin, 
+                le <strong>Domaine des Oliviers</strong> à Ceyras, ou encore le <strong>Domaine de la Salvage</strong> en 
+                Aveyron. Chaque lieu a son ambiance, sa lumière, ses recoins — et je m'adapte à chacun pour raconter 
+                votre journée avec authenticité, où qu'elle se déroule.
             </p>
-            
+
+            <p className={style.TextP4}>
+                Nous recensons les lieux et les temps forts à photographier, le nombre de groupes souhaités et vos 
+                éventuelles demandes particulières, afin que je puisse anticiper votre journée et raconter votre mariage 
+                selon vos priorités.
+            </p>
+
             {/* Container Images 4 */}
-            <Container4Images_Element
+            <Container4ImagesPaysage_Element
                 img1={imagesPortraitMariage_Data[12].src}
                 metaNameImg1={imagesPortraitMariage_Data[12].alt}
                 img2={imagesPortraitMariage_Data[13].src}
@@ -216,47 +216,29 @@ function PortraitMariage_Root() {
                 metaNameImg4={imagesPortraitMariage_Data[15].alt}
             />
 
-            {/* ---------- ---------- ---------- ---------- ---------- */}
-
-            <h2 className={style.TitleH2}>
-                Mon rôle : vous assurer un mariage fluide, serein et en confiance
-            </h2>
-
-            <p className={style.TextP4}>
-                Le mariage est une journée intense.Beaucoup d’émotions, parfois du  {" "}
-                <span className={style.SpanBold}>
-                    {"stress, souvent peu de temps."}
-                </span>
-                {" "} Mon rôle va au-delà de la prise de vue :
-                je suis aussi là pour créer un climat calme, fluide, rassurant. Quelques indications simples quand il le faut,
-                beaucoup d’observation le reste du temps.
-                L’objectif : que vous soyez 
-                {" "}
-                <span className={style.SpanBold}>
-                    {"détendus, disponibles à ce que vous vivez"}
-                </span>
-                {" "} pas focalisés sur l’objectif ou la caméra. {" "}
-                <span className={style.SpanBold}>
-                    {" "}
-                </span>
-            </p>
-
-            <p className={style.TextP4}>
-                L'idée n'est pas de vous imposer des poses mais plutôt de vous aider à {" "}
-                <span className={style.SpanBold}>
-                    {"être vous-même."}
-                </span>
-                {" "} Une vidéo de mariage tout comme une bonne photo de mariage réside souvent dans la {" "}
-                <span className={style.SpanBold}>
-                    {"sincérité du moment"}
-                </span>
-                {" "} et dans la {" "}
-                <span className={style.SpanBold}>
-                    {"simplicité des gestes,"}
-                </span>
-                {" "} et je serai là pour m’assurer que tout se déroule dans la plus grande fluidité.
-            </p>
+            <br />
             
+            <h3 className={style.TitleH3}>
+                3 - Le jour du mariage : réactivité, adaptation et sens du bon moment
+            </h3>
+
+            <p className={style.TextP4}>
+                Le jour J, le planning reste un repère, mais il ne doit jamais prendre le dessus sur ce que vous êtes en 
+                train de vivre. Une météo qui change, un timing qui se resserre ou un moment qui se prolonge : je 
+                m’adapte pour préserver le rythme de votre journée.
+            </p>
+
+            <p className={style.TextP4}>
+                À l’inverse, je ne cherche pas à interrompre systématiquement ce qui fonctionne. Pendant le vin d’honneur, 
+                par exemple, si vos invités discutent, rient et profitent pleinement de l’instant, je privilégie ces 
+                moments spontanés plutôt que de les faire poser en permanence.
+            </p>
+
+            <p className={style.TextP4}>
+                Mon objectif en tant que photographe professionnel : respecter le rythme de votre journée tout en restant 
+                attentive aux occasions qui feront la différence dans votre reportage.
+            </p>
+
             {/* Container Images 5 */}
             <Container4Images_Element
                 img1={imagesPortraitMariage_Data[16].src}
@@ -269,64 +251,73 @@ function PortraitMariage_Root() {
                 metaNameImg4={imagesPortraitMariage_Data[19].alt}
             />
 
-            {/* ---------- ---------- ---------- ---------- ---------- */}
+            <br />
+            
+            <h3 className={style.TitleH3}>
+                4 - La sélection et la livraison de vos photos
+            </h3>
+
+            <p className={style.TextP4}>
+                Après le mariage, je sélectionne et retouche soigneusement vos images pour créer un reportage cohérent 
+                et fidèle à votre journée. Vous recevez ensuite votre galerie privée en ligne, avec vos photos en haute 
+                définition, sous 15 jours.
+            </p>
+
+            {/* ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- */}
 
             <h2 className={style.TitleH2}>
-                Mon objectif : créer des souvenirs durables en photo comme en vidéo pour votre mariage
+                Un aperçu de mes reportages de mariage
+            </h2>
+
+            <CadreModel1_Element
+                image={imagesPortraitMariage_Data[26].src}
+                alt={imagesPortraitMariage_Data[26].alt}
+            />
+
+            {/* Container Images 6 */}
+            <Container4ImagesPaysage_Element
+                img1={imagesPortraitMariage_Data[20].src}
+                metaNameImg1={imagesPortraitMariage_Data[20].alt}
+                img2={imagesPortraitMariage_Data[21].src}
+                metaNameImg2={imagesPortraitMariage_Data[21].alt}
+                img3={imagesPortraitMariage_Data[22].src}
+                metaNameImg3={imagesPortraitMariage_Data[22].alt}
+                img4={imagesPortraitMariage_Data[23].src}
+                metaNameImg4={imagesPortraitMariage_Data[23].alt}
+            />
+
+            {/* ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- */}
+
+            <h2 className={style.TitleH2}>
+                FAQ sur les prestations d’un photographe professionnel de mariage 
+            </h2>
+
+            <FAQ_Element items={faqPortraitMariage_Data} />
+            
+            {/* ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- */}
+
+            <h2 className={style.TitleH2}>
+                Vérifier ma disponibilité pour votre date
             </h2>
 
             <p className={style.TextP4}>
-                En tant que photographe et vidéaste professionnel installée à Montpellier mon engagement est simple : {" "}
-                <span className={style.SpanBold}>
-                    {"vous livrer des images qui traversent le temps."}
-                </span>
-                {" "} Des photos que vous aurez plaisir à imprimer, encadrer, transmettre.
-                Des vidéos que vous aurez envie de revoir, pas seulement de stocker.
-                Un reportage  
-                {" "}
-                <span className={style.SpanBold}>
-                    {"fidèle à votre journée"}
-                </span>
-                {" "} sans artifice inutile, sans effets de mode excessifs. {" "}
-                <span className={style.SpanBold}>
-                    {"Grâce à une expérience complète,"}
-                </span>
-                {" "} une {" "}
-                <span className={style.SpanBold}>
-                    {"implication sincère"}
-                </span>
-                {" "} et une écoute attentive de vos attentes, je m’assure que votre mariage soit non 
-                seulement magnifiquement documenté mais qu’il soit aussi un {" "}
-                <span className={style.SpanBold}>
-                    {"souvenir authentique"}
-                </span>
-                {" "} que vous chérirez toute votre vie.
+                Vous avez une date en tête ? <br />
+                <br />
+                <Link to={router[3].path} className={style.Link}>
+                        👉 Contactez-moi pour vérifier mes disponibilités et échanger sur votre projet.
+                </Link>
             </p>
-                    
-            <p className={style.TextP4}>
-                Si vous êtes prêts à faire de votre mariage un événement inoubliable, {" "}
-                <span className={style.SpanLink}>
-                    <Link to={router[3].path}>
-                        {" contactez-moi "}
-                    </Link>
-                </span>
-                {" "} pour commencer à discuter de ce que vous attendez de vos 
-                <span className={style.SpanBold}>
-                    {" photos de mariage ou de votre vidéo de mariage."}
-                </span>
-                {" "} Pour connaître mes prestations tarifaires, rendez-vous sur ma {" "}
-                <span className={style.SpanLink}>
-                    <Link to={router[2].path}>
-                        {" page tarif."}
-                    </Link>
-                </span>
-            </p>  
+            
+            {/* ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- */}
 
-            {/* Carte Tarifs */}
-            <TarifCard_Element id="tarifs-portrait-mariage" tarifs={tarifsPortraitMariage_Data} mailtoLink={mailtoLinkPortraitMariage_Data} />
+            <h2 className={style.TitleH2}>
+                Des photos, des expériences, des mots, ils m'ont fait confiance !
+            </h2>
 
-            {/* Avis Client : */}
-            {/* <GeneratorCardAvisClient_Element tabDataAvisClients={avisClientPortraitMariage_Data} /> */}
+            <GeneratorCardAvisClient_Element tabDataAvisClients={avisClientPortraitMariage_Data} />
+
+            {/* ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- */}
+
 
         </section>
     );

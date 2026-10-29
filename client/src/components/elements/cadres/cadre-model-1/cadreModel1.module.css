@@ -1,0 +1,174 @@
+.frame {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+    height: fit-content;
+
+    max-width: calc(100% - 2.5rem);
+    max-height: calc(100vh - 1.25rem);
+
+    margin: 0 auto 1.25rem auto;
+
+    box-sizing: border-box;
+
+    background:
+        linear-gradient(
+            135deg,
+            #5e3509 0%,
+            #b97919 12%,
+            #f6d06b 25%,
+            #8b4d0d 40%,
+            #e6b94f 55%,
+            #6a3909 72%,
+            #d99d32 88%,
+            #5a3008 100%
+        );
+
+    box-shadow:
+        0 0.6rem 1.4rem rgb(0 0 0 / 25%),
+        inset 0 0 0 0.08rem rgb(255 230 145 / 55%),
+        inset 0 0 0 0.18rem rgb(63 31 3 / 60%);
+}
+
+.outerMoulding {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    padding: 0.65rem;
+
+    box-sizing: border-box;
+
+    background:
+        linear-gradient(
+            90deg,
+            #6d3b08 0%,
+            #c88b25 10%,
+            #f4d277 20%,
+            #9a5a11 32%,
+            #e3b94f 48%,
+            #81500f 64%,
+            #f1cf72 80%,
+            #6d3b08 100%
+        );
+
+    box-shadow:
+        inset 0.15rem 0.15rem 0.2rem rgb(255 239 173 / 60%),
+        inset -0.2rem -0.2rem 0.25rem rgb(50 23 0 / 70%);
+}
+
+.middleMoulding {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    padding: 0.4rem;
+
+    border: 0.12rem solid #70400c;
+
+    box-sizing: border-box;
+
+    background:
+        linear-gradient(
+            180deg,
+            #f7dc82 0%,
+            #a96812 22%,
+            #e8bc50 45%,
+            #83500e 70%,
+            #dba63a 100%
+        );
+
+    box-shadow:
+        inset 0 0 0 0.08rem #f8df91,
+        inset 0 0 0 0.2rem #9a641a,
+        inset 0 0 0 0.28rem #553007;
+}
+
+.innerMoulding {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    padding: 0.45rem;
+
+    box-sizing: border-box;
+
+    background:
+        linear-gradient(
+            135deg,
+            #6a3d09,
+            #d39b31 18%,
+            #f4d36f 34%,
+            #9b6417 50%,
+            #f0cb62 68%,
+            #70420c
+        );
+
+    box-shadow:
+        inset 0.15rem 0.15rem 0.18rem rgb(255 242 183 / 65%),
+        inset -0.15rem -0.15rem 0.2rem rgb(51 27 3 / 65%);
+}
+
+.pictureContainer {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    overflow: hidden;
+
+    border: 0.18rem solid #5f370b;
+
+    box-sizing: border-box;
+
+    background: #111;
+
+    box-shadow:
+        0 0 0 0.12rem #d8a843,
+        inset 0 0 0.8rem rgb(0 0 0 / 40%);
+}
+
+.pictureContainer::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    pointer-events: none;
+
+    box-shadow:
+        inset 0.2rem 0.2rem 0.35rem rgb(0 0 0 / 35%),
+        inset -0.15rem -0.15rem 0.25rem rgb(255 235 170 / 15%);
+}
+
+.picture {
+    display: block;
+
+    width: auto;
+    height: auto;
+
+    max-width: 100%;
+    max-height: calc(100vh - 4rem);
+
+    object-fit: contain;
+}
