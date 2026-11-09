@@ -8,6 +8,10 @@ import { generateURLSlug_Utils } from "../../utils/generateURLSlug.utils";
 import { WebPage_script_Type } from "./webPage.script.type";
 
 
+type WebPage_script_SEO_Props = {
+    data: WebPage_script_Type;
+};
+
 /**
  * ### Documentation : Script JSON-LD Service de Google.
  * Ce composant réutilisable à pour objectif de générer un script JSON-LD pour présenter une page web spécifique.
@@ -30,7 +34,7 @@ import { WebPage_script_Type } from "./webPage.script.type";
  * @returns {string} Retourne une string grâce à la fonction JSON.stringify, necessaire pour l'injection dans une page.
  */
 
-function webPage_script_SEO(data: WebPage_script_Type): string {
+function webPage_script_SEO({ data }: WebPage_script_SEO_Props): React.ReactNode {
     const dataMasterSEO = dataMasterSEO_data_SEO();
     
     const JSON_LD = JSON.stringify({
@@ -72,7 +76,12 @@ function webPage_script_SEO(data: WebPage_script_Type): string {
         "url": `${dataMasterSEO.url}${data.uri_page}`,          /*(Obligatoire) URL de la page + ancre SEO-friendly (ex : domain/uri) */
     });
 
-    return JSON_LD;
+    return (
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON_LD }}
+        />
+    );
 };
 
 export { webPage_script_SEO };
