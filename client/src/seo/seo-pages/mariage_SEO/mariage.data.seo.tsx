@@ -3,7 +3,7 @@ import { registreBreadcrumb_data_SEO } from "../../data/registreBreadcrumb.data.
 /* Import des composants Router */
 
 /* Import des Types */
-import type { HomePage_script_Type } from "../../script-json-ld/json-ld-homePage/homePage.script.type";
+import type { Service_script_Type } from "../../script-json-ld/json-ld-service/service.script.type";
 
 
 /* Attention, chaque données à exploiter ne doit être déclarée qu'une seul fois ! */
@@ -16,10 +16,10 @@ function mariage_data_SEO() {
 
     const breadcrumb_data_SEO = registreBreadcrumb_data_SEO("mariage").dataBreadcrumb;
 
-    const service_data_SEO: HomePage_script_Type = {
-        description: dataGlobalSEO.description,
-        id: "lapm",
-        name_page: dataGlobalSEO.title,
+    const service_data_SEO: Service_script_Type = {
+        description_service: dataGlobalSEO.description,
+        id: "mariage",
+        name_service: "Reportage photo et vidéo de mariage à Montpellier",
         uri_page: dataGlobalSEO.uri_page,
     }
 
