@@ -9,6 +9,10 @@ import { timeISO8601_Utils } from "./timeISO8601.utils";
 import { VideoObject_script_Type } from "./videoObject.script.type";
 
 
+type VideoObject_script_SEO_Props = {
+    data: VideoObject_script_Type;
+};
+
 /**
  * ### Documentation : Script JSON-LD VideoObject de Google.
  * Ce composant réutilisable à pour objectif de générer un script JSON-LD pour présenter une vidéo sur le site.
@@ -35,7 +39,7 @@ import { VideoObject_script_Type } from "./videoObject.script.type";
  * @returns {string} Retourne une string grâce à la fonction JSON.stringify, necessaire pour l'injection dans une page.
  */
 
-function videoObject_script_SEO(data: VideoObject_script_Type) : string {
+function videoObject_script_SEO({ data }: VideoObject_script_SEO_Props) : React.ReactNode {
     const dataMasterSEO = dataMasterSEO_data_SEO();
     
     const JSON_LD = JSON.stringify({
@@ -53,7 +57,10 @@ function videoObject_script_SEO(data: VideoObject_script_Type) : string {
     });
 
     return (
-        JSON_LD
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON_LD }}
+        />
     )
 }
 
