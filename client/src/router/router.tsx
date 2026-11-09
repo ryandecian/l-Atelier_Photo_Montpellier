@@ -240,10 +240,6 @@ const router: Router_Type[] = [
         element: <Video_Page />,
     },
     /* {router[37].path} */
-    {
-        path: "/portrait-mariage/test",
-        element: <PortraitMariageTest_Page />,
-    },
 ]
 
 export default router;
