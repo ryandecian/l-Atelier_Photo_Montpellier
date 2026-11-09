@@ -39,7 +39,6 @@ import QuiSuisJePage from "../pages/public/qui-suis-je_Page/QuiSuisJe.page";
 import Video_Page from "../pages/public/video_Page/Video.page";
 
 /* Page Frontend public Test */
-import PortraitMariageTest_Page from "../pages/public/portrait-mariage_PageTest/PortraitMariageTest.page";
 
 /**
  * Utilisation : 
@@ -238,11 +237,6 @@ const router: Router_Type[] = [
     {
         path: "/videos",
         element: <Video_Page />,
-    },
-    /* {router[37].path} */
-    {
-        path: "/portrait-mariage/test",
-        element: <PortraitMariageTest_Page />,
     },
 ]
 

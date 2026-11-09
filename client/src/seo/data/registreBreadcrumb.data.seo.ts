@@ -52,6 +52,12 @@ function dataRegistreBreadcrumb_data_SEO() {
             "name_page": "Photographe de Mariage | L'Atelier Photo Montpellier (LAPM)",
             "uri_page": router[0].path,
         },
+        {
+            "id": "mariage",
+            "parent_id": "home",
+            "name_page": "Tarifs Photographe Montpellier | L'Atelier Photo (LAPM)",
+            "uri_page": router[13].path,
+        },
     ];
     return data;
 }
