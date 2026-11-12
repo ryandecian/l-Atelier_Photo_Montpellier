@@ -64,6 +64,12 @@ function dataRegistreBreadcrumb_data_SEO() {
             "name_page": "Photographe corporate et entreprise à Montpellier | LAPM",
             "uri_page": router[11].path,
         },
+        {
+            "id": "video",
+            "parent_id": "home",
+            "name_page": "Vidéaste et production vidéo à Montpellier | LAPM",
+            "uri_page": router[36].path,
+        },
     ];
     return data;
 }
