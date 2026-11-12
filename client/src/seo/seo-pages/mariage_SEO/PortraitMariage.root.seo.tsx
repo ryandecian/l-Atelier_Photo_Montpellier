@@ -1,5 +1,5 @@
 /* Import des Components de Data */
-import { PortraitMariage_data_SEO } from "./PortraitMariage.data.seo";
+import { portraitMariage_data_SEO } from "./portraitMariage.data.seo";
 
 /* Import des JSON_LD */
 import { Breadcrumb_script_SEO } from "../../script-json-ld/json-ld-breadcrumb/Breadcrumb.script.seo";
@@ -9,7 +9,7 @@ import { Service_script_SEO } from "../../script-json-ld/json-ld-service/service
 
 
 function PortraitMariage_root_SEO() {
-    const dataSEO = PortraitMariage_data_SEO();
+    const dataSEO = portraitMariage_data_SEO();
     return (
         <>
             <LocalBusiness_script_SEO />
