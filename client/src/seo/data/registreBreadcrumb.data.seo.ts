@@ -49,14 +49,20 @@ function dataRegistreBreadcrumb_data_SEO() {
     const data: DataBreadcrumb_data_Type = [
         {
             "id": "home",
-            "name_page": "Photographe de Mariage | L'Atelier Photo Montpellier (LAPM)",
+            "name_page": "Photographe de mariage à Montpellier | LAPM",
             "uri_page": router[0].path,
         },
         {
             "id": "mariage",
             "parent_id": "home",
-            "name_page": "Tarifs Photographe Montpellier | L'Atelier Photo (LAPM)",
+            "name_page": "Tarifs photographe mariage à Montpellier | LAPM",
             "uri_page": router[13].path,
+        },
+        {
+            "id": "corporate",
+            "parent_id": "home",
+            "name_page": "Photographe corporate et entreprise à Montpellier | LAPM",
+            "uri_page": router[11].path,
         },
     ];
     return data;
