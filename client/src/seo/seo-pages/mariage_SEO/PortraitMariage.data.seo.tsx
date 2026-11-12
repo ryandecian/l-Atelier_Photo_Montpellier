@@ -7,7 +7,7 @@ import type { Service_script_Type } from "../../script-json-ld/json-ld-service/s
 
 
 /* Attention, chaque données à exploiter ne doit être déclarée qu'une seul fois ! */
-function mariage_data_SEO() {
+function PortraitMariage_data_SEO() {
     const dataGlobalSEO = {
         title: registreBreadcrumb_data_SEO("mariage").dataItems.name_page, /* Titre de la page - injection dans index.html et dans la barre de navigation du navigateur */
         description: "Découvrez les prestations et tarifs d'Anne SAUNIER, photographe et vidéaste de mariage à Montpellier (LAPM). Reportages photo et vidéo adaptés à vos envies.",
@@ -46,7 +46,7 @@ function mariage_data_SEO() {
     )
 }
 
-export { mariage_data_SEO };
+export { PortraitMariage_data_SEO };
 
 /**
  * ### Documentation : og:type

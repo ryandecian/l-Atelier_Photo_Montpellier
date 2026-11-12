@@ -1,5 +1,5 @@
 /* Import des Components de Data */
-import { mariage_data_SEO } from "./mariage.data.seo";
+import { PortraitMariage_data_SEO } from "./PortraitMariage.data.seo";
 
 /* Import des JSON_LD */
 import { Breadcrumb_script_SEO } from "../../script-json-ld/json-ld-breadcrumb/Breadcrumb.script.seo";
@@ -8,8 +8,8 @@ import { MetaName_script_SEO } from "../../script-meta-name/MetaName.script.seo"
 import { Service_script_SEO } from "../../script-json-ld/json-ld-service/service.script.seo";
 
 
-function Mariage_root_SEO() {
-    const dataSEO = mariage_data_SEO();
+function PortraitMariage_root_SEO() {
+    const dataSEO = PortraitMariage_data_SEO();
     return (
         <>
             <LocalBusiness_script_SEO />
@@ -20,4 +20,4 @@ function Mariage_root_SEO() {
     )
 }
 
-export default Mariage_root_SEO;
+export default PortraitMariage_root_SEO;
