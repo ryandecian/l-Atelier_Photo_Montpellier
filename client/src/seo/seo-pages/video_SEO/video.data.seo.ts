@@ -27,44 +27,59 @@ function video_data_SEO() {
     }
     
     const videoObject_data_SEO: VideoObject_data_SEO_Type = [
+        /* Video les Crocodiles Jaunes */
         {
             "date_upload": "2025-11-17",
             "description": "Vidéo de présentation du centre de jeûne Les Crocodiles Jaunes à Albi.",
             "duration_video": {
                 "m": 1,
-                "s": 30
+                "s": 36
             },
             "id_video": "lapm-croco",
             "name_video": "Votre prochaine parenthèse bien-être : Les Crocodiles Jaunes",
             "uri_miniature": "/video/les-crocodiles-jaunes/les-crocodiles-jaunes.jpg",
-            "uri_page": "",
+            "uri_page": dataGlobalSEO.uri_page,
             "uri_video": "/video/les-crocodiles-jaunes/les-crocodiles-jaunes.mp4"
         },
+        /* Video Doris en Afrique */
         {
             "date_upload": "2025-11-17",
-            "description": "",
+            "description": "À 80 ans, Doris traverse l’Afrique à moto pour accomplir son rêve d’aventure et de découverte.",
             "duration_video": {
-                "m": 1,
-                "s": 30
+                "s": 52
             },
-            "id_video": "",
-            "name_video": "",
-            "uri_miniature": "",
-            "uri_page": "",
-            "uri_video": ""
+            "id_video": "lapm-doris-afrique",
+            "name_video": "80 ans, première moto, 16 000 km en Afrique – Doris inspire le monde",
+            "uri_miniature": "/video/a-80-ans-elle-traverse-l-afrique-a-moto/a-80-ans-elle-traverse-l-afrique-a-moto.jpg",
+            "uri_page": dataGlobalSEO.uri_page,
+            "uri_video": "/video/a-80-ans-elle-traverse-l-afrique-a-moto/a-80-ans-elle-traverse-l-afrique-a-moto.mp4"
         },
+        /* Video mariage Laure & Charles */
         {
             "date_upload": "2025-11-17",
-            "description": "",
+            "description": "Un film de mariage authentique capturant l’essence d’une journée sincère, joyeuse et profondément humaine.",
+            "duration_video": {
+                "s": 51
+            },
+            "id_video": "lapm-mariage-laure-charles",
+            "name_video": "Vidéo de mariage Laure & Charles au Château Bas d’Aumelas",
+            "uri_miniature": "/video/video-de-mariage-laure-et-charles-au-chateau-bas-d-aumelas/video-de-mariage-laure-et-charles-au-chateau-bas-d-aumelas.jpg",
+            "uri_page": dataGlobalSEO.uri_page,
+            "uri_video": "/video/video-de-mariage-laure-et-charles-au-chateau-bas-d-aumelas/video-de-mariage-laure-et-charles-au-chateau-bas-d-aumelas.mp4"
+        },
+        /* Video trek désert Maroc */
+        {
+            "date_upload": "2025-11-17",
+            "description": "Une courte vidéo présentant l’ambiance authentique d’un trek au cœur des dunes marocaines.",
             "duration_video": {
                 "m": 1,
                 "s": 30
             },
-            "id_video": "",
-            "name_video": "",
-            "uri_miniature": "",
-            "uri_page": "",
-            "uri_video": ""
+            "id_video": "lapm-trek-desert-maroc",
+            "name_video": "Aventure saharienne – Immersion dans le désert avec Mélodie du Désert",
+            "uri_miniature": "/video/video-trek-desert-maroc/video-trek-desert-maroc.jpg",
+            "uri_page": dataGlobalSEO.uri_page,
+            "uri_video": "/video/video-trek-desert-maroc/video-trek-desert-maroc.mp4"
         },
     ]
 
