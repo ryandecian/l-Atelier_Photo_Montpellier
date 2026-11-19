@@ -7,7 +7,7 @@ import Video_Root from "../../../components/public/video/Video.root";
 import Footer_root_layout from "../../../components/layout/footer_Layout/Footer.root.layout";
 
 /* Import des composants SEO */
-import { HelmetPortraitMariage_helmet_SEO } from "../../../seoS/portrait-mariage_SEO/HelmetPortraitMariage.helmet.seo";
+import Video_root_SEO from "../../../seo/seo-pages/video_SEO/Video.root.seo";
 
 /* Import des Hooks */
 import { useScrollToHash_Hook } from "../../../hook/useScrollToHash.hook";
@@ -17,7 +17,7 @@ function Video_Page() {
 
     return (
         <div className={`Video_Page ${style.Page}`}>
-            <HelmetPortraitMariage_helmet_SEO />
+            <Video_root_SEO />
             <header id="top" className={style.Header}>
                  <Nav_root_Layout />
             </header>
