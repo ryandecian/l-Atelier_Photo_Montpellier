@@ -5,7 +5,7 @@ import { video_data_SEO } from "./video.data.seo";
 import { Breadcrumb_script_SEO } from "../../script-json-ld/json-ld-breadcrumb/Breadcrumb.script.seo";
 import { LocalBusiness_script_SEO } from "../../json-ld-localbusiness/LocalBusiness.script.seo";
 import { MetaName_script_SEO } from "../../script-meta-name/MetaName.script.seo";
-import { VideoObject_script_SEO } from "../../script-json-ld/json-ld-videoObject/videoObject.script.seo";
+import { VideoObject_script_SEO } from "../../script-json-ld/json-ld-videoObject/VideoObject.script.seo";
 
 
 function Video_root_SEO() {
