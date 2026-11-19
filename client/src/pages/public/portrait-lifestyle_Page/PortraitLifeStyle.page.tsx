@@ -7,7 +7,7 @@ import PortraitLifeStyle_Root from "../../../components/public/portrait-lifestyl
 import Footer_root_layout from "../../../components/layout/footer_Layout/Footer.root.layout";
 
 /* Import des composants SEO */
-import { HelmetPortraitLifeStyle_helmet_SEO } from "../../../seoS/portrait-lifestyle_SEO/HelmetPortraitLifeStyle.helmet.seo";
+import PortraitLifeStyle_root_SEO from "../../../seo/seo-pages/lifeStyle_SEO/PortraitLifeStyle.root.seo";
 
 /* Import des Hooks */
 import { useScrollToHash_Hook } from "../../../hook/useScrollToHash.hook";
@@ -17,7 +17,7 @@ function PortraitLifeStyle_Page() {
 
      return (
         <div className={`PortraitLifeStyle_Page ${style.Page}`}>
-            <HelmetPortraitLifeStyle_helmet_SEO />
+            <PortraitLifeStyle_root_SEO />
             <header id="top" className={style.Header}>
                  <Nav_root_Layout />
             </header>

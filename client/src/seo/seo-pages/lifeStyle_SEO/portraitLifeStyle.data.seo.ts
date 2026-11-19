@@ -10,7 +10,7 @@ import type { Service_script_Type } from "../../script-json-ld/json-ld-service/s
 function portraitLifeStyle_data_SEO() {
     const dataGlobalSEO = {
         title: registreBreadcrumb_data_SEO("lifeStyle").dataItems.name_page, /* Titre de la page - injection dans index.html et dans la barre de navigation du navigateur */
-        description: "Découvrez les prestations et tarifs d'Anne SAUNIER, photographe corporate et entreprise à Montpellier (LAPM). Reportages photo et vidéo adaptés à vos besoins.",
+        description: "Découvrez le Portrait LifeStyle : des photos naturelles, spontanées, qui racontent votre histoire. Un regard unique signé l'Atelier Photo Montpellier.",
         uri_page: registreBreadcrumb_data_SEO("lifeStyle").dataItems.uri_page,
     }
 
@@ -19,7 +19,7 @@ function portraitLifeStyle_data_SEO() {
     const service_data_SEO: Service_script_Type = {
         description_service: dataGlobalSEO.description,
         id: "lifeStyle",
-        name_service: "Photographe corporate et entreprise à Montpellier",
+        name_service: "Photographe portrait lifestyle à Montpellier",
         uri_page: dataGlobalSEO.uri_page,
     }
 
