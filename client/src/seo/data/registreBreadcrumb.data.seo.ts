@@ -70,6 +70,12 @@ function dataRegistreBreadcrumb_data_SEO() {
             "name_page": "Vidéaste et production vidéo à Montpellier | LAPM",
             "uri_page": router[36].path,
         },
+        {
+            "id": "lifeStyle",
+            "parent_id": "home",
+            "name_page": "Photographe portrait lifestyle à Montpellier | LAPM",
+            "uri_page": router[12].path,
+        },
     ];
     return data;
 }
