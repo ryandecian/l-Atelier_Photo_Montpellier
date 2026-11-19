@@ -7,7 +7,7 @@ import PortraitCorporate_Root from "../../../components/public/portrait-corporat
 import Footer_root_layout from "../../../components/layout/footer_Layout/Footer.root.layout";
 
 /* Import des composants SEO */
-import { Helmet_PortraitCorporate_helmet_SEO } from "../../../seoS/portrait-corporate_SEO/HelmetPortraitCorporate.helmet.seo";
+import PortraitCorporate_root_SEO from "../../../seo/seo-pages/corporate_SEO/PortraitCorporate.root.seo";
 
 /* Import des Hooks */
 import { useScrollToHash_Hook } from "../../../hook/useScrollToHash.hook";
@@ -17,7 +17,7 @@ function PortraitCorporate_Page() {
     
     return (
         <section className={`PortraitCorporate_Page ${style.Page}`}>
-            <Helmet_PortraitCorporate_helmet_SEO />
+            <PortraitCorporate_root_SEO />
             <header id="top" className={style.Header}>
                  <Nav_root_Layout />
             </header>

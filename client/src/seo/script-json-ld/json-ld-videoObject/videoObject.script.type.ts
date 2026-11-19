@@ -37,6 +37,10 @@ type VideoObject_script_Type = {
      * ⚠️ **NOTE ET CONTRAINTE** : Doit être une string représentant la durée de la vidéo au format ISO 8601. Cette information est importante pour les moteurs de recherche afin de comprendre la longueur du contenu vidéo.
      * - Doit être une string.
      * - Doit être au format ISO 8601 (ex : "PT1H2M30S" pour 1 heure, 2 minutes et 30 secondes).
+     * 
+     * ---
+     * @example "PT1H2M30S" (1 heure, 2 minutes et 30 secondes)
+     * @example "PT2M45S" (2 minutes et 45 secondes)
      */
     "duration_video"?: {
         "h"?: number;
