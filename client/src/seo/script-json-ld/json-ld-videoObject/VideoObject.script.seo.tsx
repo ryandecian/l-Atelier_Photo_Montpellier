@@ -39,7 +39,7 @@ type VideoObject_script_SEO_Props = {
  * @returns {string} Retourne une string grâce à la fonction JSON.stringify, necessaire pour l'injection dans une page.
  */
 
-function videoObject_script_SEO({ data }: VideoObject_script_SEO_Props) : React.ReactNode {
+function VideoObject_script_SEO({ data }: VideoObject_script_SEO_Props) : React.ReactNode {
     const dataMasterSEO = dataMasterSEO_data_SEO();
     
     const JSON_LD = JSON.stringify({
@@ -64,4 +64,4 @@ function videoObject_script_SEO({ data }: VideoObject_script_SEO_Props) : React.
     )
 }
 
-export { videoObject_script_SEO };
+export { VideoObject_script_SEO };

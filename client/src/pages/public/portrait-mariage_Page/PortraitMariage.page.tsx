@@ -7,7 +7,7 @@ import PortraitMariage_Root from "../../../components/public/portrait-mariage/Po
 import Footer_root_layout from "../../../components/layout/footer_Layout/Footer.root.layout";
 
 /* Import des composants SEO */
-import Mariage_root_SEO from "../../../seo/seo-pages/mariage_SEO/mariage.root.seo";
+import PortraitMariage_root_SEO from "../../../seo/seo-pages/mariage_SEO/PortraitMariage.root.seo";
 
 /* Import des Hooks */
 import { useScrollToHash_Hook } from "../../../hook/useScrollToHash.hook";
@@ -17,7 +17,7 @@ function PortraitMariage_Page() {
 
     return (
         <div className={`PortraitMariage_Page ${style.Page}`}>
-            <Mariage_root_SEO />
+            <PortraitMariage_root_SEO />
             <header id="top" className={style.Header}>
                  <Nav_root_Layout />
             </header>
